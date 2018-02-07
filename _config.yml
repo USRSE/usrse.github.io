@@ -1,13 +1,13 @@
-title: NL-RSE
-author: nl-rse
-email: info@nl-rse.org
+title: US-RSE
+author: us-rse
+email: info@us-rse.org
 description: > # this means to ignore newlines until "baseurl:"
   The community of Research Software Engineers 
-  from Dutch universities, knowledge institutes, companies and
+  from US universities, laboratories, knowledge institutes, companies and
   other relevant organizations for sharing knowledge, organizing
   meetings and raising awareness for the scientific recognition of research software.
-twitter_username: nl_rse
-github_username:  nl-rse
+twitter_username:
+github_username:  usrse
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this

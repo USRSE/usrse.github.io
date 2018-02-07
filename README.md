@@ -12,7 +12,7 @@ engineer, campus champion, research computing facilitator, bioinformatician and
 other titles are increasingly recognized as core roles in research teams.
 
 Following the great initiatives in the [UK](http://rse.ac.uk/),
-[Germany](http://www.de-rse.org/de), the Netherlands [NL](http://nl-rse.org)  
+[Germany](http://www.de-rse.org/de), the [Netherlands](http://nl-rse.org)  
 and elsewhere this site aims to bring together the community
 of people writing and contributing to research software in US
 universities, laboratories, knowledge institutes, companies and other 
