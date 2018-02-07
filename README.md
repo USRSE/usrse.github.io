@@ -3,11 +3,13 @@
 
 The increasing use of digital technologies across academia has gone hand
 in hand with a strong growth in research software.
-This growth includes energing roles for people who create, maintain and contribute to the
-research software ecosystem. Positions like data steward, information manager, research data
+This growth includes emerging roles for people who create, maintain and contribute to the
+research software ecosystem. 
+
+Positions like data steward, information manager, research data
 officer, research software engineer, research supporter, cyberinfrastructure 
-engineer, campus champions, research computing facilitators and other titles are 
-increasingly recognized as core roles in research teams.
+engineer, campus champion, research computing facilitator, bioinformatician and 
+other titles are increasingly recognized as core roles in research teams.
 
 Following the great initiatives in the [UK](http://rse.ac.uk/),
 [Germany](http://www.de-rse.org/de), the Netherlands [NL](http://nl-rse.org)  
