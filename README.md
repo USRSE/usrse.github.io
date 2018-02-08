@@ -12,12 +12,16 @@ research software artefacts and related knowledge.
 
 Of course, research software does not develop, curate or maintain itself. Accordingly, 
 widespread research software growth has included emerging roles for people who 
-create, maintain and contribute to the research software ecosystem. 
+create, maintain and contribute to the research software ecosystem. These roles can
+bring value directly through enabling specific research projects. They
+also bring value indrectly, through helping ensure enduring impact of research 
+software innovations and by facilitating adeqaute reproducibility standards in 
+digital science. 
 
 Positions like data steward, information manager, research data
 officer, research software engineer, research supporter, cyberinfrastructure 
 engineer, campus champion, research computing facilitator, bioinformatician and 
-other titles are increasingly recognized as core roles in research teams.
+other titles are increasingly found as core roles in research teams.
 
 Initiatives in the [UK](http://rse.ac.uk/), [Germany](http://www.de-rse.org/de), the 
 [Netherlands](http://nl-rse.org) and elsewhere are exploring bringing
