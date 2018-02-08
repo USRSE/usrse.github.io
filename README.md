@@ -5,11 +5,8 @@ The increasing use of digital technologies across research communities has gone 
 in hand with a strong growth and reliance on software written or customized to solve
 research problems. This in turn is driving dialog around opportunities 
 
-  * to improve the development of 
-  
-and 
-
-  * incentivize useful sharing, curation and ongoing maintenance of 
+  * to improve the development of, and
+  * to incentivize useful sharing, curation and ongoing maintenance of 
   
 research software artefacts and related knowledge.
 
