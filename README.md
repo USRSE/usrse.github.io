@@ -14,7 +14,7 @@ Of course, research software does not develop, curate or maintain itself. Accord
 widespread research software growth has included emerging roles for people who 
 create, maintain and contribute to the research software ecosystem. These roles can
 bring value directly through enabling specific research projects. They
-also bring value indrectly, through helping ensure enduring impact of research 
+also bring value indirectly, through helping ensure enduring impact of research 
 software innovations and by facilitating adeqaute reproducibility standards in 
 digital science. 
 
