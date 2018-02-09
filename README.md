@@ -1,7 +1,4 @@
----
-layout: default
-title: USRSE
----
+
 ## The US Research Software Engineer Community
 
 The increasing use of digital technologies across research communities has gone hand
