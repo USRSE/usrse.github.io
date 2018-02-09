@@ -23,7 +23,7 @@ officer, research software engineer, research supporter, cyberinfrastructure
 engineer, campus champion, research computing facilitator, bioinformatician and 
 other titles are increasingly found as core roles in research teams.
 
-Initiatives in the [UK](http://rse.ac.uk/), [Germany](http://www.de-rse.org/de), the 
+Initiatives in the [UK](http://rse.ac.uk/), [Germany](http://www.de-rse.org/en), the 
 [Netherlands](http://nl-rse.org) and elsewhere are exploring bringing
 together the community of people writing and contributing to research software at
 the national and international level. In the US this encompasses
@@ -62,8 +62,8 @@ The goal is to mutually benefit the integrity of digital research
 processes, further increase impact of digital approaches, and to 
 improve career trajectories of capable practitioners that underpin 
 these activities. We are working, together with RSE associations in the
-[UK](http://rse.ac.uk/), [Germany](http://www.de-rse.org/de),
-the Netherlands [NL](http://nl-rse.org) and elsewhere
+[UK](http://rse.ac.uk/), [Germany](http://www.de-rse.org/en),
+the [Netherlands](http://nl-rse.org) and elsewhere
 to highlight the RSE role, and to connect the
 broad RSE community in the US together.
 
