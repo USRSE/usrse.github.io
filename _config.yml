@@ -8,6 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
   meetings and raising awareness for the scientific recognition of research software.
 twitter_username:
 github_username:  usrse
+git_repo: usrse-web
 slack_channel: usrse.slack.com
 
 # Minima date format
