@@ -35,10 +35,10 @@ Signup to our mailing list to stay informed about any activities!
 
 <!--- ## Join us! --->
 
-<a href="https://usrse.slack.com">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScBQ6AYpYYK2wL21egcaVvH0ZEvtShU-0s-XbqnY3okUsyIZw/viewform">
 <img width="250px" src="img/signup.png"></a>
 
-Joining the US-RSE Community is easy! [Just sign up to our mailing list!](https://groups.google.com/forum/#!forum/usrse)
+Joining the US-RSE Community is easy! [Just join our slack channel!](https://docs.google.com/forms/d/e/1FAIpQLScBQ6AYpYYK2wL21egcaVvH0ZEvtShU-0s-XbqnY3okUsyIZw/viewform)
 
 
 ## What is a Research Software Engineer?
