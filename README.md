@@ -41,7 +41,7 @@ channel for conversations.
 <!--- ## Join us! --->
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLScBQ6AYpYYK2wL21egcaVvH0ZEvtShU-0s-XbqnY3okUsyIZw/viewform">
-<img width="250px" src="img/signup.png"></a>
+<img width="250px" alt="signup button" src="img/signup.png"></a>
 
 ## What is a Research Software Engineer?
 
