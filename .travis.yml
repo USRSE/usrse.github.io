@@ -5,9 +5,13 @@
 #
 language: ruby
 rvm:
-- 2.5
+  - 2.5
 
-install: gem install jekyll html-proofer jekyll-sitemap
+install: 
+ - bundle update
+ - bundle show
+ - bundle install
+ - gem install html-proofer jekyll-sitemap
 script: scripts/ci/build.sh; /bin/ls -altr
 
 # branch whitelist
