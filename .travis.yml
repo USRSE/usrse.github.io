@@ -5,7 +5,7 @@
 #
 language: ruby
 rvm:
-- 2.1
+- 2.5
 
 install: gem install jekyll html-proofer jekyll-sitemap
 script: scripts/ci/build.sh
