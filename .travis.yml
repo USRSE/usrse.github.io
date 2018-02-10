@@ -1,0 +1,28 @@
+#
+#
+# Based on https://github.com/felixrieseberg/travis-jekyll-git/tree/4a8f6d505a7219b2d50e4d0b64f3ee4774016f5b
+#
+#
+language: ruby
+rvm:
+- 2.1
+
+install: gem install jekyll html-proofer jekyll-sitemap
+script: scripts/ci/build.sh
+
+# branch whitelist
+branches:
+  only:
+  - gh-pages     # test the gh-pages branch
+  - /pages-(.*)/ # test every branch which starts with "pages-"
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+# deploy:
+#   skip_cleanup: true
+#   provider: script
+#   script: scripts/deploy.sh
+#   on:
+#     branch: gh-pages
