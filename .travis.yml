@@ -15,7 +15,7 @@ install:
 script: 
  - . scripts/ci/build.sh
  - /bin/ls -altr _site
- - cat ./_site/join.html
+ - cat ./_site/feed.xml
 
 # branch whitelist
 branches:
