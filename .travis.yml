@@ -12,7 +12,7 @@ install:
  - bundle show
  - bundle install
  - gem install html-proofer jekyll-sitemap
-script: scripts/ci/build.sh; /bin/ls -altr
+script: . scripts/ci/build.sh; /bin/ls -altr _site
 
 # branch whitelist
 branches:
