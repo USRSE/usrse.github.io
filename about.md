@@ -1,6 +1,6 @@
 ---
 layout: page
-title: US RSE About
+title: The US-RSE Organization
 subtitle:
 bigimg:
 ---
