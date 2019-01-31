@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/cosden/usrseweb.svg?branch=gh-pages)](https://travis-ci.org/cosden/usrseweb)
 
 ## The United States (US) Research Software Engineer Community
 
