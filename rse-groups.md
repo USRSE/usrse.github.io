@@ -14,7 +14,7 @@ bigimg:
 | Massachusetts Institute of Technology  | |
 | National Renewable Energy Laboratory |  |
 | Oak Ridge National Laboratory |   |
-| Northwestern University | |
+| Northwestern University | [Research Computing Services](https://www.it.northwestern.edu/research/) |
 | Princeton University | [Research Computing](https://researchcomputing.princeton.edu) <br> [Lewis-Siegler Institute for Integrative Genomics](https://lsi.princeton.edu) <br> [Center for Digital Humanites](https://cdh.princeton.edu) |
 | University of Alabama |  |
 | University of Illinois Urbana-Champaign | [NCSA](https://ssa.ncsa.illinois.edu/) |
