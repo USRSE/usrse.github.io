@@ -15,6 +15,9 @@ The US-RSE is community driven and organized.
 * Jordan Perr-Sauer, National Renewable Energy Laboratory
 * Charles Ferenbaugh, Los Alamos National Laboratory
 * Lance Parsons, Princeton University
+* Christina Maimone, Northwestern University
+* Sandra Gesing, University of Notre Dame
+
 
 
 ### Want to get involved?
