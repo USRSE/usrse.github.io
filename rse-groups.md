@@ -18,6 +18,7 @@ bigimg:
 | Princeton University | [Research Computing](https://researchcomputing.princeton.edu) <br> [Lewis-Siegler Institute for Integrative Genomics](https://lsi.princeton.edu) <br> [Center for Digital Humanites](https://cdh.princeton.edu) |
 | University of Alabama |  |
 | University of Illinois Urbana-Champaign | [NCSA](https://ssa.ncsa.illinois.edu/) |
+| University of Notre Dame | [Center for Research Computing](https://crc.nd.edu/) |
 
 
 Want to have your organization on the list? Contact us via [Slack](https://usrse.slack.com).
