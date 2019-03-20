@@ -4,24 +4,23 @@
 
 ## The United States (US) Research Software Engineer Community
 
-## us-rse.org Website Hosting
+## Community Website 
 
-This repository contains the files for the official US RSE website hosted at <https://www.us-rse.org>.
+This repository contains the files for the official US RSE website hosted at http://www.us-rse.org.
 
-The site is made to be built with [Jekyll](https://jekyllrb.com/).
+The site is built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub. 
 
 ## Contributing Content
 
 We encourage the community to contribute to the content of the website.  
 
-Fork the repository, make your proposed changes, test locally (see below) and then create a pull request against `gh-pages`.
+To do this: fork the repository, make your proposed changes, test locally (see below), and then create a pull request against `gh-pages`.
 
 
 ## Testing (Previewing) Locally
 
 In the top level directory of your forked repository run `jekyll serve` and browse to <http://localhost:4000>.
 If you are having trouble try `rm -rf _site`, followed by `bundle update`, then `bundle exec jekyll serve`.
-
 
 
 
