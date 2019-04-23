@@ -13,8 +13,7 @@ research problems. This in turn is driving dialog around opportunities to
 
   * improve the development of, and
   * incentivize useful sharing, curation, and ongoing maintenance of
-
-research software artifacts and related knowledge.
+    research software artifacts and related knowledge.
 
 Of course, research software does not develop, curate, or maintain itself. Accordingly,
 widespread research software growth has included emerging roles for people who
