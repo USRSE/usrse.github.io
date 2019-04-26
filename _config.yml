@@ -24,7 +24,7 @@ description: Community of Research Software Engineers
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+#avatar: "/img/avatar-icon.png"
 
 # List of links in the navigation bar
 navbar-links:
@@ -43,7 +43,7 @@ navbar-links:
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
+ title-img: /img/logo.png
 
 # --- Background colour/image options --- #
 
@@ -187,7 +187,8 @@ defaults:
       path: "" # all files
     values:
       layout: "page"
-      show-avatar: true
+      show-avatar: false
+      css: /css/custom.css
 
 # Use tags index page and make tags on each post clickable
 link-tags: true

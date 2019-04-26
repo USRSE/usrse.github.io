@@ -1,0 +1,12 @@
+/* Customize navbar logo... */
+
+.navbar-custom .navbar-brand-logo img {
+  height: 150px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .8);
+  box-shadow: 0 0 3px rgba(0, 0, 0, .8);
+  -webkit-transition: height .5s ease-in-out;
+  -moz-transition: height .5s ease-in-out;
+  transition: height .5s ease-in-out;
+}
+
