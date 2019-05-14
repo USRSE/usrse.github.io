@@ -21,7 +21,7 @@ build_jekyll: &build_jekyll
         bundle exec jekyll build
 
 jobs:
-  build-site:
+  preview-site:
     docker:
       - image: circleci/ruby:2.4.1
     working_directory: ~/repo
@@ -47,4 +47,4 @@ jobs:
       - run: *build_jekyll
       - store_artifacts:
           path: ~/repo/_site
-          destination: blog
+          destination: usrseweb
