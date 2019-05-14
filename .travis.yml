@@ -4,6 +4,11 @@
 #
 #
 language: ruby
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+
 rvm:
   - 2.5
 
@@ -14,7 +19,7 @@ install:
  - bundle install
  - gem install html-proofer jekyll-sitemap
 script: 
- - . scripts/ci/build.sh
+ - rake test
  - /bin/ls -altr _site
  - cat ./_site/feed.xml
 
