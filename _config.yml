@@ -32,6 +32,7 @@ navbar-links:
   Community:
     - About: "about"
     - RSE Groups: "rse-groups"
+    - Community Blogs: "https://usrse.github.io/blog"
     - Steering Committee: "steering-committee"
   Resources:
     - Events & Training: "events-training"
