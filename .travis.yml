@@ -19,7 +19,7 @@ install:
  - bundle install
  - gem install html-proofer jekyll-sitemap
 script: 
- - bundle exec rake test
+ - rake test
  - /bin/ls -altr _site
  - cat ./_site/feed.xml
 
