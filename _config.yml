@@ -43,7 +43,7 @@ navbar-links:
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-title-img: /img/logo.png
+title-img: /assets/img/logo.png
 
 # --- Background colour/image options --- #
 
@@ -188,7 +188,7 @@ defaults:
     values:
       layout: "page"
       show-avatar: false
-      css: /css/custom.css
+      css: /assets/css/custom.css
 
 # Use tags index page and make tags on each post clickable
 link-tags: true
@@ -216,9 +216,7 @@ prose:
     - _config.yml
     - /_layouts
     - /_includes
-    - /css
-    - /img
-    - /js
+    - /assets
   metadata:
     _posts:
       - name: "layout"
