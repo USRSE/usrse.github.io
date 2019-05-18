@@ -1,6 +1,7 @@
 ---
 layout: page
 title: RSE Opportunities
+permalink: /jobs/
 ---
 
 ## Current RSE openings

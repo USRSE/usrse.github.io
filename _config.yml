@@ -13,7 +13,6 @@ baseurl:
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
-
 # Name of website
 title: US RSE Community
 
@@ -32,6 +31,7 @@ navbar-links:
   Community:
     - About: "about"
     - RSE Groups: "rse-groups"
+    - RSE Map: "map"
     - Steering Committee: "steering-committee"
   Resources:
     - Events & Training: "events-training"

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Steering Committee
+permalink: /steering-committee/
 ---
 
 The US-RSE is community driven and organized.  

@@ -3,6 +3,7 @@ layout: page
 title: The US-RSE Organization
 subtitle:
 bigimg:
+permalink: /about/
 ---
 
 ## The United States (US) Research Software Engineering Community
