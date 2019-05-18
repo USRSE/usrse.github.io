@@ -11,6 +11,7 @@ end
 
 def html_proofer
   options = {
+    :url_ignore => [/usrse.github.io/],
     :allow_hash_href => true,       # don't break on <a href="#">
     :assume_extension => false,     # (true) for extensionless paths
     :http_status_ignore => [
