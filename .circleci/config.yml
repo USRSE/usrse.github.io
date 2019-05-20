@@ -1,0 +1,125 @@
+version: 2.1
+
+workflows:
+  version: 2
+
+  # The build workflow will build a preview for the site, intended for PRs
+  build:
+    jobs:
+      - build-site:
+          filters:
+            branches:
+              ignore: master
+
+  # The build nightly has a content (below) that indicates deployment
+  build-nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build-site:
+          context: trigger-context
+          filters:
+            branches:
+              only:
+                - master
+
+install: &install
+  name: install dependencies for build
+  command: |
+     $HOME/conda/bin/pip install -r ~/repo/.circleci/requirements.txt
+
+test_map: &test_map
+  name: test the metadata required for map
+  command: |
+     cd ~/repo/tests
+     $HOME/conda/bin/python -m unittest test_mapdata
+
+
+deploy: &deploy
+  name: Deploy back to GitHub master, only in the case that CIRCLECI_TRIGGER is found
+  command: |
+    # Only deploy if the CIRCLECI_TRIGGER is found in the environment
+    if [ -z "$CIRCLECI_TRIGGER" ]; then
+        echo "CIRCLECI_TRIGGER not found, not nightly build, will not deploy."
+        exit 0
+    else
+        echo "Detected trigger, updating GitHub pages!"
+        git branch
+        git config user.name "${CIRCLECI_USERNAME}"
+        git config user.email "${CIRCLECI_USERNAME}@users.noreply.github.com"
+        git checkout master
+        git pull origin master
+        git add ~/repo/_posts/*
+        git commit -m 'Automated deployment to Github Pages' --allow-empty
+        git push origin master
+        echo $?
+    fi      
+
+
+install_python_3: &install_python_3
+  name: install Python 3.5 dependencies
+  command: | 
+      ls $HOME
+      if [ ! -d "/home/circleci/conda" ]; then
+          wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+          /bin/bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/conda
+          export PATH=$HOME/conda/bin:$PATH
+       else
+           echo "Miniconda 3 is already installed, continuing to build."
+       fi
+
+build_jekyll: &build_jekyll
+    name: Jekyll Build
+    command: |
+        if [ -z "$CIRCLECI_TRIGGER" ]; then
+            echo "Building RSE Blog for Preview"
+            cp ~/repo/.circleci/circle_urls.sh ~/repo/circle_urls.sh
+            cd ~/repo
+            chmod u+x circle_urls.sh
+            bash circle_urls.sh              
+            bundle exec jekyll build
+        else
+            echo "Nightly build detected, preview not needed."
+        fi
+
+jobs:
+  build-site:
+    docker:
+      - image: circleci/ruby:2.4.1
+    working_directory: ~/repo
+    environment:
+      - JEKYLL_ENV: production
+      - NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+      - BUNDLE_PATH: ~/repo/vendor/bundle
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies
+          - rubygems-v1
+      - run: *install_python_3
+      - run: *install
+      - save_cache:
+          paths:
+            - /home/circleci/conda
+          key: v1-dependencies        
+      - run:
+          name: Bundle Install
+          command: |
+              cd ~/repo
+              bundle check || bundle install
+      - save_cache:
+          key: rubygems-v1
+          paths:
+            - vendor/bundle
+      - run: *test_map
+      - run: *build_jekyll
+      - store_artifacts:
+          path: ~/repo/_site
+          destination: usrse.github.io
+      - run: *deploy

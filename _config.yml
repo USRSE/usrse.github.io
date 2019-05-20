@@ -5,7 +5,7 @@
 
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
 url: "https://usrse.github.io"
-baseurl: null
+baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
@@ -203,7 +203,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - Vagrantfile
+  - tests
 
 # prose.io config
 prose:
