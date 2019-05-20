@@ -204,6 +204,7 @@ exclude:
   - LICENSE
   - README.md
   - tests
+  - vendor
 
 # prose.io config
 prose:
