@@ -9,7 +9,7 @@ workflows:
       - build-site:
           filters:
             branches:
-              ignore: master
+              ignore: gh-pages
 
   # The build nightly has a content (below) that indicates deployment
   build-nightly:
@@ -19,14 +19,14 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - gh-pages
     jobs:
       - build-site:
           context: trigger-context
           filters:
             branches:
               only:
-                - master
+                - gh-pages
 
 install: &install
   name: install dependencies for build
@@ -41,7 +41,7 @@ test_map: &test_map
 
 
 deploy: &deploy
-  name: Deploy back to GitHub master, only in the case that CIRCLECI_TRIGGER is found
+  name: Deploy back to GitHub pages, only in the case that CIRCLECI_TRIGGER is found
   command: |
     # Only deploy if the CIRCLECI_TRIGGER is found in the environment
     if [ -z "$CIRCLECI_TRIGGER" ]; then
@@ -52,11 +52,11 @@ deploy: &deploy
         git branch
         git config user.name "${CIRCLECI_USERNAME}"
         git config user.email "${CIRCLECI_USERNAME}@users.noreply.github.com"
-        git checkout master
-        git pull origin master
+        git checkout gh-pages
+        git pull origin gh-pages
         git add ~/repo/_posts/*
         git commit -m 'Automated deployment to Github Pages' --allow-empty
-        git push origin master
+        git push origin gh-pages
         echo $?
     fi      
 
