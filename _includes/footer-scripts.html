@@ -12,7 +12,7 @@
 
 {% if page.js %}
   {% for js in page.js %}
-	<script src="{{ assets/js | prepend: site.baseurl | replace: '//', '/' }}"></script>
+	<script src="{{ assets/js | prepend: site.baseurl }}"></script>
   {% endfor %}
 {% endif %}
 
@@ -22,11 +22,11 @@
     {% if js contains 'jquery' %}
       <script>
       	if (typeof jQuery == 'undefined') {
-      	  document.write('<script src="{{ assets/js | prepend: site.baseurl | replace: "//", "/" }}"></scr' + 'ipt>');
+      	  document.write('<script src="{{ assets/js | prepend: site.baseurl }}"></scr' + 'ipt>');
       	}
       </script>
     {% else %}
-	<script src="{{ assets/js | prepend: site.baseurl | replace: '//', '/' }}"></script>
+	<script src="{{ assets/js | prepend: site.baseurl }}"></script>
     {% endif %}
   {% endfor %}
 {% endif %}
