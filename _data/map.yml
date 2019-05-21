@@ -5,6 +5,11 @@
   coords: [37.272040, -121.861260]
   institution: Stanford University
   type: group
+- name: Data, Analytics & Research Computing at the GSB
+  url: https://sites.google.com/a/stanford.edu/rcpedia/the-team
+  coords: [37.427969, -122.162215]
+  institution: Stanford University
+  type: group
 - name: "Vanessasaurus"
   image: https://vsoch.github.io/assets/images/avatar.png
   url: https://vsoch.github.io/
