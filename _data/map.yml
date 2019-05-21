@@ -1,0 +1,72 @@
+- name: "Stanford Research Computing Center"
+  image: https://pbs.twimg.com/profile_images/1058424139080335360/6_aDaOYw_400x400.jpg
+  url: https://srcc.stanford.edu/about/computing-support-research
+  coords: [37.272040, -121.861260]
+  institution: Stanford University
+  type: group
+- name: Data, Analytics & Research Computing at the GSB
+  url: https://sites.google.com/a/stanford.edu/rcpedia/the-team
+  coords: [37.427969, -122.162215]
+  institution: Stanford University
+  type: group
+- name: "Vanessasaurus"
+  image: https://vsoch.github.io/assets/images/avatar.png
+  url: https://vsoch.github.io/
+  coords: [37.424107, -122.166077]
+  institution: Stanford University Research Computing Center
+  type: person
+- name: Georgia Institute of Technology
+  url: https://www.ece.gatech.edu/
+  coords: [33.776033, -84.398841]
+  type: group
+- name: Los Alamos National Laboratory
+  image: https://upload.wikimedia.org/wikipedia/commons/2/24/Los_Alamos_logo.svg 
+  url: https://www.lanl.gov/
+  coords: [35.838420, -106.314760]
+  type: group
+- name: Massachusetts Institute of Technology
+  image: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/1280px-MIT_logo.svg.png
+  url: http://www.mit.edu/
+  coords: [42.358181, -71.093086]
+  type: group
+- name: Northwestern University
+  url: https://www.it.northwestern.edu/research/
+  coords: [42.056458, -87.675270]
+  institution: Research Computing Services
+  type: group
+- name: Oak Ridge National Laboratory
+  url: https://www.ornl.gov/
+  coords: [35.930065, -84.312400]
+  type: group
+- name: Research Computing
+  image: https://researchcomputing.princeton.edu/sites/researchcomputing2/files/tiger-2018cutout-turncatedface-final-4_0.jpg
+  url: https://researchcomputing.princeton.edu
+  coords: [40.348240, -74.657980]
+  institution: Princeton University
+  type: group
+- name: Lewis-Siegler Institute for Integrative Genomics 
+  image: https://lsi.princeton.edu/sites/lsi/themes/lsi_zen/logo.png 
+  url: https://lsi.princeton.edu
+  coords: [40.349550, -74.650160]
+  institution: Princeton University
+  type: group
+- name: Center for Digital Humanites
+  image: https://cdh.princeton.edu/static/img/CDH_logo.svg
+  url: https://cdh.princeton.edu
+  coords: [40.348240, -74.657980]
+  institution: Princeton University
+  type: group
+- name: University of Alabama
+  url: http://cs.ua.edu/research/
+  coords: [33.214024, -87.539139]
+  type: group
+- name: National Center for Supercomputing Applications 
+  url: https://ssa.ncsa.illinois.edu/
+  coords: [40.109982, -88.225143]
+  institution: University of Illinois Urbana-Champaign
+  type: group
+- name: Center for Research Computing
+  url: https://www.nd.edu/
+  coords: [41.705570, -86.235336]
+  institution: University of Notre Dame
+  type: group

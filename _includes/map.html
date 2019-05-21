@@ -1,0 +1,62 @@
+<script>
+
+// Store a list of rses, and groups to add to map
+var RSEs = Array()
+var groups = Array()
+
+// We want custom color markers (individuals purple)
+var purpleIcon = new L.Icon({
+  iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+var blueIcon = new L.Icon({
+  iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+
+// First add groups (so they are base layer on map)
+{% for entry in site.data.map %}{% if entry.coords %}
+{% if entry.type == "group" %}var marker = L.marker([{{ entry.coords[0] }}, {{ entry.coords[1] }}], {icon: blueIcon});{% else %}var marker = L.marker([{{ entry.coords[0] }}, {{ entry.coords[1] }}], {icon: purpleIcon});{% endif %}
+marker.bindPopup("{% if entry.type == 'group' %}RSE Group{% else %}Research Software Engineer{% endif %}<br>{% if entry.image %}<img src='{{ entry.image }}' style='height:30px; float:right'>{% endif %}<a href='{{ entry.url }}'>{{ entry.name }}{% if entry.institution %}<br>{{ entry.institution }}{% endif %}</a>");
+{% if entry.type == "group" %}groups.push(marker);{% else %}RSEs.push(marker);{% endif %}{% endif %}{% endfor %}
+
+// Add them to a layer group
+var groupLayer = L.layerGroup(groups);
+var rseLayer = L.layerGroup(RSEs);
+
+// Add the layers to the map
+var map = L.map('map-container', {
+    center: [37.6, -95.665],
+    zoom: 4,
+    layers: [groupLayer, rseLayer]
+});
+
+// This is the base tile layer
+basemap = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+             attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+          }).addTo(map);
+
+// Create objects to name them
+var overlayMaps = {
+    "<span style='color: darkblue'>RSE Groups</span>": groupLayer,
+    "<span style='color: darkpurple'>RSEs</span>": rseLayer
+};
+
+var baseMaps = {
+    "<span style='color: green'>Streets</span>": basemap,
+};
+
+// Add the objects to layer controls
+L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+</script>
