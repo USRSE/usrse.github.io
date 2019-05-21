@@ -11,7 +11,7 @@ permalink: /jobs/
 {% capture expires %}{{ job.expires | date: '%s'}}{% endcapture %}
 
 {% if expires > nowunix %}
-   <li><a href="{{ job.url }}" target="_blank">{{ job.name }}</a>: expires {{ job.expires }}</li>
+   <li><a href="{{ job.url }}" target="_blank">{{ job.name }}</a>: {{ job.location }}</li>
 {% endif %}{% endfor %}</ol>
 
 <br>
