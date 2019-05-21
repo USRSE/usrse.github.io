@@ -2,10 +2,11 @@
 
 # url is the full website URL
 # baseurl is the website's URL without the hostname
-
+# DO NOT CHANGE THE LINE NUMBERS HERE without changing .circleci/circle_urls.sh
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
 url: "https://usrse.github.io"
 baseurl: ""
+title-img: /assets/img/logo.png
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
@@ -40,10 +41,6 @@ navbar-links:
   Careers:
     - What is an RSE?: "what-is-an-rse"
     - RSE openings: "jobs"
-
-# If you want to have an image logo in the top-left corner instead of the title text,
-# then specify the following parameter
-title-img: /assets/img/logo.png
 
 # --- Background colour/image options --- #
 
