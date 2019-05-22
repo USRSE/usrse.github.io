@@ -2,17 +2,17 @@
 
 # url is the full website URL
 # baseurl is the website's URL without the hostname
-
+# DO NOT CHANGE THE LINE NUMBERS HERE without changing .circleci/circle_urls.sh
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
-url: "http://us-rse.org"
-baseurl: 
+url: "https://usrse.github.io"
+baseurl: ""
+title-img: /assets/img/logo.png
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
-
 
 # Name of website
 title: US RSE Community
@@ -32,19 +32,16 @@ navbar-links:
   Community:
     - About: "about"
     - RSE Groups: "rse-groups"
-    - Community Blogs: "https://usrse.github.io/blog"
+    - RSE Map: "map"
     - Steering Committee: "steering-committee"
   Resources:
+    - Community Blogs: "https://usrse.github.io/blog"
     - Events & Training: "events-training"
   Get involved:
     - Join US-RSE: "join"
   Careers:
     - What is an RSE?: "what-is-an-rse"
     - RSE openings: "jobs"
-
-# If you want to have an image logo in the top-left corner instead of the title text,
-# then specify the following parameter
-title-img: /img/logo.png
 
 # --- Background colour/image options --- #
 
@@ -189,7 +186,7 @@ defaults:
     values:
       layout: "page"
       show-avatar: false
-      css: /css/custom.css
+      css: /assets/css/custom.css
 
 # Use tags index page and make tags on each post clickable
 link-tags: true
@@ -204,7 +201,8 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - Vagrantfile
+  - tests
+  - vendor
 
 # prose.io config
 prose:
@@ -217,9 +215,7 @@ prose:
     - _config.yml
     - /_layouts
     - /_includes
-    - /css
-    - /img
-    - /js
+    - /assets
   metadata:
     _posts:
       - name: "layout"

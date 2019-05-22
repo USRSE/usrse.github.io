@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Join US-RSE
+permalink: /join/
 ---
 
 By joining the community you will:
