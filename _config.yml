@@ -35,6 +35,7 @@ navbar-links:
     - RSE Map: "map"
     - Steering Committee: "steering-committee"
   Resources:
+    - Community Blogs: "https://usrse.github.io/blog"
     - Events & Training: "events-training"
   Get involved:
     - Join US-RSE: "join"
