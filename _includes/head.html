@@ -93,9 +93,11 @@
 
 
   <!-- Twitter summary cards -->
-  <meta name="twitter:card" content="summary" />
+  {% if site.author.twitter %}
   <meta name="twitter:site" content="@{{ site.author.twitter }}" />
   <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
+  {% endif %} 
+  <meta name="twitter:card" content="summary" />
 
   {% if page.meta-title %}
   <meta name="twitter:title" content="{{ page.meta-title }}" />
@@ -115,8 +117,8 @@
 
   {% if page.share-img %}
   <meta name="twitter:image" content="{{ page.share-img }}" />
-  {% elsif site.avatar %}
-  <meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}" />
+  {% elsif site.title-img %}
+  <meta name="twitter:image" content="{{ site.title-img }}" />
   {% endif %}
 
   {% if site.matomo %}
