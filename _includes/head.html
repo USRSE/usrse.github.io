@@ -117,18 +117,12 @@
 
   {% if page.share-img %}
   <meta name="twitter:image" content="{{ page.share-img }}" />
-  {% elsif site.title-img %}
-  <meta name="twitter:image" content="{{ site.title-img }}" />
+  {% elsif site.twitter-img %}
+  <meta name="twitter:image" content="{{ site.twitter-img }}" />
   {% endif %}
 
   {% if site.matomo %}
   {% include matomo.html %}
   {% endif %}
-
-  {% if page.comments and site.staticman.repository and site.staticman.branch %}
-  <!-- Staticman -->
-  <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | prepend: site.baseurl }}" />
-  {% endif %}
-
 
 </head>
