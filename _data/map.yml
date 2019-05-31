@@ -29,10 +29,10 @@
   url: http://www.mit.edu/
   coords: [42.358181, -71.093086]
   type: group
-- name: Northwestern University
+- name: Research Computing Services
   url: https://www.it.northwestern.edu/research/
   coords: [42.056458, -87.675270]
-  institution: Research Computing Services
+  institution: Northwestern University
   type: group
 - name: Oak Ridge National Laboratory
   url: https://www.ornl.gov/
