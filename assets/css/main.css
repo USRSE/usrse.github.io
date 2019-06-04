@@ -57,6 +57,11 @@ hr.small {
     padding-top: 130px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+}
 
 .main-explain-area {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
