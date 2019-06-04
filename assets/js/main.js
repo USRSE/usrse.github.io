@@ -69,6 +69,7 @@ var main = {
   },
 
   initImgs : function() {
+
     // If the page was large images to randomly select from, choose an image
     if ($("#header-big-imgs").length > 0) {
       main.bigImgEl = $("#header-big-imgs");
