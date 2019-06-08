@@ -1,6 +1,6 @@
 # The United States (US) Research Software Engineer Community
 
-[![Build Status](https://travis-ci.org/USRSE/usrseweb.svg?branch=gh-pages)](https://travis-ci.org/USRSE/usrseweb)
+[![Build Status](https://travis-ci.org/USRSE/usrse.github.io.svg?branch=master)](https://travis-ci.org/USRSE/usrse.github.io)
 
 ## What is this?
 
