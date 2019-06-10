@@ -10,7 +10,7 @@ The site is built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub.
 ## How do I contribute?
 
 We encourage the community to contribute to the content of the website.  
-To do this: fork the repository, make your proposed changes, test locally (see below), and then create a pull request against `gh-pages`.
+To do this: fork the repository, make your proposed changes, test locally (see below), and then create a pull request against `master`.
 
 ### 1. How do I update the map?
 
