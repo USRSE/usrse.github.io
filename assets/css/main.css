@@ -1,5 +1,6 @@
 ---
 layout: null
+excluded_in_search: true
 ---
 
 @import url("pygment_highlights.css");

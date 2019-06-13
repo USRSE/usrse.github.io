@@ -1,5 +1,6 @@
 ---
 layout: null
+excluded_in_search: true
 ---
 (function () {
 	function getQueryVariable(variable) {
