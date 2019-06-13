@@ -70,3 +70,8 @@
   coords: [41.705570, -86.235336]
   institution: University of Notre Dame
   type: group
+- name: Gregory Lemieux
+  url: https://github.com/glemieux
+  coords: [37.876959, -122.248936]
+  institution: Lawrence Berkeley National Laboratory
+  type: person
