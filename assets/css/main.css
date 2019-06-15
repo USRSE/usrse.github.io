@@ -13,10 +13,8 @@ body {
   color: #404040;
   position: relative;
   background-color: {{ site.page-col }};
-  {% if site.page-img %}
-  background-image: url({{ site.page-img }});
-  background-attachment: fixed;
-  {% endif %}
+  {% if site.page-img %}background-image: url({{ site.page-img }});
+  background-attachment: fixed;{% endif %}
 }
 p {
   line-height: 1.5;
@@ -136,10 +134,9 @@ img {
   letter-spacing: 1px;
 }
 
-.navbar-custom .navbar-brand,
-.navbar-custom .nav li a {
-  font-weight: 800;
+.navbar-custom .nav li a , .navbar-custom .navbar-brand {
   color: {{ site.navbar-text-col }};
+  font-weight: 800;
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -250,6 +247,7 @@ img {
   border-width: 0 1px 1px 1px;
   font-weight: normal;
 }
+
 @media only screen and (max-width: 767px) {
   .navbar-custom .nav .navlinks-container.show-children {
     background: rgba(0, 0, 0, 0.2);
@@ -273,7 +271,6 @@ img {
   }
   .navbar-custom .nav .navlinks-container .navlinks-children a {
     padding-left: 10px;
-    border: 1px solid #eaeaea;
     border-width: 0 1px 1px;
   }
 }
