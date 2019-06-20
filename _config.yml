@@ -62,7 +62,7 @@ footer-link-col: "#404040"
 # instead of colour
 
 navbar-img: "../img/rse-transport-light.png"
-# footer-img: "/img/bgimage.png"
+# footer-img: "../img/rse-transport-light.png"
 # page-img: "/img/bgimage.png"
 
 # --- Footer options --- #
