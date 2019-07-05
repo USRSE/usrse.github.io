@@ -19,11 +19,11 @@
   url: https://www.ece.gatech.edu/
   coords: [33.776033, -84.398841]
   type: group
-- name: Los Alamos National Laboratory
-  image: https://upload.wikimedia.org/wikipedia/commons/2/24/Los_Alamos_logo.svg 
+- name: Charles Ferenbaugh
   url: https://www.lanl.gov/
   coords: [35.838420, -106.314760]
-  type: group
+  type: person
+  institution: Los Alamos National Laboratory
 - name: Massachusetts Institute of Technology
   image: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/1280px-MIT_logo.svg.png
   url: http://www.mit.edu/
@@ -75,3 +75,4 @@
   coords: [37.876959, -122.248936]
   institution: Lawrence Berkeley National Laboratory
   type: person
+
