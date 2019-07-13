@@ -32,6 +32,7 @@ navbar-links:
   Home: ""
   Community:
     - About: "about"
+    - Mission: "mission"
     - RSE Groups: "rse-groups"
     - RSE Map: "map"
     - Steering Committee: "steering-committee"
