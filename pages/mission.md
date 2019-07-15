@@ -8,8 +8,7 @@ permalink: /mission/
 
 
 The US-RSE organization is centered around three main goals.  We aim
-to target our activities and actions to serving these three main
-goals:
+to target our activities and actions to serving these three aspects:
 
 
 
