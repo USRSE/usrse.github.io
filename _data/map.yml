@@ -1,20 +1,3 @@
-- name: "Stanford Research Computing Center"
-  image: https://pbs.twimg.com/profile_images/1058424139080335360/6_aDaOYw_400x400.jpg
-  url: https://srcc.stanford.edu/about/computing-support-research
-  coords: [37.272040, -121.861260]
-  institution: Stanford University
-  type: group
-- name: Data, Analytics & Research Computing at the GSB
-  url: https://sites.google.com/a/stanford.edu/rcpedia/the-team
-  coords: [37.427969, -122.162215]
-  institution: Stanford University
-  type: group
-- name: "Vanessasaurus"
-  image: https://vsoch.github.io/assets/images/avatar.png
-  url: https://vsoch.github.io/
-  coords: [37.424107, -122.166077]
-  institution: Stanford University Research Computing Center
-  type: person
 - name: Georgia Institute of Technology
   url: https://www.ece.gatech.edu/
   coords: [33.776033, -84.398841]
@@ -56,6 +39,23 @@
   coords: [40.349404, -74.657451]
   institution: Princeton University
   type: group
+- name: "Stanford Research Computing Center"
+  image: https://pbs.twimg.com/profile_images/1058424139080335360/6_aDaOYw_400x400.jpg
+  url: https://srcc.stanford.edu/about/computing-support-research
+  coords: [37.272040, -121.861260]
+  institution: Stanford University
+  type: group
+- name: Data, Analytics & Research Computing at the GSB
+  url: https://sites.google.com/a/stanford.edu/rcpedia/the-team
+  coords: [37.427969, -122.162215]
+  institution: Stanford University
+  type: group
+- name: "Vanessasaurus"
+  image: https://vsoch.github.io/assets/images/avatar.png
+  url: https://vsoch.github.io/
+  coords: [37.424107, -122.166077]
+  institution: Stanford University Research Computing Center
+  type: person
 - name: University of Alabama
   url: http://cs.ua.edu/research/
   coords: [33.214024, -87.539139]
