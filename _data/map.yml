@@ -75,4 +75,8 @@
   coords: [37.876959, -122.248936]
   institution: Lawrence Berkeley National Laboratory
   type: person
-
+- name: Research Computing
+  url: https://github.com/UWrc
+  coords: [47.65586,-122.30945]
+  institution: University Washington
+  type: group
