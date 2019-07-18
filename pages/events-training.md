@@ -24,7 +24,7 @@ Gateway Creators](https://sc19.supercomputing.org/presentation/?id=pan109&sess=s
 See the [SC panel schedule](https://sc19.supercomputing.org/program/panels/#schedule) 
 for timing and location. 
 
-<br><br>
+<br>
 
 _More events are in the planning stages -- watch this space..._
 
