@@ -26,10 +26,9 @@ for timing and location.
 
 <br>
 
-_More events are in the planning stages -- watch this space..._
 
-Have an RSE-related event or training?  Have it posted here!  [Join](https://us-rse.org/join/)
-the US-RSE slack channel and contact us!
+_Have an RSE-related event or training?  Have it posted here!  [Join](https://us-rse.org/join/)
+the US-RSE slack channel and contact us!_
 
 
 
