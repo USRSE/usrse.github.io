@@ -4,15 +4,16 @@ title: Events & Training
 permalink: /events-training/
 ---
 
-## Upcoming Events
 
 ### Jul 28 - Aug 1 2019: [PEARC19](https://www.pearc19.pearc.org/)  ###
 Join us at [PEARC19](https://www.pearc19.pearc.org/) for a Birds of a Feather (BOF) 
 session "Building a Community of Research Software Engineers."  Our session is
 scheduled for 5:15 PM on Monday, July 29; see
-the [conference website](https://www.pearc19.pearc.org/) for more details.
+the [conference website](https://www.pearc19.pearc.org/) for more details. 
 
-### November 17-22 2019: [SC19](https://sc19.supercomputing.org/) ###
+<br>
+
+### November 17 - 22 2019: [SC19](https://sc19.supercomputing.org/) ###
 Join us at [SC19](https://sc19.supercomputing.org/) for two RSE related panel sessions:
 1. [Developing and Managing Research Software in Universities and National
 Labs](https://sc19.supercomputing.org/presentation/?id=pan108&sess=sess226) 
@@ -23,13 +24,12 @@ Gateway Creators](https://sc19.supercomputing.org/presentation/?id=pan109&sess=s
 See the [SC panel schedule](https://sc19.supercomputing.org/program/panels/#schedule) 
 for timing and location. 
 
+<br><br>
 
-### More events are in the planning stages -- watch this space...
+_More events are in the planning stages -- watch this space..._
 
-<br> <br> <br> <br>
-
-
-Have an RSE-related event or training?  Have it posted here!  Join the slack channel and contact us!
+Have an RSE-related event or training?  Have it posted here!  [Join](https://us-rse.org/join/)
+the US-RSE slack channel and contact us!
 
 
 
