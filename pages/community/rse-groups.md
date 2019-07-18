@@ -1,15 +1,12 @@
 ---
 layout: page
 title: Organizations with RSEs
-subtitle:
-bigimg: 
+subtitle: The following institutions have joined the US-RSE community
 permalink: /rse-groups/
 ---
 
-**RSEs from the following institutions and organizations have joined the US-RSE community**
 
-
-<table id="t01">
+<table id="t01" style="margin-top:50px">
   <tr>
     <th>Organization</th>
     <th>Group/Department</th> 
