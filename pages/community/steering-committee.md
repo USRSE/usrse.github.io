@@ -2,9 +2,9 @@
 layout: page
 title: Steering Committee
 permalink: /steering-committee/
+subtitle: The US-RSE is community driven and organized.
 ---
 
-The US-RSE is community driven and organized.  
 
 ### Current Steering Committee
 

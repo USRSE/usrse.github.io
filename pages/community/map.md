@@ -1,8 +1,8 @@
 ---
 layout: page
 title: USRSE Map
-description: Where are the RSE groups and RSE blog authors on the map?
 permalink: /map/
+subtitle: Where are the RSEs and groups that participate in US-RSE?
 ---
 
 <style>
@@ -13,8 +13,6 @@ permalink: /map/
    max-width: 1440px;
 }
 </style>
-
-<p style='text-align:center'>Where are the RSEs that participate in this community on the map?</p>
 
 <div id="map-container" style="height:800px"></div>
 

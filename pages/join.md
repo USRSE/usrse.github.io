@@ -2,7 +2,10 @@
 layout: page
 title: Join US-RSE
 permalink: /join/
+subtitle: Why should I join the US-RSE community?
 ---
+
+## Benefits
 
 By joining the community you will:
 
@@ -10,8 +13,10 @@ By joining the community you will:
 * Connect with research software engineers from across the country in many disciplines
 * Help us to raise awareness of the importance of software in research and vital role we play in creating this software
 
+<hr>
+<br>
 
-### Join the discussion
+## Connect
 
 Please consider joining the discussion in
 the [US-RSE Slack Group](https://usrse.slack.com)! You can request access to the slack group by filling out
