@@ -2,7 +2,6 @@
 layout: page
 title: Useful Links
 permalink: /links/
-subtitle: Community links and resources for RSEs
 ---
 
 
