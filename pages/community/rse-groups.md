@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Organizations with RSEs
-subtitle: The following institutions have joined the US-RSE community
 permalink: /rse-groups/
 ---
 
