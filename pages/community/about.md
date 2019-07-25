@@ -1,12 +1,12 @@
 ---
 layout: page
-title: The US-RSE Organization
+title: The US-RSE Association
 subtitle:
 bigimg:
 permalink: /about/
 ---
 
-## The United States (US) Research Software Engineering Community
+## The United States (US) Research Software Engineer Association
 
 The increasing use of digital technologies across research communities has gone hand
 in hand with a strong growth and reliance on software written or customized to solve
