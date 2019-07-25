@@ -6,7 +6,7 @@ posted_by: Ian Cosden
 ---
 
 
-The US-RSE organization is centered around three main goals.  Moving
+The US-RSE Association is centered around three main goals.  Moving
 forward we aim to target our activities and actions to serving these
 three main goals. Over time we plan to revist and refine these goals as
 the needs and desires of the community change.

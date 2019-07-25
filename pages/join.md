@@ -2,7 +2,7 @@
 layout: page
 title: Join US-RSE
 permalink: /join/
-subtitle: Why should I join the US-RSE community?
+subtitle: Why should I join the US-RSE Association?
 ---
 
 ## Benefits

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The US-RSE Organization
+title: The US-RSE Association
 subtitle:
 bigimg:
 permalink: /about/
