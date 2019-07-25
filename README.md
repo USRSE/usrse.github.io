@@ -1,4 +1,4 @@
-# The United States (US) Research Software Engineer Community
+# The United States (US) Research Software Engineer Association
 
 [![Build Status](https://travis-ci.org/USRSE/usrse.github.io.svg?branch=master)](https://travis-ci.org/USRSE/usrse.github.io)
 

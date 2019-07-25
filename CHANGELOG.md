@@ -3,6 +3,7 @@
 This file originally listed all non-trivial changes to Beautiful Jekyll, and
 now serves to list changes for the usrse site.
 
+**2019-07-25** Adjusting name to US Research Software Engineer Association (@vsoch)
 **2019-06-13** Removing Gemfile.lock (@vsoch)
 **2019-06-11** Adding lunr.js search to site (@vsoch)
 **2019-05-18** Reorganizing pages, adding testing, jobs listing by @vsoch
