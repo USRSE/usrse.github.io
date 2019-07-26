@@ -7,6 +7,11 @@
   coords: [35.838420, -106.314760]
   type: person
   institution: Los Alamos National Laboratory
+- name: FAS Research Computing
+  url: https://www.rc.fas.harvard.edu
+  coords: [42.380026, -71.114599]
+  type: group
+  institution: Harvard University
 - name: Massachusetts Institute of Technology
   image: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/1280px-MIT_logo.svg.png
   url: http://www.mit.edu/
