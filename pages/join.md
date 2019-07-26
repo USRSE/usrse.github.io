@@ -12,6 +12,6 @@ By joining the community you will:
 * Help us to raise awareness of the importance of software in research and vital role we play in creating this software
 
 <div class="get-started-wrap">
-    <a class="btn btn-success btn-lg get-started-btn" href="https://forms.gle/CRsH7sKAk3UvZJfB9">Join US-RSE!</a>
+    <a class="btn btn-success btn-lg get-started-btn" href="https://forms.gle/CRsH7sKAk3UvZJfB9" target="_blank" style="padding:40px;">Join US-RSE!</a>
 </div>
 
