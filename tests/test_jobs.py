@@ -45,7 +45,7 @@ class TestJobs(unittest.TestCase):
                 self.assertTrue(required in entry)
 
             # Test that url is 200
-            response = requests.head(entry['url'])
+            response = requests.head(entry['url'], headers={"User-Agent": "us-rse.org"})
             self.assertTrue(response.status_code in [200, 300])
  
             # Location and name must not be null
