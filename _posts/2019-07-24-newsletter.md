@@ -2,6 +2,8 @@
 layout: post
 title: July 2019 US-RSE Newsletter
 subtitle: US-RSE's First Newsletter
+category: newsletter
+tags: [newsletter, twitter, governance, membership]
 ---
 
 
@@ -9,17 +11,17 @@ Welcome to the first US-RSE newsletter. In this bi-monthly newsletter,
 we will share recent, current and planned activities of
 US-RSE. Newsletters will be available on our website besides the
 growing resources and information on US-RSE. A sign-up option for our
-newsletter is available here.
+newsletter is available [here](https://us-rse.org/join/).
 
-This newsletter contains
-Research Software Engineers (RSEs)
-What is the US-RSE?
-Upcoming meetings
-@us_rse Twitter comes alive
-US-RSE Community Building Workshops
-Community call summary
-Governance document development
-Membership
+This newsletter contains:
+- Research Software Engineers (RSEs)
+- What is the US-RSE?
+- Upcoming meetings
+- @us_rse Twitter comes alive
+- US-RSE Community Building Workshops
+- Community call summary
+- Governance document development
+- Membership
 
 ## Research Software Engineers (RSEs)
 
@@ -30,6 +32,7 @@ time programming, full-time software engineers writing code to solve
 research problems, and those somewhere in-between. We aspire to apply
 the skills and practices of software development to research to create
 more robust, manageable, and sustainable research software.
+
 
 ## What is the US-RSE? 
 
@@ -116,6 +119,7 @@ thoughts on the key aspects of US-RSE as it develops. Topics included:
    [https://github.com/USRSE/starter-pack](https://github.com/USRSE/starter-pack))
    to help anyone interested in forming a chapter. The general sense
    was that a loose federation model was appropriate at this stage.
+
 
 ## Governance document development  
 
