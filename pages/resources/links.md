@@ -25,4 +25,6 @@ _These resources can be helpful to establish RSE positions, groups, or further u
  - [How to start an RSE Group](https://rse.ac.uk/resources/how-to-start-an-rse-group/) as a leader
  - [RSE Starter Pack](https://us-rse.org/starter-pack/#/) getting started to create an RSE community as an RSE
  - [The Story of the Research Software Engineer](https://www.youtube.com/watch?v=trAfA9VWLTQ) video introduction to Research Software Engineering
+ - [US-RSE Logos](https://github.com/usrse/logo) repository
+
 
