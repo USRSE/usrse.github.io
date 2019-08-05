@@ -39,6 +39,7 @@ test_map: &test_map
      cd ~/repo/tests
      $HOME/conda/bin/python -m unittest test_mapdata
      $HOME/conda/bin/python -m unittest test_jobs
+     $HOME/conda/bin/python -m unittest test_events
 
 deploy: &deploy
   name: Deploy back to GitHub pages, only in the case that CIRCLECI_TRIGGER is found

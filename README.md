@@ -63,6 +63,25 @@ We will test that all fields are defined, the url exists, and that the "expires"
 as a `datetime.date` object in Python. If you copy the format above, you should
 be ok.
 
+
+### 3. How do I add an event?
+
+You can add an event or training to the site via the [_data/events.yml](_data/events.yml)
+file. Here is an example:
+
+```yaml
+- name: "PEARC19"
+  location: Chicago, IL
+  url: https://www.pearc19.pearc.org/
+  expires: 2019-08-01
+  description: Join us at PEARC19 (https://www.pearc19.pearc.org/) for a Birds of a Feather (BOF) session "Building a Community of Research Software Engineers."  Our session is scheduled for 5:15 PM on Monday, July 29.
+```
+
+The name will be shown at the top, and will link to the url that you specify. The location
+and url will also be rendered on the page. The description can be any length of markdown and html
+that you need, and it's suggested to preview the site to make sure it looks as you expect.
+This data structure will also be tested for correct date formatting, and presence of all fields.
+
 ## Tests
 
 These tests are also run during the continuous integration to catch any errors,
