@@ -5,6 +5,8 @@ permalink: /join/
 subtitle: Why should I join the US-RSE Association?
 ---
 
+{% include member-graph.html %}
+
 By joining the community you will:
 
 * Receive announcements of events organized by and for RSEs
