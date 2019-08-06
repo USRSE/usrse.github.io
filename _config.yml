@@ -6,8 +6,8 @@
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
 url: "https://us-rse.org"
 baseurl: ""
-title-img: /assets/img/logo_1200px.png
-twitter-img: https://us-rse.org/assets/img/logo_1200px.png
+title-img: /assets/img/rse_logo_background.svg
+twitter-img: https://us-rse.org/assets/img/rse_logo_background.svg
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
