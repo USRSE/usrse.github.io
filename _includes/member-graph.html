@@ -1,11 +1,21 @@
+<style>
+canvas {
+  cursor: pointer;
+}
+</style>
+
 <div class="container-fluid" style="padding:50px">
     <div class="row" id="app">
         <div class="col-md-12">
-            <canvas id="rse-generator" height="200px" style="background-color:white"></canvas>
+            <canvas id="membership-graph" height="200px" style="background-color:white"></canvas>
+        </div>
+        <div class="form-group">
+            <button v-on:click="saveImage()" style="float:right" class="btn btn-primary">Save Image</button>
         </div>
     </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/g/filesaver.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 <script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
@@ -46,10 +56,20 @@ new Vue ({
         return color;
     },
 
+    saveImage: function() {
+       var canvas = document.getElementById("membership-graph");
+       canvas.toBlob(function(blob) {
+          var d = new Date();
+          var month = d.getMonth();
+          var year = d.getFullYear();
+          saveAs(blob, month + "-" + year + "-us-rse-membership.png");
+       });
+    },
+
     render: function() {
       if (this.chart)
         this.chart.destroy()
-      var canvas = document.getElementById("rse-generator");
+      var canvas = document.getElementById("membership-graph");
       var ctx = canvas.getContext('2d');
 
       ctx.fillStyle = "#ffffff";
