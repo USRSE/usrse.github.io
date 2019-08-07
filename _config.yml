@@ -69,6 +69,23 @@ navbar-img: "../img/rse-transport-light.png"
 # footer-img: "../img/rse-transport-light.png"
 # page-img: "/img/bgimage.png"
 
+# --- Events --- #
+# Events are displayed via a collection to allow for single page generation.
+
+# Collections
+collections:
+  events:
+    output: true
+    permalink: /:collection/:path
+
+# Defaults
+defaults:
+  - scope:
+      path: "_events"
+      type: "events"
+    values:
+      layout: event
+
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
