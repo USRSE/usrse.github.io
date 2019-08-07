@@ -63,6 +63,35 @@ We will test that all fields are defined, the url exists, and that the "expires"
 as a `datetime.date` object in Python. If you copy the format above, you should
 be ok.
 
+
+### 3. How do I add an event?
+
+You can add an event or training to the site by adding a markdown file in the [_events](_events)
+folder, organized by year. Here is an example of a file in `_events/2019` for PEARC19:
+
+```markdown
+---
+title: PEARC19
+location: Chicago, IL
+url: https://www.pearc19.pearc.org/
+expires: 2019-08-01
+event_date: "November 17–22, 2019"
+layout: event
+---
+
+Join us at [PEARC19](https://www.pearc19.pearc.org/) for a Birds of a Feather (BOF) session "Building a Community of Research Software Engineers."  Our session is scheduled for 5:15 PM on Monday, July 29.
+```
+
+The top section is frontend matter that must include the title, location, url, layout as "event" 
+event date, and an expiration date. Notice that the event date is a string that doesn't get parsed,
+while the expires must be a date in the format shown.
+The bottom section (the content) you can write any amount and length
+of markdown that is desired. When the event is active (before expiration) the full content will
+be shown on the "Events and Training" page. Once it expires, it will move into the events archive.
+In both cases, clicking on the Event will take the viewer to it's page, and they can
+view additional content and the url provided. In the case of the archive, the bulk of content
+is only viewable on this page.
+
 ## Tests
 
 These tests are also run during the continuous integration to catch any errors,
