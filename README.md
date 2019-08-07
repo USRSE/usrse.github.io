@@ -75,6 +75,7 @@ title: PEARC19
 location: Chicago, IL
 url: https://www.pearc19.pearc.org/
 expires: 2019-08-01
+event_date: "November 17–22, 2019"
 layout: event
 ---
 
@@ -82,7 +83,9 @@ Join us at [PEARC19](https://www.pearc19.pearc.org/) for a Birds of a Feather (B
 ```
 
 The top section is frontend matter that must include the title, location, url, layout as "event" 
-and an expiration date. The bottom section (the content) you can write any amount and length
+event date, and an expiration date. Notice that the event date is a string that doesn't get parsed,
+while the expires must be a date in the format shown.
+The bottom section (the content) you can write any amount and length
 of markdown that is desired. When the event is active (before expiration) the full content will
 be shown on the "Events and Training" page. Once it expires, it will move into the events archive.
 In both cases, clicking on the Event will take the viewer to it's page, and they can

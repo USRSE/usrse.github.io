@@ -3,6 +3,7 @@ title: PEARC19
 location: Chicago, IL
 url: https://www.pearc19.pearc.org/
 expires: 2019-08-01
+event_date: "July 28 - August 1, 2019"
 layout: event
 ---
 
