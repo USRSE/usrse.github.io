@@ -44,9 +44,9 @@
   coords: [40.349404, -74.657451]
   institution: Princeton University
   type: group
-- name: "Stanford Research Computing Center"
-  image: https://pbs.twimg.com/profile_images/1058424139080335360/6_aDaOYw_400x400.jpg
-  url: https://srcc.stanford.edu/about/computing-support-research
+- name: "Stanford RSE Services"
+  image: https://raw.githubusercontent.com/stanford-rc/rse-services/master/assets/img/logo/logo-square.png
+  url: https://stanford-rc.github.io/rse-services/
   coords: [37.272040, -121.861260]
   institution: Stanford University
   type: group
