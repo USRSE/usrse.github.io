@@ -20,7 +20,7 @@ subtitle: The US-RSE is community driven and organized.
 * Jordan Perr-Sauer, National Renewable Energy Laboratory
 
 <a href="https://docs.google.com/document/d/124vHK6f2gb3XKuTYhzBQbCPOKvkgwW5Xnh7nBAKEKho/edit?usp=sharing" target="_blank">
-<button class="btn btn-primary"><i style="margin-right:10px" class="fa fa-file-text-o"></i> Agendas</button></a>
+<button class="btn btn-primary"><i style="margin-right:10px" class="fa fa-file-text-o"></i> Meeting Minutes</button></a>
 
 <hr>
 
