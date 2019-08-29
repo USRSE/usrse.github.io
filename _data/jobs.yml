@@ -1,12 +1,40 @@
 - name: "Front-End Software Developer at Harvard University"
   location: Cambridge, MA
   url: https://www.linkedin.com/jobs/view/front-end-software-developer-at-harvard-university-1302590987
-  expires: 2019-09-01
+  expires: 2019-10-01
 - name: "Research Software Engineer"
   location: Princeton, NJ
   url: https://main-princeton.icims.com/jobs/10347/research-software-engineer/job
-  expires: 2019-09-01
+  expires: 2019-10-01
 - name: "Software Consultants"
   location: University Park Campus
   url: https://psu.jobs/job/88890
   expires: 2019-09-01
+- name: "Research Programmer"
+  location: University of Arizona
+  url: https://uacareers.com/postings/40792
+  expires: 2019-10-01
+- name: "Software and Collaboration Support team member (Research Scientist)"
+  location: Georgia Tech
+  url: https://pace.gatech.edu/software-and-collaboration-support-team-member-research-scientist
+  expires: 2019-10-01
+- name: "Research Software Engineer / Application Support Engineer"
+  location: Indiana University Bloomington 
+  url: https://brainlife.io/docs/careers/jobs/
+  expires: 2019-10-01
+- name: "Research Software Engineer / UI Engineer"
+  location: Indiana University Bloomington
+  url: https://brainlife.io/docs/careers/jobs/
+  expires: 2019-10-01
+- name: "Community Developer / Outreach Coordinator"
+  location: Indiana University Bloomington
+  url: https://brainlife.io/docs/careers/jobs/
+  expires: 2019-10-01
+- name: "DevOps / Software Engineers"
+  location: Indiana University Bloomington
+  url: https://brainlife.io/docs/careers/jobs/
+  expires: 2019-10-01
+- name: "Cloud and Cluster Administrator"
+  location: Indiana University Bloomington
+  url: https://brainlife.io/docs/careers/jobs/
+  expires: 2019-10-01
