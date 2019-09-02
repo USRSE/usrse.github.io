@@ -2,8 +2,8 @@ name: Update Membership Counts
 
 on:
 
-  # Only here for development
   push:
+    # Only here for development
     paths:
       - "*"
     
