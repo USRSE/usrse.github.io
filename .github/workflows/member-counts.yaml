@@ -34,7 +34,7 @@ jobs:
         #git remote set-url origin git@github.com:${GITHUB_ACTOR}/usrse.github.io.git
         git commit -m 'Automated deployment to update Member Counts' --allow-empty
         #git push origin update/member-count-$(date '+%Y-%m-%d')
-        git push --quiet --set-upstream origin-pr update/member-count-$(date '+%Y-%m-%d')
+        git push --set-upstream origin-pr update/member-count-$(date '+%Y-%m-%d')
 
     - name: Open pull request
       uses: "vsoch/pull-request-action@master"
