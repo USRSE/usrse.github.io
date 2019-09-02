@@ -23,6 +23,8 @@ jobs:
       env:
         GITHUB_TOKEN: "{{ secrets.GITHUB_TOKEN }}"
       run: |
+        echo "GitHub Actor: ${GITHUB_ACTOR}"
+        echo "GitHub Actor: ${{GITHUB_ACTOR}}"
         git branch
         git checkout -b update/member-count-$(date '+%Y-%m-%d')
         git config user.name "${GITHUB_ACTOR}"
