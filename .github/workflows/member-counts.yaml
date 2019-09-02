@@ -22,6 +22,7 @@ jobs:
     - name: Checkout New Branch
       env:
         GITHUB_TOKEN: "{{ secrets.GITHUB_TOKEN }}"
+        GITHUB_ACTOR: "{{ secrets.GITHUB_ACTOR }}"
       run: |
         echo "GitHub Actor: ${GITHUB_ACTOR}"
         echo "GitHub Actor: ${{GITHUB_ACTOR}}"
