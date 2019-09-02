@@ -2,10 +2,6 @@ name: Update Membership Counts
 
 on:
   push:
-    # Only here for development
-    paths:
-      - "*"
-    
   schedule:
     # Run on the first of every month
     - cron: 0 0 1 * *
