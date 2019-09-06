@@ -4,8 +4,10 @@ on:
 
   # Only here for development
   push:
+    branches:
+      - test/github-action
     paths:
-      - "*"
+      - '.github/workflows/member-counts.yaml'
     
   schedule:
     # Run on the first of every month
