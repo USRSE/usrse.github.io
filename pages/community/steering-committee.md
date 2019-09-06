@@ -19,7 +19,7 @@ subtitle: The US-RSE is community driven and organized.
 * Lance Parsons, Princeton University
 * Jordan Perr-Sauer, National Renewable Energy Laboratory
 
-<a href="https://docs.google.com/document/d/124vHK6f2gb3XKuTYhzBQbCPOKvkgwW5Xnh7nBAKEKho/edit?usp=sharing" target="_blank">
+<a href="https://drive.google.com/open?id=1IKvT0xIkBTqHpBgUUaANpjFCdMki3R4J" target="_blank">
 <button class="btn btn-primary"><i style="margin-right:10px" class="fa fa-file-text-o"></i> Meeting Minutes</button></a>
 
 <hr>
