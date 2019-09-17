@@ -118,7 +118,7 @@
   {% if page.share-img %}
   <meta name="twitter:image" content="{{ page.share-img }}" />
   {% elsif site.twitter-img %}
-  <meta name="twitter:image" content="{{site.baseurl}}{{ site.twitter-img }}" />
+  <meta name="twitter:image" content="{{site.url}}{{site.baseurl}}{{ site.twitter-img }}" />
   {% endif %}
 
   {% if site.matomo %}
