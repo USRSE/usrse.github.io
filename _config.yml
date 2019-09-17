@@ -5,9 +5,9 @@
 # DO NOT CHANGE THE LINE NUMBERS HERE without changing .circleci/circle_urls.sh
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
 url: "https://us-rse.org"
-baseurl: ""
-title-img: /assets/img/logo_600px.png
-twitter-img: https://us-rse.org/assets/img/logo_600px.png
+baseurl: ""  # for testing, also check .circleci/circle_urls.sh 
+title-img: /assets/img/logo_600px.png  # baseurl will be prepended
+twitter-img: /assets/img/logo_600px.png  # url + baseurl will be prepended
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
