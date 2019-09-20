@@ -24,3 +24,5 @@ subtitle: The US-RSE Association is community driven and organized.
 ### Want to get involved?
 
 Join the discussion on [slack](https://usrse.slack.com/).
+
+You can reach the Steering Committee at [contact@us-rse.org](mailto:contact@us-rse.org).
