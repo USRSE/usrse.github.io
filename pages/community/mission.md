@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The US-RSE Mission
+title: The US-RSE Association Mission
 subtitle: Goals and Aims of the US-RSE Association
 bigimg:
 permalink: /mission/
