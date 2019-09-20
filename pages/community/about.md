@@ -35,3 +35,5 @@ together the community of people writing and contributing to research software a
 the national and international level. In the US this encompasses
 universities, laboratories, knowledge institutes, companies and other
 enterprises. This site is part of that effort.
+
+Contact the US-RSE Association via [contact@us-rse.org](mailto:contact@us-rse.org).
