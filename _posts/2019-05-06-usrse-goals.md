@@ -3,6 +3,7 @@ layout: post
 title: US-RSE Goals 
 subtitle: US-RSE Steering Committee sets initial goals
 posted_by: Ian Cosden
+tags: [governance]
 ---
 
 

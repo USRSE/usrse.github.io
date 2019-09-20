@@ -1,0 +1,103 @@
+<div class="container-fluid" style="padding:50px">
+    <div class="row" id="app">
+        <div class="col-md-12">
+            <canvas id="membership-graph" height="200px" style="background-color:white"></canvas>
+        </div>
+        <div class="form-group">
+            <button v-on:click="saveImage()" style="float:right" class="btn btn-primary">Save Image</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/g/filesaver.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+<script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
+<script>
+
+// Ensure the saved image has a white background
+var backgroundColor = 'white';
+Chart.plugins.register({
+    beforeDraw: function(c) {
+        var ctx = c.chart.ctx;
+        ctx.fillStyle = backgroundColor;
+        ctx.fillRect(0, 0, c.chart.width, c.chart.height);
+    }
+});
+
+new Vue ({
+  el: '#app',
+  data: {
+    labels: "Software Engineering, Open Source Development, User Support, Research, Documentation",
+    chart: undefined,
+    title: "Membership in the US Research Software Engineer Association",
+  },
+  mounted: function() {
+    this.render();
+  },
+  methods: {
+    clone: function(obj) {
+      return JSON.parse(JSON.stringify(obj));
+    },
+
+    // Helper functions
+    getRandomColor: function() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    },
+
+    saveImage: function() {
+       var canvas = document.getElementById("membership-graph");
+       canvas.toBlob(function(blob) {
+          var d = new Date();
+          var month = d.getMonth();
+          var year = d.getFullYear();
+          saveAs(blob, month + "-" + year + "-us-rse-membership.png");
+       });
+    },
+
+    render: function() {
+      if (this.chart)
+        this.chart.destroy()
+      var canvas = document.getElementById("membership-graph");
+      var ctx = canvas.getContext('2d');
+
+      ctx.fillStyle = "#ffffff";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Generate dataset and labels
+      var labels = [{% for entry in site.data.memberCounts %}"{{ entry.Date }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %}]
+      var dataset = [{% for entry in site.data.memberCounts %}{{ entry.Total }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}]
+
+      var datasets = [{
+          label: "Total Members",
+          data: dataset,
+          borderColor: [this.getRandomColor()]
+      }]
+
+      this.chart = new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: labels,
+              datasets: datasets
+          },
+          options: {
+            title: {
+                padding: 30,
+                display: true,
+                text: this.title,
+            },
+            legend: {
+               display: true,
+               position: "bottom"
+            }
+          }
+      });
+    }
+  }
+})
+</script>

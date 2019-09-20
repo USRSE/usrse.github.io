@@ -40,6 +40,8 @@ navbar-links:
     - Community Blogs: "https://usrse.github.io/blog"
     - Events & Training: "events-training"
     - Links: "links"
+    - Newsletters: "newsletters"
+    - News Archive: "archive"
   Get involved:
     - Join US-RSE: "join"
   Careers:
@@ -66,6 +68,23 @@ footer-link-col: "#404040"
 navbar-img: "../img/rse-transport-light.png"
 # footer-img: "../img/rse-transport-light.png"
 # page-img: "/img/bgimage.png"
+
+# --- Events --- #
+# Events are displayed via a collection to allow for single page generation.
+
+# Collections
+collections:
+  events:
+    output: true
+    permalink: /:collection/:path
+
+# Defaults
+defaults:
+  - scope:
+      path: "_events"
+      type: "events"
+    values:
+      layout: event
 
 # --- Footer options --- #
 
