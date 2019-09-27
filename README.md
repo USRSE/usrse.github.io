@@ -192,7 +192,6 @@ For GitHub CI, there are currently no secrets or credentials, and no setup is re
 actions enabled for the repository and placing the file under `.github/workflows`
 enables it.
 
-
 ### Frequently Asked Questions
 
 > Why do we use different services?
