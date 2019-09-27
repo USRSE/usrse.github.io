@@ -36,6 +36,7 @@ navbar-links:
     - RSE Groups: "rse-groups"
     - RSE Map: "map"
     - Steering Committee: "steering-committee"
+    - Code of Conduct: "code-of-conduct"
   Resources:
     - Community Blogs: "https://usrse.github.io/blog"
     - Events & Training: "events-training"
