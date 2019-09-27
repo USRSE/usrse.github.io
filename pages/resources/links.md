@@ -14,7 +14,6 @@ _These resources can help to improve your knowledge about software engineering, 
  - [Ask Cyberinfrastructure](https://ask.cyberinfrastructure.org/) Community forum for Q&A about software, infrastructure, and related topics. 
  - [Ideas Productivity](https://ideas-productivity.org/): Interoperable Design of Extreme-scale Application Software, including [guides](https://ideas-productivity.org/resources/howtos/) and [webinars](https://ideas-productivity.org/events/hpc-best-practices-webinars/)
  - [Software Engineering for Science](https://se4science.org/)
- - [Computational Science Stack Exchange](https://scicomp.stackexchange.com/)
  - [Software Engineering Body of Knowledge](https://www.computer.org/education/bodies-of-knowledge/software-engineering)
 
 
