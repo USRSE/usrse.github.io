@@ -33,7 +33,7 @@ This code is not exhaustive or complete. It serves to distill our understanding 
 try to follow this code in spirit as much as in letter, to create a friendly and productive environment that enriches the US-RSE
 community.
 
-We require all US-RSE Association sponsored and affiliated projects, activities, and events, to adopt a code of conduct that encourages a productive, respectful environment for all contributors and community members. The US-RSE Association Code of Conduct follows below.
+We require all US-RSE Association sponsored and affiliated projects, activities, and events, to adopt a code of conduct that encourages a productive, respectful environment for all contributors and community members.
 
 If a person is found to violate the US-RSE Association Code of Conduct, the Steering Committee may take any action they deem appropriate
 to resolve the situation, including warning the person in question, removing them from a specific activity, banning them from further
