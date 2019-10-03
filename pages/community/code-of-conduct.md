@@ -89,7 +89,7 @@ and are committed to preserving and maintaining the welcoming nature of our comm
 
 All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the
 circumstances.
-All reports will be kept confidential, with the exception of cases where the steering committee determines it prudent to share the report with law enforcement.
+All reports will be kept confidential, with the exception of cases where the Steering Committee determines the report should shared with law enforcement.
 In those cases, the report will be shared with the proper legal authorities.
 
 In some cases the US-RSE Leadership may determine that a public statement will need to be made. If that’s the case, the identities of
