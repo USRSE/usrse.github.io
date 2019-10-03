@@ -73,7 +73,6 @@ We will not accept harassment or other exclusionary behaviors, such as:
 of experience, gender, gender identity and expression, sexual orientation, disability, neurotype, personal appearance, body size, race,
 ethnicity, age, religion, or nationality
 * Public or private harassment
-* Sharing private content, such as emails sent privately or non-publicly, or direct message history, without the sender’s consent
 * Continuing to initiate interaction (such as photography, recording, messaging, or conversation) with someone after being asked to stop
 * Sustained disruption of talks, events, or communications, such as heckling of a speaker
 * Publishing (or threatening to post) other people’s personally identifying information (“doxing”), such as physical or electronic
@@ -89,7 +88,9 @@ conduct violations reduce the value of the community for everyone. The US-RSE As
 and are committed to preserving and maintaining the welcoming nature of our community.
 
 All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the
-circumstances. All reports will be kept confidential.
+circumstances.
+All reports will be kept confidential, with the exception of cases where the steering committee determines it prudent to share the report with law enforcement.
+In those cases, the report will be shared with the proper legal authorities.
 
 In some cases the US-RSE Leadership may determine that a public statement will need to be made. If that’s the case, the identities of
 all involved parties and reporters will remain confidential unless those individuals instruct us otherwise.
