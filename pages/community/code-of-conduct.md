@@ -47,7 +47,7 @@ All communication should be appropriate for a professional audience including pe
 kind and courteous. There’s never a need to be mean, rude, or disrespectful. Thank you for helping make this a welcoming, friendly
 community for all.
 
-We, the members of US-RSE Association, strive to:
+We, the members of the US-RSE Association, strive to:
 
 * Be empathetic, respectful, welcoming, friendly, and patient. We remember that every US-RSE event, project, and program is crafted by
 human beings who deserve to be treated with kindness and empathy. We work together to resolve conflict and assume good intentions. We
@@ -59,7 +59,7 @@ people feel uncomfortable or threatened is not a productive one.
 <br>
 
 ## Unacceptable Behavior
-We, the members of US-RSE Association, are committed to making participation in this community a harassment-free experience.
+We, the members of the US-RSE Association, are committed to making participation in this community a harassment-free experience.
 
 We will not accept harassment or other exclusionary behaviors, such as:
 * The use of sexualized language or imagery  
@@ -85,7 +85,7 @@ addresses, without explicit permission
 
 ## Reporting Guidelines
 If you believe someone is violating the code of conduct, please report this in a timely manner (see How to Submit a Report). Code of
-conduct violations reduce the value of the community for everyone. US-RSE Association members take reports of misconduct very seriously
+conduct violations reduce the value of the community for everyone. The US-RSE Association members take reports of misconduct very seriously
 and are committed to preserving and maintaining the welcoming nature of our community.
 
 All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the
@@ -118,5 +118,5 @@ the [SciPy Code of Conduct](https://github.com/jupyter/governance/blob/master/co
 the [Carpentries Code of Conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html#enforcement-manual),
 and the [NeurIPS Code of Conduct](https://nips.cc/public/CodeOfConduct).
 
-US-RSE Code of Conduct is licensed under a [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/).
+The US-RSE Association Code of Conduct is licensed under a [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/).
 
