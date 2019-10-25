@@ -1,9 +1,9 @@
 ---
 layout: post
-title: October 2019 US-RSE Newsletter
-subtitle: US-RSE Newsletter
+title: US-RSE Newsletter
+subtitle: October 2019 Newsletter
 category: newsletter
-tags: [newsletter, PEARC19, Learning Lab, Code of Conduct, SC19, stories]
+tags: [newsletter, PEARC19, Learning-Lab, Code-of-Conduct, SC19, stories]
 ---
 
 
@@ -45,7 +45,7 @@ Results from PEARC19 interactive audience question “what is missing in the US-
 
 [Gateways 2019](https://sciencegateways.org/web/gateways2019) took
 place in September in San Diego and the conference offered Learning
-Labs - conceptual a mixture of BoFs and break-out sessions - to spawn
+Labs - conceptually a mixture of BoFs and break-out sessions - to spawn
 discussions about topics suggested by participants. Sandra Gesing
 suggested a learning lab about US-RSE and the lively discussion was
 mainly around how US-RSE can support career paths in the US and help
