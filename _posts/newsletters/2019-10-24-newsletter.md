@@ -113,7 +113,7 @@ Cosden from Princeton University, the [second
 episode](https://us-rse.org/rse-stories/2019/chris-dembia/) featured
 Chris Dembia from Stanford University, and additional episodes are in
 production.  If you are interested in participating as a guest, reach
-out to Vanessa (@v) on the US-RSE Slack
+out to Vanessa (@v) on the [US-RSE Slack]
 Workspace(https://usrse.slack.com).
 
 ## Interesting Reads 
