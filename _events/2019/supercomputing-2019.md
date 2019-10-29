@@ -14,3 +14,5 @@ Join us at SC19 for two RSE related panel sessions:
  2. [Sustainability of HPC Research Computing - The Importance of Collaborations  for Fostering Career Paths for Facilitators, Research Software Engineers, and Gateway Creators](https://sc19.supercomputing.org/presentation/?id=pan109&sess=sess227)
 
 See the [SC panel schedule](https://sc19.supercomputing.org/program/panels/#schedule) for timing and location.
+
+Also see the [US-RSE blog](https://us-rse.org/2019-10-04-SC19) for information on other SC19 events of interest to RSEs.
