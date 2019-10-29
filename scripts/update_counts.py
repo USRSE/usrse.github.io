@@ -60,7 +60,7 @@ def main():
 
     # By July 2021 we'll need to drag the equation to extend it, alert user
     count = None
-    target = "%s, %s" %(target_month, year)
+    target = "%s %s" %(target_month, year)
     for line in csv.reader(lines, quotechar='"', delimiter=',',
                            quoting=csv.QUOTE_ALL, skipinitialspace=True):
         if target == line[0]:
@@ -86,7 +86,7 @@ def main():
         sys.exit(0)
 
     # Add the new count
-    data.append([target, count, total])
+    data.append(['%s, %s' % (target_month, year), count, total])
 
     # Write the new file
     with open(tmpfile, 'w', newline='') as outfile:
