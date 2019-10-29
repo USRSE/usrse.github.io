@@ -1,9 +1,9 @@
-name: Open Pull Request when Membership Counts Branch Created
+name: Open PR when Membership Branch Created
 
 on:
-  push:
-    branches-ignore:
-      - master
+  create:
+    branches:
+      - update/member-count*
 
 jobs:
   auto-pull-request:
