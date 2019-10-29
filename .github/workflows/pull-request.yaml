@@ -1,9 +1,6 @@
 name: Open PR when Membership Branch Created
 
-on:
-  create:
-    branches:
-      - update/member-count*
+on: create
 
 jobs:
   auto-pull-request:
