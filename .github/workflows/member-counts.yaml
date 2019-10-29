@@ -23,21 +23,23 @@ jobs:
         python3 scripts/update_counts.py
     - name: Checkout New Branch
       env:
-        GITHUB_TOKEN: "{{ secrets.GITHUB_TOKEN }}"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         echo "GitHub Actor: ${GITHUB_ACTOR}"
         git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
         git branch
         git checkout -b update/member-count-$(date '+%Y-%m-%d')
         git branch
-        git config user.name "${GITHUB_ACTOR}"
-        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@users.noreply.github.com"
+
         git add _data/memberCounts.csv
 
         #git remote set-url origin git@github.com:${GITHUB_ACTOR}/usrse.github.io.git
         git commit -m "Automated deployment to update Member Counts $(date '+%Y-%m-%d')" --allow-empty
         #git push origin update/member-count-$(date '+%Y-%m-%d')
-        GIT_TRACE=1 git push origin update/member-count-$(date '+%Y-%m-%d') --verbose
+        git push origin update/member-count-$(date '+%Y-%m-%d')
 
     - name: Open pull request
       uses: "vsoch/pull-request-action@master"
