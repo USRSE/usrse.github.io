@@ -2,8 +2,8 @@ name: Open Pull Request when Membership Counts Branch Created
 
 on:
   push:
-    branches:
-      - "update/member-count*"
+    branches-ignore:
+      - master
 
 jobs:
   auto-pull-request:
