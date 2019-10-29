@@ -182,12 +182,15 @@ TravisCI. There are no secrets or credentials for the Travis build.
 
 ### GitHub CI
 
-GitHub CI is relatively new, and used sparingly. The only current action is to
-greet first time users (for pull requests and issues) determined by the [greetings.yml](.github/workflows/greetings.yml)
-workflow. An under development action (currently not enabled) is [member-counts.yaml](.github/workflows/member-counts.yaml)
-which will (when it's finished) be run automatically at the start of a new month to open up a new pull request
-with an update to the data file to generate the members plot.
+### Greetings
+This simple greetings action greets first time users (for pull requests and issues).
+The logic of this is determined by the [greetings.yml](.github/workflows/greetings.yml)
+workflow. 
 
+#### Member Counts
+Two scripts help to create a branch with an updated [member counts file](_data/memberCounts.csv). The workflow [member-counts.yaml](.github/workflows/member-counts.yaml) will generate an updated
+file and commit and push to a new branch, and [pull-request.yaml](.github/workflows/pull-request.yaml)
+will detect the branch is pushed and open a pull request to update the repository.
 For GitHub CI, there are currently no secrets or credentials, and no setup is required - having 
 actions enabled for the repository and placing the file under `.github/workflows`
 enables it.

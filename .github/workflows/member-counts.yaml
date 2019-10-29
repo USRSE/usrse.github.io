@@ -40,10 +40,3 @@ jobs:
         git commit -m "Automated deployment to update Member Counts $(date '+%Y-%m-%d')" --allow-empty
         #git push origin update/member-count-$(date '+%Y-%m-%d')
         git push origin update/member-count-$(date '+%Y-%m-%d')
-
-    - name: Open pull request
-      uses: "vsoch/pull-request-action@master"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH_PREFIX: "update/member-count"
-        PULL_REQUEST_BRANCH: "master"
