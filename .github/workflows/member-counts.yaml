@@ -1,9 +1,6 @@
 name: Update Membership Counts
 
 on:
-  push:
-    branches:
-      - test/github-action
   schedule:
     # Run on the first of every month
     - cron: 0 0 1 * *
