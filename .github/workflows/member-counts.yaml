@@ -42,4 +42,5 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH_AGAINST: "master"
       run: |
+          export BRANCH_FROM="update/member-count-$(date '+%Y-%m-%d')"
           /bin/bash scripts/pull-request.sh
