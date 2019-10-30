@@ -35,8 +35,14 @@ jobs:
         git config --global user.email "github-actions@users.noreply.github.com"
 
         git add _data/memberCounts.csv
-
-        #git remote set-url origin git@github.com:${GITHUB_ACTOR}/usrse.github.io.git
         git commit -m "Automated deployment to update Member Counts $(date '+%Y-%m-%d')" --allow-empty
-        #git push origin update/member-count-$(date '+%Y-%m-%d')
         git push origin update/member-count-$(date '+%Y-%m-%d')
+    - name: Open pull request
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH_AGAINST: "master"
+        PULL_REQUEST_BODY: "This is a pull request to update membership counts for usrse."
+      run: |
+          export BRANCH_FROM=member-count-$(date '+%Y-%m-%d')
+          export PULL_REQUEST_TITLE="Updating Membership Counts for $(date '+%Y-%m-%d')"
+          /bin/bash scripts/pull-request.sh
