@@ -41,8 +41,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH_AGAINST: "master"
-        PULL_REQUEST_BODY: "This is a pull request to update membership counts for usrse."
       run: |
-          export BRANCH_FROM=member-count-$(date '+%Y-%m-%d')
-          export PULL_REQUEST_TITLE="Updating Membership Counts for $(date '+%Y-%m-%d')"
           /bin/bash scripts/pull-request.sh

@@ -47,12 +47,10 @@ create_pull_request() {
 
     SOURCE="${1}"  # from this branch
     TARGET="${2}"  # pull request TO this target
-    BODY="${3}"    # this is the content of the message
-    TITLE="${4}"   # pull request title
-    DRAFT="${5}"   # if PRs are draft
 
-    # Check if the branch already has a pull request open 
-
+    # Check if the branch already has a pull request open
+    TITLE='Updating Membership Counts'
+    BODY='This is a pull request to update membership counts for usrse.'
     DATA="{\"base\":\"${TARGET}\", \"head\":\"${SOURCE}\", \"body\":\"${BODY}\"}"
     RESPONSE=$(curl -sSL -H "${AUTH_HEADER}" -H "${HEADER}" --user "${GITHUB_ACTOR}" -X GET --data "${DATA}" ${PULLS_URL})
     PR=$(echo "${RESPONSE}" | jq --raw-output '.[] | .head.ref')
@@ -65,7 +63,7 @@ create_pull_request() {
     # Option 2: Open a new pull request
     else
         # Post the pull request
-        DATA="{\"title\":\"${TITLE}\", \"base\":\"${TARGET}\", \"head\":\"${SOURCE}\", \"draft\":\"${DRAFT}\"}"
+        DATA="{\"title\":\"${TITLE}\", \"base\":\"${TARGET}\", \"head\":\"${SOURCE}\", \"body\":\"${BODY}\"}"
         echo "curl --user ${GITHUB_ACTOR} -X POST --data ${DATA} ${PULLS_URL}"
         curl -sSL -H "${AUTH_HEADER}" -H "${HEADER}" --user "${GITHUB_ACTOR}" -X POST --data "${DATA}" ${PULLS_URL}
         echo $?
@@ -92,32 +90,9 @@ main () {
     fi
     echo "Pull request will go against ${BRANCH_AGAINST}"
 
-    if [ -z "${PULL_REQUEST_DRAFT}" ]; then
-        echo "No explicit preference for draft PR: created PRs will be normal PRs."
-        PULL_REQUEST_DRAFT="false"
-    else
-        echo "Environment variable PULL_REQUEST_DRAFT set to a value: created PRs will be draft PRs."
-        PULL_REQUEST_DRAFT="true"
-    fi
-
     # Ensure we have a GitHub token
     check_credentials
-
-    # Pull request body (optional)
-    if [ -z "${PULL_REQUEST_BODY}" ]; then
-        echo "No pull request body is set, will use default."
-        PULL_REQUEST_BODY="This is an automated pull request from ${BRANCH_FROM} to ${BRANCH_AGAINST}"
-        echo "Pull request body is ${PULL_REQUEST_BODY}"
-    fi
- 
-    # Pull request title (optional)
-    if [ -z "${PULL_REQUEST_TITLE}" ]; then
-        echo "No pull request title is set, will use default."
-        PULL_REQUEST_TITLE="Update ${BRANCH_AGAINST} from ${BRANCH_FROM}"
-        echo "Pull request title is ${PULL_REQUEST_TITLE}"
-    fi
-
-    create_pull_request $BRANCH_FROM $BRANCH_AGAINST $PULL_REQUEST_BODY $PULL_REQUEST_TITLE $PULL_REQUEST_DRAFT
+    create_pull_request $BRANCH_FROM $BRANCH_AGAINST
 
 }
 
