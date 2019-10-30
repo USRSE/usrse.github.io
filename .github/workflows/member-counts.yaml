@@ -1,14 +1,6 @@
 name: Update Membership Counts
 
 on:
-
-  # Only here for development
-  push:
-    branches:
-      - test/github-action
-    paths:
-      - '.github/workflows/member-counts.yaml'
-    
   schedule:
     # Run on the first of every month
     - cron: 0 0 1 * *
@@ -21,26 +13,31 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v1
-    - name: Install dependencies
+    - name: Install dependencies and run script
       run: |
-        apt-get update && apt-get install -y python3 python3-pip
-        pip3 install requests
-    - name: Update counts
-      run: python scripts/update_counts.py
+        sudo apt-get update && sudo apt-get install -y python3 python3-pip
+        sudo pip3 install requests
+        python3 scripts/update_counts.py
     - name: Checkout New Branch
       env:
-        GITHUB_TOKEN: "{{ secrets.GITHUB_TOKEN }}"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
+        echo "GitHub Actor: ${GITHUB_ACTOR}"
+        git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
         git branch
         git checkout -b update/member-count-$(date '+%Y-%m-%d')
-        git config user.name "${GITHUB_ACTOR}"
-        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git branch
+
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@users.noreply.github.com"
+
         git add _data/memberCounts.csv
-        git commit -m 'Automated deployment to update Member Counts' --allow-empty
+        git commit -m "Automated deployment to update Member Counts $(date '+%Y-%m-%d')" --allow-empty
         git push origin update/member-count-$(date '+%Y-%m-%d')
     - name: Open pull request
-      uses: "vsoch/pull-request-action@master"
       env:
-        GITHUB_TOKEN: "{{ secrets.GITHUB_TOKEN }}"
-        BRANCH_PREFIX: = "update/member-count"
-        PULL_REQUEST_BRANCH: "master"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH_AGAINST: "master"
+      run: |
+          export BRANCH_FROM="update/member-count-$(date '+%Y-%m-%d')"
+          /bin/bash scripts/pull-request.sh
