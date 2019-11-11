@@ -8,7 +8,6 @@ subtitle: The US-RSE Association is community driven and organized.
 
 ### Current Steering Committee
 
-* Jay Jay Billings, Oak Ridge National Laboratory
 * Jeff Carver, University of Alabama
 * Ian Cosden, Princeton University
 * Charles Ferenbaugh, Los Alamos National Laboratory
