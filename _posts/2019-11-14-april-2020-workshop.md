@@ -10,8 +10,7 @@ This won't be an attempt to be an RSE conference, but a workshop focused on plan
 
 
 The workshop will have breakout sessions focused on a number of different topics pertinent to the US-RSE community.
-We’ll be working together to generate content for the us-rse.org website that promotes and supports current/future RSEs in alignment with the [mission](https://us-rse.org/mission/) of the US-RSE Association. We will also plan follow-up activities to grow the community.  
-More specific workshop information and details will follow in the coming weeks.
+We’ll be working together to generate content for the us-rse.org website that promotes and supports current/future RSEs in alignment with the [mission](https://us-rse.org/mission/) of the US-RSE Association. We will also plan follow-up activities to grow the community. More specific workshop information and details will follow in the coming weeks.
 
 You can find out more and express interest in attending by filling out the **[US-RSE Workshop Interest Form](https://forms.gle/tzronZUGdUTT9zzb9)**.
 
