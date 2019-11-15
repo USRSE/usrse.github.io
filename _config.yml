@@ -6,7 +6,7 @@
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
 url: "https://us-rse.org"
 baseurl: ""  # for testing, also check .circleci/circle_urls.sh 
-title-img: /assets/img/logo_600px.png  # baseurl will be prepended
+title-img: /assets/img/rse_logo_background.svg  # baseurl will be prepended
 twitter-img: /assets/img/logo_600px.png  # url + baseurl will be prepended
 
 # If you are building a GitHub project page then use these settings:
