@@ -17,6 +17,7 @@ There isn't a definitive rule, and it comes down to the intuition of a contribut
 and reviewers that are discussing the change. If you or your reviewers think that
 a change warrants adding a line to the log, you should add it.
 
+**2019-11-15** Adding List of Community Driven Initiative (Get Involved) (@lparsons)
 **2019-09-27** Adding Code of Conduct (@cosden)
 **2019-09-06** Adding pull request template and contributing.md (@vsoch)
 **2019-07-25** Adjusting name to US Research Software Engineer Association (@vsoch)
