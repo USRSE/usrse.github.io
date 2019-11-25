@@ -94,9 +94,11 @@ minutes to review it.
 ## Recent Job Postings
 
 These opportunities were recently posted to the [RSE Careers page](https://us-rse.org/jobs/):  
-Scientific Research Software Developer: Caltech/JPL/Dartmouth  
-Research Software Engineer - FTC: Warwick/UK  
-Research Software Engineer/Senior Research Software Engineer: Brown University  
+
+ - Scientific Research Software Developer: Caltech/JPL/Dartmouth  
+ - Research Software Engineer - FTC: Warwick/UK  
+ - Research Software Engineer/Senior Research Software Engineer: Brown University  
+
 
 ## RSE Stories
 
