@@ -1,0 +1,26 @@
+---
+title: US-RSE Community Building Workshop
+location: Princeton, NJ
+url: https://us-rse.org/2020-april-workshop
+expires: 2020-04-23
+event_date: "April 21–22, 2020"
+layout: event
+---
+
+
+We are excited to announce that through a generous grant from the
+Alfred P. Sloan Foundation, we will be able to hold a first US-RSE
+Association community building workshop, April 21-22, 2020 in
+Princeton, NJ. This won’t be an attempt to be an RSE conference, but a
+workshop focused on planning the best path forward to grow the US-RSE
+Association.
+
+The workshop will have breakout sessions focused on a number of
+different topics pertinent to the US-RSE community. We’ll be working
+together to generate content for the us-rse.org website that promotes
+and supports current/future RSEs in alignment with the mission of the
+US-RSE Association. We will also plan follow-up activities to grow the
+community.
+
+More information, including how to participate, can be found on the
+[workshop event page](https://us-rse.org/2020-april-workshop).
