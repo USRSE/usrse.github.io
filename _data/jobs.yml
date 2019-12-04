@@ -1,3 +1,11 @@
+- name: "Research Software Engineer"
+  location: University of Alabama
+  url: http://carver.cs.ua.edu/RSE.htm
+  expires: 2020-03-01
+- name: "Visiting Research Scientist"
+  location: University of Illinois at Urbana-Champaign
+  url: https://jobs.illinois.edu/academic-job-board/job-details?jobID=123477&job=visiting-research-scientist-school-of-information-sciences-123477
+  expires: 2020-02-01
 - name: "Performance Tuning Analyst"
   location: Princeton University
   url: https://main-princeton.icims.com/jobs/11125/performance-tuning-analyst/job
