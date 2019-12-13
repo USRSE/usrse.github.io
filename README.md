@@ -183,7 +183,7 @@ TravisCI. There are no secrets or credentials for the Travis build.
 ### GitHub CI
 
 ### Greetings
-This simple greetings action greets first time users (for pull requests and issues).
+This simple greetings action greets first time users (for issues).
 The logic of this is determined by the [greetings.yml](.github/workflows/greetings.yml)
 workflow. 
 
