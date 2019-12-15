@@ -6,7 +6,7 @@
 
 ## What is this?
 
-This is a repository that containers the files for the official US RSE community website hosted at http://www.us-rse.org.
+This is a repository that containers the files for the official US RSE community website hosted at https://us-rse.org.
 The site is built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub. 
 
 ## How do I contribute?
