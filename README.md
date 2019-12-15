@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/USRSE/usrse.github.io.svg?branch=master)](https://travis-ci.org/USRSE/usrse.github.io)
 
+![contributors.svg](./contributors.svg)
+
 ## What is this?
 
 This is a repository that containers the files for the official US RSE community website hosted at http://www.us-rse.org.
@@ -186,6 +188,15 @@ TravisCI. There are no secrets or credentials for the Travis build.
 This simple greetings action greets first time users (for issues).
 The logic of this is determined by the [greetings.yml](.github/workflows/greetings.yml)
 workflow. 
+
+#### Contributors Graphic
+We use the GitHub Workflow [update-contributors-graphic.yml](.github/workflows/update-contributors-graphic.yml)
+to generate a contribution graphic using [sourcecred](https://sourcecred.io/) on a weekly basis, and open a pull
+request to review the updates every Sunday. Sourcecred is a beautiful tool that takes into account
+almost every way you can contribute on a repository (issues, comments, stars or likes, reviews)
+and then generates a simple, beautiful graphic with avatars. It's a really easy way to show off
+the size of the community, and it runs all via containers in this GitHub Action.
+
 
 #### Member Counts
 Two scripts help to create a branch with an updated [member counts file](_data/memberCounts.csv)
