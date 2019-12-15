@@ -43,7 +43,7 @@ Results from PEARC19 interactive audience question “what is missing in the US-
 
 ## Learning Lab at Gateways 2019
 
-[Gateways 2019](https://sciencegateways.org/web/gateways2019) took
+[Gateways 2019](https://sciencenode.org/event/Gateways%202019.php) took
 place in September in San Diego and the conference offered Learning
 Labs - conceptually a mixture of BoFs and break-out sessions - to spawn
 discussions about topics suggested by participants. Sandra Gesing
