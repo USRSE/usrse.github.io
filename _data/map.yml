@@ -45,6 +45,12 @@
   coords: [40.349404, -74.657451]
   institution: Princeton University
   type: group
+- name: Department of Physics
+  image: https://phy.princeton.edu/sites/physics/files/styles/pwds_people_full/public/people/sheild_75.jpg
+  url: https://phy.princeton.edu/
+  coords: [40.345141, -74.651439]
+  institution: Princeton University
+  type: group
 - name: "Stanford RSE Services"
   image: https://raw.githubusercontent.com/stanford-rc/rse-services/master/assets/img/logo/logo-square.png
   url: https://stanford-rc.github.io/rse-services/
