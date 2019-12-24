@@ -15,9 +15,12 @@ jobs:
       uses: actions/checkout@v1
     - name: Install dependencies and run script
       run: |
-        sudo apt-get update && sudo apt-get install -y python3 python3-pip
+        sudo apt-get update && sudo apt-get install -y python3 python3-pip wget
         sudo pip3 install requests
-        python3 scripts/update_counts.py
+        # Ensure using a particular version
+        wget https://raw.githubusercontent.com/USRSE/usrse.github.io/303a80b7991c3d4b97fa1f3a15f2dfa1e6aac43c/scripts/update_counts.py
+        chmod +x update_counts.py
+        python3 ./update_counts.py
     - name: Checkout New Branch
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -40,4 +43,6 @@ jobs:
         BRANCH_AGAINST: "master"
       run: |
           export BRANCH_FROM="update/member-count-$(date '+%Y-%m-%d')"
-          /bin/bash scripts/pull-request.sh
+          wget https://raw.githubusercontent.com/USRSE/usrse.github.io/303a80b7991c3d4b97fa1f3a15f2dfa1e6aac43c/scripts/pull-request.sh
+          chmod +x ./pull-request.sh
+          /bin/bash ./pull-request.sh
