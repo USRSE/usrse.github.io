@@ -48,5 +48,6 @@ jobs:
         BRANCH_AGAINST: "master"
       run: |
           export BRANCH_FROM="update/sourcecred-$(date '+%Y-%m-%d')"
-          chmod +x scripts/graphic_pull_request.sh
-          /bin/bash scripts/graphic_pull_request.sh
+          wget https://raw.githubusercontent.com/USRSE/usrse.github.io/14617e0af7771636911aecf31d38fa88cd4f3adb/scripts/graphic_pull_request.sh
+          chmod +x graphic_pull_request.sh
+          /bin/bash graphic_pull_request.sh
