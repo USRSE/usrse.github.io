@@ -20,7 +20,8 @@ jobs:
         # Ensure using a particular version
         wget https://raw.githubusercontent.com/USRSE/usrse.github.io/303a80b7991c3d4b97fa1f3a15f2dfa1e6aac43c/scripts/update_counts.py
         chmod +x update_counts.py
-        python3 ./update_counts.py
+        mv update_counts.py scripts/update_counts.py
+        python3 scripts/update_counts.py
     - name: Checkout New Branch
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
