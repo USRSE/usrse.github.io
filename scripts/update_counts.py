@@ -81,7 +81,7 @@ def main():
     data = read_rows(filepath)
 
     # The last row must be the previous month
-    if data[-1][0] != "%s, %s" %(previous_month, year):
+    if data[-1][0] != "%s %s" %(previous_month, year):
         print("Last month should be %s, but found %s. The file is already updated." %(previous_month, data[-1][0]))
         sys.exit(0)
 
