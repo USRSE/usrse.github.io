@@ -80,13 +80,14 @@ def main():
     # [['August, 2019', '22', '168']...]
     data = read_rows(filepath)
 
-    # The last row must be the previous month
-    if data[-1][0] != "%s %s" %(previous_month, year):
-        print("Last month should be %s, but found %s. The file is already updated." %(previous_month, data[-1][0]))
+    # The last row must be the previous month year
+    last_row = "%s %s" %(previous_month, year)
+    if data[-1][0] != last_row:
+        print("Last month should be %s, but found %s. The file is already updated." %(last_row, data[-1][0]))
         sys.exit(0)
 
     # Add the new count
-    data.append(['%s, %s' % (target_month, year), count, total])
+    data.append(['%s %s' % (target_month, year), count, total])
 
     # Write the new file
     with open(tmpfile, 'w', newline='') as outfile:
