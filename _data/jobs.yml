@@ -1,3 +1,11 @@
+- name: "Research Software Engineer"
+  location: Princeton University
+  url: https://research-princeton.icims.com/jobs/11166/research-software-engineer/job
+  expires: 2020-02-15
+- name: "Research Software Engineering Fellow"
+  location: NumFOCUS
+  url: https://numfocus.org/blog/now-hiring-matplotlib-research-software-engineering-fellow
+  expires: 2020-02-15  
 - name: "Research Software Developer"
   location: Princeton University
   url: https://cdh.princeton.edu/updates/2019/12/06/research-software-developer-job-opening/
@@ -85,7 +93,7 @@
 - name: "Research Software Engineer, Infrastructure / Development Operations"
   location: EcoHealth Alliance, New York, NY, USA
   url: https://www.ecohealthalliance.org/career/research-software-engineer
-  expires: 2020-01-01
+  expires: 2020-02-01
 - name: "Technical Software Developer, Data and Distributed Computing, CanDIG"
   location: Princess Margaret Cancer Centre, Toronto, ON, Canada
   url: https://www.recruitingsite.com/csbsites/uhncareers/JobDescription.asp?SiteID=10031&JobNumber=852516
