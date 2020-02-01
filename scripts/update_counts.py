@@ -80,8 +80,12 @@ def main():
     # [['August, 2019', '22', '168']...]
     data = read_rows(filepath)
 
-    # The last row must be the previous month year
-    last_row = "%s %s" %(previous_month, year)
+    # The last row must be the previous month year, unless December, then it's next year
+    if previous_month == "December":
+        last_row = "%s %s" %(previous_month, year+1)    
+    else:
+        last_row = "%s %s" %(previous_month, year)
+
     if data[-1][0] != last_row:
         print("Last month should be %s, but found %s. The file is already updated." %(last_row, data[-1][0]))
         sys.exit(0)
