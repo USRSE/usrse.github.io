@@ -82,7 +82,7 @@ def main():
 
     # The last row must be the previous month year, unless December, then it's next year
     if previous_month == "December":
-        last_row = "%s %s" %(previous_month, year-1)
+        last_row = "%s %s" %(previous_month, int(year)-1)
     else:
         last_row = "%s %s" %(previous_month, year)
 
