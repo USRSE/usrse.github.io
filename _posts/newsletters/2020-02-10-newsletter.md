@@ -1,4 +1,10 @@
-# US-RSE.org Newsletter 2020-02
+---
+layout: post
+title: US-RSE Newsletter
+subtitle: Winter 2020 Newsletter
+category: newsletter
+tags: [newsletter, SC19, Communications, stories, jobs]
+---
 
 In this bi-monthly newsletter, we share recent, current, and planned activities of the US-RSE Association. Newsletters are also available on our [website](https://us-rse.org/newsletters/) alongside the growing resources and information on the US-RSE Association. A sign-up option for our newsletter is available [here](https://us-rse.org/join/).
 
