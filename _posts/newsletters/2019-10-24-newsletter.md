@@ -57,7 +57,7 @@ RSE-like positions.
 
 As part of the “[RSE Worldwide: Sharing across
 borders](https://rseconuk2019.sched.com/event/QP6S/rse-worldwide-sharing-across-borders)”
-plenary session at [RSEConUK2019](https://rse.ac.uk/conf2019/), Daniel
+plenary session at [RSEConUK2019](https://society-rse.org/hello-world-2/), Daniel
 S. Katz presented a lightning talk entitled “[US-RSE: Growing the
 Community](https://static.sched.com/hosted_files/rseconuk2019/6a/US%20RSE%20RSEconUK2019%20Lightning%20Talk.pdf)”
 and was part of the session’s panel discussion. The audience was
