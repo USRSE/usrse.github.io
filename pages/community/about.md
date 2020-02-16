@@ -29,7 +29,7 @@ officer, research software engineer, research supporter, cyberinfrastructure
 engineer, campus champion, research computing facilitator, bioinformatician and
 other titles are increasingly found as core roles in research teams.
 
-Initiatives in the [UK](http://rse.ac.uk/), [Germany](http://www.de-rse.org/en), the
+Initiatives in the [UK](https://society-rse.org/), [Germany](http://www.de-rse.org/en), the
 [Netherlands](http://nl-rse.org) and elsewhere are bringing
 together the community of people writing and contributing to research software at
 the national and international level. In the US this encompasses
