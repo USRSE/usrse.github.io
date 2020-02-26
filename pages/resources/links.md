@@ -25,5 +25,6 @@ _These resources can be helpful to establish RSE positions, groups, or further u
  - [RSE Starter Pack](https://us-rse.org/starter-pack/#/) getting started to create an RSE community as an RSE
  - [The Story of the Research Software Engineer](https://www.youtube.com/watch?v=trAfA9VWLTQ) video introduction to Research Software Engineering
  - [US-RSE Logos](https://github.com/usrse/logo) repository
+ - [US-RSE Slack](https://usrse.slack.com/)
 
 
