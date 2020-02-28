@@ -5,6 +5,7 @@ url: https://sc19.supercomputing.org/
 expires: 2019-11-22
 event_date: "November 17–22, 2019"
 layout: event
+repeated: false
 ---
 
 

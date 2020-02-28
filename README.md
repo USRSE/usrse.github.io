@@ -79,13 +79,15 @@ url: https://www.pearc19.pearc.org/
 expires: 2019-08-01
 event_date: "November 17–22, 2019"
 layout: event
+repeated: false
 ---
 
 Join us at [PEARC19](https://www.pearc19.pearc.org/) for a Birds of a Feather (BOF) session "Building a Community of Research Software Engineers."  Our session is scheduled for 5:15 PM on Monday, July 29.
 ```
 
 The top section is frontend matter that must include the title, location, url, layout as "event" 
-event date, and an expiration date. Notice that the event date is a string that doesn't get parsed,
+event date, an expiration date, and a "repeated" variable (true or false).
+Notice that the event date is a string that doesn't get parsed,
 while the expires must be a date in the format shown.
 The bottom section (the content) you can write any amount and length
 of markdown that is desired. When the event is active (before expiration) the full content will
@@ -93,6 +95,26 @@ be shown on the "Events and Training" page. Once it expires, it will move into t
 In both cases, clicking on the Event will take the viewer to it's page, and they can
 view additional content and the url provided. In the case of the archive, the bulk of content
 is only viewable on this page.
+
+### What is a repeated event?
+
+
+You'll notice that there is a folder called "repeated" in the events folder:
+
+```
+$ ls _events/
+2019  2020  repeated
+```
+
+A repeated event is one that happens weekly, monthly, or on a regularly scheduled
+basis that typically does not change, meaning that you wouldn't need to
+update the post. A weekly call that has a description and a consistent link
+to an agenda would be appropriate, while the same call that varies in schedule
+or requires an updated description would not quality.
+An annual event, or one that would require a different description, would
+not be repeated, and should be placed in a folder named by date.
+Repeated events are always shown at the top of the events page, and 
+do not expire.
 
 ## Tests
 
