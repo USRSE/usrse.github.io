@@ -6,6 +6,7 @@ url: https://us-rse.org/2020-april-workshop
 expires: 2020-04-23
 event_date: "April 21–22, 2020"
 layout: event
+repeated: false
 ---
 
 
