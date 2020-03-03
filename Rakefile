@@ -14,6 +14,8 @@ def html_proofer
     :url_ignore => [/us-rse.org/],
     :allow_hash_href => true,       # don't break on <a href="#">
     :assume_extension => false,     # (true) for extensionless paths
+    :retry_delay => 5,
+    :retry_attempts => 3,
     :http_status_ignore => [
       999, # LinkedIn throttling errors
       403, # Google scholar errors thrown from Travis (links here will be public anyway)
