@@ -29,25 +29,27 @@ jobs:
     - name: Checkout New Branch
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH_AGAINST: "master"
       run: |
-        echo "GitHub Actor: ${GITHUB_ACTOR}"
+        printf "GitHub Actor: ${GITHUB_ACTOR}\n"
+        export BRANCH_FROM="update/sourcecred-$(date '+%Y-%m-%d')"
         git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
         git branch
-        git checkout -b update/sourcecred-$(date '+%Y-%m-%d')
+        git checkout -b "${BRANCH_FROM}" || git checkout "${BRANCH_FROM}"
         git branch
 
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@users.noreply.github.com"
 
         git add contributors.svg
-        git commit -m "Automated deployment to update contributors.svg $(date '+%Y-%m-%d')" --allow-empty
-        git push origin update/sourcecred-$(date '+%Y-%m-%d')
-    - name: Open pull request
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH_AGAINST: "master"
-      run: |
-          export BRANCH_FROM="update/sourcecred-$(date '+%Y-%m-%d')"
-          wget https://raw.githubusercontent.com/USRSE/usrse.github.io/14617e0af7771636911aecf31d38fa88cd4f3adb/scripts/graphic_pull_request.sh
-          chmod +x graphic_pull_request.sh
-          /bin/bash graphic_pull_request.sh
+
+        if git diff-index --quiet HEAD --; then
+           printf "No changes\n"
+        else
+           printf "Changes\n"
+           git commit -m "Automated deployment to update contributors.svg $(date '+%Y-%m-%d')"
+           git push origin "${BRANCH_FROM}"
+           wget https://raw.githubusercontent.com/USRSE/usrse.github.io/14617e0af7771636911aecf31d38fa88cd4f3adb/scripts/graphic_pull_request.sh
+           chmod +x graphic_pull_request.sh
+           /bin/bash graphic_pull_request.sh
+        fi
