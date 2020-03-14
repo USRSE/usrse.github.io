@@ -1,7 +1,5 @@
 # The United States (US) Research Software Engineer Association
 
-[![Build Status](https://travis-ci.org/USRSE/usrse.github.io.svg?branch=master)](https://travis-ci.org/USRSE/usrse.github.io)
-
 ![contributors.svg](./contributors.svg)
 
 ## What is this?
@@ -57,7 +55,7 @@ job will appear on the site until the first of July, 2019.
 ```yaml
 - name: "Research Software Engineer"
   location: Princeton, NJ
-  url: https://main-princeton.icims.com/jobs/10347/research-software-engineer/job
+  url: https://main-princeton.icims.com/jobs
   expires: 2019-07-01
 ```
 
@@ -123,7 +121,6 @@ content. Specifically, usrse.github.io uses the following integrations (with lin
 to configuration files):
 
  - [CircleCI](.circleci/config.yml) previews the site, and tests jobs and mapdata
- - [TravisCI](.travis.yml) tests the html content, namely links
  - [GitHub CI](.github/workflows) includes GitHub triggers and actions
 
 Instructions for running locally, along with details about each, are provided below.
@@ -189,22 +186,33 @@ $ bundle exec jekyll serve
 and open your browser to <http://localhost:4000>.
 If you are having trouble try `rm -rf _site`, followed by `bundle update`, then `bundle exec jekyll serve`.
 
-### TravisCI
+#### Rakefile
 
-TravisCI used to be the primary testing CI service before CircleCI was added. It now
-serves to build the site, and test that links aren't dead using `rake test`. You
-can see the configuration options for rake test in the [Rakefile](Rakefile) or edit
-the travis testing via [.travis.yml](.travis.yml). You can test locally (given
-having dependencies):
+A legacy [Rakefile](Rakefile) is kept with the repository to allow for a manual `rake test`
+to use the html-proofer to check links.
+
+This was previously deployed on TravisCI, however it was very buggy and failed often
+since the checker had [no concept of retry](https://github.com/USRSE/usrse.github.io/issues/171). 
+While the travis instruction has since been removed, you can look at the old configuration
+file [here](https://github.com/USRSE/usrse.github.io/blob/9353d147adefcd4e5c2f5ba1e05c0ee7b28dba23/.travis.yml) 
+in a previous commit. To run this previous test locally on your own you can do:
 
 ```bash
 $ rake test
 ```
 
-And akin to CircleCI, TravisCI requires the basic connection of the repository to 
-TravisCI. There are no secrets or credentials for the Travis build.
+This has been replaced by the "URLChecker" in GitHub CI, which does have retry and other
+nice features to make it less error prone, discussed next.
+
 
 ### GitHub CI
+
+## URLChecker
+
+The [URLschecker](https://github.com/urlstechie/URLs-checker) is a GitHub action
+that @vsoch worked on to contribute retry and some other nice features for the 
+repository here. These features are available as of version 0.1.6 that is used
+in the [workflow](.github/workflows/urlchecker.yml).
 
 ### Greetings
 This simple greetings action greets first time users (for issues).

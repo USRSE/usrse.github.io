@@ -87,7 +87,6 @@ These opportunities were recently posted to the [RSE Careers page](https://us-rs
 *   [Research Software Engineer](http://carver.cs.ua.edu/RSE.htm): University of Alabama
 *   [Visiting Research Scientist](https://jobs.illinois.edu/academic-job-board/job-details?jobID=123477&job=visiting-research-scientist-school-of-information-sciences-123477): University of Illinois at Urbana-Champaign
 *   [Performance Tuning Analyst](https://main-princeton.icims.com/jobs/11125/performance-tuning-analyst/job): Princeton University
-*   [Front-End Software Developer at Harvard University](https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25240&siteid=5341#jobDetails=1460482_5341): Cambridge, MA
 *   [Research Software Engineer](https://brown.wd5.myworkdayjobs.com/en-US/staff-careers-brown/job/180-George-Street/Research-Software-Engineer_REQ164152): Brown University, Providence, RI
 *   [Software Engineer, Research Software Engineer, Research Scientists](https://clima.caltech.edu/join-our-team/): Climate Modeling Alliance, Caltech, Pasadena, CA 
 

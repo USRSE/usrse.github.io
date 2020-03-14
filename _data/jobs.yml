@@ -34,14 +34,6 @@
   location: Princeton University
   url: https://main-princeton.icims.com/jobs/11125/performance-tuning-analyst/job
   expires: 2020-02-01
-- name: Data Scientist at Scion
-  location: Rotorua, New Zealand
-  url: https://careers.sciencenewzealand.org/jobdetails/ajid/6QpW8/Data-Scientist,35766.html#.Xbn7VL1Tw0Y.twitter
-  expires: 2020-01-01
-- name: "Research Software Engineer at Internet2"
-  location: "Ann Arbor, MI or remote"
-  url: https://www.linkedin.com/jobs/view/1572354114/?fbclid=IwAR3s2kKIy4z5cKpU5XfHifxN0B2x9RJNWqVFRUIJqi82VdR2MAOlOTwpH6o
-  expires: 2020-01-01
 - name: "Senior Scientific Programmer at Boston University"
   location: Boston, MA
   url: http://www.bu.edu/tech/support/research/rcs/jobs/
@@ -50,10 +42,6 @@
   location: Cambridge, MA
   url: http://bit.ly/fasrc_senior_rse
   expires: 2020-06-30
-- name: "Research Software Engineer"
-  location: Princeton, NJ
-  url: https://main-princeton.icims.com/jobs/10347/research-software-engineer/job
-  expires: 2019-10-01
 - name: "Software Consultants"
   location: University Park Campus
   url: https://psu.jobs/job/88890
@@ -61,10 +49,6 @@
 - name: "Research Programmer"
   location: University of Arizona
   url: https://uacareers.com/postings/40792
-  expires: 2019-10-01
-- name: "Software and Collaboration Support team member (Research Scientist)"
-  location: Georgia Tech
-  url: https://pace.gatech.edu/software-and-collaboration-support-team-member-research-scientist
   expires: 2019-10-01
 - name: "Research Software Engineer / Application Support Engineer"
   location: Indiana University Bloomington 
@@ -86,14 +70,6 @@
   location: Indiana University Bloomington
   url: https://brainlife.io/docs/careers/jobs/
   expires: 2019-10-01
-- name: "Scientific Research Software Developer"
-  location: Caltech/JPL/Dartmouth
-  url: https://chm.tbe.taleo.net/chm03/ats/careers/v2/viewRequisition?org=CALTECH&cws=37&rid=4938
-  expires: 2019-11-01
-- name: "Research Software Engineer - FTC"
-  location: Warwick/UK
-  url: https://careers.peopleclick.com/careerscp/client_arm/external/en_GB/gateway.do?functionName=viewFromLink&localeCode=en-us&jobPostId=43583&source=LinkedIn&sourceType=NETWORKING_SITE
-  expires: 2019-12-01
 - name: "Research Software Engineer/Senior Research Software Engineer"
   location: Brown University
   url: https://brown.wd5.myworkdayjobs.com/en-US/staff-careers-brown/job/180-George-Street/Research-Software-Engineer-Senior-Research-Software-Engineer_REQ162388

@@ -10,7 +10,7 @@ title-img: /assets/img/rse_logo_background.svg  # baseurl will be prepended
 twitter-img: /assets/img/logo_600px.png  # url + baseurl will be prepended
 
 # If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
+#url: "https://username.github.io/projectname"
 #baseurl: "/projectname"
 
 # Of course don't forget to change the username and projectname to YOUR username and project

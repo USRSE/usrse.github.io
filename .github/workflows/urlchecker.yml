@@ -1,0 +1,24 @@
+name: Check URLs
+
+on: [push, pull_request]
+
+jobs:
+  urlcheck:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: URLs-checker
+      uses: urlstechie/URLs-checker@0.1.6
+      with:
+        # A comma-separated list of file types to cover in the URL checks
+        file_types: .md,.py,.yml
+
+        # Choose whether to include file with no URLs in the prints.
+        print_all: false
+
+        # How many times to retry a failed request (defaults to 1)
+        retry_count: 3
+
+        # This can be updated to use white_listed_files when it's supported
+        white_listed_patterns: https://username.github.io,https://linkedin.com/in/,https://reddit.com/u,https://www.xing.com/profile,https://open.spotify.com/user,https://x-access-token,http://localhost:4000
