@@ -116,7 +116,7 @@ thoughts on the key aspects of US-RSE as it develops. Topics included:
    forms of local chapter that people might be interested in
    self-organizing. The US-RSE.org web/github site was seen as a place
    for providing source materials (see for example -
-   [https://github.com/USRSE/starter-pack](https://github.com/USRSE/starter-pack))
+   [https://github.com/USRSE/starter-pack](https://github.com/rseng/starter-pack))
    to help anyone interested in forming a chapter. The general sense
    was that a loose federation model was appropriate at this stage.
 

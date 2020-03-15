@@ -1,0 +1,24 @@
+name: Check URLs
+
+on: [push, pull_request]
+
+jobs:
+  urlcheck:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: URLs-checker
+      uses: urlstechie/URLs-checker@add/skip-files
+      with:
+        # A comma-separated list of file types to cover in the URL checks
+        file_types: .md,.py,.yml
+
+        # Choose whether to include file with no URLs in the prints.
+        print_all: false
+
+        # How many times to retry a failed request (defaults to 1)
+        retry_count: 3
+
+        # White list the following files
+        white_listed_files: README.md,SocialNetworks.yml,_config.yml,tests/test_,.github/workflows
