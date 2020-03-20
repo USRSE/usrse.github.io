@@ -1,6 +1,6 @@
 name: Check URLs
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   urlcheck:
@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: URLs-checker
-      uses: urlstechie/URLs-checker@0.1.6
+      uses: urlstechie/URLs-checker@0.1.7
       with:
         # A comma-separated list of file types to cover in the URL checks
         file_types: .md,.py,.yml
@@ -20,5 +20,5 @@ jobs:
         # How many times to retry a failed request (defaults to 1)
         retry_count: 3
 
-        # This can be updated to use white_listed_files when it's supported
-        white_listed_patterns: https://username.github.io,https://linkedin.com/in/,https://reddit.com/u,https://www.xing.com/profile,https://open.spotify.com/user,https://x-access-token,http://localhost:4000
+        # White list the following files
+        white_listed_files: README.md,SocialNetworks.yml,_config.yml,tests/test_,.github/workflows,2019-10-04-SC19.md
