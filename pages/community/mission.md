@@ -22,7 +22,7 @@ to target our activities and actions to serving these three aspects:
 
 ## 2. Advocacy
 
-  We aim to promote RSEs impact on research, highlighting the
+  We aim to promote RSEs' impact on research, highlighting the
   increasingly critical and valuable role RSEs serve.
 
 ## 3. Resources 
