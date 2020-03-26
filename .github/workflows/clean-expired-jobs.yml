@@ -1,0 +1,56 @@
+name: Remove Expired Jobs
+
+on:
+  pull_request: []
+  schedule:
+    # Run nightly 1am
+    - cron: 0 1 * * *
+
+jobs:
+  clean-jobs:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Install dependencies and run script
+      run: |
+        sudo apt-get update && sudo apt-get install -y python3 python3-pip python3-setuptools wget
+        sudo pip3 install requests pyaml urlchecker
+        # Ensure using a particular version
+        wget https://raw.githubusercontent.com/USRSE/usrse.github.io/959bc60c06c349fad03189e24253acd719b28d63/scripts/clean_jobs.py
+        chmod +x clean_jobs.py
+        mv clean_jobs.py scripts/clean_jobs.py
+        printf "Lines in jobs.yml before cleaning: $(cat _data/jobs.yml | wc -l)\n"
+        python3 scripts/clean_jobs.py
+        printf "Lines in jobs.yml after cleaning: $(cat _data/jobs.yml | wc -l)\n"
+
+    - name: Run URLs-checker
+      uses: urlstechie/urlchecker-action@0.1.7
+      with:
+        file_types: .md,.py,.yml
+        print_all: false
+        retry_count: 3
+        white_listed_patterns: sc19.supercomputing.org,https://pace.gatech.edu
+        white_listed_files: README.md,SocialNetworks.yml,_config.yml,tests/test_,.github/workflows,github/workspace/_posts/newsletters/
+
+    - name: Push Fixes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        printf "GitHub Actor: ${GITHUB_ACTOR}\n"
+
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@users.noreply.github.com"
+
+        git add _data/jobs.yml
+
+        if git diff-index --quiet HEAD --; then
+           printf "No changes\n"
+        else
+           printf "Changes\n"
+           git commit -m "Automated push to update jobs.yml $(date '+%Y-%m-%d')"
+           exit 0; # temporary to not push to master while testing
+           git push origin master
+        fi
