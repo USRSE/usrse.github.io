@@ -19,7 +19,7 @@ jobs:
         sudo apt-get update && sudo apt-get install -y python3 python3-pip python3-setuptools wget
         sudo pip3 install requests pyaml urlchecker
         # Ensure using a particular version
-        wget https://raw.githubusercontent.com/USRSE/usrse.github.io/25b93668602440691d5e9af7e77766e2d55b5c9d/scripts/clean_jobs.py
+        wget https://raw.githubusercontent.com/USRSE/usrse.github.io/bab44e6d4f7d89d4e5f179d406ca6866d3d64b6d/scripts/clean_jobs.py
         chmod +x clean_jobs.py
         mv clean_jobs.py scripts/clean_jobs.py
         python3 scripts/clean_jobs.py
