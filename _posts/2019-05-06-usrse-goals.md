@@ -24,7 +24,7 @@ the needs and desires of the community change.
 
 ## Advocacy 
 
-  We aim to promote RSEs impact on research, highlighting the
+  We aim to promote RSEs' impact on research, highlighting the
   increasingly critical and valuable role RSEs serve.
 
 ## Resources 
