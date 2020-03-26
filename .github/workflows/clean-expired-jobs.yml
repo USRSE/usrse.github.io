@@ -1,7 +1,6 @@
 name: Remove Expired Jobs
 
 on:
-  pull_request: []
   schedule:
     # Run nightly 1am
     - cron: 0 1 * * *
@@ -14,7 +13,7 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v2
-    - name: Install dependencies and run script
+    - name: Remove Expired Jobs
       run: |
         sudo apt-get update && sudo apt-get install -y python3 python3-pip python3-setuptools wget
         sudo pip3 install requests pyaml urlchecker
@@ -49,6 +48,5 @@ jobs:
         else
            printf "Changes\n"
            git commit -m "Automated push to update jobs.yml $(date '+%Y-%m-%d')"
-           exit 0; # temporary to not push to master while testing
            git push origin master
         fi
