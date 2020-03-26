@@ -22,10 +22,6 @@
   location: NumFOCUS
   url: https://numfocus.org/blog/now-hiring-matplotlib-research-software-engineering-fellow
   expires: 2020-02-15  
-- name: "Research Software Developer"
-  location: Princeton University
-  url: https://cdh.princeton.edu/updates/2019/12/06/research-software-developer-job-opening/
-  expires: 2020-02-01
 - name: "Research Software Specialist"
   location: Pittsburgh Supercomputing Center
   url: https://www.psc.edu/about-psc/employment/3116-research-software-specialist-2014428
@@ -37,10 +33,6 @@
 - name: "Visiting Research Scientist"
   location: University of Illinois at Urbana-Champaign
   url: https://jobs.illinois.edu/academic-job-board/job-details?jobID=123477&job=visiting-research-scientist-school-of-information-sciences-123477
-  expires: 2020-02-01
-- name: "Performance Tuning Analyst"
-  location: Princeton University
-  url: https://main-princeton.icims.com/jobs/11125/performance-tuning-analyst/job
   expires: 2020-02-01
 - name: "Senior Scientific Programmer at Boston University"
   location: Boston, MA
