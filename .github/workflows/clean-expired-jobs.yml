@@ -22,9 +22,7 @@ jobs:
         wget https://raw.githubusercontent.com/USRSE/usrse.github.io/25b93668602440691d5e9af7e77766e2d55b5c9d/scripts/clean_jobs.py
         chmod +x clean_jobs.py
         mv clean_jobs.py scripts/clean_jobs.py
-        printf "Lines in jobs.yml before cleaning: $(cat _data/jobs.yml | wc -l)\n\n"
         python3 scripts/clean_jobs.py
-        printf "\nLines in jobs.yml after cleaning: $(cat _data/jobs.yml | wc -l)\n"
 
     - name: Run URLs-checker
       uses: urlstechie/urlchecker-action@0.1.7
