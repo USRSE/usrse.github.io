@@ -114,6 +114,33 @@ not be repeated, and should be placed in a folder named by date.
 Repeated events are always shown at the top of the events page, and 
 do not expire.
 
+### 4. How do I add a page redirect?
+
+We have a special header field that you can define if you want a page to redirect 
+elsewhere. We do this by way of a meta tag, and we give the viewer 2 seconds
+to see a message that they are being redirected.  To keep these pages
+organized, we have them located in the `redirects` folder:
+
+```
+$ ls pages/redirects/
+2020-april-workshop.md
+```
+
+And the header front end matter should look like the following:
+
+```yaml
+---
+layout: page
+title: US-RSE Community Building Workshop
+permalink: /2020-april-workshop/
+redirect: https://us-rse.org/first-community-workshop
+---
+```
+
+The above says that the page titled "US-RSE Community Building Workshop" served
+at permalink /2020-april-workshop will be redirected to 
+https://us-rse.org/first-community-workshop.
+
 ## Tests
 
 Tests are run during continuous integration to catch any errors and to preview
