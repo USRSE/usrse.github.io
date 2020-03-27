@@ -1,4 +1,4 @@
-# Read in jobs from the _data/jobs.yml file, file links that are both
+# Read in jobs from the _data/jobs.yml file, find links that are both
 # expired and not working, and remove them. Write to a new file.
 # Copyright @vsoch, 2020
 
@@ -28,16 +28,14 @@ def get_filepath():
 def read_jobs(filepath):
     """read in the jobs data.
     """
-    # Read in the entire membership counts
     with open(filepath, "r") as fd:
         data = yaml.load(fd.read(), Loader=yaml.SafeLoader)
     return data
 
 
 def main():
-    """a small helper to update the _data/memberCounts.csv file.
+    """a small helper to update the _data/jobs.yml file.
     """
-    # We will read through file, and write entry for current month.
     filepath = get_filepath()
 
     # Read in the jobs
