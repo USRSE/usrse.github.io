@@ -2,7 +2,7 @@
 title: US-RSE Workshop
 subtitle: A First US-RSE Community Building Workshop
 location: Princeton, NJ
-url: https://us-rse.org/2020-april-workshop
+url: https://us-rse.org/2020-oct-workshop/
 expires: 2020-04-23
 event_date: "April 21–22, 2020"
 layout: event
@@ -25,4 +25,4 @@ US-RSE Association. We will also plan follow-up activities to grow the
 community.
 
 More information, including how to participate, can be found on the
-[workshop event page](https://us-rse.org/2020-april-workshop).
+[workshop event page](https://us-rse.org/2020-oct-workshop/).
