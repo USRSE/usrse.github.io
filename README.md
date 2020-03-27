@@ -241,6 +241,14 @@ that @vsoch worked on to contribute retry and some other nice features for the
 repository here. These features are available as of version 0.1.6 that is used
 in the [workflow](.github/workflows/urlchecker.yml).
 
+## Clean Expired Jobs
+
+The workflow [clean-expired-jobs.yml](.github/workflows/clean-expired-jobs.yml) is run nightly,
+and uses the same function from the urlchecker to check for expired links in jobs.yml,
+and given an expired link, remove it from the file if the url check fails. In the case
+that a link is not expired and the check fails, we would want to know about this
+(and the test will fail).
+
 ### Greetings
 This simple greetings action greets first time users (for issues).
 The logic of this is determined by the [greetings.yml](.github/workflows/greetings.yml)
