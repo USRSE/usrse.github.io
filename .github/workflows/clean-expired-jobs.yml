@@ -43,10 +43,14 @@ jobs:
 
         git add _data/jobs.yml
 
-        if git diff-index --quiet HEAD --; then
-           printf "No changes\n"
+        set +e
+        git status | grep modified
+        if [ $? -eq 0 ]; then
+            set -e
+            printf "Changes\n"
+            git commit -m "Automated push to update jobs.yml $(date '+%Y-%m-%d')"
+            git push origin master
         else
-           printf "Changes\n"
-           git commit -m "Automated push to update jobs.yml $(date '+%Y-%m-%d')"
-           git push origin master
+            set -e
+            printf "No changes\n"
         fi
