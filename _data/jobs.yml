@@ -1,80 +1,40 @@
-- expires: 2020-06-10
-  location: Atlanta, GA
-  name: Architect, PACE team at Georgia Institute of Technology
-  url: https://pace.gatech.edu/xsedeosg-architect
-- expires: 2020-06-10
-  location: Atlanta, GA
-  name: Scheduler Architect, PACE team at Georgia Institute of Technology
-  url: https://pace.gatech.edu/scheduler-architect
-- expires: 2020-06-10
-  location: Socorro, NM
-  name: Staff Scientist/Software Engineer at New Mexico Tech
-  url: https://www.nmt.edu/hr/docs/hr/jobs/StaffSciSoftEngIRIS20-030.pdf
-- expires: 2020-04-10
-  location: Boston, MA
-  name: Senior Research Computing Systems Engineer at Boston University
-  url: http://www.bu.edu/tech/support/research/rcs/jobs/
-- expires: 2020-03-10
-  location: Caltech
-  name: 'Software Engineer/Research Software Engineer: CliMA project'
-  url: https://clima.caltech.edu/join-our-team/
-- expires: 2020-02-15
-  location: NumFOCUS
-  name: Research Software Engineering Fellow
-  url: https://numfocus.org/blog/now-hiring-matplotlib-research-software-engineering-fellow
-- expires: 2020-02-01
-  location: Pittsburgh Supercomputing Center
-  name: Research Software Specialist
-  url: https://www.psc.edu/about-psc/employment/3116-research-software-specialist-2014428
-- expires: 2020-03-01
-  location: University of Alabama
-  name: Research Software Engineer
-  url: http://carver.cs.ua.edu/RSE.htm
-- expires: 2020-02-01
-  location: University of Illinois at Urbana-Champaign
-  name: Visiting Research Scientist
-  url: https://jobs.illinois.edu/academic-job-board/job-details?jobID=123477&job=visiting-research-scientist-school-of-information-sciences-123477
-- expires: 2019-10-01
-  location: Boston, MA
-  name: Senior Scientific Programmer at Boston University
-  url: http://www.bu.edu/tech/support/research/rcs/jobs/
-- expires: 2020-06-30
-  location: Cambridge, MA
-  name: Senior Research Software Engineer (Data Engineer)
-  url: http://bit.ly/fasrc_senior_rse
-- expires: 2019-09-01
-  location: University Park Campus
-  name: Software Consultants
-  url: https://psu.jobs/job/88890
-- expires: 2019-10-01
-  location: University of Arizona
-  name: Research Programmer
-  url: https://uacareers.com/postings/40792
-- expires: 2019-10-01
-  location: Indiana University Bloomington
-  name: Research Software Engineer / Application Support Engineer
-  url: https://brainlife.io/docs/careers/jobs/
-- expires: 2019-10-01
-  location: Indiana University Bloomington
-  name: Research Software Engineer / UI Engineer
-  url: https://brainlife.io/docs/careers/jobs/
-- expires: 2019-10-01
-  location: Indiana University Bloomington
-  name: Community Developer / Outreach Coordinator
-  url: https://brainlife.io/docs/careers/jobs/
-- expires: 2019-10-01
-  location: Indiana University Bloomington
-  name: DevOps / Software Engineers
-  url: https://brainlife.io/docs/careers/jobs/
-- expires: 2019-10-01
-  location: Indiana University Bloomington
-  name: Cloud and Cluster Administrator
-  url: https://brainlife.io/docs/careers/jobs/
-- expires: 2019-11-01
-  location: Brown University
-  name: Research Software Engineer/Senior Research Software Engineer
-  url: https://brown.wd5.myworkdayjobs.com/en-US/staff-careers-brown/job/180-George-Street/Research-Software-Engineer-Senior-Research-Software-Engineer_REQ162388
-- expires: 2020-01-15
-  location: Princess Margaret Cancer Centre, Toronto, ON, Canada
-  name: Technical Software Developer, Data and Distributed Computing, CanDIG
-  url: https://www.recruitingsite.com/csbsites/uhncareers/JobDescription.asp?SiteID=10031&JobNumber=852516
+- {expires: 2020-06-10, location: 'Atlanta, GA', name: 'Architect, PACE team at Georgia
+    Institute of Technology', url: 'https://pace.gatech.edu/xsedeosg-architect'}
+- {expires: 2020-06-10, location: 'Atlanta, GA', name: 'Scheduler Architect, PACE
+    team at Georgia Institute of Technology', url: 'https://pace.gatech.edu/scheduler-architect'}
+- {expires: 2020-06-10, location: 'Socorro, NM', name: Staff Scientist/Software Engineer
+    at New Mexico Tech, url: 'https://www.nmt.edu/hr/docs/hr/jobs/StaffSciSoftEngIRIS20-030.pdf'}
+- {expires: 2020-04-10, location: 'Boston, MA', name: Senior Research Computing Systems
+    Engineer at Boston University, url: 'http://www.bu.edu/tech/support/research/rcs/jobs/'}
+- {expires: 2020-03-10, location: Caltech, name: 'Software Engineer/Research Software
+    Engineer: CliMA project', url: 'https://clima.caltech.edu/join-our-team/'}
+- {expires: 2020-02-15, location: NumFOCUS, name: Research Software Engineering Fellow,
+  url: 'https://numfocus.org/blog/now-hiring-matplotlib-research-software-engineering-fellow'}
+- {expires: 2020-02-01, location: Pittsburgh Supercomputing Center, name: Research
+    Software Specialist, url: 'https://www.psc.edu/about-psc/employment/3116-research-software-specialist-2014428'}
+- {expires: 2020-03-01, location: University of Alabama, name: Research Software Engineer,
+  url: 'http://carver.cs.ua.edu/RSE.htm'}
+- {expires: 2020-02-01, location: University of Illinois at Urbana-Champaign, name: Visiting
+    Research Scientist, url: 'https://jobs.illinois.edu/academic-job-board/job-details?jobID=123477&job=visiting-research-scientist-school-of-information-sciences-123477'}
+- {expires: 2019-10-01, location: 'Boston, MA', name: Senior Scientific Programmer
+    at Boston University, url: 'http://www.bu.edu/tech/support/research/rcs/jobs/'}
+- {expires: 2020-06-30, location: 'Cambridge, MA', name: Senior Research Software
+    Engineer (Data Engineer), url: 'http://bit.ly/fasrc_senior_rse'}
+- {expires: 2019-09-01, location: University Park Campus, name: Software Consultants,
+  url: 'https://psu.jobs/job/88890'}
+- {expires: 2019-10-01, location: University of Arizona, name: Research Programmer,
+  url: 'https://uacareers.com/postings/40792'}
+- {expires: 2019-10-01, location: Indiana University Bloomington, name: Research Software
+    Engineer / Application Support Engineer, url: 'https://brainlife.io/docs/careers/jobs/'}
+- {expires: 2019-10-01, location: Indiana University Bloomington, name: Research Software
+    Engineer / UI Engineer, url: 'https://brainlife.io/docs/careers/jobs/'}
+- {expires: 2019-10-01, location: Indiana University Bloomington, name: Community
+    Developer / Outreach Coordinator, url: 'https://brainlife.io/docs/careers/jobs/'}
+- {expires: 2019-10-01, location: Indiana University Bloomington, name: DevOps / Software
+    Engineers, url: 'https://brainlife.io/docs/careers/jobs/'}
+- {expires: 2019-10-01, location: Indiana University Bloomington, name: Cloud and
+    Cluster Administrator, url: 'https://brainlife.io/docs/careers/jobs/'}
+- {expires: 2019-11-01, location: Brown University, name: Research Software Engineer/Senior
+    Research Software Engineer, url: 'https://brown.wd5.myworkdayjobs.com/en-US/staff-careers-brown/job/180-George-Street/Research-Software-Engineer-Senior-Research-Software-Engineer_REQ162388'}
+- {expires: 2020-01-15, location: 'Princess Margaret Cancer Centre, Toronto, ON, Canada',
+  name: 'Technical Software Developer, Data and Distributed Computing, CanDIG', url: 'https://www.recruitingsite.com/csbsites/uhncareers/JobDescription.asp?SiteID=10031&JobNumber=852516'}
