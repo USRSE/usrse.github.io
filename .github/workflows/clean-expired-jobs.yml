@@ -48,7 +48,7 @@ jobs:
         if [ $? -eq 0 ]; then
             set -e
             printf "Changes\n"
-            git commit -m "Automated push to update jobs.yml $(date '+%Y-%m-%d')"
+            git commit -m "Automated push to update jobs.yml $(date '+%Y-%m-%d')" || exit 0
             git push origin master
         else
             set -e
