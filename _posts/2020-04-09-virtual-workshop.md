@@ -7,9 +7,9 @@ tags: [workshop]
 We are excited to announce that the US-RSE Association will host a virtual workshop on April 22 and 23, 2020!  
 
 This workshop will be held in three online sessions:
-1. The RSE Landscape - Reports on RSE groups and activities, with discussion (Wednesday 4/22, 12:00-1:30 PM EDT)
-1. Technical talks - Short talks about projects that RSEs are working on (Wednesday 4/22, 3:00-4:30 PM EDT)
-1. Next steps for the US-RSE organization - Breakout sessions to discuss ideas. What do *you* want from US-RSE? (Thursday 4/23, 12:00-1:30 PM EDT)
+1. **The RSE Landscape** - Reports on RSE groups and activities, with discussion (Wednesday 4/22, 12:00-1:30 PM EDT)
+1. **Technical talks** - Short talks about projects that RSEs are working on (Wednesday 4/22, 3:00-4:30 PM EDT)
+1. **Next steps for the US-RSE organization** - Breakout sessions to discuss ideas. What do *you* want from US-RSE? (Thursday 4/23, 12:00-1:30 PM EDT)
 
 A detailed agenda is in the works and will be posted online when ready.
 
