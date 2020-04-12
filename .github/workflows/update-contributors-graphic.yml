@@ -2,8 +2,8 @@ name: pull-request-sourcecred
 
 on:
   schedule:
-    # Weekly on Sundaay
-    - cron: 0 0 * * 0
+    # Monthly
+    - cron: 0 0 1 * *
 
 jobs:
   GenerateSourcecred:
