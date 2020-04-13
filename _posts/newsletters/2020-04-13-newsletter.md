@@ -67,7 +67,7 @@ Items you may have missed on the blog and Slack:
 Papers: 
 
 *   "[The Four Pillars of Research Software Engineering](https://doi.org/10.1109/MS.2020.2973362)," *IEEE Software*, J. Cohen, et al. ([preprint](https://arxiv.org/abs/2002.01035))
-*   "[Towards FAIR principles for research software](https://content.iospress.com/articles/data-science/ds190026)," *Data Science*, Anna-Lena Lamprecht et al.
+*   "[Towards FAIR principles for research software](https://content.iospress.com/articles/data-science/ds190026)," *Data Science*, Anna-Lena Lamprecht, et al.
 
 URSSI/BSSw blog post: R. Gassmoeller, ["Scientific Software Projects and Their Communities"](http://urssi.us/blog/2020/03/24/scientific-software-projects-and-their-communities/)
 
