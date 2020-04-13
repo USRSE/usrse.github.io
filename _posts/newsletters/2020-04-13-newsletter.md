@@ -41,7 +41,7 @@ The in-person [US-RSE Community Building Workshop](https://us-rse.org/first-comm
 
 This is a rapidly changing situation and it is impossible to predict what the travel/conference landscape will look like in October. Should COVID-19 continue to prevent us from having the workshop in October, we may need to reschedule for sometime in the following 12 months. Though we certainly hope it doesn't come to that.
 
-Follow the [US-RSE Event Page](https://us-rse.org/events-training/) to stay up to date.
+Follow the [US-RSE Events Page](https://us-rse.org/events-training/) to stay up to date.
 
 <a name="workshops"></a>
 # Workshops at PEARC20 and SC20
@@ -66,8 +66,8 @@ Items you may have missed on the blog and Slack:
 
 Papers: 
 
-*   "[The Four Pillars of Research Software Engineering](https://doi.org/10.1109/MS.2020.2973362)," IEEE Software, J. Cohen et al. [preprint](https://arxiv.org/abs/2002.01035))
-*   "[Towards FAIR principles for research software](https://content.iospress.com/articles/data-science/ds190026)," Data Science, Anna-Lena Lamprecht et al.
+*   "[The Four Pillars of Research Software Engineering](https://doi.org/10.1109/MS.2020.2973362)," *IEEE Software*, J. Cohen, et al. ([preprint](https://arxiv.org/abs/2002.01035))
+*   "[Towards FAIR principles for research software](https://content.iospress.com/articles/data-science/ds190026)," *Data Science*, Anna-Lena Lamprecht et al.
 
 URSSI/BSSw blog post: R. Gassmoeller, ["Scientific Software Projects and Their Communities"](http://urssi.us/blog/2020/03/24/scientific-software-projects-and-their-communities/)
 
