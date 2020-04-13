@@ -41,7 +41,7 @@ The in-person [US-RSE Community Building Workshop](https://us-rse.org/first-comm
 
 This is a rapidly changing situation and it is impossible to predict what the travel/conference landscape will look like in October. Should COVID-19 continue to prevent us from having the workshop in October, we may need to reschedule for sometime in the following 12 months. Though we certainly hope it doesn't come to that.
 
-Follow the [US-RSE calendar of events](https://us-rse.org/events-training/) to stay up to date.
+Follow the [US-RSE Event Page](https://us-rse.org/events-training/) to stay up to date.
 
 <a name="workshops"></a>
 # Workshops at PEARC20 and SC20
@@ -57,7 +57,7 @@ These opportunities were recently posted to the [RSE Careers page](https://us-rs
 *   [Scheduler Architect, PACE team at Georgia Institute of Technology](https://pace.gatech.edu/scheduler-architect); Atlanta, GA
 *   [Staff Scientist/Software Engineer at New Mexico Tech](https://www.nmt.edu/hr/docs/hr/jobs/StaffSciSoftEngIRIS20-030.pdf); Socorro, NM
 *   [Senior Research Software Engineer (Data Engineer)](http://bit.ly/fasrc_senior_rse); Cambridge, MA
-*   [Data Scholars](https://datascience.nih.gov/data-scholars), NIH, Bethesda and Rockville, MD, or Research Triangle Park, NC
+*   [Data Scholars](https://datascience.nih.gov/data-scholars); NIH, Bethesda and Rockville, MD, or Research Triangle Park, NC
 
 <a name="reads"></a>
 # Interesting Reads
