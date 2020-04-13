@@ -22,9 +22,9 @@ In this issue:
 
 We are excited to announce that the US-RSE association will host a virtual workshop **on April 22 and 23!** This workshop will be held in three online sessions:
 
-1.  The RSE Landscape - Reports on RSE groups and activities, with discussion (Wednesday 4/22, 12:00-1:30 PM EDT)
-2.  Technical talks - Short talks about projects that RSEs are working on (Wednesday 4/22, 3:00-4:30 PM EDT)
-3.  Next steps for the US-RSE organization - Breakout sessions to discuss ideas. What do *you* want from US-RSE? (Thursday 4/23, 12:00-1:30 PM EDT)
+1.  **The RSE Landscape** - Reports on RSE groups and activities, with discussion (Wednesday 4/22, 12:00-1:30 PM EDT)
+2.  **Technical talks** - Short talks about projects that RSEs are working on (Wednesday 4/22, 3:00-4:30 PM EDT)
+3.  **Next steps for the US-RSE organization** - Breakout sessions to discuss ideas. What do *you* want from US-RSE? (Thursday 4/23, 12:00-1:30 PM EDT)
 
 A detailed agenda is in the works and will be posted online when ready.
 
@@ -46,7 +46,7 @@ Follow the [US-RSE Event Page](https://us-rse.org/events-training/) to stay up t
 <a name="workshops"></a>
 # Workshops at PEARC20 and SC20
 
-We are thrilled to announce that in addition to the [PEARC20](https://us-rse.org/events/2020/2020-07-pearc20) workshop, we will have a workshop at [SC20](https://sc20.supercomputing.org/)! The PEARC20 workshop will be a Research Software Engineers Community Workshop, and the SC20 workshop will be "Research Software Engineers in HPC: Creating Community, Building Careers, Addressing Challenges (RSE-HPC-2020)." Stay tuned for more information.
+We are thrilled to announce that in addition to the [PEARC20](https://us-rse.org/events/2020/2020-07-pearc20) workshop, we will have a workshop at [SC20](https://sc20.supercomputing.org/)! The PEARC20 workshop will be a Research Software Engineers Community Workshop, and the SC20 workshop will be "Research Software Engineers in HPC: Creating Community, Building Careers, Addressing Challenges (RSE-HPC-2020)." Stay tuned for more information about the workshops and the overall status of these conferences.
 
 <a name="jobs"></a>
 # Recent Job Postings
@@ -64,12 +64,12 @@ These opportunities were recently posted to the [RSE Careers page](https://us-rs
 
 Items you may have missed on the blog and Slack:
 
-These papers might be of interest to RSEs: 
+Papers: 
 
-*   J. Cohen, D. S. Katz, M. Barker, N. Chue Hong, R. Haines, C. Jay, "The Four Pillars of Research Software Engineering," IEEE Software, [https://doi.org/10.1109/MS.2020.2973362](https://doi.org/10.1109/MS.2020.2973362) (preprint: [https://arxiv.org/abs/2002.01035](https://arxiv.org/abs/2002.01035))
-*   Anna-Lena Lamprecht, Leyla Garcia, Mateusz Kuzak, Carlos Martinez, Ricardo Arcila, Eva Martin Del Pico, Victoria Dominguez Del Angel, Stephanie van de Sandt, Jon Ison, Paula Andrea Martinez, Peter McQuilton, Alfonso Valencia, Jennifer Harrow, Fotis Psomopoulos, Josep Ll. Gelpi, Neil Chue Hong, Carole Goble, and Salvador Capella-Gutierrez. "Towards FAIR principles for research software." Data Science, 1-23, November 2019. [https://content.iospress.com/articles/data-science/ds190026](https://content.iospress.com/articles/data-science/ds190026)
+*   "[The Four Pillars of Research Software Engineering](https://doi.org/10.1109/MS.2020.2973362)," IEEE Software, J. Cohen et al. [preprint](https://arxiv.org/abs/2002.01035))
+*   "[Towards FAIR principles for research software](https://content.iospress.com/articles/data-science/ds190026)," Data Science, Anna-Lena Lamprecht et al.
 
-This URSSI blog post, reposted from the BSSw blog, might be also interesting: R. Gassmoeller ["Scientific Software Projects and Their Communities"](http://urssi.us/blog/2020/03/24/scientific-software-projects-and-their-communities/)
+URSSI/BSSw blog post: R. Gassmoeller, ["Scientific Software Projects and Their Communities"](http://urssi.us/blog/2020/03/24/scientific-software-projects-and-their-communities/)
 
 <a name="getinvolved"></a>
 # Get Involved
