@@ -4,7 +4,7 @@
 
 import os
 import datetime
-from urlchecker.core.urlproc import check_urls
+from urlchecker.core.urlproc import UrlCheckResult
 import shutil
 import sys
 import tempfile
@@ -57,13 +57,13 @@ def main():
             keepers.append(job)
             continue
 
-        check_results = {"failed": [], "passed": []}
-        check_urls(
-            urls=[job["url"]], retry_count=3, timeout=5, check_results=check_results
+        checker = UrlCheckResult()
+        checker.check_urls(
+            urls=[job["url"]], retry_count=3, timeout=5
         )
 
         # If the url passes, add to keepers
-        if check_results["passed"]:
+        if checker.passed:
             print("PASSED %s" % job["url"])
             keepers.append(job)
         else:
