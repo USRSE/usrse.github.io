@@ -2,7 +2,6 @@
 title: US-RSE Virtual Workshop
 subtitle: 2 Day Virtual Community Event 
 location: Online via Zoom
-url: https://us-rse.org/events/2020-04-virtual-workshop
 expires: 2020-04-23
 event_date: "April 22–23, 2020"
 layout: event
