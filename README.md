@@ -67,7 +67,10 @@ be ok.
 ### 3. How do I add an event?
 
 You can add an event or training to the site by adding a markdown file in the [_events](_events)
-folder, organized by year. Here is an example of a file in `_events/2019` for PEARC19:
+folder, organized by year. Do not use the full date (e.g. YYYY-MM-DD-<event-name>.md) in the file name,
+Jekyll will not post pages that it interprets to have a future date in the filename. A better option is
+to use a partial date (e.g. YYYY-MM-<event-name>.md).
+Here is an example of a file in `_events/2019` for PEARC19:
 
 ```markdown
 ---
