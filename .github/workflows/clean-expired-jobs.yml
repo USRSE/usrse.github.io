@@ -29,7 +29,7 @@ jobs:
         file_types: .md,.py,.yml
         print_all: false
         retry_count: 3
-        white_listed_patterns: sc19.supercomputing.org,https://pace.gatech.edu
+        white_listed_patterns: sc19.supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com
         white_listed_files: README.md,SocialNetworks.yml,_config.yml,tests/test_,.github/workflows,github/workspace/_posts/newsletters/
 
     - name: Push Fixes
