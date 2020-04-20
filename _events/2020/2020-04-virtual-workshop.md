@@ -33,7 +33,7 @@ This workshop will be held in three online sessions:
     - Presentations II (4x10 min)
         - The Portage Remapping Package - Angela Herring, LANL
         - Development of an Automated High-Throughput Animal Training Platform - Sarah Leinicke, Harvard
-        - Clean Energy Modeling - Kaspar Mueller, Intellectual Ventures
+        - Software for Renewable Energy Integration - Kaspar Mueller, Intellectual Ventures
         - GT PACE Software Management - Kevin Manalo and Chris Stone, Georgia Tech
 1. **Next steps for the US-RSE organization** - Breakout sessions to discuss ideas. What do *you* want from US-RSE? (Thursday 4/23, 12:00-1:30 PM EDT)
 
