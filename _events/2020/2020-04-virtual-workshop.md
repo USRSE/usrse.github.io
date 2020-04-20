@@ -17,7 +17,7 @@ We are excited to announce that the US-RSE Association will host a virtual works
 This workshop will be held in three online sessions:
 
 1. **The RSE Landscape** - Reports on RSE groups and activities, with discussion (Wednesday 4/22, 12:00-1:30 PM EDT)
-    - Welcome and overview (5 min)
+    - Welcome and Overview (5 min) - Charles Ferenbaugh, LANL
     - Presentations (4x10 min)
         - Presentation on US-RSE - Ian Cosden, Princeton
         - Mahmood Shad, Harvard
@@ -26,14 +26,15 @@ This workshop will be held in three online sessions:
     - Panel discussion (45 min)
 1. **Technical talks** - Short talks about projects that RSEs are working on (Wednesday 4/22, 3:00-4:30 PM EDT)
     - Presentations I (3x10 min)
-        - Fang (Cherry) Liu, Georgia Tech
-        - Junchao Xia, Princeton
-        - Pradeep Raamana, Baycrest Health Sciences
-    - Stretch break (5 min)
-    - Presentations II (3x10 min)
-        - Angela Herring, LANL
-        - Sarah Leinicke, Harvard
-        - Kaspar Mueller, Intellectual Ventures
+        - TBA - Fang (Cherry) Liu, Georgia Tech
+        - Development of ASPIRE Python Package - Junchao Xia, Princeton
+        - Research Data Management for Medical Data with [Pyradigm](https://github.com/raamana/pyradigm) - Pradeep Raamana, Baycrest Health Sciences
+    - Stretch Break (5 min)
+    - Presentations II (4x10 min)
+        - The Portage Remapping Package - Angela Herring, LANL
+        - Development of an Automated High-Throughput Animal Training Platform - Sarah Leinicke, Harvard
+        - Software for Renewable Energy Integration - Kaspar Mueller, Intellectual Ventures
+        - GT PACE Software Management - Kevin Manalo and Chris Stone, Georgia Tech
 1. **Next steps for the US-RSE organization** - Breakout sessions to discuss ideas. What do *you* want from US-RSE? (Thursday 4/23, 12:00-1:30 PM EDT)
 
 The agenda is subject to change as we finalize details - we'll post updates here as we have them.
