@@ -24,7 +24,7 @@ This workshop will be held in three online sessions:
         - Christina Maimone, Northwestern
         - Nuyun (Nellie) Zhang, Georgia Tech
     - Panel discussion (45 min)
-1. **Technical talks** - Short talks about projects that RSEs are working on (Wednesday 4/22, 3:00-4:30 PM EDT)
+1. **Technical Talks** - Short talks about projects that RSEs are working on (Wednesday 4/22, 3:00-4:30 PM EDT)
     - Presentations I (3x10 min)
         - Data Analytics and Provenance Tools Development at GT PACE - Fang (Cherry) Liu, Georgia Tech
         - Development of ASPIRE Python Package - Junchao Xia, Princeton
@@ -35,7 +35,7 @@ This workshop will be held in three online sessions:
         - Software for Renewable Energy Integration - Kaspar Mueller, Intellectual Ventures
         - The Spack Package Manager - Todd Gamblin, LLNL
         - GT PACE Software Management - Kevin Manalo and Chris Stone, Georgia Tech
-1. **Next steps for the US-RSE organization** - Breakout sessions to discuss ideas. What do *you* want from US-RSE? (Thursday 4/23, 12:00-1:30 PM EDT)
+1. **Next Steps for the US-RSE Association** - Breakout sessions to discuss ideas. What do *you* want from US-RSE? (Thursday 4/23, 12:00-1:30 PM EDT)
 
 The agenda is subject to change as we finalize details - we'll post updates here as we have them.
 
