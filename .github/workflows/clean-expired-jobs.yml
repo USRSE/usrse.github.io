@@ -24,13 +24,14 @@ jobs:
         python3 scripts/clean_jobs.py
 
     - name: Run URLs-checker
-      uses: urlstechie/urlchecker-action@0.1.7
+      uses: urlstechie/urlchecker-action@0.2.1
       with:
         file_types: .md,.py,.yml
         print_all: false
         retry_count: 3
+        timeout: 10
         white_listed_patterns: sc19.supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com
-        white_listed_files: README.md,SocialNetworks.yml,_config.yml,tests/test_,.github/workflows,github/workspace/_posts/newsletters/
+        white_listed_files: README.md,SocialNetworks.yml,_config.yml,tests/test_,.github/workflows,_posts/newsletters/
 
     - name: Push Fixes
       env:
