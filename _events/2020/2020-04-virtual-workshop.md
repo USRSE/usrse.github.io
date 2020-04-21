@@ -26,7 +26,7 @@ This workshop will be held in three online sessions:
     - Panel discussion (45 min)
 1. **Technical talks** - Short talks about projects that RSEs are working on (Wednesday 4/22, 3:00-4:30 PM EDT)
     - Presentations I (3x10 min)
-        - TBA - Fang (Cherry) Liu, Georgia Tech
+        - Data Analytics and Provenance Tools Development at GT PACE - Fang (Cherry) Liu, Georgia Tech
         - Development of ASPIRE Python Package - Junchao Xia, Princeton
         - Research Data Management for Medical Data with [Pyradigm](https://github.com/raamana/pyradigm) - Pradeep Raamana, Baycrest Health Sciences
     - Stretch Break (5 min)
