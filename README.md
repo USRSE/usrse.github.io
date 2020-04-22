@@ -53,10 +53,8 @@ can open a pull request to update the date. An example posting is shown below. T
 job will appear on the site until the first of July, 2019.
 
 ```yaml
-- name: "Research Software Engineer"
-  location: Princeton, NJ
-  url: https://main-princeton.icims.com/jobs
-  expires: 2019-07-01
+- {expires: 2019-07-01, location: 'Princeton, NJ', name: 'Research Software Engineer'
+    url: 'https://main-princeton.icims.com/jobs'}
 ```
 
 We will test that all fields are defined, the url exists, and that the "expires" field loads
