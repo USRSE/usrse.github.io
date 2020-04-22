@@ -34,7 +34,7 @@ navbar-links:
     - About: "about"
     - Mission: "mission"
     - RSE Groups: "rse-groups"
-    - RSE Map: "map"
+    - RSE Map: "https://usrse.github.io/usrse-map"
     - Steering Committee: "steering-committee"
     - Code of Conduct: "code-of-conduct"
   Resources:

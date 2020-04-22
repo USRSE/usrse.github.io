@@ -14,34 +14,10 @@ To do this: fork the repository, make your proposed changes, test locally (see b
 
 ### 1. How do I update the map?
 
-If you belong to a group of Research Software Engineers (hooray!), or want
-to add yourself as an individual you can do so by adding
-an entry to the [_data/map.yml](_data/map.yml) file. Specifically, an entire
-should include a name, institution, url, type, and coordinate. The name could be an individual,
-or the name of a group. If you are adding yourself as an individual, set the
-type to be "person." If you are adding a group, set the type to be "group."
-Here is an example:
-
-```yaml
-- name: "Stanford Research Computing Center"
-  url: https://srcc.stanford.edu
-  coords: [37.424107, -122.166077]
-  institution: Stanford University
-  type: group
-```
-
-You are also free to add an image parameter, in case your group has a logo.
-And of course this could apply to an individual too.
-
-> How do I find a latitude and longitude?
-
-You can actually look it up on [Google Maps](http://maps.google.com), and a more direct approach
-is to use [https://www.latlong.net/](https://www.latlong.net/) and enter
-your location by name.
-
-> What if I don't have an image, or don't want to include one?
-
-The image is not required. If you leave it out, the box will only contain text.
+The [map](https://us-rse.org/usrse-map/) is generated programmatically from the US-RSE member list, so if you
+have already [joined](https://us-rse.org/join) and provided your institution,
+you should be represented on it. If you see any issues or errors with location
+lookup (we use geolocation of a named location) please [open an issue](https://github.com/USRSE/usrse-map/issues).
 
 ### 2. How do I add a job?
 
@@ -168,18 +144,7 @@ If you want to edit any of the tests, you should edit [config.yml](.circleci/con
 Details about running tests locally are included below. This can be good to do if you
 change an input file in [_data](_data) and want to test it.
 
-#### 1. Test Map Entries
-
-Other than previewing the site and ensuring that the coordinate shows up in the
-correct spot, you can run unit testing locally to confirm you have the minimum
-required data:
-
-```bash
-$ cd tests
-$ python -m unittest test_mapdata
-```
-
-#### 2. Test Jobs
+#### 1. Test Jobs
 
 Jobs are tested for correctness, meaning that all fields are entered, a date string
 is entered for the "expires" field, and the url is valid. You can run tests locally 

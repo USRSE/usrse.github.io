@@ -3,6 +3,7 @@
 # Read in the map.yml file to validate each entry. Specifically:
 # A name, url, and coord is required.
 # optional fields are institution, image
+# This test was removed April 2020 as the map is at github.com/USRSE/usrse-map
 
 import unittest
 import requests
