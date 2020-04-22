@@ -16,11 +16,10 @@ install: &install
   command: |
      $HOME/conda/bin/pip install -r ~/repo/.circleci/requirements.txt
 
-test_map: &test_map
-  name: test the metadata required for map
+test_jobs: &test_jobs
+  name: test the jobs metadata
   command: |
      cd ~/repo/tests
-     $HOME/conda/bin/python -m unittest test_mapdata
      $HOME/conda/bin/python -m unittest test_jobs
 
 install_python_3: &install_python_3
@@ -79,7 +78,7 @@ jobs:
           key: rubygems-v1
           paths:
             - vendor/bundle
-      - run: *test_map
+      - run: *test_jobs
       - run: *build_jekyll
       - store_artifacts:
           path: ~/repo/_site
