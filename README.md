@@ -155,6 +155,36 @@ $ cd tests
 $ python -m unittest test_jobs
 ```
 
+### 2. Count Jobs
+
+A [script](scripts/count_jobs.py) is provided that will clone the repository
+to a temporary directory, find all commits with a changed job file,
+and then checkout and read each commit to get the jobs present for that time.
+We then use the title and url for the job as a unique identifier to determine
+if the job has been seen. A job with the same name and url, and thus the same
+unique identifier, is considered the same job. You can run this script
+as is if you just want to derive counts:
+
+```bash
+$ python scripts/count_jobs.py
+Cloning repository https://github.com/USRSE/usrse.github.io
+Found 43 commits for _data/jobs.yml
+Found a total of 35 unique jobs across 43 commits.
+```
+
+or you can add an output file to save the compiled job content to file
+
+```bash
+$ python scripts/count_jobs.py all-jobs.yml
+Cloning repository https://github.com/USRSE/usrse.github.io
+Found 43 commits for _data/jobs.yml
+Found a total of 35 unique jobs across 43 commits.
+Saving to output file /home/vanessa/Desktop/Code/usrse/usrse.github.io/all-jobs.yml
+```
+
+The repository is always cleaned up, and the parsing done separately from the
+script.
+
 #### Previewing the Site
 
 To preview the site on CircleCI, after it finishes building, make sure you are logged in
