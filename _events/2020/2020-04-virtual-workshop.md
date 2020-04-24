@@ -10,7 +10,7 @@ repeated: false
 
 We are excited to announce that the US-RSE Association will host a virtual workshop on April 22 and 23, 2020!  
 
-### [Registration link](https://forms.gle/RNDK5DiHtpikjAVS7)
+### ~~Registration link~~
 
 ### Workshop Agenda
 
@@ -36,10 +36,13 @@ This workshop will be held in three online sessions:
         - The Spack Package Manager - Todd Gamblin, LLNL
         - GT PACE Software Management - Kevin Manalo and Chris Stone, Georgia Tech
 1. **Next Steps for the US-RSE Association** - Breakout sessions to discuss ideas. What do *you* want from US-RSE? (Thursday 4/23, 12:00-1:30 PM EDT)
+    - Introduction (10 minutes) - Jordan Perr-Sauer, NREL
+    - Breakout Sessions
+        - What are some problems that US-RSE can help solve? (15 minutes)
+        - What activities should US-RSE encourage or participate in? (15 minutes)
+        - Q/A Session related to starting an RSE group. (30 minutes)
 
-The agenda is subject to change as we finalize details - we'll post updates here as we have them.
-
-The workshop is free, but we ask that all participants preregister so that we know how many to expect and can prepare appropriately. Please register [here](https://forms.gle/RNDK5DiHtpikjAVS7).
+The workshop is free, but we ask that all participants preregister so that we know how many to expect and can prepare appropriately. ~~Please register here.~~
 
 
 If you have questions or would like to contribute please contact contact@us-rse.org or reach out via [slack](https://usrse.slack.com/).
