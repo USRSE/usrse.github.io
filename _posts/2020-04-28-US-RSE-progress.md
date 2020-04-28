@@ -32,11 +32,11 @@ The Steering Committee is currently meeting every two weeks and working on many 
 
 **Mission**. We've defined an initial mission: The US-RSE Association is centered around three main goals. We aim to target our activities and actions to serving these three aspects:
 
-**Community**: We seek to provide a coherent association of those who identify with the role (not necessarily title) of Research Software Engineer based on our inclusive definition. This group aims to provide the members of the community the ability to share knowledge, professional connections, and resources.
+* **Community**: We seek to provide a coherent association of those who identify with the role (not necessarily title) of Research Software Engineer based on our inclusive definition. This group aims to provide the members of the community the ability to share knowledge, professional connections, and resources.
 
-**Advocacy**: We aim to promote RSEs’ impact on research, highlighting the increasingly critical and valuable role RSEs serve.
+* **Advocacy**: We aim to promote RSEs’ impact on research, highlighting the increasingly critical and valuable role RSEs serve.
 
-**Resources**: We strive to provide useful resources to multiple demographics. For current and future RSEs we strive to provide technical and career development resources to support their professional development. We aim to provide access to information and material to support the establishment and expansion of RSE positions and groups within the research ecosystem including the material for making business justifications for RSEs.
+* **Resources**: We strive to provide useful resources to multiple demographics. For current and future RSEs we strive to provide technical and career development resources to support their professional development. We aim to provide access to information and material to support the establishment and expansion of RSE positions and groups within the research ecosystem including the material for making business justifications for RSEs.
 
 **Logo, website, Slack**. We've created a [US-RSE logo](https://github.com/USRSE/logo) and a [US-RSE website](https://us-rse.org/) that's hosted on [GitHub](https://github.com/USRSE/usrse.github.io) and has an [open method for people to contribute](https://github.com/USRSE/usrse.github.io/blob/master/README.md) jobs, events, and other content. As part of the website, we built a map of US-RSE member locations. We've also created an US-RSE Slack team with channels for different topics of interest that enable US-RSE members to chat with each other. As of 22 April 2020, the Slack team, which includes both members and others who are interested in US-RSE issues, has 522 users. 
 
