@@ -12,7 +12,7 @@ The US-RSE association was first planned in 2018, but it really became active an
 
 **Membership**. In January 2019, we had 10 members, who were all involved in starting up US-RSE. By the end of 2019, this had grown to 259, and is now (at the end of March 2020) 345.
 
-![US-RSE Membership]({{ site.baseurl }}/assets/posts/2020-04-28-us-rse-membership.png "US-RSE Membership")
+![US-RSE Membership]({{ site.baseurl }}/assets/posts/2020-04-28-us-rse-membership.png "US-RSE Membership") US-RSE Membership
 
 **Steering Committee**. We've established an initial [steering committee](https://us-rse.org/steering-committee/) with 9 members:
 
@@ -40,7 +40,7 @@ The Steering Committee is currently meeting every two weeks and working on many 
 
 **Logo, website, Slack**. We've created a [US-RSE logo](https://github.com/USRSE/logo) and a [US-RSE website](https://us-rse.org/) that's hosted on [GitHub](https://github.com/USRSE/usrse.github.io) and has an [open method for people to contribute](https://github.com/USRSE/usrse.github.io/blob/master/README.md) jobs, events, and other content. As part of the website, we built a map of US-RSE member locations. We've also created an US-RSE Slack team with channels for different topics of interest that enable US-RSE members to chat with each other. As of 22 April 2020, the Slack team, which includes both members and others who are interested in US-RSE issues, has 522 users. 
 
-![US-RSE member locations]({{ site.baseurl }}/assets/posts/2020-04-28-member-map.png "US-RSE member locations")
+![US-RSE member locations]({{ site.baseurl }}/assets/posts/2020-04-28-member-map.png "US-RSE member locations") US-RSE member locations
 
 **Code of Conduct**. In September 2019, we created a [Code of Conduct](https://us-rse.org/code-of-conduct/) for the US-RSE Association to encourage participation in our community, and to make clear what isn't acceptable.
 
@@ -54,12 +54,12 @@ The Steering Committee is currently meeting every two weeks and working on many 
 
   * Events at PEARC19: We had a [Birds of a Feather session](https://pearc19.conference-program.com/presentation/?id=bof111&sess=sess173) with about 30 people at PEARC19, intended to introduce the RSE concept and term to PEARC attendees. Discussion revolved around beneficial activities for the community and what US-RSE could provide. Feedback included the need for sharing best and bad practices, lobbying RSE positions to executives, networking, advertising of open jobs, mentorship programs, platform for sharing expertise, interactions between academia, industry and national labs and support organizations in incentivizing good software engineering practices.
 
-  ![The US-RSE BOF at PEARC19 (D. S. Katz, CC-BY-4.0)]({{ site.baseurl }}/assets/posts/2019-10-24-PEARC19-BOF.png "The US-RSE BOF at PEARC19 (D. S. Katz, CC-BY-4.0)")
+  ![The US-RSE BOF at PEARC19 (D. S. Katz, CC-BY-4.0)]({{ site.baseurl }}/assets/posts/2019-10-24-PEARC19-BOF.png "The US-RSE BOF at PEARC19 (D. S. Katz, CC-BY-4.0)") The US-RSE BOF at PEARC19 (D. S. Katz, CC-BY-4.0)
 
 
   * Events at SC19: At SC19, we participated in 3 RSE-related events, a panel on [Developing and Managing Research Software in Universities and National Labs](https://sc19.supercomputing.org/?post_type=page&p=3479&id=pan108&sess=sess226), a BOF on [Software Engineering and Reuse in Modeling, Simulation, and Data Analytics for Science and Engineering](https://sc19.supercomputing.org/?post_type=page&p=3480&sess=sess341), and another panel on [Sustainability of HPC Research Computing: Fostering Career Paths for Facilitators, Research Software Engineers, and Gateway Creators](https://sc19.supercomputing.org/?post_type=page&p=3479&id=pan109&sess=sess227). There were also a lot of other events that were of interest to RSEs, which we wrote about in a [blog post](https://us-rse.org/2019-10-04-SC19/).  And we hosted our first pre-planned RSE social event, gathering informally for drinks and conversation after the Software Engineering BOF. Additionally, steering committee members of the US-RSE and the UK-RSE met to discuss similarities and differences in building the two RSE communities.
 
-  ![US-RSE Social at SC19 (Photo credit: Semir Sarajlic)]({{ site.baseurl }}/assets/posts/2020-02-10-sc19.png "US-RSE Social at SC19 (Photo credit: Semir Sarajlic)")
+  ![US-RSE Social at SC19 (Photo credit: Semir Sarajlic)]({{ site.baseurl }}/assets/posts/2020-02-10-sc19.png "US-RSE Social at SC19 (Photo credit: Semir Sarajlic)") US-RSE Social at SC19 (Photo credit: Semir Sarajlic)
 
   * An [in-person community-building workshop](https://us-rse.org/first-community-workshop/) in Princeton is scheduled for October 2020 (rescheduled from April 2020). This workshop will invite a small group of individuals to 1) grow the RSE community by establishing and strengthening professional networks of current RSEs and RSE leaders, and 2) generate content for the US-RSE website to promote and support RSEs based on the mission of US-RSE. We plan breakout sessions related to the primary mission of US-RSE: Community, Advocacy, and Resources. Each breakout session will produce content for the US-RSE website in the form of white papers, blogs, and other online resources. Some topics we plan to address in these sessions include the role of the US-RSE organization (conferences, website, community building), RSE Groups (establishing, funding, and sustaining), RSE best practices (testing, tools, design), challenges faced by RSEs, career paths for RSEs, and RSE guidelines.
 
