@@ -35,7 +35,7 @@ This workshop will be held in three online sessions:
         - [Development of an Automated High-Throughput Animal Training Platform](https://drive.google.com/open?id=1WersTgflMEM61Dr1JpIpW44d17gW_dsT) Sarah Leinicke, Harvard
         - [Software for Renewable Energy Integration](https://drive.google.com/open?id=1tDkYcXvjvn7ZJyslVgW-TFKTr55vpnaj) Kaspar Mueller, Intellectual Ventures
         - [Spack: What Is It, What's New, and What's on the Roadmap?](https://drive.google.com/open?id=1N1_mghnjWTwFwL6nPf5FDIsO5px2LzZO) Todd Gamblin, LLNL
-        - Scientific Software Management at PACE - Kevin Manalo and Chris Stone, Georgia Tech
+        - [Scientific Software Management at PACE](https://drive.google.com/file/d/19q2B_hIeZRsEEecXIMYaMOXoARbSd5s0) Kevin Manalo and Chris Stone, Georgia Tech
 1. **Next Steps for the US-RSE Association** - Breakout sessions to discuss ideas. What do *you* want from US-RSE? (Thursday 4/23, 12:00-1:30 PM EDT)
     - Introduction (10 minutes) - Jordan Perr-Sauer, NREL
     - Breakout Sessions
