@@ -17,24 +17,25 @@ We are excited to announce that the US-RSE Association will host a virtual works
 This workshop will be held in three online sessions:
 
 1. **The RSE Landscape** - Reports on RSE groups and activities, with discussion (Wednesday 4/22, 12:00-1:30 PM EDT)
-    - Welcome and Overview (5 min) - Charles Ferenbaugh, LANL
+    - [Welcome and Overview](https://drive.google.com/open?id=1oNFeGRDOWEd0MdLH5dbE8NhPTmP7L3_w) (5 min) Charles Ferenbaugh, LANL
     - Presentations (4x10 min)
-        - Presentation on US-RSE - Ian Cosden, Princeton
-        - Mahmood Shad, Harvard
-        - Christina Maimone, Northwestern
-        - Nuyun (Nellie) Zhang, Georgia Tech
+        - [US-RSE: Past, Present, & Future](https://drive.google.com/open?id=1nnOJe5kQFq9-AEJNsqZrQr5-fFKtBqXssE3qhhTtcq4) Ian Cosden, Princeton
+        - [RSE Group at Harvard University](https://drive.google.com/open?id=1F84aRnai68vUssM_6FM1Z0v9ykYrhuCd) Mahmood Shad, Harvard
+        - [Northwestern Research Software Engineering Support](https://docs.google.com/presentation/d/1KxmNG-hpStE55st9S8U_zFX1O8UBnwAcsEnp6EZ6-tw/edit?usp=sharing) - Christina Maimone, Northwestern
+        - Research Software Engineers @ PACE GT - Nuyun (Nellie) Zhang, Georgia Tech
     - Panel discussion (45 min)
 1. **Technical Talks** - Short talks about projects that RSEs are working on (Wednesday 4/22, 3:00-4:30 PM EDT)
+    - Introduction (2 min) - Chris Hill, MIT
     - Presentations I (3x10 min)
-        - [Data Analytics and Provenance Tools](https://github.com/pace-gt/PACE-ProvBench) Development at GT PACE - Fang (Cherry) Liu, Georgia Tech
-        - Development of ASPIRE Python Package - Junchao Xia, Princeton
-        - Research Data Management for Medical Data with [Pyradigm](https://github.com/raamana/pyradigm) - Pradeep Raamana, Baycrest Health Sciences
+        - [Data Analytics and Provenance Tools Development at GT PACE](https://drive.google.com/open?id=10fqy3BG70tPJK9YDSvCahC3VYroYKFVO) - Fang (Cherry) Liu, Georgia Tech
+        - [Development of ASPIRE Python Package](https://drive.google.com/open?id=1L9y32VyKs9ccjJgxUX95umJyDPExoy9c) Junchao Xia, Princeton
+        - [Research Data Management for Medical Data with Pyradigm](https://crossinvalidation.com/2020/04/29/research-data-management-for-medical-data-with-pyradigm) - Pradeep Raamana, Baycrest Health Sciences
     - Stretch Break (5 min)
     - Presentations II (4x10 min)
-        - Development of an Automated High-Throughput Animal Training Platform - Sarah Leinicke, Harvard
-        - Software for Renewable Energy Integration - Kaspar Mueller, Intellectual Ventures
-        - The Spack Package Manager - Todd Gamblin, LLNL
-        - GT PACE Software Management - Kevin Manalo and Chris Stone, Georgia Tech
+        - [Development of an Automated High-Throughput Animal Training Platform](https://drive.google.com/open?id=1WersTgflMEM61Dr1JpIpW44d17gW_dsT) Sarah Leinicke, Harvard
+        - [Software for Renewable Energy Integration](https://drive.google.com/open?id=1tDkYcXvjvn7ZJyslVgW-TFKTr55vpnaj) Kaspar Mueller, Intellectual Ventures
+        - [Spack: What Is It, What's New, and What's on the Roadmap?](https://drive.google.com/open?id=1N1_mghnjWTwFwL6nPf5FDIsO5px2LzZO) Todd Gamblin, LLNL
+        - Scientific Software Management at PACE - Kevin Manalo and Chris Stone, Georgia Tech
 1. **Next Steps for the US-RSE Association** - Breakout sessions to discuss ideas. What do *you* want from US-RSE? (Thursday 4/23, 12:00-1:30 PM EDT)
     - Introduction (10 minutes) - Jordan Perr-Sauer, NREL
     - Breakout Sessions
