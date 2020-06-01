@@ -7,57 +7,93 @@ subtitle: Ways to contribute to the US-RSE Association
 
 The US-RSE Association is a new organization that needs community involvement to grow and mature.  Below are some ways members can get more involved in building this organization. Have additional ideas for a working group or committee?  Let us know and bring the discussion to slack.
 
-If you have another idea but aren’t sure how to get started, the Steering Committee would be happy to help. Reach out on Slack or email us all at [contact@us-rse.org](mailto:contact@us-rse.org).
+If you have another idea but aren’t sure how to get started, the Steering Committee would be happy to help. Reach out on Slack (@sc) or email us all at [contact@us-rse.org](mailto:contact@us-rse.org).
 
 ---
 
-## US-RSE Website Committee Charter
+# Easy
 
-We are seeking help to develop a charter document and determine the initial members of the US-RSE Website Committee. Once ready, the document will be reviewed and ratified by the US-RSE Steering Committee.
+### Invite a New Member!
 
-There are two main goals for the committee: 1. Provide guidance for website growth and direction 2. Technical website management
+Email at least one other person who might be interested in the US-RSE association and invite them to join (via the link on the main website page: [https://us-rse.org/](https://us-rse.org/)).  
 
-As the US-RSE association grows, it is important that we have the proper guidance and support structure in place to ensure the website reflects the values and beliefs of the organization as a whole.
+### Introduce Yourself
 
-* **Get involved**: join the [#website channel on Slack](https://usrse.slack.com/messages/CJTL0MWUE) 
-* **Contact**: Lance Parsons <[lparsons@princeton.edu](mailto:lparsons@princeton.edu)>.
+Have you been lurking on Slack for a while?  Introduce yourself on the #introductions channel, even if you’re not new to the group!
 
----
+### Welcome New Members
 
-## Membership and Voting
+Join the #introductions channel on Slack and welcome new members.  
 
-The US-RSE aims to hold an election for members of the Steering Committee by June 2020.  In addition, we need a mechanism for occasional membership votes on issues like organizational rules. To make this happen, we need to:
-1. Define what makes people a member
-2. Have some process for tracking members
-3. Have a mechanism to allow voting
-4. Develop rules around the quorum for votes and voting rules
+### Share a Resource/Ask a Question
 
-* **Get involved**: join the [#membership-voting channel on Slack](https://usrse.slack.com/messages/CP2LK32AZ)
-* **Contact**: Christina Maimone <[christina.maimone@northwestern.edu](mailto:christina.maimone@northwestern.edu)>
+Found a good resource that’s worth sharing? Post it on Slack! Looking for a good resource or some advice?  Post it on Slack!  Looking for a little more guidance? See How to Share with the Community
 
----
 
-## Social Media
+# One-Time Commitment
 
-The [@us_rse](https://twitter.com/us_rse) Twitter account exists, but we need someone to take the lead on posting content.  If you’d like to do this at least some of the time (we can establish a rotating schedule), or have other ideas about using social media, we need your help!
+### Tweet about RSE things
 
-* **Get involved**: join the [#socialmedia channel on Slack](https://app.slack.com/client/T8ZT4PJSW/CLK5TNAVD)
-* **Contact**: Christina Maimone <[christina.maimone@northwestern.edu](mailto:christina.maimone@northwestern.edu)>
+The @us_rse Twitter account exists, but we need people to post/retweet content and engage with others.  If you’d like to do this for a week, a special event, or on an ongoing part-time basis (we can establish a rotating schedule), we’d love to have you!  If you have other ideas about using social media, we need your help too!
 
----
+* **Get involved**: Join the #socialmedia channel on Slack and share your idea or volunteer to tweet
 
-## Outreach
 
-Our community is growing, but we want to make sure all US RSEs know about us.  Have ideas for finding and reaching out to RSEs?  Interested in organizing local events to spread the word?
+### Organize a Community Call
 
-* **Get involved**: join the [#outreach channel on Slack](https://usrse.slack.com/messages/CNR6E0N75)
-* **Contact**: Ian Cosden <[icosden@princeton.edu](mailto:icosden@princeton.edu)>
+We are aiming to have community calls at least quarterly, but we need help planning and organizing them!  Can you take the lead organizing an upcoming call?  
 
----
+* **Get involved**: Join the #communitycalls channel on Slack
 
-## Community Engagement 
 
-As the community grows providing opportunities for members to interact in meaningful ways.  This includes planning and coordinating community calls, maintaining a community calendar.  In the future it is likely that this group could help evolve into other methods of engaging and connecting community members and branch out into mediums beyond community calls. 
+### Volunteer to be an RSE Story
 
-* **Get involved**: join the [#communitycalls channel on Slack](https://usrse.slack.com/messages/CLBDQMJH5)
-* **Contact**: *Voluteer to lead this effort*!
+Willing to share your story of being an RSE on the [RSE Stories podcast](https://us-rse.org/rse-stories/)? 
+
+* **Get involved**: See [https://us-rse.org/rse-stories/](https://us-rse.org/rse-stories/) and sign-up to be a subject!
+
+
+### Propose a Conference Event
+
+Going to a conference related to RSEs?  Propose a talk, panel, BoF, or other event.  Members of the Steering Committee are happy to help you with this (contact @sc on Slack).  
+
+* **Get involved**: Raise the idea on Slack to find collaborators
+
+
+# Ongoing
+
+### Start/Add Your Own Blog
+
+The Community Blog page [https://us-rse.org/blog/](https://us-rse.org/blog/) pulls content from members’ blogs.  Have a blog to share?  Add it to our collection!  Even if you post things infrequently, it’s a good way to connect your work with others.
+
+* **Instructions**: [https://github.com/USRSE/blog](https://github.com/USRSE/blog)
+* **Help**: Ask on the #general Slack channel and someone will help or add it for you
+
+
+### Own the Community Calendar
+
+The [US-RSE calendar](https://us-rse.org/calendar/) needs some love.  Can you add relevant community events?  Figure out what types of events should be listed?
+
+* **Get involved**: Contact the Steering Committee (@sc) on Slack
+
+
+### Run the Twitter Account
+
+We have a Twitter account (@us_rse) but we need volunteers to post, like, retweet, respond, and recruit others to help out.
+
+* **Get involved:** Join the #socialmedia channel on Slack and let us know you want to help
+
+
+### Lead Outreach Efforts
+
+Our community is growing, but we want to make sure all US RSEs know about us.  Have ideas for finding and reaching out to RSEs?  Interested in organizing local events to spread the word?  We need someone to take the lead on organizing outreach efforts.
+
+* **Get involved:** Join the #outreach channel on Slack and share your ideas or contact @sc on Slack (Steering Committee)
+
+
+### Website Development and Maintenance
+
+We need folks to help update content, approve pull requests, and generally help manage the website.  Join the website committee to help keep the website up and running.
+
+* **Get involved**: Join the #website channel on Slack and get acquainted with the website at https://github.com/USRSE/usrse.github.io 
+
