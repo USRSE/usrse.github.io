@@ -4,7 +4,7 @@ title: Virtual US-RSE Workshop Recap
 tags: [workshop]
 ---
 
-Jordan Perr-Sauer, Vanessa Sochat, Ian Cosden, Charles Ferenbaugh, Daniel S. Katz, Sandra Gesing
+by Jordan Perr-Sauer, Vanessa Sochat, Ian Cosden, Charles Ferenbaugh, Daniel S. Katz, Sandra Gesing
 
 Given recent current events around the novel coronavirus outbreak, many individuals and organizations have been forced to adapt. For the US Research Software Engineer Association (US-RSE), this meant the unfortunate postponement of an in-person community building workshop that was to take place April 23-24th, 2020. In order to keep up the community's strong momentum, we decided to host a [virtual workshop](https://us-rse.org/events/2020/2020-04-virtual-workshop) that could be attended from the comfort and safety of our own homes. While not aiming to replace the in-person workshop, this virtual workshop format came with some benefits of its own, such as additional participation by those who would not have been able to attend the in-person workshop, reduced environmental impact from not having to travel, and less disruption in the lives of attendees.
 
@@ -12,7 +12,7 @@ The virtual workshop was well attended, with 30-90 participants in each session.
 
 **Session 1: The RSE Landscape**
 
-The first session, chaired by Charles Ferenbaugh of Los Alamos National Laboratory, introduced the audience to the concept of research software engineering. The session started out with a talk by US-RSE Association Chair Ian Cosden. He provided a brief history of the formation of the US-RSE Association, including its relationship with similar organizations in other countries, as well as the definition of “Research Software Engineer.” Ian’s talk was followed by talks from Mahmood Shad (Harvard), Christina Maimone (Northwestern), and Nuyun Zhang (Georgia Tech) on the research software engineering groups in their respective institutions. Slides from these talks can be found on the [event page](https://us-rse.org/events/2020/2020-04-virtual-workshop), and a [recording of Session 1 can be found on Youtube.](https://www.youtube.com/watch?v=TaBMeBN7g_4)
+The first session, chaired by Charles Ferenbaugh of Los Alamos National Laboratory, introduced the audience to the concept of research software engineering. The session started out with a talk by US-RSE Association Chair Ian Cosden (Princeton). He provided a brief history of the formation of the US-RSE Association, including its relationship with similar organizations in other countries, as well as the definition of “Research Software Engineer.” Ian’s talk was followed by talks from Mahmood Shad (Harvard), Christina Maimone (Northwestern), and Nuyun Zhang (Georgia Tech) on the research software engineering groups in their respective institutions. Slides from these talks can be found on the [event page](https://us-rse.org/events/2020/2020-04-virtual-workshop), and a [recording of session 1 can be found on Youtube.](https://www.youtube.com/watch?v=TaBMeBN7g_4)
 
 These talks were followed by a panel discussion on the situation RSEs face in the modern research landscape. Topics discussed included:
 
@@ -40,7 +40,7 @@ The second session was chaired by Chris Hill of MIT. It featured seven short tec
 *   _Spack: What Is It, What’s New, and What’s on the Roadmap?_ - Todd Gamblin, LLNL
 *   _Scientific Software Management at PACE_ - Kevin Manalo and Chris Stone, Georgia Tech
 
-Slides from these talks can be found on the [event page](https://us-rse.org/events/2020/2020-04-virtual-workshop), and a [recording of Session 2 can be found on Youtube.](https://www.youtube.com/watch?v=OiJd0y38b0Q)
+Slides from these talks can be found on the [event page](https://us-rse.org/events/2020/2020-04-virtual-workshop), and a [recording of session 2 can be found on Youtube.](https://www.youtube.com/watch?v=OiJd0y38b0Q)
 
 **Session 3: Next Steps for the US-RSE Association**
 
@@ -56,7 +56,7 @@ The breakout sessions focused on the following predetermined discussion themes:
 *   What activities should US-RSE encourage or participate in?
 *   How to establish an RSE group at your own institution.
 
- \
+
 While it’s impossible to capture all the discussions, a few themes emerged that we summarize here. In both of the first two sessions, multiple breakout groups touched on various aspects of RSE career path, professional development, hosting events aimed at RSEs, and developing resources for organizing groups of RSEs. 
 
 Participants wanted to see US-RSE help establish and legitimize a career path for RSEs. The role of RSEs within an organization may be poorly understood when compared to more traditional research roles. It would be helpful to have a national organization like US-RSE, rather than local institutions, provide formal definitions of various RSE positions. Providing materials documenting the value of RSEs within a research institution could help RSEs better make their case to management. One specific suggestion that came up was to create a catalog of the different business models in use today by RSE groups.
@@ -69,4 +69,4 @@ For the third session, the organizers decided to have one large session rather t
 
 Although this virtual workshop was organized quickly in the midst of a global pandemic, we view it as a resounding success. The various session formats allowed for different kinds of participation, whether the attendee wanted to just be a fly on the wall and watch talks, or be an active participant by giving a talk or joining a breakout session. This format proved to work remarkably well, and we intend to organize more virtual workshops and other online events in the future. If you missed this virtual workshop, you can find slides and recordings on [the event page](https://us-rse.org/events/2020/2020-04-virtual-workshop).
 
-Check out upcoming events on [the US-RSE calendar](https://us-rse.org/calendar/), or join the US-RSE Slack to join the conversation and share your ideas. If you’d like to help organize an upcoming virtual workshop or event, reach out to @sc on slack. Please join us at PEARC20, SC20, and the in-person community building workshop (whenever it is able to be rescheduled). More details on these workshops, including announcements of opportunities to actively contribute to the programs, will be announced soon via the US-RSE slack channel.
+Check out upcoming events on [the US-RSE calendar](https://us-rse.org/calendar/), or join the US-RSE Slack to join the conversation and share your ideas. If you’d like to help organize an upcoming virtual workshop or event, reach out to @sc on slack. Please join us at PEARC20, SC20, and the in-person community building workshop (whenever it is able to be rescheduled). More details on these workshops, including announcements of opportunities to actively contribute to the programs, will be announced soon.
