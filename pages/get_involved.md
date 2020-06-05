@@ -13,13 +13,15 @@ If you have another idea but aren’t sure how to get started, the Steering Comm
 
 # Easy
 
-### Invite a New Member!
+---
+
+### Invite a New Member
 
 Email at least one other person who might be interested in the US-RSE association and invite them to join (via the link on the main website page: [https://us-rse.org/](https://us-rse.org/)).  
 
 ### Introduce Yourself
 
-Have you been lurking on Slack for a while?  Introduce yourself on the #introductions channel, even if you’re not new to the group!
+Have you been lurking on Slack for a while?  Introduce yourself on the #introductions channel, even if you’re not new to the group.
 
 ### Welcome New Members
 
@@ -32,16 +34,18 @@ Found a good resource that’s worth sharing? Post it on Slack! Looking for a go
 
 # One-Time Commitment
 
+---
+
 ### Tweet about RSE things
 
-The @us_rse Twitter account exists, but we need people to post/retweet content and engage with others.  If you’d like to do this for a week, a special event, or on an ongoing part-time basis (we can establish a rotating schedule), we’d love to have you!  If you have other ideas about using social media, we need your help too!
+The @us_rse Twitter account exists, but we need people to post/retweet content and engage with others.  If you’d like to do this for a week, a special event, or on an ongoing part-time basis (we can establish a rotating schedule), we’d love to have you.  If you have other ideas about using social media, we need your help too.
 
 * **Get involved**: Join the #socialmedia channel on Slack and share your idea or volunteer to tweet
 
 
 ### Organize a Community Call
 
-We are aiming to have community calls at least quarterly, but we need help planning and organizing them!  Can you take the lead organizing an upcoming call?  
+We are aiming to have community calls at least quarterly, but we need help planning and organizing them.  Can you take the lead organizing an upcoming call?  
 
 * **Get involved**: Join the #communitycalls channel on Slack
 
@@ -50,7 +54,7 @@ We are aiming to have community calls at least quarterly, but we need help plann
 
 Willing to share your story of being an RSE on the [RSE Stories podcast](https://us-rse.org/rse-stories/)? 
 
-* **Get involved**: See [https://us-rse.org/rse-stories/](https://us-rse.org/rse-stories/) and sign-up to be a subject!
+* **Get involved**: See [https://us-rse.org/rse-stories/](https://us-rse.org/rse-stories/) and sign-up to be a subject.
 
 
 ### Propose a Conference Event
@@ -61,6 +65,8 @@ Going to a conference related to RSEs?  Propose a talk, panel, BoF, or other eve
 
 
 # Ongoing
+
+---
 
 ### Start/Add Your Own Blog
 
