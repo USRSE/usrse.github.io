@@ -9,7 +9,7 @@ The US-RSE Association is a new organization that needs community involvement to
 
 If you have another idea but aren’t sure how to get started, the Steering Committee would be happy to help. Reach out on Slack (@sc) or email us all at [contact@us-rse.org](mailto:contact@us-rse.org).
 
----
+<br>
 
 # Easy
 
@@ -30,6 +30,9 @@ Join the #introductions channel on Slack and welcome new members.
 ### Share a Resource/Ask a Question
 
 Found a good resource that’s worth sharing? Post it on Slack! Looking for a good resource or some advice?  Post it on Slack!  Looking for a little more guidance? See How to Share with the Community
+
+
+<br>
 
 
 # One-Time Commitment
@@ -62,6 +65,9 @@ Willing to share your story of being an RSE on the [RSE Stories podcast](https:/
 Going to a conference related to RSEs?  Propose a talk, panel, BoF, or other event.  Members of the Steering Committee are happy to help you with this (contact @sc on Slack).  
 
 * **Get involved**: Raise the idea on Slack to find collaborators
+
+
+<br>
 
 
 # Ongoing
