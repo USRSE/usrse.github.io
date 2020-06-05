@@ -11,7 +11,7 @@ Have something to share with the US-RSE Community?  This guide can help you find
 # What do you want to share with the US-RSE Community?
 
 
-## A question
+## A Question
 
 *   If you need US-RSE leadership to answer:
     *   Slack: contact or tag @sc
@@ -65,7 +65,7 @@ What’s relevant: use your judgment.  If you find it interesting and think othe
 What’s relevant: for sharing your work and ideas, if it’s in line with the [Code of Conduct](https://us-rse.org/code-of-conduct), share it!  We want to see what US-RSE members are working on.  For US-RSE sponsored projects or activities, it’s important that multiple US-RSE members be involved in actively supporting the project for it to be sustainable and relevant as an association activity.
 
 
-## Something else?  Not sure?
+## Something Else?  Not Sure?
 
 *   Post about it on the #general Slack channel.
 *   Contact @sc on Slack to discuss it.
