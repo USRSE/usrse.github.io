@@ -8,18 +8,16 @@ subtitle: How to Share with the Community
 Have something to share with the US-RSE Community?  This guide can help you find the right communication channel to share your information.  
 
 
-**What do you want to share with the US-RSE Community?**
+# What do you want to share with the US-RSE Community?
 
 
 ## A question
 
-
-
 *   If you need US-RSE leadership to answer:
-    *   Contact or tag @sc on Slack
-    *   Email [contact@us-rse.org](mailto:contact@us-rse.org) off of Slack
+    *   Slack: contact or tag @sc
+    *   Not Slack: email [contact@us-rse.org](mailto:contact@us-rse.org) 
 *   If you want to engage the community:
-    *   Post it on the #general Slack channel to start a discussion; *please do not tag the channel by using @channel or @here.*
+    *   Post it on the #general Slack channel to start a discussion; **please do not tag the channel by using @channel or @here.**
 
 
 ## Job Posting
@@ -34,19 +32,21 @@ What jobs are relevant: any position in the US, or open to US applicants, requir
 
 ## Event
 
+Options: 
 
-
-*   Post brief information about the event to the #general channel on Slack if relevant to a broad audience.
-*   For discussing or organizing around upcoming events, or to share events of interest to a limited audience, try the #events channel.
+*   Post information about the event to the #general channel on Slack if it's relevant to a broad audience.
+*   For discussing or organizing around upcoming events, or to share events of interest to a limited audience, use the #events channel.
 *   Tag @sc on Slack and ask for it to be added to the [Calendar](https://us-rse.org/calendar/) and/or the [Events & Training page](https://us-rse.org/events-training/).
     *   We’ll include upcoming events in the quarterly email newsletter .
-*   Ask @tweeters on Slack to tweet it (make sure we have a URL or event info to share).
+*   Ask @tweeters on Slack to tweet it; make sure we have a URL or event info to share.
 *   Consider trying to organize a meetup for US-RSE members if you’re going to an event where other RSEs are likely to be.  Use Slack to see who else might be coming and organize something.  If you do organize a meetup, let @sc know so we can promote it and share it as another distinct event.
 
 What events are relevant: conferences, workshops, webinars, etc. on research software related topics.
 
 
 ## Resource/Link/Paper
+
+Options: 
 
 *   Write a post on your own blog about it and make sure your blog is part of the [community blog](https://us-rse.org/blog/); see the [instructions](https://github.com/USRSE/blog) or ping @sc for help adding it.
     *   We try to highlight community blog posts in our quarterly email newsletter.
@@ -58,7 +58,7 @@ What’s relevant: use your judgment.  If you find it interesting and think othe
 
 ## Project/Code
 
-*   Create a repo under your own GitHub account (or other sharing site) and share a link via the methods discussed above for resources/links.
+*   Create a repo under your own GitHub account, or other code sharing site, and share a link via the methods discussed above for resources/links.
 *   Looking for collaborators?  Start a discussion on Slack.
 *   Want a project to become a US-RSE sponsored activity?  Contact the Steering Committee (Slack @sc or [contact@us-rse.org](mailto:contact@us-rse.org)) to discuss how it fits with US-RSE current priorities, how the US-RSE can sustain it, and how it benefits US-RSE members. 
 
