@@ -7,7 +7,7 @@ subtitle: Ways to contribute to the US-RSE Association
 
 The US-RSE Association is a new organization that needs community involvement to grow and mature.  
 
-Most of our interaction is via Slack: usrse.slack.com.  You'll receive a link to join the Slack space when you [join US-RSE](https://us-rse.org/join/).  If have already joined US-RSE but can't get into Slack, email contact@us-rse.org for help.
+Most of our interaction is via Slack: usrse.slack.com.  You'll receive a link to join the Slack space when you [join US-RSE](https://us-rse.org/join/).  If you have already joined US-RSE but can't get into Slack, email contact@us-rse.org for help.
 
 Below are some ways members can get more involved in building this organization. Have additional ideas for a working group,  committee, or something else, but aren’t sure how to get started? The Steering Committee would be happy to help. Reach out on Slack (@sc) or email [contact@us-rse.org](mailto:contact@us-rse.org).
 
