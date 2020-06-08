@@ -8,9 +8,11 @@ layout: event
 repeated: false
 ---
 
-We are excited to announce that the US-RSE Association will host a virtual workshop on April 22 and 23, 2020!  
+We are excited to announce that the US-RSE Association will host a virtual workshop on April 22 and 23, 2020!
 
 ### ~~Registration link~~
+
+Recordings of [session 1](https://www.youtube.com/watch?v=TaBMeBN7g_4) and [session 2](https://www.youtube.com/watch?v=OiJd0y38b0Q) are available on Youtube.
 
 ### Workshop Agenda
 
