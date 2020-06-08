@@ -35,7 +35,7 @@ Found a good resource that’s worth sharing? Post it on Slack! Looking for a go
 <br>
 
 
-# One-Time Commitment
+# One-Time Contribution
 
 ---
 
