@@ -8,7 +8,9 @@ subtitle: How to Share with the Community
 Have something to share with the US-RSE Community?  This guide can help you find the right communication channel to share your information.  
 
 
-**I want to share a...**
+### *I want to share a...*
+
+---
 
 
 ### Question
@@ -20,8 +22,9 @@ If you need US-RSE leadership to answer:
 
 If you want to engage the community:
 
-*   Post it on the #general Slack channel to start a discussion; **please do not tag the channel by using @channel or @here.**
+*   Post it on the #general Slack channel to start a discussion; please do **not** tag the channel by using @channel or @here.
 
+---
 
 ### Job Posting
 
@@ -30,8 +33,9 @@ If you want to engage the community:
     *   Jobs posted on the website will be included in the quarterly email newsletter if they’re still open when it’s sent.
 *   Ask @tweeters on Slack to tweet it; it helps to post it on the website first so we have the info, or tweet it first yourself and tag @us_rse.
 
-What jobs are relevant: any position in the US, or open to US applicants, requiring software development/programming skills and related to research in any area; can be any sector - academic, commercial, government, non-profit.
+What jobs are relevant: any position in the US, or open to US applicants, requiring software development/programming skills and related to research in any area; can be any sector: academic, commercial, government, non-profit.
 
+---
 
 ### Event
 
@@ -49,6 +53,7 @@ Discussing and organizing:
 
 What events are relevant: conferences, workshops, webinars, etc. on research software related topics.
 
+---
 
 ### Resource, Link, or Paper
 
@@ -58,6 +63,7 @@ What events are relevant: conferences, workshops, webinars, etc. on research sof
 
 What’s relevant: use your judgment.  If you find it interesting and think other RSEs would, it’s probably something good to share on Slack.  If your blog has non-RSE content, there are [instructions](https://github.com/USRSE/blog/blob/master/README.md) for how to use tags to filter the feed to the community blog. 
 
+---
 
 ### Project or Code
 
@@ -67,6 +73,7 @@ What’s relevant: use your judgment.  If you find it interesting and think othe
 
 What’s relevant: for sharing your work and ideas, if it’s in line with the [Code of Conduct](https://us-rse.org/code-of-conduct), share it!  We want to see what US-RSE members are working on.  For US-RSE sponsored projects or activities, it’s important that multiple US-RSE members be involved in actively supporting the project for it to be sustainable and relevant as an association activity.
 
+---
 
 ### Something Else?  Not Sure?
 
