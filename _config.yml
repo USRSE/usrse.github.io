@@ -46,7 +46,8 @@ navbar-links:
     - News Archive: "archive"
   Get involved:
     - Join US-RSE: "join"
-    - Contribute: "get-involved"
+    - Engage: "get-involved"
+    - Share: "share"
   Careers:
     - What is an RSE?: "what-is-an-rse"
     - RSE Jobs: "jobs"
