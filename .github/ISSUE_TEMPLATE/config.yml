@@ -1,0 +1,14 @@
+blank_issues_enabled: true
+contact_links:
+  - name: US-RSE Code of Conduct
+    url: https://us-rse.org/code-of-conduct/
+    about: Read our Code of Conduct
+  - name: Get in Contact
+    url: https://us-rse.org/steering-committee/
+    about: Get in Contact with the Steering Committee
+  - name: US-RSE How to Get Involved
+    url: https://us-rse.org/get-involved/
+    about: How to get involved with US-RSE
+  - name: Join US-RSE
+    url: https://us-rse.org/join/
+    about: If you aren't a member, you can join US-RSE here.
