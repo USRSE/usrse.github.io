@@ -9,7 +9,7 @@ The initial US-RSE Steering Committee came together to bootstrap the US-RSE Asso
 
 Toward this goal, we have two major announcements:
 
-1. We've published the first US-RSE Association Membership and Governance document at https://github.com/USRSE/documents/blob/master/governance.md. This document defines and formalizes the roles and responsibilities of US-RSE members and of the US-RSE Steering Committee. It also provides a process for electing future Steering Committee members. Thanks to everyone who provided input during the creation process.
+1. We've published the first US-RSE Association Membership and Governance document [here](https://github.com/USRSE/documents/blob/master/governance.md). This document defines and formalizes the roles and responsibilities of US-RSE members and of the US-RSE Steering Committee. It also provides a process for electing future Steering Committee members. Thanks to everyone who provided input during the creation process.
 1. The first US-RSE Association Steering Committee elections will take place in December 2020.
 
 Election Details:
