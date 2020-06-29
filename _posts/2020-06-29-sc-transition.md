@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transition to the next Steering Committee
-tags: [workshop]
+tags:
 posted_by: The US-RSE Association Steering Committee
 ---
 
