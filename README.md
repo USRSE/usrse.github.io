@@ -1,6 +1,51 @@
 # The United States (US) Research Software Engineer Association
 
-![contributors.svg](./contributors.svg)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-24-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://vsoch.github.io"><img src="https://avatars0.githubusercontent.com/u/814322?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Vanessasaurus</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=vsoch" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/cosden"><img src="https://avatars3.githubusercontent.com/u/5824618?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ian Cosden</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=cosden" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/christophernhill"><img src="https://avatars0.githubusercontent.com/u/3535328?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chris Hill</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=christophernhill" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/cmaimone"><img src="https://avatars3.githubusercontent.com/u/14303565?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Christina Maimone</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=cmaimone" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/cferenba"><img src="https://avatars2.githubusercontent.com/u/2684626?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Charles Ferenbaugh</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=cferenba" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/danielskatz"><img src="https://avatars1.githubusercontent.com/u/2913845?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Daniel S. Katz</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=danielskatz" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/manbat"><img src="https://avatars0.githubusercontent.com/u/41646490?v=4?s=100" width="100px;" alt=""/><br /><sub><b>manbat</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=manbat" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="jperr.com"><img src="https://avatars0.githubusercontent.com/u/355615?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jordan Perr-Sauer</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jordanperr" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.lanceparsons.net"><img src="https://avatars2.githubusercontent.com/u/645128?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lance Parsons</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=lparsons" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/mmshad"><img src="https://avatars0.githubusercontent.com/u/31811010?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mahmood M. Shad</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=mmshad" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/kir0ul"><img src="https://avatars3.githubusercontent.com/u/6053592?v=4?s=100" width="100px;" alt=""/><br /><sub><b>kir0ul</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=kir0ul" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/abarysh"><img src="https://avatars3.githubusercontent.com/u/11416566?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anastasia Baryshnikova</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=abarysh" title="Code">💻</a></td>
+    <td align="center"><a href="https://eesa.lbl.gov/profiles/gregory-lemieux/"><img src="https://avatars3.githubusercontent.com/u/7565064?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gregory Lemieux</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=glemieux" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.dursi.ca"><img src="https://avatars3.githubusercontent.com/u/1783579?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jonathan Dursi</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=ljdursi" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/jdamerow"><img src="https://avatars2.githubusercontent.com/u/8881141?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Julia Damerow</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jdamerow" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/kmanalo"><img src="https://avatars2.githubusercontent.com/u/2001688?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kevin Manalo</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=kmanalo" title="Code">💻</a></td>
+    <td align="center"><a href="https://nampho.me"><img src="https://avatars1.githubusercontent.com/u/1252858?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nam Pho</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=npho" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.noamross.net"><img src="https://avatars1.githubusercontent.com/u/571752?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Noam Ross</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=noamross" title="Code">💻</a></td>
+    <td align="center"><a href="http://greptilian.com"><img src="https://avatars2.githubusercontent.com/u/21006?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Philip Durbin</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=pdurbin" title="Code">💻</a></td>
+    <td align="center"><a href="http://sandra-gesing.com/"><img src="https://avatars1.githubusercontent.com/u/4429799?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sandra Gesing</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=sandragesing" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/simonbyrne"><img src="https://avatars3.githubusercontent.com/u/1692009?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Simon Byrne</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=simonbyrne" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/TaiSakuma"><img src="https://avatars0.githubusercontent.com/u/1388081?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tai Sakuma</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=TaiSakuma" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/neisty"><img src="https://avatars2.githubusercontent.com/u/25918660?v=4?s=100" width="100px;" alt=""/><br /><sub><b>neisty</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=neisty" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/toreliza"><img src="https://avatars2.githubusercontent.com/u/8468060?v=4?s=100" width="100px;" alt=""/><br /><sub><b>toreliza</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=toreliza" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
 
 ## What is this?
 
