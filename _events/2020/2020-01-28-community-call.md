@@ -1,6 +1,8 @@
 ---
 title: Winter Community Call
 expires: 2020-02-12
+event_start: "2020-02-11T17:00:00Z"
+event_end: "2020-02-11T18:00:00Z"
 event_date: "February 11, 2020"
 layout: event
 repeated: false

@@ -5,6 +5,8 @@ location: Princeton, NJ
 url: https://us-rse.org/first-community-workshop
 expires: 2020-10-29
 event_date: "October 27–28, 2020"
+event_start: "2020-10-27T12:00:00Z"
+event_end: "2020-10-27T12:00:00Z"
 layout: event
 repeated: false
 ---

@@ -4,6 +4,8 @@ subtitle: 2 Day Virtual Community Event
 location: Online via Zoom
 expires: 2020-04-23
 event_date: "April 22–23, 2020"
+event_start: "2020-04-22T12:00:00Z"
+event_end: "2020-04-24T12:00:00Z"
 layout: event
 repeated: false
 ---

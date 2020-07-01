@@ -5,6 +5,9 @@ location: Online
 url:  https://sites.udel.edu/xpert-cdi/event-category/online-meeting/ 
 expires: 2020-12-31
 event_date: "Reoccurring: 3rd Thursday of each month, 3-4pm ET"
+event_start: '2020-06-18T16:00:00'
+day_of_week: 4
+event_end: "2020-06-18T18:00:00Z"
 layout: event
 repeated: true
 ---
