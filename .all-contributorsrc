@@ -16,7 +16,7 @@
             "avatar_url": "https://avatars0.githubusercontent.com/u/814322?v=4",
             "profile": "https://vsoch.github.io",
             "contributions": [
-                "code"
+                "code", "doc", "blog", "content", "design", "ideas", "infra", "maintenance", "tool"
             ]
         },
         {
@@ -62,15 +62,6 @@
             "profile": "https://github.com/danielskatz",
             "contributions": [
                 "blog", "code", "eventOrganizing", "ideas"
-            ]
-        },
-        {
-            "login": "manbat",
-            "name": "manbat",
-            "avatar_url": "https://avatars0.githubusercontent.com/u/41646490?v=4",
-            "profile": "https://github.com/manbat",
-            "contributions": [
-                "code"
             ]
         },
         {
