@@ -296,12 +296,9 @@ The logic of this is determined by the [greetings.yml](.github/workflows/greetin
 workflow. 
 
 #### Contributors Graphic
-We use the GitHub Workflow [update-contributors-graphic.yml](.github/workflows/update-contributors-graphic.yml)
-to generate a contribution graphic using [sourcecred](https://sourcecred.io/) on a weekly basis, and open a pull
-request to review the updates every Sunday. Sourcecred is a beautiful tool that takes into account
-almost every way you can contribute on a repository (issues, comments, stars or likes, reviews)
-and then generates a simple, beautiful graphic with avatars. It's a really easy way to show off
-the size of the community, and it runs all via containers in this GitHub Action.
+
+We use the [all-contributors](https://github.com/all-contributors/all-contributors) 
+tool to generate a contributors graphic. It will soon be automated.
 
 
 #### Member Counts
