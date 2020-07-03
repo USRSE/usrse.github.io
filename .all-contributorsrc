@@ -16,7 +16,15 @@
             "avatar_url": "https://avatars0.githubusercontent.com/u/814322?v=4",
             "profile": "https://vsoch.github.io",
             "contributions": [
-                "code", "doc", "blog", "content", "design", "ideas", "infra", "maintenance", "tool"
+                "code",
+                "doc",
+                "blog",
+                "content",
+                "design",
+                "ideas",
+                "infra",
+                "maintenance",
+                "tool"
             ]
         },
         {
@@ -25,7 +33,13 @@
             "avatar_url": "https://avatars3.githubusercontent.com/u/5824618?v=4",
             "profile": "https://github.com/cosden",
             "contributions": [
-                "code", "blog", "content", "eventOrganizing", "ideas", "fundingFinding", "review" 
+                "code",
+                "blog",
+                "content",
+                "eventOrganizing",
+                "ideas",
+                "fundingFinding",
+                "review"
             ]
         },
         {
@@ -61,7 +75,10 @@
             "avatar_url": "https://avatars1.githubusercontent.com/u/2913845?v=4",
             "profile": "https://github.com/danielskatz",
             "contributions": [
-                "blog", "code", "eventOrganizing", "ideas"
+                "blog",
+                "code",
+                "eventOrganizing",
+                "ideas"
             ]
         },
         {
@@ -215,6 +232,17 @@
             "profile": "https://github.com/toreliza",
             "contributions": [
                 "code"
+            ]
+        },
+        {
+            "login": "manbat",
+            "name": "manbat",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/manbat",
+            "avatar_url": [
+                "https://avatars0.githubusercontent.com/u/41646490?v=4"
             ]
         }
     ],
