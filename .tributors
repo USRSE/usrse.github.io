@@ -5,25 +5,30 @@
         "blog": "https://vsoch.github.io"
     },
     "cosden": {
-        "name": "Ian Cosden"
+        "name": "Ian Cosden",
+        "blog": "https://github.com/cosden"
     },
     "christophernhill": {
         "name": "Chris Hill",
-        "email": "cnh@mit.edu"
+        "email": "cnh@mit.edu",
+        "blog": "https://github.com/christophernhill"
     },
     "cmaimone": {
         "name": "Christina Maimone",
         "email": "christina.maimone@northwestern.edu",
-        "orcid": "0000-0002-0402-6297"
+        "orcid": "0000-0002-0402-6297",
+        "blog": "https://github.com/cmaimone"
     },
     "cferenba": {
         "name": "Charles Ferenbaugh",
-        "orcid": "0000-0001-7908-8567"
+        "orcid": "0000-0001-7908-8567",
+        "blog": "https://github.com/cferenba"
     },
     "danielskatz": {
         "name": "Daniel S. Katz",
         "email": "d.katz@ieee.org",
-        "bio": "Asst Dir for Scientific Software & Applications @ NCSA, iSchool & ECE & CS @ UIUC. Works on comp & data sci & eng cyberinfr: systems, tools, policies, practices"
+        "bio": "Asst Dir for Scientific Software & Applications @ NCSA, iSchool & ECE & CS @ UIUC. Works on comp & data sci & eng cyberinfr: systems, tools, policies, practices",
+        "blog": "https://github.com/danielskatz"
     },
     "jordanperr": {
         "name": "Jordan Perr-Sauer",
@@ -37,15 +42,18 @@
     },
     "mmshad": {
         "name": "Mahmood M. Shad",
-        "orcid": "0000-0001-9927-4439"
+        "orcid": "0000-0001-9927-4439",
+        "blog": "https://github.com/mmshad"
     },
     "kir0ul": {
-        "name": "kir0ul"
+        "name": "kir0ul",
+        "blog": "https://github.com/kir0ul"
     },
     "abarysh": {
         "name": "Anastasia Baryshnikova",
         "bio": "Principal Investigator, Computational Biology",
-        "orcid": "0000-0002-0123-2052"
+        "orcid": "0000-0002-0123-2052",
+        "blog": "https://github.com/abarysh"
     },
     "glemieux": {
         "name": "Gregory Lemieux",
@@ -61,11 +69,13 @@
         "orcid": "0000-0002-4697-798X"
     },
     "jdamerow": {
-        "name": "Julia Damerow"
+        "name": "Julia Damerow",
+        "blog": "https://github.com/jdamerow"
     },
     "kmanalo": {
         "name": "Kevin Manalo",
-        "bio": "HPC Research"
+        "bio": "HPC Research",
+        "blog": "https://github.com/kmanalo"
     },
     "npho": {
         "name": "Nam Pho",
@@ -95,16 +105,20 @@
     "simonbyrne": {
         "name": "Simon Byrne",
         "email": "simonbyrne@gmail.com",
-        "bio": "Software developer @CliMA"
+        "bio": "Software developer @CliMA",
+        "blog": "https://github.com/simonbyrne"
     },
     "TaiSakuma": {
         "name": "Tai Sakuma",
-        "orcid": "0000-0003-3225-9861"
+        "orcid": "0000-0003-3225-9861",
+        "blog": "https://github.com/TaiSakuma"
     },
     "neisty": {
-        "name": "neisty"
+        "name": "neisty",
+        "blog": "https://github.com/neisty"
     },
     "toreliza": {
-        "name": "toreliza"
+        "name": "toreliza",
+        "blog": "https://github.com/toreliza"
     }
 }
