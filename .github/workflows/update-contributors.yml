@@ -1,6 +1,7 @@
 name: allcontributors-auto-detect
 
 on:
+  pull_request: []
   push:
     branches:
       - master
@@ -15,13 +16,19 @@ jobs:
       - name: Tributors Update
       
         # Important! Update to release https://github.com/con/tributors
-        uses: con/tributors@0.0.11
+        uses: con/tributors@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:        
 
           # Single text list (space separated) of parsers, leave unset to auto-detect
           parsers: unset
+
+          # Update lookup with GitHub metadata
+          update_lookup: github
+
+          # Skip these users
+          skip_users: manbat
 
           # INFO, DEBUG, ERROR, WARNING, etc.
           log_level: DEBUG
@@ -55,9 +62,6 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@users.noreply.github.com"
           git status
- 
-          git add README.md
-          git add .all-contributorsrc
 
           if git diff-index --quiet HEAD --; then
              export OPEN_PULL_REQUEST=0
@@ -65,7 +69,7 @@ jobs:
           else
              export OPEN_PULL_REQUEST=1
              printf "Changes\n"
-             git commit -m "Automated deployment to update contributors $(date '+%Y-%m-%d')"
+             git commit -a -m "Automated deployment to update contributors $(date '+%Y-%m-%d')"
              git push origin "${BRANCH_FROM}"
           fi
           echo "::set-env name=OPEN_PULL_REQUEST::${OPEN_PULL_REQUEST}"
