@@ -15,13 +15,19 @@ jobs:
       - name: Tributors Update
       
         # Important! Update to release https://github.com/con/tributors
-        uses: con/tributors@0.0.11
+        uses: con/tributors@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:        
 
           # Single text list (space separated) of parsers, leave unset to auto-detect
           parsers: unset
+
+          # Update lookup with GitHub metadata
+          update_lookup: github
+
+          # Skip these users
+          skip_users: manbat
 
           # INFO, DEBUG, ERROR, WARNING, etc.
           log_level: DEBUG
