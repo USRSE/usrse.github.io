@@ -8,9 +8,11 @@ layout: event
 repeated: false
 ---
 
-We are excited to announce that the US-RSE Association will host a virtual workshop on April 22 and 23, 2020!  
+We are excited to announce that the US-RSE Association will host a virtual workshop on April 22 and 23, 2020!
 
 ### ~~Registration link~~
+
+Recordings of [session 1](https://www.youtube.com/watch?v=TaBMeBN7g_4) and [session 2](https://www.youtube.com/watch?v=OiJd0y38b0Q) are available on Youtube.
 
 ### Workshop Agenda
 
@@ -22,13 +24,13 @@ This workshop will be held in three online sessions:
         - [US-RSE: Past, Present, & Future](https://drive.google.com/open?id=1nnOJe5kQFq9-AEJNsqZrQr5-fFKtBqXssE3qhhTtcq4) Ian Cosden, Princeton
         - [RSE Group at Harvard University](https://drive.google.com/open?id=1F84aRnai68vUssM_6FM1Z0v9ykYrhuCd) Mahmood Shad, Harvard
         - [Northwestern Research Software Engineering Support](https://docs.google.com/presentation/d/1KxmNG-hpStE55st9S8U_zFX1O8UBnwAcsEnp6EZ6-tw/edit?usp=sharing) - Christina Maimone, Northwestern
-        - Research Software Engineers @ PACE GT - Nuyun (Nellie) Zhang, Georgia Tech
+        - [Research Software Engineers @ PACE GT](https://drive.google.com/open?id=1WX_ipZI-zzeRjm6GUmc39sImucJt7Jir) - Nuyun (Nellie) Zhang, Georgia Tech
     - Panel discussion (45 min)
 1. **Technical Talks** - Short talks about projects that RSEs are working on (Wednesday 4/22, 3:00-4:30 PM EDT)
     - Introduction (2 min) - Chris Hill, MIT
     - Presentations I (3x10 min)
         - [Data Analytics and Provenance Tools Development at GT PACE](https://drive.google.com/open?id=10fqy3BG70tPJK9YDSvCahC3VYroYKFVO) - Fang (Cherry) Liu, Georgia Tech
-        - [Development of ASPIRE Python Package](https://drive.google.com/open?id=1L9y32VyKs9ccjJgxUX95umJyDPExoy9c) Junchao Xia, Princeton
+        - [Development of ASPIRE Python Package:  Reconstructing 3D Density Map of Biomolecule From 2D Cryo-EM Images](https://drive.google.com/open?id=1L9y32VyKs9ccjJgxUX95umJyDPExoy9c) Junchao Xia, Princeton
         - [Research Data Management for Medical Data with Pyradigm](https://crossinvalidation.com/2020/04/29/research-data-management-for-medical-data-with-pyradigm) - Pradeep Raamana, Baycrest Health Sciences
     - Stretch Break (5 min)
     - Presentations II (4x10 min)

@@ -1,0 +1,17 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Get in Contact
+    url: https://us-rse.org/steering-committee/
+    about: Get in Contact with the Steering Committee
+  - name: Get Involved
+    url: https://us-rse.org/get-involved/
+    about: How to get involved with US-RSE
+  - name: Join US-RSE
+    url: https://us-rse.org/join/
+    about: If you aren't a member, you can join US-RSE here.
+  - name: Open a Blank Issue
+    url: https://github.com/USRSE/usrse.github.io/issues/new
+    about: If you want to ask a question or get help here, post an issue.
+  - name: Code of Conduct
+    url: https://us-rse.org/code-of-conduct/
+    about: Read the US-RSE Code of Conduct

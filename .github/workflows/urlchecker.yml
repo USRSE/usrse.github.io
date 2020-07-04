@@ -27,4 +27,4 @@ jobs:
         white_listed_patterns: sc19.supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com
 
         # White list the following files
-        white_listed_files: README.md,SocialNetworks.yml,_config.yml,tests/test_,.github/workflows,_posts/newsletters/
+        white_listed_files: README.md,SocialNetworks.yml,map.yml,_config.yml,tests/test_,.github/workflows,_posts/newsletters/

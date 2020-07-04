@@ -1,0 +1,124 @@
+{
+    "vsoch": {
+        "name": "Vanessasaurus",
+        "bio": "I'm the Vanessasaurus!",
+        "blog": "https://vsoch.github.io"
+    },
+    "cosden": {
+        "name": "Ian Cosden",
+        "blog": "https://github.com/cosden"
+    },
+    "christophernhill": {
+        "name": "Chris Hill",
+        "email": "cnh@mit.edu",
+        "blog": "https://github.com/christophernhill"
+    },
+    "cmaimone": {
+        "name": "Christina Maimone",
+        "email": "christina.maimone@northwestern.edu",
+        "orcid": "0000-0002-0402-6297",
+        "blog": "https://github.com/cmaimone"
+    },
+    "cferenba": {
+        "name": "Charles Ferenbaugh",
+        "orcid": "0000-0001-7908-8567",
+        "blog": "https://github.com/cferenba"
+    },
+    "danielskatz": {
+        "name": "Daniel S. Katz",
+        "email": "d.katz@ieee.org",
+        "bio": "Asst Dir for Scientific Software & Applications @ NCSA, iSchool & ECE & CS @ UIUC. Works on comp & data sci & eng cyberinfr: systems, tools, policies, practices",
+        "blog": "https://github.com/danielskatz"
+    },
+    "jordanperr": {
+        "name": "Jordan Perr-Sauer",
+        "blog": "jperr.com",
+        "orcid": "0000-0003-1571-1887"
+    },
+    "lparsons": {
+        "name": "Lance Parsons",
+        "blog": "http://www.lanceparsons.net",
+        "orcid": "0000-0002-8521-714X"
+    },
+    "mmshad": {
+        "name": "Mahmood M. Shad",
+        "orcid": "0000-0001-9927-4439",
+        "blog": "https://github.com/mmshad"
+    },
+    "kir0ul": {
+        "name": "kir0ul",
+        "blog": "https://github.com/kir0ul"
+    },
+    "abarysh": {
+        "name": "Anastasia Baryshnikova",
+        "bio": "Principal Investigator, Computational Biology",
+        "orcid": "0000-0002-0123-2052",
+        "blog": "https://github.com/abarysh"
+    },
+    "glemieux": {
+        "name": "Gregory Lemieux",
+        "bio": "Research Software Engineer @ LBNL",
+        "blog": "https://eesa.lbl.gov/profiles/gregory-lemieux/",
+        "orcid": "0000-0001-5304-8938"
+    },
+    "ljdursi": {
+        "name": "Jonathan Dursi",
+        "email": "jonathan@dursi.ca",
+        "bio": "Computing at scale for hard research problems ",
+        "blog": "http://www.dursi.ca",
+        "orcid": "0000-0002-4697-798X"
+    },
+    "jdamerow": {
+        "name": "Julia Damerow",
+        "blog": "https://github.com/jdamerow"
+    },
+    "kmanalo": {
+        "name": "Kevin Manalo",
+        "bio": "HPC Research",
+        "blog": "https://github.com/kmanalo"
+    },
+    "npho": {
+        "name": "Nam Pho",
+        "bio": "Enabling science with HPC and the cloud.",
+        "blog": "https://nampho.me"
+    },
+    "noamross": {
+        "name": "Noam Ross",
+        "email": "noam.ross@gmail.com",
+        "blog": "http://www.noamross.net",
+        "orcid": "0000-0002-2136-0000"
+    },
+    "pdurbin": {
+        "name": "Philip Durbin",
+        "email": "philipdurbin@gmail.com",
+        "bio": "I work at @IQSS on Dataverse and http://chat.dataverse.org is a good way to reach me. philipdurbin@gmail.com is a good way to reach me for non-Dataverse matters",
+        "blog": "http://greptilian.com",
+        "orcid": "0000-0002-9528-9470"
+    },
+    "sandragesing": {
+        "name": "Sandra Gesing",
+        "email": "sandra.gesing@nd.edu",
+        "bio": "Research Assistant Professor, Computational Scientist \r\nat\r\nUniversity of Notre Dame, IN, USA",
+        "blog": "http://sandra-gesing.com/",
+        "orcid": "0000-0002-6051-0673"
+    },
+    "simonbyrne": {
+        "name": "Simon Byrne",
+        "email": "simonbyrne@gmail.com",
+        "bio": "Software developer @CliMA",
+        "blog": "https://github.com/simonbyrne"
+    },
+    "TaiSakuma": {
+        "name": "Tai Sakuma",
+        "orcid": "0000-0003-3225-9861",
+        "blog": "https://github.com/TaiSakuma"
+    },
+    "neisty": {
+        "name": "neisty",
+        "blog": "https://github.com/neisty"
+    },
+    "toreliza": {
+        "name": "toreliza",
+        "blog": "https://github.com/toreliza"
+    }
+}
