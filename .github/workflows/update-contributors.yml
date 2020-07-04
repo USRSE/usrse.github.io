@@ -44,7 +44,7 @@ jobs:
           BRANCH_AGAINST: "master"
         run: |
           printf "GitHub Actor: ${GITHUB_ACTOR}\n"
-          export BRANCH_FROM="contributors/update-$(date '+%Y-%m-%d-%H:%M')"
+          export BRANCH_FROM="contributors/update-$(date '+%Y-%m-%d')"
           git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
           BRANCH_EXISTS=$(git ls-remote --heads origin ${BRANCH_FROM})
