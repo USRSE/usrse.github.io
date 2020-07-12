@@ -16,7 +16,7 @@ _These resources can help to improve your knowledge about software engineering, 
  - [Software Engineering for Science](https://se4science.org/)
  - [Software Engineering Body of Knowledge](https://www.computer.org/education/bodies-of-knowledge/software-engineering)
  - [Software Sustainability Institute (SSI)](https://www.software.ac.uk): The (UK) SSI cultivates better, more sustainable, research software to enable world-class research; it helps people build better software, and it works with researchers, developers, funders and infrastructure providers to identify key issues and best practice in scientific software
- - [US Research Software Sustainability Institute (URSSI)](http://urssi.us): a planning activity to build an US institute for software expertise as well as a social infrastructure that promotes an inclusive and diverse community of research software engineers, maintainers, contributors, and users, with the mission of improving the recognition, development, and use of software for a more sustainable research enterprise, through collaboratively developing education, outreach, and software services that emphasize open, transparent reproducible, and cooperative practices
+ - [US Research Software Sustainability Institute (URSSI)](http://urssi.us): a planning activity to build a US institute for software expertise as well as a social infrastructure that promotes an inclusive and diverse community of research software engineers, maintainers, contributors, and users, with the mission of improving the recognition, development, and use of software for a more sustainable research enterprise, through collaboratively developing education, outreach, and software services that emphasize open, transparent reproducible, and cooperative practices
   - [Research Software Alliance (ReSA)](https://www.researchsoft.org) - A community of both individuals and communities working to bring research software communities together to collaborate on the advancement of research software
 
 ## RSE Community Resources
@@ -28,5 +28,4 @@ _These resources can be helpful to establish RSE positions, groups, or further u
  - [The Story of the Research Software Engineer](https://www.youtube.com/watch?v=trAfA9VWLTQ) video introduction to Research Software Engineering
  - [US-RSE Logos](https://github.com/usrse/logo) repository
  - [US-RSE Slack](https://usrse.slack.com/)
-
 
