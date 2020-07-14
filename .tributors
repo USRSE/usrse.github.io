@@ -43,7 +43,8 @@
     "mmshad": {
         "name": "Mahmood M. Shad",
         "orcid": "0000-0001-9927-4439",
-        "blog": "https://github.com/mmshad"
+        "blog": "https://github.com/mmshad",
+        "bio": "Associate Director of Research Software Engineering @ FASRC - Harvard"
     },
     "kir0ul": {
         "name": "kir0ul",
@@ -120,5 +121,10 @@
     "toreliza": {
         "name": "toreliza",
         "blog": "https://github.com/toreliza"
+    },
+    "mchenry": {
+        "name": "Kenton McHenry",
+        "email": "mchenry@illinois.edu",
+        "blog": "http://isda.ncsa.illinois.edu"
     }
 }
