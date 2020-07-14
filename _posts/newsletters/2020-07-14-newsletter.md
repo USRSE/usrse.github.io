@@ -108,21 +108,21 @@ Some other events coming up may be of interest to RSEs:
 # Recent Job Postings
 
 These opportunities were recently posted to the [RSE Careers page](https://us-rse.org/jobs/):
-[Oncology OnCore Application Specialist, Stanford School of Medicine](https://careersearch.stanford.edu/jobs/oncology-oncore-application-specialist-oncore-reporting-group-lead-9854?et=Ysg27Ti9): Stanford, CA
-[Staff Scientist/Software Engineer at New Mexico Tech](https://www.nmt.edu/hr/docs/hr/jobs/StaffSciSoftEngIRIS20-030.pdf): Socorro, NM
-[Senior Research Computing Systems Engineer at Boston University](http://www.bu.edu/tech/support/research/rcs/jobs/): Boston, MA
-[Research Software Specialist](https://www.psc.edu/about-psc/employment/3116-research-software-specialist-2014428): Pittsburgh Supercomputing Center
-[Research Software Engineer](http://carver.cs.ua.edu/RSE.htm): University of Alabama
-[Senior Research Software Engineer (Data Engineer)](http://bit.ly/fasrc_senior_rse): Cambridge, MA
-[Research Software Engineer / Application Support Engineer](https://brainlife.io/docs/careers/jobs/): Indiana University Bloomington
-[Research Software Engineer / UI Engineer](https://brainlife.io/docs/careers/jobs/): Indiana University Bloomington
-[DevOps / Software Engineers](https://brainlife.io/docs/careers/jobs/): Indiana University Bloomington
-[Cloud and Cluster Administrator](https://brainlife.io/docs/careers/jobs/): Indiana University Bloomington
-[Scientific Software Developer- Contract Basis [SunPy Project]](https://numfocus.org/uncategorized/scientific-software-developer-contract-basis-sunpy-project): NumFOCUS
-[Software Developer](https://searchjobs.dartmouth.edu/postings/54423): Dartmouth College, Hanover MA
-[Professional Specialist](https://puwebp.princeton.edu/AcadHire/apply/application.xhtml?listingId=16041): Princeton University, Princeton, NJ
-[Senior Software Engineer](https://boards.greenhouse.io/chanzuckerberginitiative/jobs/1875135?gh_jid=1875135): Chan Zuckerberg Initiative Imaging Science, Redwood City, CA
-[Software Engineer](https://jobs.jhu.edu/job/Baltimore-Software-Engineer-MD-21205/645431000/): Johns Hopkins University, Baltimore, Maryland
+* [Oncology OnCore Application Specialist, Stanford School of Medicine](https://careersearch.stanford.edu/jobs/oncology-oncore-application-specialist-oncore-reporting-group-lead-9854?et=Ysg27Ti9): Stanford, CA
+* [Staff Scientist/Software Engineer at New Mexico Tech](https://www.nmt.edu/hr/docs/hr/jobs/StaffSciSoftEngIRIS20-030.pdf): Socorro, NM
+* [Senior Research Computing Systems Engineer at Boston University](http://www.bu.edu/tech/support/research/rcs/jobs/): Boston, MA
+* [Research Software Specialist](https://www.psc.edu/about-psc/employment/3116-research-software-specialist-2014428): Pittsburgh Supercomputing Center
+* [Research Software Engineer](http://carver.cs.ua.edu/RSE.htm): University of Alabama
+* [Senior Research Software Engineer (Data Engineer)](http://bit.ly/fasrc_senior_rse): Cambridge, MA
+* [Research Software Engineer / Application Support Engineer](https://brainlife.io/docs/careers/jobs/): Indiana University Bloomington
+* [Research Software Engineer / UI Engineer](https://brainlife.io/docs/careers/jobs/): Indiana University Bloomington
+* [DevOps / Software Engineers](https://brainlife.io/docs/careers/jobs/): Indiana University Bloomington
+* [Cloud and Cluster Administrator](https://brainlife.io/docs/careers/jobs/): Indiana University Bloomington
+* [Scientific Software Developer- Contract Basis [SunPy Project]](https://numfocus.org/uncategorized/scientific-software-developer-contract-basis-sunpy-project): NumFOCUS
+* [Software Developer](https://searchjobs.dartmouth.edu/postings/54423): Dartmouth College, Hanover MA
+* [Professional Specialist](https://puwebp.princeton.edu/AcadHire/apply/application.xhtml?listingId=16041): Princeton University, Princeton, NJ
+* [Senior Software Engineer](https://boards.greenhouse.io/chanzuckerberginitiative/jobs/1875135?gh_jid=1875135): Chan Zuckerberg Initiative Imaging Science, Redwood City, CA
+* [Software Engineer](https://jobs.jhu.edu/job/Baltimore-Software-Engineer-MD-21205/645431000/): Johns Hopkins University, Baltimore, Maryland
 
 
 <a name="reads"></a>
