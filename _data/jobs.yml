@@ -30,3 +30,5 @@
     City, CA', name: Senior Software Engineer, url: 'https://boards.greenhouse.io/chanzuckerberginitiative/jobs/1875135?gh_jid=1875135'}
 - {expires: 2020-11-01, location: 'Johns Hopkins University, Baltimore, Maryland',
   name: Software Engineer, url: 'https://jobs.jhu.edu/job/Baltimore-Software-Engineer-MD-21205/645431000/'}
+- {expires: 2020-12-31, location: 'National Center for Supercomputing Applications / University of Illinois, Urbana, IL',
+name: Assistant Research Programmer/Research Programmer/Senior Research Programmer, url: 'https://jobs.illinois.edu/academic-job-board/job-details?jobID=130370&job=research-programmer-national-center-for-supercomputing-applications-130370'}
