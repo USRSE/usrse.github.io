@@ -123,7 +123,7 @@ These opportunities were recently posted to the [RSE Careers page](https://us-rs
 * [Professional Specialist](https://puwebp.princeton.edu/AcadHire/apply/application.xhtml?listingId=16041): Princeton University, Princeton, NJ
 * [Senior Software Engineer](https://boards.greenhouse.io/chanzuckerberginitiative/jobs/1875135?gh_jid=1875135): Chan Zuckerberg Initiative Imaging Science, Redwood City, CA
 * [Software Engineer](https://jobs.jhu.edu/job/Baltimore-Software-Engineer-MD-21205/645431000/): Johns Hopkins University, Baltimore, Maryland
-
+* [Assistant Research Programmer/Research Programmer/Senior Research Programmer: ](https://jobs.illinois.edu/academic-job-board/job-details?jobID=130370&job=research-programmer-national-center-for-supercomputing-applications-130370): National Center for Supercomputing Applications / University of Illinois, Urbana, IL
 
 <a name="reads"></a>
 # Interesting Reads
