@@ -129,7 +129,7 @@ These opportunities were recently posted to the [RSE Careers page](https://us-rs
 # Interesting Reads
 Items you may have missed on the blog and Slack:
 * The [Collegeville Workshop 2020](https://collegeville.github.io/CW20/) on developer productivity for scientific software published its [whitepapers](https://collegeville.github.io/CW20/WorkshopResources/WhitePapers/WhitePaperList.html)
-8 The RDA COVID-19 working group has published [recommendations](https://www.rd-alliance.org/group/rda-covid19-rda-covid19-omics-rda-covid19-epidemiology-rda-covid19-clinical-rda-covid19-1) for data sharing, which include a section about [software sharing](https://www.rd-alliance.org/groups/rda-covid19-software)
+* The RDA COVID-19 working group has published [recommendations](https://www.rd-alliance.org/group/rda-covid19-rda-covid19-omics-rda-covid19-epidemiology-rda-covid19-clinical-rda-covid19-1) for data sharing, which include a section about [software sharing](https://www.rd-alliance.org/groups/rda-covid19-software)
 * An URSSI blog post, cross-posted on [SSI blog](https://www.software.ac.uk/blog) and the [Netherlands eScience Center blog](https://blog.esciencecenter.nl): Michelle Barker, Daniel S. Katz, Alejandra Gonzalez-Beltran “[Evidence for the Importance of Research Software](http://urssi.us/blog/2020/06/08/evidence-for-the-importance-of-research-software/)”
 
 <a name="involved"></a>
