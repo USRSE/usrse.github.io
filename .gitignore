@@ -12,3 +12,5 @@ ehthumbs.db
 # python
 __pycache__
 *.pyc
+
+*~
