@@ -18,7 +18,7 @@ international Research Software Engineering community for a three-half-days even
 
 This is the perfect opportunity to meet with key representatives from established RSE communities from around the world.
 The meeting will provide aspiring leaders with the knowledge and contacts needed to establish research software engineering
-in their own countries, and will advance our shared goal of software becoming a first-class research output.
+communities in their own countries, and will advance our shared goal of software becoming a first-class research output.
 
 **If you want to start an RSE initiative or association, this workshop is for you!**
 
