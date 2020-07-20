@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Collaborate to start new RSE initiatives at the International RSE Leaders workshop!
-tags: [intertional, event, call]
+tags: [international, workshop]
 posted_by: Daniel S. Katz (for Stephan Druskat)
 ---
 
