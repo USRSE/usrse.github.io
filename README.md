@@ -24,18 +24,21 @@ lookup (we use geolocation of a named location) please [open an issue](https://g
 ### 2. How do I add a job?
 
 We maintain a list of current and previous job postings in [_data/jobs.yml](_data/jobs.yml).
+You can add a new job to this list, and so that newer jobs appear at the top, we ask
+that you **at the new entry to the top of the list.**
 Specifically, we ask that you provide a name, location (can be Remote), an expiration date, and a url to the posting.
 The expiration date is not shown on the page, however it will determine when the job doesn't appear 
 anymore. We suggest setting a timeframe such as a month, and if you want to extend it, you
 can open a pull request to update the date. An example posting is shown below. This
-job will appear on the site until the first of July, 2019.
+job would appear on the site until the first of July, 2019.
 
 ```yaml
 - {expires: 2019-07-01, location: 'Princeton, NJ', name: 'Research Software Engineer',
     url: 'https://main-princeton.icims.com/jobs'}
 ```
 
-We will test that all fields are defined, the url exists, and that the "expires" field loads
+And don't forget to write your new job at the top of the [_data/jobs.yml](_data/jobs.yml) file!
+For testing, we look to see that all fields are defined, the url exists, and that the "expires" field loads
 as a `datetime.date` object in Python. If you copy the format above, you should
 be ok.
 
