@@ -38,7 +38,8 @@
     "lparsons": {
         "name": "Lance Parsons",
         "blog": "http://www.lanceparsons.net",
-        "orcid": "0000-0002-8521-714X"
+        "orcid": "0000-0002-8521-714X",
+        "email": "lance@lanceparsons.com"
     },
     "mmshad": {
         "name": "Mahmood M. Shad",
