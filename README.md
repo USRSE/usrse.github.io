@@ -25,7 +25,7 @@ lookup (we use geolocation of a named location) please [open an issue](https://g
 
 We maintain a list of current and previous job postings in [_data/jobs.yml](_data/jobs.yml).
 You can add a new job to this list, and so that newer jobs appear at the top, we ask
-that you **at the new entry to the top of the list.**
+that you **add the new entry to the top of the list.**
 Specifically, we ask that you provide a name, location (can be Remote), an expiration date, and a url to the posting.
 The expiration date is not shown on the page, however it will determine when the job doesn't appear 
 anymore. We suggest setting a timeframe such as a month, and if you want to extend it, you
@@ -324,4 +324,3 @@ tool to generate a contributors graphic below.
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
