@@ -47,7 +47,7 @@ organization that supports so-called Research Software Engineers
 ## Upcoming meetings  
 
 * PEARC meeting 
-If you’re attending [PEARC](https://www.pearc19.pearc.org), make sure
+If you’re attending [PEARC](https://pearc.acm.org/pearc19), make sure
 to join us for the Birds of a Feather session on Monday, July 29 at
 5:15pm. And find Ian Cosden, Charles Ferenbaugh or Sandra Gesing to
 get a US-RSE sticker!
