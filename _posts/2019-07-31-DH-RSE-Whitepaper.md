@@ -10,4 +10,4 @@ At the Digital Humanities Conference 2019 in Utrecht, a group of Digital Humanit
 
 Rather than forming a new group, the workshop participants chose to use the existing infrastructure of [DHTech](https://dh-tech.github.io/) (website, Slack channel, and mailing list), a group of Digital Humanities RSEs, to collaborate on and publish the white paper. DHTech was started two years earlier at DH2017 by several of the workshop participants with the idea to build an international community of DH RSEs. 
 
-See [DH Research Software Engineers - For We Are Many](https://dh-tech.github.io/dhrse-whitepaper/) to read the white paper.
+See [DH Research Software Engineers - For We Are Many](https://dh-tech.github.io/dhrse-whitepaper#/) to read the white paper.
