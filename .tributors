@@ -6,7 +6,9 @@
     },
     "cosden": {
         "name": "Ian Cosden",
-        "blog": "https://github.com/cosden"
+        "blog": "https://github.com/cosden",
+        "orcid": "0000-0003-3780-9172",
+        "affiliation": "Princeton University"
     },
     "christophernhill": {
         "name": "Chris Hill",
@@ -126,6 +128,12 @@
     "mchenry": {
         "name": "Kenton McHenry",
         "email": "mchenry@illinois.edu",
-        "blog": "http://isda.ncsa.illinois.edu"
+        "blog": "http://isda.ncsa.illinois.edu",
+        "orcid": "0000-0003-0367-2550",
+        "affiliation": "University of Illinois at Urbana-Champaign National Center for Supercomputing Applications"
+    },
+    "thelinuxmaniac": {
+        "name": "Abhishek Dutta",
+        "blog": "http://abhishekdutta.org"
     }
 }

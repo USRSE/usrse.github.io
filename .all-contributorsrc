@@ -244,6 +244,17 @@
             "avatar_url": [
                 "https://avatars1.githubusercontent.com/u/2375622?v=4"
             ]
+        },
+        {
+            "login": "thelinuxmaniac",
+            "name": "Abhishek Dutta",
+            "contributions": [
+                "code"
+            ],
+            "profile": "http://abhishekdutta.org",
+            "avatar_url": [
+                "https://avatars3.githubusercontent.com/u/722415?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
