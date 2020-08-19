@@ -127,5 +127,9 @@
         "name": "Kenton McHenry",
         "email": "mchenry@illinois.edu",
         "blog": "http://isda.ncsa.illinois.edu"
+    },
+    "thelinuxmaniac": {
+        "name": "Abhishek Dutta",
+        "blog": "http://abhishekdutta.org"
     }
 }
