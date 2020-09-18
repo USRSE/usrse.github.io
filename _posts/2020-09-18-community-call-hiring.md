@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summary of September 2020 Community Call: Hiring and Interviewing For RSE Positions
+title: Summary of September 2020 Community Call - Hiring and Interviewing For RSE Positions
 tags: [community call]
 posted_by: Jeffrey C. Carver, Sandra Gesing, Daniel S. Katz, Christina Maimone
 ---
