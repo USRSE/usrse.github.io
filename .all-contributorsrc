@@ -255,6 +255,17 @@
             "avatar_url": [
                 "https://avatars3.githubusercontent.com/u/722415?v=4"
             ]
+        },
+        {
+            "login": "JeffCarver",
+            "name": "JeffCarver",
+            "contributions": [
+                "code"
+            ],
+            "profile": "http://carver.cs.ua.edu",
+            "avatar_url": [
+                "https://avatars2.githubusercontent.com/u/9202282?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

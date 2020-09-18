@@ -135,5 +135,9 @@
     "thelinuxmaniac": {
         "name": "Abhishek Dutta",
         "blog": "http://abhishekdutta.org"
+    },
+    "JeffCarver": {
+        "name": "JeffCarver",
+        "blog": "http://carver.cs.ua.edu"
     }
 }
