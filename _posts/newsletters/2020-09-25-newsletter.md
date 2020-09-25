@@ -38,9 +38,7 @@ As at previous SC conferences, there will be several events at [SC20](https://sc
 The SC20 schedule is under construction, but other relevant events include:
 
 * Tutorial:  [Better Scientific Software](https://sc20.supercomputing.org/?post_type=page&p=3479&id=tut146&sess=sess275), Tuesday, November 10
-
 * Workshop:  [4th International Workshop on Software Correctness for HPC Applications](https://sc20.supercomputing.org/?post_type=page&p=3479&id=wksp134&sess=sess205), Wednesday, November 11
-
 * Birds-of-a-Feather:  Software Engineering and Reuse in Modeling, Simulation, and Data Analytics for Science and Engineering, date and time TBA.
 
 Note also that this year’s SC is entirely online with lower registration rates, which will make participation easier than ever.  We hope you’ll be able to join us!
@@ -51,11 +49,8 @@ Note also that this year’s SC is entirely online with lower registration rates
 Some other events coming up may be of interest to RSEs:
 
 * [SORSE: A Series of Online Research Software Events](https://sorse.github.io) - an international answer to the COVID-19-induced cancellation of many national RSE conferences, to provide an opportunity for RSEs to develop and grow their skills, build new collaborations and engage with RSEs worldwide. It has a rolling deadline for events to be proposed as part of the series, and the next deadline is on July 31st. The events will take place at different times to accommodate different time zones. Submitters can indicate preferred dates and times.
-
 * [Best Practices for HPC Software Developers](http://ideas-productivity.org/events/hpc-best-practices-webinars/#webinar045) - a webinar series that addresses issues faced by developers of computational science and engineering (CSE) software on high-performance computers (HPC). The sessions are independent, so you can join any or all.
-
 * [EDUCAUSE](https://events.educause.edu/event-finder) offers webinars that support higher education to elevate the impact of IT. The webinars have a registration fee.
-
 * [SGCI (the Science Gateways Community Institute)](https://sciencegateways.org/engage/webinars) has a monthly webinar series around science gateways, web security, sustainability of software and projects. If you would like to contribute a talk, please contact [help@sciencegateways.org](mailto:help@sciencegateways.org). SGCI additionally offers the online [Focus Week](https://sciencegateways.org/engage/focus-week) that helps software and website projects get to the next level of sustainability. "[Jumpstart Your Sustainability Plan](https://sciencegateways.org/engage/focus-week/jumpstart)" builds on experiences from the Focus Week and is a virtual mini-course addressing sustainability issues. The [Gateways 2020](https://sciencegateways.org/web/gateways2020/attend/register) Conference will take place online from October 12-23 with workshops and tutorials in the first week and the main track in the second week. Poster submissions are accepted by September 28 and registration is open until October 5.
 
 <a name="latam"></a>
@@ -74,15 +69,10 @@ If you have an idea for how to make scientific software better, and you are affi
 These opportunities were recently posted to the [RSE Careers page](https://us-rse.org/jobs/):
 
 * [Data Curation Engineer for Calico Life Sciences](https://www.linkedin.com/jobs/cap/view/2019595826/?pathWildcard=2019595826&trk=job_capjs): (part to full time contract) Virtual/Remote
-
 * [Research Associate for Software Engineering](https://cu.taleo.net/careersection/2/jobdetail.ftl?job=18969&lang=en&src=LinkedIn): University of Colorado School of Medicine, Aurora, CO
-
 * [Senior Software Engineer, Calico Life Sciences](https://www.calicolabs.com/careers/?gh_jid=4824646002): South San Francisco, CA (currently remote)
-
 * [Software Engineer](https://jobs.jhu.edu/job/Baltimore-Software-Engineer-MD-21205/645431000/): Johns Hopkins University, Baltimore, Maryland
-
 * [Assistant Research Programmer/Research Programmer/Senior Research Programmer](https://jobs.illinois.edu/academic-job-board/job-details?jobID=130370&job=research-programmer-national-center-for-supercomputing-applications-130370): National Center for Supercomputing Applications / University of Illinois, Urbana, IL
-
 * [Software Engineer (funcX project)](https://www.globus.org/jobs/backend-software-engineer): University of Chicago, Chicago, IL
 
 <a name="reads"></a>
@@ -91,9 +81,7 @@ These opportunities were recently posted to the [RSE Careers page](https://us-rs
 Items you may have missed on the blog and Slack:
 
 * On 31 August, the [Journal of Open Source Software (JOSS)](http://joss.theoj.org) published its 1000th paper and wrote [a blog post about this milestone](https://blog.joss.theoj.org/2020/08/1000-papers-published-in-joss). JOSS is a developer friendly, free-to-publish, open-access journal for research software packages.
-
 * Dan Katz wrote a [blog post about redefining cyberinfrastructure](https://danielskatzblog.wordpress.com/2020/09/11/redefining-cyberinfrastructure/), including software and people as fundamental elements.
-
 * Laura James wrote a [blog post about maintenance and software](https://www.software.ac.uk/bloghttps://lbj20.blogspot.com/2020/09/software-maintenance-and-me.html), reposted by the Software Sustainability Institute (SSI). The last two months, SSI has published seven more interesting [blogs](https://www.software.ac.uk/blog) for RSEs.
 
 <a name="involved"></a>
