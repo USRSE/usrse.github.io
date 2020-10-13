@@ -19,4 +19,4 @@ It was suggested that members take a look at the [slides](https://doi.org/10.608
 
 We also discussed the RSE Stories podcast as a current success for community building and increasing the representation of diverse voices, and the potential to expand into topics of diversity and inclusion. It was brought up that groups use social media platforms differently, and that outreach should include written and spoken communication with disability access in mind. A new channel on the US-RSE slack, [\#dei-discussion](https://usrse.slack.com/archives/C01C8CJQ7AP), was created to continue further discussion. This channel could be a place for also sharing individual activities that others could get involved in. Numerous participants on the call mentioned activities that they were personally involved in that were of interest to other members.
 
-![Community Call about Diversity and Inclusion]({{ site.baseurl }}/assets/posts/2020-10-13-community-call-dei.png)
+![Community Call about Diversity and Inclusion]({{ site.baseurl }}/assets/posts/2020-10-13-community-call-dei.png "Community Call about Diversity and Inclusion")
