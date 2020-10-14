@@ -15,7 +15,7 @@ It was suggested that members take a look at the [slides](https://doi.org/10.608
 
 -   Adding a page to our website with resources for members who want to learn about diversity and inclusion in general, as well as practices they can use in their own lives. An example of such resources is guidelines on how to write good references for students while avoiding gender bias.
 
--   Making sure we are all inclusive in the hiring process without giving applicants the perception that they are only invited because they belong to a minority, or perpetrating a "diversity hire". Broadening the pool of interested applicants through education about the field might prevent this, which highlights the importance of outreach outside our immediate community.
+-   Making sure we are all inclusive in the hiring process without giving applicants the perception that they are only invited because they belong to a minority, or perpetrating a "diversity hire." Broadening the pool of interested applicants through education about the field might prevent this, which highlights the importance of outreach outside our immediate community.
 
 -   Outreach about the RSE profession to on-campus groups with student participation. It was noted that since events are virtual these days, that now might be a good time to try this form of outreach.
 
