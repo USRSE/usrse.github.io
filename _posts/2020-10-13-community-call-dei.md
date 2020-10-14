@@ -5,7 +5,7 @@ tags: [community call]
 posted_by: Nicole Brewer, Daniel S. Katz, Sandra Gesing, Ian Cosden, Chris Hill
 ---
 
-On October 8, 2020, the US-RSE Organization held a community call on "US-RSE's role in promoting Diversity, Equity and Inclusion". The goal of the call was to have an open discussion about what steps US-RSE might take in promoting diversity in our profession, both within the US-RSE organization and externally through outreach to the broader community, and if the participants in the call supported the idea of taking such steps.
+On October 8, 2020, the US-RSE Organization held a community call on "US-RSE's role in promoting Diversity, Equity and Inclusion". The goal of the call was to have an open discussion about what steps US-RSE might take in promoting diversity within the US-RSE organization and externally in our profession through outreach to the broader community, and to determine if the participants in the call supported the idea of taking such steps.
 
 ### Call Overview & Synopsis
 
