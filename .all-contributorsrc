@@ -266,6 +266,17 @@
             "avatar_url": [
                 "https://avatars2.githubusercontent.com/u/9202282?v=4"
             ]
+        },
+        {
+            "login": "nicole-brewer",
+            "name": "Nicole Brewer",
+            "contributions": [
+                "code"
+            ],
+            "profile": "www.nicole-brewer.com",
+            "avatar_url": [
+                "https://avatars2.githubusercontent.com/u/20686935?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
