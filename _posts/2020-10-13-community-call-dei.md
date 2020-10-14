@@ -7,6 +7,8 @@ posted_by: Nicole Brewer, Daniel S. Katz, Sandra Gesing, Ian Cosden, Chris Hill
 
 On October 8, 2020, the US-RSE Organization held a community call on "US-RSE's role in promoting Diversity, Equity and Inclusion". The goal of the call was to have an open discussion about what steps US-RSE might take in promoting diversity in our profession, both within the US-RSE organization and externally through outreach to the broader community, and if the participants in the call supported the idea of taking such steps.
 
+### Call Overview & Synopsis
+
 We initially talked about the fact that [US-RSE's Code of Conduct](https://us-rse.org/code-of-conduct/) includes some discussion of diversity, but that our mission does not currently include diversity, so in essence, we say that we are open to and supportive of diversity but we are not actively encouraging it either in our organization or in the RSE profession.
 
 It was suggested that members take a look at the [slides](https://doi.org/10.6084/m9.figshare.12955094.v4) from a talk given by Neil Chue Hong, Director of the Sustainability Software Institute. Neil talked about the lack of diversity within research software engineering, even when compared to academia as a whole or computer science. This led to a rich discussion about possible future directions and initiatives to improve diversity and inclusion:
