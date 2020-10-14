@@ -139,5 +139,11 @@
     "JeffCarver": {
         "name": "JeffCarver",
         "blog": "http://carver.cs.ua.edu"
+    },
+    "nicole-brewer": {
+        "name": "Nicole Brewer",
+        "email": "brewer36@purdue.edu",
+        "bio": "\r\n    Software Engineer 🐍 ☕️ \r\nTriathlete 🏊 🚴 🏃\r\nWomen in HPC 👩 💻\r\nHost of Long Tales of Science Podcast 🎙️👩‍🔬",
+        "blog": "www.nicole-brewer.com"
     }
 }
