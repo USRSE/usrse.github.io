@@ -5,6 +5,7 @@ event_date: "October 08, 2020"
 layout: event
 repeated: false
 ---
+**Post call update:** : A summary of the call can be found [here](https://874-120906408-gh.circle-artifacts.com/0/usrse.github.io/2020-10-13-community-call-dei/index.html).
 
 The next community call is on October 8 12ET/11CT/10MT/9PT, the main topic of discussion is "US-RSE's role in promoting Diversity, Equity and Inclusion". 
 
@@ -16,5 +17,3 @@ Some specific items it would be interesting to discuss are:
 Other topics are also welcome!  Bring them up on the call or on Slack.
 
 The Zoom connection details are posted in the general channel on Slack.
-
-**Post call update:** : A summary of the call can be found [here](https://874-120906408-gh.circle-artifacts.com/0/usrse.github.io/2020-10-13-community-call-dei/index.html).
