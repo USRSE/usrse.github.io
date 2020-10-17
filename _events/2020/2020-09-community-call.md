@@ -6,6 +6,8 @@ layout: event
 repeated: false
 ---
 
+**Post call update:** A summary of the call can be found [here](https://874-120906408-gh.circle-artifacts.com/0/usrse.github.io/2020-09-18-community-call-hiring/index.html).
+
 The next community call is on September 10 11ET/10CT/9MT/8PT, the main topic of discussion is "Hiring and interviewing for RSE positions".
 
 Some potential topics include: 
