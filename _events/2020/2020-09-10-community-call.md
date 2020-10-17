@@ -8,7 +8,12 @@ repeated: false
 
 The next community call is on September 10 11ET/10CT/9MT/8PT, the main topic of discussion is "Hiring and interviewing for RSE positions".
 
-Some potential topics include: What qualities are hiring managers looking for? What can RSEs do to better distinguish themselves in the process? How do RSEs want to be evaluated? What have been some good/bad interview experiences? What advice would you give to someone looking to land their dream RSE job?
+Some potential topics include: 
+  - What qualities are hiring managers looking for?
+  - What can RSEs do to better distinguish themselves in the process?
+  - How do RSEs want to be evaluated? 
+  - What have been some good/bad interview experiences?
+  - What advice would you give to someone looking to land their dream RSE job?
 
 Other topics are also welcome!  Bring them up on the call or on Slack.
 
