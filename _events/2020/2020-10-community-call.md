@@ -16,3 +16,5 @@ Some specific items it would be interesting to discuss are:
 Other topics are also welcome!  Bring them up on the call or on Slack.
 
 The Zoom connection details are posted in the general channel on Slack.
+
+**Post call update:** : A summary of the call can be found [here](https://874-120906408-gh.circle-artifacts.com/0/usrse.github.io/2020-10-13-community-call-dei/index.html).
