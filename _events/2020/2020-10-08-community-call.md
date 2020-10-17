@@ -1,0 +1,18 @@
+---
+title: Fall Community Call
+expires: 2020-10-09
+event_date: "October 08, 2020"
+layout: event
+repeated: false
+---
+
+The next community call is on October 8 12ET/11CT/10MT/9PT, the main topic of discussion is "US-RSE's role in promoting Diversity, Equity and Inclusion". 
+
+Some specific items it would be interesting to discuss are:
+  - What sort of explicit statements about diversity, equity, inclusion and community values might we want to include in the US-RSE mission description?
+  - What role might US-RSE take in promoting diversity within our profession, both within the US-RSE community and organization itself as it grows and also beyond within the field as a whole?
+  - Are there initiatives that US-RSE could take action on now and or initiatives that could be viewed as aspirational for the future?
+
+Other topics are also welcome!  Bring them up on the call or on Slack.
+
+The Zoom connection details and a link to the draft US-RSE Communications Guide is posted in the general channel on Slack.   
