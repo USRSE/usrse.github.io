@@ -145,5 +145,10 @@
         "email": "brewer36@purdue.edu",
         "bio": "\r\n    Software Engineer 🐍 ☕️ \r\nTriathlete 🏊 🚴 🏃\r\nWomen in HPC 👩 💻\r\nHost of Long Tales of Science Podcast 🎙️👩‍🔬",
         "blog": "www.nicole-brewer.com"
+    },
+    "s-sajid-ali": {
+        "name": "Sajid Ali",
+        "bio": "Applied Physics, Northwestern",
+        "blog": "s-sajid-ali.github.io"
     }
 }
