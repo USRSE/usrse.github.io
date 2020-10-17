@@ -277,6 +277,17 @@
             "avatar_url": [
                 "https://avatars2.githubusercontent.com/u/20686935?v=4"
             ]
+        },
+        {
+            "login": "s-sajid-ali",
+            "name": "Sajid Ali",
+            "contributions": [
+                "code"
+            ],
+            "profile": "s-sajid-ali.github.io",
+            "avatar_url": [
+                "https://avatars1.githubusercontent.com/u/30510036?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
