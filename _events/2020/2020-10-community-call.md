@@ -1,5 +1,5 @@
 ---
-title: Fall Community Call
+title: October 2020 Community Call
 expires: 2020-10-09
 event_date: "October 08, 2020"
 layout: event
@@ -15,4 +15,4 @@ Some specific items it would be interesting to discuss are:
 
 Other topics are also welcome!  Bring them up on the call or on Slack.
 
-The Zoom connection details and a link to the draft US-RSE Communications Guide is posted in the general channel on Slack.   
+The Zoom connection details are posted in the general channel on Slack.
