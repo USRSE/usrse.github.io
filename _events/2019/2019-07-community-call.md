@@ -1,0 +1,14 @@
+---
+title: July 2019 Community Call
+expires: 2019-07-17
+event_date: "July 16, 2019"
+layout: event
+repeated: false
+---
+**Post call update:** : A summary of the call can be found [here](https://us-rse.org/2019-07-24-newsletter/).
+
+The first community call is on July 19 2ET!
+
+Other topics are also welcome!  Bring them up on the call or on Slack.
+
+The connection details are posted in the general channel on Slack.
