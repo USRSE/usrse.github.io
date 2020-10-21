@@ -7,12 +7,8 @@ permalink: /jobs/
 ## Current RSE openings
 
 <ol>{% for job in site.data.jobs %}
-{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-{% capture expires %}{{ job.expires | date: '%s'}}{% endcapture %}
-
-{% if expires > nowunix %}
-   <li><a href="{{ job.url }}" target="_blank">{{ job.name }}</a>: {{ job.location }}</li>
-{% endif %}{% endfor %}</ol>
+<li><a href="{{ job.url }}" target="_blank">{{ job.name }}</a>: {{ job.location }}</li>
+{% endfor %}</ol>
 
 <br>
 
