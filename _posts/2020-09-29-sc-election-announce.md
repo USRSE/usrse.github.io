@@ -10,8 +10,8 @@ US-RSE Steering Committee elections are happening this December.
 ## Timeline
 
 * Membership verification email sent: by October 9, 2020
-* Nominations open: October 26, 2020
-* Nominations due: November 16, 2020
+* [Nominations](https://northwestern.az1.qualtrics.com/jfe/form/SV_0U7A9S5nyh4pygR) open: October 26, 2020
+* [Nominations](https://northwestern.az1.qualtrics.com/jfe/form/SV_0U7A9S5nyh4pygR) due: November 16, 2020
 * Candidates finalize information: November 18, 2020 
 * Candidates announced: by November 23, 2020
 * Annual US-RSE General Meeting, including candidate statements: December 4, 2020, 1-3pm ET
@@ -50,9 +50,9 @@ Additionally, Steering Committee members are expected to:
 
 ## Nominations and Candidate Information
 
-Individuals may nominate themself or another member.  In cases when a nomination is not a self-nomination, the Election Chair will contact the nominated individual to confirm their interest in participating. 
+Individuals may [nominate themself or another member](https://northwestern.az1.qualtrics.com/jfe/form/SV_0U7A9S5nyh4pygR).  In cases when a nomination is not a self-nomination, the Election Chair will contact the nominated individual to confirm their interest in participating. 
 
-During the nomination process, the following information will be required:
+On the [nomination form](https://northwestern.az1.qualtrics.com/jfe/form/SV_0U7A9S5nyh4pygR), the following information is required:
 
 **If Nominating Someone Else:**
 
@@ -62,12 +62,14 @@ During the nomination process, the following information will be required:
 
 Nominations of others will only be shared with the Election Chair and the nominated individual.  The information will not be made public.
 
-**Candidate Form** (Self-nomination or accepted nomination)
+**Self-nomination or Accepted Nomination:**
 
 * Your name and a publicly-shareable email 
 * A link to a resume, CV, LinkedIn profile, or professional website
 * Why do you want to be on the US-RSE Steering Committee? (<=1000 characters)
 * How do you contribute to the US-RSE Association or RSE community more broadly? (<= 1500 characters)
+
+[Nomination Form](https://northwestern.az1.qualtrics.com/jfe/form/SV_0U7A9S5nyh4pygR)
 
 All candidate information will be shared on the US-RSE website.  Additionally, candidates will have the opportunity to share a short statement (live or recorded) during the US-RSE General meeting, December 4, 2020, 1-3pm ET, on Zoom.  
 
