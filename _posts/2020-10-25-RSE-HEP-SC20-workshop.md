@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The RSE-HPC-2020 Workshop: Creating Community, Building Careers, Addressing Challenges
+title: The RSE-HPC-2020 Workshop - Creating Community, Building Careers, Addressing Challenges
 tags: [conference]
 posted_by: Charles Ferenbaugh, Sandra Gesing, Simon Hettrick, and Daniel S. Katz
 ---
