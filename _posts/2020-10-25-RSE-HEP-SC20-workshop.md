@@ -61,12 +61,14 @@ University
 Mundt, Sandia National Laboratory
   * *SC3UIS Research Software Engineering Ecosystem for Scientific Computing* -
 Emilio Carcamo, Universidad Industrial de Santander
+  * *RSEs as Maintainers: Keeping Code Alive* - Bernadette Boscoe, UCLA
 
 * Panel discussion: Building RSE Teams and Groups
   * Reed Milewicz, Sandia National Laboratory
   * Jeremy Cohen, Imperial College London
   * Robert Sinkovits, San Diego Supercomputer Center
   * Mahmood Shad, Harvard University
+  * Ben van Werkhoven, Netherlands eScience Center
 
 * Panel discussion: Supporting RSE Careers
   * Joanna Leng, University of Leeds
