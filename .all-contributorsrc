@@ -288,6 +288,17 @@
             "avatar_url": [
                 "https://avatars1.githubusercontent.com/u/30510036?v=4"
             ]
+        },
+        {
+            "login": "frolovsa",
+            "name": "frolovsa",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/frolovsa",
+            "avatar_url": [
+                "https://avatars0.githubusercontent.com/u/55715838?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
