@@ -1,7 +1,7 @@
 # The United States (US) Research Software Engineer Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-28-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-29-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -322,6 +322,9 @@ tool to generate a contributors graphic below.
     <td align="center"><a href="http://carver.cs.ua.edu"><img src="https://avatars2.githubusercontent.com/u/9202282?v=4?s=100" width="100px;" alt=""/><br /><sub><b>JeffCarver</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=JeffCarver" title="Code">💻</a></td>
     <td align="center"><a href="www.nicole-brewer.com"><img src="https://avatars2.githubusercontent.com/u/20686935?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nicole Brewer</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=nicole-brewer" title="Code">💻</a></td>
     <td align="center"><a href="s-sajid-ali.github.io"><img src="https://avatars1.githubusercontent.com/u/30510036?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sajid Ali</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=s-sajid-ali" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/frolovsa"><img src="https://avatars0.githubusercontent.com/u/55715838?v=4?s=100" width="100px;" alt=""/><br /><sub><b>frolovsa</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=frolovsa" title="Code">💻</a></td>
   </tr>
 </table>
 
