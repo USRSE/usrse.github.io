@@ -5,7 +5,7 @@ tags: [international, workshop]
 posted_by: Daniel S. Katz (for Stephan Druskat)
 ---
 
-![Group spelling out RSE](https://research-software.org/img/derse.png)
+![Group spelling out RSE](https://researchsoftware.org/img/derse.png)
 Photo by Antonia Cozacu, Jan Philipp Dietrich, de-RSE e.V. (CC BY 4.0).
 
 In 2018, the first International RSE Leaders Workshop, organized by the UK RSE Association, took place at the Alan Turing Institute in London, UK.
@@ -27,4 +27,4 @@ Software Engineering community in their own region or country, or within a speci
 important than seniority.
 
 Apply for participation by 30 July at [https://bit.ly/intl-rse-leaders-2020-application](https://bit.ly/intl-rse-leaders-2020-application).
-For more information, visit the [workshop website](https://research-software.org/2020-workshop.html).
+For more information, visit the [workshop website](https://researchsoftware.org/2020-workshop.html).
