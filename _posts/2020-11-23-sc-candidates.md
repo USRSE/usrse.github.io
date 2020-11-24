@@ -17,7 +17,7 @@ Candidates are listed in alphabetical order.
 
 ## Julia Damerow
 
-[Email](mailto:jdamerow@asu.edu), [LinkedIn](http://www.linkedin.com/in/julia-damerow)
+[Email](mailto:jdamerow@asu.edu), [LinkedIn](https://www.linkedin.com/in/julia-damerow)
 
 **Why do you want to be on the US-RSE Steering Committee?**
 
@@ -47,7 +47,7 @@ I helped launch US-RSE and have continued to be involved, helping both organizat
 
 ## Daniel S. Katz	
 
-[Email](mailto:dskatz@illinois.edu), [Website](http://danielskatz.org/)	
+[Email](mailto:dskatz@illinois.edu), [Website](http://danielskatz.org)	
 
 **Why do you want to be on the US-RSE Steering Committee?**
 
