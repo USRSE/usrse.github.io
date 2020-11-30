@@ -1,7 +1,7 @@
 # The United States (US) Research Software Engineer Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-29-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-30-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -325,6 +325,7 @@ tool to generate a contributors graphic below.
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/frolovsa"><img src="https://avatars0.githubusercontent.com/u/55715838?v=4?s=100" width="100px;" alt=""/><br /><sub><b>frolovsa</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=frolovsa" title="Code">💻</a></td>
+    <td align="center"><a href="https://eduardoarango.dev"><img src="https://avatars1.githubusercontent.com/u/15933089?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Carlos Eduardo Arango Gutierrez</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=ArangoGutierrez" title="Code">💻</a></td>
   </tr>
 </table>
 

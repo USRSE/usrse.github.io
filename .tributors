@@ -155,5 +155,11 @@
     "frolovsa": {
         "name": "frolovsa",
         "blog": "https://github.com/frolovsa"
+    },
+    "ArangoGutierrez": {
+        "name": "Carlos Eduardo Arango Gutierrez",
+        "email": "carangog@redhat.com",
+        "bio": "Engineer, OpenShift Performance & Latency Sensitive Application Platform (PSAP)",
+        "blog": "https://eduardoarango.dev"
     }
 }
