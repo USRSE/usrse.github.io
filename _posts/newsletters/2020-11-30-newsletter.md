@@ -50,7 +50,7 @@ In addition to the RSE workshop, RSEs from the US and elsewhere led and particip
 
 ![image alt text]({{ site.baseurl }}/assets/posts/2020-11-30-sc20-01.png "RSE-HPC-2020 screenshot from SC20")![image alt text]({{ site.baseurl }}/assets/posts/2020-11-30-sc20-02.png "RSE-HPC-2020 screenshot from SC20")![image alt text]({{ site.baseurl }}/assets/posts/2020-11-30-sc20-03.png "RSE-HPC-2020 screenshot from SC20")
 
-The screenshots show the organizers and featured session speakers at RSE-HPC-2020.
+These screenshots show the organizers and featured session speakers at RSE-HPC-2020.
 
 <a name="other"></a>
 # **Other Happenings**
