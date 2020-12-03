@@ -10,13 +10,13 @@ US-RSE Steering Committee elections are happening this December.
 ## Timeline
 
 * Membership verification email sent: by October 9, 2020
-* [Nominations](https://northwestern.az1.qualtrics.com/jfe/form/SV_0U7A9S5nyh4pygR) open: October 26, 2020
-* [Nominations](https://northwestern.az1.qualtrics.com/jfe/form/SV_0U7A9S5nyh4pygR) due: November 16, 2020
+* Nominations open: October 26, 2020
+* Nominations due: November 16, 2020
 * Candidates finalize information: November 18, 2020 
-* Candidates announced: by November 23, 2020
-* Annual US-RSE General Meeting, including candidate statements: December 4, 2020, 1-3pm ET
+* [Candidates announced](https://us-rse.org/2020-11-23-sc-candidates/): by November 23, 2020
+* [Annual US-RSE General Meeting](https://us-rse.org/events/2020/2020-12-AGM), including candidate statements: December 4, 2020, 1-3pm ET
 * Voting Open: December 13-19, 2020
-* Election Results announced: by December 23, 3030
+* Election Results announced: by December 23, 2020
 * Elected Steering Committee members take office: January 1, 2021
 
 
