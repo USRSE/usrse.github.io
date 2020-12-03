@@ -21,11 +21,15 @@ here = os.path.dirname(os.path.abspath(__file__))
 
 def get_filename_commits(filename):
     """Given a filename in a Git repository, get a list of commits for which
-       the file was changed. We must be in the PWD of the repository.
+    the file was changed. We must be in the PWD of the repository.
     """
     cmd = shlex.split(f'git log --all --oneline --pretty=tformat:"%H" -- {filename}')
 
-    result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE,)
+    result = subprocess.run(
+        cmd,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+    )
 
     # Cut out early if not successful
     if result.returncode != 0:
@@ -37,10 +41,13 @@ def get_filename_commits(filename):
 
 
 def checkout(commit):
-    """checkout a particular commit. We should have the repository in the PWD
-    """
+    """checkout a particular commit. We should have the repository in the PWD"""
     cmd = shlex.split(f"git checkout {commit}")
-    result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE,)
+    result = subprocess.run(
+        cmd,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+    )
 
     # Cut out early if not successful
     if result.returncode != 0:
@@ -102,8 +109,7 @@ def read_jobs(jobfile):
 
 
 def main():
-    """a small helper to generate a "master" _data/jobs.yml
-    """
+    """a small helper to generate a "master" _data/jobs.yml"""
     repository = "https://github.com/USRSE/usrse.github.io"
     tmpdir = tempfile.mkdtemp(prefix="usrse-")
 
@@ -127,7 +133,12 @@ def main():
     # For each commit, checkout and read in job data
     for commit in commits:
         checkout(commit)
-        new_jobs = read_jobs("_data/jobs.yml")
+
+        try:
+            new_jobs = read_jobs("_data/jobs.yml")
+        except:
+            print("There was a problem parsing jobs file for commit %s" % commit)
+            continue
 
         # Check seen based on URL, double check for title
         for job in new_jobs:
