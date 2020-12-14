@@ -24,7 +24,7 @@ subtitle: The US-RSE Association is community driven and organized.
 
 <hr>
 
-<a href="https://drive.google.com/open?id=1IKvT0xIkBTqHpBgUUaANpjFCdMki3R4J" target="_blank">
-<button class="btn btn-primary"><i style="margin-right:10px" class="fa fa-file-text-o"></i>Steering Committee Meeting Minutes</button></a>
+<p><a href="https://drive.google.com/open?id=1IKvT0xIkBTqHpBgUUaANpjFCdMki3R4J" target="_blank">
+<button class="btn btn-primary"><i style="margin-right:10px" class="fa fa-file-text-o"></i>Steering Committee Meeting Minutes</button></a></p>
 
 Contact the Steering Committee at [contact@us-rse.org](mailto:us-rse.org).
