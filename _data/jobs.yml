@@ -1,22 +1,25 @@
+- {expires: 2021-04-01, location: 'University of Delaware, Newark, DE', name: 'Computer Engineer - Rapid Advancement in Process Intensification Deployment (RAPID)',
+    url: 'https://careers.udel.edu/en-us/job/496192/computer-engineer-rapid-advancement-in-process-intensification-deployment-rapid'}
+- {expires: 2021-01-31, location: 'General Fusion, Burnaby, BC, Canada (remote work possible)', name: 'Research Software Engineer (High Performance Computing Administrator)',
+    url: 'https://generalfusion.com/careers/'}
+- {expires: 2021-04-01, location: 'Microsoft, Redmond, WA', name: 'Senior Geospatial Applications Engineer, AI for Earth',
+    url: 'https://careers.microsoft.com/us/en/job/876975/Senior-Geospatial-Applications-Engineer-AI-for-Earth'}
+- {expires: 2021-04-01, location: 'Oak Ridge National Laboratory, Oak Ridge, TN', name: 'Environmental Informatics Research Professional',
+    url: 'https://jobs.ornl.gov/job/Oak-Ridge-Environmental-Informatics-Research-Professional-TN-37831/697442500/'}
 - {expires: 2021-01-06, location: 'University of Alabama, Tuscaloosa, AL (remote work
     possible)', name: Research Software Engineer, url: 'https://staffjobs.ua.edu/en-us/job/512035/assoc-research-professional-research-software-engineer-512035'}
 - {expires: 2021-05-01, location: 'Princeton University, Princeton, NJ', name: Research
     Software Engineer, url: 'https://main-princeton.icims.com/jobs/12147/research-software-engineer-%28politics%29/job?hub=15'}
 - {expires: 2021-05-01, location: 'Princeton University, Princeton, NJ', name: Research
     Software Engineer, url: 'https://main-princeton.icims.com/jobs/12153/research-software-engineer-%28orfe%29/job?hub=15'}
-- {expires: 2021-04-01, location: 'Vicarious AI, Union City, CA', name: Research Software
-    Engineer (Vision), url: 'https://www.linkedin.com/jobs/view/2282694793/'}
 - {expires: 2021-04-01, location: ' University of Washington', name: Research Scientist/Engineer,
   url: 'https://uwhires.admin.washington.edu/eng/candidates/default.cfm?szCategory=jobprofile&szOrderID=184590&szCandidateID=0&szSearchWords=&szReturnToSearch=1'}
 - {expires: 2021-04-01, location: 'Harvard University, Cambridge, MA', name: Research
     Software Engineer, url: 'https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25240&siteid=5341&PageType=JobDetails&jobid=1543317#jobDetails=1543317_5341'}
 - {expires: 2021-04-01, location: 'South San Francisco, CA (currently remote)', name: 'Machine
     Learning Engineer, Calico Life Sciences', url: 'https://www.calicolabs.com/careers?gh_jid=4962448002'}
-- {expires: 2021-04-01, location: UC San Diego, name: Applications Programmer, url: 'https://jobs.ucsd.edu/bulletin/job.aspx?jobnum_in=106603'}
 - {expires: 2021-04-01, location: University of Pittsburgh, name: Research Software
     Engineer at Open Minds Lab, url: 'https://crossinvalidation.com/2020/10/28/announcing-the-open-minds-lab-pitt/'}
-- {expires: 2021-01-01, location: 'CU Boulder/NOAA, Boulder, CO', name: Scientific
-    Software Developer, url: 'https://jobs.colorado.edu/jobs/JobDetail/?jobId=27551'}
 - {expires: 2021-04-01, location: 'Michigan University, Ann Arbor, MI', name: Applications
     Programmer Analyst, url: 'https://careers.umich.edu/job_detail/189923/applications_programmer_analyst'}
 - {expires: 2021-03-01, location: 'Harvard University, Cambridge, MA', name: Data
@@ -25,8 +28,6 @@
     Software Engineer (Scientific Software Developer), url: 'https://www.rc.fas.harvard.edu/about/employment/#Research_Software_Engineer_Scientific_Software_Developer'}
 - {expires: 2021-03-01, location: 'Amazon Web Services, Inc., Seattle, WA (potential
     for remote)', name: Developer Advocate for HPC & Batch, url: 'https://www.amazon.jobs/en/jobs/1276398/developer-advocate-for-hpc-batch'}
-- {expires: 2021-01-15, location: 'South San Francisco, CA (currently remote)', name: 'Senior
-    Software Engineer, Calico Life Sciences', url: 'https://www.calicolabs.com/careers/?gh_jid=4824646002'}
 - {expires: 2021-01-15, location: 'Stanford, CA', name: 'Oncology OnCore Application
     Specialist, Stanford School of Medicine', url: 'https://careersearch.stanford.edu/jobs/oncology-oncore-application-specialist-oncore-reporting-group-lead-9854?et=Ysg27Ti9'}
 - {expires: 2021-01-15, location: 'Boston, MA', name: Senior Research Computing Systems
@@ -43,8 +44,6 @@
     Cluster Administrator, url: 'https://brainlife.io/docs/careers/jobs/'}
 - {expires: 2021-01-15, location: 'Chan Zuckerberg Initiative Imaging Science, Redwood
     City, CA', name: Senior Software Engineer, url: 'https://boards.greenhouse.io/chanzuckerberginitiative/jobs/1875135?gh_jid=1875135'}
-- {expires: 2021-01-15, location: 'Johns Hopkins University, Baltimore, Maryland',
-  name: Software Engineer, url: 'https://jobs.jhu.edu/job/Baltimore-Software-Engineer-MD-21205/645431000/'}
 - {expires: 2020-12-31, location: 'National Center for Supercomputing Applications
     / University of Illinois, Urbana, IL', name: Assistant Research Programmer/Research
     Programmer/Senior Research Programmer, url: 'https://jobs.illinois.edu/academic-job-board/job-details?jobID=130370&job=research-programmer-national-center-for-supercomputing-applications-130370'}
