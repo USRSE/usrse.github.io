@@ -310,6 +310,17 @@
             "avatar_url": [
                 "https://avatars1.githubusercontent.com/u/15933089?v=4"
             ]
+        },
+        {
+            "login": "clairecporter",
+            "name": "clairecporter",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/clairecporter",
+            "avatar_url": [
+                "https://avatars3.githubusercontent.com/u/3086036?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

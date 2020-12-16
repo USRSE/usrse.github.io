@@ -161,5 +161,8 @@
         "email": "carangog@redhat.com",
         "bio": "Engineer, OpenShift Performance & Latency Sensitive Application Platform (PSAP)",
         "blog": "https://eduardoarango.dev"
+    },
+    "clairecporter": {
+        "name": "clairecporter"
     }
 }
