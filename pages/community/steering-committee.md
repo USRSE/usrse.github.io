@@ -14,7 +14,7 @@ subtitle: The US-RSE Association is community driven and organized.
 * Charles Ferenbaugh, Los Alamos National Laboratory
 * Sandra Gesing, University of Notre Dame
 * Chris Hill, MIT
-* Daniel S. Katz, University of Illinois Urbana-Champaign
+* Daniel S. Katz, University of Illinois at Urbana-Champaign
 * Christina Maimone, Northwestern University
 * Lance Parsons, Princeton University
 
