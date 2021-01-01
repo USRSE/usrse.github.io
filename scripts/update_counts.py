@@ -58,6 +58,10 @@ def main():
     previous_month = (datetime.now() - timedelta(days=50)).strftime('%B') # July
     year = datetime.now().strftime('%Y')
 
+    # If we are at December, we need to subtract one from the year
+    if target_month == "December":
+        year = (datetime.now() - timedelta(days=3)).strftime('%Y') # previous year
+
     # By July 2021 we'll need to drag the equation to extend it, alert user
     count = None
     target = "%s %s" %(target_month, year)
