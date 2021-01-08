@@ -8,11 +8,11 @@ subtitle: The US-RSE Association is community driven and organized.
 
 ### Current Steering Committee
 
-* Jeff Carver, University of Alabama
-* Ian Cosden, Princeton University
-* Julia Damerow, Arizona State University
+* Jeff Carver, University of Alabama (Secretary)
+* Ian Cosden, Princeton University (Chair)
+* Julia Damerow, Arizona State University (Election Chair)
 * Charles Ferenbaugh, Los Alamos National Laboratory
-* Sandra Gesing, University of Notre Dame
+* Sandra Gesing, University of Notre Dame (Vice-Chair)
 * Chris Hill, MIT
 * Daniel S. Katz, University of Illinois at Urbana-Champaign
 * Christina Maimone, Northwestern University
