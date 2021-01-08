@@ -321,6 +321,17 @@
             "avatar_url": [
                 "https://avatars3.githubusercontent.com/u/3086036?v=4"
             ]
+        },
+        {
+            "login": "lefebvre",
+            "name": "Jordan P. Lefebvre",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/lefebvre",
+            "avatar_url": [
+                "https://avatars1.githubusercontent.com/u/70483?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
