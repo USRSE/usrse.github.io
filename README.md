@@ -96,7 +96,47 @@ not be repeated, and should be placed in a folder named by date.
 Repeated events are always shown at the top of the events page, and 
 do not expire.
 
-### 4. How do I add a page redirect?
+### 4. How do I add a community document?
+
+A community document is a living document that represents a community effort
+to discuss a question or idea. We call it "living" because we encourage community
+members to edit and contribute to the documents over time, and so there isn't
+a "publish" date associated with it. For this reason, we use [the wiki](https://github.com/USRSE/usrse.github.io/wiki) associated
+with the repository here. 
+
+![assets/img/usrse-book-small.png](assets/img/usrse-book-small.png)
+
+If you ever need to clone this content, you can do:
+
+```bash
+$ git clone git@github.com/USRSE/usrse.github.io/wiki
+```
+
+NOTE: During the testing phase of the living documents, we currently plan for the wiki to only be editable by community (repository)
+members.
+
+#### How do I edit an existing document?
+
+To edit a living document that already exists, you can browse the [wiki](https://github.com/USRSE/usrse.github.io/wiki) to find it and then update it. Generally, we are organizing topics as they are added, so if you want to add a new category or change the existing organization, please do so. 
+
+#### How do I start a new document?
+
+If you want to add a new document, while you might add it directly to the wiki, it's recommended to get others
+involved first. You can ping others in the USRSE slack to contribute, and it's also recommended to start the document as a Google
+Document for easier commenting and editing, and then move to the wiki when it's in a final first draft state. 
+For all community documents, the following points apply:
+
+1. It's strongly suggested to first work on your document in Google Docs or similar, where you can bring in multiple community members to put together a first draft. Importantly, you should make sure that the content adheres to the US-RSE [Code of Conduct](https://us-rse.org/code-of-conduct/). At least three community members (including yourself) are required before submitting the document to the site. You should feel that it's in a solid "first draft state" before doing a submission.
+2. Make sure that you verify the following:
+ - the content is of interest to the RSE community
+ - the content does not violate the Code of Conduct. 
+  
+  _NOTE_: Any material added to the wiki that does not follow these rules is subject to removal. If you see content on the wiki that is not appropriate or otherwise breaks these rules, please open an issue on the repository immediately, or contact the steering committee.
+
+If you want to start a community document and would like some help or to talk with
+others, we encourage you to post on the US-RSE slack or write an issue here.
+
+### 5. How do I add a page redirect?
 
 We have a special header field that you can define if you want a page to redirect 
 elsewhere. We do this by way of a meta tag, and we give the viewer 2 seconds
@@ -122,6 +162,7 @@ redirect: https://us-rse.org/first-community-workshop
 The above says that the page titled "US-RSE Community Building Workshop" served
 at permalink /2020-april-workshop will be redirected to 
 https://us-rse.org/first-community-workshop.
+
 
 ## Tests
 
