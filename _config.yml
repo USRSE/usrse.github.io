@@ -40,6 +40,7 @@ navbar-links:
   Resources:
     - Calendar: "calendar"
     - Community Blogs: "https://usrse.github.io/blog"
+    - Community Documents: "community-documents"
     - Events & Training: "events-training"
     - Links: "links"
     - Newsletters: "newsletters"
@@ -81,6 +82,9 @@ collections:
   events:
     output: true
     permalink: /:collection/:path
+  docs:
+    output: true
+    permalink: /:collection/:path
 
 # Defaults
 defaults:
@@ -89,6 +93,9 @@ defaults:
       type: "events"
     values:
       layout: event
+  - scope:
+      path: "_docs"
+      type: "docs"
 
 # --- Footer options --- #
 

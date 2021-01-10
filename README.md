@@ -96,7 +96,20 @@ not be repeated, and should be placed in a folder named by date.
 Repeated events are always shown at the top of the events page, and 
 do not expire.
 
-### 4. How do I add a page redirect?
+### 4. How do I add a community document?
+
+A community document is a living document that represents a community effort
+to discuss a question or idea. We call it "living" because we encourage community
+members to edit and contribute to the documents over time, and so there isn't
+a "publish" data associated with it. To edit a living document that exists, 
+you can browse the [_docs](_docs) folder. To create a new one, simply
+create a new file in this same folder (likely using another document as a
+starting template) and start writing! You can ping others in the USRSE slack
+to also contribute. It's also recommended to start the document as a Google
+Document for easier commenting and editing, and then move here when it's
+in a final first draft state.
+
+### 5. How do I add a page redirect?
 
 We have a special header field that you can define if you want a page to redirect 
 elsewhere. We do this by way of a meta tag, and we give the viewer 2 seconds
@@ -122,6 +135,7 @@ redirect: https://us-rse.org/first-community-workshop
 The above says that the page titled "US-RSE Community Building Workshop" served
 at permalink /2020-april-workshop will be redirected to 
 https://us-rse.org/first-community-workshop.
+
 
 ## Tests
 
