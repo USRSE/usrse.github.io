@@ -332,6 +332,17 @@
             "avatar_url": [
                 "https://avatars1.githubusercontent.com/u/70483?v=4"
             ]
+        },
+        {
+            "login": "maxhutch",
+            "name": "Max Hutchinson",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/maxhutch",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/1538980?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
