@@ -1,7 +1,6 @@
 name: Update Membership Counts
 
 on:
-  pull_request: []
   schedule:
     # Run on the first of every month
     - cron: 0 0 1 * *
