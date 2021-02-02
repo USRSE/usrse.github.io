@@ -343,6 +343,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/1538980?v=4"
             ]
+        },
+        {
+            "login": "jarrah42",
+            "name": "Greg Watson",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/jarrah42",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/6130694?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
