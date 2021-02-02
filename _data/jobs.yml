@@ -1,9 +1,8 @@
-- {expires: 2021-04-01, location: 'Citrine Informatics, Redwood City, CA (or remote)', 
-    name: 'Data & Artificial Intelligence Research Engineering (Full Time)', 
-    url: 'https://jobs.lever.co/citrineinformatics/31a67fb7-105d-429a-8281-94ebf133825b'}
-- {expires: 2021-04-01, location: 'Citrine Informatics, Redwood City, CA (temporarily remote)', 
-    name: 'Data & Artificial Intelligence Research Engineering (Internship)', 
-    url: 'https://jobs.lever.co/citrineinformatics/5141ccfd-e4ce-4353-b293-a227d96c65cd'}
+- {expires: 2021-04-01, location: 'Citrine Informatics, Redwood City, CA (or remote)',
+  name: Data & Artificial Intelligence Research Engineering (Full Time), url: 'https://jobs.lever.co/citrineinformatics/31a67fb7-105d-429a-8281-94ebf133825b'}
+- {expires: 2021-04-01, location: 'Citrine Informatics, Redwood City, CA (temporarily
+    remote)', name: Data & Artificial Intelligence Research Engineering (Internship),
+  url: 'https://jobs.lever.co/citrineinformatics/5141ccfd-e4ce-4353-b293-a227d96c65cd'}
 - {expires: 2021-06-01, location: 'University of Washington, Seattle, WA', name: Software
     Engineer, url: 'https://uwhires.admin.washington.edu/eng/candidates/default.cfm?szCategory=jobprofile&szOrderID=185774'}
 - {expires: 2021-03-15, location: 'Genentech, San Francisco, CA', name: 'Senior Informatics
