@@ -1,7 +1,7 @@
 # The United States (US) Research Software Engineer Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-33-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-34-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -329,6 +329,7 @@ tool to generate a contributors graphic below.
     <td align="center"><a href="https://github.com/clairecporter"><img src="https://avatars3.githubusercontent.com/u/3086036?v=4?s=100" width="100px;" alt=""/><br /><sub><b>clairecporter</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=clairecporter" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/lefebvre"><img src="https://avatars1.githubusercontent.com/u/70483?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jordan P. Lefebvre</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=lefebvre" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/maxhutch"><img src="https://avatars.githubusercontent.com/u/1538980?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Max Hutchinson</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=maxhutch" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/jarrah42"><img src="https://avatars.githubusercontent.com/u/6130694?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Greg Watson</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jarrah42" title="Code">💻</a></td>
   </tr>
 </table>
 
