@@ -19,7 +19,8 @@ The main topic of discussion is
  1. Other news
 
 **Discussion topic - Education and Training**  
- The community call will focus on Education and Training and how RSEs are getting their skills and learning the field. Come with ideas that can be discussed with your peers during the meeting and/or seed follow on activities. What works, what could be better, what are our high priority needs etc….
+1. Breakouts on how RSEs are obtaining their skills and learning the field. Come with ideas to discuss with your peers during the call and/or to seed follow on activities. 
+1. Large group discussion/conversation focused on discussing: what works, what could be better, what are our high priority needs. 
 
 
 ## Registration details
