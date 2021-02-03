@@ -24,4 +24,4 @@ The main topic of discussion is
 
 
 ## Registration details
-Information on how to register for the Zoom meeting have been sent via email and posted in the #general and #communitycalls channels on Slack.
+Information on how to register for the Zoom meeting has been sent via email and posted in the #general and #communitycalls channels on Slack.
