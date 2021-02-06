@@ -1,7 +1,7 @@
 ---
 title: "ADSA/US-RSE Early Career Panel"
-expires: 2021-02-23
-event_date: "February 24, 2021"
+expires: 2021-02-24
+event_date: "February 23, 2021"
 layout: event
 repeated: false
 ---
