@@ -77,13 +77,13 @@ Some other events coming up may be of interest to RSEs:
 
 The Research Software Engineer Stories podcast just released its 51st episode! Here are some recent episodes to check out:
 
-51: [The Shop](https://us-rse.org/rse-stories/2021/blaise-thompson/): Blaise Thompson
-50: [We are Here for a Purpose](https://us-rse.org/rse-stories/2021/alys-brett/): Alys Brett
-49: [For the Long Haul](https://us-rse.org/rse-stories/2021/greg-becker/): Greg Becker
-48: [Teach People How to Code](https://us-rse.org/rse-stories/2021/olivia-guest/): Olivia Guest
-47: [The Purple Pythonista](https://us-rse.org/rse-stories/2021/tania-allard/): Tania Allard
-46: [All Things R](https://us-rse.org/rse-stories/2020/maelle-salmon/): Maella Salmon
-45: [Founding Fathers](https://us-rse.org/rse-stories/2020/robert-haines/): Rob Haines
+51: [The Shop](https://us-rse.org/rse-stories/2021/blaise-thompson/): Blaise Thompson  
+50: [We are Here for a Purpose](https://us-rse.org/rse-stories/2021/alys-brett/): Alys Brett  
+49: [For the Long Haul](https://us-rse.org/rse-stories/2021/greg-becker/): Greg Becker  
+48: [Teach People How to Code](https://us-rse.org/rse-stories/2021/olivia-guest/): Olivia Guest  
+47: [The Purple Pythonista](https://us-rse.org/rse-stories/2021/tania-allard/): Tania Allard  
+46: [All Things R](https://us-rse.org/rse-stories/2020/maelle-salmon/): Maella Salmon  
+45: [Founding Fathers](https://us-rse.org/rse-stories/2020/robert-haines/): Rob Haines  
 44: [Equal Footing](https://us-rse.org/rse-stories/2020/nooriyah-lohani/): Nooriyah Lohani
 
 RSE Stories is looking for feedback from you and interested community members who might like to try editing or hosting and recording an episode. Please take this [three question survey](https://forms.gle/AENmCfrJCwYrbYZd9) to let RSE Stories know what you think!
