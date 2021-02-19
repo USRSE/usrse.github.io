@@ -47,7 +47,7 @@ organization that supports so-called Research Software Engineers
 ## Upcoming meetings  
 
 * PEARC meeting 
-If you’re attending [PEARC](https://www.pearc19.pearc.org), make sure
+If you’re attending [PEARC](https://pearc.acm.org/pearc19), make sure
 to join us for the Birds of a Feather session on Monday, July 29 at
 5:15pm. And find Ian Cosden, Charles Ferenbaugh or Sandra Gesing to
 get a US-RSE sticker!
@@ -116,7 +116,7 @@ thoughts on the key aspects of US-RSE as it develops. Topics included:
    forms of local chapter that people might be interested in
    self-organizing. The US-RSE.org web/github site was seen as a place
    for providing source materials (see for example -
-   [https://github.com/USRSE/starter-pack](https://github.com/USRSE/starter-pack))
+   [https://github.com/rseng/starter-pack](https://github.com/rseng/starter-pack/))
    to help anyone interested in forming a chapter. The general sense
    was that a loose federation model was appropriate at this stage.
 

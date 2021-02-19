@@ -1,7 +1,8 @@
-- name: Georgia Institute of Technology
-  url: https://www.ece.gatech.edu/
-  coords: [33.776033, -84.398841]
+- name: Partnership for an Advanced Computing Environment (PACE)
+  url: https://oit.gatech.edu/high-performance-computing-hpc
+  coords: [33.775256, -84.388542] 
   type: group
+  institution: Georgia Institute of Technology
 - name: Charles Ferenbaugh
   url: https://www.lanl.gov/
   coords: [35.838420, -106.314760]
@@ -44,9 +45,15 @@
   coords: [40.349404, -74.657451]
   institution: Princeton University
   type: group
-- name: "Stanford Research Computing Center"
-  image: https://pbs.twimg.com/profile_images/1058424139080335360/6_aDaOYw_400x400.jpg
-  url: https://srcc.stanford.edu/about/computing-support-research
+- name: Department of Physics
+  image: https://phy.princeton.edu/sites/physics/files/styles/pwds_people_full/public/people/sheild_75.jpg
+  url: https://phy.princeton.edu/
+  coords: [40.345141, -74.651439]
+  institution: Princeton University
+  type: group
+- name: "Stanford RSE Services"
+  image: https://raw.githubusercontent.com/stanford-rc/rse-services/master/assets/img/logo/logo-square.png
+  url: https://stanford-rc.github.io/rse-services/
   coords: [37.272040, -121.861260]
   institution: Stanford University
   type: group

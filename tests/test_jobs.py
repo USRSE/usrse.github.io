@@ -3,7 +3,7 @@
 # Read in the jobs.yml file to validate each entry. Required are:
 # - name: "Research Software Engineer"
 #   location: Princeton, NJ
-#   url: https://main-princeton.icims.com/jobs/10347/research-software-engineer/job
+#   url: https://main-princeton.icims.com/jobs/
 #   expires: 2019-07-01
 
 import unittest

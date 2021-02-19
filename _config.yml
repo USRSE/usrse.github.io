@@ -5,18 +5,18 @@
 # DO NOT CHANGE THE LINE NUMBERS HERE without changing .circleci/circle_urls.sh
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
 url: "https://us-rse.org"
-baseurl: ""
-title-img: /assets/img/logo.png
-twitter-img: https://us-rse.org/assets/img/logo.png
+baseurl: ""  # for testing, also check .circleci/circle_urls.sh 
+title-img: /assets/img/rse_logo_background.svg  # baseurl will be prepended
+twitter-img: /assets/img/logo_600px.png  # url + baseurl will be prepended
 
 # If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
+#url: "https://username.github.io/projectname"
 #baseurl: "/projectname"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: US RSE Community
+title: US-RSE Association
 
 # Short description of your site
 description: Community of Research Software Engineers
@@ -34,9 +34,11 @@ navbar-links:
     - About: "about"
     - Mission: "mission"
     - RSE Groups: "rse-groups"
-    - RSE Map: "map"
+    - RSE Map: "https://usrse.github.io/usrse-map"
     - Steering Committee: "steering-committee"
+    - Code of Conduct: "code-of-conduct"
   Resources:
+    - Calendar: "calendar"
     - Community Blogs: "https://usrse.github.io/blog"
     - Events & Training: "events-training"
     - Links: "links"
@@ -44,9 +46,11 @@ navbar-links:
     - News Archive: "archive"
   Get involved:
     - Join US-RSE: "join"
+    - Engage: "get-involved"
+    - Share: "share"
   Careers:
     - What is an RSE?: "what-is-an-rse"
-    - RSE openings: "jobs"
+    - RSE Jobs: "jobs"
 
 # --- Background colour/image options --- #
 
@@ -68,6 +72,23 @@ footer-link-col: "#404040"
 navbar-img: "../img/rse-transport-light.png"
 # footer-img: "../img/rse-transport-light.png"
 # page-img: "/img/bgimage.png"
+
+# --- Events --- #
+# Events are displayed via a collection to allow for single page generation.
+
+# Collections
+collections:
+  events:
+    output: true
+    permalink: /:collection/:path
+
+# Defaults
+defaults:
+  - scope:
+      path: "_events"
+      type: "events"
+    values:
+      layout: event
 
 # --- Footer options --- #
 

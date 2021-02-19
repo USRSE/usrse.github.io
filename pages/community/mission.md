@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The US-RSE Mission
+title: Mission
 subtitle: Goals and Aims of the US-RSE Association
 bigimg:
 permalink: /mission/
@@ -22,7 +22,7 @@ to target our activities and actions to serving these three aspects:
 
 ## 2. Advocacy
 
-  We aim to promote RSEs impact on research, highlighting the
+  We aim to promote RSEs' impact on research, highlighting the
   increasingly critical and valuable role RSEs serve.
 
 ## 3. Resources 

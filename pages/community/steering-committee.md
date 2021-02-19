@@ -2,25 +2,30 @@
 layout: page
 title: Steering Committee
 permalink: /steering-committee/
-subtitle: The US-RSE is community driven and organized.
+subtitle: The US-RSE Association is community driven and organized.
 ---
 
 
 ### Current Steering Committee
 
-* Jay Jay Billings, Oak Ridge National Laboratory
-* Jeff Carver, University of Alabama
-* Ian Cosden, Princeton University
+* Jeff Carver, University of Alabama (Secretary)
+* Ian Cosden, Princeton University (Chair)
+* Julia Damerow, Arizona State University (Election Chair)
 * Charles Ferenbaugh, Los Alamos National Laboratory
-* Sandra Gesing, University of Notre Dame
+* Sandra Gesing, University of Notre Dame (Vice-Chair)
 * Chris Hill, MIT
-* Daniel S. Katz, University of Illinois Urbana-Champaign
+* Daniel S. Katz, University of Illinois at Urbana-Champaign
 * Christina Maimone, Northwestern University
 * Lance Parsons, Princeton University
-* Jordan Perr-Sauer, National Renewable Energy Laboratory
+
+### Former Steering Committee Members
+
+* Jordan Perr-Sauer, National Renewable Energy Laboratory, 2019-2020
 
 
+<hr>
 
-### Want to get involved?
+<p><a href="https://drive.google.com/open?id=1IKvT0xIkBTqHpBgUUaANpjFCdMki3R4J" target="_blank">
+<button class="btn btn-primary"><i style="margin-right:10px" class="fa fa-file-text-o"></i>Steering Committee Meeting Minutes</button></a></p>
 
-Join the discussion on [slack](https://usrse.slack.com/).
+Contact the Steering Committee at [contact@us-rse.org](mailto:us-rse.org).

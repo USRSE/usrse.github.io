@@ -3,6 +3,24 @@
 This file originally listed all non-trivial changes to Beautiful Jekyll, and
 now serves to list changes for the usrse site.
 
+## What constitutes a change?
+
+Changelogs usually describe significant changes that future developers might want to
+know about. In the case of a website, these are far fewer than for a software repository.
+Examples of changes to include here might be adding an entire new section, 
+re-organizing or restyling, or anything that changes a state to something different. 
+Changes that aren't necessary to add are small bug fixes, content tweaks, etc. 
+
+## How do I know if I should include my change?
+
+There isn't a definitive rule, and it comes down to the intuition of a contributor,
+and reviewers that are discussing the change. If you or your reviewers think that
+a change warrants adding a line to the log, you should add it.
+
+**2020-02-17** Adding calendar page with embedded google calendar (@jordanperr)
+**2019-11-15** Adding List of Community Driven Initiative (Get Involved) (@lparsons)
+**2019-09-27** Adding Code of Conduct (@cosden)
+**2019-09-06** Adding pull request template and contributing.md (@vsoch)
 **2019-07-25** Adjusting name to US Research Software Engineer Association (@vsoch)
 **2019-06-13** Removing Gemfile.lock (@vsoch)
 **2019-06-11** Adding lunr.js search to site (@vsoch)

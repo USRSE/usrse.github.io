@@ -1,0 +1,49 @@
+name: Update Membership Counts
+
+on:
+  schedule:
+    # Run on the first of every month
+    - cron: 0 0 1 * *
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v1
+    - name: Install dependencies and run script
+      run: |
+        sudo apt-get update && sudo apt-get install -y python3 python3-pip wget
+        sudo pip3 install requests
+        # Ensure using a particular version
+        wget https://raw.githubusercontent.com/USRSE/usrse.github.io/af652a1ef77fe13592a7465199f8da3201566293/scripts/update_counts.py
+        chmod +x update_counts.py
+        mv update_counts.py scripts/update_counts.py
+        python3 scripts/update_counts.py
+    - name: Checkout New Branch
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "GitHub Actor: ${GITHUB_ACTOR}"
+        git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+        git branch
+        git checkout -b update/member-count-$(date '+%Y-%m-%d')
+        git branch
+
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@users.noreply.github.com"
+
+        git add _data/memberCounts.csv
+        git commit -m "Automated deployment to update Member Counts $(date '+%Y-%m-%d')" --allow-empty
+        git push origin update/member-count-$(date '+%Y-%m-%d')
+    - name: Open pull request
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH_AGAINST: "master"
+      run: |
+          export BRANCH_FROM="update/member-count-$(date '+%Y-%m-%d')"
+          wget https://raw.githubusercontent.com/USRSE/usrse.github.io/71ae72c2a5524c502e0bb51c5ca764dd854eea18/scripts/pull-request.sh
+          chmod +x ./pull-request.sh
+          /bin/bash ./pull-request.sh

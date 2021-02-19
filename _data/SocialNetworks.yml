@@ -95,3 +95,4 @@ yelp:
   name: "Yelp"
   baseURL: "https://{{ site.author.yelp }}.yelp.com"
   icon: "fa-yelp"
+
