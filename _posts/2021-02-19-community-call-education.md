@@ -1,7 +1,7 @@
 ---
 layout: post
 title: February Community Call Summary
-tags: [community call]
+tags: [community call, education, training]
 posted_by: Julia Damerow, Chris Hill
 ---
 
