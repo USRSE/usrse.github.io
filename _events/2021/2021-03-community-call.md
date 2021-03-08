@@ -22,7 +22,7 @@ topic, to be published on the US-RSE website. The goal for the white paper could
 identify areas that need improvement, but also to promote concrete actions and steps toward a more ideal 
 landscape. In the call we plan to have breakout groups around different possible subsections of a white 
 paper and then discuss in a plenary session at the close. After the call, we plan 
-to try some open, distributed and asynchronous writing to finalize a document that can hopefully capture 
+to try some open, distributed, asynchronous writing to finalize a document that will hopefully capture 
 our collective perspectives, thoughts and ideas. 
 
 Suggested subsections:
