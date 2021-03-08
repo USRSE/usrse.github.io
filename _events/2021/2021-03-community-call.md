@@ -13,7 +13,7 @@ The main topic of discussion is
 
 We will focus on questions like how different institutions see the role of RSEs in research or how the work of RSEs is 
 being recognized, for example, in terms of career progression and retention. This topic is related 
-to our January community call **"RSE careers in academia,"** however, it extends beyond career paths. 
+to our January community call "**RSE careers in academia**," however, it extends beyond career paths. 
 How are the products of RSE work and RSEs themselves being valued by academia? 
 
 Clearly this is a topic on the US-RSE community collective mind. During this community call 
