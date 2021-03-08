@@ -21,7 +21,7 @@ we thought we could try to start to develop the skeleton of a collectively autho
 topic, to be published on the US-RSE website. The goal for the white paper could be not just to 
 identify areas that need improvement, but also to promote concrete actions and steps toward a more ideal 
 landscape. In the call we plan to have breakout groups around different possible subsections of a white 
-paper and then discuss in a plenary session at the close. In follow up dialog, after the call, we plan 
+paper and then discuss in a plenary session at the close. After the call, we plan 
 to try some open, distributed and asynchronous writing to finalize a document that can hopefully capture 
 our collective perspectives, thoughts and ideas. 
 
