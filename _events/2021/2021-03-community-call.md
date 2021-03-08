@@ -16,7 +16,7 @@ being recognized, for example, in terms of career progression and retention. Thi
 to our January community call "**RSE careers in academia**," however, it extends beyond career paths. 
 How are the products of RSE work and RSEs themselves being valued by academia? 
 
-Clearly this is a topic on the US-RSE community collective mind. During this community call 
+Clearly this is a topic on the US-RSE community's collective mind. During this community call 
 we thought we could try to start to develop the skeleton of a collectively authored white paper on this 
 topic, to be published on the US-RSE website. The goal for the white paper could be not just to 
 identify areas that need improvement, but also to promote concrete actions and steps toward a more ideal 
