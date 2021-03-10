@@ -8,7 +8,18 @@ layout: base
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <div style="text-align:center"><em>{{ page.event_date }}</em></div>
-      {{ content }}
+      {% if page.content contains "<!-- more -->" %}
+        <div>
+          {{ page.content | split:"<!-- more -->" | first }}
+        </div>
+        <input type="checkbox" class="read-more-state" id="{{ page.url }}"/>
+        <div class="read-more">
+          {{ page.content | split:"<!-- more -->" | last }}
+        </div>
+        <label for="{{ page.url }}" class="read-more-trigger"></label>
+      {% else %}
+        {{ page.content }}
+      {% endif %}
       <button class="btn btn-primary" style="float:right;">
           <a href="{{ site.baseurl }}/events-training/" style="color:white">Back to Events</a></button>
         {% if page.comments %}<div class="disqus-comments">
