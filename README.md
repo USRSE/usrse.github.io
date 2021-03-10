@@ -1,7 +1,7 @@
 # The United States (US) Research Software Engineer Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-35-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-36-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -331,6 +331,9 @@ tool to generate a contributors graphic below.
     <td align="center"><a href="https://github.com/maxhutch"><img src="https://avatars.githubusercontent.com/u/1538980?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Max Hutchinson</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=maxhutch" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/jarrah42"><img src="https://avatars.githubusercontent.com/u/6130694?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Greg Watson</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jarrah42" title="Code">💻</a></td>
     <td align="center"><a href="https://civilfritz.net"><img src="https://avatars.githubusercontent.com/u/350294?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jonathon Anderson</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=anderbubble" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/exoticDFT"><img src="https://avatars.githubusercontent.com/u/18316938?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alexander Koufos</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=exoticDFT" title="Code">💻</a></td>
   </tr>
 </table>
 

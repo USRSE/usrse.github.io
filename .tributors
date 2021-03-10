@@ -181,5 +181,12 @@
     "anderbubble": {
         "name": "Jonathon Anderson",
         "blog": "https://civilfritz.net"
+    },
+    "exoticDFT": {
+        "name": "Alexander Koufos",
+        "email": "exoticdft@gmail.com",
+        "bio": "Physicist and software engineer with specialty in simulation, applied computational physics, mathematics and robotics.",
+        "orcid": "0000-0003-4757-3626",
+        "affiliation": "Stanford University School of Engineering"
     }
 }
