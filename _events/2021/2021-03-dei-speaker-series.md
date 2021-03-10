@@ -11,7 +11,7 @@ Join us on March 25th at 5ET/4CT/3MT/2PT. Please register for the event
 [here](https://princeton.zoom.us/webinar/register/WN_EgdjRiAVTuiX634KytIunA).
 
 ## US-RSE DEI-WG Speaker Series Info
-The US-RSE DEI-WG is working to bring to the US-RSE community quarterly visits from RSE professionals with vested interests or research into DEI in the RSE community at large. The DEI team pledges to continually educate ourselves through research on best practices focused on diversity, equality, and inclusion. The US-RSE is committed to providing an inclusive environment with equitable treatment for all and to promoting and encouraging diversity throughout the RSE community. We encourage everyone to suggest speakers and topics and are open to different formats and timelines of the events. Feedback is much appreciated.
+The US-RSE DEI-WG is working to bring to the US-RSE community quarterly visits from RSE professionals with vested interests or research into DEI in the RSE community at large. Our community pledges to continually educate ourselves through research on best practices focused on diversity, equality, and inclusion. The US-RSE is committed to providing an inclusive environment with equitable treatment for all and to promoting and encouraging diversity throughout the RSE community. We encourage everyone to suggest speakers and topics and are open to different formats and timelines of the events. Feedback is much appreciated.
 
 <!-- more -->
 
@@ -20,6 +20,13 @@ The US-RSE DEI-WG is working to bring to the US-RSE community quarterly visits f
 The US-RSE Diversity, Inclusion, and Equity Working Group (DEI-WG) is proud to
 present the first speaker in the US-RSE DEI Speaker Series: **Dr. Cherri M.
 Pancake, presenting her talk “Can We Change the Face of Computing?”**
+
+### Abstract
+The computing field has earned a bad reputation for its lack of diversity. That's a very serious problem, and not just in terms of equity or social justice. When the workplace is too homogeneous, a company or institution is constraining its potential for future innovation and growth. Even worse, computing's inhospitable culture is discouraging the very people who could bring the new perspectives that are so badly needed. I hope to convince you that each of us should take personal responsibility for changing the "culture of technology" before our field slowly strangles itself.
+
+To change a culture, it's important to understand how group behavior and values evolve and be realistic about how they can be influenced. My talk focuses on lessons I've learned about cultural change, first as an anthropologist and then working my way into and through a field that is overwhelmingly dominated by white male thinking.
+
+I suggest a number of practical actions any computing professional can take, in our everyday roles and at any stage in our careers, to become an "agent of change" for our profession. A bonus is that the same traits that make a person an effective advocate - such as being observant about how others react to new ideas, diligently and strategically planning for change, and acknowledging failure - can also make us better leaders.
 
 ### Biography
 Dr. Cherri M. Pancake is the past President of the Association for Computing Machinery (ACM.org) and Director of the Northwest Alliance for Computational Research. She recently retired as Professor of Electrical Engineering & Computer Science and Intel Faculty Fellow at Oregon State University. Her background combines environmental design and anthropology with computer engineering.
