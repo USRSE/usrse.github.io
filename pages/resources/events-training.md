@@ -17,15 +17,15 @@ permalink: /events-training/
 <div style="margin:0px; padding:0px;"><em>{{ event.event_date }}</em></div>
 {% if event.content contains "<!-- more -->" %}
 <div>
-    {{ event.content | split:"<!-- more -->" | first }}
+{{ event.content | split:"<!-- more -->" | first }}
 </div>
-<input type="checkbox" class="read-more-state" id="{{ event.url }}"/>
-<div class="read-more">
-    {{ event.content | split:"<!-- more -->" | last }}
+<div style="text-align:right;">
+    <a href="{{ site.url }}{{ event.url }}" style="color:#50193f; font-style:italic;"> Read More...</a>
 </div>
-<label for="{{ event.url }}" class="read-more-trigger"></label>
 {% else %}
-    {{ event.content }}
+<div>
+{{ event.content }}
+</div>
 {% endif %}
 <br>
 {% endif %}{% endif %}{% endfor %}
