@@ -376,6 +376,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/18316938?v=4"
             ]
+        },
+        {
+            "login": "pkgw",
+            "name": "Peter Williams",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://newton.cx/~peter/",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/59598?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
