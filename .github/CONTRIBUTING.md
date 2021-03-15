@@ -51,14 +51,9 @@ helpful reminders for these points.
 1. All pull requests should be sent to the master branch, unless you are testing an integration, in which case you should cc @usrse-admin in an issue, or ask for help on the website channel of usrse.slack.com.
 2. Follow the existing code style precedent.
 3. Test and preview your PR locally, and tell the reviewers if you were not able to
-4. If necessary, update the README.md and CHANGELOG.md.
+4. If necessary, update the README.md.
 5. The pull request must receive at least one review and approval by a repository maintainer (for small fixes) and two for larger changes or changes to content for merge, along with all tests passing.
 
-For the Changelog, the decision to add a note is up to the contributor and reviewers.
-If the change seems large or significant enough that it should be noted, it doesn't
-hurt to add a note. However, note that since this is a website (that doesn't have versions or
-releases) and not a software repository, the Changelog serves more as a history
-of the site's development as opposed to a development tool itself.
 
 #### Issue Process
 

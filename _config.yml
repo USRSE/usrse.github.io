@@ -207,7 +207,6 @@ link-tags: true
 # Exclude these files from production site
 exclude:
   - _site
-  - CHANGELOG.md
   - CNAME
   - Dockerfile
   - Gemfile

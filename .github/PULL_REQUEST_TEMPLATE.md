@@ -26,6 +26,6 @@
 <!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
 - [ ] I have posted the link for the PR in the usrse slack (#website) to ask for reviewers
 - [ ] I have previewed changes locally
-- [ ] I have updated the CHANGELOG and (if necessary) the README.md
+- [ ] I have updated the README.md if necessary
 
 cc @usrse-maintainers
