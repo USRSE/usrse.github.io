@@ -195,5 +195,10 @@
         "email": "peter@newton.cx",
         "bio": "Innovation Scientist of the Center for Astrophysics | Harvard & Smithsonian and the American Astronomical Society. Director of the AAS WorldWide Telescope.",
         "blog": "https://newton.cx/~peter/"
+    },
+    "coolbrg": {
+        "name": "BRG",
+        "bio": "Teacher  👨‍🏫  | Educator | Open Source Contributor | Full Stack Engineer | Researcher",
+        "blog": "https://freelancerbrg.com"
     }
 }

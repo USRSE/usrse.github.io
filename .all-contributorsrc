@@ -387,6 +387,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/59598?v=4"
             ]
+        },
+        {
+            "login": "coolbrg",
+            "name": "BRG",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://freelancerbrg.com",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/1132451?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
