@@ -45,7 +45,7 @@ To facilitate the growth and maturity of the organization, the US-RSE Steering C
 <a name="communitycall"></a>
 # **US-RSE Community Calls**
 
-The topic of the March community call was "**Changing How Academia views RSEs**." We discussed questions like how different institutions see the role of RSEs in research and how the work of RSEs is being recognized for example in terms of career progression and retention. We created a template for a white paper; stay tuned for follow-up activities! The next community call will take place April 8th. You can suggest and vote on topics [on GitHub](https://github.com/USRSE/monthly-community-calls/issues).
+The topic of the March community call was "**Changing How Academia views RSEs**." We discussed questions like how different institutions see the role of RSEs in research, how the work of RSEs is being recognized, and career progression and retention. We created a template for a white paper; stay tuned for follow-up activities! The next community call will take place April 8th. You can suggest and vote on topics [on GitHub](https://github.com/USRSE/monthly-community-calls/issues).
 
 <a name="council"></a>
 # **International Council of RSE Associations**
