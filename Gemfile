@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'html-proofer'
 gem 'jekyll', '~> 4.1.1'
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
