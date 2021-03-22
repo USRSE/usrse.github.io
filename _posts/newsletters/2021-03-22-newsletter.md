@@ -23,14 +23,14 @@ In this issue:
 * [US-RSE Outreach](#outreach)
 * [Get Involved](#involved)
 
-<a name="wg"></a>
+<a name="updates"></a>
 # **Updates on Working Groups**
 
 **Diversity, Equity and Inclusion (DEI):** The US-RSE DEI Working Group is working to bring the US-RSE community quarterly visits from RSE professionals who have vested interests or who research DEI in the RSE community at large. The inaugural event will take place Thursday March 25, 2021, with Cherri Pancake as speaker (see below for details). Furthermore, we have worked on a mission statement regarding DEI for US-RSE and will open it up soon for comments and publish it afterwards on the website. If you’d like to discuss and/or contribute, please contact us on the *[#dei-discussion](https://usrse.slack.com/archives/C01C8CJQ7AP)* Slack channel or contact Lance Parsons ([lparsons@princeton.edu](mailto:lparsons@princeton.edu)) and we’ll help you get involved.
 
-**Website:** A working group has formed to review and refresh the us-rse.org website. The group met for the first time in March and is in the early stages of formulating a plan to evaluate and redesign various aspects of the current site, including new ideas for design, organization, and functionality (job board, resources, etc). Anyone interested in contributing is welcome. Head over to the #website channel in the US-RSE Slack to join in the conversation.  
+**Website:** A working group has formed to review and refresh the us-rse.org website. The group met for the first time in March and is in the early stages of formulating a plan to evaluate and redesign various aspects of the current site, including new ideas for design, organization, and functionality (job board, resources, etc). Anyone interested in contributing is welcome. Head over to the *[#website](https://usrse.slack.com/archives/CJTL0MWUE)* channel in the US-RSE Slack to join in the conversation.  
 
-**Education & Training:** Following a community call related to education and training, we have formed a new Education & Training working group. This working group is for those interested in regular discussions about education and training for RSEs, with a goal of developing concrete deliverables. Some items that we consider potential discussion topics for the group include: 1) identification of the types of training RSEs need, 2) gaps in current training offerings, 3) how training requirements may differ across domains, and 4) what role US-RSE can serve (including whether we should create some sort of US-RSE certificate). Our first meeting is April 5 at 1:00pm Eastern. If you are interested in joining, please contact Jeff Carver (either by email or DM in Slack) to be added to the invitation.
+**Education & Training:** Following a community call related to education and training, we have formed a new Education & Training working group. This working group is for those interested in regular discussions about education and training for RSEs, with a goal of developing concrete deliverables. Some items that we consider potential discussion topics for the group include: 1) identification of the types of training RSEs need, 2) gaps in current training offerings, 3) how training requirements may differ across domains, and 4) what role US-RSE can serve (including whether we should create some sort of US-RSE certificate). Our first meeting is April 5 at 1:00 Eastern. If you are interested in joining, please contact Jeff Carver (either by email or DM in Slack) to be added to the invitation.
 
 <a name="deispeaker"></a>
 # **Inaugural Event of the DEI Speaker Series**
@@ -60,7 +60,7 @@ Last month, in partnership with [The Academic Data Science Alliance](https://aca
 <a name="geohelp"></a>
 # **Geosciences Data & Software Help Desk Opportunity**
 
-Geoscientists want to improve their data and software practices, but sometimes aren't sure how.  You can help. **Please consider volunteering for the upcoming [Virtual](http://bit.ly/DataHelpEGU21) [Data Help Desk](http://bit.ly/DataHelpEGU21)** to be held during the 2021 European Geosciences Union General Assembly (vEGU21). You do not have to be attending vEGU21 to take part. Resources created for this event can of course be reused for future Data Help Desks - contact megancarter@esipfed.org if you'd like to discuss this opportunity.
+Geoscientists want to improve their data and software practices, but sometimes aren't sure how.  You can help. **Please consider volunteering for the upcoming [Virtual](http://bit.ly/DataHelpEGU21) [Data Help Desk](http://bit.ly/DataHelpEGU21)** to be held during the 2021 European Geosciences Union General Assembly (vEGU21). You do not have to be attending vEGU21 to take part. Resources created for this event can of course be reused for future Data Help Desks - contact [megancarter@esipfed.org](mailto:megancarter@esipfed.org) if you'd like to discuss this opportunity.
 
 **[Volunteer](https://forms.gle/KfdwZRHZH6CxEyUF9) to be a data or software expert for the upcoming [Virtual Data Help Desk](http://bit.ly/DataHelpEGU21)** to be hosted during the first week of the 2021 European Geosciences Union General Assembly ([#vEGU21](https://www.egu21.eu/): Gather Online; 19-23 April 2021). The Data Help Desk, which is a program of the [Earth Science Information Partners (ESIP)](http://esipfed.org/), the European Geosciences Union (EGU), the American Geophysical Union (AGU), and their partners, connects researchers with informatics experts familiar with their scientific domain to learn about skills and techniques that will help further their research and make their data and software more open and FAIR. You can volunteer to take part in one or more of the following ways:
 
@@ -72,7 +72,7 @@ To volunteer, please complete [this brief form](https://forms.gle/KfdwZRHZH6CxEy
 
 The [Data Help Desk](http://bit.ly/DataHelpEGU21) is happening virtually again after several successful virtual and in-person events at society meetings over the last few years at the AGU Fall Meeting, EGU General Assembly, Ecological Society of America Annual Meeting, Ocean Sciences Meeting, and more. Don't miss this chance to help others with data-related and software-related questions and to demo your tool or platform!
 
- **Questions?** Contact megancarter@esipfed.org.
+ **Questions?** Contact [megancarter@esipfed.org](mailto:megancarter@esipfed.org).
 
 <a name="events"></a>
 # **Interesting Events**
@@ -123,4 +123,4 @@ Do you have a meeting, event, or community that might be interested in hearing m
 <a name="involved"></a>
 # **Get Involved**
 
-There are lots of ways to get involved with the US-RSE community. Of course, you can [join us on Slack](https://us-rse.org/join) or volunteer for an interview with the [RSE Stories podcast](https://us-rse.org/rse-stories/about/). But we’re also looking for ideas and help in many other places. See our [list of projects](https://docs.google.com/document/d/1jjVD0WkeeWZJI6yqSKyMdIjtClzolsxv75RkpLju17I/edit?usp=sharing) and let us know how you’d like to help. Help with things like the Website Committee, Social Media, and Community Engagement are all needed.
+There are lots of ways to get involved with the US-RSE community. Of course, you can [join us on Slack](https://us-rse.org/join) or volunteer for an interview with the RSE Stories podcast. But we’re also looking for ideas and help in many other places. See our [list of projects](https://docs.google.com/document/d/1jjVD0WkeeWZJI6yqSKyMdIjtClzolsxv75RkpLju17I/edit?usp=sharing) and let us know how you’d like to help. Help with things like the Website Committee, Social Media, and Community Engagement are all needed.
