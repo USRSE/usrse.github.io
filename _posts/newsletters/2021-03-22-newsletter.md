@@ -26,7 +26,7 @@ In this issue:
 <a name="wg"></a>
 # **Updates on Working Groups**
 
-**Diversity, Equity and Inclusion (DEI):** The US-RSE DEI Working Group is working to bring the US-RSE community quarterly visits from RSE professionals who have vested interests or who research DEI in the RSE community at large. The inaugural event will take place Thursday March 25, 2021, with Cherri Pancake as speaker (see below for details). Furthermore, we have worked on a mission statement regarding DEI for US-RSE and will open it up soon for comments and publish it afterwards on the website. If you’d like to discuss and/or contribute, please contact us on the *[#dei-discussio*n](https://usrse.slack.com/archives/C01C8CJQ7AP) Slack channel or contact Lance Parsons ([lparsons@princeton.edu](mailto:lparsons@princeton.edu)) and we’ll help you get involved.
+**Diversity, Equity and Inclusion (DEI):** The US-RSE DEI Working Group is working to bring the US-RSE community quarterly visits from RSE professionals who have vested interests or who research DEI in the RSE community at large. The inaugural event will take place Thursday March 25, 2021, with Cherri Pancake as speaker (see below for details). Furthermore, we have worked on a mission statement regarding DEI for US-RSE and will open it up soon for comments and publish it afterwards on the website. If you’d like to discuss and/or contribute, please contact us on the *[#dei-discussion](https://usrse.slack.com/archives/C01C8CJQ7AP)* Slack channel or contact Lance Parsons ([lparsons@princeton.edu](mailto:lparsons@princeton.edu)) and we’ll help you get involved.
 
 **Website:** A working group has formed to review and refresh the us-rse.org website. The group met for the first time in March and is in the early stages of formulating a plan to evaluate and redesign various aspects of the current site, including new ideas for design, organization, and functionality (job board, resources, etc). Anyone interested in contributing is welcome. Head over to the #website channel in the US-RSE Slack to join in the conversation.  
 
@@ -87,7 +87,7 @@ Some other events coming up may be of interest to RSEs:
 <a name="jobs"></a>
 # **Recent Job Postings**
 
-These opportunities were recently posted to the [RSE Careers pag](https://us-rse.org/jobs/)e
+These opportunities were recently posted to the [RSE Careers page](https://us-rse.org/jobs/):
 
 * [Senior Research Software Engineer](https://my.corehr.com/pls/uoxrecruit/erq_jobspec_version_4.display_form?p_company=10&p_internal_external=E&p_display_in_irish=N&p_process_type=&p_applicant_no=&p_form_profile_detail=&p_display_apply_ind=Y&p_refresh_search=Y&p_recruitment_id=150104): Visual Geometry Group (VGG), Department of Engineering Science, University of Oxford, UK
 * [Scientific Data Viz Engineer](https://bit.ly/rse2021): Harvard University and/or remote
