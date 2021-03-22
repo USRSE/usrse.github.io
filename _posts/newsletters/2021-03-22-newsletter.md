@@ -100,7 +100,6 @@ These opportunities were recently posted to the [RSE Careers page](https://us-rs
 * [Data & Artificial Intelligence Research Engineering (Internship)](https://jobs.lever.co/citrineinformatics/5141ccfd-e4ce-4353-b293-a227d96c65cd): Citrine Informatics, Redwood City, CA (temporarily remote)
 * [Sr. R&D Staff Software Engineering](https://jobs.ornl.gov/job/Oak-Ridge-Sr_-R&D-Staff-Software-Engineering-TN-37830/696572800/): Oak Ridge National Laboratory, Oak Ridge, TN
 * [Environmental Informatics Research Professional](https://jobs.ornl.gov/job/Oak-Ridge-Environmental-Informatics-Research-Professional-TN-37831/697442500/): Oak Ridge National Laboratory, Oak Ridge, TN
-* [Research Software Engineer](https://main-princeton.icims.com/jobs/12147/research-software-engineer-%28politics%29/job?hub=15): Princeton University, Princeton, NJ
 * [Research Software Engineer](https://main-princeton.icims.com/jobs/12153/research-software-engineer-%28orfe%29/job?hub=15): Princeton University, Princeton, NJ
 * [Research Scientist/Engineer](https://uwhires.admin.washington.edu/eng/candidates/default.cfm?szCategory=jobprofile&szOrderID=184590&szCandidateID=0&szSearchWords=&szReturnToSearch=1): University of Washington
 * [Machine Learning Engineer, Calico Life Sciences](https://www.calicolabs.com/careers?gh_jid=4962448002): South San Francisco, CA (currently remote)
