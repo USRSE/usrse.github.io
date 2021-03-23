@@ -2,9 +2,11 @@
 layout: page
 title: USRSE Map
 permalink: /map/
+redirect: https://us-rse.org/usrse-map/
 subtitle: Where are the RSEs and groups that participate in US-RSE?
 ---
 
+<!--
 <style>
 .page-heading {
     padding-bottom: 10px !important;
@@ -28,4 +30,4 @@ subtitle: Where are the RSEs and groups that participate in US-RSE?
 
 <br/>
 <br/>
-Map made with [leafletjs](http://leafletjs.com), and [Open Streetmap](https://osm.org/), and idea from [DE-RSE](https://github.com/DE-RSE/www). Thank you!
+Map made with [leafletjs](http://leafletjs.com), and [Open Streetmap](https://osm.org/), and idea from [DE-RSE](https://github.com/DE-RSE/www). Thank you!-->
