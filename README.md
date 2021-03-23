@@ -126,7 +126,7 @@ involved first. You can ping others in the USRSE slack to contribute, and it's a
 Document for easier commenting and editing, and then move to the wiki when it's in a final first draft state. 
 For all community documents, the following points apply:
 
-1. It's strongly suggested to first work on your document in Google Docs or similar, where you can bring in multiple community members to put together a first draft. Importantly, you should make sure that the content adheres to the US-RSE [Code of Conduct](https://us-rse.org/code-of-conduct/). At least three community members (including yourself) are required before submitting the document to the site. You should feel that it's in a solid "first draft state" before doing a submission.
+1. It's strongly suggested to first work on your document in Google Docs or similar, where you can bring in multiple community members to put together a first draft. Importantly, you should make sure that the content adheres to the US-RSE [Code of Conduct](https://us-rse.org/code-of-conduct/). It is suggested that you have discussion and work on the document with at least three community members (including yourself) before submitting the document to the wiki. You should feel that it's in a solid "first draft state" before doing a submission.
 2. Make sure that you verify the following:
  - the content is of interest to the RSE community
  - the content does not violate the Code of Conduct. 
