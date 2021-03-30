@@ -1,5 +1,5 @@
 ---
-title: Dr. Cherri Pancake - “Can We Change the Face of Computing?”
+title: Dr. Cherri Pancake - "Can We Change the Face of Computing?"
 subtitle: US-RSE DEI-WG Speaker Series
 expires: 2021-03-25
 event_date: "March 25, 2021"
@@ -7,9 +7,10 @@ layout: event
 repeated: false
 ---
 
-A recording of the event can be found [here](https://youtu.be/gP5UCfV3n-A).
+{% include youtube-embed.html url="https://www.youtube.com/embed/gP5UCfV3n-A"  title="Cherri Pancake DEI Speaker Series" %}
 
 ## US-RSE DEI-WG Speaker Series Info
+
 The US-RSE DEI-WG is working to bring to the US-RSE community quarterly visits from RSE professionals with vested interests or research into DEI in the RSE community at large. Our community pledges to continually educate ourselves through research on best practices focused on diversity, equality, and inclusion. The US-RSE is committed to providing an inclusive environment with equitable treatment for all and to promoting and encouraging diversity throughout the RSE community. We encourage everyone to suggest speakers and topics and are open to different formats and timelines of the events. Feedback is much appreciated.
 
 <!-- more -->
