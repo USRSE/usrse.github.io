@@ -10,7 +10,7 @@ repeated: false
 Join us on March 25th at 5ET/4CT/3MT/2PT. Please register for the event
 [here](https://princeton.zoom.us/webinar/register/WN_EgdjRiAVTuiX634KytIunA).
 
-Video from event can be found [here](https://youtu.be/gP5UCfV3n-A).
+A recording of the event can be found [here](https://youtu.be/gP5UCfV3n-A).
 
 ## US-RSE DEI-WG Speaker Series Info
 The US-RSE DEI-WG is working to bring to the US-RSE community quarterly visits from RSE professionals with vested interests or research into DEI in the RSE community at large. Our community pledges to continually educate ourselves through research on best practices focused on diversity, equality, and inclusion. The US-RSE is committed to providing an inclusive environment with equitable treatment for all and to promoting and encouraging diversity throughout the RSE community. We encourage everyone to suggest speakers and topics and are open to different formats and timelines of the events. Feedback is much appreciated.
