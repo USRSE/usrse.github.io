@@ -7,9 +7,6 @@ layout: event
 repeated: false
 ---
 
-Join us on March 25th at 5ET/4CT/3MT/2PT. Please register for the event
-[here](https://princeton.zoom.us/webinar/register/WN_EgdjRiAVTuiX634KytIunA).
-
 A recording of the event can be found [here](https://youtu.be/gP5UCfV3n-A).
 
 ## US-RSE DEI-WG Speaker Series Info
