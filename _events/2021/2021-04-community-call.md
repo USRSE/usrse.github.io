@@ -17,7 +17,7 @@ This call will look at the RSE landscape and practices in what are
 formally known as Federally Funded Research and Development Centers ([FFRDCs](https://www.nsf.gov/statistics/ffrdclist/)).
 These facilities cover all manner of software for technical disciplines including
 weather forecasting, COVID research, stockpile stewardship, 
-national security, energy generation and, of course, software for [landing](https://www.youtube.com/watch?v=4czjS9h4Fpg) 
+national security, computer science and systems work, energy generation and, of course, software for [landing](https://www.youtube.com/watch?v=4czjS9h4Fpg) 
 (and soon [flying](https://www.youtube.com/watch?v=AYjknNxGuJw)) a helicopter on Mars. 
 The millions of lines of software involved in these activities come from real live teams of RSEs and 
 others acting in RSE roles. This call will be a forum for National Lab 
