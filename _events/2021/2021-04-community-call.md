@@ -18,7 +18,7 @@ formally known as Federally Funded Research and Development Centers ([FFRDCs](ht
 These facilities cover all manner of software for technical disciplines including
 weather forecasting, COVID research, stockpile stewardship, 
 national security, energy generation and, of course, software for [landing](https://www.youtube.com/watch?v=4czjS9h4Fpg) 
-(and soon [flying](https://www.youtube.com/watch?v=AYjknNxGuJw) a helicopter on Mars. 
+(and soon [flying](https://www.youtube.com/watch?v=AYjknNxGuJw)) a helicopter on Mars. 
 The millions of lines of software involved in these activities come from real live teams of RSEs and 
 others acting in RSE roles. This call will be a forum for National Lab 
 RSEs to compare and contrast how they do what they do and get to know each other. It will also be a chance for
