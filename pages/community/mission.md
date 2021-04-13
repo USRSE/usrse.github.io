@@ -2,21 +2,17 @@
 layout: page
 title: Mission
 subtitle: Goals and Aims of the US-RSE Association
-bigimg:
 permalink: /mission/
 ---
 
-
 The US-RSE Association is centered around three main goals.  We aim
 to target our activities and actions to serving these three aspects:
-
-
 
 ## 1. Community 
 
   We seek to provide a coherent association of those who identify with
   the role (not necessarily title) of Research Software Engineer based
-  on our [inclusive definition]({{site.url}}/what-is-an-rse).  This
+  on our [inclusive definition]({{site.url}}/what-is-an-rse/).  This
   group aims to provide the members of the community the ability to
   share knowledge, professional connections, and resources.
 
@@ -42,4 +38,5 @@ to target our activities and actions to serving these three aspects:
   development of a DEI program for our organization. DEI discussions are and
   will continue to be an integral part of our community.
 
-  Please see our [full statement.]({{site.url}}/dei-mission)
+  Please see our [full statement.]({{site.url}}/dei-mission/)
+  

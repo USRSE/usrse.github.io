@@ -2,7 +2,6 @@
 layout: page
 title: DEI Mission Statement
 subtitle: Diversity, Equality, and Inclusion at US-RSE
-bigimg:
 permalink: /dei-mission/
 ---
 
@@ -12,8 +11,8 @@ development of a DEI program for our organization. DEI discussions are and
 will continue to be an integral part of our community.
 
 The US-RSE Association is committed to providing an [inclusive environment with
-equitable treatment]({{site.url}}/code-of-conduct) for all and to promoting and
-encouraging diversity throughout the RSE community in the US. At US-RSE,
+equitable treatment]({{site.url}}/code-of-conduct/) for all and to promoting
+and encouraging diversity throughout the RSE community in the US. At US-RSE,
 integrating DEI practices into our education programs, governance structure,
 and culture is at the forefront of our mission to ensure a welcoming,
 nurturing, and robustly inclusive community. We believe that the
@@ -24,7 +23,7 @@ gender, gender identity, sexual orientation, disabilities, age, religion,
 national origin, and ethnicity.
  
 The US-RSE Association will:
-- Continually educate ourself through research on best practices focused on
+- Continually educate ourselves through research on best practices focused on
   diversity, equality, and inclusion
 - Embrace the culture and diversity of all our members
 - Welcome and respect the ways of thinking and learning from people of all
