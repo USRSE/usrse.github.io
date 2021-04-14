@@ -41,6 +41,7 @@ navbar-links:
   Resources:
     - Calendar: "calendar"
     - Community Blogs: "https://usrse.github.io/blog"
+    - Community Documents: "https://github.com/USRSE/usrse.github.io/wiki"
     - Events & Training: "events-training"
     - Links: "links"
     - Newsletters: "newsletters"
