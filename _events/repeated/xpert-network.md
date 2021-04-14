@@ -3,8 +3,8 @@ title: Xpert Network Webinar Series
 subtitle:
 location: Online
 url: https://sites.udel.edu/xpert-cdi/ 
-expires: 2020-12-31
-event_date: "Reoccurring: 3rd Thursday of each month, 3-4pm ET"
+expires: 2022-07-31
+event_date: "Reoccurring: 3rd Thursday every other month, 2-3:30pm ET"
 layout: event
 repeated: true
 ---

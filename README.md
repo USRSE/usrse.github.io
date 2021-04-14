@@ -1,7 +1,7 @@
 # The United States (US) Research Software Engineer Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-35-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-38-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -122,6 +122,21 @@ redirect: https://us-rse.org/first-community-workshop
 The above says that the page titled "US-RSE Community Building Workshop" served
 at permalink /2020-april-workshop will be redirected to 
 https://us-rse.org/first-community-workshop.
+
+### 5. How do I embed a video?
+
+If you have a YouTube video to embed, we have an include that will make it easy
+to embed a full width, fullscreen enabled video! Simply do:
+
+```
+{% include youtube-embed.html url="https://www.youtube.com/embed/gP5UCfV3n-A"  title="Video Title" %}
+```
+
+Where the url should be the embed URL that is provided to you when you click to share
+and then embed (note that "embed" is in the url) and the title is a title of your
+choosing. You are not required to include a title, and it will default to a generic
+"YouTube video player."
+
 
 ## Tests
 
@@ -270,7 +285,7 @@ There are several reasons to do this:
 
  1. we can better leverage a free tier, meaning a maximum number of jobs run in parallel or minutes per month by spreading work over multiple services. 
  2. we can scope a particular kind of test to a service. For example, one service might just be to test the core software, another might be to build and deploy containers, and a third might be to preview a site.
- 3. each CI service offers unique features. For example, GitHub has the closets integration with the repository here, and CircleCI allows us to preview artifacts.
+ 3. each CI service offers unique features. For example, GitHub has the closest integration with the repository here, and CircleCI allows us to preview artifacts.
 
 <!--- ## Join us! --->
 
@@ -331,6 +346,11 @@ tool to generate a contributors graphic below.
     <td align="center"><a href="https://github.com/maxhutch"><img src="https://avatars.githubusercontent.com/u/1538980?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Max Hutchinson</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=maxhutch" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/jarrah42"><img src="https://avatars.githubusercontent.com/u/6130694?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Greg Watson</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jarrah42" title="Code">💻</a></td>
     <td align="center"><a href="https://civilfritz.net"><img src="https://avatars.githubusercontent.com/u/350294?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jonathon Anderson</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=anderbubble" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/exoticDFT"><img src="https://avatars.githubusercontent.com/u/18316938?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alexander Koufos</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=exoticDFT" title="Code">💻</a></td>
+    <td align="center"><a href="https://newton.cx/~peter/"><img src="https://avatars.githubusercontent.com/u/59598?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Peter Williams</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=pkgw" title="Code">💻</a></td>
+    <td align="center"><a href="https://freelancerbrg.com"><img src="https://avatars.githubusercontent.com/u/1132451?v=4?s=100" width="100px;" alt=""/><br /><sub><b>BRG</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=coolbrg" title="Code">💻</a></td>
   </tr>
 </table>
 

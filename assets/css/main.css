@@ -793,3 +793,43 @@ td.gutter {
   font-style: italic;
   font-size: 16px;
 }
+
+.read-more {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+  display: none;
+}
+
+.read-more-state {
+display: none;
+}
+
+.read-more-state:checked ~ .read-more {
+opacity: 1;
+font-size: inherit;
+max-height: 999em;
+display: inherit;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+content: 'Continue reading...';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+content: 'Show less...';
+}
+
+.read-more-trigger {
+cursor: pointer;
+padding: 1em .5em;
+color: #0085bd;
+font-size: .9em;
+line-height: 2;
+border: 1px solid #0085bd;
+border-radius: .25em;
+font-weight: 500;
+display: grid;
+text-align: center;
+}

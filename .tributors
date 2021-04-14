@@ -181,5 +181,24 @@
     "anderbubble": {
         "name": "Jonathon Anderson",
         "blog": "https://civilfritz.net"
+    },
+    "exoticDFT": {
+        "name": "Alexander Koufos",
+        "email": "exoticdft@gmail.com",
+        "bio": "Physicist and software engineer with specialty in simulation, applied computational physics, mathematics and robotics.",
+        "orcid": "0000-0003-4757-3626",
+        "affiliation": "Stanford University School of Engineering",
+        "blog": "https://github.com/exoticDFT"
+    },
+    "pkgw": {
+        "name": "Peter Williams",
+        "email": "peter@newton.cx",
+        "bio": "Innovation Scientist of the Center for Astrophysics | Harvard & Smithsonian and the American Astronomical Society. Director of the AAS WorldWide Telescope.",
+        "blog": "https://newton.cx/~peter/"
+    },
+    "coolbrg": {
+        "name": "BRG",
+        "bio": "Teacher  👨‍🏫  | Educator | Open Source Contributor | Full Stack Engineer | Researcher",
+        "blog": "https://freelancerbrg.com"
     }
 }

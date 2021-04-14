@@ -365,6 +365,39 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/350294?v=4"
             ]
+        },
+        {
+            "login": "exoticDFT",
+            "name": "Alexander Koufos",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/exoticDFT",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/18316938?v=4"
+            ]
+        },
+        {
+            "login": "pkgw",
+            "name": "Peter Williams",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://newton.cx/~peter/",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/59598?v=4"
+            ]
+        },
+        {
+            "login": "coolbrg",
+            "name": "BRG",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://freelancerbrg.com",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/1132451?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
