@@ -109,7 +109,7 @@ with the repository here.
 If you ever need to clone this content, you can do:
 
 ```bash
-$ git clone git@github.com/USRSE/usrse.github.io/wiki
+$ git clone https://github.com/USRSE/usrse.github.io.wiki.git
 ```
 
 NOTE: During the testing phase of the living documents, we currently plan for the wiki to only be editable by community (repository)
