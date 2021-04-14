@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtual US-RSE Workshop
-tags: [workshop]
+tags: [virtual workshop]
 ---
 
 We are excited to announce that the US-RSE Association will host a virtual workshop on April 22 and 23, 2020!  

@@ -3,7 +3,7 @@ layout: post
 title: US-RSE Newsletter
 subtitle: April 2020 Newsletter
 category: newsletter
-tags: [newsletter, workshops, jobs]
+tags: [newsletter, workshop, jobs]
 ---
 
 In this bi-monthly newsletter, we share recent, current, and planned activities of the US-RSE Association. Newsletters are also available on our [website](https://us-rse.org/newsletters/) alongside the growing resources and information on the US-RSE Association. A sign-up option for our newsletter is available [here](https://us-rse.org/join/).
