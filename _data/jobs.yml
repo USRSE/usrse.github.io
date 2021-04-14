@@ -1,3 +1,11 @@
+- expires: 2021-06-01
+  location: Brown University, Providence, RI
+  name: Research Software Engineer
+  url: https://brown.wd5.myworkdayjobs.com/en-US/staff-careers-brown/job/180-George-Street/Research-Software-Engineer_REQ169311
+- expires: 2021-07-01
+  location: Princeton University, Princeton, NJ
+  name: Research Software Engineer
+  url: https://main-princeton.icims.com/jobs/12573/research-software-engineer/job?hub=15
 - expires: 2021-04-08
   location: Visual Geometry Group (VGG), Department of Engineering Science, University
     of Oxford, UK
@@ -11,14 +19,6 @@
   location: Various locations
   name: HPC Applications Performance Engineer, Hewlett Packard Enterprise
   url: https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Bloomington-Minnesota-United-States-of-America/HPC-APPLICATIONS-PERFORMANCE-ENGINEER_1080055-1
-- expires: 2021-04-01
-  location: South San Francisco (Remote OK)
-  name: Software Engineer, Calico Life Sciences (Contract)
-  url: https://www.linkedin.com/jobs/view/2416409856/?refId=WI%2F%2FJ413QyG548b5RBIgSA%3D%3D
-- expires: 2021-03-15
-  location: Princeton University, Princeton, NJ
-  name: Programmer I - Princeton Neuroscience Institute
-  url: https://main-princeton.icims.com/jobs/12360/programmer-i/job
 - expires: 2021-02-28
   location: University of Colorado Boulder, Boulder, CO
   name: Director of Research Computing
@@ -60,10 +60,6 @@
   location: Oak Ridge National Laboratory, Oak Ridge, TN
   name: Sr. R&D Staff Software Engineering
   url: https://jobs.ornl.gov/job/Oak-Ridge-Sr_-R&D-Staff-Software-Engineering-TN-37830/696572800/
-- expires: 2021-02-01
-  location: University of Minnesota, St Paul, MN (temporarily remote)
-  name: Geospatial Developer - Polar Geospatial Center
-  url: https://hr.myu.umn.edu/jobs/ext/338453
 - expires: 2021-04-01
   location: University of Delaware, Newark, DE
   name: Computer Engineer - Rapid Advancement in Process Intensification Deployment
@@ -84,15 +80,7 @@
 - expires: 2021-05-01
   location: Princeton University, Princeton, NJ
   name: Research Software Engineer
-  url: https://main-princeton.icims.com/jobs/12147/research-software-engineer-%28politics%29/job?hub=15
-- expires: 2021-05-01
-  location: Princeton University, Princeton, NJ
-  name: Research Software Engineer
   url: https://main-princeton.icims.com/jobs/12153/research-software-engineer-%28orfe%29/job?hub=15
-- expires: 2021-04-01
-  location: ' University of Washington'
-  name: Research Scientist/Engineer
-  url: https://uwhires.admin.washington.edu/eng/candidates/default.cfm?szCategory=jobprofile&szOrderID=184590&szCandidateID=0&szSearchWords=&szReturnToSearch=1
 - expires: 2021-04-01
   location: Harvard University, Cambridge, MA
   name: Research Software Engineer

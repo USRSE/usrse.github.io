@@ -164,6 +164,21 @@ at permalink /2020-april-workshop will be redirected to
 https://us-rse.org/first-community-workshop.
 
 
+### 6. How do I embed a video?
+
+If you have a YouTube video to embed, we have an include that will make it easy
+to embed a full width, fullscreen enabled video! Simply do:
+
+```
+{% include youtube-embed.html url="https://www.youtube.com/embed/gP5UCfV3n-A"  title="Video Title" %}
+```
+
+Where the url should be the embed URL that is provided to you when you click to share
+and then embed (note that "embed" is in the url) and the title is a title of your
+choosing. You are not required to include a title, and it will default to a generic
+"YouTube video player."
+
+
 ## Tests
 
 Tests are run during continuous integration to catch any errors and to preview
