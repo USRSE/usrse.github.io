@@ -3,7 +3,7 @@ layout: post
 title: US-RSE Newsletter
 subtitle: July 2020 Newsletter
 category: newsletter
-tags: [newsletter, workshops, governance]
+tags: [newsletter, workshop, governance]
 ---
 
 
