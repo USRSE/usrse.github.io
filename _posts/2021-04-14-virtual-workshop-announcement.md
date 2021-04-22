@@ -12,7 +12,7 @@ The theme of the workshop is â€œA Path forward for Research Software Engineers.â
 If you would like to present at the workshop, please see the [Call for Proposals](#call-for-proposals) below. If you would like to serve as a reviewer, please see the [Call for Reviewers](#call-for-reviewers) below.
 
 ## Important Dates
-- May 3, 2021, 11:59 ET: Deadline for abstract submission and reviewer application
+- May 3, 2021, 11:59pm ET: Deadline for abstract submission and reviewer application
 - May 10, 2021: Notification of Acceptance
 - May 24 and 27, 2021: 2021 US-RSE Virtual Workshop
 
