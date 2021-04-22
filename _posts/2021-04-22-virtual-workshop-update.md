@@ -7,7 +7,7 @@ posted_by: Julia Damerow, Sandra Gesing
 
 As we are preparing for the workshop, we would like to share a few updates.
 
-As our previous meetings and community calls, the virtual workshop will be held on Zoom. Registration information will be made available as we get closer to the workshop date. Please see [this page](https://us-rse.org/virtual-workshop-2021/participate/) for information about participation if you are interested in joining the workshop and/or serving as a reviewer. All workshop participants are expected to abide by the [US-RSE Code of Conduct](https://us-rse.org/code-of-conduct/) at all times before, during, and after the workshop.
+Akin to our previous meetings and community calls, the virtual workshop will be held on Zoom. Registration information will be made available as we get closer to the workshop date. Please see [this page](https://us-rse.org/virtual-workshop-2021/participate/) for information about participation if you are interested in joining the workshop and/or serving as a reviewer. All workshop participants are expected to abide by the [US-RSE Code of Conduct](https://us-rse.org/code-of-conduct/) at all times before, during, and after the workshop.
 
 **Virtual Workshop Website**
 
