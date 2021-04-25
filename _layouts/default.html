@@ -1,9 +1,33 @@
----
-layout: base
----
+<!DOCTYPE html>
+{% if page.menubar or page.menubar_toc %}
+{% assign has_left_sidebar = true %}
+{% endif %}
 
-<div class="intro-header"></div>
-
-<div role="main" class="container">
-  {{ content }}
-</div>
+<html
+ lang="{{ site.lang | default: 'en' }}"
+ {% if site.fixed_navbar %}class="has-navbar-fixed-{{ site.fixed_navbar }}"{% endif %}>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    {% if page.show_hero %}
+        {% include hero.html %}
+    {% endif %}
+    {% include callouts.html %}
+    <section class="section" style="background-color: white; border-radius:3px">
+        <div class="container">
+            <div class="columns">
+                {% if page.menubar or page.menubar_toc %}<div class="column is-3-desktop is-3-tablet">
+                    {% include sidebar.html %}
+                </div>{% endif %}
+                <div class="column">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </section>
+    {% unless page.hide_footer %}
+        {% include footer.html %}
+    {% endunless %}
+    {% include footer-scripts.html %}
+  </body>
+</html>

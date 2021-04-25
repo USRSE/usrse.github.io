@@ -6,6 +6,10 @@ expires: 2019-11-22
 event_date: "November 17–22, 2019"
 layout: event
 repeated: false
+category: conference
+time:
+    - - start: 2019-11-17T15:00:00Z
+        end: 2019-11-22T16:00:00Z
 ---
 
 

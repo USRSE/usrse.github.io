@@ -1,30 +1,16 @@
 ---
-layout: base
+layout: page
 ---
 
-{% include header.html type="page" %}
+{% include events/event-summary-long.html event=page %}
 
-<div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <div style="text-align:center"><em>{{ page.event_date }}</em></div>
-      {% if page.content contains "<!-- more -->" %}
-        <div>
-          {{ page.content | split:"<!-- more -->" | first }}
-        </div>
-        <input type="checkbox" class="read-more-state" id="{{ page.url }}"/>
-        <div class="read-more">
-          {{ page.content | split:"<!-- more -->" | last }}
-        </div>
-        <label for="{{ page.url }}" class="read-more-trigger"></label>
-      {% else %}
-        {{ page.content }}
-      {% endif %}
-      <button class="btn btn-primary" style="float:right;">
-          <a href="{{ site.baseurl }}/events-training/" style="color:white">Back to Events</a></button>
-        {% if page.comments %}<div class="disqus-comments">
-	    {% include disqus.html %}
-        </div>{% endif %}
-    </div>
-  </div>
-</div>
+{{ content }}
+
+{% include recording-widgets.html %}
+
+<p>
+{% include events/event-supplements.html %}
+</p>
+<a class="btn btn--success" href="{{ download_link | relative_url }}" target='_blank'>
+  <i class="fas fa-file-pdf"></i></i> Download
+</a>

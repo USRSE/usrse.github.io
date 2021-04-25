@@ -1,8 +1,11 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gem "github-pages", '193', group: :jekyll_plugins
+source "https://rubygems.org"
 
-# enable tzinfo-data for local build
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-gem 'jekyll-paginate'
-gem 'faraday', '0.15.4'
+group :jekyll_plugins do
+    gem "jekyll-feed", "~> 0.6"
+    gem "jekyll-sitemap"
+    gem "jekyll-paginate"
+    gem "jekyll-seo-tag"
+end
+

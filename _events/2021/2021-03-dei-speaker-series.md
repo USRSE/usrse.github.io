@@ -1,10 +1,14 @@
 ---
-title: Dr. Cherri Pancake - "Can We Change the Face of Computing?"
+title: Dr. Cherri Pancake - Can We Change the Face of Computing?
 subtitle: US-RSE DEI-WG Speaker Series
 expires: 2021-03-25
 event_date: "March 25, 2021"
 layout: event
 repeated: false
+category: dei
+time:
+    - - start: 2021-03-25T14:00:00Z
+        end: 2021-03-25T15:00:00Z
 ---
 
 {% include youtube-embed.html url="https://www.youtube.com/embed/gP5UCfV3n-A"  title="Cherri Pancake DEI Speaker Series" %}

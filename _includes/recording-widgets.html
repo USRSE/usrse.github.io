@@ -1,0 +1,7 @@
+{% if page.recording_url %}
+{% include recording-widget.html recording_url=page.recording_url %}
+{% else if page.recording_urls %}
+{% for uri in page.recording_urls %}
+{% include recording-widget.html recording_url=uri %}
+{% endfor %}
+{% endif %}

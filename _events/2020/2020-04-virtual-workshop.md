@@ -6,6 +6,10 @@ expires: 2020-04-23
 event_date: "April 22–23, 2020"
 layout: event
 repeated: false
+category: virtual-workshop
+time:
+    - - start: 2020-04-22T10:00:00Z
+        end: 2020-04-23T15:00:00Z
 ---
 
 We are excited to announce that the US-RSE Association will host a virtual workshop on April 22 and 23, 2020!

@@ -1,0 +1,18 @@
+<section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary block-hero" {% if page.hero_image %} style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover;" {% endif %}>
+    <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                  <img id="hero-image" src="{{ site.baseurl }}{{ site.banner }}" width="400px">
+                  <img id="hero-small-image" src="{{ site.baseurl }}{{ site.icon }}">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="title is-2 hero-text" style="padding-top:150px">Building software and community</h1>
+                    <p class="subtitle is-3 hero-text">{{ page.subtitle }}</p>
+                    {% if page.hero_link %}
+                        <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>{% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,25 @@
+{% assign menus = site.data.menus[page.menubar] %}
+
+<div class="main">
+<div class="sidebar sticky">
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Toggle Menu</label>
+  {% if page.menubar %}<ul class="nav__items">    
+{% for menu in menus %}<li>  
+          <a href="/"><span class="nav__sub-title">{{ menu.label }}</span></a>
+        <ul>{% for item in menu.items %}
+            <li><a href="{{ item.link | relative_url }}" class="{% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a></li>
+            {% endfor %}          
+        </ul>
+      </li>{% endfor %}          
+     </ul>{% endif %}
+
+    {% if page.menubar_toc %}
+       {% assign contentsTitle = page.toc_title | default: 'Contents' %}
+       {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
+    {% endif %}
+</nav>
+</div>
+</div>

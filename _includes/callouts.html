@@ -1,0 +1,29 @@
+{% if page.callouts %}
+    {% assign callouts=site.data.callouts.[page.callouts] %}
+
+<section id="features" class="block block-grid outer">
+  <div class="inner">    
+    <div class="block-content">
+      <div class="grid grid-col-3">
+        {% for callout in callouts.items %}
+        <div class="grid-item">
+          <div class="grid-item-inside">
+            <h3 class="grid-item-title line-left">
+             {{ callout.title }}
+            </h3>
+            <div class="grid-item-content">
+               <p>{% if callout.subtitle %}{{ callout.subtitle | newline_to_br }}{% endif %}
+               {% if callout.description %}{{ callout.description | newline_to_br }}{% endif %}
+               </p>               
+            </div>
+            <div class="grid-item-buttons">
+            {% if callout.link %}
+            <a href="{{ callout.link | relative_url }}">
+             {{ callout.link_name }}</a>{% endif %}
+            </div>
+          </div>
+        </div>{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>{% endif %}

@@ -4,6 +4,7 @@ sitemap: false
 permalink: /search/
 not_editable: true
 excluded_in_search: true
+layout: page
 ---
 
 <form action="{{ site.baseurl }}/search" method="get">
@@ -22,8 +23,8 @@ excluded_in_search: true
 				{% unless post.excluded_in_search %}
 					{% if added %},{% endif %}
 					{% assign added = false %}
-					"{{ post.url | slugify }}": {
-						"id": "{{ post.url | slugify }}",
+					"{% if post.url == '/' %}home{% else %}{{ post.url | slugify }}{% endif %}": {
+						"id": "{% if post.url == '/' %}home{% else %}{{ post.url | slugify }}{% endif %}",
 						"title": "{{ post.title | xml_escape }}",
 						"categories": "{{ post.categories | join: ", " | xml_escape }}",
 						"url": " {{ post.url | xml_escape }}",

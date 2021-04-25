@@ -1,0 +1,18 @@
+{% for item in site.data.event_supplements %}
+{% assign key = item[0] %}
+{% assign info = item[1] %}
+{% if page[key] %}
+<span class="content-line">
+  <b>{{ info.name }}</b>:
+  {% if info.name == "Panelists" %}
+  <ul>
+    {% for panelist in page[key] %}
+    <li>{{ panelist }}</li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  {{ page[key] }}
+  {% endif %}
+</span>
+{% endif %}
+{% endfor %}

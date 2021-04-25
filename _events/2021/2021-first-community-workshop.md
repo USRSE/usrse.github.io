@@ -7,6 +7,10 @@ expires: 2021-10-06
 event_date: "October 5–6, 2021"
 layout: event
 repeated: false
+category: workshop
+time:
+    - - start: 2021-10-05T8:00:00Z
+        end: 2021-10-06T17:00:00Z
 ---
 
 

@@ -1,0 +1,10 @@
+- label: About US-RSE
+  items:
+    - name: Mission
+      link: /mission/
+    - name: Governance
+      link: /governance/
+    - name: Steering Committee
+      link: /steering-committee/
+    - name: Code of Conduct
+      link: /code-of-conduct/

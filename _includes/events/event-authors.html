@@ -1,0 +1,54 @@
+{% assign event = include.event %}
+{% assign any_presenter = 0 %}
+
+{% for author in event.authors %}
+  {% assign author = site.data.authors[author] | default: author %}
+  {% assign email = author.email %}
+  {% unless email %}
+    {% for link in author.links %}
+        {% if link.label == "Email" %}
+            {% assign email = link.url %}
+        {% endif %}
+    {% endfor %}
+  {% endunless %}
+  {% if email %}
+    {% assign email = email | remove: "mailto:" %}
+      {% capture email_link %} <a href="mailto:{{ email }}" title='{{ email }}'><span><i class="elastic-fai fas fa-envelope"></i></span></a>{% endcapture %}
+  {% else %}
+    {% assign email_link = '' %}
+  {% endif %}
+  {%- if author.affiliation -%}
+    {% assign affil_num = author.affiliation %}
+    {% capture affiliation %}<sup id="fnref:{{ affil_num }}" role="doc-noteref"><a href="#fn:{{ affil_num }}" class="footnote" title="{{ author.bio }}">{{ affil_num }}</a></sup>{% endcapture %}
+  {% else %}
+    {% assign affiliation = '' %}
+  {% endif %}
+  {% if author.orcid %}
+    {% capture author_name %}
+    <a itemprop="sameAs" content="https://orcid.org/{{ author.orcid }}" href="https://orcid.org/{{ author.orcid }}" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="{{ '/assets/images/orcid.svg' | relative_url }}" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" class="orcid-icon">{{ author.name }}</a>{% endcapture %}
+  {% else %}
+    {% assign author_name = author.name %}
+  {% endif %}
+  {% if author.is_speaker %}
+  {% capture presenting %}<sup id="fnref:presenting" role="doc-noteref"><a href="#fn:presenting" class="footnote" title="Presenting author">*</a></sup>{% endcapture %}
+  {% assign any_presenter = 1 %}
+  {% else %}
+  {% assign presenting = '' %}
+  {% endif %}
+  {{ author_name }}{{ affiliation }}{{ presenting }}{{ email_link}}{% unless forloop.last %}, {% endunless %}
+
+{% endfor %}
+<div id="affiliations" class="footnotes" role="doc-endnotes">
+  <ol>
+    {% if any_presenter == 1 %}
+    <li id="fn:presenting" role="doc-endnote" class="presenter">
+        Presenting author. <a href="#fnref:presenting" class="reversefootnote" role="doc-backlink">&#8617;</a>
+    </li>
+    {% endif %}
+    {% for affiliation in event.affiliations %}
+    <li value="{{ affiliation.index }}" id="fn:{{ affiliation.index }}" role="doc-endnote">
+      {{ affiliation.name }}. <a href="#fnref:{{ affiliation.index }}" class="reversefootnote" role="doc-backlink">&#8617;</a>
+    </li>
+    {% endfor %}
+  </ol>
+</div>

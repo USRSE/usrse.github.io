@@ -1,0 +1,11 @@
+- label: Engage with the Community
+  items:
+    - name: Join US-RSE
+      link: join
+    - name: Engage
+      link: get-involved
+    - name: Share
+      link: share
+    - name: Community Documents
+      link: community-documents
+

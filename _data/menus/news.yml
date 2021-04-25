@@ -1,0 +1,10 @@
+- label: News
+  items:
+    - name: News and Updates
+      link: /news/
+    - name: Newsletters
+      link: /newsletters/
+    - name: Archive
+      link: /archive/
+    - name: Search
+      link: /search/

@@ -1,16 +1,8 @@
-# project
-_site
+*.gem
+.jekyll-cache
+.bundle
 .sass-cache
-.vagrant
+_site
 Gemfile.lock
-
-# general
+.idea
 .DS_Store
-Thumbs.db
-ehthumbs.db
-
-# python
-__pycache__
-*.pyc
-
-*~

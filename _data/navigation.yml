@@ -1,0 +1,63 @@
+- name: About
+  link: /#
+  dropdown:
+    - name: About US-RSE
+      link: about
+    - name: Mission
+      link: mission
+    - name: Governance
+      link: governance
+    - name: Steering Committee
+      link: steering-committee
+    - name: Code of Conduct
+      link: code-of-conduct
+- name: Events
+  link: /#
+  dropdown:
+    - name: Calendar
+      link: calendar 
+    - name: Events
+      link: events
+- name: Get Involved
+  link: /#
+  dropdown:
+    - name: Join US-RSE
+      link: join
+    - name: Engage
+      link: get-involved
+    - name: Share
+      link: share
+    - name: Community Documents
+      link: community-documents
+- name: Careers
+  link: /#
+  dropdown:
+    - name: What is an RSE?
+      link: what-is-an-rse  
+    - name: Job Opportunities
+      link: jobs
+- name: News
+  link: /#
+  dropdown:
+    - name: Newsletters
+      link: newsletters
+    - name: News and Updates
+      link: news
+    - name: News Archive
+      link: archive
+
+- name: Training
+  link: /#
+  dropdown:
+    - name: Links
+      link: links
+
+- name: External
+  link: /#
+  dropdown:
+    - name: RSE Map
+      link: "https://usrse.github.io/usrse-map"
+    - name: Community Blogs
+      link: "https://usrse.github.io/blog"
+    - name: Community Documents
+      link: "https://github.com/USRSE/usrse.github.io/wiki"

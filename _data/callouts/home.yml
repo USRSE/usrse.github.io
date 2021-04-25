@@ -1,0 +1,14 @@
+style: is-light
+items:
+  - title: Events
+    subtitle: Browse our upcoming workshops, training, and other community events.
+    link: /events
+    link_name: Learn More
+  - title: About
+    subtitle: Learn about US-RSE, including our community goals, Code of Conduct, and Mission Statement.
+    link: /about
+    link_name: Learn More
+  - title: News
+    subtitle: Read our latest newsletters or catch up with the community blog.
+    link: /newsletters
+    link_name: Learn More

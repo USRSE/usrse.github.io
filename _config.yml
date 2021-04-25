@@ -1,275 +1,80 @@
-# --- General options --- #
+# Site Settings
+lang: en
 
-# url is the full website URL
-# baseurl is the website's URL without the hostname
-# DO NOT CHANGE THE LINE NUMBERS HERE without changing .circleci/circle_urls.sh
-# If you are building a simple GitHub user page (https://username.github.io) then use these settings:
+title: US-RSE Association
+description: Community of Research Software Engineers
+
 url: "https://us-rse.org"
 baseurl: ""  # for testing, also check .circleci/circle_urls.sh
 title-img: /assets/img/rse_logo_background.svg  # baseurl will be prepended
 twitter-img: /assets/img/logo_600px.png  # url + baseurl will be prepended
+banner: /assets/img/logo-transparent.svg
+icon: /assets/img/avatar-icon.png
 
-# If you are building a GitHub project page then use these settings:
-#url: "https://username.github.io/projectname"
-#baseurl: "/projectname"
+email: contact@us-rse.org
+permalink: /:year-:month-:day-:title/
 
-# Of course don't forget to change the username and projectname to YOUR username and project
+favicon: /assets/img/favicon.ico
+#hide_share_buttons: true
+#theme_color: '#eeeeee'
+fixed_navbar: top
 
-# Name of website
-title: US-RSE Association
+paginate: 5
+paginate_path: "/news/page:num/"
 
-# Short description of your site
-description: Community of Research Software Engineers
 
-# --- Navigation bar options --- #
+# social media
+twitter: us_rse
+github_org: USRSE
+linkedin: company/us-rse/
 
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
 
-# List of links in the navigation bar
-navbar-links:
-  Home: ""
-  Community:
-    - About: "about"
-    - Mission: "mission"
-    - RSE Groups: "rse-groups"
-    - RSE Map: "https://usrse.github.io/usrse-map"
-    - Steering Committee: "steering-committee"
-    - Code of Conduct: "code-of-conduct"
-    - Governance: "governance"
-  Resources:
-    - Calendar: "calendar"
-    - Community Blogs: "https://usrse.github.io/blog"
-    - Community Documents: "https://github.com/USRSE/usrse.github.io/wiki"
-    - Events & Training: "events-training"
-    - Links: "links"
-    - Newsletters: "newsletters"
-    - News Archive: "archive"
-  Get involved:
-    - Join US-RSE: "join"
-    - Engage: "get-involved"
-    - Share: "share"
-  Careers:
-    - What is an RSE?: "what-is-an-rse"
-    - RSE Jobs: "jobs"
+exclude: 
+  - Gemfile
+  - Gemfile.lock
+  - vendor
 
-# --- Background colour/image options --- #
+livereload: true
 
-# Personalize the colors in your website. Colour values can be any valid CSS colour
-
-navbar-col: "#F5F5F5"
-navbar-text-col: "#ffffff"
-navbar-children-col: "#500e3d"
-page-col: "#FFFFFF"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#F5F5F5"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-
-# Alternatively, the navbar, footer, and page background can be set to use background images
-# instead of colour
-
-navbar-img: "../img/rse-transport-light.png"
-# footer-img: "../img/rse-transport-light.png"
-# page-img: "/img/bgimage.png"
-
-# --- Events --- #
-# Events are displayed via a collection to allow for single page generation.
-
-# Collections
-collections:
-  events:
-    output: true
-    permalink: /:collection/:path
-
-# Defaults
-defaults:
-  - scope:
-      path: "_events"
-      type: "events"
-    values:
-      layout: event
-
-# --- Footer options --- #
-
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
-author:
-  name: US-RSE
-
-# Select your active Social Network Links.
-# Uncomment the links you want to show in the footer and add your information to each link.
-# You can reorder the items to define the link order.
-# If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
-social-network-links:
-#  rss: false
-#  email: "someone@example.com"
-#  facebook:
-  github: USRSE
-  twitter: us_rse
-#  reddit:
-#  google-plus:
-#  linkedin:
-#  xing:
-#  stackoverflow:
-#  snapchat:
-#  instagram:
-#  youtube:
-#  spotify:
-#  telephone:
-#  steam:
-#  twitch:
-#  yelp:
-
-# Select which share links to show in posts
-share-links-active:
-  twitter: true
-  facebook: false
-  google: false
-  linkedin: true
-
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "us-rse.org"
-
-# --- Web Statistics Section --- #
-
-# Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
-
-# Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-133428825-1"
 
-# Google Tag Manager ID
-#gtm: ""
-
-# Matomo (aka Piwik) Web statistics
-# Uncomment the following section to enable Matomo. The opt-out parameter controls
-# whether or not you want to allow users to opt out of tracking.
-
-#matomo:
-#  site_id: "9"
-#  uri: "demo.wiki.pro"
-#  opt-out: true
-
-# --- Comments --- #
-
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-# disqus: ""
-
-# --- Misc --- #
-
-# Facebook App ID
-# fb_app_id: ""
-
-# Excerpt Word Length
-# Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
-
-# Character used to separate site title and description in HTML document title
-# and RSS feed title
-title-separator: "-"
-
-# --- Don't need to touch anything below here (but you can if you want) --- #
-
-# Output options (more information on Jekyll's site)
-timezone: "America/New_York"
-markdown: kramdown
-highlighter: rouge
-permalink: /:year-:month-:day-:title/
-paginate: 5
-
-kramdown:
-  input: GFM
-
-# Default YAML values (more information on Jekyll's site)
 defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      show_sidebar: true
   -
     scope:
       path: ""
       type: "posts"
     values:
-      layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
-  -
+      layout: post
+      show_sidebar: true
+  - 
     scope:
-      path: "" # all files
+      path: "_events"
+      type: "events"
     values:
-      layout: "page"
-      show-avatar: false
-      css: /assets/css/custom.css
+      layout: event
 
-# Use tags index page and make tags on each post clickable
-link-tags: true
 
-# Exclude these files from production site
-exclude:
-  - _site
-  - CNAME
-  - Dockerfile
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - tests
-  - vendor
+markdown: kramdown
+highlighter: rouge
 
-# prose.io config
-prose:
-  rooturl: '_posts'
-  media: 'img'
-  ignore:
-    - 404.html
-    - LICENSE
-    - feed.xml
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /assets
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
-          alterable: true
-      - name: "image"
-        field:
-          element: "text"
-          label: "Image"
-          help: "Add a thumbnail image to your post."
-          placeholder: "Thumbnail"
-          alterable: true
-      - name: "published"
-        field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
-
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+# Collections
+collections:
+  events:
+    output: true
+    permalink: /:collection/:path/
+  products: 
+    output: true
+    layout: product
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false

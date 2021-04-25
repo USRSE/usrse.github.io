@@ -1,0 +1,15 @@
+<strong><i class="far fa-clock" aria-hidden="true"></i></strong> <time datetime="{{ time.start | date_to_xmlschema }}">
+  {{ time.start | date: "%B %-d, %Y, %H:%M %Z" }}{% unless time.end %} UTC{% endunless %}
+</time>
+{% if time.end %}
+&ndash;
+<time datetime="{{ time.end | date_to_xmlschema }}">
+  {%- capture start_day -%}{{ time.start | date: "%Y-%m-%d" }}{%- endcapture -%}
+  {%- capture end_day -%}{{ time.end | date: "%Y-%m-%d" }}{%- endcapture -%}
+  {%- if start_day == end_day -%}
+  {{ time.end | date: "%H:%M %Z" }} UTC
+  {%- else -%}
+  {{ time.end | date: "%B %-d, %Y, %H:%M %Z" }} UTC
+  {%- endif -%}
+</time>
+{% endif %}

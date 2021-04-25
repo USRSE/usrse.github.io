@@ -3,6 +3,7 @@ layout: page
 title: Newsletters
 description: Newsletters
 permalink: /newsletters/
+menubar: news
 ---
 
 {% include scrolltop.html %}

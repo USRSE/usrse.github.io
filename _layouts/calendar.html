@@ -1,0 +1,95 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.css" />
+<div id='calendar'></div>
+<br>
+<p class="text-right">
+    <a href="{{ site.shared_calendar }}">Add all events to your calendar</a>
+</p>
+
+<aside class="sidebar__right events-sidebar">
+  {% for post in site.events %}
+    {% include events/event-card.html hidden=true %}
+  {% endfor %}
+  {% for post in site.posts %}
+    {% include faq-card.html hidden=true excerpt_length=300 %}
+  {% endfor %}
+</aside>
+
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.js"></script>
+<script src="{{ site.baseurl }}/assets/js/add-to-calendar.min.js"></script>
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+   var calendarEl = document.getElementById('calendar');
+
+   events = [
+     {% include events/events.js onclick='tag' %}
+   ];
+   events.sort((e1, e2) => new Date(e1.start) - new Date(e2.start));
+
+   calendar = new FullCalendar.Calendar(calendarEl, {
+     headerToolbar: {
+       left: 'prev,next today',
+       center: 'title',
+       right: 'dayGridMonth,timeGridWeek,timeGridDay,listAll'
+     },
+     buttonText: {
+       week: 'week',
+       day: 'day',
+       year: 'list'
+     },
+     initialView: 'dayGridMonth',
+     editable: false,
+     //
+     selectable: true,
+     dateClick: function(info) {
+       if (calendar.view.type != "timeGridDay") {
+         calendar.changeView('timeGridDay', info.dateStr);
+       }
+     },
+     //
+     navLinks: true,
+     navLinkDayClick: function(date, jsEvent) {
+       if (calendar.view.type != "timeGridDay") {
+         calendar.changeView('timeGridDay', date);
+       }
+     },
+     //
+     weekNumbers: true,
+     navLinkWeekClick: function(weekStart, jsEvent) {
+       if (calendar.view.type != "timeGridWeek") {
+         calendar.changeView('timeGridWeek', weekStart);
+       }
+     },
+     //
+     slotDuration: "00:15",
+     dayMaxEvents: true, // allow "more" link when too many events
+     events: events,
+     views: {
+       listAll: {
+         type: "list",
+         visibleRange: {
+           start: events[0].start,
+           end: events[events.length-1].end
+         }
+       }
+     },
+     eventClick: function(info) {
+       info.jsEvent.preventDefault(); // don't let the browser navigate
+       var elem = $(info.event.url);
+       if (!elem.hidden) {
+         $(".card").hide();
+         elem.show();
+       }
+     },
+     eventDidMount: function(arg) {
+       arg.el.setAttribute("title", arg.event.title);
+     }
+   });
+  calendar.render();
+});
+</script>

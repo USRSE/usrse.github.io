@@ -1,0 +1,10 @@
+{% unless post.hidden %}
+{% assign excerpt_length = include.excerpt_length | default: 160 %}
+<div class="card col-12 post-card" id="{{ post.id | split: '/' | last }}"
+ {% if include.hidden %}style="display: none"{% endif %}>
+  <p class="card-title"><a href="{{ post.url | relative_url }}" rel="permalink" target="_blank">{{ post.title }}</a></p>
+  <div class="card-content" onclick="window.open('{{ post.url | relative_url }}')">
+    {{ post.excerpt | markdownify | strip_html | truncate: excerpt_length }}
+  </div>
+</div>
+{% endunless %}

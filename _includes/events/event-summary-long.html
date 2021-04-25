@@ -1,0 +1,29 @@
+{% assign event = include.event %}
+
+{% if event.doi %}
+<p>
+    <a href="https://doi.org/{{ event.doi }}"><img src="https://zenodo.org/badge/DOI/{{ event.doi }}.svg" alt="DOI"></a>
+</p>
+{% endif %}
+
+{% include events/event-authors.html event=event %}
+
+{% if event.time %}
+{% for occurrence in event.time %}
+{% if forloop.index0 == 1 %}
+<b>Repeated events</b> <abbr title="This event is repeated to cover multiple time zones"><i class="fas fa-info-circle"></i></abbr>
+{% endif %}
+
+<ul class="page__date">
+  {% for time in occurrence %}
+    <li>
+      {% include events/event-time.html %}
+    </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+<!--<sup><a href="{{ site.shared_calendar }}" class="footnote">Add all events to your calendar</a></sup>-->
+{% else %}
+<div class="notice--info" style="display: table-cell;"><i>This event will be scheduled soon</i></div>
+{% endif %}

@@ -1,129 +1,23 @@
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content={{ site.theme_color | default: '#ffffff' }}>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <link rel="shortcut icon" type="image/png"
+          {% if site.favicon %} href="{{ site.favicon | relative_url }}" {% else %} href="{{ site.baseurl }}/favicon.png" {% endif %}
+    />
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/reboot.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.css">
 
-  <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator }} {{ site.description }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
-  <meta name="author" content="{{ site.author.name }}" />
-
-  {% if page.redirect %}<meta http-equiv="refresh" content="2;url={{ page.redirect }}"/>{% endif %}
-  {% if page.subtitle %}
-  <meta name="description" content="{{ page.subtitle }}">
-  {% endif %}
-
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-  {% include gtag.html %}
-  {% include gtm_head.html %}
-  {% include google_analytics.html %}
-
-  {% if layout.common-ext-css %}
-    {% for css in layout.common-ext-css %}
-      {% include ext-css.html css=css %}
-    {% endfor %}
-  {% endif %}
-
-  {% if layout.common-css %}
-    {% for css in layout.common-css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl }}" />
-    {% endfor %}
-  {% endif %}
-
-  {% if layout.common-googlefonts %}
-    {% for font in layout.common-googlefonts %}
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
-    {% endfor %}
-  {% endif %}
-
-  {% if page.ext-css %}
-    {% for css in page.ext-css %}
-      {% include ext-css.html css=css %}
-    {% endfor %}
-  {% endif %}
-
-  {% if page.css %}
-    {% for css in page.css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl }}" />
-    {% endfor %}
-  {% endif %}
-
-  {% if page.googlefonts %}
-    {% for font in page.googlefonts %}
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
-    {% endfor %}
-  {% endif %}
-
-    <!-- Facebook OpenGraph tags -->
-  {% if site.fb_app_id %}
-  <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
-  {% endif %}
-
-  {% if page.meta-title %}
-  <meta property="og:title" content="{{ page.meta-title }}" />
-  {% elsif page.title %}
-  <meta property="og:title" content="{{ page.title }}" />
-  {% else %}
-  <meta property="og:title" content="{{ site.title }}" />
-  {% endif %}
-
-   {% if page.meta-description %}
-  <meta property="og:description" content="{{ page.meta-description }}">
-  {% elsif page.subtitle %}
-  <meta property="og:description" content="{{ page.subtitle }}">
-  {% else %}
-  <meta property="og:description" content="{{ page.title }}">
-  {% endif %}
-
-
-  <meta property="og:type" content="website" />
-
-  {% if page.id %}
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-  {% else %}
-  <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
-  <link rel="canonical" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
-  {% endif %}
-
-  {% if page.share-img %}
-  <meta property="og:image" content="{{ page.share-img }}" />
-  {% elsif site.avatar %}
-  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
-  {% endif %}
-
-
-  <!-- Twitter summary cards -->
-  {% if site.author.twitter %}
-  <meta name="twitter:site" content="@{{ site.author.twitter }}" />
-  <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
-  {% endif %} 
-  <meta name="twitter:card" content="summary" />
-
-  {% if page.meta-title %}
-  <meta name="twitter:title" content="{{ page.meta-title }}" />
-  {% elsif page.title %}
-  <meta name="twitter:title" content="{{ page.title }}" />
-  {% else %}
-  <meta name="twitter:title" content="{{ site.title }}" />
-  {% endif %}
-
-  {% if page.meta-description %}
-  <meta name="twitter:description" content="{{ page.meta-description }}">
-  {% elsif page.subtitle %}
-  <meta name="twitter:description" content="{{ page.subtitle }}">
-  {% else %}
-  <meta name="twitter:description" content="{{ page.title }}">
-  {% endif %}
-
-  {% if page.share-img %}
-  <meta name="twitter:image" content="{{ page.share-img }}" />
-  {% elsif site.twitter-img %}
-  <meta name="twitter:image" content="{{site.url}}{{site.baseurl}}{{ site.twitter-img }}" />
-  {% endif %}
-
-  {% if site.matomo %}
-  {% include matomo.html %}
-  {% endif %}
-
+    {% if page.redirect %}<meta http-equiv="refresh" content="0;url={{ page.redirect }}"/>{% endif %}
+    {% unless site.hide_share_buttons %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    {% endunless %}
+    {% seo %}
+    {%- if site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+    {%- include head-scripts.html -%}
 </head>

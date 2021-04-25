@@ -1,0 +1,16 @@
+{%- assign post = event | default: post | default: page %}
+{%- assign title = include.title | default: post.title | default: page.title %}
+{%- assign excerpt = include.excerpt | default: post.excerpt | default: page.excerpt %}
+{%- assign url = include.url | default: post.url | default: page.url %}
+{%- assign event_id = post.id | split: '/' | last %}
+<div title="Add to Calendar" class="add-to-calendar">
+    <span class="start">{{ time.start | date_to_xmlschema }}</span>
+    {%- if time.end %}
+    <span class="end">{{ time.end | date_to_xmlschema }}</span>
+    {%- endif %}
+    <span class="title">{{ title }}</span>
+    <span class="description">{{ excerpt | markdownify | strip_html }}</span>
+    <span class="location">{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}/{% endif %}{{ url }}</span>
+    <span class="organizer_email">{{ site.email }}</span>
+    <span class="organizer">{{ site.author.name }}</span>
+</div>

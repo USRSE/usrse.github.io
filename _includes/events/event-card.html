@@ -1,0 +1,12 @@
+{% unless post.hidden %}
+{%- assign event_id = post.id | split: '/' | last %}
+<div class="card col-12" id="{{ event_id }}"
+ style="padding:20px{% if include.hidden %};display: none{% endif %}">
+  <p class="card-title" style="margin-bottom:0px"><a href="{{ post.url | relative_url }}" rel="permalink" target="_blank">{{ post.title }}</a></p>
+  <div style="margin-top:0px" class="card-content" onclick="window.open('{{ post.url | relative_url }}')">
+    {% include events/event-summary.html event=post %}
+    <br>
+    {{ post.excerpt | markdownify | strip_html | truncate: 300 }}
+  </div>
+</div>
+{% endunless %}

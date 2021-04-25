@@ -1,17 +1,44 @@
-{% if page.title %}<header class="header-section {% if page.bigimg %}has-img{% endif %}">
-<div class="intro-header no-img">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="{{ include.type }}-heading">
-          <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
-            {% if page.subtitle %}{% if include.type == "page" %}<hr class="small">
-            <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>{% else %}<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>{% endif %}{% endif %}
-             {% if include.type == "post" %}<span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}  
-                {% if page.posted_by %}({{ page.posted_by }}){% endif %}</span>{% endif %}
+<nav class="navbar is-primary {% if site.fixed_navbar %} is-fixed-{{ site.fixed_navbar }} {% endif %}" x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="{{ site.baseurl }}/" class="navbar-item">
+                {{ site.title }}
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
-      </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == "/" %}is-active{% endif %}">Home</a>
+                {% if site.data.navigation %}
+                {% for item in site.data.navigation %}
+                    {% if item.dropdown %}
+                    <div class="navbar-item has-dropdown is-hoverable {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
+                        <a href="{{ item.link | relative_url }}" class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                        <div class="navbar-dropdown">
+                            {% for subitem in item.dropdown %}
+                            <a href="{{ subitem.link | relative_url }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% else %}
+                    <a href="{{ item.link | relative_url }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                    {% endif %}
+                {% endfor %}
+                {% endif %}
+            </div>
+
+        <a href="{{ site.baseurl }}/search" type="button">
+            <i style="margin-top:15px; ;color:white; font-size:25px" class="fa fa-search"></i>
+        </a>
+        
+                <a type="button" style="margin:auto" class="btn btn-warning btn-sm" href="{{ site.baseurl }}/join">
+                  Join US-RSE
+                </a>
+
+        </div>
     </div>
-  </div>
-</div>
-</header>{% else %}<div class="intro-header"></div>{% endif %}
+</nav>

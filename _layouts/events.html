@@ -1,0 +1,39 @@
+---
+layout: page
+---
+
+{% assign collection = site[page.collection] %}
+{% include group-by-array.html collection=collection field="category" %}
+
+<ul class="taxonomy__index">
+  {% for category in group_names %}
+  {% assign category_name = site.data.committee.programme_teams[category].name | default: category %}
+    <li style="list-style:none">
+      <a href="#{{ category | slugify | downcase }}">
+        <strong>{{ category_name }}</strong> <span class="badge badge-warning" style="margin:auto; margin-right:0px">{{ group_items[forloop.index0] | size }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{{ content }}
+
+
+{% for category in group_names %}
+  {% assign category_name = site.data.committee.programme_teams[category].name | default: category %}
+  {% assign posts = group_items[forloop.index0] %}
+  <section id="{{ category | slugify | downcase }}" class="taxonomy__section">
+    <h2>{{ category_name }}</h2>
+      {% include events/events-subcollection.html collection=posts sort_by=page.sort_by sort_order=page.sort_order type=page.entries_layout %}
+  </section>
+{% endfor %}
+
+{% assign posts = site.posts | where: "include_in_calendar", "true" %}
+{% if posts %}<section id="other-events" class="taxonomy__section">
+  <h2>Other events</h2>
+    {% include events/events-subcollection.html collection=posts sort_by=page.sort_by sort_order=page.sort_order type=page.entries_layout %}
+</section>{% endif %}
+
+<div class="back-to-top-wrapper">
+  <a href="#" id="#back-to-top" class="btn back-to-top-link" aria-label="Scroll to Top"><i class="fas fa-chevron-up"></i></a>
+</div>
