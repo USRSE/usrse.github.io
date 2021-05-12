@@ -200,5 +200,9 @@
         "name": "BRG",
         "bio": "Teacher  👨‍🏫  | Educator | Open Source Contributor | Full Stack Engineer | Researcher",
         "blog": "https://freelancerbrg.com"
+    },
+    "bernhold": {
+        "name": "David E. Bernholdt",
+        "blog": "https://csmd.ornl.gov/profile/david-bernholdt"
     }
 }
