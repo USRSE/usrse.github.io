@@ -398,6 +398,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/1132451?v=4"
             ]
+        },
+        {
+            "login": "bernhold",
+            "name": "David E. Bernholdt",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://csmd.ornl.gov/profile/david-bernholdt",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/426409?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
