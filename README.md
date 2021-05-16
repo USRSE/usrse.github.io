@@ -328,6 +328,8 @@ There are several reasons to do this:
  2. we can scope a particular kind of test to a service. For example, one service might just be to test the core software, another might be to build and deploy containers, and a third might be to preview a site.
  3. each CI service offers unique features. For example, GitHub has the closest integration with the repository here, and CircleCI allows us to preview artifacts.
 
+## Thanks
+
 This website would not be possible without art an inspiration from other community projects!
 
  - [SORSE](https://sorse.github.io)
