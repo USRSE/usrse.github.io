@@ -1,7 +1,7 @@
 <nav class="navbar is-primary {% if site.fixed_navbar %} is-fixed-{{ site.fixed_navbar }} {% endif %}" x-data="{ openNav: false }">
     <div class="container">
         <div class="navbar-brand">
-            <a href="{{ site.baseurl }}/" class="navbar-item">
+            <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == "/" %}is-active{% endif %}">
                 {{ site.title }}
             </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
@@ -12,7 +12,6 @@
         </div>
         <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
             <div class="navbar-start">
-                <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == "/" %}is-active{% endif %}">Home</a>
                 {% if site.data.navigation %}
                 {% for item in site.data.navigation %}
                     {% if item.dropdown %}
