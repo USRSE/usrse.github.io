@@ -13,11 +13,11 @@ to target our activities and actions to serving these three aspects:
 
 
 
-## 1. Community 
+## 1. Community
 
   We seek to provide a coherent association of those who identify with
   the role (not necessarily title) of Research Software Engineer based
-  on our [inclusive definition]({{site.url}}/what-is-an-rse).  This
+  on our [inclusive definition]({{ site.baseurl }}/what-is-an-rse).  This
   group aims to provide the members of the community the ability to
   share knowledge, professional connections, and resources.
 
@@ -26,7 +26,7 @@ to target our activities and actions to serving these three aspects:
   We aim to promote RSEs' impact on research, highlighting the
   increasingly critical and valuable role RSEs serve.
 
-## 3. Resources 
+## 3. Resources
 
   We strive to provide useful resources to multiple demographics.
   For current and future RSEs we strive to provide technical and
