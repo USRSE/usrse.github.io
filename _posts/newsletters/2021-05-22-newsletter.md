@@ -102,7 +102,7 @@ These opportunities were recently posted to the [RSE Careers page](https://us-rs
 Items you may have missed on the blog and Slack:
 * The 10 Best Practices for Remote Software Engineering:  [https://cacm.acm.org/opinion/articles/252174-the-10-best-practices-for-remote-software-engineering/fulltext](https://cacm.acm.org/opinion/articles/252174-the-10-best-practices-for-remote-software-engineering/fulltext)
 * The Institute for Research and Innovation in Software for High Energy Physics (IRIS-HEP) published an article on [building a career path for research software engineers](https://iris-hep.org/2021/05/12/career-path-rse.html).
-
+* Implementing FAIR for research software: attitudes, advantages and challenges, [part one](https://software.ac.uk/blog/2021-05-19-implementing-fair-research-software-attitudes-advantages-and-challenges-part-one) and [part two](https://www.software.ac.uk/blog/2021-05-20-implementing-fair-research-software-attitudes-advantages-and-challenges-part-two), by Leyla Jael Castro, Diego Alonso Álvarez, Stian Soiland-Reyes, Markus Löning, Sam Harrison, Faruk Diblen, Abhishek Dasgupta, Morane Gruenpeter and Paula Andrea Martinez, from the Software Sustainability Institute's Collaborations Workshop 2021 [speed blog series](https://www.software.ac.uk/tags/cw21-speed-blog-posts).
 
 <a name="outreach"></a>
 # **US-RSE Outreach**
