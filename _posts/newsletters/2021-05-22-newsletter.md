@@ -88,7 +88,7 @@ These opportunities were recently posted to the [RSE Careers page](https://us-rs
 4. [Research Software Engineer](https://brown.wd5.myworkdayjobs.com/en-US/staff-careers-brown/job/180-George-Street/Research-Software-Engineer_REQ169311): Brown University, Providence, RI
 5. [HPC Applications Performance Engineer, Hewlett Packard Enterprise](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Bloomington-Minnesota-United-States-of-America/HPC-APPLICATIONS-PERFORMANCE-ENGINEER_1080055-1): Various locations
 6. [Software Engineer](https://recruit.ap.ucsb.edu/JPF01941): Benioff Ocean Initiative at University of California, Santa Barbara, CA (currently remote)
-7. [Software Engineer](https://uwhires.admin.washington.edu/eng/candidates/default.cfm?szCategory=jobprofile&szOrderID=185774): University of Washington, Seattle, WA
+
 
 <a name="news"></a>
 # **Community News**
