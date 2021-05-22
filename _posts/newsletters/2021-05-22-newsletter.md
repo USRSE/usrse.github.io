@@ -93,7 +93,7 @@ These opportunities were recently posted to the [RSE Careers page](https://us-rs
 <a name="news"></a>
 # **Community News**
 
-* Daniel S. Katz and Neil Chue Hong are editing a special issue of PeerJ CS on software citation, indexing and discoverability, so if you are doing any work in this area, please consider submitting it to this [special issue](https://peerj.com/special-issues/84-software).
+* Daniel S. Katz and Neil Chue Hong are editing a [special issue of PeerJ CS on software citation, indexing and discoverability](https://peerj.com/special-issues/84-software), so if you are doing any work in this area, please consider submitting it to this [special issue](https://peerj.com/special-issues/84-software).
 * DHTech, a community of people doing technical work in Digital Humanities, are conducting a survey to gauge the interest for a technical mentorship program. If you work in Digital Humanities, please consider filling out the survey! More information can be found [on the DHTech website](https://dh-tech.github.io/mentorship-survey).
 
 <a name="reads"></a>
