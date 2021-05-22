@@ -35,7 +35,7 @@ In this issue:
 <a name="workshop"></a>
 # **2021 US-RSE Virtual Workshop**
 
-Following the success of the 2020 US-RSE Virtual Workshop, the event this year is also virtual due to the ongoing pandemic. The [2021 US-RSE Virtual Workshop](https://us-rse.org/virtual-workshop-2021/) will be held on two non-consecutive half days: May 24 and 27, 2021, 1-4pm ET/12-3pm CT/10am-1pm PT.
+Following the success of the 2020 US-RSE Virtual Workshop, the event this year is also virtual due to the ongoing pandemic. The [2021 US-RSE Virtual Workshop](https://us-rse.org/virtual-workshop-2021/) will be held on two non-consecutive half days: May 24 and 27, 2021, 1 - 4 pm ET, 12 - 3 pm CT, 11 am - 2 pm MT, 10 am - 1 pm PT.
 
 The theme of the workshop is "A Path Forward for Research Software Engineers." The workshop will feature talks, community events, and working group sessions. It will be held via Zoom and some parts, such as the talks, will be recorded and available after the workshop via the [US-RSE YouTube channel](https://www.youtube.com/channel/UC7IQsWv809OQYJ-sJKuQZrw). The workshop is free but [registration is required, here](https://docs.google.com/forms/d/e/1FAIpQLSetiGdTiHSTfil4-LL_R3eZEyNIIfGtSJqjTsViBPcldsJtJw/viewform).
 
