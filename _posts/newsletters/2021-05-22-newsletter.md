@@ -49,7 +49,7 @@ US-RSE has formalized its membership in the Open Collective Foundation (OCF) fis
 <a name="communitycall"></a>
 # **US-RSE Community Calls**
 
-We will have our next community call on June 10, 2021 at 12-1pm ET. Have a look nearer to the date in the slack channel #communitycalls to vote for a topic! You can find the videos from past community calls in our YouTube channel. Here is the one from [April](https://www.youtube.com/watch?v=9LwPO2bdHRE). We did not have a call in May since we will have the Second US-RSE Virtual Workshop on Monday and Thursday (May 24 and May 27). See above for more information.
+We will have our next community call on June 10, 2021 at 12-1pm ET. Have a look nearer to the date in the slack channel [#communitycalls](https://usrse.slack.com/archives/CLBDQMJH5) to vote for a topic! You can find the videos from past community calls in our YouTube channel. Here is the one from [April](https://www.youtube.com/watch?v=9LwPO2bdHRE). We did not have a call in May since we will have the Second US-RSE Virtual Workshop on Monday and Thursday (May 24 and May 27). See above for more information.
 
 <a name="podcast"></a>
 # **Podcast**
