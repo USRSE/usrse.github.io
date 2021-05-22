@@ -76,7 +76,7 @@ Some other events coming up that may be of interest to RSEs include:
 <a name="sc21"></a>
 # **Upcoming CFP: RSE-HPC-2021 workshop at SC21**
 
-[Research Software Engineers in HPC (RSE-HPC-2021)](https://us-rse.org/rse-hpc-2021/) has been accepted as a workshop at [SC21](https://sc21.supercomputing.org/) in November!  The Call for Papers will go out in early June, with a submission deadline in early August.  Details of the call are being finalized and will be announced soon.
+[Research Software Engineers in HPC (RSE-HPC-2021)](https://us-rse.org/rse-hpc-2021/) has been accepted as a workshop at [SC21](https://sc21.supercomputing.org/) in November!  Details of the call for papers are being finalized and will be announced in early June, with a submission deadline in early August.  
 
 <a name="jobs"></a>
 # **Recent Job Postings**
