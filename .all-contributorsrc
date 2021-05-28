@@ -409,6 +409,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/426409?v=4"
             ]
+        },
+        {
+            "login": "andrewsu",
+            "name": "Andrew Su",
+            "contributions": [
+                "code"
+            ],
+            "profile": "http://sulab.org",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/2635409?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

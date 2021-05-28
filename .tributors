@@ -204,5 +204,10 @@
     "bernhold": {
         "name": "David E. Bernholdt",
         "blog": "https://csmd.ornl.gov/profile/david-bernholdt"
+    },
+    "andrewsu": {
+        "name": "Andrew Su",
+        "bio": "Professor at Scripps Research studying bioinformatics, genetics, and genomics; he/him",
+        "blog": "http://sulab.org"
     }
 }
