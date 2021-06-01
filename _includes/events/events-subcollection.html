@@ -1,21 +1,22 @@
 {% assign entries = include.collection %}
 
-{% if include.sort_by == 'title' %}
-  {% if include.sort_order == 'reverse' %}
-    {% assign entries = entries | sort: 'title' | reverse %}
-  {% else %}
-    {% assign entries = entries | sort: 'title' %}
-  {% endif %}
-{% elsif include.sort_by == 'date' %}
-  {% if include.sort_order == 'reverse' %}
-    {% assign entries = entries | sort: 'date' | reverse %}
-  {% else %}
-    {% assign entries = entries | sort: 'date' %}
-  {% endif %}
-{% endif %}
 
-{%- for post in entries -%}
+<section id="{{ category | slugify | downcase }}" class="taxonomy__section">
+    <h2>{{ category_name }}</h2>
+
+{% assign entries = entries | sort: 'expires' | reverse %}
+
+{%- for post in entries limit:5 -%}
   {%- unless post.hidden -%}
+    {% assign hasevents = "true" %}
     {% include events/event-card.html %}
   {%- endunless -%}
 {%- endfor -%}
+
+<div class="row">
+<div class="col-md-12">
+<a type="button" style="float:right" class="btn btn-sm btn-warning" href="{{ site.baseurl }}/events/category#{{ category | slugify | downcase }}">View more {{ category }} events</a>
+</div>
+</div>
+
+</section>

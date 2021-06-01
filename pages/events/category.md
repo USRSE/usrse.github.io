@@ -1,6 +1,18 @@
 ---
 layout: page
+title: Event Categories
+permalink: /events/category/
+collection: events
 ---
+
+<div class="row">
+    <div class="col-md-12">
+       <a style="float:right" type="button" class="btn btn-sm btn-warning" href="{{ site.baseurl }}/events/">Back to Events</a>
+    </div>
+</div>
+
+
+{% include scrolltop.html %}
 
 {% assign collection = site[page.collection] %}
 {% include group-by-array.html collection=collection field="category" %}
@@ -16,18 +28,8 @@ layout: page
   {% endfor %}
 </ul>
 
-{{ content }}
-
 {% for category in group_names %}
   {% assign category_name = site.data.events.names[category].name | default: category %}
   {% assign posts = group_items[forloop.index0] %}
-      {% include events/events-subcollection.html collection=posts sort_by=page.sort_by sort_order=page.sort_order type=page.entries_layout category=category category_name=category_name %}
+      {% include events/events-subcollection-all.html collection=posts sort_by=page.sort_by sort_order=page.sort_order type=page.entries_layout category=category category_name=category_name %}
 {% endfor %}
-
-<div class="row">
-    <div class="col-md-12">
-        <a type="button" class="btn btn-warning" href="{{ site.baseurl }}/events/archive/">Events Archive</a>
-    </div>
-</div>
-
-{% include scrolltop.html %}

@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /governance/
+permalink: /about/governance/
 subtitle: The US-RSE Association Governance
 menubar: about
 ---

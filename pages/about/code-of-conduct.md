@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code of Conduct
-permalink: /code-of-conduct/
+permalink: /about/code-of-conduct/
 subtitle: The US-RSE Association Code of Conduct.
 menubar: about
 ---

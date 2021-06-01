@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Steering Committee
-permalink: /steering-committee/
+permalink: /about/steering-committee/
 subtitle: The US-RSE Association is community driven and organized.
 menubar: about
 menubar_toc: true

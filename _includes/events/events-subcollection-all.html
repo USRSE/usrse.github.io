@@ -1,0 +1,17 @@
+{% assign entries = include.collection %}
+
+
+<section class="taxonomy__section">
+    <div style="padding:30px;" id="{{ category | slugify | downcase }}"></div>
+    <h2>{{ category_name }}</h2>
+
+{% assign entries = entries | sort: 'expires' | reverse %}
+
+{%- for post in entries -%}
+  {%- unless post.hidden -%}
+    {% assign hasevents = "true" %}
+    {% include events/event-card.html %}
+  {%- endunless -%}
+{%- endfor -%}
+
+</section>

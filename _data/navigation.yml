@@ -4,20 +4,22 @@
     - name: About US-RSE
       link: about
     - name: Mission
-      link: mission
+      link: about/mission/
     - name: Governance
-      link: governance
+      link: about/governance/
     - name: Steering Committee
-      link: steering-committee
+      link: about/steering-committee/
     - name: Code of Conduct
-      link: code-of-conduct
+      link: about/code-of-conduct/
 - name: Events
   link: /#
   dropdown:
-    - name: Calendar
-      link: calendar 
     - name: Events
       link: events
+    - name: Calendar
+      link: events/calendar
+    - name: Archive
+      link: events/archive/
 - name: Get Involved
   link: /#
   dropdown:
@@ -29,12 +31,10 @@
       link: share
     - name: Community Documents
       link: community-documents
-- name: Careers
+- name: Job Board
   link: /#
   dropdown:
-    - name: What is an RSE?
-      link: what-is-an-rse  
-    - name: Job Opportunities
+    - name: Browse the board
       link: jobs
 - name: News
   link: /#
