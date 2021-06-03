@@ -1,3 +1,8 @@
+- name: Scientific Solutions Group
+  url: https://communityhub.purdue.edu/groups/ssg
+  coords: [40.424 -86.929]
+  type: group
+  institution: Purdue University
 - name: Partnership for an Advanced Computing Environment (PACE)
   url: https://oit.gatech.edu/high-performance-computing-hpc
   coords: [33.775256, -84.388542] 
