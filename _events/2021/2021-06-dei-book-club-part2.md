@@ -14,14 +14,12 @@ In an effort to promote continual education and discussion, the Diversity, Equit
 
 The discussion will be in three parts, following the structure of the book. **Previous attendance to part one of this event is not required.**
 
-All attendees will be provided with a Zoom link, by email, one hour before event.
-
 1.  [Sign up](https://www.eventbrite.com/e/better-allies-book-discussion-part-ii-tickets-158032317917) for the book club discussion
 2.  [Buy the book](https://betterallies.com/buy/) (or get it from your local library)
 3.  Read "Part Two: Shifting Your Behavior" (pages 59-152), and come prepared to discuss it
 
 When: Tuesday, June 22 from 12:00 PM - 1:00 PM ET / 9:00 AM - 10:00 AM PT
 
-Attendees will be provided with a Zoom link, by email, one hour before event.
+Attendees will be provided with a Zoom link, by email, one hour before the event.
 
 Share the event: <https://www.eventbrite.com/e/better-allies-book-discussion-part-ii-tickets-158032317917>
