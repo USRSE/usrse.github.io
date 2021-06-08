@@ -17,7 +17,7 @@ By chance this is the day after the first [Global Maintainer Summit](https://glo
 three days after [Upstream 2021](https://explore.tidelift.com/upstream/)! So it seems like a good week
 to have some conversations and strategizing around this topic.
 This call will be a chance to explore with others in the US-RSE community how we are 
-individually or in groups, utilizing, contributing to or maintaining open source software? 
+individually or in groups, utilizing, contributing to or maintaining open source software.
 Some discussion topics will include, how is everyone using open-source, what tools are up and coming, what are
 some of the ways people are interacting with the open source ecosystem around licenses, integration into day-to-day work,
 contributions and participation. 
