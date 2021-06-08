@@ -27,7 +27,7 @@ After a brief introduction, we will separate into breakout groups to discuss the
 Suggested questions for the breakout groups:
 - How do people use and contribute to open source software? 
 - If people contribute to/maintain open source projects, what does that look like (licenses, issues, contributor agreements/guidelines, etc)?
-- How could US-RSE support open source? Would a working group make sense for infrastructure/sharing/etc? 
+- How could US-RSE support open source? Would a working group make sense for infrastructure/sharing/help wanted/help available/mentoring etc? 
 
 ## Agenda
 
