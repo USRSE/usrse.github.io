@@ -19,7 +19,7 @@ to have some conversations and strategizing around this topic.
 This call will be a chance to explore with others in the US-RSE community how we are 
 individually or in groups, utilizing, contributing to or maintaining open source software? 
 Some discussion topics will include, how is everyone using open-source, what tools are up and coming, what are
-some of the ways people are intereacting with the open source ecosystem around licenses, integration into day-to-day work,
+some of the ways people are interacting with the open source ecosystem around licenses, integration into day-to-day work,
 contributions and participation. 
 
 ## Agenda
