@@ -5,6 +5,8 @@
       link: about
     - name: Mission
       link: about/mission/
+    - name: What is an RSE?
+      link: about/what-is-an-rse/
     - name: Governance
       link: about/governance/
     - name: Steering Committee
