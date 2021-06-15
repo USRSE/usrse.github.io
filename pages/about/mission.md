@@ -2,7 +2,7 @@
 layout: page
 title: Mission
 description: Goals and Aims of the US-RSE Association
-permalink: /mission/
+permalink: /about/mission/
 menubar: about
 menubar_toc: true
 ---

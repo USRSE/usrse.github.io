@@ -30,7 +30,7 @@ full_width: true
        <h2 class="block-title">Great ideas deserve great software.</h2>
        <p>Research Software Engineers use expertise in programming to advance research.
       This includes researchers who spend a significant amount of time programming, full-time software engineers writing code to solve research problems, and those somewhere in-between. We aspire to apply the skills and practices of software development to research to create more robust, manageable, and sustainable research software.</p>
-    <a href="/docs/getting-started" class="button btn-warning">Read More</a>
+    <a href="{{ site.baseurl }}/about/what-is-an-rse/" class="button btn-warning">Read More</a>
   </div>
  </div>
 </div>
@@ -51,12 +51,12 @@ full_width: true
 </div>
 <div class="grid-item">
 <div class="grid-item-inside">
-  <h3 class="grid-item-title line-left">Resources</h3>
+  <h3 class="grid-item-title line-left">Job Board</h3>
     <div class="grid-item-content">
-    <p>Looking for training materials or how to start your own RSE group? Check out our resources section.</p>
+    <p>Are you looking for a research software engineering job? Check out our job board with jobs from across the community.</p>
             </div>
             <div class="grid-item-buttons">
-<a href="/showcase" class="">Learn More</a>
+<a href="/jobs/" class="">Learn More</a>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 ---
 title: Calendar
-permalink: /calendar/
+permalink: /events/calendar/
 fullcalendar: true
 layout: calendar
 ---
