@@ -291,12 +291,23 @@ nice features to make it less error prone, discussed next.
 
 ### GitHub CI
 
-## URLChecker
+## URLChecker and Spelling
 
 The [URLschecker](https://github.com/urlstechie/URLs-checker) is a GitHub action
 that @vsoch worked on to contribute retry and some other nice features for the 
 repository here. These features are available as of version 0.1.6 that is used
-in the [workflow](.github/workflows/urlchecker.yml).
+in the [workflow](.github/workflows/urlchecker.yml). In addition, @vsoch found
+a Rust tool called [crate-ci/typos](https://github.com/marketplace/actions/typos-action)
+and contributed an equivalent action so all posts and pages are spell checked.
+If your CI fails, the spelling suggestions will be shown and you can manually
+update the mistakes, or [install typos](https://github.com/crate-ci/typos#install) 
+and have all errors fixed automatically:
+
+```bash
+typos ./pages ./_posts ./README.md --write-changes
+```
+If there is a word that needs to be ignored, see [instructions](https://github.com/crate-ci/typos#false-positives) 
+for adding a `_typos.toml` file to indicate false positives.
 
 ## Clean Expired Jobs
 

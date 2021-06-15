@@ -36,7 +36,7 @@ in incentivizing good software engineering practices.
 
 ![alt text]({{ site.baseurl
  }}/assets/posts/2019-10-24-RSE-definition-missing.png "Responses to
- the missing componenets of the US-RSE Definition during BOF at
+ the missing components of the US-RSE Definition during BOF at
  PEARC19")
 Results from PEARC19 interactive audience question “what is missing in the US-RSE definition?”
 
