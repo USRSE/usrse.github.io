@@ -16,7 +16,11 @@
                 {% for item in site.data.navigation %}
                     {% if item.dropdown %}
                     <div class="navbar-item has-dropdown is-hoverable {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
+                        {% if item.link %}
                         <a href="{{ item.link | relative_url }}" class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                        {% else %}
+                        <span class="navbar-link">{{ item.name }}</span>
+                        {% endif %}
                         <div class="navbar-dropdown">
                             {% for subitem in item.dropdown %}
                             <a {% if subitem.external %}target="_blank"{% endif %} href="{{ subitem.link | relative_url }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name }}</a>
