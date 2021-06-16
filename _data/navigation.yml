@@ -1,5 +1,5 @@
 - name: About
-  link: /#
+  link: about/
   dropdown:
     - name: About US-RSE
       link: about
@@ -13,8 +13,10 @@
       link: about/steering-committee/
     - name: Code of Conduct
       link: about/code-of-conduct/
+    - name: Working Groups
+      link: about/working-groups/
 - name: Events
-  link: /#
+  link: events/
   dropdown:
     - name: Events
       link: events
@@ -23,7 +25,7 @@
     - name: Archive
       link: events/archive/
 - name: Get Involved
-  link: /#
+  link: join/
   dropdown:
     - name: Join US-RSE
       link: join
@@ -34,12 +36,12 @@
     - name: Community Documents
       link: community-documents
 - name: Job Board
-  link: /#
+  link: jobs/
   dropdown:
     - name: Browse the board
       link: jobs
 - name: News
-  link: /#
+  link: news/
   dropdown:
     - name: Newsletters
       link: newsletters
@@ -49,17 +51,19 @@
       link: archive
 
 - name: Training
-  link: /#
+  link: links/
   dropdown:
     - name: Links
       link: links
 
 - name: External
-  link: /#
   dropdown:
     - name: RSE Map
       link: "https://usrse.github.io/usrse-map"
+      external: true
     - name: Community Blogs
       link: "https://usrse.github.io/blog"
+      external: true
     - name: Community Documents
       link: "https://github.com/USRSE/usrse.github.io/wiki"
+      external: true

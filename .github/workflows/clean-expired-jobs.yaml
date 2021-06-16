@@ -30,7 +30,7 @@ jobs:
         print_all: false
         retry_count: 3
         timeout: 10
-        white_listed_patterns: supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com,jobs.colorado.edu,zoom.us,danielskatz.org
+        white_listed_patterns: supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com,jobs.colorado.edu,zoom.us,danielskatz.org,usrse.github.io.wiki.git
         white_listed_files: README.md,SocialNetworks.yml,map.yml,_config.yml,tests/test_,.github/workflows,_posts/newsletters/
 
     - name: Push Fixes

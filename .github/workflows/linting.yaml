@@ -30,7 +30,7 @@ jobs:
         timeout: 10
 
         # White listed patterns (seem to have SSL issues but work in browser)
-        white_listed_patterns: supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com,jobs.colorado.edu,zoom.us,danielskatz.org
+        white_listed_patterns: supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com,jobs.colorado.edu,zoom.us,danielskatz.org,usrse.github.io.wiki.git
 
         # White list the following files
         white_listed_files: README.md,SocialNetworks.yml,map.yml,_config.yml,tests/test_,.github/workflows,_posts/newsletters/
