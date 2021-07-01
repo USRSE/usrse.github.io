@@ -35,8 +35,8 @@
       link: get-involved
     - name: Share
       link: share
-    - name: Community Documents
-      link: community-documents
+    - name: Community Whitepapers
+      link: community-whitepapers
 - name: Job Board
   link: jobs/
   dropdown:
@@ -65,7 +65,4 @@
       external: true
     - name: Community Blogs
       link: "https://usrse.github.io/blog"
-      external: true
-    - name: Community Documents
-      link: "https://github.com/USRSE/usrse.github.io/wiki"
       external: true
