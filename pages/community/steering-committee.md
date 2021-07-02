@@ -13,7 +13,7 @@ subtitle: The US-RSE Association is community driven and organized.
 * Julia Damerow, Arizona State University (Election Chair)
 * Charles Ferenbaugh, Los Alamos National Laboratory
 * Sandra Gesing, University of Notre Dame (Vice-Chair)
-* Chris Hill, MIT
+* Chris Hill, MIT (Treasurer)
 * Daniel S. Katz, University of Illinois at Urbana-Champaign
 * Christina Maimone, Northwestern University
 * Lance Parsons, Princeton University
