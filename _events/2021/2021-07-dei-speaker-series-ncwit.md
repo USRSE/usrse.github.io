@@ -56,7 +56,7 @@ of technical leaders. In 2004, she developed the Resident Scholar Program (RSP)
 while at P&G. RSP is a unique job-shadowing program for minority youth
 interested in careers in STEM. The program expanded its reach to Duracell
 Company in 2011, and continues to impact students at both companies today.
-Currently, Dr. Andrea is the President/CEO of IDG Vision, LLC, where
+Currently, Dr. Andrea is the President/CEO of IDG Vision, LLC, where she
 continues to impact the STEM talent pipeline as a consultant, speaker,
 coach, and trainer.
 
