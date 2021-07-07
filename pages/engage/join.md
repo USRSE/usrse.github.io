@@ -6,6 +6,7 @@ subtitle: Why should I join the US-RSE Association?
 menubar: engage
 ---
 
+Membership in the US-RSE Association is free.  Our email announcements and newsletters are sent to members.
 
 By joining the US-RSE Association you will:
 
