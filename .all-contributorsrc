@@ -420,6 +420,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/2635409?v=4"
             ]
+        },
+        {
+            "login": "chrisblanton",
+            "name": "Christopher Blanton",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/chrisblanton",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/43550454?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
