@@ -212,6 +212,7 @@
     },
     "chrisblanton": {
         "name": "Christopher Blanton",
-        "bio": "Research Software Engineer"
+        "bio": "Research Software Engineer",
+        "blog": "https://github.com/chrisblanton"
     }
 }
