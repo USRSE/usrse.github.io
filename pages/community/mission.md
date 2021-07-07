@@ -33,10 +33,12 @@ to target our activities and actions to serving these three aspects:
 
 ## 4. Diversity, Equality, and Inclusion
 
-  We believe Diversity, Equity, and Inclusion (DEI) are core values of the
-  US-RSE Association. A dedicated team of active members continue to lead the
-  development of a DEI program for our organization. DEI discussions are and
-  will continue to be an integral part of our community.
+  We will actively promote, encourage, and improve diversity throughout the
+  broader US Research Software Engineer Community consistent with our full DEI
+  mission statement. We will ensure we provide an inclusive environment with
+  equitable treatment for all and we will prioritize a program of Diversity,
+  Equity, and Inclusion (DEI) activities for our organization, led by a
+  dedicated team of active community members.
 
-  Please see our [full statement.]({{site.url}}/dei-mission/)
+  Please see our full [DEI mission statement.]({{site.url}}/dei-mission/)
   
