@@ -209,5 +209,9 @@
         "name": "Andrew Su",
         "bio": "Professor at Scripps Research studying bioinformatics, genetics, and genomics; he/him",
         "blog": "http://sulab.org"
+    },
+    "chrisblanton": {
+        "name": "Christopher Blanton",
+        "bio": "Research Software Engineer"
     }
 }
