@@ -5,8 +5,8 @@ subtitle: Goals and Aims of the US-RSE Association
 permalink: /mission/
 ---
 
-The US-RSE Association is centered around three main goals.  We aim
-to target our activities and actions to serving these three aspects:
+The US-RSE Association is centered around four main goals. We aim
+to target our activities and actions to serving these aspects:
 
 ## 1. Community 
 
