@@ -15,8 +15,8 @@ of diverse perspectives is essential for driving innovation, promoting
 creativity, and encouraging engagement for the success of RSEs. We welcome and
 respect individuals of all dimensions of diversity, including but not limited
 to race, color, caste, economic status, gender expression, gender identity,
-sexual orientation, disability, age, religion (or lack thereof), national
-origin, and ethnicity.
+sexual orientation, disability, neurocognitive differences, age,
+religion (or lack thereof), national origin, and ethnicity.
  
 The US-RSE Association will:
 - Continually educate ourselves through research on best practices focused on
