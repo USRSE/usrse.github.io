@@ -24,7 +24,7 @@ test_jobs: &test_jobs
 
 install_python_3: &install_python_3
   name: install Python 3.5 dependencies
-  command: | 
+  command: |
       ls $HOME
       if [ ! -d "/home/circleci/conda" ]; then
           wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -42,7 +42,7 @@ build_jekyll: &build_jekyll
             cp ~/repo/.circleci/circle_urls.sh ~/repo/circle_urls.sh
             cd ~/repo
             chmod u+x circle_urls.sh
-            bash circle_urls.sh              
+            bash circle_urls.sh
             bundle exec jekyll build
         else
             echo "Nightly build detected, preview not needed."
@@ -51,7 +51,7 @@ build_jekyll: &build_jekyll
 jobs:
   build-site:
     docker:
-      - image: circleci/ruby:2.4.1
+      - image: cimg/ruby:2.7.1-node
     working_directory: ~/repo
     environment:
       - JEKYLL_ENV: production
@@ -62,20 +62,20 @@ jobs:
       - restore_cache:
           keys:
           - v1-dependencies
-          - rubygems-v1
+          - rubygems-cache-v1-{{ checksum "Gemfile.lock" }}
       - run: *install_python_3
       - run: *install
       - save_cache:
+          key: v1-dependencies
           paths:
             - /home/circleci/conda
-          key: v1-dependencies        
       - run:
           name: Bundle Install
           command: |
               cd ~/repo
               bundle check || bundle install
       - save_cache:
-          key: rubygems-v1
+          key: rubygems-cache-v1-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
       - run: *test_jobs
