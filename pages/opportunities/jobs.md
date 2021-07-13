@@ -17,4 +17,4 @@ permalink: /jobs/
 <br>
 
 ### Have an RSE-related job posting?  
-Contact us via [slack](https://usrse.slack.com) or directly make a pull request in the website's [GitHub repository](https://github.com/USRSE/usrse.github.io).
+Please read our [job posting policy]({{ site.baseurl }}/jobs/policy/) first, then fill out this [google form](https://docs.google.com/forms/d/e/1FAIpQLSfYK64R1c0rj-ERldGLxuqedLIbsYPZXj9uBplDRYNmnND10Q/viewform?usp=sf_link) to request additions to the job board.
