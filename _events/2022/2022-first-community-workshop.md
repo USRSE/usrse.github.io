@@ -3,8 +3,8 @@ title: US-RSE Workshop
 subtitle: A First US-RSE Community Building Workshop
 location: Princeton, NJ
 url: https://us-rse.org/first-community-workshop
-expires: 2021-10-06
-event_date: "October 5–6, 2021"
+expires: 2022-04-28
+event_date: "April 26–27, 2022"
 layout: event
 repeated: false
 ---
@@ -12,7 +12,7 @@ repeated: false
 
 We are excited to announce that through a generous grant from the
 Alfred P. Sloan Foundation, we will be able to hold a first US-RSE
-Association community building workshop, October 5-6, 2021 in
+Association community building workshop, April 26-27, 2022 in
 Princeton, NJ. This won’t be an attempt to be an RSE conference, but a
 workshop focused on planning the best path forward to grow the US-RSE
 Association.
