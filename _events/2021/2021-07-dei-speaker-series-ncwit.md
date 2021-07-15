@@ -10,7 +10,7 @@ repeated: false
 
 ## Event
 
-The US-RSE Diversity, Inclusion, and Equity Working Group (DEI-WG) is proud to
+The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
 present the next event in the US-RSE DEI-WG Speaker Series: **[The National
 Center for Women & Information Technology (NCWIT)](https://ncwit.org/)**
 
@@ -78,7 +78,7 @@ The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is working
 to bring to the US-RSE community quarterly visits from RSE professionals with
 vested interests or research into DEI in the RSE community at large. Our
 community pledges to continually educate ourselves through research on best
-practices focused on diversity, equality, and inclusion. The US-RSE is
+practices focused on diversity, equity, and inclusion. The US-RSE is
 committed to providing an inclusive environment with equitable treatment for
 all and to promoting and encouraging diversity throughout the RSE community. We
 encourage everyone to suggest speakers and topics and are open to different

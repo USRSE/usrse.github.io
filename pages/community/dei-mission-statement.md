@@ -1,7 +1,7 @@
 ---
 layout: page
 title: DEI Mission Statement
-subtitle: Diversity, Equality, and Inclusion at US-RSE
+subtitle: Diversity, Equity, and Inclusion at US-RSE
 permalink: /dei-mission/
 ---
 
