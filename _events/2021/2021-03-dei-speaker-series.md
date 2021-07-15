@@ -11,13 +11,13 @@ repeated: false
 
 ## US-RSE DEI-WG Speaker Series Info
 
-The US-RSE DEI-WG is working to bring to the US-RSE community quarterly visits from RSE professionals with vested interests or research into DEI in the RSE community at large. Our community pledges to continually educate ourselves through research on best practices focused on diversity, equality, and inclusion. The US-RSE is committed to providing an inclusive environment with equitable treatment for all and to promoting and encouraging diversity throughout the RSE community. We encourage everyone to suggest speakers and topics and are open to different formats and timelines of the events. Feedback is much appreciated.
+The US-RSE DEI-WG is working to bring to the US-RSE community quarterly visits from RSE professionals with vested interests or research into DEI in the RSE community at large. Our community pledges to continually educate ourselves through research on best practices focused on diversity, equity, and inclusion. The US-RSE is committed to providing an inclusive environment with equitable treatment for all and to promoting and encouraging diversity throughout the RSE community. We encourage everyone to suggest speakers and topics and are open to different formats and timelines of the events. Feedback is much appreciated.
 
 <!-- more -->
 
 ## Event
 
-The US-RSE Diversity, Inclusion, and Equity Working Group (DEI-WG) is proud to
+The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
 present the first speaker in the US-RSE DEI Speaker Series: **Dr. Cherri M.
 Pancake, presenting her talk “Can We Change the Face of Computing?”**
 
