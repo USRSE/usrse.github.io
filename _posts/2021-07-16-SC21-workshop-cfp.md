@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Call for Papers:  RSE-HPC-2021 Workshop at SC21
+title: "Call for Papers:  RSE-HPC-2021 Workshop at SC21"
 tags: [conference]
 posted_by: Charles Ferenbaugh, Sandra Gesing, Simon Hettrick, and Daniel S. Katz
 ---
