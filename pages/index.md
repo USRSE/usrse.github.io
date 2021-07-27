@@ -42,7 +42,7 @@ full_width: true
       <div class="grid-item-inside">
        <h3 class="grid-item-title line-left">Working Groups</h3>
        <div class="grid-item-content">
-       <p>Working groups, including Diversity and Inclusion (DEI) and a website committee, bring together community members with common interests.</p>
+       <p>Working groups, including Diversity, Equity, and Inclusion (DEI) and a website committee, bring together community members with common interests.</p>
       </div>
        <div class="grid-item-buttons">
 <a href="{{ site.baseurl }}/about/working-groups/" class="">Learn More</a>
