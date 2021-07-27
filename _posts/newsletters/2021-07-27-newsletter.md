@@ -152,6 +152,7 @@ Items you may have missed on the blog and Slack:
 
 * Vanessa Sochat - [Chef Autamus](https://us-rse.org/blog/2021/vsoch/chef-autamus/) and [RFC Jekyll](https://us-rse.org/blog/2021/vsoch/rfc-jekyll/)
 * Collegeville Workshop 2021 had the theme "Software Teams". White papers, teatime themes, and recordings are available [here](https://collegeville.github.io/CW21/).
+* [GitHub now will provide citation information for repositories that contain a CITATION.cff file](https://twitter.com/natfriedman/status/1420122675813441540?s=20)
 
 
 <a name="outreach"></a>
