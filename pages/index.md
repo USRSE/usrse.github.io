@@ -12,7 +12,7 @@ full_width: true
     <div class="col-md-9" style="margin:auto">
        <h2 class="block-title">What is US-RSE?</h2>
        <p>The US Research Software Engineer Association (US-RSE) joins initiatives in the UK, Germany, the Netherlands and elsewhere to bring together the community of people writing and contributing to research software at the national and international level. In the US this encompasses universities, laboratories, knowledge institutes, companies and other enterprises. This site is part of that effort.</p>
-    <a href="/docs/getting-started" class="button btn-warning">Read More</a>
+    <a href="{{ site.baseurl }}/about/" class="button btn-warning">Read More</a>
   </div>
     <div class="col-md-3">
       <img src="{{ site.baseurl }}/assets/img/avatar-icon.png" alt="" style="padding:30px; float:right">
@@ -40,12 +40,12 @@ full_width: true
    <div class="grid grid-col-2">        
     <div class="grid-item">
       <div class="grid-item-inside">
-       <h3 class="grid-item-title line-left">Diversity and Inclusion</h3>
+       <h3 class="grid-item-title line-left">Working Groups</h3>
        <div class="grid-item-content">
-       <p>Diversity and Inclusion (DEI) is a main goal for US-RSE. Read more about what we are doing, and how to get involved.</p>
+       <p>Working groups, including Diversity, Equity, and Inclusion (DEI) and a website committee, bring together community members with common interests.</p>
       </div>
        <div class="grid-item-buttons">
-<a href="/dei" class="">Learn More</a>
+<a href="{{ site.baseurl }}/about/working-groups/" class="">Learn More</a>
    </div>
  </div>
 </div>
@@ -56,7 +56,7 @@ full_width: true
     <p>Are you looking for a research software engineering job? Check out our job board with jobs from across the community.</p>
             </div>
             <div class="grid-item-buttons">
-<a href="/jobs/" class="">Learn More</a>
+<a href="{{ site.baseurl }}/jobs/" class="">Learn More</a>
           </div>
         </div>
       </div>
