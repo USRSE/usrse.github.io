@@ -8,8 +8,6 @@ repeated: false
 ---
 
 
-## Notice
-
 ## Event
 
 The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
