@@ -1,5 +1,5 @@
 ---
-title: POSTPONED: NCWIT Event
+title: "POSTPONED: NCWIT Event"
 subtitle: The National Center for Women & Information Technology (NCWIT) - US-RSE DEI-WG Speaker Series
 expires: 2021-08-31
 event_date: "TBD, 2021"
