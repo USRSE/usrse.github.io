@@ -1,12 +1,23 @@
 ---
-title: The National Center for Women & Information Technology (NCWIT)
-subtitle: US-RSE DEI-WG Speaker Series
-expires: 2021-07-29
+title: POSTPONED
+subtitle: The National Center for Women & Information Technology (NCWIT) - US-RSE DEI-WG Speaker Series
+expires: 2021-08-31
 event_date: "July 29, 2021"
 layout: event
 repeated: false
 ---
 
+
+## Notice
+
+Unfortunately, due to a scheduling error on our side we have had to postpone
+this event (originally scheduled for 5-6:30pm ET July 29th, 2021). 
+
+We will work with our guest speakers to reschedule and will update this page
+and communicate a new date/time through Slack, email, and Twitter as soon as we
+have more information.
+
+We apologize for any inconvenience and appreciate your understanding.
 
 ## Event
 
@@ -14,9 +25,9 @@ The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
 present the next event in the US-RSE DEI-WG Speaker Series: **[The National
 Center for Women & Information Technology (NCWIT)](https://ncwit.org/)**
 
-**Date/Time:** Thursday, July 29, 2021 2-3:30 pm PT (5-6:30 pm ET)
+**Date/Time: TBD**
 
-**[Registration Link](https://princeton.zoom.us/meeting/register/tJUvf-mgqDgpEtVQF2X9MA9zd-LIrJZ9w6Jq)**
+**Registration Link - COMING SOON**
 
 
 ### Abstract
@@ -32,7 +43,8 @@ barriers that limit diverse participation in computing.
 ### About the Speakers
 
 
-**Joanne Esch**, Graduate Research Associate with NCWIT
+**[Joanne Esch](https://ncwit.org/profile/joanne-esch/)**, Graduate Research
+Associate with NCWIT
 
 Joanne Esch is a Graduate Research Associate with the National Center for Women
 and Information Technology and a PhD candidate in the Communication Department
@@ -43,7 +55,8 @@ Her most recent research examines ethically-driven institutional change efforts
 through the lens of organizational formulations such as culture, control,
 governance, and identity.
 
-**Andrea Bowens-Jones**, NCWIT Corporate Initiatives Consultant 
+**[Andrea Bowens-Jones](https://ncwit.org/profile/andrea-bowens-jones/)**,
+NCWIT Corporate Initiatives Consultant 
 
 Dr. Andrea Bowens-Jones is a former Procter & Gamble (P&G) R&D Section Head.
 She has managed multi–discipline teams of scientists and engineers to drive
