@@ -16,7 +16,7 @@ Center for Women & Information Technology (NCWIT)](https://ncwit.org/)**
 
 **Date/Time: August 12, 2021**
 
-**[Registration Now!](https://princeton.zoom.us/meeting/register/tJ0rd-yoqDgsGdND7R0BBVYdtcZ-AUBdy15g)**
+**[Register Now!](https://princeton.zoom.us/meeting/register/tJ0rd-yoqDgsGdND7R0BBVYdtcZ-AUBdy15g)**
 
 Note: This event was originally scheduled for 5-6:30pm ET July 29th, 2021, but
 had to be rescheduled due to a scheduling error on our side. 
