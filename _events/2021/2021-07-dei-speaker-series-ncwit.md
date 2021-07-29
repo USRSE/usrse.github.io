@@ -2,7 +2,7 @@
 title: POSTPONED
 subtitle: The National Center for Women & Information Technology (NCWIT) - US-RSE DEI-WG Speaker Series
 expires: 2021-08-31
-event_date: "July 29, 2021"
+event_date: "TBD, 2021"
 layout: event
 repeated: false
 ---
