@@ -14,7 +14,7 @@ The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
 present the next event in the US-RSE DEI-WG Speaker Series: **[The National
 Center for Women & Information Technology (NCWIT)](https://ncwit.org/)**
 
-**Date/Time: August 12, 2021**
+**Date/Time: August 12, 2021 4-5:30pm ET (1-2:30 PT)**
 
 **[Register Now!](https://princeton.zoom.us/meeting/register/tJ0rd-yoqDgsGdND7R0BBVYdtcZ-AUBdy15g)**
 
