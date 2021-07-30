@@ -20,6 +20,7 @@ Center for Women & Information Technology (NCWIT)](https://ncwit.org/)**
 
 Note: This event was originally scheduled for 5-6:30pm ET July 29th, 2021, but
 had to be rescheduled due to a scheduling error on our side. 
+If you had previously registered for the canceled 7/29 event you need to reregister using the new registration link above. 
 
 ### Abstract
 
