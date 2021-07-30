@@ -1,23 +1,12 @@
 ---
-title: "POSTPONED: NCWIT Event"
-subtitle: The National Center for Women & Information Technology (NCWIT) - US-RSE DEI-WG Speaker Series
-expires: 2021-08-31
-event_date: "TBD, 2021"
+title: "The National Center for Women & Information Technology (NCWIT)"
+subtitle: RESCHEDULED - US-RSE DEI-WG Speaker Series
+expires: 2021-08-12
+event_date: "August 12, 2021"
 layout: event
 repeated: false
 ---
 
-
-## Notice
-
-Unfortunately, due to a scheduling error on our side we have had to postpone
-this event (originally scheduled for 5-6:30pm ET July 29th, 2021). 
-
-We will work with our guest speakers to reschedule and will update this page
-and communicate a new date/time through Slack, email, and Twitter as soon as we
-have more information.
-
-We apologize for any inconvenience and appreciate your understanding.
 
 ## Event
 
@@ -25,10 +14,13 @@ The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
 present the next event in the US-RSE DEI-WG Speaker Series: **[The National
 Center for Women & Information Technology (NCWIT)](https://ncwit.org/)**
 
-**Date/Time: TBD**
+**Date/Time: August 12, 2021 4-5:30pm ET (1-2:30 PT)**
 
-**Registration Link - COMING SOON**
+**[Register Now!](https://princeton.zoom.us/meeting/register/tJ0rd-yoqDgsGdND7R0BBVYdtcZ-AUBdy15g)**
 
+Note: This event was originally scheduled for 5-6:30pm ET July 29th, 2021, but
+had to be rescheduled due to a scheduling error on our side. 
+If you had previously registered for the canceled 7/29 event you need to reregister using the new registration link above. 
 
 ### Abstract
 
