@@ -431,6 +431,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/43550454?v=4"
             ]
+        },
+        {
+            "login": "castelao",
+            "name": "Guilherme Castelão",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/castelao",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/1903589?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
