@@ -58,6 +58,8 @@
       link: resources/rses/
     - name: Organizations
       link: resources/organizations/
+    - name: Training Material
+      link: resources/training/
 
 - name: External
   dropdown:
