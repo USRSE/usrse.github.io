@@ -6,12 +6,18 @@ permalink: /jobs/
 
 ## Current RSE openings
 
-<ol>{% for job in site.data.jobs %}
+{% assign sorted_jobs = site.data.jobs | sort: "posted" | reverse %}
+<ol>{% for job in sorted_jobs %}
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 {% capture expires %}{{ job.expires | date: '%s'}}{% endcapture %}
+{% capture posted %}{{ job.posted | date: '%b %d, %Y'}}{% endcapture %}
 
 {% if expires > nowunix %}
-   <li><a href="{{ job.url }}" target="_blank">{{ job.name }}</a>: {{ job.location }}</li>
+  {% if posted != '' %}
+    <li><a href="{{ job.url }}" target="_blank">{{ job.name }}</a>: {{ job.location }}&emsp;<em>Posted:&nbsp;{{ posted }}</em></li>
+  {% else %}
+    <li><a href="{{ job.url }}" target="_blank">{{ job.name }}</a>: {{ job.location }}</li>
+  {% endif %}
 {% endif %}{% endfor %}</ol>
 
 <br>

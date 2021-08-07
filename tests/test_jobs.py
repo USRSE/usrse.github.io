@@ -36,7 +36,7 @@ class TestJobs(unittest.TestCase):
         with open(self.jobs, 'r') as stream:
             jobs = yaml.safe_load(stream)
 
-        requireds = ['name', 'location', 'url', 'expires']
+        requireds = ['name', 'location', 'url', 'expires', 'posted']
         for entry in jobs:
 
             print("Testing %s" % entry)
@@ -55,6 +55,7 @@ class TestJobs(unittest.TestCase):
 
             # Expires must be a valid YYYY-MM-DD
             self.assertTrue(isinstance(entry['expires'], datetime.date))
+            self.assertTrue(isinstance(entry['posted'], datetime.date))
 
 if __name__ == '__main__':
     unittest.main()

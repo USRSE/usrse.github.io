@@ -33,14 +33,14 @@ can open a pull request to update the date. An example posting is shown below. T
 job would appear on the site until the first of July, 2019.
 
 ```yaml
-- {expires: 2019-07-01, location: 'Princeton, NJ', name: 'Research Software Engineer',
-    url: 'https://main-princeton.icims.com/jobs'}
+- {expires: 2019-07-01, posted: 2019-02-01, location: 'Princeton, NJ',
+    name: 'Research Software Engineer', url: 'https://main-princeton.icims.com/jobs'}
 ```
 
 And don't forget to write your new job at the top of the [_data/jobs.yml](_data/jobs.yml) file!
-For testing, we look to see that all fields are defined, the url exists, and that the "expires" field loads
-as a `datetime.date` object in Python. If you copy the format above, you should
-be ok.
+For testing, we look to see that all fields are defined, the url exists, and
+that the "expires" and "posted" fields load as a `datetime.date` object in
+Python. If you copy the format above, you should be ok.
 
 
 ### 3. How do I add an event?
