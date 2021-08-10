@@ -42,6 +42,11 @@
   dropdown:
     - name: Browse the board
       link: jobs
+    - name: About submitting jobs
+      link: jobs/policy/
+    - name: Submit a job
+      link: https://docs.google.com/forms/d/e/1FAIpQLSfYK64R1c0rj-ERldGLxuqedLIbsYPZXj9uBplDRYNmnND10Q/viewform?usp=sf_link
+      external: true
 - name: News
   link: news/
   dropdown:
