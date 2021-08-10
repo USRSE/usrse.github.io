@@ -11,11 +11,14 @@ full_width: true
 <div class="row">
     <div class="col-md-9" style="margin:auto">
        <h2 class="block-title">What is US-RSE?</h2>
-       <p>The US Research Software Engineer Association (US-RSE) joins initiatives in the UK, Germany, the Netherlands and elsewhere to bring together the community of people writing and contributing to research software at the national and international level. In the US this encompasses universities, laboratories, knowledge institutes, companies and other enterprises. This site is part of that effort.</p>
+       <p>The US Research Software Engineer Association (US-RSE) is a community-driven effort that brings together people who write and contribute to research software within the US.
+       We aim to build a connective, supportive, and diverse community of individuals from universities, laboratories, knowledge institutes, companies, and other enterprises.
+       We strive to advocate for our members, raise awareness of the importance of the RSE role, and actively improve diversity within the RSE profession.
+       We welcome all (including those outside the US) who support our <a href="{{ site.baseurl }}/about/mission/">organizational mission</a>, especially those who identify as RSEs, those interested in a career as an RSE, and those who may not be RSEs but consider themselves RSE “allies” or manage individuals in RSE roles.</p>
     <a href="{{ site.baseurl }}/about/" class="button btn-warning">Read More</a>
   </div>
     <div class="col-md-3">
-      <img src="{{ site.baseurl }}/assets/img/avatar-icon.png" alt="" style="padding:30px; float:right">
+      <img src="{{ site.baseurl }}/assets/img/avatar-icon.png" alt="" style="padding:60px; float:right">
     </div>
  </div>
 </div>
