@@ -5,6 +5,8 @@
       link: about
     - name: Mission
       link: about/mission/
+    - name: DEI Mission Statement
+      link: /about/dei-mission/
     - name: What is an RSE?
       link: about/what-is-an-rse/
     - name: Governance

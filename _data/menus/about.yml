@@ -2,10 +2,12 @@
   items:
     - name: Mission
       link: /about/mission/
+    - name: DEI Mission Statement
+      link: /about/dei-mission/
     - name: Governance
       link: /about/governance/
     - name: What is an RSE?
-      link: /about/what-is-an-rse/      
+      link: /about/what-is-an-rse/
     - name: Steering Committee
       link: /about/steering-committee/
     - name: Code of Conduct
