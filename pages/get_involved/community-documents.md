@@ -3,7 +3,7 @@ layout: page
 title: Community Whitepapers
 description: Collaborative community whitepapers
 permalink: /community-whitepapers/
-menubar: engage
+menubar: get-involved
 menubar_toc: true
 ---
 

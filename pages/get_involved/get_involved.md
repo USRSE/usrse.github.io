@@ -4,7 +4,7 @@ title: Get Involved
 permalink: /get-involved/
 subtitle: Ways to contribute to the US-RSE Association
 menubar_toc: true
-menubar: engage
+menubar: get-involved
 ---
 
 The US-RSE Association is a new organization that needs community involvement to grow and mature.  
