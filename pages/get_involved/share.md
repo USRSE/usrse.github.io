@@ -3,7 +3,7 @@ layout: page
 title: Share with the Community
 permalink: /share/
 subtitle: How to Share with the Community
-menubar: engage
+menubar: get-involved
 menubar_toc: true
 ---
 
