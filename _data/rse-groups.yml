@@ -1,0 +1,52 @@
+- name: Partnership for an Advanced Computing Environment (PACE)
+  url: https://pace.gatech.edu/
+  institution: Georgia Institute of Technology
+- name: FAS Research Computing
+  url: https://www.rc.fas.harvard.edu/
+  institution: Harvard University
+- institution: Massachusetts Institute of Technology
+  url: http://www.mit.edu/
+- name: Research Computing Services
+  url: https://www.it.northwestern.edu/research/
+  institution: Northwestern University
+- institution: Oak Ridge National Laboratory
+  name: Application Engineering Group
+  url: https://www.ornl.gov/group/application-engineering
+- institution: Oak Ridge National Laboratory
+  name: Software Engineering Group
+  url: https://www.ornl.gov/group/software-engineering
+- name: Research Computing
+  url: https://researchcomputing.princeton.edu
+  institution: Princeton University
+- name: Lewis-Siegler Institute for Integrative Genomics 
+  url: https://lsi.princeton.edu/
+  institution: Princeton University
+- name: Center for Digital Humanites
+  url: https://cdh.princeton.edu/
+  institution: Princeton University
+- name: Department of Physics
+  url: https://phy.princeton.edu/
+  institution: Princeton University
+- name: Scientific Solutions Group
+  url: https://communityhub.purdue.edu/groups/ssg
+  institution: Purdue University
+- name: "Stanford RSE Services"
+  url: https://stanford-rc.github.io/rse-services/
+  institution: Stanford University
+- name: Data, Analytics & Research Computing at the GSB
+  url: https://sites.google.com/a/stanford.edu/rcpedia/the-team
+  institution: Stanford University
+- institution: University of Alabama
+  url: http://cs.ua.edu/research/
+- name: National Center for Supercomputing Applications 
+  url: https://ssa.ncsa.illinois.edu/
+  institution: University of Illinois Urbana-Champaign
+- name: Center for Research Computing
+  url: https://www.nd.edu/
+  institution: University of Notre Dame
+- name: Research Computing
+  url: https://github.com/UWrc
+  institution: University of Washington
+- institution: Brown University
+  name: Center for Computation and Visualization (CCV)
+  url: https://ccv.brown.edu/

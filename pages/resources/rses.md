@@ -14,4 +14,4 @@ _These resources can be helpful to establish RSE positions, groups, or further u
  - [US-RSE Logos](https://github.com/usrse/logo){:target="_blank"} repository
  - [US-RSE Slack](https://usrse.slack.com/){:target="_blank"}
  
- _See the [Related Organizations resource page]({{ site.baseurl }}/resources/organizations/ ) for links to additional useful resources by other organizations related to Research Software Engineering._
+ _See the [Related Organizations resource page]({{ site.baseurl }}/resources/organizations/relevant/ ) for links to additional useful resources by other organizations related to Research Software Engineering._
