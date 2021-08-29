@@ -2620,7 +2620,7 @@ a.box:active {
 }
 
 .tags:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: .1rem;
 }
 
 .tags.are-medium .tag:not(.is-normal):not(.is-large) {
@@ -12136,3 +12136,23 @@ div.highlight {
 .gh-sponsor {
     color: #ea4aaa;
 }
+
+article > a {
+	text-decoration: none;
+	color: #3d4144;
+}
+
+article > a:hover {
+	text-decoration: none;
+	color: #9B4C97;
+}
+
+article > a:visited {
+	color: #3d4144;
+}
+
+article > a:visited:hover {
+	color: #3d4144;
+}
+
+

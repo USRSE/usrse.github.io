@@ -4,6 +4,11 @@ layout: default
 
 <div class="content">
     <h2>{{ page.title }}</h2>
+    {% if page.subtitle %} 
+	<h3>
+		{{ page.subtitle }} 
+	</h3>
+	{% endif %} 
 <div class="tags">
     {% for tag in page.tags %}
       {% include tag.html tag=tag %}

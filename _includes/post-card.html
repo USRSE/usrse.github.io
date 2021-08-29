@@ -1,27 +1,30 @@
-<div class="card">
-    {% if post.image %}
-    <div class="card-image">
-        <img src="{{ post.image }}" alt="{{ post.title }}">
-    </div>
-    {% else %}
-    <header class="card-header">
-        <a class="card-header-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
-    </header>
-    {% endif %}
-    <div class="card-content">
-        <div class="content">
-            {% if post.image %}
-            <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            {% endif %}
-            <p style="float:right">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
-            {% if post.summary %}
-                {{ post.summary | markdownify }}
-            {% else %}
-                <p>{{ post.excerpt }}</p>
-            {% endif %}
+<article>
+	<a href="{{ post.url | prepend: site.baseurl }}"> 
+	<h3 >
+		{{ post.title }}
+	</h3>
+	{% if post.subtitle %} 
+	<h4>
+		{{ post.subtitle }} 
+	</h4>
+	{% endif %} </a> 
+	{% if post.tags.size > 0 %} 
+	<div class="tags">
+		{% for tag in post.tags %} {% include tag.html tag=tag %} {% endfor %} 
+	</div>
+	{% endif %} 
+	<small>Posted on {{ post.date | date: "%B %-d, %Y" }}</small> 
+	
+	{% if post.summary %} 
+	{{ post.summary | markdownify }} 
+	{% else %} 
+	<p>
+		{{ post.excerpt }}
+	</p>
+	{% endif %} 
+
+	<div style='margin-bottom:20px'>
+		<small>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="button btn-warning">Read more</a></small>
         </div>
-        <div class="has-text-centered" style='margin-bottom:15px'>
-            <a href="{{ site.baseurl }}{{ post.url }}" class="button btn-warning">Read more</a>
-        </div>
-    </div>
-</div>
+</article>

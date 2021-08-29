@@ -22,6 +22,8 @@ fixed_navbar: top
 paginate: 5
 paginate_path: "/news/page:num/"
 
+excerpt_length: 500
+
 hero_line_one: The United States Research Software Engineer Assocation
 hero_line_two: A community of people who make research software happen.
 
