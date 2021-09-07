@@ -4318,6 +4318,7 @@ a.tag:hover {
     align-items: stretch;
     box-shadow: 0 .125em .25em rgba(10,10,10,0.1);
     display: flex;
+    justify-content: space-between;
 }
 
 .card-header-title {

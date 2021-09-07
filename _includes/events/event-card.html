@@ -1,12 +1,44 @@
 {% unless post.hidden %}
 {%- assign event_id = post.id | split: '/' | last %}
-<div class="card col-12" id="{{ event_id }}"
- style="padding:20px{% if include.hidden %};display: none{% endif %}">
-  <p class="card-title" style="margin-bottom:0px"><a href="{{ post.url | relative_url }}" rel="permalink" target="_blank">{{ post.title }}</a></p>
-  <div style="margin-top:0px" class="card-content" onclick="window.open('{{ post.url | relative_url }}')">
-    {% include events/event-summary.html event=post %}
-    <br>
-    {{ post.excerpt | markdownify | strip_html | truncate: 300 }}
+<div class="card h-100" id="{{ event_id }}" {% if include.hidden %}style="display: none"{%endif %}>
+  <a href="{{ post.url | prepend: site.baseurl }}" class="stretched-link">
+  </a>
+
+  {% capture event_time %}{{ post.expires | date: '%s' }}{% endcapture %}
+  {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+  {% assign color = "#790c63" %}
+  {% if event_time < nowunix %}
+    {% assign color = "#717171" %}
+  {% endif %}
+
+  <div class="card-header" style="background-color: {{ color }};">
+      <div class="col-sm-8">
+        <h5 style="margin: 0px -15px; color: rgb(255, 255, 255)">
+          {{ post.title }}
+        </h5>
+      </div>
+      <div class="col-xs-4 float-right">
+        <h6 style="text-align: right; color: rgb(168, 168, 168)">
+          {{ post.event_date }}
+        </h6>
+      </div>
+  </div>
+  <div class="card-body">
+    {% if post.subtitle %}
+    <h6 class="card-subtitle mb-2">
+      {{ post.subtitle }}
+    </h6>
+    {% endif %}
+    
+    <p class="card-text">
+      {{ post.excerpt | markdownify | strip_html | truncate: 300 }}
+    </p>
+
+    <div style='margin-bottom:20px'>
+      <small>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="button btn-warning">Read more</a>
+      </small>
+    </div>
   </div>
 </div>
 {% endunless %}

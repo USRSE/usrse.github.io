@@ -5,29 +5,63 @@ layout: page
 {% assign collection = site[page.collection] %}
 {% include group-by-array.html collection=collection field="category" %}
 
+{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+
 <ul class="taxonomy__index">
   {% for category in group_names %}
-  {% assign category_name = site.data.events.names[category].name | default: category %}
-    <li style="list-style:none">
-      <a href="#{{ category | slugify | downcase }}">
-        <strong>{{ category_name }}</strong> <span class="badge badge-warning" style="margin:auto; margin-right:0px">{{ group_items[forloop.index0] | size }}</span>
-      </a>
-    </li>
+    {% assign category_name = site.data.events.names[category].name | default: category %}
+    {% assign all_posts = group_items[forloop.index0] %}
+    {% assign posts = '' | split: '' %}
+    {% for event in all_posts %}
+      {% capture event_time %}{{ event.expires | date: '%s' }}{% endcapture %}
+      {% if event_time >= nowunix %}
+        {% assign posts = posts | push: event %}
+      {% endif %}
+    {% endfor %}
+    {% unless posts == empty %}
+      <li style="list-style:none">
+        <a href="#{{ category | slugify | downcase }}">
+          <strong>{{ category_name }}</strong>
+          <span class="badge badge-warning" style="margin:auto; margin-right:0px">
+            {{ posts.size }}
+          </span>
+        </a>
+      </li>
+    {% endunless %}
   {% endfor %}
 </ul>
+
+<div class="row">
+  <div class="col-md-12">
+    <a type="button" style="float: right" class="btn btn-small btn-warning" href="{{ site.baseurl }}/events/archive/">
+      <small>Events Archive</small>
+    </a>
+  </div>
+</div>
 
 {{ content }}
 
 {% for category in group_names %}
   {% assign category_name = site.data.events.names[category].name | default: category %}
-  {% assign posts = group_items[forloop.index0] %}
-      {% include events/events-subcollection.html collection=posts sort_by=page.sort_by sort_order=page.sort_order type=page.entries_layout category=category category_name=category_name %}
+  {% assign all_posts = group_items[forloop.index0] %}
+  {% assign posts = '' | split: '' %}
+  {% for event in all_posts %} 
+    {% capture event_time %}{{ event.expires | date: '%s' }}{% endcapture %}
+    {% if event_time >= nowunix %}
+      {% assign posts = posts | push: event %}
+    {% endif %}
+  {% endfor %}
+  {% unless posts == empty %}
+    {% include events/events-subcollection.html collection=posts sort_by=page.sort_by sort_order=page.sort_order type=page.entries_layout category=category category_name=category_name %}
+  {% endunless %}
 {% endfor %}
 
 <div class="row">
-    <div class="col-md-12">
-        <a type="button" class="btn btn-warning" href="{{ site.baseurl }}/events/archive/">Events Archive</a>
-    </div>
+  <div class="col-md-12">
+    <a type="button" class="btn btn-warning" href="{{ site.baseurl }}/events/archive/">
+      Events Archive
+    </a>
+  </div>
 </div>
 
 {% include scrolltop.html %}

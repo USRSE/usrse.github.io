@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event Categories
+title: Archive of Events by Categories
 permalink: /events/category/
 collection: events
 ---
