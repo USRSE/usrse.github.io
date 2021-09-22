@@ -2907,14 +2907,14 @@ a.tag:hover {
 }
 
 .subtitle {
-    color: #9e2074;
+    color: #741755;
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.25;
 }
 
 .subtitle strong {
-    color: #9e2074;
+    color: #741755;
     font-weight: 600;
 }
 
@@ -5178,7 +5178,7 @@ a.dropdown-item.is-active,button.dropdown-item.is-active {
 }
 
 .navbar.is-primary {
-    background-color: #9e2074;
+    background-color: #741755;
     color: #fff;
 }
 
@@ -5187,7 +5187,7 @@ a.dropdown-item.is-active,button.dropdown-item.is-active {
 }
 
 .navbar.is-primary .navbar-brand>a.navbar-item:focus,.navbar.is-primary .navbar-brand>a.navbar-item:hover,.navbar.is-primary .navbar-brand>a.navbar-item.is-active,.navbar.is-primary .navbar-brand .navbar-link:focus,.navbar.is-primary .navbar-brand .navbar-link:hover,.navbar.is-primary .navbar-brand .navbar-link.is-active {
-    background-color: #9e2074;
+    background-color: #741755;
     color: #fff;
 }
 
@@ -5205,7 +5205,7 @@ a.dropdown-item.is-active,button.dropdown-item.is-active {
     }
 
     .navbar.is-primary .navbar-start>a.navbar-item:focus,.navbar.is-primary .navbar-start>a.navbar-item:hover,.navbar.is-primary .navbar-start>a.navbar-item.is-active,.navbar.is-primary .navbar-start .navbar-link:focus,.navbar.is-primary .navbar-start .navbar-link:hover,.navbar.is-primary .navbar-start .navbar-link.is-active,.navbar.is-primary .navbar-end>a.navbar-item:focus,.navbar.is-primary .navbar-end>a.navbar-item:hover,.navbar.is-primary .navbar-end>a.navbar-item.is-active,.navbar.is-primary .navbar-end .navbar-link:focus,.navbar.is-primary .navbar-end .navbar-link:hover,.navbar.is-primary .navbar-end .navbar-link.is-active {
-        background-color: #9e2074;
+        background-color: #741755;
         color: #fff;
     }
 
@@ -5214,7 +5214,7 @@ a.dropdown-item.is-active,button.dropdown-item.is-active {
     }
 
     .navbar.is-primary .navbar-item.has-dropdown:focus .navbar-link,.navbar.is-primary .navbar-item.has-dropdown:hover .navbar-link,.navbar.is-primary .navbar-item.has-dropdown.is-active .navbar-link {
-        background-color: #9e2074;
+        background-color: #741755;
         color: #fff;
     }
 
@@ -10916,15 +10916,15 @@ a.has-text-danger-dark:hover,a.has-text-danger-dark:focus {
 }
 
 .hero.is-primary .title {
-    color: #9e2074;
+    color: #741755;
 }
 
 .hero.is-primary .subtitle {
-    color: #9e2074;
+    color: #741755;
 }
 
 .hero.is-primary .subtitle a:not(.button),.hero.is-primary .subtitle strong {
-    color: #9e2074;
+    color: #741755;
 }
 
 @media screen and (max-width: 1023px) {

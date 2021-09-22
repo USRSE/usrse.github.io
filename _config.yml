@@ -6,10 +6,10 @@ description: Community of Research Software Engineers
 
 url: ""
 baseurl: "/usrse.github.io"  # for testing, also check .circleci/circle_urls.sh
-title-img: /assets/img/99design-logo-transparent.png  # baseurl will be prepended
-twitter-img: /assets/img/99design-logo-transparent.png  # url + baseurl will be prepended
-banner: /assets/img/99design-logo-transparent.png
-icon: /assets/img/99design-logo-transparent.png
+title-img: /assets/img/main_logo_transparent.png  # baseurl will be prepended
+twitter-img: /assets/img/main_logo_transparent.png  # url + baseurl will be prepended
+banner: /assets/img/main_logo_transparent.png
+icon: /assets/img/main_logo_transparent.png
 
 email: contact@us-rse.org
 permalink: /:year-:month-:day-:title/
