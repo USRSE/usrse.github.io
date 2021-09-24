@@ -53,7 +53,7 @@ Additionally, Steering Committee members are expected to:
 
 Individuals may nominate themselves or another member.  In cases when a nomination is not a self-nomination, the Election Chairs will contact the nominated individual to confirm their interest in participating.
 
-On the nomination form, the following information is required:
+On the nomination form, which will be available once nominations open, the following information is required:
 
 **If Nominating Someone Else:**
 
