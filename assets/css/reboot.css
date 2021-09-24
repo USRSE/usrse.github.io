@@ -159,14 +159,14 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 a {
-  color: #00c6ff;
+  color: #741755;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.125em;
   -webkit-transition: color .3s ease;
   transition: color .3s ease; }
   a:hover {
-    color: #424b5f; }
+    color: #741755; }
 
 p {
   margin: 0 0 1em; }
@@ -1734,7 +1734,7 @@ blockquote cite:before {
     padding-right: 5px;
 }
 a:visited {
-    color: #9B4C97;
+    color: #741755;
 }
 a:hover {
     color: #3a0638;
