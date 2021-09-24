@@ -15,7 +15,7 @@ The 2021 US-RSE Steering Committee elections are happening this December.
 - Nominations due: November 5, 2021
 - Candidates finalize information: November 8, 2021
 - Candidates announced: by November 12, 2021
-- Annual US-RSE General Meeting, including candidate statements: December 3, 2020, 1-3pm ET
+- Annual US-RSE General Meeting, including candidate statements: December 3, 2021, 1-3pm ET
 - Voting Open: December 3-10, 2021
 - Election Results announced: by December 17, 2021
 - Elected Steering Committee members take office: January 1, 2022
