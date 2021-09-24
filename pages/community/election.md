@@ -26,7 +26,7 @@ Five Steering Committee seats are open in this election, each for a 2-year term 
 
 A membership verification email will be sent to all members in October. The message will be sent directly from leadership@us-rse.org, not through the Google group used for most email communications.   Individuals who do not receive the membership verification email may join the organization by filling out the membership form at [https://us-rse.org/join/](https://us-rse.org/join/).  For questions or help with membership matters, please contact Election Chairs Julia Damerow and Lance Parsons on Slack or [via email](mailto:jdamerow@asu.edu,lparsons@princeton.edu).
 
-The US-RSE Steering Committee sets its own meeting frequency and timing.  Currently, the Steering Committee is meeting every two weeks.  The Steering Committee meeting frequency and schedule for 2022 will be determined once new members are elected.  
+The US-RSE Steering Committee sets its own meeting frequency and timing.  Currently, the Steering Committee meets every two weeks.  The Steering Committee meeting frequency and schedule for 2022 will be determined once new members are elected.  
 
 The responsibilities of Steering Committee members are detailed in the [US-RSE Membership and Governance](https://github.com/USRSE/documents/blob/master/governance.md) document. They include:
 
@@ -51,7 +51,7 @@ Additionally, Steering Committee members are expected to:
 
 ## Nominations and Candidate Information
 
-Individuals may nominate themself or another member.  In cases when a nomination is not a self-nomination, the Election Chair will contact the nominated individual to confirm their interest in participating.
+Individuals may nominate themselves or another member.  In cases when a nomination is not a self-nomination, the Election Chairs will contact the nominated individual to confirm their interest in participating.
 
 On the nomination form, the following information is required:
 
