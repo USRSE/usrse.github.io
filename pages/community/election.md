@@ -10,7 +10,15 @@ The 2021 US-RSE Steering Committee elections are happening this December.
 
 ## Timeline
 
-The timeline for this year's elections will be posted soon.
+- Membership verification email sent: by October 15, 2021
+- Nominations open: October 22, 2021
+- Nominations due: November 5, 2021
+- Candidates finalize information: November 8, 2021
+- Candidates announced: by November 12, 2021
+- Annual US-RSE General Meeting, including candidate statements: December 3, 2020, 1-3pm ET
+- Voting Open: December 3-10, 2021
+- Election Results announced: by December 17, 2021
+- Elected Steering Committee members take office: January 1, 2022
 
 
 ## Positions and Eligibility
@@ -62,7 +70,7 @@ Nominations of others will only be shared with the Election Chairs and the nomin
 * Why do you want to be on the US-RSE Steering Committee? (<=1000 characters)
 * How do you contribute to the US-RSE Association or RSE community more broadly? (<= 1500 characters)
 
-All candidate information will be shared on the US-RSE website.  Additionally, candidates will have the opportunity to share a short statement (live or recorded) during the US-RSE General meeting in December.  
+All candidate information will be shared on the US-RSE website.  Additionally, candidates will have the opportunity to share a short recorded statement during the US-RSE General meeting in December.  
 
 An #election channel is available on Slack for any discussion with or about candidates.
 
