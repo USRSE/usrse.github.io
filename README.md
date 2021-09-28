@@ -1,7 +1,7 @@
 # The United States (US) Research Software Engineer Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-42-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-43-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -396,6 +396,9 @@ tool to generate a contributors graphic below.
     <td align="center"><a href="http://sulab.org"><img src="https://avatars.githubusercontent.com/u/2635409?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andrew Su</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=andrewsu" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/chrisblanton"><img src="https://avatars.githubusercontent.com/u/43550454?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Christopher Blanton</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=chrisblanton" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/castelao"><img src="https://avatars.githubusercontent.com/u/1903589?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Guilherme Castelão</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=castelao" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/roelofsaj"><img src="https://avatars.githubusercontent.com/u/14942055?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abbey Roelofs</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=roelofsaj" title="Code">💻</a></td>
   </tr>
 </table>
 
