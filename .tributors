@@ -228,6 +228,7 @@
     },
     "mtbc": {
         "name": "Mark Carroll",
-        "email": "mark.gh@ixod.org"
+        "email": "mark.gh@ixod.org",
+        "blog": "https://github.com/mtbc"
     }
 }
