@@ -18,7 +18,7 @@ full_width: true
     <a href="{{ site.baseurl }}/about/" class="button btn-warning">Read More</a>
   </div>
     <div class="col-md-3">
-      <img src="{{ site.baseurl }}/assets/img/avatar-icon.png" alt="" style="padding:60px; float:right">
+      <img src="{{ site.baseurl }}/assets/img/circular_logo.png" alt="" style="padding:60px; float:right">
     </div>
  </div>
 </div>
