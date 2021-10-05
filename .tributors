@@ -230,5 +230,10 @@
         "name": "Mark Carroll",
         "email": "mark.gh@ixod.org",
         "blog": "https://github.com/mtbc"
+    },
+    "NickleDave": {
+        "name": "David Nicholson",
+        "bio": "Neuroscience + Artificial Intelligence. Open + inclusive science. Pythonista. Habla espanglish y baila salsa y bachata a medio tiempo.",
+        "blog": "https://nicholdav.info/"
     }
 }
