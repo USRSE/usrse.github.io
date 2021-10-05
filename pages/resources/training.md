@@ -10,7 +10,9 @@ useful videos, tutorials, and other training materials well suited for learning 
 An incomplete list is below.
 We expect this list to grow significantly in both content and usability.
 These links are provided as a service to the US Research Software Engineer community.
-While we have made every effort to ensure these have been reviewed and vetted for applicability and appropritness, US-RSE does not formally endorse any content below.
+While we have made every effort to ensure these have been reviewed and vetted for applicability and appropriateness, US-RSE does not formally endorse any content below.
+
+The US-RSE Education and Training Group also maintains and publishes a list of skills an RSE might possess in an effort to better define RSE roles and to help direct individuals looking to invest in learning new skills. The list can be found on the [Skill Sets used by RSEs]({{ site.baseurl }}/resources/training/skills/) page.
 
 _Additions to this list or general comments/questions should be directed to the [US-RSE Training and Education Working Group]({{ site.baseurl }}/about/working-groups/)._
 
