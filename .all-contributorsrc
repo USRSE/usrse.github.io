@@ -464,6 +464,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/2630707?v=4"
             ]
+        },
+        {
+            "login": "NickleDave",
+            "name": "David Nicholson",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://nicholdav.info/",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/11934090?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
