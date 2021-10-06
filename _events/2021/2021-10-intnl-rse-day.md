@@ -43,5 +43,5 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM Eastern
 | 4:20 PM - 4:45 PM | Q&A               |                                |
 
 
-**Registration details**  
-Information on how to register for the Zoom meeting will be sent via email and posted in the #general channel on Slack.
+**FREE Registration details**  
+[Zoom registration link](https://uab.zoom.us/meeting/register/tZYrfumpqD8iG9PCMyysyAFhKBTViOadzzcX)
