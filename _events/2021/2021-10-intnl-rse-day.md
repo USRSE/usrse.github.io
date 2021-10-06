@@ -25,7 +25,7 @@ Join us for a panel discussion and talks to introduce teams of researchers, RSEs
 **Schedule**
 
 October 14th US-RSE Schedule
-Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM EST
+Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM Eastern
 
 | Time (EST)  | Event |  Event Description                         |
 | ----        | ------|------------------------------------------- |
