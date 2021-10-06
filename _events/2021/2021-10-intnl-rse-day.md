@@ -13,7 +13,7 @@ of the days events.
 
 **Background**
 
-_First International RSE Day Virtual Workshop Events Oct 14, 11:00 AM Eastern - 4:30 PM Eastern._
+_First International RSE Day Virtual Workshop Events Oct 14, 11:00 AM Eastern - 4:45 PM Eastern._
 
 An NSF-funded workshop titled “[Building the research innovation workforce: a workshop
 to identify new insights and directions to advance the research computing community” recently found that collaboration between research software engineers, cyberinfrastructure professionals, and researchers were key to the research computing community [https://www.rcac.purdue.edu/files/ciworkforce2020/report.pdf](https://www.rcac.purdue.edu/files/ciworkforce2020/report.pdf). 
