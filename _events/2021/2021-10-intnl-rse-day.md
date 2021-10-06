@@ -38,7 +38,7 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM EST
 | 2:00 PM - 2:20 PM | Ian Cosden, Princeton     | Building the Princeton Research Software Engineering Group                      |
 | 2:20 PM - 2:45 PM | Q&A               |                                |
 | 3:00 PM - 3:20 PM | Reed Milewicz, Sandia      | Building and Sustaining an RSE Department at Sandia National Laboratory                      |
-| 15:20 - 15:45 | Q&A               |                                |
+| 3:20 PM - 3:45 PM | Q&A               |                                |
 | 16:00 - 16:20 | TBD, TACC     | Title TBD                      |
 | 16:20 - 16:45 | Q&A               |                                |
 
