@@ -238,6 +238,7 @@
     },
     "bjoyce3": {
         "name": "Blake Joyce",
-        "bio": "I'm a code curious biologist."
+        "bio": "I'm a code curious biologist.",
+        "blog": "https://github.com/bjoyce3"
     }
 }
