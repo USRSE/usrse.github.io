@@ -23,10 +23,13 @@ Join us for a panel discussion and talks to introduce teams of researchers, RSEs
 October 14th US-RSE Schedule
 Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM EST
 
-| Time (EST)  | Event Description |
-| ----        | -------------------------------------------------- |
-| 11AM - 12PM | Kickoff Panel     |
-|             |                   |
+| Time (EST)  | Event |  Event Description                         |
+| ----        | ------|------------------------------------------- |
+| 11AM - 11:10AM | Introduction, Blake Joyce/Ian Cosden   | Brief welcome.  |
+| 11:10AM - 12PM | Kickoff Panel     | Speakers introduce themselves and their RSE journey. |
+|             |                   |                                |
+| 12:00 - 12:20 | Nicole Brewer, Purdue     | Title TBD                      |
+| 12:20 - 12:45 | Q&A               |                                |
 
 
 **Registration details**  
