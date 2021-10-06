@@ -30,7 +30,7 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM EST
 | Time (EST)  | Event |  Event Description                         |
 | ----        | ------|------------------------------------------- |
 | 11:00 AM - 11:10 AM | Introduction, Blake Joyce/Ian Cosden   | Brief welcome.  |
-| 11:10AM - 12PM | Kickoff Panel     | Speakers introduce themselves and their RSE journey. |
+| 11:10 AM - 12:00 noon | Kickoff Panel     | Speakers introduce themselves and their RSE journey. |
 | 12:00 - 12:20 | Nicole Brewer, Purdue     | Title TBD                      |
 | 12:20 - 12:45 | Q&A               |                                |
 | 13:00 - 13:20 | Rubern Lara and Mehmet Belgin, Georgia Tech     | Title TBD                     |
