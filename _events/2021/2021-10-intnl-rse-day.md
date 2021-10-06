@@ -9,7 +9,7 @@ repeated: false
 On October 14th between 11:00 AM and 4:45 PM Eastern time we will be hosting a series of online
 talks and panels with discussion to celebrate the [First International RSE Day](https://researchsoftware.org/council/intl-rse-day.html). Events 
 begin on the hour between 11:00 AM and 4:00 PM Eastern; feel free to join us for some or all
-of the day's events.
+of the day's events. [US-RSE Zoom registration link.]https://github.com/USRSE/usrse.github.io/tree/events/intl-rse-day
 
 **Background**
 
@@ -43,5 +43,5 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM Eastern
 | 4:20 PM - 4:45 PM | Q&A               |                                |
 
 
-**Registration details**  
-Information on how to register for the Zoom meeting will be sent via email and posted in the #general channel on Slack.
+**FREE Registration details**  
+[Zoom registration link](https://github.com/USRSE/usrse.github.io/tree/events/intl-rse-day)
