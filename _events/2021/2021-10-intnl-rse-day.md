@@ -36,7 +36,7 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM EST
 | 1:00 PM - 1:20 PM | Rubern Lara and Mehmet Belgin, Georgia Tech     | Title TBD                     |
 | 1:20 PM - 1:45 PM | Q&A               |                                |
 | 2:00 PM - 2:20 PM | Ian Cosden, Princeton     | Building the Princeton Research Software Engineering Group                      |
-| 14:20 - 14:45 | Q&A               |                                |
+| 2:20 PM - 2:45 PM | Q&A               |                                |
 | 15:00 - 15:20 | Reed Milewicz, Sandia      | Building and Sustaining an RSE Department at Sandia National Laboratory                      |
 | 15:20 - 15:45 | Q&A               |                                |
 | 16:00 - 16:20 | TBD, TACC     | Title TBD                      |
