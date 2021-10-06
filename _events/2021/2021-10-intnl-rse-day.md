@@ -8,7 +8,7 @@ repeated: false
 
 On October 14th between 11AM and 4:30PM Eastern time we will be hosting a series of online
 talks and panels with discussion to celebrate the First International RSE Day. Events 
-begin on the hour between 11AM and 4PM Eastern, feel free to join us for some or all
+begin on the hour between 11:00 AM and 4:00 PM Eastern; feel free to join us for some or all
 of the days events.
 
 **Background**
