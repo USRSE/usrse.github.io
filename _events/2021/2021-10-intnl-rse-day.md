@@ -34,7 +34,7 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM EST
 | 12:00 - 12:20 | Nicole Brewer, Purdue     | Title TBD                      |
 | 12:20 PM - 12:45 PM | Q&A               |                                |
 | 1:00 PM - 1:20 PM | Rubern Lara and Mehmet Belgin, Georgia Tech     | Title TBD                     |
-| 13:20 - 13:45 | Q&A               |                                |
+| 1:20 PM - 1:45 PM | Q&A               |                                |
 | 14:00 - 14:20 | Ian Cosden, Princeton     | Building the Princeton Research Software Engineering Group                      |
 | 14:20 - 14:45 | Q&A               |                                |
 | 15:00 - 15:20 | Reed Milewicz, Sandia      | Building and Sustaining an RSE Department at Sandia National Laboratory                      |
