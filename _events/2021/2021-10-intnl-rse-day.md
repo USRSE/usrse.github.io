@@ -27,9 +27,10 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM EST
 | ----        | ------|------------------------------------------- |
 | 11AM - 11:10AM | Introduction, Blake Joyce/Ian Cosden   | Brief welcome.  |
 | 11:10AM - 12PM | Kickoff Panel     | Speakers introduce themselves and their RSE journey. |
-|             |                   |                                |
 | 12:00 - 12:20 | Nicole Brewer, Purdue     | Title TBD                      |
 | 12:20 - 12:45 | Q&A               |                                |
+| 13:00 - 13:20 | Ian Cosden, Princeton     | Building the Princeton Research Software Engineering Group                      |
+| 13:20 - 13:45 | Q&A               |                                |
 
 
 **Registration details**  
