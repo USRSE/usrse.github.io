@@ -29,7 +29,7 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM EST
 
 | Time (EST)  | Event |  Event Description                         |
 | ----        | ------|------------------------------------------- |
-| 11AM - 11:10AM | Introduction, Blake Joyce/Ian Cosden   | Brief welcome.  |
+| 11:00 AM - 11:10 AM | Introduction, Blake Joyce/Ian Cosden   | Brief welcome.  |
 | 11:10AM - 12PM | Kickoff Panel     | Speakers introduce themselves and their RSE journey. |
 | 12:00 - 12:20 | Nicole Brewer, Purdue     | Title TBD                      |
 | 12:20 - 12:45 | Q&A               |                                |
