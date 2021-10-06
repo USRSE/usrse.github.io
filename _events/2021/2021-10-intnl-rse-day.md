@@ -33,7 +33,7 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM EST
 | 11:10 AM - 12:00 noon | Kickoff Panel     | Speakers introduce themselves and their RSE journey. |
 | 12:00 - 12:20 | Nicole Brewer, Purdue     | Title TBD                      |
 | 12:20 PM - 12:45 PM | Q&A               |                                |
-| 13:00 - 13:20 | Rubern Lara and Mehmet Belgin, Georgia Tech     | Title TBD                     |
+| 1:00 PM - 1:20 PM | Rubern Lara and Mehmet Belgin, Georgia Tech     | Title TBD                     |
 | 13:20 - 13:45 | Q&A               |                                |
 | 14:00 - 14:20 | Ian Cosden, Princeton     | Building the Princeton Research Software Engineering Group                      |
 | 14:20 - 14:45 | Q&A               |                                |
