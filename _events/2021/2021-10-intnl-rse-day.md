@@ -27,7 +27,7 @@ Join us for a panel discussion and talks to introduce teams of researchers, RSEs
 October 14th US-RSE Schedule
 Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM Eastern
 
-| Time (EST)  | Event |  Event Description                         |
+| Time (EDT)  | Event |  Event Description                         |
 | ----        | ------|------------------------------------------- |
 | 11:00 AM - 11:10 AM | Introduction, Blake Joyce/Ian Cosden   | Brief welcome.  |
 | 11:10 AM - 12:00 noon | Kickoff Panel     | Speakers introduce themselves and their RSE journey. |
