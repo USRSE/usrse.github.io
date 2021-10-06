@@ -7,11 +7,11 @@ repeated: false
 ---
 
 On October 14th between 11AM and 4:30PM Eastern time we will be hosting a series of online
-talks and panles with discusion to celebrate the First International RSE Day.
+talks and panels with discussion to celebrate the First International RSE Day.
 
 **Background**
 
-First International RSE Day Virtual Workshop Events Oct 14, 11AM Eastern - 4:30PM Eastern.
+_First International RSE Day Virtual Workshop Events Oct 14, 11AM Eastern - 4:30PM Eastern._
 
 An NSF-funded workshop titled “Building the research innovation workforce: a workshop
 to identify new insights and directions to advance the research computing community” recently found that collaboration between research software engineers, cyberinfrastructure professionals, and researchers were key to the research computing community (https://www.rcac.purdue.edu/files/ciworkforce2020/report.pdf). 
@@ -35,7 +35,7 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM EST
 | 13:20 - 13:45 | Q&A               |                                |
 | 14:00 - 14:20 | Ian Cosden, Princeton     | Building the Princeton Research Software Engineering Group                      |
 | 14:20 - 14:45 | Q&A               |                                |
-| 15:00 - 15:20 | Reed Milewicz, Sandia      | Building and Sustaining an RSE Department at Sandia National Laboratorie                     |
+| 15:00 - 15:20 | Reed Milewicz, Sandia      | Building and Sustaining an RSE Department at Sandia National Laboratory                      |
 | 15:20 - 15:45 | Q&A               |                                |
 | 16:00 - 16:20 | TBD, TACC     | Title TBD                      |
 | 16:20 - 16:45 | Q&A               |                                |
