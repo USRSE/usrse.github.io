@@ -20,6 +20,8 @@ But what do successful RSE, CI professional, and researcher teams and stakeholde
 
 Join us for a panel discussion and talks to introduce teams of researchers, RSEs, and CI professionals and learn about their experiences in the research computing community.
 
+**Schedule**
+
 October 14th US-RSE Schedule
 Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM EST
 
@@ -29,8 +31,14 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM EST
 | 11:10AM - 12PM | Kickoff Panel     | Speakers introduce themselves and their RSE journey. |
 | 12:00 - 12:20 | Nicole Brewer, Purdue     | Title TBD                      |
 | 12:20 - 12:45 | Q&A               |                                |
-| 13:00 - 13:20 | Ian Cosden, Princeton     | Building the Princeton Research Software Engineering Group                      |
+| 13:00 - 13:20 | Rubern Lara and Mehmet Belgin, Georgia Tech     | Title TBD                     |
 | 13:20 - 13:45 | Q&A               |                                |
+| 14:00 - 14:20 | Ian Cosden, Princeton     | Building the Princeton Research Software Engineering Group                      |
+| 14:20 - 14:45 | Q&A               |                                |
+| 15:00 - 15:20 | Reed Milewicz, Sandia      | Building and Sustaining an RSE Department at Sandia National Laboratorie                     |
+| 15:20 - 15:45 | Q&A               |                                |
+| 16:00 - 16:20 | TBD, TACC     | Title TBD                      |
+| 16:20 - 16:45 | Q&A               |                                |
 
 
 **Registration details**  
