@@ -44,4 +44,4 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM Eastern
 
 
 **FREE Registration details**  
-[Zoom registration link](https://github.com/USRSE/usrse.github.io/tree/events/intl-rse-day)
+[Zoom registration link](https://uab.zoom.us/meeting/register/tZYrfumpqD8iG9PCMyysyAFhKBTViOadzzcX)
