@@ -40,7 +40,7 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM EST
 | 3:00 PM - 3:20 PM | Reed Milewicz, Sandia      | Building and Sustaining an RSE Department at Sandia National Laboratory                      |
 | 3:20 PM - 3:45 PM | Q&A               |                                |
 | 16:00 - 16:20 | TBD, TACC     | Title TBD                      |
-| 16:20 - 16:45 | Q&A               |                                |
+| 4:20 PM - 4:45 PM | Q&A               |                                |
 
 
 **Registration details**  
