@@ -1,7 +1,7 @@
 # The United States (US) Research Software Engineer Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-45-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-46-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -401,6 +401,7 @@ tool to generate a contributors graphic below.
     <td align="center"><a href="https://github.com/roelofsaj"><img src="https://avatars.githubusercontent.com/u/14942055?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abbey Roelofs</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=roelofsaj" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/mtbc"><img src="https://avatars.githubusercontent.com/u/2630707?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mark Carroll</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=mtbc" title="Code">💻</a></td>
     <td align="center"><a href="https://nicholdav.info/"><img src="https://avatars.githubusercontent.com/u/11934090?v=4?s=100" width="100px;" alt=""/><br /><sub><b>David Nicholson</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=NickleDave" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/bjoyce3"><img src="https://avatars.githubusercontent.com/u/11023317?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Blake Joyce</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=bjoyce3" title="Code">💻</a></td>
   </tr>
 </table>
 
