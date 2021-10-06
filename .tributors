@@ -235,5 +235,9 @@
         "name": "David Nicholson",
         "bio": "Neuroscience + Artificial Intelligence. Open + inclusive science. Pythonista. Habla espanglish y baila salsa y bachata a medio tiempo.",
         "blog": "https://nicholdav.info/"
+    },
+    "bjoyce3": {
+        "name": "Blake Joyce",
+        "bio": "I'm a code curious biologist."
     }
 }
