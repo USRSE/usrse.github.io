@@ -2,6 +2,8 @@
   items:
     - name: Join US-RSE
       link: join
+    - name: Support US-RSE
+      link: support
     - name: Get Involved
       link: get-involved
     - name: Share

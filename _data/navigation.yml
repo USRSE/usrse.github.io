@@ -13,6 +13,8 @@
       link: about/governance/
     - name: Steering Committee
       link: about/steering-committee/
+    - name: Finacial Status
+      link: about/finances/
     - name: Code of Conduct
       link: about/code-of-conduct/
     - name: Working Groups
@@ -33,6 +35,8 @@
   dropdown:
     - name: Join US-RSE
       link: join
+    - name: Support US-RSE
+      link: support
     - name: Get Involved
       link: get-involved
     - name: Share
