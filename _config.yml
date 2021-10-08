@@ -1,8 +1,8 @@
 # Site Settings
 lang: en
 
-title: US-RSE Association
-description: Community of Research Software Engineers
+title: US-RSE
+description: Association of Research Software Engineers
 
 url: ""
 baseurl: "/usrse.github.io"  # for testing, also check .circleci/circle_urls.sh
