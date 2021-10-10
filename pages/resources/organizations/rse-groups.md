@@ -47,7 +47,8 @@ table#rse-groups {
     <th class="highlight">Group or Department</th>
   </tr>
 {% assign rowspan_remaining = 0 %}
-{% for group in site.data.rse-groups | sort: "institution" %}
+{% assign sorted_groups = site.data.rse-groups | sort: "institution" %}
+{% for group in sorted_groups %}
   <tr>
   {% if rowspan_remaining == 0 %}
     {% assign matches = site.data.rse-groups | where: "institution", group.institution %}
