@@ -1,7 +1,7 @@
 # The United States (US) Research Software Engineer Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-39-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-46-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -60,15 +60,29 @@ expires: 2019-08-01
 event_date: "November 17–22, 2019"
 layout: event
 repeated: false
+time:
+    - - start: 2019-07-29T21:15:00Z
+        end: 2019-07-29T22:00:00Z
 ---
 
 Join us at [PEARC19](https://www.pearc19.pearc.org/) for a Birds of a Feather (BOF) session "Building a Community of Research Software Engineers."  Our session is scheduled for 5:15 PM on Monday, July 29.
 ```
 
 The top section is frontend matter that must include the title, location, url, layout as "event" 
-event date, an expiration date, and a "repeated" variable (true or false).
-Notice that the event date is a string that doesn't get parsed,
-while the expires must be a date in the format shown.
+event date, an expiration date, a time, and a "repeated" variable (true or false).
+Notice that the event date is a string that doesn't get parsed, while the expires must be a date in the format shown.
+Importantly, the time should be formatted as shown above, and should be in UTC time, which is 4 hours later than Eastern.
+So for the event above, 5:15PM Eastern time corresponds to UTC 21:15. We get this by converting 5:15 to a 24 hour clock (17:15) and
+then adding 4 (17:15 + 4:00 = 21:15). You should preview your page to make sure that the time zone is rendering as you'd expect,
+and it's also helpful to write out a listing of timezones in the content, e.g.,:
+
+```md
+The next community call will be on August 12, 2021 at 12ET/11CT/10MT/9PT.
+```
+
+This is helpful because people in the community come from many different time zones and also travel,
+and it's nice to quickly see the mapping for other time zones that are close by.
+
 The bottom section (the content) you can write any amount and length
 of markdown that is desired. When the event is active (before expiration) the full content will
 be shown on the "Events and Training" page. Once it expires, it will move into the events archive.
@@ -83,7 +97,7 @@ You'll notice that there is a folder called "repeated" in the events folder:
 
 ```
 $ ls _events/
-2019  2020  repeated
+2019  2020  2021  repeated
 ```
 
 A repeated event is one that happens weekly, monthly, or on a regularly scheduled
@@ -411,6 +425,15 @@ tool to generate a contributors graphic below.
     <td align="center"><a href="https://newton.cx/~peter/"><img src="https://avatars.githubusercontent.com/u/59598?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Peter Williams</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=pkgw" title="Code">💻</a></td>
     <td align="center"><a href="https://freelancerbrg.com"><img src="https://avatars.githubusercontent.com/u/1132451?v=4?s=100" width="100px;" alt=""/><br /><sub><b>BRG</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=coolbrg" title="Code">💻</a></td>
     <td align="center"><a href="https://csmd.ornl.gov/profile/david-bernholdt"><img src="https://avatars.githubusercontent.com/u/426409?v=4?s=100" width="100px;" alt=""/><br /><sub><b>David E. Bernholdt</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=bernhold" title="Code">💻</a></td>
+    <td align="center"><a href="http://sulab.org"><img src="https://avatars.githubusercontent.com/u/2635409?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andrew Su</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=andrewsu" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/chrisblanton"><img src="https://avatars.githubusercontent.com/u/43550454?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Christopher Blanton</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=chrisblanton" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/castelao"><img src="https://avatars.githubusercontent.com/u/1903589?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Guilherme Castelão</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=castelao" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/roelofsaj"><img src="https://avatars.githubusercontent.com/u/14942055?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abbey Roelofs</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=roelofsaj" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/mtbc"><img src="https://avatars.githubusercontent.com/u/2630707?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mark Carroll</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=mtbc" title="Code">💻</a></td>
+    <td align="center"><a href="https://nicholdav.info/"><img src="https://avatars.githubusercontent.com/u/11934090?v=4?s=100" width="100px;" alt=""/><br /><sub><b>David Nicholson</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=NickleDave" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/bjoyce3"><img src="https://avatars.githubusercontent.com/u/11023317?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Blake Joyce</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=bjoyce3" title="Code">💻</a></td>
   </tr>
 </table>
 

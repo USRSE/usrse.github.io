@@ -6,8 +6,8 @@ layout: event
 repeated: false
 category: dei
 time:
-    - - start: 2021-05-25T12:00:00Z
-        end: 2021-05-25T12:50:00Z
+    - - start: 2021-05-25T16:00:00Z
+        end: 2021-05-25T16:50:00Z
 ---
 
 **Watching and Observing as an Ally**

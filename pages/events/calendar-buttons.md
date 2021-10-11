@@ -20,7 +20,7 @@ fullcalendar: true
 <div>
 {% for occurrence in post.time %}
 {% for time in occurrence %}
-{% include events/event-time.html %}
+{% include events/event-time.html count=forloop.count %}
 
 {% endfor %}
 {% endfor %}

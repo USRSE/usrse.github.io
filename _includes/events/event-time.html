@@ -1,15 +1,37 @@
-<strong><i class="far fa-clock" aria-hidden="true"></i></strong> <time datetime="{{ time.start | date_to_xmlschema }}">
-  {{ time.start | date: "%B %-d, %Y, %H:%M %Z" }}{% unless time.end %} UTC{% endunless %}
+{%- capture start_day -%}{{ time.start | date: "%Y-%m-%d" }}{%- endcapture -%}
+{%- capture end_day -%}{{ time.end | date: "%Y-%m-%d" }}{%- endcapture -%}
+
+<strong><i class="far fa-clock" aria-hidden="true"></i></strong> <time datetime="{{ time.start | date_to_xmlschema }}" id="start-time">
 </time>
 {% if time.end %}
 &ndash;
-<time datetime="{{ time.end | date_to_xmlschema }}">
-  {%- capture start_day -%}{{ time.start | date: "%Y-%m-%d" }}{%- endcapture -%}
-  {%- capture end_day -%}{{ time.end | date: "%Y-%m-%d" }}{%- endcapture -%}
-  {%- if start_day == end_day -%}
-  {{ time.end | date: "%H:%M %Z" }} UTC
-  {%- else -%}
-  {{ time.end | date: "%B %-d, %Y, %H:%M %Z" }} UTC
-  {%- endif -%}
-</time>
+<time datetime="{{ time.end | date_to_xmlschema }}" id="end-time"></time>
 {% endif %}
+<script>
+// Add the browser's time zone to be clear
+var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+// The first date we always show the full date
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: "numeric", minute: "numeric"};
+{% if time.start %}var start_date = new Date("{{ time.start | date_to_xmlschema }}");
+start_date = start_date.toLocaleDateString("en-US", options);
+document.getElementById("start-time").textContent = start_date; 
+{% endif %}{% if time.end %}
+
+// If the second date is the same day, no need to write it out again
+{% if start_day == end_day %}options = {hour: "numeric", minute: "numeric"};{% endif %}
+var end_date = new Date("{{ time.end | date_to_xmlschema }}");
+end_date = end_date.toLocaleDateString("en-US", options);
+{% if start_day == end_day %}end_date = end_date.split(" ");
+
+// Remove the date YYYY/MMM/DD
+end_date.shift();
+
+// Rejoin into string
+end_date = end_date.join(" ");
+{% endif %}
+document.getElementById("end-time").textContent = end_date  + " " + tz;
+{% else %}
+document.getElementById("end-time").textContent = tz;
+{% endif %}
+</script>

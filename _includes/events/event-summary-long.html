@@ -17,7 +17,7 @@
 <ul class="page__date">
   {% for time in occurrence %}
     <li>
-      {% include events/event-time.html %}
+      {% include events/event-time.html count=forloop.count %}
     </li>
   {% endfor %}
 </ul>

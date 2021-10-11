@@ -1804,6 +1804,10 @@ a.box:active {
     padding: 1.25em 1.5em;
 }
 
+blockquote {
+    font-size: 1.0em !important;
+}
+
 .content ol {
     list-style-position: outside;
     margin-left: 2em;

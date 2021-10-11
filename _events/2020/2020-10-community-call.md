@@ -6,8 +6,8 @@ layout: event
 repeated: false
 category: community-call
 time:
-    - - start: 2020-10-08T14:00:00Z
-        end: 2020-10-08T15:00:00Z
+    - - start: 2020-10-08T16:00:00Z
+        end: 2020-10-08T17:00:00Z
 ---
 **Post call update:** : A summary of the call can be found [here](https://us-rse.org/2020-10-13-community-call-dei/).
 

@@ -6,8 +6,8 @@ layout: event
 repeated: false
 category: virtual-workshop
 time:
-    - - start: 2021-05-24T13:00:00Z
-        end: 2021-05-24T16:30:00Z
+    - - start: 2021-05-24T17:00:00Z
+        end: 2021-05-24T20:30:00Z
 ---
 
 Following the success of the 2020 US-RSE Virtual Workshop, we decided to keep the event this year virtual due to the ongoing pandemic. **The 2021 US-RSE Virtual Workshop will be held on two non-consecutive half days: May 24 and 27, 2021**, 1-4pm ET/12-3pm CT/10am-1pm PT.

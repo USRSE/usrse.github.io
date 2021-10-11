@@ -6,8 +6,8 @@ layout: event
 repeated: false
 category: careers
 time:
-    - - start: 2021-02-23T14:00:00Z
-        end: 2021-02-23T15:00:00Z
+    - - start: 2021-02-23T19:00:00Z
+        end: 2021-02-23T21:00:00Z
 ---
 
 We've teamed up with [The Academic Data Science Alliance (ADSA)](https://academicdatascience.org/) to host an Early Career Panel on Research Software Engineering and Data Science careers in academia on February 23, 2021 at 2ET/11PT.  

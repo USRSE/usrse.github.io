@@ -6,8 +6,8 @@ layout: event
 repeated: false
 category: community-call
 time:
-    - - start: 2020-02-11T14:00:00Z
-        end: 2020-02-11T15:00:00Z
+    - - start: 2020-02-11T18:00:00Z
+        end: 2020-02-11T19:00:00Z
 ---
 
 Our next community call is February 11, 2pm EST.  The main topic of discussion is a draft US-RSE Communications Guide to help coordinate activities of the group.  

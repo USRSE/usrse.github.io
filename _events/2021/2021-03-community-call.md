@@ -6,8 +6,8 @@ layout: event
 repeated: false
 category: community-call
 time:
-    - - start: 2021-03-11T12:00:00Z
-        end: 2021-03-11T13:00:00Z
+    - - start: 2021-03-11T17:00:00Z
+        end: 2021-03-11T18:00:00Z
 ---
 
 The next US-RSE community call is on March 11th at 12ET/11CT/10MT/9PT.

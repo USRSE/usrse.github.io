@@ -6,8 +6,8 @@ layout: event
 repeated: false
 category: community-call
 time:
-    - - start: 2020-09-10T14:00:00Z
-        end: 2020-09-10T15:00:00Z
+    - - start: 2020-09-10T15:00:00Z
+        end: 2020-09-10T16:00:00Z
 ---
 
 **Post call update:** A summary of the call can be found [here](https://us-rse.org/2020-09-18-community-call-hiring/).

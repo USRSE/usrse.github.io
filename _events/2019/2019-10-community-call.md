@@ -6,8 +6,8 @@ layout: event
 repeated: false
 category: community-call
 time:
-    - - start: 2019-10-29T15:00:00Z
-        end: 2019-10-29T16:00:00Z
+    - - start: 2019-10-29T18:00:00Z
+        end: 2019-10-29T19:00:00Z
 ---
 
 The next community call is on October 29 2ET. 

@@ -409,6 +409,83 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/426409?v=4"
             ]
+        },
+        {
+            "login": "andrewsu",
+            "name": "Andrew Su",
+            "contributions": [
+                "code"
+            ],
+            "profile": "http://sulab.org",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/2635409?v=4"
+            ]
+        },
+        {
+            "login": "chrisblanton",
+            "name": "Christopher Blanton",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/chrisblanton",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/43550454?v=4"
+            ]
+        },
+        {
+            "login": "castelao",
+            "name": "Guilherme Castelão",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/castelao",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/1903589?v=4"
+            ]
+        },
+        {
+            "login": "roelofsaj",
+            "name": "Abbey Roelofs",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/roelofsaj",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/14942055?v=4"
+            ]
+        },
+        {
+            "login": "mtbc",
+            "name": "Mark Carroll",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/mtbc",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/2630707?v=4"
+            ]
+        },
+        {
+            "login": "NickleDave",
+            "name": "David Nicholson",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://nicholdav.info/",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/11934090?v=4"
+            ]
+        },
+        {
+            "login": "bjoyce3",
+            "name": "Blake Joyce",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/bjoyce3",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/11023317?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

@@ -6,8 +6,8 @@ layout: event
 repeated: false
 category: community-call
 time:
-    - - start: 2019-07-19T15:00:00Z
-        end: 2019-07-19T16:00:00Z
+    - - start: 2019-07-19T18:00:00Z
+        end: 2019-07-19T19:00:00Z
 ---
 **Post call update:** : A summary of the call can be found [here](https://us-rse.org/2019-07-24-newsletter/).
 

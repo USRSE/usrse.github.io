@@ -8,8 +8,8 @@ layout: event
 repeated: false
 category: virtual-workshop
 time:
-    - - start: 2020-04-22T10:00:00Z
-        end: 2020-04-23T15:00:00Z
+    - - start: 2020-04-22T16:00:00Z
+        end: 2020-04-23T17:30:00Z
 ---
 
 We are excited to announce that the US-RSE Association will host a virtual workshop on April 22 and 23, 2020!

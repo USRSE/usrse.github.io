@@ -8,8 +8,8 @@ layout: event
 repeated: false
 category: conference
 time:
-    - - start: 2019-11-17T15:00:00Z
-        end: 2019-11-22T16:00:00Z
+    - - start: 2019-11-17T19:00:00Z
+        end: 2019-11-22T20:00:00Z
 ---
 
 

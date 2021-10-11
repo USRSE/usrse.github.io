@@ -6,7 +6,6 @@ layout: page
 {% include group-by-array.html collection=collection field="category" %}
 
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-
 <ul class="taxonomy__index">
   {% for category in group_names %}
     {% assign category_name = site.data.events.names[category].name | default: category %}
@@ -18,7 +17,7 @@ layout: page
         {% assign posts = posts | push: event %}
       {% endif %}
     {% endfor %}
-    {% unless posts == empty %}
+    {% unless posts == empty %}{% unless category_name == "" %}
       <li style="list-style:none">
         <a href="#{{ category | slugify | downcase }}">
           <strong>{{ category_name }}</strong>
@@ -27,7 +26,7 @@ layout: page
           </span>
         </a>
       </li>
-    {% endunless %}
+    {% endunless %}{% endunless %}
   {% endfor %}
 </ul>
 
@@ -51,9 +50,9 @@ layout: page
       {% assign posts = posts | push: event %}
     {% endif %}
   {% endfor %}
-  {% unless posts == empty %}
-    {% include events/events-subcollection.html collection=posts sort_by=page.sort_by sort_order=page.sort_order type=page.entries_layout category=category category_name=category_name %}
-  {% endunless %}
+    {% unless posts == empty %}{% unless category_name == "" %}
+      {% include events/events-subcollection.html collection=posts sort_by=page.sort_by sort_order=page.sort_order type=page.entries_layout category=category category_name=category_name %}
+  {% endunless %}{% endunless %}
 {% endfor %}
 
 <div class="row">
