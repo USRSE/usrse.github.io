@@ -3,7 +3,10 @@ layout: page
 title: DEI Mission Statement
 subtitle: Diversity, Equity, and Inclusion at US-RSE
 permalink: /about/dei-mission/
+menubar: about
+menubar_toc: true
 ---
+
 #### Diversity, Equity, and Inclusion at US-RSE
 
 The US-RSE Association is committed to providing an [inclusive environment with
