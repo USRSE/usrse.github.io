@@ -48,7 +48,7 @@ to do this.
 The repository comes with a [pull request template](PULL_REQUEST_TEMPLATE.md) that provides you with a checklist and
 helpful reminders for these points.
 
-1. All pull requests should be sent to the master branch, unless you are testing an integration, in which case you should cc @usrse-admin in an issue, or ask for help on the website channel of usrse.slack.com.
+1. All pull requests should be sent to the main branch, unless you are testing an integration, in which case you should cc @usrse-admin in an issue, or ask for help on the website channel of usrse.slack.com.
 2. Follow the existing code style precedent.
 3. Test and preview your PR locally, and tell the reviewers if you were not able to
 4. If necessary, update the README.md.
