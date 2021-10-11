@@ -50,7 +50,7 @@ jobs:
             set -e
             printf "Changes\n"
             git commit -m "Automated push to update jobs.yml $(date '+%Y-%m-%d')" || exit 0
-            git push origin master
+            git push origin main
         else
             set -e
             printf "No changes\n"

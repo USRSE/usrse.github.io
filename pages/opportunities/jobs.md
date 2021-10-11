@@ -22,12 +22,14 @@ permalink: /jobs/
 
 <br>
 
-{% if site.data.job-boards.boards | length > 0 %}
+{% assign job_boards = site.data.job-boards.boards %}
+{% assign job_boards_length = site.data.job-boards.boards | length %}
+{% if job_boards_length > 0 %}
 ### Other Job Boards
 
 The following boards might also be of interest.
 
-<ol>{% for board in site.data.job-boards.boards %}
+<ol>{% for board in job_boards %}
     <li><a href="{{ board.url }}" target="_blank">{{ board.name }}</a></li>
 {% endfor %}</ol>
 {% endif %}

@@ -41,7 +41,7 @@ jobs:
     - name: Open pull request
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH_AGAINST: "master"
+        BRANCH_AGAINST: "main"
       run: |
           export BRANCH_FROM="update/member-count-$(date '+%Y-%m-%d')"
           wget https://raw.githubusercontent.com/USRSE/usrse.github.io/71ae72c2a5524c502e0bb51c5ca764dd854eea18/scripts/pull-request.sh
