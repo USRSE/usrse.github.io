@@ -486,6 +486,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/11023317?v=4"
             ]
+        },
+        {
+            "login": "hackdna",
+            "name": "Ilya Sytchev",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/hackdna",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/452575?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
