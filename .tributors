@@ -240,5 +240,8 @@
         "name": "Blake Joyce",
         "bio": "I'm a code curious biologist.",
         "blog": "https://github.com/bjoyce3"
+    },
+    "hackdna": {
+        "name": "Ilya Sytchev"
     }
 }
