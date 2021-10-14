@@ -36,7 +36,7 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM Eastern
 | ----        | ------|------------------------------------------- |
 | 11:00 AM - 11:10 AM | Introduction, Blake Joyce/Ian Cosden   | Brief welcome.  |
 | 11:10 AM - 12:00 noon | Kickoff Panel     | Speakers introduce themselves and their RSE journey. |
-| 12:00 noon - 12:20 PM | Nicole Brewer, Purdue     | Title TBD                      |
+| 12:00 noon - 12:20 PM | Nicole Brewer, Purdue     | How to Recruit and Sustain a Diverse and Inclusive Workforce: A Case Study                 |
 | 12:20 PM - 12:45 PM | Q&A               |                                |
 | 1:00 PM - 1:20 PM | Rubern Lara and Mehmet Belgin, Georgia Tech     | The Interplay Between Research Software and CyberInfrastructure in a Complex Computing Environment                  |
 | 1:20 PM - 1:45 PM | Q&A               |                                |
