@@ -5726,7 +5726,7 @@ a.navbar-item:focus,a.navbar-item:focus-within,a.navbar-item:hover,a.navbar-item
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
     .navbar,.navbar-menu,.navbar-start,.navbar-end {
         align-items: stretch;
         display: flex;
