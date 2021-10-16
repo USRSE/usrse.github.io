@@ -497,6 +497,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/452575?v=4"
             ]
+        },
+        {
+            "login": "axrez",
+            "name": "Emil Østergaard",
+            "contributions": [
+                "code"
+            ],
+            "profile": "oestergaard.dev",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/34489999?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
