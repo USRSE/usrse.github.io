@@ -116,4 +116,4 @@ Our community is growing, but we want to make sure all US RSEs know about us.  H
 
 We need folks to help update content, approve pull requests, and generally help manage the website.  Join the website committee to help keep the website up and running.
 
-* **Get involved**: Join the #website channel on Slack and get acquainted with the website at https://github.com/USRSE/usrse.github.io 
+* **Get involved**: Join the #website channel on Slack and get acquainted with the website at [GitHub](https://github.com/USRSE/usrse.github.io)
