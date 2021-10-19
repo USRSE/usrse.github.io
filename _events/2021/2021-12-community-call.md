@@ -6,8 +6,8 @@ layout: event
 repeated: false
 category: community-call
 time:
-    - - start: 2021-12-09T15:00:00Z
-        end: 2021-12-09T16:00:00Z
+    - - start: 2021-12-09T17:00:00Z
+        end: 2021-12-09T18:00:00Z
 ---
 
 US-RSE community on December 9th, 2021 at 12ET/11CT/10MT/9PT.
