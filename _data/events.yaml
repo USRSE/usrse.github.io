@@ -13,4 +13,6 @@ names:
     name: Workshops
   association-meeting:
     name: US-RSE Association Meetings
+  election:
+    name: Steering Committee Election
 
