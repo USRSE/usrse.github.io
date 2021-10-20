@@ -19,7 +19,7 @@
       </div>
       <div class="col-xs-4 float-right">
         <h6 style="text-align: right; color: rgb(168, 168, 168)">
-          {{ post.event_date }}
+          {% if post.repeated %}Repeating{% else %}{{ post.event_date }}{% endif %}
         </h6>
       </div>
   </div>

@@ -90,8 +90,46 @@ In both cases, clicking on the Event will take the viewer to it's page, and they
 view additional content and the url provided. In the case of the archive, the bulk of content
 is only viewable on this page.
 
-### What is a repeated event?
+### How do I add an all day event?
 
+All day events render as a solid block (strip) on the calendar, and you can use similar syntax to the above but add `all_day: true`.
+You don't need to include an end time, but you do need to include a "start" with a date. Here is an example:
+
+```
+---
+title: International RSE Day
+event_date: "October 14, 2021"
+layout: event
+repeated: true
+category: virtual-workshop
+all_day: true
+time:
+    - - start: 2021-10-14
+---
+
+October 14th is [International RSE Day](https://researchsoftware.org/council/intl-rse-day.html)!
+
+**Background**
+
+_First International RSE Day Virtual Workshop Events Oct 14, 11:00 AM Eastern - 4:45 PM Eastern._
+
+An NSF-funded workshop titled “Building the research innovation workforce: a workshop
+to identify new insights and directions to advance the research computing community” recently found that collaborations between research software engineers, cyberinfrastructure professionals, and researchers were key to the research computing community [https://www.rcac.purdue.edu/files/ciworkforce2020/report.pdf](https://www.rcac.purdue.edu/files/ciworkforce2020/report.pdf). 
+
+But what do successful RSE, CI professional, and researcher teams and stakeholder interactions look like? How are they funded and how did people get started in this career? Join the activities of an international RSE day to join the discussion!
+```
+If you need it to span multiple days, just add multiple starts.
+
+```yaml
+---
+...
+time:
+    - - start: 2021-10-14
+    - - start: 2021-10-15
+---
+```
+
+### What is a repeated event?
 
 You'll notice that there is a folder called "repeated" in the events folder:
 
@@ -107,8 +145,34 @@ to an agenda would be appropriate, while the same call that varies in schedule
 or requires an updated description would not quality.
 An annual event, or one that would require a different description, would
 not be repeated, and should be placed in a folder named by date.
-Repeated events are always shown at the top of the events page, and 
-do not expire.
+As an example, here is a yearly event that happens on the same month and day:
+
+```yaml
+---
+title: International RSE Day
+event_date: "October 14, 2021"
+layout: event
+category: virtual-workshop
+all_day: true
+
+# Repeated events metadata
+repeated: true
+interval: 1
+frequency: "yearly"
+date_start: "2021-10-14"
+until: 2030-10-14
+time:
+  - - start "2021-10-14"
+---
+```
+
+Note that getting this format right for your date is challenging!
+You can play around with the plugin that we use to generate this [here](https://jakubroztocil.github.io/rrule/)
+and please open an issue if the fields you need are not supported. **Important** not
+all rrule fields are rendered to the template, so you should check the calendar.html template
+to see what is (view source) or the [_includes/events/event.js](_includes/events/event.js)
+for the logic.
+
 
 ### 4. How do I add a community document?
 
