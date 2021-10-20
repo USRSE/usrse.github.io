@@ -1,27 +1,19 @@
 ---
-title: Nominations open for US-RSE Steering Committee
-expires: 2021-11-06
-event_date: "October 22, 2021"
+title: Voting period for the US-RSE Steering Committee election
+expires: 2021-12-11
+event_date: "December 3-10, 2021"
 layout: event
 repeated: false
 category: election
 time:
-    - - start: 2021-10-22
-        end: 2021-11-05
+    - - start: 2021-12-03
+        end: 2021-12-10
 ---
 
-[Nominations](https://docs.google.com/forms/d/e/1FAIpQLSdoLAWkUqsv7axDFnaV3GEw0gRBDemqSztbxKTtGr7EE1rWqA/viewform?usp=sf_link),
-including self-nominations, for the [US-RSE Steering Committee
-election](https://us-rse.org/about/election/) are now open. Nominations are due
-November 5, 2021.
 
-Interested members are encouraged to [nominate
-themselves](https://docs.google.com/forms/d/e/1FAIpQLSdoLAWkUqsv7axDFnaV3GEw0gRBDemqSztbxKTtGr7EE1rWqA/viewform?usp=sf_link).
-Alternatively, if you know of a member who you think would make a good
-candidate, you can [submit a nomination for someone
-else](https://docs.google.com/forms/d/e/1FAIpQLSdoLAWkUqsv7axDFnaV3GEw0gRBDemqSztbxKTtGr7EE1rWqA/viewform?usp=sf_link).
-All US-RSE members in good standing as of October 22, 2021 (when
-nominations are opened) are eligible to be nominated as candidates.
+The voting period for the [2021 US-RSE Steetring Committee
+election](https://us-rse.org/about/election/) is from December 3 through
+December 10, 2021.
 
 See our website for [election timeline and
 details](https://us-rse.org/about/election/) or contact Election Chairs [Julia

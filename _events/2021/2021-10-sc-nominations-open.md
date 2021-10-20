@@ -1,5 +1,5 @@
 ---
-title: Nominations open for US-RSE Steering Committee
+title: Nominations Open for US-RSE Steering Committee
 expires: 2021-11-06
 event_date: "October 22, 2021"
 layout: event

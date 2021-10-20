@@ -1,5 +1,5 @@
 ---
-title: US-RSE Steering Committee election results annouced
+title: US-RSE Steering Committee election results announced
 expires: 2021-12-18
 event_date: "December 17, 2021"
 layout: event
@@ -11,7 +11,7 @@ time:
 ---
 
 The results of the [2021 US-RSE Steering Committee
-election](https://us-rse.org/about/election/) will be annoucemed by December
+election](https://us-rse.org/about/election/) will be announced by December
 17, 2021.
 
 See our website for [election timeline and
