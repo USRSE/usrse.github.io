@@ -11,7 +11,7 @@ time:
 ---
 
 
-The voting period for the [2021 US-RSE Steetring Committee
+The voting period for the [2021 US-RSE Steering Committee
 election](https://us-rse.org/about/election/) is from December 3 through
 December 10, 2021.
 
