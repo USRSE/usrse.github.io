@@ -4,6 +4,7 @@ expires: 2021-10-14
 event_date: "October 14, 2021"
 layout: event
 repeated: false
+duration: 345
 category: virtual-workshop
 time:
     - - start: 2021-10-14T15:00:00Z

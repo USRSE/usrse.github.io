@@ -3,14 +3,47 @@
 {%- assign excerpt = include.excerpt | default: post.excerpt | default: page.excerpt %}
 {%- assign url = include.url | default: post.url | default: page.url %}
 {%- assign event_id = post.id | split: '/' | last %}
-<div title="Add to Calendar" class="add-to-calendar">
-    <span class="start">{{ time.start | date_to_xmlschema }}</span>
-    {%- if time.end %}
-    <span class="end">{{ time.end | date_to_xmlschema }}</span>
-    {%- endif %}
-    <span class="title">{{ title }}</span>
-    <span class="description">{{ excerpt | markdownify | strip_html }}</span>
-    <span class="location">{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}/{% endif %}{{ url }}</span>
-    <span class="organizer_email">{{ site.email }}</span>
-    <span class="organizer">{{ site.author.name }}</span>
-</div>
+
+<div id="calendar-button"></div>
+<script src="{{ site.baseurl }}/assets/js/add-to-calendar.min.js"></script>
+<script>
+var myCalendar = addToCalendar({
+  options: {
+    class: 'usrse-event',
+    
+    // You can pass an ID. If you don't, one will be generated for you
+    id: 'usrse-event-{{ title | slugify }}'
+  },
+  data: {
+    // Event title
+    title: '{{ title }}',
+
+    // Event start date
+    start: new Date('{{ time.start | date_to_xmlschema }}'),
+
+    {% if time.end %}end: new Date('{{ time.end | date_to_xmlschema }}'),{% endif %}
+
+    // Event timezone. Will convert the given time to that zone
+    timezone: "America/New_York", 
+
+    // Event duration (IN MINUTES)
+    {% if post.duration %}duration: {{ post.duration }},{% endif %}
+
+    // You can also choose to set an end time
+    // If an end time is set, this will take precedence over duration
+    // end: new Date('June 15, 2013 23:00'), 
+    
+    // You can also choose to set 'all day'
+    // If this is set, this will override end time, duration and timezone
+    {% if post.all_day %}allday:true,{% endif %}
+
+    // Event Address
+    address: "{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}/{% endif %}{{ url }}",
+
+    // Event Description
+    description: '{{ post.content | strip_html | truncatewords: 50 }}'
+  }
+});
+
+document.querySelector('#calendar-button').appendChild(myCalendar);
+</script>

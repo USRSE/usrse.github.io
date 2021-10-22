@@ -4,6 +4,7 @@ expires: 2021-02-24
 event_date: "February 23, 2021"
 layout: event
 repeated: false
+duration: 120
 category: careers
 time:
     - - start: 2021-02-23T19:00:00Z

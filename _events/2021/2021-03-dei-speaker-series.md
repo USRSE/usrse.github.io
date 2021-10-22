@@ -4,6 +4,7 @@ subtitle: US-RSE DEI-WG Speaker Series
 expires: 2021-03-25
 event_date: "March 25, 2021"
 layout: event
+duration: 60
 repeated: false
 category: dei
 time:

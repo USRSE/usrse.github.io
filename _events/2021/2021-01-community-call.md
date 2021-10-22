@@ -4,6 +4,7 @@ expires: 2021-01-14
 event_date: "January 14, 2021"
 layout: event
 repeated: false
+duration: 60
 category: community-call
 time:
     - - start: 2021-01-14T17:00:00Z

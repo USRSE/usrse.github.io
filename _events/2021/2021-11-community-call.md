@@ -3,6 +3,7 @@ title: Nov 2021 Community Call
 expires: 2021-11-11
 event_date: "Nov 10, 2021"
 layout: event
+duration: 60
 repeated: false
 category: community-call
 time:

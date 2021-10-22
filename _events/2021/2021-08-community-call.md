@@ -3,6 +3,7 @@ title: August 2021 Community Call
 expires: 2021-08-12
 event_date: "August 12, 2021"
 layout: event
+duration: 60
 repeated: false
 category: community-call
 time:

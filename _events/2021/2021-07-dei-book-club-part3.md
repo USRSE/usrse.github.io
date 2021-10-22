@@ -3,6 +3,7 @@ title: "Better Allies Book Club Discussion, Part III"
 expires: 2021-07-27
 event_date: "July 27, 2021"
 layout: event
+duration: 60
 repeated: false
 time:
     - - start: 2021-07-27T16:00:00Z

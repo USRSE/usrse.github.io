@@ -5,6 +5,7 @@ expires: 2021-08-12
 event_date: "August 12, 2021"
 layout: event
 repeated: false
+duration: 90
 category: dei
 time:
     - - start: 2021-08-12T20:00:00Z
