@@ -94,7 +94,7 @@ about candidates.
 Information about the voting process will be made available soon.
 
 <!--
-Elections will be run through https://electionbuddy.com.  US-RSE members' email addresses will be shared with this site for the sole purpose of voting.  Each US-RSE member as of the day before the voting period opens, December 12, 2020, gets one ballot with the voting rule of [single transferable vote (STV)](https://electionbuddy.com/features/voting-systems/stv-voting).  This voting rule asks each voter to rank the candidates, and seats are allocated across candidates using this ranking information.
+Elections will be run through [https://electionbuddy.com](https://electionbuddy.com).  US-RSE members' email addresses will be shared with this site for the sole purpose of voting.  Each US-RSE member as of the day before the voting period opens, December 12, 2020, gets one ballot with the voting rule of [single transferable vote (STV)](https://electionbuddy.com/features/voting-systems/stv-voting).  This voting rule asks each voter to rank the candidates, and seats are allocated across candidates using this ranking information.
 
 The results of the election are valid regardless of the turnout rate for the election.
 -->
