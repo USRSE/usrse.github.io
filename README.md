@@ -48,8 +48,7 @@ Python. If you copy the format above, you should be ok.
 You can add an event or training to the site by adding a markdown file in the [_events](_events)
 folder, organized by year. Do not use the full date (e.g. YYYY-MM-DD-<event-name>.md) in the file name,
 Jekyll will not post pages that it interprets to have a future date in the filename. A better option is
-to use a partial date (e.g. YYYY-MM-<event-name>.md).
-Here is an example of a file in `_events/2019` for PEARC19:
+to use a partial date (e.g. YYYY-MM-<event-name>.md). Here is an example of a file in `_events/2019` for PEARC19:
 
 ```markdown
 ---
@@ -57,6 +56,8 @@ title: PEARC19
 location: Chicago, IL
 url: https://www.pearc19.pearc.org/
 expires: 2019-08-01
+duration: 45
+category: workshop
 event_date: "November 17–22, 2019"
 layout: event
 repeated: false
@@ -70,6 +71,7 @@ Join us at [PEARC19](https://www.pearc19.pearc.org/) for a Birds of a Feather (B
 
 The top section is frontend matter that must include the title, location, url, layout as "event" 
 event date, an expiration date, a time, and a "repeated" variable (true or false).
+The duration should be in minutes, and is for the calendar export. If you leave it blank, a default (1 hour) is typically used.
 Notice that the event date is a string that doesn't get parsed, while the expires must be a date in the format shown.
 Importantly, the time should be formatted as shown above, and should be in UTC time, which is 4 hours later than Eastern.
 So for the event above, 5:15PM Eastern time corresponds to UTC 21:15. We get this by converting 5:15 to a 24 hour clock (17:15) and
@@ -86,12 +88,60 @@ and it's nice to quickly see the mapping for other time zones that are close by.
 The bottom section (the content) you can write any amount and length
 of markdown that is desired. When the event is active (before expiration) the full content will
 be shown on the "Events and Training" page. Once it expires, it will move into the events archive.
-In both cases, clicking on the Event will take the viewer to it's page, and they can
+In both cases, clicking on the Event will take the viewer to its page, and they can
 view additional content and the url provided. In the case of the archive, the bulk of content
 is only viewable on this page.
 
-### What is a repeated event?
+#### Why isn't my event showing up?
 
+Uh oh, you didn't follow the naming conventions! If you use a full date in the markdown file name (e.g. YYYY-MM-DD-<event-name>.md)
+Jekyll is going to see this as a post. By default Jekyll does not show posts in the future, so unless you are adding an event in the past, it isn't
+going to show up. Try renaming your file to something with a year and month partial date such as (e.g. YYYY-MM-<event-name>.md) and it will show up.
+
+#### What are the categories of events?
+
+It's suggested to look in [_data/events.yaml](_data/events.yaml) for the most up to date categories. Suggestions are:
+
+ - dei: Diversity, Equity, and Inclusion
+ - community-call: Community Calls
+ - careers: Careers    
+ - virtual-workshop: Virtual Workshop
+ - conference: Conferences
+ - workshop: Workshops
+ - association-meeting: US-RSE Annual General Meeting and similar association-wide meetings
+
+#### How do I add an all day event?
+
+All day events render as a solid block (strip) on the calendar, and you can use similar syntax to the above but add `all_day: true`.
+You don't need to include an end time, but you do need to include a "start" with a date. Here is an example:
+
+```
+---
+title: An Annual Event
+event_date: "October 14, 2021"
+layout: event
+repeated: true
+category: virtual-workshop
+all_day: true
+time:
+    - - start: 2021-10-14
+---
+
+Here is information about my annual event!
+```
+
+If you need it to span multiple days, just add multiple starts.
+
+```yaml
+---
+...
+time:
+    - - start: 2021-10-14
+    - - start: 2021-10-15
+---
+```
+
+#### What is a repeated event?
 
 You'll notice that there is a folder called "repeated" in the events folder:
 
@@ -107,8 +157,65 @@ to an agenda would be appropriate, while the same call that varies in schedule
 or requires an updated description would not quality.
 An annual event, or one that would require a different description, would
 not be repeated, and should be placed in a folder named by date.
-Repeated events are always shown at the top of the events page, and 
-do not expire.
+As an example, here is a yearly event that happens on the same month and day:
+
+```yaml
+---
+title: International RSE Day
+event_date: "October 14, 2021"
+layout: event
+category: virtual-workshop
+all_day: true
+
+# Repeated events metadata
+repeated: true
+interval: 1
+frequency: "yearly"
+date_start: "2021-10-14"
+until: 2030-10-14
+time:
+  - - start "2021-10-14"
+---
+```
+
+Note that this straightforward format is recommended only for easy repetitions. Also
+note that not all [rrule](https://jakubroztocil.github.io/rrule/) fields are rendered to the template, so you should check the calendar.html template
+to see what is supported (view source) or the [_includes/events/event.js](_includes/events/event.js)
+for the logic. If you need to, for example "repeat on the first tuesday of every month" you should use an rdate string 
+instead. Here is an example:
+
+```yaml
+---
+...
+layout: event
+time:
+  - - start 2021-01-04
+
+# Repeated events information
+repeated: true
+
+# use an rdate string instead (best for complex repeated events)
+# note that the dtstart and rdate at the end are the same
+rrule: 
+  - DTSTART;TZID=America/New_York:20210104T113000
+  # first tuesday of every month
+  - RRULE:UNTIL=20220731T080000;FREQ=MONTHLY;BYDAY=+1TU
+  - RDATE;TZID=America/New_York:20191014T153000
+---
+```
+
+The formatting of the lines above is essential - even putting them out of order
+or exchanging a semicolon can lead to the entire interface breaking. It took me (@vsoch)
+two instances of testing and changing library versions, formatting, and setup to finally
+get this working. To derive your string, you can play around with the 
+plugin that we use to generate this [here](https://jakubroztocil.github.io/rrule/).
+
+
+#### Why isn't my add to calendar button showing up?
+
+Adding to the calendar isn't currently supported for repeating events - the reason
+being that we can't reliably render the repetitions in the code to generate the button.
+If anyone would like to work on this, please [post on this issue](https://github.com/USRSE/usrse.github.io/issues/558) or (better) just go for it :)
 
 ### 4. How do I add a community document?
 

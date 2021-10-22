@@ -4,6 +4,7 @@ expires: 2021-05-27
 event_date: "May 24, 2021 and May 27, 2021, 1-4pm ET"
 layout: event
 repeated: false
+duration: 210
 category: virtual-workshop
 time:
     - - start: 2021-05-24T17:00:00Z
