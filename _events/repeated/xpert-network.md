@@ -6,33 +6,20 @@ url: https://sites.udel.edu/xpert-cdi/
 expires: 2022-07-31
 event_date: "Reoccurring: 3rd Thursday every other month, 2-3:30pm ET"
 layout: event
-#time:
-#  - - start 2019-10-14
+time:
+  - - start 2019-10-14
 
 # Repeated events information
-# repeated: true
+repeated: true
 
-# every other month
-# date_start: 2019-10-14
-
-# 3rd week?
-# byweekno: [3]
-
-# Thursday
-# byweekday: ["Th"]
-
-# until: 2022-07-31
-# bymonth: [1, 3, 5, 7, 9, 11]
-# frequency: "monthly"
+# use an rdate string instead (best for complex repeated events)
+# note that the dtstart and rdate at the end are the same
+rrule: 
+  - DTSTART;TZID=America/New_York:20191014T140000
+# third thursday of every month
+  - RRULE:UNTIL=20220731T080000;FREQ=MONTHLY;BYDAY=+3TH
+  - RDATE;TZID=America/New_York:20191014T153000
 ---
-
-Yes, it is the Education & Training Working group monthly meeting. The meeting occurs on the first Tuesday of each month. 11:30-12:30 Eastern. Google Drive Folder for agendas and notes: https://drive.google.com/drive/u/1/folders/1mwnSDKh57I5MA9lk2DhRVxhjNc76wDXT
-
-Zoom link available by contacting us on Slack.
-
-Please let me know what else you need? Also, if you are going to do this, then I will not create individual events. Is that correct?
-
-Thank you!
 
 This project aims to advance science by increasing the productivity of researchers who use computational and data-intensive (CDI) methods for pushing the frontiers by developing a network for exchange of best practices in expert assistance and in the creation of supporting tool environments.
 

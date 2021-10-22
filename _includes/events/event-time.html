@@ -35,3 +35,7 @@ document.getElementById("end-time").textContent = end_date  + " " + tz;
 document.getElementById("end-time").textContent = tz;
 {% endif %}
 </script>
+
+{% unless include.no_button %}
+&nbsp;{% include add-to-calendar-button.html %}
+{% endunless %}

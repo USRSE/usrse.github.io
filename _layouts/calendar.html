@@ -2,27 +2,45 @@
 layout: page
 ---
 
+<style>
+.fc-day-number {
+  text-align: left !important;
+}
+</style>
+
 {{ content }}
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.css" />
-<div id='calendar'></div>
-<br>
-<p class="text-right">
-    <a href="{{ site.shared_calendar }}">Add all events to your calendar</a>
-</p>
-
-<aside class="sidebar__right events-sidebar">
+<div class="row">
+  <div class="col-md-9">
+    <div id='calendar'></div>
+  </div>
+  <div class="col-md-3">
   {% for post in site.events %}
     {% include events/event-card.html hidden=true %}
   {% endfor %}
   {% for post in site.posts %}
     {% include faq-card.html hidden=true excerpt_length=300 %}
   {% endfor %}
-</aside>
+  </div>
+</div>
 
-<script src='https://cdn.jsdelivr.net/npm/rrule@2.6.4/dist/es5/rrule.min.js'></script>
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.js"></script>
-<script src='https://cdn.jsdelivr.net/npm/@fullcalendar/rrule@5.5.0/main.global.min.js'></script>
+<div class="row" style="padding-top:30px">
+  <div class="col-md-12">
+  <p>
+    <!-- need an idea for how to implement - this previously would just be a link to a Google Calendar,
+    <!-- OR it requires an API key, non trivial to do. -->
+    <!--<a href="{{ site.shared_calendar }}">Add all events to your calendar</a>-->
+  </p>
+  </div>
+</div>
+
+
+<script src='https://cdn.jsdelivr.net/npm/luxon@1.24.1/build/global/luxon.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/rrule@2.6.4/dist/es5/rrule.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/rrule@5.5.1/main.global.min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/@fullcalendar/luxon@5.5.0/main.global.min.js'></script>
 
 <script src="{{ site.baseurl }}/assets/js/add-to-calendar.min.js"></script>
 <script>

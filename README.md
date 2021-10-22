@@ -48,8 +48,7 @@ Python. If you copy the format above, you should be ok.
 You can add an event or training to the site by adding a markdown file in the [_events](_events)
 folder, organized by year. Do not use the full date (e.g. YYYY-MM-DD-<event-name>.md) in the file name,
 Jekyll will not post pages that it interprets to have a future date in the filename. A better option is
-to use a partial date (e.g. YYYY-MM-<event-name>.md).
-Here is an example of a file in `_events/2019` for PEARC19:
+to use a partial date (e.g. YYYY-MM-<event-name>.md). Here is an example of a file in `_events/2019` for PEARC19:
 
 ```markdown
 ---
@@ -90,7 +89,24 @@ In both cases, clicking on the Event will take the viewer to it's page, and they
 view additional content and the url provided. In the case of the archive, the bulk of content
 is only viewable on this page.
 
-### How do I add an all day event?
+#### Why isn't my event showing up?
+
+Uh oh, you didn't follow the naming conventions! If you use a full date in the markdown file name (e.g. YYYY-MM-DD-<event-name>.md)
+Jekyll is going to see this as a post. By default Jekyll does not show posts in the future, so unless you are adding an event in the past, it isn't
+going to show up. Try renaming your file to something with a year and month partial date such as (e.g. YYYY-MM-<event-name>.md) and it will show up.
+
+#### What are the categories of events?
+
+It's suggested to look in [_data/events.yaml](_data/events.yaml) for the most up to date categories. Suggestions are:
+
+ - dei: Diversity, Equity, and Inclusion
+ - community-call: Community Calls
+ - careers: Careers    
+ - virtual-workshop: Virtual Workshop
+ - conference: Conferences
+ - workshop: Workshops
+
+#### How do I add an all day event?
 
 All day events render as a solid block (strip) on the calendar, and you can use similar syntax to the above but add `all_day: true`.
 You don't need to include an end time, but you do need to include a "start" with a date. Here is an example:
@@ -129,7 +145,7 @@ time:
 ---
 ```
 
-### What is a repeated event?
+#### What is a repeated event?
 
 You'll notice that there is a folder called "repeated" in the events folder:
 
@@ -166,12 +182,37 @@ time:
 ---
 ```
 
-Note that getting this format right for your date is challenging!
-You can play around with the plugin that we use to generate this [here](https://jakubroztocil.github.io/rrule/)
-and please open an issue if the fields you need are not supported. **Important** not
-all rrule fields are rendered to the template, so you should check the calendar.html template
-to see what is (view source) or the [_includes/events/event.js](_includes/events/event.js)
-for the logic.
+Note that this straight forward format is recommended only for easy repetitions. Also
+note that not all rrule fields are rendered to the template, so you should check the calendar.html template
+to see what is supported (view source) or the [_includes/events/event.js](_includes/events/event.js)
+for the logic. If you need to, for example "repeat on the first tuesday of every month" you should use an rdate string 
+instead. Here is an example:
+
+```yaml
+---
+...
+layout: event
+time:
+  - - start 2021-01-04
+
+# Repeated events information
+repeated: true
+
+# use an rdate string instead (best for complex repeated events)
+# note that the dtstart and rdate at the end are the same
+rrule: 
+  - DTSTART;TZID=America/New_York:20210104T113000
+  # first tuesday of every month
+  - RRULE:UNTIL=20220731T080000;FREQ=MONTHLY;BYDAY=+1TU
+  - RDATE;TZID=America/New_York:20191014T153000
+---
+```
+
+The formatting of the lines above is essential - even putting them out of order
+or exchanging a semicolon can lead to the entire interface breaking. It took me (@vsoch)
+two instances of testing and changing library versions, formatting, and setup to finally
+get this working. To derive your string, you can play around with the 
+plugin that we use to generate this [here](https://jakubroztocil.github.io/rrule/).
 
 
 ### 4. How do I add a community document?
