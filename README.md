@@ -57,6 +57,7 @@ location: Chicago, IL
 url: https://www.pearc19.pearc.org/
 expires: 2019-08-01
 duration: 45
+category: workshop
 event_date: "November 17–22, 2019"
 layout: event
 repeated: false
@@ -87,7 +88,7 @@ and it's nice to quickly see the mapping for other time zones that are close by.
 The bottom section (the content) you can write any amount and length
 of markdown that is desired. When the event is active (before expiration) the full content will
 be shown on the "Events and Training" page. Once it expires, it will move into the events archive.
-In both cases, clicking on the Event will take the viewer to it's page, and they can
+In both cases, clicking on the Event will take the viewer to its page, and they can
 view additional content and the url provided. In the case of the archive, the bulk of content
 is only viewable on this page.
 
