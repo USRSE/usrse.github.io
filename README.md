@@ -56,6 +56,7 @@ title: PEARC19
 location: Chicago, IL
 url: https://www.pearc19.pearc.org/
 expires: 2019-08-01
+duration: 45
 event_date: "November 17–22, 2019"
 layout: event
 repeated: false
@@ -69,6 +70,7 @@ Join us at [PEARC19](https://www.pearc19.pearc.org/) for a Birds of a Feather (B
 
 The top section is frontend matter that must include the title, location, url, layout as "event" 
 event date, an expiration date, a time, and a "repeated" variable (true or false).
+The duration should be in minutes, and is for the calendar export. If you leave it blank, a default (1 hour) is typically used.
 Notice that the event date is a string that doesn't get parsed, while the expires must be a date in the format shown.
 Importantly, the time should be formatted as shown above, and should be in UTC time, which is 4 hours later than Eastern.
 So for the event above, 5:15PM Eastern time corresponds to UTC 21:15. We get this by converting 5:15 to a 24 hour clock (17:15) and
@@ -214,6 +216,12 @@ two instances of testing and changing library versions, formatting, and setup to
 get this working. To derive your string, you can play around with the 
 plugin that we use to generate this [here](https://jakubroztocil.github.io/rrule/).
 
+
+#### Why isn't my add to calendar button showing up?
+
+Adding to the calendar isn't currently supported for repeating events - the reason
+being we can't reliably render the repetitions in the code to generate the button.
+If anyone would like to work on this, please [post on this issue](https://github.com/USRSE/usrse.github.io/issues/558) or (better) just go for it :)
 
 ### 4. How do I add a community document?
 

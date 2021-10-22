@@ -7,6 +7,7 @@ event_date: "July 28 - August 1, 2019"
 layout: event
 repeated: false
 category: conference
+duration: 45
 time:
     - - start: 2019-07-29T21:15:00Z
         end: 2019-07-29T22:00:00Z

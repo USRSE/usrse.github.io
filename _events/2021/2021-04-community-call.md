@@ -3,6 +3,7 @@ title: April 2021 Community Call
 expires: 2021-04-08
 event_date: "April 8, 2021"
 layout: event
+duration: 60
 repeated: false
 category: community-call
 time:

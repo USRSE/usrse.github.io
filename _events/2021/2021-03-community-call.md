@@ -4,6 +4,7 @@ expires: 2021-03-11
 event_date: "March 11, 2021"
 layout: event
 repeated: false
+duration: 60
 category: community-call
 time:
     - - start: 2021-03-11T17:00:00Z

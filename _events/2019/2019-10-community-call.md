@@ -5,6 +5,7 @@ event_date: "October 29, 2019"
 layout: event
 repeated: false
 category: community-call
+duration: 60
 time:
     - - start: 2019-10-29T18:00:00Z
         end: 2019-10-29T19:00:00Z

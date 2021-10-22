@@ -4,6 +4,7 @@ expires: 2021-06-23
 event_date: "June 22, 2021"
 layout: event
 repeated: false
+duration: 60
 category: dei
 time:
     - - start: 2021-06-22T16:00:00Z

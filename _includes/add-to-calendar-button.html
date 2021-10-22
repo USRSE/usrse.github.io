@@ -20,12 +20,14 @@ var myCalendar = addToCalendar({
 
     // Event start date
     start: new Date('{{ time.start | date_to_xmlschema }}'),
-    
+
+    {% if time.end %}end: new Date('{{ time.end | date_to_xmlschema }}'),{% endif %}
+
     // Event timezone. Will convert the given time to that zone
     timezone: "America/New_York", 
 
     // Event duration (IN MINUTES)
-    duration: 120,
+    {% if post.duration %}duration: {{ post.duration }},{% endif %}
 
     // You can also choose to set an end time
     // If an end time is set, this will take precedence over duration
@@ -39,7 +41,7 @@ var myCalendar = addToCalendar({
     address: "{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}/{% endif %}{{ url }}",
 
     // Event Description
-    description: '{{ excerpt | markdownify | strip_html | split: "\n" | slice: 1,3 | join: " " }}'
+    description: '{{ post.content | strip_html | truncatewords: 50 }}'
   }
 });
 
