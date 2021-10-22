@@ -107,6 +107,7 @@ It's suggested to look in [_data/events.yaml](_data/events.yaml) for the most up
  - virtual-workshop: Virtual Workshop
  - conference: Conferences
  - workshop: Workshops
+ - association-meeting: US-RSE Annual General Meeting and similar association-wide meetings
 
 #### How do I add an all day event?
 
