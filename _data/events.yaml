@@ -11,4 +11,6 @@ names:
     name: Conferences
   workshop:
     name: Workshops
+  association-meeting:
+    name: US-RSE Association Meeting
 
