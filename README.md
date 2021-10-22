@@ -117,7 +117,7 @@ You don't need to include an end time, but you do need to include a "start" with
 
 ```
 ---
-title: International RSE Day
+title: An Annual Event
 event_date: "October 14, 2021"
 layout: event
 repeated: true
@@ -127,17 +127,9 @@ time:
     - - start: 2021-10-14
 ---
 
-October 14th is [International RSE Day](https://researchsoftware.org/council/intl-rse-day.html)!
-
-**Background**
-
-_First International RSE Day Virtual Workshop Events Oct 14, 11:00 AM Eastern - 4:45 PM Eastern._
-
-An NSF-funded workshop titled “Building the research innovation workforce: a workshop
-to identify new insights and directions to advance the research computing community” recently found that collaborations between research software engineers, cyberinfrastructure professionals, and researchers were key to the research computing community [https://www.rcac.purdue.edu/files/ciworkforce2020/report.pdf](https://www.rcac.purdue.edu/files/ciworkforce2020/report.pdf). 
-
-But what do successful RSE, CI professional, and researcher teams and stakeholder interactions look like? How are they funded and how did people get started in this career? Join the activities of an international RSE day to join the discussion!
+Here is information about my annual event!
 ```
+
 If you need it to span multiple days, just add multiple starts.
 
 ```yaml
@@ -186,8 +178,8 @@ time:
 ---
 ```
 
-Note that this straight forward format is recommended only for easy repetitions. Also
-note that not all rrule fields are rendered to the template, so you should check the calendar.html template
+Note that this straightforward format is recommended only for easy repetitions. Also
+note that not all [rrule](https://jakubroztocil.github.io/rrule/) fields are rendered to the template, so you should check the calendar.html template
 to see what is supported (view source) or the [_includes/events/event.js](_includes/events/event.js)
 for the logic. If you need to, for example "repeat on the first tuesday of every month" you should use an rdate string 
 instead. Here is an example:
@@ -222,7 +214,7 @@ plugin that we use to generate this [here](https://jakubroztocil.github.io/rrule
 #### Why isn't my add to calendar button showing up?
 
 Adding to the calendar isn't currently supported for repeating events - the reason
-being we can't reliably render the repetitions in the code to generate the button.
+being that we can't reliably render the repetitions in the code to generate the button.
 If anyone would like to work on this, please [post on this issue](https://github.com/USRSE/usrse.github.io/issues/558) or (better) just go for it :)
 
 ### 4. How do I add a community document?

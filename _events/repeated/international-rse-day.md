@@ -4,15 +4,19 @@ event_date: "October 14, 2021"
 layout: event
 category: virtual-workshop
 all_day: true
-
-# Repeated events metadata
-repeated: true
-interval: 1
-frequency: "yearly"
-date_start: "2021-10-14"
-until: 2030-10-14
 time:
   - - start "2021-10-14"
+
+# Repeated events metadata - second Thursday of October
+repeated: true
+
+# use an rdate string instead (best for complex repeated events)
+# note that the dtstart and rdate at the end are the same
+rrule: 
+  - DTSTART;TZID=America/New_York:20211014T110000
+# third thursday of every month
+  - RRULE:UNTIL=20301031T000000;FREQ=MONTHLY;BYDAY=+2TH
+  - RDATE;TZID=America/New_York:20211014T110000
 ---
 
 October 14th is [International RSE Day](https://researchsoftware.org/council/intl-rse-day.html)!
