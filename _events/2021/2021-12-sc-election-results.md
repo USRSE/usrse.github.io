@@ -6,8 +6,8 @@ layout: event
 repeated: false
 category: election
 time:
-    - - start: 2021-12-17
-        end: 2021-12-17
+    - - start: 2021-12-17T17:00:00Z
+        end: 2021-12-17T22:00:00Z
 ---
 
 The results of the [2021 US-RSE Steering Committee

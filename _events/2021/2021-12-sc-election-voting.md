@@ -6,8 +6,8 @@ layout: event
 repeated: false
 category: election
 time:
-    - - start: 2021-12-03
-        end: 2021-12-10
+    - - start: 2021-12-03T04:01:00Z
+        end: 2021-12-10T03:59:00Z
 ---
 
 

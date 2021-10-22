@@ -6,8 +6,8 @@ layout: event
 repeated: false
 category: election
 time:
-    - - start: 2021-10-22
-        end: 2021-11-05
+    - - start: 2021-10-22T04:01:00Z
+        end: 2021-11-06T03:59:00Z
 ---
 
 [Nominations](https://docs.google.com/forms/d/e/1FAIpQLSdoLAWkUqsv7axDFnaV3GEw0gRBDemqSztbxKTtGr7EE1rWqA/viewform?usp=sf_link),
