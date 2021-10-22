@@ -23,6 +23,11 @@ else](https://docs.google.com/forms/d/e/1FAIpQLSdoLAWkUqsv7axDFnaV3GEw0gRBDemqSz
 All US-RSE members in good standing as of October 22, 2021 (when
 nominations are opened) are eligible to be nominated as candidates.
 
+Nominations of others will only be shared with the Election Chair and the
+nominated individual. The Election Chair will contact the nominated individual
+to let them know they were nominated, and by whom, and to confirm their
+interest in participating. The information will not be made public.
+
 See our website for [election timeline and
 details](https://us-rse.org/about/election/) or contact Election Chairs [Julia
 Damerow](mailto:jdamerow@asu.edu) or [Lance
