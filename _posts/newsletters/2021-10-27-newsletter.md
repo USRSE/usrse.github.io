@@ -104,7 +104,7 @@ These opportunities were recently posted to the [RSE Careers page](https://us-rs
 
 In an effort to promote continual education and discussion, the [Diversity, Equity, and Inclusion Working Group (DEI-WG)](https://us-rse.org/about/working-groups/#diversity-equity-and-inclusion-dei) at the US-RSE Association presents its [next instance of the DEI Media Club](https://us-rse.org/events/2021/2021-10-dei-media-club/) October 28 at noon EDT, 11 am CDT, 10 am MDT, and 9 am PDT.
 
-We will be discussing [Series 4, Episode 6: Building safe spaces and harnessing psychological safety](https://feeds.buzzsprout.com/151841.rss) of [reWorked - The Diversity and Inclusion Podcast](https://theewgroup.com/podcast/) -. Please share this event with your colleagues.
+We will be discussing [Series 4, Episode 6: Building safe spaces and harnessing psychological safety](https://feeds.buzzsprout.com/151841.rss) of [reWorked - The Diversity and Inclusion Podcast](https://theewgroup.com/podcast/). Please share this event with your colleagues.
 
 **To prepare**:
 
