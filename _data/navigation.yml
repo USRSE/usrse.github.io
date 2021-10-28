@@ -77,8 +77,11 @@
 - name: External
   dropdown:
     - name: RSE Map
-      link: "https://usrse.github.io/usrse-map"
+      link: "https://us-rse.org/usrse-map"
+      external: true
+    - name: RSE Stories Podcast
+      link: "https://us-rse.org/rse-stories"
       external: true
     - name: Community Blogs
-      link: "https://usrse.github.io/blog"
+      link: "https://us-rse.org/blog"
       external: true
