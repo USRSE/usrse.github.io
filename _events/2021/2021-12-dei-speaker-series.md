@@ -16,11 +16,11 @@ time:
 ## Event
 
 The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
-present the next event in the US-RSE DEI-WG Speaker Series: **[Dr Athina Frantzana of [Spread the Word](http://spreadthewordstem.co.uk/)**
+present the next event in the US-RSE DEI-WG Speaker Series: **Dr Athina Frantzana of [Spread the Word](http://spreadthewordstem.co.uk/)**
 
 **Date/Time: December 10, 2021 1:00pm ET (10:00am PT)**
 
-**[Register Now!](https://purdue-edu.zoom.us/meeting/register/tJUufuGorT8rHtBy5guU-DriZAiteh7X8Gsf)
+**[Register Now!](https://purdue-edu.zoom.us/meeting/register/tJUufuGorT8rHtBy5guU-DriZAiteh7X8Gsf)**
 
 ## Abstract
 Why are women still underrepresented in Tech, and why does it matter? In this talk we will discuss the potential reasons for the underrepresentation of women in the Tech community, the problems this causes to the community and the world, the benefits of increasing women's representation and inclusion, and the effectiveness of a range of approaches designed to improve gender diversity.
@@ -28,7 +28,7 @@ Why are women still underrepresented in Tech, and why does it matter? In this ta
 ## About the speaker
 With a STEM background and a passion for Equality, Diversity and Inclusion (EDI), Dr Athina Frantzana works tirelessly to create more inclusive work and study environments in industry and academia, with equal opportunities and respect for diversity. Her PhD thesis formed the first step to understand the women's representation and experiences within the advanced computing community and suggested solutions to tackle the barriers causing the gender gap in STEM. 
 Athina has presented her work and participated at many local and international conferences as a keynote speaker, paper and poster presenter, workshop leader, and organising committee member. Highlights include her Keynote talk at Europython 2019, her invited talk at Python Global Summit 2020, her talk at Gender Summit 6, and her committee position as the Inclusivity Training Chair at the Supercomputing Conference 2021 (SC21). 
-In 2019, Athina founded [Spread the Word](spreadthewordstem.co.uk) to help STEM companies and organisations, as well as individuals, create inclusive workplaces, using innovative, evidence-based and tailored practices and strategies. She also continues conducting research, promoting and advocating EDI through various projects and collaborations inside and outside academia. 
+In 2019, Athina founded [Spread the Word](https://spreadthewordstem.co.uk) to help STEM companies and organisations, as well as individuals, create inclusive workplaces, using innovative, evidence-based and tailored practices and strategies. She also continues conducting research, promoting and advocating EDI through various projects and collaborations inside and outside academia. 
 
 ## US-RSE DEI-WG Speaker Series
 

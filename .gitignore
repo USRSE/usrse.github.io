@@ -1,3 +1,4 @@
+Gemfile
 *.gem
 .jekyll-cache
 .bundle
