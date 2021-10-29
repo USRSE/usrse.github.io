@@ -18,7 +18,7 @@ time:
 The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
 present the next event in the US-RSE DEI-WG Speaker Series: **Dr. Athina Frantzana of [Spread the Word](http://spreadthewordstem.co.uk/)**
 
-**Date/Time: December 10, 2021 1:00pm ET**
+**Date/Time: December 10, 2021 1ET/12CT/11MT/10PT**
 
 **[Register Now!](https://purdue-edu.zoom.us/meeting/register/tJUufuGorT8rHtBy5guU-DriZAiteh7X8Gsf)**
 
