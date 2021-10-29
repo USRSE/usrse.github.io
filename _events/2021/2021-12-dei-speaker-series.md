@@ -8,8 +8,8 @@ repeated: false
 duration: 90
 category: dei
 time:
-    - - start: 2021-12-10T17:00:00Z
-        end: 2021-12-10T18:30:00Z
+    - - start: 2021-12-10T18:00:00Z
+        end: 2021-12-10T19:30:00Z
 ---
 
 
