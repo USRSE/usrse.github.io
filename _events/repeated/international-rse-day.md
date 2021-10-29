@@ -14,7 +14,7 @@ repeated: true
 # note that the dtstart and rdate at the end are the same
 rrule: 
   - DTSTART;TZID=America/New_York:20211014T110000
-# third thursday of every month
+# second Thursday of October every year
   - RRULE:UNTIL=20301031T000000;FREQ=YEARLY;BYDAY=+2TH
   - RDATE;TZID=America/New_York:20211014T110000
 ---
