@@ -1,4 +1,4 @@
-name: Post Jobs to USRSE Slack
+name: Post New Jobs to Slack
 
 on:
   push:
