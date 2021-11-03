@@ -12,7 +12,8 @@ The site is built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub.
 ## How do I contribute?
 
 We encourage the community to contribute to the content of the website.  
-To do this: fork the repository, make your proposed changes, test locally (see below), and then create a pull request against `master`. For more details about opening pull requests and issues, see our [Contributing Guide](.github/CONTRIBUTING.md).
+To do this: fork the repository, make your proposed changes, test locally (see below), and then create a pull request
+against `main`. For more details about opening pull requests and issues, see our [Contributing Guide](.github/CONTRIBUTING.md).
 
 ### 1. How do I update the map?
 
@@ -33,8 +34,11 @@ can open a pull request to update the date. An example posting is shown below. T
 job would appear on the site until the first of July, 2019.
 
 ```yaml
-- {expires: 2019-07-01, posted: 2019-02-01, location: 'Princeton, NJ',
-    name: 'Research Software Engineer', url: 'https://main-princeton.icims.com/jobs'}
+- expires: 2019-07-01
+  location: 'Princeton, NJ'
+  name: 'Research Software Engineer'
+  posted: 2019-02-01
+  url: 'https://main-princeton.icims.com/jobs'
 ```
 
 And don't forget to write your new job at the top of the [_data/jobs.yml](_data/jobs.yml) file!
@@ -42,6 +46,10 @@ For testing, we look to see that all fields are defined, the url exists, and
 that the "expires" and "posted" fields load as a `datetime.date` object in
 Python. If you copy the format above, you should be ok.
 
+Once your job(s) are merged to `main` a [GitHub Action](.github/workflows/jobs-slack-poster.yml) will automatically
+cross-post your job(s) to the USRSE Slack `#jobs` channel!
+
+![example post image](https://raw.githubusercontent.com/rseng/jobs-updater/main/img/example.png)
 
 ### 3. How do I add an event?
 
@@ -412,7 +420,7 @@ nice features to make it less error prone, discussed next.
 
 ### GitHub CI
 
-## URLChecker and Spelling
+#### URLChecker and Spelling
 
 The [URLschecker](https://github.com/urlstechie/URLs-checker) is a GitHub action
 that @vsoch worked on to contribute retry and some other nice features for the 
@@ -430,7 +438,7 @@ typos ./pages ./_posts ./README.md --write-changes
 If there is a word that needs to be ignored, see [instructions](https://github.com/crate-ci/typos#false-positives) 
 for adding a `_typos.toml` file to indicate false positives.
 
-## Clean Expired Jobs
+#### Clean Expired Jobs
 
 The workflow [clean-expired-jobs.yml](.github/workflows/clean-expired-jobs.yml) is run nightly,
 and uses the same function from the urlchecker to check for expired links in jobs.yml,
@@ -438,7 +446,15 @@ and given an expired link, remove it from the file if the url check fails. In th
 that a link is not expired and the check fails, we would want to know about this
 (and the test will fail).
 
-### Greetings
+#### Post New Jobs to Slack
+
+The workflow [jobs-slack-poster.yml](.github/workflows/jobs-slack-poster.yml) is run on any push
+to `main` with changes to `_data/jobs.yml`. If new jobs are found, it will post the Job URL to
+the USRSE Slack `#jobs` channel. It utilizes the [Jobs updater](https://github.com/rseng/jobs-updater)
+Github Action by @vsoch and @jhkennedy to parse the `_data/jobs.yml` file for new jobs and post them
+the USRSE Slack.
+
+#### Greetings
 This simple greetings action greets first time users (for issues).
 The logic of this is determined by the [greetings.yml](.github/workflows/greetings.yml)
 workflow. 
