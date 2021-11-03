@@ -508,6 +508,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/34489999?v=4"
             ]
+        },
+        {
+            "login": "jhkennedy",
+            "name": "Joseph H Kennedy",
+            "contributions": [
+                "code"
+            ],
+            "profile": "http://jhkennedy.org",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/7882693?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

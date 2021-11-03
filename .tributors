@@ -249,5 +249,10 @@
         "name": "Emil Østergaard",
         "bio": "I make buttons look pretty",
         "blog": "oestergaard.dev"
+    },
+    "jhkennedy": {
+        "name": "Joseph H Kennedy",
+        "bio": "\r\nI'm a Research Software Engineer, Computational Glaciologist, Cilmate Scientist, and Adventurer living/playing in Alaska ",
+        "blog": "http://jhkennedy.org"
     }
 }
