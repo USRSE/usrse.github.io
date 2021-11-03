@@ -6,6 +6,7 @@ on:
       - '_data/jobs.yml'
     branches:
       - main
+      - test/jobs-bot
 
 jobs:
   slack-poster:
