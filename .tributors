@@ -221,5 +221,24 @@
         "orcid": "0000-0002-6765-0708",
         "affiliation": "University of California San Diego Scripps Institution of Oceanography",
         "blog": "https://github.com/castelao"
+    },
+    "roelofsaj": {
+        "name": "Abbey Roelofs",
+        "blog": "https://github.com/roelofsaj"
+    },
+    "mtbc": {
+        "name": "Mark Carroll",
+        "email": "mark.gh@ixod.org",
+        "blog": "https://github.com/mtbc"
+    },
+    "NickleDave": {
+        "name": "David Nicholson",
+        "bio": "Neuroscience + Artificial Intelligence. Open + inclusive science. Pythonista. Habla espanglish y baila salsa y bachata a medio tiempo.",
+        "blog": "https://nicholdav.info/"
+    },
+    "bjoyce3": {
+        "name": "Blake Joyce",
+        "bio": "I'm a code curious biologist.",
+        "blog": "https://github.com/bjoyce3"
     }
 }
