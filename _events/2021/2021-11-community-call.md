@@ -18,15 +18,23 @@ US-RSE community on November 10th, 2021 at 12ET/11CT/10MT/9PT.
 
 The main topic of discussion is
 
-**TBD**
+**Current Technologies**
+
+
+RSE work involves staying on top of and learning about a sometimes mind-boggling number of always emerging technologies. 
+In this month's call, we will experiment with some show-and-tell where we can compare notes on what technologies people are using, learning about, or interested in learning about. 
+We will also chat about how people are learning about new technologies. 
+The call will have a couple of lightning talks on fun new technologies to set everyone thinking. 
+Look forward to seeing everyone who can make it.
+
+
 ## Agenda
 
 **US-RSE welcome**  
  1. US-RSE updates
- 1. Updates from working groups
  1. Other news
- 1. TDB
-
+ 1. Current Technologies Discussion
+ 
 
 ## Registration details
 Information on how to register for the Zoom meeting sent via email and posted in the #general and #communitycalls channels on Slack.
