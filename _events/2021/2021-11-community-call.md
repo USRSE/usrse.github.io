@@ -14,7 +14,7 @@ time:
 US-RSE community on November 10th, 2021 at 12ET/11CT/10MT/9PT.
 
 
-( NOTE - Wednesday event due to Veterans Day on the Thursday).
+(NOTE - Wednesday event due to Veterans Day on the Thursday).
 
 The main topic of discussion is
 
