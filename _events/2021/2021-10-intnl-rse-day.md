@@ -36,18 +36,18 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM Eastern
 | Time (EDT)  | Event |  Event Description                         |
 | ----        | ------|------------------------------------------- |
 | 11:00 AM - 11:10 AM | Introduction, Blake Joyce/Ian Cosden   | Brief welcome.  |
-| 11:10 AM - 12:00 noon | Kickoff Panel     | Speakers introduce themselves and their RSE journey. |
-| 12:00 noon - 12:20 PM | Nicole Brewer, Purdue     | How to Recruit and Sustain a Diverse and Inclusive Workforce: A Case Study                 |
+| 11:10 AM - 12:00 noon | Kickoff Panel     | [Speakers introduce themselves and their RSE journey.](https://youtu.be/V4lfdqn2LAc) |
+| 12:00 noon - 12:20 PM | Nicole Brewer, Purdue     | [How to Recruit and Sustain a Diverse and Inclusive Workforce: A Case Study](https://youtu.be/zlXXLh1EaPY)                 |
 | 12:20 PM - 12:45 PM | Q&A               |                                |
-| 1:00 PM - 1:20 PM | Rubern Lara and Mehmet Belgin, Georgia Tech     | The Interplay Between Research Software and CyberInfrastructure in a Complex Computing Environment                  |
+| 1:00 PM - 1:20 PM | Rubern Lara and Mehmet Belgin, Georgia Tech     | [The Interplay Between Research Software and CyberInfrastructure in a Complex Computing Environment](https://youtu.be/lj47xc72Ke4)                  |
 | 1:20 PM - 1:45 PM | Q&A               |                                |
-| 2:00 PM - 2:20 PM | Ian Cosden, Princeton     | Building the Princeton Research Software Engineering Group                      |
+| 2:00 PM - 2:20 PM | Ian Cosden, Princeton     | [Building the Princeton Research Software Engineering Group](https://youtu.be/0akW11njIUo)                      |
 | 2:20 PM - 2:45 PM | Q&A               |                                |
-| 3:00 PM - 3:20 PM | Reed Milewicz, Sandia      | Building and Sustaining an RSE Department at Sandia National Laboratory                      |
+| 3:00 PM - 3:20 PM | Reed Milewicz, Sandia      | [Building and Sustaining an RSE Department at Sandia National Laboratory](https://youtu.be/IBvBvDHmW-w)                      |
 | 3:20 PM - 3:45 PM | Q&A               |                                |
 | 4:00 PM - 4:20 PM | Melyssa Fratkin, TACC     | Working with Industry: Why RSEs are vital                       |
 | 4:20 PM - 4:45 PM | Q&A               |                                |
 
 
 **FREE Registration details**  
-[Zoom registration link](https://uab.zoom.us/meeting/register/tZYrfumpqD8iG9PCMyysyAFhKBTViOadzzcX)
+~~Zoom registration link~~
