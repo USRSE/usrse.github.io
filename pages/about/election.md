@@ -14,7 +14,8 @@ The 2021 US-RSE Steering Committee elections are happening this December.
 * Nominations open: October 22, 2021
 * Nominations due: November 5, 2021
 * Candidates finalize information: November 8, 2021
-* Candidates announced: by November 12, 2021
+* Candidates announced: by November 12, 2021 - [List of candidates](https://us-rse.org/2021-11-12-sc-candidates/)
+* Deadline to [join US-RSE](https://us-rse.org/join) to be eligible to vote: November 19, 2021
 * Annual US-RSE General Meeting, including candidate statements: December 3, 2021, 1-3pm ET
 * Voting Open: December 3-10, 2021
 * Election Results announced: by December 17, 2021
@@ -91,13 +92,20 @@ about candidates.
 
 ## Voting
 
-Information about the voting process will be made available soon.
+Elections will be run through
+[https://electionbuddy.com](https://us-rse.org/join).  US-RSE members' email
+addresses will be shared with this site for the sole purpose of voting.  Each
+US-RSE member as of November 19, 2021, gets one ballot with the voting rule of
+[single transferable vote
+(STV)](https://electionbuddy.com/features/voting-systems/stv-voting).  This
+voting rule asks each voter to rank the candidates, and seats are allocated
+across candidates using this ranking information.  
 
-<!--
-Elections will be run through [https://electionbuddy.com](https://electionbuddy.com).  US-RSE members' email addresses will be shared with this site for the sole purpose of voting.  Each US-RSE member as of the day before the voting period opens, December 12, 2020, gets one ballot with the voting rule of [single transferable vote (STV)](https://electionbuddy.com/features/voting-systems/stv-voting).  This voting rule asks each voter to rank the candidates, and seats are allocated across candidates using this ranking information.
+The results of the election are valid regardless of the turnout rate for the
+election.
 
-The results of the election are valid regardless of the turnout rate for the election.
--->
+[Statements and contact information for the 2021 Steering Committee
+candidates](https://us-rse.org/2021-11-12-sc-candidates/) have been posted.
 
 ## Questions?
 
