@@ -13,19 +13,24 @@ time:
 
 US-RSE community on December 9th, 2021 at 12ET/11CT/10MT/9PT.
 
-The main topic of discussion is
+The main topic of discussion, for the final community call of 2021, will be
 
-**TBD**
+**Conducting constructive code reviews**
 
-Tentatively a call focussed on code review practices - what this space for updates!
+Code review is an essential component of software engineering. Code reviews at their best improve code quality, facilitate sharing of knowledge, and build team cohesion. Code reviews at their worst are demoralizing and stressful, and may even cause people to stop contributing to a project. In this community call, we will share our experiences with conducting and receiving code reviews, and discuss strategies on how to ensure that code reviews are healthy and constructive.
+
+David Nicholson will be leading this call. He will be joined by [Pat Schloss](http://www.schlosslab.org/) who will give a lightning talk about [code clubs](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008119) that his group developed to achieve many of the same goals as code review.
+
+Looking forward to seeing everyone who can make it.
+
+
 ## Agenda
 
 **US-RSE welcome**  
  1. US-RSE updates
- 1. Updates from working groups
  1. Other news
- 1. TDB
+ 1. Conducting constructive code reviews discussion and breakouts.
 
 
 ## Registration details
-Information on how to register for the Zoom meeting sent via email and posted in the #general and #communitycalls channels on Slack.
+Information on how to register for the Zoom meeting will be sent via email and posted in the #general and #communitycalls channels on Slack.
