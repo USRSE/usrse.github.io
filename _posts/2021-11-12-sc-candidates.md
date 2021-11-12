@@ -164,7 +164,7 @@ career and get recognition for software contributions to domain science code
 projects.  When I learned of the RSE Association in the UK several years ago, I
 was excited and encouraged, and I wanted to see something similar start in the
 US to support RSEs and their work in this country.  I've been fortunate to be
-able to help get US-RSE going, and I want to continue in that work.  "
+able to help get US-RSE going, and I want to continue in that work. 
 
 **How do you contribute to the US-RSE Association or RSE community more broadly?**
 
