@@ -255,5 +255,11 @@
         "name": "Joseph H Kennedy",
         "bio": "\r\nI'm a Research Software Engineer, Computational Glaciologist, Cilmate Scientist, and Adventurer living/playing in Alaska ",
         "blog": "http://jhkennedy.org"
+    },
+    "crd477": {
+        "name": "Chad Dougherty",
+        "email": "crd@acm.org",
+        "orcid": "0000-0003-4530-4692",
+        "affiliation": "Carnegie Mellon University"
     }
 }
