@@ -27,7 +27,7 @@ Candidates are listed in alphabetical order.
 
 ## Nicole Brewer
 
-[Email](brewer36@purdue.edu), [CV](https://github.com/nicole-brewer/cv/blob/master/cv.pdf)
+[Email](mailto:brewer36@purdue.edu), [CV](https://github.com/nicole-brewer/cv/blob/master/cv.pdf)
 
 **Why do you want to be on the US-RSE Steering Committee?**
 
@@ -51,7 +51,7 @@ that kind of clarity and sense of belonging to the next person.
 
 ## Jeffrey Carver
 
-[Email](carver@cs.ua.edu), [Website](http://carver.cs.ua.edu/)
+[Email](mailto:carver@cs.ua.edu), [Website](http://carver.cs.ua.edu/)
 
 **Why do you want to be on the US-RSE Steering Committee?**
 
@@ -95,7 +95,7 @@ US-RSE SC decisions.
 
 ## Ian Cosden
 
-[Email](icosden@princeton.edu), [LinkedIn](https://www.linkedin.com/in/ian-cosden-1907958/)
+[Email](mailto:icosden@princeton.edu), [LinkedIn](https://www.linkedin.com/in/ian-cosden-1907958/)
 
 **Why do you want to be on the US-RSE Steering Committee?**
 
@@ -154,7 +154,7 @@ locally and in the broader community.
 
 ## Charles Ferenbaugh
 
-[Email](cferenba@lanl.gov), [LinkedIn](https://www.linkedin.com/in/charles-ferenbaugh-b2822a225/)
+[Email](mailto:cferenba@lanl.gov), [LinkedIn](https://www.linkedin.com/in/charles-ferenbaugh-b2822a225/)
 
 **Why do you want to be on the US-RSE Steering Committee?**
 
@@ -183,7 +183,7 @@ at SC20 and SC21.
 
 ## Sandra Gesing
 
-[Email](sandra.gesing@nd.edu), [Website](http://sandra-gesing.com/)
+[Email](mailto:sandra.gesing@nd.edu), [Website](http://sandra-gesing.com/)
 
 **Why do you want to be on the US-RSE Steering Committee?**
 
@@ -227,7 +227,7 @@ meeting in person.
 
 ## Rinku Gupta
 
-[Email](rgupta@anl.gov),
+[Email](mailto:rgupta@anl.gov),
 [LinkedIn](https://www.linkedin.com/in/rinku-gupta-38b4b319/),
 [LinkedIn](https://www.anl.gov/profile/rinku-k-gupta)
 
@@ -270,7 +270,7 @@ US-RSE community for RSE empowerment.
 
 ## Christina Maimone
 
-[Email](christina.maimone@northwestern.edu), [LinkedIn](https://www.linkedin.com/in/christina-maimone-302a3a40/)
+[Email](mailto:christina.maimone@northwestern.edu), [LinkedIn](https://www.linkedin.com/in/christina-maimone-302a3a40/)
 
 **Why do you want to be on the US-RSE Steering Committee?**
 
@@ -315,7 +315,7 @@ Journal of Open Source Software ([JOSS](https://joss.theoj.org/)).
 
 ## Chen Zhang
 
-[Email](zhangc@ornl.gov), [LinkedIn](https://www.linkedin.com/in/chen-z-5a081725/)
+[Email](mailto:zhangc@ornl.gov), [LinkedIn](https://www.linkedin.com/in/chen-z-5a081725/)
 
 **Why do you want to be on the US-RSE Steering Committee?**
 
