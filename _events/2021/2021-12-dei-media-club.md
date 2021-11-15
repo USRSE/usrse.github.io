@@ -12,7 +12,7 @@ time:
         end: 2021-12-02T18:00:00Z
 ---
 
-In an effort to promote continual education and discussion, the [Diversity,
+In an effort to promote continuing education and discussion, the [Diversity,
 Equity, and Inclusion Working Group
 (DEI-WG)](https://us-rse.org/about/working-groups/#diversity-equity-and-inclusion-dei)
 at the US-RSE Association presents its next instance of the DEI Media Club.
