@@ -32,4 +32,4 @@ To prepare:
 3. Come prepared to discuss!
 
 Share the event with your colleagues:
-https://emory.zoom.us/meeting/register/tJAqceCpqTopGtRj9YvJnWD9u3v7SZSdNCBb
+[https://emory.zoom.us/meeting/register/tJAqceCpqTopGtRj9YvJnWD9u3v7SZSdNCBb](https://emory.zoom.us/meeting/register/tJAqceCpqTopGtRj9YvJnWD9u3v7SZSdNCBb)
