@@ -12,7 +12,7 @@ time:
         end: 2021-12-02T18:00:00Z
 ---
 
-In an effort to promote continual education and discussion, the [Diversity,
+In an effort to promote continuing education and discussion, the [Diversity,
 Equity, and Inclusion Working Group
 (DEI-WG)](https://us-rse.org/about/working-groups/#diversity-equity-and-inclusion-dei)
 at the US-RSE Association presents its next instance of the DEI Media Club.
@@ -27,9 +27,9 @@ To prepare:
    up](https://emory.zoom.us/meeting/register/tJAqceCpqTopGtRj9YvJnWD9u3v7SZSdNCBb)
    to let us know you interested
 
-2. Listen to Code Switch: The Folk Devil Made Me Do It - [NPR](https://emory.zoom.us/meeting/register/tJAqceCpqTopGtRj9YvJnWD9u3v7SZSdNCBb)
+2. Listen to Code Switch: The Folk Devil Made Me Do It - [NPR](https://www.npr.org/2021/08/20/1029775224/the-folk-devil-made-me-do-it)
 
 3. Come prepared to discuss!
 
 Share the event with your colleagues:
-https://emory.zoom.us/meeting/register/tJAqceCpqTopGtRj9YvJnWD9u3v7SZSdNCBb
+[https://emory.zoom.us/meeting/register/tJAqceCpqTopGtRj9YvJnWD9u3v7SZSdNCBb](https://emory.zoom.us/meeting/register/tJAqceCpqTopGtRj9YvJnWD9u3v7SZSdNCBb)
