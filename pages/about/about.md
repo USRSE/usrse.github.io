@@ -27,7 +27,7 @@ Accordingly, widespread research software growth has included emerging roles for
 These roles can bring value directly through enabling specific research projects. They also bring value indirectly, through helping ensure enduring impact of research software innovations and by facilitating adequate reproducibility standards in digital science.
 
 Initiatives in the [UK](https://society-rse.org/), [Germany](http://www.de-rse.org/en), the
-[Netherlands](http://nl-rse.org) and elsewhere are bringing together the community of people writing and contributing to research software at the national and international level.
+[Netherlands](https://nl-rse.org/) and elsewhere are bringing together the community of people writing and contributing to research software at the national and international level.
 In the US this encompasses universities, laboratories, knowledge institutes, companies and other enterprises.
 US-RSE is part of that effort.
 
