@@ -13,7 +13,7 @@ time:
 ---
 
 On October 14th between 11:00 AM and 4:45 PM Eastern time we will be hosting a series of online
-talks and panels with discussion to celebrate the [First International RSE Day](https://researchsoftware.org/council/intl-rse-day.html). Events 
+talks and panels with discussion to celebrate the [First International RSE Day](https://researchsoftware.org/council/intl-rse-day.html). Events
 begin on the hour between 11:00 AM and 4:00 PM Eastern; feel free to join us for some or all
 of the day's events.
 
@@ -22,7 +22,7 @@ of the day's events.
 _First International RSE Day Virtual Workshop Events Oct 14, 11:00 AM Eastern - 4:45 PM Eastern._
 
 An NSF-funded workshop titled “Building the research innovation workforce: a workshop
-to identify new insights and directions to advance the research computing community” recently found that collaborations between research software engineers, cyberinfrastructure professionals, and researchers were key to the research computing community [https://www.rcac.purdue.edu/files/ciworkforce2020/report.pdf](https://www.rcac.purdue.edu/files/ciworkforce2020/report.pdf). 
+to identify new insights and directions to advance the research computing community” recently found that collaborations between research software engineers, cyberinfrastructure professionals, and researchers were key to the research computing community [https://www.rcac.purdue.edu/files/ciworkforce2020/report.pdf](https://www.rcac.purdue.edu/files/ciworkforce2020/report.pdf).
 
 But what do successful RSE, CI professional, and researcher teams and stakeholder interactions look like? How are they funded and how did people get started in this career?
 
@@ -33,7 +33,7 @@ Join us for a panel discussion and talks to introduce teams of researchers, RSEs
 October 14th US-RSE Schedule
 Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM Eastern
 
-| Time (EDT)  | Event |  Event Description                         |
+| Time (EDT)  | Event |  Event Description (with video links)                        |
 | ----        | ------|------------------------------------------- |
 | 11:00 AM - 11:10 AM | Introduction, Blake Joyce/Ian Cosden   | Brief welcome.  |
 | 11:10 AM - 12:00 noon | Kickoff Panel     | [Speakers introduce themselves and their RSE journey.](https://youtu.be/V4lfdqn2LAc) |
@@ -45,9 +45,12 @@ Start: 8 Pacific / 9 Mountain / 10 Central / 11 AM Eastern
 | 2:20 PM - 2:45 PM | Q&A               |                                |
 | 3:00 PM - 3:20 PM | Reed Milewicz, Sandia      | [Building and Sustaining an RSE Department at Sandia National Laboratory](https://youtu.be/IBvBvDHmW-w)                      |
 | 3:20 PM - 3:45 PM | Q&A               |                                |
-| 4:00 PM - 4:20 PM | Melyssa Fratkin, TACC     | Working with Industry: Why RSEs are vital                       |
+| 4:00 PM - 4:20 PM | Melyssa Fratkin, TACC     | [Working with Industry: Why RSEs are vital](https://youtu.be/ssleBRFXV6M)                       |
 | 4:20 PM - 4:45 PM | Q&A               |                                |
 
+**Videos**
+
+[YouTube playlist of all videos](https://www.youtube.com/playlist?list=PLMgG8jy8w-8ng3nXVt1hpx3dhcejOd-kT)
 
 **FREE Registration details**  
 ~~Zoom registration link~~
