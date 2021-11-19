@@ -22,7 +22,7 @@ permalink: /jobs/
 
 <br>
 
-{% assign board_size = site.data.job-boards.boards | length %}
+{% assign board_size = site.data.job-boards.boards | size %}
 {% if board_size > 0 %}
 ### Other Job Boards
 
