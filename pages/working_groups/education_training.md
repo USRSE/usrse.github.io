@@ -21,7 +21,7 @@ The US-RSE Education & Training Group also maintains and publishes a list of ski
 
 [RSE Skill Set]({{ site.baseurl }}/resources/training/skills/)
 
-## RSE Archtypes
-The US-RSE Education & Training Group has begun a list of the archtypes of the people who consume RSE training. This list will help us match the available training with the needs in the community.
+## RSE Archetypes
+The US-RSE Education & Training Group has begun a list of the archetypes of the people who consume RSE training. This list will help us match the available training with the needs in the community.
 
 _List coming soon_
