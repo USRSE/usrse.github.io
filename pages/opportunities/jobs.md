@@ -22,7 +22,8 @@ permalink: /jobs/
 
 <br>
 
-{% if site.data.job-boards.boards | length > 0 %}
+{% assign board_size = site.data.job-boards.boards | size %}
+{% if board_size > 0 %}
 ### Other Job Boards
 
 The following boards might also be of interest.
@@ -30,6 +31,7 @@ The following boards might also be of interest.
 <ol>{% for board in site.data.job-boards.boards %}
     <li><a href="{{ board.url }}" target="_blank">{{ board.name }}</a></li>
 {% endfor %}</ol>
+<br>
 {% endif %}
 
 
