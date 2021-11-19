@@ -4,7 +4,7 @@
     <h2>{{ category_name }}</h2>
     <hr style="width:40%" />
 
-{% assign entries = entries | sort: 'expires' | reverse %}
+{% assign entries = entries | sort: 'expires' %}
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
 {%- for post in entries limit:5 -%}
