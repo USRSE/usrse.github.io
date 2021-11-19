@@ -22,7 +22,8 @@ permalink: /jobs/
 
 <br>
 
-{% if site.data.job-boards.boards | length > 0 %}
+{% assign board_size = site.data.job-boards.boards | length %}
+{% if board_size > 0 %}
 ### Other Job Boards
 
 The following boards might also be of interest.
