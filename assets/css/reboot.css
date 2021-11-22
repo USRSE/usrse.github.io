@@ -1623,7 +1623,7 @@ sub {
 }
 img {
     max-width: 100%;
-    width: auto\9;
+    width: auto;
     height: auto;
     vertical-align: middle;
     border: 0;

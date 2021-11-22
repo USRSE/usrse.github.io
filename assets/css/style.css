@@ -10608,18 +10608,15 @@ a.has-text-danger-dark:hover,a.has-text-danger-dark:focus {
     color: #0a0a0a;
 }
 
-#hero-small-image {
-    display: none;
-    margin: auto;
+#hero-image {
+    width: 100%;
+    max-width: 250px;
 }
 
 
 @media screen and (max-width: 1408px) {
-    #hero-image, .hero-text.subtitle {
+    .hero-text.subtitle {
         display: none !important;
-    }
-    #hero-small-image {
-        display: block !important;
     }
 }
 
