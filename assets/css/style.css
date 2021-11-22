@@ -10609,16 +10609,14 @@ a.has-text-danger-dark:hover,a.has-text-danger-dark:focus {
 }
 
 #hero-image {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
 }
 
 
 @media screen and (max-width: 1408px) {
     .hero-text.subtitle {
         display: none !important;
-    }
-    #hero-image {
-	width: 150px;
     }
 }
 
@@ -10641,9 +10639,6 @@ a.has-text-danger-dark:hover,a.has-text-danger-dark:focus {
 @media screen and (max-width: 1023px) {
     .hero.is-white .navbar-menu {
         background-color: #fff;
-    }
-    #hero-image {
-	width: 100px;
     }
 }
 
@@ -10693,9 +10688,6 @@ a.has-text-danger-dark:hover,a.has-text-danger-dark:focus {
     }
     .hero-text {
         display: none !important;
-    }
-    #hero-image {
-	width: 75px;
     }
 }
 
