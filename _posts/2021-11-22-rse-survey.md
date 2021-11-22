@@ -17,7 +17,7 @@ We strongly encourage you to respond to the survey and to share it with others w
 The results of this survey will be greatly beneficial to US-RSE as we move forward.
 The more responses we have, the better our knowledge.
 
-For more details on the survey visit https://software.ac.uk/news/complete-international-rse-survey-and-help-us-understand-rse-community. 
+For more details on the survey visit [https://software.ac.uk/news/complete-international-rse-survey-and-help-us-understand-rse-community](https://software.ac.uk/news/complete-international-rse-survey-and-help-us-understand-rse-community). 
 
 **You can complete the 2021 RSE survey in
 [English](https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsoftwaresaved.limequery.com%2F386272%3Flang%3Den&data=04%7C01%7Csjh%40ecs.soton.ac.uk%7C21dac81c36e14a07289308d9a81484de%7C4a5378f929f44d3ebe89669d03ada9d8%7C0%7C0%7C637725630602050621%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=c50UYjuK%2FN0%2BYpxuKhOXWBJTyxpAkDhq5XTTamG%2FW%2Fc%3D&reserved=0),
