@@ -308,6 +308,15 @@ choosing. You are not required to include a title, and it will default to a gene
 "YouTube video player."
 
 
+### How do the taglines under the landing page title work?
+
+A list of possible taglines is stored in `_config.yml`,
+search for the current tagline to find them.
+You may edit the list, each line starts with a `- `.
+One tagline is selected when the static site is built.
+As subsequent builds are done, others will get their turn.
+
+
 ## Tests
 
 Tests are run during continuous integration to catch any errors and to preview
