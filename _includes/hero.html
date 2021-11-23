@@ -5,6 +5,9 @@
                 <div class="col-md-4">
                   <img id="hero-image" src="{{ site.baseurl }}{{ site.icon }}">
                 </div>
+                <!-- From the configured list of taglines in hero_line_two,
+                     choose one by index. The current day number, modulo
+                     the number of taglines, decides which line to use. -->
                 {% assign tagline_size = site.hero_line_two | size %}
                 {% assign tagline_index = site.time | date: '%j' | modulo: tagline_size %}
                 <div class="col-md-8">
