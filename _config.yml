@@ -25,9 +25,8 @@ paginate_path: "/news/page:num/"
 excerpt_length: 500
 
 hero_line_one: The United States Research Software Engineer Association
-hero_line_two: [
-	"A community of people who make research software happen."
-]
+hero_line_two:
+- A community of people who make research software happen.
 
 # social media
 twitter: us_rse
