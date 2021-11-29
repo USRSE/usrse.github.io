@@ -2,7 +2,7 @@
 layout: page
 title: Education & Training Working Group
 subtitle:
-permalink: /working_groups/education_training/
+permalink: /wg/education_training/
 ---
 
 # Overview
