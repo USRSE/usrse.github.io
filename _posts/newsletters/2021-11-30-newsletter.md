@@ -53,7 +53,7 @@ We are excited to announce the first US-RSE Association [community building work
 
 The video for the November Community Call on "Current Technologies" is available on [YouTube](https://youtu.be/nhbFizVEN7Y).
 All Community Call videos are listed in this [playlist](https://www.youtube.com/playlist?list=PLMgG8jy8w-8neP6gPOgifH6kh4t_RUTTH).
-The [final community call](https://us-rse.org/events/2021/2021-12-community-call/) of 2021 will take place on December 9, 2021. The topic will be **Conducting constructive code reviews**.
+The [final community call](https://us-rse.org/events/2021/2021-12-community-call/) of 2021 will take place on December 9, 2021. The topic will be **Conducting Constructive Code Reviews**.
 
 <a name="podcast"></a>
 # **RSE Stories Podcast**
