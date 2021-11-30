@@ -93,7 +93,7 @@ These opportunities were recently posted to the [RSE Careers page](https://us-rs
 # **Community News**
 SC21-TV interviewed [Charles Ferenbaugh about the research software engineering landscape](https://www.youtube.com/watch?v=MjO5tEarTLU), and [Daniel S. Katz about research software sustainability](https://www.youtube.com/watch?v=1YODIJyX0t0).
 
-The videos from the [International RSE Day](https://researchsoftware.org/council/intl-rse-day.html) are available under [https://www.youtube.com/playlist?list=PLMgG8jy8w-8ng3nXVt1hpx3dhcejOd-kT](https://www.youtube.com/playlist?list=PLMgG8jy8w-8ng3nXVt1hpx3dhcejOd-kT).
+The videos from the [International RSE Day](https://researchsoftware.org/council/intl-rse-day.html) are available on [this YouTube playlist](https://www.youtube.com/playlist?list=PLMgG8jy8w-8ng3nXVt1hpx3dhcejOd-kT).
 
 <a name="dei-mc"></a>
 # **DEI Media Club Discussion**
