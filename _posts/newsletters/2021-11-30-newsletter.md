@@ -98,7 +98,11 @@ The videos from the [International RSE Day](https://researchsoftware.org/council
 <a name="dei-mc"></a>
 # **DEI Media Club Discussion**
 
-In an effort to promote continuing education and discussion, the [Diversity, Equity, and Inclusion Working Group (DEI-WG)](https://us-rse.org/about/working-groups/#diversity-equity-and-inclusion-dei) at the US-RSE Association presents the next instance of its DEI Media Club on December 2, 2021, 11:00 AM - 12:00 PM: a discussion of an episode of [Code Switch](https://www.npr.org/podcasts/510312/codeswitch): [The Folk Devil Made Me Do It](https://www.npr.org/2021/08/20/1029775224/the-folk-devil-made-me-do-it). [Sign up](https://emory.zoom.us/meeting/register/tJAqceCpqTopGtRj9YvJnWD9u3v7SZSdNCBb) to let us know that you are interested. To get most out of it: Come prepared to discuss!
+In an effort to promote continuing education and discussion, the US-RSE [Diversity, Equity, and Inclusion Working Group (DEI-WG)](https://us-rse.org/about/working-groups/#diversity-equity-and-inclusion-dei) presents the next instance of its DEI Media Club on December 2, 2021, 11:00 AM - 12:00 PM: a discussion of an episode of [Code Switch](https://www.npr.org/podcasts/510312/codeswitch): [The Folk Devil Made Me Do It](https://www.npr.org/2021/08/20/1029775224/the-folk-devil-made-me-do-it).
+
+[Sign up](https://emory.zoom.us/meeting/register/tJAqceCpqTopGtRj9YvJnWD9u3v7SZSdNCBb) to let us know that you are interested.
+
+To get most out of it: Come prepared to discuss!
 Please share the event with your colleagues: [https://emory.zoom.us/meeting/register/tJAqceCpqTopGtRj9YvJnWD9u3v7SZSdNCBb](https://emory.zoom.us/meeting/register/tJAqceCpqTopGtRj9YvJnWD9u3v7SZSdNCBb)
 
 <a name="events"></a>
