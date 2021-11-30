@@ -131,7 +131,7 @@ Do you have a meeting, event, or community that might be interested in hearing m
 <a name="financials"></a>
 # **US-RSE Financials**
 
-We are organizing US-RSE financials via the [Open Collective](https://opencollective.com/usrse) project. You can see the budget, expenses, and contributions on [this site](https://opencollective.com/usrse).
+We are organizing US-RSE finances via [Open Collective](https://opencollective.com/usrse). You can see the budget, expenses, and contributions on [this site](https://opencollective.com/usrse).
 
 <a name="involved"></a>
 # **Get Involved**
