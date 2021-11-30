@@ -86,8 +86,7 @@ These opportunities were recently posted to the [RSE Careers page](https://us-rs
 16. [Full Stack Software Engineer](https://jobs.ornl.gov/job/Oak-Ridge-Full-Stack-Software-Engineer-TN-37830/793415900/): Oak Ridge National Laboratory, Oak Ridge, TN *Posted: Oct 27, 2021*
 17. [Full Stack Software Engineer](https://jobs.ornl.gov/job/Oak-Ridge-Full-Stack-Software-Engineer-TN-37830/793411000/): Oak Ridge National Laboratory, Oak Ridge, TN *Posted: Oct 27, 2021*
 18. [Researcher](https://jobs.hr.wisc.edu/en-us/job/511080/researcher): University of Wisconsin-Madison, Madison, WI *Posted: Oct 22, 2021*
-19. [Software Engineer](https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25240&siteid=5341&PageType=JobDetails&jobid=1923828): Harvard T.H. Chan School of Public Health, Boston, MA *Posted: Sep 20, 2021*
-20. [Research Software Engineer](https://uw-echospace.github.io/position/2021-09-06-rse/): University of Washington, Seattle, WA *Posted: Aug 10, 2021*
+
 
 <a name="news"></a>
 # **Community News**
