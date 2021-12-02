@@ -34,7 +34,7 @@ These are announced via the [`#events`](https://usrse.slack.com/messages/events)
 
 ## US-RSE Spanish Webpage Translation
 
-The US-RSE DEI working group is spearheading an effort to translate the US-RSE webpage into Spanish in order to broaden accessibility to a wider audience. This is an on-going effort. To get involved, visit the [`#dei-discussion`](https://usrse.slack.com/messages/dei-discussion) channel on the US-RSE slack.
+The US-RSE DEI working group is spearheading an effort to translate the US-RSE webpage into Spanish in order to broaden accessibility to a wider audience. This is an ongoing effort. To get involved, visit the [`#dei-discussion`](https://usrse.slack.com/messages/dei-discussion) channel on the US-RSE slack.
 
 ## RSE Mentorship
 
