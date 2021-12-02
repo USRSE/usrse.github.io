@@ -22,7 +22,7 @@ The US-RSE DEI working group's first large initiative was to create a US-RSE DEI
 
 ## DEI Speaker Series
 
-The US-RSE DEI working group invites DEI speakers to present on DEI topics. In 2021, we hosted [Dr. Cherri Pancake]({{ site }}/events/2021/2021-03-dei-speaker-series/) as she presented her talk, "Can We Change the Face of Computing?" and [Joanne Esch and Andrea Bowen-Jones]({{ site }}/events/2021/2021-07-dei-speaker-series-ncwit) of the National Center for Women & Information Technology.
+The US-RSE DEI working group invites DEI speakers to present on DEI topics. In 2021, we hosted [Dr. Cherri Pancake]({{ site.url }}/events/2021/2021-03-dei-speaker-series/) as she presented her talk, "Can We Change the Face of Computing?" and [Joanne Esch and Andrea Bowen-Jones]({{ site.url }}/events/2021/2021-07-dei-speaker-series-ncwit) of the National Center for Women & Information Technology.
 
 We will continue to invite and host speakers as they are available. We welcome suggestions regarding potential speakers.
 
