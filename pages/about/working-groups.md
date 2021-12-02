@@ -7,7 +7,7 @@ menubar: about
 menubar_toc: true
 ---
 
-### Diversity, Equity, and Inclusion (DEI)
+<h3><a href="{{ site.baseurl }}/wg/dei/">Diversity, Equity, and Inclusion (DEI)</a></h3>
 
 The US-RSE Association is committed to providing an inclusive environment with equitable treatment for all and to promoting and encouraging diversity throughout the RSE community in the US. At US-RSE, integrating DEI practices into our education programs, governance structure, and culture is at the forefront of our mission to ensure a welcoming, nurturing, and robustly inclusive community. We believe that the amplification of diverse perspectives is essential for driving innovation, promoting creativity, and encouraging engagement for the success of RSEs. We welcome and respect individuals of any race, color, caste, economic status, gender expression, gender identity, sexual orientation, disability, age, religion, national origin, and ethnicity. To get involved, visit the `#dei-discussion` channel on the US-RSE slack, or contact the <a href="mailto:dei_wg@us-rse.org">DEI working group list</a>.
 
