@@ -19,7 +19,20 @@ The main topic of discussion, for the final community call of 2021, will be
 
 Code review is an essential component of software engineering. Code reviews at their best improve code quality, facilitate sharing of knowledge, and build team cohesion. Code reviews at their worst are demoralizing and stressful, and may even cause people to stop contributing to a project. In this community call, we will share our experiences with conducting and receiving code reviews, and discuss strategies on how to ensure that code reviews are healthy and constructive.
 
-David Nicholson will be leading this call. He will be joined by [Pat Schloss](http://www.schlosslab.org/) who will give a lightning talk about [code clubs](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008119) that his group developed to achieve many of the same goals as code review.
+[David Nicholson](https://github.com/NickleDave) will give a very quick introduction   
+and talk about related activities in the
+[Research Code Review Community](https://github.com/ResearchCodeReviewCommunity).
+Then we will have two lightning talks:
+* [Jeff Carver](http://carver.cs.ua.edu/) will give a crash course on
+  constructive code reviews, sharing key takeaways from tutorials
+  he has developed.
+* [Pat Schloss](http://www.schlosslab.org/) will talk about
+  [code clubs](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008119)
+  that his group developed to achieve many of the same goals as code review.
+
+Then we will split into breakout rooms,
+where  we hope to hear from the community
+about their current experiences with code review.
 
 Looking forward to seeing everyone who can make it.
 
