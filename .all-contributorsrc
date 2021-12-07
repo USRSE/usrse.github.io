@@ -530,6 +530,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/1130035?v=4"
             ]
+        },
+        {
+            "login": "mrmundt",
+            "name": "Miranda Mundt",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/dept.cfm?org=01424",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/55767766?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

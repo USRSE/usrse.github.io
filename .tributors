@@ -262,5 +262,10 @@
         "orcid": "0000-0003-4530-4692",
         "affiliation": "Carnegie Mellon University",
         "blog": "https://github.com/crd477"
+    },
+    "mrmundt": {
+        "name": "Miranda Mundt",
+        "bio": "Research Software Engineer",
+        "blog": "https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/dept.cfm?org=01424"
     }
 }
