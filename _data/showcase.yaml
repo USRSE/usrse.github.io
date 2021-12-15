@@ -1,0 +1,18 @@
+- title: Why a Research Software Engineer?
+  description: A community white paper that describes why we need research software engineers
+  category: whitepaper
+  url: https://github.com/USRSE/usrse.github.io/wiki/Why-a-Research-Software-Engineer-Role?
+  published: 02-06-2021
+  year: "2021"
+- title: The Story of the Research Software Engineer
+  description: A story of the little hammer that could, a graduate student that finds her way as a research software engineer
+  category: youtube
+  url: https://www.youtube.com/watch?v=trAfA9VWLTQ
+  published: 07-09-2019
+  year: "2019"
+- title: US-RSE supporting the research software engineer
+  description: A paper on US-RSE supporting the research software engineer
+  category: paper
+  url: https://www.computer.org/publications/tech-news/research/us-rse-supporting-the-research-software-engineer/
+  published: "12-15-2021"
+  year: "2021"

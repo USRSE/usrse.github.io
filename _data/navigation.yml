@@ -73,6 +73,8 @@
       link: resources/training/
     - name: Organizations
       link: resources/organizations/
+    - name: Showcase
+      link: /showcase/
 
 - name: External
   dropdown:
