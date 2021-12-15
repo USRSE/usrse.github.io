@@ -16,7 +16,7 @@ permalink: /showcase/archive/
 {% assign events = site.data.showcase | sort: "published" | reverse %}
 <ul>
 {% for event in events %}
-<li><a href="{{ event.url }}"><em>{{ event.publised }}</em> {{ event.title }}</a>: {% if event.description %}{{ event.description }}{% endif %} {% assign added = true %}</li>{% endfor %}
+<li><a href="{{ event.url }}"><em>{{ event.published }}</em> {{ event.title }}</a>: {% if event.description %}{{ event.description }}{% endif %} {% assign added = true %}</li>{% endfor %}
 </ul>
 <button class="btn btn-primary" style="float:right;">
   <a href="{{ site.baseurl }}/showcase/" style="color:white">Back to Showcase</a></button>
