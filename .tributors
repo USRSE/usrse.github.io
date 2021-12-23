@@ -266,6 +266,7 @@
     "mrmundt": {
         "name": "Miranda Mundt",
         "bio": "Research Software Engineer",
-        "blog": "https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/dept.cfm?org=01424"
+        "blog": "https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/dept.cfm?org=01424",
+        "orcid": "0000-0002-5283-2138"
     }
 }
