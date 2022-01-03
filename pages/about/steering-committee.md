@@ -10,18 +10,19 @@ menubar_toc: true
 
 ### Current Steering Committee
 
-* Jeff Carver, University of Alabama (Secretary), 2019-2021
-* Ian Cosden, Princeton University (Chair), 2019-2021
-* Julia Damerow, Arizona State University (Election Chair), 2021-2022
-* Charles Ferenbaugh, Los Alamos National Laboratory, 2019-2021
-* Sandra Gesing, University of Notre Dame (Vice-Chair), 2019-2021
-* Chris Hill, MIT (Treasurer), 2019-2022
+* Nicole Brewer, Purdue University, 2022-2023
+* Jeff Carver, University of Alabama, 2019-2023
+* Ian Cosden, Princeton University, 2019-2023
+* Julia Damerow, Arizona State University, 2021-2022
+* Sandra Gesing, Discovery Partner Institute at the University of Illinois Chicago, 2019-2023
+* Chris Hill, MIT, 2019-2022
 * Daniel S. Katz, University of Illinois at Urbana-Champaign, 2019-2022
-* Christina Maimone, Northwestern University, 2019-2021
+* Christina Maimone, Northwestern University, 2019-2023
 * Lance Parsons, Princeton University, 2019-2022
 
 ### Former Steering Committee Members
 
+* Charles Ferenbaugh, Los Alamos National Laboratory, 2019-2021
 * Jordan Perr-Sauer, National Renewable Energy Laboratory, 2019-2020
 
 
