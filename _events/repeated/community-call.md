@@ -21,8 +21,12 @@ rrule:
 ---
 
 The USRSE monthly community call occurs on the second Thursday of each month. 12:00-13:00 Eastern. Community call topics, agenda and zoom regiatration
-announcements are posted to Slack and sent to USRSE email accounts. Community calls typically have a topical focus. They provide a forum for USRSE members
-to compare experiences aroud a topic, hang-out and chat on zoom. Any and all suggestions for topics are 
+announcements are posted to Slack and sent to USRSE email accounts. 
+
+Community calls typically have a topical focus. They provide a forum for USRSE members
+to compare experiences aroud a topic, hang-out and chat on zoom. 
+
+Any and all suggestions for topics are 
 welcome at [https://github.com/USRSE/monthly-community-calls/issues](https://github.com/USRSE/monthly-community-calls/issues).
 Anyone in USRSE is super welcome to lead a call on a topic of there choosing. Feel free to reach out to the organizers (currently Julia Damerow and
 Chris Hill) on USRSE slack ( "@Julia Damerow" and/or "@Chris Hill") or elsewhere if you would like to host (or help with) a call.
