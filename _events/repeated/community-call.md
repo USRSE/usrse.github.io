@@ -17,14 +17,14 @@ rrule:
   - DTSTART;TZID=America/New_York:20220113T120000
 # second Thursday of every month
   - RRULE:UNTIL=20251211T120000;FREQ=MONTHLY;BYDAY=+2TH
-  - RDATE;TZID=America/New_York:20220108T120000
+  - RDATE;TZID=America/New_York:20220113T120000
 ---
 
 The USRSE monthly community calls occur on the second Thursday of each month. 12:00-13:00 Eastern. Community call topics, agenda and zoom registration
 announcements are posted to Slack and sent to USRSE email accounts. 
 
 Community calls typically have a topical focus. They provide a forum for USRSE members
-to compare experiences aroud a topic, hang-out and chat on zoom.
+to compare experiences around a topic, hang-out and chat on zoom.
 
 Any and all suggestions for topics are 
 welcome at [https://github.com/USRSE/monthly-community-calls/issues](https://github.com/USRSE/monthly-community-calls/issues).
