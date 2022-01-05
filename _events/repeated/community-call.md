@@ -17,7 +17,7 @@ rrule:
   - DTSTART;TZID=America/New_York:20220113T120000
 # second Thursday of every month
   - RRULE:UNTIL=20251211T120000;FREQ=MONTHLY;BYDAY=+2TH
-  - RDATE;TZID=America/New_York:20220108T120000
+  - RDATE;TZID=America/New_York:20220113T120000
 ---
 
 The USRSE monthly community calls occur on the second Thursday of each month. 12:00-13:00 Eastern. Community call topics, agenda and zoom registration
