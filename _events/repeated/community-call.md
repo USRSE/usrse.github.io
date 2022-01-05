@@ -15,7 +15,7 @@ repeated: true
 # note that the dtstart and rdate at the end are the same
 rrule: 
   - DTSTART;TZID=America/New_York:20220113T120000
-# first tuesday of every month
+# second Thursday of every month
   - RRULE:UNTIL=20251211T120000;FREQ=MONTHLY;BYDAY=+2TH
   - RDATE;TZID=America/New_York:20220108T120000
 ---
