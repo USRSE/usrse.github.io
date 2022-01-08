@@ -1,6 +1,6 @@
 ---
 title: Jan 2022 Community Call
-expires: 2022-01-13
+expires: 2022-01-14
 event_date: "Jan 13, 2021"
 layout: event
 duration: 60
