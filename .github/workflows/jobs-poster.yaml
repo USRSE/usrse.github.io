@@ -65,7 +65,7 @@ jobs:
         message: ${{ env.message }}
       run: |
          echo "Job message for Twitter:\n"
-         echo ${{ message }}
+         echo ${message}
 
 #    - uses: Eomm/why-don-t-you-tweet@bfa8227517f7d2351aa9f2bc48b312792f2ccbf7
 #      if: (github.event_name != 'pull_request')
