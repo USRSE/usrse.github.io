@@ -1,0 +1,65 @@
+name: Post New Jobs
+
+on:
+  push:
+    paths:
+      - '_data/jobs.yml'
+    branches:
+      - main
+
+jobs:
+  slack-poster:
+    runs-on: ubuntu-latest
+    name: Run Jobs Slack Poster
+    outputs:
+      jobs: ${{ steps.updater.outputs.fields }}
+      empty_matrix: ${{ steps.dockerbuild.outputs.dockerbuild_matrix_empty }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - id: updater
+        name: Job Updater
+        uses: rseng/jobs-updater@main
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        with:
+          filename: "_data/jobs.yml"
+          key: "url"
+
+      - run: echo ${{ steps.updater.outputs.fields }}
+        name: Show New Jobs
+        shell: bash
+        
+  twitter-poster:
+    needs:
+      - slack-poster
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        jobs: ${{ fromJson(needs.slack-poster.outputs.jobs) }}
+
+    name: Prepare to Post to Twitter
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: View Jobs Output
+      env: 
+        JOBS: ${{ matrix.jobs }}
+      run: |
+         echo "Jobs from previous step:\n"
+         echo ${JOBS}
+         # TODO decide if we want one tweet or many tweets
+
+    - uses: ethomson/send-tweet-action@2eb0689d04dc0e223d17f07b638e027f78bc6853
+      if: (github.event_name != 'pull_request')
+      with:
+        status: ${{ env.jobs_message }}
+        consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+        consumer-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+        access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+        access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+

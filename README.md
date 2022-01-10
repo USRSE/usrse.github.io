@@ -448,11 +448,31 @@ that a link is not expired and the check fails, we would want to know about this
 
 #### Post New Jobs to Slack
 
-The workflow [jobs-slack-poster.yml](.github/workflows/jobs-slack-poster.yml) is run on any push
+The workflow [jobs-poster.yaml](.github/workflows/jobs-poster.yaml) is run on any push
 to `main` with changes to `_data/jobs.yml`. If new jobs are found, it will post the Job URL to
 the USRSE Slack `#jobs` channel. It utilizes the [Jobs updater](https://github.com/rseng/jobs-updater)
 Github Action by @vsoch and @jhkennedy to parse the `_data/jobs.yml` file for new jobs and post them
 the USRSE Slack.
+
+#### Post New Jobs to Twitter
+
+The same workflow [jobs-poster.yaml](.github/workflows/jobs-poster.yaml)  has a follow up
+step that uses output from the [Jobs updater](https://github.com/rseng/jobs-updater) to then
+make these same posts on Twitter. In order for this work, using the account that you want to tweet from,
+you should sign into the [developer portal](https://developer.twitter.com/en/portal/) and make a new project
+that describes the goal of US-RSE, e.g.,:
+
+> We (the United States Research Software Engineer Association) use Twitter to get a broad reach to people working on software in academia - to support community spirit and growth. We currently have a jobs board on our website that populates from GitHub, and will reach more potentially interested people in our community by posting new jobs (as they are merged in a workflow) from a GitHub workflow.
+
+For the use case, you can choose "making a bot" and the title for the project can be anything you like.
+Importantly, once you create the bot you'll need to add the following secrets to your GitHub repository:
+
+ - TWITTER_ACCESS_TOKEN: is the version 2.x of the API token
+ - TWITTER_ACCESS_SECRET: is the version 2.x of the API secret
+ - TWITTER_CONSUMER_API_KEY: is the key/token created for the user account
+ - TWITTER_CONSUMER_API_SECRET: is the secret for the user account
+ 
+Yes, this means that the tokens are specific to this account.
 
 #### Greetings
 This simple greetings action greets first time users (for issues).
