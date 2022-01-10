@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Run Jobs Slack Poster
     outputs:
-      jobs: ${{ steps.updater.outputs.fields }}
+      matrix: ${{ steps.updater.outputs.matrix }}
       empty_matrix: ${{ steps.dockerbuild.outputs.dockerbuild_matrix_empty }}
     steps:
       - uses: actions/checkout@v2
@@ -21,12 +21,13 @@ jobs:
 
       - id: updater
         name: Job Updater
-        uses: rseng/jobs-updater@main
+        uses: rseng/jobs-updater@add/deploy-arg
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         with:
           filename: "_data/jobs.yml"
           key: "url"
+          deploy: ${{ github.event_name == 'pull_request' }}
 
       - run: echo ${{ steps.updater.outputs.fields }}
         name: Show New Jobs
@@ -38,8 +39,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      matrix:
-        jobs: ${{ fromJson(needs.slack-poster.outputs.jobs) }}
+      matrix: 
+        jobs: ${{ fromJson(needs.slack-poster.outputs.matrix) }}
 
     name: Prepare to Post to Twitter
     steps:
@@ -47,19 +48,18 @@ jobs:
       uses: actions/checkout@v2
 
     - name: View Jobs Output
-      env: 
-        JOBS: ${{ matrix.jobs }}
       run: |
-         echo "Jobs from previous step:\n"
-         echo ${JOBS}
-         # TODO decide if we want one tweet or many tweets
+         echo "Job params from previous step:\n"
+         echo ${{ matrix.jobs[0] }}
+         echo ${{ matrix.jobs[1] }}
+         echo ${{ matrix.jobs[2] }}
 
-    - uses: ethomson/send-tweet-action@2eb0689d04dc0e223d17f07b638e027f78bc6853
+    - uses: Eomm/why-don-t-you-tweet@bfa8227517f7d2351aa9f2bc48b312792f2ccbf7
       if: (github.event_name != 'pull_request')
       with:
-        status: ${{ env.jobs_message }}
-        consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
-        consumer-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
-        access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-        access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
-
+        tweet-message: "${{ matrix.jobs[2] }}"
+      env:
+        TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+        TWITTER_CONSUMER_API_SECRET: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+        TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+        TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
