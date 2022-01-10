@@ -55,7 +55,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Generate Message
-      run:
+      run: |
          emoji=$(python -c "import random;print(random.choice(['⭐️','😍️','❤️','👀️','✨️','🤖️','💼️','🤩️','😸️','😻️','👉️','🕶️','🔥️','💻️']))")
          message="New Job! ${emoji} - ${{ matrix.jobs[0] }}"
          echo "message=${message}" >> $GITHUB_ENV         
