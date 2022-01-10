@@ -472,7 +472,7 @@ Importantly, once you create the bot you'll need to add the following secrets to
  - TWITTER_CONSUMER_API_KEY: is the key/token created for the user account
  - TWITTER_CONSUMER_API_SECRET: is the secret for the user account
  
-Yes, this means that the tokens are specific to this account.
+Yes, this means that the tokens are specific to this account. The action (and exact commit) we use is [Eomm/why-don-t-you-tweet](https://github.com/Eomm/why-don-t-you-tweet/commit/bfa8227517f7d2351aa9f2bc48b312792f2ccbf7).
 
 #### Greetings
 This simple greetings action greets first time users (for issues).

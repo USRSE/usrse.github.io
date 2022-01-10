@@ -1,7 +1,6 @@
 name: Post New Jobs
 
 on:
-  pull_request: []
   push:
     paths:
       - '_data/jobs.yml'
@@ -25,8 +24,8 @@ jobs:
         with:
           filename: "_data/jobs.yml"
           key: "url"
-          deploy: false
-          test: true
+          deploy: true
+          test: false
 
       - run: echo ${{ steps.updater.outputs.fields }}
         name: Show New Jobs
@@ -67,12 +66,12 @@ jobs:
          echo "Job message for Twitter:"
          echo ${message}
 
-#    - uses: Eomm/why-don-t-you-tweet@bfa8227517f7d2351aa9f2bc48b312792f2ccbf7
-#      if: (github.event_name != 'pull_request')
-#      with:
-#        tweet-message: "${{ matrix.jobs[2] }}"
-#      env:
-#        TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
-#        TWITTER_CONSUMER_API_SECRET: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
-#        TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-#        TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
+    - uses: Eomm/why-don-t-you-tweet@bfa8227517f7d2351aa9f2bc48b312792f2ccbf7
+      if: (github.event_name != 'pull_request')
+      with:
+        tweet-message: "${{ env.message }}"
+      env:
+        TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+        TWITTER_CONSUMER_API_SECRET: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+        TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+        TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
