@@ -1,0 +1,77 @@
+name: Post New Jobs
+
+on:
+  push:
+    paths:
+      - '_data/jobs.yml'
+    branches:
+      - main
+
+jobs:
+  slack-poster:
+    runs-on: ubuntu-latest
+    name: Run Jobs Slack Poster
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - id: updater
+        name: Job Updater
+        uses: rseng/jobs-updater@add/deploy-arg
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        with:
+          filename: "_data/jobs.yml"
+          key: "url"
+          deploy: true
+          test: false
+
+      - run: echo ${{ steps.updater.outputs.fields }}
+        name: Show New Jobs
+        shell: bash
+
+      - run: echo ${{ steps.updater.outputs.matrix }}
+        name: Show Matrix
+        shell: bash
+
+    outputs:
+      matrix: ${{ steps.updater.outputs.matrix }}
+      fields: ${{ steps.updater.outputs.fields }}
+        
+  twitter-poster:
+    needs:
+      - slack-poster
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix: 
+        jobs: ${{ fromJson(needs.slack-poster.outputs.matrix) }}
+
+    name: Prepare to Post to Twitter
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Generate Message
+      run: |
+         emoji=$(python -c "import random;print(random.choice(['⭐️','😍️','❤️','👀️','✨️','🤖️','💼️','🤩️','😸️','😻️','👉️','🕶️','🔥️','💻️']))")
+         message="New Job! ${emoji} ${{ matrix.jobs[0] }}"
+         echo "message=${message}" >> $GITHUB_ENV         
+
+    - name: View Jobs Message
+      env:
+        message: ${{ env.message }}
+      run: |
+         echo "Job message for Twitter:"
+         echo ${message}
+
+    - uses: Eomm/why-don-t-you-tweet@bfa8227517f7d2351aa9f2bc48b312792f2ccbf7
+      if: (github.event_name != 'pull_request')
+      with:
+        tweet-message: "${{ env.message }}"
+      env:
+        TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+        TWITTER_CONSUMER_API_SECRET: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+        TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+        TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
