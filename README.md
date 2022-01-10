@@ -456,7 +456,7 @@ the USRSE Slack.
 
 #### Post New Jobs to Twitter
 
-The same workflow [jobs-poster.yaml](.github/workflows/jobs-poster.yaml)  has a follow up
+The same workflow [jobs-poster.yaml](.github/workflows/jobs-poster.yaml) has a follow-up
 step that uses output from the [Jobs updater](https://github.com/rseng/jobs-updater) to then
 make these same posts on Twitter. In order for this work, using the account that you want to tweet from,
 you should sign into the [developer portal](https://developer.twitter.com/en/portal/) and make a new project

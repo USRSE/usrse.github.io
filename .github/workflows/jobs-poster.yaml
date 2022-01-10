@@ -1,6 +1,7 @@
 name: Post New Jobs
 
 on:
+  pull_request: []
   push:
     paths:
       - '_data/jobs.yml'
@@ -13,7 +14,6 @@ jobs:
     name: Run Jobs Slack Poster
     outputs:
       matrix: ${{ steps.updater.outputs.matrix }}
-      empty_matrix: ${{ steps.dockerbuild.outputs.dockerbuild_matrix_empty }}
     steps:
       - uses: actions/checkout@v2
         with:
