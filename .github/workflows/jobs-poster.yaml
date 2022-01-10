@@ -59,6 +59,7 @@ jobs:
          emoji=$(python -c "import random;print(random.choice(['⭐️','😍️','❤️','👀️','✨️','🤖️','💼️','🤩️','😸️','😻️','👉️','🕶️','🔥️','💻️']))")
          message="New Job! ${emoji} - ${{ matrix.jobs[0] }}"
          echo "message=${message}" >> $GITHUB_ENV         
+         printf "${message}\n"
 
     - name: View Jobs Message
       env:
