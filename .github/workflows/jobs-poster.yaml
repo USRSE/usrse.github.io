@@ -54,12 +54,16 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: View Jobs Output
+    - name: Generate Message
+      run:
+         emoji=$(python -c "import random;print(random.choice(['⭐️','😍️','❤️','👀️','✨️','🤖️','💼️','🤩️','😸️','😻️','👉️','🕶️','🔥️','💻️']))")
+         message="New Job! ${emoji} - ${{ matrix.jobs[0] }}"
+         echo "message=${message}" >> $GITHUB_ENV         
+
+    - name: View Jobs Message
       run: |
-         echo "Job params from previous step:\n"
-         echo ${{ matrix.jobs[0] }}
-         echo ${{ matrix.jobs[1] }}
-         echo ${{ matrix.jobs[2] }}
+         echo "Job message for Twitter:\n"
+         echo ${{ env.message }}
 
 #    - uses: Eomm/why-don-t-you-tweet@bfa8227517f7d2351aa9f2bc48b312792f2ccbf7
 #      if: (github.event_name != 'pull_request')
