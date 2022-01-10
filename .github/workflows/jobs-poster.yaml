@@ -12,8 +12,6 @@ jobs:
   slack-poster:
     runs-on: ubuntu-latest
     name: Run Jobs Slack Poster
-    outputs:
-      matrix: ${{ steps.updater.outputs.matrix }}
     steps:
       - uses: actions/checkout@v2
         with:
@@ -37,6 +35,10 @@ jobs:
       - run: echo ${{ steps.updater.outputs.matrix }}
         name: Show Matrix
         shell: bash
+
+    outputs:
+      matrix: ${{ steps.updater.outputs.matrix }}
+      fields: ${{ steps.updater.outputs.fields }}
         
   twitter-poster:
     needs:
