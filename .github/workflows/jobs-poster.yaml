@@ -1,6 +1,7 @@
 name: Post New Jobs
 
 on:
+  pull_request: []
   push:
     paths:
       - '_data/jobs.yml'
@@ -26,7 +27,8 @@ jobs:
         with:
           filename: "_data/jobs.yml"
           key: "url"
-          deploy: ${{ github.event_name == 'pull_request' }}
+          deploy: ${{ github.event_name != 'pull_request' }}
+          test: ${{ github.event_name == 'pull_request' }}
 
       - run: echo ${{ steps.updater.outputs.fields }}
         name: Show New Jobs
