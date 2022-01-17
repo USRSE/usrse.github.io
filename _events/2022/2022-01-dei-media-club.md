@@ -8,8 +8,8 @@ layout: event
 repeated: false
 cateogory: dei
 time:
-    - - start: 2022-01-31T16:00:00Z
-        end: 2021-01-31T17:00:00Z
+    - - start: 2022-01-31T17:00:00Z
+        end: 2021-01-31T18:00:00Z
 ---
 
 In an effort to promote continual education and discussion, the [Diversity,
@@ -32,4 +32,4 @@ To prepare:
 3. Come prepared to discuss!
 
 Share the event with your colleagues:
-https://emory.zoom.us/meeting/register/tJMqc-2grjksGNXQzhS73j3m5gKj2JHdaAxk
+[https://emory.zoom.us/meeting/register/tJMqc-2grjksGNXQzhS73j3m5gKj2JHdaAxk](https://emory.zoom.us/meeting/register/tJMqc-2grjksGNXQzhS73j3m5gKj2JHdaAxk)
