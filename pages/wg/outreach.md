@@ -14,7 +14,7 @@ RSE as a professional designation through engagement with industry, academia,
 national labs, and students.
 
 Those interested in contributing to this goal are encouraged to join our
-bi-weekly Teams meetings. To get involved, visit the
+bi-weekly virtual meetings. To get involved, visit the
 [`#outreach`](https://usrse.slack.com/messages/outreach) channel on the US-RSE
 slack or contact the
 <a href="mailto:outreach_wg@us-rse.org">Outreach working group list</a>.
@@ -41,35 +41,36 @@ interviewees and production.
 The US-RSE has had a presence at several conferences and workshops throughout
 its lifetime. For example:
 
-- Supercomputing 2021: RSE-in-HPC Workshop, Student Program Orientation
-- PEARC21: RSE Career Panel
-- Supercomputing 2020: RSE-in-HPC Workshop
-- PEARC20: Research Software Engineers Community Workshop
-- PEARC19: Building a Community of Research Software Engineers Birds of a Feather
-- EDUCAUSE 2019: Supporting Research Software and Research Software Engineers Poster
+- Supercomputing 2021: [RSE-in-HPC Workshop](https://us-rse.org/rse-hpc-2021/), Student Program Orientation
+- PEARC21: [RSE Career Panel](https://us-rse.org/2021-07-20-pearc21-panel/)
+- Supercomputing 2020: [RSE-in-HPC Workshop](https://us-rse.org/rse-hpc-2020/)
+- PEARC20: [Research Software Engineers Community Workshop](https://us-rse.org/events/2020/2020-07-pearc20/)
+- PEARC19: Building a Community of Research Software Engineers Birds of a Feather - [Proposal](https://ssl.linklings.net/conferences/pearc/pearc19_program/views/includes/files/bof111s1.pdf), [Event](https://us-rse.org/events/2019/pearc-2019/)
+- EDUCAUSE 2019: [Supporting Research Software and Research Software Engineers Poster](https://events.educause.edu/annual-conference/2019/agenda/supporting-research-software-development)
 
 ### External Collaboration
 
 The US-RSE has collaborated with other organizations in the past for events
-such as the Early Career Panel (Academic Data Science Alliance).
+such as the [Early Career Panel](https://academicdatascience.org/cdn/early-career-panel)
+([Academic Data Science Alliance](https://academicdatascience.org/)).
 
 ## Future Directions
 
 ### Conference and Workshop Participation
 
-The US-RSE will continue to engage in conferences and workshops. We aim to
+US-RSE will continue to engage in conferences and workshops. We aim to
 broaden our presence at previously unrepresented conferences to include
 domain-specific conferences and general technical conferences.
 
 Towards this goal, the Outreach working group is putting together a call for
-volunteers for a SciPy Birds of a Feather RSE panel. If you are interested in
-participating as a panel member, please fill out
-[this form](https://forms.gle/PUcfcD7LnKVXnZfJ8).
+volunteers for a [SciPy 2022](https://www.scipy2022.scipy.org/) Birds of a
+Feather RSE panel. If you are interested inparticipating as a panel member,
+please fill out [this form](https://forms.gle/PUcfcD7LnKVXnZfJ8).
 
 ### Customizable RSE Introduction Template
 
-Many members of the US-RSE have spoken in diverse environments to a variety of
-audiences about the US-RSE. There has been no standardized presentation or
+Many members of US-RSE have spoken in diverse environments to a variety of
+audiences about US-RSE. There has been no standardized presentation or
 template for ad-hoc events such as these.
 
 To address this gap, the Outreach working group
