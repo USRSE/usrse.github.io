@@ -8,7 +8,7 @@ permalink: /wg/outreach/
 # Overview
 
 The US-RSE Outreach Working Group is dedicated to broadening the US-RSE's
-engagement with the RSE and wider computationl science and engineering (CSE)
+engagement with the RSE and wider computational science and engineering (CSE)
 communities. We strive to raise awareness of the US-RSE as an association and
 RSE as a professional designation through engagement with industry, academia,
 national labs, and students.
@@ -33,8 +33,8 @@ Created by Vanessa Sochat, the [RSE Stories podcast](https://us-rse.org/rse-stor
 aims to cast a spotlight on the differing backgrounds and paths professionals
 have taken to become RSEs and help shape our understanding of what an RSE really is.
 
-The podcast has existed since 2019 and is looking for more volunteers both as
-interviewees and production.
+The podcast has existed since 2019 and is looking for more volunteers both for
+interviewees and production assistance.
 
 ### Conference and Workshop Participation
 
@@ -64,7 +64,7 @@ domain-specific conferences and general technical conferences.
 
 Towards this goal, the Outreach working group is putting together a call for
 volunteers for a [SciPy 2022](https://www.scipy2022.scipy.org/) Birds of a
-Feather RSE panel. If you are interested inparticipating as a panel member,
+Feather RSE panel. If you are interested in participating as a panel member,
 please fill out [this form](https://forms.gle/PUcfcD7LnKVXnZfJ8).
 
 ### Customizable RSE Introduction Template
@@ -74,7 +74,7 @@ audiences about US-RSE. There has been no standardized presentation or
 template for ad-hoc events such as these.
 
 To address this gap, the Outreach working group
-aims to create a "Ad-hoc US-RSE Overview Template" that is customizable for
+aims to create an "Ad-hoc US-RSE Overview Template" that is customizable for
 different audiences but provides a basic set of standardized content.
 
 ### Career Counseling
