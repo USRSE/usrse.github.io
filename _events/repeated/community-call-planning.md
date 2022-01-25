@@ -25,5 +25,5 @@ plan for the next community call. All are welcome to join the call, zoom details
 
 Any and all suggestions for community topics are 
 welcome at [https://github.com/USRSE/monthly-community-calls/issues](https://github.com/USRSE/monthly-community-calls/issues).
-Anyone in USRSE is super welcome to lead a call on a topic of there choosing. Feel free to reach out to the organizers (currently Julia Damerow and
+Anyone in USRSE is super welcome to lead a call on a topic of their choosing. Feel free to reach out to the organizers (currently Julia Damerow and
 Chris Hill) on USRSE slack ( "@Julia Damerow" and/or "@Chris Hill") or elsewhere if you would like to host (or help with) a call.
