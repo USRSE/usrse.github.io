@@ -20,8 +20,8 @@ rrule:
   - RDATE;TZID=America/New_York:20220127T120000
 ---
 
-Planning meeting for USRSE monthly community calls occur on the fourth Thursday of each month. 12:00-13:00 Eastern. This is a wokring meeting to
-plan for the next community call. All are welcome to join the call.
+Planning meetings for USRSE monthly community calls occur on the fourth Thursday of each month. 12:00-13:00 Eastern. This is a working meeting to
+plan for the next community call. All are welcome to join the call, zoom details will be posted to the Community Call channel.
 
 Any and all suggestions for community topics are 
 welcome at [https://github.com/USRSE/monthly-community-calls/issues](https://github.com/USRSE/monthly-community-calls/issues).
