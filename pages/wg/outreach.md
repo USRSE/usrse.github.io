@@ -8,10 +8,10 @@ permalink: /wg/outreach/
 # Overview
 
 The US-RSE Outreach Working Group is dedicated to broadening the US-RSE's
-engagement with the RSE and wider computational science and engineering (CSE)
-communities. We strive to raise awareness of the US-RSE as an association and
-RSE as a professional designation through engagement with industry, academia,
-national labs, and students.
+engagement with the research software engineer (RSE) and wider computational
+science and engineering (CSE) communities. We strive to raise awareness of
+US-RSE as an association and RSE as a professional designation through
+engagement with industry, academia, national labs, and students.
 
 Those interested in contributing to this goal are encouraged to join our
 bi-weekly virtual meetings. To get involved, visit the
@@ -38,7 +38,7 @@ both for interviewees and hosts.
 
 ### Conference and Workshop Participation
 
-The US-RSE has had a presence at several conferences and workshops throughout
+US-RSE has had a presence at several conferences and workshops throughout
 its lifetime. For example:
 
 - Supercomputing 2021: [RSE-in-HPC Workshop](https://us-rse.org/rse-hpc-2021/), Student Program Orientation
@@ -50,7 +50,7 @@ its lifetime. For example:
 
 ### External Collaboration
 
-The US-RSE has collaborated with other organizations in the past for events
+US-RSE has collaborated with other organizations in the past for events
 such as the [Early Career Panel](https://academicdatascience.org/cdn/early-career-panel)
 ([Academic Data Science Alliance](https://academicdatascience.org/)).
 
@@ -59,7 +59,7 @@ such as the [Early Career Panel](https://academicdatascience.org/cdn/early-caree
 ### Conference and Workshop Participation
 
 US-RSE will continue to engage in conferences and workshops. We aim to
-broaden our presence at previously unrepresented conferences to include
+broaden our presence at previously unrepresented conferences, including
 domain-specific conferences and general technical conferences.
 
 Towards this goal, the Outreach working group is putting together a call for
