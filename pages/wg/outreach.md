@@ -33,8 +33,8 @@ Created by Vanessa Sochat, the [RSE Stories podcast](https://us-rse.org/rse-stor
 aims to cast a spotlight on the differing backgrounds and paths professionals
 have taken to become RSEs and help shape our understanding of what an RSE really is.
 
-The podcast has existed since 2019 and is looking for more volunteers both for
-interviewees and production assistance.
+The podcast has existed since September 2019 and is looking for more volunteers
+both for interviewees and hosts.
 
 ### Conference and Workshop Participation
 
@@ -81,8 +81,15 @@ different audiences but provides a basic set of standardized content.
 
 As Research Software Engineering is still a relatively new professional
 designation, the Outreach working group would like to broaden awareness of
-paths that lead to RSEs throughout colleges and high schools.
+paths that lead to RSEs throughout universities, colleges, and high schools.
 
 We aim to create connections with career counseling programs and provide
 resources about what RSEs are and how to become an RSE such that the younger
 generation is introduced to the concept sooner in their educational careers.
+
+# Member Employer Outreach and Advocacy
+
+Many US-RSE members' employers do not have a clear understanding of the RSE
+profession and a clear growth path for their employed RSEs. We hope to encourage
+outreach to member employers in order to broaden their understanding of RSE
+needs.
