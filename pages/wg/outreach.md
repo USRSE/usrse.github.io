@@ -87,7 +87,7 @@ We aim to create connections with career counseling programs and provide
 resources about what RSEs are and how to become an RSE such that the younger
 generation is introduced to the concept sooner in their educational careers.
 
-# Member Employer Outreach and Advocacy
+### Member Employer Outreach and Advocacy
 
 Many US-RSE members' employers do not have a clear understanding of the RSE
 profession and a clear growth path for their employed RSEs. We hope to encourage
