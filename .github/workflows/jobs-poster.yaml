@@ -18,12 +18,17 @@ jobs:
 
       - id: updater
         name: Job Updater
-        uses: rseng/jobs-updater@main
+        uses: rseng/jobs-updater@add/multiple-metadata-fields
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         with:
           filename: "_data/jobs.yml"
-          key: "url"
+
+          # Fields to include (all but url will have title before)
+          keys: "name,location,url"
+
+          # Field to determine job uniqueness
+          unique: "url"
 
           deploy: true
           test: false
@@ -36,9 +41,9 @@ jobs:
           twitter_consumer_key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
 
       - run: echo ${{ steps.updater.outputs.fields }}
-        name: Show New Jobs
+        name: Show Fields Used
         shell: bash
 
       - run: echo ${{ steps.updater.outputs.matrix }}
-        name: Show Matrix
+        name: Show New Jobs
         shell: bash
