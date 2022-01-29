@@ -7,7 +7,7 @@ event_date: "fourth Thursday each month 12:00-13:00 Eastern"
 layout: event
 category: community-call
 time:
-  - - start 2022-01-27
+  - - start: 2022-01-27 12:00 EST
 
 # Repeated events information
 repeated: true

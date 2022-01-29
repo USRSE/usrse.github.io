@@ -182,7 +182,7 @@ frequency: "yearly"
 date_start: "2021-10-14"
 until: 2030-10-14
 time:
-  - - start "2021-10-14"
+  - - start: "2021-10-14"
 ---
 ```
 
@@ -197,7 +197,7 @@ instead. Here is an example:
 ...
 layout: event
 time:
-  - - start 2021-01-04
+  - - start: 2021-01-04
 
 # Repeated events information
 repeated: true

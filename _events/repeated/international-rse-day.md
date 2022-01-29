@@ -5,7 +5,7 @@ layout: event
 category: virtual-workshop
 all_day: true
 time:
-  - - start "2021-10-14"
+  - - start: 2021-10-14 11:00 EST
 
 # Repeated events metadata - second Thursday of October
 repeated: true
