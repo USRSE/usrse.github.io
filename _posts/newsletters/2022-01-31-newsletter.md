@@ -166,7 +166,7 @@ We’re excited to announce that  our t-shirt fundraiser raised $1643.66! The fu
 
 ### Fundraising group starting
 
-Following the awesome success of the t-shirt and  fund-drive we are launching a fund-raising channel on Slack and welcome anyone interested to join. If you are excited about helping raise money toward our current annual $5000/year (or more!) goal please feel free to join the fun. We are open to any and all ideas and expect to organize several fundraising activities during 2022. All the funds will go to the US-RSE organization’s financial goals and mission.
+Following the awesome success of the t-shirt and fund-drive we are launching a fundraising channel on Slack and welcome anyone interested to join. If you are excited about helping raise money toward our current annual $5000/year (or more!) goal please feel free to join the fun. We are open to any and all ideas and expect to organize several fundraising activities during 2022. All the funds will go to the US-RSE organization’s financial goals and mission.
 
 ### 2021 financial gift shoutouts
 
