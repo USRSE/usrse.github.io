@@ -174,7 +174,7 @@ Huge **thanks** to everyone who contributed financially in 2021. In total in 202
 
 ### See how we are doing financially
 
-We organize US-RSE financials transparently via the [Open Collective](https://opencollective.com/usrse) project. You can see all budgets, expenses, and contributions on [this site](https://opencollective.com/usrse). Anyone can go to the site and see the current accounts, income and expenses and ….. (if the mood takes you and you are able) **[make a gift to US-RSE](https://opencollective.com/usrse#category-CONTRIBUTE)**!
+We organize US-RSE financials transparently via the [Open Collective](https://opencollective.com/usrse) project. You can see all budgets, expenses, and contributions on [this site](https://opencollective.com/usrse). Anyone can go to the site and see the current accounts, income and expenses and ….. (if the mood takes you and you are able) **[make a tax-deductible gift to US-RSE](https://opencollective.com/usrse#category-CONTRIBUTE)**!
 
 <a name="steering-committee"></a>
 # **2022 Steering Committee Members and Their Roles**
