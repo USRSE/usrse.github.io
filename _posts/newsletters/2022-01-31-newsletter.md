@@ -51,7 +51,7 @@ Most developers will agree that testing is an important part of software develop
 
  The call will discuss, and share knowledge and experiences, around questions such as why you would want to test and what the benefits are, what technologies are out there, and what processes RSEs do (and don’t) employ to test their software. No matter if you have never heard of testing or if you are an expert, come join us for an interesting discussion and to hear and share some "testimonies" of what has worked and not worked for others.
 
-We have also changed the way we organize community calls. We meet two week prior to each community call to decide on a topic and discuss how to structure the call. Anyone is welcome to join the preparation call on [Zoom](https://mit.zoom.us/j/93471607274?pwd=aXUzNzZsWElpWnc4N2NXaWxOcVNlQT09).
+We have also changed the way we organize community calls. We meet two weeks prior to each community call to decide on a topic and discuss how to structure the call. Anyone is welcome to join the preparation call on [Zoom](https://mit.zoom.us/j/93471607274?pwd=aXUzNzZsWElpWnc4N2NXaWxOcVNlQT09).
 
 <a name="podcast"></a>
 # **RSE Stories Podcast**
