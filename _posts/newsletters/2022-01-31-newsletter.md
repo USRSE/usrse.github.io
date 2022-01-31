@@ -162,7 +162,7 @@ Starting in January 2022, US-RSE members are meeting biweekly as part of the Out
 <a name="financials"></a>
 # **US-RSE Financials**
 
-We’re excited to announce that  our t-shirt fundraiser raised $1643.66! The funds will appear in the US-RSE account soon. These funds will go toward the US-RSE [financial goals](https://docs.google.com/presentation/d/19-yTp2Q4SWP5ZiYb3VJa82hflc0p5FkeuhKWlIbwsD4) outlined in the AGM meeting. There are now 112 US-RSE logo shirts and hoodies out there in the wild. We look forward to seeing pictures of them in action around the US-RSE universe and hearing about their new lives and adventures wherever they go.
+We’re excited to announce that our t-shirt fundraiser raised $1643.66! The funds will appear in the US-RSE account soon. These funds will go toward the US-RSE [financial goals](https://docs.google.com/presentation/d/19-yTp2Q4SWP5ZiYb3VJa82hflc0p5FkeuhKWlIbwsD4) outlined in the AGM meeting. There are now 112 US-RSE logo shirts and hoodies out there in the wild. We look forward to seeing pictures of them in action around the US-RSE universe and hearing about their new lives and adventures wherever they go.
 
 ### Fundraising group starting
 
