@@ -3,7 +3,7 @@ layout: post
 title: US-RSE Newsletter
 subtitle: January 2022 Newsletter
 category: newsletter
-tags: [newsletter, survey, sc22, scipy22]
+tags: [newsletter, survey, supercomputing, scipy]
 ---
 
 In this monthly newsletter, we share recent, current, and planned activities of the US-RSE Association, and related news that we think is of interest to US-RSE members. Newsletters are also available on our [website](https://us-rse.org/newsletters/) alongside the growing resources and information on the US-RSE Association. To receive our newsletter, join US-RSE [here](https://us-rse.org/join/).
