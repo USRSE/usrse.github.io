@@ -6,8 +6,30 @@ permalink: /jobs/
 
 ## Current RSE openings
 
+{% assign has_related = "false" %}
 {% assign sorted_jobs = site.data.jobs | sort: "posted" | reverse %}
 <ol>{% for job in sorted_jobs %}
+{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+{% capture expires %}{{ job.expires | date: '%s'}}{% endcapture %}
+{% capture posted %}{{ job.posted | date: '%b %d, %Y'}}{% endcapture %}
+
+{% if expires > nowunix %}
+  {% if job.rse_related %}{% assign has_related = "true" %}{% endif %}
+  {% unless job.rse_related %}
+  {% if posted != '' %}
+    <li><a href="{{ job.url }}" target="_blank">{{ job.name }}</a>: {{ job.location }}&emsp;<em>Posted:&nbsp;{{ posted }}</em></li>
+  {% else %}
+    <li><a href="{{ job.url }}" target="_blank">{{ job.name }}</a>: {{ job.location }}</li>
+  {% endif %}
+{% endunless %}{% endif %}{% endfor %}</ol>
+
+<br>
+
+{% if has_related == "true" %}
+### Related RSE Openings
+
+<ol>{% for job in sorted_jobs %}
+{% if job.rse_related %}
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 {% capture expires %}{{ job.expires | date: '%s'}}{% endcapture %}
 {% capture posted %}{{ job.posted | date: '%b %d, %Y'}}{% endcapture %}
@@ -18,9 +40,12 @@ permalink: /jobs/
   {% else %}
     <li><a href="{{ job.url }}" target="_blank">{{ job.name }}</a>: {{ job.location }}</li>
   {% endif %}
-{% endif %}{% endfor %}</ol>
+{% endif %}{% endif %}{% endfor %}</ol>
 
 <br>
+
+
+{% endif %}
 
 {% assign board_size = site.data.job-boards.boards | size %}
 {% if board_size > 0 %}

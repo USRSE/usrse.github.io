@@ -12,6 +12,8 @@ Non-US based postings will be considered, provided they are open to applicants f
 
 Each post will be reviewed for applicability to the US-RSE community.
 Jobs are considered applicable, regardless of title, if they contain a significant amount of Research Software Engineering as a core responsibility/requirement or are sufficiently adjacent to Research Software Engineering that some Research Software Engineers would be qualified and potentially interested.
+If a job is RSE-related but perhaps not perfectly agreed to be explicitly research software engineering, an `rse_related` tag can be
+applied to the post, and it will be included on the board in a separate "RSE Related Opportunities" section.
 US-RSE organizers and maintainers reserve the right to not post a submitted job if it is deemed inappropriate or inapplicable.  
 
 Jobs can be submitted through the [US-RSE job submission google form](https://docs.google.com/forms/d/e/1FAIpQLSfYK64R1c0rj-ERldGLxuqedLIbsYPZXj9uBplDRYNmnND10Q/viewform?usp=sf_link).

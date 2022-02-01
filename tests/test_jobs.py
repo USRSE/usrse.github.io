@@ -57,5 +57,9 @@ class TestJobs(unittest.TestCase):
             self.assertTrue(isinstance(entry['expires'], datetime.date))
             self.assertTrue(isinstance(entry['posted'], datetime.date))
 
+            # Note that False is not required (it is implied)
+            if "rse_related" in entry:
+                assert entry['rse_related'] in [True, False]
+
 if __name__ == '__main__':
     unittest.main()

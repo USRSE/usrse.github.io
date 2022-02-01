@@ -44,10 +44,23 @@ job would appear on the site until the first of July, 2019.
 And don't forget to write your new job at the top of the [_data/jobs.yml](_data/jobs.yml) file!
 For testing, we look to see that all fields are defined, the url exists, and
 that the "expires" and "posted" fields load as a `datetime.date` object in
-Python. If you copy the format above, you should be ok.
+Python. If you copy the format above, you should be ok. If you have a job that you think
+might be RSE-related but you aren't sure? Go for it! We have an "rse_related" category
+that is included on the page, but rendered separately. This might be appropriate for positions
+like postdocs or similar that don't perfectly match our [job posting policy](https://us-rse.org/jobs/policy/).
+To contribute a job of this type, just add `rse_related: true` as shown below:
+
+```yaml
+- expires: 2022-07-01
+  location: 'Stanford, CA'
+  name: 'Super Awesome Simulations Group (postdoc)'
+  posted: 2022-05-01
+  url: 'https://super-awsome-group.io/jobs'
+  rse_related: true
+```
 
 Once your job(s) are merged to `main` a [GitHub Action](.github/workflows/jobs-slack-poster.yml) will automatically
-cross-post your job(s) to the USRSE Slack `#jobs` channel!
+cross-post your job(s) to the USRSE Slack `#jobs` channel and Twitter!
 
 ![example post image](https://raw.githubusercontent.com/rseng/jobs-updater/main/img/example.png)
 
