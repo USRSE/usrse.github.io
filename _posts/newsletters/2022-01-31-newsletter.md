@@ -73,7 +73,7 @@ US-RSE members plan to submit a proposal for a [Birds of a Feather session at Sc
 <a name="sc22"></a>
 # **US-RSE at [SC22](https://sc22.supercomputing.org/)**
 
-We have reserved a 10’ x 10’ small booth space for [SC22](https://sc22.supercomputing.org) in November. Global health situations willing, we hope to be at location 4214 with some of our RSE friends from around the world. The US-RSE #sc22 Slack channel will be starting soon. We look forward to chatting and brainstorming about fun RSE uses for a cozy 100 square foot space, and maybe answering the vexing question of how many RSEs can fit in a telephone booth.
+We have reserved a 10’ x 10’ small booth space for [SC22](https://sc22.supercomputing.org) in November. Global health situations willing, we hope to be at location 4214 with some of our RSE friends from around the world. The US-RSE #sc22 Slack channel will be created soon. We look forward to chatting and brainstorming about fun RSE uses for a cozy 100 square foot space, and maybe answering the vexing question of how many RSEs can fit in a telephone booth.
 
 <a name="jobs"></a>
 # **Recent Job Postings**
