@@ -1,3 +1,0 @@
-[default.extend-words]
-# Don't correct the name "Villegas"
-villegas = "villegas"
