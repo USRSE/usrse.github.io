@@ -270,6 +270,7 @@
         "orcid": "0000-0002-5283-2138"
     },
     "braney": {
-        "name": "Bryan Raney"
+        "name": "Bryan Raney",
+        "blog": "https://github.com/braney"
     }
 }
