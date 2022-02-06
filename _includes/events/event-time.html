@@ -1,6 +1,6 @@
 {%- capture start_day -%}{{ time.start | date: "%Y-%m-%d" }}{%- endcapture -%}
 {%- capture end_day -%}{{ time.end | date: "%Y-%m-%d" }}{%- endcapture -%}
-<strong><i class="far fa-clock" aria-hidden="true"></i>{% if page.repeated %} This is a repeated event{% endif %}</strong> <time datetime="{{ time.start | date_to_xmlschema }}" id="start-time">
+<strong><i class="far fa-clock" aria-hidden="true"></i>{% if page.repeated %} This is a repeating event{% endif %}</strong> <time datetime="{{ time.start | date_to_xmlschema }}" id="start-time">
 </time>
 {% if time.end %}
 &ndash;
@@ -31,7 +31,7 @@ end_date = end_date.join(" ");
 {% endif %}
 document.getElementById("end-time").textContent = end_date  + " " + tz;
 {% else %}
-document.getElementById("end-time").textContent = tz;
+document.getElementById("start-time").textContent += " " + tz;
 {% endif %}
 </script>
 

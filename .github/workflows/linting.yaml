@@ -15,7 +15,7 @@ jobs:
         files: ./_posts ./pages ./README.md
         
     - name: URLs-checker
-      uses: urlstechie/urlchecker-action@0.2.1
+      uses: urlstechie/urlchecker-action@0.0.25
       with:
         # A comma-separated list of file types to cover in the URL checks
         file_types: .md,.py,.yml
@@ -23,14 +23,17 @@ jobs:
         # Choose whether to include file with no URLs in the prints.
         print_all: false
 
+        # More verbose summary at the end of a run
+        verbose: true
+
         # How many times to retry a failed request (defaults to 1)
         retry_count: 3
 
         # Google Forms is having enormous timeouts
         timeout: 10
 
-        # White listed patterns (seem to have SSL issues but work in browser)
-        white_listed_patterns: supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com,jobs.colorado.edu,zoom.us,danielskatz.org,usrse.github.io.wiki.git,ornl.gov
+        # Exclude these patterns from the checker
+        exclude_patterns: supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com,jobs.colorado.edu,zoom.us,danielskatz.org,usrse.github.io.wiki.git,ornl.gov
 
-        # White list the following files
-        white_listed_files: README.md,SocialNetworks.yml,map.yml,_config.yml,tests/test_,.github/workflows,_posts/newsletters/
+        # Exclude these files from the checker
+        exclude_files: README.md,SocialNetworks.yml,map.yml,_config.yml,tests/test_,.github/workflows,_posts/newsletters/

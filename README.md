@@ -1,7 +1,7 @@
 # The United States (US) Research Software Engineer Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-51-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-52-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -182,7 +182,7 @@ frequency: "yearly"
 date_start: "2021-10-14"
 until: 2030-10-14
 time:
-  - - start "2021-10-14"
+  - - start: "2021-10-14"
 ---
 ```
 
@@ -197,7 +197,7 @@ instead. Here is an example:
 ...
 layout: event
 time:
-  - - start 2021-01-04
+  - - start: 2021-01-04
 
 # Repeated events information
 repeated: true
@@ -448,19 +448,68 @@ that a link is not expired and the check fails, we would want to know about this
 
 #### Post New Jobs to Slack
 
-The workflow [jobs-slack-poster.yml](.github/workflows/jobs-slack-poster.yml) is run on any push
+The workflow [jobs-poster.yaml](.github/workflows/jobs-poster.yaml) is run on any push
 to `main` with changes to `_data/jobs.yml`. If new jobs are found, it will post the Job URL to
 the USRSE Slack `#jobs` channel. It utilizes the [Jobs updater](https://github.com/rseng/jobs-updater)
 Github Action by @vsoch and @jhkennedy to parse the `_data/jobs.yml` file for new jobs and post them
-the USRSE Slack.
+the USRSE Slack. For the action:
+
+ - unique: determines the field in the jobs.yaml that determines uniqueness (defaults to url)
+ - keys: a comma separated list of fields to include. All except for url will have a prefix, so it's recommended to put the url last.
+
+The other fields are intuitive. Example output (in the console that might go to Slack or Twitter)
+for a few jobs (done in the testing repository) looks like the following:
+
+```
+New Job! 🕶️
+Name: Data Engineer & Full Stack Software Engineer
+Location: Scoot Science - remote in the US or Canada
+https://www.scootscience.com/careers/
+
+New Job! 🔥️
+Name: Assistant Research Programmer/Research Programmer/Senior Research Programmer
+Location: National Center for Supercomputing Applications / University of Illinois, Urbana, IL
+https://jobs.illinois.edu/academic-job-board/job-details?jobID=130370&job=research-programmer-national-center-for-supercomputing-applications-130370
+
+New Job! 🤖️
+Name: Assistant Research Programmer/Research Programmer/Senior Research Programmer
+Location: National Center for Supercomputing Applications / University of Illinois, Urbana, IL
+https://jobs.hr.wisc.edu/en-us/job/510571/researcher
+
+New Job! 👉️
+Name: Assistant Research Programmer/Research Programmer/Senior Research Programmer
+Location: National Center for Supercomputing Applications / University of Illinois, Urbana, IL
+https://jobs.ornl.gov/job/Oak-Ridge-Full-Stack-Software-Engineer-TN-37830/793411000/
+```
+
+#### Post New Jobs to Twitter
+
+The same workflow [jobs-poster.yaml](.github/workflows/jobs-poster.yaml) has a follow-up
+step that uses output from the [Jobs updater](https://github.com/rseng/jobs-updater) to then
+make these same posts on Twitter. In order for this work, using the account that you want to tweet from,
+you should sign into the [developer portal](https://developer.twitter.com/en/portal/) and make a new project
+that describes the goal of US-RSE, e.g.,:
+
+> We (the United States Research Software Engineer Association) use Twitter to get a broad reach to people working on software in academia - to support community spirit and growth. We currently have a jobs board on our website that populates from GitHub, and will reach more potentially interested people in our community by posting new jobs (as they are merged in a workflow) from a GitHub workflow.
+
+For the use case, you can choose "making a bot" and the title for the project can be anything you like.
+Importantly, once you create the bot you'll need to add the following secrets to your GitHub repository:
+
+ - TWITTER_ACCESS_TOKEN: is the key/token created for the user account
+ - TWITTER_ACCESS_SECRET: is the secret created for the user account
+ - TWITTER_CONSUMER_API_KEY: is the main key for the developer app
+ - TWITTER_CONSUMER_API_SECRET: is main secret for the developer app
+ 
+Yes, this means that the tokens are specific to this account.
 
 #### Greetings
+
 This simple greetings action greets first time users (for issues).
 The logic of this is determined by the [greetings.yml](.github/workflows/greetings.yml)
 workflow. 
 
-
 #### Member Counts
+
 Two scripts help to create a branch with an updated [member counts file](_data/memberCounts.csv)
 that starts with the prefix `update/member-counts`. The workflow [member-counts.yaml](.github/workflows/member-counts.yaml) will generate an updated file and commit and push to a new branch, and it uses [pull-request.sh](scripts/pull-request.sh) to then open a PR with the new branch to the repository. For GitHub CI, there are currently no secrets or credentials, and no setup is required - having actions enabled for the repository and placing the file under `.github/workflows`
 enables it.
@@ -564,6 +613,7 @@ tool to generate a contributors graphic below.
   <tr>
     <td align="center"><a href="https://github.com/crd477"><img src="https://avatars.githubusercontent.com/u/1130035?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chad Dougherty</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=crd477" title="Code">💻</a></td>
     <td align="center"><a href="https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/dept.cfm?org=01424"><img src="https://avatars.githubusercontent.com/u/55767766?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Miranda Mundt</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=mrmundt" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/braney"><img src="https://avatars.githubusercontent.com/u/17574483?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bryan Raney</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=braney" title="Code">💻</a></td>
   </tr>
 </table>
 

@@ -1,0 +1,49 @@
+name: Post New Jobs
+
+on:
+  push:
+    paths:
+      - '_data/jobs.yml'
+    branches:
+      - main
+
+jobs:
+  slack-poster:
+    runs-on: ubuntu-latest
+    name: Run Jobs Slack Poster
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - id: updater
+        name: Job Updater
+        uses: rseng/jobs-updater@add/multiple-metadata-fields
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        with:
+          filename: "_data/jobs.yml"
+
+          # Fields to include (all but url will have title before)
+          keys: "name,location,url"
+
+          # Field to determine job uniqueness
+          unique: "url"
+
+          deploy: true
+          test: false
+
+          # Also deploy to Twitter (all secrets required in repository secrets)
+          twitter_deploy: true
+          twitter_api_secret: ${{ secrets.TWITTER_ACCESS_SECRET }}
+          twitter_api_key: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          twitter_consumer_secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+          twitter_consumer_key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+
+      - run: echo ${{ steps.updater.outputs.fields }}
+        name: Show Fields Used
+        shell: bash
+
+      - run: echo ${{ steps.updater.outputs.matrix }}
+        name: Show New Jobs
+        shell: bash

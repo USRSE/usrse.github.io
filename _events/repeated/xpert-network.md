@@ -6,8 +6,9 @@ url: https://sites.udel.edu/xpert-cdi/
 expires: 2022-07-31
 event_date: "Reoccurring: 3rd Thursday every other month, 2-3:30pm ET"
 layout: event
+category: community-learning
 time:
-  - - start 2019-10-14
+  - - start: 2019-10-14 14:00 EST
 
 # Repeated events information
 repeated: true
