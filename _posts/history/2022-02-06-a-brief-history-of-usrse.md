@@ -274,9 +274,7 @@ This became the RSE Stories podcast [[ref](https://us-rse.org/rse-stories)] whic
 
 ### Community Calls and Newsletters
 
-TBD - should be put in as a major community effort - first community call and first newsletter were both in July 2019
-
-Community calls to connect across the US-RSE network were started in July 2019. They began as an experiment in moderated online discussion with two broad goals 
+US-RSE started creating and distributing [newsletters](https://us-rse.org/newsletters/) in July 2019, led by Sandra Gesing, and has generally tried to issue them every two months, as one of our means of sharing information among members. They began as an experiment in moderated online discussion with two broad goals:
 
 * sharing ideas, knowledge and practices, and also 
 * giving everyone a chance to talk to each other, listen to each other and learn about and from one another. 
