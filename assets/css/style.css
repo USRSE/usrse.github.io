@@ -5668,7 +5668,7 @@ a.navbar-item:focus,a.navbar-item:focus-within,a.navbar-item:hover,a.navbar-item
     margin: .5rem 0;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1200px) {
     .navbar>.container {
         display: block;
     }

@@ -5,8 +5,9 @@ location: Virtual
 expires: 2022-07-31
 event_date: "first Tuesday each month 11:30-12:30 Eastern"
 layout: event
+category: education-training
 time:
-  - - start 2021-01-04
+  - - start: 2022-01-04 11:30 EST
 
 # Repeated events information
 repeated: true
