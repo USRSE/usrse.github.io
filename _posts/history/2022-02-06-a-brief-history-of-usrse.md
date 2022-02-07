@@ -285,6 +285,8 @@ Brief plenary reviews after group discussions provide a way for all participants
 The community call notes archive and video recordings provide a growing raw resource for RSE learning and knowledge sharing [[Google drive folder](https://drive.google.com/drive/u/0/folders/1hzKqwPUs6IL42sJ8jV8ZjA_YSeXF6-qH)] from practicing RSEs across disciplines, experience levels and economic sectors.
 They cover all manner of topics, spanning developing professional career profiles to tools for code review.
 
+US-RSE started creating and distributing [newsletters](https://us-rse.org/newsletters/) in July 2019, led by Sandra Gesing, and has generally tried to issue them every two months, as one of our means of sharing information among members. 
+
 
 ### Working Groups
 
