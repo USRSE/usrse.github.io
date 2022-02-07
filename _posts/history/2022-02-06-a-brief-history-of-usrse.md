@@ -340,7 +340,7 @@ These are aimed at helping establish the organization with funds to support basi
 
 ### Governance
 
-Although the first steering committee was created "just as a way to get things going" one of it's early efforts was to create governance and code of conduct guidelines for US-RSE.
+Although the first steering committee was created "just as a way to get things going" one of its early efforts was to create governance and code of conduct guidelines for US-RSE.
 Initial guidelines were drafted and shared with the community for input and discussion in July 2019.
 The Code of Conduct was established in October 2019, and the US-RSE [governance document](https://us-rse.org/about/governance/) was approved by the Steering Committee in June 2020.
 The governance document established a process for elections for the Steering Committee, and, after Elections Chair Christina Maimone established election logistics, the first elections took place in December 2020.
