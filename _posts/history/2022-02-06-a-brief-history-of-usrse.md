@@ -261,7 +261,7 @@ And because many community members are software engineers, it was fairly natural
 In mid-2019, Ian Cosden, Jeff Carver, and Dan Katz, in an effort to seek funding to grow the organization, began conversations with The Alfred P. Sloan Foundation.
 The three wrote a proposal for a dedicated, in-person, [US-RSE community building workshop](https://us-rse.org/first-community-workshop/) designed to bring together community members to plan the best path forward for US-RSE.
 The [grant](https://sloan.org/grant-detail/9227) was funded and a workshop was scheduled for April 2020 in Princeton, NJ.
-Unfortunately, it was bad timing, and COVID-19 forced the repeated postponement of the workshop. 
+Unfortunately, it was bad timing, and COVID-19 forced the repeated postponement of the workshop; as of Feb 2022, it is planned for April 2022, COVID-permitting.
 
 
 ### Community Voices
