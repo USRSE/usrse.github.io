@@ -541,6 +541,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/55767766?v=4"
             ]
+        },
+        {
+            "login": "braney",
+            "name": "Bryan Raney",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/braney",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/17574483?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
