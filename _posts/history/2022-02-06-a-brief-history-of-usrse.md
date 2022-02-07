@@ -335,7 +335,7 @@ When it was apparent that there was no means to do this, the steering committee 
 Dan and Chris investigated a set of options, and proposed to the steering committee in March 2021 that US-RSE establish a US-RSE Open Collective [[ref](https://opencollective.com/usrse)] and create a Treasurer role, which was proposed to the full US-RSE group in April 2021 [[ref](https://www.google.com/url?q=https://docs.google.com/document/d/15Se_gZ6L9lwk6zFMi5NbR8A4O9jdroyVZKCdWGrJxbU/edit&sa=D&source=docs&ust=1641157652243694&usg=AOvVaw2LHW4nO21xsSa2xBOZNhlb)], without any dissension.
 After this, Chris Hill was elected to be the first treasurer, and our financial information was added to the website [[ref](https://us-rse.org/about/finances/)].
 Through the Open Collective umbrella US-RSE was established as a non-profit 501c3 activity with a public service focus.
-A first set of financial goals for the organization was discussed at the 2021 Annual General Meeting [[https://docs.google.com/presentation/d/19-yTp2Q4SWP5ZiYb3VJa82hflc0p5FkeuhKWlIbwsD4](https://docs.google.com/presentation/d/19-yTp2Q4SWP5ZiYb3VJa82hflc0p5FkeuhKWlIbwsD4)].
+A first set of financial goals for the organization was discussed at the 2021 Annual General Meeting [[ref](https://docs.google.com/presentation/d/19-yTp2Q4SWP5ZiYb3VJa82hflc0p5FkeuhKWlIbwsD4)].
 These are aimed at helping establish the organization with funds to support basic member services and to ultimately support profession advancing activities. The 2021 Annual General Meeting also launched the first ever US-RSE fund raising event, with a t-shirt sale! 
 
 ### Governance
