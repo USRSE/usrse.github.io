@@ -306,7 +306,7 @@ While DEI wasn't a new idea as US-RSE had talked about diversity from an early p
 The working group put together a DEI mission statement, with contributions from the entire group and leadership on the part of Alex Koufos, and an addition of DEI to the US-RSE Mission Statement.
 
 In January 2021, community members Sajid Ali took the lead to establish a DEI Speaker Series [[ref](https://docs.google.com/document/d/1ezlG5ys40LMIlv83OtFfbviHpTY5EgFM86m6vVJkTPE/edit#)], which runs quarterly.
-In May, Nicole Brewer initiated the DEI book club club [[ref](https://docs.google.com/document/d/1GMMwjdq97_AFjAuDhaJ1FtlTc3weHerH6jHaB04bN3w/edit)] that started with a reading of <span style="text-decoration:underline;">Better Allies: Everyday Actions to Create Inclusive, Engaging Workplaces” by Karen Catlin</span> which was later expanded by Miranda Mundt to include all forms of media, such as podcasts.
+In May, Nicole Brewer initiated the DEI book club club [[ref](https://docs.google.com/document/d/1GMMwjdq97_AFjAuDhaJ1FtlTc3weHerH6jHaB04bN3w/edit)] that started with a reading of <span style="text-decoration:underline;">Better Allies: Everyday Actions to Create Inclusive, Engaging Workplaces” by Karen Catlin</span>. The book club was later expanded by Miranda Mundt to include all forms of media, such as podcasts.
 With these efforts in place, US-RSE had diversity, equity and inclusion on the radar, and a regular means to encourage discussion. 
 
 
