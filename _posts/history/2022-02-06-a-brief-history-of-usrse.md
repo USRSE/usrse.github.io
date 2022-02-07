@@ -3,7 +3,7 @@ layout: post
 title: A kind-of brief shared early history of US-RSE
 summary: This is a community post that tells the story of the first few years of US-RSE. 
 tags: [history, community-post]
-author: Vanessa Sochat, Daniel S. Katz, Ian Cosden, Christina Maimone, Charles Ferenbaugh, Sandra Gesing, Jeffrey Carver, Chris Hill, Nicole Brewer
+author: Vanessa Sochat, Daniel S. Katz, Ian Cosden, Christina Maimone, Charles Ferenbaugh, Sandra Gesing, Jeffrey Carver, Chris Hill, Nicole Brewer, Peter Vaillancourt, Mark Carroll
 ---
 
 <style>
