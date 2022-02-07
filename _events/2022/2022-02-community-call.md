@@ -11,7 +11,7 @@ time:
         end: 2022-02-10T18:00:00Z
 ---
 
-# RSE Opportunities
+# RSE Code Testing Practices
 
 The next community call will be on February 10, 2022 at 12ET/11CT/10MT/9PT.
 
