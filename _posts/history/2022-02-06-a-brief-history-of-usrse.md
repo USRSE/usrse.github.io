@@ -284,7 +284,7 @@ Community calls to connect across the US-RSE network were started in July 2019. 
 Over time they evolved to a base one hour format with focussed discussion on some topical theme (technical or organizational) and usually mixed a short presentation with small group discussions around topical prompts.
 Small group discussions are kept deliberately small (3-4 people) to ensure that conversations are not overly monopolized by single voices and a broad spectrum of experience and knowledge is mutually shared.
 Brief plenary reviews after group discussions provide a way for all participants to compare conversations and communicate collectively.
-The community call notes archive and video recordings provide a growing raw resource for RSE learning and knowledge sharing [[https://drive.google.com/drive/u/0/folders/1hzKqwPUs6IL42sJ8jV8ZjA_YSeXF6-qH](https://drive.google.com/drive/u/0/folders/1hzKqwPUs6IL42sJ8jV8ZjA_YSeXF6-qH)] from practicing RSEs across disciplines, experience levels and economic sectors.
+The community call notes archive and video recordings provide a growing raw resource for RSE learning and knowledge sharing [[Google drive folder](https://drive.google.com/drive/u/0/folders/1hzKqwPUs6IL42sJ8jV8ZjA_YSeXF6-qH)] from practicing RSEs across disciplines, experience levels and economic sectors.
 They cover all manner of topics, spanning developing professional career profiles to tools for code review.
 
 
