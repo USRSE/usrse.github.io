@@ -234,7 +234,7 @@ He was stopped and searched again in the Chicago airport on the way home.
 <img src="{{ site.baseurl }}/assets/posts/history/2022-02-brief-history-usrse/image5.png"/>
 </div>
 
-Another major venue was SC19:
+Another major venue was SC19, where a workshop was held, and a number of workshop attendees, both US and international RSEs, met socially in the evening:
 
 ![SC19 Social]({{ site.baseurl }}/assets/posts/history/2022-02-brief-history-usrse/image6.jpg "SC19 social (image credit: Semir Sarajlic)")
 
