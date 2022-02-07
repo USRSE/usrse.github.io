@@ -355,7 +355,7 @@ An annual meeting was an early goal for US-RSE.
 While the initial hope was for an in-person event or conference, the pandemic put planning for such gatherings on hold.
 Yet as the organization grew and processes for elections and finances were established, the need for some type of membership meeting became clear.
 The first Annual General Meeting was held in [2020](https://youtu.be/mcl3QY1lBzY) and continued in [2021](https://youtu.be/iKIbS16D8XU).
-It has become an opportunity to reflect on the yearly progress of the US-RSE, address the business of the organization, and bring together the general membership for a discussion.  
+These meetings have become an opportunity to reflect on the yearly progress of the US-RSE, address the business of the organization, hear from Steering Committee candidates, and bring together the general membership for a discussion.  
 
 ![US-RSE growth 2019]({{ site.baseurl }}/assets/posts/history/2022-02-brief-history-usrse/image8.png "The current US-RSE logo, professionally designed, was rolled out in August 2021.")
 
