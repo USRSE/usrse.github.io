@@ -272,11 +272,6 @@ She woke up one morning in September, and knew that she needed to start a podcas
 This became the RSE Stories podcast [[ref](https://us-rse.org/rse-stories)] which eventually brought on a host from the UK, and inspired the creation of other RSE-run podcasts [[ref](https://codeforthought.buzzsprout.com/)].
 
 
-### Community Events
-
-TBD: workshops, conference events, etc. that were organized – definitely the two actual US-RSE events (don't remember what they were called) – virtual mini-conferences
-
-
 ### Community Calls and Newsletters
 
 TBD - should be put in as a major community effort - first community call and first newsletter were both in July 2019
