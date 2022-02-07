@@ -15,7 +15,7 @@ time:
 
 The next community call will be on February 10, 2022 at 12ET/11CT/10MT/9PT.
 
-This month we are hosting a call about Testing [issue20](https://github.com/USRSE/monthly-community-calls/issues/20) and [issue22](https://github.com/USRSE/monthly-community-calls/issues/22)!
+This month we are hosting a call about Testing [issue 20](https://github.com/USRSE/monthly-community-calls/issues/20) and [issue 22](https://github.com/USRSE/monthly-community-calls/issues/22)!
 
 Most developers will agree that testing is an important part of software development. But is testing of research software any different than testing of other types of software? Is testing in a research context different from testing in general software enterprises? And how and what do you test in the first place? What can we learn from each other and from practices elsewhere?
 
