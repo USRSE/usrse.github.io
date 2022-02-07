@@ -187,7 +187,7 @@ An email from May 14, 2019 established a steering committee for US-RSE:
 > I wanted to reach out, not via slack, but in a more composed email.
 > The nine of you (plus me) are all listed on the website as the current steering committee, for the sole reason that you either (a) wrote your name as a contributor in the document that helped define our mission or (b) expressed interest in participating around the same time.
 > When I put the new website together, I just ran with it and appointed us the "Steering Committee."
-For better or worse, that’s all it took in December. 
+> For better or worse, that’s all it took in December. 
 >
 > It’s unlikely that we can continue with a completely ad-hoc organization forever.
 > New members are (hopefully) going to be continually joining. I’d like to propose that we decide on some semi-formal organizational issues, now, rather than wait for actual problems to arise.  Perhaps it's too early.  But better too soon, than too late. 
