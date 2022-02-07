@@ -290,7 +290,7 @@ They cover all manner of topics, spanning developing professional career profile
 
 ### Working Groups
 
-The US-RSE [governance document](https://us-rse.org/about/governance/)established a need and role for working groups, but these were informal at first.
+The US-RSE [governance document](https://us-rse.org/about/governance/) established a need and role for working groups, but these were informal at first.
 Between 2020 and 2021, an early set of working groups [[ref](https://us-rse.org/about/working-groups/)] including a website working group, diversity, equity, and inclusion (DEI), and education and training were more formally established with slack channels, mailing lists, and regular meetings.
 As the groups formalized, they added information on themselves to the website.
 The 2021 website refresh gave working groups a more prominent location so others could find them to join.  
