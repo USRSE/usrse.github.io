@@ -5015,14 +5015,6 @@ a.dropdown-item.is-active,button.dropdown-item.is-active {
     color: #0a0a0a;
 }
 
-@media screen and (max-width: 1024px) {
-    .navbar-link {
-        border-top: 2px solid #741755;
-        border-right: 2px solid #741755;
-        border-radius: 0.5em;
-    }
-}
-
 @media screen and (min-width: 1024px) {
     .navbar.is-white .navbar-start>.navbar-item,.navbar.is-white .navbar-start .navbar-link,.navbar.is-white .navbar-end>.navbar-item,.navbar.is-white .navbar-end .navbar-link {
         color: #0a0a0a;
@@ -5725,17 +5717,19 @@ a.navbar-item:focus,a.navbar-item:focus-within,a.navbar-item:hover,a.navbar-item
         overflow: auto;
     }
 
-    .navbar-start {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     html.has-navbar-fixed-top-touch,body.has-navbar-fixed-top-touch {
         padding-top: 3.25rem;
     }
 
     html.has-navbar-fixed-bottom-touch,body.has-navbar-fixed-bottom-touch {
         padding-bottom: 3.25rem;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .navbar-start {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
