@@ -1,7 +1,7 @@
 # The United States (US) Research Software Engineer Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-52-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-53-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -614,6 +614,7 @@ tool to generate a contributors graphic below.
     <td align="center"><a href="https://github.com/crd477"><img src="https://avatars.githubusercontent.com/u/1130035?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chad Dougherty</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=crd477" title="Code">💻</a></td>
     <td align="center"><a href="https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/dept.cfm?org=01424"><img src="https://avatars.githubusercontent.com/u/55767766?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Miranda Mundt</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=mrmundt" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/braney"><img src="https://avatars.githubusercontent.com/u/17574483?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bryan Raney</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=braney" title="Code">💻</a></td>
+    <td align="center"><a href="https://medium.com/@srbdev"><img src="https://avatars.githubusercontent.com/u/2583156?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sb</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=srbdev" title="Code">💻</a></td>
   </tr>
 </table>
 
