@@ -272,5 +272,10 @@
     "braney": {
         "name": "Bryan Raney",
         "blog": "https://github.com/braney"
+    },
+    "srbdev": {
+        "name": "sb",
+        "bio": "Aspiring Research Software Engineer. Python, C++, Go et al. enthusiast. I like languages.",
+        "blog": "https://medium.com/@srbdev"
     }
 }
