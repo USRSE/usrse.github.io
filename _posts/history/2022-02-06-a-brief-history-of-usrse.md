@@ -1,9 +1,9 @@
 ---
 layout: post
 title: A kind-of brief shared early history of US-RSE
-subtitle: 
+summary: This is a community post that tells the story of the first few years of US-RSE. 
 tags: [history, community-post]
-posted_by: Daniel S. Katz, Vanessa Sochat, Ian Cosden, Christina Maimone, Charles Ferenbaugh, Sandra Gesing, Jeffrey Carver, Chris Hill, Nicole Brewer
+author: Vanessa Sochat, Daniel S. Katz, Ian Cosden, Christina Maimone, Charles Ferenbaugh, Sandra Gesing, Jeffrey Carver, Chris Hill, Nicole Brewer, Peter Vaillancourt, Mark Carroll, Peter Elmer
 ---
 
 <style>
@@ -45,7 +45,7 @@ These smaller stories, in chronological order, from our community members offer 
 * While working at NSF, Dan Katz started interacting with the Software Sustainability Institute in 2013, as the initial UK RSE groups were beginning to make an impact, which Dan observed and starting thinking about how to bring this model to the US.
 * Vanessa Sochat had vision for a layer of academic software developers at an institution in January of 2016, although she had never heard of research software engineering [[ref](https://vsoch.github.io/2016/the-academic-software-developer/)].
 * Ian Cosden founded the Princeton Research Software Engineering group in 2016, with the initial goal to help researchers optimize their software running on Princeton HPC systems.
-* Dan Katz met Ian Cosden at a workshop in Princeton on May 2, 2017, and discussed Ian’s group, a nascent RSE group, telling Ian about the RSE concept and term. Dan had met or collaborated with several individuals that would turn into the initial leaders of US-RSE over a decade later.
+* Dan Katz met Ian Cosden at an NSF-funded workshop on research software collaborations between high energy physics and computer science in Princeton on May 2, 2017 [[ref](https://indico.cern.ch/event/622920/timetable/)]. There they discussed Ian's group, a nascent RSE group, telling Ian about the RSE concept and term. Dan had met or collaborated with several individuals that would turn into the initial leaders of US-RSE over a decade later.
 * NSF started to fund conceptualizations of sustainability institutes in 2015 and Karthik Ram, Jeffrey Carver, Sandra Gesing, Dan Katz and Nic Weber are the co-PIs on the conceptualization of the US Research Software Sustainability Institute (URSSI) that was funded from 2017-2021. Activities include community building via workshops, a large-scale survey and ethnographic studies. The implementation plan for URSSI can be found [here](https://plan.urssi.us/).
 
 This message about sustainability and research software trickled quickly into the United States. 
@@ -340,7 +340,7 @@ These are aimed at helping establish the organization with funds to support basi
 
 ### Governance
 
-Although the first steering committee was created "just as a way to get things going" one of it's early efforts was to create governance and code of conduct guidelines for US-RSE.
+Although the first steering committee was created "just as a way to get things going" one of its early efforts was to create governance and code of conduct guidelines for US-RSE.
 Initial guidelines were drafted and shared with the community for input and discussion in July 2019.
 The Code of Conduct was established in October 2019, and the US-RSE [governance document](https://us-rse.org/about/governance/) was approved by the Steering Committee in June 2020.
 The governance document established a process for elections for the Steering Committee, and, after Elections Chair Christina Maimone established election logistics, the first elections took place in December 2020.
