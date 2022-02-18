@@ -49,7 +49,7 @@ def main():
     for job in jobs:
 
         # Do not keep expired jobs that haven't been updated in 60 days
-        if job["expires"] < now and job["expires"]:
+        if job["expires"] < now:
             removal_date = job["expires"] + timedelta(days=60)
             if removal_date < now:
                 continue
