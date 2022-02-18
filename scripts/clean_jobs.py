@@ -4,6 +4,7 @@
 
 import os
 import datetime
+from datetime import timedelta
 from urlchecker.core.urlproc import UrlCheckResult
 import shutil
 import sys
@@ -14,8 +15,7 @@ here = os.path.dirname(os.path.abspath(__file__))
 
 
 def get_filepath():
-    """load the jobs file.
-    """
+    """load the jobs file."""
     filepath = os.path.join(os.path.dirname(here), "_data", "jobs.yml")
 
     # Exit on error if we cannot find file
@@ -26,16 +26,14 @@ def get_filepath():
 
 
 def read_jobs(filepath):
-    """read in the jobs data.
-    """
+    """read in the jobs data."""
     with open(filepath, "r") as fd:
         data = yaml.load(fd.read(), Loader=yaml.SafeLoader)
     return data
 
 
 def main():
-    """a small helper to update the _data/jobs.yml file.
-    """
+    """a small helper to update the _data/jobs.yml file."""
     filepath = get_filepath()
 
     # Read in the jobs
@@ -47,8 +45,15 @@ def main():
     # Use the same urlchecker function for consistency
     now = datetime.date.today()
 
+    # We give people a month to update expired jobs
+    one_month_away = now + timedelta(days=60)
+
     print("Found %s jobs" % len(jobs))
     for job in jobs:
+
+        # Do not keep expired jobs that haven't been updated in a month
+        if job["expires"] < one_month_away:
+            continue
 
         # We don't check urls that are not expired, the urlchecker action should
         # catch these and fail
@@ -58,9 +63,7 @@ def main():
             continue
 
         checker = UrlCheckResult()
-        checker.check_urls(
-            urls=[job["url"]], retry_count=3, timeout=5
-        )
+        checker.check_urls(urls=[job["url"]], retry_count=3, timeout=5)
 
         # If the url passes, add to keepers
         if checker.passed:
