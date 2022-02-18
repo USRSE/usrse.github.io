@@ -444,7 +444,8 @@ The workflow [clean-expired-jobs.yml](.github/workflows/clean-expired-jobs.yml) 
 and uses the same function from the urlchecker to check for expired links in jobs.yml,
 and given an expired link, remove it from the file if the url check fails. In the case
 that a link is not expired and the check fails, we would want to know about this
-(and the test will fail).
+(and the test will fail). For all jobs, we don't remove them immediately upon expiration -
+we give the submitter 60 days to possibly update the data file with a later expiration date.
 
 #### Post New Jobs to Slack
 
