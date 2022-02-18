@@ -45,15 +45,14 @@ def main():
     # Use the same urlchecker function for consistency
     now = datetime.date.today()
 
-    # We give people a month to update expired jobs
-    one_month_away = now + timedelta(days=60)
-
     print("Found %s jobs" % len(jobs))
     for job in jobs:
 
-        # Do not keep expired jobs that haven't been updated in a month
-        if job["expires"] < one_month_away:
-            continue
+        # Do not keep expired jobs that haven't been updated in 60 days
+        if job["expires"] < now and job["expires"]:
+            removal_date = job["expires"] + timedelta(days=60)
+            if removal_date < now:
+                continue
 
         # We don't check urls that are not expired, the urlchecker action should
         # catch these and fail
