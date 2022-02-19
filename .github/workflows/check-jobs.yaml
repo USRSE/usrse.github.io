@@ -1,0 +1,19 @@
+name: Check for Repeated Jobs
+
+on:
+  pull_request:
+    paths:
+      - '_data/jobs.yml'
+            
+jobs:
+  check-repeated-jobs:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Check for Repeated Jobs
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        pip install pyaml PyGithub
+        python scripts/find_repeated_jobs.py check _data/jobs.yml

@@ -345,6 +345,10 @@ $ cd tests
 $ python -m unittest test_jobs
 ```
 
+We also check to make sure that no jobs are repeated. Since a job poster might have
+multiple at the same URL, finding a repeat won't fail the PR, but a comment will
+be posted to let you know.
+
 ### 2. Count Jobs
 
 A [script](scripts/count_jobs.py) is provided that will clone the repository
