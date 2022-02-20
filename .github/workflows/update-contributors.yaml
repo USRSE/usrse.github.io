@@ -1,6 +1,7 @@
 name: allcontributors-auto-detect
 
 on:
+  pull_request: []
   push:
     branches:
       - main
@@ -15,7 +16,7 @@ jobs:
       - name: Tributors Update
       
         # Important! Update to release https://github.com/con/tributors
-        uses: con/tributors@0.0.19
+        uses: con/tributors@0.0.20
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:        
