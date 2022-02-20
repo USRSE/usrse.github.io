@@ -1,7 +1,7 @@
 # The United States (US) Research Software Engineer Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-53-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-55-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -616,6 +616,8 @@ tool to generate a contributors graphic below.
     <td align="center"><a href="https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/dept.cfm?org=01424"><img src="https://avatars.githubusercontent.com/u/55767766?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Miranda Mundt</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=mrmundt" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/braney"><img src="https://avatars.githubusercontent.com/u/17574483?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bryan Raney</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=braney" title="Code">💻</a></td>
     <td align="center"><a href="https://medium.com/@srbdev"><img src="https://avatars.githubusercontent.com/u/2583156?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sb</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=srbdev" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/tacaswell"><img src="https://avatars.githubusercontent.com/u/199813?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Thomas A Caswell</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=tacaswell" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/rkakodkar"><img src="https://avatars.githubusercontent.com/u/65554003?v=4?s=100" width="100px;" alt=""/><br /><sub><b>rkakodkar</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=rkakodkar" title="Code">💻</a></td>
   </tr>
 </table>
 
