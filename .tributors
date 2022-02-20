@@ -283,9 +283,11 @@
         "email": "tcaswell@gmail.com",
         "bio": "Soft condensed matter physicist with a software bent.\r\n\r\nMatplotlib Project Lead",
         "orcid": "0000-0003-4692-608X",
-        "affiliation": "Brookhaven National Laboratory"
+        "affiliation": "Brookhaven National Laboratory",
+        "blog": "https://github.com/tacaswell"
     },
     "rkakodkar": {
-        "name": "rkakodkar"
+        "name": "rkakodkar",
+        "blog": "https://github.com/rkakodkar"
     }
 }
