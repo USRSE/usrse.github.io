@@ -15,7 +15,7 @@ Visit the [DEI Working Group page]({{ site.baseurl }}/wg/dei/) for more details 
 
 <hr>
 
-### Website
+<h3><a href="{{ site.baseurl }}/wg/website/">Website</a></h3>
 
 The US-RSE website working group assembled in late 2020/2021 to proactively work on the content and design of the US-RSE website.
 If you are interested in working on the site, or want to suggest features or a better design, you can join the `#website` channel on the US-RSE slack, or jump right in and start a discussion on the <a href="https://github.com/usrse/usrse.github.io/issues">GitHub issues board</a>.

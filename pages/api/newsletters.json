@@ -1,0 +1,13 @@
+---
+layout: none
+permalink: /api/newsletters.json
+---
+{% assign posts = site.posts | where: "category", "newsletter" %}[{% for post in posts %}
+    {
+        "title": "{{ post.title | xml_escape }}{% if post.subtitle %} - {{ post.subtitle }}{% endif %}",
+        "published": "{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}",
+        "description": "{{ post.content | strip_html | xml_escape | truncatewords: 50 }}",
+        "category": "{% if post.category %}{{ post.category }}{% else %}general{% endif %}",
+        "url": "{{ site.domain }}{{ post.url }}"
+  }{% if forloop.last %}{% else %},{% endif %}
+{% endfor %}]
