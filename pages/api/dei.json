@@ -7,7 +7,7 @@ permalink: /api/dei.json
         "title": "{{ event.title | xml_escape }}{% if event.subtitle %} - {{ event.subtitle }}{% endif %}",
         "date": "{{ event.event_date }}",{% if event.location %}
         "location": "{{ event.location }}",{% endif %}
-        "description": "{{ event.content | strip_html | xml_escape | truncatewords: 50 }}",
+        "description": "{{ post.content | strip_html | jsonify | replace: '"', "" | replace: "\n", " " | truncatewords: 50 }}",
         "category": "{% if event.category %}{{ event.category }}{% else %}general{% endif %}",
         "published": "{{ event.date | date: "%a, %d %b %Y %H:%M:%S %z" }}",
         "repeated": "{{ event.repeated }}",
