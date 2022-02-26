@@ -25,8 +25,8 @@ more suitable for a client tool.
 
 For each RSS feed, we provide the latest 100 items.
 
- - [https://us-rse.org/feeds/events.xml](https://us-rse.org/feeds/events.xml): subscribe to all US-RSE events.
  - [https://us-rse.org/feed.xml](https://us-rse.org/feed.xml): subscribe to posts on the US-RSE site
+ - [https://us-rse.org/feeds/events.xml](https://us-rse.org/feeds/events.xml): subscribe to all US-RSE events.
  - [https://us-rse.org/feeds/newsletters.xml](https://us-rse.org/feeds/newsletters.xml): subscribe to a subset of newsletter posts
  - [https://us-rse.org/feeds/dei.xml](https://us-rse.org/feeds/del.xml): subscribe to DEI working group events
 
@@ -34,8 +34,8 @@ For each RSS feed, we provide the latest 100 items.
 
 JSON feeds are not limited in number, and we can provide this until a single page is not reasonable to load.
 
- - [https://us-rse.org/api/events.json](https://us-rse.org/api/events.json): json list of US-RSE events 
  - [https://us-rse.org/api/posts.json](https://us-rse.org/api/posts.json): json list of US-RSE posts, all types
+ - [https://us-rse.org/api/events.json](https://us-rse.org/api/events.json): json list of US-RSE events 
  - [https://us-rse.org/api/newsletters.json](https://us-rse.org/api/posts.json): json list of US-RSE newsletters
  - [https://us-rse.org/api/dei.json](https://us-rse.org/api/dei.json): json list of dei events
 
