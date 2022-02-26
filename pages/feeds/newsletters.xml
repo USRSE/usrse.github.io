@@ -1,22 +1,23 @@
 ---
 layout: null
+permalink: /feeds/newsletters.xml
 ---
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+{% assign newsletters = site.posts | where: "category", "newsletter" %}<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
+    <title>{{ site.title | xml_escape }} Events</title>
     <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.domain }}</link>
-    <atom:link href="{{ site.domain }}/feed.xml" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:100 %}
+    <link>{{ site.domain }}/newsletters</link>
+    <atom:link href="{{ site.baseurl }}/feeds/newsletters.xml" rel="self" type="application/rss+xml" />
+    {% for post in newsletters limit:100 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>
           {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
+          {% for tag in post.tags %}{{ tag }} {% endfor %}
           {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
         </description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <category>{% if post.category %}{{ post.category }}{% else %}general{% endif %}</category>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <link>{{ site.domain }}{{ post.url }}</link>
         <guid isPermaLink="true">{{ site.domain }}{{ post.url }}</guid>
       </item>

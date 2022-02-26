@@ -1,0 +1,17 @@
+---
+layout: none
+permalink: /api/events.json
+---
+{% assign events = site.events | sort: "expires" | reverse %}[{% for event in events %}
+    {
+        "title": "{{ event.title | xml_escape }}{% if event.subtitle %} - {{ event.subtitle }}{% endif %}",
+        "date": "{{ event.event_date }}",{% if event.location %}
+        "location": "{{ event.location }}",{% endif %}
+        "description": "{{ event.content | strip_html | xml_escape | truncatewords: 50 }}",
+        "category": "{% if event.category %}{{ event.category }}{% else %}general{% endif %}",
+        "published": "{{ event.date | date: "%a, %d %b %Y %H:%M:%S %z" }}",
+        "repeated": "{{ event.repeated }}",
+        "url": "{{ site.domain }}{{ event.url }}"
+  }{% if forloop.last %}{% else %},{% endif %}
+{% endfor %}]
+
