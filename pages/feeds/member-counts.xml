@@ -1,0 +1,19 @@
+---
+layout: null
+permalink: /feeds/member-counts.xml
+---
+{% assign member_counts = site.data.memberCounts | sort: "Total" | reverse %}<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }} Member Counts</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.domain }}/join/</link>
+    <atom:link href="{{ site.baseurl }}/feeds/member-counts.xml" rel="self" type="application/rss+xml" />
+{% for entry in member_counts %}<item>
+        <title>Member Counts for {{ entry.Date }}</title>
+        <description>Member count for {{ entry.Date }} is {{ entry.Total }}</description>
+        <link>{{ site.domain }}/join</link>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>
