@@ -43,6 +43,7 @@ The following are RSE-adjacent jobs
 {% endif %}{% endfor %}</ol>
 
 <br>
+{% endif %}
 
 {% assign board_size = site.data.job-boards.boards | size %}
 {% if board_size > 0 %}
