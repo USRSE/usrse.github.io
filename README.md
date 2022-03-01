@@ -483,7 +483,7 @@ the USRSE Slack `#jobs` channel. It utilizes the [Jobs updater](https://github.c
 Github Action by @vsoch and @jhkennedy to parse the `_data/jobs.yml` file for new jobs and post them
 the USRSE Slack. For the action:
 
- - unique: determines the field in the jobs.yaml that determines uniqueness (defaults to url)
+ - unique: determines the field in the jobs.yml that determines uniqueness (defaults to url)
  - keys: a comma separated list of fields to include. All except for url will have a prefix, so it's recommended to put the url last.
 
 The other fields are intuitive. Example output (in the console that might go to Slack or Twitter)
