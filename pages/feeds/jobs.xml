@@ -1,0 +1,21 @@
+---
+layout: null
+permalink: /feeds/jobs.xml
+---
+{% assign sorted_jobs = site.data.jobs | sort: "posted" | reverse %}<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }} Jobs</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.domain }}/jobs/</link>
+    <atom:link href="{{ site.baseurl }}/feeds/jobs.xml" rel="self" type="application/rss+xml" />
+{% for job in sorted_jobs limit:100 %}{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}{% capture expires %}{{ job.expires | date: '%s'}}{% endcapture %}{% capture posted %}{{ job.posted | date: '%b %d, %Y'}}{% endcapture %}{% if expires > nowunix %}<item>
+        <title>{{ job.name | xml_escape }}</title>
+        <description>
+          Location: {{ job.location | xml_escape }}{% if posted %}, posted {{ posted | xml_escape }}{% endif %}
+        </description>
+        <link>{{ job.url | xml_escape }}</link>
+      </item>
+    {% endif %}{% endfor %}
+  </channel>
+</rss>
