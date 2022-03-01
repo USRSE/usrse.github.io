@@ -1,0 +1,26 @@
+{% capture jobs_data %}
+  {% for job in sorted_jobs %}
+  {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+  {% capture expires %}{{ job.expires | date: '%s'}}{% endcapture %}
+  {% capture posted %}{{ job.posted | date: '%b %d, %Y'}}{% endcapture %}
+
+  {% if expires > nowunix %}
+    {% if posted != '' %}
+      <li><a href="{{ job.url }}" target="_blank">{{ job.name }}</a>: {{ job.location }}&emsp;<em>Posted:&nbsp;{{ posted }}</em></li>
+    {% else %}
+      <li><a href="{{ job.url }}" target="_blank">{{ job.name }}</a>: {{ job.location }}</li>
+    {% endif %}
+  {% endif %}{% endfor %}
+{% endcapture %}
+
+{% comment %}
+This accounts for the way whitespace appears in
+jobs_data when the there are no unexpired entries.
+It looks awkward but I'm not aware of a cleaner way to handle it.
+{% endcomment %}
+{% assign n = jobs_data | strip | size %}
+{% if n > 0 %}
+{{ include.section_heading }}
+<ol> {{ jobs_data }} </ol>
+<br>
+{% endif %}

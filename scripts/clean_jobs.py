@@ -1,4 +1,4 @@
-# Read in jobs from the _data/jobs.yml file, find links that are both
+# Read in jobs from the _data/jobs.yml and _data/related-jobs.yml files, find links that are both
 # expired and not working, and remove them. Write to a new file.
 # Copyright @vsoch, 2020
 
@@ -7,16 +7,15 @@ import datetime
 from datetime import timedelta
 from urlchecker.core.urlproc import UrlCheckResult
 import shutil
-import sys
 import tempfile
 import yaml
 
 here = os.path.dirname(os.path.abspath(__file__))
 
 
-def get_filepath():
+def get_filepath(file):
     """load the jobs file."""
-    filepath = os.path.join(os.path.dirname(here), "_data", "jobs.yml")
+    filepath = os.path.join(os.path.dirname(here), "_data", file)
 
     # Exit on error if we cannot find file
     if not os.path.exists(filepath):
@@ -32,9 +31,10 @@ def read_jobs(filepath):
     return data
 
 
-def main():
-    """a small helper to update the _data/jobs.yml file."""
-    filepath = get_filepath()
+def clean_jobs(file):
+    """clean out expired job postings from a file"""
+    filepath = get_filepath(file)
+    print("filepath is: %s" % filepath)
 
     # Read in the jobs
     jobs = read_jobs(filepath)
@@ -52,6 +52,10 @@ def main():
         if job["expires"] < now:
             removal_date = job["expires"] + timedelta(days=60)
             if removal_date < now:
+                print(
+                    "Skipping %s, expired and hasn't been updated in 60 days."
+                    % job["name"]
+                )
                 continue
 
         # We don't check urls that are not expired, the urlchecker action should
@@ -86,6 +90,12 @@ def main():
 
     # Copy finished file - will need to be added in pull request
     shutil.copyfile(tmpfile, filepath)
+
+
+def main():
+    """a small helper to update the jobs posting files."""
+    clean_jobs("jobs.yml")
+    clean_jobs("related-jobs.yml")
 
 
 if __name__ == "__main__":
