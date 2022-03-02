@@ -24,10 +24,7 @@ permalink: /jobs/
 
 {% assign board_size = site.data.related-jobs | size %}
 {% if board_size > 0 %}
-### RSE Related Jobs
-
-The following jobs are not strongly RSE roles but are likely to be
-"RSE-adjacent" - working closely with RSEs.
+### Related Openings
 
 {% assign sorted_jobs = site.data.related-jobs | sort: "posted" | reverse %}
 <ol>{% for job in sorted_jobs %}
