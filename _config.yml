@@ -10,6 +10,7 @@ title-img: /assets/img/main_logo_transparent.png  # baseurl will be prepended
 twitter-img: /assets/img/main_logo_transparent.png  # url + baseurl will be prepended
 banner: /assets/img/main_logo_transparent.png
 icon: /assets/img/main_logo_transparent.png
+domain: https://us-rse.org
 
 email: contact@us-rse.org
 permalink: /:year-:month-:day-:title/
