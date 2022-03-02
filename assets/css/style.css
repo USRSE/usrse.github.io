@@ -10,6 +10,10 @@
     }
 }
 
+::selection {
+    background: #590040 !important;
+}
+
 .delete,.modal-close,.button,.file,.breadcrumb,.pagination-previous,.pagination-next,.pagination-link,.pagination-ellipsis,.tabs,.is-unselectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
