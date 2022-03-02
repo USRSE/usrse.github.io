@@ -5679,7 +5679,7 @@ a.navbar-item:focus,a.navbar-item:focus-within,a.navbar-item:hover,a.navbar-item
     }
 
     .navbar-link::after {
-        display: none;
+        display: none !important;
     }
 
     .navbar-menu {
@@ -5733,12 +5733,8 @@ a.navbar-item:focus,a.navbar-item:focus-within,a.navbar-item:hover,a.navbar-item
     }
 
     .navbar-start > .navbar-item {
-        margin-left: 0.2em;
-        margin-right: 0.2em;
-    }
-
-    .navbar-link {
-        background: #dcc4d4;
+        margin-left: 1em;
+        margin-right: 1em;
     }
 }
 
