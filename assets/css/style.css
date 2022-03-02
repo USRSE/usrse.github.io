@@ -5203,7 +5203,7 @@ a.dropdown-item.is-active,button.dropdown-item.is-active {
     color: #fff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
     .navbar.is-primary .navbar-start>.navbar-item,.navbar.is-primary .navbar-start .navbar-link,.navbar.is-primary .navbar-end>.navbar-item,.navbar.is-primary .navbar-end .navbar-link {
         color: #fff;
     }
@@ -5730,6 +5730,15 @@ a.navbar-item:focus,a.navbar-item:focus-within,a.navbar-item:hover,a.navbar-item
     .navbar-start {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .navbar-start > .navbar-item {
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+    }
+
+    .navbar-link {
+        background: #dcc4d4;
     }
 }
 
