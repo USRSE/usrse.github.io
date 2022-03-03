@@ -1,7 +1,7 @@
 ---
 title: Allies, Collaboration & Automation - Working towards inclusive Engagement in Research Computing
 subtitle: US-RSE DEI-WG Speaker Series
-expires: 2021-03-11
+expires: 2021-03-12
 event_date: "March 11, 2021"
 layout: event
 duration: 60
@@ -21,8 +21,7 @@ The US-RSE DEI-WG is working to bring to the US-RSE community quarterly visits f
 ## Event
 
 The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
-present this speaker series event in conjunction with the international DiveRSE initiative
-to support EDI within the research software engineering community. This event will take
+present this speaker series event in conjunction with the international DiveRSE initiative taking place alongside the Lorentz workshop - [Vive la différence - research software engineers](https://www.researchsoft.org/lorentz/) - in support of EDI within the research software engineering community. This event will take
 place **Friday, March 11th at 11AM Pacific/ 2PM Eastern / 7PM GMT**
 
 ### Abstract
@@ -38,4 +37,4 @@ This talk is open to all career and interest levels and will present the viewpoi
 
 ### Biography
 
-Cristin Merritt and Wil Mayers are technical and program solution specialists with Alces Flight.  Located in the United Kingdom, Cristin and Wil’s day jobs are to solve HPC problems and provide long-term solutions for their clients with a focus on compute and storage environments and sustainability.  Both Cristin and Wil are active within DEI initiatives in tech in both the UK and US, having served on the SC’21 Inclusivity Volunteer Committee in St. Louis, and are active members of Women in HPC (WHPC) and the UK Society of Research Software Engineering.  Most recently, Cristin has accepted the position of chair for EDIA for the upcoming RSECon22 planned for Newcastle, UK in September of this year.
+Cristin Merritt and Wil Mayers are technical and program solution specialists with [Alces Flight](https://alces-flight.com/).  Located in the United Kingdom, Cristin and Wil’s day jobs are to solve HPC problems and provide long-term solutions for their clients with a focus on compute and storage environments and sustainability.  Both Cristin and Wil are active within DEI initiatives in tech in both the UK and US, having served on the SC’21 Inclusivity Volunteer Committee in St. Louis, and are active members of [Women in HPC](https://womeninhpc.org/) (WHPC) and the UK Society of Research Software Engineering.  Most recently, Cristin has accepted the position of chair for EDIA for the upcoming RSECon22 planned for Newcastle, UK in September of this year.
