@@ -1,15 +1,15 @@
 ---
 title: Allies, Collaboration & Automation - Working towards inclusive Engagement in Research Computing
 subtitle: US-RSE DEI-WG Speaker Series
-expires: 2021-03-12
-event_date: "March 11, 2021"
+expires: 2022-03-12
+event_date: "March 11, 2022"
 layout: event
 duration: 60
 repeated: false
 category: dei
 time:
-    - - start: 2021-03-11T19:00:00Z
-        end: 2021-03-11T20:00:00Z
+    - - start: 2022-03-11T19:00:00Z
+        end: 2022-03-11T20:00:00Z
 ---
 
 
