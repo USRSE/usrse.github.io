@@ -1,15 +1,15 @@
 ---
 title: Allies, Collaboration & Automation - Working towards inclusive Engagement in Research Computing
 subtitle: US-RSE DEI-WG Speaker Series
-expires: 2021-03-12
-event_date: "March 11, 2021"
+expires: 2022-03-12
+event_date: "March 11, 2022"
 layout: event
 duration: 60
 repeated: false
 category: dei
 time:
-    - - start: 2021-03-11T19:00:00Z
-        end: 2021-03-11T20:00:00Z
+    - - start: 2022-03-11T19:00:00Z
+        end: 2022-03-11T20:00:00Z
 ---
 
 
@@ -23,6 +23,8 @@ The US-RSE DEI-WG is working to bring to the US-RSE community quarterly visits f
 The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
 present this speaker series event in conjunction with the international DiveRSE initiative taking place alongside the Lorentz workshop - [Vive la différence - research software engineers](https://www.researchsoft.org/lorentz/) - in support of EDI within the research software engineering community. This event will take
 place **Friday, March 11th at 11AM Pacific/ 2PM Eastern / 7PM GMT**
+
+[**Register on Zoom**](https://purdue-edu.zoom.us/meeting/register/tJYkf-Cqqj4vGN3OAJQtH2FTM_wZP82yx9qc_)
 
 ### Abstract
 
