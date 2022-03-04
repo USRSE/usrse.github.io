@@ -24,6 +24,8 @@ The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
 present this speaker series event in conjunction with the international DiveRSE initiative taking place alongside the Lorentz workshop - [Vive la différence - research software engineers](https://www.researchsoft.org/lorentz/) - in support of EDI within the research software engineering community. This event will take
 place **Friday, March 11th at 11AM Pacific/ 2PM Eastern / 7PM GMT**
 
+[**Register on Zoom**](https://purdue-edu.zoom.us/meeting/register/tJYkf-Cqqj4vGN3OAJQtH2FTM_wZP82yx9qc_)
+
 ### Abstract
 
 The role of a Research Software Engineer (RSE) is to transform research concepts and methods into practical computing workflows, blending established and innovative software techniques that incorporate technical sustainability and excellence.  But to tread this path successfully it takes allies, collaborators, and process repeatability to make things happen.  So how does an RSE build up this kind of ecosystem of success?  This talk details how you can develop a diverse pool of resources and how sometimes reaching outside of the task you’ve been given can result in the breakthrough you need.
