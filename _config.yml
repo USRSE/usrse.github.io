@@ -2,7 +2,7 @@
 lang: en
 
 title: US-RSE
-description: Association of Research Software Engineers
+description: United States Research Software Engineer Association
 
 url: ""
 baseurl: ""  # for testing, also check .circleci/circle_urls.sh
@@ -33,11 +33,14 @@ twitter: us_rse
 github_org: USRSE
 linkedin: company/us-rse/
 
+# Twitter card for meta tags
+twitter_card: summary
+
+
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-feed
-  - jekyll-seo-tag
 
 exclude: 
   - Gemfile
