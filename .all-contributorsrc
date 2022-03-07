@@ -585,6 +585,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/199813?v=4"
             ]
+        },
+        {
+            "login": "AlfredoR-CSUF",
+            "name": "Alfredo Rodriguez",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/AlfredoR-CSUF",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/86503312?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
