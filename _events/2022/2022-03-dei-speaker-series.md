@@ -21,7 +21,7 @@ The US-RSE DEI-WG is working to bring to the US-RSE community quarterly visits f
 ## Event
 
 The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
-present this speaker series event in conjunction with the international DiveRSE initiative taking place alongside the Lorentz workshop - [Vive la différence - research software engineers](https://www.researchsoft.org/lorentz/) - in support of EDI within the research software engineering community. This event will take
+present this speaker series event in conjunction with the international [DiveRSE initiative](https://diverse-rse.github.io/) taking place alongside the Lorentz workshop - [Vive la différence - research software engineers](https://www.researchsoft.org/lorentz/) - in support of EDI within the research software engineering community. This event will take
 place **Friday, March 11th at 11AM Pacific/ 2PM Eastern / 7PM GMT**
 
 [**Register on Zoom**](https://purdue-edu.zoom.us/meeting/register/tJYkf-Cqqj4vGN3OAJQtH2FTM_wZP82yx9qc_)
