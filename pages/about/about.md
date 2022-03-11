@@ -40,7 +40,7 @@ Shortly after that, the UK RSE Association sponsored the first [International RS
 Five US representatives traveled to London to participate in the workshop and left energized and committed to developing an RSE community in the US.
 The first US-RSE website and slack channel were formed days later.
 Progress was slow to start but in the ensuing months and years a formal organization emerged.
-For more, and to see what’s been happening recently, we invite you to read our [newsletters]({{ site.baseurl }}/newsletters/), read more about our [mission]({{ site.baseurl }}/mission/), and [join]({{ site.baseurl }}/join/) the US-RSE community.
+For more, and to see what’s been happening recently, we invite you to read our [newsletters]({{ site.baseurl }}/newsletters/), read more about our [mission]({{ site.baseurl }}/mission/), and [join]({{ site.baseurl }}/join/) the US-RSE community. A blog post that describes the road so far that has led to the present-day US-RSE can be found [here]({{ site.baseurl }}/2022-02-06-a-brief-history-of-usrse/).
 
 
 To contact the US-RSE Association, email [contact@us-rse.org](mailto:contact@us-rse.org).
