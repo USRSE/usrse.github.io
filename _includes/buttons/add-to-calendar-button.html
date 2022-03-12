@@ -16,7 +16,7 @@ var myCalendar = addToCalendar({
   },
   data: {
     // Event title
-    title: '{{ title }}',
+    title: '{{ title | replace: "&", "and" }}',
 
     // Event start date
     start: new Date('{{ time.start | date_to_xmlschema }}'),
