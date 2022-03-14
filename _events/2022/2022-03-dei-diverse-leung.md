@@ -9,7 +9,7 @@ repeated: false
 category: dei 
 time:
     - - start: 2022-03-11T16:00:00Z
-        end: 2022-03-11T17:00:00Z
+        end: 2022-03-11T17:30:00Z
 ---
 
 ## DiveRSE Speaker Series Info
