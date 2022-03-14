@@ -18,7 +18,7 @@ DiveRSE (Diverse RSE) is a series of talks and related activities including disc
 
 ## Event - Normalizing inclusion by embracing difference
 
-DiveRSE is delighted to welcome Mary Ann Leung, Ph.D., Founder and President of the Sustainable Horizons Institute, as our inaugural speaker in the DiveRSE talk series looking at diversity, equity and inclusion in the Research Software Engineering (RSE) community.
+DiveRSE is delighted to welcome Mary Ann Leung, Ph.D., Founder and President of the [Sustainable Horizons Institute](https://shinstitute.org/), as our inaugural speaker in the DiveRSE talk series looking at diversity, equity and inclusion in the Research Software Engineering (RSE) community.
 
 The series runs from March 2022 and is linked to the [“Vive la différence - research software engineers” workshop](https://www.researchsoft.org/events/2022-04/) being hosted at the Lorentz Centre in The Netherlands in April 2022.
 
