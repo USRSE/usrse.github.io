@@ -14,7 +14,7 @@ time:
 
 ## DiveRSE Speaker Series Info
 
-DiveRSE (Diverse RSE) is a series of talks and related activities including discussion and panel sessions designed to support and raise awareness of EDI challenges and successes within the research software community.
+[DiveRSE (Diverse RSE)](https://diverse-rse.github.io/) is a series of talks and related activities including discussion and panel sessions designed to support and raise awareness of equite, diversity, and inclusion (EDI) challenges and successes within the research software community.
 
 ## Event - Normalizing inclusion by embracing difference
 
@@ -35,7 +35,7 @@ After registering, you will receive a confirmation email containing information 
 
 ### Abstract
 
-The Vive la différence - research software engineers workshop aims to explore ways to reframe research software engineering (RSE) placing diversity, equity, and inclusion (DEI) as a central organizing principle. RSEs work in highly inter and multi-disciplinary environments, where they must be adept at “speaking” multiple languages, e.g., programming and domain languages. RSEs may have been trained in computer science, a domain science, mathematics, or an engineering discipline. Given the technical diversity, one might expect research software communities to welcome social diversity, creating an ideal ecosystem for the placing DEI as a central organizing principle. However, while research indicates that social diversity results in greater innovation, research software itself, as a growing multidisciplinary field spanning the globe and representing a diverse spectrum of technical domains, remains largely homogeneous.
+The Vive la différence - research software engineers workshop aims to explore ways to reframe research software engineering (RSE) placing diversity, equity, and inclusion (DEI) as a central organizing principle. RSEs work in highly inter and multi-disciplinary environments, where they must be adept at "speaking" multiple languages, e.g., programming and domain languages. RSEs may have been trained in computer science, a domain science, mathematics, or an engineering discipline. Given the technical diversity, one might expect research software communities to welcome social diversity, creating an ideal ecosystem for the placing DEI as a central organizing principle. However, while research indicates that social diversity results in greater innovation, research software itself, as a growing multidisciplinary field spanning the globe and representing a diverse spectrum of technical domains, remains largely homogeneous.
 
 This session explores what it takes to achieve DEI, also known as equity, diversity, inclusion (EDI) and justice, equity, diversity, inclusion (JEDI) and how reframing DEI within RSE could increase innovation and developer productivity. We will also consider how cultivating respect and embracing difference could help to normalize inclusion.
 
