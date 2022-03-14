@@ -14,7 +14,7 @@ time:
 
 ## DiveRSE Speaker Series Info
 
-[DiveRSE (Diverse RSE)](https://diverse-rse.github.io/) is a series of talks and related activities including discussion and panel sessions designed to support and raise awareness of equite, diversity, and inclusion (EDI) challenges and successes within the research software community.
+[DiveRSE (Diverse RSE)](https://diverse-rse.github.io/) is a series of talks and related activities including discussion and panel sessions designed to support and raise awareness of equity, diversity, and inclusion (EDI) challenges and successes within the research software community.
 
 ## Event - Normalizing inclusion by embracing difference
 
