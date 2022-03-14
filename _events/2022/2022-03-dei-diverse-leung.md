@@ -4,7 +4,7 @@ subtitle: DiveRSE Speaker Series
 expires: 2022-03-23
 event_date: "March 22, 2022"
 layout: event
-duration: 60
+duration: 90
 repeated: false
 category: dei 
 time:
