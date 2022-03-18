@@ -7,6 +7,8 @@ menubar: about
 menubar_toc: true
 ---
 
+Last Updated: Oct 10, 2021
+
 The US-RSE Association is centered around four main goals. We aim
 to target our activities and actions to serving these aspects:
 
