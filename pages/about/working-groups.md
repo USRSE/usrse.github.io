@@ -5,6 +5,7 @@ permalink: /about/working-groups/
 subtitle: Focused groups to tackle community topics
 menubar: about
 menubar_toc: true
+set_last_modified: true
 ---
 
 <h3><a href="{{ site.baseurl }}/wg/dei/">Diversity, Equity, and Inclusion (DEI)</a></h3>

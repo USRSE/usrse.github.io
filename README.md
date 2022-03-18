@@ -307,6 +307,34 @@ and then embed (note that "embed" is in the url) and the title is a title of you
 choosing. You are not required to include a title, and it will default to a generic
 "YouTube video player."
 
+### 7. How do I add a "Last Modified:" date?
+
+All of our pages come ready to go to add a "last modified" date, which will default to the bottom
+right of the page. This means to add a last modified date to a page, simply update the frontend matter as follows:
+
+```yaml
+set_last_modified: true
+```
+
+If you want to change the default div id (e.g., adding your own html div with a specific ID and not using the default
+provided) you can add that too:
+
+```yaml
+set_last_modified: true
+last_modified_id: last-modified
+```
+
+And finally, if the repository you are retrieving the file from is different than the repository here, define the repository
+and path (relative to the root) 
+
+```yaml
+set_last_modified: true
+last_modified_id: last-modified
+last_modified_repo: USRSE/documents
+last_modified_path: governance.md
+```
+
+If you have any questions, please don't hesitate to [open an issue](https://github.com/USRSE/usrse.github.io)
 
 ## Tests
 

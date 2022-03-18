@@ -5,6 +5,7 @@ subtitle: Diversity, Equity, and Inclusion at US-RSE
 permalink: /about/dei-mission/
 menubar: about
 menubar_toc: true
+set_last_modified: true
 ---
 
 #### Diversity, Equity, and Inclusion at US-RSE

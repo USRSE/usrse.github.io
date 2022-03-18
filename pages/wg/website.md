@@ -3,6 +3,7 @@ layout: page
 title: Website Working Group
 subtitle:
 permalink: /wg/website/
+set_last_modified: true
 ---
 
 # Overview

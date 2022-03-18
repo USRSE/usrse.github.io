@@ -5,6 +5,7 @@ title: About US-RSE
 description: About the US-Research Software Engineer Association
 menubar: about
 permalink: /about/
+set_last_modified: true
 ---
 
 The US Research Software Engineer Association (US-RSE) is a community-driven effort focused on the increasingly important role of the [Research Software Engineer]({{ site.baseurl }}/what-is-an-rse/).
