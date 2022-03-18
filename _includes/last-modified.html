@@ -1,0 +1,21 @@
+<script>
+function setLastModified() {
+  if (document.getElementById('{% if page.last_modified_id %}{{ page.last_modified_id }}{% else %}last-modified{% endif %}')) {
+    fetch("https://api.github.com/repos/{% if page.last_modified_repo %}{{ page.last_modified_repo }}{% else %}{{ site.github_org }}/{{ site.github_repo }}{% endif %}/commits?path={% if page.last_modified_path %}{{ page.last_modified_path }}{% else %}{{ page.path }}{% endif %}")
+      .then((response) => {
+        return response.json();
+      })
+      .then((commits) => {
+          var modified = commits[0]['commit']['committer']['date'].slice(0,10);
+          console.log(modified)
+          document.getElementById('last-modified').textContent = "Last Modified: " + modified;
+       })
+      .catch((error) => {
+         console.log(error)
+      });
+  }
+}
+$(document).ready(function(){
+   setLastModified();
+})
+</script>

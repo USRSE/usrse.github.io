@@ -21,13 +21,14 @@
                 </div>{% endif %}
                 <div class="column">
                     {{ content }}
+                {% comment %}Add the last modified default ID (floating to right) unless the page defines a custom one {% endcomment %}
+                {% unless page.last_modified_id %}<div style="float:right; margin-top:25px" id="last-modified"></div>{% endunless %}
                 </div>
             </div>
         </div>
     </section>
-    {% unless page.hide_footer %}
-        {% include footer.html %}
-    {% endunless %}
+    {% unless page.hide_footer %}{% include footer.html %}{% endunless %}
     {% include footer-scripts.html %}
+    {% if page.set_last_modified %}{% include last-modified.html %}{% endif %}
   </body>
 </html>

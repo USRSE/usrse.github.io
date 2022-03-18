@@ -3,6 +3,7 @@ layout: page
 title: Education & Training Working Group
 subtitle:
 permalink: /wg/education_training/
+set_last_modified: true
 ---
 
 # Overview

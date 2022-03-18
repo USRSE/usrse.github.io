@@ -5,6 +5,7 @@ permalink: /about/steering-committee/
 subtitle: The US-RSE Association is community driven and organized.
 menubar: about
 menubar_toc: true
+set_last_modified: true
 ---
 
 
