@@ -3,9 +3,6 @@ layout: page
 permalink: /about/governance/
 subtitle: The US-RSE Association Governance
 menubar: about
-set_last_modified: true
-last_modified_repo: USRSE/documents
-last_modified_path: governance.md
 ---
 
 <div id="governance" style="display:none"></div>
