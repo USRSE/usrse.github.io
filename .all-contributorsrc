@@ -596,6 +596,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/86503312?v=4"
             ]
+        },
+        {
+            "login": "dylanmcreynolds",
+            "name": "Dylan McReynolds",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/dylanmcreynolds",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/40469975?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

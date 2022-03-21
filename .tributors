@@ -293,5 +293,10 @@
     "AlfredoR-CSUF": {
         "name": "Alfredo Rodriguez",
         "blog": "https://github.com/AlfredoR-CSUF"
+    },
+    "dylanmcreynolds": {
+        "name": "Dylan McReynolds",
+        "orcid": "0000-0002-1539-0297",
+        "affiliation": "Lawrence Berkeley National Laboratory"
     }
 }
