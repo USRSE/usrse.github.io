@@ -297,6 +297,7 @@
     "dylanmcreynolds": {
         "name": "Dylan McReynolds",
         "orcid": "0000-0002-1539-0297",
-        "affiliation": "Lawrence Berkeley National Laboratory"
+        "affiliation": "Lawrence Berkeley National Laboratory",
+        "blog": "https://github.com/dylanmcreynolds"
     }
 }
