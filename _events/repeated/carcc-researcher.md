@@ -21,6 +21,8 @@ rrule:
   - RDATE;TZID=America/New_York:20220414T130000
 ---
 
+*Reoccurring monthly: Second Thursday of the month, 1pm ET*
+
 Do you help researchers using IT tools to further their research goals?  Are you involved in research computing and/or data science training?  Do you consult with researchers on more effectively doing their research with advanced computing resources? Compute with data?
 
 The Researcher-Facing Track of the [CaRCC People Network](https://carcc.org/people-network/) brings together people from research computing groups, libraries, research institutes, and other organizations who support researchers in every phase of the research lifecycle. 

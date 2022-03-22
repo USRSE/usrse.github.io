@@ -21,6 +21,8 @@ rrule:
   - RDATE;TZID=America/New_York:20220421T130000
 ---
 
+*Reoccurring monthly: Third Thursday of the month, 1pm ET*
+
 The Systems-Facing track of the CaRCC People Network will focus on aspects relevant to the execution of research computing and data systems.
 
 Topics include:

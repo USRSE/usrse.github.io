@@ -18,6 +18,8 @@ rrule:
 
 ---
 
+*Reoccurring monthly: First Tuesday of the month, 1pm ET*
+
 Do you help researchers compute with data?  The Data-Facing Track of the CaRCC People Network brings together people from research computing groups, libraries, research institutes, and other organizations who support data-enabled research.  
 
 Topics include:
