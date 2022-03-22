@@ -9,17 +9,13 @@ layout: event
 category: community-learning
 time:
   - - start: 2022-04-05 13:00 EDT
-
-# Repeated events information
+  
 repeated: true
-
-# use an rdate string instead (best for complex repeated events)
-# note that the dtstart and rdate at the end are the same
-rrule: 
+rrule:
   - DTSTART;TZID=America/New_York:20220405T130000
-# second thursday of every month
-  - RRULE:UNTIL=20240101T080000;FREQ=MONTHLY;BYDAY=+2ND
+  - RRULE:FREQ=MONTHLY;INTERVAL=1;WKST=MO;BYDAY=+1TU
   - RDATE;TZID=America/New_York:20220405T130000
+
 ---
 
 Do you help researchers compute with data?  The Data-Facing Track of the CaRCC People Network brings together people from research computing groups, libraries, research institutes, and other organizations who support data-enabled research.  
