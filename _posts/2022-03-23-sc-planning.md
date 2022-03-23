@@ -9,7 +9,7 @@ As we did [last year](https://us-rse.org/2021-03-04-strategic-meeting/), the [US
 
 ## SWOT (strengths, weaknesses, opportunities, threats) analysis
 
-To help focus discussions, we compiled a SWOT (strengths, weaknesses, opportunities, threats) analysis.  There was a large degree of overlap in the themes identified by different Steering Committee members.
+To help focus discussions, we compiled a SWOT analysis.  There was a large degree of overlap in the themes identified by different Steering Committee members.
 
 ### Strengths
 
