@@ -7,7 +7,7 @@ posted_by: Christina Maimone
 
 As we did [last year](https://us-rse.org/2021-03-04-strategic-meeting/), the [US-RSE Steering Committee](https://us-rse.org/about/steering-committee/) held a strategic planning retreat to assess the current state of US-RSE, identify priorities for the upcoming year, and discuss where US-RSE is headed over the next 3-5 years.
 
-## SWOT Analysis
+## SWOT (strengths, weaknesses, opportunities, threats) analysis
 
 To help focus discussions, we compiled a SWOT (strengths, weaknesses, opportunities, threats) analysis.  There was a large degree of overlap in the themes identified by different Steering Committee members.
 
