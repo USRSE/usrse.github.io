@@ -52,7 +52,7 @@ For testing, we look to see that all fields are defined, the url exists, and
 that the "expires" and "posted" fields load as a `datetime.date` object in
 Python. If you copy the format above, you should be ok.
 
-Once your job(s) are merged to `main` a [GitHub Action](.github/workflows/jobs-slack-poster.yml) will automatically
+Once your job(s) are merged to `main` a [GitHub Action](.github/workflows/jobs-poster.yml) will automatically
 cross-post your job(s) to the USRSE Slack `#jobs` channel!
 *NOTE:* jobs added in the "Related" section are not posted to Slack or Twitter.
 
