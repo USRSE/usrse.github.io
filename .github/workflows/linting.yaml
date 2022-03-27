@@ -17,7 +17,7 @@ jobs:
     - name: URLs-checker
     
       # Will be updated to 0.0.26
-      uses: urlstechie/urlchecker-action@test/multiprocessing
+      uses: urlstechie/urlchecker-action@0.0.26
       with:
         # A comma-separated list of file types to cover in the URL checks
         file_types: .md,.py,.yml
