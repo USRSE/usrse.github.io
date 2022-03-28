@@ -1,4 +1,4 @@
-# Read in jobs from the _data/jobs.yml file, find links that are both
+# Read in jobs from the _data/jobs.yml and _data/related-jobs.yml files, find links that are both
 # expired and not working, and remove them. Write to a new file.
 # Copyright @vsoch, 2020
 
@@ -7,16 +7,15 @@ import datetime
 from datetime import timedelta
 from urlchecker.core.urlproc import UrlCheckResult
 import shutil
-import sys
 import tempfile
 import yaml
 
 here = os.path.dirname(os.path.abspath(__file__))
 
 
-def get_filepath():
+def get_filepath(file):
     """load the jobs file."""
-    filepath = os.path.join(os.path.dirname(here), "_data", "jobs.yml")
+    filepath = os.path.join(os.path.dirname(here), "_data", file)
 
     # Exit on error if we cannot find file
     if not os.path.exists(filepath):
@@ -33,59 +32,62 @@ def read_jobs(filepath):
 
 
 def main():
-    """a small helper to update the _data/jobs.yml file."""
-    filepath = get_filepath()
+    """a small helper to update the _data/jobs.yml and _data/related-jobs.yml files."""
+    for file in ["jobs.yml", "related-jobs.yml"]:
+        filepath = get_filepath(file)
+        print("filepath is: %s" % filepath)
 
-    # Read in the jobs
-    jobs = read_jobs(filepath)
+        # Read in the jobs
+        jobs = read_jobs(filepath)
 
-    # Keep a list to re-write to file
-    keepers = []
+        # Keep a list to re-write to file
+        keepers = []
 
-    # Use the same urlchecker function for consistency
-    now = datetime.date.today()
+        # Use the same urlchecker function for consistency
+        now = datetime.date.today()
 
-    print("Found %s jobs" % len(jobs))
-    for job in jobs:
+        print("Found %s jobs" % len(jobs))
+        for job in jobs:
 
-        # Do not keep expired jobs that haven't been updated in 60 days
-        if job["expires"] < now:
-            removal_date = job["expires"] + timedelta(days=60)
-            if removal_date < now:
+            # Do not keep expired jobs that haven't been updated in 60 days
+            if job["expires"] < now:
+                removal_date = job["expires"] + timedelta(days=60)
+                if removal_date < now:
+                    print("Skipping %s, expired and hasn't been updated in 60 days." % job["name"])
+                    continue
+
+            # We don't check urls that are not expired, the urlchecker action should
+            # catch these and fail
+            if job["expires"] > now:
+                print("Skipping %s, expires in future." % job["name"])
+                keepers.append(job)
                 continue
 
-        # We don't check urls that are not expired, the urlchecker action should
-        # catch these and fail
-        if job["expires"] > now:
-            print("Skipping %s, expires in future." % job["name"])
-            keepers.append(job)
-            continue
+            checker = UrlCheckResult()
+            checker.check_urls(urls=[job["url"]], retry_count=3, timeout=5)
 
-        checker = UrlCheckResult()
-        checker.check_urls(urls=[job["url"]], retry_count=3, timeout=5)
+            # If the url passes, add to keepers
+            if checker.passed:
+                print("PASSED %s" % job["url"])
+                keepers.append(job)
+            else:
+                print(
+                    "FAIL %s is expired and did not pass, not adding back to jobs."
+                    % job["url"]
+                )
 
-        # If the url passes, add to keepers
-        if checker.passed:
-            print("PASSED %s" % job["url"])
-            keepers.append(job)
-        else:
-            print(
-                "FAIL %s is expired and did not pass, not adding back to jobs."
-                % job["url"]
-            )
+        # update the user
+        print("%s jobs have passed." % len(keepers))
 
-    # update the user
-    print("%s jobs have passed." % len(keepers))
+        # Finally, update data file
+        _, tmpfile = tempfile.mkstemp(prefix="jobs-", suffix=".yml")
 
-    # Finally, update data file
-    _, tmpfile = tempfile.mkstemp(prefix="jobs-", suffix=".yml")
+        # Write the new file
+        with open(tmpfile, "w") as outfile:
+            yaml.dump(keepers, outfile)
 
-    # Write the new file
-    with open(tmpfile, "w") as outfile:
-        yaml.dump(keepers, outfile)
-
-    # Copy finished file - will need to be added in pull request
-    shutil.copyfile(tmpfile, filepath)
+        # Copy finished file - will need to be added in pull request
+        shutil.copyfile(tmpfile, filepath)
 
 
 if __name__ == "__main__":
