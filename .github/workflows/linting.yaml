@@ -15,7 +15,7 @@ jobs:
         files: ./_posts ./pages ./README.md
         
     - name: URLs-checker
-      uses: urlstechie/urlchecker-action@0.0.25
+      uses: urlstechie/urlchecker-action@test/unique-optimization
       with:
         # A comma-separated list of file types to cover in the URL checks
         file_types: .md,.py,.yml
