@@ -50,13 +50,13 @@ def checkout(commit):
         sys.exit(result.stderr.decode("utf-8"))
 
 
-def clone_repo(git_path, branch="master", dest=None):
+def clone_repo(git_path, branch="main", dest=None):
     """
     Clone and name a git repository.
 
     Args:
         - git_path (str) : https path to git repository.
-        - branch   (str) : name of the branch to use. Default="master"
+        - branch   (str) : name of the branch to use. Default="main"
         - dest     (str) : fullpath to clone repository to. Defaults to tmp.
 
     Returns:
