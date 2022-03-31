@@ -10,4 +10,4 @@ jobs:
     - name: Check Jobs
       run: |
         pip install -r scripts/requirements.txt
-        python -m unittest test_jobs
+        python -m unittest tests.test_jobs
