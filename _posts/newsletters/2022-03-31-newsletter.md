@@ -28,7 +28,7 @@ In this issue:
 <a name="community-calls"></a>
 # **US-RSE Community Calls**
 
-The April community call will be on April 14, 2022 at 12 ET. Our plan for April is a slightly different format. Following the request in https://github.com/USRSE/monthly-community-calls/issues/12 we are looking for people interested in giving a short talk on a new technology or tool you would be interested to tell others about. This could be something from your own project or some new technology you are learning from elsewhere. Depending on interest these might be lightning 5 minute talks or longer talks with time for discussion! If you are interested reach out to either Julia Damerow or Chris Hill or ping us on the Community Call slack channel. 
+The April community call will be on April 14, 2022 at 12 ET. Our plan for April is a slightly different format. Following the request in [https://github.com/USRSE/monthly-community-calls/issues/12](https://github.com/USRSE/monthly-community-calls/issues/12) we are looking for people interested in giving a short talk on a new technology or tool you would be interested to tell others about. This could be something from your own project or some new technology you are learning from elsewhere. Depending on interest these might be lightning 5 minute talks or longer talks with time for discussion! If you are interested reach out to either Julia Damerow or Chris Hill or ping us on the Community Call slack channel. 
 
 You can find the recordings of our monthly calls [here](https://www.youtube.com/playlist?app=desktop&list=PLMgG8jy8w-8neP6gPOgifH6kh4t_RUTTH). We are also discussing finding a new time for the community call to make the time work better for our members in Hawaii and Alaska. Stay tuned!
 
