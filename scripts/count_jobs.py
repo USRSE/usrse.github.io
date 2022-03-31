@@ -3,7 +3,6 @@
 #   - finding all git changes for the _data/jobs.yml file
 #   - checkout out each commit and creating a global record of all jobs
 #   - printing to the screen
-
 # Copyright @vsoch, 2020
 
 import os
@@ -90,9 +89,8 @@ def delete_repo(base_path):
         - base_path (str) : base path of the cloned git repository.
 
     Returns:
-        (str) message/ code describing whether the operation was successfully excuted.
+        (str) message/ code describing whether the operation was successfully executed.
     """
-    # clone repo
     result = subprocess.run(
         ["rm", "-R", "-f", base_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE
     )
