@@ -6,14 +6,11 @@
 # Copyright @vsoch, 2020
 
 import os
-import json
 import yaml
 import subprocess
 import shlex
-import shutil
 import sys
 import tempfile
-from time import sleep
 
 here = os.path.dirname(os.path.abspath(__file__))
 
