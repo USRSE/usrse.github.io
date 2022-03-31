@@ -31,63 +31,68 @@ def read_jobs(filepath):
     return data
 
 
-def main():
-    """a small helper to update the _data/jobs.yml and _data/related-jobs.yml files."""
-    for file in ["jobs.yml", "related-jobs.yml"]:
-        filepath = get_filepath(file)
-        print("filepath is: %s" % filepath)
+def clean_jobs(file):
+    """clean out expired job postings from a file"""
+    filepath = get_filepath(file)
+    print("filepath is: %s" % filepath)
 
-        # Read in the jobs
-        jobs = read_jobs(filepath)
+    # Read in the jobs
+    jobs = read_jobs(filepath)
 
-        # Keep a list to re-write to file
-        keepers = []
+    # Keep a list to re-write to file
+    keepers = []
 
-        # Use the same urlchecker function for consistency
-        now = datetime.date.today()
+    # Use the same urlchecker function for consistency
+    now = datetime.date.today()
 
-        print("Found %s jobs" % len(jobs))
-        for job in jobs:
+    print("Found %s jobs" % len(jobs))
+    for job in jobs:
 
-            # Do not keep expired jobs that haven't been updated in 60 days
-            if job["expires"] < now:
-                removal_date = job["expires"] + timedelta(days=60)
-                if removal_date < now:
-                    print("Skipping %s, expired and hasn't been updated in 60 days." % job["name"])
-                    continue
-
-            # We don't check urls that are not expired, the urlchecker action should
-            # catch these and fail
-            if job["expires"] > now:
-                print("Skipping %s, expires in future." % job["name"])
-                keepers.append(job)
+        # Do not keep expired jobs that haven't been updated in 60 days
+        if job["expires"] < now:
+            removal_date = job["expires"] + timedelta(days=60)
+            if removal_date < now:
+                print("Skipping %s, expired and hasn't been updated in 60 days." % job["name"])
                 continue
 
-            checker = UrlCheckResult()
-            checker.check_urls(urls=[job["url"]], retry_count=3, timeout=5)
+        # We don't check urls that are not expired, the urlchecker action should
+        # catch these and fail
+        if job["expires"] > now:
+            print("Skipping %s, expires in future." % job["name"])
+            keepers.append(job)
+            continue
 
-            # If the url passes, add to keepers
-            if checker.passed:
-                print("PASSED %s" % job["url"])
-                keepers.append(job)
-            else:
-                print(
-                    "FAIL %s is expired and did not pass, not adding back to jobs."
-                    % job["url"]
-                )
+        checker = UrlCheckResult()
+        checker.check_urls(urls=[job["url"]], retry_count=3, timeout=5)
 
-        # update the user
-        print("%s jobs have passed." % len(keepers))
+        # If the url passes, add to keepers
+        if checker.passed:
+            print("PASSED %s" % job["url"])
+            keepers.append(job)
+        else:
+            print(
+                "FAIL %s is expired and did not pass, not adding back to jobs."
+                % job["url"]
+            )
 
-        # Finally, update data file
-        _, tmpfile = tempfile.mkstemp(prefix="jobs-", suffix=".yml")
+    # update the user
+    print("%s jobs have passed." % len(keepers))
 
-        # Write the new file
-        with open(tmpfile, "w") as outfile:
-            yaml.dump(keepers, outfile)
+    # Finally, update data file
+    _, tmpfile = tempfile.mkstemp(prefix="jobs-", suffix=".yml")
 
-        # Copy finished file - will need to be added in pull request
-        shutil.copyfile(tmpfile, filepath)
+    # Write the new file
+    with open(tmpfile, "w") as outfile:
+        yaml.dump(keepers, outfile)
+
+    # Copy finished file - will need to be added in pull request
+    shutil.copyfile(tmpfile, filepath)
+
+
+def main():
+    """a small helper to update the jobs posting files."""
+    clean_jobs("jobs.yml")
+    clean_jobs("related-jobs.yml")
 
 
 if __name__ == "__main__":
