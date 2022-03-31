@@ -131,6 +131,7 @@ As always we thank everyone who is already contributing for their help in shapin
 
 These opportunities were recently posted to the [RSE Careers page](https://us-rse.org/jobs/):
 
+1. [HPC Applications Engineer](https://jobs.lbl.gov/jobs/4251): Lawrence Berkeley National Laboratory, Berkeley, CA _Posted: Mar 31, 2022_
 1.  [Research Software Engineer](https://main-princeton.icims.com/jobs/14232/research-software-engineer/job?mobile=false&width=1091&height=500&bga=true&needsRedirect=false&jan1offset=-300&jun1offset=-240): Initiative for Data-Driven Social Science, Princeton University, Princeton, NJ _Posted: Mar 22, 2022_
 2.  [Software/Computer Graphics Engineer](https://opportunities.columbia.edu/en-us/job/523768/computer-graphics-engineer): Electrophysiology, Memory, and Navigation Laboratory, Columbia University, New York City, New York _Posted: Mar 21, 2022_
 3.  [Computational Scientist](https://lbl.referrals.selectminds.com/jobs/computational-scientist-4729?et=m8WR0Dcr): Advanced Light Source, Lawrence Berkeley National Lab, Berkeley, CA _Posted: Mar 21, 2022_
