@@ -52,7 +52,10 @@ def clean_jobs(file):
         if job["expires"] < now:
             removal_date = job["expires"] + timedelta(days=60)
             if removal_date < now:
-                print("Skipping %s, expired and hasn't been updated in 60 days." % job["name"])
+                print(
+                    "Skipping %s, expired and hasn't been updated in 60 days."
+                    % job["name"]
+                )
                 continue
 
         # We don't check urls that are not expired, the urlchecker action should
