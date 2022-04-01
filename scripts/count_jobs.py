@@ -103,23 +103,17 @@ def read_jobs(jobfile):
     return data
 
 
-def main():
-    """a small helper to generate a "master" _data/jobs.yml"""
-    repository = "https://github.com/USRSE/usrse.github.io"
-    tmpdir = tempfile.mkdtemp(prefix="usrse-")
+def count_jobs(jobfile):
+    """count the number of jobs in a job file across all commits
+    and returns a list of jobs
 
-    print(f"Cloning repository {repository}")
-    repo = clone_repo(repository, dest=tmpdir)
+    Args:
+        - jobfile (str) : the name of the file to process
 
-    # If user provided an output file, derive path before chdir
-    outfile = None
-    if len(sys.argv) > 1:
-        outfile = os.path.abspath(sys.argv[1])
-
-    # Change directory to the repo to get list of commits
-    os.chdir(repo)
-
-    commits = get_filename_commits("_data/jobs.yml")
+    Returns:
+        (str) a YAML representation of all the unique jobs contained in the file
+    """
+    commits = get_filename_commits(jobfile)
 
     # Keep lookup dictionary of logs, keys are based on title and url
     jobs = []
@@ -130,7 +124,7 @@ def main():
         checkout(commit)
 
         try:
-            new_jobs = read_jobs("_data/jobs.yml")
+            new_jobs = read_jobs(jobfile)
         except:
             print("There was a problem parsing jobs file for commit %s" % commit)
             continue
@@ -148,8 +142,30 @@ def main():
 
     print(f"Found a total of {len(jobs)} unique jobs across {len(commits)} commits.")
 
+    return jobs
+
+
+def main():
+    """a small helper to generate an all-time jobs count
+    and optionally produce a "master" jobs file"""
+    repository = "https://github.com/USRSE/usrse.github.io"
+    tmpdir = tempfile.mkdtemp(prefix="usrse-")
+
+    print(f"Cloning repository {repository}")
+    repo = clone_repo(repository, dest=tmpdir)
+
+    # If user provided an output file, derive path before chdir
+    outfile = None
+    if len(sys.argv) > 1:
+        outfile = os.path.abspath(sys.argv[1])
+
+    # Change directory to the repo to get list of commits
+    os.chdir(repo)
+
+    jobs = [count_jobs("_data/jobs.yml"), count_jobs("_data/related-jobs.yml")]
+
     # If user provided an output file:
-    if outfile:
+    if outfile and jobs:
         print(f"Saving to output file {outfile}")
         with open(outfile, "w") as fd:
             yaml.dump(jobs, fd)
