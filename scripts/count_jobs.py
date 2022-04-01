@@ -162,7 +162,7 @@ def main():
     # Change directory to the repo to get list of commits
     os.chdir(repo)
 
-    jobs = [count_jobs("_data/jobs.yml"), count_jobs("_data/related-jobs.yml")]
+    jobs = [*count_jobs("_data/jobs.yml"), *count_jobs("_data/related-jobs.yml")]
 
     # If user provided an output file:
     if outfile and jobs:
