@@ -10,6 +10,7 @@ import yaml
 import subprocess
 import shlex
 import sys
+import shutil
 import tempfile
 
 here = os.path.dirname(os.path.abspath(__file__))
@@ -63,8 +64,8 @@ def clone_repo(git_path, branch="main", dest=None):
         (str) base path of the cloned git repository.
     """
     if not dest:
-        base_path = os.path.basename(git_path)
-        dest = get_tmpdir(prefix=base_path, create=False)
+        dest = tempfile.mkdtemp()
+        shutil.rmtree(dest)
 
     result = subprocess.run(
         ["git", "clone", "-b", branch, git_path, dest],
@@ -103,12 +104,13 @@ def read_jobs(jobfile):
     return data
 
 
-def count_jobs(jobfile):
+def count_jobs(jobfile, related=True):
     """count the number of jobs in a job file across all commits
     and returns a list of jobs
 
     Args:
-        - jobfile (str) : the name of the file to process
+        - jobfile (str)  : the name of the file to process
+        - related (bool) : boolean to add to data to indicate main or related
 
     Returns:
         (str) a YAML representation of all the unique jobs contained in the file
@@ -138,6 +140,7 @@ def count_jobs(jobfile):
                 continue
             seen.append(uid)
             del job["expires"]
+            job["related"] = related
             jobs.append(job)
 
     print(f"Found a total of {len(jobs)} unique jobs across {len(commits)} commits.")
@@ -146,8 +149,10 @@ def count_jobs(jobfile):
 
 
 def main():
-    """a small helper to generate an all-time jobs count
-    and optionally produce a "master" jobs file"""
+    """
+    A small helper to generate an all-time jobs count
+    and optionally write to an output file.
+    """
     repository = "https://github.com/USRSE/usrse.github.io"
     tmpdir = tempfile.mkdtemp(prefix="usrse-")
 
@@ -162,7 +167,10 @@ def main():
     # Change directory to the repo to get list of commits
     os.chdir(repo)
 
-    jobs = [*count_jobs("_data/jobs.yml"), *count_jobs("_data/related-jobs.yml")]
+    jobs = [
+        *count_jobs("_data/jobs.yml", False),
+        *count_jobs("_data/related-jobs.yml", True),
+    ]
 
     # If user provided an output file:
     if outfile and jobs:

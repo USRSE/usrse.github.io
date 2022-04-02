@@ -13,9 +13,11 @@ import yaml
 here = os.path.dirname(os.path.abspath(__file__))
 
 
-def get_filepath(file):
-    """load the jobs file."""
-    filepath = os.path.join(os.path.dirname(here), "_data", file)
+def get_filepath(filename):
+    """
+    load the jobs file.
+    """
+    filepath = os.path.join(os.path.dirname(here), "_data", filename)
 
     # Exit on error if we cannot find file
     if not os.path.exists(filepath):
@@ -25,14 +27,18 @@ def get_filepath(file):
 
 
 def read_jobs(filepath):
-    """read in the jobs data."""
+    """
+    read in the jobs data.
+    """
     with open(filepath, "r") as fd:
         data = yaml.load(fd.read(), Loader=yaml.SafeLoader)
     return data
 
 
 def clean_jobs(file):
-    """clean out expired job postings from a file"""
+    """
+    clean out expired job postings from a file
+    """
     filepath = get_filepath(file)
     print("filepath is: %s" % filepath)
 
@@ -93,7 +99,9 @@ def clean_jobs(file):
 
 
 def main():
-    """a small helper to update the jobs posting files."""
+    """
+    a small helper to update the jobs posting files.
+    """
     clean_jobs("jobs.yml")
     clean_jobs("related-jobs.yml")
 

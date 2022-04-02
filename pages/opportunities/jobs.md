@@ -4,11 +4,11 @@ title: RSE Opportunities
 permalink: /jobs/
 ---
 
-{% assign sorted_jobs = site.data.jobs | sort: "posted" | reverse %}
-{% include joblist.html section_heading="## Current RSE openings" %}
+{% assign rse_jobs = site.data.jobs | sort: "posted" | reverse %}
+{% include joblist.html section_heading="## Current RSE openings" sorted_jobs=rse_jobs %}
 
-{% assign sorted_jobs = site.data.related-jobs | sort: "posted" | reverse %}
-{% include joblist.html section_heading="### Related Openings" %}
+{% assign related_jobs = site.data.related-jobs | sort: "posted" | reverse %}
+{% include joblist.html section_heading="### Related Openings" sorted_jobs=related_jobs %}
 
 {% assign board_size = site.data.job-boards.boards | size %}
 {% if board_size > 0 %}

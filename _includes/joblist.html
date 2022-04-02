@@ -1,5 +1,5 @@
 {% capture jobs_data %}
-  {% for job in sorted_jobs %}
+  {% for job in include.sorted_jobs %}
   {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
   {% capture expires %}{{ job.expires | date: '%s'}}{% endcapture %}
   {% capture posted %}{{ job.posted | date: '%b %d, %Y'}}{% endcapture %}
