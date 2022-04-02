@@ -24,9 +24,15 @@ lookup (we use geolocation of a named location) please [open an issue](https://g
 
 ### 2. How do I add a job?
 
-We maintain a list of current and previous job postings in [_data/jobs.yml](_data/jobs.yml).
-You can add a new job to this list, and so that newer jobs appear at the top, we ask
-that you **add the new entry to the top of the list.**
+We maintain a list of current and previous job
+postings in [_data/jobs.yml](_data/jobs.yml) and
+[_data/related-jobs.yml](_data/related-jobs.yml).  If a job posting
+is not clearly an RSE role but is sufficiently adjacent to RSE that
+some RSEs would be qualified and potentially interested, place it in
+[_data/related-jobs.yml](_data/related-jobs.yml).
+You can add a new job to these lists, and so that newer jobs appear at the
+top of the corresponding section, we ask that you **add the new entry
+to the top of the list.**
 Specifically, we ask that you provide a name, location (can be Remote), an expiration date, and a url to the posting.
 The expiration date is not shown on the page, however it will determine when the job doesn't appear 
 anymore. We suggest setting a timeframe such as a month, and if you want to extend it, you
@@ -41,13 +47,14 @@ job would appear on the site until the first of July, 2019.
   url: 'https://main-princeton.icims.com/jobs'
 ```
 
-And don't forget to write your new job at the top of the [_data/jobs.yml](_data/jobs.yml) file!
+And don't forget to write your new job at the top of the appropriate file!
 For testing, we look to see that all fields are defined, the url exists, and
 that the "expires" and "posted" fields load as a `datetime.date` object in
 Python. If you copy the format above, you should be ok.
 
-Once your job(s) are merged to `main` a [GitHub Action](.github/workflows/jobs-slack-poster.yml) will automatically
+Once your job(s) are merged to `main` a [GitHub Action](.github/workflows/jobs-poster.yml) will automatically
 cross-post your job(s) to the USRSE Slack `#jobs` channel!
+*NOTE:* jobs added in the "Related" section are not posted to Slack or Twitter.
 
 ![example post image](https://raw.githubusercontent.com/rseng/jobs-updater/main/img/example.png)
 
@@ -483,7 +490,7 @@ the USRSE Slack `#jobs` channel. It utilizes the [Jobs updater](https://github.c
 Github Action by @vsoch and @jhkennedy to parse the `_data/jobs.yml` file for new jobs and post them
 the USRSE Slack. For the action:
 
- - unique: determines the field in the jobs.yaml that determines uniqueness (defaults to url)
+ - unique: determines the field in the jobs.yml that determines uniqueness (defaults to url)
  - keys: a comma separated list of fields to include. All except for url will have a prefix, so it's recommended to put the url last.
 
 The other fields are intuitive. Example output (in the console that might go to Slack or Twitter)
