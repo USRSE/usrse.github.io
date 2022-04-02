@@ -4,22 +4,11 @@ title: RSE Opportunities
 permalink: /jobs/
 ---
 
-## Current RSE openings
-
 {% assign sorted_jobs = site.data.jobs | sort: "posted" | reverse %}
-{% include joblist.html %}
-
-<br>
-
-{% assign board_size = site.data.related-jobs | size %}
-{% if board_size > 0 %}
-### Related Openings
+{% include joblist.html section_heading="## Current RSE openings" %}
 
 {% assign sorted_jobs = site.data.related-jobs | sort: "posted" | reverse %}
-{% include joblist.html %}
-
-<br>
-{% endif %}
+{% include joblist.html section_heading="### Related Openings" %}
 
 {% assign board_size = site.data.job-boards.boards | size %}
 {% if board_size > 0 %}
@@ -30,10 +19,10 @@ The following boards might also be of interest.
 
 <ol>{% for board in site.data.job-boards.boards %}
     <li><a href="{{ board.url }}" target="_blank">{{ board.name }}</a></li>
-{% endfor %}</ol>
+    {% endfor %}</ol>
 <br>
 {% endif %}
 
 
-### Have an RSE-related job posting?  
-Please read our [job posting policy]({{ site.baseurl }}/jobs/policy/) first, then fill out this [google form](https://docs.google.com/forms/d/e/1FAIpQLSfYK64R1c0rj-ERldGLxuqedLIbsYPZXj9uBplDRYNmnND10Q/viewform?usp=sf_link) to request additions to the job board.
+### Have an RSE-related job posting?
+Please read our [job posting policy]({{ site.baseurl }}/jobs/policy/) first, then fill out this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSfYK64R1c0rj-ERldGLxuqedLIbsYPZXj9uBplDRYNmnND10Q/viewform?usp=sf_link) to request additions to the job board.
