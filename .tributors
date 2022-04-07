@@ -299,5 +299,11 @@
         "orcid": "0000-0002-1539-0297",
         "affiliation": "Lawrence Berkeley National Laboratory",
         "blog": "https://github.com/dylanmcreynolds"
+    },
+    "jbteves": {
+        "name": "Joshua Teves",
+        "bio": "Computer Programmer for Peter A. Bandettini's lab at NIH, doing Neuroimaging, sysadmin, and other fun tasks.",
+        "orcid": "0000-0002-7767-0067",
+        "blog": "https://github.com/jbteves"
     }
 }

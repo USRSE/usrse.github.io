@@ -1,7 +1,7 @@
 # The United States (US) Research Software Engineer Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-57-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-58-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -690,6 +690,7 @@ tool to generate a contributors graphic below.
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/dylanmcreynolds"><img src="https://avatars.githubusercontent.com/u/40469975?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dylan McReynolds</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=dylanmcreynolds" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/jbteves"><img src="https://avatars.githubusercontent.com/u/26722533?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Joshua Teves</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jbteves" title="Code">💻</a></td>
   </tr>
 </table>
 
