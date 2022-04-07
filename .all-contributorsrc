@@ -607,6 +607,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/40469975?v=4"
             ]
+        },
+        {
+            "login": "jbteves",
+            "name": "Joshua Teves",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/jbteves",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/26722533?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
