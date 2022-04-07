@@ -12,7 +12,8 @@ time:
         end: 2022-10-14T21:00:00Z
 ---
 
-This workshop is to be held as part of [eScience 2022](https://www.escience-conference.org/2022/).
+This workshop is to be held as part of [eScience 2022](https://www.escience-conference.org/2022/),
+which will be held **IN-PERSON**.
 
 Research Software Engineers (RSEs) bridge the gap between traditional software
 engineering and domain science research. These developers have a unique
