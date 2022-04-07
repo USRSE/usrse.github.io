@@ -12,6 +12,8 @@ time:
         end: 2022-03-11T20:00:00Z
 ---
 
+{% include youtube-embed.html url="https://www.youtube.com/embed/BdDTC4JsPvw" title="DEI Webinar - Allies, Collaboration, & Communication" %}
+
 
 ## US-RSE DEI-WG Speaker Series Info
 
