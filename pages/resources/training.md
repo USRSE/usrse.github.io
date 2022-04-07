@@ -18,7 +18,7 @@ _Additions to this list or general comments/questions should be directed to the 
 
 ## Curated Lists, Collections, and Multi-Topic Courses/Books
 These sites have multiple RSE-related links, potentially on a number of topics.
-Rather than reporoduce, we list them here:
+Rather than reproduce, we list them here:
 
 | Audience | Style | Domain | Type | Title |
 | -------- | ----- | ------ | ---- | ----- |
