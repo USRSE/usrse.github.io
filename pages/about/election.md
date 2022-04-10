@@ -4,6 +4,7 @@ title: US-RSE Steering Committee Elections
 permalink: /about/election/
 menubar: about
 menubar_toc: true
+set_last_modified: true
 ---
 
 The 2021 US-RSE Steering Committee elections are happening this December.

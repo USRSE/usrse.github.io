@@ -563,6 +563,61 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/2583156?v=4"
             ]
+        },
+        {
+            "login": "rkakodkar",
+            "name": "rkakodkar",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/rkakodkar",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/65554003?v=4"
+            ]
+        },
+        {
+            "login": "tacaswell",
+            "name": "Thomas A Caswell",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/tacaswell",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/199813?v=4"
+            ]
+        },
+        {
+            "login": "AlfredoR-CSUF",
+            "name": "Alfredo Rodriguez",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/AlfredoR-CSUF",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/86503312?v=4"
+            ]
+        },
+        {
+            "login": "dylanmcreynolds",
+            "name": "Dylan McReynolds",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/dylanmcreynolds",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/40469975?v=4"
+            ]
+        },
+        {
+            "login": "jbteves",
+            "name": "Joshua Teves",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/jbteves",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/26722533?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

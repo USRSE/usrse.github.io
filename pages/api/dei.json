@@ -1,0 +1,16 @@
+---
+layout: none
+permalink: /api/dei.json
+---
+{% assign events = site.events | sort: "expires" | where: "category", "dei" | reverse %}[{% for event in events %}
+    {
+        "title": "{{ event.title | xml_escape }}{% if event.subtitle %} - {{ event.subtitle }}{% endif %}",
+        "date": "{{ event.event_date }}",{% if event.location %}
+        "location": "{{ event.location }}",{% endif %}
+        "description": "{{ post.content | strip_html | jsonify | replace: '"', "" | replace: "\n", " " | truncatewords: 50 }}",
+        "category": "{% if event.category %}{{ event.category }}{% else %}general{% endif %}",
+        "published": "{{ event.date | date: "%a, %d %b %Y %H:%M:%S %z" }}",
+        "repeated": "{{ event.repeated }}",
+        "url": "{{ site.domain }}{{ event.url }}"
+  }{% if forloop.last %}{% else %},{% endif %}
+{% endfor %}]

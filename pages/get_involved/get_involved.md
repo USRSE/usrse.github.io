@@ -64,7 +64,7 @@ We are aiming to have community calls at least quarterly, but we need help plann
 
 <img src="{{ site.baseurl }}/assets/img/cup-coffee-rse-stories-logo.png" width="200px" style="float:right"/>
 
-Willing to share your story of being an RSE on the [RSE Stories podcast](https://us-rse.org/rse-stories/)? 
+Willing to share your story of being an RSE on the [RSE Stories podcast](https://us-rse.org/rse-stories/)?
 
 * **Get involved**: See [https://us-rse.org/rse-stories/](https://us-rse.org/rse-stories/) and sign-up to be a subject.
 
@@ -82,6 +82,19 @@ Going to a conference related to RSEs?  Propose a talk, panel, BoF, or other eve
 # Ongoing Contribution
 
 ---
+
+### Join a Working Group
+
+We organize our community through [working groups](https://us-rse.org/about/working-groups/).
+Find out more on their pages below, join the relevant channels on Slack,
+and attend meetings so you can contribute!
+
+* [Diversity, Equity and Inclusion](https://us-rse.org/wg/dei/), #dei-discussion channel in Slack
+* [Website](https://us-rse.org/about/working-groups/), #website channel in Slack
+* [Education](https://us-rse.org/about/working-groups/) #education-training channel in Slack
+* [Outreach](https://us-rse.org/wg/outreach/), #outreach channel in Slack
+
+Don't see something you like here? We want to make a space for you in the US-RSE community. A how-to guide for putting together working groups is in progress (please keep an eye on [this issue](https://github.com/USRSE/outreach-wg/issues/1))
 
 ### Start/Add Your Own Blog
 

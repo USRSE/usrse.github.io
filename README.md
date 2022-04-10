@@ -1,7 +1,7 @@
 # The United States (US) Research Software Engineer Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-53-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-58-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -24,9 +24,15 @@ lookup (we use geolocation of a named location) please [open an issue](https://g
 
 ### 2. How do I add a job?
 
-We maintain a list of current and previous job postings in [_data/jobs.yml](_data/jobs.yml).
-You can add a new job to this list, and so that newer jobs appear at the top, we ask
-that you **add the new entry to the top of the list.**
+We maintain a list of current and previous job
+postings in [_data/jobs.yml](_data/jobs.yml) and
+[_data/related-jobs.yml](_data/related-jobs.yml).  If a job posting
+is not clearly an RSE role but is sufficiently adjacent to RSE that
+some RSEs would be qualified and potentially interested, place it in
+[_data/related-jobs.yml](_data/related-jobs.yml).
+You can add a new job to these lists, and so that newer jobs appear at the
+top of the corresponding section, we ask that you **add the new entry
+to the top of the list.**
 Specifically, we ask that you provide a name, location (can be Remote), an expiration date, and a url to the posting.
 The expiration date is not shown on the page, however it will determine when the job doesn't appear 
 anymore. We suggest setting a timeframe such as a month, and if you want to extend it, you
@@ -41,13 +47,14 @@ job would appear on the site until the first of July, 2019.
   url: 'https://main-princeton.icims.com/jobs'
 ```
 
-And don't forget to write your new job at the top of the [_data/jobs.yml](_data/jobs.yml) file!
+And don't forget to write your new job at the top of the appropriate file!
 For testing, we look to see that all fields are defined, the url exists, and
 that the "expires" and "posted" fields load as a `datetime.date` object in
 Python. If you copy the format above, you should be ok.
 
-Once your job(s) are merged to `main` a [GitHub Action](.github/workflows/jobs-slack-poster.yml) will automatically
+Once your job(s) are merged to `main` a [GitHub Action](.github/workflows/jobs-poster.yml) will automatically
 cross-post your job(s) to the USRSE Slack `#jobs` channel!
+*NOTE:* jobs added in the "Related" section are not posted to Slack or Twitter.
 
 ![example post image](https://raw.githubusercontent.com/rseng/jobs-updater/main/img/example.png)
 
@@ -307,6 +314,34 @@ and then embed (note that "embed" is in the url) and the title is a title of you
 choosing. You are not required to include a title, and it will default to a generic
 "YouTube video player."
 
+### 7. How do I add a "Last Modified:" date?
+
+All of our pages come ready to go to add a "last modified" date, which will default to the bottom
+right of the page. This means to add a last modified date to a page, simply update the frontend matter as follows:
+
+```yaml
+set_last_modified: true
+```
+
+If you want to change the default div id (e.g., adding your own html div with a specific ID and not using the default
+provided) you can add that too:
+
+```yaml
+set_last_modified: true
+last_modified_id: last-modified
+```
+
+And finally, if the repository you are retrieving the file from is different than the repository here, define the repository
+and path (relative to the root) 
+
+```yaml
+set_last_modified: true
+last_modified_id: last-modified
+last_modified_repo: USRSE/documents
+last_modified_path: governance.md
+```
+
+If you have any questions, please don't hesitate to [open an issue](https://github.com/USRSE/usrse.github.io)
 
 ## Tests
 
@@ -444,7 +479,8 @@ The workflow [clean-expired-jobs.yml](.github/workflows/clean-expired-jobs.yml) 
 and uses the same function from the urlchecker to check for expired links in jobs.yml,
 and given an expired link, remove it from the file if the url check fails. In the case
 that a link is not expired and the check fails, we would want to know about this
-(and the test will fail).
+(and the test will fail). For all jobs, we don't remove them immediately upon expiration -
+we give the submitter 60 days to possibly update the data file with a later expiration date.
 
 #### Post New Jobs to Slack
 
@@ -454,7 +490,7 @@ the USRSE Slack `#jobs` channel. It utilizes the [Jobs updater](https://github.c
 Github Action by @vsoch and @jhkennedy to parse the `_data/jobs.yml` file for new jobs and post them
 the USRSE Slack. For the action:
 
- - unique: determines the field in the jobs.yaml that determines uniqueness (defaults to url)
+ - unique: determines the field in the jobs.yml that determines uniqueness (defaults to url)
  - keys: a comma separated list of fields to include. All except for url will have a prefix, so it's recommended to put the url last.
 
 The other fields are intuitive. Example output (in the console that might go to Slack or Twitter)
@@ -524,6 +560,39 @@ There are several reasons to do this:
  1. we can better leverage a free tier, meaning a maximum number of jobs run in parallel or minutes per month by spreading work over multiple services. 
  2. we can scope a particular kind of test to a service. For example, one service might just be to test the core software, another might be to build and deploy containers, and a third might be to preview a site.
  3. each CI service offers unique features. For example, GitHub has the closest integration with the repository here, and CircleCI allows us to preview artifacts.
+
+## Feeds
+
+Added in early 2022, we wanted an ability to provide easy ways to automate specific events, or subscribe
+to them. For the reason, we added [pages/feeds](pages/feeds) which includes:
+
+ - rss feeds for different kinds of content
+ - equivalent json feeds for the same.
+ 
+The rss feeds are intended to be subscribed to by an appropriate service, while the json API is
+more suitable for a client tool.
+
+### RSS (xml) Feeds:
+
+For each RSS feed, we provide the latest 100 items.
+
+ - [https://us-rse.org/feed.xml](https://us-rse.org/feed.xml): subscribe to posts on the US-RSE site
+ - [https://us-rse.org/feeds/events.xml](https://us-rse.org/feeds/events.xml): subscribe to US-RSE events, including descriptions, locations, times, publication date, and categories (e.g., working groups or content types).
+ - [https://us-rse.org/feeds/newsletters.xml](https://us-rse.org/feeds/newsletters.xml): subscribe to a subset of newsletter posts
+ - [https://us-rse.org/feeds/dei.xml](https://us-rse.org/feeds/del.xml): subscribe to DEI working group events
+ - [https://us-rse.org/feeds/jobs.xml](https://us-rse.org/feeds/jobs.xml): subscribe to latest non-expired jobs
+ - [https://us-rse.org/feeds/member-counts.xml](https://us-rse.org/feeds/member-counts.xml): subscribe to monthly member total counts
+
+### Json Feeds:
+
+JSON feeds are not limited in number, and we can provide this until a single page is not reasonable to load.
+
+ - [https://us-rse.org/api/posts.json](https://us-rse.org/api/posts.json): json list of US-RSE posts, all types
+ - [https://us-rse.org/api/events.json](https://us-rse.org/api/events.json): json list of US-RSE events 
+ - [https://us-rse.org/api/newsletters.json](https://us-rse.org/api/posts.json): json list of US-RSE newsletters
+ - [https://us-rse.org/api/dei.json](https://us-rse.org/api/dei.json): json list of dei events
+ - [https://us-rse.org/api/jobs.json](https://us-rse.org/api/jobs.json): json list of non-expired jobs
+ - [https://us-rse.org/api/member-counts.json](https://us-rse.org/api/member-counts.json): json list of monthly membership total count
 
 ## Thanks
 
@@ -615,6 +684,13 @@ tool to generate a contributors graphic below.
     <td align="center"><a href="https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/dept.cfm?org=01424"><img src="https://avatars.githubusercontent.com/u/55767766?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Miranda Mundt</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=mrmundt" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/braney"><img src="https://avatars.githubusercontent.com/u/17574483?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bryan Raney</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=braney" title="Code">💻</a></td>
     <td align="center"><a href="https://medium.com/@srbdev"><img src="https://avatars.githubusercontent.com/u/2583156?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sb</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=srbdev" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/rkakodkar"><img src="https://avatars.githubusercontent.com/u/65554003?v=4?s=100" width="100px;" alt=""/><br /><sub><b>rkakodkar</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=rkakodkar" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/tacaswell"><img src="https://avatars.githubusercontent.com/u/199813?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Thomas A Caswell</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=tacaswell" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/AlfredoR-CSUF"><img src="https://avatars.githubusercontent.com/u/86503312?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alfredo Rodriguez</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=AlfredoR-CSUF" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/dylanmcreynolds"><img src="https://avatars.githubusercontent.com/u/40469975?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dylan McReynolds</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=dylanmcreynolds" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/jbteves"><img src="https://avatars.githubusercontent.com/u/26722533?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Joshua Teves</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jbteves" title="Code">💻</a></td>
   </tr>
 </table>
 

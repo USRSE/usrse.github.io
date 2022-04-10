@@ -6,9 +6,9 @@ layout: null
   <channel>
     <title>{{ site.title | xml_escape }}</title>
     <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:20 %}
+    <link>{{ site.domain }}</link>
+    <atom:link href="{{ site.domain }}/feed.xml" rel="self" type="application/rss+xml" />
+    {% for post in site.posts limit:100 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>
@@ -16,8 +16,9 @@ layout: null
           {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
         </description>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ site.url }}{{ post.url }}</link>
-        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        <category>{% if post.category %}{{ post.category }}{% else %}general{% endif %}</category>
+        <link>{{ site.domain }}{{ post.url }}</link>
+        <guid isPermaLink="true">{{ site.domain }}{{ post.url }}</guid>
       </item>
     {% endfor %}
   </channel>

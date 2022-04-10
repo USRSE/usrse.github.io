@@ -5,6 +5,7 @@ description: Goals and Aims of the US-RSE Association
 permalink: /about/mission/
 menubar: about
 menubar_toc: true
+set_last_modified: true
 ---
 
 The US-RSE Association is centered around four main goals. We aim
