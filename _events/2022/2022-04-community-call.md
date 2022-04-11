@@ -7,8 +7,8 @@ duration: 60
 repeated: false
 category: community-call
 time:
-    - - start: 2022-04-14T17:00:00Z
-        end: 2022-04-14T18:00:00Z
+    - - start: 2022-04-14T16:00:00Z
+        end: 2022-04-14T17:00:00Z
 ---
 
 # New tools lightning talks
