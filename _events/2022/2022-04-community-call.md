@@ -15,7 +15,7 @@ time:
 
 The next community call will be on April 14, 2022 at 12ET/11CT/10MT/9PT.
 
-This months community call session will feature a series of lightning talks from community
+This month's community call session will feature a series of lightning talks from community
 members on new technologies. We are planning 5 talks in 50 minutes that will give a quick
 look at some new RSE related technology that might be of interest to others. 
 
