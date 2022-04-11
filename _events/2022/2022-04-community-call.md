@@ -21,7 +21,7 @@ look at some new RSE related technology that might be of interest to others.
 
 Talk titles and some brief information are given below. To stay on schedule we will limit 
 each talk session to 10 minutes, but will have channels on Slack for any follow up conversation.
-This call is a bit of an experiment in responding to <https://github.com/USRSE/monthly-community-calls/issues/12>, so 
+This call is a bit of an experiment in responding to <a href="https://github.com/USRSE/monthly-community-calls/issues/12" target="_blank">this issue</a>, so 
 we will see how it goes in practice!
 
 ## Registration details
