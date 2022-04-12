@@ -46,7 +46,7 @@ Information on how to register for the Zoom meeting will be sent via email and p
 
 | Presenter | About |
 |---------|-----|
- | Kunal Marwaha | |
+ | Kunal Marwaha | I’m a graduate student in quantum computing at the University of Chicago. I previously worked as a software engineer. I want to build new tools for scientific research. |
  | |
 | Wai-Yin Kwan | I'm a software developer with an interest in community science. |
 | |
