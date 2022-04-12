@@ -52,6 +52,6 @@ Information on how to register for the Zoom meeting will be sent via email and p
 | |
 | Jason M. Gates  | I'm a "DevOps Evangelist", specializing in CI/CD pipelines and associated infrastructure, helping teams achieve a DevOps paradigm shift in their culture. |
 | |
-| Akond Rahman | Akond Rahman is an assistant professor in the Department of Computer Science at Tennessee Tech University. His research interests are in software engineering focused on DevOps and Secure Software Development. He is interest bringing the knowledge of quality assurance and security into the scientific software development process. To learn more about his work visit <https://akondrahman.github.io/>.  |
+| Akond Rahman | Akond Rahman is an assistant professor in the Department of Computer Science at Tennessee Tech University. His research interests are in software engineering focused on DevOps and Secure Software Development. He is interested in bringing quality assurance and security into the scientific software development process. To learn more about his work visit <https://akondrahman.github.io/>.  |
 | | 
 | @Juan-Carlos Foust | Interested in intersection between software engineering, biotech, and metabolic engineering - https://www.linkedin.com/in/foustjc/ |
