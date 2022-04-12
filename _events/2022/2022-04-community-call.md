@@ -39,7 +39,7 @@ Information on how to register for the Zoom meeting will be sent via email and p
 | |
 | Come for Syntax, Stay for Speed, Understand defects: Defects in Julia Programs | Julia has emerged as a popular programming language to develop scientific software, in part due to its flexible syntax akin to scripting languages while retaining the execution speed of a compiled language. Similar to any programming language, Julia programs are susceptible to defects. However, a systematic characterization of defects in Julia programs remains under-explored. A systematic analysis of defects in Julia programs will act as a starting point for researchers and toolsmiths in building developer tools to improve the quality of Julia programs. To this end, we conduct an empirical study with 742 defects that appear in Julia programs by mining 30,494 commits and 3,038 issue reports collected from 112 open-source Julia projects. From our empirical analysis, we identify 9 defect categories and 7 defect symptoms. We observe certain defect categories to be Julia-specific, e.g., type instability and world age defects. | Akond Rahman |
 | |
-| 10 minutes on Scylla | I'll be discussing time series interval storage in Scylla. Lessons learned over 2 years. | @Juan-Carlos Foust |
+| Storing Time Series Data in Scylla | I'll be discussing time series interval storage in Scylla. Lessons learned over 2 years. | @Juan-Carlos Foust |
 | |
 
 ### Information about the presenters:
