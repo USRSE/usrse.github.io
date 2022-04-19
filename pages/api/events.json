@@ -1,6 +1,7 @@
 ---
 layout: none
 permalink: /api/events.json
+excluded_in_search: true
 ---
 {% assign events = site.events | sort: "expires" | reverse %}[{% for event in events %}
     {

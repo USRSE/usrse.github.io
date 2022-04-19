@@ -1,6 +1,7 @@
 ---
 layout: none
 permalink: /api/newsletters.json
+excluded_in_search: true
 ---
 {% assign posts = site.posts | where: "category", "newsletter" %}[{% for post in posts %}
     {
