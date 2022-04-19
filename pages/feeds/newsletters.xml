@@ -1,6 +1,7 @@
 ---
 layout: null
 permalink: /feeds/newsletters.xml
+excluded_in_search: true
 ---
 {% assign newsletters = site.posts | where: "category", "newsletter" %}<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>

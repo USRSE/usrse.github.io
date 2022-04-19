@@ -3,6 +3,7 @@ layout: page
 title: Events Archive
 description: Archive of events, organized by year
 permalink: /events/archive/
+excluded_in_search: true
 ---
 
 <div class="row">

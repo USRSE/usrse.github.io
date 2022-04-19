@@ -1,6 +1,7 @@
 ---
 layout: none
 permalink: /api/member-counts.json
+excluded_in_search: true
 ---
 {% assign member_counts = site.data.memberCounts | sort: "Total" | reverse %}[{% for entry in member_counts %}{
         "date": "{{ entry.Date }}",

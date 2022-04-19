@@ -1,6 +1,7 @@
 ---
 layout: null
 permalink: /feeds/dei.xml
+excluded_in_search: true
 ---
 {% assign events = site.events | sort: "expires" | where: "category", "dei" | reverse %}<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">

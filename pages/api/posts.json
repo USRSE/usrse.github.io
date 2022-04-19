@@ -1,6 +1,7 @@
 ---
 layout: none
 permalink: /api/posts.json
+excluded_in_search: true
 ---
 [{% for post in site.posts %}
     {
