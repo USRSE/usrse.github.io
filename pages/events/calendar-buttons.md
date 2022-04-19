@@ -4,6 +4,7 @@ permalink: /programme/calendar-buttons/
 sidebar:
   nav:  programme
 fullcalendar: true
+excluded_in_search: true
 ---
 
 {% assign events = '' | split: '' %}
