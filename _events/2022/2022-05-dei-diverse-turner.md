@@ -32,7 +32,7 @@ Since the beginnings of the R project around 30 years ago, a large community of
 users and developers has formed around it. As the community grew, a lack of
 diversity became increasingly apparent and in recent years there have been
 various efforts to make the community more diverse and inclusive. Some of
-these efforts have been “top-down” - lead by organizations such as the R
+these efforts have been “top-down” - led by organizations such as the R
 Foundation or R Consortium - and others have been “bottom-up” - initiated by
 individuals, often leading to the formation of community groups or projects.
 In this talk I will give an overview of these initiatives and their impact.
