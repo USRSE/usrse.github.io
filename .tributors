@@ -305,5 +305,9 @@
         "bio": "Computer Programmer for Peter A. Bandettini's lab at NIH, doing Neuroimaging, sysadmin, and other fun tasks.",
         "orcid": "0000-0002-7767-0067",
         "blog": "https://github.com/jbteves"
+    },
+    "chrisvam": {
+        "name": "chrisvam",
+        "blog": "https://github.com/chrisvam"
     }
 }
