@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Organizations with RSEs
-subtitle: Organizations around the United States that employ groups of RSEs
+title: Institutional RSE Groups in the United States
 menubar: organizations
 permalink: /resources/organizations/rse-groups/
 ---
+
+This is an incomplete list of RSE groups at US institutions that take on a range of projects and are open to collaborations with researchers within the scope of their support.  RSEs work at many places beyond these groups.  
+
 <style>
 table#rse-groups {
     display: table;
@@ -72,4 +74,4 @@ table#rse-groups {
 {% endfor %}
 </table>
 
-Want to have your organization on the list? Contact us via [Slack](https://usrse.slack.com).
+Want to have your organization on the list? Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLScgC7Jd3ZPeu1DqQqfpSX_iG6Y6Eiwc6pPMen0AMWstaeuJXQ/viewform?usp=sf_link).
