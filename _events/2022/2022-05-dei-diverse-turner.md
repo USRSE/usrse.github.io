@@ -64,5 +64,5 @@ the R project.
 This talk will take place via Zoom.
 
 A recording of the talk will also be made available on the
-[Society of Research Software Engineering Youtube Channel](https://www.youtube.com/channel/UCL7rYOIAP1Rx_VajLPDF-hA)
+[Society of Research Software Engineering YouTube Channel](https://www.youtube.com/channel/UCL7rYOIAP1Rx_VajLPDF-hA)
 following the session.
