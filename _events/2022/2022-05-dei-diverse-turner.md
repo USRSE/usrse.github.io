@@ -1,5 +1,5 @@
 ---
-title: EDI in the R Community
+title: Equity, Diversity, and Inclusion in the R Community
 subtitle: DiveRSE Speaker Series
 expires: 2022-05-05
 event_date: "May 4, 2022"
