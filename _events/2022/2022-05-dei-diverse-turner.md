@@ -55,7 +55,7 @@ among R users and developers. She is on the board of the R Foundation and
 chairs Forwards, the R Foundation taskforce for underrepresented groups.
 She also leads the R Contribution Working Group, which is a collaboration
 between the R Core Team and R community groups. In her fellowship, she is
-working to improve sustainability and equality, diversity and inclusion in
+working to improve sustainability and equity, diversity and inclusion in
 the R project.
 
 ### Registration
