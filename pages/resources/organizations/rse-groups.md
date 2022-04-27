@@ -74,4 +74,4 @@ table#rse-groups {
 {% endfor %}
 </table>
 
-Want to have your organization on the list? Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLScgC7Jd3ZPeu1DqQqfpSX_iG6Y6Eiwc6pPMen0AMWstaeuJXQ/viewform?usp=sf_link).
+Want to add your RSE Group to the list? Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLScgC7Jd3ZPeu1DqQqfpSX_iG6Y6Eiwc6pPMen0AMWstaeuJXQ/viewform?usp=sf_link).
