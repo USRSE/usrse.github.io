@@ -19,7 +19,7 @@ and related activities including discussion and panel sessions designed to
 support and raise awareness of equity, diversity, and inclusion (EDI)
 challenges and successes within the research software community.
 
-## Event - EDI in the R Community
+## Event - Equity, Diversity, and Inclusion in the R Community
 
 DiveRSE is delighted to welcome Dr Heather Turner from the University of Warwick,
 UK as the next speaker in the DiveRSE talk series.
