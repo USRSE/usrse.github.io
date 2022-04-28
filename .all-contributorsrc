@@ -618,6 +618,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/26722533?v=4"
             ]
+        },
+        {
+            "login": "chrisvam",
+            "name": "chrisvam",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/chrisvam",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/6949021?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
