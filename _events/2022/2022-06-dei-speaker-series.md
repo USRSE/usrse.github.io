@@ -20,7 +20,7 @@ The US-RSE DEI-WG is working to bring to the US-RSE community quarterly visits
 from RSE professionals with vested interests or research into DEI in the RSE
 community at large. Our community pledges to continually educate ourselves
 through research on best practices focused on diversity, equity, and inclusion.
-The US-RSE is committed to providing an inclusive environment with equitable
+US-RSE is committed to providing an inclusive environment with equitable
 treatment for all and to promoting and encouraging diversity throughout the RSE
 community. We encourage everyone to suggest speakers and topics and are open to
 different formats and timelines of the events. Feedback is much appreciated.
@@ -28,7 +28,7 @@ different formats and timelines of the events. Feedback is much appreciated.
 
 ## Event
 
-US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
+The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
 welcome Alexander Serebrenik to present his talk "Diversity in Open-source Software."
 This event will take place **Wednesday, June 1st at 8 AM PDT / 9 AM MDT / 10 AM CDT / 11 AM EDT / 5 PM CEST**
 
