@@ -28,11 +28,11 @@ different formats and timelines of the events. Feedback is much appreciated.
 
 ## Event
 
-The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
+US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
 welcome Alexander Serebrenik to present his talk "Diversity in Open-source Software."
 This event will take place **Wednesday, June 1st at 8 AM PDT / 9 AM MDT / 10 AM CDT / 11 AM EDT / 5 PM CEST**
 
-[**Register on Zoom**]()
+[**Register on Zoom**](https://purdue-edu.zoom.us/meeting/register/tJ0pcuqvpz0sHNwcuUg2kqylsD1bUPi53bm_)
 
 ### Abstract
 
