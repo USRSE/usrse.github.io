@@ -16,9 +16,9 @@ engagement with industry, academia, national labs, and students.
 
 Those interested in contributing to this goal are encouraged to join our
 bi-weekly virtual meetings. To get involved, visit the
-[`#outreach`](https://usrse.slack.com/messages/outreach) channel on the US-RSE
+[`#wg-outreach`](https://usrse.slack.com/messages/wg-outreach) channel on the US-RSE
 slack or contact the
-<a href="mailto:outreach_wg@us-rse.org">Outreach working group list</a>.
+<a href="mailto:wg-outreach@us-rse.org">Outreach working group list</a>.
 
 # Work Products
 
