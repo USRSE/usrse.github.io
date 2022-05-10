@@ -24,7 +24,7 @@ The May 12 call will focus on **how to create positions that attract RSE talent 
 
 The May 26 call will focus on **promoting RSE-researcher partnerships, and long-term challenges to software sustainability and support**.
 
-For both calls we are planning a brief 10-minute kick-off and Menti survey/ice-breaker questions, followed by diving into breakout groups. Notes on breakout prompt questions will hopefully be captured in a live google doc by each group. We will end with report outs, where we can call learn and share thinking on what the collective communities perspectives are around these subjects. For these two calls we are scheduling a 90-minute zoom 
+For both calls we are planning a brief 10-minute kick-off and Menti survey/ice-breaker questions, followed by diving into breakout groups. Notes on breakout prompt questions will hopefully be captured in a live google doc by each group. We will end with report outs, where we can all learn and share thinking on what the collective communities perspectives are around these subjects. For these two calls we are scheduling a 90-minute zoom 
 window, in case conversations run long. We will aim to have a good portion of the call complete within an hour though for anyone who has other commitments. The joint sessions (initial presentations and the report outs) will be recorded and the contemporaneous Google doc notes will be shared with our communities.
 
 Looking forward to seeing everyone who can make it on May 12 and/or May 26th! Happy May to all.
