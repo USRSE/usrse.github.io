@@ -16,7 +16,7 @@ time:
 The next community call will be on May 26, 2022 at 1PMET/12CT/11MT/10PT.
 
 This month's community call sessions will be in two parts on two different days (May 12 and May 26). These calls will be joint with friends in [CaRCC](https://carcc.org) and focus on topics that have come up
-in conversations around a new set of scientific software (aka research softwar engineering by some 
+in conversations around a new set of scientific software (aka research software engineering by some 
 several thousands of us!) [institutes](https://www.schmidtfutures.com/our-work/virtual-institute-for-scientific-software/).
 The themes center broadly on RSEs in the workforce.
 
