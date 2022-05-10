@@ -11,7 +11,7 @@ time:
         end: 2022-05-26T18:30:00Z
 ---
 
-#  How to attract and retain RSEs (joint call with CaRCC)
+#  RSE-domain research partnership for software sustainability (joint call with CaRCC)
 
 The next community call will be on May 26, 2022 at 1PMET/12CT/11MT/10PT.
 
