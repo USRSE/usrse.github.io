@@ -70,7 +70,7 @@ workshops, engage with students earlier in their educational careers, and
 provide tools and resources that individual US-RSE members can easily use to
 spread the message and mission of the US-RSE Association. We welcome all who
 are interested in helping us with this goal. To get involved,
-visit the [`#wg-outreach`](https://usrse.slack.com/messages/outreach) channel on
+visit the [`#wg-outreach`](https://usrse.slack.com/messages/wg-outreach) channel on
 the US-RSE slack or contact the
 <a href="mailto:wg-outreach@us-rse.org">Outreach working group list</a>.
 
