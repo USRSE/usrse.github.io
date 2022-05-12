@@ -1,15 +1,15 @@
 - expires: 2022-07-10
-  location: Schrödinger, New York City, NY
+  location: "Schr\xF6dinger, New York City, NY"
   name: Force Fields Scientist, Desmond/Materials Science Development
   posted: 2022-05-10
   url: https://boards.greenhouse.io/schrdinger/jobs/4904081003
 - expires: 2022-07-10
-  location: Schrödinger, New York, NY
+  location: "Schr\xF6dinger, New York, NY"
   name: Machine Learning Research Engineer
   posted: 2022-05-10
   url: https://boards.greenhouse.io/schrdinger/jobs/4344938003
 - expires: 2022-07-10
-  location: Schrödinger, New York, NY
+  location: "Schr\xF6dinger, New York, NY"
   name: Machine Learning Infrastructure Engineer
   posted: 2022-05-10
   url: https://boards.greenhouse.io/schrdinger/jobs/5068535003
