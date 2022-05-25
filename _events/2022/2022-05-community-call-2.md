@@ -7,13 +7,13 @@ duration: 90
 repeated: false
 category: community-call
 time:
-    - - start: 2022-05-26T17:00:00Z
-        end: 2022-05-26T18:30:00Z
+    - - start: 2022-05-26T16:00:00Z
+        end: 2022-05-26T17:30:00Z
 ---
 
 #  RSE-domain research partnership for software sustainability (joint call with CaRCC)
 
-The next community call will be on May 26, 2022 at 1PMET/12CT/11MT/10PT.
+The next community call will be on May 26, 2022 at 12PMET/11CT/10MT/9PT.
 
 This month's community call sessions will be in two parts on two different days (May 12 and May 26). These calls will be joint with friends in [CaRCC](https://carcc.org) and focus on topics that have come up
 in conversations around a new set of scientific software (aka research software engineering by some 
