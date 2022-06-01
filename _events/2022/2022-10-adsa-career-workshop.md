@@ -2,7 +2,7 @@
 title: Data Scientist/RSE Career Support Workshop
 location: Chicago, IL
 url: https://academicdatascience.org/adsa-meetings/2022-fall-workshop
-expires: 2022-10-24
+expires: 2022-10-26
 event_date: "October 24-25, 2022"
 layout: event
 category: workshop
