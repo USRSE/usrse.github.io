@@ -1,5 +1,5 @@
 - expires: 2022-12-31
-  location: Schrödinger, New York City, NY
+  location: "Schr\xF6dinger, New York City, NY"
   name: Scientific Software Engineer, Hit Discovery
   posted: 2022-05-31
   url: https://grnh.se/b12d84713us
