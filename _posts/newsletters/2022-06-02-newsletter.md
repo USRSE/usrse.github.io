@@ -50,6 +50,7 @@ Thanks to a generous grant from the Alfred P. Sloan Foundation, we held our firs
 **NEW TIME**
 
 **NEW TIME**
+
 **NEW TIME**
 
 The USRSE monthly community calls are experimenting with a new time to try and better accommodate Alaska and Hawaii time zones. The calls are moving to the second Friday of each month. 14:00-15:00 Eastern starting June 2022. Community call topics, and agenda and zoom registration announcements are posted to Slack and sent to USRSE email lists.
