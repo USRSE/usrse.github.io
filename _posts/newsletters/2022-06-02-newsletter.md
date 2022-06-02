@@ -51,7 +51,7 @@ Thanks to a generous grant from the Alfred P. Sloan Foundation, we held our firs
 **NEW TIME**
 **NEW TIME**
 
-The USRSE monthly community calls are experimenting with a new time to try and better accomodate Alaska and Hawaii time zones. The calls are moving to the second Friday of each month. 14:00-15:00 Eastern starting June 2022. Community call topics, and agenda and zoom registration announcements are posted to Slack and sent to USRSE email lists.
+The USRSE monthly community calls are experimenting with a new time to try and better accommodate Alaska and Hawaii time zones. The calls are moving to the second Friday of each month. 14:00-15:00 Eastern starting June 2022. Community call topics, and agenda and zoom registration announcements are posted to Slack and sent to USRSE email lists.
 
 The June 2022 (**on Friday June 9th, 14:00-15:00 US Eastern time**) call will focus on starting a whitepaper on the State of RSE in the US. The call will kickoff with a quick review of some of the recent community calls that touched on this topic. In breakout groups we will try and experiment with outlining a set of key sub-topics and the structure for a whitepaper. Look forward to seeing those of you who can make on the **Friday!!**.
 
