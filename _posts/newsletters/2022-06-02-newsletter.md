@@ -134,7 +134,7 @@ The Education and Training Working Group is in the process of organizing a Speak
 
 Upcoming Outreach opportunities with US-RSE:
 
-* We plan to submit a proposal for a [Birds of a Feather session at SciPy 2022](https://www.scipy2022.scipy.org/bof-sessions) about US-RSE. It will be a moderated panel discussion. If you are interested in representing US-RSE on the panel, please fill out [this form](https://forms.gle/Mx4qW1zH518Ev2Cm6). Note that the SciPy organizing committee has added options to participate virtually, so please consider joining and adding your voice to the BoF even if you are not attending the conference in person!
+* We submitted a proposal for a [Birds of a Feather session at SciPy 2022](https://www.scipy2022.scipy.org/bof-sessions) about US-RSE. This will be a moderated panel discussion.
 * The [Research Software Engineers in eScience workshop](https://us-rse.org/rse-escience-2022/) will take place as part of eScience 2022, Salt Lake City, Utah, October 11-14, 2022. This workshop will present RSE contributions to scientific research through a series of talks that explore scientific project needs, how access to RSEs made the project successful, and how this work can be applied to future scientific research efforts. The workshop will be of interest to existing RSEs, potential RSEs, domain scientists, and software developers who want to understand the lessons from both good and bad research software engineering experiences.
 Submissions of abstracts and short papers (not part of the proceedings) are open until July 11!
 
