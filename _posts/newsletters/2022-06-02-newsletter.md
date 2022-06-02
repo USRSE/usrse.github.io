@@ -62,6 +62,7 @@ Community calls typically have a topical focus. They provide a forum for USRSE m
 Interested in suggesting a topic or leading a community call?  We meet two weeks prior to each community call to decide on a topic and discuss how to structure the call. Anyone is welcome to join the preparation call on [Zoom](https://mit.zoom.us/j/93471607274?pwd=aXUzNzZsWElpWnc4N2NXaWxOcVNlQT09).
 
 **NEW TIME**
+
 **NEW TIME**
 **NEW TIME**
 
