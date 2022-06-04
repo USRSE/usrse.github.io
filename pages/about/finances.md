@@ -3,6 +3,7 @@ layout: page
 title: US-RSE Financial Status
 permalink: about/finances/
 menubar: about
+set_last_modified: true
 ---
 
 ### Open Collective Foundation Member 

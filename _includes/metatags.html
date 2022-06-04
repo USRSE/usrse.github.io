@@ -1,0 +1,32 @@
+  
+  <!-- Social: Facebook / Open Graph -->
+  <title>{{ site.title }} | {{ site.description }}</title>
+  <link rel="canonical" href="{{ site.domain }}" />
+  {% if page.id %}<meta property="og:type" content="article">
+  <meta property="article:author" content="{% if page.posted_by %}{{ page.posted_by }}United States Research Software Engineer Association{% endif %}">
+  {% if page.category %}<meta property="article:section" content="{{ page.category }}">{% endif %}
+  <meta property="article:tag" content="{% if page.keywords %}{{ page.keywords }}{% else %}rseng, research software, professional society{% endif %}">
+  <meta property="article:published_time" content="{{ page.date }}">
+  {% else %}<meta property="og:type" content="website">{% endif %}
+
+  <meta property="og:url" content="{{ site.domain }}{{ site.baseurl }}{{ page.url }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:image" content="{% if page.image %}{{ site.domain }}{{ page.image }}{% else %}{{ site.domain }}{{ site.twitter-img }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Social: Twitter -->
+  <meta name="twitter:card" content="{{ site.twitter_card }}">
+  <meta name="twitter:site" content="@{{ site.twitter }}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.image %}<meta name="twitter:image" content="{{ site.domain }}{{ page.image }}">{% else %}<meta name="twitter:image" content="{{ site.domain }}{{ site.twitter-img }}">{% endif %}
+
+  <!-- Social: Google+ / Schema.org  -->
+  <meta itemprop="name" content="{{ page.title }}">
+  <meta itemprop="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta itemprop="image" content="{% if page.image %}{{ site.domain }}{{ page.image }}{% else %}{{ site.domain }}{{ site.twitter-img }}{% endif %}">
+  <script type="application/ld+json">
+  {"@type":"WebSite","headline":"{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}","url":"{{ site.domain }}{{ page.url }}","description":"{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}","name":"{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}","@context":"https://schema.org"}
+  </script>

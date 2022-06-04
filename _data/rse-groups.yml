@@ -4,8 +4,9 @@
 - name: FAS Research Computing
   url: https://www.rc.fas.harvard.edu/
   institution: Harvard University
-- institution: Massachusetts Institute of Technology
-  url: http://www.mit.edu/
+- name: MIT Research Computing Project
+  url: https://researchcomputing.mit.edu/
+  institution: Massachusetts Institute of Technology
 - name: Research Computing Services
   url: https://www.it.northwestern.edu/research/
   institution: Northwestern University
@@ -33,8 +34,6 @@
 - name: Data, Analytics & Research Computing at the GSB
   url: https://sites.google.com/a/stanford.edu/rcpedia/the-team
   institution: Stanford University
-- institution: University of Alabama
-  url: http://cs.ua.edu/research/
 - name: National Center for Supercomputing Applications 
   url: https://ssa.ncsa.illinois.edu/
   institution: University of Illinois Urbana-Champaign

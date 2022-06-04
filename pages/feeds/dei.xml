@@ -1,0 +1,28 @@
+---
+layout: null
+permalink: /feeds/dei.xml
+excluded_in_search: true
+---
+{% assign events = site.events | sort: "expires" | where: "category", "dei" | reverse %}<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }} DEI Events</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.domain }}/wg/dei/</link>
+    <atom:link href="{{ site.baseurl }}/feeds/dei.xml" rel="self" type="application/rss+xml" />
+    {% for event in events limit:100 %}
+      <item>
+        <title>{{ event.title | xml_escape }}</title>
+        <description>
+          {{ event.event_date }}{% if event.location %},{% endif %} {{ event.location }}
+          {% if event.subtitle %}{{ event.subtitle | xml_escape }} - {% endif %}
+          {{ event.content | strip_html | xml_escape | truncatewords: 50 }}
+        </description>
+        <category>{% if event.category %}{{ event.category }}{% else %}general{% endif %}</category>
+        <pubDate>{{ event.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <link>{{ site.domain }}{{ event.url }}</link>
+        <guid isPermaLink="true">{{ site.domain }}{{ event.url }}</guid>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

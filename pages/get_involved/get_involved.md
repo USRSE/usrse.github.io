@@ -64,7 +64,7 @@ We are aiming to have community calls at least quarterly, but we need help plann
 
 <img src="{{ site.baseurl }}/assets/img/cup-coffee-rse-stories-logo.png" width="200px" style="float:right"/>
 
-Willing to share your story of being an RSE on the [RSE Stories podcast](https://us-rse.org/rse-stories/)? 
+Willing to share your story of being an RSE on the [RSE Stories podcast](https://us-rse.org/rse-stories/)?
 
 * **Get involved**: See [https://us-rse.org/rse-stories/](https://us-rse.org/rse-stories/) and sign-up to be a subject.
 
@@ -73,7 +73,7 @@ Willing to share your story of being an RSE on the [RSE Stories podcast](https:/
 
 Going to a conference related to RSEs?  Propose a talk, panel, BoF, or other event.  Members of the Steering Committee are happy to help you with this (contact @sc on Slack).  
 
-* **Get involved**: Raise the idea on Slack to find collaborators
+* **Get involved**: Raise the idea on Slack to find collaborators or reach out to the Outreach working group (#wg-outreach or @or-wg on Slack)
 
 
 <br>
@@ -82,6 +82,19 @@ Going to a conference related to RSEs?  Propose a talk, panel, BoF, or other eve
 # Ongoing Contribution
 
 ---
+
+### Join a Working Group
+
+We organize our community through [working groups](https://us-rse.org/about/working-groups/).
+Find out more on their pages below, join the relevant channels on Slack,
+and attend meetings so you can contribute!
+
+* [Diversity, Equity and Inclusion](https://us-rse.org/wg/dei/), #dei-discussion channel in Slack
+* [Website](https://us-rse.org/about/working-groups/), #website channel in Slack
+* [Education](https://us-rse.org/about/working-groups/) #education-training channel in Slack
+* [Outreach](https://us-rse.org/wg/outreach/), #wg-outreach channel in Slack
+
+Don't see something you like here? We want to make a space for you in the US-RSE community. A how-to guide for putting together working groups is in progress (please keep an eye on [this issue](https://github.com/USRSE/outreach-wg/issues/1))
 
 ### Start/Add Your Own Blog
 
@@ -109,7 +122,7 @@ We have a Twitter account (@us_rse) but we need volunteers to post, like, retwee
 
 Our community is growing, but we want to make sure all US RSEs know about us.  Have ideas for finding and reaching out to RSEs?  Interested in organizing local events to spread the word?  We need someone to take the lead on organizing outreach efforts.
 
-* **Get involved:** Join the #outreach channel on Slack and share your ideas or contact @sc on Slack (Steering Committee)
+* **Get involved:** Join the #wg-outreach channel on Slack and share your ideas or contact @or-wg (Outreach working group) or @sc on Slack (Steering Committee)
 
 
 ### Website Development and Maintenance

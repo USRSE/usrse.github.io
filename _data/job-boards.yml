@@ -1,8 +1,8 @@
 boards:
+  - name: Research Software Engineering Opportunities in other associations/societies
+    url: https://researchsoftware.org/jobs.html
   - name: Software Carpentries Job Opportunities
     url: https://carpentries.topicbox.com/groups/opportunities
   - name: Academic Data Science Alliance Jobs
     url: https://academicdatascience.org/jobs
-  - name: Society of Research Software Engineering Vacancies
-    url: https://society-rse.org/careers/vacancies/
 

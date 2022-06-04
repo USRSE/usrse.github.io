@@ -6,10 +6,10 @@ expires: 2022-02-01
 event_date: "January 31, 2022"
 layout: event
 repeated: false
-cateogory: dei
+category: dei
 time:
     - - start: 2022-01-31T17:00:00Z
-        end: 2021-01-31T18:00:00Z
+        end: 2022-01-31T18:00:00Z
 ---
 
 In an effort to promote continual education and discussion, the [Diversity,

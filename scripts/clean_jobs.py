@@ -1,22 +1,23 @@
-# Read in jobs from the _data/jobs.yml file, find links that are both
+# Read in jobs from the _data/jobs.yml and _data/related-jobs.yml files, find links that are both
 # expired and not working, and remove them. Write to a new file.
 # Copyright @vsoch, 2020
 
 import os
 import datetime
+from datetime import timedelta
 from urlchecker.core.urlproc import UrlCheckResult
 import shutil
-import sys
 import tempfile
 import yaml
 
 here = os.path.dirname(os.path.abspath(__file__))
 
 
-def get_filepath():
-    """load the jobs file.
+def get_filepath(filename):
     """
-    filepath = os.path.join(os.path.dirname(here), "_data", "jobs.yml")
+    load the jobs file.
+    """
+    filepath = os.path.join(os.path.dirname(here), "_data", filename)
 
     # Exit on error if we cannot find file
     if not os.path.exists(filepath):
@@ -26,17 +27,20 @@ def get_filepath():
 
 
 def read_jobs(filepath):
-    """read in the jobs data.
+    """
+    read in the jobs data.
     """
     with open(filepath, "r") as fd:
         data = yaml.load(fd.read(), Loader=yaml.SafeLoader)
     return data
 
 
-def main():
-    """a small helper to update the _data/jobs.yml file.
+def clean_jobs(file):
     """
-    filepath = get_filepath()
+    clean out expired job postings from a file
+    """
+    filepath = get_filepath(file)
+    print("filepath is: %s" % filepath)
 
     # Read in the jobs
     jobs = read_jobs(filepath)
@@ -50,6 +54,16 @@ def main():
     print("Found %s jobs" % len(jobs))
     for job in jobs:
 
+        # Do not keep expired jobs that haven't been updated in 60 days
+        if job["expires"] < now:
+            removal_date = job["expires"] + timedelta(days=60)
+            if removal_date < now:
+                print(
+                    "Skipping %s, expired and hasn't been updated in 60 days."
+                    % job["name"]
+                )
+                continue
+
         # We don't check urls that are not expired, the urlchecker action should
         # catch these and fail
         if job["expires"] > now:
@@ -58,9 +72,7 @@ def main():
             continue
 
         checker = UrlCheckResult()
-        checker.check_urls(
-            urls=[job["url"]], retry_count=3, timeout=5
-        )
+        checker.check_urls(urls=[job["url"]], retry_count=3, timeout=5)
 
         # If the url passes, add to keepers
         if checker.passed:
@@ -84,6 +96,14 @@ def main():
 
     # Copy finished file - will need to be added in pull request
     shutil.copyfile(tmpfile, filepath)
+
+
+def main():
+    """
+    a small helper to update the jobs posting files.
+    """
+    clean_jobs("jobs.yml")
+    clean_jobs("related-jobs.yml")
 
 
 if __name__ == "__main__":

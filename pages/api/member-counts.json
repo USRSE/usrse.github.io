@@ -1,0 +1,10 @@
+---
+layout: none
+permalink: /api/member-counts.json
+excluded_in_search: true
+---
+{% assign member_counts = site.data.memberCounts | sort: "Total" | reverse %}[{% for entry in member_counts %}{
+        "date": "{{ entry.Date }}",
+        "count": "{{ entry.Total }}"
+   }{% if forloop.last %}{% else %},{% endif %}
+{% endfor %}]

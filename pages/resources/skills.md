@@ -157,7 +157,7 @@ This list has the following categories:
 
 ### Other
   - Domain-Specific Knowledge
-    - Domains according to DFG.de (http://dfg.de/)
+    - Domains according to DFG.de (https://www.dfg.de/)
     - Domains according to Nature (https://www.nature.com/srep/browse-subjects)
   - Statistical Methods
   - Use of Analysis Software

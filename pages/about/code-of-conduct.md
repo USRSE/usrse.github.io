@@ -4,6 +4,9 @@ title: Code of Conduct
 permalink: /about/code-of-conduct/
 subtitle: The US-RSE Association Code of Conduct.
 menubar: about
+set_last_modified: true
+last_modified_repo: USRSE/documents
+last_modified_path: code-of-conduct.md
 ---
 
 <div id="code-of-conduct" style="display:none"></div>

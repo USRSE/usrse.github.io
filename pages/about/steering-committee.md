@@ -5,19 +5,20 @@ permalink: /about/steering-committee/
 subtitle: The US-RSE Association is community driven and organized.
 menubar: about
 menubar_toc: true
+set_last_modified: true
 ---
 
 
 ### Current Steering Committee
 
-* Nicole Brewer, Purdue University, 2022-2023
-* Jeff Carver, University of Alabama, 2019-2023
-* Ian Cosden, Princeton University, 2019-2023
-* Julia Damerow, Arizona State University, 2021-2022
-* Sandra Gesing, Discovery Partner Institute at the University of Illinois Chicago, 2019-2023
+* Nicole Brewer, Purdue University, 2022-2023, International Council Representative
+* Jeffrey C. Carver, University of Alabama, 2019-2023, Secretary
+* Ian Cosden, Princeton University, 2019-2023, Chair
+* Julia Damerow, Arizona State University, 2021-2022, Treasurer
+* Sandra Gesing, University of Illinois Discovery Partner Institute, 2019-2023, Vice Chair
 * Chris Hill, MIT, 2019-2022
-* Daniel S. Katz, University of Illinois at Urbana-Champaign, 2019-2022
-* Christina Maimone, Northwestern University, 2019-2023
+* Daniel S. Katz, University of Illinois at Urbana-Champaign, 2019-2022, International Council Representative
+* Christina Maimone, Northwestern University, 2019-2023, Elections Chair
 * Lance Parsons, Princeton University, 2019-2022
 
 ### Former Steering Committee Members

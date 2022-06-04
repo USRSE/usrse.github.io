@@ -268,5 +268,46 @@
         "bio": "Research Software Engineer",
         "blog": "https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/dept.cfm?org=01424",
         "orcid": "0000-0002-5283-2138"
+    },
+    "braney": {
+        "name": "Bryan Raney",
+        "blog": "https://github.com/braney"
+    },
+    "srbdev": {
+        "name": "sb",
+        "bio": "Aspiring Research Software Engineer. Python, C++, Go et al. enthusiast. I like languages.",
+        "blog": "https://medium.com/@srbdev"
+    },
+    "tacaswell": {
+        "name": "Thomas A Caswell",
+        "email": "tcaswell@gmail.com",
+        "bio": "Soft condensed matter physicist with a software bent.\r\n\r\nMatplotlib Project Lead",
+        "orcid": "0000-0003-4692-608X",
+        "affiliation": "Brookhaven National Laboratory",
+        "blog": "https://github.com/tacaswell"
+    },
+    "rkakodkar": {
+        "name": "rkakodkar",
+        "blog": "https://github.com/rkakodkar"
+    },
+    "AlfredoR-CSUF": {
+        "name": "Alfredo Rodriguez",
+        "blog": "https://github.com/AlfredoR-CSUF"
+    },
+    "dylanmcreynolds": {
+        "name": "Dylan McReynolds",
+        "orcid": "0000-0002-1539-0297",
+        "affiliation": "Lawrence Berkeley National Laboratory",
+        "blog": "https://github.com/dylanmcreynolds"
+    },
+    "jbteves": {
+        "name": "Joshua Teves",
+        "bio": "Computer Programmer for Peter A. Bandettini's lab at NIH, doing Neuroimaging, sysadmin, and other fun tasks.",
+        "orcid": "0000-0002-7767-0067",
+        "blog": "https://github.com/jbteves"
+    },
+    "chrisvam": {
+        "name": "chrisvam",
+        "blog": "https://github.com/chrisvam"
     }
 }

@@ -66,6 +66,7 @@ excluded_in_search: true
 		if (results.length) {
 			var resultsHTML = "";
 			results.forEach(function (result) {
+                               console.log(result)
 				var item = window.data[result.ref],
 					contentPreview = getPreview(query, item.content, 170),
 					titlePreview = getPreview(query, item.title);

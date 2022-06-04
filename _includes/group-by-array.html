@@ -37,7 +37,7 @@
   {% comment %} Collect if contains {% endcomment %}
   {% assign __item = __empty_array %}
   {% for __element in include.collection %}
-    {% if __element[include.field] contains name %}
+    {% if __element[include.field] == name %}
       {% assign __item = __item | push: __element %}
     {% endif %}
   {% endfor %}
