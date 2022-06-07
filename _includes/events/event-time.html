@@ -3,10 +3,12 @@
 <strong><i class="far fa-clock" aria-hidden="true"></i>
     {% if page.repeated %}This is a repeating event{% endif %}
 </strong>
-<time datetime="{{ time.start | date_to_xmlschema }}" id="start-time"></time>
+{% capture id_start_str %}start-time-{{ include.count }}{% endcapture %}
+{% capture id_end_str %}end-time-{{ include.count }}{% endcapture %}
+<time datetime="{{ time.start | date_to_xmlschema }}" id="{{ id_start_str }}"></time>
 {% if time.end %}
     &ndash;
-    <time datetime="{{ time.end | date_to_xmlschema }}" id="end-time"></time>
+    <time datetime="{{ time.end | date_to_xmlschema }}" id="{{ id_end_str }}"></time>
 {% endif %}
 
 <script>
@@ -18,7 +20,7 @@
 {% if time.start %}
     var start_date = new Date("{{ time.start | date_to_xmlschema }}");
     start_date = start_date.toLocaleDateString("en-US", options);
-    document.getElementById("start-time").textContent = start_date;
+    document.getElementById("{{ id_start_str }}").textContent = start_date;
 {% endif %}
 
 {% if time.end %}
@@ -37,9 +39,9 @@
         // Rejoin into string
         end_date = end_date.join(" ");
     {% endif %}
-    document.getElementById("end-time").textContent = end_date  + " " + tz;
+    document.getElementById("{{ id_end_str }}").textContent = end_date  + " " + tz;
 {% else %}
-    document.getElementById("start-time").textContent += " " + tz;
+    document.getElementById("{{ id_start_str }}").textContent += " " + tz;
 {% endif %}
 </script>
 
