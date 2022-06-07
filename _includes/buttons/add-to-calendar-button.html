@@ -3,8 +3,9 @@
 {%- assign excerpt = include.excerpt | default: post.excerpt | default: page.excerpt %}
 {%- assign url = include.url | default: post.url | default: page.url %}
 {%- assign event_id = post.id | split: '/' | last %}
+{%- capture cal-button-str %}calendar-button-{{include.id}}{%- endcapture %}
 
-<div id="calendar-button"></div>
+<div id="{{cal-button-str}}"></div>
 <script src="{{ site.baseurl }}/assets/js/add-to-calendar.min.js"></script>
 <script>
 var myCalendar = addToCalendar({
@@ -12,7 +13,7 @@ var myCalendar = addToCalendar({
     class: 'usrse-event',
     
     // You can pass an ID. If you don't, one will be generated for you
-    id: 'usrse-event-{{ title | slugify }}'
+    id: 'usrse-event-{{ title | slugify }}-{{include.id}}'
   },
   data: {
     // Event title
@@ -45,5 +46,5 @@ var myCalendar = addToCalendar({
   }
 });
 
-document.querySelector('#calendar-button').appendChild(myCalendar);
+document.querySelector('#{{cal-button-str}}').appendChild(myCalendar);
 </script>
