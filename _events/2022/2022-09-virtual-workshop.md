@@ -18,4 +18,4 @@ Following the success of the 2021 US-RSE Virtual Workshop, we decided to host an
 
 The theme of the workshop is “Make it happen! Towards a diverse and sustainable future!” The workshop will feature talks, community events, and working group sessions. It will be held via Zoom and some parts, such as the talks, will be recorded and available after the workshop via the US-RSE YouTube channel. The workshop will be free but registration will be required.
 
-For more information please see the [2021 US-RSE Virtual Workshop website](https://us-rse.org/virtual-workshop-2022/).
+For more information please see the [2022 US-RSE Virtual Workshop website](https://us-rse.org/virtual-workshop-2022/).
