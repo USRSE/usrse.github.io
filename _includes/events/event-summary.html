@@ -13,7 +13,7 @@
 <ul class="page__date">
   {% for time in occurrence %}
   <li>
-    {% include events/event-time.html no_button=true count=forloop.count %}
+    {% include events/event-time.html no_button=true count=forloop.index %}
   </li>
   {% endfor %}
 </ul>
