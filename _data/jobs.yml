@@ -1,20 +1,33 @@
 - expires: 2022-07-30
   location: Brookhaven National Laboratory, Upton, NY
   name: Post-Doctoral Research Associate, Robotic Beamline Development
-  posted: 2022-06-12
+  posted: 2022-06-17
   url: https://jobs.bnl.gov/job/upton/postdoctoral-research-associate-robotic-beamline-development/3437/30824417136
+- expires: 2022-07-15
+  location: California State University, Northridge, Northridge, CA
+  name: Postdoctoral Scholar
+  posted: 2022-06-17
+  url: https://careers.pageuppeople.com/873/nr/en-us/job/515718/postdoctoral-scholar-tuc-phys
+- expires: 2022-09-16
+  location: Oak Ridge National Laboratory, Oak Ridge, TN
+  name: Senior Research Software Engineer - Application Engineering
+  posted: 2022-06-16
+  url: https://jobs.ornl.gov/job-invite/8458/
 - expires: 2022-08-31
-  location: Stanford Center for Biomedical Informatics Research, Stanford University, Santa Clara, CA
+  location: Stanford Center for Biomedical Informatics Research, Stanford University,
+    Santa Clara, CA
   name: Software Developer 3
   posted: 2022-06-14
   url: https://careersearch.stanford.edu/jobs/software-developer-3-17062
 - expires: 2022-07-15
-  location: Lawrence J. Ellison Institute for Transformative Medicine, Los Angeles, CA
+  location: Lawrence J. Ellison Institute for Transformative Medicine, Los Angeles,
+    CA
   name: Software Engineering Lead, Backend
   posted: 2022-06-13
   url: https://ellisoninstitute.applytojob.com/apply/S3Ur6OihVM/Software-Engineering-Lead-Backend
 - expires: 2022-08-15
-  location: Center for Computational Neuroscience, Flatiron Institute, New York, New York
+  location: Center for Computational Neuroscience, Flatiron Institute, New York, New
+    York
   name: Data Scientist (Open Rank)
   posted: 2022-06-13
   url: https://simonsfoundation.wd1.myworkdayjobs.com/simonsfoundationcareers/job/160-Fifth-Avenue/Data-Scientist--Open-Rank---Center-for-Computational-Neuroscience_R0001111
@@ -137,11 +150,6 @@
   name: Junior Specialist with Data Science Focus
   posted: 2022-04-07
   url: https://aprecruit.ucsf.edu/JPF03809
-- expires: 2022-04-15
-  location: Arizona State University, Tempe, Arizona
-  name: Assistant Scientific Software Engineer
-  posted: 2022-04-01
-  url: https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25620&siteid=5494#jobDetails=4500275_5494
 - expires: 2022-07-01
   location: University of Washington, Seattle, WA
   name: Scientific Software Engineering Center Engineering Lead
@@ -169,12 +177,6 @@
   name: Software/Computer Graphics Engineer
   posted: 2022-03-21
   url: https://opportunities.columbia.edu/en-us/job/523768/computer-graphics-engineer
-- expires: 2022-04-18
-  location: START (National Consortium for the Study of Terrorism and Responses to
-    Terrorism), University of Maryland, College Park, MD (some telework available)
-  name: Research Software Engineer
-  posted: 2022-03-16
-  url: https://www.start.umd.edu/careers/research-software-engineer-university-title-faculty-specialist-global-terrorism-database-gtd
 - expires: 2022-04-08
   location: Georgetown University, Washington, DC / Hybrid 3 Days
   name: Software Developer, Massive Data Institute
@@ -375,11 +377,6 @@
   name: Research Programmer / Analyst
   posted: 2021-12-10
   url: https://cmu.wd5.myworkdayjobs.com/en-US/CMU/job/Pittsburgh-PA/Research-Programmer-Analyst---Machine-Learning-Department_2016450-1
-- expires: 2022-01-31
-  location: Arizona State University, Tempe, AZ
-  name: Digital Library Software Engineer
-  posted: 2021-12-08
-  url: https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25620&siteid=5494&PageType=JobDetails&jobid=4416687
 - expires: 2022-01-30
   location: 'RAND: Santa Monica, CA; Pittsburgh, PA; Boston, MA; Washington D.C.'
   name: Research Software Engineer (Entry Level)
