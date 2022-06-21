@@ -1,7 +1,7 @@
 # The United States (US) Research Software Engineer Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-59-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-60-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -692,6 +692,7 @@ tool to generate a contributors graphic below.
     <td align="center"><a href="https://github.com/dylanmcreynolds"><img src="https://avatars.githubusercontent.com/u/40469975?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dylan McReynolds</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=dylanmcreynolds" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/jbteves"><img src="https://avatars.githubusercontent.com/u/26722533?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Joshua Teves</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jbteves" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/chrisvam"><img src="https://avatars.githubusercontent.com/u/6949021?v=4?s=100" width="100px;" alt=""/><br /><sub><b>chrisvam</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=chrisvam" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/maffettone"><img src="https://avatars.githubusercontent.com/u/43007690?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dr. Phil Maffettone</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=maffettone" title="Code">💻</a></td>
   </tr>
 </table>
 
