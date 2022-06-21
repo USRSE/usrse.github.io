@@ -629,6 +629,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/6949021?v=4"
             ]
+        },
+        {
+            "login": "maffettone",
+            "name": "Dr. Phil Maffettone",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/maffettone",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/43007690?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
