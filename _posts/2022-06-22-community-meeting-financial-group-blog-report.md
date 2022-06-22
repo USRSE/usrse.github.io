@@ -56,7 +56,7 @@ A first online fundraising campaign that allowed membership and others to donate
    * ACM HPC-SIG ([High Performance Computing Special Interest Group](https://dl.acm.org/sig/sighpc)). An example of being a part of a larger umbrella. 
    * SIAM ([Society of Industrial and Applied Mathematics](https://www.siam.org)). Professional organization that holds traditional conferences and serves as a vehicle for professional, career affirming activities.
    * [The Carpentries](https://carpentries.org/). Has a train-the-trainer and education model, with institutional memberships model.
-   * https://www.digitalinclusion.org/join/. Has a membership fee model primarily tied to strengthening a sense of community. It offers tiered services that distinguish between members and non-members. 
+   * NDIA ([National Digital Inclusion Alliance](https://www.digitalinclusion.org)). Has a membership fee model primarily tied to strengthening a sense of community. It offers tiered services that distinguish between members and non-members. 
 
 
 ### Question:
