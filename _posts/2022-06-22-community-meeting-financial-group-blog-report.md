@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Thinking About US-RSE Financial Sustainability
-tags: [finances]
+tags: [finances,  2022 community workshop]
 posted_by: Chris Hill
 ---
 
