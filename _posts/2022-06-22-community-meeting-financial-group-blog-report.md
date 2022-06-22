@@ -8,7 +8,7 @@ posted_by: Chris Hill
 
 # Thinking About US-RSE Financial Sustainability 
 
-a 2022 Community Workshop post by - *Jeff Carver, Julia Damerow, Meag Doherty, Angela Herring, Chris Hill, Blake Joyce, Allen Lee, Elaine Raybourn, Liz Vu*
+A 2022 Community Workshop post by - *Jeff Carver, Julia Damerow, Meag Doherty, Angela Herring, Chris Hill, Blake Joyce, Allen Lee, Elaine Raybourn, Liz Vu*
 
 At the 2022 Community Workshop a group met to think about advancing the US-RSE financial sustainability vision. The group discussed possible ways to grow the financial resources of US-RSE while staying true to its member-led mind set. The outcome of that discussion is a Q&A format dialog that presents some key questions discussed and puts forward thoughts that these questions generated around possible near term considerations, directions and priorities. 
 
