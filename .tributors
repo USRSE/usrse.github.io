@@ -309,5 +309,10 @@
     "chrisvam": {
         "name": "chrisvam",
         "blog": "https://github.com/chrisvam"
+    },
+    "maffettone": {
+        "name": "Dr. Phil Maffettone",
+        "bio": "Computational Scientist @ Brookhaven National Laboratory",
+        "blog": "https://github.com/maffettone"
     }
 }
