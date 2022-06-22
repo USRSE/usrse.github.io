@@ -92,7 +92,7 @@ The scale, duration and likelihood of garnering financial support for an activit
 
 ### Answers:
 
-* The next steps will be centered on the US-RSE Financial Sustainability Working Group/Standing Committee. ***We welcome anyone who is interested in this topic to please join the Slack channel #wg-financial-sustainability!*** 
+* The next steps will be centered on the US-RSE Financial Sustainability Working Group/Standing Committee. ***We welcome anyone who is interested in this topic to please join the Slack channel [#wg-financial-sustainability](https://usrse.slack.com/archives/C03BBT8FXFY)!*** 
 
 * The current draft set of priorities is as follows:
 
