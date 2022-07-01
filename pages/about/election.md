@@ -15,7 +15,7 @@ If you're interested in becoming part of the Steering Committee, we suggest you 
 
 * Nominations open: October 24, 2022
 * Nominations due: November 4, 2022
-* Candidate meeting: durign the week of November 7-11, 2022
+* Candidate meeting: during the week of November 7-11, 2022
 * Candidates finalize information: November 18, 2022
 * Deadline to [join US-RSE](https://us-rse.org/join) to be eligible to vote: November 20, 2022
 * Candidates announced: by November 28, 2022
