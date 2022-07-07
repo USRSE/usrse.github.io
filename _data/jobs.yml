@@ -1,3 +1,8 @@
+- expires: 2022-09-01
+  location: University of Colorado at Boulder, Boulder, CO (remote friendly)
+  name: Research Associate
+  posted: 2022-07-07
+  url: https://jobs.colorado.edu/jobs/JobDetail/?jobId=40499
 - expires: 2022-09-30
   location: University of Delaware, Newark, Delaware
   name: Research Software Engineer
@@ -129,11 +134,6 @@
   name: Machine Learning Infrastructure Engineer
   posted: 2022-05-10
   url: https://boards.greenhouse.io/schrdinger/jobs/5068535003
-- expires: 2022-05-20
-  location: University of Illinois at Urbana-Champaign, Champaign, IL (can be flexible)
-  name: Visiting Research Scientist
-  posted: 2022-05-10
-  url: https://jobs.illinois.edu/academic-job-board/job-details?jobID=162846
 - expires: 2022-06-30
   location: Media Cloud/Northeastern, Boston, MA
   name: Senior Data Engineer
@@ -229,12 +229,6 @@
   name: Software Developer / Scientist
   posted: 2022-03-02
   url: https://millionconcepts.com/jobs.html#software-developer
-- expires: 2022-04-15
-  location: The Coordinated Science Laboratory, Grainger College of Engineering,  University
-    of Illinois Urbana-Champaign, Urbana, Illinois
-  name: Software Engineer
-  posted: 2022-02-18
-  url: https://jobs.illinois.edu/academic-job-board/job-details?jobID=152679&job=software-engineer-coordinated-science-laboratory-152679
 - expires: 2022-04-30
   location: NumFOCUS/Matplotlib, Remote
   name: Research Software Engineer
@@ -270,12 +264,6 @@
   name: Senior Research Software Engineer
   posted: 2022-02-11
   url: https://main-princeton.icims.com/jobs/14155/sr-research-software-engineer/job
-- expires: 2022-03-07
-  location: The National Center for Supercomputing Applications, The University of
-    Illinois, Champaign, IL
-  name: Research Scientist / Senior Research Scientist
-  posted: 2022-02-10
-  url: https://jobs.illinois.edu/academic-job-board/job-details?jobID=155147&job=research-scientist-senior-research-scientist-ncsa-155147
 - expires: 2022-04-30
   location: Brown University, Providence, RI
   name: Data Scientist / Senior Data Scientist
@@ -334,11 +322,6 @@
   name: Research Software Engineer / Project Scientist
   posted: 2022-02-01
   url: https://recruit.ucdavis.edu/JPF04614
-- expires: 2022-06-15
-  location: National Center for Supercomputing Applications, Urbana, IL
-  name: Assistant Research Programmer/Research Programmer/Senior Research Programmer
-  posted: 2022-01-25
-  url: https://jobs.illinois.edu/academic-job-board/job-details?jobID=142159&job=assistant-research-programmer-research-programmer-senior-research-programmer-ncsa-142159
 - expires: 2022-04-30
   location: New York Structural Biology Center, New York, NY (Hybrid/Remote/Flexible)
   name: Software Developer
