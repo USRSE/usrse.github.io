@@ -15,7 +15,7 @@ First of all, it is important for nominees to understand the role and the level 
 
 ### Expectations for Steering Committee Members
 
-* Serve for at least one two-year term (time committment is approximately 6-10 hours per month)
+* Serve for at least one two-year term (time commitment is approximately 6-10 hours per month)
 * Attend Steering Committee meetings every two weeks (virtual)
 * Perform operational work for US-RSE (see below for examples)
 
