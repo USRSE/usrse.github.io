@@ -225,7 +225,8 @@
     },
     "roelofsaj": {
         "name": "Abbey Roelofs",
-        "blog": "https://github.com/roelofsaj"
+        "blog": "https://github.com/roelofsaj",
+        "bio": "Research software engineer in LSA Technology Services at the University of Michigan"
     },
     "mtbc": {
         "name": "Mark Carroll",
