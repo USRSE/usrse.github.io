@@ -7,28 +7,30 @@ menubar_toc: true
 set_last_modified: true
 ---
 
-The 2021 US-RSE Steering Committee elections are happening this December.
+The 2022 US-RSE Steering Committee elections are happening this December.
+
+If you're interested in becoming part of the Steering Committee, we suggest you have a look at [Guidance for Potential Steering Committee Candidates](https://us-rse.org/2022-06-04-info-interview-form-rse-group/).
 
 ## Timeline
 
-* Membership verification email sent: by October 15, 2021
-* Nominations open: October 22, 2021
-* Nominations due: November 5, 2021
-* Candidates finalize information: November 8, 2021
-* Candidates announced: by November 12, 2021 - [List of candidates](https://us-rse.org/2021-11-12-sc-candidates/)
-* Deadline to [join US-RSE](https://us-rse.org/join) to be eligible to vote: November 19, 2021
-* Annual US-RSE General Meeting, including candidate statements: December 3, 2021, 1-3pm ET
-* Voting Open: December 3-10, 2021
-* Election Results announced: by December 17, 2021
-* Elected Steering Committee members take office: January 1, 2022
+* Nominations open: October 24, 2022
+* Nominations due: November 4, 2022
+* Candidate meeting: during the week of November 7-11, 2022
+* Candidates finalize information: November 18, 2022
+* Deadline to [join US-RSE](https://us-rse.org/join) to be eligible to vote: November 20, 2022
+* Candidates announced: by November 28, 2022
+* Annual US-RSE General Meeting, including candidate statements: December 2, 2022
+* Voting Open: December 2-9, 2022
+* Election Results announced: by December 14, 2022
+* Elected Steering Committee members take office: January 1, 2023
 
 ## Positions and Eligibility
 
-Five Steering Committee seats are open in this election, each for a 2-year term (January 1, 2022 through December 31, 2023). The following steering committee members have terms that end this year: Jeff Carver, Ian Cosden, Charles Ferenbaugh, Sandra Gesing, and Christina Maimone. All US-RSE members in good standing as of the day nominations open (October 22, 2021) are eligible for nomination.
+Four Steering Committee seats are open in this election, each for a 2-year term (January 1, 2023 through December 31, 2024). The following steering committee members have terms that end this year: Julia Damerow, Chris Hill, Daniel S. Katz, Lance Parsons. All US-RSE members in good standing as of the day nominations open (October 22, 2021) are eligible for nomination.
 
-A membership verification email will be sent to all members in October. The message will be sent directly from leadership@us-rse.org, not through the Google group used for most email communications.   Individuals who do not receive the membership verification email may join the organization by filling out the membership form at [https://us-rse.org/join/](https://us-rse.org/join/).  For questions or help with membership matters, please contact Election Chairs Julia Damerow and Lance Parsons on Slack or [via email](mailto:jdamerow@asu.edu,lparsons@princeton.edu).
+A membership verification email will be sent to all members in October. The message will be sent directly from leadership@us-rse.org, not through the Google group used for most email communications.   Individuals who do not receive the membership verification email may join the organization by filling out the membership form at [https://us-rse.org/join/](https://us-rse.org/join/).  For questions or help with membership matters, please contact Election Chair Christina Maimone on Slack or [via email](mailto:christina.maimone@northwestern.edu).
 
-The US-RSE Steering Committee sets its own meeting frequency and timing.  Currently, the Steering Committee meets every two weeks.  The Steering Committee meeting frequency and schedule for 2022 will be determined once new members are elected.
+The US-RSE Steering Committee sets its own meeting frequency and timing.  Currently, the Steering Committee meets every two weeks on Fridays.  The Steering Committee meeting frequency and schedule for 2023 will be determined once new members are elected.
 
 The responsibilities of Steering Committee members are detailed in the [US-RSE Membership and Governance](https://github.com/USRSE/documents/blob/master/governance.md) document. They include:
 
@@ -53,19 +55,14 @@ Additionally, Steering Committee members are expected to:
 
 ## Nominations and Candidate Information
 
-Nominations open on October 22, 2021 and close on November 5, 2021.
+Nominations open on October 24, 2022 and close on November 4, 2022.
 
-Interested members are encouraged to [nominate
-themselves](https://docs.google.com/forms/d/e/1FAIpQLSdoLAWkUqsv7axDFnaV3GEw0gRBDemqSztbxKTtGr7EE1rWqA/viewform?usp=sf_link).
+Interested members are encouraged to nominate themselves.
 Alternatively, if you know of a member who you think would make a good
-candidate, you can [submit a
-nomination](https://docs.google.com/forms/d/e/1FAIpQLSdoLAWkUqsv7axDFnaV3GEw0gRBDemqSztbxKTtGr7EE1rWqA/viewform?usp=sf_link)
-for someone else.  All US-RSE members in good standing as of October 22, 2021
-(when nominations are opened) are eligible to be nominated as candidates.
+candidate, you can submit a nomination 
+for someone else, who will be invited to run.  All US-RSE members in good standing are eligible to be nominated as candidates.
 
-On the [nomination
-form](https://docs.google.com/forms/d/e/1FAIpQLSdoLAWkUqsv7axDFnaV3GEw0gRBDemqSztbxKTtGr7EE1rWqA/viewform?usp=sf_link),
-, the following information is required:
+On the nomination form, expect to provide the following information
 
 **If Nominating Someone Else:**
 
@@ -85,18 +82,24 @@ interest in participating. The information will not be made public.
 * Why do you want to be on the US-RSE Steering Committee? (<=1000 characters)
 * How do you contribute to the US-RSE Association or RSE community more broadly? (<= 1500 characters)
 
-All candidate information will be shared on the US-RSE website.  Additionally, candidates will have the opportunity to share a short recorded statement during the US-RSE General meeting in December.
+All candidate information will be shared on the US-RSE website.  Additionally, candidates will have a chance to share information about themselves at the Annual General Meeting on December 2, 2022.
 
 An [#election channel is available on
 Slack](https://usrse.slack.com/archives/C01BC66Q16E) for any discussion with or
 about candidates.
 
+## Candidate Meeting
+
+For the 2022 election, we are planning a meeting of all of the candidates before names are released publicly.  This will be an opportunity for candidates to learn who else is running and discuss how they want to share information about themselves during the Annual General Meeting.  
+
 ## Voting
 
+If there are more candidates than seats available, an election will be held.  
+
 Elections will be run through
-[https://electionbuddy.com](https://us-rse.org/join).  US-RSE members' email
+https://electionbuddy.com.  US-RSE members' email
 addresses will be shared with this site for the sole purpose of voting.  Each
-US-RSE member as of November 19, 2021, gets one ballot with the voting rule of
+US-RSE member as of November 20, 2022, gets one ballot with the voting rule of
 [single transferable vote
 (STV)](https://electionbuddy.com/features/voting-systems/stv-voting).  This
 voting rule asks each voter to rank the candidates, and seats are allocated
@@ -105,9 +108,7 @@ across candidates using this ranking information.
 The results of the election are valid regardless of the turnout rate for the
 election.
 
-[Statements and contact information for the 2021 Steering Committee
-candidates](https://us-rse.org/2021-11-12-sc-candidates/) have been posted.
 
 ## Questions?
 
-Contact Election Chairs Julia Damerow and Lance Parsons on Slack or [via email](mailto:jdamerow@asu.edu,lparsons@princeton.edu)
+Contact Election Chair Christina Maimone on Slack or [via email](mailto:christina.maimone@northwestern.edu).

@@ -58,11 +58,6 @@
   name: Post-Doctoral Research Associate, Robotic Beamline Development
   posted: 2022-06-17
   url: https://jobs.bnl.gov/job/upton/postdoctoral-research-associate-robotic-beamline-development/3437/30824417136
-- expires: 2022-07-15
-  location: California State University, Northridge, Northridge, CA
-  name: Postdoctoral Scholar
-  posted: 2022-06-17
-  url: https://careers.pageuppeople.com/873/nr/en-us/job/515718/postdoctoral-scholar-tuc-phys
 - expires: 2022-09-16
   location: Oak Ridge National Laboratory, Oak Ridge, TN
   name: Senior Research Software Engineer - Application Engineering
@@ -74,12 +69,6 @@
   name: Software Developer 3
   posted: 2022-06-14
   url: https://careersearch.stanford.edu/jobs/software-developer-3-17062
-- expires: 2022-07-15
-  location: Lawrence J. Ellison Institute for Transformative Medicine, Los Angeles,
-    CA
-  name: Software Engineering Lead, Backend
-  posted: 2022-06-13
-  url: https://ellisoninstitute.applytojob.com/apply/S3Ur6OihVM/Software-Engineering-Lead-Backend
 - expires: 2022-08-15
   location: Center for Computational Neuroscience, Flatiron Institute, New York, New
     York
@@ -106,12 +95,6 @@
   name: Materials Data Scientist / Scientific Software Developer
   posted: 2022-06-03
   url: https://jobs.lever.co/enthought/57629abc-fab4-4026-bc15-3350e8191b27
-- expires: 2022-06-17
-  location: Columbia University / National Center for Atmospheric Research, Boulder,
-    CO
-  name: Integration Engineer
-  posted: 2022-06-03
-  url: https://opportunities.columbia.edu/en-us/job/525685/integration-engineer#
 - expires: 2022-10-31
   location: Arizona State University, Tempe, AZ
   name: Postdoctoral Research Scholar - Extensible molecular analysis tools for reproducible
@@ -123,333 +106,29 @@
   name: Scientific Software Engineer, Hit Discovery
   posted: 2022-05-31
   url: https://grnh.se/b12d84713us
-- expires: 2022-06-03
-  location: Center for High Throughput Computing, University of Wisconsin-Madison,
-    Madison, WI
-  name: Software Engineer
-  posted: 2022-05-19
-  url: https://jobs.hr.wisc.edu/en-us/job/513718/software-engineer
-- expires: 2022-05-31
-  location: Phoenix Bioinformatics, US Based, Remote
-  name: Software Engineer
-  posted: 2022-05-18
-  url: https://phoenix-bioinformatics.hirehive.com/job/98321/full-stack-software-engineer-newark
-- expires: 2022-06-30
-  location: data.org, Remote
-  name: Senior Research Software Engineer
-  posted: 2022-05-16
-  url: https://data.org/careers/senior-research-software-engineer/
-- expires: 2022-07-10
-  location: "Schr\xF6dinger, New York City, NY"
-  name: Force Fields Scientist, Desmond/Materials Science Development
-  posted: 2022-05-10
-  url: https://boards.greenhouse.io/schrdinger/jobs/4904081003
-- expires: 2022-07-10
-  location: "Schr\xF6dinger, New York, NY"
-  name: Machine Learning Research Engineer
-  posted: 2022-05-10
-  url: https://boards.greenhouse.io/schrdinger/jobs/4344938003
-- expires: 2022-07-10
-  location: "Schr\xF6dinger, New York, NY"
-  name: Machine Learning Infrastructure Engineer
-  posted: 2022-05-10
-  url: https://boards.greenhouse.io/schrdinger/jobs/5068535003
-- expires: 2022-06-30
-  location: Media Cloud/Northeastern, Boston, MA
-  name: Senior Data Engineer
-  posted: 2022-05-04
-  url: https://northeastern.wd1.myworkdayjobs.com/careers/job/Boston-MA-Main-Campus/Senior-Data-Engineer_R105388
-- expires: 2022-05-31
-  location: National Center for Atmospheric Research, Boulder, CO, USA - flexible
-    remote
-  name: High-Performance Computing Consultant I/II - User & Application Support
-  posted: 2022-05-03
-  url: https://ucar.wd5.myworkdayjobs.com/en-US/UCAR_Careers/job/Mesa-Lab-Building/High-Performance-Computing-Consultant---User---Application-Support_REQ-2022-135-1
 - expires: 2022-08-01
   location: Hewlett Packard Enterprise, Can be remote
   name: Visiting Scholar for Chapel Programming Language Team
   posted: 2022-04-28
   url: https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Seattle-Washington-United-States-of-America/Visiting-Scholar-for-Chapel-Programming-Language-Team_1123949
-- expires: 2022-06-27
-  location: SLAC National Accelerator Laboratory, Menlo Park, CA
-  name: Software Developer III - Data Acquisition and Analysis
-  posted: 2022-04-27
-  url: https://erp-hprdext.erp.slac.stanford.edu/psp/hprdext/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=4869&PostingSeq=1
-- expires: 2022-06-27
-  location: SLAC National Accelerator Laboratory, Menlo Park, CA
-  name: Software Developer - Data Management
-  posted: 2022-04-27
-  url: https://erp-hprdext.erp.slac.stanford.edu/psp/hprdext/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=4889&PostingSeq=1
-- expires: 2022-06-27
-  location: SLAC National Accelerator Laboratory, Menlo Park, CA
-  name: Software Developer - Data Analytics
-  posted: 2022-04-27
-  url: https://erp-hprdext.erp.slac.stanford.edu/psp/hprdext/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=4867&PostingSeq=1
-- expires: 2022-05-09
-  location: UCAR/NCAR, Boulder, CO; This position is eligible for fully remote work
-  name: Software Engineer II - THREDDS
-  posted: 2022-04-13
-  url: https://ucar.wd5.myworkdayjobs.com/en-US/UCAR_Careers/details/Software-Engineer-II---THREDDS_REQ-2022-120-1
-- expires: 2022-06-30
-  location: Princeton University, Princeton, NJ
-  name: Research Software Engineer
-  posted: 2022-04-08
-  url: https://main-princeton.icims.com/jobs/14490/research-software-engineer/job
 - expires: 2022-08-22
   location: University of California, San Francisco
   name: Junior Specialist with Data Science Focus
   posted: 2022-04-07
   url: https://aprecruit.ucsf.edu/JPF03809
-- expires: 2022-07-01
-  location: University of Washington, Seattle, WA
-  name: Scientific Software Engineering Center Engineering Lead
-  posted: 2022-03-31
-  url: https://escience.washington.edu/uw-scientific-software-engineering-center/
-- expires: 2022-07-01
-  location: Lawrence Berkeley National Laboratory, Berkeley, CA
-  name: HPC Applications Engineer
-  posted: 2022-03-31
-  url: https://jobs.lbl.gov/jobs/4251
-- expires: 2022-04-30
-  location: Initiative for Data-Driven Social Science, Princeton University, Princeton,
-    NJ
-  name: Research Software Engineer
-  posted: 2022-03-22
-  url: https://main-princeton.icims.com/jobs/14232/research-software-engineer/job?mobile=false&width=1091&height=500&bga=true&needsRedirect=false&jan1offset=-300&jun1offset=-240
-- expires: 2022-04-05
-  location: Advanced Light Source, Lawrence Berkeley National Lab, Berkeley, CA
-  name: Computational Scientist
-  posted: 2022-03-21
-  url: https://lbl.referrals.selectminds.com/jobs/computational-scientist-4729?et=m8WR0Dcr
-- expires: 2022-12-31
-  location: Electrophysiology, Memory, and Navigation Laboratory, Columbia University,
-    New York City, New York
-  name: Software/Computer Graphics Engineer
-  posted: 2022-03-21
-  url: https://opportunities.columbia.edu/en-us/job/523768/computer-graphics-engineer
-- expires: 2022-04-08
-  location: Georgetown University, Washington, DC / Hybrid 3 Days
-  name: Software Developer, Massive Data Institute
-  posted: 2022-03-14
-  url: https://georgetown.wd1.myworkdayjobs.com/en-US/Georgetown_Admin_Careers/job/Main-Campus/Software-Developer--Massive-Data-Institute---Georgetown-University_JR12496
-- expires: 2022-05-18
-  location: Brown University Center for Computation & Visualization, Providence, RI
-  name: Research Software Engineer / Senior Research Software Engineer
-  posted: 2022-03-14
-  url: https://brown.wd5.myworkdayjobs.com/en-US/staff-careers-brown/job/180-George-Street/Research-Software-Engineer--Senior-Research-Software-Engineer_REQ176514
-- expires: 2022-04-30
-  location: Information Sciences Institute, University of Southern California, Los
-    Angeles, CA (Candidate is expected to live in Greater Los Angeles area. Flexibility
-    in terms of what days to be at ISI in person.)
-  name: Research Engineer I - Scitech Group
-  posted: 2022-03-11
-  url: https://usccareers.usc.edu/job/los-angeles/research-engineer-i-scitech-group/1209/21230490800
-- expires: 2022-04-30
-  location: Million Concepts, remote / flexible (US only)
-  name: Software Developer / Scientist
-  posted: 2022-03-02
-  url: https://millionconcepts.com/jobs.html#software-developer
-- expires: 2022-04-30
-  location: NumFOCUS/Matplotlib, Remote
-  name: Research Software Engineer
-  posted: 2022-02-18
-  url: https://discourse.matplotlib.org/t/research-software-engineer-roses-2020-position/22597
-- expires: 2022-03-08
-  location: University of Wisconsin-Madison, Madison, WI
-  name: Researcher
-  posted: 2022-02-18
-  url: https://jobs.hr.wisc.edu/en-us/job/511080/researcher
-- expires: 2022-03-30
-  location: Center for Digital Humanities, Princeton University, Princeton, NJ
-  name: Senior Research Software Engineer
-  posted: 2022-02-17
-  url: https://cdh.princeton.edu/engage/jobs/senior-rse/
-- expires: 2022-03-30
-  location: Lawrence Livermore National Laboratory, Livermore, CA
-  name: Senior Java Developer
-  posted: 2022-02-14
-  url: https://jobs.smartrecruiters.com/LLNL/3743990000162563-senior-java-developer
-- expires: 2022-03-30
-  location: Lawrence Livermore National Laboratory, Livermore, CA
-  name: APEX Developer
-  posted: 2022-02-14
-  url: https://jobs.smartrecruiters.com/LLNL/3743990000163679-apex-developer
-- expires: 2022-04-14
-  location: Sylabs, Inc., Remote
-  name: Software Engineer
-  posted: 2022-02-14
-  url: https://app.trinethire.com/companies/22680-sylabs-inc/jobs/56951-software-engineer-remote
-- expires: 2022-06-01
-  location: Princeton University, Princeton, NJ
-  name: Senior Research Software Engineer
-  posted: 2022-02-11
-  url: https://main-princeton.icims.com/jobs/14155/sr-research-software-engineer/job
-- expires: 2022-04-30
-  location: Brown University, Providence, RI
-  name: Data Scientist / Senior Data Scientist
-  posted: 2022-02-09
-  url: https://brown.wd5.myworkdayjobs.com/en-US/staff-careers-brown/job/180-George-Street/Data-Scientist--Senior-Data-Scientist_REQ176164-1
-- expires: 2022-03-31
-  location: University of Delaware, Newark, DE
-  name: Postdoc/Research Software Engineer
-  posted: 2022-02-07
-  url: https://drive.google.com/file/d/1wbc05P3Gd7sK2x0SdV75l8vYpLOoKtr2/view?usp=sharing
-- expires: 2022-02-17
-  location: San Diego Supercomputer Center, University of California, San Diego/La
-    Jolla, CA (flexible)
-  name: Applications Programmer
-  posted: 2022-02-07
-  url: https://employment.ucsd.edu/applications-programmer-4-114422/job/18459924
 - expires: 2022-12-03
   location: Center for Computation and Visualization, Brown University, Providence,
     RI
   name: Research Software Engineer
   posted: 2022-02-07
   url: https://brown.wd5.myworkdayjobs.com/en-US/staff-careers-brown/jobs/details/Research-Software-Engineer_REQ176069
-- expires: 2022-06-01
-  location: Colabra, Remote
-  name: Senior API Engineer
-  posted: 2022-02-05
-  url: https://jobs.colabra.app/23066
-- expires: 2022-04-30
-  location: Brown University, Providence, RI
-  name: Associate Research Software Engineer
-  posted: 2022-02-04
-  url: https://brown.wd5.myworkdayjobs.com/en-US/staff-careers-brown/job/Sidney-E-Frank-Hall-for-Life-Sciences/Associate-Research-Software-Engineer_REQ175605
-- expires: 2022-02-18
-  location: NCAR, Boulder, CO
-  name: Scientific Software Engineer I
-  posted: 2022-02-02
-  url: https://ucar.wd5.myworkdayjobs.com/en-US/UCAR_Careers/job/Mesa-Lab-Building/Scientific-Software-Engineer-I_REQ-2022-19-1
-- expires: 2022-03-31
-  location: GenNext Technologies Inc., Half Moon Bay, CA
-  name: Software Development Engineer/Scientist
-  posted: 2022-02-02
-  url: https://gnxtech.com/careers/
-- expires: 2022-03-01
-  location: Brown University, Providence, RI
-  name: Research Assistant Position in Machine Learning and Computational Cognitive
-    Neuroscience
-  posted: 2022-02-02
-  url: https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:0f3724e1-0296-484e-8067-883f28fb4caf
-- expires: 2022-03-31
-  location: JHU Applied Physics Lab, Laurel, MD
-  name: Space Physics Application Developer
-  posted: 2022-02-01
-  url: https://prdtss.jhuapl.edu/jobs/space-physics-application-developer-2592
 - expires: 2023-01-25
   location: Computational Infrastructure for Geodynamics, UC Davis, Davis, CA
   name: Research Software Engineer / Project Scientist
   posted: 2022-02-01
   url: https://recruit.ucdavis.edu/JPF04614
-- expires: 2022-04-30
-  location: New York Structural Biology Center, New York, NY (Hybrid/Remote/Flexible)
-  name: Software Developer
-  posted: 2022-01-25
-  url: https://semc.nysbc.org/jobs/
-- expires: 2022-02-28
-  location: Oak Ridge National Laboratory, Oak Ridge, TN
-  name: Research Software Engineer - Entry Level
-  posted: 2022-01-24
-  url: https://jobs.ornl.gov/job/Oak-Ridge-Research-Software-Engineer%2C-Entry-Level-TN-37830-8050/803076300/
-- expires: 2022-05-01
-  location: Carnegie Mellon University, School of Computer Science, Pittsburgh, PA
-    (Hybrid/Remote)
-  name: Developer in Residence
-  posted: 2022-01-14
-  url: https://delphi.cmu.edu/about/careers/
-- expires: 2022-05-01
-  location: Carnegie Mellon University, School of Computer Science, Pittsburgh, PA
-    (Hybrid/Remote)
-  name: Research Programmer / Analyst
-  posted: 2022-01-14
-  url: https://delphi.cmu.edu/about/careers/
-- expires: 2022-02-01
-  location: Data Science Institute at The University of Wisconsin-Madison, Madison,
-    WI
-  name: Software Eng/Developer III
-  posted: 2022-01-13
-  url: https://jobs.hr.wisc.edu/en-us/job/511954/software-engdeveloper-iii
-- expires: 2022-01-29
-  location: Oak Ridge National Laboratory, Oak Ridge, TN
-  name: Large-Scale Data Management - Senior Software Engineer
-  posted: 2022-01-11
-  url: https://jobs.ornl.gov/job-invite/6886/
-- expires: 2022-03-31
-  location: University of Arizona, Tucson, AZ
-  name: Scientific Programmer and Educator
-  posted: 2022-01-05
-  url: https://arizona.csod.com/ux/ats/careersite/4/home/requisition/8094
-- expires: 2022-03-31
-  location: National Renewable Energy Laboratory (Remote)
-  name: Researcher II - Software Developer for Transportation Data and Modeling Tools
-  posted: 2022-01-05
-  url: https://nrel.wd5.myworkdayjobs.com/en-US/NREL/job/Golden-CO/Researcher-II---Software-Developer-for-Transportation-Data-and-Modeling-Tools_R8178
-- expires: 2022-01-03
-  location: San Diego Supercomputer Center/UCSD (100% remote or hybrid or local)
-  name: Senior Research Software Engineer
-  posted: 2021-12-23
-  url: https://employment.ucsd.edu/112717-senior-research-software-engineer/job/18185463
-- expires: 2022-02-28
-  location: Allen Institute, Seattle, WA
-  name: Data Analyst I
-  posted: 2021-12-10
-  url: https://alleninstitute.hrmdirect.com/employment/job-opening.php?req=1799205&&cust_sort1=29268&&nohd#job
-- expires: 2022-01-10
-  location: Lawrence Berkeley National Laboratory, Berkeley, CA
-  name: Software and User Interface Engineer
-  posted: 2021-12-10
-  url: https://lbl.referrals.selectminds.com/jobs/software-and-user-interface-engineer-4473
 - expires: 2022-12-31
   location: Pittsburgh, PA (Hybrid/Remote)
   name: Research Programmer / Analyst
   posted: 2021-12-10
   url: https://cmu.wd5.myworkdayjobs.com/en-US/CMU/job/Pittsburgh-PA/Research-Programmer-Analyst---Machine-Learning-Department_2016450-1
-- expires: 2022-01-30
-  location: 'RAND: Santa Monica, CA; Pittsburgh, PA; Boston, MA; Washington D.C.'
-  name: Research Software Engineer (Entry Level)
-  posted: 2021-12-07
-  url: https://rand.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Santa-Monica-CA-Greater-Los-Angeles-Area/Research-Software-Engineer--Entry-Level-_R772
-- expires: 2022-01-01
-  location: National Renewable Energy Laboratory (NREL), Golden, CO/Remote
-  name: Manager - IT DevOps
-  posted: 2021-11-23
-  url: https://nrel.wd5.myworkdayjobs.com/en-US/NREL/job/Golden-CO/Manager---IT-DevOps_R7978
-- expires: 2022-01-14
-  location: Breakthrough Energy, Seattle, Washington, District of Columbia, United
-    States, San Francisco Bay Area
-  name: Research Software Engineer
-  posted: 2021-11-18
-  url: https://boards.greenhouse.io/breakthroughenergy38/jobs/4179920004
-- expires: 2022-04-01
-  location: Caltech, Pasadena, CA
-  name: Applications Developer, User Interface
-  posted: 2021-11-16
-  url: https://phf.tbe.taleo.net/phf03/ats/careers/v2/viewRequisition?org=CALTECH&cws=37&rid=6231
-- expires: 2022-06-30
-  location: State College, Pennsylvania
-  name: Assistant Director, Penn State's Applications of Artificial Intelligence and
-    Machine Learning to Industry (AIMI) Center - Institute for Computational and Data
-    Sciences (ICDS)
-  posted: 2021-11-10
-  url: https://psu.wd1.myworkdayjobs.com/en-US/PSU_Staff/job/University-Park-Campus/Assistant-Director--Penn-State-s-Applications-of-Artificial-Intelligence-and-Machine-Learning-to-Industry--AIMI--Center_REQ_0000021090-1
-- expires: 2022-06-30
-  location: State College, Pennsylvania
-  name: ICDS Technical Director - Institute for Computational and Data Sciences (ICDS)
-  posted: 2021-11-09
-  url: https://psu.wd1.myworkdayjobs.com/en-US/PSU_Staff/job/University-Park-Campus/ICDS-Technical-Director_REQ_0000020689
-- expires: 2021-12-31
-  location: Seattle (or Pittsburgh)
-  name: Senior Software Manager for Data-intensive Astronomical Research Program
-  posted: 2021-11-03
-  url: http://uwhires.admin.washington.edu/ENG/Candidates/default.cfm?szCategory=jobprofile&szOrderID=198215
-- expires: 2021-12-31
-  location: Oak Ridge National Laboratory, Oak Ridge, TN
-  name: Full Stack Software Engineer
-  posted: 2021-10-27
-  url: https://jobs.ornl.gov/job/Oak-Ridge-Full-Stack-Software-Engineer-TN-37830/793411000/
-- expires: 2021-12-31
-  location: Oak Ridge National Laboratory, Oak Ridge, TN
-  name: Full Stack Software Engineer
-  posted: 2021-10-27
-  url: https://jobs.ornl.gov/job/Oak-Ridge-Full-Stack-Software-Engineer-TN-37830/793415900/
