@@ -24,6 +24,23 @@ full_width: true
 </div>
 
 
+<div class="card" style="padding:50px; margin-top:-50px">
+<div class="row">
+    <div class="col-md-6" style="margin:auto">
+        <h2 class="block-title">US-RSE Virtual Workshop</h2>
+        <p>September 14 and 16, 2022, 1-4pm ET</p>
+        <p>Join us for presentations and discussions on all things RSE related. </p>
+    <a href="{{ site.baseurl }}/virtual-workshop-2022/" class="button btn-warning">Get the Details</a>
+  </div>
+    <div class="col-md-6" style="margin:auto">
+        <h2 class="block-title">Upcoming Conferences</h2>
+        <p><a href="[https://us-rse.org/events/2022/2022-10-escience/](https://us-rse.org/rse-escience-2022/)">Research Software Engineers in eScience</a> at eScience 2022</p>
+        <p><a href="https://us-rse.org/rse-hpc-2022/">Research Software Engineers in HPC Workshop</a> at SC22</p>
+  </div>
+ </div>
+</div>
+
+
 <div class="card" style="padding:50px; margin-top:50px">
 <div class="row">
     <div class="col-md-4">
@@ -37,6 +54,7 @@ full_width: true
   </div>
  </div>
 </div>
+
 
 <div class="inner" style="margin-top:50px">
   <div class="block-content">
