@@ -20,7 +20,7 @@ full_width: true
     
       </div>
        <div class="grid-item-buttons">
-<a href="{{ site.baseurl }}/virtual-workshop-2022/" class="button btn-warning">Get the Details</a>
+<a href="{{ site.baseurl }}/virtual-workshop-2022/" class="">Get the Details</a>
    </div>
  </div>
 </div>
@@ -28,8 +28,8 @@ full_width: true
 <div class="grid-item-inside">
   <h3 class="grid-item-title line-left">Upcoming Conferences</h3>
     <div class="grid-item-content">
-    <p><a href="[https://us-rse.org/events/2022/2022-10-escience/](https://us-rse.org/rse-escience-2022/)">Research Software Engineers in eScience</a> at eScience 2022</p>
-        <p><a href="https://us-rse.org/rse-hpc-2022/">Research Software Engineers in HPC Workshop</a> at SC22</p>
+    <p><a href="{{ site.baseurl }}/rse-escience-2022/">Research Software Engineers in eScience</a> at eScience 2022</p>
+        <p><a href="{{ site.baseurl }}/rse-hpc-2022/">Research Software Engineers in HPC Workshop</a> at SC22</p>
             </div>
            
         </div>
