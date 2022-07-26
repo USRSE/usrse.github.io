@@ -7,6 +7,38 @@ permalink: /
 full_width: true
 ---
 
+
+<div class="inner" style="margin-top:50px">
+  <div class="block-content">
+   <div class="grid grid-col-2">        
+    <div class="grid-item">
+      <div class="grid-item-inside">
+       <h3 class="grid-item-title line-left">US-RSE Virtual Workshop</h3>
+       <div class="grid-item-content">
+       <p>September 14 and 16, 2022, 1-4pm ET</p>
+        <p>Join us for presentations and discussions on all things RSE related. </p>
+    
+      </div>
+       <div class="grid-item-buttons">
+<a href="{{ site.baseurl }}/virtual-workshop-2022/" class="button btn-warning">Get the Details</a>
+   </div>
+ </div>
+</div>
+<div class="grid-item">
+<div class="grid-item-inside">
+  <h3 class="grid-item-title line-left">Upcoming Conferences</h3>
+    <div class="grid-item-content">
+    <p><a href="[https://us-rse.org/events/2022/2022-10-escience/](https://us-rse.org/rse-escience-2022/)">Research Software Engineers in eScience</a> at eScience 2022</p>
+        <p><a href="https://us-rse.org/rse-hpc-2022/">Research Software Engineers in HPC Workshop</a> at SC22</p>
+            </div>
+           
+        </div>
+      </div>
+    </div>    
+  </div>
+
+
+
 <div class="card" style="padding:50px; margin-top:-50px">
 <div class="row">
     <div class="col-md-9" style="margin:auto">
@@ -20,23 +52,6 @@ full_width: true
     <div class="col-md-3">
       <img src="{{ site.baseurl }}/assets/img/circular_logo.png" alt="" style="padding:60px; float:right">
     </div>
- </div>
-</div>
-
-
-<div class="card" style="padding:50px; margin-top:-50px">
-<div class="row">
-    <div class="col-md-6" style="margin:auto">
-        <h2 class="block-title">US-RSE Virtual Workshop</h2>
-        <p>September 14 and 16, 2022, 1-4pm ET</p>
-        <p>Join us for presentations and discussions on all things RSE related. </p>
-    <a href="{{ site.baseurl }}/virtual-workshop-2022/" class="button btn-warning">Get the Details</a>
-  </div>
-    <div class="col-md-6" style="margin:auto">
-        <h2 class="block-title">Upcoming Conferences</h2>
-        <p><a href="[https://us-rse.org/events/2022/2022-10-escience/](https://us-rse.org/rse-escience-2022/)">Research Software Engineers in eScience</a> at eScience 2022</p>
-        <p><a href="https://us-rse.org/rse-hpc-2022/">Research Software Engineers in HPC Workshop</a> at SC22</p>
-  </div>
  </div>
 </div>
 
