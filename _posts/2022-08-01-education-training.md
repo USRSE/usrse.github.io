@@ -2,12 +2,12 @@
 layout: post
 title: Education and Training for Research Software Engineers
 tags: [education, training, tutorials, seminar series]
-posted_by: Lauren Milechin (MIT), Jeffrey C. Carver (University of Alabama), Patrick Clemins (Vermont EPSCoR, University of Vermont), Julia Damerow (Arizona State University), Angela Herring (Los Alamos National Laboratory), Miranda Mundt (Sandia National Laboratories), Lance Parsons (Princeton University), Alan Sussman (National Science Foundation), Alicja Tadych (Princeton University)
+posted_by: Lauren Milechin
 ---
 
-*This post is the result of work from attendees of the [2022 Community Building Workshop](https://us-rse.org/first-community-workshop/) and members of the [Education and Training Working Group](https://us-rse.org/wg/education_training/).*
+A [2022 Community Workshop](https://us-rse.org/first-community-workshop/) post by - *Lauren Milechin (MIT), Jeffrey C. Carver (University of Alabama), Patrick Clemins (Vermont EPSCoR, University of Vermont), Julia Damerow (Arizona State University), Angela Herring (Los Alamos National Laboratory), Miranda Mundt (Sandia National Laboratories), Lance Parsons (Princeton University), Alan Sussman (National Science Foundation), Alicja Tadych (Princeton University)*
 
-At the recent [US-RSE Community Building Workshop](https://us-rse.org/first-community-workshop/) the authors of this  post met in a breakout session to discuss the Education and Training (E&T) needs of the Research Software Engineer community and what US-RSE could do to address those needs. The discussion included representatives from academia, national labs, and funding agencies who were RSEs themselves, RSE managers, and others who work with RSEs.
+At the recent [US-RSE Community Building Workshop](https://us-rse.org/first-community-workshop/) the authors of this  post met to discuss the Education and Training (E&T) needs of the Research Software Engineer community and what US-RSE could do to address those needs. The discussion included representatives from academia, national labs, and funding agencies who were RSEs themselves, RSE managers, and others who work with RSEs.
 
 This post summarizes the discussion, the progress made towards a future Education and Training Seminar Series, and what we will be doing to organize the series moving forward. We also mention a few other ideas worth pursuing that came up during discussion. This is a starting point reflecting the voices and experiences of the folks in the room, and we welcome input from the greater US-RSE community.
 
