@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Education and Training for Research Software Engineers
-tags: [election, dei, 2022 community workshop]
+tags: [education, training, tutorials, seminar series]
 posted_by: Lauren Milechin (MIT), Jeffrey C. Carver (University of Alabama), Patrick Clemins (Vermont EPSCoR, University of Vermont), Julia Damerow (Arizona State University), Angela Herring (Los Alamos National Laboratory), Miranda Mundt (Sandia National Laboratories), Lance Parsons (Princeton University), Alan Sussman (National Science Foundation), Alicja Tadych (Princeton University)
 ---
 
