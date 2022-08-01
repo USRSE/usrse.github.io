@@ -49,4 +49,4 @@ There was a lot of interest in creating some sort of resource for those coming f
 
 To create future RSE bootcamps, the [INTERSECT](https://intersect-training.github.io/) project is having its first content creation workshop this August and plans to host additional events over the coming months/years. Those interested in contributing can [fill out the interest form](https://intersect-training.github.io/participate/).
 
-Finally, if you are interested in joining the [Education and Training Working Group](https://us-rse.org/wg/education_training/), you can reach out to us on the #wg-education_training channel on the US-RSE Slack, or send email to [Jeff Carver](carver@cs.ua.edu).
+Finally, if you are interested in joining the [Education and Training Working Group](https://us-rse.org/wg/education_training/), you can reach out to us on the #wg-education_training channel on the US-RSE Slack, or send email to [Jeff Carver](mailto:carver@cs.ua.edu).
