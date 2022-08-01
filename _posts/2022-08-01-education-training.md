@@ -31,17 +31,17 @@ The [Education and Training Working Group](https://us-rse.org/wg/education_train
 
 To address the needs of RSEs who would like to learn more about different science domains, we also discussed the possibility of adding additional “Domain Days” to the series. During these events we would invite domain scientists to talk about their domain and answer questions about what an RSE would need to know to work in that domain - such as open questions of interest, necessary math skills, or the words and phrases most commonly heard in that domain. These would either be interview or panel style events. We also had the idea that the Q&A portion of these events might make good short podcasts that could be released in the future.
 
-We also thought it could be beneficial to host a series of “Coffee Hour” talks, which would be a space for graduate students to give talks on their research and get feedback. We then decided that this activity would be outside the scope of the Education and Training working group, and might be a good fit for the Outreach working group.
+We also thought it could be beneficial to host a series of “Coffee Hour” talks, which would be a space for graduate students to give talks on their research and get feedback. We then decided that this activity would be outside the scope of the Education and Training Working Group, and might be a good fit for the Outreach Working Group.
 
 ### Planning the RSE Education and Training Tutorial and Seminar Series
 
-Building on the discussion at the workshop, the Education and Training Working Group is organizing the Tutorial and Seminar series described above. The group has worked to identify topics and speakers that are of most interest to the US-RSE community. After an initial ranking of the proposed ideas by the active members of the US-RSE working group, we solicited input from the US-RSE community. Based on this information we invited Angela Herring from Los Alamos National Lab to be the first speaker. She will give a talk on Agile Project Management for Research Software. A more formal announcement will be released with the exact date and time.
+Building on the discussion at the workshop, the Education and Training Working Group is organizing the Tutorial and Seminar series described above. The group has worked to identify topics and speakers that are of most interest to the US-RSE community. After an initial ranking of the proposed ideas by the active members of the working group, we solicited input from the US-RSE community. Based on this information we invited Angela Herring from Los Alamos National Lab to be the first speaker. She will give a talk on Agile Project Management for Research Software. A more formal announcement will be released with the exact date and time.
 
-If you are interested in getting involved in planning the series, have any input, or know someone with a good tutorial or talk, or would like to be involved in organizing these events, you can reach out to the Education and Training Working Group through the #education-training channel on the US-RSE Slack. The working group has monthly meetings and welcomes new members.
+If you are interested in getting involved in planning the series, have any input, or know someone with a good tutorial or talk, or would like to be involved in organizing these events, you can reach out to the Education and Training Working Group through the #wg-education_training channel on the US-RSE Slack. The working group has monthly meetings and welcomes new members.
 
 ### Possible Future Work and Getting Involved
 
-While the Education and Training working group is picking up the task of putting together a Tutorial and Seminar series, and possibly incorporating Domain Days into that, we uncovered a few other great ideas that are worth pursuing if you would like to get involved.
+While the Education and Training Working Group is picking up the task of putting together a Tutorial and Seminar series, and possibly incorporating Domain Days into that, we uncovered a few other great ideas that are worth pursuing if you would like to get involved.
 
 There was a lot of interest in creating some sort of resource for those coming from a CS background who want to become RSEs. We discussed the possibility of putting together a curriculum that combines research, math, data science, and domain skills, whether that be a list of formal courses taught in a university, or informal resources that could be combined to address these topics.
 
@@ -49,4 +49,4 @@ There was a lot of interest in creating some sort of resource for those coming f
 
 To create future RSE bootcamps, the [INTERSECT](https://intersect-training.github.io/) project is having its first content creation workshop this August and plans to host additional events over the coming months/years. Those interested in contributing can [fill out the interest form](https://intersect-training.github.io/participate/).
 
-Finally, if you are interested in joining the [Education and Training working group](https://us-rse.org/wg/education_training/), you can reach out to us on the #wg-education_training channel on the US-RSE Slack, or send email to [Jeff Carver](carver@cs.ua.edu).
+Finally, if you are interested in joining the [Education and Training Working Group](https://us-rse.org/wg/education_training/), you can reach out to us on the #wg-education_training channel on the US-RSE Slack, or send email to [Jeff Carver](carver@cs.ua.edu).
