@@ -640,6 +640,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/43007690?v=4"
             ]
+        },
+        {
+            "login": "lmilechin",
+            "name": "Lauren Milechin",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/lmilechin",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/13963460?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

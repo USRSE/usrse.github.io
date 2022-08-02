@@ -315,5 +315,11 @@
         "name": "Dr. Phil Maffettone",
         "bio": "Computational Scientist @ Brookhaven National Laboratory",
         "blog": "https://github.com/maffettone"
+    },
+    "lmilechin": {
+        "name": "Lauren Milechin",
+        "orcid": "0000-0002-0554-3624",
+        "affiliation": "Massachusetts Institute of Technology",
+        "blog": "https://github.com/lmilechin"
     }
 }
