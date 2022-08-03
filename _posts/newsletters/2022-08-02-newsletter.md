@@ -63,7 +63,6 @@ The theme of the 2022 US-RSE Virtual Workshop is “**Make it happen! Towards a 
  
 The workshop will be held on two non-consecutive half days: September 14 and 16, 2022, 1-4pm ET/12-3pm CT/11am-2pm MT/10am-1pm PT.
 All information related to the workshop can be found on the [workshop website](https://us-rse.org/virtual-workshop-2022/).
-</span>
     
 <a name="elections"></a>
 # **Steering Committee Elections**
