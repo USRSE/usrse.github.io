@@ -146,7 +146,6 @@ Some other events coming up may be of interest to RSEs:
 * [eScience 2022](https://www.escience-conference.org/2022/) will take place October 10-14, 2022 in Salt Lake City, UT including the [Research Software Engineers in eScience workshop](https://us-rse.org/rse-escience-2022/).
 * [Gateways 2022](https://sciencegateways.org/gateways2022) will take place October 18-20, 2022 in San Diego, CA with tutorials online in the two weeks before. Deadline for posters and Open Forum are August 8, 2022.
     
-</span>
 
 <a name="reads"></a>
 # **Interesting Reads or Podcasts**
