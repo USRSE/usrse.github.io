@@ -651,6 +651,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/13963460?v=4"
             ]
+        },
+        {
+            "login": "super-cooper",
+            "name": "Adam Cooper",
+            "contributions": [
+                "code"
+            ],
+            "profile": "adamcooper.sh",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/14908880?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
