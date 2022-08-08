@@ -7,7 +7,7 @@ event_date: "every other Thursday at 11:00-12:00 Eastern"
 layout: event
 category: outreach
 time:
-  - - start: 2022-08-17 11:00 EST
+  - - start: 2022-08-17 11:00 EDT
 
 repeated: true
 rrule:
