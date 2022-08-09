@@ -119,6 +119,4 @@ to the map to quickly see if a local group exists in their area
 and communicate via Slack. New groups can be added by engaging 
 directly with this working group.
 
-{{ site.baseurl }}/assets/posts/2022-08-04-local-rse-group-considerations
-
-# TODO add this wg to the wg listing
+![Regional Group Layer](/assets/posts/2022-08-04-local-regional-working-group.png)
