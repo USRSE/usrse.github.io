@@ -1,9 +1,9 @@
 ---
- layout: post
- title: Announcing the US-RSE Local and Regional Working Group
- tags: [events]
- posted_by: Rafael Mudafort
- ---
+layout: post
+title: Announcing the US-RSE Local and Regional Working Group
+tags: [events]
+posted_by: Rafael Mudafort
+---
 
 Authors: Rafael Mudafort, Sandra Gesing, Jordan Perr-Sauer, Mahmood Shad, Abbey Roelofs
 
