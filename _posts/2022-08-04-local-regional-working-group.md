@@ -123,3 +123,4 @@ directly with this working group.
 
 {{ site.baseurl }}/assets/posts/2022-08-04-local-rse-group-considerations
 
+# TODO add this wg to the wg listing
