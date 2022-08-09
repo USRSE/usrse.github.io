@@ -5,8 +5,6 @@ tags: [events]
 posted_by: Rafael Mudafort
 ---
 
-Authors: Rafael Mudafort, Sandra Gesing, Jordan Perr-Sauer, Mahmood Shad, Abbey Roelofs
-
 The US-RSE Association has grown to become a major resource for RSEs and
 people in RSE-like roles. A primary area of support is in organizing
 meetings including monthly community calls and working groups. Because
