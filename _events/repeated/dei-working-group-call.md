@@ -7,7 +7,7 @@ event_date: "every other Wednesday at 15:00-16:00 Eastern"
 layout: event
 category: dei
 time:
-  - - start: 2022-08-10 15:00 EST
+  - - start: 2022-08-10 15:00 ET
 
 repeated: true
 rrule:
