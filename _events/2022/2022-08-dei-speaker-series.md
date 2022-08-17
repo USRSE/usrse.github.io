@@ -29,7 +29,7 @@ different formats and timelines of the events. Feedback is much appreciated.
 ## Event
 
 The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
-welcome Vandana Singh to present his talk "Diversity in Open-source Software."
+welcome Vandana Singh to present her talk "Diversity in Open Source Software."
 This event will take place
 **Wednesday, Aug 31st at 1 PM PT / 2 PM MT / 3 PM CT / 4 PM ET**
 
