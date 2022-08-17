@@ -33,7 +33,7 @@ welcome Vandana Singh to present his talk "Diversity in Open-source Software."
 This event will take place
 **Wednesday, Aug 31st at 1 PM PT / 2 PM MT / 3 PM CT / 4 PM ET**
 
-[**Register on Zoom**](https://purdue-edu.zoom.us/meeting/register/tJ0pcuqvpz0sHNwcuUg2kqylsD1bUPi53bm_)
+[**Register on Zoom**](https://emory.zoom.us/meeting/register/tJEsceiqrTwuEt3imLDh_7DNURubgHPKC4Tk)
 
 ### Abstract
 
