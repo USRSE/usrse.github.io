@@ -103,14 +103,14 @@ publication date of this post.
 
 | Location | Slack Channel | Membership |
 |---|---|---|
-| Arizona | `arizona-rse` | 17 |
-| California | `california-rse` | 38 |
-| Chicago Area, Illinois | `rg-chicago-rse` | 8 |
-| Denver Area, Colorado (Front Range) | `rg-frontrange` | 29 |
-| New England | `rg-new-england` | 13 |
-| New Mexico | `new-mexico-rse` | 9  |
-| New Orleans, LA (NOLA) | `rg-nola` | 3  |
-| Pennsylvania | `pennsylvania-rse` | 7  |
+| Arizona | `#arizona-rse` | 17 |
+| California | `#california-rse` | 38 |
+| Chicago Area, Illinois | `#rg-chicago-rse` | 8 |
+| Denver Area, Colorado (Front Range) | `#rg-frontrange` | 29 |
+| New England | `#rg-new-england` | 13 |
+| New Mexico | `#new-mexico-rse` | 9  |
+| New Orleans, LA (NOLA) | `#rg-nola` | 3  |
+| Pennsylvania | `#pennsylvania-rse` | 7  |
 
 Additionally, a layer has been added to the membership map
 showing the location of the active local groups. Each dot has an overlay
