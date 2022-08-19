@@ -12,8 +12,6 @@ time:
         end: 2022-08-31T21:00:00Z
 ---
 
-
-
 ## US-RSE DEI-WG Speaker Series Info
 
 The US-RSE DEI-WG is working to bring to the US-RSE community quarterly visits
@@ -24,7 +22,6 @@ US-RSE is committed to providing an inclusive environment with equitable
 treatment for all and to promoting and encouraging diversity throughout the RSE
 community. We encourage everyone to suggest speakers and topics and are open to
 different formats and timelines of the events. Feedback is much appreciated.
-
 
 ## Event
 
@@ -68,6 +65,5 @@ Professionals. Currently, Singh serves as an Executive Committee Member for
 Association for Computing Machinery-Women and the programming chair for the
 National Center for Women & Information Technology Academic Alliance. To know
 more about Dr. Singh, please visit her website at
-
  <https://sis.utk.edu/vandana/> or follow her on Twitter -
  <https://twitter.com/Vand_anaSingh> 
