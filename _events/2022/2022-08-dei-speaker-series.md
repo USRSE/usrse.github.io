@@ -1,7 +1,7 @@
 ---
 title: Diversity in Open Source Software
 subtitle: US-RSE DEI-WG Speaker Series
-expires: 2022-08-31 17:00:00 ET
+expires: 2022-09-01
 event_date: "August 31, 2022"
 layout: event
 duration: 60
