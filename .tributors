@@ -327,5 +327,10 @@
         "email": "adam@adamcooper.sh",
         "bio": "I make clouds full of lizards",
         "blog": "adamcooper.sh"
+    },
+    "rafmudaf": {
+        "name": "Rafael M Mudafort",
+        "email": "rafael.mudafort@nrel.gov",
+        "blog": "http://www.rafmudaf.com"
     }
 }

@@ -662,6 +662,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/14908880?v=4"
             ]
+        },
+        {
+            "login": "rafmudaf",
+            "name": "Rafael M Mudafort",
+            "contributions": [
+                "code"
+            ],
+            "profile": "http://www.rafmudaf.com",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/13797903?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
