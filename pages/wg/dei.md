@@ -10,7 +10,7 @@ set_last_modified: true
 
 The US-RSE Diversity, Equity, and Inclusion (DEI) working group is dedicated to supporting DEI through education, outreach, and more as described in [our mission statement]({{ site.baseurl }}/about/dei-mission). Those interested in contributing to this goal are encouraged to join in our bi-weekly Zoom meetings.
 
-To get involved with the DEI working group, visit the [`#dei-discussion`](https://usrse.slack.com/messages/dei-discussion) channel on the US-RSE slack, or contact the <a href="mailto:dei_wg@us-rse.org">DEI working group list</a>.
+To get involved with the DEI working group, visit the [`#dei-discussion`](https://usrse.slack.com/messages/dei-discussion) channel on the US-RSE slack, or contact the <a href="mailto:wg-dei@us-rse.org">DEI working group list</a>.
 
 
 # Work Products
