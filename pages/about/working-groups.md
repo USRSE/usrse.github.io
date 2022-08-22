@@ -21,7 +21,7 @@ engagement for the success of RSEs. We welcome and respect individuals of
 any race, color, caste, economic status, gender expression, gender identity,
 sexual orientation, disability, age, religion, national origin, and ethnicity.
 To get involved, visit the `#dei-discussion` channel on the US-RSE slack, or
-contact the <a href="mailto:dei_wg@us-rse.org">DEI working group list</a>.
+contact the <a href="mailto:wg-dei@us-rse.org">DEI working group list</a>.
 
 Visit the [DEI Working Group page]({{ site.baseurl }}/wg/dei/) for more details
 and a catalog of work products.
