@@ -33,6 +33,14 @@ The US-RSE DEI working group hosts monthly DEI Media Club discussions in which w
 
 These are announced via the [`#events`](https://usrse.slack.com/messages/events) and [`#dei-discussion`](https://usrse.slack.com/messages/dei-discussion) channels on the US-RSE slack, as well as in monthly newsletters, and are hosted virtually via Zoom.
 
+## Resources for DEI in RSE
+
+As part of its efforts, the US-RSE DEI working group is developing
+a curated collection of resources for improving diversity, equity,
+and inclusion specifically within the research software engineering community.
+The list of resources can be found here:
+[RSE-specific DEI resources](https://docs.google.com/spreadsheets/d/e/2PACX-1vRwwTmM29KHDXd7s5clv1EcwITxPMNi7yIyaBUS_rwvJw87yHqgMDJU-kANFZQ1W2y3sz9GHoizmh7v/pubhtml?gid=0&single=true)
+
 ## US-RSE Spanish Webpage Translation
 
 The US-RSE DEI working group is spearheading an effort to translate the US-RSE webpage into Spanish in order to broaden accessibility to a wider audience. This is an ongoing effort. To get involved, visit the [`#dei-discussion`](https://usrse.slack.com/messages/dei-discussion) channel on the US-RSE slack.
