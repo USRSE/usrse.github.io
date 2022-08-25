@@ -10,8 +10,13 @@ set_last_modified: true
 
 The US-RSE Diversity, Equity, and Inclusion (DEI) working group is dedicated to supporting DEI through education, outreach, and more as described in [our mission statement]({{ site.baseurl }}/about/dei-mission). Those interested in contributing to this goal are encouraged to join in our bi-weekly Zoom meetings.
 
+# Getting involved
+
 To get involved with the DEI working group, visit the [`#dei-discussion`](https://usrse.slack.com/messages/dei-discussion) channel on the US-RSE slack, or contact the <a href="mailto:wg-dei@us-rse.org">DEI working group list</a>.
 
+Suggestions for media, other resources (such as guides), speakers, and 
+future activities can also be submitted through this form:
+[Diversity, Equity, and Inclusion (DEI) Suggestions](https://docs.google.com/forms/d/e/1FAIpQLSdtCVAmJnUQCKnIXdn93xN5e9_zCQkrVdQsnPOiSBIcptma6w/viewform)
 
 # Work Products
 
@@ -32,6 +37,18 @@ We will continue to invite and host speakers as they are available. We welcome s
 The US-RSE DEI working group hosts monthly DEI Media Club discussions in which we invite participants to read, listen to, or watch the chosen monthly DEI media and come ready to discuss the content as a small group. In 2021, we hosted three sessions to discuss the book "Better Allies" by Karen Catlin and two Podcast sessions to discuss series 4, episode 6 of [reWorked - The Diversity and Inclusion Podcast](https://theewgroup.com/podcast/) and [Code Switch - The Folk Devil Made Me Do It](https://www.npr.org/2021/08/20/1029775224/the-folk-devil-made-me-do-it).
 
 These are announced via the [`#events`](https://usrse.slack.com/messages/events) and [`#dei-discussion`](https://usrse.slack.com/messages/dei-discussion) channels on the US-RSE slack, as well as in monthly newsletters, and are hosted virtually via Zoom.
+
+## Resources for DEI in RSE
+
+As part of its efforts, the US-RSE DEI working group is developing
+a curated collection of resources for improving diversity, equity,
+and inclusion specifically within the research software engineering community.
+The list of resources can be found here:
+[RSE-specific DEI resources](https://docs.google.com/spreadsheets/d/e/2PACX-1vRwwTmM29KHDXd7s5clv1EcwITxPMNi7yIyaBUS_rwvJw87yHqgMDJU-kANFZQ1W2y3sz9GHoizmh7v/pubhtml?gid=0&single=true)
+
+Please feel free to suggest additional media
+and other resources through this form:
+[Diversity, Equity, and Inclusion (DEI) Suggestions](https://docs.google.com/forms/d/e/1FAIpQLSdtCVAmJnUQCKnIXdn93xN5e9_zCQkrVdQsnPOiSBIcptma6w/viewform)
 
 ## US-RSE Spanish Webpage Translation
 
