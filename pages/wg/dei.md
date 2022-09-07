@@ -14,7 +14,7 @@ The US-RSE Diversity, Equity, and Inclusion (DEI) working group is dedicated to 
 
 To get involved with the DEI working group, visit the [`#dei-discussion`](https://usrse.slack.com/messages/dei-discussion) channel on the US-RSE slack, or contact the <a href="mailto:wg-dei@us-rse.org">DEI working group list</a>.
 
-Suggestions for media, other resources (such as guides), speakers, and 
+Suggestions for media, other resources (such as guides), speakers, and
 future activities can also be submitted through this form:
 [Diversity, Equity, and Inclusion (DEI) Suggestions](https://docs.google.com/forms/d/e/1FAIpQLSdtCVAmJnUQCKnIXdn93xN5e9_zCQkrVdQsnPOiSBIcptma6w/viewform)
 
@@ -28,9 +28,14 @@ The US-RSE DEI working group's first large initiative was to create a US-RSE DEI
 
 ## DEI Speaker Series
 
-The US-RSE DEI working group invites DEI speakers to present on DEI topics. In 2021, we hosted [Dr. Cherri Pancake]({{ site.url }}/events/2021/2021-03-dei-speaker-series/) as she presented her talk, "Can We Change the Face of Computing?" and [Joanne Esch and Andrea Bowen-Jones]({{ site.url }}/events/2021/2021-07-dei-speaker-series-ncwit) of the National Center for Women & Information Technology.
+The US-RSE DEI working group invites DEI speakers to present on DEI topics.
+A playlist with talks from all the speakers to date
+can be found on the US-RSE YouTube channel here:  
+<https://www.youtube.com/playlist?list=PLMgG8jy8w-8lUu8Uflt1WCsI8yzEEVybS>
 
-We will continue to invite and host speakers as they are available. We welcome suggestions regarding potential speakers.
+We will continue to invite and host speakers as they are available.
+Suggestions regarding potential speakers are welcome,
+by reaching out to the working group in Slack or through the form above.
 
 ## DEI Media Club
 
