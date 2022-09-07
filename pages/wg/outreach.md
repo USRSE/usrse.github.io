@@ -20,11 +20,13 @@ bi-weekly virtual meetings. To get involved, visit the
 slack or contact the
 <a href="mailto:wg-outreach@us-rse.org">Outreach working group list</a>.
 
+**Chair**: Miranda Mundt
+**Co-chair**: Joshua Teves
+
 # Work Products
 
-The US-RSE Outreach working group is new as of 2022. The following events were
-either completed before the creation of the official working group or are
-initiatives for future work.
+The official US-RSE Outreach working group began in 2022. The group has produced
+and hosts the following media, documents, and events.
 
 ## Existing Efforts
 
@@ -42,6 +44,9 @@ both for interviewees and hosts.
 US-RSE has had a presence at several conferences and workshops throughout
 its lifetime. For example:
 
+- Supercomputing 2022: 
+- eScience 2022: 
+- SciPy 2022: 
 - Supercomputing 2021: [RSE-in-HPC Workshop](https://us-rse.org/rse-hpc-2021/), Student Program Orientation
 - PEARC21: [RSE Career Panel](https://us-rse.org/2021-07-20-pearc21-panel/)
 - Supercomputing 2020: [RSE-in-HPC Workshop](https://us-rse.org/rse-hpc-2020/)
