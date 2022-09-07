@@ -35,7 +35,7 @@ aims to cast a spotlight on the differing backgrounds and paths professionals
 have taken to become RSEs and help shape our understanding of what an RSE really is.
 
 The podcast has existed since September 2019 and is looking for more volunteers
-both for interviewees and hosts.
+for interviewees, hosts, and audio editors.
 
 ## Conference/Workshop Participation and Organization
 
