@@ -28,9 +28,7 @@ slack or contact the
 The official US-RSE Outreach working group began in 2022. The group has produced
 and hosts the following media, documents, and events.
 
-## Existing Efforts
-
-### RSE Stories
+## RSE Stories
 
 Created by Vanessa Sochat, the [RSE Stories podcast](https://us-rse.org/rse-stories/)
 aims to cast a spotlight on the differing backgrounds and paths professionals
@@ -39,14 +37,16 @@ have taken to become RSEs and help shape our understanding of what an RSE really
 The podcast has existed since September 2019 and is looking for more volunteers
 both for interviewees and hosts.
 
-### Conference and Workshop Participation
+## Conference/Workshop Participation and Organization
 
 US-RSE has had a presence at several conferences and workshops throughout
-its lifetime. For example:
+its lifetime and continues to find new venues. A non-exhaustive list of
+previous or upcoming events:
 
-- Supercomputing 2022: 
-- eScience 2022: 
-- SciPy 2022: 
+- Supercomputing 2022: [RSE-in-HPC Workshop](https://us-rse.org/rse-hpc-2022/), Student Program Orientation
+- eScience 2022: [RSEs in eScience Workshop](https://us-rse.org/rse-escience-2022/)
+- US-RSE Virtual Workshop 2022: [Make it happen! Towards a diverse and sustainable future!](https://us-rse.org/virtual-workshop-2022/)
+- SciPy 2022: [(Re)Introducing the US-RSE Assocation to SciPy BoF](https://www.scipy2022.scipy.org/update-conference-schedule)
 - Supercomputing 2021: [RSE-in-HPC Workshop](https://us-rse.org/rse-hpc-2021/), Student Program Orientation
 - PEARC21: [RSE Career Panel](https://us-rse.org/2021-07-20-pearc21-panel/)
 - Supercomputing 2020: [RSE-in-HPC Workshop](https://us-rse.org/rse-hpc-2020/)
@@ -54,48 +54,44 @@ its lifetime. For example:
 - PEARC19: Building a Community of Research Software Engineers Birds of a Feather - [Proposal](https://ssl.linklings.net/conferences/pearc/pearc19_program/views/includes/files/bof111s1.pdf), [Event](https://us-rse.org/events/2019/pearc-2019/)
 - EDUCAUSE 2019: [Supporting Research Software and Research Software Engineers Poster](https://events.educause.edu/annual-conference/2019/agenda/supporting-research-software-development)
 
-### External Collaboration
 
-US-RSE has collaborated with other organizations in the past for events
-such as the [Early Career Panel](https://academicdatascience.org/cdn/early-career-panel)
-([Academic Data Science Alliance](https://academicdatascience.org/)).
+## Speaker Series
 
-## Future Directions
+We are participating in or spear-heading two different speaker series, starting
+in late 2022.
 
-### Conference and Workshop Participation
+### Funder Series
 
-US-RSE will continue to engage in conferences and workshops. We aim to
-broaden our presence at previously unrepresented conferences, including
-domain-specific conferences and general technical conferences.
+### Supercomputing Spotlights
 
-Towards this goal, the Outreach working group is putting together a call for
-volunteers for a [SciPy 2022](https://www.scipy2022.scipy.org/) Birds of a
-Feather RSE panel. If you are interested in participating as a panel member,
-please fill out [this form](https://forms.gle/PUcfcD7LnKVXnZfJ8).
+## SWAG Giveaways
 
-### Customizable RSE Introduction Template
 
-Many members of US-RSE have spoken in diverse environments to a variety of
-audiences about US-RSE. There has been no standardized presentation or
-template for ad-hoc events such as these.
 
-To address this gap, the Outreach working group
-aims to create an "Ad-hoc US-RSE Overview Template" that is customizable for
-different audiences but provides a basic set of standardized content.
+## Outreach Material Cultivation
 
-### Career Counseling
+Many US-RSE members have already conducted outreach as part of their daily lives.
+To promote reusability, the Outreach Working Group has created a
+[US-RSE Outreach Materials Google Drive](https://drive.google.com/drive/folders/1gu_0fhAZt7jjrDFWTHekyRLBboCZUnc8)
+where anyone can submit their materials, articles, blog posts, etc., for use
+and reference by other US-RSE members.
 
-As Research Software Engineering is still a relatively new professional
-designation, the Outreach working group would like to broaden awareness of
-paths that lead to RSEs throughout universities, colleges, and high schools.
+Please submit your own content in the appropriate folder and list it in the
+[main manifest document](https://docs.google.com/spreadsheets/d/1TOl1ApTvzKXeuO38ZSsrShNXN1uTU9AgetlFMJexKuk/edit?usp=sharing)!
 
-We aim to create connections with career counseling programs and provide
-resources about what RSEs are and how to become an RSE such that the younger
-generation is introduced to the concept sooner in their educational careers.
+## Rapid Interviews
 
-### Member Employer Outreach and Advocacy
+We are actively recruiting US-RSE members to submit short self-recorded interviews
+for use on our [website](https://us-rse.org) and at other events, such as Supercomputing 2022.
 
-Many US-RSE members' employers do not have a clear understanding of the RSE
-profession and a clear growth path for their employed RSEs. We hope to encourage
-outreach to member employers in order to broaden their understanding of RSE
-needs.
+We ask that interested members answer a short series of questions, including:
+
+- Tell us about you - where do you live, where do you work, what are your interests, what do you currently work on?
+- What are you working on right now that is exciting?
+- How did you hear about RSEs and the US-RSE?
+- Why did you join the US-RSE?
+- Describe your work as an RSE or RSE ally in one sentence.
+- Where would you like to see the RSE profession in 10 years?
+
+If you are interested in submitting a rapid interview, please refer to our
+[instruction guide](https://docs.google.com/document/d/1Q_D1mf8h5ryqy4y73j16g2-HY7wp-pBsIQj7O6k9u4s/edit?usp=sharing).
