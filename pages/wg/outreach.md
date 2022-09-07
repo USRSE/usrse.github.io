@@ -62,11 +62,43 @@ in late 2022.
 
 ### Funder Series
 
+A shoot-off of the US-RSE Outreach Working Group is organizing a Funder Series,
+a speaker series aimed at bringing representatives from funders (e.g., NSF, NIH)
+to speak to members of the US-RSE. These funders will bring essential information
+about opportunities, strategies, and starting points for finding funding.
+
+Please keep an eye out for future announcements regarding this series.
+
 ### Supercomputing Spotlights
+
+The SIAM Activity Group on Supercomputing (SIAG/SC) are starting a webinar
+series entitled Supercomputing Spotlights to inspire the next generation of
+students. The webinar features short TED-style presentations that highlight the
+impact and successes of high-performance computing (HPC).
+Initial info about the series is available via https://siag-sc.org.
+
+The US-RSE was asked if they would be interested, in addition to other
+international members of the RSE community, in exploring the concept of
+co-sponsoring a session in this series. SIAM/SC is pausing the series during
+the northern summer and plans to resume in the northern fall, aiming for
+monthly cadence with regular RSE/SC occurrences.
+
+We are aiming to create a small international RSE group to work on this which
+would suggest and work with potential speakers for these quarterly sessions
+(where the other monthly sessions would not be this group's responsibility).
+
+Please keep an eye out for future announcements regarding this series.
 
 ## SWAG Giveaways
 
+In August 2022, the Outreach Working Group hosted the first ever
+US-RSE Free SWAG Giveaway. This giveaway was available and open to all US-RSE
+members.
 
+![US-RSE Swag Options](/assets/img/us_rse_swag_giveaway.png)
+
+28 winners were selected to receive tumblers and backpacks, but all participants
+were sent official US-RSE stickers.
 
 ## Outreach Material Cultivation
 
