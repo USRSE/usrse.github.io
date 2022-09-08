@@ -48,6 +48,7 @@ previous or upcoming events:
 - US-RSE Virtual Workshop 2022: [Make it happen! Towards a diverse and sustainable future!](https://us-rse.org/virtual-workshop-2022/)
 - SciPy 2022: [(Re)Introducing the US-RSE Assocation to SciPy BoF](https://www.scipy2022.scipy.org/update-conference-schedule)
 - Supercomputing 2021: [RSE-in-HPC Workshop](https://us-rse.org/rse-hpc-2021/), Student Program Orientation
+- US-RSE Virtual Workshop 2021: [A Path Forward for Research Software Engineers](https://us-rse.org/virtual-workshop-2021/)
 - PEARC21: [RSE Career Panel](https://us-rse.org/2021-07-20-pearc21-panel/)
 - Supercomputing 2020: [RSE-in-HPC Workshop](https://us-rse.org/rse-hpc-2020/)
 - PEARC20: [Research Software Engineers Community Workshop](https://us-rse.org/events/2020/2020-07-pearc20/)
@@ -57,12 +58,12 @@ previous or upcoming events:
 
 ## Speaker Series
 
-We are participating in or spear-heading two different speaker series, starting
+We are participating in or spearheading two different speaker series, starting
 in late 2022.
 
 ### Funder Series
 
-A shoot-off of the US-RSE Outreach Working Group is organizing a Funder Series,
+A subgroup of the US-RSE Outreach Working Group is organizing a Funder Series,
 a speaker series aimed at bringing representatives from funders (e.g., NSF, NIH)
 to speak to members of the US-RSE. These funders will bring essential information
 about opportunities, strategies, and starting points for finding funding.
@@ -71,11 +72,11 @@ Please keep an eye out for future announcements regarding this series.
 
 ### Supercomputing Spotlights
 
-The SIAM Activity Group on Supercomputing (SIAG/SC) are starting a webinar
+The SIAM Activity Group on Supercomputing (SIAG/SC) is starting a webinar
 series entitled Supercomputing Spotlights to inspire the next generation of
 students. The webinar features short TED-style presentations that highlight the
 impact and successes of high-performance computing (HPC).
-Initial info about the series is available via https://siag-sc.org.
+Initial info about the series is available via [https://siag-sc.org](https://siag-sc.org).
 
 The US-RSE was asked if they would be interested, in addition to other
 international members of the RSE community, in exploring the concept of
@@ -83,7 +84,7 @@ co-sponsoring a session in this series. SIAM/SC is pausing the series during
 the northern summer and plans to resume in the northern fall, aiming for
 monthly cadence with regular RSE/SC occurrences.
 
-We are aiming to create a small international RSE group to work on this which
+We are aiming to create a small international RSE group to work on this that
 would suggest and work with potential speakers for these quarterly sessions
 (where the other monthly sessions would not be this group's responsibility).
 
@@ -97,7 +98,7 @@ members.
 
 ![US-RSE Swag Options](/assets/img/us_rse_swag_giveaway.png)
 
-28 winners were selected to receive tumblers and backpacks, but all participants
+28 winners were selected to receive tumblers and backpacks, but all entrants
 were sent official US-RSE stickers.
 
 ## Outreach Material Cultivation
