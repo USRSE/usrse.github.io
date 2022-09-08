@@ -35,7 +35,7 @@ aims to cast a spotlight on the differing backgrounds and paths professionals
 have taken to become RSEs and help shape our understanding of what an RSE really is.
 
 The podcast has existed since September 2019 and is looking for more volunteers
-both for interviewees and hosts.
+for interviewees, hosts, and audio editors.
 
 ## Conference/Workshop Participation and Organization
 
@@ -46,7 +46,7 @@ previous or upcoming events:
 - Supercomputing 2022: [RSE-in-HPC Workshop](https://us-rse.org/rse-hpc-2022/), Student Program Orientation
 - eScience 2022: [RSEs in eScience Workshop](https://us-rse.org/rse-escience-2022/)
 - US-RSE Virtual Workshop 2022: [Make it happen! Towards a diverse and sustainable future!](https://us-rse.org/virtual-workshop-2022/)
-- SciPy 2022: [(Re)Introducing the US-RSE Assocation to SciPy BoF](https://www.scipy2022.scipy.org/update-conference-schedule)
+- SciPy 2022: [(Re)Introducing the US-RSE Association to SciPy BoF](https://www.scipy2022.scipy.org/update-conference-schedule)
 - Supercomputing 2021: [RSE-in-HPC Workshop](https://us-rse.org/rse-hpc-2021/), Student Program Orientation
 - US-RSE Virtual Workshop 2021: [A Path Forward for Research Software Engineers](https://us-rse.org/virtual-workshop-2021/)
 - PEARC21: [RSE Career Panel](https://us-rse.org/2021-07-20-pearc21-panel/)
