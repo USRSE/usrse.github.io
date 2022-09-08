@@ -27,7 +27,7 @@ The Local and Regional Working Group consists of the following members:
 
 | Name              | Organization                     |
 | ----------------- | -------------------------------- |
-| Abbey Roeloff     | University of Michigan           |
+| Abbey Roelofs     | University of Michigan           |
 | Jordan Perr-Sauer | National Renewable Energy Lab    |
 | Mahmood Shad      | Harvard University               |
 | Rafael Mudafort   | National Renewable Energy Lab    |
