@@ -698,7 +698,7 @@ tool to generate a contributors graphic below.
       <td align="center"><a href="adamcooper.sh"><img src="https://avatars.githubusercontent.com/u/14908880?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adam Cooper</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=super-cooper" title="Code">💻</a></td>
       <td align="center"><a href="http://www.rafmudaf.com"><img src="https://avatars.githubusercontent.com/u/13797903?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rafael M Mudafort</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=rafmudaf" title="Code">💻</a></td>
     </tr>
-  </tobdy>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
