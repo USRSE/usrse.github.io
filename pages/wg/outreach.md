@@ -20,8 +20,7 @@ bi-weekly virtual meetings. To get involved, visit the
 slack or contact the
 <a href="mailto:wg-outreach@us-rse.org">Outreach working group list</a>.
 
-**Chair**: Miranda Mundt
-**Co-chair**: Joshua Teves
+**Co-chairs**: Miranda Mundt, Joshua Teves
 
 # Work Products
 
