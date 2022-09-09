@@ -127,6 +127,9 @@ Please submit your own content in the appropriate folder and list it in the
 We are actively recruiting US-RSE members to submit short self-recorded interviews
 for use on our [website](https://us-rse.org) and at other events, such as Supercomputing 2022.
 
+We will send some free swag to those who participate in this! You can choose
+from either a US-RSE official sticker or lapel pin.
+
 We ask that interested members answer a short series of questions, including:
 
 - Tell us about you - where do you live, where do you work, what are your interests, what do you currently work on?
