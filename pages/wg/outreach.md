@@ -27,6 +27,8 @@ slack or contact the
 The official US-RSE Outreach working group began in 2022. The group has produced
 and hosts the following media, documents, and events.
 
+------
+
 ## RSE Stories
 
 Created by Vanessa Sochat, the [RSE Stories podcast](https://us-rse.org/rse-stories/)
@@ -35,6 +37,8 @@ have taken to become RSEs and help shape our understanding of what an RSE really
 
 The podcast has existed since September 2019 and is looking for more volunteers
 for interviewees, hosts, and audio editors.
+
+------
 
 ## Conference/Workshop Participation and Organization
 
@@ -54,6 +58,7 @@ previous or upcoming events:
 - PEARC19: Building a Community of Research Software Engineers Birds of a Feather - [Proposal](https://ssl.linklings.net/conferences/pearc/pearc19_program/views/includes/files/bof111s1.pdf), [Event](https://us-rse.org/events/2019/pearc-2019/)
 - EDUCAUSE 2019: [Supporting Research Software and Research Software Engineers Poster](https://events.educause.edu/annual-conference/2019/agenda/supporting-research-software-development)
 
+------
 
 ## Speaker Series
 
@@ -77,7 +82,7 @@ students. The webinar features short TED-style presentations that highlight the
 impact and successes of high-performance computing (HPC).
 Initial info about the series is available via [https://siag-sc.org](https://siag-sc.org).
 
-The US-RSE was asked if they would be interested, in addition to other
+US-RSE was asked if they would be interested, in addition to other
 international members of the RSE community, in exploring the concept of
 co-sponsoring a session in this series. SIAM/SC is pausing the series during
 the northern summer and plans to resume in the northern fall, aiming for
@@ -88,6 +93,8 @@ would suggest and work with potential speakers for these quarterly sessions
 (where the other monthly sessions would not be this group's responsibility).
 
 Please keep an eye out for future announcements regarding this series.
+
+------
 
 ## SWAG Giveaways
 
@@ -100,6 +107,8 @@ members.
 28 winners were selected to receive tumblers and backpacks, but all entrants
 were sent official US-RSE stickers.
 
+------
+
 ## Outreach Material Cultivation
 
 Many US-RSE members have already conducted outreach as part of their daily lives.
@@ -110,6 +119,8 @@ and reference by other US-RSE members.
 
 Please submit your own content in the appropriate folder and list it in the
 [main manifest document](https://docs.google.com/spreadsheets/d/1TOl1ApTvzKXeuO38ZSsrShNXN1uTU9AgetlFMJexKuk/edit?usp=sharing)!
+
+------
 
 ## Rapid Interviews
 
