@@ -8,7 +8,7 @@ set_last_modified: true
 
 # Overview
 
-The US-RSE Outreach Working Group is dedicated to broadening the US-RSE's
+The US-RSE Outreach Working Group is dedicated to broadening US-RSE's
 engagement with the research software engineer (RSE) and wider computational
 science and engineering (CSE) communities. We strive to raise awareness of
 US-RSE as an association and RSE as a professional designation through
@@ -69,7 +69,7 @@ in late 2022.
 
 A subgroup of the US-RSE Outreach Working Group is organizing a Funder Series,
 a speaker series aimed at bringing representatives from funders (e.g., NSF, NIH)
-to speak to members of the US-RSE. These funders will bring essential information
+to speak to members of US-RSE. These funders will bring essential information
 about opportunities, strategies, and starting points for finding funding.
 
 Please keep an eye out for future announcements regarding this series.
@@ -134,8 +134,8 @@ We ask that interested members answer a short series of questions, including:
 
 - Tell us about you - where do you live, where do you work, what are your interests, what do you currently work on?
 - What are you working on right now that is exciting?
-- How did you hear about RSEs and the US-RSE?
-- Why did you join the US-RSE?
+- How did you hear about RSEs and US-RSE?
+- Why did you join US-RSE?
 - Describe your work as an RSE or RSE ally in one sentence.
 - Where would you like to see the RSE profession in 10 years?
 
