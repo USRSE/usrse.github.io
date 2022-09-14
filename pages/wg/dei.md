@@ -6,6 +6,8 @@ permalink: /wg/dei/
 set_last_modified: true
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VcC3QBqiZtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Overview
 
 The US-RSE Diversity, Equity, and Inclusion (DEI) working group is dedicated to supporting DEI through education, outreach, and more as described in [our mission statement]({{ site.baseurl }}/about/dei-mission). Those interested in contributing to this goal are encouraged to join in our bi-weekly Zoom meetings.
