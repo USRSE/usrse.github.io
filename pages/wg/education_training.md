@@ -6,6 +6,8 @@ permalink: /wg/education_training/
 set_last_modified: true
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z29Mv7hy4r4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Overview
 The Education & Training working group is for those that are interested in regular discussions about education and training for RSEs. The goal of the group is to develop resources and strategies that support RSE education and training and contribute to the establishment of a more formal career path for RSEs. Thus far, we have begun describing the types of people who work as RSEs and their training needs. We are also working on defining the list of skills often needed by RSEs. Furthermore, we’ve begun to assemble a list of resources for the US-RSE community, including a growing list of useful training links. The group currently meets monthly via Zoom and welcomes all newcomers. If you would like to join the conversation, please join the #education-training channel on the US-RSE Slack.
 
