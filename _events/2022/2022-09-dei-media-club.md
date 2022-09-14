@@ -9,7 +9,7 @@ repeated: false
 category: dei
 time:
     - - start: 2022-09-21T19:00:00Z
-        end: 2021-09-21T20:00:00Z
+        end: 2022-09-21T20:00:00Z
 ---
 
 The next meeting of the US-RSE
