@@ -699,6 +699,9 @@ tool to generate a contributors graphic below.
       <td align="center"><a href="http://www.rafmudaf.com"><img src="https://avatars.githubusercontent.com/u/13797903?v=4?s=100" width="100px;" alt="Rafael M Mudafort"/><br /><sub><b>Rafael M Mudafort</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=rafmudaf" title="Code">💻</a></td>
     </tr>
   </tbody>
+  <tfoot>
+    
+  </tfoot>
 </table>
 
 <!-- markdownlint-restore -->
