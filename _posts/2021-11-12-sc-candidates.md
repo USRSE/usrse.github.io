@@ -121,7 +121,7 @@ I was one of the founding members of US-RSE. In the early days of US-RSE, I led
 the community drafting of the US-RSE mission statement. I’ve been serving as
 the inaugural chair of the steering committee. I’ve spearheaded, organized, and
 participated in multiple US-RSE
-[panels](https://academicdatascience.org/cdn/early-career-panel) and
+[panels](https://academicdatascience.org/programs-and-communities/career-panels) and
 [workshops](https://us-rse.org/events/2020/2020-04-virtual-workshop/). I’ve
 written [blog
 posts](https://urssi.us/blog/2019/04/16/why-research-software-engineers/) and
@@ -296,7 +296,7 @@ RSE roles and the US-RSE Association.  In the past year, I helped organize and
 participated in a panel on RSE careers for PEARC21, which helps keep US-RSE
 connected to the broader research computing community.  I also helped organize
 and participated in an [early career
-panel](https://academicdatascience.org/cdn/early-career-panel) with the
+panel](https://academicdatascience.org/programs-and-communities/career-panels) with the
 [Academic Data Science Alliance](https://academicdatascience.org) on RSE and
 data science careers in academia.  I shared experiences trying to build RSE
 services at Northwestern via a workshop at SIAM-CSE21.
