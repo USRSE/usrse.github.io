@@ -1,9 +1,5 @@
 style: is-light
 items:
-  - title: US-RSE Virtual Workshop
-    subtitle: Engage with the community on all things RSE through presentations and discussions,<br>September 14 & 16, 2022, 1-4pm ET
-    link: /virtual-workshop-2022/
-    link_name: Get the Details
   - title: Research Software Engineers in eScience
     subtitle: Connect with other RSEs at eScience 2022 in Salt Lake City, October 11-14
     link: /rse-escience-2022/
@@ -12,4 +8,7 @@ items:
     subtitle: Join the discussion at this SC22 workshop in Dallas on November 13
     link: /rse-hpc-2022/
     link_name: Learn More
-    
+  - title: US-RSE Annual General Meeting
+    subtitle: Save the Date for our yearly community-wide meeting
+    link: /events/2022/2022-12-AGM/
+    link_name: Event Page
