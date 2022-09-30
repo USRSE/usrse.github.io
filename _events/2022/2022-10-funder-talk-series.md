@@ -18,7 +18,7 @@ US-RSE is happy to be starting a new series of conversations with funders for 1)
 
 ## Event
 
-The inaugural talk of the US-RSE Funder Talk Series will be with Hal Finkel, Ph.D. from the US Department of Energy's (DOE's) Office of Advanced Scientific Computing Research (ASCR). This even will take place **Monday, October 17th at 2 PM ET, 1 PM CT, 12 PM MT, 11 AM PT**
+The inaugural talk of the US-RSE Funder Talk Series will be with Hal Finkel, Ph.D. from the US Department of Energy's (DOE's) Office of Advanced Scientific Computing Research (ASCR). This event will take place **Monday, October 17th at 2 PM ET, 1 PM CT, 12 PM MT, 11 AM PT**
 
 
 Please join us in this interactive conversation. (If you can't participate in the interactive event, where you will be able to ask questions and help funders understand US-RSE, it will also be recorded.)
