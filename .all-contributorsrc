@@ -673,6 +673,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/13797903?v=4"
             ]
+        },
+        {
+            "login": "lrasmus",
+            "name": "Luke R.",
+            "contributions": [
+                "code"
+            ],
+            "profile": "http://informaticsnerd.blogspot.com",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/967970?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

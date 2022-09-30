@@ -1,7 +1,7 @@
 # The United States (US) Research Software Engineer Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-63-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-64-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -697,6 +697,9 @@ tool to generate a contributors graphic below.
       <td align="center"><a href="https://github.com/lmilechin"><img src="https://avatars.githubusercontent.com/u/13963460?v=4?s=100" width="100px;" alt="Lauren Milechin"/><br /><sub><b>Lauren Milechin</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=lmilechin" title="Code">💻</a></td>
       <td align="center"><a href="adamcooper.sh"><img src="https://avatars.githubusercontent.com/u/14908880?v=4?s=100" width="100px;" alt="Adam Cooper"/><br /><sub><b>Adam Cooper</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=super-cooper" title="Code">💻</a></td>
       <td align="center"><a href="http://www.rafmudaf.com"><img src="https://avatars.githubusercontent.com/u/13797903?v=4?s=100" width="100px;" alt="Rafael M Mudafort"/><br /><sub><b>Rafael M Mudafort</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=rafmudaf" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="http://informaticsnerd.blogspot.com"><img src="https://avatars.githubusercontent.com/u/967970?v=4?s=100" width="100px;" alt="Luke R."/><br /><sub><b>Luke R.</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=lrasmus" title="Code">💻</a></td>
     </tr>
   </tbody>
   <tfoot>
