@@ -9,7 +9,7 @@ set_last_modified: true
 
 The 2022 US-RSE Steering Committee elections are happening this December.
 
-If you're interested in becoming part of the Steering Committee, we suggest you have a look at [Guidance for Potential Steering Committee Candidates](https://us-rse.org/2022-06-04-info-interview-form-rse-group/).
+If you're interested in becoming part of the Steering Committee, we suggest you have a look at [Guidance for Potential Steering Committee Candidates](https://us-rse.org/2022-07-01-candidate-guidance/).
 
 ## Timeline
 
@@ -26,7 +26,7 @@ If you're interested in becoming part of the Steering Committee, we suggest you 
 
 ## Positions and Eligibility
 
-Four Steering Committee seats are open in this election, each for a 2-year term (January 1, 2023 through December 31, 2024). The following steering committee members have terms that end this year: Julia Damerow, Chris Hill, Daniel S. Katz, Lance Parsons. All US-RSE members in good standing as of the day nominations open (October 22, 2021) are eligible for nomination.
+Four Steering Committee seats are open in this election, each for a 2-year term (January 1, 2023 through December 31, 2024). The following steering committee members have terms that end this year: Julia Damerow, Chris Hill, Daniel S. Katz, Lance Parsons. All US-RSE members in good standing as of the day nominations open (October 24, 2022) are eligible for nomination.
 
 A membership verification email will be sent to all members in October. The message will be sent directly from leadership@us-rse.org, not through the Google group used for most email communications.   Individuals who do not receive the membership verification email may join the organization by filling out the membership form at [https://us-rse.org/join/](https://us-rse.org/join/).  For questions or help with membership matters, please contact Election Chair Christina Maimone on Slack or [via email](mailto:christina.maimone@northwestern.edu).
 
