@@ -159,14 +159,16 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 a {
-  color: #741755;
+  color: #f18dc7
+;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.125em;
   -webkit-transition: color .3s ease;
   transition: color .3s ease; }
   a:hover {
-    color: #741755; }
+    color: #f18dc7
+; }
 
 p {
   margin: 0 0 1em; }
@@ -1564,7 +1566,7 @@ textarea {
     .social-links a {
       margin-left: 20px;
       margin-right: 0; } }
-      
+
 
 
 a:focus, button:focus {
@@ -1734,7 +1736,8 @@ blockquote cite:before {
     padding-right: 5px;
 }
 a:visited {
-    color: #741755;
+    color: #f18dc7
+;
 }
 a:hover {
     color: #3a0638;
@@ -5400,4 +5403,3 @@ select.registration-menu:hover {
     background: url('data:image/svg+xml;
     utf8, <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="svg-inline--fa fa-caret-down fa-w-10" role="img" xmlns="http: //www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="white" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg>') #2e9f91 no-repeat calc(100% - 10px) !important;
 }
-
