@@ -23,4 +23,6 @@ names:
     name: Outreach
   funder:
     name: Funders Talk Series
+  social:
+    name: Social Events
 
