@@ -8,8 +8,8 @@ event_date: "October 11, 2022"
 layout: event
 category: workshop
 time:
-    - - start: 2022-10-11T17:30:00Z
-        end: 2022-10-11T20:30:00Z
+    - - start: 2022-10-11T19:30:00Z
+        end: 2022-10-11T22:30:00Z
 ---
 
 This workshop is to be held as part of [eScience 2022](https://www.escience-conference.org/2022/),
