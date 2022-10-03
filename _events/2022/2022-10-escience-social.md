@@ -20,7 +20,7 @@ The Outreach working group has two questions for you:
 If you answered _Yes_ to either question, we invite you to join your fellow
 RSEs at a to-be-determined location for a meal and conversation.
 
-We will be meeting at 6PM Mountain Time following the
+We will be meeting at 6 PM Mountain Time following the
 [RSEs in eScience workshop](https://us-rse.org/rse-escience-2022/).
 Check back for details on where we will meet!
 
