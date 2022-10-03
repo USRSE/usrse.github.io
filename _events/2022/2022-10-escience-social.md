@@ -24,5 +24,4 @@ We will be meeting at 6PM Mountain Time following the
 [RSEs in eScience workshop](https://us-rse.org/rse-escience-2022/).
 Check back for details on where we will meet!
 
-Any and all are welcome. Feel free to bring your friends and family and to
-have a relaxing, fun time with other US-RSE members.
+Any and all are welcome.
