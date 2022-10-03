@@ -3,13 +3,13 @@ title: Research Software Engineers in eScience (Workshop at eScience 2022)
 subtitle: Stories of Application of RSE Expertise to Scientific Research
 location: Salt Lake City, UT
 url: https://us-rse.org/rse-escience-2022
-expires: 2022-10-16
-event_date: "October 11–14, 2022"
+expires: 2022-10-15
+event_date: "October 11, 2022"
 layout: event
 category: workshop
 time:
     - - start: 2022-10-11T13:00:00Z
-        end: 2022-10-14T21:00:00Z
+        end: 2022-10-11T21:00:00Z
 ---
 
 This workshop is to be held as part of [eScience 2022](https://www.escience-conference.org/2022/),
@@ -35,6 +35,5 @@ on the US-RSE website and BSSw.io. Prospective participants are encouraged
 to submit their papers through the formal eScience 2022 process, through
 which proceedings will be published.
 
-The exact workshop date is
-**TO BE DETERMINED**, but more information can be found on the
+The exact workshop date is October 11th. More information can be found on the
 [workshop website](https://us-rse.org/rse-escience-2022).
