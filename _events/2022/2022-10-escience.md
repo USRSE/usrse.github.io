@@ -8,8 +8,8 @@ event_date: "October 11, 2022"
 layout: event
 category: workshop
 time:
-    - - start: 2022-10-11T13:00:00Z
-        end: 2022-10-11T21:00:00Z
+    - - start: 2022-10-11T17:30:00Z
+        end: 2022-10-11T20:30:00Z
 ---
 
 This workshop is to be held as part of [eScience 2022](https://www.escience-conference.org/2022/),
@@ -20,7 +20,7 @@ engineering and domain science research. These developers have a unique
 combination of skills to combine expertise in software development with a
 deep understanding of the scientific field for which software is being written.
 
-This workshop will present RSE contributions to scientific research through
+This half-day workshop will present RSE contributions to scientific research through
 a series of talks that explore scientific project needs, how access to RSEs
 made the project successful, and how this work can be applied to future
 scientific research efforts. The workshop will be of interest to existing
@@ -35,5 +35,6 @@ on the US-RSE website and BSSw.io. Prospective participants are encouraged
 to submit their papers through the formal eScience 2022 process, through
 which proceedings will be published.
 
-The exact workshop date is October 11th. More information can be found on the
+The workshop is October 11th from 1:30 to 4:30 PM MT.
+More information can be found on the
 [workshop website](https://us-rse.org/rse-escience-2022).
