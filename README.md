@@ -124,6 +124,12 @@ It's suggested to look in [_data/events.yaml](_data/events.yaml) for the most up
  - conference: Conferences
  - workshop: Workshops
  - association-meeting: US-RSE Annual General Meeting and similar association-wide meetings
+ - election: Steering committee election deadlines
+ - education-training: Education and training events
+ - community-learning: Community learning
+ - outreach: Outreach events
+ - funder: Funders Talk series
+ - social: Miscellaneous social events
 
 #### How do I add an all day event?
 
