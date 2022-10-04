@@ -9,7 +9,7 @@ repeated: false
 category: education-training
 time:
     - - start: 2022-10-19T20:00:00Z
-        end: 2022-10-17T21:00:00Z
+        end: 2022-10-19T21:00:00Z
 ---
 
 ## US-RSE Education & Training Seminar Series
