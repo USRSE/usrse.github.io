@@ -3,6 +3,7 @@ layout: page
 title: Diversity, Equity, & Inclusion Working Group
 subtitle:
 permalink: /wg/dei/
+menubar: working-groups
 set_last_modified: true
 ---
 

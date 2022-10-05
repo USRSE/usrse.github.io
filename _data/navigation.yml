@@ -19,8 +19,6 @@
       link: about/finances/
     - name: Code of Conduct
       link: about/code-of-conduct/
-    - name: Working Groups
-      link: about/working-groups/
     - name: Contact
       link: about/contact/
 - name: Events
@@ -65,8 +63,10 @@
     - name: News Archive
       link: archive
 - name: Working Groups
-  link: about/working-groups/
+  link: working-groups/
   dropdown:
+    - name: All Working Groups
+      link: working-groups
     - name: Diversity, Equity, and Inclusion
       link: wg/dei
     - name: Education and Training

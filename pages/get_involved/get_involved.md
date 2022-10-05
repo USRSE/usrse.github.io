@@ -85,14 +85,14 @@ Going to a conference related to RSEs?  Propose a talk, panel, BoF, or other eve
 
 ### Join a Working Group
 
-We organize our community through [working groups](https://us-rse.org/about/working-groups/).
+We organize our community through [working groups](/working-groups/).
 Find out more on their pages below, join the relevant channels on Slack,
 and attend meetings so you can contribute!
 
-* [Diversity, Equity and Inclusion](https://us-rse.org/wg/dei/), #dei-discussion channel in Slack
-* [Website](https://us-rse.org/about/working-groups/), #website channel in Slack
-* [Education](https://us-rse.org/about/working-groups/) #education-training channel in Slack
-* [Outreach](https://us-rse.org/wg/outreach/), #wg-outreach channel in Slack
+* [Diversity, Equity and Inclusion](/wg/dei/), #dei-discussion channel in Slack
+* [Website](/wg/website/), #website channel in Slack
+* [Education](/wg/education_training/) #education-training channel in Slack
+* [Outreach](/wg/outreach/), #wg-outreach channel in Slack
 
 Don't see something you like here? We want to make a space for you in the US-RSE community. A how-to guide for putting together working groups is in progress (please keep an eye on [this issue](https://github.com/USRSE/outreach-wg/issues/1))
 

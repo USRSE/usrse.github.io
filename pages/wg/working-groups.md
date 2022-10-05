@@ -1,10 +1,9 @@
 ---
 layout: page
 title: Working Groups
-permalink: /about/working-groups/
+permalink: /working-groups/
 subtitle: Focused groups to tackle community topics
-menubar: about
-menubar_toc: true
+menubar: working-groups
 set_last_modified: true
 ---
 
