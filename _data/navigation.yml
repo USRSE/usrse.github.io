@@ -64,7 +64,17 @@
       link: news
     - name: News Archive
       link: archive
-
+- name: Working Groups
+  link: about/working-groups/
+  dropdown:
+    - name: Diversity, Equity, and Inclusion
+      link: wg/dei
+    - name: Education and Training
+      link: wg/education_training
+    - name: Outreach
+      link: wg/outreach
+    - name: Website
+      link: wg/website
 - name: Resources
   dropdown:
     - name: RSE Resources
