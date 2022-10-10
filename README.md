@@ -708,9 +708,6 @@ tool to generate a contributors graphic below.
       <td align="center"><a href="http://informaticsnerd.blogspot.com"><img src="https://avatars.githubusercontent.com/u/967970?v=4?s=100" width="100px;" alt="Luke R."/><br /><sub><b>Luke R.</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=lrasmus" title="Code">💻</a></td>
     </tr>
   </tbody>
-  <tfoot>
-    
-  </tfoot>
 </table>
 
 <!-- markdownlint-restore -->
