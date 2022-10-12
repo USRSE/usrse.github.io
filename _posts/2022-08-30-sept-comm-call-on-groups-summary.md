@@ -62,14 +62,13 @@ The US-RSE Diversity, Equity, and Inclusion (DEI) working group is dedicated to
 supporting DEI through education, outreach,
 and more as described in our mission statement.
 
-As part of the effort to continually educate ourselves through research on
-best practices focused on diversity, equity, and inclusion.
-The group organizes a regular DEI Speaker Series
-providing a diverse and broad perspective on best practices and issues
-focused on diversity, equity, and inclusion.
-The DEI Media Club provides members an opportunity
-for a deeper discussion around relevant books, podcasts, and videos.
-Those discussions can also continue on the #dei-discussion channel.
+The DEI working group believes that continuous education is crucial to
+improving the diversity, equity and inclusion in our community. To that end,
+the group ogranizes a regular DEI Speaker Series where we invite experts to
+provide a broad perspective on a variety of DEI related issues. A regular DEI
+Media Club also provides members an opportunity for a deeper discussion around
+relevant books, podcasts, and videos. Those discussions also continue on
+the #dei-discussion channel in Slack.
 
 The group is currently working on a couple of initiatives.
 The first is building up a list of DEI Resources into a set of Resource Toolkits.
