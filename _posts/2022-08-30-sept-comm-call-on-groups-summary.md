@@ -39,7 +39,7 @@ These resources are available on the working group web page.
 We are currently focused on establishing a seminar series
 that will consist of both technical talks and tutorials.
 These seminars will focus on teaching relevant skills
-and best practices for the community.
+and best practices to members of the community.
 We plan to alternate between technical talks and hands-on tutorials.
 Our first technical talk will be "Agile Project Management for Research Software"
 by Angel Hering on Wednesday, October 19 at 4pm ET (1pm PT), we hope to see you there!
