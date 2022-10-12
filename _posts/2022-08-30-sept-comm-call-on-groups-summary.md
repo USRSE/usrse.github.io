@@ -31,7 +31,7 @@ who have an interest in training and educating RSEs.
 Our goal is to develop resources and strategies
 that support RSE education and training and contribute to the establishment
 of a more formal career path for RSEs.
-We meet monthly over Zoom to discuss and work on ongoing efforts.
+We meet monthly on Zoom to discuss and work on ongoing efforts.
 In the past this work has included compiling lists of training links
 as well as a list of skills that a Research Software Engineering might possess.
 These resources are available on the working group web page.
