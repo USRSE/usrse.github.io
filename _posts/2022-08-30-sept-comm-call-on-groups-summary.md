@@ -47,7 +47,7 @@ by Angel Hering scheduled for Wednesday, October 19 at 4pm ET (1pm PT). We hope 
 If you would like to participate in the the working group,
 let us know on Slack in the #wg-education_training
 or #education-training channels.
-and we would be happy to have you join.
+You are also welcome to join the monthly zoom call.
 
 
 ### Diversity, Equity, and Inclusion
