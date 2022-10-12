@@ -42,7 +42,7 @@ These seminars will focus on teaching relevant skills
 and best practices to members of the community.
 We plan to alternate between technical talks and hands-on tutorials.
 Our first technical talk will be "Agile Project Management for Research Software"
-by Angel Hering on Wednesday, October 19 at 4pm ET (1pm PT), we hope to see you there!
+by Angel Hering scheduled for Wednesday, October 19 at 4pm ET (1pm PT). We hope to see you there!
 
 If you would like to participate in the the working group,
 let us know on Slack in the #wg-education_training
