@@ -47,7 +47,6 @@ by Angel Hering scheduled for Wednesday, October 19 at 4pm ET (1pm PT). We hope 
 If you would like to participate in the the working group,
 let us know on Slack in the #wg-education_training
 or #education-training channels.
-We meet over Zoom the first Tuesday of every month at 11:30am ET,
 and we would be happy to have you join.
 
 
