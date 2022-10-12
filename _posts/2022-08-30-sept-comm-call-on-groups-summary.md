@@ -72,7 +72,7 @@ for a deeper discussion around relevant books, podcasts, and videos.
 Those discussions can also continue on the #dei-discussion channel.
 
 The group is currently working on a couple of initiatives.
-The first is building up a list of DEI Resources into a set of Resource Tool-Kits.
+The first is building up a list of DEI Resources into a set of Resource Toolkits.
 Each toolkit will focus on how DEI issues affect a specific aspect of being an RSE
 such as managing and hiring or the various pathways to becoming an RSE.
 
