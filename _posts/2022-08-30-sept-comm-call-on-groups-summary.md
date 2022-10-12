@@ -27,7 +27,7 @@ and help you understand how you can get involved.
 
 The goal of the Education and Training working group
 is to facilitate collaboration among US-RSE members
-who have an a group with an interest in training and education of RSEs.
+who have an interest in training and educating RSEs.
 Our goal is to develop resources and strategies
 that support RSE education and training and contribute to the establishment
 of a more formal career path for RSEs.
