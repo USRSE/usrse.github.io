@@ -37,7 +37,7 @@ as well as a list of skills that Research Software Engineers might possess.
 These resources are available on the working group web page.
 
 We are currently focused on establishing a seminar series
-that will consist of both technical talks and tutorials.
+consisting of technical talks and tutorials.
 These seminars will focus on teaching relevant skills
 and best practices to members of the community.
 We plan to alternate between technical talks and hands-on tutorials.
