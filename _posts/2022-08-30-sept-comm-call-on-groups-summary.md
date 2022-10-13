@@ -134,7 +134,7 @@ and the form to submit is found
 
 ### Website
 #### Co-Chairs: TBD (Ian Cosden standing in)
-* [Presentation Slide](https://docs.google.com/presentation/d/1K1YJ6pZ0CtiE2kYTiH_4ivQKvUrRZxb63Z6bw7X9gPQedit#slide=id.g15135ed554c_0_1)
+* [Presentation Slide](https://docs.google.com/presentation/d/1K1YJ6pZ0CtiE2kYTiH_4ivQKvUrRZxb63Z6bw7X9gPQ/edit#slide=id.g15135ed554c_0_1)
 * Slack channel: #website
 * [Page on US-RSE site](https://us-rse.org/wg/website/)
 
