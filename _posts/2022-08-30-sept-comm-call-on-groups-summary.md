@@ -157,7 +157,7 @@ or even familiar with the specific technologies to make an impact!
 We can help get you started.
 
 ### Elevating RSEs
-#### Kenton McHenry
+#### Chair: Kenton McHenry
 * [Presentation Slides](https://docs.google.com/presentation/d/1s_5EhuxKm2aJbvJ4X-Lb2BXOputs5GzZhJ4_ion2Nfg/edit#slide=id.p)
 * Slack channel: #wg-elevate-rse
 * [Form to collect RSE community stories](https://docs.google.com/forms/d/1zCf4CShRvK3ec1IJasTgGi0_a568gPVRZPMlv3nmlZY)
