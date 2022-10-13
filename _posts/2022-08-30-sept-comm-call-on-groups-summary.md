@@ -130,7 +130,7 @@ that will give watchers a quick insight into the members of
 US-RSE. Instructions can be found
 [here](https://docs.google.com/document/d/1Q_D1mf8h5ryqy4y73j16g2-HY7wp-pBsIQj7O6k9u4s/edit)
 and the form to submit is found
-[here](https://forms.gle/2niqzDcQUHPAij246).
+[here](https://forms.gle/qcg6AjpLAFxvXy879).
 
 ### Website
 #### Co-Chairs: TBD (Ian Cosden standing in)
