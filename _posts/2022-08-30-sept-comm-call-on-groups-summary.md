@@ -92,7 +92,7 @@ We meet on Zoom every two weeks, Wednesdays at 3 PM ET / 12 PM PT.
 * Slack channel: #wg-outreach
 * Slack group: @wg-or
 * [Page on US-RSE site](https://us-rse.org/wg/outreach/)
-* Email address: wg-outreach@us-rse.org
+* Email: [wg-outreach@us-rse.org](mailto:wg-outreach@us-rse.org)
 
 The US-RSE Outreach Working Group (officially started in early 2022)
 is dedicated to broadening US-RSE’s engagement with the
