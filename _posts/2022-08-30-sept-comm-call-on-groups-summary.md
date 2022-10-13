@@ -1,4 +1,9 @@
-# Summary of Our September Community Call on Groups in US-RSE
+---
+layout: post
+title: Summary of Our September Community Call on Groups in US-RSE
+tags: [community call]
+posted_by: David Nicholson
+---
 
 US-RSE is a community driven organization,
 but do you know all the groups in the community?
