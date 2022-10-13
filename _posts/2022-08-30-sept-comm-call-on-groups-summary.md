@@ -6,7 +6,7 @@ You may have heard someone talking about a “working group,”
 but do you know what that means?
 
 This month’s community call was all about groups within US-RSE!
-It’s the first in a series we’re calling “Getting to know US-RSE”.
+It’s the first in a series we’re calling “Getting to know US-RSE.”
 The call featured short talks from all the current working groups,
 including Education & Training; Outreach; and Diversity, Equity, and Inclusion.
 
