@@ -2,7 +2,7 @@
 
 US-RSE is a community driven organization,
 but do you know all the groups in the community?
-You may have heard someone talking about a “working group”,
+You may have heard someone talking about a “working group,”
 but do you know what that means?
 
 This month’s community call was all about groups within US-RSE!
