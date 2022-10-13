@@ -104,7 +104,7 @@ with industry, academia, national labs, and students.
 
 During the US-RSE September Community Call,
 co-chairs Miranda Mundt (Sandia National Laboratories)
-and Joshua Teves (National Institute of Health) detailed the engagement
+and Joshua Teves (National Institutes of Health) detailed the engagement
 of the Outreach WG so far this year at SciPy (Birds of a Feather Panel),
 eScience (Workshop), and Supercomputing (Workshop).
 
