@@ -11,7 +11,7 @@ The call features short talks from all the current working groups,
 including Education & Training; Outreach; and Diversity, Equity, and Inclusion.
 
 In this blog post we want to share with you a little bit
-from the call, about five of the working groups in US-RSE.
+from the call---specifically, about five of the working groups in US-RSE.
 Our goal is to give you a sense of where the community is putting its efforts,
 and help you understand how you can get involved.
 
