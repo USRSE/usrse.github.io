@@ -207,7 +207,7 @@ how we’re testing the suggested guidelines,
 and how we’d like to promote more affinity groups within US-RSE.
 
 To find out more about getting involved,
-and to find out about the next community call on
+and the next community call on
 getting to know US-RSE,
 be sure to [join](https://us-rse.org/join/)
 our organization!
