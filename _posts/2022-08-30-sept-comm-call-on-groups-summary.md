@@ -12,7 +12,7 @@ including Education & Training; Outreach; and Diversity, Equity, and Inclusion.
 
 In this blog post we want to share with you a little bit
 from the call, about five of the working groups in US-RSE.
-Our gaol is to give you a sense of where the community is putting its efforts,
+Our goal is to give you a sense of where the community is putting its efforts,
 and help you understand how you can get involved.
 
 ## US-RSE Working Groups
