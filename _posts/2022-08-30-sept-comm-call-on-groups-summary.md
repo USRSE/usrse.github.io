@@ -63,7 +63,7 @@ supporting DEI through education, outreach,
 and more as described in our mission statement.
 
 The DEI working group believes that continuous education is crucial to
-improving the diversity, equity and inclusion in our community. To that end,
+improving the diversity, equity, and inclusion in our community. To that end,
 the group ogranizes a regular DEI Speaker Series where we invite experts to
 provide a broad perspective on a variety of DEI related issues. A regular DEI
 Media Club also provides members an opportunity for a deeper discussion around
