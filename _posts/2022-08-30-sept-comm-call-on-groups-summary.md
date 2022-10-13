@@ -128,7 +128,7 @@ for use in their “Rapid Interviews” effort.
 These recordings are answers to a series of questions
 that will give watchers a quick insight into the members of
 US-RSE. Instructions can be found
-[here](https://docs.google.com/document/d/1Q_D1mf8h5ryqy4y73j16g2-HY7wp-pBsIQj7O6k9u4s/edit)
+[here](https://docs.google.com/document/d/1Ee21H6Ql9aYzrXQXQ90Y8RHXqqgmxlEsjTPbRLpAxSo/edit?usp=sharing)
 and the form to submit is found
 [here](https://forms.gle/qcg6AjpLAFxvXy879).
 
