@@ -87,7 +87,7 @@ and the #wg-diversity-equity-inclusion channel.
 We meet on Zoom every two weeks, Wednesdays at 3 PM ET / 12 PM PT.
 
 ### Outreach
-#### Miranda Mundt and Josh Teves
+#### Co-Chairs: Miranda Mundt and Josh Teves
 * [presentation slide](https://docs.google.com/presentation/d/1wRVREocSYy_E_40vXcWQAzSbWXEcwg3r/edit#slide=id.p1)
 * Slack channel: #wg-outreach
 * Slack group: @wg-or
