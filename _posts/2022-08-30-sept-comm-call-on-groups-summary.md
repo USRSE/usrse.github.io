@@ -56,7 +56,7 @@ You are also welcome to join the monthly zoom call.
 * Slack channel (working group): #wg-diversity-equity-inclusion
 * Slack channel (general discussion of DEI in RSE): #dei-discussion
 * [Page on US-RSE site](https://us-rse.org/wg/dei/)
-* Email: wg-dei@us-rse.org
+* Email: [wg-dei@us-rse.org](mailto:wg-dei@us-rse.org)
 
 The US-RSE Diversity, Equity, and Inclusion (DEI) working group is dedicated to
 supporting DEI through education, outreach,
