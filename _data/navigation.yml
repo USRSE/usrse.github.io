@@ -23,15 +23,6 @@
       link: working-groups/
     - name: Contact
       link: about/contact/
-- name: Events
-  link: events/
-  dropdown:
-    - name: Events
-      link: events
-    - name: Calendar
-      link: events/calendar
-    - name: Archive
-      link: events/archive/
 - name: Get Involved
   link: join/
   dropdown:
@@ -45,6 +36,28 @@
       link: share
     - name: Community Whitepapers
       link: community-whitepapers
+- name: Working Groups
+  link: working-groups/
+  dropdown:
+    - name: All Working Groups
+      link: working-groups
+    - name: Diversity, Equity, and Inclusion
+      link: wg/dei
+    - name: Education and Training
+      link: wg/education_training
+    - name: Outreach
+      link: wg/outreach
+    - name: Website
+      link: wg/website
+- name: Events
+  link: events/
+  dropdown:
+    - name: Events
+      link: events
+    - name: Calendar
+      link: events/calendar
+    - name: Archive
+      link: events/archive/
 - name: Job Board
   link: jobs/
   dropdown:
@@ -64,19 +77,6 @@
       link: news
     - name: News Archive
       link: archive
-- name: Working Groups
-  link: working-groups/
-  dropdown:
-    - name: All Working Groups
-      link: working-groups
-    - name: Diversity, Equity, and Inclusion
-      link: wg/dei
-    - name: Education and Training
-      link: wg/education_training
-    - name: Outreach
-      link: wg/outreach
-    - name: Website
-      link: wg/website
 - name: Resources
   dropdown:
     - name: RSE Resources
