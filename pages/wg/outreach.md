@@ -2,6 +2,7 @@
 layout: page
 title: Outreach Working Group
 subtitle:
+menubar: working-groups
 permalink: /wg/outreach/
 set_last_modified: true
 ---

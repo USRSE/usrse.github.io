@@ -1,0 +1,10 @@
+- label: Working Groups
+  items:
+    - name: Diversity, Equity, and Inclusion
+      link: wg/dei
+    - name: Education and Training
+      link: wg/education_training
+    - name: Outreach
+      link: wg/outreach
+    - name: Website
+      link: wg/website

@@ -2,6 +2,7 @@
 layout: page
 title: Website Working Group
 subtitle:
+menubar: working-groups
 permalink: /wg/website/
 set_last_modified: true
 ---
