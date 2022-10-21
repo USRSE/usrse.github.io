@@ -72,7 +72,7 @@ The Candidate Statement is your opportunity to make a case for your preparedness
 
 As we are a community-driven organization, one of the easiest ways to prepare to run for the Steering Committee is to actively participate and contribute to US-RSE activities. This is beneficial in many ways. Participating in Slack will give you a sense for how much time it takes to keep up with our virtual community. Attending community calls and working groups will give you more awareness of the organization’s needs, current initiatives, and the general culture. If you address these areas of growth in your candidate statement, the US-RSE members are more likely to feel heard and that you will best represent them. Perhaps most importantly, your participation in the community ensures that voting members will be familiar with you, which is a factor in elections. In summary, taking initiative within the community is our top recommendation when preparing to nominate yourself for the Steering Committee. Here are some ways you can do so:
 
-* Join a [working group](https://us-rse.org/about/working-groups/)
+* Join a [working group](https://us-rse.org/working-groups/)
   * Actively participate in the group
   * Be the lead on an initiative
   * Become a co-chair

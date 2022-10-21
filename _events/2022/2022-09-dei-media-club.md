@@ -13,7 +13,7 @@ time:
 ---
 
 The next meeting of the US-RSE
-[DEI-WG](https://us-rse.org/about/working-groups/#diversity-equity-and-inclusion-dei)
+[DEI-WG](https://us-rse.org/wg/dei/)
 Media Club will be on September 21, 2022 at 15ET / 14CT / 13MT / 11PT.
 
 For this next meeting,

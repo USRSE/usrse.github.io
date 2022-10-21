@@ -14,7 +14,7 @@ time:
 
 In an effort to promote continual education and discussion, the [Diversity,
 Equity, and Inclusion Working Group
-(DEI-WG)](https://us-rse.org/about/working-groups/#diversity-equity-and-inclusion-dei)
+(DEI-WG)](https://us-rse.org/wg/dei/)
 at the US-RSE Association presents its next instance of the DEI Media Club.
 
 For this next session of the DEI Media Club, we will be discussing an episode
