@@ -13,7 +13,7 @@ If you're interested in becoming part of the Steering Committee, we suggest you 
 
 ## Timeline
 
-* Nominations open: October 24, 2022
+* [Nominations open](https://docs.google.com/forms/d/e/1FAIpQLSeo7GfAiWXPioHpl4s5BWaYHl5FIxMWeIaTAY5ZNhJDgBAgXQ/viewform?usp=sf_link): October 24, 2022
 * Nominations due: November 4, 2022
 * Candidate meeting: during the week of November 7-11, 2022
 * Candidates finalize information: November 18, 2022
@@ -55,14 +55,14 @@ Additionally, Steering Committee members are expected to:
 
 ## Nominations and Candidate Information
 
-Nominations open on October 24, 2022 and close on November 4, 2022.
+[Nominations](https://docs.google.com/forms/d/e/1FAIpQLSeo7GfAiWXPioHpl4s5BWaYHl5FIxMWeIaTAY5ZNhJDgBAgXQ/viewform?usp=sf_link) open on October 24, 2022 and close on November 4, 2022.
 
 Interested members are encouraged to nominate themselves.
 Alternatively, if you know of a member who you think would make a good
 candidate, you can submit a nomination 
 for someone else, who will be invited to run.  All US-RSE members in good standing are eligible to be nominated as candidates.
 
-On the nomination form, expect to provide the following information
+On the [nomination form](https://docs.google.com/forms/d/e/1FAIpQLSeo7GfAiWXPioHpl4s5BWaYHl5FIxMWeIaTAY5ZNhJDgBAgXQ/viewform?usp=sf_link), expect to provide the following information
 
 **If Nominating Someone Else:**
 
@@ -74,6 +74,8 @@ Nominations of others will only be shared with the Election Chair and the
 nominated individual. The Election Chair will contact the nominated individual
 to let them know they were nominated, and by whom, and to confirm their
 interest in participating. The information will not be made public.
+
+[Nomination Form](https://docs.google.com/forms/d/e/1FAIpQLSeo7GfAiWXPioHpl4s5BWaYHl5FIxMWeIaTAY5ZNhJDgBAgXQ/viewform?usp=sf_link)
 
 **Self-nomination or Accepted Nomination:**
 
@@ -87,6 +89,8 @@ All candidate information will be shared on the US-RSE website.  Additionally, c
 An [#election channel is available on
 Slack](https://usrse.slack.com/archives/C01BC66Q16E) for any discussion with or
 about candidates.
+
+[Nomination Form](https://docs.google.com/forms/d/e/1FAIpQLSeo7GfAiWXPioHpl4s5BWaYHl5FIxMWeIaTAY5ZNhJDgBAgXQ/viewform?usp=sf_link)
 
 ## Candidate Meeting
 
