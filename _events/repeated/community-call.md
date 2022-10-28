@@ -1,5 +1,5 @@
 ---
-title: Community Call
+title: Odd Months Community Call
 subtitle:
 location: Virtual
 expires: 2025-12-11
@@ -21,11 +21,11 @@ rrule:
   - RRULE:UNTIL=20251211T120000;FREQ=MONTHLY;INTERVAL=2;BYDAY=+2TH
 ---
 
-The USRSE monthly community calls alternate between the second Thursday (12:00-1:00pm ET) and second Friday (2:00-3:00pm ET) of each month. Community call topics, agenda and zoom registration
-announcements are posted to Slack and sent to USRSE email accounts.
+The USRSE community calls of each odd month (Jan, Mar, May, Jul, Sep, Nov) take place on the second Thursday of the month, 12:00-1:00pm ET on Zoom. Community call topics, agenda and zoom registration announcements are posted to Slack and sent to USRSE email accounts.
 
-Community calls typically have a topical focus. They provide a forum for USRSE members
-to compare experiences around a topic, hang-out and chat on zoom.
+Community calls typically have a topical focus. They provide a forum for USRSE members to compare experiences around a topic, hang-out and chat on zoom.
+
+Community calls alternate between the second Thursday (12:00-1:00pm ET) of each odd month and second Friday (2:00-3:00pm ET) of each even month. 
 
 Any and all suggestions for topics are
 welcome at [https://github.com/USRSE/monthly-community-calls/issues](https://github.com/USRSE/monthly-community-calls/issues).
