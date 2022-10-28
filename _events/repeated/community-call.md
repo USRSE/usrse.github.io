@@ -21,7 +21,7 @@ rrule:
   - RRULE:UNTIL=20251211T120000;FREQ=MONTHLY;INTERVAL=2;BYDAY=+2TH
 ---
 
-The USRSE community calls of each odd month take place on the second Thursday of the month, 12:00-1:00pm ET on Zoom. Community call topics, agenda and zoom registration announcements are posted to Slack and sent to USRSE email accounts.
+The USRSE community calls of each odd month (Jan, Mar, May, Jul, Sep, Nov) take place on the second Thursday of the month, 12:00-1:00pm ET on Zoom. Community call topics, agenda and zoom registration announcements are posted to Slack and sent to USRSE email accounts.
 
 Community calls typically have a topical focus. They provide a forum for USRSE members to compare experiences around a topic, hang-out and chat on zoom.
 

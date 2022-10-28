@@ -21,7 +21,7 @@ rrule:
   - RDATE;TZID=America/New_York:20220610T140000
 ---
 
-The USRSE community calls of each even month take place on the second Friday of the month, 2:00-3:00pm ET on Zoom. Community call topics, agenda and zoom registration announcements are posted to Slack and sent to USRSE email accounts.
+The USRSE community calls of each even month (Feb, Apr, Jun, Aug, Oct, Dec) take place on the second Friday of the month, 2:00-3:00pm ET on Zoom. Community call topics, agenda and zoom registration announcements are posted to Slack and sent to USRSE email accounts.
 
 Community calls typically have a topical focus. They provide a forum for USRSE members to compare experiences around a topic, hang-out and chat on zoom.
 
