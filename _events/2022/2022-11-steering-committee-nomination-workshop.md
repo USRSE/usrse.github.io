@@ -13,7 +13,9 @@ time:
 
 Are you interested in running for steering committee? Come to this informal informative workshop where we will...
 
-- explain the nomination process and the responsibilities that come with the role
+- discuss the responsibilities that come with the role
+
+- explain the nomination process
 
 - help you generate ideas for the nomination prompts and combat imposter syndrome, especially in the case that you have a unique background
 
