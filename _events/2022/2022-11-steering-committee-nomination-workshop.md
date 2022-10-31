@@ -15,7 +15,7 @@ Are you interested in running for steering committee? Come to this informal work
 
 - explain the nomination process and the responsibilities that come with the role
 
-- help you generate ideas for the nomination prompts and combat imposters syndrome, especially in the case that you have a unique background
+- help you generate ideas for the nomination prompts and combat imposter syndrome, especially in the case that you have a unique background
 
 - give you enough time and space to complete the entire nomination and ask any questions that come up throughout
 
