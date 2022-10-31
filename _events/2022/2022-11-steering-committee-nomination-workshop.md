@@ -11,7 +11,7 @@ time:
         end: 2022-11-02T21:30:00Z
 ---
 
-Are you interested in running for steering committee? Come to this informal workshop where we will...
+Are you interested in running for steering committee? Come to this informal informative workshop where we will...
 
 - explain the nomination process and the responsibilities that come with the role
 
