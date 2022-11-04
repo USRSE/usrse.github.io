@@ -64,9 +64,9 @@ We are aiming to have community calls at least quarterly, but we need help plann
 
 <img src="{{ site.baseurl }}/assets/img/cup-coffee-rse-stories-logo.png" width="200px" style="float:right"/>
 
-Willing to share your story of being an RSE on the [RSE Stories podcast](https://us-rse.org/rse-stories/)?
+Willing to share your story? Consider signing up to share your story on the [Developer Stories podcast](https://rseng.github.io/devstories/)?
 
-* **Get involved**: See [https://us-rse.org/rse-stories/](https://us-rse.org/rse-stories/) and sign-up to be a subject.
+* **Get involved**: See [https://us-rse.org/developer-stories/](https://rseng.github.io/devstories/) and sign-up to be a subject.
 
 
 ### Propose a Conference Event
