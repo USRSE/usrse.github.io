@@ -32,7 +32,7 @@ and hosts the following media, documents, and events.
 
 ------
 
-## RSE Stories
+## Developer Stories
 
 Created by Vanessa Sochat, the [Developer Stories podcast](https://rseng.github.io/devstories/)
 aims to cast a spotlight on the differing backgrounds and paths professionals

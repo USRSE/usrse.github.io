@@ -66,7 +66,7 @@ We are aiming to have community calls at least quarterly, but we need help plann
 
 Willing to share your story? Consider signing up to share your story on the [Developer Stories podcast](https://rseng.github.io/devstories/)?
 
-* **Get involved**: See [https://us-rse.org/developer-stories/](https://rseng.github.io/devstories/) and sign-up to be a subject.
+* **Get involved**: See [Developer Stories](https://rseng.github.io/devstories/) and sign-up to be a subject.
 
 
 ### Propose a Conference Event
