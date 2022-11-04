@@ -30,7 +30,6 @@ In this issue:
 * [Recent Job Postings](#jobs)
 
     
-<span style="color: black;">
     
     
 <a name="elections"></a>
@@ -149,7 +148,6 @@ Davos, Switzerland, 26-28 June 2023
    * Submission deadline: 11 Dec 2022 (no extensions) 
     * Includes a track for research software engineering submissions
     
-</span>
 
 <a name="reads"></a>
 # **Interesting Reads, Videos or Podcasts**
