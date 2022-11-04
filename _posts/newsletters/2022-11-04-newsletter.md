@@ -176,7 +176,7 @@ Many of us have similar stories in regards to recognizing the criticality of our
 - compiling a slide deck ([here](https://docs.google.com/presentation/d/1s_5EhuxKm2aJbvJ4X-Lb2BXOputs5GzZhJ4_ion2Nfg/edit#slide=id.p)) with these stories that we can pull slides from when we talk about the importance of RSEs with our colleagues, collaborators, and leadership, and
 - collecting outreach channels we should aim to include for our newsletters and other outreach activities.
 
-Longer term plans include other activities along this front such as an RSE conference where submitted papers are peer reviewed on both the science and the RSE aspects of the effort.  If you have other ideas and are interested in being part of this working group, please join the [#wg-elevate-rse channel](https://usrse.slack.com/archives/C03DW50KY80) in the USRSE slack. 
+Longer-term plans include other activities along this front such as an RSE conference where submitted papers are peer reviewed on both the science and the RSE aspects of the effort.  If you have other ideas and are interested in being part of this working group, please join the [#wg-elevate-rse channel](https://usrse.slack.com/archives/C03DW50KY80) in the USRSE slack. 
 
 
 <a name="outreach"></a>
