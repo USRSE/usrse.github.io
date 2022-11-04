@@ -182,7 +182,7 @@ Longer-term plans include other activities along this front such as an RSE confe
 <a name="outreach"></a>
 # **US-RSE Outreach**
 
-Please join us in Dallas, Texas, after the RSEs in HPC Workshop for our [US-RSE Social Event](https://us-rse.org/events/2022/2022-11-sc22-social/). Check the event page or Slack for details on the location!
+Please join us in Dallas, Texas, after the RSEs in HPC Workshop, for our [US-RSE Social Event](https://us-rse.org/events/2022/2022-11-sc22-social/). Check the event page or Slack for details on the location!
 
 Have you ever wondered, "Where can I find existing material (presentations, slides, videos, etc.) about the US-RSE?" The [US-RSE Outreach Materials Google Drive](https://drive.google.com/drive/folders/1gu_0fhAZt7jjrDFWTHekyRLBboCZUnc8) is a location for any US-RSE member to put content relating to RSE or US-RSE outreach! Have you done a presentation? Made a cool one-page guide? Written an article or a blog post? We encourage you to add it!
 
