@@ -35,7 +35,7 @@ In this issue:
 <a name="elections"></a>
 # **Steering Committee Elections**
     
-The [yearly election](https://us-rse.org/about/election/) cycle for the Steering Committee is underway.  Information on the candidates will be posted soon.  **Voting will occur December 2-9, 2022.**  US-RSE members were sent an email with the subject "US-RSE Membership Verification" in October confirming their membership.  Everyone who is a [member of US-RSE](https://us-rse.org/join) as of November 20th can vote in the election.  Question about your membership status?  Email membership@us-rse.org.
+The [yearly election](https://us-rse.org/about/election/) cycle for the Steering Committee is underway.  Information on the candidates will be posted soon.  **Voting will occur December 2-9, 2022.**  US-RSE members were sent an email with the subject "US-RSE Membership Verification" in October confirming their membership.  Everyone who is a [member of US-RSE](https://us-rse.org/join) as of November 20th can vote in the election.  Question about your membership status?  Email [membership@us-rse.org](mailto:membership@us-rse.org).
    
 <a name="conference2023"></a>
 # **First US-RSE Conference in 2023 in Chicago**
