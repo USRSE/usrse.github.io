@@ -107,7 +107,7 @@ members.
 
 ![US-RSE Swag Options](/assets/img/us_rse_swag_giveaway.png)
 
-28 winners were selected to receive tumblers and backpacks, but all entrants
+28 winners were selected to receive tumblers and backpacks, and all entrants
 were sent official US-RSE stickers.
 
 ------
