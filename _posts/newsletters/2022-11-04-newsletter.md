@@ -13,7 +13,7 @@ In this issue:
 * [Steering Committee Elections](#elections)
 * [First US-RSE Conference in 2023!](#conference2023)
 * [RSE-HPC-2022 Workshop at SC22](#sc22)
-* [SC22 US-RSE Booth](#scbooth)
+* [US-RSE SC22 Booth](#scbooth)
 * [ADSA/US-RSE Career Workshop](#adsa-usrse)
 * [Help Create a Job Description Archive](#jobarchive)
 * [Steering Committee Recap](#sc-update)
@@ -56,7 +56,7 @@ Participation is open to all SC22 attendees who have registered to attend the co
 For more information, see the [workshop website](https://us-rse.org/rse-hpc-2022/) or [contact the organizers](mailto:sc-ws-rse-hpc@info.supercomputing.org).
 
 <a name="scbooth"></a>
-# **US-RSE Booth at SC22!**
+# **US-RSE SC22 Booth**
 For the first time ever US-RSE will have an exhibitor booth at [SC22](https://sc22.supercomputing.org/)!
 We’ll be spreading the good word about RSEs and staffing the booth with friendly faces looking to give away some US-RSE swag (stickers, pens, etc.) and other promotional material.
 So if you’ll be at SC22, come stop by [booth 4201](https://hallerickson.ungerboeck.com/prod/app85.cshtml?AppCode=VFP&OrgCode=34&EvtID=5025&CC=SC22SM). 
@@ -243,8 +243,6 @@ These opportunities were recently posted to the [RSE Careers page](https://us-rs
 27.  [Senior Research Software Engineer](https://www.nimbusproject.org/jobs/#research-engineer-senior): University of Chicago, Chicago, IL _Posted: Aug 03, 2022_
 
 
-
-<span style="color: black;">
 
 ### Other Job Boards
 
