@@ -93,7 +93,7 @@ and attend meetings so you can contribute!
 * [Website](/wg/website/), #website channel in Slack
 * [Education](/wg/education_training/) #education-training channel in Slack
 * [Outreach](/wg/outreach/), #wg-outreach channel in Slack
-* [RSE Empowerment in National Labs](/wg/rse-national-labs/), #wg-national-labs-empowerment channel in Slack
+* [RSE Empowerment in National Labs](/wg/rse-empowerment-national-labs/), #wg-national-labs-empowerment channel in Slack
 
 
 Don't see something you like here? We want to make a space for you in the US-RSE community. A how-to guide for putting together working groups is in progress (please keep an eye on [this issue](https://github.com/USRSE/outreach-wg/issues/1))
