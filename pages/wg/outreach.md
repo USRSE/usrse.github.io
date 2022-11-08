@@ -32,11 +32,11 @@ and hosts the following media, documents, and events.
 
 ------
 
-## RSE Stories
+## Developer Stories
 
-Created by Vanessa Sochat, the [RSE Stories podcast](https://us-rse.org/rse-stories/)
+Created by Vanessa Sochat, the [Developer Stories podcast](https://rseng.github.io/devstories/)
 aims to cast a spotlight on the differing backgrounds and paths professionals
-have taken to become RSEs and help shape our understanding of what an RSE really is.
+have taken.
 
 The podcast has existed since September 2019 and is looking for more volunteers
 for interviewees, hosts, and audio editors.
