@@ -86,5 +86,3 @@ If you would like to join the conversation, please join us on the [`#wg-national
 
 Visit the [RSE Empowerment in National Labs Working Group page]({{ site.baseurl }}/wg/rse-empowerment-national-labs/) for
 more details.
- 
-Chair: Rinku Gupta
