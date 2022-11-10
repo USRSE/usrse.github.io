@@ -47,6 +47,8 @@
       link: wg/education_training
     - name: Outreach
       link: wg/outreach
+    - name: RSE Empowerment in National Labs
+      link: wg/rse-empowerment-national-labs
     - name: Website
       link: wg/website
 - name: Events
