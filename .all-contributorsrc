@@ -695,6 +695,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/334483?v=4"
             ]
+        },
+        {
+            "login": "rinkug",
+            "name": "Rinku Gupta",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/rinkug",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/768870?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
