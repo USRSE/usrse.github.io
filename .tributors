@@ -343,5 +343,11 @@
         "blog": "www.davidbeckingsale.com",
         "orcid": "0000-0003-2545-4837",
         "affiliation": "Lawrence Livermore National Laboratory"
+    },
+    "rinkug": {
+        "name": "Rinku Gupta",
+        "email": "rgupta@mcs.anl.gov",
+        "bio": "Research Software Specialist, Argonne National Laboratory\r\n",
+        "blog": "https://github.com/rinkug"
     }
 }
