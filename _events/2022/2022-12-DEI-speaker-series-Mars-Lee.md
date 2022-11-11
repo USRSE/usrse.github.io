@@ -28,7 +28,7 @@ present the next event in the US-RSE DEI-WG Speaker Series:
 Mars Lee is a technical illustrator and front-end developer at Quansight, 
 focused on solving social issues with technology, 
 especially in making data science more visual, accessible and fun! 
-See her 'Codesprite' comic series, https://medium.com/@codesprite.explains,
+See her 'Codesprite' comic series, [https://medium.com/@codesprite.explains](https://medium.com/@codesprite.explains),
 and her zine on how to add alt text to scientific illustrations:  
 https://heyzine.com/flip-book/f3c7f85cdc.html. 
 She also recently gave an Early Career Keynote at the RSE Asia Unconference: 
