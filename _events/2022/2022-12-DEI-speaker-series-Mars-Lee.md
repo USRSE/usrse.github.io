@@ -7,8 +7,8 @@ repeated: false
 duration: 60
 category: dei
 time:
-    - - start: 2022-12-14T22:00:00Z
-        end: 2022-12-14T23:30:00Z
+    - - start: 2022-12-14T20:00:00Z
+        end: 2022-12-14T21:00:00Z
 ---
 
 ## Event
