@@ -32,7 +32,7 @@ See her 'Codesprite' comic series, [https://medium.com/@codesprite.explains](htt
 and her zine on how to add alt text to scientific illustrations:  
 [https://heyzine.com/flip-book/f3c7f85cdc.html](https://heyzine.com/flip-book/f3c7f85cdc.html). 
 She also recently gave an Early Career Keynote at the RSE Asia Unconference: 
-https://www.youtube.com/watch?v=EPHJhLgbK5w.
+[https://www.youtube.com/watch?v=EPHJhLgbK5w](https://www.youtube.com/watch?v=EPHJhLgbK5w).
 
 ### Abstract
 
