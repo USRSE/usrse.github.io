@@ -1,5 +1,5 @@
 ---
-title: "Mars Lee"
+title: "DEI Speaker Series: Mars Lee"
 expires: 2022-12-14
 event_date: "December 14, 2022"
 layout: event
@@ -11,11 +11,11 @@ time:
         end: 2022-12-14T21:00:00Z
 ---
 
-## Event
+## Event info
 
 The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is proud to
-present the next event in the US-RSE DEI-WG Speaker Series: 
-**[Mars Lee](https://www.linkedin.com/in/mars-lee/)**
+present the next talk in the US-RSE DEI-WG Speaker Series, from 
+**[Mars Lee](https://www.linkedin.com/in/mars-lee/)**.
 
 **Date/Time: December 14, 2022 3:00-4:00 ET (12:00-1:00 PT)**
 
