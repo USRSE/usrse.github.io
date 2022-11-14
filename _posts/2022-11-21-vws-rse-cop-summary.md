@@ -114,3 +114,15 @@ US-RSE Virtual Workshop, participants discussed the difficulties and posed
 helpful tips to make a community of practice more successful. They hope that
 the results of this discussion can assist other RSEs in the creation of their
 own local CoP.
+
+
+### Acknowledgements
+
+Sandia National Laboratories is a multimission laboratory managed and operated
+by National Technology and Engineering Solutions of Sandia, LLC, a wholly owned
+subsidiary of Honeywell International, Inc., for the U.S. Department of
+Energy's National Nuclear Security Administration under contract DE-NA-0003525.
+SAND2022-15860 S
+
+These opinions, recommendations, findings, and conclusions do not necessarily
+reflect the views or policies of NIST or the United States Government.
