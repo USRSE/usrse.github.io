@@ -23,7 +23,9 @@ moderated the breakout session “Encouraging and Enabling Mutual Ownership in a
 RSE Community of Practice.” In this session, participants from industry,
 academia, and national laboratories and agencies across the country joined
 together to create actionable suggestions for how to get members involved in a
-community of practice and how to make them feel invested and included.
+community of practice and how to make them feel invested and included. They
+hope that the results of this discussion can assist other RSEs in the
+creation of their own local CoP.
 
 ## Starting a community of practice
 
