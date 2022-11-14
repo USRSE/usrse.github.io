@@ -35,7 +35,7 @@ readers learn, laugh and bring back actionable steps to their own OSS projects.
 But how did an illustrator end up in the Scientific Python space in the first place? 
 Find out as the speaker recounts her journey from outsider to collaborator. 
 She lays out the intensely collaborative comic-making process, from discussion with domain experts, 
-translating technical concepts, drawing and printing.
+translating technical concepts, drawing, and printing.
 
 She also highlights how deliberate community-building and funding of DEI set the ground for her work. 
 Specifically, the structural and cultural changes in the NumPy community funded by the Chan Zuckerberg Initiative (CZI) grants.
