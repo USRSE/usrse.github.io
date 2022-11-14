@@ -30,7 +30,7 @@ Comics are an unexpected but incredibly powerful medium! Through illustrations, 
 This talk will highlight the speaker’s recent comic: 
 [“How to Write Alt Text For Scientific Diagrams and Documentation”](https://heyzine.com/flip-book/f3c7f85cdc.html). 
 By breaking down accessibility concepts into byte-sized pieces, 
-readers learn, laugh and bring back actionable steps to their own OSS projects.
+readers learn, laugh, and bring back actionable steps to their own OSS projects.
 
 But how did an illustrator end up in the Scientific Python space in the first place? 
 Find out as the speaker recounts her journey from outsider to collaborator. 
