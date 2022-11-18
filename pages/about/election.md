@@ -9,7 +9,7 @@ set_last_modified: true
 
 The 2022 US-RSE Steering Committee elections are happening this December.
 
-If you're interested in becoming part of the Steering Committee, we suggest you have a look at [Guidance for Potential Steering Committee Candidates](https://us-rse.org/2022-07-01-candidate-guidance/).
+If you're interested in becoming part of the Steering Committee, we suggest you have a look at [Guidance for Potential Steering Committee Candidates](/2022-07-01-candidate-guidance/).
 
 ## Timeline
 
@@ -17,9 +17,9 @@ If you're interested in becoming part of the Steering Committee, we suggest you 
 * Nominations due: November 4, 2022
 * Candidate meeting: during the week of November 7-11, 2022
 * Candidates finalize information: November 18, 2022
-* Deadline to [join US-RSE](https://us-rse.org/join) to be eligible to vote: November 20, 2022
-* [Candidates announced](https://us-rse.org/2022-11-18-sc-candidates/): by November 28, 2022
-* [Annual US-RSE General Meeting](https://us-rse.org/events/2022/2022-12-AGM/), including candidate statements: December 2, 2022
+* Deadline to [join US-RSE](/join) to be eligible to vote: November 20, 2022
+* [Candidates announced](/2022-11-18-sc-candidates/): by November 28, 2022
+* [Annual US-RSE General Meeting](/events/2022/2022-12-AGM/), including candidate statements: December 2, 2022
 * Voting Open: December 2-9, 2022
 * Election Results announced: by December 14, 2022
 * Elected Steering Committee members take office: January 1, 2023
@@ -55,7 +55,7 @@ Additionally, Steering Committee members are expected to:
 
 ## Nominations and Candidate Information
 
-**[Candidate Information is Available](https://us-rse.org/2022-11-18-sc-candidates/)**
+**[Candidate Information is Available](/2022-11-18-sc-candidates/)**
 
 [Nominations](https://docs.google.com/forms/d/e/1FAIpQLSeo7GfAiWXPioHpl4s5BWaYHl5FIxMWeIaTAY5ZNhJDgBAgXQ/viewform?usp=sf_link) open on October 24, 2022 and close on November 4, 2022.
 
