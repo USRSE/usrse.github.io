@@ -1,14 +1,14 @@
 style: is-light
 items:
-  - title: Research Software Engineers in eScience
-    subtitle: Connect with other RSEs at eScience 2022 in Salt Lake City, October 11-14
-    link: /rse-escience-2022/
-    link_name: Learn More
-  - title: Research Software Engineers in HPC
-    subtitle: Join the discussion at this SC22 workshop in Dallas on November 13
-    link: /rse-hpc-2022/
-    link_name: Learn More
+  - title: Steering Committee Election
+    subtitle: Voting open December 2-9
+    link: /about/election/
+    link_name: Election Info
   - title: US-RSE Annual General Meeting
-    subtitle: Save the Date for our yearly community-wide meeting
+    subtitle: Save the Date for our yearly community-wide meeting December 2nd
     link: /events/2022/2022-12-AGM/
+    link_name: Event Page
+  - title: DEI Speaker Series
+    subtitle: Python Comics with Mars Lee, December 14th
+    link: /events/2022/2022-12-DEI-speaker-series-Mars-Lee/
     link_name: Event Page
