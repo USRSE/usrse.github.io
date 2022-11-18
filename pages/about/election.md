@@ -19,7 +19,7 @@ If you're interested in becoming part of the Steering Committee, we suggest you 
 * Candidates finalize information: November 18, 2022
 * Deadline to [join US-RSE](https://us-rse.org/join) to be eligible to vote: November 20, 2022
 * [Candidates announced](https://us-rse.org/2022-11-18-sc-candidates/): by November 28, 2022
-* Annual US-RSE General Meeting, including candidate statements: December 2, 2022
+* [Annual US-RSE General Meeting](https://us-rse.org/events/2022/2022-12-AGM/), including candidate statements: December 2, 2022
 * Voting Open: December 2-9, 2022
 * Election Results announced: by December 14, 2022
 * Elected Steering Committee members take office: January 1, 2023
