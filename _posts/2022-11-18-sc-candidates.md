@@ -11,7 +11,7 @@ candidates will be elected for a two-year term starting January 2023.
 
 If you have questions for the candidates, or questions about the election,
 please use the #election channel on Slack. You must be [registered as a member](https://us-rse.org/join)
-by Friday, November 20th to be eligible to vote in this election.
+by Sunday, November 20th to be eligible to vote in this election.
 
 Candidates are listed in random order.
 
@@ -77,7 +77,7 @@ I have been involved in several workshops and events organized by US-RSE and the
 
 ## Joshua Teves
 
-[Email](mailto:jbtevespro@gmail.com), [Website](https://joshuateves.com/)
+[Email](mailto:jbtevespro@gmail.com), [Profile](https://joshuateves.com/)
 
 **Why do you want to be on the US-RSE Steering Committee?**
 
@@ -138,7 +138,7 @@ I remember when I first heard about the UK's Society of Research Software Engine
 
 ## Lance Parsons
 
-[Email](mailto:lparsons@princeton.edu), [Website](https://lanceparsons.com/about/)
+[Email](mailto:lparsons@princeton.edu), [Profile](https://lanceparsons.com/about/)
 
 **Why do you want to be on the US-RSE Steering Committee?**
 
