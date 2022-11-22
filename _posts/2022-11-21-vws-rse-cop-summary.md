@@ -111,7 +111,7 @@ one-another will broaden your inclusivity.
 
 ## Conclusion
 
-Creating a thriving, active community is a challenge. As part of the 2022
+Creating a thriving, active community of practice is a challenge. As part of the 2022
 US-RSE Virtual Workshop, participants discussed the difficulties and posed
 helpful tips to make a community of practice more successful. They hope that
 the results of this discussion can assist other RSEs in the creation of their
