@@ -50,7 +50,7 @@ community before it even starts.
 Once the CoP has some initial interested participants, the next task is to
 define the goals of the CoP community. What is it trying to accomplish? What
 will it bring to and expect from the community members? For US-RSE, the mission
-comes in four parts: (1) community, (2) advocacy, (3) resources, and (4)
+has four parts: (1) community, (2) advocacy, (3) resources, and (4)
 diversity, equity, and inclusion. The founders of a new community can define
 the original mission – but should work with the community to refine it as time
 goes on. There should be a clear benefit for the community, whether that’s
