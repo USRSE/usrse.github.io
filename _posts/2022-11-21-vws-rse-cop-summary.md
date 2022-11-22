@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Encouraging and Enabling Mutual Ownership in a RSE Community of Practice
+title: Recap: Encouraging and Enabling Mutual Ownership in a RSE Community of Practice
 tags: [2022 virtual workshop]
 posted_by: Miranda Mundt
 ---
@@ -23,8 +23,9 @@ moderated the breakout session “Encouraging and Enabling Mutual Ownership in a
 RSE Community of Practice.” In this session, participants from industry,
 academia, and national laboratories and agencies across the country joined
 together to create actionable suggestions for how to get members involved in a
-community of practice and how to make them feel invested and included. The authors
-hope that the results of this discussion can assist other RSEs in the
+community of practice and how to make them feel invested and included.
+This blog post summarizes those discussions. The authors
+hope that the results can assist other RSEs in the
 creation of their own local CoP.
 
 ## Starting a community of practice
@@ -49,10 +50,10 @@ community before it even starts.
 
 Once the CoP has some initial interested participants, the next task is to
 define the goals of the CoP community. What is it trying to accomplish? What
-will it bring to and expect from the community members? For US-RSE, the mission
-has four parts: (1) community, (2) advocacy, (3) resources, and (4)
-diversity, equity, and inclusion. The founders of a new community can define
-its original mission – but should work with the community to refine it as time
+will it bring to and expect from the community members?
+The founders of a new community can define
+its original mission (e.g., (1) community, (2) advocacy, (3) resources) 
+– but should work with the community to refine it as time
 goes on. There should be a clear benefit for the community, whether that’s
 through access to information (e.g., providing resources on how to set up
 software infrastructure), a place for mutual commiseration, or a mechanism for
