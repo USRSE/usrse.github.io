@@ -12,7 +12,7 @@ Daniel S. Katz, Reed Milewicz, Henry Schreiner, Joshua Teves, Chris Wiswell_
 ## Introduction
 
 The explosion of Research Software Engineers (RSEs) in the United States
-created the opportunity to form communities of practice (CoP), groups which
+created the opportunity to form communities of practice (CoP), groups that
 share a passion for an activity and learn how to do it better as they interact
 regularly, specifically to benefit their local organization or region. CoPs,
 however, only succeed insofar as their members feel heard, included, and valued.
