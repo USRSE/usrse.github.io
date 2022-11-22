@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Recap: Encouraging and Enabling Mutual Ownership in a RSE Community of Practice
+title: "Recap: Encouraging and Enabling Mutual Ownership in a RSE Community of Practice"
 tags: [2022 virtual workshop]
 posted_by: Miranda Mundt
 ---
