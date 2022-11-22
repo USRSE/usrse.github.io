@@ -45,7 +45,7 @@ identity means that certain things are in scope and are part of that identity,
 and other things are not part of that identity. Poor scoping can stop a
 community before it even starts.
 
-> Tip: You don’t want to exclude potentially interested community members, so don’t start too small or refined in your intended audience, or you won’t get enough interest!
+> Tip: You don’t want to exclude potentially interested community members, so don’t start too small or refined in defining your intended audience, or you won’t get enough interest!
 
 Once the CoP has some initial interested participants, the next task is to
 define the goals of the CoP community. What is it trying to accomplish? What
