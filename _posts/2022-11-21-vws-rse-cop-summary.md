@@ -5,6 +5,7 @@ tags: [2022 virtual workshop]
 posted_by: Miranda Mundt
 ---
 
+# Recap: Encouraging and Enabling Mutual Ownership in a RSE Community of Practice
 
 _Authors: Miranda Mundt, Jonathan Bisila, Jon Guyer, Daniel Howard,
 Daniel S. Katz, Reed Milewicz, Henry Schreiner, Joshua Teves, Chris Wiswell_
