@@ -52,7 +52,7 @@ define the goals of the CoP community. What is it trying to accomplish? What
 will it bring to and expect from the community members? For US-RSE, the mission
 has four parts: (1) community, (2) advocacy, (3) resources, and (4)
 diversity, equity, and inclusion. The founders of a new community can define
-the original mission – but should work with the community to refine it as time
+its original mission – but should work with the community to refine it as time
 goes on. There should be a clear benefit for the community, whether that’s
 through access to information (e.g., providing resources on how to set up
 software infrastructure), a place for mutual commiseration, or a mechanism for
