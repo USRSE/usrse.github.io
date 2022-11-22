@@ -23,7 +23,7 @@ moderated the breakout session “Encouraging and Enabling Mutual Ownership in a
 RSE Community of Practice.” In this session, participants from industry,
 academia, and national laboratories and agencies across the country joined
 together to create actionable suggestions for how to get members involved in a
-community of practice and how to make them feel invested and included. They
+community of practice and how to make them feel invested and included. The authors
 hope that the results of this discussion can assist other RSEs in the
 creation of their own local CoP.
 
@@ -94,7 +94,7 @@ challenge, especially when it is geographically distributed - something most
 of us experienced as a result of the COVID-19 pandemic. It is essential to
 incentivize people to show up and to overcome those remote barriers.
 
-> Tip: Chris Wiswell’s team utilized modern delivery services to do a coffee and treat delivery across team members. Use these to your advantage! Set up a coffee-delivery raffle for those who join your meeting.
+> Tip: During the pandemic, Chris Wiswell's team went from mostly onsite to mostly remote. To continue a sense of community, they set up informal discussion groups around loose themes and utilized modern delivery services to do a coffee and treat delivery across team members. Use these to your advantage! Set up a coffee-delivery raffle for those who join your meeting to incentivize them to join.
 
 Participation can also be bolstered through relevant content. The community
 should have a say in the topics that are being covered in the regular meetings.
