@@ -5,18 +5,16 @@ tags: [2022 virtual workshop]
 posted_by: Miranda Mundt
 ---
 
-# Recap: Encouraging and Enabling Mutual Ownership in a RSE Community of Practice
-
-_Authors: Miranda Mundt, Jonathan Bisila, Jon Guyer, Daniel Howard,
-Daniel S. Katz, Reed Milewicz, Henry Schreiner, Joshua Teves, Chris Wiswell_
-
-## Introduction
-
 The explosion of Research Software Engineers (RSEs) in the United States
 created the opportunity to form communities of practice (CoP), groups that
 share a passion for an activity and learn how to do it better as they interact
 regularly, specifically to benefit their local organization or region. CoPs,
 however, only succeed insofar as their members feel heard, included, and valued.
+
+## Introduction
+
+_Authors: Miranda Mundt, Jonathan Bisila, Jon Guyer, Daniel Howard,
+Daniel S. Katz, Reed Milewicz, Henry Schreiner, Joshua Teves, Chris Wiswell_
 
 As part of the [2022 US-RSE Virtual Workshop](https://us-rse.org/virtual-workshop-2022/),
 Jonathan Bisila, Reed Milewicz, and Miranda Mundt of Sandia National Laboratories
