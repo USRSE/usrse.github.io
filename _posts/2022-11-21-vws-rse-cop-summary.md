@@ -36,7 +36,7 @@ shared repertoire. The three moderators recently took on the challenge of
 creating a formally-defined CoP at Sandia National Laboratories.
 
 At their inaugural meeting, they started by asking the question, “Who is the
-intended audience?” Because RSE looks different across different organizations,
+intended audience?” Because RSEng looks different across different organizations,
 to start a CoP off right it’s important to understand the intended audience.
 To determine this, they asked questions to the meeting attendees such as: What
 careers are representative within your organization? How can you cast a wide
