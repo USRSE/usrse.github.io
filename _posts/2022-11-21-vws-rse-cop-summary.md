@@ -33,7 +33,7 @@ A CoP is a group of people who share some concern or passion for what they do
 and want to learn to do it better as they interact regularly. CoPs generally
 have 3 elements: (1) mutual engagement, (2) a joint enterprise, and (3) a
 shared repertoire. The three moderators recently took on the challenge of
-creating a formally-defined CoP at Sandia National Laboratories.
+creating a formally defined CoP at Sandia National Laboratories.
 
 At their inaugural meeting, they started by asking the question, “Who is the
 intended audience?” Because RSEng looks different across different organizations,
@@ -99,13 +99,14 @@ incentivize people to show up and to overcome those remote barriers.
 Participation can also be bolstered through relevant content. The community
 should have a say in the topics that are being covered in the regular meetings.
 Providing an avenue for members to vote on topics or contribute their own
-(with minimal roadblocks to do so) can help build a feeling of empowerment and value.
+(with minimal roadblocks to doing so) can help build a feeling of empowerment
+and value.
 
 It is also important to recognize that different members prefer different
 forms of communication. Some may like emails; some may prefer to submit an
 anonymous feedback form; others prefer to communicate face-to-face. Diversifying
 the ways in which community members can engage with the content and with
-one-another will broaden your inclusivity.
+one another will broaden your inclusivity.
 
 > Tip: Create various ways for community members to provide feedback. Make an email list, a webpage, a survey, etc., that is easy to find and use. The easier it is for people to provide feedback, the more likely it is that they will.
 
