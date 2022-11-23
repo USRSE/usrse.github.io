@@ -11,7 +11,7 @@ set_last_modified: true
 
 ### Current Steering Committee
 
-* Nicole Brewer, Purdue University, 2022-2023, International Council Representative
+* Nicole Brewer, Arizona State University, 2022-2023, International Council Representative
 * Jeffrey C. Carver, University of Alabama, 2019-2023, Secretary
 * Ian Cosden, Princeton University, 2019-2023, Chair
 * Julia Damerow, Arizona State University, 2021-2022, Treasurer
