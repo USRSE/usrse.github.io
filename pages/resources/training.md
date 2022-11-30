@@ -12,7 +12,7 @@ We expect this list to grow significantly in both content and usability.
 These links are provided as a service to the US Research Software Engineer community.
 While we have made every effort to ensure these have been reviewed and vetted for applicability and appropriateness, US-RSE does not formally endorse any content below.
 
-_Additions to this list or general comments/questions should be directed to the [US-RSE Training and Education Working Group]({{ site.baseurl }}/about/working-groups/)._
+_Additions to this list or general comments/questions should be directed to the [US-RSE Training and Education Working Group]({{ site.baseurl }}/wg/education_training/)._
 
 
 
