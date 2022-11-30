@@ -2258,6 +2258,18 @@ tr, td, th {
     background-color: #006292;
     color: #fff;
 }
+.btn--mastodon {
+    background-color: #007bb6;
+    color: #fff;
+}
+.btn--mastodon:visited {
+    background-color: #007bb6;
+    color: #fff;
+}
+.btn--mastodon:hover {
+    background-color: #006292;
+    color: #fff;
+}
 .btn--block {
     display: block;
     width: 100%}
@@ -3657,7 +3669,7 @@ body:hover .visually-hidden a, body:hover .visually-hidden input, body:hover .vi
 .social-icons .fa-linkedin, .social-icons .fa-linkedin-in {
     color: #007bb6;
 }
-.social-icons .fa-mastodon, .social-icons .fa-mastodon-square {
+.social-icons .fa-mastodon {
     color: #2b90d9;
 }
 .social-icons .fa-pinterest, .social-icons .fa-pinterest-p, .social-icons .fa-pinterest-square {
