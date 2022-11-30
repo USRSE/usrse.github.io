@@ -12,6 +12,14 @@
 </svg>
         <span class="screen-reader-text">Contact Email</span>
         </a>{% endif %}
+
+{% if site.mastodon %}<a href="https://fosstodon.org/@{{ site.mastodon }}"
+   target="_blank"
+   rel="noopener "
+  class="button button-icon">
+  <i class="fab fa-mastodon fa-2x"> <span class="screen-reader-text">Mastodon</span></i>
+</a>{% endif %}
+
 {% if site.twitter %}<a href="https://twitter.com/{{ site.twitter }}"
    target="_blank"
    rel="noopener "
@@ -31,6 +39,7 @@
 </svg>
     <span class="screen-reader-text">LinkedIn</span>  
 </a>{% endif %}
+
 {% if site.github_org %}<a href="https://github.com/{{ site.github_org }}"
    target="_blank"
    rel="noopener "
@@ -40,6 +49,8 @@
 </svg>
     <span class="screen-reader-text">GitHub</span>  
 </a>{% endif %}
+
+
       </div>
     </div>
   </div>
