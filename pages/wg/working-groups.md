@@ -77,6 +77,8 @@ Visit the [Outreach Working Group page]({{ site.baseurl }}/wg/outreach/) for
 more details and a catalog of work products.
 
 
+<hr>
+
 <h3><a href="{{ site.baseurl }}/wg/rse-empowerment-national-labs/">RSE Empowerment in National Labs</a></h3>
 
 The RSE Empowerment in National Labs working group, conceptualized in 2022, is for those who are interested in working towards the empowerment of RSEs in national labs and other similar organizations.
