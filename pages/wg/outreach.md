@@ -75,7 +75,7 @@ a speaker series aimed at bringing representatives from funders (e.g., NSF, NIH)
 to speak to members of US-RSE. These funders will bring essential information
 about opportunities, strategies, and starting points for finding funding.
 
-- __Hal Finkel__ - Advanced Scientific Computing Research, Office of Science, US Department of Energy
+- __Hal Finkel__ - Advanced Scientific Computing Research, Office of Science, US Department of Energy: [video](https://youtu.be/vZYQJ5eOMls) & [slides](https://drive.google.com/file/d/1W9Oh50BMwHG6o1OEmlRXi_AaJYmMdMVn/view?usp=sharing)
   - [Talk](https://youtu.be/vZYQJ5eOMls)
   - [Slides](https://drive.google.com/file/d/1W9Oh50BMwHG6o1OEmlRXi_AaJYmMdMVn/view?usp=sharing)
 
