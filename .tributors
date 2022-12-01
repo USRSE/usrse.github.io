@@ -75,7 +75,9 @@
     },
     "jdamerow": {
         "name": "Julia Damerow",
-        "blog": "https://github.com/jdamerow"
+        "blog": "https://github.com/jdamerow",
+        "orcid": "0000-0002-0874-0092",
+        "affiliation": "Arizona State University"
     },
     "kmanalo": {
         "name": "Kevin Manalo",
