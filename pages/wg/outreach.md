@@ -75,6 +75,8 @@ a speaker series aimed at bringing representatives from funders (e.g., NSF, NIH)
 to speak to members of US-RSE. These funders will bring essential information
 about opportunities, strategies, and starting points for finding funding.
 
+- [Hal Finkel - Advanced Scientific Computing Research, Office of Science, US Department of Energy](https://youtu.be/vZYQJ5eOMls)
+
 Please keep an eye out for future announcements regarding this series.
 
 ### Supercomputing Spotlights
