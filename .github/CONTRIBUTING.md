@@ -34,6 +34,17 @@ We have several teams on the repository that you can reference (@ "at") if you n
 
 ## Making a Contribution
 
+### Making Edits to the Website Repo
+To make a contribution, you will need to edit the US RSE GitHub repo (https://github.com/USRSE/usrse.github.io).
+
+Text, images, and other website assets go in different places. Here's a brief guide to a few key areas:
+- The webpage text exist in markdown files (.md) in several places like `_events`, `_pages`, and `wg`. The best way to find the page you're trying to edit is to follow the path in the URL of the page itself. Example: editing the page for "https://us-rse.org/events/2022/2022-10-funder-talk-series/" would be in `_events` -> `2022` -> `2022-10-funder-talk-series.md`
+- Small files like .png images go into `assets` -> `_img`
+- Larger files like slides from a speaker series currently go into a read-only Google Drive. One exists for the speaker series [here](https://drive.google.com/drive/folders/1HiwQZgmXF30BSFDxEfQOfu68Hv4F4NwC?usp=share_link). 
+  - You'll need to ask to add slides to that folder if you are not an editor.
+  - Managers will need to change the permissions of files added there to be read-only and provide a share link that is accessible to anyone with the link to view.
+
+
 ### Pull Requests
 
 When making a pull request contribution, it is important to properly communicate the
