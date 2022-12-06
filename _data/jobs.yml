@@ -1,3 +1,18 @@
+- expires: 2022-12-31
+  location: NSLS-II, Brookhaven National Lab, Upton, NY
+  name: Scientific Software Developer
+  posted: 2022-12-06
+  url: https://jobs.bnl.gov/job/upton/scientific-software-developer/3437/40739839840
+- expires: 2023-04-15
+  location: University of Chicago, Chicago, IL
+  name: Senior Research Software Engineer
+  posted: 2022-12-06
+  url: https://www.nimbusproject.org/jobs/#research-engineer-senior
+- expires: 2023-04-15
+  location: University of Chicago, Chicago, IL
+  name: Research Software Engineer
+  posted: 2022-12-06
+  url: https://www.nimbusproject.org/jobs/#research-engineer
 - expires: 2023-04-30
   location: Simons Foundation/Flatiron Institute, New York, NY
   name: DevOps Engineer
@@ -68,11 +83,6 @@
   name: Systems Analyst/Programmer
   posted: 2022-11-10
   url: https://opportunities.columbia.edu/en-us/job/530386/systems-analystprogrammer
-- expires: 2022-12-31
-  location: Johns Hopkins Applied Physics Laboratory, Laurel, MD
-  name: Scientific Web Developer
-  posted: 2022-11-10
-  url: https://careers.jhuapl.edu/jobs/51506?lang=en-us
 - expires: 2022-11-14
   location: Arizona State University, Tempe, Arizona
   name: Research Software Engineer
