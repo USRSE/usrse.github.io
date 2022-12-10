@@ -12,7 +12,7 @@ After 135 votes, the results of the 2022 Steering Committee Election are in.  Th
 * Kenton McHenry
 * Miranda Mundt
 
-We're excited to welcome three new members to the [Steering Committee](/about/steering-committee/) and to have Julia back for two more years.
+We're excited to welcome three new members to the [Steering Committee](/about/steering-committee/) and to have Julia back for two more years.  Learn more about the new members from their [candidate information](/2022-11-18-sc-candidates/).
 
 Thanks to our other excellent candidates Keith Beattie, Aaron Holmes, Lauren Milechin, Lance Parsons, and Joshua Teves for making the election a success.  All of them have helped to grow US-RSE and make it successful.  We look forward to their continued contributions.  
 
