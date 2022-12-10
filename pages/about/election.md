@@ -7,6 +7,10 @@ menubar_toc: true
 set_last_modified: true
 ---
 
+**The [Election Results](/2022-12-10-election-results/) are in!  Congratulations to Julia Damerow, Rinku Gupta, Kenton McHenry, and Miranda Mundt.**
+
+<hr>
+
 The 2022 US-RSE Steering Committee elections are happening this December.
 
 If you're interested in becoming part of the Steering Committee, we suggest you have a look at [Guidance for Potential Steering Committee Candidates](/2022-07-01-candidate-guidance/).
@@ -21,7 +25,7 @@ If you're interested in becoming part of the Steering Committee, we suggest you 
 * [Candidates announced](/2022-11-18-sc-candidates/): by November 28, 2022
 * [Annual US-RSE General Meeting](/events/2022/2022-12-AGM/), including candidate statements: December 2, 2022
 * Voting Open: December 2-9, 2022
-* Election Results announced: by December 14, 2022
+* [Election Results announced](/2022-12-10-election-results/): by December 14, 2022
 * Elected Steering Committee members take office: January 1, 2023
 
 ## Positions and Eligibility
