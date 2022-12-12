@@ -1,14 +1,14 @@
 style: is-light
 items:
-  - title: Steering Committee Election
-    subtitle: Voting open December 2-9
-    link: /about/election/
-    link_name: Election Info
-  - title: US-RSE Annual General Meeting
-    subtitle: Save the Date for our yearly community-wide meeting December 2nd
-    link: /events/2022/2022-12-AGM/
-    link_name: Event Page
+  - title: Steering Committee Election Results
+    subtitle: Meet our new members
+    link: /2022-12-10-election-results/
+    link_name: See the Results
   - title: DEI Speaker Series
     subtitle: Python Comics with Mars Lee, December 14th
     link: /events/2022/2022-12-DEI-speaker-series-Mars-Lee/
     link_name: Event Page
+  - title: 1st US-RSE Conference
+    subtitle: Save the Date to join us in Chicago, October 16-18, 2023
+    link: https://us-rse.org/usrse23/
+    link_name: Conference Page
