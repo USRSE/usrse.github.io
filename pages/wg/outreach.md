@@ -68,7 +68,7 @@ previous or upcoming events:
 We are participating in or spearheading two different speaker series, starting
 in late 2022.
 
-### Funder Series
+### <a name="funder-series">Funder Series</a>
 
 A subgroup of the US-RSE Outreach Working Group is organizing a Funder Series,
 a speaker series aimed at bringing representatives from funders (e.g., NSF, NIH)
