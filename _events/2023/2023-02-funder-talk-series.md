@@ -24,7 +24,7 @@ This talk in the US-RSE Funder Talk Series will feature Dr. Joshua Greenberg, Pr
 
 Please join us in this interactive conversation. (If you can't participate in the interactive event, where you will be able to ask questions and help funders understand US-RSE, it will also be recorded.)
 
-[**Register on Zoom**](https://boisestate.zoom.us/meeting/register/tJcuf-msqT0qGtPEoU7R8k1lR3Octr3ymY3P)
+[**Register on Zoom**](https://boisestate.zoom.us/meeting/register/tJYkdeCrqjktHNEpjmchBk72ThpWjagcnLDt)
 
 
 ### Biography
@@ -40,4 +40,4 @@ _* Biography derived from [https://sloan.org/about/staff/joshua-m-greenberg](htt
 
 ### Registration
 
-You can [register on Zoom](https://boisestate.zoom.us/meeting/register/tJcuf-msqT0qGtPEoU7R8k1lR3Octr3ymY3P) for this presentation.  A recording of the presentation will be made available to those who have registered.
+You can [register on Zoom](https://boisestate.zoom.us/meeting/register/tJYkdeCrqjktHNEpjmchBk72ThpWjagcnLDt) for this presentation.  A recording of the presentation will be made available to those who have registered.
