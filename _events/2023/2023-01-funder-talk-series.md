@@ -9,7 +9,7 @@ repeated: false
 category: funder
 time:
     - - start: 2023-02-02T21:00:00Z
-        end: 2023-01-26T22:00:00Z
+        end: 2023-02-02T22:00:00Z
 ---
 
 ## US-RSE Funders Talk Series Info
