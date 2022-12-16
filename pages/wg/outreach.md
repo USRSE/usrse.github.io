@@ -77,7 +77,7 @@ about opportunities, strategies, and starting points for finding funding.
 
 #### Upcoming Presentations
 
-- __2023-01-26 Joshua Greenberg__ - Digital Information Technology Program, Alfred P. Sloan Foundation: [Event info and registration]({{ site.baseurl }}/events/2023/2023-01-funder-talk-series/)
+- __2023-02-02 Joshua Greenberg__ - Digital Information Technology Program, Alfred P. Sloan Foundation: [Event info and registration]({{ site.baseurl }}/events/2023/2023-01-funder-talk-series/)
 
 #### Past Presentations
 
