@@ -1,7 +1,7 @@
 ---
 title: Joshua Greenberg - Alfred P. Sloan Foundation
 subtitle: US-RSE Funders Talk Series
-expires: 2023-01-27
+expires: 2023-02-03
 event_date: "February 2, 2023"
 layout: event
 duration: 60
