@@ -75,10 +75,17 @@ a speaker series aimed at bringing representatives from funders (e.g., NSF, NIH)
 to speak to members of US-RSE. These funders will bring essential information
 about opportunities, strategies, and starting points for finding funding.
 
+#### Upcoming Presentations
+
+- __2023-02-02 Joshua Greenberg__ - Digital Information Technology Program, Alfred P. Sloan Foundation: [Event info and registration]({{ site.baseurl }}/events/2023/2023-02-funder-talk-series/)
+
+Please keep an eye out for future announcements regarding this series.
+
+#### Past Presentations
+
 - __2022-10-17 Hal Finkel__ - Advanced Scientific Computing Research, Office of Science, US Department of Energy: [video](https://youtu.be/vZYQJ5eOMls) & [slides](https://drive.google.com/file/d/1W9Oh50BMwHG6o1OEmlRXi_AaJYmMdMVn/view?usp=sharing)
 
 
-Please keep an eye out for future announcements regarding this series.
 
 ### Supercomputing Spotlights
 
