@@ -76,7 +76,7 @@ This list has the following categories:
   - Cryptography
       - Blockchain
   - Compiler Construction/Design
-  - GPU Programming
+  - GPU/FPGA Programming
   - Scientific Computing
   - Computer Networking
   - Operating Systems
