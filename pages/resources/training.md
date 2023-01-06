@@ -42,3 +42,4 @@ Rather than reproduce, we list them here:
 | Intermediate | Examples | HPC/Parallel Computing | Lecture | [Intro to MPI](https://vimeo.com/279313080) |
 | Intermediate | Auditory | HPC/Parallel Computing | Lecture | [Nvidia Basics](https://vimeo.com/371964454) |
 | Intermediate | Examples | HPC/Parallel Computing | Lecture | [CUDA Tutorial](https://www.olcf.ornl.gov/cuda-training-series/) |
+| Intermediate | Visual/Auditory | Data/Kubernetes | Lecture | [Data on Kubernetes](https://podcasts.apple.com/us/podcast/data-on-kubernetes-community/id1524821862) |
