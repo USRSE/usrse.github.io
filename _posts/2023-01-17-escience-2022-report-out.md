@@ -90,7 +90,7 @@ We want to say a special thank you to the four members of the organizing committ
 - Miranda Mundt, Sandia National Laboratories, USA
 - Ian Cosden, Princeton University, USA
 - Lance Parsons, Princeton University, USA
-- Daniel S. Katz, University of Illinois Urbana-Champaign, USA
+- Daniel S. Katz, University of Illinois at Urbana-Champaign, USA
 
 
 We also want to thank the program committee:
