@@ -13,6 +13,7 @@ jobs:
       uses: crate-ci/typos@12c64918956d94e55a2ca8c5cbca111e759f5654 # version 1.13.8
       with:
         files: ./_posts ./pages ./README.md
+	config: ./.github/workflows/typo_config.toml
 
     - name: URLs-checker
 

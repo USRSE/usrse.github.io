@@ -9,7 +9,7 @@ Last week, US-RSE held its monthly community call.
 For a topic, we chose "Conducting Constructive Code Reviews", as
 [suggested on GitHub](https://github.com/USRSE/monthly-community-calls/issues/9#issuecomment-921989398).
 Judging from the number of new faces that registered for the call,
-the US-RSE commmunity is very interested in this topic.
+the US-RSE community is very interested in this topic.
 
 We'd like to share a couple of highlights from the call.
 If these highlights whet your interest, then the
