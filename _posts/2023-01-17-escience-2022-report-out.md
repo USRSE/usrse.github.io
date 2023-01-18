@@ -36,7 +36,7 @@ support; and the pros and cons of Jupyter notebooks in scientific applications.
 
 Following the presentations, participants split into breakout groups to discuss
 two main topic areas: (1) Research challenges, concerns, and successes;
-(2) Human factors challenges, concerns, and successes. 
+and (2) Human factors challenges, concerns, and successes. 
 The participants were given the following instructions:
 
 - **Goal**: Identify avenues for improvements, research, or tips/actions that can resolve common problems
