@@ -16,7 +16,7 @@ In October 2022, US-RSE hosted the first ever
 [Research Software Engineers in eScience Workshop](https://us-rse.org/rse-escience-2022/)
 as part of the [18th International Conference on e-Science](https://www.escience-conference.org/2022/)
 in Salt Lake City, UT, USA. The theme of this inaugural workshop was “Stories
-of Application of RSE Expertise to Scientific Research”. Potential speakers
+of Application of RSE Expertise to Scientific Research.” Potential speakers
 were encouraged to submit their stories about RSE solutions in eScience, RSE
 contributions to software sustainability in eScience, the RSE perspective on
 an eScience contribution, the non-RSE perspective of collaboration with RSEs
