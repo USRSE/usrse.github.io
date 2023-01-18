@@ -478,7 +478,7 @@ typos ./pages ./_posts ./README.md --write-changes
 ```
 
 The config file to specify words to ignore is 
-[`./.github/workflows/typo_config.toml`](./.github/workflows/topy_config.toml).
+[`.github/workflows/typo_config.toml`](.github/workflows/topy_config.toml).
 Edit this file if there are phrases or words that need to be ignored (e.g., surnames, acronyms).
 
 #### Clean Expired Jobs
