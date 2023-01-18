@@ -31,11 +31,19 @@ jobs:
     - name: Run URLs-checker
       uses: urlstechie/urlchecker-action@0.0.34
       with:
+        # A comma-separated list of file types to cover in the URL checks
         file_types: .md,.py,.yml
+        # Choose whether to include file with no URLs in the prints.
         print_all: false
+        # More verbose summary at the end of a run
+        verbose: true
+        # How many times to retry a failed request (defaults to 1)
         retry_count: 3
+        # Google Forms is having enormous timeouts
         timeout: 10
-        exclude_patterns: supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com,jobs.colorado.edu,zoom.us,danielskatz.org,usrse.github.io.wiki.git,ornl.gov
+        # Exclude these patterns from the checker
+        exclude_patterns: supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com,jobs.colorado.edu,zoom.us,danielskatz.org,usrse.github.io.wiki.git,ornl.gov,jobs.bnl.gov,https://www.rd-alliance.org/,https://uwhires.admin.washington.edu/
+        # Exclude these files from the checker
         exclude_files: README.md,SocialNetworks.yml,map.yml,_config.yml,tests/test_,.github/workflows,_posts/newsletters/
 
     # - name: Push Fixes
