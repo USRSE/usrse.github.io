@@ -28,7 +28,7 @@ The workshop started with five short talks by Nicole Brewer, Sandra Gesing,
 Evan Harvey, Caleb Jackson, and Naeem Khoshnevis (see the [agenda](https://us-rse.org/rse-escience-2022/agenda/)
 for full details and slides from the presentations). Topics included diversity, equity,
 and inclusion; experience reports on engineering for half-precision scalar
-support, and the pros and cons of Jupyter notebooks in scientific applications.
+support; and the pros and cons of Jupyter notebooks in scientific applications.
 
 ![RSEs in eScience 2022 Agenda]({{ site.baseurl }}/assets/posts/2023-01-17-rse-escience-agenda.png)
 
