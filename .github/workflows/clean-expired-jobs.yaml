@@ -13,18 +13,18 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v3
+    - name: Setup Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.9
+    - name: Install required packages
+      run: |
+        pip install requests pyaml urlchecker
     - name: Remove Expired Jobs
       run: |
-        sudo apt-get update && sudo apt-get install -y python3 python3-pip python3-setuptools wget
-        sudo pip3 install requests pyaml urlchecker
-        # Ensure using a particular version
-        wget https://raw.githubusercontent.com/USRSE/usrse.github.io/8975717b2c00e72d4b368dfb3ad2b611875b0038/scripts/clean_jobs.py
-        chmod +x clean_jobs.py
-        mv clean_jobs.py scripts/clean_jobs.py
-        python3 scripts/clean_jobs.py
-
+        python scripts/clean_jobs.py
     - name: Run URLs-checker
-      uses: urlstechie/urlchecker-action@0.0.25
+      uses: urlstechie/urlchecker-action@0.0.34
       with:
         file_types: .md,.py,.yml
         print_all: false
@@ -33,25 +33,25 @@ jobs:
         exclude_patterns: supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com,jobs.colorado.edu,zoom.us,danielskatz.org,usrse.github.io.wiki.git,ornl.gov
         exclude_files: README.md,SocialNetworks.yml,map.yml,_config.yml,tests/test_,.github/workflows,_posts/newsletters/
 
-    - name: Push Fixes
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        printf "GitHub Actor: ${GITHUB_ACTOR}\n"
+    # - name: Push Fixes
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   run: |
+    #     printf "GitHub Actor: ${GITHUB_ACTOR}\n"
 
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@users.noreply.github.com"
+    #     git config --global user.name "github-actions"
+    #     git config --global user.email "github-actions@users.noreply.github.com"
 
-        git add _data/jobs.yml _data/related-jobs.yml
+    #     git add _data/jobs.yml _data/related-jobs.yml
 
-        set +e
-        git status | grep modified
-        if [ $? -eq 0 ]; then
-            set -e
-            printf "Changes\n"
-            git commit -m "Automated push to update jobs files $(date '+%Y-%m-%d')" || exit 0
-            git push origin main
-        else
-            set -e
-            printf "No changes\n"
-        fi
+    #     set +e
+    #     git status | grep modified
+    #     if [ $? -eq 0 ]; then
+    #         set -e
+    #         printf "Changes\n"
+    #         git commit -m "Automated push to update jobs files $(date '+%Y-%m-%d')" || exit 0
+    #         git push origin main
+    #     else
+    #         set -e
+    #         printf "No changes\n"
+    #     fi
