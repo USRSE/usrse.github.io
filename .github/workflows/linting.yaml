@@ -2,6 +2,11 @@ name: Check Spelling and URLs
 
 on: [pull_request]
 
+# Kill concurrent jobs from the same PR/branch - only one will run at a time
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   urlcheck:
     runs-on: ubuntu-latest
