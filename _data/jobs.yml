@@ -13,13 +13,9 @@
   name: Bioinformatics Postdoc
   posted: 2023-01-04
   url: https://www.linkedin.com/jobs/view/3425044913/
-- expires: 2023-01-21
-  location: Brookhaven National Laboratory, Upton, NY (remote, telework can be negotiated)
-  name: Scientific Software Developer
-  posted: 2022-12-28
-  url: https://jobs.bnl.gov/job/upton/scientific-software-developer/3437/31300284992
 - expires: 2023-01-06
-  location: Benioff Ocean Science Laboratory, Marine Science Institute, UC Santa Barbara, CA
+  location: Benioff Ocean Science Laboratory, Marine Science Institute, UC Santa Barbara,
+    CA
   name: Assistant or Associate Specialist (Software Engineer)
   posted: 2022-12-15
   url: https://recruit.ap.ucsb.edu/JPF02400
@@ -45,7 +41,8 @@
   url: https://careers.umich.edu/job_detail/227616/app-sys-analystprogrammer-ld
 - expires: 2023-03-01
   location: Purdue University, West Lafayette, IN
-  name: Postdoctoral Fellow Position in Interdisciplinary Biomedical Research and Data Science
+  name: Postdoctoral Fellow Position in Interdisciplinary Biomedical Research and
+    Data Science
   posted: 2022-12-09
   url: https://www.purdue.edu/research/embrio/files/Postdoc-Fellow-announcement_Pienaar_Buganza-Tepole.pdf
 - expires: 2023-02-28
@@ -63,11 +60,6 @@
   name: Software Engineer
   posted: 2022-12-06
   url: https://simonsfoundation.wd1.myworkdayjobs.com/en-US/simonsfoundationcareers/details/Software-Engineer--Center-for-Computational-Mathematics_R0001208-1
-- expires: 2022-12-31
-  location: NSLS-II, Brookhaven National Lab, Upton, NY
-  name: Scientific Software Developer
-  posted: 2022-12-06
-  url: https://jobs.bnl.gov/job/upton/scientific-software-developer/3437/40739839840
 - expires: 2023-04-15
   location: University of Chicago, Chicago, IL
   name: Senior Research Software Engineer
@@ -143,11 +135,6 @@
   name: Postdoctoral Appointee - Software Engineering Research
   posted: 2022-11-19
   url: https://cg.sandia.gov/psp/applicant/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=686817&PostingSeq=1&SiteId=1
-- expires: 2022-11-14
-  location: Arizona State University, Tempe, Arizona
-  name: Research Software Engineer
-  posted: 2022-11-08
-  url: https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25620&siteid=5494&PageType=JobDetails&jobid=4653904#jobDetails=4653904_5494
 - expires: 2022-12-31
   location: Purdue University, Hybrid - Part-time on campus (West Lafayette, IN),
     part-time remote
@@ -195,24 +182,6 @@
   name: Research Software Engineer (Entry Level)
   posted: 2022-10-28
   url: https://rand.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Santa-Monica-CA-Greater-Los-Angeles-Area/Research-Software-Engineer--Entry-Level-_R1387
-- expires: 2022-12-31
-  location: Argonne National Laboratory, Sector 21 (LS-CAT) of the Advanced Photon
-    Source, Chicago, IL
-  name: Developer Intermediate
-  posted: 2022-10-27
-  url: https://careers.northwestern.edu/psp/hr857prd_er/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=46234&PostingSeq=1
-- expires: 2022-12-31
-  location: "Argonne National Laboratory\u2019s Advanced Photon Source (APS), Chicago,\
-    \ IL"
-  name: Developer
-  posted: 2022-10-27
-  url: https://careers.northwestern.edu/psp/hr857prd_er/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=45545&PostingSeq=1
-- expires: 2022-12-31
-  location: Northwestern Argonne Institute of Science and Engineering (NAISE), Chicago,
-    IL
-  name: Senior Software Engineer
-  posted: 2022-10-27
-  url: https://careers.northwestern.edu/psp/hr857prd_er/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=44051&PostingSeq=1
 - expires: 2023-01-31
   location: North Carolina State University, Raleigh, NC
   name: Computational Science Specialist
@@ -261,31 +230,11 @@
   name: Computer Scientist/Engineer
   posted: 2022-08-18
   url: https://erp-hprdext.erp.slac.stanford.edu/psp/hprdext/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=5079&PostingSeq=1
-- expires: 2022-11-18
-  location: Oak Ridge National Laboratory, Oak Ridge, TN
-  name: Research Software Engineer
-  posted: 2022-08-16
-  url: https://jobs.ornl.gov/job-invite/8825/
 - expires: 2022-12-04
   location: University of Chicago, Chicago, IL
   name: Senior Research Software Engineer
   posted: 2022-08-03
   url: https://www.nimbusproject.org/jobs/#research-engineer-senior
-- expires: 2023-01-01
-  location: University of Washington, Seattle, WA (remote/hybrid)
-  name: Principal Lead Software Engineer (multiple positions)
-  posted: 2022-07-24
-  url: https://uwhires.admin.washington.edu/ENG/Candidates/default.cfm?szCategory=jobprofile&szOrderID=209997
-- expires: 2023-01-01
-  location: University of Washington, Seattle, WA (remote/hybrid)
-  name: Senior Software Engineer (multiple positions)
-  posted: 2022-07-24
-  url: https://uwhires.admin.washington.edu/ENG/Candidates/default.cfm?szCategory=jobprofile&szOrderID=209999
-- expires: 2023-01-01
-  location: University of Washington, Seattle, WA (remote/hybrid)
-  name: Associate Software Engineer (multiple positions)
-  posted: 2022-07-24
-  url: https://uwhires.admin.washington.edu/ENG/Candidates/default.cfm?szCategory=jobprofile&szOrderID=210005
 - expires: 2022-12-03
   location: Center for Computation and Visualization, Brown University, Providence,
     RI

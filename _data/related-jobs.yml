@@ -25,7 +25,8 @@
   url: http://m.rfer.us/STANFORDULoKWD
 - expires: 2023-01-03
   location: Language Learning Laboratory, Boston College, Boston, MA
-  name: Research Technician - Developing an Open-Source Ecosystem for Next-Generation Cognitive Science
+  name: Research Technician - Developing an Open-Source Ecosystem for Next-Generation
+    Cognitive Science
   posted: 2022-11-10
   url: https://docs.google.com/document/d/1xtAcA-V-mW_wjUYxk17J9k7Y44STFZSyvJ6sCOI15So/edit?usp=sharing
 - expires: 2022-12-01
@@ -43,11 +44,6 @@
   name: MPI Software Engineer
   posted: 2022-11-08
   url: https://x-scalesolutions.com/jobs/#mpisoftwareengineer
-- expires: 2022-11-09
-  location: University of Wisconsin - Madison, Madison, WI
-  name: Research Computing Specialist
-  posted: 2022-11-08
-  url: https://jobs.hr.wisc.edu/en-us/job/515764/research-computing-specialist
 - expires: 2022-11-30
   location: Brown University, Advancement, Providence, RI, Remote/Hybrid
   name: Lead Data Analyst
@@ -69,7 +65,7 @@
   posted: 2022-06-10
   url: https://www.nextsilicon.com/careers/hpc-support-engineer
 - expires: 2022-11-30
-  location: Schrödinger, New York City, NY
+  location: "Schr\xF6dinger, New York City, NY"
   name: Protein Structure Prediction/Optimization Scientist (Core Homology Modeling)
   posted: 2022-05-06
   url: https://grnh.se/afab47f33us
