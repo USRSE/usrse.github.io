@@ -490,6 +490,10 @@ that a link is not expired and the check fails, we would want to know about this
 (and the test will fail). For all jobs, we don't remove them immediately upon expiration -
 we give the submitter 60 days to possibly update the data file with a later expiration date.
 
+This job needs to be updated in conjunction with the URL checker. If they are not on
+compatible URL checker versions, you may receive inconsistent behavior and erroneous
+failures between this and the PR linting job.
+
 #### Post New Jobs to Slack
 
 The workflow [jobs-poster.yaml](.github/workflows/jobs-poster.yaml) is run on any push
