@@ -113,7 +113,7 @@ In 2023, the Research Data Alliance is celebrating its [10th Anniversary: ‘A D
     
 ## Funding Opportunity from Alfred P. Sloan Foundation for Open Source Software ##
     
-The Alfred P. Sloan Foundation opened a [Call for Letters of Inquiry: Institutional Support for Open Source Software in Research](https://sloan.org/programs/digital-technology/ospo-loi) due February 15, 2023.
+The Alfred P. Sloan Foundation opened a [Call for Letters of Inquiry: Institutional Support for Open Source Software in Research](https://sloan.org/programs/digital-technology/ospo-loi), with responses due February 15, 2023.
 
 The Technology program at the Alfred P. Sloan Foundation supports research, training, community-building, and technological innovation in order to foster advances in the production and dissemination of scientific knowledge. The program is currently soliciting Letters of Inquiry from Principal Investigators at U.S. research institutions to launch Open Source Program Offices (OSPOs). A small number of full proposals will be invited from submissions received in response to this Call. Grant amounts are expected to be up to $750,000 over a two-year period. Successful Letters of Inquiry will offer a clear vision for a long-term institutional support ecosystem for open source software - and the university faculty, students, research software engineers, and staff who build and maintain it - beyond the funding period.
 
