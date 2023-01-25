@@ -148,7 +148,7 @@ Items you may have missed on the blog and Slack:
 If you were unable to come to Salt Lake City, UT, for the inaugural [RSEs in eScience Workshop](https://us-rse.org/rse-escience-2022), the Outreach Working Group has posted a report on the talks and breakout discussion. [See for yourself](https://us-rse.org/2023-01-17-escience-2022-report-out/)!
 
 
-The Outreach Working Group is looking for volunteers to help with organizing workshops, birds of a feather (BoF), symposiums, etc. Roles span from organizer to reviewer to speaker and more.
+The Outreach Working Group is looking for volunteers to help with organizing workshops, birds of a feather (BoF), symposiums, etc. Roles range from organizer to reviewer to speaker and more.
 
 If you are interested in getting involved in a US-RSE hosted event, please reach out to the working group via the [#wg-outreach](https://app.slack.com/client/T8ZT4PJSW/CNR6E0N75) slack channel or [wg-outreach@us-rse.org](mailto:wg-outreach@us-rse.org).
 
