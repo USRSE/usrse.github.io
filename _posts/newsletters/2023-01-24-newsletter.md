@@ -25,7 +25,6 @@ In this issue:
 * [Recent Job Postings](#jobs)
 
     
-<span style="color: black;">
     
     
 <a name="elections"></a>
