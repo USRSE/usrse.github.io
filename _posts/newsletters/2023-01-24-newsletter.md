@@ -71,7 +71,7 @@ In November and December, the Steering Committee discussed moving to a new fisca
     
 The Steering Committee has also continued planning for the 2023 US-RSE Conference, including choosing chairs for the conference planning committees, discussing what benefits are appropriate to offer to conference sponsors, and reviewing costs.
     
-Discussions about securing funding for a community manager, executive director, organizational infrastructure, outreach efforts, and the US-RSE conference also continue, with a focus on refining a budget and the details of what paid positions would do for US-RSE.  
+Discussions about applying for funding for a community manager, executive director, organizational infrastructure, outreach efforts, and the US-RSE conference also continue, with a focus on refining a budget and the details of what paid positions would do for US-RSE.  
 
 
 
