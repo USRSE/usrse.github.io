@@ -131,7 +131,7 @@ Items you may have missed on the blog and Slack:
 * The organizers of RSECon2022 have released a playlist with 38 videos so far 
     * <a name="https://www.youtube.com/playlist?list=PL27mQJy8eDHk---gHCapHwyVaWIkyORYj"></a>[RSECon2022 Playlist](https://www.youtube.com/playlist?list=PL27mQJy8eDHk---gHCapHwyVaWIkyORYj)
 * The Diátaxis framework aims to solve the problem of [structure in technical documentation](https://diataxis.fr)
-* [11 Most in Demand Programming Languages](https://bootcamp.berkeley.edu/blog/most-in-demand-programming-languages/)
+* [11 Most In-Demand Programming Languages](https://bootcamp.berkeley.edu/blog/most-in-demand-programming-languages/)
 * [Inclusive Scientific Meetings](https://500womenscientists.org/inclusive-scientific-meetings)
 * [Build Inclusive Products](https://makeitfable.com/)
 
