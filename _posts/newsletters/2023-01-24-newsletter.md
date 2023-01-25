@@ -157,7 +157,7 @@ We currently organize US-RSE finances transparently via the [Open Collective](ht
 
 There are lots of ways to get involved with the US-RSE community. Of course, you can [join us on Slack](https://us-rse.org/join). We’re also looking for ideas and help in many other places. See our [list of projects](https://docs.google.com/document/d/1jjVD0WkeeWZJI6yqSKyMdIjtClzolsxv75RkpLju17I/edit?usp=sharing) and let us know how you’d like to help. Help with things like the Website Committee, Social Media, Community Engagement, Fundraising, and Newsletter are all needed and welcome.
 
-As always we thank everyone who is already contributing for their help in shaping and growing the organization. In 2021 we added nearly 300 new members. There are still many more RSEs and friends of RSEs we would like to help connect and support. If you are interested in helping in any way please feel free to join in.
+As always, we thank everyone who is already contributing for their help in shaping and growing the organization. In 2021 we added nearly 300 new members. There are still many more RSEs and friends of RSEs we would like to help connect and support. If you are interested in helping in any way please feel free to join in.
 
 [US-RSE Working Groups](https://us-rse.org/working-groups/):
 
