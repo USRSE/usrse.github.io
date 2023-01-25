@@ -67,7 +67,7 @@ If you'd like to volunteer for a particular committee, please let us know!
 <a name="sc-update"></a>
 # **Steering Committee Recap**
 
-In November and December, the Steering Committee has been discussing moving to a new fiscal sponsor that will be able to better support our future financial sustainability.  The Steering Committee voted to apply to a new sponsor.
+In November and December, the Steering Committee discussed moving to a new fiscal sponsor that would be able to better support our future financial sustainability.  The Steering Committee voted to apply to a new sponsor.
     
 The Steering Committee has also continued planning for the 2023 US-RSE Conference, including choosing chairs for the conference planning committees, discussing what benefits are appropriate to offer to conference sponsors, and reviewing costs.
     
