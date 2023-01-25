@@ -196,7 +196,6 @@ These opportunities were recently posted to the [RSE Opportunities page](https:/
 
 
 
-<span style="color: black;">
 
 ### Other Job Boards
 
