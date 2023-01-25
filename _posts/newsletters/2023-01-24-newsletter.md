@@ -59,7 +59,7 @@ Thank you to all those who volunteered to act as a chair for the organizing comm
 - **Sponsor**: Angela Herring, Mahmood Shad, Chris Hill
 - **Student**: Nicole Brewer, Carrie Brown
 
-If you'd like to volunteer to a particular committee, please let us know!
+If you'd like to volunteer for a particular committee, please let us know!
 
 <!-- Can we make a form for this? Or reuse the previous one with different options? -->
 
