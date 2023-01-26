@@ -15,7 +15,7 @@ The website working group was established to work on the website that you are re
 ## Feeds
 
 Added in early 2022, we wanted an ability to provide easy ways to automate specific events, or subscribe
-to them. For the reason, we added differet kinds of programmatic subscriptions or feeds that include:
+to them. For the reason, we added different kinds of programmatic subscriptions or feeds that include:
 
  - rss feeds for different kinds of content
  - equivalent json feeds for the same.

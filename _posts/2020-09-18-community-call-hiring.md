@@ -19,7 +19,7 @@ The interesting and lively discussion covered a wide range of questions posed by
   - How would you like to be evaluated during the hiring process?
   - What do you think is a reasonable amount of time for an interview?
 
-Take-aways from the discussion include:
+Takeaways from the discussion include:
 * Hiring managers expressed interest in RSE applicants who had both strong technical skills and strong communication and interpersonal skills. The ability to interact with and communicate with domain researchers is as important as the ability to develop technically correct software. “People skills” are critical to the success of an RSE.
 * A few managers indicated that a candidate could stand out from the crowd by providing a good cover letter that explains how they are a good fit for the job.  A cover letter is particularly helpful when an applicant's resume or CV is not a clear match for the position.
 * The interview processes vary widely. Sometimes, the interview includes whiteboard coding or providing examples of their work on social coding platforms (e.g. GitHub). These interviews ranged from relatively short sessions with a group, to a talk followed by a series of one-on-one discussions.
