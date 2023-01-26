@@ -134,8 +134,7 @@ Items you may have missed on the blog and Slack:
 * [Inclusive Scientific Meetings](https://500womenscientists.org/inclusive-scientific-meetings)
 * [Build Inclusive Products](https://makeitfable.com/)
 * [What Do We (Not) Know About Research Software Engineering?](http://doi.org/10.5334/jors.384), by Lamprecht et al.
-* [The Key to Scientific Breakthroughs? Improving Access to Open Source Software]
-(https://cziscience.medium.com/the-key-to-scientific-breakthroughs-improving-access-to-open-source-software-38f04c14accf), by the Chan Zuckerberg Initiative
+* [The Key to Scientific Breakthroughs? Improving Access to Open Source Software](https://cziscience.medium.com/the-key-to-scientific-breakthroughs-improving-access-to-open-source-software-38f04c14accf), by the Chan Zuckerberg Initiative
 * [Let's Open Source Diversity & Inclusion](https://youtu.be/hjVmfCrvTQE), video of talk by Demetris Cheatham at 2022 CZI Open Science Annual Meeting
 * [Hunting for the best bioscience software tool? Check this database](https://doi.org/10.1038/d41586-023-00053-w), an article about a dataset funded by the Chan Zuckerberg Initiative that shows how research software and tools are used across disciplines, and helps developers gain credit for their work
 * The latest [Research Software Alliance (ReSA) newsletter](https://preview.mailerlite.com/f1z6i7z9o4/2134973586060875982/p0t5/) includes a lot of research software community news and events.
