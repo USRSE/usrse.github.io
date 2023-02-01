@@ -1,11 +1,11 @@
 - expires: 2023-02-27
   location: Sandia National Laboratories, Albuquerque, NM
-  name:  Optimization and Operations Research Postdoctoral Appointee
+  name: Optimization and Operations Research Postdoctoral Appointee
   posted: 2023-01-24
   url: https://sandia.jobs/albuquerque-nm/optimization-and-operations-research-postdoctoral-appointee/83117F81DC1F48E3B337D8446CA73D37/job/
 - expires: 2023-02-27
   location: Sandia National Laboratories, Albuquerque, NM (flexible)
-  name:  Optimization and Operations Research Computer Scientist
+  name: Optimization and Operations Research Computer Scientist
   posted: 2023-01-24
   url: https://sandia.jobs/albuquerque-nm/optimization-and-operations-research-computer-scientist/20D22714907C44FE94F703DA33DF1127/job/
 - expires: 2023-06-01
@@ -39,11 +39,6 @@
     Cognitive Science
   posted: 2022-11-10
   url: https://docs.google.com/document/d/1xtAcA-V-mW_wjUYxk17J9k7Y44STFZSyvJ6sCOI15So/edit?usp=sharing
-- expires: 2022-12-01
-  location: Code for Science & Society (100% remote)
-  name: Community Manager, URSSI
-  posted: 2022-11-08
-  url: https://www.codeforsociety.org/jobs/community-manager
 - expires: 2023-03-01
   location: Northwestern University, Chicago, IL (Remote/Flexible)
   name: Software Engineer (Android App experience)
@@ -54,11 +49,6 @@
   name: MPI Software Engineer
   posted: 2022-11-08
   url: https://x-scalesolutions.com/jobs/#mpisoftwareengineer
-- expires: 2022-11-30
-  location: Brown University, Advancement, Providence, RI, Remote/Hybrid
-  name: Lead Data Analyst
-  posted: 2022-10-03
-  url: https://brown.wd5.myworkdayjobs.com/staff-careers-brown/job/South-Street-Landing/Lead-Data-Analyst_REQ182091-1
 - expires: 2023-08-15
   location: Texas Tech University, Lubbock, TX
   name: Assistant Managing Director - High Performance Computing
@@ -74,11 +64,6 @@
   name: HPC Support Engineer
   posted: 2022-06-10
   url: https://www.nextsilicon.com/careers/hpc-support-engineer
-- expires: 2022-11-30
-  location: "Schr\xF6dinger, New York City, NY"
-  name: Protein Structure Prediction/Optimization Scientist (Core Homology Modeling)
-  posted: 2022-05-06
-  url: https://grnh.se/afab47f33us
 - expires: 2022-12-31
   location: Pasteur Labs, Remote or NY
   name: Infrastructure/Simulation Intelligence Ops Engineer (Senior+)
