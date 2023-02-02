@@ -4,10 +4,10 @@ items:
     subtitle: Meet our new members
     link: /2022-12-10-election-results/
     link_name: See the Results
-  - title: DEI Speaker Series
-    subtitle: Python Comics with Mars Lee, December 14th
-    link: /events/2022/2022-12-DEI-speaker-series-Mars-Lee/
-    link_name: Event Page
+  - title: RSE Group Leaders' Network
+    subtitle: Join this new network to connect with peers.
+    link: /wg/rse-gln
+    link_name: Learn More
   - title: 1st US-RSE Conference
     subtitle: Save the Date to join us in Chicago, October 16-18, 2023
     link: https://us-rse.org/usrse23/
