@@ -13,7 +13,7 @@ The RSE Group Leaders’ Network (RSE-GLN) is a group of individuals leading RSE
 
 # Membership
 
-The primary membership is for those who currently lead a team and have, or are actively in the process of hiring, at least one direct report; additional members may be invited, such as those who have been in leadership positions in the past.  This is to ensure that members have a network of peers in similar situations who are facing similiar challenges.
+The primary membership is for those who currently lead a team and have, or are actively in the process of hiring, at least one direct report; additional members may be invited, such as those who have been in leadership positions in the past.  This is to ensure that members have a network of peers in similar situations who are facing similar challenges.
 
 The RSE-GLN also seeks to support aspiring RSE Group Leaders through a separate mentorship and development network.  The Aspiring RSE-GLN is open to those looking to build RSE teams at their institution or move into RSE group leadership roles.  There are no formal requirements, but those with the experience and qualifications to take on leadership roles will likely benefit more than early career RSEs.  
 
