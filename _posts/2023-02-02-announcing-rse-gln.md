@@ -2,7 +2,7 @@
 layout: post
 title: "Announcing the RSE Group Leaders’ Network"
 tags: [rse-gln]
-posted_by: Christina Maimone and Adam Rubens
+author: Christina Maimone and Adam Rubens
 ---
 
 After several years of discussions, we’re happy to announce the formation of a US-based [RSE Group Leaders' Network (RSE-GLN)](/wg/rse-gln)!
