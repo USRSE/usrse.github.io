@@ -13,7 +13,7 @@ time:
 
 The February community call will be about **Workflow Tools** on **February 10, 2pm ET/1pm CT/12pm MT/11am PT**.
 
-Workflow tools figure prominently in some RSE fields and are barely used in others. In this call we will compare notes on how people are working with workflow tools, what tools are working well and when, what are up and coming practices to learn, and how the [workflows community](https://workflows.community) has organized themselves to tackle the grand workflows challenges. Everyone is welcome as always. Whether you are a passionate user of widely-used workflow systems (e.g., Nextflow, Parsl, Snakemake, CWL, etc.) or philosophically wedded to nothing but bash it would be great to hear perspectives and exchange ideas. 
+Workflow tools figure prominently in some RSE fields and are barely used in others. In this call we will compare notes on how people are working with workflow tools, what tools are working well and when, what are up and coming practices to learn, and how the [workflows community](https://workflows.community) has organized themselves to tackle the grand workflows challenges. Everyone is welcome as always. Whether you are a passionate user of widely-used workflow systems (e.g., Nextflow, Parsl, Snakemake, CWL, etc.) or philosophically wedded to nothing but `bash`, we invite you to join to hear perspectives and exchange ideas. 
 
 To orient folks we will have a couple of brief presentations from workflow experts [Rafael Ferreira da Silva](https://rafaelsilva.com/) and [Kyle Chard](https://kylechard.com/) on their perspectives. 
 
