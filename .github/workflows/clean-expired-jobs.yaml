@@ -37,7 +37,7 @@ jobs:
         # Google Forms is having enormous timeouts
         timeout: 10
         # Exclude these patterns from the checker
-        exclude_patterns: supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com,jobs.colorado.edu,zoom.us,danielskatz.org,usrse.github.io.wiki.git,ornl.gov,jobs.bnl.gov,https://www.rd-alliance.org/,https://uwhires.admin.washington.edu/
+        exclude_patterns: supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com,jobs.colorado.edu,zoom.us,danielskatz.org,usrse.github.io.wiki.git,ornl.gov,jobs.bnl.gov,https://www.rd-alliance.org/,https://uwhires.admin.washington.edu/,https://twitter.com/,https://careers.umich.edu/
         # Exclude these files from the checker
         exclude_files: README.md,SocialNetworks.yml,map.yml,_config.yml,tests/test_,.github/workflows,_posts/newsletters/
 
