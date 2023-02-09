@@ -27,6 +27,9 @@ This event will take place **Wednesday, March 22nd at 3 PM ET, 2 PM CT, 1 PM MT,
 
 *Intended Audience*: Those interested in setting up a scientific software project on GitLab or those interested to learn the capabilities available on GitLab to help managing a scientific software project. Attendees should have experience with using git.
 
+To follow along with the hands-on portion of the tutorial, please sign up for a GitHub or GitLab account before attending.
+
+Attendees are expected to follow the [US-RSE Code of Conduct](https://us-rse.org/about/code-of-conduct/).
 
 ### Biography
 
