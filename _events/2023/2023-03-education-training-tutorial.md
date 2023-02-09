@@ -30,7 +30,7 @@ This event will take place **Wednesday, March 22nd at 3 PM ET, 2 PM CT, 1 PM MT,
 
 ### Biography
 
-Marshall is a Research Software Engineer in the Application Engineering Group, part of the Computer Science and Mathematics Division at Oak Ridge National Laboratory (ORNL). Previously, he was a postdoc at ORNL in  the Diffraction Group for Neutron Scattering Sciences Division helping with User experiments for neutron diffraction experiments. He earned his PhD from the Department of Chemical and Biomolecular Engineering, University of Tennessee doing computational modeling and simulation of transport in polymeric membranes.
+Marshall is a Research Software Engineer in the Application Engineering Group, part of the Computer Science and Mathematics Division at Oak Ridge National Laboratory (ORNL). Previously, he was a postdoc at ORNL in  the Diffraction Group for Neutron Scattering Sciences Division helping with user experiments for neutron diffraction experiments. He earned his PhD from the Department of Chemical and Biomolecular Engineering, University of Tennessee doing computational modeling and simulation of transport in polymeric membranes.
 
 ### Registration
 
