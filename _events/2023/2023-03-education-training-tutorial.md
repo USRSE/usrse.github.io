@@ -25,7 +25,7 @@ This event will take place **Wednesday, March 22nd at 3 PM ET, 2 PM CT, 1 PM MT,
 
 *Learning Objectives*: The tutorial will go over repository basics in GitLab, including how to set up a repository group and create a code repository within the group, as well as cloning an existing repository. Next, attendees will be shown how to create issues, set up issue tracking boards, utilize issue templates, and use epics to organize issues. We will then provide an explanation of Continuous Integration (CI), runners, and demonstrate configuring CI pipelines using a GitLab runner. We will also cover using the package and  container registries. Attendees will have the opportunity to experiment with using these features during the interactive hands-on exercises,  and will have their own instance of the tutorial repository to reference later and share with other developers at their home institution.
 
-*Intended Audience*: Those interested in setting up a scientific software project on GitLab or those interested to learn the capabilities available on GitLab to help managing a scientific software project. Should have experience with using git.
+*Intended Audience*: Those interested in setting up a scientific software project on GitLab or those interested to learn the capabilities available on GitLab to help managing a scientific software project. Attendees should have experience with using git.
 
 
 ### Biography
