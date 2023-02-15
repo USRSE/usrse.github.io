@@ -51,6 +51,8 @@
       link: wg/rse-empowerment-national-labs
     - name: Website
       link: wg/website
+    - name: RSE Group Leaders' Network
+      link: wg/rse-gln
 - name: Events
   link: events/
   dropdown:
