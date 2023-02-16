@@ -20,7 +20,7 @@ Visit the [Funder Talk Series]({{ site.baseurl }}/wg/outreach/#funder-series) fo
 
 ## Event
 
-This talk in the US-RSE Funder Talk Series will feature:
+This talk in the US-RSE Funder Talk Series will feature 4 speakers from the National Institutes of Health:
 
 * Susan Gregurick, Associate Director for Data Science
 * Ishwar Chandramouliswaran, Program Director, Office of Data Science Strategy (ODSS)
