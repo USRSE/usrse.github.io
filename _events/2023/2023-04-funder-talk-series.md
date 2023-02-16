@@ -20,9 +20,9 @@ Visit the [Funder Talk Series]({{ site.baseurl }}/wg/outreach/#funder-series) fo
 
 ## Event
 
-This talk in the US-RSE Funder Talk Series will feature:
+This talk in the US-RSE Funder Talk Series will feature 4 speakers from the National Institutes of Health:
 
-* Susan Gregurick, Associate Director for Data Science, National Institutes Of Health
+* Susan Gregurick, Associate Director for Data Science
 * Ishwar Chandramouliswaran, Program Director, Office of Data Science Strategy (ODSS)
 * Lori Scott-Sheldon, Program Chief, Data Science and Emerging Methodologies in HIV, Division of AIDS Research, National Institute of Mental Health
 * Heidi Sofia, Program Director, National Human Genomic Research Institute (NHGRI)
@@ -54,8 +54,9 @@ She was instrumental in the creation of the Office of Data Science Strategy in 2
 **Ishwar Chandramouliswaran, MS, MBA**<br>
 Program Director<br>
 Office of Data Science Strategy (ODSS)<br>
+National Institutes Of Health
 
-Ishwar Chandramouliswaran is a lead program director in the Office of Data Science Strategy (ODSS) at the National Institutes of Health’s (NIH).  
+Ishwar Chandramouliswaran is a lead program director in the Office of Data Science Strategy (ODSS) at the National Institutes of Health (NIH).  
 
 He provides leadership, strategic guidance, and coordination of trans-NIH FAIR data science programs driven by researcher needs and emerging technologies. They include adoption of FAIR data principles, initiatives to establish a modernized biomedical data and repository ecosystem, as well as establish community partnerships to enhance education, adoption, and implementation of FAIR practices. 
 
@@ -66,7 +67,8 @@ He provides leadership, strategic guidance, and coordination of trans-NIH FAIR d
 **Lori A. J. Scott-Sheldon, PhD**<br>
 Program Chief, Data Science and Emerging Methodologies in HIV<br>
 Division of AIDS Research<br>
-National Institute of Mental Health 
+National Institute of Mental Health<br>
+National Institutes Of Health 
 
 Lori Scott-Sheldon is the Chief of Data Science and Emerging Methodologies in HIV in the Division of AIDS (DAR) at the National Institute of Mental Health (NIMH).
 
@@ -78,7 +80,8 @@ She leads efforts to expand the sharing and reuse of data in the field of HIV, i
 
 **Heidi Sofia, PhD**<br>
 Program Director<br>
-National Human Genomic Research Institute (NHGRI)
+National Human Genomic Research Institute (NHGRI)<br>
+National Institutes Of Health
 
 Heidi Sofia is a program director in the National Human Genome Research Institute (NHGRI) at the National Institutes of Health (NIH). 
 
