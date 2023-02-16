@@ -78,7 +78,8 @@ She leads efforts to expand the sharing and reuse of data in the field of HIV, i
 
 **Heidi Sofia, PhD**<br>
 Program Director<br>
-National Human Genomic Research Institute (NHGRI)
+National Human Genomic Research Institute (NHGRI)<br>
+National Institutes Of Health
 
 Heidi Sofia is a program director in the National Human Genome Research Institute (NHGRI) at the National Institutes of Health (NIH). 
 
