@@ -22,7 +22,7 @@ Visit the [Funder Talk Series]({{ site.baseurl }}/wg/outreach/#funder-series) fo
 
 This talk in the US-RSE Funder Talk Series will feature:
 
-* Susan Gregurick, Associate Director for Data Science, National Institutes Of Health
+* Susan Gregurick, Associate Director for Data Science
 * Ishwar Chandramouliswaran, Program Director, Office of Data Science Strategy (ODSS)
 * Lori Scott-Sheldon, Program Chief, Data Science and Emerging Methodologies in HIV, Division of AIDS Research, National Institute of Mental Health
 * Heidi Sofia, Program Director, National Human Genomic Research Institute (NHGRI)
