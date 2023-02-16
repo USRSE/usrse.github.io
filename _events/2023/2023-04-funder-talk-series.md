@@ -55,7 +55,7 @@ She was instrumental in the creation of the Office of Data Science Strategy in 2
 Program Director<br>
 Office of Data Science Strategy (ODSS)<br>
 
-Ishwar Chandramouliswaran is a lead program director in the Office of Data Science Strategy (ODSS) at the National Institutes of Health’s (NIH).  
+Ishwar Chandramouliswaran is a lead program director in the Office of Data Science Strategy (ODSS) at the National Institutes of Health (NIH).  
 
 He provides leadership, strategic guidance, and coordination of trans-NIH FAIR data science programs driven by researcher needs and emerging technologies. They include adoption of FAIR data principles, initiatives to establish a modernized biomedical data and repository ecosystem, as well as establish community partnerships to enhance education, adoption, and implementation of FAIR practices. 
 
