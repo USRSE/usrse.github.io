@@ -354,5 +354,9 @@
         "email": "rgupta@mcs.anl.gov",
         "bio": "Research Software Specialist, Argonne National Laboratory\r\n",
         "blog": "https://github.com/rinkug"
+    },
+    "adamrubens": {
+        "name": "adamrubens",
+        "blog": "https://github.com/adamrubens"
     }
 }
