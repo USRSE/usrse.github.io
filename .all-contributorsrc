@@ -706,6 +706,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/768870?v=4"
             ]
+        },
+        {
+            "login": "adamrubens",
+            "name": "adamrubens",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/adamrubens",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/126014033?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
