@@ -24,8 +24,9 @@ var myCalendar = addToCalendar({
 
     {% if time.end %}end: new Date('{{ time.end | date_to_xmlschema }}'),{% endif %}
 
-    // Event timezone. Will convert the given time to that zone
-    timezone: "America/New_York", 
+    // Event timezone. Will convert the given time to that zone. Should use the browser's
+    // timezone to ensure event is created properly for the user.
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
 
     // Event duration (IN MINUTES)
     {% if post.duration %}duration: {{ post.duration }},{% endif %}
