@@ -62,5 +62,20 @@
   name: LSA Technology Services Research Software Programming
   url: https://lsa.umich.edu/technology-services/services/research-tools/research-programming-apps.html
 - institution: Lawrence Berkeley National Laboratory
-  name: Unified Data Systems
+  name: Usable Data Systems
   url: https://crd.lbl.gov/divisions/scidata/uds/
+- institution: Saint Louis University
+  name: Open Source with SLU
+  url: https://oss-slu.github.io/
+- institution: NASA
+  name: Diagnostics and Prognostics Group
+  url: https://www.nasa.gov/content/diagnostics-prognostics/
+- institution: University of Washington 
+  name: Scientific Software Engineering Center
+  url: https://escience.washington.edu/software-engineering/ssec/
+- institution: Lawrence Livermore National Laboratory
+  name: Research Software Engineering
+  url: https://computing.llnl.gov/casc/rse-group
+- institution: Northern Arizona University
+  name: QIIME 2 Developers
+  url: https://qiime2.org
