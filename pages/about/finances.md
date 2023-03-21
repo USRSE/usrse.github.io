@@ -6,7 +6,7 @@ menubar: about
 set_last_modified: true
 ---
 
-### Community Initiatives
+### Community Initiatives Project
 
 <img src="{{ site.baseurl }}/assets/img/ci-secondary-600.png" alt="CI Logo" style="padding:60px; float:right; width:400px;">
 US-RSE is a fiscally sponsored project of [Community Initiatives](http://communityin.org/) (CI), a 501(c)(3) non-profit organisation based in California, USA. The 501(c)(3) status of CI and all of its benefits extend to all CI projects including US-RSE. 
