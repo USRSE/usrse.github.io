@@ -18,7 +18,7 @@ By becoming a fiscally sponsored project of CI, US-RSE now has access to service
 CI charges 10% of gross revenues, and 15% of received government funds, which is in line with most other fiscal sponsors but much lower than typical academic institutions. 
 US-RSE carefully evaluated the different options of fiscal sponsorship and concluded that CI was the best choice. 
 The agreement between US-RSE and CI is not permanent. 
-Therefore, the option for US-RSE to become its own 501(c)(3) non-profit organization is still possible, though we feel strongly that, at this point, it would be too expensive and time consuming.
+US-RSE could still become its own 501(c)(3) non-profit organization in the future, though we feel strongly that it would be too expensive and time consuming at this point.
 
 We look forward to the exciting new opportunities for US-RSE that are now possible as a fiscally sponsored project of Community Initiatives! 
 
