@@ -1533,9 +1533,16 @@ textarea {
 .site-info {
   margin: 0.25em 0 0;
   text-align: center; }
-  .site-info .copyright,
-  .site-info > a {
+
+.site-info .copyright {
     margin: 0 8px 0.5em 0; }
+
+.site-info > a {    
+    color: #741755;
+    text-decoration: underline;
+    background-color: transparent;
+    margin-left: 0.2em;
+}
 
 .social-links {
   margin-top: 0.9375em; }
