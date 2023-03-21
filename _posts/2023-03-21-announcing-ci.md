@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "US-RSE has a new Fiscal Sponsor!"
+title: "US-RSE Has a New Fiscal Sponsor!"
 tags: [finances]
 author: Julia Damerow
 ---
@@ -10,7 +10,7 @@ We’re excited to announce that US-RSE has switched to a new fiscal sponsor. We
 Moving forward, Community Initiatives’ additional tools, resources, and infrastructure will better serve US-RSE’s future organizational and financial goals.
 
 [According to Wikipedia](https://en.wikipedia.org/wiki/Fiscal_sponsorship), “[f]iscal sponsorship refers to the practice of non-profit organizations offering their legal and tax-exempt status to groups—typically projects—engaged in activities related to the sponsoring organization's mission.” 
-For US-RSE, that means that by being a project of Community Initiatives, their 501(c)(3) non-profit status extends to us, so that, for instance, we can accept donations without the expense or effort of having to form a non-profit ourselves. 
+For US-RSE, that means that by being a project of CI, their 501(c)(3) non-profit status extends to us, so that, for instance, we can accept donations without the expense or effort of having to form a non-profit ourselves. 
 Furthermore, CI also provides services such as legal consultancy and HR services that allow us to enter into contracts or hire employees. 
 Because we are legally a project of CI, however, US-RSE will need to abide by federal and California laws and regulations pertaining to 501(c)(3) organizations. 
 
@@ -20,7 +20,7 @@ US-RSE carefully evaluated the different options of fiscal sponsorship and concl
 The agreement between US-RSE and CI is not permanent. 
 Therefore, the option for US-RSE to become its own 501(c)(3) non-profit organization is still possible, though we feel strongly that, at this point, it would be too expensive and time consuming.
 
-We look forward to the exciting new possibilities and opportunities for US-RSE that are now possible as a fiscally sponsored project of Community Initiatives! 
+We look forward to the exciting new opportunities for US-RSE that are now possible as a fiscally sponsored project of Community Initiatives! 
 
 
 
