@@ -66,7 +66,7 @@ New working groups will be:
 - Added to the <a href="{{ site.baseurl }}/working-groups/" target="_blank">working groups page</a> on the US-RSE website
   - NOTE: Chairs are expected to create a webpage (in the US-RSE web space) for their
     working group, to be linked to the main working groups page.
-    You are encouraged to use <a href="{{  }}/wg/group-management/template" target="_blank">the template</a>.
+    You are encouraged to use <a href="{{ site.baseurl }}/wg/group-management/wg-template" target="_blank">the template</a>.
   - Webpages can be added/updated by submitting a pull request via GitHub to the US-RSE webpage,
     e.g. [https://github.com/USRSE/usrse.github.io/pull/612](https://github.com/USRSE/usrse.github.io/pull/612 )
 - Supplied a:

@@ -3,7 +3,7 @@ layout: page
 title: Template Working Group Webpage
 subtitle:
 menubar: working-groups
-permalink: /wg/group-management/template
+permalink: /wg/group-management/wg-template
 set_last_modified: true
 ---
 

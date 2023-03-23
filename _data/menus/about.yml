@@ -1,20 +1,24 @@
 - label: About US-RSE
   items:
     - name: Mission
-      link: /about/mission/
+      link: about/mission/
     - name: DEI Mission Statement
       link: /about/dei-mission/
     - name: What is an RSE?
-      link: /about/what-is-an-rse/
+      link: about/what-is-an-rse/
     - name: Governance
-      link: /about/governance/
+      link: about/governance/
     - name: Steering Committee
-      link: /about/steering-committee/
+      link: about/steering-committee/
     - name: Election
-      link: /about/election/
+      link: about/election/
     - name: Financial Status
-      link: /about/finances/
+      link: about/finances/
     - name: Code of Conduct
-      link: /about/code-of-conduct/
+      link: about/code-of-conduct/
+    - name: Affinity Groups
+      link: about/affinity-groups/
+    - name: Working Groups
+      link: working-groups/
     - name: Contact
-      link: /about/contact/
+      link: about/contact/

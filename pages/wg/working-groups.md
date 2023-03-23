@@ -4,6 +4,7 @@ title: Working Groups
 permalink: /working-groups/
 subtitle: Focused groups to tackle community topics
 menubar: working-groups
+menubar_toc: true
 set_last_modified: true
 ---
 
