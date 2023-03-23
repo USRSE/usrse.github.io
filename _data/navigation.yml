@@ -45,14 +45,16 @@
       link: wg/dei
     - name: Education and Training
       link: wg/education_training
+    - name: Group Management
+      link: wg/group-management
     - name: Outreach
       link: wg/outreach
     - name: RSE Empowerment in National Labs
       link: wg/rse-empowerment-national-labs
-    - name: Website
-      link: wg/website
     - name: RSE Group Leaders' Network
       link: wg/rse-gln
+    - name: Website
+      link: wg/website
 - name: Events
   link: events/
   dropdown:
