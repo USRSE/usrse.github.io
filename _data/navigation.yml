@@ -19,6 +19,8 @@
       link: about/finances/
     - name: Code of Conduct
       link: about/code-of-conduct/
+    - name: Affinity Groups
+      link: about/affinity-groups/
     - name: Working Groups
       link: working-groups/
     - name: Contact
@@ -51,8 +53,6 @@
       link: wg/outreach
     - name: RSE Empowerment in National Labs
       link: wg/rse-empowerment-national-labs
-    - name: RSE Group Leaders' Network
-      link: wg/rse-gln
     - name: Website
       link: wg/website
 - name: Events
