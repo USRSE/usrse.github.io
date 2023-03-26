@@ -1,11 +1,11 @@
 style: is-light
 items:
-  - title: Steering Committee Election Results
-    subtitle: Meet our new members
-    link: /2022-12-10-election-results/
-    link_name: See the Results
+  - title: Funder Series
+    subtitle: Talk with funding agencies and foundations about RSE opportunities
+    link: /wg/outreach/#funder-series
+    link_name: Register for a Session 
   - title: RSE Group Leaders' Network
-    subtitle: Join this new network to connect with peers.
+    subtitle: Join this new network to connect with peers
     link: /wg/rse-gln
     link_name: Learn More
   - title: 1st US-RSE Conference
