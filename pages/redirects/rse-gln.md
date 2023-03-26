@@ -1,5 +1,5 @@
 ---
 layout: page
-permalink: /ag/rse-gln/
-redirect: /wg/rse-gln/
+permalink: /wg/rse-gln/
+redirect: /ag/rse-gln/
 ---
