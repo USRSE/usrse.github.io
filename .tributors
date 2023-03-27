@@ -358,5 +358,9 @@
     "adamrubens": {
         "name": "adamrubens",
         "blog": "https://github.com/adamrubens"
+    },
+    "manning-ncsa": {
+        "name": "T. Andrew Manning",
+        "blog": "https://github.com/manning-ncsa"
     }
 }
