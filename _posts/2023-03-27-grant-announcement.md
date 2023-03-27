@@ -14,7 +14,7 @@ It is a testament to the work that we are doing in the community, and we are hon
 More information will be available soon, including specific plans, programs, and opportunities to get involved. 
 
 We will post updates to the website, Slack, and email over the next few weeks.
-Additionally, we will host a special [Community Call](https://princeton.zoom.us/meeting/register/tJUud-qvrjMrHdz4NeQEdStLdIhMCPyT1ihr) on Thursday April 20 at 2ET/1CT/12MT/10PT to outline upcoming plans as well as provide an opportunity to answer any questions you may have. 
+Additionally, we will host a special [Community Call](https://princeton.zoom.us/meeting/register/tJUud-qvrjMrHdz4NeQEdStLdIhMCPyT1ihr) on Thursday April 20 at 2ET/1CT/12MT/11PT to outline upcoming plans as well as provide an opportunity to answer any questions you may have. 
 This call will be recorded and shared internally on Slack.
 
 Thank you all for your ongoing support of, and participation in, US-RSE. 
