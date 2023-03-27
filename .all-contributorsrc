@@ -717,6 +717,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/126014033?v=4"
             ]
+        },
+        {
+            "login": "manning-ncsa",
+            "name": "T. Andrew Manning",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/manning-ncsa",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/56734137?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
