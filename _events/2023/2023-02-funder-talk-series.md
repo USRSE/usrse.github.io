@@ -20,12 +20,7 @@ Visit the [Funder Talk Series]({{ site.baseurl }}/wg/outreach/#funder-series) fo
 
 ## Event
 
-This talk in the US-RSE Funder Talk Series will feature Dr. Joshua Greenberg, Program Director of the Alfred P. Sloan Foundation's Digital Information Technology program. This event will take place **Thursday, February 2nd at 4 PM ET, 3 PM CT, 2 PM MT, 1 PM PT**
-
-Please join us in this interactive conversation. (If you can't participate in the interactive event, where you will be able to ask questions and help funders understand US-RSE, it will also be recorded.)
-
-[**Register on Zoom**](https://boisestate.zoom.us/meeting/register/tJYkdeCrqjktHNEpjmchBk72ThpWjagcnLDt)
-
+This talk in the US-RSE Funder Talk Series will feature Dr. Joshua Greenberg, Program Director of the Alfred P. Sloan Foundation's Digital Information Technology program. This event took place **Thursday, February 2nd at 4 PM ET, 3 PM CT, 2 PM MT, 1 PM PT**
 
 ### Biography
 
@@ -38,6 +33,7 @@ Dr. Greenberg has broad experience and understanding of the content and research
 _* Biography derived from [https://sloan.org/about/staff/joshua-m-greenberg](https://sloan.org/about/staff/joshua-m-greenberg)_
 
 
-### Registration
+### Resources
 
-You can [register on Zoom](https://boisestate.zoom.us/meeting/register/tJYkdeCrqjktHNEpjmchBk72ThpWjagcnLDt) for this presentation.  A recording of the presentation will be made available to those who have registered.
+- [Recorded Talk](https://youtu.be/5Ri19PvgzeI)
+- [Slides](https://drive.google.com/file/d/17v1yqstYMoERYEfuqmEZY3hyI30j30KL/view?usp=sharing)
