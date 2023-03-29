@@ -120,11 +120,9 @@ The US-RSE Diversity, Equity, and Inclusion Working Group (DEI-WG) is working to
 <a name="dei-media-club"></a>
 ## US-RSE DEI-WG Media Club
 
-The DEI Working Group hosts a regular Media Club discussion in which we invite participants to read, listen to, or watch the chosen DEI media and come ready to discuss the content as a small group. Next up is a discussion of this podcast on the Florida’s Department of Education rejecting an AP course on African American Studies, and what's happening in higher education there in general:
-https://voltedu.com/podcast/podcast-crossover-the-college-boards-trouble-in-florida/
+The DEI Working Group hosts a regular Media Club discussion in which we invite participants to read, listen to, or watch the chosen DEI media and come ready to discuss the content as a small group. Next up is a discussion of this podcast on the Florida’s Department of Education rejecting an AP course on African American Studies, and what's happening in higher education there in general. [Listen to the podcast](https://voltedu.com/podcast/podcast-crossover-the-college-boards-trouble-in-florida/).
 
-Link to register here:
-https://stanford.zoom.us/meeting/register/tJwkce-uqjwoHdxLgipTO2ncD943cXWpmAeJ
+[Link to register](https://stanford.zoom.us/meeting/register/tJwkce-uqjwoHdxLgipTO2ncD943cXWpmAeJ)
 
 <a name="community-calls"></a>
 ## Community Calls
