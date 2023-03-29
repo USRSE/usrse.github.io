@@ -172,23 +172,32 @@ Travel funding is available! For more information or to apply, visit https://int
 A note from Peter Schmidt on the two year anniversary of his podcast, [Code for Thought](https://codeforthought.buzzsprout.com):
 
 <blockquote>Two Years of Code for Thought
- 
+<br>
+<br>
 On 12 January 2021, the first episode of Code for Thought, the podcast show for research and software engineering, went live with [‘And so it begins…’](https://codeforthought.buzzsprout.com/1326658/7121884-and-so-it-begins) At the time, I was quite nervous about launching the podcast. After all, I just barely started co-hosting podcast episodes with the wonderful Vanessa Sochat and her ‘RSE Stories’ show (now [Developer Stories](https://rseng.github.io/devstories/). On top of that, with podcasting being very popular and so many shows to choose from, where would this one end up?
- 
+<br>
+<br>
 Well, two years and nearly 60 episodes later, I am pleased to say the podcast has found its place. In that period the community of research software engineers has grown steadily, not only in the UK but globally.
- 
+<br>
+<br>
 At the same time, the questions that have puzzled us RSEs for so long still persist: How do we get recognition and proper support for the work we do? And while in some countries, like the UK, research centres and universities have been building teams of RSEs, in other countries such roles still need to be defined and funded.
- 
+<br>
+<br>
 All of this means that the work of raising awareness of research software engineering and growing our community must continue. And it should do so on an international level as well as on a local and national one.
- 
+<br>
+<br>
 Podcasting is a great way of helping to achieve that and I am delighted to continue and even increase the effort on Code for Thought. This means increasing the visibility of research and software engineering not only in the UK but elsewhere in the world.
-
+<br>
+<br>
 In the annual report from the Code for Thought hosting site I read that the podcast has been listened to by people from 59 different countries. Which blew my mind away. But it also showed that the podcast needs to serve a wider community.
-
+<br>
+<br>
 To keep this podcast as a true community effort it is important to hear from you! I look forward to hear about your ideas, comments and suggestions on [email](mailto:code4thought@proton.me), [LinkedIn](https://www.linkedin.com/company/codeforthought/), [UK Slack workspace](https://ukrse.slack.com/join/signup#/domain-signup) (@code4thought), [Mastodon](https://fosstodon.org/@code4thought), and [Github news/blogs](https://code4thought-podcast.github.io/newsletters/). 
- 
+<br>
+<br>
 My heartfelt thanks for listening and supporting this podcast. I wish you all the best for 2023 and I hope you enjoy the show.
-
+<br>
+<br>
 Peter
 </blockquote>
 
