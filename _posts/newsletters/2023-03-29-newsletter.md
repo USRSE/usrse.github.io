@@ -98,8 +98,8 @@ The NIH Panel includes:
 * Heidi Sofia, Program Director, National Human Genomic Research Institute (NHGRI)
 
 Following this event with NIH will be talks from:
-* Dr. Carly Strasser, Program Manager for Open Science at the Chan Zuckerberg Initiative (CZI), Tuesday, May 9th at 4 PM ET, 3 PM CT, 2 PM MT, 1 PM PT ([register now](https://us-rse.org/events/2023/2023-05-funder-talk-series/))
-* Dr. Varun Chandola, Program Director in the Office of Advanced Cyberinfrastructure (OAC) at the National Science Foundation (NSF), Tuesday, June 20th at noon ET, 11 AM CT, 10 AM MT, 9 AM PT (registration coming soon)
+* Dr. Carly Strasser, Program Manager for Open Science at the Chan Zuckerberg Initiative (CZI), Tuesday, May 9th at 4pm ET, 3pm CT, 2pm MT, 1pm PT ([register now](https://us-rse.org/events/2023/2023-05-funder-talk-series/))
+* Dr. Varun Chandola, Program Director in the Office of Advanced Cyberinfrastructure (OAC) at the National Science Foundation (NSF), Tuesday, June 20th at 12pm ET, 11am CT, 10am MT, 9am PT (registration coming soon)
 
 <a name="rse-gln"></a>
 ## RSE Group Leaders' Network (RSE-GLN)   
