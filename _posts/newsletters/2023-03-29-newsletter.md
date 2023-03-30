@@ -174,7 +174,7 @@ A note from Peter Schmidt on the two year anniversary of his podcast, [Code for 
 <blockquote>Two Years of Code for Thought
 <br>
 <br>
-On 12 January 2021, the first episode of Code for Thought, the podcast show for research and software engineering, went live with <a href="https://codeforthought.buzzsprout.com/1326658/7121884-and-so-it-begins">‘And so it begins…’</a> At the time, I was quite nervous about launching the podcast. After all, I just barely started co-hosting podcast episodes with the wonderful Vanessa Sochat and her ‘RSE Stories’ show (now <a href="https://rseng.github.io/devstories/">Developer Stories</a>. On top of that, with podcasting being very popular and so many shows to choose from, where would this one end up?
+On 12 January 2021, the first episode of Code for Thought, the podcast show for research and software engineering, went live with <a href="https://codeforthought.buzzsprout.com/1326658/7121884-and-so-it-begins">‘And so it begins…’</a> At the time, I was quite nervous about launching the podcast. After all, I just barely started co-hosting podcast episodes with the wonderful Vanessa Sochat and her ‘RSE Stories’ show (now <a href="https://rseng.github.io/devstories/">Developer Stories</a>). On top of that, with podcasting being very popular and so many shows to choose from, where would this one end up?
 <br>
 <br>
 Well, two years and nearly 60 episodes later, I am pleased to say the podcast has found its place. In that period the community of research software engineers has grown steadily, not only in the UK but globally.
