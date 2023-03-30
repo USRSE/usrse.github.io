@@ -131,7 +131,7 @@ The DEI Working Group hosts a regular Media Club discussion in which we invite p
     
 The April community call will be on Friday, **April 14, 2pm ET/1pm CT/12pm MT/11am PT**.
 
-The topic of the community call will be the first ever US-RSE conference, which will take place in Chicago, IL, October 16-18, 2023. We are committed to making this event successful! To ensure its usefulness to the US-RSE community, we’d like to hear your thoughts and ideas! That’s why the next community call will be all about the conference. Are there specific events you would like to see? What would or wouldn’t make you attend? Do you have concrete ideas of how this conference could be useful to you? Join us and discuss with other members of the community.
+The topic of the community call will be the first ever US-RSE conference, which will take place in Chicago, IL, October 16-18, 2023. We are committed to making this event successful! To ensure its usefulness to the US-RSE community, we’d like to hear your thoughts and ideas! That’s why this community call will be all about the conference. Are there specific events you would like to see? What would or wouldn’t make you attend? Do you have concrete ideas on how this conference could be useful to you? Join us and discuss with other members of the community.
     
 **Registration details**
 You can register for this community call [here](https://asu.zoom.us/meeting/register/tZUkdOqrrDgqHdKXUbh__bHT-ENeSWMrdgLK).
