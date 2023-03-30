@@ -148,7 +148,7 @@ You can register for this special Community Call [here](https://princeton.zoom.u
 
 ## INTERSECT RSEng Bootcamp - July 10-14, 2023
 
-This 4.5 day event, targeting those who self-identify as intermediate research software developers with backgrounds in a research domain other than computer science, will cover RSE topics including:
+This 4.5-day event, targeting those who self-identify as intermediate research software developers with backgrounds in a research domain other than computer science, will cover RSE topics including:
 
 * Software Design
 * Working Collaboratively
