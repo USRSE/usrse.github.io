@@ -225,7 +225,7 @@ If you are interested in getting involved in a US-RSE hosted event, please reach
 <a name="financials"></a>
 # **US-RSE Has a New Fiscal Sponsor!**
 
-We’re excited to announce that US-RSE has switched to a new fiscal sponsor. We are now a fiscally-sponsored project of [Community Initiatives](http://communityin.org/) (CI)! Our previous fiscal sponsor, Open Collective Foundation (OCF), represented an important first step allowing us to accept donations and making it possible to reimburse members for expenses they incurred on behalf of US-RSE. Moving forward, Community Initiatives’ additional tools, resources, and infrastructure will better serve US-RSE’s future organizational and financial goals.
+We’re excited to announce that US-RSE has switched to a new fiscal sponsor. We are now a fiscally sponsored project of [Community Initiatives](http://communityin.org/) (CI)! Our previous fiscal sponsor, Open Collective Foundation (OCF), represented an important first step allowing us to accept donations and making it possible to reimburse members for expenses they incurred on behalf of US-RSE. Moving forward, Community Initiatives’ additional tools, resources, and infrastructure will better serve US-RSE’s future organizational and financial goals.
 
 <a name="involved"></a>
 # **Get Involved**
