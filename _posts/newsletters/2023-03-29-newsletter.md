@@ -156,7 +156,7 @@ This 4.5-day event, targeting those who self-identify as intermediate research s
 * CI/CD
 * Packaging & Distribution
 
-Travel funding is available! For more information or to apply, visit https://intersect-training.org/bootcamp23/.
+Travel funding is available! For more information or to apply, visit [https://intersect-training.org/bootcamp23/](https://intersect-training.org/bootcamp23/).
 
 ## Upcoming Events
     
