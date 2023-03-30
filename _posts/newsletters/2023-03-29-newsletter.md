@@ -218,7 +218,7 @@ Items you may have missed on the blog and Slack:
 <a name="outreach"></a>
 # **US-RSE Outreach**
 
-The Outreach Working Group is looking for volunteers to help with organizing workshops, birds of a feather (BoF), symposiums, etc. Roles range from organizer to reviewer to speaker and more.
+The Outreach Working Group is looking for volunteers to help with organizing workshops, birds of a feather (BoFs), symposiums, etc. Roles range from organizer to reviewer to speaker and more.
 
 If you are interested in getting involved in a US-RSE hosted event, please reach out to the working group via the [#wg-outreach](https://app.slack.com/client/T8ZT4PJSW/CNR6E0N75) slack channel or [wg-outreach@us-rse.org](mailto:wg-outreach@us-rse.org).
 
