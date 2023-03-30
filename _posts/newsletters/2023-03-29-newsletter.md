@@ -192,7 +192,7 @@ Podcasting is a great way of helping to achieve that and I am delighted to conti
 In the annual report from the Code for Thought hosting site I read that the podcast has been listened to by people from 59 different countries. Which blew my mind away. But it also showed that the podcast needs to serve a wider community.
 <br>
 <br>
-To keep this podcast as a true community effort it is important to hear from you! I look forward to hear about your ideas, comments and suggestions on <a href="mailto:code4thought@proton.me">email</a>, <a href="https://www.linkedin.com/company/codeforthought/">LinkedIn</a>, <a href="https://ukrse.slack.com/join/signup#/domain-signup">UK Slack workspace</a> (@code4thought), <a href="https://fosstodon.org/@code4thought">Mastodon</a>, and <a href="https://code4thought-podcast.github.io/newsletters/">Github news/blogs</a>. 
+To keep this podcast as a true community effort it is important to hear from you! I look forward to hear about your ideas, comments and suggestions on <a href="mailto:code4thought@proton.me">email</a>, <a href="https://www.linkedin.com/company/codeforthought/">LinkedIn</a>, <a href="https://ukrse.slack.com/join/signup#/domain-signup">UK Slack workspace</a> (@code4thought), <a href="https://fosstodon.org/@code4thought">Mastodon</a>, and <a href="https://code4thought-podcast.github.io/newsletters/">GitHub news/blogs</a>. 
 <br>
 <br>
 My heartfelt thanks for listening and supporting this podcast. I wish you all the best for 2023 and I hope you enjoy the show.
