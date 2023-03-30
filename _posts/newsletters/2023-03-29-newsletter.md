@@ -45,7 +45,7 @@ The US-RSE'23 General Chairs will be hosting a [Community Call](#community-calls
 <a name="grant-announcement"></a>
 # **Two-year Alfred P. Sloan Foundation Grant**
 
-We are thrilled to announce that US-RSE has received a two-year grant, totaling nearly $800k, from The Alfred P. Sloan Foundation!
+We are thrilled to announce that US-RSE has received a two-year grant, totaling nearly $800k, from the Alfred P. Sloan Foundation!
 
 This grant represents a major turning point in our organization’s growth and will enable many new community initiatives, programs, and events over the coming years. We would like to express our deep gratitude to the Sloan Foundation for their generous support of US-RSE. It is a testament to the work that we are doing in the community, and we are honored to be recognized in this way.
 
