@@ -230,7 +230,7 @@ We’re excited to announce that US-RSE has switched to a new fiscal sponsor. We
 <a name="involved"></a>
 # **Get Involved**
 
-There are lots of ways to get involved with the US-RSE community. Of course, you can [join us on Slack](https://us-rse.org/join). We’re also looking for ideas and help in many other places. See our [list of projects](https://docs.google.com/document/d/1jjVD0WkeeWZJI6yqSKyMdIjtClzolsxv75RkpLju17I/edit?usp=sharing) and let us know how you’d like to help. Help with things like the Website Committee, Social Media, Community Engagement, Fundraising, and Newsletter are all needed and welcome.
+There are lots of ways to get involved with the US-RSE community. Of course, you can [join us on Slack](https://us-rse.org/join). We’re also looking for ideas and help in many other places. See our [list of projects](https://docs.google.com/document/d/1jjVD0WkeeWZJI6yqSKyMdIjtClzolsxv75RkpLju17I/edit?usp=sharing) and let us know how you’d like to help. Help with things like the Website Committee, Social Media, Community Engagement, Fundraising, and Newsletter is needed and welcome.
 
 New guidance was recently released on how to create new [Affinity Groups](https://us-rse.org/wg/group-management/form-an-affinity-group) and [Working Groups](https://us-rse.org/wg/group-management/form-a-working-group). If you see an unmet need in the US-RSE community, we encourage you to create your own group!
 
