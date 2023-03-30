@@ -138,7 +138,7 @@ You can register for this community call [here](https://asu.zoom.us/meeting/regi
     
 ### Community Call - Special Edition
     
-On Thursday, **April 20 at 2pm ET/1pm CT/12pm MT/11am PT** we will host a special Community Call to outline upcoming plans for [our new grant](https://us-rse.org/2023-03-27-grant-announcement/) that US-RSE has received from The Alfred P. Sloan Foundation. This will provide an opportunity to answer any questions you may have. The call will be recorded and shared internally on Slack.
+On Thursday, **April 20 at 2pm ET/1pm CT/12pm MT/11am PT** we will host a special Community Call to outline upcoming plans for [the new grant](https://us-rse.org/2023-03-27-grant-announcement/) that US-RSE has received from the Alfred P. Sloan Foundation. This will provide an opportunity to answer any questions you may have. The call will be recorded and shared internally on Slack.
 
 **Registration details**
 You can register for this special Community Call [here](https://princeton.zoom.us/meeting/register/tJUud-qvrjMrHdz4NeQEdStLdIhMCPyT1ihr).
