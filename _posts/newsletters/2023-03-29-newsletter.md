@@ -86,7 +86,7 @@ US-RSE is happy to be continuing its series of conversations with funders for 1)
 
 Please join us in this interactive conversation. (If you can’t participate in the interactive event, where you will be able to ask questions and help funders understand US-RSE, it will also be recorded.)
 
-**Date/Time: [Monday, April 3rd at 1 PM ET, 12 PM CT, 11 AM MT, 10 AM PT](https://us-rse.org/events/2023/2023-04-funder-talk-series/)**
+**Date/Time: [Monday, April 3rd at 1pm ET, 12pm CT, 11am MT, 10am PT](https://us-rse.org/events/2023/2023-04-funder-talk-series/)**
 
 **[Register Now!](https://boisestate.zoom.us/meeting/register/tJ0pde2tpjstG9z39q8WfMsTcf3s5GDsbyZ9)**
 
