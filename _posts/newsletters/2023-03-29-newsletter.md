@@ -104,7 +104,7 @@ Following this event with NIH will be talks from:
 <a name="rse-gln"></a>
 ## RSE Group Leaders' Network (RSE-GLN)   
     
-The RSE-GLN is a group of individuals leading RSE teams who meet to support their peers with the challenges of leading RSE groups.
+The RSE-GLN is a group of individuals leading RSE teams who come together to support their peers in meeting the challenges of leading RSE groups.
 
 The primary membership is for those who currently lead a team and have, or are actively in the process of hiring, at least one direct report; additional members may be invited, such as those who have been in leadership positions in the past. This is to ensure that members have a network of peers in similar situations who are facing similar challenges.  The group meets monthly.
 
