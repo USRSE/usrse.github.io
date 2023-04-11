@@ -77,8 +77,6 @@ about opportunities, strategies, and starting points for finding funding.
 
 #### Upcoming Presentations
 
-- __2023-04-03 Susan Gregurick, Ishwar Chandramouliswaran, Lori Scott-Sheldon, Heidi Sofia__ - National Institutes of Health: [Event info and registration]({{ site.baseurl }}/events/2023/2023-04-funder-talk-series/)
-
 - __2023-05-09 Carly Strasser__ - Chan Zuckerberg Initiative: [Event info and registration]({{ site.baseurl }}/events/2023/2023-05-funder-talk-series/)
 
 Please keep an eye out for future announcements regarding this series.
@@ -88,6 +86,8 @@ Please keep an eye out for future announcements regarding this series.
 - __2022-10-17 Hal Finkel__ - Advanced Scientific Computing Research, Office of Science, US Department of Energy: [Event page]({{ site.baseurl }}/events/2022/2022-10-funder-talk-series/), [video](https://youtu.be/vZYQJ5eOMls) & [slides](https://drive.google.com/file/d/1W9Oh50BMwHG6o1OEmlRXi_AaJYmMdMVn/view?usp=sharing)
 
 - __2023-02-02 Joshua Greenberg__ - Digital Information Technology Program, Alfred P. Sloan Foundation: [Event page]({{ site.baseurl }}/events/2023/2023-02-funder-talk-series/), [video](https://youtu.be/5Ri19PvgzeI) & [slides](https://drive.google.com/file/d/17v1yqstYMoERYEfuqmEZY3hyI30j30KL/view?usp=sharing)
+
+- __2023-04-03 Susan Gregurick, Ishwar Chandramouliswaran, Lori Scott-Sheldon, Heidi Sofia__ - National Institutes of Health: [Event page]({{ site.baseurl }}/events/2023/2023-04-funder-talk-series/), [video](https://youtu.be/0Tk7aUSOk-4) & [slides](https://drive.google.com/file/d/1a-B5Hr-GAHfYFhDVZEz6sfCmMEuAoaNo/view?usp=sharing)
 
 
 
