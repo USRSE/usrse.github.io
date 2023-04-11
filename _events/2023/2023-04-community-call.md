@@ -13,7 +13,7 @@ time:
 
 The next community call will be all about **US-RSE'23** on **Friday, April 14, 2pm ET/1pm CT/12pm MT/11am PT**.
 
-It’s coming! The first ever US-RSE conference will take place in Chicago, IL, October 16-18, 2023. We are committed to making this event successful! To ensure its usefulness to the US-RSE community, we’d like to hear your thoughts and ideas! That’s why the next community call will be all about the conference. Are there specific events you would like to see? What would or wouldn’t make you attend? Do you have concrete ideas of how this conference could be useful to you? Join us and discuss with other members of the community!
+It’s coming! The first ever US-RSE conference will take place in Chicago, IL, October 16-18, 2023. We are committed to making this event successful. To ensure its usefulness to the US-RSE community, we’d like to hear your thoughts and ideas. That’s why the next community call will be all about the conference. Are there specific events you would like to see? What would or wouldn’t make you attend? Do you have concrete ideas of how this conference could be useful to you? Join us and discuss with other members of the community!
 
 
 #### Registration details
