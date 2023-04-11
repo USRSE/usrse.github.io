@@ -20,20 +20,19 @@ Visit the [Funder Talk Series]({{ site.baseurl }}/wg/outreach/#funder-series) fo
 
 ## Event
 
-This talk in the US-RSE Funder Talk Series will feature 4 speakers from the National Institutes of Health:
+This talk in the US-RSE Funder Talk Series featured 4 speakers from the National Institutes of Health:
 
 * Susan Gregurick, Associate Director for Data Science
 * Ishwar Chandramouliswaran, Program Director, Office of Data Science Strategy (ODSS)
 * Lori Scott-Sheldon, Program Chief, Data Science and Emerging Methodologies in HIV, Division of AIDS Research, National Institute of Mental Health
 * Heidi Sofia, Program Director, National Human Genomic Research Institute (NHGRI)
 
-This event will take place **Monday, April 3rd at 1 PM ET, 12 PM CT, 11 AM MT, 10 AM PT**
+This event took place **Monday, April 3rd at 1 PM ET, 12 PM CT, 11 AM MT, 10 AM PT**
 
-Please join us in this interactive conversation. (If you can't participate in the interactive event, where you will be able to ask questions and help funders understand US-RSE, it will also be recorded.)
+### Resources
 
-### Registration
-
-You can **[register on Zoom](https://boisestate.zoom.us/meeting/register/tJ0pde2tpjstG9z39q8WfMsTcf3s5GDsbyZ9)** for this presentation.  A recording of the presentation will be made available to those who have registered.
+- [Recorded Talk](https://youtu.be/0Tk7aUSOk-4)
+- [Slides](https://drive.google.com/file/d/1a-B5Hr-GAHfYFhDVZEz6sfCmMEuAoaNo/view?usp=sharing)
 
 ### Biographies
 
