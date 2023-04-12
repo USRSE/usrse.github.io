@@ -16,7 +16,7 @@ For each RSS feed, we provide the latest 100 items.
  - [https://us-rse.org/feed.xml](https://us-rse.org/feed.xml): subscribe to posts on the US-RSE site
  - [https://us-rse.org/feeds/events.xml](https://us-rse.org/feeds/events.xml): subscribe to US-RSE events, including descriptions, locations, times, publication date, and categories (e.g., working groups or content types).
  - [https://us-rse.org/feeds/newsletters.xml](https://us-rse.org/feeds/newsletters.xml): subscribe to a subset of newsletter posts
- - [https://us-rse.org/feeds/dei.xml](https://us-rse.org/feeds/del.xml): subscribe to DEI working group events
+ - [https://us-rse.org/feeds/dei.xml](https://us-rse.org/feeds/dei.xml): subscribe to DEI working group events
  - [https://us-rse.org/feeds/jobs.xml](https://us-rse.org/feeds/jobs.xml): subscribe to latest non-expired jobs
  - [https://us-rse.org/feeds/member-counts.xml](https://us-rse.org/feeds/member-counts.xml): subscribe to monthly member total counts
 
