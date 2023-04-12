@@ -42,7 +42,7 @@ to embed a full width, fullscreen enabled video! Simply do:
 {% include youtube-embed.html url="https://www.youtube.com/embed/gP5UCfV3n-A"  title="Video Title" %}
 ```
 
-Where the url should be the embed URL that is provided to you when you click to share
+where the url is the embed URL that is provided to you when you click to share
 and then embed (note that "embed" is in the url) and the title is a title of your
 choosing. You are not required to include a title, and it will default to a generic
 "YouTube video player."
