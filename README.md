@@ -1,4 +1,4 @@
-# The United States (US) Research Software Engineer Association
+# The United States Research Software Engineer (US-RSE) Association
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-68-orange.svg?style=flat-square)](#contributors-)
