@@ -100,11 +100,11 @@ Questions?  Not sure what to do or what the problem is?  Ask on the #website cha
 
 More details can be found in:
 
-* docs/events.md: formatting for events, how the events and calendar work
-* docs/details.md: redirects, embedding videos, last modified dates on pages, etc.
-* docs/tests_ci.md: further details on CI processes
-* docs/local_previews.md: how to run and preview the site locally on your computer
-* docs/feeds.md: RSS and JSON feeds available for the site
+* [docs/events.md](docs/events.md): formatting for events, how the events and calendar work
+* [docs/details.md](docs/details.md): redirects, embedding videos, last modified dates on pages, etc.
+* [docs/tests_ci.md](docs/tests_ci.md): further details on CI processes
+* [docs/local_previews.md](docs/local_previews.md): how to run and preview the site locally on your computer
+* [docs/feeds.md](docs/feeds.md): RSS and JSON feeds available for the site
 
 
 
