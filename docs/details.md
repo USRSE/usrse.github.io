@@ -49,7 +49,7 @@ choosing. You are not required to include a title, and it will default to a gene
 
 ### How do I add a "Last Modified:" date to a page?
 
-All of our pages come ready to go to add a "last modified" date, which will default to the bottom
+All of our pages come ready to have a "last modified" date added, which will default to the bottom
 right of the page. This means to add a last modified date to a page, simply update the frontend matter as follows:
 
 ```yaml
