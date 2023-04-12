@@ -47,7 +47,7 @@ Join us at [PEARC19](https://www.pearc19.pearc.org/) for a Birds of a Feather (B
 
 ## Content
 
-The bottom section (the content) you can write any amount and length
+In the bottom section (the content), you can write any amount and length
 of markdown that is desired. When the event is active (before expiration) the full content will
 be shown on the "Events and Training" page. Once it expires, it will move into the events archive.
 In both cases, clicking on the Event will take the viewer to its page, and they can
