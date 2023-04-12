@@ -72,7 +72,7 @@ going to show up. Try renaming your file to something with a year and month part
 
 ### How do I add an all day event?
 
-All day events render as a solid block (strip) on the calendar, and you can use similar syntax to the above but add `all_day: true`.
+All-day events render as a solid block (strip) on the calendar, and you can use similar syntax to the above but add `all_day: true`.
 You don't need to include an end time, but you do need to include a "start" with a date. Here is an example:
 
 ```
