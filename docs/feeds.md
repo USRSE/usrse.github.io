@@ -3,7 +3,7 @@
 Added in early 2022, we wanted an ability to provide easy ways to automate specific events, or subscribe
 to them. For the reason, we added [pages/feeds](pages/feeds) which includes:
 
- - rss feeds for different kinds of content
+ - rss feeds for different kinds of content, and
  - equivalent json feeds for the same.
  
 The rss feeds are intended to be subscribed to by an appropriate service, while the json API is
