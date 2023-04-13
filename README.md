@@ -44,7 +44,7 @@ Please [fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSfYK64R1c0rj
 
 ### How do I...?
 
-Further content editing tips are in the (details file)[docs/details.md]
+Further content editing tips are in the [details file](docs/details.md)
 
 
 ## Pull Request (PR) Process
