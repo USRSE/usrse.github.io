@@ -34,6 +34,15 @@ many times as needed. The full schedule can be viewed below:
 <img src="/assets/posts/2023-DEI-Media-Club-Schedule.png"
   alt="2023 DEI Media Club Full Schedule" style="width: 50%;">
 
+| Date | Time | Topic |
+|---|---|---|
+| April 6, 2023 | Noon ET/11 AM CT/10 AM MT/9 AM PT<br>[Register](https://stanford.zoom.us/meeting/register/tJwkce-uqjwoHdxLgipTO2ncD943cXWpmAeJ) | [Higher Voltage + Trusted Voices Podcast Crossover: The College Board’s Trouble in Florida](https://voltedu.com/podcast/podcast-crossover-the-college-boards-trouble-in-florida/) |
+| Jun 15, 2023 | Noon ET/11 AM CT/10 AM MT/9 AM PT<br>[Register](https://stanford.zoom.us/meeting/register/tJwkce-uqjwoHdxLgipTO2ncD943cXWpmAeJ) | Making the US-RSE Conference review process open and inclusive.<br>Special guests Ludivico Bianchi and Tab Memmott from the [US-RSE'23 DEI Committee](https://us-rse.org/usrse23/organization/diversity/). |
+| Aug 24, 2023 | Noon ET/11 AM CT/10 AM MT/9 AM PT<br>[Register](https://stanford.zoom.us/meeting/register/tJwkce-uqjwoHdxLgipTO2ncD943cXWpmAeJ) | TBD - [Send us your suggestion!](https://docs.google.com/forms/d/e/1FAIpQLSdtCVAmJnUQCKnIXdn93xN5e9_zCQkrVdQsnPOiSBIcptma6w/viewform) |
+| Nov 2, 2023 | Noon ET/11 AM CT/10 AM MT/9 AM PT<br>[Register](https://stanford.zoom.us/meeting/register/tJwkce-uqjwoHdxLgipTO2ncD943cXWpmAeJ) | TBD - [Send us your suggestion!](<br>https://docs.google.com/forms/d/e/1FAIpQLSdtCVAmJnUQCKnIXdn93xN5e9_zCQkrVdQsnPOiSBIcptma6w/viewform<br>) |
+| Jan 11, 2024 | Noon ET/11 AM CT/10 AM MT/9 AM PT<br>[Register](https://stanford.zoom.us/meeting/register/tJwkce-uqjwoHdxLgipTO2ncD943cXWpmAeJ) | TBD - [Send us your suggestion!](<br>https://docs.google.com/forms/d/e/1FAIpQLSdtCVAmJnUQCKnIXdn93xN5e9_zCQkrVdQsnPOiSBIcptma6w/viewform<br>) |
+| Mar 21, 2024 | Noon ET/11 AM CT/10 AM MT/9 AM PT<br>[Register](https://stanford.zoom.us/meeting/register/tJwkce-uqjwoHdxLgipTO2ncD943cXWpmAeJ) | TBD - [Send us your suggestion!](<br>https://docs.google.com/forms/d/e/1FAIpQLSdtCVAmJnUQCKnIXdn93xN5e9_zCQkrVdQsnPOiSBIcptma6w/viewform<br>) |
+
 For more information regarding the DEI Working Group, including getting
 involved, visit our website at <https://us-rse.org/wg/dei/>.
 
