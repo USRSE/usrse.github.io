@@ -36,7 +36,7 @@ https://us-rse.org/first-community-workshop.
 ### How do I embed a video?
 
 If you have a YouTube video to embed, we have an include that will make it easy
-to embed a full width, fullscreen enabled video! Simply do:
+to embed a full-width, fullscreen-enabled video! Simply do:
 
 ```
 {% include youtube-embed.html url="https://www.youtube.com/embed/gP5UCfV3n-A"  title="Video Title" %}
