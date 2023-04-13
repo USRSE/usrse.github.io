@@ -138,7 +138,7 @@ GitHub Action by @vsoch and @jhkennedy to parse the `_data/jobs.yml` file for ne
 the USRSE Slack. For the action:
 
  - unique: determines the field in the jobs.yml that determines uniqueness (defaults to url)
- - keys: a comma separated list of fields to include. All except for url will have a prefix, so it's recommended to put the url last.
+ - `keys`: a comma-separated list of fields to include. All except for URL will have a prefix, so it's recommended to put the URL last.
 
 The other fields are intuitive. 
 
