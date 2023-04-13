@@ -43,7 +43,7 @@ to embed a full-width, fullscreen-enabled video! Simply do:
 ```
 
 where the url is the embed URL that is provided to you when you click to share
-and then embed (note that "embed" is in the url) and the title is a title of your
+and then embed (note that "embed" is in the URL) and the title is a title of your
 choosing. You are not required to include a title, and it will default to a generic
 "YouTube video player."
 
