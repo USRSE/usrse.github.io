@@ -141,7 +141,7 @@ time:
 Note that this format is recommended only for easy repetitions. Also
 note that not all [rrule](https://jakubroztocil.github.io/rrule/) fields are rendered to the template, so you should check the calendar.html template
 to see what is supported (view source) or the [_includes/events/event.js](_includes/events/event.js)
-for the logic. If you need to, for example "repeat on the first tuesday of every month" you should use an rdate string 
+for the logic. If you need to, for example, "repeat on the first Tuesday of every month", you should use an rdate string 
 instead. Here is an example:
 
 ```yaml
