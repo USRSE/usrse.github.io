@@ -114,7 +114,7 @@ A repeated event is one that happens weekly, monthly, or on a regularly schedule
 basis that typically does not change, meaning that you wouldn't need to
 update the post. A weekly call that has a description and a consistent link
 to an agenda would be appropriate, while the same call that varies in schedule
-or requires an updated description would not quality.
+or requires an updated description would not qualify.
 An annual event, or one that would require a different description, would
 not be repeated, and should be placed in a folder named by date.
 As an example, here is a yearly event that happens on the same month and day:
