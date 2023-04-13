@@ -23,16 +23,11 @@ Media club discussions will occur every 5th DEI Working Group meeting date, or
 every 10th **Thursday at Noon ET/11 AM CT/10 AM MT/9 AM PT** starting on April
 6th, 2023.
 
-Registation can be found here:
-
-<https://stanford.zoom.us/meeting/register/tJwkce-uqjwoHdxLgipTO2ncD943cXWpmAeJ>
+[**Register here**](https://stanford.zoom.us/meeting/register/tJwkce-uqjwoHdxLgipTO2ncD943cXWpmAeJ)
 
 Please note that the event requires registration for each event date.
 If you would like to register for more than one date, please follow the link as
 many times as needed. The full schedule can be viewed below:
-
-<img src="/assets/posts/2023-DEI-Media-Club-Schedule.png"
-  alt="2023 DEI Media Club Full Schedule" style="width: 50%;">
 
 | Date | Time | Topic |
 |---|---|---|
