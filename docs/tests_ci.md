@@ -45,7 +45,7 @@ This will open a list of the individual pages - click on links to review the pag
 
 ![CircleCI preview links](assets/img/circleci_artifacts.png)
 
-### Test Jobs
+### Testing Job Data
 
 Jobs are tested for correctness, meaning that all fields are entered, a date string
 is entered for the "expires" field, and the url is valid. You can run tests locally 
@@ -57,6 +57,8 @@ $ python -m unittest test_jobs
 ```
 
 ### Count Jobs
+
+This is used to compute stats on the job board for reporting.  
 
 A [script](scripts/count_jobs.py) is provided that will clone the repository
 to a temporary directory, find all commits with a changed job file,
@@ -90,9 +92,9 @@ script.
 
 ### GitHub CI
 
-#### URLChecker and Spelling
+#### URLs-checker and Spelling
 
-The [URLschecker](https://github.com/urlstechie/URLs-checker) is a GitHub action
+The [URLs-checker](https://github.com/urlstechie/URLs-checker) is a GitHub action
 that @vsoch worked on to contribute retry and some other nice features for the 
 repository here. These features are available as of version 0.1.6 that is used
 in the [workflow](.github/workflows/urlchecker.yml). Relative URLs internal to the site are not checked.  
@@ -101,7 +103,7 @@ If there are URLs that should be systematically ignored by the checker, they can
 
 In addition, @vsoch found
 a Rust tool called [crate-ci/typos](https://github.com/marketplace/actions/typos-action)
-and contributed an equivalent action so all posts and pages are spell checked.
+and contributed an equivalent action so all posts and pages are spell-checked.
 If your CI fails, the spelling suggestions will be shown and you can manually
 update the mistakes, or [install typos](https://github.com/crate-ci/typos#install) 
 and have all errors fixed automatically:
@@ -111,7 +113,7 @@ typos ./pages ./_posts ./README.md --write-changes
 ```
 
 The config file to specify words to ignore is 
-[`.github/workflows/typo_config.toml`](.github/workflows/topy_config.toml).
+[`.github/workflows/typo_config.toml`](.github/workflows/typo_config.toml).
 Edit this file if there are phrases or words that need to be ignored (e.g., surnames, acronyms).
 
 #### Clean Expired Jobs
@@ -132,7 +134,7 @@ failures between this and the PR linting job.
 The workflow [jobs-poster.yaml](.github/workflows/jobs-poster.yaml) is run on any push
 to `main` with changes to `_data/jobs.yml`. If new jobs are found, it will post the Job URL to
 the USRSE Slack `#jobs` channel. It utilizes the [Jobs updater](https://github.com/rseng/jobs-updater)
-Github Action by @vsoch and @jhkennedy to parse the `_data/jobs.yml` file for new jobs and post them
+GitHub Action by @vsoch and @jhkennedy to parse the `_data/jobs.yml` file for new jobs and post them
 the USRSE Slack. For the action:
 
  - unique: determines the field in the jobs.yml that determines uniqueness (defaults to url)
@@ -185,9 +187,13 @@ Importantly, once you create the bot you'll need to add the following secrets to
  
 Yes, this means that the tokens are specific to this account.
 
+#### Post New Jobs to Mastadon
+
+TBD: we welcome contributions to make this happen
+
 #### Greetings
 
-This simple greetings action greets first time users (for issues).
+This simple greetings action greets first-time users (for issues).
 The logic of this is determined by the [greetings.yml](.github/workflows/greetings.yml)
 workflow. 
 
@@ -210,8 +216,8 @@ A legacy [Rakefile](Rakefile) is kept with the repository but it is no longer us
 Using multiple "free tier" CI services is a common thing for open source projects to do.
 There are several reasons to do this:
 
- 1. we can better leverage a free tier, meaning a maximum number of jobs run in parallel or minutes per month by spreading work over multiple services. 
- 2. we can scope a particular kind of test to a service. For example, one service might just be to test the core software, another might be to build and deploy containers, and a third might be to preview a site.
- 3. each CI service offers unique features. For example, GitHub has the closest integration with the repository here, and CircleCI allows us to preview artifacts.
+ 1. We can better leverage a free tier, meaning a maximum number of jobs run in parallel or minutes per month by spreading work over multiple services. 
+ 2. We can scope a particular kind of test to a service. For example, one service might just be to test the core software, another might be to build and deploy containers, and a third might be to preview a site.
+ 3. Each CI service offers unique features. For example, GitHub has the closest integration with the repository here, and CircleCI allows us to preview artifacts.
 
 
