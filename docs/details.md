@@ -22,6 +22,17 @@ Files in this folder should have the following format:
 ```yaml
 ---
 layout: page
+title: **PAGE TITLE**
+permalink: **LINK TO BE REDIRECTED**
+redirect: **ACTUAL LINK**
+---
+```
+
+Example
+
+```yaml
+---
+layout: page
 title: US-RSE Community Building Workshop
 permalink: /2020-april-workshop/
 redirect: https://us-rse.org/first-community-workshop
@@ -50,7 +61,7 @@ choosing. You are not required to include a title, and it will default to a gene
 ### How do I add a "Last Modified:" date to a page?
 
 All pages have the option to include a "last modified" date, which will default to the bottom
-right of the page. This means to add a last modified date to a page, simply update the frontend matter as follows:
+right of the page. This means to add a last modified date to a page, simply update the header as follows:
 
 ```yaml
 set_last_modified: true
