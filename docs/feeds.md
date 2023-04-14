@@ -3,10 +3,10 @@
 Added in early 2022, we wanted an ability to provide easy ways to automate specific events, or subscribe
 to them. For the reason, we added [pages/feeds](pages/feeds) which includes:
 
- - rss feeds for different kinds of content, and
- - equivalent json feeds for the same.
+ - RSS feeds for different kinds of content, and
+ - equivalent JSON feeds for the same.
  
-The rss feeds are intended to be subscribed to by an appropriate service, while the json API is
+The rss feeds are intended to be subscribed to by an appropriate service, while the JSON API is
 more suitable for a client tool.
 
 ### RSS (xml) Feeds:
@@ -20,7 +20,7 @@ For each RSS feed, we provide the latest 100 items.
  - [https://us-rse.org/feeds/jobs.xml](https://us-rse.org/feeds/jobs.xml): subscribe to latest non-expired jobs
  - [https://us-rse.org/feeds/member-counts.xml](https://us-rse.org/feeds/member-counts.xml): subscribe to monthly member total counts
 
-### Json Feeds:
+### JSON Feeds:
 
 JSON feeds are not limited in number, and we can provide this until a single page is not reasonable to load.
 
