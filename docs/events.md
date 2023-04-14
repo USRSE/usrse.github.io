@@ -9,8 +9,8 @@ You can use the [add an event form](https://docs.google.com/forms/d/e/1FAIpQLSda
 
 ## Naming the File
 
-Do not use the full date (e.g. YYYY-MM-DD-<event-name>.md) in the file name,
-Jekyll will not post pages that it interprets to have a future date in the filename. Use a partial date (e.g. YYYY-MM-<event-name>.md or YYYY-<event-name>.md). 
+Do **NOT** use the full date (e.g. `YYYY-MM-DD-<event-name>.md`) in the file name,
+Jekyll will not post pages that it interprets to have a future date in the filename. Use a partial date (e.g. `YYYY-MM-<event-name>.md` or `YYYY-<event-name>.md`). 
 
 ## Header information
 
@@ -34,15 +34,15 @@ time:
 Join us at [PEARC19](https://www.pearc19.pearc.org/) for a Birds of a Feather (BOF) session "Building a Community of Research Software Engineers."  Our session is scheduled for 5:15 PM on Monday, July 29.
 ```
 
-* title: Keep it brief to display at the top of the event card
-* location: optional, can leave blank for online events
-* expires: usually the day of the event, YYY-MM-DD
-* duration: time in minutes, used for calendar export; defaults to 60
-* category: see [_data/events.yaml](_data/events.yaml) - use the tag (e.g. dei, virtual-workshop), name is the display name on the page for the tag
-* event_date: display text for the date, specific format not required (not displayed in all contexts, so don't rely on it)
-* layout: "event"
-* repeated: true or false
-* time: the format is very specific; times should be in UTC
+* `title`: Keep it brief to display at the top of the event card
+* `location`: optional, can leave blank for online events
+* `expires`: usually the day of the event, YYY-MM-DD
+* `duration`: time in minutes, used for calendar export; defaults to 60
+* `category`: see [_data/events.yaml](_data/events.yaml) - use the tag (e.g. dei, virtual-workshop), name is the display name on the page for the tag
+* `event_date`: display text for the date, specific format not required (not displayed in all contexts, so don't rely on it)
+* `layout`: "event"
+* `repeated`: true or false
+* `time`: the format is very specific; time is represented in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format, based on UTC timezone. You can use a [Timezone converter](https://www.timeanddate.com/worldclock/converter.html?iso=20171204T170000&p1=1440) to assist with this.
 
 
 ## Content
@@ -51,7 +51,7 @@ In the bottom section (the content), you can write any amount and length
 of markdown that is desired. When the event is active (before expiration) the full content will
 be shown on the "Events and Training" page. Once it expires, it will move into the events archive.
 In both cases, clicking on the Event will take the viewer to its page, and they can
-view additional content and the url provided. In the case of the archive, the bulk of content
+view additional content and the URL provided. In the case of the archive, the bulk of content
 is only viewable on this page.
 
 It's helpful to write out a listing of timezones in the content, e.g.,:
