@@ -1,660 +1,112 @@
 # The United States (US) Research Software Engineer Association
 
+https://us-rse.org
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-68-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
 
-This is a repository that containers the files for the official US RSE community website hosted at https://us-rse.org.
+These are the files for the official US RSE community website hosted at https://us-rse.org.
 The site is built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub. 
+
+Members of US-RSE have access to the organizational Slack space.  The #website channel, referenced frequently below, is part of that space.  It's the best place to ask questions and get help.  
 
 ## How do I contribute?
 
 We encourage the community to contribute to the content of the website.  
-To do this: fork the repository, make your proposed changes, test locally (see below), and then create a pull request
-against `main`. For more details about opening pull requests and issues, see our [Contributing Guide](.github/CONTRIBUTING.md).
+To do this: fork the repository, make your proposed changes, and then create a pull request against `main`. More details below.
 
-### 1. How do I update the map?
+### Where is the page I'm looking for?
 
-The [map](https://us-rse.org/usrse-map/) is generated programmatically from the US-RSE member list, so if you
-have already [joined](https://us-rse.org/join) and provided your institution,
-you should be represented on it. If you see any issues or errors with location
-lookup (we use geolocation of a named location) please [open an issue](https://github.com/USRSE/usrse-map/issues).
+The webpage text exist in markdown files (.md) in several places like `_events`, `_pages`, and `wg`. The best way to find the page you're trying to edit is to follow the path in the URL of the page itself. Example: editing the page for "https://us-rse.org/events/2022/2022-10-funder-talk-series/" would be in `/_events/2022/2022-10-funder-talk-series.md`
 
-### 2. How do I add a job?
+Can't find what you're looking for?  You're not alone.  Ask on the Slack #website channel.  
 
-We maintain a list of current and previous job
-postings in [_data/jobs.yml](_data/jobs.yml) and
-[_data/related-jobs.yml](_data/related-jobs.yml).  If a job posting
-is not clearly an RSE role but is sufficiently adjacent to RSE that
-some RSEs would be qualified and potentially interested, place it in
-[_data/related-jobs.yml](_data/related-jobs.yml).
-You can add a new job to these lists, and so that newer jobs appear at the
-top of the corresponding section, we ask that you **add the new entry
-to the top of the list.**
-Specifically, we ask that you provide a name, location (can be Remote), an expiration date, and a url to the posting.
-The expiration date is not shown on the page, however it will determine when the job doesn't appear 
-anymore. We suggest setting a timeframe such as a month, and if you want to extend it, you
-can open a pull request to update the date. An example posting is shown below. This
-job would appear on the site until the first of July, 2019.
+### How do I add an image/file?
 
-```yaml
-- expires: 2019-07-01
-  location: 'Princeton, NJ'
-  name: 'Research Software Engineer'
-  posted: 2019-02-01
-  url: 'https://main-princeton.icims.com/jobs'
-```
+Small files like .png images go into `/assets/img`
 
-And don't forget to write your new job at the top of the appropriate file!
-For testing, we look to see that all fields are defined, the url exists, and
-that the "expires" and "posted" fields load as a `datetime.date` object in
-Python. If you copy the format above, you should be ok.
+Larger files like slides from a speaker series currently go into a read-only Google Drive. One exists for the speaker series [here](https://drive.google.com/drive/folders/1HiwQZgmXF30BSFDxEfQOfu68Hv4F4NwC?usp=share_link). 
 
-Once your job(s) are merged to `main` a [GitHub Action](.github/workflows/jobs-poster.yml) will automatically
-cross-post your job(s) to the USRSE Slack `#jobs` channel!
-*NOTE:* jobs added in the "Related" section are not posted to Slack or Twitter.
+- You'll need to ask to add slides to that folder if you are not an editor.
+- Managers will need to change the permissions of files added there to be read-only and provide a share link that is accessible to anyone with the link to view.
 
-![example post image](https://raw.githubusercontent.com/rseng/jobs-updater/main/img/example.png)
+### How do I add a job?
 
-### 3. How do I add an event?
+Please [fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSfYK64R1c0rj-ERldGLxuqedLIbsYPZXj9uBplDRYNmnND10Q/viewform).  Jobs are reviewed for relevance.
 
-You can add an event or training to the site by adding a markdown file in the [_events](_events)
-folder, organized by year. Do not use the full date (e.g. YYYY-MM-DD-<event-name>.md) in the file name,
-Jekyll will not post pages that it interprets to have a future date in the filename. A better option is
-to use a partial date (e.g. YYYY-MM-<event-name>.md). Here is an example of a file in `_events/2019` for PEARC19:
+### How do I add an event?
 
-```markdown
----
-title: PEARC19
-location: Chicago, IL
-url: https://www.pearc19.pearc.org/
-expires: 2019-08-01
-duration: 45
-category: workshop
-event_date: "November 17–22, 2019"
-layout: event
-repeated: false
-time:
-    - - start: 2019-07-29T21:15:00Z
-        end: 2019-07-29T22:00:00Z
----
-
-Join us at [PEARC19](https://www.pearc19.pearc.org/) for a Birds of a Feather (BOF) session "Building a Community of Research Software Engineers."  Our session is scheduled for 5:15 PM on Monday, July 29.
-```
-
-The top section is frontend matter that must include the title, location, url, layout as "event" 
-event date, an expiration date, a time, and a "repeated" variable (true or false).
-The duration should be in minutes, and is for the calendar export. If you leave it blank, a default (1 hour) is typically used.
-Notice that the event date is a string that doesn't get parsed, while the expires must be a date in the format shown.
-Importantly, the time should be formatted as shown above, and should be in UTC time, which is 4 hours later than Eastern.
-So for the event above, 5:15PM Eastern time corresponds to UTC 21:15. We get this by converting 5:15 to a 24 hour clock (17:15) and
-then adding 4 (17:15 + 4:00 = 21:15). You should preview your page to make sure that the time zone is rendering as you'd expect,
-and it's also helpful to write out a listing of timezones in the content, e.g.,:
-
-```md
-The next community call will be on August 12, 2021 at 12ET/11CT/10MT/9PT.
-```
-
-This is helpful because people in the community come from many different time zones and also travel,
-and it's nice to quickly see the mapping for other time zones that are close by.
-
-The bottom section (the content) you can write any amount and length
-of markdown that is desired. When the event is active (before expiration) the full content will
-be shown on the "Events and Training" page. Once it expires, it will move into the events archive.
-In both cases, clicking on the Event will take the viewer to its page, and they can
-view additional content and the url provided. In the case of the archive, the bulk of content
-is only viewable on this page.
-
-#### Why isn't my event showing up?
-
-Uh oh, you didn't follow the naming conventions! If you use a full date in the markdown file name (e.g. YYYY-MM-DD-<event-name>.md)
-Jekyll is going to see this as a post. By default Jekyll does not show posts in the future, so unless you are adding an event in the past, it isn't
-going to show up. Try renaming your file to something with a year and month partial date such as (e.g. YYYY-MM-<event-name>.md) and it will show up.
-
-#### What are the categories of events?
-
-It's suggested to look in [_data/events.yaml](_data/events.yaml) for the most up to date categories. Suggestions are:
-
- - dei: Diversity, Equity, and Inclusion
- - community-call: Community Calls
- - careers: Careers    
- - virtual-workshop: Virtual Workshop
- - conference: Conferences
- - workshop: Workshops
- - association-meeting: US-RSE Annual General Meeting and similar association-wide meetings
- - election: Steering committee election deadlines
- - education-training: Education and training events
- - community-learning: Community learning
- - outreach: Outreach events
- - funder: Funders Talk series
- - social: Miscellaneous social events
-
-#### How do I add an all day event?
-
-All day events render as a solid block (strip) on the calendar, and you can use similar syntax to the above but add `all_day: true`.
-You don't need to include an end time, but you do need to include a "start" with a date. Here is an example:
-
-```
----
-title: An Annual Event
-event_date: "October 14, 2021"
-layout: event
-repeated: true
-category: virtual-workshop
-all_day: true
-time:
-    - - start: 2021-10-14
----
-
-Here is information about my annual event!
-```
-
-If you need it to span multiple days, just add multiple starts.
-
-```yaml
----
-...
-time:
-    - - start: 2021-10-14
-    - - start: 2021-10-15
----
-```
-
-#### What is a repeated event?
-
-You'll notice that there is a folder called "repeated" in the events folder:
-
-```
-$ ls _events/
-2019  2020  2021  repeated
-```
-
-A repeated event is one that happens weekly, monthly, or on a regularly scheduled
-basis that typically does not change, meaning that you wouldn't need to
-update the post. A weekly call that has a description and a consistent link
-to an agenda would be appropriate, while the same call that varies in schedule
-or requires an updated description would not quality.
-An annual event, or one that would require a different description, would
-not be repeated, and should be placed in a folder named by date.
-As an example, here is a yearly event that happens on the same month and day:
-
-```yaml
----
-title: International RSE Day
-event_date: "October 14, 2021"
-layout: event
-category: virtual-workshop
-all_day: true
-
-# Repeated events metadata
-repeated: true
-interval: 1
-frequency: "yearly"
-date_start: "2021-10-14"
-until: 2030-10-14
-time:
-  - - start: "2021-10-14"
----
-```
-
-Note that this straightforward format is recommended only for easy repetitions. Also
-note that not all [rrule](https://jakubroztocil.github.io/rrule/) fields are rendered to the template, so you should check the calendar.html template
-to see what is supported (view source) or the [_includes/events/event.js](_includes/events/event.js)
-for the logic. If you need to, for example "repeat on the first tuesday of every month" you should use an rdate string 
-instead. Here is an example:
-
-```yaml
----
-...
-layout: event
-time:
-  - - start: 2021-01-04
-
-# Repeated events information
-repeated: true
-
-# use an rdate string instead (best for complex repeated events)
-# note that the dtstart and rdate at the end are the same
-rrule: 
-  - DTSTART;TZID=America/New_York:20210104T113000
-  # first tuesday of every month
-  - RRULE:UNTIL=20220731T080000;FREQ=MONTHLY;BYDAY=+1TU
-  - RDATE;TZID=America/New_York:20191014T153000
----
-```
-
-The formatting of the lines above is essential - even putting them out of order
-or exchanging a semicolon can lead to the entire interface breaking. It took me (@vsoch)
-two instances of testing and changing library versions, formatting, and setup to finally
-get this working. To derive your string, you can play around with the 
-plugin that we use to generate this [here](https://jakubroztocil.github.io/rrule/).
+[Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSda4-gAKyVA1GhJZg3XZmc9EDLaf5Donlm1HKG6r8ve9ooiRQ/viewform), or see the [events details page](docs/events.md) on how to create an event file directly.
 
 
-#### Why isn't my add to calendar button showing up?
+### How do I...?
 
-Adding to the calendar isn't currently supported for repeating events - the reason
-being that we can't reliably render the repetitions in the code to generate the button.
-If anyone would like to work on this, please [post on this issue](https://github.com/USRSE/usrse.github.io/issues/558) or (better) just go for it :)
+Further content editing tips are in the [details file](docs/details.md)
 
-### 4. How do I add a community document?
 
-A community document is a living document that represents a community effort
-to discuss a question or idea. We call it "living" because we encourage community
-members to edit and contribute to the documents over time, and so there isn't
-a "publish" date associated with it. For this reason, we use [the wiki](https://github.com/USRSE/usrse.github.io/wiki) associated
-with the repository here. 
+## Pull Request (PR) Process
 
-![assets/img/usrse-book-small.png](assets/img/usrse-book-small.png)
+PRs should be made on the main branch only.
 
-If you ever need to clone this content, you can do:
+Those who have full permissions to the repository should still be working on separate branches and creating PRs for any changes.  
 
-```bash
-$ git clone https://github.com/USRSE/usrse.github.io.wiki.git
-```
+### What to Include
 
-NOTE: During the testing phase of the living documents, we currently plan for the wiki to only be editable by community (repository)
-members.
+Give the PR a descriptive title.  The PR template asks you for a description of the changes - a brief description is fine for simple/routine changes.
 
-#### How do I edit an existing document?
+Two things to do after creating the PR:
 
-To edit a living document that already exists, you can browse the [wiki](https://github.com/USRSE/usrse.github.io/wiki) to find it and then update it. Generally, we are organizing topics as they are added, so if you want to add a new category or change the existing organization, please do so. 
+1. Preview the site, either locally (necessary for complex functionality changes - see [docs/local_previews.md](docs/local_previews.md) for details) or with the CircleCI preview (fine for routine content changes and additions - see [docs/tests_ci.md](docs/tests_ci.md) for details).
+2. Post a link to the PR on the Slack #website channel to get reviewers.  
 
-#### How do I start a new document?
+### Review Policy
 
-If you want to add a new document, while you might add it directly to the wiki, it's recommended to get others
-involved first. You can ping others in the USRSE slack to contribute, and it's also recommended to start the document as a Google
-Document for easier commenting and editing, and then move to the wiki when it's in a final first draft state. 
-For all community documents, the following points apply:
+**PR reviews are not content reviews.**  While corrections to basic grammatical issues, links, clarity problems, etc. in the files that are part of the review can be noted, the content of things to be posted to the website should generally be discussed and resolved before creating a PR.  
 
-1. It's strongly suggested to first work on your document in Google Docs or similar, where you can bring in multiple community members to put together a first draft. Importantly, you should make sure that the content adheres to the US-RSE [Code of Conduct](https://us-rse.org/code-of-conduct/). It is suggested that you have discussion and work on the document with at least two other community members before submitting the document to the wiki. You should feel that it's in a solid "first draft state" before doing a submission.
-2. Make sure that you verify the following:
- - the content is of interest to the RSE community
- - the content does not violate the Code of Conduct. 
+Those with merge permissions on the repo: use your judgment as to whether you need a reviewer.  Routine edits, additions, changes that are part of the normal activities of US-RSE do not need to be reviewed unless you want.  For larger edits (things requiring discussion or assistance), please ask for someone else to review.  Generally "squash" when merging.  
+
+For those without merge permissions: 
+
+* 1 reviewer for routine/small edits, additions, and changes.  If you get a review from someone who doesn't have merge permissions, ping the #website channel on Slack to let people know your PR has been reviewed but needs to be merged.
+* 2 reviewers (and likely discussion in the PR, an issue, or the Slack #website channel) for changes to the layout, functionality, or style of the website
+
+Anyone in US-RSE who is familiar with the website is welcome to review PRs.  
+
+Want merge permissions?  Join the #website channel in Slack, help out a bit with tasks that come up, and then ask - we're happy to have new website maintainers.  
+
+
+### Checks and Tests
+
+When you create a PR, automated tests run; see [docs/tests_ci.md](docs/tests_ci.md) for details.  
+
+What the PR submitter is responsible for:
+
+* URL Checker: This does NOT check internal relative links on the site, only absolute/full URLs.  If the URL checker fails, click on the Details link, and then expand the URLs-checker section of the report that comes up to try to find the failed URL.
+  * Failed URL in a file that is part of your PR: you must fix it.
+  * Failed URLs in the job listings: OK to ignore
+  * Failed URL check where you know the URL is actually OK: OK to ignore.
+  * Failed URL on another page outside of your PR: fix it if you can.  If you can't fix it (not sure what to replace it with, etc.), please note the problem in the PR discussion.  The person who merges the PR may choose to ignore the issue.  
+* Spellchecker: Click on the Details link, then expand the Check Spelling section of the report that comes up to identify the issue.
+  * Spelling issue in a file that is part of the PR: you must fix it.  If it's a legitimate word, you may need to add an exception to [`.github/workflows/typo_config.toml`](.github/workflows/topy_config.toml)
+  * Spelling issue in a file that is not part of the PR: this generally shouldn't happen, as previous PRs have also had the spellchecker run.   
   
-  _NOTE_: Any material added to the wiki that does not follow these rules is subject to removal. If you see content on the wiki that is not appropriate or otherwise breaks these rules, please open an issue on the repository immediately, or contact the steering committee.
+Questions?  Not sure what to do or what the problem is?  Ask on the #website channel on Slack.  
 
-If you want to start a community document and would like some help or to talk with
-others, we encourage you to post on the US-RSE slack or write an issue here.
 
-### 5. How do I add a page redirect?
+## Supporting Documentation
 
-We have a special header field that you can define if you want a page to redirect 
-elsewhere. We do this by way of a meta tag, and we give the viewer 2 seconds
-to see a message that they are being redirected.  To keep these pages
-organized, we have them located in the `redirects` folder:
+More details can be found in:
 
-```
-$ ls pages/redirects/
-2020-april-workshop.md
-```
+* [docs/events.md](docs/events.md): formatting for events, how the events and calendar work
+* [docs/details.md](docs/details.md): redirects, embedding videos, last modified dates on pages, etc.
+* [docs/tests_ci.md](docs/tests_ci.md): further details on CI processes
+* [docs/local_previews.md](docs/local_previews.md): how to run and preview the site locally on your computer
+* [docs/feeds.md](docs/feeds.md): RSS and JSON feeds available for the site
 
-And the header front end matter should look like the following:
 
-```yaml
----
-layout: page
-title: US-RSE Community Building Workshop
-permalink: /2020-april-workshop/
-redirect: https://us-rse.org/first-community-workshop
----
-```
-
-The above says that the page titled "US-RSE Community Building Workshop" served
-at permalink /2020-april-workshop will be redirected to 
-https://us-rse.org/first-community-workshop.
-
-
-### 6. How do I embed a video?
-
-If you have a YouTube video to embed, we have an include that will make it easy
-to embed a full width, fullscreen enabled video! Simply do:
-
-```
-{% include youtube-embed.html url="https://www.youtube.com/embed/gP5UCfV3n-A"  title="Video Title" %}
-```
-
-Where the url should be the embed URL that is provided to you when you click to share
-and then embed (note that "embed" is in the url) and the title is a title of your
-choosing. You are not required to include a title, and it will default to a generic
-"YouTube video player."
-
-### 7. How do I add a "Last Modified:" date?
-
-All of our pages come ready to go to add a "last modified" date, which will default to the bottom
-right of the page. This means to add a last modified date to a page, simply update the frontend matter as follows:
-
-```yaml
-set_last_modified: true
-```
-
-If you want to change the default div id (e.g., adding your own html div with a specific ID and not using the default
-provided) you can add that too:
-
-```yaml
-set_last_modified: true
-last_modified_id: last-modified
-```
-
-And finally, if the repository you are retrieving the file from is different than the repository here, define the repository
-and path (relative to the root) 
-
-```yaml
-set_last_modified: true
-last_modified_id: last-modified
-last_modified_repo: USRSE/documents
-last_modified_path: governance.md
-```
-
-If you have any questions, please don't hesitate to [open an issue](https://github.com/USRSE/usrse.github.io)
-
-## Tests
-
-Tests are run during continuous integration to catch any errors and to preview
-content. Specifically, usrse.github.io uses the following integrations (with links
-to configuration files):
-
- - [CircleCI](.circleci/config.yml) previews the site, and tests jobs and mapdata
- - [GitHub CI](.github/workflows) includes GitHub triggers and actions
-
-Instructions for running locally, along with details about each, are provided below.
-
-### CircleCI
-
-CircleCI is the primary means to preview a pull request, as the site is built and available
-for preview as an artifact. Additionally, the jobs and map data is tested (details below).
-There are no credentials or secrets required for this setup, other than the repository
-needing to be connected to CircleCI, and under settings:
-
- - build forked pull requests should be on
- - cancel redundant builds is suggested
- - workflows should be enabled
-
-If you want to edit any of the tests, you should edit [config.yml](.circleci/config.yml).
-Details about running tests locally are included below. This can be good to do if you
-change an input file in [_data](_data) and want to test it.
-
-#### 1. Test Jobs
-
-Jobs are tested for correctness, meaning that all fields are entered, a date string
-is entered for the "expires" field, and the url is valid. You can run tests locally 
-like:
-
-```bash
-$ cd tests
-$ python -m unittest test_jobs
-```
-
-### 2. Count Jobs
-
-A [script](scripts/count_jobs.py) is provided that will clone the repository
-to a temporary directory, find all commits with a changed job file,
-and then checkout and read each commit to get the jobs present for that time.
-We then use the title and url for the job as a unique identifier to determine
-if the job has been seen. A job with the same name and url, and thus the same
-unique identifier, is considered the same job. You can run this script
-as is if you just want to derive counts:
-
-```bash
-$ python scripts/count_jobs.py
-Cloning repository https://github.com/USRSE/usrse.github.io
-Found 43 commits for _data/jobs.yml
-Found a total of 35 unique jobs across 43 commits.
-```
-
-or you can add an output file to save the compiled job content to file
-
-```bash
-$ python scripts/count_jobs.py all-jobs.yml
-Cloning repository https://github.com/USRSE/usrse.github.io
-Found 43 commits for _data/jobs.yml
-Found a total of 35 unique jobs across 43 commits.
-Saving to output file /home/vanessa/Desktop/Code/usrse/usrse.github.io/all-jobs.yml
-```
-
-The repository is always cleaned up, and the parsing done separately from the
-script.
-
-#### Previewing the Site
-
-To preview the site on CircleCI, after it finishes building, make sure you are logged in
-and following the repository, and then click on the "Artifacts" tab. You can select the static
-file to open and preview in your browser.
-
-To preview the site locally, you'll need to [install jekyll](https://jekyllrb.com/docs/installation/)
-It's then typical to go to the root of the site and issue (just once):
-
-```bash
-$ bundle install
-```
-
-And then (also in the top level directory of your forked repository) run 
-
-```bash
-$ jekyll serve
-# or
-$ bundle exec jekyll serve
-```
-
-and open your browser to <http://localhost:4000>.
-If you are having trouble try `rm -rf _site`, followed by `bundle update`, then `bundle exec jekyll serve`.
-
-
-#### Container-based development
-
-You can build and run a Docker container to preview the site locally and support a local development workflow. If you do not already have Docker installed, please visit https://docs.docker.com/get-docker/ and follow the links to get started with Docker on your operating system.
-
-Build the container image:
-
-```bash
-docker build -t us-rse-website:latest .
-```
-
-Run the container to access the website at the URL http://127.0.0.1:4000/
-
-```bash
-$ docker run --rm -it -p 4000:4000 us-rse-website:latest
-Configuration file: /srv/jekyll/_config.yml
-            Source: /srv/jekyll
-       Destination: /srv/jekyll/_site
- Incremental build: disabled. Enable with --incremental
-      Generating... 
-       Jekyll Feed: Generating feed for posts
-                    done in 6.215 seconds.
- Auto-regeneration: enabled for '/srv/jekyll'
-LiveReload address: http://0.0.0.0:35729
-    Server address: http://0.0.0.0:4000/
-  Server running... press ctrl-c to stop.
-```
-
-To develop the website, launch the container using the following command, where the source files are mounted into the container:
-
-```bash
-docker run --rm -it -p 4000:4000 \
-    -v $(pwd):/srv/jekyll \
-    us-rse-website:latest
-```
-
-Edit a source file and save the changes. You will see Jekyll automatically regenerate the site, after which you can reload the page in your browser to see the rendered changes.
-
-#### Rakefile
-
-A legacy [Rakefile](Rakefile) is kept with the repository to allow for a manual `rake test`
-to use the html-proofer to check links.
-
-This was previously deployed on TravisCI, however it was very buggy and failed often
-since the checker had [no concept of retry](https://github.com/USRSE/usrse.github.io/issues/171). 
-While the travis instruction has since been removed, you can look at the old configuration
-file [here](https://github.com/USRSE/usrse.github.io/blob/9353d147adefcd4e5c2f5ba1e05c0ee7b28dba23/.travis.yml) 
-in a previous commit. To run this previous test locally on your own you can do:
-
-```bash
-$ rake test
-```
-
-This has been replaced by the "URLChecker" in GitHub CI, which does have retry and other
-nice features to make it less error prone, discussed next.
-
-
-### GitHub CI
-
-#### URLChecker and Spelling
-
-The [URLschecker](https://github.com/urlstechie/URLs-checker) is a GitHub action
-that @vsoch worked on to contribute retry and some other nice features for the 
-repository here. These features are available as of version 0.1.6 that is used
-in the [workflow](.github/workflows/urlchecker.yml). In addition, @vsoch found
-a Rust tool called [crate-ci/typos](https://github.com/marketplace/actions/typos-action)
-and contributed an equivalent action so all posts and pages are spell checked.
-If your CI fails, the spelling suggestions will be shown and you can manually
-update the mistakes, or [install typos](https://github.com/crate-ci/typos#install) 
-and have all errors fixed automatically:
-
-```bash
-typos ./pages ./_posts ./README.md --write-changes
-```
-
-The config file to specify words to ignore is 
-[`.github/workflows/typo_config.toml`](.github/workflows/topy_config.toml).
-Edit this file if there are phrases or words that need to be ignored (e.g., surnames, acronyms).
-
-#### Clean Expired Jobs
-
-The workflow [clean-expired-jobs.yml](.github/workflows/clean-expired-jobs.yml) is run nightly,
-and uses the same function from the urlchecker to check for expired links in jobs.yml,
-and given an expired link, remove it from the file if the url check fails. In the case
-that a link is not expired and the check fails, we would want to know about this
-(and the test will fail). For all jobs, we don't remove them immediately upon expiration -
-we give the submitter 60 days to possibly update the data file with a later expiration date.
-
-This job needs to be updated in conjunction with the URL checker. If they are not on
-compatible URL checker versions, you may receive inconsistent behavior and erroneous
-failures between this and the PR linting job.
-
-#### Post New Jobs to Slack
-
-The workflow [jobs-poster.yaml](.github/workflows/jobs-poster.yaml) is run on any push
-to `main` with changes to `_data/jobs.yml`. If new jobs are found, it will post the Job URL to
-the USRSE Slack `#jobs` channel. It utilizes the [Jobs updater](https://github.com/rseng/jobs-updater)
-Github Action by @vsoch and @jhkennedy to parse the `_data/jobs.yml` file for new jobs and post them
-the USRSE Slack. For the action:
-
- - unique: determines the field in the jobs.yml that determines uniqueness (defaults to url)
- - keys: a comma separated list of fields to include. All except for url will have a prefix, so it's recommended to put the url last.
-
-The other fields are intuitive. Example output (in the console that might go to Slack or Twitter)
-for a few jobs (done in the testing repository) looks like the following:
-
-```
-New Job! 🕶️
-Name: Data Engineer & Full Stack Software Engineer
-Location: Scoot Science - remote in the US or Canada
-https://www.scootscience.com/careers/
-
-New Job! 🔥️
-Name: Assistant Research Programmer/Research Programmer/Senior Research Programmer
-Location: National Center for Supercomputing Applications / University of Illinois, Urbana, IL
-https://jobs.illinois.edu/academic-job-board/job-details?jobID=130370&job=research-programmer-national-center-for-supercomputing-applications-130370
-
-New Job! 🤖️
-Name: Assistant Research Programmer/Research Programmer/Senior Research Programmer
-Location: National Center for Supercomputing Applications / University of Illinois, Urbana, IL
-https://jobs.hr.wisc.edu/en-us/job/510571/researcher
-
-New Job! 👉️
-Name: Assistant Research Programmer/Research Programmer/Senior Research Programmer
-Location: National Center for Supercomputing Applications / University of Illinois, Urbana, IL
-https://jobs.ornl.gov/job/Oak-Ridge-Full-Stack-Software-Engineer-TN-37830/793411000/
-```
-
-#### Post New Jobs to Twitter
-
-The same workflow [jobs-poster.yaml](.github/workflows/jobs-poster.yaml) has a follow-up
-step that uses output from the [Jobs updater](https://github.com/rseng/jobs-updater) to then
-make these same posts on Twitter. In order for this work, using the account that you want to tweet from,
-you should sign into the [developer portal](https://developer.twitter.com/en/portal/) and make a new project
-that describes the goal of US-RSE, e.g.,:
-
-> We (the United States Research Software Engineer Association) use Twitter to get a broad reach to people working on software in academia - to support community spirit and growth. We currently have a jobs board on our website that populates from GitHub, and will reach more potentially interested people in our community by posting new jobs (as they are merged in a workflow) from a GitHub workflow.
-
-For the use case, you can choose "making a bot" and the title for the project can be anything you like.
-Importantly, once you create the bot you'll need to add the following secrets to your GitHub repository:
-
- - TWITTER_ACCESS_TOKEN: is the key/token created for the user account
- - TWITTER_ACCESS_SECRET: is the secret created for the user account
- - TWITTER_CONSUMER_API_KEY: is the main key for the developer app
- - TWITTER_CONSUMER_API_SECRET: is main secret for the developer app
- 
-Yes, this means that the tokens are specific to this account.
-
-#### Greetings
-
-This simple greetings action greets first time users (for issues).
-The logic of this is determined by the [greetings.yml](.github/workflows/greetings.yml)
-workflow. 
-
-#### Member Counts
-
-Two scripts help to create a branch with an updated [member counts file](_data/memberCounts.csv)
-that starts with the prefix `update/member-counts`. The workflow [member-counts.yaml](.github/workflows/member-counts.yaml) will generate an updated file and commit and push to a new branch, and it uses [pull-request.sh](scripts/pull-request.sh) to then open a PR with the new branch to the repository. For GitHub CI, there are currently no secrets or credentials, and no setup is required - having actions enabled for the repository and placing the file under `.github/workflows`
-enables it.
-
-### Frequently Asked Questions
-
-> Why do we use different services?
-
-Using multiple "free tier" CI services is a common thing for open source projects to do.
-There are several reasons to do this:
-
- 1. we can better leverage a free tier, meaning a maximum number of jobs run in parallel or minutes per month by spreading work over multiple services. 
- 2. we can scope a particular kind of test to a service. For example, one service might just be to test the core software, another might be to build and deploy containers, and a third might be to preview a site.
- 3. each CI service offers unique features. For example, GitHub has the closest integration with the repository here, and CircleCI allows us to preview artifacts.
-
-## Feeds
-
-Added in early 2022, we wanted an ability to provide easy ways to automate specific events, or subscribe
-to them. For the reason, we added [pages/feeds](pages/feeds) which includes:
-
- - rss feeds for different kinds of content
- - equivalent json feeds for the same.
- 
-The rss feeds are intended to be subscribed to by an appropriate service, while the json API is
-more suitable for a client tool.
-
-### RSS (xml) Feeds:
-
-For each RSS feed, we provide the latest 100 items.
-
- - [https://us-rse.org/feed.xml](https://us-rse.org/feed.xml): subscribe to posts on the US-RSE site
- - [https://us-rse.org/feeds/events.xml](https://us-rse.org/feeds/events.xml): subscribe to US-RSE events, including descriptions, locations, times, publication date, and categories (e.g., working groups or content types).
- - [https://us-rse.org/feeds/newsletters.xml](https://us-rse.org/feeds/newsletters.xml): subscribe to a subset of newsletter posts
- - [https://us-rse.org/feeds/dei.xml](https://us-rse.org/feeds/del.xml): subscribe to DEI working group events
- - [https://us-rse.org/feeds/jobs.xml](https://us-rse.org/feeds/jobs.xml): subscribe to latest non-expired jobs
- - [https://us-rse.org/feeds/member-counts.xml](https://us-rse.org/feeds/member-counts.xml): subscribe to monthly member total counts
-
-### Json Feeds:
-
-JSON feeds are not limited in number, and we can provide this until a single page is not reasonable to load.
-
- - [https://us-rse.org/api/posts.json](https://us-rse.org/api/posts.json): json list of US-RSE posts, all types
- - [https://us-rse.org/api/events.json](https://us-rse.org/api/events.json): json list of US-RSE events 
- - [https://us-rse.org/api/newsletters.json](https://us-rse.org/api/posts.json): json list of US-RSE newsletters
- - [https://us-rse.org/api/dei.json](https://us-rse.org/api/dei.json): json list of dei events
- - [https://us-rse.org/api/jobs.json](https://us-rse.org/api/jobs.json): json list of non-expired jobs
- - [https://us-rse.org/api/member-counts.json](https://us-rse.org/api/member-counts.json): json list of monthly membership total count
-
-## Thanks
-
-This website would not be possible without art an inspiration from other community projects!
-
- - [SORSE](https://sorse.github.io)
- - [RSE Steampunk Logo](assets/img/rse-steampunk.png) was designed and created by Natacha and Vanessa Sochat
-
-<!--- ## Join us! --->
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScBQ6AYpYYK2wL21egcaVvH0ZEvtShU-0s-XbqnY3okUsyIZw/viewform">
-<img width="250px" alt="signup button" src="assets/img/signup.png"></a> 
 
 ## Contributors
 
