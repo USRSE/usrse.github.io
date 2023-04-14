@@ -8,7 +8,7 @@ https://us-rse.org
 
 ## What is this?
 
-The files for the official US RSE community website hosted at https://us-rse.org.
+These are the files for the official US RSE community website hosted at https://us-rse.org.
 The site is built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub. 
 
 Members of US-RSE have access to the organizational Slack space.  The #website channel, referenced frequently below, is part of that space.  It's the best place to ask questions and get help.  
@@ -20,13 +20,13 @@ To do this: fork the repository, make your proposed changes, and then create a p
 
 ### Where is the page I'm looking for?
 
-The webpage text exist in markdown files (.md) in several places like `_events`, `_pages`, and `wg`. The best way to find the page you're trying to edit is to follow the path in the URL of the page itself. Example: editing the page for "https://us-rse.org/events/2022/2022-10-funder-talk-series/" would be in `_events` -> `2022` -> `2022-10-funder-talk-series.md`
+The webpage text exist in markdown files (.md) in several places like `_events`, `_pages`, and `wg`. The best way to find the page you're trying to edit is to follow the path in the URL of the page itself. Example: editing the page for "https://us-rse.org/events/2022/2022-10-funder-talk-series/" would be in `/_events/2022/2022-10-funder-talk-series.md`
 
 Can't find what you're looking for?  You're not alone.  Ask on the Slack #website channel.  
 
 ### How do I add an image/file?
 
-Small files like .png images go into `assets` -> `img`
+Small files like .png images go into `/assets/img`
 
 Larger files like slides from a speaker series currently go into a read-only Google Drive. One exists for the speaker series [here](https://drive.google.com/drive/folders/1HiwQZgmXF30BSFDxEfQOfu68Hv4F4NwC?usp=share_link). 
 
