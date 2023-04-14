@@ -31,19 +31,19 @@ The preview only works for individual pages (the links within the preview site d
 
 In the PR, you'll see:
 
-![PR checks notification](assets/img/pr_checks.png)
+![PR checks notification](/assets/img/pr_checks.png)
 
 Click on Show All Checks, then get Details for the CircleCI checks:
 
-![PR checks details](assets/img/pr_checks_detailed.png)
+![PR checks details](/assets/img/pr_checks_detailed.png)
 
 This will take you to the CircleCI page, where you should click on the Artifacts link:
 
-![CircleCI project page](assets/img/circleci.png)
+![CircleCI project page](/assets/img/circleci.png)
 
 This will open a list of the individual pages - click on links to review the pages (reminder: internal links won't go to other preview pages)
 
-![CircleCI preview links](assets/img/circleci_artifacts.png)
+![CircleCI preview links](/assets/img/circleci_artifacts.png)
 
 ### Testing Job Data
 
@@ -63,8 +63,8 @@ This is used to compute stats on the job board for reporting.
 A [script](scripts/count_jobs.py) is provided that will clone the repository
 to a temporary directory, find all commits with a changed job file,
 and then checkout and read each commit to get the jobs present for that time.
-We then use the title and url for the job as a unique identifier to determine
-if the job has been seen. A job with the same name and url, and thus the same
+We then use the title and URL for the job as a unique identifier to determine
+if the job has been seen. A job with the same name and URL, and thus the same
 unique identifier, is considered the same job. You can run this script
 as is if you just want to derive counts:
 
@@ -94,10 +94,8 @@ script.
 
 #### URLs-checker and Spelling
 
-The [URLs-checker](https://github.com/urlstechie/URLs-checker) is a GitHub action
-that @vsoch worked on to contribute retry and some other nice features for the 
-repository here. These features are available as of version 0.1.6 that is used
-in the [workflow](.github/workflows/urlchecker.yml). Relative URLs internal to the site are not checked.  
+The [URLs-checker](https://github.com/urlstechie/urlchecker-action) is a GitHub action
+in the [linting workflow](.github/workflows/linting.yaml). Relative URLs internal to the site are not checked.  
 
 If there are URLs that should be systematically ignored by the checker, they can be added to .github/workflows/linting.yaml 
 
@@ -119,14 +117,14 @@ Edit this file if there are phrases or words that need to be ignored (e.g., surn
 #### Clean Expired Jobs
 
 The workflow [clean-expired-jobs.yml](.github/workflows/clean-expired-jobs.yml) is run nightly,
-and uses the same function from the urlchecker to check for expired links in jobs.yml,
-and given an expired link, remove it from the file if the url check fails. In the case
+and uses the same function from the URLs-checker to check for expired links in jobs.yml,
+and given an expired link, remove it from the file if the URL check fails. In the case
 that a link is not expired and the check fails, we would want to know about this
 (and the test will fail). For all jobs, we don't remove them immediately upon expiration -
 we give the submitter 60 days to possibly update the data file with a later expiration date.
 
-This job needs to be updated in conjunction with the URL checker. If they are not on
-compatible URL checker versions, you may receive inconsistent behavior and erroneous
+This job needs to be updated in conjunction with the URLs-checker. If they are not on
+compatible URLs-checker versions, you may receive inconsistent behavior and erroneous
 failures between this and the PR linting job.
 
 #### Post New Jobs to Slack
@@ -137,7 +135,7 @@ the USRSE Slack `#jobs` channel. It utilizes the [Jobs updater](https://github.c
 GitHub Action by @vsoch and @jhkennedy to parse the `_data/jobs.yml` file for new jobs and post them
 the USRSE Slack. For the action:
 
- - unique: determines the field in the jobs.yml that determines uniqueness (defaults to url)
+ - `unique`: determines the field in the jobs.yml that determines uniqueness (defaults to URL)
  - `keys`: a comma-separated list of fields to include. All except for URL will have a prefix, so it's recommended to put the URL last.
 
 The other fields are intuitive. 
