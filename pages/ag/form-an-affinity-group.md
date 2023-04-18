@@ -45,7 +45,7 @@ There are two requirements for forming a new affinity group:
 
 
 Once these two requirements are satisfied, the interested US-RSE member should fill out
-the appropriate [webform](https://forms.gle/hm67GyWWJTmWDsN37). This will be reviewed
+the appropriate [webform](https://forms.gle/61JHphqt8Kpz4gTb9). This will be reviewed
 by the GMWG.
 
 ## Process after Forming

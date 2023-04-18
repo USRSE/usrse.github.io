@@ -16,6 +16,12 @@ as a bridge to form future working groups. Affinity groups may be affiliated wit
 other organizations, e.g., a Women in HPC affinity group, to foster connections
 across groups.
 
+Some examples are:
+
+- Tool-centric groups (e.g., Python, Rust)
+- Hobbies (e.g., hiking, baking)
+- Regions (e.g., Southwest RSEs, Chicago RSEs)
+
 <h2>How do I join an Affinity Group?</h2>
 
 We are currently collecting the full list of active affinity groups and will be
