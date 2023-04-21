@@ -79,6 +79,8 @@ about opportunities, strategies, and starting points for finding funding.
 
 - __2023-05-09 Carly Strasser__ - Chan Zuckerberg Initiative: [Event info and registration]({{ site.baseurl }}/events/2023/2023-05-funder-talk-series/)
 
+- __2023-06-20 Varun Chandola__ - National Science Foundation: [Event info and registration]({{ site.baseurl }}/events/2023/2023-06-funder-talk-series/)
+
 Please keep an eye out for future announcements regarding this series.
 
 #### Past Presentations
