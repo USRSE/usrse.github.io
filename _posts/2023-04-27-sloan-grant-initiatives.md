@@ -111,10 +111,10 @@ To ensure appropriate management of community concerns and incidents, we intend 
 Finally, we will have the opportunity to have some US-RSE merchandise. 
 The grant will allow us to purchase and disseminate promotional items branded with US-RSE, which can be utilized for marketing, raising awareness, and promoting engagement among US-RSE members. These items can be utilized for fun giveaways or other outreach activities.
 
-</br>
-</br>
+<br>
+<br>
 
 ## Questions? 
 
-Suggestions for any new initiative can be submitted using the [feeback form](https://docs.google.com/forms/d/e/1FAIpQLSeaaHd3iR28R2t4_DU5vWJ8zgAuzUm51fOlPicEVsG2zDYq9w/viewform).
+Suggestions for any new initiative can be submitted using the [feedback form](https://docs.google.com/forms/d/e/1FAIpQLSeaaHd3iR28R2t4_DU5vWJ8zgAuzUm51fOlPicEVsG2zDYq9w/viewform).
 Any other questions or comments can be sent to the current Steering Committee by emailing [contact@us-rse.org](mailto:contact@us-rse.org) or using the @sc tag in Slack. 
