@@ -15,8 +15,9 @@ US-RSE is currently sponsored in large part from a grant by the Alfred P. Sloan 
 <br>
 <br>
 <br>
+### Individual Sponsors
 
-Thank you tou our individual sponsors for your generous donations. 
+Thank you to our individual sponsors for your generous donations. 
 For information on current fundraising initiatives and how to donate to US-RSE, see the [support US-RSE page]({{ site.baseurl }}/support/).
 
 
