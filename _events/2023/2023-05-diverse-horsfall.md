@@ -21,7 +21,7 @@ Research Software Community.
 The talk has been timed to coincide with [Mental Health Awareness Week](https://www.mentalhealth.org.uk/our-work/public-engagement/mental-health-awareness-week-about) which is taking place in the
 UK from the 15th-21st May.
 
-You can find out more about Dave’s work on mental health advocacy at: [https://horsfall.dev/mental-health/](https://horsfall.dev/mental-health/])
+You can find out more about Dave’s work on mental health advocacy at: [https://horsfall.dev/mental-health/](https://horsfall.dev/mental-health/)
 
 Please [register for online attendance via Zoom](https://imperial-ac-uk.zoom.us/meeting/register/tJMuf-CrqTkuGdZFrZkMGqB_TsM3nsRVKSYl#/registration). 
 
