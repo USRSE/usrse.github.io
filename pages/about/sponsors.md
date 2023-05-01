@@ -6,7 +6,7 @@ menubar: about
 set_last_modified: true
 ---
 
-US-RSE is currently sponsored in large part from a grant by the Alfred P. Sloan Foundation
+US-RSE is currently sponsored in large part from a grant by the Alfred P. Sloan Foundation.
 
 <br>
 
