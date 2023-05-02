@@ -9,12 +9,12 @@ menubar_toc: true
 As the US-RSE organization grows, so do the associated costs with operation.
 Running a grassroots community-driven organization takes a massive amount of effort on behalf of the community members who volunteer their time.
 
-<!--
-Donations to support US-RSE's ongoing [mission]({{ site.baseurl }}/mission/) can be made at the [US-RSE OCF member page](https://opencollective.com/usrse).
+
+Donations to support US-RSE's ongoing [mission]({{ site.baseurl }}/about/mission/) can be made through our [Fundrazr donation page](https://give.communityin.org/us-rse-donate?ref=ab_8CNhW0).
 Donations are tax deductible as allowed to the full extent of the law and can be made via a number of convenient methods.
--->
+
 <!-- It would be nice to have this be a big button at some point -->
-<!--[Support US-RSE!](https://opencollective.com/usrse) -->
+<!--[Support US-RSE!](https://give.communityin.org/us-rse-donate?ref=ab_8CNhW0) -->
 
 ## Fundraising Initiatives
 
@@ -24,7 +24,7 @@ Currently, US-RSE is focused on raising funds to support general operational exp
 The primary general operational needs we need to support at this stage are modest expenses associated with membership management and enhanced communication amongst members.
 We are currently limited by the the effort and time required of volunteers to maintain the current system.
 
-<!-- By making a [one time or recurring donation](https://opencollective.com/usrse) you'll allow our passionate volunteers to spend more time focused on advancing RSE initiatives than operational tasks. -->
+By making a [one time or recurring donation](https://give.communityin.org/us-rse-donate?ref=ab_8CNhW0) you'll allow our passionate volunteers to spend more time focused on advancing RSE initiatives than operational tasks.
 
 
 
