@@ -10,7 +10,7 @@ As the US-RSE organization grows, so do the associated costs with operation.
 Running a grassroots community-driven organization takes a massive amount of effort on behalf of the community members who volunteer their time.
 
 
-Donations to support US-RSE's ongoing [mission]({{ site.baseurl }}/mission/) can be made through our [Fundrazr donation page](https://give.communityin.org/us-rse-donate?ref=ab_8CNhW0).
+Donations to support US-RSE's ongoing [mission]({{ site.baseurl }}/about/mission/) can be made through our [Fundrazr donation page](https://give.communityin.org/us-rse-donate?ref=ab_8CNhW0).
 Donations are tax deductible as allowed to the full extent of the law and can be made via a number of convenient methods.
 
 <!-- It would be nice to have this be a big button at some point -->
