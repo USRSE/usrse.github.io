@@ -250,7 +250,8 @@
     "hackdna": {
         "name": "Ilya Sytchev",
         "blog": "https://github.com/hackdna",
-        "bio": "Software engineer specializing in cloud-based bioinformatics web application development"
+        "bio": "Software engineer specializing in cloud-based bioinformatics web application development",
+        "orcid": "0009-0003-0647-5613"
     },
     "axrez": {
         "name": "Emil Østergaard",
