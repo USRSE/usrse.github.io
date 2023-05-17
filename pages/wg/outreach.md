@@ -77,8 +77,6 @@ about opportunities, strategies, and starting points for finding funding.
 
 #### Upcoming Presentations
 
-- __2023-05-09 Carly Strasser__ - Chan Zuckerberg Initiative: [Event info and registration]({{ site.baseurl }}/events/2023/2023-05-funder-talk-series/)
-
 - __2023-06-20 Varun Chandola__ - National Science Foundation: [Event info and registration]({{ site.baseurl }}/events/2023/2023-06-funder-talk-series/)
 
 Please keep an eye out for future announcements regarding this series.
@@ -91,6 +89,7 @@ Please keep an eye out for future announcements regarding this series.
 
 - __2023-04-03 Susan Gregurick, Ishwar Chandramouliswaran, Lori Scott-Sheldon, Heidi Sofia__ - National Institutes of Health: [Event page]({{ site.baseurl }}/events/2023/2023-04-funder-talk-series/), [video](https://youtu.be/0Tk7aUSOk-4) & [slides](https://drive.google.com/file/d/1a-B5Hr-GAHfYFhDVZEz6sfCmMEuAoaNo/view?usp=sharing)
 
+- __2023-05-09 Carly Strasser__ - Chan Zuckerberg Initiative: [Event page]({{ site.baseurl }}/events/2023/2023-05-funder-talk-series/), [video](https://youtu.be/T6wZvCTjlWw) & [slides](https://drive.google.com/file/d/1jL5VkdtVjqtXEwMcJLhcQYIg9hxgxwdT/view?usp=sharing)
 
 
 ### Supercomputing Spotlights
