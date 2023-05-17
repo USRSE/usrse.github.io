@@ -57,14 +57,15 @@ Those who have full permissions to the repository should still be working on sep
 
 Give the PR a descriptive title.  The PR template asks you for a description of the changes - a brief description is fine for simple/routine changes.
 
-Two things to do after creating the PR:
+Three things to do after creating the PR:
 
 1. Preview the site, either locally (necessary for complex functionality changes - see [docs/local_previews.md](docs/local_previews.md) for details) or with the CircleCI preview (fine for routine content changes and additions - see [docs/tests_ci.md](docs/tests_ci.md) for details).
-2. Post a link to the PR on the Slack #website channel to get reviewers.  
+2. Ask others to review content if needed.  For example, if your change is part of a working group's activities, you may need to check with other members of the working group to review your update.
+3. Once the content is settled, post a link to the PR on the Slack #website channel to get reviewers for functionality and basic website style conformity.  
 
 ### Review Policy
 
-**PR reviews are not content reviews.**  While corrections to basic grammatical issues, links, clarity problems, etc. in the files that are part of the review can be noted, the content of things to be posted to the website should generally be discussed and resolved before creating a PR.  
+**PR reviews are not content reviews.**  While corrections to basic grammatical issues, links, clarity problems, etc. in the files that are part of the review can be noted, the content of things to be posted to the website should generally be discussed and resolved before creating a PR.  If you create a PR that needs a content review before a technical review by the website group, please note that in the PR info.  
 
 Those with merge permissions on the repo: use your judgment as to whether you need a reviewer.  Routine edits, additions, changes that are part of the normal activities of US-RSE do not need to be reviewed unless you want.  For larger edits (things requiring discussion or assistance), please ask for someone else to review.  Generally "squash" when merging.  
 
