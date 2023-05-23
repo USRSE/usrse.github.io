@@ -3,7 +3,7 @@ layout: page
 title: Mentorship Program
 subtitle:
 menubar: working-groups
-permalink: /wg/mentorship-program
+permalink: /wg/mentorship-program/
 set_last_modified: true
 ---
 
