@@ -8,7 +8,7 @@ repeated: false
 category: community-call
 time:
     - - start: 2023-06-09T18:00:00Z
-        end: 2023-05-11T19:00:00Z
+        end: 2023-06-09T19:00:00Z
 ---
 
 The next community call will be about **Promoting Good Software Development Practices** on **Friday, June 9, 2pm ET/1pm CT/12pm MT/11am PT**.
