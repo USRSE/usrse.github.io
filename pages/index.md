@@ -48,7 +48,7 @@ full_width: true
        <p>Working groups, including Diversity, Equity, and Inclusion (DEI) and a website committee, bring together community members with common interests.</p>
       </div>
        <div class="grid-item-buttons">
-<a href="{{ site.baseurl }}/wg/working-groups/" class="">Learn More</a>
+<a href="{{ site.baseurl }}/working-groups/" class="">Learn More</a>
    </div>
  </div>
 </div>
