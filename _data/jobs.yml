@@ -5,14 +5,10 @@
   url: https://apply.workable.com/murmuration/j/6724DF7AE2/
 - expires: 2024-05-31
   location: Iowa State University, Ames, Iowa
-  name: Researcher and Engineer Positions in Advanced Wireless, Open RAN, and Rural Broadband
+  name: Researcher and Engineer Positions in Advanced Wireless, Open RAN, and Rural
+    Broadband
   posted: 2023-05-18
   url: https://wici.iastate.edu/career
-- expires: 2023-05-23
-  location: University of Michigan, Ann Arbor, MI
-  name: App Programmer/Analyst Intermediate
-  posted: 2023-05-11
-  url: https://careers.umich.edu/job_detail/234037/app-programmeranalyst-inter
 - expires: 2023-06-01
   location: Sandia National Laboratories, Albuquerque, NM (Remote an option)
   name: Research Software Engineer (Early to Mid Career)
@@ -24,22 +20,26 @@
   posted: 2023-05-04
   url: https://lanl.jobs/search/jobdetails/rd-hpccomputer-scientist-scientist-23/27a9918f-cc78-4ef1-8356-97b6aaaecb42
 - expires: 2023-06-05
-  location: Cooperative Institute for Research in the Atmosphere, Colorado State University, Boulder, CO
+  location: Cooperative Institute for Research in the Atmosphere, Colorado State University,
+    Boulder, CO
   name: Scientific Computing Specialist
   posted: 2023-05-04
   url: https://jobs.colostate.edu/postings/124262
 - expires: 2023-06-09
-  location: National Institutes of Health, Bethesda, MD (in-person preferred, remote may be considered)
+  location: National Institutes of Health, Bethesda, MD (in-person preferred, remote
+    may be considered)
   name: Scientific Programmer
   posted: 2023-05-04
   url: https://fim.nimh.nih.gov/positions-available
 - expires: 2023-05-22
-  location: National Center for Supercomputing Applications (NCSA), University of Illinois, Urbana, IL
+  location: National Center for Supercomputing Applications (NCSA), University of
+    Illinois, Urbana, IL
   name: Associate Research Programmer/Research Programmer
   posted: 2023-05-02
   url: https://illinois.csod.com/ux/ats/careersite/1/home/requisition/4012?c=illinois
 - expires: 2023-06-18
-  location: Center for Research on Foundation Models, Stanford University, Stanford, CA
+  location: Center for Research on Foundation Models, Stanford University, Stanford,
+    CA
   name: Research Engineer
   posted: 2023-05-01
   url: https://careersearch.stanford.edu/jobs/research-engineer-21381
@@ -145,16 +145,6 @@
   name: Research Software Engineer - Neutron Sciences
   posted: 2023-02-27
   url: https://jobs.ornl.gov/job-invite/10241/
-- expires: 2023-02-27
-  location: National Center for Atmospheric Research, Boulder, CO (hybrid flexible)
-  name: CGD Software Engineer II
-  posted: 2023-02-16
-  url: https://ucar.wd5.myworkdayjobs.com/en-US/UCAR_Careers/job/CGD-Software-Engineer-II_REQ-2023-61-1
-- expires: 2023-03-15
-  location: Los Alamos National Laboratory, Los Alamos, NM
-  name: Computer Scientist (Scientist 1)
-  posted: 2023-02-03
-  url: https://lanl.jobs/search/jobdetails/computer-scientist-1-scientist-1/74c116d4-7d15-4bdf-bfa1-8a2e7580a5df
 - expires: 2023-04-01
   location: Los Alamos National Laboratory, Los Alamos, NM
   name: Research Software Engineer (Scientist 2)
@@ -165,16 +155,6 @@
   name: Director of Engineering
   posted: 2023-01-31
   url: https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25240&siteid=5341&PageType=JobDetails&jobid=1984244
-- expires: 2023-02-13
-  location: The Cooperative Institute for Research in the Atmosphere, Boulder, CO
-  name: Software Engineer, Research Assoc. II
-  posted: 2023-01-31
-  url: https://jobs.colostate.edu/postings/119297
-- expires: 2023-03-21
-  location: UMass Chan Medical School, Remote/hybrid
-  name: Research Software Engineer
-  posted: 2023-01-27
-  url: https://www.linkedin.com/jobs/view/software-engineer-bib-lab-hybrid-remote-at-umass-chan-medical-school-3438587354
 - expires: 2023-03-30
   location: Harvard University, Cambridge, MA (Remote)
   name: Senior Research Software Engineer
@@ -185,27 +165,11 @@
   name: Research Software Engineer (Digital Humanities)
   posted: 2023-01-25
   url: https://cdh.princeton.edu/engage/jobs/rse/
-- expires: 2023-03-13
-  location: Oak Ridge National Laboratory, Oak Ridge, TN
-  name: Full Stack Software Engineer - Application Engineering
-  posted: 2022-12-13
-  url: https://jobs.ornl.gov/job-invite/9692/
 - expires: 2023-12-12
   location: Stanford University, Stanford, CA
   name: Research Software Engineer
   posted: 2022-12-13
   url: https://apptrkr.com/3715968
-- expires: 2023-03-01
-  location: Purdue University, West Lafayette, IN
-  name: Postdoctoral Fellow Position in Interdisciplinary Biomedical Research and
-    Data Science
-  posted: 2022-12-09
-  url: https://www.purdue.edu/research/embrio/files/Postdoc-Fellow-announcement_Pienaar_Buganza-Tepole.pdf
-- expires: 2023-02-28
-  location: Topos Institute, Berkeley, CA (required)
-  name: Research Software Engineer
-  posted: 2022-12-08
-  url: https://topos.site/files/Research_Software_Engineer.pdf
 - expires: 2023-05-06
   location: Simons Foundation, New York, NY
   name: Software Engineer
@@ -246,10 +210,3 @@
   name: Lead Software Engineer
   posted: 2022-11-29
   url: https://ssecenter.cc.gatech.edu/jobs/
-- expires: 2023-02-27
-  location: National Center for Supercomputing Applications, University of Illinois,
-    Urbana, Illinois
-  name: Associate Research Software Engineer/Research Software Engineer/Senior Research
-    Software Engineer
-  posted: 2022-09-01
-  url: https://illinois.csod.com/ux/ats/careersite/1/home/requisition/708?c=illinois
