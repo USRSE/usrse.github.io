@@ -728,6 +728,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/56734137?v=4"
             ]
+        },
+        {
+            "login": "RichardLitt",
+            "name": "Richard Littauer",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://burntfen.com",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/910753?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
