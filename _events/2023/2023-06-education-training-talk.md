@@ -19,7 +19,7 @@ US-RSE periodically presents technical talks and tutorials related to Education 
 ## Event
 
 The next technical talk of the US-RSE Education & Training Seminar Series will feature Savannah Thais who will speak about "Machine Learning for your Research."
-This event will take place **Thursday, June 22nd at 2 PM ET, 1 PM CT, 12 PM MT, 11 AM PT**
+This event will take place **Thursday, June 22nd at 2-4 PM ET, 1-3 PM CT, 12-2 PM MT, 11 AM - 1 PM PT**
 
 *Abstract*: This technical talk will give an overview of modern supervised and unsupervised machine learning (ML) methods. We will discuss the advantages and limitations of each and explore what types of problems each is best suited to address. We will also discuss best practices for using ML methods in scientific and social impact research including appropriate model evaluation/testing and reproducibility and generalizability considerations.
 
