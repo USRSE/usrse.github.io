@@ -9,7 +9,9 @@
                     <h1 class="title is-2 hero-text" style="padding-top:50px">{{ site.hero_line_one }}</h1>
                     <p class="subtitle is-4 is-italic hero-text">{{ site.hero_line_two }}</p>
                     {% if page.hero_link %}
-                        <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>{% endif %}
+                    <!-- <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>-->
+                        <a href="{{ page.hero_link | relative_url }}" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">{{ page.hero_link_text }}</a>
+                    {% endif %} 
                 </div>
             </div>
         </div>
