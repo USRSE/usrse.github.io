@@ -17,6 +17,12 @@ We'll be publishing these posts each Monday during June to highlight such
 people, where we talk about the person and tie their work and life to the RSE
 movement.
 
+* [Sophie Wilson]({% post_url 2023-06-05-pride-spotlight-sophie-wilson %}) -
+  June 5, 2023
+* TBA - June 12, 2023
+* TBA - June 19, 2023
+* TBA - June 26, 2023
+
 In conjunction with the weekly blog posts, we ask the community to think about
 how they will celebrate and reflect on pride this month. This will likely come
 in many different forms for each individual. The DEI-WG will be hosting the
