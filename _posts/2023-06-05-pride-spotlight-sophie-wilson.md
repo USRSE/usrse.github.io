@@ -2,7 +2,7 @@
 layout: post
 title: "US-RSE Pride Month Spotlight - Sophie Wilson"
 tags: [dei, pride]
-author: Lezlie Espana
+author: Miranda Mundt 
 ---
 
 US-RSE's [DEI working group (DEI-WG)](https://us-rse.org/wg/dei/) is proud to
