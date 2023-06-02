@@ -23,9 +23,9 @@ in many different forms for each individual. The DEI-WG will be hosting the
 July community call with questions about LGBTQ+ allyship in mind. Checkout the
 resources below to help your introspection throughout the month. Further
 resources will be posted throughout the month, including upcoming events, such
-as our [bi-weekly DEI-WG
-call](https://us-rse.org/events/repeated/dei-working-group-call/) (happening
-this Thursday, June 15 at 9PT/12ET).
+as our [DEI-WG Media Club
+call](https://us-rse.org/events/repeated/dei-media-club/) (Thursday, June 15 at
+9PT/12ET).
 
 We’d also like to bring to your attention a new
 [#lgbtq](https://usrse.slack.com/archives/C056NFHET97) Slack channel: "A place
