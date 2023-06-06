@@ -2,7 +2,7 @@
 title: Education and Training Call
 subtitle:
 location: Virtual
-expires: 2023-05-31
+expires: 2023-12-31
 event_date: "first Tuesday each month 10:30-11:30 Eastern"
 layout: event
 category: education-training
