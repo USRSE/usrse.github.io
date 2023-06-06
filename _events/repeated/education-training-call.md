@@ -7,14 +7,14 @@ event_date: "first Tuesday each month 10:30-11:30 Eastern"
 layout: event
 category: education-training
 time:
-  - - start: 2023-02-07 10:30 EST
+  - - start: 2023-08-01 10:30 EST
 
 repeated: true
 
 rrule:
-  - DTSTART;TZID=America/New_York:20230207T103000
+  - DTSTART;TZID=America/New_York:20230801T103000
   - RRULE:FREQ=MONTHLY;WKST=MO;BYDAY=+1TU  
-  - RDATE;TZID=America/New_York:20230207T103000
+  - RDATE;TZID=America/New_York:20230801T103000
 ---
 
 The Education & Training Working group monthly meeting occurs on the first Tuesday of each month. 10:30-11:30 ET.
