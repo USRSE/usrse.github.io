@@ -739,6 +739,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/910753?v=4"
             ]
+        },
+        {
+            "login": "jamilgafur",
+            "name": "Jamil Gafur",
+            "contributions": [
+                "code"
+            ],
+            "profile": "jamilgafur.com",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/58782189?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

@@ -3,7 +3,7 @@
 https://us-rse.org
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-69-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-70-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -208,6 +208,7 @@ tool to generate a contributors graphic below.
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/adamrubens"><img src="https://avatars.githubusercontent.com/u/126014033?v=4?s=100" width="100px;" alt="adamrubens"/><br /><sub><b>adamrubens</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=adamrubens" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/manning-ncsa"><img src="https://avatars.githubusercontent.com/u/56734137?v=4?s=100" width="100px;" alt="T. Andrew Manning"/><br /><sub><b>T. Andrew Manning</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=manning-ncsa" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://burntfen.com"><img src="https://avatars.githubusercontent.com/u/910753?v=4?s=100" width="100px;" alt="Richard Littauer"/><br /><sub><b>Richard Littauer</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=RichardLitt" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="jamilgafur.com"><img src="https://avatars.githubusercontent.com/u/58782189?v=4?s=100" width="100px;" alt="Jamil Gafur"/><br /><sub><b>Jamil Gafur</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jamilgafur" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
