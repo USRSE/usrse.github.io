@@ -370,5 +370,12 @@
         "bio": "Open source maintainer, birder, sailor, poet, linguist, flâneur, etc, etc, etc.",
         "blog": "https://burntfen.com",
         "orcid": "0000-0001-5428-7535"
+    },
+    "jamilgafur": {
+        "name": "Jamil Gafur",
+        "email": "jamil-gafur@uiowa.edu",
+        "bio": "I am a CS Ph.D student at The University of Iowa working in collaboration with the National Renewable Energy Lab (NREL)",
+        "blog": "jamilgafur.com",
+        "orcid": "0000-0002-1364-1662"
     }
 }
