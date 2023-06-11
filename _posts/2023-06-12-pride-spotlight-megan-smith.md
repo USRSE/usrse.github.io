@@ -22,10 +22,17 @@ style= "float:right; padding:1em; max-width:350px" %}
 
 Megan Smith is known for being an entrepreneur and engineer throughout the tech world. She has worked on early smartphones, solar powered race cars and cookstoves, award-winning bicycle locks, and space station construction. Her early work with Google allowed not only the creation of key components such as Google Maps and Google Earth, but also led to initiatives like "Solve for X" and Google's "Women Techmakers". She has done a ton of work in advocating for diversity and inclusivity in STEM/STEAM and the tech world at large.
 
-Megan Smith also facilitated the growth of LGBT spaces on the web, helping lead PlanetOut, an early LGBT online community. She was also listed as one of the 50 most powerful LGBT people in the US in 2012 and 2013 by Out magazine. (She also married her ex-wife Kara Swisher in 1999 in California...before same-sex marriage was legalized - you go girl!)
+Megan Smith also facilitated the growth of LGBTQIA+ spaces on the web, helping lead PlanetOut, an early LGBTQIA+ online community. She was also listed as one of the 50 most powerful LGBTQIA+ people in the US in 2012 and 2013 by Out magazine. (She also married her ex-wife Kara Swisher in 1999 in California...before same-sex marriage was legalized - you go girl!)
 
 More recently, Megan Smith served as Chief Technology Officer during the Obama administration (the first female!). She has since gone on to found and lead [shift7](https://shift7.com/), working on inclusion and diversity in technological sectors throughout the US.
 
-Whether in a global space like Google, or closer to home in US-RSE and our individual tech spaces, Megan Smith's works and life are an inspiration to us all. Encouraging us to be proud of who you are, to do what you love, and to uplift others so that they can do the same. 
+Whether in a global space like Google, or closer to home in US-RSE and our individual tech spaces, Megan Smith's work and life are an inspiration to us all. Let us be encouraged to be proud of who we are, to do what we love, and to uplift others so that they can do the same. 
 
 Happy Pride Month, all!
+
+<hr>
+
+Sources:
+- <https://obamawhitehouse.archives.gov/administration/eop/ostp/about/leadershipstaff/smith>
+- <https://en.wikipedia.org/wiki/Megan_Smith>
+  
