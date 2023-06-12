@@ -45,14 +45,14 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
 
-exclude: 
+exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
 
 livereload: true
 
-google_analytics: "UA-133428825-1"
+google_analytics: "G-TB8FXJCCW1"
 
 defaults:
   -
@@ -68,7 +68,7 @@ defaults:
     values:
       layout: post
       show_sidebar: true
-  - 
+  -
     scope:
       path: "_events"
       type: "events"
@@ -84,7 +84,7 @@ collections:
   events:
     output: true
     permalink: /:collection/:path/
-  products: 
+  products:
     output: true
     layout: product
     image: https://via.placeholder.com/800x600
