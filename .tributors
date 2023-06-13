@@ -377,5 +377,10 @@
         "bio": "I am a CS Ph.D student at The University of Iowa working in collaboration with the National Renewable Energy Lab (NREL)",
         "blog": "jamilgafur.com",
         "orcid": "0000-0002-1364-1662"
+    },
+    "henryjburg": {
+        "name": "Henry Burgess",
+        "bio": "Research Software Engineer 👨‍💻",
+        "blog": "henryburgess.net"
     }
 }

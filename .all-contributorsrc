@@ -750,6 +750,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/58782189?v=4"
             ]
+        },
+        {
+            "login": "henryjburg",
+            "name": "Henry Burgess",
+            "contributions": [
+                "code"
+            ],
+            "profile": "henryburgess.net",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/60735885?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
