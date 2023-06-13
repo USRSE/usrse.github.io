@@ -761,6 +761,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/60735885?v=4"
             ]
+        },
+        {
+            "login": "peterfpeterson",
+            "name": "Pete Peterson",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/peterfpeterson",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/404003?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
