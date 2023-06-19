@@ -772,6 +772,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/404003?v=4"
             ]
+        },
+        {
+            "login": "kescobo",
+            "name": "Kevin Bonham",
+            "contributions": [
+                "code"
+            ],
+            "profile": "http://kevinbonham.com",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/3502975?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

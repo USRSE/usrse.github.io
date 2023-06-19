@@ -3,7 +3,7 @@
 https://us-rse.org
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-72-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-73-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -213,6 +213,7 @@ tool to generate a contributors graphic below.
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="henryburgess.net"><img src="https://avatars.githubusercontent.com/u/60735885?v=4?s=100" width="100px;" alt="Henry Burgess"/><br /><sub><b>Henry Burgess</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=henryjburg" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/peterfpeterson"><img src="https://avatars.githubusercontent.com/u/404003?v=4?s=100" width="100px;" alt="Pete Peterson"/><br /><sub><b>Pete Peterson</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=peterfpeterson" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://kevinbonham.com"><img src="https://avatars.githubusercontent.com/u/3502975?v=4?s=100" width="100px;" alt="Kevin Bonham"/><br /><sub><b>Kevin Bonham</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=kescobo" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
