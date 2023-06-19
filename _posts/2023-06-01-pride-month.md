@@ -19,8 +19,10 @@ movement.
 
 * [Sophie Wilson]({% post_url 2023-06-05-pride-spotlight-sophie-wilson %}) -
   June 5, 2023
-* [Megan Smith]({% post_url 2023-06-12-pride-spotlight-megan-smith %}) - June 12, 2023
-* TBA - June 19, 2023
+* [Megan Smith]({% post_url 2023-06-12-pride-spotlight-megan-smith %}) - June
+  12, 2023
+* [Rebecca Heineman]({% post_url 2023-06-19-pride-spotlight-rebecca-heineman
+  %}) - June 19, 2023
 * TBA - June 26, 2023
 
 In conjunction with the weekly blog posts, we ask the community to think about
