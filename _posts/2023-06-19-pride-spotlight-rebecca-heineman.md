@@ -17,9 +17,10 @@ stories.
 
 {% include image.html
 url="https://upload.wikimedia.org/wikipedia/commons/5/52/Rebecca_Heineman_on_Burgertime.jpg"
-description="Rebecca Heineman, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons"
-alt="Rebecca Heineman, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons"
-style= "float:right; padding:1em; max-width:350px" %}
+description="Rebecca Heineman, CC BY 3.0
+<https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons"
+alt="Rebecca Heineman, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>,
+via Wikimedia Commons" style= "float:right; padding:1em; max-width:350px" %}
 
 It’s easy to overlook the breadth of skill involved in creating a video game,
 but any study of game design will quickly change your mind. Sitting at the
