@@ -386,5 +386,13 @@
     "peterfpeterson": {
         "name": "Pete Peterson",
         "blog": "https://github.com/peterfpeterson"
+    },
+    "kescobo": {
+        "name": "Kevin Bonham",
+        "email": "kbonham@wellesley.edu",
+        "bio": "I'm a scientist interested in fermented foods, microbes, and immune systems. My code should be considered CRAPL licenced (http://matt.might.net/articles/crapl/)",
+        "blog": "http://kevinbonham.com",
+        "orcid": "0000-0003-3200-7533",
+        "affiliation": "Wellesley College"
     }
 }
