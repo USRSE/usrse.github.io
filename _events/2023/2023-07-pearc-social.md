@@ -23,4 +23,9 @@ RSEs at [Cartside Food Carts](https://www.cartsidepdx.com/), 1825 N Williams.
 We will be meeting at 6 PM Pacific time following the
 [Software Engineering for Research Software workshop](https://se4science.org/workshops/se4rs23/index.htm).
 
+This is an informal meet up organized by US-RSE members. 
+It's not funded or financially sponsored by US-RSE, so everyone is responsible for their own food & drink.
+
 Any and all are welcome.
+
+
