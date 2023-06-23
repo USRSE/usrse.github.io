@@ -23,7 +23,8 @@ movement.
   12, 2023
 * [Rebecca Heineman]({% post_url 2023-06-19-pride-spotlight-rebecca-heineman
   %}) - June 19, 2023
-* TBA - June 26, 2023
+* [Lynn Conway]({% post_url 2023-06-26-pride-spotlight-lynn-conway %}) - June
+  26, 2023
 
 In conjunction with the weekly blog posts, we ask the community to think about
 how they will celebrate and reflect on pride this month. This will likely come
