@@ -1,0 +1,5 @@
+[default.extend-words]
+# Don't correct the surname "Hsi"
+Hsi = "Hsi"
+# Don't correct the acronym NWO
+NWO = "NWO"

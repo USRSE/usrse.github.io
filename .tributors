@@ -250,7 +250,8 @@
     "hackdna": {
         "name": "Ilya Sytchev",
         "blog": "https://github.com/hackdna",
-        "bio": "Software engineer specializing in cloud-based bioinformatics web application development"
+        "bio": "Software engineer specializing in cloud-based bioinformatics web application development",
+        "orcid": "0009-0003-0647-5613"
     },
     "axrez": {
         "name": "Emil Østergaard",
@@ -354,5 +355,44 @@
         "email": "rgupta@mcs.anl.gov",
         "bio": "Research Software Specialist, Argonne National Laboratory\r\n",
         "blog": "https://github.com/rinkug"
+    },
+    "adamrubens": {
+        "name": "adamrubens",
+        "blog": "https://github.com/adamrubens"
+    },
+    "manning-ncsa": {
+        "name": "T. Andrew Manning",
+        "blog": "https://github.com/manning-ncsa"
+    },
+    "RichardLitt": {
+        "name": "Richard Littauer",
+        "email": "richard@maintainer.io",
+        "bio": "Open source maintainer, birder, sailor, poet, linguist, flâneur, etc, etc, etc.",
+        "blog": "https://burntfen.com",
+        "orcid": "0000-0001-5428-7535"
+    },
+    "jamilgafur": {
+        "name": "Jamil Gafur",
+        "email": "jamil-gafur@uiowa.edu",
+        "bio": "I am a CS Ph.D student at The University of Iowa working in collaboration with the National Renewable Energy Lab (NREL)",
+        "blog": "jamilgafur.com",
+        "orcid": "0000-0002-1364-1662"
+    },
+    "henryjburg": {
+        "name": "Henry Burgess",
+        "bio": "Research Software Engineer 👨‍💻",
+        "blog": "henryburgess.net"
+    },
+    "peterfpeterson": {
+        "name": "Pete Peterson",
+        "blog": "https://github.com/peterfpeterson"
+    },
+    "kescobo": {
+        "name": "Kevin Bonham",
+        "email": "kbonham@wellesley.edu",
+        "bio": "I'm a scientist interested in fermented foods, microbes, and immune systems. My code should be considered CRAPL licenced (http://matt.might.net/articles/crapl/)",
+        "blog": "http://kevinbonham.com",
+        "orcid": "0000-0003-3200-7533",
+        "affiliation": "Wellesley College"
     }
 }

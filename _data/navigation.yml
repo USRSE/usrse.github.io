@@ -17,8 +17,12 @@
       link: about/election/
     - name: Financial Status
       link: about/finances/
+    - name: Sponsors
+      link: about/sponsors/
     - name: Code of Conduct
       link: about/code-of-conduct/
+    - name: Affinity Groups
+      link: about/affinity-groups/
     - name: Working Groups
       link: working-groups/
     - name: Contact
@@ -45,6 +49,10 @@
       link: wg/dei
     - name: Education and Training
       link: wg/education_training
+    - name: Group Management
+      link: wg/group-management
+    - name: Mentorship Program
+      link: wg/mentorship-program
     - name: Outreach
       link: wg/outreach
     - name: RSE Empowerment in National Labs

@@ -6,15 +6,17 @@ menubar: about
 set_last_modified: true
 ---
 
-### Open Collective Foundation Member 
+### Community Initiatives Project
 
-The US Research Software Engineer Association is proud to be a member organization of the [Open Collective Foundation (OCF)](https://opencollective.com/foundation). 
-OCF is a 501(c)(3) fiscal host entity that provides US-RSE an open platform for transparently managing US-RSE long-term finances.
-The 501(c)(3) status and all of its benefits extend to all OCF member organizations including US-RSE. 
-OCF provides umbrella accounting, book-keeping and legal fiscal services for tax purposes to US-RSE. 
+<img src="{{ site.baseurl }}/assets/img/ci-secondary-600.png" alt="CI Logo" style="padding:60px; float:right; width:400px;">
+US-RSE is a fiscally sponsored project of [Community Initiatives](http://communityin.org/) (CI), a 501(c)(3) non-profit organisation based in California, USA. The 501(c)(3) status of CI and all of its benefits extend to all CI projects including US-RSE. 
+CI provides services such as accounting, bookkeeping, and HR and legal fiscal services for tax purposes to US-RSE. 
 
-The US-RSE home page under the OCF can be found here: [__https://opencollective.com/usrse__](https://opencollective.com/usrse).
 
-The page has a [__contribute__](https://opencollective.com/usrse#category-CONTRIBUTE) link which supports general donations to the US-RSE and a [__budget__]( https://opencollective.com/usrse#category-BUDGET) link that provides a transparent picture of how US-RSE is using its funds. 
 
-For more information on current fundraising initiatives see the [support US-RSE page]({{ site.baseurl }}/support/).
+For information on current fundraising initiatives and how to donate to US-RSE, see the [support US-RSE page]({{ site.baseurl }}/support/).
+
+### Past Fiscal Sponsors
+
+Until early 2023, the US Research Software Engineer Association was a member organization of the [Open Collective Foundation (OCF)](https://opencollective.com/foundation). 
+

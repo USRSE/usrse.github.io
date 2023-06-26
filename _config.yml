@@ -9,7 +9,8 @@ baseurl: ""  # for testing, also check .circleci/circle_urls.sh
 title-img: /assets/img/main_logo_transparent.png  # baseurl will be prepended
 twitter-img: /assets/img/main_logo_transparent.png  # url + baseurl will be prepended
 banner: /assets/img/main_logo_transparent.png
-icon: /assets/img/main_logo_transparent.png
+# icon: /assets/img/main_logo_transparent.png
+icon: /assets/img/USRSE_Pride_6ColorChevronsSquare.png
 domain: https://us-rse.org
 
 email: contact@us-rse.org
@@ -44,14 +45,14 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
 
-exclude: 
+exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
 
 livereload: true
 
-google_analytics: "UA-133428825-1"
+google_analytics: "G-TB8FXJCCW1"
 
 defaults:
   -
@@ -67,7 +68,7 @@ defaults:
     values:
       layout: post
       show_sidebar: true
-  - 
+  -
     scope:
       path: "_events"
       type: "events"
@@ -83,7 +84,7 @@ collections:
   events:
     output: true
     permalink: /:collection/:path/
-  products: 
+  products:
     output: true
     layout: product
     image: https://via.placeholder.com/800x600

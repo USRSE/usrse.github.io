@@ -5,6 +5,8 @@ show_hero: true
 callouts: home
 permalink: /
 full_width: true
+hero_link: 2023-06-01-pride-month
+hero_link_text: Celebrate Pride Month with US-RSE!
 ---
 
 <div class="card" style="padding:50px; margin-top:-50px">
@@ -48,7 +50,7 @@ full_width: true
        <p>Working groups, including Diversity, Equity, and Inclusion (DEI) and a website committee, bring together community members with common interests.</p>
       </div>
        <div class="grid-item-buttons">
-<a href="{{ site.baseurl }}/wg/working-groups/" class="">Learn More</a>
+<a href="{{ site.baseurl }}/working-groups/" class="">Learn More</a>
    </div>
  </div>
 </div>

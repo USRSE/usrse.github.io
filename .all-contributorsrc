@@ -706,6 +706,83 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/768870?v=4"
             ]
+        },
+        {
+            "login": "adamrubens",
+            "name": "adamrubens",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/adamrubens",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/126014033?v=4"
+            ]
+        },
+        {
+            "login": "manning-ncsa",
+            "name": "T. Andrew Manning",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/manning-ncsa",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/56734137?v=4"
+            ]
+        },
+        {
+            "login": "RichardLitt",
+            "name": "Richard Littauer",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://burntfen.com",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/910753?v=4"
+            ]
+        },
+        {
+            "login": "jamilgafur",
+            "name": "Jamil Gafur",
+            "contributions": [
+                "code"
+            ],
+            "profile": "jamilgafur.com",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/58782189?v=4"
+            ]
+        },
+        {
+            "login": "henryjburg",
+            "name": "Henry Burgess",
+            "contributions": [
+                "code"
+            ],
+            "profile": "henryburgess.net",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/60735885?v=4"
+            ]
+        },
+        {
+            "login": "peterfpeterson",
+            "name": "Pete Peterson",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/peterfpeterson",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/404003?v=4"
+            ]
+        },
+        {
+            "login": "kescobo",
+            "name": "Kevin Bonham",
+            "contributions": [
+                "code"
+            ],
+            "profile": "http://kevinbonham.com",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/3502975?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

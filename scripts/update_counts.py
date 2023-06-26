@@ -1,5 +1,4 @@
 # Update counts will retrieve counts via a csv, and then update the yaml file
-# https://docs.google.com/spreadsheets/d/1FTnl8ucFKYtiS2xhNiK8VwXeE5BuBDCzL_k9SbqyG6A/edit#gid=1109363929
 # requests is required
 # Copyright @vsoch, 2019
 
