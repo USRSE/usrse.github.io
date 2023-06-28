@@ -4,8 +4,8 @@ lang: en
 title: US-RSE
 description: United States Research Software Engineer Association
 
-url: ""
-baseurl: ""  # for testing, also check .circleci/circle_urls.sh
+url: https://us-rse.org
+baseurl: ""
 title-img: /assets/img/main_logo_transparent.png  # baseurl will be prepended
 twitter-img: /assets/img/main_logo_transparent.png  # url + baseurl will be prepended
 banner: /assets/img/main_logo_transparent.png

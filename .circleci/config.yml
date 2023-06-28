@@ -39,10 +39,7 @@ build_jekyll: &build_jekyll
     command: |
         if [ -z "$CIRCLECI_TRIGGER" ]; then
             echo "Building RSE Blog for Preview"
-            cp ~/repo/.circleci/circle_urls.sh ~/repo/circle_urls.sh
             cd ~/repo
-            chmod u+x circle_urls.sh
-            bash circle_urls.sh              
             bundle exec jekyll build
         else
             echo "Nightly build detected, preview not needed."
