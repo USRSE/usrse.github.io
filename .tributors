@@ -394,5 +394,11 @@
         "blog": "http://kevinbonham.com",
         "orcid": "0000-0003-3200-7533",
         "affiliation": "Wellesley College"
+    },
+    "aholmes": {
+        "name": "Aaron Holmes",
+        "email": "aaron@aaronholmes.net",
+        "bio": "Software engineer working in cancer research.\r\n\r\n\r\nhttps://orcid.org/0000-0002-1012-7879",
+        "blog": "blog.aaronholmes.net"
     }
 }
