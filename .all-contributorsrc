@@ -784,6 +784,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/3502975?v=4"
             ]
+        },
+        {
+            "login": "aholmes",
+            "name": "Aaron Holmes",
+            "contributions": [
+                "code"
+            ],
+            "profile": "blog.aaronholmes.net",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/277061?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
