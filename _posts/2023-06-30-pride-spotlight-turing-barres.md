@@ -122,28 +122,28 @@ about where we’re going.
 
 [^aclu]: Over 120 bills restricting LGBTQ rights introduced nationwide in 2023
     so far. American Civil Liberties Union. (2023, June 28).
-    [https://www.aclu.org/press-releases/over-120-bills-restricting-lgbtq-rights-introduced-nationwide-2023-so-far]
+    [https://www.aclu.org/press-releases/over-120-bills-restricting-lgbtq-rights-introduced-nationwide-2023-so-far](https://www.aclu.org/press-releases/over-120-bills-restricting-lgbtq-rights-introduced-nationwide-2023-so-far)
 
 [^loc]: About&nbsp; :&nbsp; Lesbian, gay, bisexual, transgender and Queer Pride
     month&nbsp; :&nbsp; library of Congress. The Library of Congress. (n.d.).
-    [https://www.loc.gov/lgbt-pride-month/about/#annual-pride-traditions]
+    [https://www.loc.gov/lgbt-pride-month/about/#annual-pride-traditions](https://www.loc.gov/lgbt-pride-month/about/#annual-pride-traditions)
 
 [^ae]: A&amp;E Networks Television. (n.d.). Alan Turing Biography.
-    Biography.com. [https://www.biography.com/scientists/alan-turing]
+    Biography.com. [https://www.biography.com/scientists/alan-turing](https://www.biography.com/scientists/alan-turing)
 
 [^at]: Turing, A.M. (1937), On Computable Numbers, with an Application to the
     Entscheidungsproblem. Proceedings of the London Mathematical Society,
-    s2-42: 230-265. [https://doi.org/10.1112/plms/s2-42.1.230]
+    s2-42: 230-265. [https://doi.org/10.1112/plms/s2-42.1.230](https://doi.org/10.1112/plms/s2-42.1.230)
 
 [^glsen]: Alan Turing: True to Himself. 2015. Glsen.
-    [https://www.glsen.org/sites/default/files/Alan%20Turing%20True%20to%20Himself-Final.pdf]
+    [https://www.glsen.org/sites/default/files/Alan%20Turing%20True%20to%20Himself-Final.pdf](https://www.glsen.org/sites/default/files/Alan%20Turing%20True%20to%20Himself-Final.pdf)
 
-[^bb]: Barres, B., &amp; Hopkins, N. (2020). The autobiography of a transgender
-    scientist. The MIT Press.
+[^bb]: Barres, B., &amp; Hopkins, N. (2020). [The autobiography of a transgender
+    scientist](https://mitpress.mit.edu/9780262539548/). The MIT Press.
 
 [^freeman]: Freeman, M. (2018). Ben Barres: Neuroscience Pioneer, Gender
     Champion. Nature, 562(7728), 492–492.
-    [https://doi.org/10.1038/d41586-018-07109-2]
+    [https://doi.org/10.1038/d41586-018-07109-2](https://doi.org/10.1038/d41586-018-07109-2)
 
 [^bb2]: Barres, B. A. (2006). Does gender matter? Nature, 442(7099), 133–136.
-    [https://doi.org/10.1038/442133a]
+    [https://doi.org/10.1038/442133a](https://doi.org/10.1038/442133a)
