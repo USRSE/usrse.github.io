@@ -18,15 +18,16 @@ continue to exist, and dare to thrive, in the face of adversity.
 The communities in which scientists, researchers, academics, and all other
 forms of Research Software Engineers exist are unfortunately not an exception
 to the norms of society that do not always accept or embrace LGBTQ+ identities.
-However, these blogs that we in the Diversity, Equity, and Inclusion (DEI)
-Working Group of US-RSE have put out throughout the month of June are an
-intention to highlight some of those individuals in the history of science and
-technology who have risen above the challenges we face, and been able to shine.
-They have shone bright as role models because of their career accomplishments
-and their bravery in choosing to live an honest life by being true to
-themselves and those they love.  So in today’s post, I would like to talk about
-two such people who have been role models to me as I have navigated my own
-career as a trans man in science and technology.
+However, these [blogs that we in the Diversity, Equity, and Inclusion (DEI)
+Working Group of US-RSE have put out throughout the month of June]({% post_url
+2023-06-01-pride-month %}) are an intention to highlight some of those
+individuals in the history of science and technology who have risen above the
+challenges we face, and been able to shine. They have shone bright as role
+models because of their career accomplishments and their bravery in choosing to
+live an honest life by being true to themselves and those they love.  So in
+today’s post, I would like to talk about two such people who have been role
+models to me as I have navigated my own career as a trans man in science and
+technology.
 
 ### Alan Turing
 
@@ -61,9 +62,9 @@ settled on a life where I barely told anyone at my undergraduate university
 about my gender identity.  I was fortunate enough to be seen as male, which was
 satisfying, but left some longing to be known more fully and embraced.  Through
 the story of Turing’s life, his honesty in being true to himself even when he
-faced legal repercussions, was inspiring to me. [^glsen]  His life and his work gave
-me hope that someday I could have both a meaningful career and be known.  I
-have held onto that hope ever since, and these days I am proud to say that I
+faced legal repercussions, was inspiring to me. [^glsen]  His life and his work
+gave me hope that someday I could have both a meaningful career _and_ be known.
+I have held onto that hope ever since, and these days I am proud to say that I
 live that honest life.  I am visible in the hopes that some other student may
 one day be inspired too.
 
@@ -83,12 +84,12 @@ cells as well as advocacy for gender equality in science. [^bb],[^freeman]
 After coming out in 1997, he experienced dramatically different treatment as a
 scientist simply because he was perceived as male.  His natural response was to
 then become a vocal advocate for women in science.  One major example of this
-is his 2006 Nature paper called "Does gender matter?" [8], which scientifically
+is his 2006 Nature paper called "Does gender matter?" [^bb2], which scientifically
 breaks down and refutes the argument of innate ability based on gender.  If you
 have not read it, I highly recommend it.
 
 For me personally, Ben Barres completely shifted the realm of possibilities I
-considered when I thought of becoming a scientist.  He was the first
+considered when I thought of becoming a scientist.  He was the _first_
 transgender scientist I had ever heard of, and the first role model I felt a
 genuine kinship with naturally.  His story validated my own in so many ways
 that I sorely needed, and demonstrated to me the need for visibility of
