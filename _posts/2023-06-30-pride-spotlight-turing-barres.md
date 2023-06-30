@@ -2,7 +2,7 @@
 layout: post
 title: "US-RSE Pride Month Spotlight - Alan Turing and Ben Barres"
 tags: [dei, pride]
-author: Tab Memmott
+author: Peter Vaillancourt
 ---
 
 US-RSE's [DEI working group (DEI-WG)](https://us-rse.org/wg/dei/) is proud to
