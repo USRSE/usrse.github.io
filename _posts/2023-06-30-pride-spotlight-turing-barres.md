@@ -5,16 +5,6 @@ tags: [dei, pride]
 author: Peter Vaillancourt
 ---
 
-US-RSE's [DEI working group (DEI-WG)](https://us-rse.org/wg/dei/) is proud to
-help US-RSE celebrate and participate in [Pride
-Month](https://www.loc.gov/lgbt-pride-month/). Each week during Pride Month,
-the US-RSE will spotlight a member of the LGBTQIA+ community who has been
-involved in computing, science, engineering, and/or math, and have inspired our
-members through their accomplishments in their careers and their personal
-stories.
-
-## Pride Inspired In Science: Alan Turing, Ben Barres, and Legacies
-
 Pride month has always been both a fight and a celebration for the LGBTQ+
 community, and for me that continues to ring true as my own rights - as a trans
 man - are threatened across this nation in 2023. [^aclu]  The very first Pride
