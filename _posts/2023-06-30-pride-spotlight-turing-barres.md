@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "US-RSE Pride Month Spotlight - Alan Turing and Ben Barres"
+title: "Pride Inspired In Science: Alan Turing, Ben Barres, and Legacies"
 tags: [dei, pride]
 author: Peter Vaillancourt
 ---
