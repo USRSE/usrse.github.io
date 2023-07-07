@@ -21,7 +21,7 @@ The Education and Training Seminar Series is a series of technical talks and tut
     * [Abstract](https://us-rse.org/events/2022/2022-10-education-training-seminar/)
     * [Video](https://youtu.be/Fdex2rhw0Zo)
 * Setting up a Scientific Software Project using GitLab -- From Zero to Hero
-    * [Abstract] https://us-rse.org/events/2023/2023-03-education-training-tutorial/
+    * [Abstract](https://us-rse.org/events/2023/2023-03-education-training-tutorial/)
     * [Video](https://youtu.be/dzdHfGLLYts)
 * Machine Learning for your Research
     * [Abstract](https://us-rse.org/events/2023/2023-06-education-training-talk/)
