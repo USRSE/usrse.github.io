@@ -57,7 +57,7 @@ As US-RSE’s Community Manager, your role will be varied, covering four main ar
 * Developing diverse and inclusive communities.
 * Editing the writing of others
 
-#### Valued knowledge and certifications:
+#### Valued Knowledge and Certifications
 * Knowledge of and previous engagement with the US-RSE or broader research software communities.
 * Community manager training or certifications, such as that offered by the Center for Scientific Collaboration and Community Engagement.
 
