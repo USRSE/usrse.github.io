@@ -13,7 +13,7 @@ Community is the first part of the US Research Software Engineer Association's (
 
 As the Community Manager, you will report to the new Executive Director and work with the US-RSE Steering Committee, working group (WG) chairs, and other volunteer organizational leaders to ensure clear and effective communications, organize and execute events, execute day-to-day operational tasks, reach out to new members, and realize the strategic vision of the organization. 
 
-#### Responsibilities: 
+#### Responsibilities
 As US-RSE’s Community Manager, your role will be varied, covering four main areas of responsibility. You’ll lean into different parts of the [CSCCE skills wheel](https://www.cscce.org/research/skills-wheel/) depending on the situation, need, time of year, and your strengths and interests. The activities below are examples of ways you may support US-RSE in the different areas of responsibility though not all activities will be conducted on a daily basis. 
 * Community Management
   * Regularly engage in community discussion forums (Slack) and promote a positive and active environment that encourages further participation 
