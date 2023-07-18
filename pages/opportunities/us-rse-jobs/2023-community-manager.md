@@ -42,7 +42,7 @@ As US-RSE’s Community Manager, your role will be varied, covering four main ar
   * Help community members develop their ideas and put them into action 
 
 
-#### Required qualifications: 
+#### Required Qualifications
 * Experience working with virtual teams with diverse membership, coordinating group activities, and communicating with groups of dozens or hundreds of members.
 * Ability to use GitHub, Markdown, and HTML; and a variety of online technical services, such as Google Workspace, Slack, and YouTube; or the ability and interest to quickly learn these skills.
 * Knowledge of diversity, equity, and inclusion principles and experience working with and supporting diverse groups.
