@@ -1,9 +1,9 @@
 style: is-light
 items:
-  - title: Funder Series
-    subtitle: Talk with funding agencies and foundations about RSE opportunities
-    link: /wg/outreach/#funder-series
-    link_name: Register for a Session 
+  - title: We're Hiring!
+    subtitle: US-RSE is hiring an Executive Director and a Community Manager
+    link: /jobs/
+    link_name: See the Job Descriptions 
   - title: RSE Group Leaders' Network
     subtitle: Join this new network to connect with peers about leadership and management challenges
     link: /ag/rse-gln
