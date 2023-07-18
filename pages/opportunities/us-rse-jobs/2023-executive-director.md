@@ -15,7 +15,8 @@ The Executive Director reports to the US-RSE Steering Committee Chair and works 
 
 This is a part-time position, up to 50% effort. We plan for this position to grow into a full-time, or nearly full-time position with additional responsibilities. The long-term vision of the Executive Director is to run day-to-day operations of the US-RSE organization with only general oversight from the elected steering committee.
 
-#### Initial responsibilities include:
+#### Responsibilities
+We expect this position to evolve over time. Initial responsibilities will include:
 * Financial Sustainability
    * Lead work towards financial sustainability, in collaboration with the Steering Committee and the Treasurer
    * Lead efforts to obtain funding from external sources including grants (public and private), sponsorships, membership fees, conference revenue, and other sources that may be identified in the future.
