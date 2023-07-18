@@ -56,7 +56,7 @@ US-RSE is a fiscally sponsored project of [Community Initiatives](https://commun
 Community Initiatives is an equal opportunity employer and gives consideration for employment to qualified applicants without regard to age, race, color, religion, creed, sex, sexual orientation, gender identity or expression, national origin, marital status, disability or protected veteran status, or any other status or characteristic protected by federal, state, or local law.
 
 
-## [Apply Here](https://docs.google.com/forms/d/1HgB04tYZDDfnKb5ZiCzYqXU-A4ONUbw4rx_1rKV62Oo/edit)
+## [Apply Here](https://docs.google.com/forms/d/e/1FAIpQLSd2pcLuq6m294RyeKbiSK7MqacIOH0CTQeghJMTmNunArkFNg/viewform?usp=sf_link)
 
 
 
