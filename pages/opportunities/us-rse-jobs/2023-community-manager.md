@@ -49,7 +49,7 @@ As US-RSE’s Community Manager, your role will be varied, covering four main ar
 * Demonstrated ability to communicate clearly and effectively in English in writing and in spoken presentations.  
 * Experience managing multiple projects or competing tasks.  
 
-#### Valued experience:
+#### Valued Experience
 * Knowledge of the research software development process, software development terminology, and research workflow.
 * Writing code.
 * Conducting research or contributing to research projects.
