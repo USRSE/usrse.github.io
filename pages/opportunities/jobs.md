@@ -5,7 +5,7 @@ permalink: /jobs/
 ---
 
 {% assign us-rse_jobs = site.data.us-rse-jobs | sort: "posted" | reverse %}
-{% include joblist.html section_heading="## Current US-RSE Assocation Openings" sorted_jobs=us-rse_jobs %}
+{% include joblist.html section_heading="## Current US-RSE Association Openings" sorted_jobs=us-rse_jobs %}
 
 
 {% assign rse_jobs = site.data.jobs | sort: "posted" | reverse %}
