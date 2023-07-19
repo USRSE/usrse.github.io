@@ -20,19 +20,15 @@ Visit the [Funder Talk Series]({{ site.baseurl }}/wg/outreach/#funder-series) fo
 
 ## Event
 
-This talk in the US-RSE Funder Talk Series will feature Varun Chandola, Program Director, Office of Advanced Cyberinfrastructure, National Science Foundation. This event will take place **Tuesday, June 20th at 12 PM ET, 11 AM CT, 10 AM MT, 9 AM PT**
+This talk in the US-RSE Funder Talk Series featured Varun Chandola, Program Director, Office of Advanced Cyberinfrastructure, National Science Foundation. This event took place **Tuesday, June 20th at 12 PM ET, 11 AM CT, 10 AM MT, 9 AM PT**
 
-Please join us in this interactive conversation. (If you can't participate in the interactive event, where you will be able to ask questions and help funders understand US-RSE, it will also be recorded.)
+### Resources
 
-[**Register on Zoom**](https://boisestate.zoom.us/meeting/register/tJAuduGpqDstHdxZwHmSEHVgLV6k_qx6CaNF)
+* [Recorded Talk](https://youtu.be/ZHxiJM-yJfo)
+* [Slides](https://drive.google.com/file/d/17XoO7lJAFx3EgKViz4WW7-3J9ZQNBxGd/view?usp=sharing)
 
 
 ### Biography
 ![Varun Chandola](https://ubdsgroup.github.io/images/team/varun-chandola.jpg){: style="float: left; margin-right: 10px; clear: left; width: 143px; height: 153px;"}
 Varun Chandola is currently program director in the Office of Advanced Cyberinfrastructure at NSF in charge of software and data related cyberinfrastructure programs. He is on leave from his permanent position as an Associate Professor in the Computer Science and Engineering Department and the Center for Computational and Data-Enabled Science and Engineering (CDSE) at the University at Buffalo. His research covers the application of data mining and machine learning to problems involving big and complex data, focusing on anomaly detection from big and complex data. Before joining UB, he was a scientist in the Computational Sciences and Engineering Division at the Oak Ridge National Laboratory. He has a PhD in Computer Science and Engineering from University of Minnesota.
 
-
-
-### Registration
-
-You can [register on Zoom](https://boisestate.zoom.us/meeting/register/tJAuduGpqDstHdxZwHmSEHVgLV6k_qx6CaNF) for this presentation.  A recording of the presentation will be made available to those who have registered.
