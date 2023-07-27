@@ -7,4 +7,4 @@ gem "github-pages", '228', group: :jekyll_plugins
 gem 'jekyll-paginate', '1.1.0'
 gem 'faraday', '2.7.4'
 gem 'faraday-retry', '2.0.0'
-gem "webrick", ">= 2.2.8"
+gem 'webrick', '2.2.8'
