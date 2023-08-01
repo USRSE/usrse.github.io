@@ -18,7 +18,7 @@ jobs:
 
       - id: updater
         name: Job Updater
-        uses: rseng/jobs-updater@add/multiple-metadata-fields
+        uses: rseng/jobs-updater
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         with:
@@ -39,6 +39,11 @@ jobs:
           twitter_api_key: ${{ secrets.TWITTER_ACCESS_TOKEN }}
           twitter_consumer_secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
           twitter_consumer_key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+
+          # Also deploy to Mastodon (all secrets required in repository secrets)
+          mastodon_deploy: true
+          mastodon_access_token: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          mastodon_api_base_url: ${{ secrets.MASTODON_API_BASE_URL }}
 
       - run: echo ${{ steps.updater.outputs.fields }}
         name: Show Fields Used
