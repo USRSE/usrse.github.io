@@ -54,6 +54,9 @@ qualifications, including previous US-RSE activity.
 Funded applicants are expected to provide a short report (a paragraph or two)
 to be included on US-RSE’s website as a blog post or part of the newsletter.
 
+If you have questions, please send them via email to [grants@us-rse.org](mailto:grants@us-rse.org)
+or ask in the [`community-grants`](https://app.slack.com/client/T8ZT4PJSW/C05M3F8FH08) Slack channel.
+
 ### Application Details
 
 - **Next Application Deadline**: September 25, 2023
