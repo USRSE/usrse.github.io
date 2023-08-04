@@ -40,6 +40,8 @@
       link: share
     - name: Community Whitepapers
       link: community-whitepapers
+    - name: Grants and Awards
+      link: grants-and-awards/
 - name: Working Groups
   link: working-groups/
   dropdown:
@@ -95,6 +97,8 @@
       link: resources/training/
     - name: Organizations
       link: resources/organizations/
+    - name: Grants and Awards
+      link: grants-and-awards/
 
 - name: External
   dropdown:
