@@ -11,8 +11,8 @@ menubar_toc: true
 
 ### Overview
 
-Part of the Alfred P. Sloan Foundation grant has been earmarked for Community
-and Travel Grants (C&T). The goals of these grants are to:
+Part of the [Alfred P. Sloan Foundation grant](https://us-rse.org/2023-04-27-sloan-grant-initiatives/) for US-RSE has been earmarked for the Community
+and Travel Grants program. The goals of this program is to:
 
 - Grow and diversify the US-RSE community and larger RSE community
 - Connect people within the US-RSE community
@@ -55,12 +55,12 @@ Funded applicants are expected to provide a short report (a paragraph or two)
 to be included on US-RSE’s website as a blog post or part of the newsletter.
 
 If you have questions, please send them via email to [grants@us-rse.org](mailto:grants@us-rse.org)
-or ask in the [`community-grants`](https://app.slack.com/client/T8ZT4PJSW/C05M3F8FH08) Slack channel.
+or ask in the [`#community-grants`](https://app.slack.com/client/T8ZT4PJSW/C05M3F8FH08) Slack channel.
 
 ### Application Details
 
 - **Next Application Deadline**: September 25, 2023
-- **Application Form**: [https://forms.gle/hXL95UymjTcR3Kb29](https://forms.gle/hXL95UymjTcR3Kb29)
+- **[Application Form](https://forms.gle/hXL95UymjTcR3Kb29)**
 
 The first grants will be announced during [US-RSE'23](https://us-rse.org/usrse23).
 
