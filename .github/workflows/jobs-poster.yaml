@@ -18,7 +18,7 @@ jobs:
 
       - id: updater
         name: Job Updater
-        uses: rseng/jobs-updater
+        uses: rseng/jobs-updater@0.0.13
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         with:
