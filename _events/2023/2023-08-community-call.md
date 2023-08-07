@@ -17,4 +17,4 @@ What does a good RSE (and more generally cyber infrastructure) profession’s de
 
 
 #### Registration details
-Information on how to register for the Zoom meeting will be sent via email and posted in the #general channel on Slack.
+Information on how to register for the Zoom meeting will be sent via email and posted in the `#general` and `#communitycalls` channels on Slack.
