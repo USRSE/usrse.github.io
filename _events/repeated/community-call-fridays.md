@@ -7,7 +7,7 @@ event_date: "alternating 2nd Thursday (12:00-1:00pm ET) and 2nd Friday (2:00-3:0
 layout: event
 category: community-call
 time:
-  - - start: 2022-06-10 14:00 ET
+  - - start: 2022-06-10 14:00 EST
 
 # Repeated events information
 repeated: true
