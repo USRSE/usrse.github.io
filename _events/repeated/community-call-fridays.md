@@ -7,7 +7,7 @@ event_date: "alternating 2nd Thursday (12:00-1:00pm ET) and 2nd Friday (2:00-3:0
 layout: event
 category: community-call
 time:
-  - - start: 2022-06-10 14:00 EST
+  - - start: 2022-06-10 14:00 ET
 
 # Repeated events information
 repeated: true
@@ -30,4 +30,4 @@ Community calls alternate between the second Thursday (12:00-1:00pm ET) of each 
 Any and all suggestions for topics are
 welcome at [https://github.com/USRSE/monthly-community-calls/issues](https://github.com/USRSE/monthly-community-calls/issues).
 Anyone in USRSE is super welcome to lead a call on a topic of their choosing. Feel free to reach out to the organizers (currently Julia Damerow and
-Chris Hill) on USRSE slack ( "@Julia Damerow" and/or "@Chris Hill") or elsewhere if you would like to host (or help with) a call.
+Abbey Roelofs) on USRSE slack ( "@Julia Damerow" and/or "@Abbey Roelofs") or elsewhere if you would like to host (or help with) a call.

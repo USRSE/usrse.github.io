@@ -7,7 +7,7 @@ event_date: "fourth Thursday each month 12:00-13:00 Eastern"
 layout: event
 category: community-call
 time:
-  - - start: 2022-01-27 12:00 EST
+  - - start: 2022-01-27 12:00 ET
 
 # Repeated events information
 repeated: true
@@ -27,4 +27,4 @@ plan for the next community call. All are welcome to join the call, zoom details
 Any and all suggestions for community topics are 
 welcome at [https://github.com/USRSE/monthly-community-calls/issues](https://github.com/USRSE/monthly-community-calls/issues).
 Anyone in USRSE is super welcome to lead a call on a topic of their choosing. Feel free to reach out to the organizers (currently Julia Damerow and
-Chris Hill) on USRSE slack ( "@Julia Damerow" and/or "@Chris Hill") or elsewhere if you would like to host (or help with) a call.
+Abbey Roelofs) on USRSE slack ("@Julia Damerow" and/or "@Abbey Roelofs") or elsewhere if you would like to host (or help with) a call.
