@@ -1,0 +1,100 @@
+---
+layout: page
+title: Grants and Awards
+subtitle:
+menubar: get-involved
+permalink: /grants-and-awards/
+menubar_toc: true
+---
+
+## Community and Travel Grants
+
+### Overview
+
+Part of the [Alfred P. Sloan Foundation grant](https://us-rse.org/2023-04-27-sloan-grant-initiatives/) for US-RSE has been earmarked for the Community
+and Travel Grants program. The goals of this program is to:
+
+- Grow and diversify the US-RSE community and larger RSE community
+- Connect people within the US-RSE community
+- Assist individuals to grow in their own career
+- Increase visibility and viability of Research Software Engineering as a career
+- Create opportunities for underserved community members
+
+Applications fall into two categories:
+
+- **Community**: These benefit a group of individuals within the community
+  (e.g., hosting a regional group meetup)
+- **Individual**: These benefit an individual applicant (e.g., a travel grant)
+
+To this end, we are accepting applications to provide funding from $100-$10,000
+per proposal (with most expected to be up to $2,500) to support members in
+activities such as, but not limited to:
+
+- Activities for local RSE or affinity-group events: costs for space rental,
+  refreshments, supplies, or child care.
+- Hosting technical training events: costs for cloud computing or software
+  services (for training on specialized tools), space rental, speaker fees.
+- Hosting non-technical training activities such as mentor training and DEI-focused events.
+- Attendance at tech industry or domain-specific academic conferences to share
+  RSE work, discuss research software engineering, or host RSE networking events;
+  costs for conference registration and travel support.
+- Software to create videos, podcasts, or other media to share information about
+  research software engineering or support RSE career development.
+- Having US-RSE sponsor non-US-RSE events, such as other conferences, where
+  sponsorship would be an effective advertisement and outreach mechanism. 
+- Pursuing individual professional development that could benefit the community,
+  such as obtaining trainer certifications.
+- Technical infrastructure costs related to working group activities.
+
+Applications are accepted on a quarterly basis. They are evaluated based on
+potential for positive impact on the community, alignment to the US-RSE mission,
+availability (or lack thereof) of funding, and the submitting members’
+qualifications, including previous US-RSE activity.
+
+Funded applicants are expected to provide a short report (a paragraph or two)
+to be included on US-RSE’s website as a blog post or part of the newsletter.
+
+If you have questions, please send them via email to [grants@us-rse.org](mailto:grants@us-rse.org)
+or ask in the [`#community-grants`](https://app.slack.com/client/T8ZT4PJSW/C05M3F8FH08) Slack channel.
+
+### Application Details
+
+- **Next Application Deadline**: September 25, 2023
+- **[Application Form](https://forms.gle/hXL95UymjTcR3Kb29)**
+
+The first grants will be announced during [US-RSE'23](https://us-rse.org/usrse23).
+
+The next round of application deadlines will be:
+
+- December 31, 2023
+- March 31, 2024
+- June 30, 2024
+- September 30, 2024
+- December 31, 2024
+
+The application will request the following details:
+
+- Name
+- Affiliation
+- Email address
+- Description of previous US-RSE activities
+  - How have you interacted with US-RSE before? Some examples are: attended
+    US-RSE events; volunteer with working groups; collaborated on a paper,
+    workshop, or presentation on behalf of or hosted by US-RSE.
+- Request amount (in dollars)
+- Date of event (or range)
+- Community or Individual
+- Describe the purpose of the requested funding.
+  - If the funding is for an event, provide details about the event and your
+    qualifications for hosting/organizing the proposed event.
+- Provide a budget justification for the requested amount.
+- Describe any funding you have already obtained for this proposal, any funding
+  you are currently seeking in addition to this grant, or matching funding you
+  will obtain if you receive the US-RSE grant.
+- How will this proposal, if granted, benefit US-RSE or the wider RSE community?
+- Describe how the proposal aligns with [the mission of US-RSE](https://us-rse.org/about/mission/).
+- Describe your plan for evaluating the success of the proposal. 
+- As an expectation of funding, we will ask you to write a short post for the
+  US-RSE news and/or newsletter describing the proposal and its impact and/or
+  outcomes. Are there additional outputs or deliverables you expect to result
+  from this proposal?
