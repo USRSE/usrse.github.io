@@ -12,7 +12,7 @@ menubar_toc: true
 ### Overview
 
 Part of the [Alfred P. Sloan Foundation grant](https://us-rse.org/2023-04-27-sloan-grant-initiatives/) for US-RSE has been earmarked for the Community
-and Travel Grants program. The goals of this program is to:
+and Travel Grants program. The goals of this program are to:
 
 - Grow and diversify the US-RSE community and larger RSE community
 - Connect people within the US-RSE community
