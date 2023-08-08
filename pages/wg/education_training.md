@@ -25,7 +25,7 @@ The Education and Training Seminar Series is a series of technical talks and tut
     * [Video](https://youtu.be/dzdHfGLLYts)
 * Machine Learning for your Research
     * [Abstract](https://us-rse.org/events/2023/2023-06-education-training-talk/)
-    * Video - Coming Soon
+    * [Video](https://youtu.be/yWjSZlNE0Jo)
 
 ## Training Material
 The US-RSE Education & Training Working Group has started an effort to compile a list of useful videos, tutorials, and other training materials well suited for learning Research Software Engineering topics. The material ranges from beginner up through and including advanced topics. We expect this list to grow significantly in both content and usability.
