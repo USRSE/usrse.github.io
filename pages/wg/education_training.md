@@ -17,15 +17,12 @@ The US-RSE Education & Training working group has produced the following documen
 
 ## Seminar Series
 The Education and Training Seminar Series is a series of technical talks and tutorials presented by leading researchers and practitioners in the field of research software engineering. The talks cover a wide range of topics, including software development best practices, software engineering for scientific computing, and research software management. The tutorials provide hands-on instruction on how to use specific software tools and technologies. This seminar series is a great opportunity to learn about the latest advances in research software engineering and to network with other researchers and practitioners in the field.
-* Agile Project Management
-    * [Abstract](https://us-rse.org/events/2022/2022-10-education-training-seminar/)
-    * [Video](https://youtu.be/Fdex2rhw0Zo)
-* Setting up a Scientific Software Project using GitLab -- From Zero to Hero
-    * [Abstract](https://us-rse.org/events/2023/2023-03-education-training-tutorial/)
-    * [Video](https://youtu.be/dzdHfGLLYts)
-* Machine Learning for your Research
-    * [Abstract](https://us-rse.org/events/2023/2023-06-education-training-talk/)
-    * [Video](https://youtu.be/yWjSZlNE0Jo)
+
+| Speaker | Title | Abstract | Video | Supplemental Materials |
+|---|---|---|---|---|
+| Angela Herring | Agile Project Management for Research Software | [Abstract](https://us-rse.org/events/2022/2022-10-education-training-seminar/) | [Video](https://youtu.be/Fdex2rhw0Zo) | N/A |
+| Marshall McDonnell | Setting up a Scientific Software Project using GitLab -- From Zero to Hero | [Abstract](https://us-rse.org/events/2023/2023-03-education-training-tutorial/) | [Video](https://youtu.be/dzdHfGLLYts) | N/A |
+| Savannah Thais | Machine Learning for your Research | [Abstract](https://us-rse.org/events/2023/2023-06-education-training-talk/) | [Video](https://youtu.be/yWjSZlNE0Jo) | N/A |
 
 ## Training Material
 The US-RSE Education & Training Working Group has started an effort to compile a list of useful videos, tutorials, and other training materials well suited for learning Research Software Engineering topics. The material ranges from beginner up through and including advanced topics. We expect this list to grow significantly in both content and usability.
