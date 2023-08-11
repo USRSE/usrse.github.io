@@ -26,5 +26,5 @@ You can find out more about Dave’s work on mental health advocacy at: [https:/
 Please [register for online attendance via Zoom](https://imperial-ac-uk.zoom.us/meeting/register/tJMuf-CrqTkuGdZFrZkMGqB_TsM3nsRVKSYl#/registration). 
 
 The talk will also be recorded and shared via the
-[Society of Research Software Engineering’s YouTube channel](https://www.youtube.com/@societyofresearchsoftwaree5863).
+[Society of Research Software Engineering’s YouTube channel](https://www.youtube.com/@SocRSE).
 
