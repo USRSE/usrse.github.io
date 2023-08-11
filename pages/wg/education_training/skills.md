@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Skills Used by RSEs
-permalink: /resources/training/skills/
+permalink: /wg/education_training/skills/
 subtitle: Skills Used by RSEs
 ---
 

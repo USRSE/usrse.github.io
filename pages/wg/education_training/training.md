@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RSE Training Resources
-permalink: /resources/training/
+permalink: /wg/education_training/training/
 subtitle: A Developing List of Useful Links to Learn Research Software Engineering
 ---
 
