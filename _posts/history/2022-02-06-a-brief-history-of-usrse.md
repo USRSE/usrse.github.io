@@ -322,8 +322,8 @@ Over several months it was worked on extensively by the website working group. O
 
 As a result of the February 2021 Community Call, we determined there was a need for a working group to focus on Education and Training.
 In April 2021, a group of US-RSE members organized by Jeffrey Carver began meeting with a goal of identifying the types of education and training activities RSEs need and gathering resources to support those needs.
-The group began by developing an initial list of existing training resources [[ref](https://us-rse.org/resources/training/)], which is still growing.
-Next the group enumerated a list of skills that various types of RSEs may possess [[ref](https://us-rse.org/resources/training/skills/)].
+The group began by developing an initial list of existing training resources [[ref](https://us-rse.org/wg/education_training/training/)], which is still growing.
+Next the group enumerated a list of skills that various types of RSEs may possess [[ref](https://us-rse.org/wg/education_training/skills/)].
 The group is currently working on establishing a webinar series to provide relevant training to members of US-RSE.
 Eventually, the group plans to map the RSE skills into a more structured training program that could eventually be adopted by workshops or academic institutions.
 
