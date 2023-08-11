@@ -31,6 +31,7 @@ jobs:
           deploy: true
           test: false
 
+          # Deploy to Slack channel
           slack_deploy: true
           slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
 
