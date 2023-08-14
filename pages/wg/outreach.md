@@ -77,8 +77,6 @@ about opportunities, strategies, and starting points for finding funding.
 
 #### Upcoming Presentations
 
-- __2023-08-03 Steve Crawford__ - NASA: [Event info and registration]({{ site.baseurl }}/events/2023/2023-08-funder-talk-series/)
-
 - __2023-10-10 Stuart Feldman and James Ricci__ - Schmidt Futures: [Event info and registration]({{ site.baseurl }}/events/2023/2023-10-funder-talk-series/)
 
 
@@ -94,7 +92,10 @@ Please keep an eye out for future announcements regarding this series.
 
 - __2023-05-09 Carly Strasser__ - Chan Zuckerberg Initiative: [Event page]({{ site.baseurl }}/events/2023/2023-05-funder-talk-series/), [video](https://youtu.be/T6wZvCTjlWw) & [slides](https://drive.google.com/file/d/1jL5VkdtVjqtXEwMcJLhcQYIg9hxgxwdT/view?usp=sharing)
 
-- __2023-06-20 Varun Chandola__ - National Science Foundation: [Event page]({{ site.baseurl }}/events/2023/2023-06-funder-talk-series/),  [video](https://youtu.be/ZHxiJM-yJfo) & [slides](https://drive.google.com/file/d/17XoO7lJAFx3EgKViz4WW7-3J9ZQNBxGd/view?usp=sharing)
+- __2023-06-20 Varun Chandola__ - National Science Foundation: [Event page]({{ site.baseurl }}/events/2023/2023-06-funder-talk-series/), [video](https://youtu.be/ZHxiJM-yJfo) & [slides](https://drive.google.com/file/d/17XoO7lJAFx3EgKViz4WW7-3J9ZQNBxGd/view?usp=sharing)
+
+- __2023-08-03 Steve Crawford__ - NASA: [Event page]({{ site.baseurl }}/events/2023/2023-08-funder-talk-series/), [video](https://youtu.be/Z--mucnRLcQ) & [slides](https://drive.google.com/file/d/1jVnDJuR_tJ7h2XY_piPQD1xRCPdRj09K/view?usp=sharing)
+
 
 
 ### Supercomputing Spotlights
