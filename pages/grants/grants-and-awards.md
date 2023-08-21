@@ -41,7 +41,7 @@ activities such as, but not limited to:
 - Software to create videos, podcasts, or other media to share information about
   research software engineering or support RSE career development.
 - Having US-RSE sponsor non-US-RSE events, such as other conferences, where
-  sponsorship would be an effective advertisement and outreach mechanism. 
+  sponsorship would be an effective advertisement and outreach mechanism.
 - Pursuing individual professional development that could benefit the community,
   such as obtaining trainer certifications.
 - Technical infrastructure costs related to working group activities.
@@ -93,8 +93,25 @@ The application will request the following details:
   will obtain if you receive the US-RSE grant.
 - How will this proposal, if granted, benefit US-RSE or the wider RSE community?
 - Describe how the proposal aligns with [the mission of US-RSE](https://us-rse.org/about/mission/).
-- Describe your plan for evaluating the success of the proposal. 
+- Describe your plan for evaluating the success of the proposal.
 - As an expectation of funding, we will ask you to write a short post for the
   US-RSE news and/or newsletter describing the proposal and its impact and/or
   outcomes. Are there additional outputs or deliverables you expect to result
   from this proposal?
+
+### FAQs
+
+<details>
+  <summary><b>Q: Can individuals submit multiple proposals?</b></summary>
+    A: Yes, individuals can submit multiple proposals.
+</details>
+
+<details>
+  <summary><b>Q: Can a travel grant be retroactive (i.e., used for a conference that has recently passed from before the review period?)</b></summary>
+    A: No; applications must be for a future event. Applications are reviewed every quarter. See the <a href="https://us-rse.org/grants-and-awards/">website</a> for more details on upcoming deadlines.
+</details>
+
+<details>
+  <summary><b>Q: Is there a way to submit a pdf or supplemental documentation on the form?</b></summary>
+    A: Send the email or supplemental documentation to <a href="mailto:grants@us-rse.org">grants@us-rse.org</a>.
+</details>
