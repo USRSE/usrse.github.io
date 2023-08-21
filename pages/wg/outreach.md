@@ -79,6 +79,8 @@ about opportunities, strategies, and starting points for finding funding.
 
 - __2023-10-10 Stuart Feldman and James Ricci__ - Schmidt Futures: [Event info and registration]({{ site.baseurl }}/events/2023/2023-10-funder-talk-series/)
 
+- __2023-12-12 Adrian Price-Whelan__ - Simons Foundation: [Event info and registration]({{ site.baseurl }}/events/2023/2023-12-funder-talk-series/)
+
 
 Please keep an eye out for future announcements regarding this series.
 
