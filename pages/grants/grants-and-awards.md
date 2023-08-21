@@ -108,7 +108,7 @@ The application will request the following details:
 
 <details>
   <summary><b>Q: Can a travel grant be retroactive (i.e., used for a conference that has recently passed from before the review period?)</b></summary>
-    A: No; applications must be for a future event. Applications are reviewed every quarter. See the <a href="https://us-rse.org/grants-and-awards/">website</a> for more details on upcoming deadlines.
+    A: No; applications must be for a future event. Applications are reviewed every quarter. See above for more details on upcoming deadlines.
 </details>
 
 <details>
