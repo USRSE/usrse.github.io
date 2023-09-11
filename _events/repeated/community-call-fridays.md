@@ -7,7 +7,7 @@ event_date: "alternating 2nd Thursday (12:00-1:00pm ET) and 2nd Friday (2:00-3:0
 layout: event
 category: community-call
 time:
-  - - start: 2022-06-10 14:00 EST
+  - - start: 2022-06-10 14:00 EDT
 
 # Repeated events information
 repeated: true
@@ -15,7 +15,7 @@ repeated: true
 # use an rdate string instead (best for complex repeated events)
 # note that the dtstart and rdate at the end are the same
 rrule:
-# every 2nd Friday of every other month
+# second Friday of every other month
   - DTSTART;TZID=America/New_York:20220610T140000
   - RRULE:UNTIL=20251211T120000;FREQ=MONTHLY;INTERVAL=2;BYDAY=+2FR
   - RDATE;TZID=America/New_York:20220610T140000
