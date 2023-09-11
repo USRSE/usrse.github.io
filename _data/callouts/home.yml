@@ -1,14 +1,15 @@
 style: is-light
 items:
-  - title: We're Hiring!
-    subtitle: US-RSE is hiring an Executive Director and a Community Manager
-    link: /jobs/
-    link_name: See the Job Descriptions 
+  - title: 1st US-RSE Conference
+    subtitle: Join us in Chicago, October 16-18, 2023
+    link: https://us-rse.org/usrse23/
+    link_name: Conference Page
+  - title: Career Guidebook
+    subtitle: Advice on hiring and supporting RSEs and Data Scientists in academia
+    link: https://zenodo.org/record/8274378
+    link_name: Download the Guide 
   - title: Community and Travel Grants
     subtitle: US-RSE is accepting applications to provide funding to support members in activities for the community and individuals!
     link: /grants-and-awards/
     link_name: Learn More
-  - title: 1st US-RSE Conference
-    subtitle: Save the Date to join us in Chicago, October 16-18, 2023
-    link: https://us-rse.org/usrse23/
-    link_name: Conference Page
+

@@ -1,8 +1,23 @@
-- expires: 2023-08-21
-  location: University of Wisconsin–Madison Data Science Institute, Madison, WI
-  name: OSPO Program Manager
-  posted: 2023-08-02
-  url: https://jobs.wisc.edu/jobs/ospo-manager-madison-wisconsin-united-states
+- expires: 2023-09-12
+  location: North Dakota State University, Fargo, ND (hybrid options may be available)
+  name: System Engineer
+  posted: 2023-09-01
+  url: https://prd.hcm.ndus.edu/psc/recruit/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=2948945&PostingSeq=1
+- expires: 2023-12-31
+  location: IMCA-CAT, Lemont, IL
+  name: Systems Engineer
+  posted: 2023-08-22
+  url: https://hwi.buffalo.edu/systems-engineer-at-imca-cat/
+- expires: 2023-08-27
+  location: North Dakota State University, Fargo, ND (hybrid options may be available)
+  name: Systems Engineer
+  posted: 2023-08-15
+  url: https://prd.hcm.ndus.edu/psc/recruit/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=2948945&PostingSeq=1
+- expires: 2023-08-27
+  location: North Dakota State University, Fargo, ND (hybrid options may be available)
+  name: Scientific Software Specialist
+  posted: 2023-08-15
+  url: https://prd.hcm.ndus.edu/psc/recruit/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=2948944&PostingSeq=1
 - expires: 2023-10-01
   location: University of Washington Information School, Seattle, WA
   name: Assistant Professor, Teaching Track, in Data Science
@@ -23,64 +38,6 @@
   name: Humanities Data Scientist
   posted: 2023-07-13
   url: https://www.usajobs.gov/job/735706500
-- expires: 2023-07-11
-  location: University of Michigan Institute for Social Research, Ann Arbor, MI
-  name: Data Scientist - Program Manager
-  posted: 2023-06-28
-  url: https://careers.umich.edu/job_detail/235104/program-manager-data-scientist
-- expires: 2023-06-15
-  location: Northwestern Univesity, Evanston, IL
-  name: Data Scientist
-  posted: 2023-05-18
-  url: https://careers.northwestern.edu/psp/hr857prd_er/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=47777&PostingSeq=1
-- expires: 2023-09-28
-  location: Radiation Transport Application Group, Computational Physics Divison,
-    Los Alamos National Laboratory, Los Alamos, NM
-  name: R&D Manager
-  posted: 2023-04-04
-  url: https://lanl.jobs/search/jobdetails/radiation-transport-application-group-leader-rd-manager-4/d1a35813-bc5c-4e44-ac0d-b75f3d0fc9bd
-- expires: 2023-05-01
-  location: U.S. Environmental Protection Agency, Office of Research and Development,
-    Research Triangle Park, NC
-  name: Director, Scientific Computing and Data Curation Division
-  posted: 2023-03-30
-  url: https://www.usajobs.gov/job/715982300
-- expires: 2023-03-31
-  location: University of Illinois Urbana-Champaign, Urbana, IL
-  name: Software Project Manager
-  posted: 2023-03-14
-  url: https://illinois.csod.com/ux/ats/careersite/1/home/requisition/3476?c=illinois
-- expires: 2023-03-31
-  location: Stanford University, Stanford, CA (hybrid work schedule, at least 2 days
-    per week on-site)
-  name: Research Computing Systems Specialist
-  posted: 2023-02-10
-  url: https://careersearch.stanford.edu/jobs/research-computing-systems-specialist-20295
-- expires: 2023-05-01
-  location: University of Illinois (NCSA), Urbana, IL or remote
-  name: Community Manager
-  posted: 2023-02-10
-  url: https://illinois.csod.com/ux/ats/careersite/1/home/requisition/3113?c=illinois
-- expires: 2023-04-09
-  location: pyOpenSci, remote
-  name: Community Manager / Developer Advocate
-  posted: 2023-02-01
-  url: https://www.pyopensci.org/blog/pyOpenSci-hiring-community-manager-spring-2023.html
-- expires: 2023-06-01
-  location: NVIDIA, Remote (Preference for East/Central time zones)
-  name: Senior Solutions Architect, HPC-AI
-  posted: 2023-01-05
-  url: https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/jobs/details/Senior-Solutions-Architect--HPC---AI_JR1964255
-- expires: 2023-03-30
-  location: NumFOCUS (no physical location specified)
-  name: DevOps Engineer - Independent Contractor
-  posted: 2022-12-14
-  url: https://docs.google.com/document/d/1nMuNqtG2z-FijFSfi42WxYRzNlyhcublUyYf5WN1c70/edit#heading&eId=e5d78f30-a7f9-4efd-a7c1-3b8312939b4c
-- expires: 2023-03-26
-  location: Imageomics Institute, The Ohio State University, Columbus, OH
-  name: Data Manager and Technology Coordinator
-  posted: 2022-12-02
-  url: https://osu.wd1.myworkdayjobs.com/OSUCareers/job/Columbus-Campus/Data-Manager-and-Technology-Coordinator---Imageomics-Institute_R52767-1
 - expires: 2023-12-31
   location: X-ScaleSolutions, Columbus, Ohio (flexible/remote)
   name: MPI Software Engineer

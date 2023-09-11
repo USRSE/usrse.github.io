@@ -8,9 +8,9 @@ on:
       - main
 
 jobs:
-  slack-poster:
+  jobs-poster:
     runs-on: ubuntu-latest
-    name: Run Jobs Slack Poster
+    name: Run Jobs Poster
     steps:
       - uses: actions/checkout@v3
         with:
@@ -19,8 +19,6 @@ jobs:
       - id: updater
         name: Job Updater
         uses: rseng/jobs-updater@0.0.13
-        env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         with:
           filename: "_data/jobs.yml"
 
@@ -32,6 +30,10 @@ jobs:
 
           deploy: true
           test: false
+
+          # Deploy to Slack channel
+          slack_deploy: true
+          slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
 
           # Also deploy to Twitter (all secrets required in repository secrets)
           twitter_deploy: true

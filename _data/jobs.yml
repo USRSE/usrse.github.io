@@ -1,25 +1,94 @@
+- expires: 2023-12-01
+  location: HHMI Janelia Research Campus, Ashburn, VA
+  name: Scientific Computing Associate - Web Developer
+  posted: 2023-09-10
+  url: https://hhmi.wd1.myworkdayjobs.com/en-US/External/job/Janelia-Research-Campus/Scientific-Computing-Associate---Web-Developer_R-2261
+- expires: 2023-12-15
+  location: Princeton University, Princeton, NJ
+  name: Research Software Engineer II
+  posted: 2023-09-07
+  url: https://main-princeton.icims.com/jobs/17686/research-software-engineer-ii-%28astrophysics%29/job
+- expires: 2023-09-22
+  location: Lawrence Berkeley National Lab, Berkeley, CA
+  name: Computer Systems Engineer
+  posted: 2023-09-05
+  url: https://jobs.lbl.gov/jobs/computer-systems-engineer-6029
+- expires: 2023-09-29
+  location: Arizona State University, School of Complex Adaptive Systems, Tempe, Arizona
+    (flexible/can be remote)
+  name: Research Software Engineer
+  posted: 2023-09-05
+  url: https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25620&siteid=5494#jobDetails=4811255_5494
+- expires: 2023-09-14
+  location: North Dakota State University, Fargo, ND (hybrid options may be available)
+  name: Scientific Software Specialist
+  posted: 2023-09-01
+  url: https://prd.hcm.ndus.edu/psc/recruit/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=2948944&PostingSeq=1
+- expires: 2023-09-01
+  location: NCAR/UCAR, Boulder, CO (Hybrid)
+  name: Scientific Software Project Manager III
+  posted: 2023-08-23
+  url: https://ucar.wd5.myworkdayjobs.com/UCAR_Careers/job/Mesa-Lab-Building/Scientific-Software-Project-Manager-III_REQ-2023-186-1
+- expires: 2023-09-01
+  location: Gulf of Maine Research Institute, Portland, ME
+  name: Web Application Developer
+  posted: 2023-08-22
+  url: https://recruiting.paylocity.com/recruiting/jobs/Details/1869300/Gulf-of-Maine-Research-Institute/Web-Developer-I
+- expires: 2024-08-30
+  location: Center for Statistical Genetics, University of Michigan, Ann Arbor, MI
+    (can be remote/flexible)
+  name: Research Applications Programmer/Analyst Sr
+  posted: 2023-08-17
+  url: https://careers.umich.edu/job_detail/231143/research-app-programmeranalyst
+- expires: 2023-09-30
+  location: Brown University, Providence, RI
+  name: Research Software Engineer
+  posted: 2023-08-16
+  url: https://brown.wd5.myworkdayjobs.com/en-US/staff-careers-brown/details/Data-Scientist-Senior-Data-Scientist_REQ188582
+- expires: 2023-08-20
+  location: Bill and Melinda Gates Foundation, Seattle, WA
+  name: Senior Software Engineering Manager - Rapid Reuse Models
+  posted: 2023-08-15
+  url: https://gatesfoundation.wd1.myworkdayjobs.com/en-US/Gates/details/Senior-Software-Engineering-Manager---Rapid-Reuse-Models_B019369-1?source=gatesfoundation.org&jobFamilyGroup=d73700a61a970181403f31f10e0142bf
+- expires: 2023-12-01
+  location: Simons Foundation, New York, NY
+  name: Software Engineer, CCA (Astropy)
+  posted: 2023-08-14
+  url: https://simonsfoundation.wd1.myworkdayjobs.com/en-US/simonsfoundationcareers/job/Software-Engineer--CCA--Astropy-_R0001378
+- expires: 2023-12-01
+  location: Simons Foundation, New York, NY
+  name: Software Engineer, CCA (MESA)
+  posted: 2023-08-14
+  url: https://simonsfoundation.wd1.myworkdayjobs.com/en-US/simonsfoundationcareers/job/Software-Engineer--CCA--MESA-_R0001379-1
+- expires: 2023-08-21
+  location: Lawrence Berkeley National Lab, Berkeley, CA
+  name: Scientific Data Engineer
+  posted: 2023-08-12
+  url: https://jobs.lbl.gov/jobs/scientific-data-engineer-5931
+- expires: 2023-09-15
+  location: Brookhaven National Laboratory, Upton, NY - potential for remote/flexible
+  name: Postdoctoral Research Associate Computational Science
+  posted: 2023-08-11
+  url: https://jobs.bnl.gov/job/upton/postdoctoral-research-associate-computational-science/3437/52552342416
 - expires: 2023-08-31
   location: The Astropy Project, remote
   name: Research Software Engineer
   posted: 2023-08-05
   url: https://jobs.numfocus.org/job/2023-07-31_astropy
 - expires: 2023-08-11
-  location: National Center for Ecological Analysis and Synthesis (UCSB), Santa Barbara, CA
+  location: National Center for Ecological Analysis and Synthesis (UCSB), Santa Barbara,
+    CA
   name: Web Developer
   posted: 2023-07-24
   url: https://careerspub.universityofcalifornia.edu/psp/ucsb/EMPLOYEE/HRMS/c/HRS_HRAM.HRS_APP_SCHJOB.GBL?Page=HRS_APP_JBPST&Action=U&SiteId=31&FOCUS=Applicant&JobOpeningId=53891&PostingSeq=1
-- expires: 2023-08-07
-  location: University of Michigan LSA Technology Services, Ann Arbor, MI
-  name: Software Programmer Intermediate
-  posted: 2023-07-18
-  url: https://careers.umich.edu/job_detail/236747/software-programmer-intermediate
 - expires: 2023-08-14
   location: Polar Geospatial Center - University of Minnesota, Twin Cities, MN
   name: Geospatial Developer
   posted: 2023-07-18
   url: https://www.pgc.umn.edu/careers/position-available-geospatial-developer-2023/
 - expires: 2023-07-24
-  location: The Eric & Wendy Schmidt Center for Data Science & Environment (DSE) at UC Berkeley, Berkeley, CA (hybrid/flexible; full remote will also be considered)
+  location: The Eric & Wendy Schmidt Center for Data Science & Environment (DSE) at
+    UC Berkeley, Berkeley, CA (hybrid/flexible; full remote will also be considered)
   name: Research Software Engineer/Data Scientist
   posted: 2023-07-17
   url: https://dse.berkeley.edu/jobs/research-software-engineer-data-scientist
@@ -50,11 +119,6 @@
   url: https://jobs.ornl.gov/job-invite/11026/
 - expires: 2023-10-01
   location: Princeton University, Princeton, NJ
-  name: Associate Research Software Engineer
-  posted: 2023-06-20
-  url: https://main-princeton.icims.com/jobs/17274/associate-research-software-engineer/job
-- expires: 2023-10-01
-  location: Princeton University, Princeton, NJ
   name: Research Software Engineer II
   posted: 2023-06-20
   url: https://main-princeton.icims.com/jobs/17226/research-software-engineer-ii/job
@@ -62,7 +126,7 @@
   location: Princeton University, Princeton, NJ
   name: Research Software Engineer II
   posted: 2023-06-20
-  url: https://main-princeton.icims.com/jobs/17227/research-software-engineer-ii/job  
+  url: https://main-princeton.icims.com/jobs/17227/research-software-engineer-ii/job
 - expires: 2023-10-01
   location: University of Vermont, Burlington, VT (Remote friendly)
   name: Research Computing Systems Engineer
@@ -83,36 +147,16 @@
   name: Senior Research Computing Facilitator
   posted: 2023-06-16
   url: https://www.uvmjobs.com/postings/63639
-- expires: 2023-06-30
-  location: Sandia National Laboratories, Albuquerque, NM (Remote allowed)
-  name: HPC System Software Research Scientist
-  posted: 2023-06-16
-  url: https://sandia.jobs/albuquerque-nm/hpc-system-software-research-scientist-telecommute/456F638BD1B2485DBB813137B14DB78E/job/
 - expires: 2023-09-30
   location: Blue Marble Space Institute for Science, Remote
   name: Software Engineer (scientific dataset transformation and standardization)
   posted: 2023-06-09
   url: https://easyapply.co/a/417cd679-33e4-474c-9e82-519c0f6a625f
-- expires: 2023-06-16
-  location: National Center for Atmospheric Research (NCAR), Boulder, CO (hybrid or remote)
-  name: Software Engineer I/II - Scientific Python Developer
-  posted: 2023-06-02
-  url: https://ucar.wd5.myworkdayjobs.com/en-US/UCAR_Careers/job/Mesa-Lab-Building/Software-Engineer-I-II---Scientific-Python-Developer_REQ-2023-177-1
 - expires: 2023-08-31
   location: Murmuration, Remote in the US
   name: Lead Engineer
   posted: 2023-06-02
   url: https://apply.workable.com/murmuration/j/6724DF7AE2/
-- expires: 2023-06-21
-  location: National Center for Atmospheric Research, remote
-  name: Student Asst II - Research Software Engineer
-  posted: 2023-06-01
-  url: https://ucar.wd5.myworkdayjobs.com/en-US/UCAR_Careers/job/Student-Asst-II---Research-Software-Engineer_REQ-2023-178-2
-- expires: 2023-07-01
-  location: University of Vermont, Burlington, VT / Remote
-  name: Research Computing Facilitator, Data Assimilation
-  posted: 2023-05-29
-  url: https://water.w3.uvm.edu/ciroh/node/23
 - expires: 2024-01-01
   location: University of Pennsylvania, Philadelphia
   name: Research Software Engineer / Systems Architect
@@ -129,189 +173,3 @@
     Broadband
   posted: 2023-05-18
   url: https://wici.iastate.edu/career
-- expires: 2023-06-01
-  location: Sandia National Laboratories, Albuquerque, NM (Remote an option)
-  name: Research Software Engineer (Early to Mid Career)
-  posted: 2023-05-08
-  url: https://sandia.jobs/albuquerque-nm/rd-computer-science-earlymid-career/44F4A2B7A9A84D0E8D7E505A1A57FF97/job/
-- expires: 2023-06-30
-  location: Los Alamos National Laboratory, Los Alamos, New Mexico
-  name: R&D HPC/Computer Scientist (Scientist 2/3)
-  posted: 2023-05-04
-  url: https://lanl.jobs/search/jobdetails/rd-hpccomputer-scientist-scientist-23/27a9918f-cc78-4ef1-8356-97b6aaaecb42
-- expires: 2023-06-05
-  location: Cooperative Institute for Research in the Atmosphere, Colorado State University,
-    Boulder, CO
-  name: Scientific Computing Specialist
-  posted: 2023-05-04
-  url: https://jobs.colostate.edu/postings/124262
-- expires: 2023-06-09
-  location: National Institutes of Health, Bethesda, MD (in-person preferred, remote
-    may be considered)
-  name: Scientific Programmer
-  posted: 2023-05-04
-  url: https://fim.nimh.nih.gov/positions-available
-- expires: 2023-05-22
-  location: National Center for Supercomputing Applications (NCSA), University of
-    Illinois, Urbana, IL
-  name: Associate Research Programmer/Research Programmer
-  posted: 2023-05-02
-  url: https://illinois.csod.com/ux/ats/careersite/1/home/requisition/4012?c=illinois
-- expires: 2023-06-18
-  location: Center for Research on Foundation Models, Stanford University, Stanford,
-    CA
-  name: Research Engineer
-  posted: 2023-05-01
-  url: https://careersearch.stanford.edu/jobs/research-engineer-21381
-- expires: 2023-12-31
-  location: Princeton University, Princeton, New Jersey
-  name: Senior Research Software Engineer
-  posted: 2023-04-27
-  url: https://main-princeton.icims.com/jobs/16949/senior-research-software-engineer/job?hub=15&mobile=false&width=1050&height=500&bga=true&needsRedirect=false&jan1offset=-300&jun1offset=-240
-- expires: 2023-05-31
-  location: University of California San Diego, San Diego, California
-  name: Computational and Data Science Research Specialist
-  posted: 2023-04-25
-  url: https://employment.ucsd.edu/jobs?keyword=122513
-- expires: 2023-05-31
-  location: Stanford University, Stanford, CA (hybrid)
-  name: Senior Data Engineer
-  posted: 2023-04-25
-  url: https://careersearch.stanford.edu/jobs/senior-data-engineer-21277
-- expires: 2023-05-12
-  location: Open Molecular Software Foundation, Remote
-  name: Senior Deep Learning Software Engineer (OpenFold)
-  posted: 2023-04-19
-  url: https://omsf.io/about/careers/#senior-deep-learning-software-engineer-openfold
-- expires: 2023-06-09
-  location: The Salk Institute, La Jolla, CA
-  name: Research Software Engineer
-  posted: 2023-04-06
-  url: https://recruiting2.ultipro.com/SAL1013SIBS/JobBoard/e9f055e1-a105-4f91-9a67-21aea61655fa/Opportunity/OpportunityDetail?opportunityId=c737eb7a-5998-422b-a06e-0a3cb6d73e4b
-- expires: 2023-06-01
-  location: University of Arizona, Tucson, AZ
-  name: Data Scientist III
-  posted: 2023-04-04
-  url: https://arizona.csod.com/ux/ats/careersite/4/home/requisition/14071?c=arizona
-- expires: 2023-05-31
-  location: Computational Physics Division, Los Alamos National Laboratory, Los Alamos,
-    NM
-  name: Scientist 1
-  posted: 2023-03-31
-  url: https://lanl.jobs/search/jobdetails/scientist-1/ee31fa52-e1c0-47b1-9e9a-7a04c8f87706
-- expires: 2023-05-31
-  location: Computational Physics Division, Los Alamos National Laboratory, Los Alamos,
-    NM
-  name: Scientist 2/3
-  posted: 2023-03-31
-  url: https://lanl.jobs/search/jobdetails/scientist-23/16b016ea-13bb-4c87-9e05-d8fd81d5c964
-- expires: 2023-06-01
-  location: University of Arizona, Department of Hydrology, Tucson, AZ
-  name: R&D Software Engineer III
-  posted: 2023-03-28
-  url: https://arizona.csod.com/ux/ats/careersite/4/home/requisition/14199?c=arizona
-- expires: 2023-04-10
-  location: Cooperative Institute for Research in the Atmosphere, Boulder, CO
-  name: Python Object Oriented Software Engineer for NOAA Project
-  posted: 2023-03-24
-  url: https://jobs.colostate.edu/postings/123538
-- expires: 2023-04-15
-  location: Illinois Institute of Technology, Chicago, IL
-  name: Research Software Engineer
-  posted: 2023-03-23
-  url: https://iit7.peopleadmin.com/postings/9516
-- expires: 2023-04-17
-  location: Pfizer, Pearl River, NY
-  name: Manager, Scientific Software Engineer
-  posted: 2023-03-14
-  url: https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---New-York---Pearl-River/Manager--Scientific-Software-Engineer_4879628-1
-- expires: 2023-04-17
-  location: Pfizer, Pearl River, NY
-  name: Manager, Scientific Software Engineer
-  posted: 2023-03-14
-  url: https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---New-York---Pearl-River/Manager--Scientific-Software-Engineer_4879629
-- expires: 2023-04-14
-  location: Polar Geospatial Center, University of Minnesota, St Paul, MN
-  name: Application Developer
-  posted: 2023-03-13
-  url: https://www.pgc.umn.edu/careers/position-available-applications-developer-2023/
-- expires: 2023-05-01
-  location: Tufts Medicine CTSI, remote
-  name: Software Dev Analyst II
-  posted: 2023-03-13
-  url: https://jobs.smartrecruiters.com/TuftsMedicalCenter1/743999887461743-software-dev-analyst-ii-res-g-c-ctsi
-- expires: 2023-05-01
-  location: Purdue University, West Lafayette, IN, remote/flexible
-  name: Lead Research Analyst
-  posted: 2023-03-10
-  url: https://careers.purdue.edu/job/West-Lafayette-Lead-Research-Analyst-IN-47906/1002792600/
-- expires: 2023-05-29
-  location: Oak Ridge National Laboratory, Oak Ridge, TN
-  name: Research Software Engineer - Neutron Sciences
-  posted: 2023-02-27
-  url: https://jobs.ornl.gov/job-invite/10241/
-- expires: 2023-04-01
-  location: Los Alamos National Laboratory, Los Alamos, NM
-  name: Research Software Engineer (Scientist 2)
-  posted: 2023-02-03
-  url: https://lanl.jobs/search/jobdetails/research-software-engineer-scientist-2/6a3c7669-7e35-4ab2-9002-0dc6fb2e0dbb
-- expires: 2023-04-30
-  location: Harvard University, Cambridge, MA
-  name: Director of Engineering
-  posted: 2023-01-31
-  url: https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25240&siteid=5341&PageType=JobDetails&jobid=1984244
-- expires: 2023-03-30
-  location: Harvard University, Cambridge, MA (Remote)
-  name: Senior Research Software Engineer
-  posted: 2023-01-26
-  url: https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25240&siteid=5341&PageType=JobDetails&jobid=1976857
-- expires: 2023-05-01
-  location: Center for Digital Humanities at Princeton University, Princeton, NJ
-  name: Research Software Engineer (Digital Humanities)
-  posted: 2023-01-25
-  url: https://cdh.princeton.edu/engage/jobs/rse/
-- expires: 2023-12-12
-  location: Stanford University, Stanford, CA
-  name: Research Software Engineer
-  posted: 2022-12-13
-  url: https://apptrkr.com/3715968
-- expires: 2023-05-06
-  location: Simons Foundation, New York, NY
-  name: Software Engineer
-  posted: 2022-12-06
-  url: https://simonsfoundation.wd1.myworkdayjobs.com/en-US/simonsfoundationcareers/details/Software-Engineer--Center-for-Computational-Mathematics_R0001208-1
-- expires: 2023-04-15
-  location: University of Chicago, Chicago, IL
-  name: Senior Research Software Engineer
-  posted: 2022-12-06
-  url: https://www.nimbusproject.org/jobs/#research-engineer-senior
-- expires: 2023-04-15
-  location: University of Chicago, Chicago, IL
-  name: Research Software Engineer
-  posted: 2022-12-06
-  url: https://www.nimbusproject.org/jobs/#research-engineer
-- expires: 2023-04-30
-  location: Simons Foundation/Flatiron Institute, New York, NY
-  name: DevOps Engineer
-  posted: 2022-12-05
-  url: https://simonsfoundation.wd1.myworkdayjobs.com/simonsfoundationcareers/job/162-Fifth-Avenue/DevOps-Engineer_R0000973
-- expires: 2023-07-01
-  location: MED-EL Corporation, Durham, NC
-  name: Research Software Engineer
-  posted: 2022-12-02
-  url: https://www.medel.com/en-us/about-medel/usa/us-careers#id_f9ebe38d-2f17-64e6-80bd-ff09000c6e28
-- expires: 2023-06-01
-  location: Georgia Institute of Technology, Atlanta, Georgia
-  name: Software Engineer
-  posted: 2022-11-29
-  url: https://ssecenter.cc.gatech.edu/jobs/
-- expires: 2023-06-01
-  location: Georgia Institute of Technology, Atlanta, Georgia
-  name: Senior Software Engineer
-  posted: 2022-11-29
-  url: https://ssecenter.cc.gatech.edu/jobs/
-- expires: 2023-05-01
-  location: Georgia Institute of Technology, Atlanta, Georgia
-  name: Lead Software Engineer
-  posted: 2022-11-29
-  url: https://ssecenter.cc.gatech.edu/jobs/

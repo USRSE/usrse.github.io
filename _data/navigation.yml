@@ -93,8 +93,6 @@
   dropdown:
     - name: RSE Resources
       link: resources/rses/
-    - name: Training Material
-      link: resources/training/
     - name: Organizations
       link: resources/organizations/
     - name: Grants and Awards

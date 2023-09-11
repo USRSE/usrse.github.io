@@ -81,6 +81,8 @@ Want merge permissions?  Join the #website channel in Slack, help out a bit with
 
 ### Checks and Tests
 
+[![Remove Expired Jobs](https://github.com/USRSE/usrse.github.io/actions/workflows/clean-expired-jobs.yaml/badge.svg)](https://github.com/USRSE/usrse.github.io/actions/workflows/clean-expired-jobs.yaml)
+
 When you create a PR, automated tests run; see [docs/tests_ci.md](docs/tests_ci.md) for details.  
 
 What the PR submitter is responsible for:
