@@ -22,9 +22,7 @@ If you're interested in becoming part of the Steering Committee, we suggest you 
 * Candidate meeting: during the week of November 6-10, 2023
 * Candidates finalize information: November 17, 2023
 * Deadline to [join US-RSE](/join) to be eligible to vote: November 19, 2023
-<!-- 
-* [Candidates announced](/2022-11-18-sc-candidates/): by November 27, 2023 
--->
+<!-- * [Candidates announced](/2022-11-18-sc-candidates/): by November 27, 2023 -->
 * Candidates announced: by November 27, 2023
 <!-- * [Annual US-RSE General Meeting](/events/2022/2022-12-AGM/), including candidate statements: December 1, 2023 -->
 * Annual US-RSE General Meeting, including candidate statements:  December 1, 2023
