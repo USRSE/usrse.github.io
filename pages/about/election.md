@@ -35,7 +35,7 @@ If you're interested in becoming part of the Steering Committee, we suggest you 
 ## Positions and Eligibility
 
 Five Steering Committee seats are open in this election, each for a 2-year term (January 1, 2024 through December 31, 2025). The following steering committee members have terms that end this year: Nicole Brewer, Jeff Carver, Ian Cosden, Sandra Gesing, and Christina Maimone. 
-<All US-RSE members in good standing as of the day nominations open (October 23, 2023) are eligible for nomination.
+All US-RSE members in good standing as of the day nominations open (October 23, 2023) are eligible for nomination.
 
 A membership verification email will be sent to all members in October. The message will be sent directly from leadership@us-rse.org, not through the Google group used for most email communications.   Individuals who do not receive the membership verification email may join the organization by filling out the membership form at [https://us-rse.org/join/](https://us-rse.org/join/).  For questions or help with membership matters, please contact Election Chairs on Slack or email: [Rinku Gupta](mailto:rgupta@anl.gov) and [Kenton McHenry](mailto:mchenry@illinois.edu).
 
