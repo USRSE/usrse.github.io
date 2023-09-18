@@ -15,17 +15,17 @@ The 2023 US-RSE Steering Committee elections are happening this December.
 
 If you're interested in becoming part of the Steering Committee, we suggest you have a look at [Guidance for Potential Steering Committee Candidates](/2022-07-01-candidate-guidance/).
 
-## Timeline
+## Tentative Timeline
 
-* [Nominations open](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform): October 23, 2023
+<!-- * [Nominations open](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform): October 23, 2023 -->
+* Nominations open: October 23, 2023
 * Nominations due: November 3, 2023
 * Candidate meeting: during the week of November 6-10, 2023
 * Candidates finalize information: November 17, 2023
 * Deadline to [join US-RSE](/join) to be eligible to vote: November 19, 2023
 <!-- * [Candidates announced](/2022-11-18-sc-candidates/): by November 27, 2023 -->
 * Candidates announced: by November 27, 2023
-<!-- * [Annual US-RSE General Meeting](/events/2022/2022-12-AGM/), including candidate statements: December 1, 2023 -->
-* Annual US-RSE General Meeting, including candidate statements:  December 1, 2023
+* [Annual US-RSE General Meeting](/events/2023/2023-12-AGM/), including candidate statements: December 1, 2023 -->
 * Voting Open: December 1-8, 2023
 <!-- * [Election Results announced](/2022-12-10-election-results/): by December 13, 2023 -->
 * Election Results announced: by December 13, 2023 
@@ -62,21 +62,25 @@ Additionally, Steering Committee members are expected to:
   * Writing blog posts
   * Bringing new ideas to the organization
 
+
 ## Nominations and Candidate Information
 
 <!-- **[Candidate Information is Available](/2022-11-18-sc-candidates/)** -->
 
-[Nominations](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform) open on October 23, 2023 and close on November 3, 2023.
+Nominations open on October 23, 2023 and close on November 3, 2023. 
 
 Once nominations open up, interested members are encouraged to nominate themselves.
 Alternatively, if you know of a member who you think would make a good
 candidate, you can submit a nomination 
 for someone else, who will be invited to run.  All US-RSE members in good standing are eligible to be nominated as candidates.
 
-On the [nomination form](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform), expect to provide the following information
+**Nomination Form**
+
+The nomination form can be found [HERE](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform). Please fill this form for self-nomination OR if you are nominating someone else.
+
+On the nomination form, expect to provide the following information
 
 **If Nominating Someone Else:**
-
 * Your name and email
 * Nominee's name and email
 * Short statement about why you think the nominated individual will make a good Steering Committee member
@@ -85,8 +89,6 @@ Nominations of others will only be shared with the Election Chair and the
 nominated individual. The Election Chair will contact the nominated individual
 to let them know they were nominated, and by whom, and to confirm their
 interest in participating. The information will not be made public.
-
-[Nomination Form](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform)
 
 **Self-nomination or Accepted Nomination:**
 
@@ -97,11 +99,7 @@ interest in participating. The information will not be made public.
 
 All candidate information will be shared on the US-RSE website.  Additionally, candidates will have a chance to share information about themselves at the Annual General Meeting on December 1, 2023.
 
-An [#election channel is available on
-Slack](https://usrse.slack.com/archives/C01BC66Q16E) for any discussion with or
-about candidates.
-
-[Nomination Form](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform)
+An [#election channel is available on Slack](https://usrse.slack.com/archives/C01BC66Q16E) for any discussion with or about candidates.
 
 ## Candidate Meeting
 
