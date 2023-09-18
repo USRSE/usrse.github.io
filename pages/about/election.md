@@ -15,7 +15,7 @@ The 2023 US-RSE Steering Committee elections are happening this December.
 
 If you're interested in becoming part of the Steering Committee, we suggest you have a look at [Guidance for Potential Steering Committee Candidates](/2022-07-01-candidate-guidance/).
 
-## Tentative Timeline
+## Timeline
 
 <!-- * [Nominations open](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform): October 23, 2023 -->
 * Nominations open: October 23, 2023
@@ -25,7 +25,7 @@ If you're interested in becoming part of the Steering Committee, we suggest you 
 * Deadline to [join US-RSE](/join) to be eligible to vote: November 19, 2023
 <!-- * [Candidates announced](/2022-11-18-sc-candidates/): by November 27, 2023 -->
 * Candidates announced: by November 27, 2023
-* [Annual US-RSE General Meeting](/events/2023/2023-12-AGM/), including candidate statements: December 1, 2023 -->
+* [Annual US-RSE General Meeting](/events/2023/2023-12-AGM/), including candidate statements: December 1, 2023
 * Voting Open: December 1-8, 2023
 <!-- * [Election Results announced](/2022-12-10-election-results/): by December 13, 2023 -->
 * Election Results announced: by December 13, 2023 
@@ -74,9 +74,11 @@ Alternatively, if you know of a member who you think would make a good
 candidate, you can submit a nomination 
 for someone else, who will be invited to run.  All US-RSE members in good standing are eligible to be nominated as candidates.
 
-**Nomination Form**
+<!-- **Nomination Form**
 
 The nomination form can be found [HERE](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform). Please fill this form for self-nomination OR if you are nominating someone else.
+
+-->
 
 On the nomination form, expect to provide the following information
 
