@@ -59,14 +59,13 @@ or ask in the [`#community-grants`](https://app.slack.com/client/T8ZT4PJSW/C05M3
 
 ### Application Details
 
-- **Next Application Deadline**: September 25, 2023
+- **Next Application Deadline**: December 31, 2023
 - **[Application Form](https://forms.gle/hXL95UymjTcR3Kb29)**
 
 The first grants will be announced during [US-RSE'23](https://us-rse.org/usrse23).
 
 The next round of application deadlines will be:
 
-- December 31, 2023
 - March 31, 2024
 - June 30, 2024
 - September 30, 2024
@@ -114,4 +113,9 @@ The application will request the following details:
 <details>
   <summary><b>Q: Is there a way to submit a pdf or supplemental documentation on the form?</b></summary>
     A: Send the email or supplemental documentation to <a href="mailto:grants@us-rse.org">grants@us-rse.org</a>.
+</details>
+
+<details>
+  <summary><b>Q: Do applicants have to be based in the U.S. to apply?</b></summary>
+    A: No; any member of US-RSE is eligible to apply.
 </details>
