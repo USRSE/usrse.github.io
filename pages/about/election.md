@@ -18,26 +18,23 @@ If you're interested in becoming part of the Steering Committee, we suggest you 
 ## Timeline
 
 <!-- * [Nominations open](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform): October 23, 2023 -->
-* Nominations open: October 23, 2023
-* Nominations due: November 3, 2023
-* Candidate meeting: during the week of November 6-10, 2023
-* Candidates finalize information: November 17, 2023
-* Deadline to [join US-RSE](/join) to be eligible to vote: November 19, 2023
-<!-- * [Candidates announced](/2022-11-18-sc-candidates/): by November 27, 2023 -->
-* Candidates announced: by November 27, 2023
-* [Annual US-RSE General Meeting](/events/2023/2023-12-AGM/), including candidate statements: December 1, 2023
-* Voting Open: December 1-8, 2023
+* Nominations Open Date: Oct 13, 2023
+* Nominations Due Date:  Oct 27, 2023
+* Deadline to [join US-RSE](/join) to be eligible to vote: Nov 8, 2023
+<!-- * [Candidates announced](/2023-11-10-sc-candidates/): by Nov 10, 2023 -->
+* Candidate Announcement Date: Nov 10, 2023
+* [Annual US-RSE General Meeting](https://us-rse.org/events/2023/2023-12-AGM), including candidate statements: Dec 1, 2023
+* Voting Open: Dec 1-8, 2023
 <!-- * [Election Results announced](/2022-12-10-election-results/): by December 13, 2023 -->
-* Election Results announced: by December 13, 2023 
-* Elected Steering Committee members take office: January 1, 2024
+* Election Results announced: by Dec 15, 2023
+* Elected Steering Committee members take office: Jan 1, 2024
+
 
   
 ## Positions and Eligibility
 
 Five Steering Committee seats are open in this election, each for a 2-year term (January 1, 2024 through December 31, 2025). The following steering committee members have terms that end this year: Nicole Brewer, Jeff Carver, Ian Cosden, Sandra Gesing, and Christina Maimone. 
-All US-RSE members in good standing as of the day nominations open (October 23, 2023) are eligible for nomination.
-
-A membership verification email will be sent to all members in October. The message will be sent directly from leadership@us-rse.org, not through the Google group used for most email communications.   Individuals who do not receive the membership verification email may join the organization by filling out the membership form at [https://us-rse.org/join/](https://us-rse.org/join/).  For questions or help with membership matters, please contact Election Chairs on Slack or email: [Rinku Gupta](mailto:rgupta@anl.gov) and [Kenton McHenry](mailto:mchenry@illinois.edu).
+All US-RSE members in good standing as of the day nominations open are eligible for nomination. 
 
 The US-RSE Steering Committee sets its own meeting frequency and timing.  Currently, the Steering Committee meets every two weeks on Fridays.  The Steering Committee meeting frequency and schedule for 2024 will be determined once new members are elected.
 
@@ -67,7 +64,7 @@ Additionally, Steering Committee members are expected to:
 
 <!-- **[Candidate Information is Available](/2022-11-18-sc-candidates/)** -->
 
-Nominations open on October 23, 2023 and close on November 3, 2023. 
+Nominations open on October 13, 2023 and close on October 27, 2023. 
 
 Once nominations open up, interested members are encouraged to nominate themselves.
 Alternatively, if you know of a member who you think would make a good
@@ -114,7 +111,7 @@ If there are more candidates than seats available, an election will be held.
 Elections will be run through
 https://electionbuddy.com.  US-RSE members' email
 addresses will be shared with this site for the sole purpose of voting.  Each
-US-RSE member as of November 19, 2023, gets one ballot with the voting rule of
+US-RSE member as of November 8, 2023, gets one ballot with the voting rule of
 [single transferable vote
 (STV)](https://electionbuddy.com/features/voting-systems/stv-voting).  This
 voting rule asks each voter to rank the candidates, and seats are allocated
