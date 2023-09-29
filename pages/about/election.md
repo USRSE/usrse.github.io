@@ -21,11 +21,11 @@ If you're interested in becoming part of the Steering Committee, we suggest you 
 * Nominations Open Date: Oct 13, 2023
 * Nominations Due Date:  Oct 27, 2023
 * Deadline to [join US-RSE](/join) to be eligible to vote: Nov 8, 2023
-* <!-- * [Candidates announced](/2023-11-10-sc-candidates/): by Nov 10, 2023 -->
+<!-- * [Candidates announced](/2023-11-10-sc-candidates/): by Nov 10, 2023 -->
 * Candidate Announcement Date: Nov 10, 2023
 * [Annual US-RSE General Meeting](https://us-rse.org/events/2023/2023-12-AGM), including candidate statements: Dec 1, 2023
 * Voting Open: Dec 1-8, 2023
-* <!-- * [Election Results announced](/2022-12-10-election-results/): by December 13, 2023 -->
+<!-- * [Election Results announced](/2022-12-10-election-results/): by December 13, 2023 -->
 * Election Results announced: by Dec 15, 2023
 * Elected Steering Committee members take office: Jan 1, 2024
 
