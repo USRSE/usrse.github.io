@@ -87,8 +87,8 @@ The application will request the following details:
 - Community or Individual
 - Describe the purpose of the requested funding.
   - If the funding is for hosting an event, provide details about the event and your
-    qualifications for hosting/organizing the proposed event. If the funding
-    is for attending a conference, provide the specific conference, including
+    qualifications for hosting/organizing the proposed event.
+  - If the funding is for attending a conference, provide the specific conference, including
     date and location.
 - Provide a budget justification for the requested amount.
 - Describe any funding you have already obtained for this proposal, any funding
@@ -129,6 +129,7 @@ The application will request the following details:
     A: It depends. These grants are not intended to provide general support or stipends for a PhD student for a semester. We will, however,
     consider requests for funding to support specific efforts that involve US-RSE or RSEs as part of a PhD (e.g., a user study amongst RSEs).
     If you believe you have a unique case, please email us at [grants@us-rse.org](mailto:grants@us-rse.org).
+</details>
 
 </details>
   <summary><b>Q: Can I request funding to purchase personal equipment for my research?</b></summary>
