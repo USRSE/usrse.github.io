@@ -131,8 +131,8 @@ The application will request the following details:
     If you believe you have a unique case, please email us at [grants@us-rse.org](mailto:grants@us-rse.org).
 </details>
 
-</details>
+<details>
   <summary><b>Q: Can I request funding to purchase personal equipment for my research?</b></summary>
     A: No; this is outside the scope of this grant. We may consider requests to purchase
     shared resources.
-<details>
+</details>
