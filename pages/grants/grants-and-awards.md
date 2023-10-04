@@ -11,7 +11,8 @@ menubar_toc: true
 
 ### Overview
 
-Part of the [Alfred P. Sloan Foundation grant](https://us-rse.org/2023-04-27-sloan-grant-initiatives/) for US-RSE has been earmarked for the Community
+Part of the [Alfred P. Sloan Foundation grant](https://us-rse.org/2023-04-27-sloan-grant-initiatives/)
+for US-RSE has been earmarked for the Community
 and Travel Grants program. The goals of this program are to:
 
 - Grow and diversify the US-RSE community and larger RSE community
@@ -25,6 +26,7 @@ Applications fall into two categories:
 - **Community**: These benefit a group of individuals within the community
   (e.g., hosting a regional group meetup)
 - **Individual**: These benefit an individual applicant (e.g., a travel grant)
+
 
 To this end, we are accepting applications to provide funding from $100-$10,000
 per proposal (with most expected to be up to $2,500) to support members in
@@ -44,7 +46,7 @@ activities such as, but not limited to:
   sponsorship would be an effective advertisement and outreach mechanism.
 - Pursuing individual professional development that could benefit the community,
   such as obtaining trainer certifications.
-- Technical infrastructure costs related to working group activities.
+- Technical infrastructure costs related to working group activities (e.g., A/V services).
 
 Applications are accepted on a quarterly basis. They are evaluated based on
 potential for positive impact on the community, alignment to the US-RSE mission,
@@ -84,8 +86,10 @@ The application will request the following details:
 - Date of event (or range)
 - Community or Individual
 - Describe the purpose of the requested funding.
-  - If the funding is for an event, provide details about the event and your
+  - If the funding is for hosting an event, provide details about the event and your
     qualifications for hosting/organizing the proposed event.
+  - If the funding is for attending a conference, provide the specific conference, including
+    date and location.
 - Provide a budget justification for the requested amount.
 - Describe any funding you have already obtained for this proposal, any funding
   you are currently seeking in addition to this grant, or matching funding you
@@ -118,4 +122,17 @@ The application will request the following details:
 <details>
   <summary><b>Q: Do applicants have to be based in the U.S. to apply?</b></summary>
     A: No; any member of US-RSE is eligible to apply.
+</details>
+
+<details>
+  <summary><b>Q: Can I request funding to support my PhD?</b></summary>
+    A: It depends. These grants are not intended to provide general support or stipends for a PhD student for a semester. We will, however,
+    consider requests for funding to support specific efforts that involve US-RSE or RSEs as part of a PhD (e.g., a user study amongst RSEs).
+    If you believe you have a unique case, please email us at <a href="mailto:grants@us-rse.org">grants@us-rse.org</a>.
+</details>
+
+<details>
+  <summary><b>Q: Can I request funding to purchase personal equipment for my research?</b></summary>
+    A: No; this is outside the scope of this grant. We may consider requests to purchase
+    shared resources.
 </details>
