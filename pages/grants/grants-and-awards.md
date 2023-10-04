@@ -126,7 +126,7 @@ The application will request the following details:
 
 <details>
   <summary><b>Q: Can I request funding to support my PhD?</b></summary>
-    A: It depends. These grants are not intended to provide general support or stipend for a PhD student for a semester. We will, however,
+    A: It depends. These grants are not intended to provide general support or stipends for a PhD student for a semester. We will, however,
     consider requests for funding to support specific efforts that involve US-RSE or RSEs as part of a PhD (e.g., a user study amongst RSEs).
     If you believe you have a unique case, please email us at [grants@us-rse.org](mailto:grants@us-rse.org).
 
