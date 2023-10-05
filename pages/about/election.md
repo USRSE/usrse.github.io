@@ -72,9 +72,9 @@ for someone else, who will be invited to run.  All US-RSE members in good standi
 
 **Nomination Form**
 
-The nomination form can be found [HERE](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform). Please fill this form for self-nomination OR if you are nominating someone else.
+The nomination form can be found [HERE](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform). Please fill this form for self-nomination OR if you are nominating someone else. If nominating someone else, then please fill the form early so that we can contact the nominated person and obtain their nomination materials before the nominations due date of Oct 27, 2023.
 
-On the nomination form, expect to provide the following information
+On the nomination form, expect to provide the following information.
 
 **If Nominating Someone Else:**
 * Your name and email
