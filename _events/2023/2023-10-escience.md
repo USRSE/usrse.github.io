@@ -9,10 +9,10 @@ layout: event
 category: workshop
 time:
     - - start: 2023-10-11T06:00:00Z
-        end: 2023-10-11T09:00:00Z
+        end: 2023-10-11T09:30:00Z
 ---
 
-This workshop is to be held as part of [eScience 2023](https://www.escience-conference.org/2023/),
+This workshop is part of [eScience 2023](https://www.escience-conference.org/2023/),
 which will be held **IN-PERSON**.
 
 Research Software Engineers (RSEs) combine professional software engineering
@@ -34,6 +34,6 @@ interactive question/answer. The second half of the program will be discussion-b
 breakouts. We will produce a blog post after the workshop that discusses the
 talks and the breakouts. 
 
-The workshop is October 11th from 9:00 AM - 12:00 PM EEST.
+The workshop is October 11th from 09:00 - 12:30 EEST.
 More information can be found on the
 [workshop website](https://us-rse.org/rse-escience-2023).
