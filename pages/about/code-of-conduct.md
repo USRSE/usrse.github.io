@@ -38,9 +38,9 @@ $(document).ready(function(){
 <p>
     The current Code of Conduct Committee consists of:
     <ul>
-        <li> Lezlie Espana
-        <li> David Nicholson
-        <li> Joshua Teves
+        <li> Lezlie Espana</li>
+        <li> David Nicholson</li>
+        <li> Joshua Teves</li>
     </ul>
     You may reach any of them on the US-RSE slack individually or email coc@us-rse in order to contact them.
 </p>
