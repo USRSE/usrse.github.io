@@ -42,5 +42,5 @@ $(document).ready(function(){
         <li> David Nicholson</li>
         <li> Joshua Teves</li>
     </ul>
-    You may reach any of them on the US-RSE slack individually or email coc@us-rse in order to contact them.
+    You may reach any of them on the US-RSE slack individually or email [coc@us-rse](mailto:contact@us-rse.org) in order to contact them.
 </p>
