@@ -35,6 +35,8 @@ $(document).ready(function(){
 });
 </script>
 
+<h2>Code of Conduct Committee</h2>
+
 <p>
     The current Code of Conduct Committee consists of:
     <ul>
