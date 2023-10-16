@@ -3,7 +3,7 @@
 https://us-rse.org
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-74-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-75-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -217,6 +217,7 @@ tool to generate a contributors graphic below.
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/peterfpeterson"><img src="https://avatars.githubusercontent.com/u/404003?v=4?s=100" width="100px;" alt="Pete Peterson"/><br /><sub><b>Pete Peterson</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=peterfpeterson" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://kevinbonham.com"><img src="https://avatars.githubusercontent.com/u/3502975?v=4?s=100" width="100px;" alt="Kevin Bonham"/><br /><sub><b>Kevin Bonham</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=kescobo" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="blog.aaronholmes.net"><img src="https://avatars.githubusercontent.com/u/277061?v=4?s=100" width="100px;" alt="Aaron Holmes"/><br /><sub><b>Aaron Holmes</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=aholmes" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/jbteves-sandia"><img src="https://avatars.githubusercontent.com/u/134551825?v=4?s=100" width="100px;" alt="jbteves-sandia"/><br /><sub><b>jbteves-sandia</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jbteves-sandia" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
