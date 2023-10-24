@@ -18,7 +18,7 @@ If you're interested in becoming part of the Steering Committee, we suggest you 
 ## Timeline
 
 * [Nominations open](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform): October 13, 2023
-* Nominations Due Date:  Oct 27, 2023
+* Nominations Due Date (Extended):  Nov 3, 2023
 * Deadline to [join US-RSE](/join) to be eligible to vote: Nov 8, 2023
 <!-- * [Candidates announced](/2023-11-10-sc-candidates/): by Nov 10, 2023 -->
 * Candidate Announcement Date: Nov 10, 2023
@@ -63,7 +63,7 @@ Additionally, Steering Committee members are expected to:
 
 <!-- **[Candidate Information is Available](/2022-11-18-sc-candidates/)** -->
 
-Nominations open on October 13, 2023 and close on October 27, 2023. 
+Nominations open on October 13, 2023 and close on November 03, 2023. 
 
 Once nominations open up, interested members are encouraged to nominate themselves.
 Alternatively, if you know of a member who you think would make a good
@@ -72,7 +72,7 @@ for someone else, who will be invited to run.  All US-RSE members in good standi
 
 **Nomination Form**
 
-The nomination form can be found [HERE](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform). Please fill this form for self-nomination OR if you are nominating someone else. If nominating someone else, then please fill the form early so that we can contact the nominated person and obtain their nomination materials before the nominations due date of Oct 27, 2023.
+The nomination form can be found [HERE](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform). Please fill this form for self-nomination OR if you are nominating someone else. If nominating someone else, then please fill the form early so that we can contact the nominated person and obtain their nomination materials before the nominations due date of Nov 03, 2023.
 
 On the nomination form, expect to provide the following information.
 
