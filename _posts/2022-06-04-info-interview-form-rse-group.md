@@ -31,7 +31,7 @@ were
 [Rafael Mudafort (NREL)](https://www.nrel.gov/research/staff/rafael-mudafort.html),
 [David Nicholson (EI)](https://nicholdav.info/),
 [Zhiyong Zhang (Stanford)](https://profiles.stanford.edu/zhiyong-zhang),
-[Claire Wyatt (SSI)](https://www.software.ac.uk/about/staff/person/claire-wyatt),
+[Claire Wyatt (SSI)](https://society-rse.org/about/governance/claire-wyatt/),
 [Simon Hettrick (Southampton)](https://www.ecs.soton.ac.uk/people/sjh1l06),
 [Nasir Eisty (Boise State U)](https://nasireisty.com/),
 [Alys Brett (UK Atomic Energy Authority)](https://www.linkedin.com/in/alysbrett/?originalSubdomain=uk),

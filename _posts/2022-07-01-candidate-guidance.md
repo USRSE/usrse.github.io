@@ -5,7 +5,7 @@ tags: [election, dei, 2022 community workshop]
 ---
 
 
-*This post is the result of work from attendees of the [2022 Community Building Workshop](https://us-rse.org/first-community-workshop/) and members of the [DEI Working Group](https://us-rse.org/wg/dei/).*
+*This post is the result of work from attendees of the [2022 Community Building Workshop](https://us-rse.org/first-community-workshop/) and members of the [DEI Working Group](https://us-rse.org/wg/dei/). The content is relevant as of year 2023.
 
 Our community is always interested in improving our methods for ensuring an equitable and inclusive space to celebrate and support our diverse membership, and the diversity of the Steering Committee itself is important to us. The goal of this post is to improve the transparency of the work involved in serving on the [Steering Committee](https://us-rse.org/about/steering-committee/) and to provide concrete and detailed guidance to interested community members about how to strengthen your case for election, through the candidate statement and by acquiring relevant experience. So even if you aren’t ready to run this year, you may want to read this guide to prepare for future elections. We also hope that this level of transparency encourages diverse candidates to pursue leadership in our community.
 
@@ -21,7 +21,7 @@ First of all, it is important for nominees to understand the role and the level 
 
 ### What the Steering Committee Does
 
-* Sets guiding priorities for what we as an organization would like to accomplish in a year (see examples from [2022](https://us-rse.org/2022-03-23-sc-planning/) and [2021](https://us-rse.org/2021-03-04-strategic-meeting/))
+* Sets guiding priorities for what we as an organization would like to accomplish in a year (see examples from [2023](https://us-rse.org/2023-03-29-sc-planning/), [2022](https://us-rse.org/2022-03-23-sc-planning/) and [2021](https://us-rse.org/2021-03-04-strategic-meeting/))
   * Steering Committee members divide up responsibilities for working towards these priorities throughout the year
   * Often includes leading or participating in working groups
 * Responds to incoming requests for collaboration from other organizations or individuals
@@ -39,7 +39,7 @@ Some specific Steering Committee positions are defined in the [governance docume
 
 ## Election Candidate Statements
 
-Currently, candidates standing for election for the Steering Committee make their case for why they should be elected in a written introduction statement (Candidate Statement) and via a live or recorded presentation during the Annual General Meeting (details vary slightly from year to year).  See [examples of candidate statements from 2021](https://us-rse.org/2021-11-12-sc-candidates/).  Framing your experience to craft an informative and inspirational candidate statement is critical for helping your fellow community members see what you will bring to the Steering Committee. 
+Currently, candidates standing for election for the Steering Committee make their case for why they should be elected in a written introduction statement (Candidate Statement) and via a live or recorded presentation during the Annual General Meeting (details vary slightly from year to year).  See [examples of candidate statements from 2022](https://us-rse.org/2022-11-18-sc-candidates/).  Framing your experience to craft an informative and inspirational candidate statement is critical for helping your fellow community members see what you will bring to the Steering Committee. 
 
 The Candidate Statement is your opportunity to make a case for your preparedness and/or suitability for the Steering Committee. The bullets below are intended to help you frame your current experience, skills, or perspective into a statement that informs and inspires the community to support you in the election. This is not a comprehensive list. Rather, it is meant to get you thinking about what makes you uniquely suitable to furthering the US-RSE Association. Particularly, consider the questions: what will you contribute to the Steering Committee, and what is your vision for the future?
 

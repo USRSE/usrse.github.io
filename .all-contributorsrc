@@ -795,6 +795,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/277061?v=4"
             ]
+        },
+        {
+            "login": "jbteves-sandia",
+            "name": "jbteves-sandia",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/jbteves-sandia",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/134551825?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
