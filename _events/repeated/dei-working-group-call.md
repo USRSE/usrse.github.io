@@ -3,11 +3,11 @@ title: Diversity, Equity, and Inclusion Working Group Call
 subtitle:
 location: Virtual
 expires: 2024-12-31
-event_date: "every other Thursday at 12:00-13:00 Eastern"
+event_date: "every other Wednesday at 3PM Eastern"
 layout: event
 category: dei
 time:
-  - - start: 2023-11-08 15:00 EDT
+  - - start: 2023-11-08 15:00 EST
 
 repeated: true
 rrule:
