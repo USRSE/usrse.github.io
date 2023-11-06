@@ -34,7 +34,7 @@ to target our activities and actions to serving these aspects:
   groups within the research ecosystem including the material for
   making business justifications for RSEs.
 
-## 4. Diversity, Equality, and Inclusion
+## 4. Diversity, Equity, and Inclusion
 
   We will actively promote, encourage, and improve diversity throughout the
   broader US Research Software Engineer Community consistent with our full DEI
