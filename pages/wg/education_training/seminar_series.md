@@ -9,6 +9,7 @@ The Education and Training Seminar Series is a series of technical talks and tut
 The talks cover a wide range of topics, including software development best practices, software engineering for scientific computing, and research software management.
 The tutorials provide hands-on instruction on how to use specific software tools and technologies.
 This seminar series is a great opportunity to learn about the latest advances in research software engineering and to network with other researchers and practitioners in the field.
+Other resources for learning about research software engineering include the [US-RSE Training Resources](https://us-rse.org/wg/education_training/training/)
 
 | Title | Speaker | Date | Type | Video | Supplemental Materials |
 |---|---|---|---|---|---|
