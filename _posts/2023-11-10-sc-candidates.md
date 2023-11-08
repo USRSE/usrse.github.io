@@ -114,6 +114,7 @@ First, as a founding member of the US-RSE Steering Committee, I have served in m
 [Email](mailto:KSBeattie@lbl.gov), [Profile]( https://www.linkedin.com/in/ksbeattie/)
 
 **Why do you want to be on the US-RSE Steering Committee?**
+
 Having been a member of the US-RSE for several years now and an RSE for at least a decade before the term was coined, I have a long history and deep passion for the RSE role and would like to extend that experience to the community by taking a larger role in the US-RSE organization.
 
 Not enough people know what an RSE is. Particularly those who might be one, educate them, hire or fund them. I would like to help the US-RSE extend their reach by educating the larger tech community on what an RSE is and the impact they have on their organization’s mission. By establishing that role and its impact beyond traditional research organizations, we strengthen our arguments for stable funding and a diversity of recruitment to support long-term RSE careers. This effort can be used to better fill the pipeline of RSEs from industry and from underrepresented communities. Increasing diversity brings a breadth of ideas and approaches to the field while creating recruitment and retention advantages.
