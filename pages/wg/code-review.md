@@ -12,7 +12,7 @@ set_last_modified: true
 This working group grew out of a BoF at the US-RSE conference. The chairs,
 listed below, were two of the panelists in the BoF Discussion. It was evident
 from the discussion that there was a strong desire to continue this discussion
-beyond the BoF. Numerous participants expressed interest in joining such a group.
+beyond the BoF. 
 
 The goal of this working group is to build a community of RSEs who are
 interested in code review. The working group will provide a forum to gather
