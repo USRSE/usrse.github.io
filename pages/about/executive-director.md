@@ -12,7 +12,7 @@ set_last_modified: true
 ### Executive Director
 
 Sandra Gesing
-[sandra\@us-rse.org](mailto:sandra@us-rse.org)
+[sandra@us-rse.org](mailto:sandra@us-rse.org)
 
 ### Message from the Executive Director October 2023
 
