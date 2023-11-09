@@ -23,7 +23,7 @@ set_last_modified: true
 ### Former Steering Committee Members
 
 * Chris Hill, MIT, 2019-2022
-* Sandra Gesing, 2019-2023
+* Sandra Gesing, University of Illinois Discovery Partner Institute, 2019-2023
 * Daniel S. Katz, University of Illinois at Urbana-Champaign, 2019-2022
 * Lance Parsons, Princeton University, 2019-2022
 * Charles Ferenbaugh, Los Alamos National Laboratory, 2019-2021
