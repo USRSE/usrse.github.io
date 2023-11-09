@@ -130,11 +130,11 @@ I have long annoyed my coworkers and bosses about how software is not taken near
 
 **Why do you want to be on the US-RSE Steering Committee?**
 
-I am excited about possibly joining the US-RSE Steering Committee because I believe I can bring a fresh perspective and dynamic strategy from years of leading diverse RSE teams at Harvard University to meet research and computing goals. My experience developing business models and building connections across various disciplines directly supports the committee's goal of empowering research software engineering within the scientific community.
+I am excited about possibly joining the US-RSE Steering Committee because I believe I can bring a fresh perspective and dynamic strategy from years of leading a diverse RSE team at Harvard University. My experience developing business models and building connections across various disciplines supports the committee's goal of empowering RSEs within the scientific community.
 
-My technical journey through research software engineering, high-performance computing, cloud services, and computational science prepares me with a unique perspective that I am happy to contribute. I have been involved in RSE community events, taking on different roles from technical chair of workshops to program committee and, most recently, as one of sponsor chairs in the USRSE'23 conference, giving me an insight into our community's core.
+My technical journey through RSE, HPC, cloud, and computational science prepares me for this community role. My involvement in RSE events as technical chair to sponsor chair gives me an insight into our community's core.
 
-I am passionate about boosting the profile and impact of RSEs in both academia and industry, supporting the creation and maintenance of sustainable research software, and advocating stronger connections among RSEs. Joining the committee is more than a role for me; it is an opportunity to enhance our community's engagement and promote novel advancements in the RSE area. I am ready to help steer our community towards even greater achievements in research software engineering in the US.
+I am passionate about promoting the impact of RSEs in academia and industry, supporting sustainable research software, and advocating stronger connections among RSEs. This is an opportunity for me to enhance our community's engagement and promote novel RSE advancements. I am ready to help steer our US-RSE community toward even more significant achievements.
 
 **How do you contribute to the US-RSE Association or RSE community more broadly?**
 
