@@ -12,10 +12,9 @@ set_last_modified: true
 ### Current Steering Committee
 
 * Nicole Brewer, Arizona State University, 2022-2023, International RSE Council Representative
-* Jeffrey C. Carver, University of Alabama, 2019-2023, International RSE Council Representative
+* Jeffrey C. Carver, University of Alabama, 2019-2023, Vice Chair & International RSE Council Representative
 * Ian Cosden, Princeton University, 2019-2023, Chair
 * Julia Damerow, Arizona State University, 2021-2024, Treasurer
-* Sandra Gesing, University of Illinois Discovery Partner Institute, 2019-2023, Vice Chair & Community Builder Group Representative
 * Rinku Gupta, Argonne National Laboratory, 2023-2024, Election Co-Chair
 * Christina Maimone, Northwestern University, 2019-2023
 * Kenton McHenry, University of Illinois at Urbana-Champaign, 2023-2024, Election Co-Chair
@@ -24,6 +23,7 @@ set_last_modified: true
 ### Former Steering Committee Members
 
 * Chris Hill, MIT, 2019-2022
+* Sandra Gesing, 2019-2023
 * Daniel S. Katz, University of Illinois at Urbana-Champaign, 2019-2022
 * Lance Parsons, Princeton University, 2019-2022
 * Charles Ferenbaugh, Los Alamos National Laboratory, 2019-2021
