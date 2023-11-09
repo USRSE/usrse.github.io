@@ -52,4 +52,5 @@ community.
 I’m looking forward to this journey with you and I’m grateful for any ideas and input! Please don’t hesitate to contact me.
  
 Sincerely,
+
 Sandra Gesing
