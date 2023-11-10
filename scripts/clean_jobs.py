@@ -1,5 +1,6 @@
-# Read in jobs from the _data/jobs.yml and _data/related-jobs.yml files, find links that are both
-# expired and not working, and remove them. Write to a new file.
+# Read in jobs from the _data/jobs.yml, _data/related-jobs.yml, and
+# _data/internships.yml files, find links that are both expired and not
+# working, and remove them. Write to a new file.
 # Copyright @vsoch, 2020
 
 import os
@@ -104,6 +105,7 @@ def main():
     """
     clean_jobs("jobs.yml")
     clean_jobs("related-jobs.yml")
+    clean_jobs("internships.yml")
 
 
 if __name__ == "__main__":
