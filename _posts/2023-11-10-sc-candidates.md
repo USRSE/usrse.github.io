@@ -14,14 +14,16 @@ please use the #election channel on Slack. You must be [registered as a member](
 by Wednesday, November 8th to be eligible to vote in this election.
 
 Candidates are listed in aphabetical order.
-- [Abbey Roelofs](abbey-roelofs)
-- [Alex Koufos](alex-koufos)
-- [David Beck](david-beck)
-- [Ian Cosden](#ian-cosden)
-- [Jeff Carver](#jeff-carver)
-- [Keith Beattie](keith-beattie)
-- [Mahmood Shad](mahmood-shad)
-- [Torin White](torin-white)
+- Abbey Roelofs
+- Alex Koufos
+- David Beck
+- Ian Cosden
+- Jeff Carver
+- Keith Beattie
+- Mahmood Shad
+- Torin White
+
+More information about the candidates can be found below.
 
 ## Abbey Roelofs
 
