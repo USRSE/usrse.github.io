@@ -50,7 +50,7 @@ jobs:
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@users.noreply.github.com"
 
-        git add _data/jobs.yml _data/related-jobs.yml
+        git add _data/jobs.yml _data/related-jobs.yml _data/internships.yml
 
         set +e
         git status | grep modified
