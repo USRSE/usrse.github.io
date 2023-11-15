@@ -1,15 +1,14 @@
 style: is-light
 items:
-  - title: 1st US-RSE Conference
-    subtitle: Join us in Chicago, October 16-18, 2023
-    link: https://us-rse.org/usrse23/
-    link_name: Conference Page
+  - title: 2023 Annual General Meeting
+    subtitle: The fourth US-RSE Association Annual General Meeting (AGM) will take place on Friday, December 1, 2023 from 1-3pm ET.
+    link: https://us-rse.org/events/2023/2023-12-AGM/
+    link_name: Register for the AGM
   - title: Career Guidebook
     subtitle: Advice on hiring and supporting RSEs and Data Scientists in academia
     link: https://zenodo.org/record/8274378
-    link_name: Download the Guide 
+    link_name: Download the Guide
   - title: Community and Travel Grants
     subtitle: US-RSE is accepting applications to provide funding to support members in activities for the community and individuals!
     link: /grants-and-awards/
     link_name: Learn More
-
