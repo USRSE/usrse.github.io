@@ -4,8 +4,8 @@
 - name: FAS Research Computing
   url: https://www.rc.fas.harvard.edu/
   institution: Harvard University
-- name: MIT Research Computing Project
-  url: https://researchcomputing.mit.edu/
+- name: MIT Office of Research Computing and Data (ORCD)
+  url: https://orcd.mit.edu/
   institution: Massachusetts Institute of Technology
 - name: Research Computing Services
   url: https://www.it.northwestern.edu/research/

@@ -37,6 +37,20 @@ page for more details!
 
 <h2>Active Working Groups</h2>
 
+<h3><a href="{{ site.baseurl }}/wg/code-review/">Code Review</a></h3>
+
+The goal of the US-RSE Code Review Working Group is to build a community of RSEs who are
+interested in code review. The working group will provide a forum to gather
+resources related to code review, discuss the use of code review in research
+software project, and seek help in conducting code reviews. 
+To get involved, visit the `#wg-code-review` channel on the US-RSE slack, or
+contact the <a href="mailto:wg-code-review@us-rse.org">Code Review working group list</a>.
+
+Visit the [Code Review Working Group page]({{ site.baseurl }}/wg/code-review/) for more details
+and a catalog of work products.
+
+<hr>
+
 <h3><a href="{{ site.baseurl }}/wg/dei/">Diversity, Equity, and Inclusion (DEI)</a></h3>
 
 The US-RSE Association is committed to providing an inclusive environment with
@@ -60,7 +74,7 @@ and a catalog of work products.
 
 <h3><a href="{{ site.baseurl }}/wg/education_training/">Education &amp; Training</a></h3>
 
-The Education & Training working group is for those who are interested in
+The Education & Training Working Group is for those who are interested in
 regular discussions about education and training for RSEs. The goal of the
 group is to develop resources and strategies that support RSE education and
 training and contribute to the establishment of a more formal career path for
@@ -110,7 +124,7 @@ on the US-RSE slack.
 
 <h3><a href="{{ site.baseurl }}/wg/outreach/">Outreach</a></h3>
 
-The Outreach working group aims to broaden the reach of the US-RSE Association
+The Outreach Working Group aims to broaden the reach of the US-RSE Association
 and the understanding and recognition of RSE as a professional designation. To
 reach this goal, we plan to expand the US-RSE presence at conferences and
 workshops, engage with students earlier in their educational careers, and
@@ -129,7 +143,7 @@ more details and a catalog of work products.
 
 <h3><a href="{{ site.baseurl }}/wg/rse-empowerment-national-labs/">RSE Empowerment in National Labs</a></h3>
 
-The RSE Empowerment in National Labs working group, conceptualized in 2022, is for those
+The RSE Empowerment in National Labs Working Group, conceptualized in 2022, is for those
 who are interested in working towards the empowerment of RSEs in national labs and other similar organizations.
 RSEs from national labs are an important part of the RSE community in the United States.
 The goal of this working group is to understand the specific challenges faced by RSEs
@@ -149,7 +163,7 @@ more details.
 
 <h3><a href="{{ site.baseurl }}/wg/website/">Website</a></h3>
 
-The US-RSE website working group assembled in late 2020/2021 to proactively
+The US-RSE Website Working Group assembled in late 2020/2021 to proactively
 work on the content and design of the US-RSE website.
 
 If you are interested in working on the site, or want to suggest features or a
