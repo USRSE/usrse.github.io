@@ -28,8 +28,8 @@ scientific environments.
 
 To get involved,
 visit the [`#wg-ux`](https://usrse.slack.com/messages/wg-ux) channel on
-the US-RSE slack or contact the
-<a href="mailto:wg-ux@us-rse.org">UX working group list</a>.
+the US-RSE slack or contact the co-chairs at
+<a href="mailto:wg-ux@us-rse.org">wg-ux@us-rse.org</a>.
 
 **Co-Chairs**: Drew Paine, Johanna Cohoon
 
