@@ -158,6 +158,29 @@ channel on the US-RSE slack or contact us on the
 Visit the [RSE Empowerment in National Labs Working Group page]({{ site.baseurl }}/wg/rse-empowerment-national-labs/) for
 more details.
 
+<hr>
+
+<h3><a href="{{ site.baseurl }}/wg/ux/">User Experience (UX)</a></h3>
+
+The User Experience Working Group (UXWG) advocates for increased awareness and
+adoption of user experience (UX) methods in research software engineering. UX
+practices help create products that provide meaningful, relevant, and usable
+experiences for target users. Our primary aims are to share knowledge, experiences,
+and challenges and to foster a diverse and inclusive community for research
+software UX practitioners and RSEs who are interested in UX. Doing so will
+collectively help us advocate for and demystify UX to the larger RSE
+community, scientists across domains, and funding agency staff who support
+products and services. We welcome all who
+are interested in helping us with this goal. To get involved,
+visit the [`#wg-ux`](https://usrse.slack.com/messages/wg-ux) channel on
+the US-RSE slack or contact the
+<a href="mailto:wg-ux@us-rse.org">UX working group list</a>.
+
+Visit the [UX Working Group page]({{ site.baseurl }}/wg/ux/) for
+more details and a catalog of work products.
+
+
+<hr>
 
 <hr>
 
