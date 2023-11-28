@@ -51,6 +51,21 @@ and a catalog of work products.
 
 <hr>
 
+h3><a href="{{ site.baseurl }}/wg/community-calls/">Community Calls</a></h3>
+
+The Community Calls Working Group plans monthly virtual meetings to promote community connections
+and share information on topics of interest to US-RSE members. We usually have a brief 
+speaker or two, followed by some time spent in breakout rooms discussing the topic of the month. 
+Topics are chosen from a [GitHub Issues list](https://github.com/USRSE/monthly-community-calls/issues); 
+we encourage everyone in the community to submit ideas for future topics as Issues on this list.
+To get involved, visit the `#wg-community-calls` channel on the US-RSE slack, or
+contact the <a href="mailto:wg-community-calls@us-rse.org">Community Calls working group list</a>.
+
+Visit the [Community Calls Working Group page]({{ site.baseurl }}/wg/community-calls/) for more details
+and a catalog of work products.
+
+<hr>
+
 <h3><a href="{{ site.baseurl }}/wg/dei/">Diversity, Equity, and Inclusion (DEI)</a></h3>
 
 The US-RSE Association is committed to providing an inclusive environment with
