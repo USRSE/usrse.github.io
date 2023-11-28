@@ -15,7 +15,7 @@ by some time spent in breakout rooms discussing the topic of the month. Topics a
 Issues list](https://github.com/USRSE/monthly-community-calls/issues); we encourage everyone in the 
 community to submit ideas for future topics as Issues on this list.
 
-In order to accomodate as many different schedules as possible, Community Calls are held on different days 
+In order to accommodate as many different schedules as possible, Community Calls are held on different days 
 and times in odd and even months. During odd months (January, March, May, July, September, November), 
 calls take place 12:00-1:00PM ET on the second Thursday of the month. During even months (February, April, June,
 August, October, December), calls take place 2:00-3:00PM ET on the second Friday of the month.
