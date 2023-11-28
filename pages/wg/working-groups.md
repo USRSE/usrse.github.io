@@ -51,7 +51,7 @@ and a catalog of work products.
 
 <hr>
 
-h3><a href="{{ site.baseurl }}/wg/community-calls/">Community Calls</a></h3>
+<h3><a href="{{ site.baseurl }}/wg/community-calls/">Community Calls</a></h3>
 
 The Community Calls Working Group plans monthly virtual meetings to promote community connections
 and share information on topics of interest to US-RSE members. We usually have a brief 
