@@ -2,6 +2,8 @@
   items:
     - name: Code Review
       link: wg/code-review
+    - name: Community Calls
+      link: wg/community-calls
     - name: Diversity, Equity, and Inclusion
       link: wg/dei
     - name: Education and Training
