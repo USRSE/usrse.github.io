@@ -1,13 +1,9 @@
 ---
-title: Events
-layout: events
-collection: events
-permalink: /events/
+layout: page
+title: Conference
+description: Landing page for US-RSE annual conferences
+permalink: /events/conference/
 ---
-
-<section id="conference" class="taxonomy__section">
-    <h2>US-RSE Conference</h2>
-    <hr style="width:40%" />
 
 <div class="row">
 
@@ -87,9 +83,4 @@ permalink: /events/
 </div>
 </div>
 
-<div class="row">
-<div class="col-md-12">
-<a type="button" style="float:right" class="btn btn-sm btn-warning" href="{{ site.baseurl }}/events/conference">View more association conferences</a>
-</div>
-</div>
-</section>
+
