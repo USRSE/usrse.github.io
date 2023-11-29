@@ -32,7 +32,7 @@ permalink: /events/conference/
     </h6>
     
     <p class="card-text">
-      This is some stuff
+      A celebration of all that RSEs have done for computing in the past, in the present, and in the future.
     </p>
 
     <div style='margin-bottom:20px'>
@@ -70,7 +70,7 @@ permalink: /events/conference/
     </h6>
     
     <p class="card-text">
-      This is some stuff
+      The inaugural US-RSE conference!
     </p>
 
     <div style='margin-bottom:20px'>
