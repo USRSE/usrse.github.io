@@ -39,11 +39,6 @@ permalink: /events/
       A celebration of all that RSEs have done for computing in the past, in the present, and in the future. 
     </p>
 
-    <div style='margin-bottom:20px'>
-      <small>
-        <a href="{{ site.baseurl }}/usrse24/" class="button btn-warning">Read more</a>
-      </small>
-    </div>
   </div>
 </div>
 </div>
@@ -77,11 +72,6 @@ permalink: /events/
       The inaugural US-RSE conference!
     </p>
 
-    <div style='margin-bottom:20px'>
-      <small>
-        <a href="{{ site.baseurl }}/usrse23/" class="button btn-warning">Read more</a>
-      </small>
-    </div>
   </div>
 </div>
 </div>
