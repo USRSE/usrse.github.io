@@ -76,6 +76,8 @@
       link: events
     - name: Calendar
       link: events/calendar
+    - name: Conference
+      link: events/conference
     - name: Archive
       link: events/archive/
 - name: Job Board
