@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Conference
+title: US-RSE Annual Conference
 description: Landing page for US-RSE annual conferences
 permalink: /events/conference/
 ---
