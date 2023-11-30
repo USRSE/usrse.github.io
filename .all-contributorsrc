@@ -806,6 +806,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/134551825?v=4"
             ]
+        },
+        {
+            "login": "ksbeattie",
+            "name": "Keith Beattie",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/ksbeattie",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/1534843?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
