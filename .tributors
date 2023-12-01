@@ -406,5 +406,11 @@
     "jbteves-sandia": {
         "name": "jbteves-sandia",
         "blog": "https://github.com/jbteves-sandia"
+    },
+    "ksbeattie": {
+        "name": "Keith Beattie",
+        "email": "ksbeattie@lbl.gov",
+        "bio": "Group Lead\r\nSustainable Software Engineering\r\nLawrence Berkeley National Laboratory",
+        "blog": "https://github.com/ksbeattie"
     }
 }
