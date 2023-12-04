@@ -9,6 +9,9 @@ set_last_modified: true
 <!--
 **The [Election Results](/2022-12-10-election-results/) are in!  Congratulations to Julia Damerow, Rinku Gupta, Kenton McHenry, and Miranda Mundt.**
 -->
+
+**Candidates for 2023 US-RSE have now been announced. Please visit [HERE](/2023-11-10-sc-candidates/) to get a list of candidates and their statements.**
+
 <hr>
 
 The 2023 US-RSE Steering Committee elections are happening this December.
@@ -20,8 +23,8 @@ If you're interested in becoming part of the Steering Committee, we suggest you 
 * [Nominations open](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform): October 13, 2023
 * Nominations Due Date (Extended):  Nov 3, 2023
 * Deadline to [join US-RSE](/join) to be eligible to vote: Nov 8, 2023
-<!-- * [Candidates announced](/2023-11-10-sc-candidates/): by Nov 10, 2023 -->
 * Candidate Announcement Date: Nov 10, 2023
+* [Candidates Announced](/2023-11-10-sc-candidates/): Nov 10, 2023 
 * [Annual US-RSE General Meeting](https://us-rse.org/events/2023/2023-12-AGM), including candidate statements: Dec 1, 2023
 * Voting Open: Dec 1-8, 2023
 <!-- * [Election Results announced](/2022-12-10-election-results/): by December 13, 2023 -->
@@ -99,7 +102,9 @@ An [#election channel is available on Slack](https://usrse.slack.com/archives/C0
 
 ## Candidate Meeting
 
-For the 2023 election, we are planning a meeting of all of the candidates before names are released publicly.  This will be an opportunity for candidates to learn who else is running and discuss how they want to share information about themselves during the Annual General Meeting.  
+For the 2023 election, we are planning a meeting of all of the candidates before names are released publicly.  This will be an opportunity for candidates to learn who else is running and discuss how they want to share information about themselves during the Annual General Meeting.
+
+UPDATE (Nov 8th 2023): The Candidate Meeting was deemed unnecessary for the 2023 US-RSE election and was subsequently cancelled.
 
 ## Voting
 

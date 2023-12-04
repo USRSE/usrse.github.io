@@ -13,6 +13,8 @@
       link: about/governance/
     - name: Steering Committee
       link: about/steering-committee/
+    - name: Executive Director
+      link: about/executive-director/
     - name: Election
       link: about/election/
     - name: Financial Status
@@ -49,6 +51,8 @@
       link: working-groups
     - name: Code Review
       link: wg/code-review
+    - name: Community Calls
+      link: wg/community-calls
     - name: Diversity, Equity, and Inclusion
       link: wg/dei
     - name: Education and Training
@@ -61,6 +65,8 @@
       link: wg/outreach
     - name: RSE Empowerment in National Labs
       link: wg/rse-empowerment-national-labs
+    - name: User Experience
+      link: wg/ux
     - name: Website
       link: wg/website
 - name: Events
@@ -70,6 +76,8 @@
       link: events
     - name: Calendar
       link: events/calendar
+    - name: Conference
+      link: events/conference
     - name: Archive
       link: events/archive/
 - name: Job Board

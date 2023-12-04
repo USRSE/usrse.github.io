@@ -113,7 +113,9 @@
         "name": "Simon Byrne",
         "email": "simonbyrne@gmail.com",
         "bio": "Software developer @CliMA",
-        "blog": "https://github.com/simonbyrne"
+        "blog": "https://github.com/simonbyrne",
+        "orcid": "0000-0001-8048-6810",
+        "affiliation": "California Institute of Technology"
     },
     "TaiSakuma": {
         "name": "Tai Sakuma",
@@ -404,5 +406,11 @@
     "jbteves-sandia": {
         "name": "jbteves-sandia",
         "blog": "https://github.com/jbteves-sandia"
+    },
+    "ksbeattie": {
+        "name": "Keith Beattie",
+        "email": "ksbeattie@lbl.gov",
+        "bio": "Group Lead\r\nSustainable Software Engineering\r\nLawrence Berkeley National Laboratory",
+        "blog": "https://github.com/ksbeattie"
     }
 }
