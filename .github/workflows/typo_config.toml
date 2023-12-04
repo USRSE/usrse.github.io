@@ -1,5 +1,16 @@
-[default.extend-words]
-# Don't correct the surname "Hsi"
-Hsi = "Hsi"
-# Don't correct the acronym NWO
-NWO = "NWO"
+[files]
+extend-exclude = [
+    ".git/",
+    ".github/workflows/typo_config.toml",
+    "assets/js/*.min.*",
+]
+ignore-hidden = true
+[default]
+extend-ignore-re = [
+    "Brain tailoRed stImulation protocoL",
+    "Vas Vasiliadis",
+    "Nam Pho",
+    "SLAC",
+    "Paul Hsi",
+    "NWO"
+]
