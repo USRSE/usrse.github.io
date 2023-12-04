@@ -9,7 +9,7 @@ tags: [governance]
 
 The US-RSE Association is centered around three main goals.  Moving
 forward we aim to target our activities and actions to serving these
-three main goals. Over time we plan to revist and refine these goals as
+three main goals. Over time we plan to revisit and refine these goals as
 the needs and desires of the community change.
 
 
