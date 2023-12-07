@@ -18,7 +18,7 @@ The main topic of discussion is
 
 This month we are hosting a call
 on the topic of [Open Source Development](https://github.com/USRSE/monthly-community-calls/issues/4).
-By chance this is the day after the first [Global Maintainer Summit](https://globalmaintainersummit.github.com) and
+By chance this is the day after the first [Global Maintainer Summit](https://github.blog/2021-04-06-announcing-the-global-maintainer-summit/) and
 three days after [Upstream 2021](https://explore.tidelift.com/upstream/)! So it seems like a good week
 to have some conversations and strategizing around this topic.
 This call will be a chance to explore with others in the US-RSE community how we are 
