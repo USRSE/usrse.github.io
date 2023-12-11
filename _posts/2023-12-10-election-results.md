@@ -13,8 +13,8 @@ After 108 votes, the results of the 2023 Steering Committee Election are in.  Th
 * Jeff Carver
 * Keith Beattie
 
-We're excited to welcome three new members to the [Steering Committee](/about/steering-committee/) and to have Ian and Jeff back for two more years.  Learn more about the new members from their [candidate information](/2023-11-10-sc-candidates).
+We extend a warm welcome to the three new members joining the [Steering Committee](/about/steering-committee/) and express our excitement in having Ian and Jeff continue their contributions for the next two years. For more details about the newly elected members, please refer to their [candidate information](/2023-11-10-sc-candidates).
 
-Thanks to our other excellent candidates David Beck, Mahmood Shad, and Torin White for making the election a success.  All of them have helped to grow US-RSE and make it successful.  We look forward to their continued contributions.  
+A heartfelt thank you goes out to our exceptional candidates David Beck, Mahmood Shad, and Torin White for their pivotal role in ensuring the success of the election. All of them have helped to grow US-RSE and make it successful.  We look forward to their continued contributions.  
 
-We also want to thank three outgoing Steering Committee members who did not participate in the election, Nicole Brewer, Christina Maimone and Sandra Gesing.  They brought decades of experience to grow US-RSE, connect it to the broader research software community, and set US-RSE up for a bright future.  
+In addition, we wish to express our sincere appreciation to the outgoing Steering Committee members - Nicole Brewer, Christina Maimone, and Sandra Gesing - who, while choosing not to run for re-election this year, have left an indelible mark on US-RSE. Their decades of experience have been instrumental in expanding US-RSE, fostering connections within the broader research software community, and positioning US-RSE for a promising future.
