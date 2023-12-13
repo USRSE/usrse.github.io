@@ -6,19 +6,19 @@ menubar: about
 menubar_toc: true
 set_last_modified: true
 ---
-<!--
-**The [Election Results](/2022-12-10-election-results/) are in!  Congratulations to Julia Damerow, Rinku Gupta, Kenton McHenry, and Miranda Mundt.**
--->
 
-**Candidates for 2023 US-RSE have now been announced. Please visit [HERE](/2023-11-10-sc-candidates/) to get a list of candidates and their statements.**
+**The [Election Results](/2023-12-10-election-results/) are in!  Congratulations to Abbey Roelofs, Alex Koufos, Ian Cosden, Jeff Carver and Keith Beattie.**
+
+**Following the conclusion of the 2023 US-RSE Steering Committee elections, the information below is accessible on this webpage for readers or  US-RSE members interested in participating in the Steering Committee in the future. Please note that this webpage will be updated in latter part of 2024 for the new SC elections.**
 
 <hr>
 
-The 2023 US-RSE Steering Committee elections are happening this December.
+<!-- The 2023 US-RSE Steering Committee elections are happening this December. -->
 
 If you're interested in becoming part of the Steering Committee, we suggest you have a look at [Guidance for Potential Steering Committee Candidates](/2022-07-01-candidate-guidance/).
 
-## Timeline
+
+## 2023 Election Timeline
 
 * [Nominations open](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform): October 13, 2023
 * Nominations Due Date (Extended):  Nov 3, 2023
@@ -27,12 +27,11 @@ If you're interested in becoming part of the Steering Committee, we suggest you 
 * [Candidates Announced](/2023-11-10-sc-candidates/): Nov 10, 2023 
 * [Annual US-RSE General Meeting](https://us-rse.org/events/2023/2023-12-AGM), including candidate statements: Dec 1, 2023
 * Voting Open: Dec 1-8, 2023
-<!-- * [Election Results announced](/2022-12-10-election-results/): by December 13, 2023 -->
-* Election Results announced: by Dec 15, 2023
+* [Election Results announced](/2023-12-10-election-results/): by December 15, 2023
+<!-- * Election Results announced: by Dec 15, 2023 -->
 * Elected Steering Committee members take office: Jan 1, 2024
 
 
-  
 ## Positions and Eligibility
 
 Five Steering Committee seats are open in this election, each for a 2-year term (January 1, 2024 through December 31, 2025). The following steering committee members have terms that end this year: Nicole Brewer, Jeff Carver, Ian Cosden, Sandra Gesing, and Christina Maimone. 
