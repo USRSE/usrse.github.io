@@ -25,4 +25,4 @@ channel on the US-RSE slack or contact us on <a
 href="mailto:wg-national-labs-empowerment@us-rse.org">national lab empowerment working group
 email list</a>.
 
-**Co-chairs**: Gregory Lemieux and Keith Beatie
+**Co-chairs**: Gregory Lemieux and Keith Beattie
