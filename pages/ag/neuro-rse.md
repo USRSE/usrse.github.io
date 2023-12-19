@@ -1,10 +1,16 @@
-# Neuro-RSE affinity group
-
-## Overview
+---
+layout: page
+title: Neuro-RSE affinity group
+subtitle:
+menubar:
+permalink: /ag/neuro-rse/
+set_last_modified: true
+---
+# Overview
 
 Neuroscience RSE (Neuro-RSE) is an affinity group for those working on research software in neuroscience. We meet to support each other and discuss common issues and concerns.
 
-## Membership
+# Membership
 
 Neuro-RSE is open to anyone who considers themselves a research software engineer and who work in the field of neuroscience, regardless of job title or domain. This includes grad students and postdocs, as well as those in permanent positions with "engineer" or "scientist" in their title.
 
@@ -12,7 +18,7 @@ Membership is open to all [US-RSE members](https://us-rse.org/join/). As with ot
 
 To join, contact one of the coordinators on the US-RSE slack (see the [Questions?](#questions) section below).
 
-## Activities
+# Activities
 
 Neuro-RSE meets virtually monthly, with alternating times (one more East Coast-friendly, one more West Coast-friendly). Additional in-person meetings at RSE or Neuroscience events may also be organized.
 
@@ -20,11 +26,11 @@ During our meetings, we have brief lightning talks, to share our work with each 
 
 We have a Slack channel in the US-RSE space for discussions.
 
-## Questions?
+# Questions?
 
 Reach out to the Neuro-RSE coordinators Billy Broderick or David Nicholson on the [US-RSE slack](https://us-rse.org/join/) with questions.
 
-## Active members
+# Active members
 
 Active members attend our regular meetings at least once a quarter (once every 3 meetings).
 
@@ -33,15 +39,15 @@ Active members attend our regular meetings at least once a quarter (once every 3
 
 *YOUR NAME HERE*
 
-## Resources
-### Neuro-RSE groups
+# Resources
+## Neuro-RSE groups
 
 - [NeuroRSE group](https://neurorse.flatironinstitute.org/) at Flatiron Center for Computational Neuroscience
 - [Neuroinformatics Unit](https://neuroinformatics.dev/) at University College London)
 
 *YOUR GROUP HERE*
 
-### Jobs
+## Jobs
 
 - [US-RSE job board](https://us-rse.org/jobs/)
 - [RSE job board ](https://society-rse.org/careers/vacancies/) (international)
@@ -52,7 +58,7 @@ Active members attend our regular meetings at least once a quarter (once every 3
 - [neurotechx job board](https://neurotechx.com/find-a-job/)
 - [Academic Data Science Alliance job board ](https://academicdatascience.org/jobs/) (skews academic)
 
-### Other places to find jobs
+## Other places to find jobs
 
 - [jobRxiv job board](https://jobrxiv.org/) (skews academic)
 - [HigherEdJobs job board](https://www.higheredjobs.com/search/) (skews academic)
@@ -60,7 +66,7 @@ Active members attend our regular meetings at least once a quarter (once every 3
 - The usual job search websites (e.g., Google, Indeed, LinkedIn, Glassdoor)
 - Twitter (seriously)
 
-### Mailing lists
+## Mailing lists
 
 - [comp-neuro mailing list](https://www.cnsorg.org/comp-neuro-mailing-list)
 - [cvnet mailing list](https://lawton.ewind.com/mailman/listinfo/cvnet) (skews academic)
@@ -68,13 +74,13 @@ Active members attend our regular meetings at least once a quarter (once every 3
 - [neuroinfo mailing list](https://lists.incf.org/cgi-bin/mailman/listinfo/neuroinfo) (defunct?)
 - [connectionists mailing list](https://mailman.srv.cs.cmu.edu/mailman/listinfo/connectionists) (skews academic)
 
-### Google groups / mailing lists
+## Google groups / mailing lists
 
 - [systems-neuroscience google group](https://groups.google.com/g/systems-neuroscience) (skews academic) 
 - [cosyne-discussions google group](https://groups.google.com/g/cosyne-discussions) 
 - [neural-ensemble google group](https://groups.google.com/g/neuralensemble)
 
-### Conferences
+## Conferences
 - [Society for Neuroscience](https://www.sfn.org/) (largest American neuroscience conference)
 - [US-RSE](https://us-rse.org/events/conference/)
 - [COSYNE](https://www.cosyne.org/) (computational and systems neuroscience)
@@ -85,7 +91,7 @@ Active members attend our regular meetings at least once a quarter (once every 3
 - [BRAIN Initiative Meeting](https://braininitiative.nih.gov/news-events/events/10th-annual-brain-initiative-conference)
 - [FENS](fens.org/) (Federation of European Neuroscience Societies, largest European neuroscience conference)
 
-### Summer schools, workshops, etc.
+## Summer schools, workshops, etc.
 
 - [Neurohackademy](https://neurohackademy.org/) (neuroimaging-focused)
 - [Neuromatch Academy](https://academy.neuromatch.io/) (online)
