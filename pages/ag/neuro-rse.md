@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Neuro-RSE affinity group
+title: Neuro-RSE Affinity Group
 subtitle:
 menubar:
 permalink: /ag/neuro-rse/
