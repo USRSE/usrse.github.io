@@ -69,7 +69,7 @@ Active members attend our regular meetings at least once a quarter (once every 3
 ## Mailing lists
 
 - [comp-neuro mailing list](https://www.cnsorg.org/comp-neuro-mailing-list)
-- [cvnet mailing list](https://lawton.ewind.com/mailman/listinfo/cvnet) (skews academic)
+- [cvnet mailing list](http://nephoscale.ewind.com/mailman/listinfo/cvnet) (skews academic)
 - [visionlist mailing list](http://visionscience.com/mailman/listinfo/visionlist_visionscience.com) (skews academic)
 - [neuroinfo mailing list](https://lists.incf.org/cgi-bin/mailman/listinfo/neuroinfo) (defunct?)
 - [connectionists mailing list](https://mailman.srv.cs.cmu.edu/mailman/listinfo/connectionists) (skews academic)
