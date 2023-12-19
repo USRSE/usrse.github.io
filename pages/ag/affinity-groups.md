@@ -62,4 +62,10 @@ build RSE teams at their institution or move into RSE group leadership roles.  T
 are no formal requirements, but those with the experience and qualifications to take
 on leadership roles will likely benefit more than early career RSEs. 
 
+<h3><a href="{{ site.baseurl }}/ag/neuro-rse/">Neuro-RSE affinity group</a></h3>
+
+Neuroscience RSE (Neuro-RSE) is an affinity group for those working on research software in neuroscience. We meet to support each other and discuss common issues and concerns.
+
+Neuro-RSE is open to anyone who considers themselves a research software engineer and who work in the field of neuroscience, regardless of job title or domain. This includes grad students and postdocs, as well as those in permanent positions with "engineer" or "scientist" in their title.
+
 <hr>
