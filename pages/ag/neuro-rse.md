@@ -36,6 +36,7 @@ Active members attend our regular meetings at least once a quarter (once every 3
 
 - [Billy Broderick](wfbroderick.com/), data scientist at [Flatiron Institute's Center For Computational Neuroscience](https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/) 
 - David Nicholson
+- [Ryan Ly](https://www.linkedin.com/in/ryanly), scientific data engineer at Lawrence Berkeley National Lab
 - [Adam Tyson](https://adamltyson.com/), Head Research Engineer at the [Sainsbury Wellcome Centre's Neuroinformatics Unit](https://neuroinformatics.dev/)
   
 *YOUR NAME HERE*
