@@ -56,7 +56,7 @@ The [generous grant](https://us-rse.org/2023-04-27-sloan-grant-initiatives/) by 
 Our [first ever US-RSE conference](https://us-rse.org/usrse23/) in October was a great success and was sold out with 250 attendees. We received 94 submissions of which we accepted 73 (4 tutorials, 3 workshops, 6 Birds of a Feather, 19 short/long papers, 25 talks, 15 posters, 2 notebooks). The [program](https://us-rse.org/usrse23/program/) featured additionally [2 keynotes](https://us-rse.org/usrse23/program/keynotes/), a [funding agency panel](https://us-rse.org/usrse23/program/sessions/#session-9-panel---funding-agencies), a student program, sponsor talks, a poster reception, conference dinner and a social hour. This all would not have been possible without the support and work of so many people: the [organizing committee](https://us-rse.org/usrse23/organization/), the reviewers, the [sponsors](https://us-rse.org/usrse23/), the authors and last but not least the attendees! Many thanks for a vibrant conference full of positive energy!
 
 <a name="conference2024"></a>
-# **US-RSE Conference 2024  (USRSE'24)**
+# **US-RSE Conference 2024  (US-RSE'24)**
 **US-RSE'24 Conference Update: Dates and Venue Announcement**
 
 We have some exciting news to share. The official dates and venue for US-RSE'24 have been announced! Our next conference will be Tuesday, October 15 through Thursday, October 17th, at the Albuquerque Convention Center in Albuquerque, NM. View the [website](https://us-rse.org/usrse24/) for more details and to stay up to date on recent events!
