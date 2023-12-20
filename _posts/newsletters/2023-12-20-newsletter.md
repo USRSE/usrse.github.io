@@ -330,7 +330,7 @@ The following boards might also be of interest.
 Please read our [job posting policy](/jobs/policy/) first, then fill out this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSfYK64R1c0rj-ERldGLxuqedLIbsYPZXj9uBplDRYNmnND10Q/viewform?usp=sf_link) to request additions to the job board.
 
 
-#
+
 
 **This newsletter is a joint effort of members of the US-RSE Association.**
 
