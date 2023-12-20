@@ -134,7 +134,7 @@ The DEI WG is planning more celebration events for 2024. Next up is Black Histor
 
 ### DEI Media Club - CODE: Debugging the Gender Gap
 
-Join us for our next [DEI Media Club discusssion](https://us-rse.org/events/repeated/dei-media-club/) (Thursday, January 11th, at 12pm ET/11am CST/10am MT/9am PT) about [CODE documentary](https://www.finishlinefeaturefilms.com/code/) exposes the dearth of American female and minority software engineers and explores the reasons for this gender gap. CODE raises the question: what would society gain from having more women and minorities code?
+Join us for our next [DEI Media Club discussion](https://us-rse.org/events/repeated/dei-media-club/) (Thursday, January 11th, at 12pm ET/11am CST/10am MT/9am PT) about [CODE documentary](https://www.finishlinefeaturefilms.com/code/) exposes the dearth of American female and minority software engineers and explores the reasons for this gender gap. CODE raises the question: what would society gain from having more women and minorities code?
 
 ### US-RSE Demographics Survey
 The DEI WG is helping contribute towards DEI oriented metrics in the US-RSE member survey. Join us at [#demographics-survey](https://usrse.slack.com/archives/C055D283JH2).
