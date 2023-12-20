@@ -124,7 +124,7 @@ US-RSE is happy to be continuing its series of conversations with funders for 1)
 
 Visit the [Funder Talk Series](https://us-rse.org/wg/outreach/#funder-series) for more information and links to past presentations.
 
-This December talk featured Adrian Price-Whelan, Assistant Director of Scientific Software at the Simons Foundation. In addition to his work as a funder, Adrian actively contributes to the scientific open-source software ecosystem and has been a leader in the Astropy Project, a large community software project that supports astronomical research in Python.
+The December talk featured Adrian Price-Whelan, Assistant Director of Scientific Software at the Simons Foundation. In addition to his work as a funder, Adrian actively contributes to the scientific open-source software ecosystem and has been a leader in the Astropy Project, a large community software project that supports astronomical research in Python.
 #
 <a name="rse-gln"></a>
 ## RSE Group Leaders' Network (RSE-GLN)   
