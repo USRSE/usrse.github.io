@@ -122,7 +122,7 @@ In order of appearance:
 ## US-RSE Funders Talk Series: Adrian Price-Whelan - Simons Foundation (Past)
 US-RSE is happy to be continuing its series of conversations with funders for 1) RSEs to learn about funding opportunities and review and other processes, 2) RSEs to ask questions of the funder, and 3) funders to ask questions and learn about RSEs.
 
-Visit the [Funder Talk Series](https://us-rse.org/wg/outreach/#funder-series) for more information and links to past presentations.
+Visit the [Funder Talk Series](https://us-rse.org/wg/outreach/#funder-series) page for more information and links to past presentations.
 
 The December talk featured Adrian Price-Whelan, Assistant Director of Scientific Software at the Simons Foundation. In addition to his work as a funder, Adrian actively contributes to the scientific open-source software ecosystem and has been a leader in the Astropy Project, a large community software project that supports astronomical research in Python.
 #
