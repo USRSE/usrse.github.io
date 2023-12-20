@@ -51,6 +51,10 @@ The [generous grant](https://us-rse.org/2023-04-27-sloan-grant-initiatives/) by 
 * Three main activities and initiatives will be funded through the grant: The US-RSE Annual Conference, a Community Funds Program, and an Awards Program.
 * Developing and maintaining a vibrant and functional community network requires infrastructure. To alleviate the struggles of the current process, we’ll invest in infrastructure for managing contact information for those in the network, facilitating networking opportunities between members, allowing people to choose their level of involvement in network activities, and communicating with members. 
 
+## Community and Travel Funds Program
+
+Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the Community and Travel Funds program. Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more. The next deadline is **December 31, 2023**! See the [webpage](https://us-rse.org/grants-and-awards/) for more details. 
+
 <a name="conference2023"></a>
 # **US-RSE Conference 2023 Recap (US-RSE'23)**
 Our [first ever US-RSE conference](https://us-rse.org/usrse23/) in October was a great success and was sold out with 250 attendees. We received 94 submissions of which we accepted 73 (4 tutorials, 3 workshops, 6 Birds of a Feather, 19 short/long papers, 25 talks, 15 posters, 2 notebooks). The [program](https://us-rse.org/usrse23/program/) featured additionally [2 keynotes](https://us-rse.org/usrse23/program/keynotes/), a [funding agency panel](https://us-rse.org/usrse23/program/sessions/#session-9-panel---funding-agencies), a student program, sponsor talks, a poster reception, conference dinner and a social hour. This all would not have been possible without the support and work of so many people: the [organizing committee](https://us-rse.org/usrse23/organization/), the reviewers, the [sponsors](https://us-rse.org/usrse23/), the authors and last but not least the attendees! Many thanks for a vibrant conference full of positive energy!
