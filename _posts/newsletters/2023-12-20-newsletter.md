@@ -155,7 +155,7 @@ The User Experience Working Group (UXWG) is a newly formed working group. Co-cha
 ## Community Calls
  
  
- ### January Community Call 
+### January Community Call 
 
 **Call for Presenters: Present Your Favorite Tools or Project!**
 
