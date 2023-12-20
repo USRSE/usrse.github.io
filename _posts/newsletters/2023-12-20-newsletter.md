@@ -186,7 +186,7 @@ US-RSE has had a lot of momentum and positive energy from the beginning in 2017.
 Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the Community and Travel Funds program. Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more. The next deadline is **December 31, 2023**! See the [webpage](https://us-rse.org/grants-and-awards/) for more details. 
 #
 
-## Survey to understand how members of the research software engineering community consider cyber security when writing software
+## Survey to understand how members of the research software engineering community consider cybersecurity when writing software
 
 As a member of the RSE community, we value your input. To participate, you will complete a survey that takes 20-30 minutes.
 
