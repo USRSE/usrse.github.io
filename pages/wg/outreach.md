@@ -76,6 +76,8 @@ to speak to members of US-RSE. These funders will bring essential information
 about opportunities, strategies, and starting points for finding funding.
 
 #### Upcoming Presentations
+__2024-01-29 Ashley Sands__ - Institute of Museum and Library Services: [Event info and registration]({{ site.baseurl }}/events/2024/2024-01-funder-talk-series/)
+
 
 Please keep an eye out for future announcements regarding this series.
 
