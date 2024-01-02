@@ -11,20 +11,23 @@ set_last_modified: true
 
 ### Current Steering Committee
 
-* Nicole Brewer, Arizona State University, 2022-2023, International RSE Council Representative
-* Jeffrey C. Carver, University of Alabama, 2019-2023, Vice Chair & International RSE Council Representative
-* Ian Cosden, Princeton University, 2019-2023, Chair
-* Julia Damerow, Arizona State University, 2021-2024, Treasurer
-* Rinku Gupta, Argonne National Laboratory, 2023-2024, Election Co-Chair
-* Christina Maimone, Northwestern University, 2019-2023
-* Kenton McHenry, University of Illinois at Urbana-Champaign, 2023-2024, Election Co-Chair
-* Miranda Mundt, Sandia National Laboratories, 2023-2024, Secretary & Community Builder Group Representative
+* Keith Beattie, Lawrence Berkeley National Laboratory, 2024-2025
+* Jeffrey C. Carver, University of Alabama, 2019-2025
+* Ian Cosden, Princeton University, 2019-2025
+* Julia Damerow, Arizona State University, 2021-2024
+* Rinku Gupta, Argonne National Laboratory, 2023-2024
+* Alex Koufos, Stanford University, 2024-2025
+* Kenton McHenry, University of Illinois at Urbana-Champaign, 2023-2024
+* Miranda Mundt, Sandia National Laboratories, 2023-2024
+* Abbey Roelofs, University of Michigan, 2024-2025
 
 ### Former Steering Committee Members
 
+* Nicole Brewer, Arizona State University, 2022-2023
 * Chris Hill, MIT, 2019-2022
 * Sandra Gesing, University of Illinois Discovery Partner Institute, 2019-2023
 * Daniel S. Katz, University of Illinois at Urbana-Champaign, 2019-2022
+* Christina Maimone, Northwestern University, 2019-2023
 * Lance Parsons, Princeton University, 2019-2022
 * Charles Ferenbaugh, Los Alamos National Laboratory, 2019-2021
 * Jordan Perr-Sauer, National Renewable Energy Laboratory, 2019-2020
