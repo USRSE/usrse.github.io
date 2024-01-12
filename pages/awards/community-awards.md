@@ -22,7 +22,8 @@ supported Community Awards for US-RSE members and RSE community. The goals of th
 
 The 2024 awards is the first year of these awards. 
 
-### 2024 Award Types
+### 2024 Award Types OR ### Call for 2024 US-RSE Community Awards
+### Add the actual call!!!!
 
 The following two awards will be offered in year 2024.
 
