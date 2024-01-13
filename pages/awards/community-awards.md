@@ -89,11 +89,6 @@ interest in participating. The information will not be made public.
 </details>
 
 <details>
-  <summary><b>Q: Is there a way to submit a pdf or supplemental documentation on the form?</b></summary>
-    A: A link to suppplemental documentation can be provided in your 500 word summary. </a>.
-</details>
-
-<details>
   <summary><b>Q: Do applicants have to be based in the U.S. to apply?</b></summary>
     A: No; any member of US-RSE is eligible to apply.
 </details>
