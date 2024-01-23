@@ -232,7 +232,9 @@
     "roelofsaj": {
         "name": "Abbey Roelofs",
         "blog": "https://github.com/roelofsaj",
-        "bio": "Research software engineer in LSA Technology Services at the University of Michigan"
+        "bio": "Research software engineer in LSA Technology Services at the University of Michigan",
+        "orcid": "0000-0002-5974-7235",
+        "affiliation": "Universiteit Antwerpen"
     },
     "mtbc": {
         "name": "Mark Carroll",
