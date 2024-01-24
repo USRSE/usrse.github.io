@@ -137,7 +137,7 @@ We'd also love your [input and assistance for future events](https://docs.google
 
 ### DEI Media Club - Next event will be March 21
 
-Join us for our next [DEI Media Club discusssion](https://us-rse.org/events/repeated/dei-media-club/) (Thursday, March 21st, at 12pm ET/11am CST/10am MT/9am PT). Ping us on Slack (@wg-dei), email ([wg-dei@us-rse.org](mailto:wg-dei@us-rse.org)), or through our [general DEI feedback form](https://docs.google.com/forms/d/e/1FAIpQLSdtCVAmJnUQCKnIXdn93xN5e9_zCQkrVdQsnPOiSBIcptma6w/viewform).
+Join us for our next [DEI Media Club discussion](https://us-rse.org/events/repeated/dei-media-club/) (Thursday, March 21st, at 12pm ET/11am CST/10am MT/9am PT). Ping us on Slack (@wg-dei), email ([wg-dei@us-rse.org](mailto:wg-dei@us-rse.org)), or through our [general DEI feedback form](https://docs.google.com/forms/d/e/1FAIpQLSdtCVAmJnUQCKnIXdn93xN5e9_zCQkrVdQsnPOiSBIcptma6w/viewform).
 
 
 ---
