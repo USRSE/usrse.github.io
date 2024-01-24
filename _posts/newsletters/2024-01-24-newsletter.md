@@ -151,9 +151,9 @@ For US-RSE members, joining our meeting is a chance to get familiar with the kin
 
 The UXWG strives for regular, productive meetings that accommodate multiple schedules. We meet on the 3rd Tues of odd months at 2 PM ET/1 PM CST/11 AM PT/12 PM MT, and, on even months, the 3rd Wed at 4:30 PM ET/3:30 PM CST/1:30 PM PT/12 PM MT.
 
-Next meeting: Feb 21, 4:30 PM Eastern 
-https://utah.zoom.us/j/97840166678?pwd=Yi9kZTZ2eGVib3pNeWduSjNqVnNvUT09
-Meeting ID: 978 4016 6678
+Next meeting: Feb 21, 4:30 PM Eastern  
+[https://utah.zoom.us/j/97840166678?pwd=Yi9kZTZ2eGVib3pNeWduSjNqVnNvUT09](https://utah.zoom.us/j/97840166678?pwd=Yi9kZTZ2eGVib3pNeWduSjNqVnNvUT09)  
+Meeting ID: 978 4016 6678   
 Passcode: 208039
 
 Join us on Slack in the [#wg-ux](https://app.slack.com/client/T8ZT4PJSW/C0664AMJBKQ) channel.
