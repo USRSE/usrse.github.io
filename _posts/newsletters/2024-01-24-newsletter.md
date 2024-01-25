@@ -107,7 +107,7 @@ Visit the [Funder Talk Series](https://us-rse.org/wg/outreach/#funder-series) fo
 
 <a name="member-spotlight"></a>
 ## Member Spotlight
-We are seeking content for a new section of the newsletter that will highlight both newer and seasoned members throughout the year. Please send Sophia Anyatonwu, US-RSE Community Manager, a summary (through Slack or email sophia@us-rse.org) related to one of the below topics:
+We are seeking content for a new section of the newsletter that will highlight both newer and seasoned members throughout the year. Please send Sophia Anyatonwu, US-RSE Community Manager, a summary (through Slack or email sophia@us-rse.org) related to one of these topics:
 * What you are currently working on/contributing to in the US-RSE community
 * What you are actively planning on participating in this year as a member of US-RSE
 * Past projects/work you have participated in through US-RSE that you are proud of
