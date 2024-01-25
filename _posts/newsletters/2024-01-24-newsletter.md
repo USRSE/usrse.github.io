@@ -352,8 +352,7 @@ These opportunities were recently posted to the [RSE Opportunities page](https:/
 
 Related Openings
 1. [Scientific Applications Engineer: Ohio Supercomputer Center, Columbus, OH (hybrid possible)](https://osu.wd1.myworkdayjobs.com/OSUCareers/job/Columbus-Campus/Scientific-Applications-Engineer_R96015-1) Posted: Jan 09, 2024
-2. [Data Science Facilitator: Data Science Hub / University of Wisconsin-Madison, Madison, WI](https://jobs.wisc.edu/jobs/data-science-facilitator-madison-wisconsin-united-states) Posted: Jan 03, 2024
-3. [Research Computing Facilitator: University of Massachusetts Dartmouth, Dartmouth, MA](http://careers.umassd.edu/dartmouth/en-us/job/521528/professional-technician-i-or-iiresearch-computing-facilitator) Posted: Dec 06, 2023
+2. [Research Computing Facilitator: University of Massachusetts Dartmouth, Dartmouth, MA](http://careers.umassd.edu/dartmouth/en-us/job/521528/professional-technician-i-or-iiresearch-computing-facilitator) Posted: Dec 06, 2023
 
 
 Internships
