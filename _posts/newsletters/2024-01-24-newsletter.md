@@ -96,7 +96,7 @@ In addition, we want to express our gratitude to the three outgoing Steering Com
 ## US-RSE Funders Talk Series: Ashley Sands
 US-RSE is happy to be continuing its series of conversations with funders for 1) RSEs to learn about funding opportunities and review and other processes, 2) RSEs to ask questions of the funder, and 3) funders to ask questions and learn about RSEs.
 
-This talk in the US-RSE Funder Talk Series will feature Ashley Sands, Senior Library Program Officer in the Institute of Museum and Library Services, presenting “Research Software, Libraries, and Funding Opportunities”.
+This talk in the US-RSE Funder Talk Series will feature Ashley Sands, Senior Library Program Officer in the Institute of Museum and Library Services, a federal funding agency that supports work in and affecting the museum and library communities, presenting “Research Software, Libraries, and Funding Opportunities”.
 
 This event will take place Monday, January 29th at 3 PM ET, 2 PM CT, 1 PM MT, 12 PM PT
 
