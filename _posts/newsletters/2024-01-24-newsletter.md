@@ -259,7 +259,7 @@ Virtual Conference Passes are available.
 <a name="reads"></a>
 # **Interesting Reads, Videos, or Podcasts**
 
-* [Software and skills for research computing in the UK](https://zenodo.org/records/10473186) by Michelle Barker, Elena Breitmoser, Philippa Broadbent, Neil Chue Hong, Simon Hettrick, Ioanna Lampaki,  Anthony Quinn, and Rebecca Taylor 
+* [Software and skills for research computing in the UK](https://doi.org/10.5281/zenodo.10473186) by Michelle Barker, Elena Breitmoser, Philippa Broadbent, Neil Chue Hong, Simon Hettrick, Ioanna Lampaki,  Anthony Quinn, and Rebecca Taylor 
 * [Make-or-buy decisions in research and research software](https://danielskatzblog.wordpress.com/2023/12/07/make-or-buy-decisions/) by Daniel S. Katz
 * [Code for Thought: Patterns in Science And Medicine - Veronika Cheplygina](https://codeforthought.buzzsprout.com/1326658/14338771-en-patterns-in-science-and-medicine-veronika-cheplygina) by Peter Schmidt
 * [Code for Thought: Net Zero and Computing? Part I: Wim Vanderbauwhede and John Wernvik](https://codeforthought.buzzsprout.com/1326658/14291879-en-net-zero-and-computing-part-i-wim-vanderbauwhede-and-john-wernvik)  by Peter Schmidt
