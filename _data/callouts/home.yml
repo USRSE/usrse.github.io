@@ -1,13 +1,13 @@
 style: is-light
 items:
-  - title: 2023 Annual General Meeting
-    subtitle: The fourth US-RSE Association Annual General Meeting (AGM) will take place on Friday, December 1, 2023 from 1-3pm ET.
-    link: https://us-rse.org/events/2023/2023-12-AGM/
-    link_name: Register for the AGM
-  - title: Career Guidebook
-    subtitle: Advice on hiring and supporting RSEs and Data Scientists in academia
-    link: https://zenodo.org/record/8274378
-    link_name: Download the Guide
+  - title: Save the Date!
+    subtitle: The second annual US-RSE Conference will take place October 15-17, 2024 in Albuquerque, NM
+    link: http://us-rse.org/usrse24/
+    link_name: Full Details
+  - title: Get Involved
+    subtitle: Community and working group events can be found on the Events page
+    link: https://us-rse.org/events/
+    link_name: Find an Upcoming Event
   - title: Community and Travel Funds
     subtitle: US-RSE is accepting applications to provide funding to support members in activities for the community and individuals!
     link: /funds-and-awards/
