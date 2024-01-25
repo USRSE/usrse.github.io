@@ -38,7 +38,7 @@ The [generous grant](https://us-rse.org/2023-04-27-sloan-grant-initiatives/) by 
 * Three main activities and initiatives will be funded through the grant: The US-RSE Annual Conference, a Community Funds Program, and an Awards Program.
 * Developing and maintaining a vibrant and functional community network requires infrastructure. To alleviate the struggles of the current process, we’ll invest in infrastructure for managing contact information for those in the network, facilitating networking opportunities between members, allowing people to choose their level of involvement in network activities, and communicating with members. 
 
-## Community and Travel Funds program: Joint Maths Meetings 2024
+## Community and Travel Funds program: Joint Mathematics Meetings 2024
 
 
 Local RSEs met in early January for the "Reception for Mathematics Software Developers" at the American Mathematical Society's Joint Mathematics Meetings in San Francisco! The reception was made possible through our [Community and Travel Funds program](https://us-rse.org/grants-and-awards/).
@@ -102,7 +102,8 @@ This event will take place Monday, January 29th at 3 PM ET, 2 PM CT, 1 PM MT, 12
 
 Please join us in this interactive conversation. (If you can’t participate in the interactive event, where you will be able to ask questions and help funders understand US-RSE, it will also be recorded.)
 
-Visit the [Funder Talk Series](https://us-rse.org/wg/outreach/#funder-series) for more information and links to past presentations.
+Visit the [Funder Talk Series](https://us-rse.org/wg/outreach/#funder-series) for more information and links to past presentations. 
+If you have suggestions for future talks, please contact [Dan Katz](mailto:d.katz@ieee.org).
 
 
 <a name="member-spotlight"></a>
@@ -193,7 +194,7 @@ One weekday and one weekend time slot will be set aside each month for US-RSE me
 Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/grants-and-awards/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more. Apply today!
 
 
-## Survey to understand how members of the research software engineering community consider cyber security when writing software
+## Survey to understand how RSEs consider cybersecurity when writing software
 
 Calling all research software engineers! We’re exploring how security is perceived in our community, and we want to hear from you. Whether you think about security every day or rarely think about security, your insights are invaluable to us. To participate, you will complete a survey that takes 20-30 minutes.
 
@@ -289,7 +290,6 @@ The Outreach Working Group is actively recruiting new co-chairs to take over its
 
 If you are interested in contributing to a US-RSE hosted event, please reach out to the working group via the [#wg-outreach](https://app.slack.com/client/T8ZT4PJSW/CNR6E0N75) slack channel or [wg-outreach@us-rse.org](mailto:wg-outreach@us-rse.org).
 
-The Funders Talk Series will host [Ashley Sands from the Institute of Museum and Library Services](https://us-rse.org/events/2024/2024-01-funder-talk-series/) on January 29th, 2024. Slides and a video of the talk will be posted afterwards. If you have suggestions for future talks, please contact [Dan Katz](mailto:d.katz@ieee.org).
 
 <a name="financials"></a>
 # **US-RSE Financials**
@@ -311,15 +311,15 @@ As always we thank everyone who is already contributing for their help in shapin
 
 [US-RSE Working Groups](https://us-rse.org/working-groups/):
 
+* [Code Review](https://us-rse.org/wg/code-review/)
 * [Diversity, Equity, and Inclusion](https://us-rse.org/wg/dei/)
 * [Education & Training](https://us-rse.org/wg/education_training/)
 * [Group Management](https://us-rse.org/wg/group-management/)
+* [Mentorship Program](https://us-rse.org/wg/mentorship-program/)
 * [Outreach](https://us-rse.org/wg/outreach/)
 * [RSE Empowerment in National Labs](https://us-rse.org/wg/rse-empowerment-national-labs/)
-* [Website](https://us-rse.org/wg/website/)
-* [Code Review](https://us-rse.org/wg/code-review/)
 * [User Experience](https://us-rse.org/wg/ux/)
-* [Mentorship Program](https://us-rse.org/wg/mentorship-program/)
+* [Website](https://us-rse.org/wg/website/)
 
 
 <a name="jobs"></a>
@@ -327,16 +327,18 @@ As always we thank everyone who is already contributing for their help in shapin
 
 These opportunities were recently posted to the [RSE Opportunities page](https://us-rse.org/jobs/):
 
-1. [Postdoc - Syracuse University Open Source Project Office: Syracuse University, Syracuse, NY](https://www.sujobopps.com/postings/103239) Posted: Jan 09, 2024
-2. [Software Engineer, Humanities Research Computing: Harvard University, Remote eligible from a Harvard-registered payroll state (MA, CT, ME, NH, RI, VT, GA, IL, MD, NJ, NY, VA, WA, CA)](https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25240&siteid=5341&PageType=JobDetails&jobid=2000316#jobDetails=2000316_5341) Posted: Jan 09, 2024
-3. [Software Developer, Open Source Program Office: The George Washington University, Washington, DC](https://www.gwu.jobs/postings/108075) Posted: Jan 09, 2024
-4. [Research Software Engineer level III or IV: University of Florida, Gainesville, FL](https://explore.jobs.ufl.edu/en-us/job/529811/research-software-engineer-iiiiv) Posted: Jan 05, 2024
-5. [Research Software Engineer level I or II: University of Florida, Gainesville, FL](https://explore.jobs.ufl.edu/en-us/job/529809/research-software-engineer-iii) Posted: Jan 05, 2024
-6. [Scientific Python Programmer (Astronomy): Space Telescope Science Institute, Baltimore, MD, USA (must live within or relocate to MD or a surrounding state)](https://recruiting2.ultipro.com/SPA1004AURA/JobBoard/93330e50-7b3a-4ba8-94f2-6f32360aa4e1/OpportunityDetail?opportunityId=be3bc7c7-1e13-428d-af11-d49e77a343a1) Posted: Dec 23, 2023
-7. [Senior Research Cloud Computing Architect and Engineer: Salk Institute for Biological Studies, La Jolla, California](https://recruiting2.ultipro.com/SAL1013SIBS/JobBoard/e9f055e1-a105-4f91-9a67-21aea61655fa/OpportunityDetail?opportunityId=632ab1d6-280e-40cb-8afc-42446cb1aed2) Posted: Dec 22, 2023
-8. [Research Cloud Software Engineer: Salk Institute for Biological Studies, La Jolla, California](https://recruiting2.ultipro.com/SAL1013SIBS/JobBoard/e9f055e1-a105-4f91-9a67-21aea61655fa/OpportunityDetail?opportunityId=632ab1d6-280e-40cb-8afc-42446cb1aed2) Posted: Dec 22, 2023
-9. [Software Engineer/Developer: Harvard Medical School, Boston, MA (on-site)](https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25240&siteid=5341&PageType=JobDetails&jobid=1999498#jobDetails=1999498_5341) Posted: Dec 19, 2023
-10. [Research Software Engineer II (Language and Intelligence): Princeton University, Princeton, NJ](https://main-princeton.icims.com/jobs/17996/research-software-engineer-ii/job?mode=view&mobile=false&width=978&height=500&bga=true&needsRedirect=false&jan1offset=-360&jun1offset=-300) Posted: Dec 14, 2023
+1. [Software Scientist: Open Free Energy/Open Molecular Software Foundation, fully remote](https://openfree.energy/careers/postings/2024-9677) Posted: Jan 24, 2024
+2. [Professional Services Engineer: University of Chicago (Globus), Hybrid - in person meetings attendance required](https://uchicago.wd5.myworkdayjobs.com/en-US/External/job/Professional-Services-Engineer_JR24929) Posted: Jan 22, 2024
+3.   [Postdoc - Syracuse University Open Source Project Office: Syracuse University, Syracuse, NY](https://www.sujobopps.com/postings/103239) Posted: Jan 09, 2024
+4. [Software Engineer, Humanities Research Computing: Harvard University, Remote eligible from a Harvard-registered payroll state (MA, CT, ME, NH, RI, VT, GA, IL, MD, NJ, NY, VA, WA, CA)](https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25240&siteid=5341&PageType=JobDetails&jobid=2000316#jobDetails=2000316_5341) Posted: Jan 09, 2024
+5. [Software Developer, Open Source Program Office: The George Washington University, Washington, DC](https://www.gwu.jobs/postings/108075) Posted: Jan 09, 2024
+6. [Research Software Engineer level III or IV: University of Florida, Gainesville, FL](https://explore.jobs.ufl.edu/en-us/job/529811/research-software-engineer-iiiiv) Posted: Jan 05, 2024
+7. [Research Software Engineer level I or II: University of Florida, Gainesville, FL](https://explore.jobs.ufl.edu/en-us/job/529809/research-software-engineer-iii) Posted: Jan 05, 2024
+8. [Scientific Python Programmer (Astronomy): Space Telescope Science Institute, Baltimore, MD, USA (must live within or relocate to MD or a surrounding state)](https://recruiting2.ultipro.com/SPA1004AURA/JobBoard/93330e50-7b3a-4ba8-94f2-6f32360aa4e1/OpportunityDetail?opportunityId=be3bc7c7-1e13-428d-af11-d49e77a343a1) Posted: Dec 23, 2023
+9. [Senior Research Cloud Computing Architect and Engineer: Salk Institute for Biological Studies, La Jolla, California](https://recruiting2.ultipro.com/SAL1013SIBS/JobBoard/e9f055e1-a105-4f91-9a67-21aea61655fa/OpportunityDetail?opportunityId=632ab1d6-280e-40cb-8afc-42446cb1aed2) Posted: Dec 22, 2023
+10. [Research Cloud Software Engineer: Salk Institute for Biological Studies, La Jolla, California](https://recruiting2.ultipro.com/SAL1013SIBS/JobBoard/e9f055e1-a105-4f91-9a67-21aea61655fa/OpportunityDetail?opportunityId=632ab1d6-280e-40cb-8afc-42446cb1aed2) Posted: Dec 22, 2023
+11. [Software Engineer/Developer: Harvard Medical School, Boston, MA (on-site)](https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25240&siteid=5341&PageType=JobDetails&jobid=1999498#jobDetails=1999498_5341) Posted: Dec 19, 2023
+12. [Research Software Engineer II (Language and Intelligence): Princeton University, Princeton, NJ](https://main-princeton.icims.com/jobs/17996/research-software-engineer-ii/job?mode=view&mobile=false&width=978&height=500&bga=true&needsRedirect=false&jan1offset=-360&jun1offset=-300) Posted: Dec 14, 2023
 13. [ML Research Scientist: Kempner Institute, Harvard University, Cambridge, MA](https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25240&siteid=5341&PageType=JobDetails&jobid=1997928#jobDetails=1997928_5341) Posted: Dec 07, 2023
 14. [Computational Astrophysics Postdoctoral Researcher: Los Alamos National Laboratory, Los Alamos, NM](https://lanl.jobs/search/jobdetails/computational-astrophysics-postdoctoral-researcher/134ff8d2-8ee0-47cb-ae16-e84db7651767) Posted: Dec 06, 2023
 15. [Full Stack Developer: Institute for Genomic Medicine, Nationwide Children's Hospital, Columbus, Ohio](https://external-nationwidechildrens.icims.com/jobs/47454/igm-full-stack-developer/job?mobile=false&width=1170&height=500&bga=true&needsRedirect=false&jan1offset=-300&jun1offset=-240) Posted: Dec 05, 2023
