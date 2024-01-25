@@ -112,7 +112,7 @@ We are seeking content for a new section of the newsletter that will highlight b
 * What you are actively planning on participating in this year as a member of US-RSE
 * Past projects/work you have participated in through US-RSE that you are proud of
 * Resources from the US-RSE community that you are starting to apply (or have already applied) professionally or personally
-* If you have landed a job through US-RSE's job board (a summary of how that happened and who was involved), or you helped someone else land an interview or job (this can be a collaborative piece if needed)
+* A summary of how you landed a job through US-RSE's job board and who was involved, or a similar item about how you helped someone else land an interview or job, perhaps in collaboration with that person
 
 
 <a name="member-snapshot"></a>
