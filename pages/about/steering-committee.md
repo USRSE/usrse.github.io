@@ -11,15 +11,15 @@ set_last_modified: true
 
 ### Current Steering Committee
 
-* Keith Beattie, Lawrence Berkeley National Laboratory, 2024-2025
-* Jeffrey C. Carver, University of Alabama, 2019-2025
-* Ian Cosden, Princeton University, 2019-2025
-* Julia Damerow, Arizona State University, 2021-2024
-* Rinku Gupta, Argonne National Laboratory, 2023-2024
-* Alex Koufos, Stanford University, 2024-2025
-* Kenton McHenry, University of Illinois at Urbana-Champaign, 2023-2024
-* Miranda Mundt, Sandia National Laboratories, 2023-2024
-* Abbey Roelofs, University of Michigan, 2024-2025
+* Keith Beattie, Lawrence Berkeley National Laboratory, 2024-2025, Election Co-Chair & International RSE Council Representative
+* Jeffrey C. Carver, University of Alabama, 2019-2025, Vice Chair
+* Ian Cosden, Princeton University, 2019-2025, Chair
+* Julia Damerow, Arizona State University, 2021-2024, Treasurer
+* Rinku Gupta, Argonne National Laboratory, 2023-2024, International RSE Council Representative
+* Alex Koufos, Stanford University, 2024-2025, Election Co-Chair
+* Kenton McHenry, University of Illinois at Urbana-Champaign, 2023-2024, Community Builder Group Representative
+* Miranda Mundt, Sandia National Laboratories, 2023-2024, Secretary
+* Abbey Roelofs, University of Michigan, 2024-2025, Deputy Treasurer
 
 ### Former Steering Committee Members
 
