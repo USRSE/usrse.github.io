@@ -52,7 +52,7 @@ Organizations
 
 - [Code.org's Approach to Diversity and Equity in Computer Science](https://code.org/diversity)
 
-Arcles
+Articles
 
 - [The Unwritten Laws of Physics for Black
   Women](https://www.wired.com/story/the-unwritten-laws-of-physics/)
