@@ -42,7 +42,7 @@ Events/Conferences
 
 - [National Society of Black Physicists](https://nsbp.org/) - November
 
-Ornizations
+Organizations
 
 - [African American Women in Physics](https://aawip.com/)
 
