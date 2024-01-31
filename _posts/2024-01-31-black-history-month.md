@@ -18,7 +18,7 @@ publishing these posts throughout February to highlight such people, where we
 talk about the person and tie their work and life to the RSE movement.
 
 Conversations around race in tech are happening daily, and there are numerous
-articles on the topic. One of the articles we want to share was a 2021 article
+articles on the topic. One of the articles we want to share is a 2021 article
 from ACM that interviewed an array of Black ACM Fellows, volunteers and members
 about their careers in computing. [Black History Month
 2021](https://www.acm.org/diversity-inclusion/bhm-2021)
