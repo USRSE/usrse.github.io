@@ -12,50 +12,52 @@ menubar_toc: true
 ### Overview
 
 The [Alfred P. Sloan Foundation grant](https://us-rse.org/2023-04-27-sloan-grant-initiatives/)
-supported Community Awards for US-RSE members and RSE community. The goals of this award program are to:
+supported Community Awards for US-RSE members and the RSE community. The goals of this award program are to:
 
-- Recognize individuals who have made noteworthy contributions to RSE community
-- Recognize individuals who have helped US-RSE mission
-- Connect people within the US-RSE community
-- Assist individuals to grow in their own career
-- Increase visibility and viability of Research Software Engineering as a career
+- Recognize individuals who have made noteworthy contributions to RSE community.
+- Recognize individuals who have helped US-RSE mission.
+- Connect people within the US-RSE community.
+- Assist individuals to grow in their own career.
+- Increase visibility and viability of Research Software Engineering as a career.
 
 The 2024 awards is the first year of these awards. 
 
-### 2024 Award Types OR ### Call for 2024 US-RSE Community Awards
-### Add the actual call!!!!
+### Call for 2024 US-RSE Community Awards
 
-The following two awards will be offered in year 2024.
+The following two awards will be offered in year 2024. 
 
 **US-RSE Excellence in Service**: 
-Award presented to a US-RSE member for outstanding contributions to the growth of the US-RSE organization and dedicated support for its mission. Current US-RSE steering committee and staff members cannot be nominated.
+The 2024 US-RSE Excellence in Service Award recognizes a member's exceptional dedication to fostering the growth and advancing the mission of the US-RSE organization. The recipient of this award will receive an award certificate, recognition on the US-RSE website, and acknowledgment at the [US-RSE'24](https://us-rse.org/usrse24) conference. Nominees must not currently serve on the US-RSE steering committee, award committee, or be part of the staff.
+
+**Criteria:**
+* Nominated candidates must be current US-RSE members.
+* Candidates must provide demonstrable evidence of their outstanding contributions to the US-RSE organization, showcasing their commitment to its mission and goals.
 
 **US-RSE Impact Award**: 
-Recognition award honoring an individual for exceptional contributions and impact in the RSE profession. Eligible achievements encompass diverse areas, such as training and educating RSEs, enhancing RSE status through related activities, impactful authorship for increased visibility, and fostering the growth of RSE communities.  Current US-RSE steering committee and staff members cannot be nominated.
+The US-RSE Impact Award honors an individual's remarkable contributions and influence within the Research Software Engineering (RSE) profession. It celebrates achievements across various domains, including but not limited to: advancing RSE training and education, elevating RSE status through impactful activities, authoring influential works to enhance visibility, and nurturing the development of RSE communities. The recipient of this award will receive an award certificate, recognition on the US-RSE website, and acknowledgment at the [US-RSE'24](https://us-rse.org/usrse24) conference. Nominees must not currently serve on the US-RSE steering committee, award committee, or be part of the staff.
 
-If you have questions, please send them via email to [awards@us-rse.org](mailto:awards@us-rse.org)
-or ask in the [`#rse-community-awards`](https://usrse.slack.com/archives/C061FLX5J57) slack channel.
-
+**Criteria:**
+* The nominated candidate must be a current member of US-RSE.
+* Candidates should present clear and tangible evidence showcasing their exceptional contributions and the resulting impact on the RSE community, which may include innovative projects, leadership roles, impactful publications, mentorship efforts, or initiatives that have significantly influenced and advanced the RSE profession.
 
 ### Award Timeline
 * Nominations open: Feb 5, 2024
 * Nominations close: March 15, 2024
-* Award announcement:  Around May 15, 2024 
+* Award announcement:  Around May 15, 2024
 
+Once nominations close, the 2024 Award committee will review nominations, check candidate eligibility and application. Awards are expected to be announced in mid-May.
 
 ### Application Details
 
-Once nominations open up, interested members are encouraged to nominate themselves.
-Alternatively, if you know of a member who you think would make a good nominee, you can submit a nomination 
-for someone else, who will be invited to participate.  All US-RSE members in good standing are eligible to be nominated.
+Once nominations open, interested members are encouraged to nominate themselves.
+Alternatively, if you know of a member whom you think would make a good nominee, you can submit a nomination on their behalf. 
+All US-RSE members in good standing are eligible to be nominated.
 
 **Application  Form**
 
-The nomination form for the two awards is as follows:
+The nomination forms for the two awards are as follows. Please fill out these forms for self-nomination OR if you are nominating someone else. 
 * **US-RSE Excellence in Service**: [Application form](https://docs.google.com/forms/d/e/1FAIpQLSfMBJR5VoQyg15XJRvFwigmUwt31g9QL7JJ3pXWU7GtBPXF8Q/viewform)
 * **US-RSE Impact Award**:  [Application form](https://docs.google.com/forms/d/e/1FAIpQLSfun2ePaHiXEt4CnceCBiB4TBI5ORlC8KwkjgslahPhVs1jdw/viewform)
-
-Please fill this form for self-nomination OR if you are nominating someone else. If nominating someone else, then please fill the form early so that we can contact the nominated person and obtain their nomination materials before the application closing date.
 
 On the nomination form, expect to provide the following information.
 
@@ -64,13 +66,9 @@ On the nomination form, expect to provide the following information.
 * Nominee's name and email
 * Short statement about why you are nominating the invidual
 
-Nominations of others will only be shared with the award committee and the
-nominated individual. The Award commitee  will contact the nominated individual
-to let them know they were nominated, and by whom, and to confirm their
-interest in participating. The information will not be made public.
+If nominating someone else, please complete the form early so that we can contact the nominated person and obtain their nomination materials before the application closing date. Nominations of others will only be shared with the award committee and the nominated individual. The award committee will contact the nominated individual to inform them of their nomination, disclose the nominator's identity, and confirm their interest in participating. This information will not be made public.
 
-**Self-nomination**
-
+**Self-nomination:**
 * Your name and email
 * A link to a resume, CV, LinkedIn profile, or professional website
 * Supporting statement (<= 500 words)
@@ -97,3 +95,7 @@ interest in participating. The information will not be made public.
   <summary><b>Q: Where can I ask questions?</b></summary>
     A: An #rse-community-awards channel is available on US-RSE slack workspace or send an email to [awards@us-rse.org](mailto:awards@us-rse.org) for questions and discussions.
 </details>
+
+
+If you have questions, please send them via email to [awards@us-rse.org](mailto:awards@us-rse.org)
+or ask in the [`#rse-community-awards`](https://usrse.slack.com/archives/C061FLX5J57) slack channel.
