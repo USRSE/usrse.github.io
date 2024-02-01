@@ -10,7 +10,7 @@ items:
     link_name: Newsletters
   - title: RSE Career Guide
     subtitle: A joint publication from US-RSE and the IEEE Computer Society
-    link: https://us-rse.org/events/
+    link: https://zenodo.org/records/10073233
     link_name: >
       "Research Software Engineers: Creating a Career Path—and a Career"
   - title: Celebrate Black History Month
