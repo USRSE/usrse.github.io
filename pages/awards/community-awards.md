@@ -40,7 +40,7 @@ The US-RSE Impact Award honors an individual's remarkable contributions and infl
 * The nominated candidate must be a current member of US-RSE.
 * Candidates should present clear and tangible evidence showcasing their exceptional contributions and the resulting impact on the RSE community, which may include innovative projects, leadership roles, impactful publications, mentorship efforts, or initiatives that have significantly influenced and advanced the RSE profession.
 
-### Award Timeline
+### Award Timeline and Process
 * Nominations open: Feb 5, 2024
 * Nominations close: March 15, 2024
 * Award announcement:  Around May 15, 2024
