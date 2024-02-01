@@ -38,7 +38,7 @@ or ask in the [`#rse-community-awards`](https://usrse.slack.com/archives/C061FLX
 
 
 ### Award Timeline
-* Nominations open: Feb 1, 2024
+* Nominations open: Feb 5, 2024
 * Nominations close: March 15, 2024
 * Award announcement:  Around May 15, 2024 
 
@@ -95,5 +95,5 @@ interest in participating. The information will not be made public.
 
 <details>
   <summary><b>Q: Where can I ask questions?</b></summary>
-    A: An [#rse-community-awards](LINK) channel is available on Slack or send an email to [awards@us-rse.org](mailto:awards@us-rse.org) for questions and discussions.
+    A: An #rse-community-awards channel is available on US-RSE slack workspace or send an email to [awards@us-rse.org](mailto:awards@us-rse.org) for questions and discussions.
 </details>
