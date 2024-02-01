@@ -45,7 +45,9 @@ The US-RSE Impact Award honors an individual's remarkable contributions and infl
 * Nominations close: March 15, 2024
 * Award announcement:  Around May 15, 2024
 
-Once nominations close, the 2024 Award committee will review nominations, check candidate eligibility and application. Awards are expected to be announced in mid-May.
+Once nominations close, the 2024 Award committee will review nominations, check candidate eligibility and application details. 
+Applications are evaluated based on potential for positive impact on the community, alignment to the US-RSE mission, and the submitting members’ qualifications, including previous US-RSE activity.
+Awards are expected to be announced in mid-May.
 
 ### Application Details
 
