@@ -64,7 +64,7 @@ On the nomination form, expect to provide the following information.
 **If Nominating Someone Else:**
 * Your name and email
 * Nominee's name and email
-* Short statement about why you are nominating the invidual
+* Short statement about why you are nominating the individual
 
 If nominating someone else, please complete the form early so that we can contact the nominated person and obtain their nomination materials before the application closing date. Nominations of others will only be shared with the award committee and the nominated individual. The award committee will contact the nominated individual to inform them of their nomination, disclose the nominator's identity, and confirm their interest in participating. This information will not be made public.
 
