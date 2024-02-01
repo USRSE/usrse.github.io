@@ -10,7 +10,7 @@ US-RSE's [DEI working group (DEI-WG)](https://us-rse.org/wg/dei/) is proud to
 lead the US-RSE's participation in celebrating [Black History
 Month](https://www.blackhistorymonth.gov/).
 
-Throughout the month US-RSE members will be sharing stories that recognize and
+Throughout the month, US-RSE members will be sharing stories that recognize and
 celebrate inspirational African Americans who have been involved in computing,
 science, engineering, and/or math, and have inspired our members through their
 accomplishments in their careers and their personal stories. We'll be
