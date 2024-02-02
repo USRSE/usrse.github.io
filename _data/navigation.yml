@@ -44,6 +44,8 @@
       link: community-whitepapers
     - name: Funds and Awards
       link: funds-and-awards/
+    - name: Community Awards
+      link: community-awards/
 - name: Working Groups
   link: working-groups/
   dropdown:
@@ -107,6 +109,8 @@
       link: resources/organizations/
     - name: Grants and Awards
       link: funds-and-awards/
+    - name: Community Awards
+      link: community-awards/
 
 - name: External
   dropdown:
