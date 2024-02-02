@@ -93,10 +93,6 @@ If nominating someone else, please complete the form early so that we can contac
     A: No; any member of US-RSE is eligible to apply.
 </details>
 
-<details>
-  <summary><b>Q: Where can I ask questions?</b></summary>
-    A: An #rse-community-awards channel is available on US-RSE slack workspace or send an email to [awards@us-rse.org](mailto:awards@us-rse.org) for questions and discussions.
-</details>
 
 
 If you have questions, please send them via email to [awards@us-rse.org](mailto:awards@us-rse.org)
