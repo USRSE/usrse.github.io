@@ -1,14 +1,27 @@
+---
 style: is-light
 items:
-  - title: Save the Date!
-    subtitle: The second annual US-RSE Conference will take place October 15-17, 2024 in Albuquerque, NM
-    link: http://us-rse.org/usrse24/
-    link_name: Full Details
-  - title: Get Involved
-    subtitle: Community and working group events can be found on the Events page
-    link: https://us-rse.org/events/
-    link_name: Find an Upcoming Event
-  - title: Community and Travel Funds
-    subtitle: US-RSE is accepting applications to provide funding to support members in activities for the community and individuals!
-    link: /funds-and-awards/
+  - title: Read our latest newsletter
+    subtitle: >
+      In this monthly newsletter, we share recent, current, and planned
+      activities of the US-RSE Association, and related news that we think is
+      of interest to US-RSE members.
+    link: https://us-rse.org/newsletters/
+    link_name: Newsletters
+  - title: RSE Career Guide
+    subtitle: A joint publication from US-RSE and the IEEE Computer Society
+    link: https://doi.org/10.5281/zenodo.10073232
+    link_name: >
+      "Research Software Engineers: Creating a Career Path—and a Career"
+  - title: Celebrate Black History Month
+    subtitle: >
+      US-RSE's DEI working group (DEI-WG) is proud to lead the US-RSE's
+      participation in celebrating Black History Month.
+    link: https://us-rse.org/2024-02-01-black-history-month/
     link_name: Learn More
+    # - title: Community and Travel Funds
+    #   subtitle: >
+    #     US-RSE is accepting applications to provide funding to support members
+    #     in activities for the community and individuals!
+    #   link: /funds-and-awards/
+    #   link_name: Learn More
