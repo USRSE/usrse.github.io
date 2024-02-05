@@ -28,7 +28,7 @@ about Black history in tech:
 
 ### Events/Conferences
 
-- [Black Tech Week](https://www.blacktechweek.com/) - July
+- [Black Tech Week](https://blacktechweek.com/) - July
 - [BlackGirlsHack](https://blackgirlshack.org/event-5495307) - August
 - [Black is Tech 2024 Conference](https://blackistechconference.com/) - August
 - [BitCon](https://bitcon.blacksintechnology.net/) - September
