@@ -139,7 +139,7 @@ time:
 ```
 
 Note that this format is recommended only for easy repetitions. Also
-note that not all [rrule](https://jakubroztocil.github.io/rrule/) fields are rendered to the template, so you should check the calendar.html template
+note that not all [rrule](https://github.com/jkbrzt/rrule) fields are rendered to the template, so you should check the calendar.html template
 to see what is supported (view source) or the [_includes/events/event.js](_includes/events/event.js)
 for the logic. If you need to, for example, "repeat on the first Tuesday of every month", you should use an rdate string 
 instead. Here is an example:
@@ -168,7 +168,7 @@ The formatting of the lines above is essential - even putting them out of order
 or exchanging a semicolon can lead to the entire interface breaking. 
 
 To derive your string, you can play around with the 
-plugin that we use to generate this [here](https://jakubroztocil.github.io/rrule/).
+plugin that we use to generate this [here](https://github.com/jkbrzt/rrule).
 
 
 ### Why isn't my add to calendar button showing up?

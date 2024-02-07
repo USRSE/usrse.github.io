@@ -1,19 +1,19 @@
 ---
 layout: page
-title: Grants and Awards
+title: Funds and Awards
 subtitle:
 menubar: get-involved
-permalink: /grants-and-awards/
+permalink: /funds-and-awards/
 menubar_toc: true
 ---
 
-## Community and Travel Grants
+## Community and Travel Funds
 
 ### Overview
 
 Part of the [Alfred P. Sloan Foundation grant](https://us-rse.org/2023-04-27-sloan-grant-initiatives/)
-for US-RSE has been earmarked for the Community
-and Travel Grants program. The goals of this program are to:
+for US-RSE has been allocated for the Community
+and Travel Funds program. The goals of this program are to:
 
 - Grow and diversify the US-RSE community and larger RSE community
 - Connect people within the US-RSE community
@@ -25,27 +25,20 @@ Applications fall into two categories:
 
 - **Community**: These benefit a group of individuals within the community
   (e.g., hosting a regional group meetup)
-- **Individual**: These benefit an individual applicant (e.g., a travel grant)
+- **Individual**: These benefit an individual applicant (e.g., travel reimbursement)
 
 
 To this end, we are accepting applications to provide funding from $100-$10,000
 per proposal (with most expected to be up to $2,500) to support members in
 activities such as, but not limited to:
 
-- Activities for local RSE or affinity-group events: costs for space rental,
-  refreshments, supplies, or child care.
-- Hosting technical training events: costs for cloud computing or software
-  services (for training on specialized tools), space rental, speaker fees.
+- Activities for local RSE or affinity-group events: costs for space rental, refreshments, supplies, or child care.
+- Hosting technical training events: costs for cloud computing or software services (for training on specialized tools), space rental, speaker fees.
 - Hosting non-technical training activities such as mentor training and DEI-focused events.
-- Attendance at tech industry or domain-specific academic conferences to share
-  RSE work, discuss research software engineering, or host RSE networking events;
-  costs for conference registration and travel support.
-- Software to create videos, podcasts, or other media to share information about
-  research software engineering or support RSE career development.
-- Having US-RSE sponsor non-US-RSE events, such as other conferences, where
-  sponsorship would be an effective advertisement and outreach mechanism.
-- Pursuing individual professional development that could benefit the community,
-  such as obtaining trainer certifications.
+- Attendance at tech industry or domain-specific academic conferences to share RSE work, discuss research software engineering, or host RSE networking events; costs for conference registration and travel support.
+- Software to create videos, podcasts, or other media to share information about research software engineering or support RSE career development.
+- Having US-RSE sponsor non-US-RSE events, such as other conferences, where sponsorship would be an effective advertisement and outreach mechanism.
+- Pursuing individual professional development that could benefit the community, such as obtaining trainer certifications.
 - Technical infrastructure costs related to working group activities (e.g., A/V services).
 
 Applications are accepted on a quarterly basis. They are evaluated based on
@@ -61,14 +54,11 @@ or ask in the [`#community-grants`](https://app.slack.com/client/T8ZT4PJSW/C05M3
 
 ### Application Details
 
-- **Next Application Deadline**: December 31, 2023
+- **Next Application Deadline**: March 31, 2024
 - **[Application Form](https://forms.gle/hXL95UymjTcR3Kb29)**
-
-The first grants will be announced during [US-RSE'23](https://us-rse.org/usrse23).
 
 The next round of application deadlines will be:
 
-- March 31, 2024
 - June 30, 2024
 - September 30, 2024
 - December 31, 2024
@@ -92,8 +82,8 @@ The application will request the following details:
     date and location.
 - Provide a budget justification for the requested amount.
 - Describe any funding you have already obtained for this proposal, any funding
-  you are currently seeking in addition to this grant, or matching funding you
-  will obtain if you receive the US-RSE grant.
+  you are currently seeking in addition to the amount requested, or matching funding you
+  will obtain if you receive US-RSE funding.
 - How will this proposal, if granted, benefit US-RSE or the wider RSE community?
 - Describe how the proposal aligns with [the mission of US-RSE](https://us-rse.org/about/mission/).
 - Describe your plan for evaluating the success of the proposal.
@@ -110,7 +100,7 @@ The application will request the following details:
 </details>
 
 <details>
-  <summary><b>Q: Can a travel grant be retroactive (i.e., used for a conference that has recently passed from before the review period?)</b></summary>
+  <summary><b>Q: Can a travel reimbursement be retroactive (i.e., used for a conference that has recently passed from before the review period)?</b></summary>
     A: No; applications must be for a future event. Applications are reviewed every quarter. See above for more details on upcoming deadlines.
 </details>
 
@@ -126,13 +116,13 @@ The application will request the following details:
 
 <details>
   <summary><b>Q: Can I request funding to support my PhD?</b></summary>
-    A: It depends. These grants are not intended to provide general support or stipends for a PhD student for a semester. We will, however,
+    A: It depends. These funds are not intended to provide general support or stipends for a PhD student for a semester. We will, however,
     consider requests for funding to support specific efforts that involve US-RSE or RSEs as part of a PhD (e.g., a user study amongst RSEs).
     If you believe you have a unique case, please email us at <a href="mailto:grants@us-rse.org">grants@us-rse.org</a>.
 </details>
 
 <details>
   <summary><b>Q: Can I request funding to purchase personal equipment for my research?</b></summary>
-    A: No; this is outside the scope of this grant. We may consider requests to purchase
+    A: No; this is outside the scope of this program. We may consider requests to purchase
     shared resources.
 </details>
