@@ -42,6 +42,7 @@ about Black history in tech:
 - [Black In Astro](https://www.blackinastro.com/)
 - [Black Men in Tech](https://www.blkmenintech.com/about-us)
 - [Code.org's Approach to Diversity and Equity in Computer Science](https://code.org/diversity)
+- [blackcomputeHER.org](https://blackcomputeher.org/)
 
 ### Articles
 
