@@ -40,8 +40,8 @@ energy problems, and developing nuclear-powered rocket systems[^encyclopedia].
 Outside of being a computer and rocket scientist, Easley is known for her
 dedication to tutoring and encouraging students from underrepresented
 backgrounds to pursue STEM careers. She was also actively involved at NASA as
-an equal employment counselor and advocate for improving employee morale in the
-workplace[^nasa][^encyclopedia].
+an equal employment opportunity (EEO) counselor and advocate for improving
+employee morale in the workplace[^nasa][^encyclopedia].
 
 ### References
 
