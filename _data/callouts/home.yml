@@ -6,7 +6,7 @@ items:
       In this monthly newsletter, we share recent, current, and planned
       activities of the US-RSE Association, and related news that we think is
       of interest to US-RSE members.
-    link: https://us-rse.org/newsletters/
+    link: newsletters/
     link_name: Newsletters
   - title: RSE Career Guide
     subtitle: A joint publication from US-RSE and the IEEE Computer Society
@@ -17,7 +17,7 @@ items:
     subtitle: >
       US-RSE's DEI working group (DEI-WG) is proud to lead the US-RSE's
       participation in celebrating Black History Month.
-    link: https://us-rse.org/2024-02-01-black-history-month/
+    link: 2024-02-01-black-history-month/
     link_name: Learn More
     # - title: Community and Travel Funds
     #   subtitle: >
