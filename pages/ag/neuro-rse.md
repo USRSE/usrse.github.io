@@ -39,8 +39,7 @@ Active members attend our regular meetings at least once a quarter (once every 3
 - [Ryan Ly](https://www.linkedin.com/in/ryanly), scientific data engineer at Lawrence Berkeley National Lab
 - [Adam Tyson](https://adamltyson.com/), Head Research Engineer at the [Sainsbury Wellcome Centre's Neuroinformatics Unit](https://neuroinformatics.dev/)
 - [Daniel McCloy](https://dan.mccloy.info), Research Scientist at Institute for Learning & Brain Sciences, University of Washington
-  
-*YOUR NAME HERE*
+- [Lezlie España](https://www.linkedin.com/in/lezlieespana), Programmer Analyst in Brain Injury Research at the Medical College of Wisconsin
 
 # Resources
 ## Neuro-RSE groups
