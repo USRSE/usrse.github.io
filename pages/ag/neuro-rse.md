@@ -41,14 +41,13 @@ Active members attend our regular meetings at least once a quarter (once every 3
 - [Daniel McCloy](https://dan.mccloy.info), Research Scientist at Institute for Learning & Brain Sciences, University of Washington
 - [Lezlie España](https://www.linkedin.com/in/lezlieespana), Programmer Analyst in Brain Injury Research at the Medical College of Wisconsin
 - [Tab Memmott](https://www.linkedin.com/in/tab-memmott/) (he/him), Lead Research Software Engineer with the [Consortium for Accessible Multimodal Brain-Body Interfaces](https://www.cambi.tech/)
+- [Alessandro Felder](github.com/alessandrofelder), Senior Research Software Engineer at the [Sainsbury Wellcome Centre's Neuroinformatics Unit](https://neuroinformatics.dev/), technical lead of the [BrainGlobe Initiative](https://brainglobe.info/)
 
 # Resources
 ## Neuro-RSE groups
 
 - [NeuroRSE group](https://neurorse.flatironinstitute.org/) at Flatiron Center for Computational Neuroscience
 - [Neuroinformatics Unit](https://neuroinformatics.dev/) at the [Sainsbury Wellcome Centre](https://www.sainsburywellcome.org/web/)
-
-*YOUR GROUP HERE*
 
 ## Jobs
 
