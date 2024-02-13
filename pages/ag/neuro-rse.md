@@ -39,6 +39,7 @@ Active members attend our regular meetings at least once a quarter (once every 3
 - [Ryan Ly](https://www.linkedin.com/in/ryanly), scientific data engineer at Lawrence Berkeley National Lab
 - [Adam Tyson](https://adamltyson.com/), Head Research Engineer at the [Sainsbury Wellcome Centre's Neuroinformatics Unit](https://neuroinformatics.dev/)
 - [Daniel McCloy](https://dan.mccloy.info), Research Scientist at Institute for Learning & Brain Sciences, University of Washington
+- [Alessandro Felder](github.com/alessandrofelder), Senior Research Software Engineer at the [Sainsbury Wellcome Centre's Neuroinformatics Unit](https://neuroinformatics.dev/), technical lead of the [BrainGlobe Initiative](https://brainglobe.info/)
   
 *YOUR NAME HERE*
 
