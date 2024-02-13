@@ -40,6 +40,7 @@ Active members attend our regular meetings at least once a quarter (once every 3
 - [Adam Tyson](https://adamltyson.com/), Head Research Engineer at the [Sainsbury Wellcome Centre's Neuroinformatics Unit](https://neuroinformatics.dev/)
 - [Daniel McCloy](https://dan.mccloy.info), Research Scientist at Institute for Learning & Brain Sciences, University of Washington
 - [Lezlie España](https://www.linkedin.com/in/lezlieespana), Programmer Analyst in Brain Injury Research at the Medical College of Wisconsin
+- [Tab Memmott](https://www.linkedin.com/in/tab-memmott/) (he/him), Lead Research Software Engineer with the [Consortium for Accessible Multimodal Brain-Body Interfaces](https://www.cambi.tech/)
 
 # Resources
 ## Neuro-RSE groups
