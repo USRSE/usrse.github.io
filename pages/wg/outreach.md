@@ -76,12 +76,12 @@ to speak to members of US-RSE. These funders will bring essential information
 about opportunities, strategies, and starting points for finding funding.
 
 #### Upcoming Presentations
-- __2024-01-29 Ashley Sands__ - Institute of Museum and Library Services: [Event info and registration]({{ site.baseurl }}/events/2024/2024-01-funder-talk-series/)
-
 
 Please keep an eye out for future announcements regarding this series.
 
 #### Past Presentations
+
+- __2024-01-29 Ashley Sands__ - Institute of Museum and Library Services: [Event page]({{ site.baseurl }}/events/2024/2024-01-funder-talk-series/), [video](https://youtu.be/sQkNbnR4g1k) & [slides](https://drive.google.com/file/d/1JtaGqPFAH3bxkJLs8SmQ7VBbaruh5FIJ/view?usp=sharing)
 
 - __2022-10-17 Hal Finkel__ - Advanced Scientific Computing Research, Office of Science, US Department of Energy: [Event page]({{ site.baseurl }}/events/2022/2022-10-funder-talk-series/), [video](https://youtu.be/vZYQJ5eOMls) & [slides](https://drive.google.com/file/d/1W9Oh50BMwHG6o1OEmlRXi_AaJYmMdMVn/view?usp=sharing)
 
