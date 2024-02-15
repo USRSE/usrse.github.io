@@ -43,7 +43,7 @@ $(document).ready(function(){
         <li> Lezlie Espa&ntilde;a</li>
         <li> David Nicholson</li>
         <li> Joshua Teves (on leave from approximately late February to mid April)</li>
-        <li> Ludovico Bianchi (temporarily standing in from late approximately late February to mid April) </li>
+        <li> Ludovico Bianchi (temporarily standing in from approximately late February to mid April) </li>
     </ul>
     You may reach any of them on the US-RSE slack individually or email <a href="mailto:coc@us-rse.org">coc@us-rse.org</a> in order to contact them.
 </p>
