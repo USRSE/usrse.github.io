@@ -81,8 +81,6 @@ The funders talk series is now on hiatus until 2025.
 
 #### Past Presentations
 
-- __2024-01-29 Ashley Sands__ - Institute of Museum and Library Services: [Event page]({{ site.baseurl }}/events/2024/2024-01-funder-talk-series/), [video](https://youtu.be/sQkNbnR4g1k) & [slides](https://drive.google.com/file/d/1JtaGqPFAH3bxkJLs8SmQ7VBbaruh5FIJ/view?usp=sharing)
-
 - __2022-10-17 Hal Finkel__ - Advanced Scientific Computing Research, Office of Science, US Department of Energy: [Event page]({{ site.baseurl }}/events/2022/2022-10-funder-talk-series/), [video](https://youtu.be/vZYQJ5eOMls) & [slides](https://drive.google.com/file/d/1W9Oh50BMwHG6o1OEmlRXi_AaJYmMdMVn/view?usp=sharing)
 
 - __2023-02-02 Joshua Greenberg__ - Digital Information Technology Program, Alfred P. Sloan Foundation: [Event page]({{ site.baseurl }}/events/2023/2023-02-funder-talk-series/), [video](https://youtu.be/5Ri19PvgzeI) & [slides](https://drive.google.com/file/d/17v1yqstYMoERYEfuqmEZY3hyI30j30KL/view?usp=sharing)
@@ -99,6 +97,7 @@ The funders talk series is now on hiatus until 2025.
 
 - __2023-12-12 Adrian Price-Whelan__ - Simons Foundation: [Event page]({{ site.baseurl }}/events/2023/2023-12-funder-talk-series/), [video](https://youtu.be/LW3Q9DsbaFk) & [slides](https://drive.google.com/file/d/1g3vLbpu5bQGt4hL05cUYM4zzjCZfhasE/view?usp=sharing)
 
+- __2024-01-29 Ashley Sands__ - Institute of Museum and Library Services: [Event page]({{ site.baseurl }}/events/2024/2024-01-funder-talk-series/), [video](https://youtu.be/sQkNbnR4g1k) & [slides](https://drive.google.com/file/d/1JtaGqPFAH3bxkJLs8SmQ7VBbaruh5FIJ/view?usp=sharing)
 
 
 ### Supercomputing Spotlights
