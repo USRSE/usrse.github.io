@@ -1,6 +1,7 @@
 [codespell]
 # Ref: https://github.com/codespell-project/codespell#using-a-config-file
-skip = .git,*.svg,*.css,*.min.*,.codespellrc
+skip = .git,*.svg,*.css,*.min.*,.codespellrc,_config.yml
 check-hidden = true
-# ignore-regex = 
-# ignore-words-list =
+# Case sensitive - acronyms, names
+ignore-regex = \b(AAS|Wil|Vas|NWO|Nam Pho|Paul Hsi|nd\.edu|https?://[^\s)]*)\b
+ignore-words-list = slac,tbe,whet,theses
