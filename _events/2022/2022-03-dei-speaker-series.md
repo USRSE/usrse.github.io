@@ -30,7 +30,7 @@ place **Friday, March 11th at 11AM Pacific/ 2PM Eastern / 7PM GMT**
 
 ### Abstract
 
-The role of a Research Software Engineer (RSE) is to transform research concepts and methods into practical computing workflows, blending established and innovative software techniques that incorporate technical sustainability and excellence.  But to tread this path successfully it takes allies, collaborators, and process repeatability to make things happen.  So how does an RSE build up this kind of ecosystem of success?  This talk details how you can develop a diverse pool of resources and how sometimes reaching outside of the task you’ve been given can result in the breakthrough you need.
+The role of a Research Software Engineer (RSE) is to transform research concepts and methods into practical computing workflows, blending established and innovative software techniques that incorporate technical sustainability and excellence.  But to thread this path successfully it takes allies, collaborators, and process repeatability to make things happen.  So how does an RSE build up this kind of ecosystem of success?  This talk details how you can develop a diverse pool of resources and how sometimes reaching outside of the task you’ve been given can result in the breakthrough you need.
 
 - Learn how to include others without overwhelming yourself
 - Understand the importance of establishing barriers and touchpoints

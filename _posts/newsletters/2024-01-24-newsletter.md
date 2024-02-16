@@ -208,7 +208,7 @@ If you have any questions regarding the research study, please contact Matthew A
 
 This research has been reviewed according to University of Alabama procedures for research involving human subjects. If you have any questions about your rights as a participant in this study or any concerns or complaints, please contact the University of Alabama Office of Research Compliance at 1-877-820-3066.
 
-## Survey to better understand code revew practices of RSEs
+## Survey to better understand code review practices of RSEs
 
 Dr. Jeffrey Carver, Dr. Nasir Eisty, and Md Ariful Malik of the University of Alabama are conducting a study to understand the practices, impacts and barriers of code review techniques for RSEs.
 
