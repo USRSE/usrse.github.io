@@ -12,7 +12,7 @@ Neuroscience RSE (Neuro-RSE) is an affinity group for those working on research 
 
 # Membership
 
-Neuro-RSE is open to anyone who considers themselves a research software engineer and who work in the field of neuroscience, regardless of job title or domain. This includes grad students and postdocs, as well as those in permanent positions with "engineer" or "scientist" in their title.
+Neuro-RSE is open to anyone who considers themselves a research software engineer and who work in the field of neuroscience, regardless of job title or domain. This includes grad students, postdocs, and professors, as well as those in permanent positions with "engineer" or "scientist" in their title.
 
 Membership is open to all [US-RSE members](https://us-rse.org/join/). As with other US-RSE activities, Neuro-RSE is US-focused, but other countries are welcome.
 
