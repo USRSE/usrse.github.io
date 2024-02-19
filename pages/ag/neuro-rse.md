@@ -30,19 +30,22 @@ We have a Slack channel in the US-RSE space for discussions.
 
 Reach out to the Neuro-RSE coordinators Billy Broderick or David Nicholson on the [US-RSE slack](https://us-rse.org/join/) with questions.
 
+# Group coordinators
+
+- [Billy Broderick](wfbroderick.com/), data scientist at [Flatiron Institute's Center For Computational Neuroscience](https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/) 
+- [David Nicholson](https://nicholdav.info/), lead developer of the [VocalPy software community](http://www.vocalpy.org/)
+
 # Active members
 
 Active members attend our regular meetings at least once a quarter (once every 3 meetings).
 
-- [Billy Broderick](wfbroderick.com/), data scientist at [Flatiron Institute's Center For Computational Neuroscience](https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/) 
-- [David Nicholson](https://nicholdav.info/), lead developer of the [VocalPy software community](http://www.vocalpy.org/)
-- [Ryan Ly](https://www.linkedin.com/in/ryanly), scientific data engineer at Lawrence Berkeley National Lab
-- [Adam Tyson](https://adamltyson.com/), Head Research Engineer at the [Sainsbury Wellcome Centre's Neuroinformatics Unit](https://neuroinformatics.dev/)
-- [Daniel McCloy](https://dan.mccloy.info), Research Scientist at Institute for Learning & Brain Sciences, University of Washington
 - [Lezlie España](https://www.linkedin.com/in/lezlieespana), Programmer Analyst in Brain Injury Research at the Medical College of Wisconsin
-- [Tab Memmott](https://www.linkedin.com/in/tab-memmott/) (he/him), Lead Research Software Engineer with the [Consortium for Accessible Multimodal Brain-Body Interfaces](https://www.cambi.tech/)
 - [Alessandro Felder](https://github.com/alessandrofelder), Senior Research Software Engineer at the [Sainsbury Wellcome Centre's Neuroinformatics Unit](https://neuroinformatics.dev/), technical lead of the [BrainGlobe Initiative](https://brainglobe.info/)
 - [Yaroslav O. Halchenko](https://github.com/yarikoptic), Research Associate Professor at the [Dartmouth College](https://dartmouth.edu), leading the [Center for Open Neuroscience](https://centerforopenneuroscience.org) at the [Department of Psychological and Brain Sciences](https://pbs.dartmouth.edu) leading projects such as [NeuroDebian](https://neuro.debian.net/), [DataLad](https://datalad.org), [DANDI](https://dandiarchive.org) and others
+- [Ryan Ly](https://www.linkedin.com/in/ryanly), scientific data engineer at Lawrence Berkeley National Lab
+- [Daniel McCloy](https://dan.mccloy.info), Research Scientist at Institute for Learning & Brain Sciences, University of Washington
+- [Tab Memmott](https://www.linkedin.com/in/tab-memmott/) (he/him), Lead Research Software Engineer with the [Consortium for Accessible Multimodal Brain-Body Interfaces](https://www.cambi.tech/)
+- [Adam Tyson](https://adamltyson.com/), Head Research Engineer at the [Sainsbury Wellcome Centre's Neuroinformatics Unit](https://neuroinformatics.dev/)
 
 # Resources
 ## Neuro-RSE groups
