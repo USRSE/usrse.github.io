@@ -36,7 +36,7 @@ many times as needed. The full schedule can be viewed below:
 | Aug 24, 2023 | Noon ET/11 AM CT/10 AM MT/9 AM PT<br>[Register](https://stanford.zoom.us/meeting/register/tJwkce-uqjwoHdxLgipTO2ncD943cXWpmAeJ) | Cancelled |
 | Nov 2, 2023 | Noon ET/11 AM CT/10 AM MT/9 AM PT<br>[Register](https://stanford.zoom.us/meeting/register/tJwkce-uqjwoHdxLgipTO2ncD943cXWpmAeJ) | Movie - [Picture a Scientist](https://www.pictureascientist.com/) |
 | Jan 18, 2024 | Noon ET/11 AM CT/10 AM MT/9 AM PT<br>[Register](https://stanford.zoom.us/meeting/register/tJwkce-uqjwoHdxLgipTO2ncD943cXWpmAeJ) | Movie - [CODE: Debugging the Gender Gap](https://www.youtube.com/watch?v=rQKRw6tWsb8) |
-| Mar 21, 2024 | Noon ET/11 AM CT/10 AM MT/9 AM PT<br>[Register](https://stanford.zoom.us/meeting/register/tJwkce-uqjwoHdxLgipTO2ncD943cXWpmAeJ) | TBD - [Send us your suggestion!](https://docs.google.com/forms/d/e/1FAIpQLSdtCVAmJnUQCKnIXdn93xN5e9_zCQkrVdQsnPOiSBIcptma6w/viewform) |
+| Mar 21, 2024 | Noon ET/11 AM CT/10 AM MT/9 AM PT<br>[Register](https://stanford.zoom.us/meeting/register/tJwkce-uqjwoHdxLgipTO2ncD943cXWpmAeJ) | Movie - [Hidden Figures](https://family.20thcenturystudios.com/movies/hidden-figures) |
 
 For more information regarding the DEI Working Group, including getting
 involved, visit our website at <https://us-rse.org/wg/dei/>.

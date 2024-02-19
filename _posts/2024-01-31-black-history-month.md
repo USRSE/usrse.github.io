@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "US-RSE Celebrates Black History Month"
-tags: [dei]
+tags: [dei, black-history]
 author: Lance Parsons, Alex Koufos, Sandra Gesing, Anna Murphy
 date: 2024-02-01
 ---
@@ -16,6 +16,9 @@ science, engineering, and/or math, and have inspired our members through their
 accomplishments in their careers and their personal stories. We'll be
 publishing these posts throughout February to highlight such people, where we
 talk about the person and tie their work and life to the RSE movement.
+
+* [Annie Easley]({% post_url 2024-02-07-black-history-spotlight-annie-easley
+  %}) - February 7, 2024
 
 Conversations around race in tech are happening daily, and there are numerous
 articles on the topic. One of the articles we want to share is a 2021 article
@@ -42,6 +45,7 @@ about Black history in tech:
 - [Black In Astro](https://www.blackinastro.com/)
 - [Black Men in Tech](https://www.blkmenintech.com/about-us)
 - [Code.org's Approach to Diversity and Equity in Computer Science](https://code.org/diversity)
+- [blackcomputeHER.org](https://blackcomputeher.org/)
 
 ### Articles
 
