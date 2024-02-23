@@ -76,6 +76,14 @@ If nominating someone else, please complete the form early so that we can contac
 * Supporting statement (<= 500 words)
 
 
+### 2024 US-RSE Awards Committee
+* Rinku Gupta, Argonne National Laboratory
+* Chen Zhang, Oak Ridge National Laboratory
+* Chuck Pavloski, Penn State University
+* Geoffrey Lentner, Purdue University
+* Kenton McHenry, University of Illinois Urbana-Champaign
+* Nicole Brewer, Purdue University
+
 ### FAQs
 
 <details>
