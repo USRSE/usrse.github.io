@@ -13,7 +13,7 @@ If you have questions for the candidates, or questions about the election,
 please use the #election channel on Slack. You must be [registered as a member](https://us-rse.org/join)
 by Wednesday, November 8th to be eligible to vote in this election.
 
-Candidates are listed in aphabetical order.
+Candidates are listed in alphabetical order.
 - Abbey Roelofs
 - Alex Koufos
 - David Beck
