@@ -82,7 +82,7 @@ If nominating someone else, please complete the form early so that we can contac
 * Chuck Pavloski, Penn State University
 * Geoffrey Lentner, Purdue University
 * Kenton McHenry, University of Illinois Urbana-Champaign
-* Nicole Brewer, Purdue University
+* Nicole Brewer, Arizona State University
 
 ### FAQs
 
