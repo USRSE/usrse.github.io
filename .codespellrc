@@ -4,4 +4,4 @@ skip = .git,*.svg,*.css,*.min.*,.codespellrc,_config.yml
 check-hidden = true
 # Case sensitive - acronyms, names
 ignore-regex = \b(AAS|Wil|Vas|NWO|Nam Pho|Paul Hsi|nd\.edu|https?://[^\s)]*)\b
-ignore-words-list = slac,tbe,whet,theses
+ignore-words-list = slac,tbe,whet,theses,tread
