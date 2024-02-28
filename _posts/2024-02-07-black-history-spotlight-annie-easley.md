@@ -5,7 +5,7 @@ tags: [dei, black-history]
 author: Sophia Anyatonwu
 ---
 
-US-RSE's [DEI working group (DEI-WG)](https://us-rse.org/wg/dei/)is proud to
+US-RSE's [DEI working group (DEI-WG)](https://us-rse.org/wg/dei/) is proud to
 help US-RSE celebrate and participate in Black History Month. Each week during
 Black History Month, the US-RSE will spotlight Black/African Americans who have
 been involved in computing, science, engineering, and/or math, and have
@@ -17,7 +17,7 @@ personal stories.
 {% include image.html
 url="https://image.cleveland.com/home/cleve-media/pgfull/img/plain-dealer/photo/2017/02/23/-8f07f7971aa2b185.JPG"
 description="Annie Easley works on a NASA computer. (Photo Courtesy of NASA)"
-style="float:right; padding:1em; width:350px" %}
+style="float:right; padding:1em; max-width:350px" %}
 
 Some may know that the first computers in the US were women who were highly
 skilled in mathematics[^jpl]. One of these "human computers" was Annie Easley, a

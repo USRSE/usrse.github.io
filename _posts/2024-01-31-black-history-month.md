@@ -19,6 +19,8 @@ talk about the person and tie their work and life to the RSE movement.
 
 * [Annie Easley]({% post_url 2024-02-07-black-history-spotlight-annie-easley
   %}) - February 7, 2024
+* [Lyndsey Scott]({% post_url 2024-02-28-black-history-spotlight-lyndsey-scott
+  %}) - February 28, 2024
 
 Conversations around race in tech are happening daily, and there are numerous
 articles on the topic. One of the articles we want to share is a 2021 article
