@@ -46,7 +46,7 @@ claim to.
 
 In 2022, Lyndsey launched a coding scholarship geared toward LGBTQIA+, women,
 and/or BIPOC students majoring in computer science. This is perhaps
-unsurprising when you examine her portfolio of apps, many of which seem geared
+unsurprising when you examine the apps in her portfolio, many of which seem geared
 towards helping others. As you poke around the links below and learn more about
 Lyndsey, I hope you are filled with the same joy and enthusiasm I was; she is
 an inspiring speaker and I’m always impressed by people who unapologetically
