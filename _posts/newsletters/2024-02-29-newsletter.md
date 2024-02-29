@@ -17,7 +17,6 @@ In this issue:
     * [Funders Talk Series](#funder-series)
 * [Interesting Events and Opportunities](#events)
 * [Interesting Reads, Videos, or Podcasts](#reads)
-* [US-RSE Outreach](#outreach)
 * [US-RSE Financials](#financials)
 * [Get Involved](#involved)
 * [Recent Job Postings](#jobs)
@@ -48,23 +47,11 @@ Please join us in congratulating our two recipients. The next application deadli
 
 
 ## Community Awards program
+In 2024, US-RSE is proud to unveil a new initiative aimed at honoring individuals who have significantly contributed to the Research Software Engineering community. This initiative is designed to recognize their dedication and support in furthering the mission and objectives of US-RSE.
 
-We are happy to announce the launch of our planned [annual US-RSE community awards](https://us-rse.org/community-awards/), supported by our Alfred P. Sloan Foundation grant.
-
-
-
-**US-RSE Excellence in Service** 
-
-The 2024 US-RSE Excellence in Service Award recognizes a member's exceptional dedication to fostering the growth and advancing the mission of the US-RSE organization. The recipient of this award will receive an award certificate, recognition on the US-RSE website, a $250 gift card as well as recognition at the annual US-RSE'24 conference. Nominees must not currently serve on the US-RSE steering committee, award committee, or be part of the staff.
-
-
-**US-RSE Impact Award**
-
-The US-RSE Impact Award honors an individual's remarkable contributions and influence within the Research Software Engineering (RSE) profession. It celebrates achievements across various domains, including but not limited to: advancing RSE training and education, elevating RSE status through impactful activities, authoring influential works to enhance visibility, and nurturing the development of RSE communities. The recipient of this award will receive an award certificate, recognition on the US-RSE website, a $250 gift card as well as recognition at the annual US-RSE'24 conference. Nominees must not currently serve on the US-RSE steering committee, award committee, or be part of the staff.
-
+The US-RSE Community Awards are intended for individuals actively advancing the mission of US-RSE. There are two awards available. The Excellence in Service Award acknowledges outstanding dedication to advancing the US-RSE mission. The Impact Award recognizes notable contributions and influence within the RSE profession. 
 
 For additional details on how to nominate someone, or yourself, please visit the [Community Awards page](https://us-rse.org/community-awards/).  Nominations will close **March 15, 2024**.
-
 
 If you have questions, please send them via email to [awards@us-rse.org](mailto:awards@us-rse.org) or ask in the #rse-community-awards slack channel.
 
@@ -118,6 +105,11 @@ Posters and Talks: Due Monday, June 3. Notifications Wednesday, July 3.
 Camera-ready submissions (Notebooks, Papers): Friday, August 9
 
 
+**Call for Reviewers**
+
+We are looking for volunteers to be program committee members to assist in the reviewing process. If you are interested in becoming a reviewer, please fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSezBNLOgqEwA5GsqjqRspU8Orl2-KQkzR-u5zl0S-eTd-Hakg/viewform) by March 29, 2024.
+
+Each reviewer will be assigned no more than 2 submissions for long papers, and no more than 4 submissions total of any other type, with at least one month to complete the reviews.
 
 
 <a name="sc-elections"></a>
@@ -252,17 +244,6 @@ If you have suggestions for future talks, please contact [Dan Katz](mailto:d.kat
 <a name="events"></a>
 # **Interesting Events and Opportunities**
 
-## Community and Travel Funds are available
-
-Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/grants-and-awards/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more. Apply today!
-
-## Nominations are open for the US-RSE Community Awards program
-In 2024, US-RSE is proud to unveil a new initiative aimed at honoring individuals who have significantly contributed to the Research Software Engineering community. This initiative is designed to recognize their dedication and support in furthering the mission and objectives of US-RSE.
-
-The US-RSE Community Awards are intended for individuals actively advancing the mission of US-RSE. There are two awards available. The Excellence in Service Award acknowledges outstanding dedication to advancing the US-RSE mission. The Impact Award recognizes notable contributions and influence within the RSE profession. 
-
-Nominations for these prestigious awards are open until March 15th. To nominate someone, including yourself, please visit the event website: https://us-rse.org/community-awards/.
-
 ## Survey to understand mentorship needs
 
 Dr. Reed Milewicz from Sandia National Laboratories is conducting a [survey on mentorship](https://snl-survey.sandia.gov/surveys/mentorship-survey-usrse). This survey seeks to answer questions such as:
@@ -286,7 +267,7 @@ If you have any questions regarding the research study, please contact Matthew A
 
 This research has been reviewed according to University of Alabama procedures for research involving human subjects. If you have any questions about your rights as a participant in this study or any concerns or complaints, please contact the University of Alabama Office of Research Compliance at 1-877-820-3066.
 
-## Survey to better understand code revew practices of RSEs
+## Survey to better understand code review practices of RSEs
 
 Dr. Jeffrey Carver, Dr. Nasir Eisty, and Md Ariful Malik of the University of Alabama are conducting a study to understand the practices, impacts and barriers of code review techniques for RSEs.
 
@@ -303,9 +284,7 @@ This research study has been approved by the University of Alabama Institutional
 
 ## Survey on BLIS and related linear algebra software
 
-On behalf of The Science of High-Performance Computing group at The University of Texas at Austin, we are conducting [a brief (5-10 minute) survey](https://utexas.qualtrics.com/jfe/form/SV_2tnV2UvdhA17qUS).
-
-We are interested in learning about your experience with dense linear algebra software. Your responses to the survey will in part help us plan for the future. The survey will close at 23:00 UTC on March 31, 2024. 
+On behalf of The Science of High-Performance Computing group at The University of Texas at Austin, a [a brief (5-10 minute) survey](https://utexas.qualtrics.com/jfe/form/SV_2tnV2UvdhA17qUS) is being conducted to learn about your experience with dense linear algebra software. Your responses to the survey will in part help them plan for the future. The survey will close at 23:00 UTC on March 31, 2024. 
 
 # Upcoming Events
   
@@ -319,18 +298,18 @@ Remote options will be available for those unable to make the trip to Boulder. T
 
 **Call for Submissions**
 
-From August 6-9, 2024, [DH2024](https://dh-tech.github.io/blog/2023/12/19/dh-inside-out-dh2024/) will be held at George Mason University in Arlington, Virginia, USA. DHTech will hold a mini-conference at DH2024 themed “DH Inside Out”. Typical DH conference presentations are focussed on the research with a slight nod to the technical details; we want to flip that format and dive more deeply into the technical aspects of the work, while still keeping it in context of the research and domain specifics. To that end, we invite submissions of interest to the people who work on the technical aspects of DH projects, such as:
+From August 6-9, 2024, [DH2024](https://dh-tech.github.io/blog/2023/12/19/dh-inside-out-dh2024/) will be held at George Mason University in Arlington, Virginia, USA. DHTech will hold a mini-conference at DH2024 themed “DH Inside Out”. Typical DH conference presentations are focussed on the research with a slight nod to the technical details; the conference organizers want to flip the format and dive more deeply into the technical aspects of the work, while still keeping it in context of the research and domain specifics. To that end, they invite submissions of interest to the people who work on the technical aspects of DH projects, such as:
 
 * Implementation and design specifics of packages and applications
 * Lessons learnt regarding the design and implementation of research software
 * Tool demonstrations from a technical perspective
 * Community and diversity topics specific to the technical DH community
 
-Submission deadline is March 15, 2024. Please [submit using this form](https://form.jotform.com/233466066208053). Please be aware, we may ask you to resubmit to a different platform depending on the number of submissions we receive.
+Submission deadline is March 15, 2024. Please [submit using this form](https://form.jotform.com/233466066208053). Please be aware that you may be asked to resubmit to a different platform depending on the number of submissions that are received.
 
 **Call for Reviewers**
 
-We are looking for reviewers for submission to “DH Inside Out”. If you are willing to review two to three submissions between March 15 and March 31, 2024, please [sign up using this form](https://docs.google.com/forms/d/e/1FAIpQLSepBgq66nChYc0G8Cmi3RVzCBNGw_KDLZNx8-hRiNnHay8E3g/viewform).
+The conference organizers are looking for reviewers for submission to “DH Inside Out”. If you are willing to review two to three submissions between March 15 and March 31, 2024, please [sign up using this form](https://docs.google.com/forms/d/e/1FAIpQLSepBgq66nChYc0G8Cmi3RVzCBNGw_KDLZNx8-hRiNnHay8E3g/viewform).
 
 ## Announcing Google Season of Docs 2024
 
@@ -340,7 +319,7 @@ Open source organizations apply to take part in Google Season of Docs from Febru
 
 ## Introducing the ModelShare Program
 
-Through a series of [interactive, online and free workshops](https://sciencegateways.org/networking-community/community-news/n/introducing-modelshare-program), we are bringing the scientific community together to inform the development of guidelines for researchers to effectively implement model-sharing practices throughout the modeling lifecycle.
+Through a series of [interactive, online and free workshops](https://sciencegateways.org/networking-community/community-news/n/introducing-modelshare-program), the scientific community will be brought together to inform the development of guidelines for researchers to effectively implement model-sharing practices throughout the modeling lifecycle.
 
 The workshops will take place between mid-February and late May 2024, and enable dialogue amongst data scientists, academic publishers, computational modelers, and the wider scientific community. Each workshop will host thought-provoking presentations by – or panel discussions with – leading experts. Meanwhile, the ModelShare team will ensure that events are welcoming and inclusive of diverse experiences, adhering to the [Open Modeling Foundation’s (OMF) Code of Conduct](https://www.openmodelingfoundation.org/about/code-of-conduct_draft/).
 
@@ -358,7 +337,7 @@ The Berkeley Lab Scientific Data Division User Experience (UX) team has launched
 
 Calling all software developers and scientists who are interested in algorithms, software and data systems related to space physics, heliophysics, geospace and related sciences! Come see what your colleagues are working on!
 
-The European Space Agency (ESA) is pleased to host the venue of the upcoming DASH (Data Analysis and Software in Heliophysics) and IHDEA (International Heliophysics Data Environment Alliance) [annual meetings](https://www.cosmos.esa.int/web/ihdea/ihdea-dash-2024) in its premises at European Space Astronomy Centre (ESAC), near Madrid Spain from 14 to 18 October 2024. This will be an hybrid meeting.
+The European Space Agency (ESA) is pleased to host the venue of the upcoming DASH (Data Analysis and Software in Heliophysics) and IHDEA (International Heliophysics Data Environment Alliance) [annual meetings](https://www.cosmos.esa.int/web/ihdea/ihdea-dash-2024) in its premises at European Space Astronomy Centre (ESAC), near Madrid Spain from 14 to 18 October 2024. This will be a hybrid meeting.
 
 ## 2024 Improving Scientific Software Conference 
 
@@ -372,7 +351,7 @@ Consider submitting a tutorial proposal for SC’24, Atlanta, 17-22 Nov 2024.
 
 SC Tutorials is one of the largest tutorial programs at any computing-related conference. These high-quality tutorials are a highlight of the SC Conference.
 
-The Tutorials Committee strongly promotes diversity and inclusivity in all aspects. We particularly welcome and encourage tutorial collaborations that include a diversity of presenters and institutional types, particularly those typically underrepresented at the conference.
+The Tutorials Committee strongly promotes diversity and inclusivity in all aspects. They particularly welcome and encourage tutorial collaborations that include a diversity of presenters and institutional types, particularly those typically underrepresented at the conference.
 
 Honorarium and travel reimbursement provided for accepted tutorial presenters.
 
@@ -416,20 +395,6 @@ Virtual Conference Passes are available.
 
 
 
-
-
-<a name="outreach"></a>
-# **US-RSE Outreach**
-
-The Outreach Working Group is actively recruiting new co-chairs to take over its leadership! Volunteers are also needed to help with organizing workshops, birds of a feather (BoF), symposiums, etc. Roles span from organizer to reviewer to speaker and more. Here are some key projects that recent co-chairs, Miranda Mundt and Josh Teves, have led to benefit the overall US-RSE community:
-* Strategically planning and delivering the first-ever US-RSE conference in 2023
-* Organizing the submission of collaborative proposals to relevant conferences
-* Providing awesome SWAG to members
-* Assisting the overall US-RSE community with delineating between membership, communications, and outreach efforts
-
-If you are interested in contributing to a US-RSE hosted event, please reach out to the working group via the [#wg-outreach](https://app.slack.com/client/T8ZT4PJSW/CNR6E0N75) slack channel or [wg-outreach@us-rse.org](mailto:wg-outreach@us-rse.org).
-
-
 <a name="financials"></a>
 # **US-RSE Financials**
 
@@ -455,7 +420,6 @@ As always we thank everyone who is already contributing for their help in shapin
 * [Education & Training](https://us-rse.org/wg/education_training/)
 * [Group Management](https://us-rse.org/wg/group-management/)
 * [Mentorship Program](https://us-rse.org/wg/mentorship-program/)
-* [Outreach](https://us-rse.org/wg/outreach/)
 * [RSE Empowerment in National Labs](https://us-rse.org/wg/rse-empowerment-national-labs/)
 * [User Experience](https://us-rse.org/wg/ux/)
 * [Website](https://us-rse.org/wg/website/)
