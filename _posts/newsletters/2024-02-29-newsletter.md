@@ -71,7 +71,7 @@ If you have questions, please send them via email to [awards@us-rse.org](mailto:
 
 
 <a name="conference2024"></a>
-# **US-RSE Conference 2024  (USRSE'24)**
+# **US-RSE Conference 2024  (US-RSE'24)**
 ## **Conference Updates**
 
 **Dates and Venue Announcement**
