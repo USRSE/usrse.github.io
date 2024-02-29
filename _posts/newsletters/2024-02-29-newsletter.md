@@ -82,13 +82,13 @@ Our next conference will be Tuesday, October 15 through Thursday, October 17, at
 
 Congratulations to our wonderful US-RSE 2024 Technical subcommittee co-chairs! Please welcome them and thank them for stepping up to help us put on a great program for this year’s conference!
 
-BoFs: Nasir Eisty, David Luet     
-Workshops: Elaine Raybourn, Cody Balos     
-Tutorials: Pengyin Shan, Steven Clontz     
-Papers: John Tencer, Fang Liu, Sandeep Puthanveetil Satheesan     
-Talks: Maria Patrou, Derek Wilke     
-Posters: Douglas Friedel, Vishwasrao Salunkhe     
-Notebooks: Torin White, Ludovico Bianchi, Nicole Brewer     
+- BoFs: Nasir Eisty, David Luet     
+- Workshops: Elaine Raybourn, Cody Balos     
+- Tutorials: Pengyin Shan, Steven Clontz     
+- Papers: John Tencer, Fang Liu, Sandeep Puthanveetil Satheesan     
+- Talks: Maria Patrou, Derek Wilke     
+- Posters: Douglas Friedel, Vishwasrao Salunkhe     
+- Notebooks: Torin White, Ludovico Bianchi, Nicole Brewer     
 
 **Call for Submissions**
 
