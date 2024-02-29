@@ -40,9 +40,9 @@ Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for t
 
 We are pleased to announce that the Community and Travel Funds Committee will fund two applications from the December 2023 deadline!
 
-Daniel S. Katz will be traveling to [deRSE 2024](https://events.hifis.net/event/994/) to present his talk titled “US-RSE: Today's successes and tomorrow's challenges.” He is acting as a US-RSE representative and will focus on building connections with the international RSE community.
+- Daniel S. Katz will be traveling to [deRSE 2024](https://events.hifis.net/event/994/) to present his talk titled “US-RSE: Today's successes and tomorrow's challenges.” He is acting as a US-RSE representative and will focus on building connections with the international RSE community.
 
-Nasir Eisty will be traveling to Germany to attend the [Dagstuhl Seminar – Research Software Engineering: Bridging Knowledge Gaps](https://www.dagstuhl.de/seminars/seminar-calendar/seminar-details/24161). Along with several other members of US-RSE, Nasir hopes to elevate the visibility of the US-RSE community as well as promote the role of RSEs in research.
+- Nasir Eisty will be traveling to Germany to attend the [Dagstuhl Seminar – Research Software Engineering: Bridging Knowledge Gaps](https://www.dagstuhl.de/seminars/seminar-calendar/seminar-details/24161). Along with several other members of US-RSE, Nasir hopes to elevate the visibility of the US-RSE community as well as promote the role of RSEs in research.
 
 Please join us in congratulating our two recipients. The next application deadline is March 31, 2024. See the [Community and Travel Funds page](https://us-rse.org/funds-and-awards/) for more details.
 
