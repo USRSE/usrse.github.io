@@ -134,7 +134,7 @@ Thanks to the other excellent candidates David Beck, Mahmood Shad, and Torin Whi
 In addition, we want to express our gratitude to the three outgoing Steering Committee members, Nicole Brewer, Christina Maimone, and Sandra Gesing. Their decades of experience have been instrumental in advancing US-RSE, fostering connections within the broader research software community, and positioning US-RSE for a promising future.
 
 <a name="proceedings2023"></a>
-# **USRSE23 Proceedings**
+# **US-RSE'23 Proceedings**
 The USRSE23 conference proceedings are now published! They can be found at https://zenodo.org/communities/usrse23.  All of the conference papers are now posted to this site, along with most of the other submission types. Our apologies for all of the delays in getting these posted. Thanks for your patience! 
 
 
