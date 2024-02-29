@@ -123,7 +123,7 @@ In addition, we want to express our gratitude to the three outgoing Steering Com
 
 <a name="proceedings2023"></a>
 # **US-RSE'23 Proceedings**
-The USRSE23 conference proceedings are now published! They can be found at https://zenodo.org/communities/usrse23.  All of the conference papers are now posted to this site, along with most of the other submission types. Our apologies for all of the delays in getting these posted. Thanks for your patience! 
+The US-RSE'23 conference proceedings are now published! They can be found at [https://zenodo.org/communities/usrse23](https://zenodo.org/communities/usrse23).  All of the conference papers are now posted to this site, along with most of the other submission types. Our apologies for all of the delays in getting these posted. Thanks for your patience! 
 
 
 <a name="news"></a>
