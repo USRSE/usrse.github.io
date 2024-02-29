@@ -63,7 +63,7 @@ The 2024 US-RSE Excellence in Service Award recognizes a member's exceptional de
 The US-RSE Impact Award honors an individual's remarkable contributions and influence within the Research Software Engineering (RSE) profession. It celebrates achievements across various domains, including but not limited to: advancing RSE training and education, elevating RSE status through impactful activities, authoring influential works to enhance visibility, and nurturing the development of RSE communities. The recipient of this award will receive an award certificate, recognition on the US-RSE website, a $250 gift card as well as recognition at the annual US-RSE'24 conference. Nominees must not currently serve on the US-RSE steering committee, award committee, or be part of the staff.
 
 
-For additional details on how to nominate someone, or yourself, please visit the community awards website (https://us-rse.org/community-awards/).  You may nominate individuals starting today. Nominations will close March 15, 2024.
+For additional details on how to nominate someone, or yourself, please visit the [Community Awards page](https://us-rse.org/community-awards/).  Nominations will close **March 15, 2024**.
 
 
 If you have questions, please send them via email to awards@us-rse.org or ask in the #rse-community-awards slack channel.
