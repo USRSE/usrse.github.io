@@ -66,7 +66,7 @@ The US-RSE Impact Award honors an individual's remarkable contributions and infl
 For additional details on how to nominate someone, or yourself, please visit the [Community Awards page](https://us-rse.org/community-awards/).  Nominations will close **March 15, 2024**.
 
 
-If you have questions, please send them via email to awards@us-rse.org or ask in the #rse-community-awards slack channel.
+If you have questions, please send them via email to [awards@us-rse.org](mailto:awards@us-rse.org) or ask in the #rse-community-awards slack channel.
 
 
 
