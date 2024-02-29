@@ -79,7 +79,7 @@ Congratulations to our wonderful US-RSE 2024 Technical subcommittee co-chairs! P
 
 **Call for Submissions**
 
-We invite [submissions for the second annual US-RSE Conference](https://us-rse.org/usrse24/participate/) to be held in Albuquerque, New Mexico, October 15-17, 2024. The theme of this year’s conference is “Yesterday, Today, Tomorrow: A celebration of all that RSEs have done for computing in the past, in the present, and in the future.” Topics of interest include, but are not limited to:
+We invite [submissions for the second annual US-RSE Conference](https://us-rse.org/usrse24/participate/). The theme of this year’s conference is “Yesterday, Today, Tomorrow: A celebration of all that RSEs have done for computing in the past, in the present, and in the future.” Topics of interest include, but are not limited to:
 
 
 * History of the RSE movement
