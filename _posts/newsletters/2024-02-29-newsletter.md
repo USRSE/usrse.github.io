@@ -44,7 +44,7 @@ We are pleased to announce that the Community and Travel Funds Committee will fu
 
 - Nasir Eisty will be traveling to Germany to attend the [Dagstuhl Seminar – Research Software Engineering: Bridging Knowledge Gaps](https://www.dagstuhl.de/seminars/seminar-calendar/seminar-details/24161). Along with several other members of US-RSE, Nasir hopes to elevate the visibility of the US-RSE community as well as promote the role of RSEs in research.
 
-Please join us in congratulating our two recipients. The next application deadline is March 31, 2024. See the [Community and Travel Funds page](https://us-rse.org/funds-and-awards/) for more details.
+Please join us in congratulating our two recipients. The next application deadline is **March 31, 2024**. See the [Community and Travel Funds page](https://us-rse.org/funds-and-awards/) for more details.
 
 
 ## Community Awards program
