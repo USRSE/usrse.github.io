@@ -56,7 +56,6 @@ Active members attend our regular meetings at least once a quarter (once every 3
 ## Jobs
 
 - [Academic Data Science Alliance job board](https://academicdatascience.org/jobs/) (skews academic)
-- [Neuromatch job board](https://neuromatch.io/resources/job-board)
 - [Neurorumblr job board ](http://neurorumblr.com/) (skews academic)
 - [neurotechx job board](https://neurotechx.com/find-a-job/)
 - [RSE job board ](https://society-rse.org/careers/vacancies/) (international)
