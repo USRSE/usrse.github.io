@@ -414,5 +414,17 @@
         "email": "ksbeattie@lbl.gov",
         "bio": "Group Lead\r\nSustainable Software Engineering\r\nLawrence Berkeley National Laboratory",
         "blog": "https://github.com/ksbeattie"
+    },
+    "billbrod": {
+        "name": "William F. Broderick",
+        "email": "billbrod@gmail.com",
+        "bio": "Associate data scientist at Flatiron Institute, working to make computational neuroscience more open, cumulative, and reproducible.",
+        "blog": "http://orcid.org/0000-0002-8999-9003",
+        "orcid": "0000-0002-8999-9003",
+        "affiliation": "Flatiron Institute"
+    },
+    "sanyatonwu": {
+        "name": "sanyatonwu",
+        "blog": "https://github.com/sanyatonwu"
     }
 }
