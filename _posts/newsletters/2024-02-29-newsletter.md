@@ -1,3 +1,10 @@
+---
+layout: post
+title: US-RSE February 2024 Newsletter
+subtitle: February 2024 
+category: newsletter
+tags: [newsletter, February]
+---
 In this monthly newsletter, we share recent, current, and planned activities of the US-RSE Association, and related news that we think is of interest to US-RSE members. Newsletters are also available on our [website](https://us-rse.org/newsletters/) alongside the growing resources and information on the US-RSE Association. To receive our newsletter, [join US-RSE](https://us-rse.org/join/).
 
 In this issue:
