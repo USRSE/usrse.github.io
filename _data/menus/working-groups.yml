@@ -2,6 +2,8 @@
   items:
     - name: Code Review
       link: wg/code-review
+    - name: Community Calls
+      link: wg/community-calls
     - name: Diversity, Equity, and Inclusion
       link: wg/dei
     - name: Education and Training
@@ -14,5 +16,7 @@
       link: wg/outreach
     - name: RSE Empowerment in National Labs
       link: wg/rse-empowerment-national-labs
+    - name: User Experience
+      link: wg/ux
     - name: Website
       link: wg/website

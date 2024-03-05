@@ -113,7 +113,9 @@
         "name": "Simon Byrne",
         "email": "simonbyrne@gmail.com",
         "bio": "Software developer @CliMA",
-        "blog": "https://github.com/simonbyrne"
+        "blog": "https://github.com/simonbyrne",
+        "orcid": "0000-0001-8048-6810",
+        "affiliation": "California Institute of Technology"
     },
     "TaiSakuma": {
         "name": "Tai Sakuma",
@@ -230,7 +232,9 @@
     "roelofsaj": {
         "name": "Abbey Roelofs",
         "blog": "https://github.com/roelofsaj",
-        "bio": "Research software engineer in LSA Technology Services at the University of Michigan"
+        "bio": "Research software engineer in LSA Technology Services at the University of Michigan",
+        "orcid": "0000-0002-5974-7235",
+        "affiliation": "Universiteit Antwerpen"
     },
     "mtbc": {
         "name": "Mark Carroll",
@@ -404,5 +408,23 @@
     "jbteves-sandia": {
         "name": "jbteves-sandia",
         "blog": "https://github.com/jbteves-sandia"
+    },
+    "ksbeattie": {
+        "name": "Keith Beattie",
+        "email": "ksbeattie@lbl.gov",
+        "bio": "Group Lead\r\nSustainable Software Engineering\r\nLawrence Berkeley National Laboratory",
+        "blog": "https://github.com/ksbeattie"
+    },
+    "billbrod": {
+        "name": "William F. Broderick",
+        "email": "billbrod@gmail.com",
+        "bio": "Associate data scientist at Flatiron Institute, working to make computational neuroscience more open, cumulative, and reproducible.",
+        "blog": "http://orcid.org/0000-0002-8999-9003",
+        "orcid": "0000-0002-8999-9003",
+        "affiliation": "Flatiron Institute"
+    },
+    "sanyatonwu": {
+        "name": "sanyatonwu",
+        "blog": "https://github.com/sanyatonwu"
     }
 }

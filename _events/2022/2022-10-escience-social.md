@@ -18,7 +18,7 @@ The Outreach working group has two questions for you:
 - Are you going to the [18th International Conference for eScience](https://www.escience-conference.org/2022/), taking place this year in Salt Lake City, UT?
 
 If you answered _Yes_ to either question, we invite you to join your fellow
-RSEs at [HallPass SLC](https://hallpassslc.com/bars-and-eateries/), 153 S Rio Grande St. 
+RSEs at [HallPass SLC](https://hallpassslc.com/), 153 S Rio Grande St. 
 
 We will be meeting at 6 PM Mountain Time following the
 [RSEs in eScience workshop](https://us-rse.org/rse-escience-2022/).

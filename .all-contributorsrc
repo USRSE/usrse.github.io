@@ -806,6 +806,39 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/134551825?v=4"
             ]
+        },
+        {
+            "login": "ksbeattie",
+            "name": "Keith Beattie",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/ksbeattie",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/1534843?v=4"
+            ]
+        },
+        {
+            "login": "billbrod",
+            "name": "William F. Broderick",
+            "contributions": [
+                "code"
+            ],
+            "profile": "http://orcid.org/0000-0002-8999-9003",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/6338509?v=4"
+            ]
+        },
+        {
+            "login": "sanyatonwu",
+            "name": "sanyatonwu",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/sanyatonwu",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/155703270?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

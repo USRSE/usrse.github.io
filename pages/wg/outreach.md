@@ -77,12 +77,7 @@ about opportunities, strategies, and starting points for finding funding.
 
 #### Upcoming Presentations
 
-- __2023-10-10 Stuart Feldman and James Ricci__ - Schmidt Futures: [Event info and registration]({{ site.baseurl }}/events/2023/2023-10-funder-talk-series/)
-
-- __2023-12-12 Adrian Price-Whelan__ - Simons Foundation: [Event info and registration]({{ site.baseurl }}/events/2023/2023-12-funder-talk-series/)
-
-
-Please keep an eye out for future announcements regarding this series.
+The funders talk series is now on hiatus until 2025.
 
 #### Past Presentations
 
@@ -98,6 +93,11 @@ Please keep an eye out for future announcements regarding this series.
 
 - __2023-08-03 Steve Crawford__ - NASA: [Event page]({{ site.baseurl }}/events/2023/2023-08-funder-talk-series/), [video](https://youtu.be/Z--mucnRLcQ) & [slides](https://drive.google.com/file/d/1jVnDJuR_tJ7h2XY_piPQD1xRCPdRj09K/view?usp=sharing)
 
+- __2023-10-10 Stuart Feldman and James Ricci__ - Schmidt Futures: [Event page]({{ site.baseurl }}/events/2023/2023-10-funder-talk-series/), [video](https://youtu.be/kK3CGPJYZhw) & [slides](https://drive.google.com/file/d/122dhTYuclw8p3-LTa_NHA1V09hES6sIC/view?usp=sharing)
+
+- __2023-12-12 Adrian Price-Whelan__ - Simons Foundation: [Event page]({{ site.baseurl }}/events/2023/2023-12-funder-talk-series/), [video](https://youtu.be/LW3Q9DsbaFk) & [slides](https://drive.google.com/file/d/1g3vLbpu5bQGt4hL05cUYM4zzjCZfhasE/view?usp=sharing)
+
+- __2024-01-29 Ashley Sands__ - Institute of Museum and Library Services: [Event page]({{ site.baseurl }}/events/2024/2024-01-funder-talk-series/), [video](https://youtu.be/sQkNbnR4g1k) & [slides](https://drive.google.com/file/d/1JtaGqPFAH3bxkJLs8SmQ7VBbaruh5FIJ/view?usp=sharing)
 
 
 ### Supercomputing Spotlights

@@ -42,8 +42,10 @@
       link: share
     - name: Community Whitepapers
       link: community-whitepapers
-    - name: Grants and Awards
-      link: grants-and-awards/
+    - name: Funds and Awards
+      link: funds-and-awards/
+    - name: Community Awards
+      link: community-awards/
 - name: Working Groups
   link: working-groups/
   dropdown:
@@ -51,6 +53,8 @@
       link: working-groups
     - name: Code Review
       link: wg/code-review
+    - name: Community Calls
+      link: wg/community-calls
     - name: Diversity, Equity, and Inclusion
       link: wg/dei
     - name: Education and Training
@@ -63,6 +67,8 @@
       link: wg/outreach
     - name: RSE Empowerment in National Labs
       link: wg/rse-empowerment-national-labs
+    - name: User Experience
+      link: wg/ux
     - name: Website
       link: wg/website
 - name: Events
@@ -72,6 +78,8 @@
       link: events
     - name: Calendar
       link: events/calendar
+    - name: Conference
+      link: events/conference
     - name: Archive
       link: events/archive/
 - name: Job Board
@@ -99,8 +107,10 @@
       link: resources/rses/
     - name: Organizations
       link: resources/organizations/
-    - name: Grants and Awards
-      link: grants-and-awards/
+    - name: Funds and Awards
+      link: funds-and-awards/
+    - name: Community Awards
+      link: community-awards/
 
 - name: External
   dropdown:

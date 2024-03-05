@@ -13,7 +13,7 @@ If you have questions for the candidates, or questions about the election,
 please use the #election channel on Slack. You must be [registered as a member](https://us-rse.org/join)
 by Wednesday, November 8th to be eligible to vote in this election.
 
-Candidates are listed in aphabetical order.
+Candidates are listed in alphabetical order.
 - Abbey Roelofs
 - Alex Koufos
 - David Beck
@@ -25,7 +25,7 @@ Candidates are listed in aphabetical order.
 
 More information about the candidates can be found below.
 
-## Abbey Roelofs
+## Abbey Roelofs (she/her) 
 
 [Email](mailto:aheinlei@umich.edu), [Profile](https://www.linkedin.com/in/abbey-roelofs/)
 
@@ -40,7 +40,7 @@ Since discovering US-RSE, I've participated regularly in community calls and the
 In my daily life as an RSE and lead of a small group of RSEs, I've worked to develop my group from a somewhat disorganized, every-coder-for-themselves mentality to a more unified team. During my tenure as lead, we've come a long way in implementing and following software engineering best practices and have developed a constantly evolving set of standards and procedures we follow as a group. These practices have improved both our group dynamics and our software products, and I've tried to find ways to share this experience with the US-RSE community.
 
 
-## Alex Koufos
+## Alex Koufos (he/him)
 
 [Email](mailto:akoufos@stanford.edu), [Profile](https://www.linkedin.com/in/alexkoufos/)
 
@@ -60,7 +60,7 @@ In the research community I work in, I am consistently promoting the concept of 
 
 As a Steering Committee Member, I would like to focus more effort on building our community by reaching out to the RSEs that are unaware of the term. We have an amazing community that is welcoming and passionate about supporting them.
 
-## David Beck
+## David Beck (he/him)
 
 [Email](mailto:dacb@uw.edu), [Profile](https://drive.google.com/file/d/1_SVOHGUn5j9PHe-L8hI5oEhgZ8V8HozJ/view?usp=sharing)
 
@@ -78,7 +78,7 @@ I would like our community to be a leader in creating, driving and fostering the
 As director of the University of Washington Scientific Software Engineering Center, I advocate for the creation and funding of RSE entities across the US and Pacific Nothwest.  Recently, I was part of a team that created a Career Guidebook for Hiring, Managing, and Retaining Data Scientists and Research Software Engineers in Academia: https://academicdatascience.org/community-projects/career-guidebook/. In addition, I have been asked to talk about our emerging program as a model at UW to over a dozen universities, philanthropies and independent research institutions in the last year. I very much enjoy these opportunities to share our lessons and mistakes to help other entities get off the ground, but it is not a particularly scalable model for me to continue this as an individual and this is one way I have really appreciated the US-RSE to help build out this capacity.
 At my home institution, I have successfully advocated for the creation of new RSE job roles and expanded the pay range for existing RSE job roles.  Additionally, we have created policies that explicitly state the expectations for our RSEs in terms of their co-authorship, attribution and ownership of the research produced at UW.
 
-## Ian Cosden
+## Ian Cosden (he/him)
 
 [Email](mailto:icosden@princeton.edu), [Profile](https://www.linkedin.com/in/ian-cosden-1907958/)
 
@@ -107,7 +107,7 @@ As a founding member of the US-RSE Steering Committee, I have enjoyed the opport
 
 First, as a founding member of the US-RSE Steering Committee, I have served in multiple roles, including Secretary, International Council Representative, and most recently Vice Chair. Second, I started and co-lead the US-RSE Education & Training Working group, which organizes and hosts a quarterly speaker series. Third, I co-founded and co-lead a new working group on Code Review. During the Review BoF at the US-RSE conference, the need for such a group was evident. Therefore, I took the lead in organizing an effort to propose and create this new working group. Fourth, I served on the committee to recruit, interview, and select the US-RSE Executive Director. Finally, I took an active role in the first US-RSE conference by co-organizing a workshop, delivering a talk on code review, and serving as a panelist for the Code Review BoF. Beyond these specific service roles for US-RSE, in my work as a Professor of Computer Science focused on Software Engineering, I have conducted and published numerous studies on the people and processes involved in research software engineering. My future research will continue to focus on important questions related to RSEs and research software. This expertise in software engineering and its application to the context of research software as well as my role as a faculty member at an R1 University provides an important perspective to the discussions and decisions made by the US-RSE Steering Committee.
 
-## Keith Beattie
+## Keith Beattie (he/him)
 
 [Email](mailto:KSBeattie@lbl.gov), [Profile]( https://www.linkedin.com/in/ksbeattie/)
 
@@ -123,7 +123,7 @@ I have long bemoaned to my coworkers and bosses on how software is not treated n
 
 I’ve been an active member of the BSSw and US-RSE for several years now, participating in meetings and producing content for web sites and working groups.  Most recently, I led a Birds of a Feather session at the US-RSE23 conference on “What it means to be an RSE at a National Lab” where we explored the differences between and challenges faced by RSE at various National Labs.
 
-## Mahmood Shad
+## Mahmood Shad (he/him/his)
 
 [Email](mailto:mohammadi_shad@harvard.edu), [Profile](https://www.linkedin.com/in/mmsh/)
 
@@ -138,7 +138,7 @@ I am passionate about promoting the impact of RSEs in academia and industry, sup
 
 My contributions to the US-RSE and broader RSE community are in different areas, reflecting a commitment to advancing our field. As a sponsorship chair for the 2023 US-RSE Conference, I facilitated several funding channels, enhancing the community's strength and reach. Additionally, I have been supporting our community as a program committee member for multiple RSE workshops at Supercomputing Conferences (SC). My technical chair role in the US-RSE 2022 Workshop shows my dedication to community skill-building. Through invited talks, I have advocated for collaboration and tech adoption within RSE teams, fostering a knowledge-sharing culture. These efforts, coupled with my hands-on project leadership in computational research, exemplify my active, comprehensive involvement in our community, continually driving towards innovation and excellence in research software engineering.
 
-## Torin White
+## Torin White (they/them)
 
 [Email](mailto:torinw@uic.edu), [Profile](https://www.linkedin.com/in/torinwhite)
 
