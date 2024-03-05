@@ -1,5 +1,6 @@
 - expires: 2024-04-07
-  location: University of Michigan LSA Technology Services, Ann Arbor, MI (remote eligible)
+  location: University of Michigan LSA Technology Services, Ann Arbor, MI (remote
+    eligible)
   name: Full-Stack Web Developer
   posted: 2024-03-05
   url: https://careers.umich.edu/job_detail/245960/full-stack-web-developer
@@ -171,11 +172,6 @@
   name: Performance Tuning Analyst
   posted: 2023-11-14
   url: https://main-princeton.icims.com/jobs/18060/performance-tuning-analyst/job?mode=view
-- expires: 2024-01-04
-  location: Flatiron Institute - Simons Foundation, New York, NY
-  name: Infrastructure Software Engineer
-  posted: 2023-10-18
-  url: https://simonsfoundation.wd1.myworkdayjobs.com/simonsfoundationcareers/job/162-Fifth-Avenue/DevOps-Engineer_R0000973
 - expires: 2024-01-31
   location: Boys Town, Omaha, NE
   name: Lead Neuroimaging Software Developer
