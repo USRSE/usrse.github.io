@@ -7,8 +7,8 @@ duration: 60
 repeated: false
 category: community-call
 time:
-    - - start: 2024-03-14 12:00 ET
-        end: 2024-03-14 13:00 ET
+    - - start: 2024-03-14T17:00:00Z
+        end: 2024-03-14T18:00:00Z
 ---
 
 Our **March Community Call** will be all about **The Wide World of RSE Positions** on Thursday, March 14, 12pm ET/11am CT/10am MT/9am PT.
