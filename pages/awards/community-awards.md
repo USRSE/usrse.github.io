@@ -52,7 +52,7 @@ Awards are expected to be announced in mid-May.
 ### Application Details
 
 Once nominations open, interested members are encouraged to nominate themselves.
-Alternatively, if you know of a member whom you think would make a good nominee, you can submit a nomination on their behalf. 
+Alternatively, if you know of a member whom you think would make a good nominee, you can recommend them. 
 All US-RSE members in good standing are eligible to be nominated.
 
 **Application  Form**
@@ -66,9 +66,9 @@ On the nomination form, expect to provide the following information.
 **If Nominating Someone Else:**
 * Your name and email
 * Nominee's name and email
-* Short statement about why you are nominating the individual
+* A short sentence about why you are nominating the individual
 
-If nominating someone else, please complete the form early so that we can contact the nominated person and obtain their nomination materials before the application closing date. Nominations of others will only be shared with the award committee and the nominated individual. The award committee will contact the nominated individual to inform them of their nomination, disclose the nominator's identity, and confirm their interest in participating. This information will not be made public.
+If nominating someone else, please complete the form early so that we can contact the nominated person and obtain their nomination materials before the application closing date. Nominations of others will only be shared with the award committee and the nominated individual. The award committee will contact the nominated individual to inform them of their nomination, disclose the nominator's identity, and confirm their interest in participating by asking them to submit materials through the self-nomination process. This information will not be made public.
 
 **Self-nomination:**
 * Your name and email
@@ -87,6 +87,16 @@ If nominating someone else, please complete the form early so that we can contac
 ### FAQs
 
 <details>
+  <summary><b>Q: What should I do if I receive an email from the Awards committee that (someone) has nominated me?</b></summary>
+    A: If someone else nominates you, the Awards committee will send you an email asking you to fill out the self-nomination form. Please proceed to fill out the application form, select 'self-nomination,' and enter the required details.
+</details>
+
+<details>
+  <summary><b>Q: Are there 'extra points' when someone else nominates me vs. self nomination? </b></summary>
+    A: There are no 'extra points' whether you self-nominate or if someone else suggests your name (and then you are contacted by the Awards committee to fill out the self-nomination form). Regardless of the approach, all candidates must eventually fill out the self-nomination form and state why they are deserving candidates for the award - This is to ensure that the process is fair whether candidates are self-nominated or recommended by others. So, we encourage you to nominate yourself.
+</details>
+
+<details>
   <summary><b>Q: Can individuals submit nominations for more than one award in same year?</b></summary>
     A: No, individuals cannot apply for multiple awards in the same year.
 </details>
@@ -100,6 +110,7 @@ If nominating someone else, please complete the form early so that we can contac
   <summary><b>Q: Do applicants have to be based in the U.S. to apply?</b></summary>
     A: No; any member of US-RSE is eligible to apply.
 </details>
+
 
 
 
