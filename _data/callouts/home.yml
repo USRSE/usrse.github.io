@@ -13,15 +13,10 @@ items:
     link: https://doi.org/10.5281/zenodo.10073232
     link_name: >
       "Research Software Engineers: Creating a Career Path—and a Career"
-  - title: Celebrate Black History Month
-    subtitle: >
-      US-RSE's DEI working group (DEI-WG) is proud to lead the US-RSE's
-      participation in celebrating Black History Month.
-    link: 2024-02-01-black-history-month/
     link_name: Learn More
-    # - title: Community and Travel Funds
-    #   subtitle: >
-    #     US-RSE is accepting applications to provide funding to support members
-    #     in activities for the community and individuals!
-    #   link: /funds-and-awards/
-    #   link_name: Learn More
+  - title: Community Awards
+    subtitle: >
+      US-RSE is accepting applications for the US-RSE Excellence in Service
+      and US-RSE Impact Awards! Nominations close on March 15, 2024.
+    link: /community-awards/
+    link_name: Learn More
