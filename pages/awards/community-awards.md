@@ -87,6 +87,16 @@ If nominating someone else, please complete the form early so that we can contac
 ### FAQs
 
 <details>
+  <summary><b>Q: What should I do if I receive an email from the Awards committee that (someone) has nominated me?</b></summary>
+    A: If someone else nominates you, the Awards committee will send you an email asking you to fill out the self-nomination form. Please proceed to fill out the application form, select 'self-nomination,' and enter the required details.
+</details>
+
+<details>
+  <summary><b>Q: Are there 'extra points' when someone else nominates me vs. self nomination? </b></summary>
+    A: There are no 'extra points' whether you self-nominate or if someone else suggests your name (and then you are contacted by the Awards committee to fill out the self-nomination form). Regardless of the approach, all candidates must eventually fill out the self-nomination form and state why they are deserving candidates for the award. So, we encourage you to nominate yourself.
+</details>
+
+<details>
   <summary><b>Q: Can individuals submit nominations for more than one award in same year?</b></summary>
     A: No, individuals cannot apply for multiple awards in the same year.
 </details>
@@ -100,6 +110,7 @@ If nominating someone else, please complete the form early so that we can contac
   <summary><b>Q: Do applicants have to be based in the U.S. to apply?</b></summary>
     A: No; any member of US-RSE is eligible to apply.
 </details>
+
 
 
 
