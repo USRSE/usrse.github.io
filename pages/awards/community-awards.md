@@ -93,7 +93,7 @@ If nominating someone else, please complete the form early so that we can contac
 
 <details>
   <summary><b>Q: Are there 'extra points' when someone else nominates me vs. self nomination? </b></summary>
-    A: There are no 'extra points' whether you self-nominate or if someone else suggests your name (and then you are contacted by the Awards committee to fill out the self-nomination form). Regardless of the approach, all candidates must eventually fill out the self-nomination form and state why they are deserving candidates for the award - This is to ensure that the process if fair whether candidates are self-nominationed or recommended by others. So, we encourage you to nominate yourself.
+    A: There are no 'extra points' whether you self-nominate or if someone else suggests your name (and then you are contacted by the Awards committee to fill out the self-nomination form). Regardless of the approach, all candidates must eventually fill out the self-nomination form and state why they are deserving candidates for the award - This is to ensure that the process is fair whether candidates are self-nominated or recommended by others. So, we encourage you to nominate yourself.
 </details>
 
 <details>
