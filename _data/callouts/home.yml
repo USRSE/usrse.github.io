@@ -14,9 +14,9 @@ items:
     link_name: >
       "Research Software Engineers: Creating a Career Path—and a Career"
     link_name: Learn More
-    - title: Community Awards
-      subtitle: >
-        US-RSE is accepting applications for the US-RSE Excellence in Service
-        and US-RSE Impact Awards! Nominations close on March 15, 2024.
-      link: /community-awards/
-      link_name: Learn More
+  - title: Community Awards
+    subtitle: >
+      US-RSE is accepting applications for the US-RSE Excellence in Service
+      and US-RSE Impact Awards! Nominations close on March 15, 2024.
+    link: /community-awards/
+    link_name: Learn More
