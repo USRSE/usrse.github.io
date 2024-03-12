@@ -18,4 +18,4 @@ Research software engineers come in all shapes and sizes. Some work as “servic
 
 #### Registration details
 Information on how to register for the Zoom meeting will be sent via email
-and posted in the #general channel on Slack.
+and posted in the #general channel on Slack. The registration link can also be found in the pinned messages and channel description of the #communitycalls channel on Slack.
