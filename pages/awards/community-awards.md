@@ -42,8 +42,8 @@ The US-RSE Impact Award honors an individual's remarkable contributions and infl
 
 ### Award Timeline and Process
 * Nominations open: Feb 5, 2024
-* Nominations close: March 15, 2024
-* Award announcement:  May 15, 2024
+* Nominations close: March 29, 2024 (Extended)
+* Award announcement:  May 30, 2024
 
 Once nominations close, the 2024 Award committee will review nominations, check candidate eligibility and application details. 
 Applications are evaluated based on potential for positive impact on the community, alignment to the US-RSE mission, and the submitting members’ qualifications, including previous US-RSE activity.
@@ -68,7 +68,7 @@ On the nomination form, expect to provide the following information.
 * Nominee's name and email
 * A short sentence about why you are nominating the individual
 
-If nominating someone else, please complete the form early so that we can contact the nominated person and obtain their nomination materials before the application closing date. Nominations of others will only be shared with the award committee and the nominated individual. The award committee will contact the nominated individual to inform them of their nomination, disclose the nominator's identity, and confirm their interest in participating by asking them to submit materials through the self-nomination process. This information will not be made public.
+If nominating someone else, please complete the form early so that we can contact the nominated person and obtain their nomination materials before the application closing date. Nominations of others will only be shared with the award committee and the nominated individual. The award committee will contact the nominated individual to inform them of their nomination, may disclose the nominator's identity, and confirm their interest in participating by asking them to submit materials through the self-nomination process. This information will not be made public.
 
 **Self-nomination:**
 * Your name and email
