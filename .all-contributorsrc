@@ -839,6 +839,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/155703270?v=4"
             ]
+        },
+        {
+            "login": "davidbrownell",
+            "name": "David Brownell",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/davidbrownell",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/6353056?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
