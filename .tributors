@@ -426,5 +426,10 @@
     "sanyatonwu": {
         "name": "sanyatonwu",
         "blog": "https://github.com/sanyatonwu"
+    },
+    "davidbrownell": {
+        "name": "David Brownell",
+        "orcid": "0000-0002-5078-9711",
+        "blog": "https://github.com/davidbrownell"
     }
 }
