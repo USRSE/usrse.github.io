@@ -26,7 +26,7 @@ Rather than reproduce, we list them here:
 | Beginner | Collection | SE | Tutorial | [Software Carpentry](https://software-carpentry.org/lessons/) |
 | Intermediate | Collection | SE | Links | [INTERSECT](https://intersect-training.github.io/training-links/) |
 | Intermediate |	Collection |	SE | Tutorial |	[The Programming Historian](https://programminghistorian.org/) |
-| Beginner -> Advanced | EBook | SE | Book | [Research Software Engineering with Python](https://merely-useful.github.io/py-rse/index.html) |
+| Beginner -> Advanced | EBook | SE | Book | [Research Software Engineering with Python](https://third-bit.com/py-rse/) |
 
 ### Individual Lectures, Tutorials, and Videos
 
