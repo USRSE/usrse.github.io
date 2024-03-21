@@ -22,7 +22,7 @@ Rather than reproduce, we list them here:
 
 | Audience | Style | Domain | Type | Title |
 | -------- | ----- | ------ | ---- | ----- |
-| Beginner | Seminar Series | Various | Seminar Series | [USRSE Semenar Series]( https://us-rse.org/wg/education_training/seminar_series/) |
+| Beginner | Seminar Series | Various | Seminar Series | [USRSE Seminar Series]( https://us-rse.org/wg/education_training/seminar_series/) |
 | Beginner | Collection | SE | Tutorial | [Software Carpentry](https://software-carpentry.org/lessons/) |
 | Intermediate | Collection | SE | Links | [INTERSECT](https://intersect-training.github.io/training-links/) |
 | Intermediate |	Collection |	SE | Tutorial |	[The Programming Historian](https://programminghistorian.org/) |
