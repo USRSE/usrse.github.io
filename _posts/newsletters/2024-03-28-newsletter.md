@@ -11,6 +11,7 @@ In this monthly newsletter, we share recent, current, and planned activities of 
 In this issue:
 
 * [Community and Travel Funds - March 31 Application Deadline](#community-funds)
+* [Community Awards - March 29 Application Deadline](#community-awards)
 * [US-RSE Conference 2024](#conference2024)
 * [Community News](#news)
     * [SC24 - Women's History Month](#wmh2024)
@@ -39,6 +40,15 @@ In this issue:
 Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/funds-and-awards/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more. 
 
 The next application deadline is **March 31, 2024**. See the [Community and Travel Funds page](https://us-rse.org/funds-and-awards/) for more details.
+
+<a name="community-awards"></a>
+# Community Awards program
+
+In 2024, US-RSE is proud to unveil a new initiative aimed at honoring individuals who have significantly contributed to the Research Software Engineering community. This initiative is designed to recognize their dedication and support in furthering the mission and objectives of US-RSE.
+
+The US-RSE Community Awards are intended for individuals actively advancing the mission of US-RSE. There are two awards available. The Excellence in Service Award acknowledges outstanding dedication to advancing the US-RSE mission. The Impact Award recognizes notable contributions and influence within the RSE profession.
+
+For additional details on how to nominate someone, or yourself, please visit the [Community Awards page](https://us-rse.org/community-awards/). Nominations will close **March 29, 2024**.
 
 
 <a name="conference2024"></a>
