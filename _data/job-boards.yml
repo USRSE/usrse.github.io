@@ -5,5 +5,5 @@ boards:
     url: https://carpentries.topicbox.com/groups/opportunities
   - name: Academic Data Science Alliance Jobs
     url: https://academicdatascience.org/jobs
-  - name: High Performance Computing (HPC) Jobs
+  - name: High Performance Computing (HPC) Jobs from hpc.social
     url: https://hpc.social/jobs/
