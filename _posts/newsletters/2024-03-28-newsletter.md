@@ -333,6 +333,7 @@ This year in August, the [Digital Humanities Conference 2024](https://dh2024.adh
 *  [Ten simple rules for pushing boundaries of inclusion at academic events](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011797) by Siobhan Mackenzie Hall, Daniel Kochin, Carmel Carne, Patricia Herterich, Kristen Lenay Lewers, Mohamed Abdelhack, Arun Ramasubramanian, Juno Felecia, Michael Alphonse, Visotheary Ung, Sara El-Gebali, Christopher Brian Currin, Esther Plomp, Rachel Thompson, Malvika Sharan  
 *  [Inclusive Language in Technology](https://www.aswf.io/blog/inclusive-language/) by Academy Software Foundation
 *  [Racial Equity Tools Glossary](https://www.racialequitytools.org/glossary) by Racial Equity Tools
+*  [The FAIR for Research Software Principles after two years: an adoption update](https://www.researchsoft.org/blog/2024-03/) by Michelle Barker, Leyla Jael Castro, Bernadette Fritzsch, Daniel S. Katz, Carlos Martinez-Ortiz, Anna Niehues, Alexander Struck, Qian Zhang
 
 
 <a name="financials"></a>
