@@ -334,6 +334,7 @@ This year in August, the [Digital Humanities Conference 2024](https://dh2024.adh
 *  [Inclusive Language in Technology](https://www.aswf.io/blog/inclusive-language/) by Academy Software Foundation
 *  [Racial Equity Tools Glossary](https://www.racialequitytools.org/glossary) by Racial Equity Tools
 *  [The FAIR for Research Software Principles after two years: an adoption update](https://www.researchsoft.org/blog/2024-03/) by Michelle Barker, Leyla Jael Castro, Bernadette Fritzsch, Daniel S. Katz, Carlos Martinez-Ortiz, Anna Niehues, Alexander Struck, Qian Zhang
+*  [Research Software Engineers in HPC (RSE-HPC-2023): A Summary of the SC23 Workshop](https://bssw.io/blog_posts/research-software-engineers-in-hpc-rse-hpc-2023-a-summary-of-the-sc23-workshop) by Charles Ferenbaugh, Sandra Gesing, Simon Hettrick and Daniel S. Katz
 
 
 <a name="financials"></a>
