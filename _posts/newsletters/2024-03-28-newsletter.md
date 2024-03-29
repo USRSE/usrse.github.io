@@ -13,6 +13,7 @@ In this issue:
 * [Community and Travel Funds - March 31 Application Deadline](#community-funds)
 * [Community Awards - March 29 Application Deadline](#community-awards)
 * [US-RSE Conference 2024](#conference2024)
+* [Steering Committee Recap](#steering-committee)
 * [Community News](#news)
     * [SC24 - Women's History Month](#wmh2024)
     * [Member Spotlight](#member-spotlight)
@@ -83,6 +84,15 @@ We invite [submissions for the second annual US-RSE Conference](https://us-rse.o
 * **BoFs, Workshops, and Tutorials:** Monday, April 1
 * **Papers and Notebooks:** Monday, May 20
 * **Posters and Talks:** Monday, June 3
+
+<a name="steering-committee"></a>
+# **Steering Committee Recap**
+In January 2024, the Steering Committee welcomed three newly elected Steering Committee members and determined roles for 2024. As part of this process, we discussed how some roles will be changing and responsibilities shifting with the addition of our Executive Director (Sandra Gesing) and Community Manager (Sophia Anyatonwu). In addition, a new role of Deputy Treasurer was added to serve as a backup for and share some work of the Treasurer. Ian Cosden remains the US-RSE Steering Committee Chair, and the complete list of roles is available on the website.
+
+In late February, the Steering Committee held its annual strategic planning meeting to talk about priorities for the coming year as well as long-term plans. A blog post with full details will be coming soon, but some of the highlights of conversation included 5-year visions for US-RSE, exploring potential membership models for the organization, recognizing and supporting working group volunteers, and balancing differing opinions and viewpoints within the organization.
+
+The topics identified in the strategic planning meeting have informed the discussions at subsequent meetings. Current priorities include a formal membership program for organizations interested in supporting US-RSE, piloting a recognition program for active Slack community members, identifying fundraising opportunities, and better understanding our current membership. Many of these efforts are being led by Sophia and Sandra, who regularly attend Steering Committee meetings.
+
 
 
 <a name="news"></a>
