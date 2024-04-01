@@ -93,7 +93,8 @@
         "name": "Noam Ross",
         "email": "noam.ross@gmail.com",
         "blog": "http://www.noamross.net",
-        "orcid": "0000-0002-2136-0000"
+        "orcid": "0000-0002-2136-0000",
+        "bio": "Principal Scientist, Computational Research at @ecohealthalliance \r\n\r\nExecutive Director of @ropensci "
     },
     "pdurbin": {
         "name": "Philip Durbin",
