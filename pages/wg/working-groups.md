@@ -137,25 +137,6 @@ on the US-RSE slack.
 
 <hr>
 
-<h3><a href="{{ site.baseurl }}/wg/outreach/">Outreach</a></h3>
-
-The Outreach Working Group aims to broaden the reach of the US-RSE Association
-and the understanding and recognition of RSE as a professional designation. To
-reach this goal, we plan to expand the US-RSE presence at conferences and
-workshops, engage with students earlier in their educational careers, and
-provide tools and resources that individual US-RSE members can easily use to
-spread the message and mission of the US-RSE Association. We welcome all who
-are interested in helping us with this goal. To get involved,
-visit the [`#wg-outreach`](https://usrse.slack.com/messages/wg-outreach) channel on
-the US-RSE slack or contact the
-<a href="mailto:wg-outreach@us-rse.org">Outreach working group list</a>.
-
-Visit the [Outreach Working Group page]({{ site.baseurl }}/wg/outreach/) for
-more details and a catalog of work products.
-
-
-<hr>
-
 <h3><a href="{{ site.baseurl }}/wg/rse-empowerment-national-labs/">RSE Empowerment in National Labs</a></h3>
 
 The RSE Empowerment in National Labs Working Group, conceptualized in 2022, is for those
@@ -171,6 +152,28 @@ channel on the US-RSE slack or contact us on the
 <a href="mailto:wg-national-labs-empowerment@us-rse.org">national lab empowerment working group list</a>. 
 
 Visit the [RSE Empowerment in National Labs Working Group page]({{ site.baseurl }}/wg/rse-empowerment-national-labs/) for
+more details.
+
+<hr>
+
+<h3><a href="{{ site.baseurl }}/wg/testing/">Testing</a></h3>
+
+The Testing Working Group aims to leverage valuable industry software testing
+practices and methodologies, bridging the gap between research and industry
+standards. The group seeks to tackle the distinct challenges of research
+software testing by harnessing AI technologies. Some key focus areas include
+testing legacy code, ensuring comprehensive code coverage, and enhancing
+overall verification and validation processes. This collaborative effort
+will bring together RSEs, researchers, and practitioners to discuss current
+limitations, share knowledge, and collectively address cutting-edge challenges,
+thereby advancing the reliability and quality of research software.
+
+If you would like to join the conversation, please join us on
+the [`#wg-testing`](https://usrse.slack.com/messages/wg-testing)
+channel on the US-RSE slack or contact us on the
+<a href="mailto:wg-testing@us-rse.org">Testing working group list</a>. 
+
+Visit the [Testing Working Group page]({{ site.baseurl }}/wg/testing/) for
 more details.
 
 <hr>

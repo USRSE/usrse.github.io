@@ -11,6 +11,9 @@ set_last_modified: true
 
 # Overview
 
+<b>This working group is currently looking for new chairs and is INACTIVE
+until otherwise stated.</b>
+
 The US-RSE Outreach Working Group is dedicated to broadening US-RSE's
 engagement with the research software engineer (RSE) and wider computational
 science and engineering (CSE) communities. We strive to raise awareness of
@@ -23,7 +26,7 @@ bi-weekly virtual meetings. To get involved, visit the
 slack or contact the
 <a href="mailto:wg-outreach@us-rse.org">Outreach working group list</a>.
 
-**Co-chairs**: Miranda Mundt, Joshua Teves
+**Co-chairs**: INACTIVE
 
 # Work Products
 
