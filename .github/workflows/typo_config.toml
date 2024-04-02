@@ -3,6 +3,7 @@ extend-exclude = [
     ".git/",
     ".github/workflows/typo_config.toml",
     "assets/js/*.min.*",
+    "pages/feeds/*.xml"
 ]
 ignore-hidden = true
 [default]
