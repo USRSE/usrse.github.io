@@ -47,7 +47,7 @@ In May, June, and July, the Steering Committee focused on:
     * ADSA/US-RSE Career Workshop
     * International RSE Day
     * US-RSE Annual General Meeting and election 
-* Follow-up tasks from the April community building workshop, including getting blog posts written, distributing remaining resources from the conference, and coordinating with those who agreeded to lead specific efforts.  See the [News](https://us-rse.org/news/) section of the website for three posts that resulted from the community building workshop so far.
+* Follow-up tasks from the April community building workshop, including getting blog posts written, distributing remaining resources from the conference, and coordinating with those who agreed to lead specific efforts.  See the [News](https://us-rse.org/news/) section of the website for three posts that resulted from the community building workshop so far.
 * Logistics for working groups: their interactions with the Steering Committee and how individual working groups are structured and operate
 * Updates on the activities of existing working groups and plans for new groups
 * Discussing how to involve the community in revising Code of Conduct procedures
@@ -201,23 +201,23 @@ As always we thank everyone who is already contributing for their help in shapin
 
 These opportunities were recently posted to the [RSE Careers page](https://us-rse.org/jobs/):
 
-1.  [Student Assistant II - Research Software Engineer](https://ucar.wd5.myworkdayjobs.com/en-US/UCAR_Careers/details/Student-Assistant-II---Research-Software-Engineer_REQ-2022-279-1): NCAR, Remote _Posted: Jul 28, 2022_
-2.  [Associate Software Engineer (multiple positions)](https://uwhires.admin.washington.edu/ENG/Candidates/default.cfm?szCategory=jobprofile&szOrderID=210005): University of Washington, Seattle, WA (remote/hybrid) _Posted: Jul 24, 2022_
-3.  [Senior Software Engineer (multiple positions)](https://uwhires.admin.washington.edu/ENG/Candidates/default.cfm?szCategory=jobprofile&szOrderID=209999): University of Washington, Seattle, WA (remote/hybrid) _Posted: Jul 24, 2022_
-4.  [Principal Lead Software Engineer (multiple positions)](https://uwhires.admin.washington.edu/ENG/Candidates/default.cfm?szCategory=jobprofile&szOrderID=209997): University of Washington, Seattle, WA (remote/hybrid) _Posted: Jul 24, 2022_
-5.  [Postdoctoral Fellow (Quantitative Modeling Group)](https://lbl.referrals.selectminds.com/jobs/postdoctoral-fellow-quantitative-modeling-group-5018): Lawrence Berkeley National Laboratory, Emeryville, CA _Posted: Jul 13, 2022_
-6.  [Research Software Engineer](https://careers.udel.edu/cw/en-us/job/498944/research-software-engineer-it-research-cyberinfrastructure): University of Delaware, Newark, Delaware _Posted: Jul 07, 2022_
-7.  [Research Associate](https://jobs.colorado.edu/jobs/JobDetail/?jobId=40499): University of Colorado at Boulder, Boulder, CO (remote friendly) _Posted: Jul 07, 2022_
-8.  [Research Software Engineer, Epigenomics Core Facility](https://academicjobsonline.org/ajo/jobs/22011): Cornell University, Ithaca, NY _Posted: Jul 01, 2022_
-9.  [Research Software Engineer, Breeding Insight Program](https://academicjobsonline.org/ajo/jobs/22018): Cornell University, Ithaca, NY _Posted: Jul 01, 2022_
-10.  [Senior Research Software Engineer - Application Engineering](https://jobs.ornl.gov/job-invite/8458/): Oak Ridge National Laboratory, Oak Ridge, TN _Posted: Jun 16, 2022_
-11.  [Software Developer 3](https://careersearch.stanford.edu/jobs/software-developer-3-17062): Stanford Center for Biomedical Informatics Research, Stanford University, Santa Clara, CA _Posted: Jun 14, 2022_
-12.  [Data Scientist (Open Rank)](https://simonsfoundation.wd1.myworkdayjobs.com/simonsfoundationcareers/job/160-Fifth-Avenue/Data-Scientist--Open-Rank---Center-for-Computational-Neuroscience_R0001111): Center for Computational Neuroscience, Flatiron Institute, New York, New York _Posted: Jun 13, 2022_
-13.  [Research Software Engineer - Application Engineering](https://jobs.ornl.gov/job-invite/8419/): Oak Ridge National Laboratory, Oak Ridge, TN _Posted: Jun 10, 2022_
-14.  [Research Software Engineer - Neutrons](https://jobs.ornl.gov/job-invite/8420/): Oak Ridge National Laboratory, Oak Ridge, TN _Posted: Jun 10, 2022_
-15.  [Postdoctoral Research Scholar - Extensible molecular analysis tools for reproducible science](http://apply.interfolio.com/107631): Arizona State University, Tempe, AZ _Posted: Jun 01, 2022_
-16.  [Scientific Software Engineer, Hit Discovery](https://grnh.se/b12d84713us): Schrödinger, New York City, NY _Posted: May 31, 2022_
-17.  [Junior Specialist with Data Science Focus](https://aprecruit.ucsf.edu/JPF03809): University of California, San Francisco _Posted: Apr 07, 2022_
+1.  [Student Assistant II - Research Software Engineer](https://ucar.wd5.myworkdayjobs.com/en-US/UCAR_Careers/details/Student-Assistant-II---Research-Software-Engineer_REQ-2022-279-1): NCAR, Remote _Posted: Jul 28, 2022_
+2.  [Associate Software Engineer (multiple positions)](https://uwhires.admin.washington.edu/ENG/Candidates/default.cfm?szCategory=jobprofile&szOrderID=210005): University of Washington, Seattle, WA (remote/hybrid) _Posted: Jul 24, 2022_
+3.  [Senior Software Engineer (multiple positions)](https://uwhires.admin.washington.edu/ENG/Candidates/default.cfm?szCategory=jobprofile&szOrderID=209999): University of Washington, Seattle, WA (remote/hybrid) _Posted: Jul 24, 2022_
+4.  [Principal Lead Software Engineer (multiple positions)](https://uwhires.admin.washington.edu/ENG/Candidates/default.cfm?szCategory=jobprofile&szOrderID=209997): University of Washington, Seattle, WA (remote/hybrid) _Posted: Jul 24, 2022_
+5.  [Postdoctoral Fellow (Quantitative Modeling Group)](https://lbl.referrals.selectminds.com/jobs/postdoctoral-fellow-quantitative-modeling-group-5018): Lawrence Berkeley National Laboratory, Emeryville, CA _Posted: Jul 13, 2022_
+6.  [Research Software Engineer](https://careers.udel.edu/cw/en-us/job/498944/research-software-engineer-it-research-cyberinfrastructure): University of Delaware, Newark, Delaware _Posted: Jul 07, 2022_
+7.  [Research Associate](https://jobs.colorado.edu/jobs/JobDetail/?jobId=40499): University of Colorado at Boulder, Boulder, CO (remote friendly) _Posted: Jul 07, 2022_
+8.  [Research Software Engineer, Epigenomics Core Facility](https://academicjobsonline.org/ajo/jobs/22011): Cornell University, Ithaca, NY _Posted: Jul 01, 2022_
+9.  [Research Software Engineer, Breeding Insight Program](https://academicjobsonline.org/ajo/jobs/22018): Cornell University, Ithaca, NY _Posted: Jul 01, 2022_
+10.  [Senior Research Software Engineer - Application Engineering](https://jobs.ornl.gov/job-invite/8458/): Oak Ridge National Laboratory, Oak Ridge, TN _Posted: Jun 16, 2022_
+11.  [Software Developer 3](https://careersearch.stanford.edu/jobs/software-developer-3-17062): Stanford Center for Biomedical Informatics Research, Stanford University, Santa Clara, CA _Posted: Jun 14, 2022_
+12.  [Data Scientist (Open Rank)](https://simonsfoundation.wd1.myworkdayjobs.com/simonsfoundationcareers/job/160-Fifth-Avenue/Data-Scientist--Open-Rank---Center-for-Computational-Neuroscience_R0001111): Center for Computational Neuroscience, Flatiron Institute, New York, New York _Posted: Jun 13, 2022_
+13.  [Research Software Engineer - Application Engineering](https://jobs.ornl.gov/job-invite/8419/): Oak Ridge National Laboratory, Oak Ridge, TN _Posted: Jun 10, 2022_
+14.  [Research Software Engineer - Neutrons](https://jobs.ornl.gov/job-invite/8420/): Oak Ridge National Laboratory, Oak Ridge, TN _Posted: Jun 10, 2022_
+15.  [Postdoctoral Research Scholar - Extensible molecular analysis tools for reproducible science](http://apply.interfolio.com/107631): Arizona State University, Tempe, AZ _Posted: Jun 01, 2022_
+16.  [Scientific Software Engineer, Hit Discovery](https://grnh.se/b12d84713us): Schrödinger, New York City, NY _Posted: May 31, 2022_
+17.  [Junior Specialist with Data Science Focus](https://aprecruit.ucsf.edu/JPF03809): University of California, San Francisco _Posted: Apr 07, 2022_
 
 
 
