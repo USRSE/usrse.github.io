@@ -67,6 +67,8 @@
       link: wg/outreach
     - name: RSE Empowerment in National Labs
       link: wg/rse-empowerment-national-labs
+    - name: Testing
+      link: wg/testing
     - name: User Experience
       link: wg/ux
     - name: Website
@@ -105,6 +107,8 @@
   dropdown:
     - name: RSE Resources
       link: resources/rses/
+    - name: Education & Training Seminars
+      link: wg/education_training/seminar_series/
     - name: Organizations
       link: resources/organizations/
     - name: Funds and Awards
