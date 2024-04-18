@@ -36,6 +36,10 @@ Attendees are expected to follow the [US-RSE Code of Conduct](https://us-rse.org
 
 Subil Abraham is an HPC Engineer in the Oak Ridge Leadership Computing Facility in the Oak Ridge National Laboratory. He spends half his time solving problems for scientists who contact the OLCF help desk with issues they have on the supercomputers, the other half testing containers and advocating for container functionality on the various systems the OLCF supports, and the third half is spent doing various other odd work in user training and user advocacy while being bad at math.
 
+### Note
+
+More information about this event can be found on [the flyer(https://drive.google.com/file/d/1_fEsaha4ged7TxWJGWmVYYy0d3DB_j7O).
+
 ### Registration
 
 You can [register on Zoom](https://mit.zoom.us/meeting/register/tJAqcuuuqD4oGdBu6MCy5MQv8JUC6tMA2nL_) for this technical talk.
