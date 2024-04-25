@@ -270,7 +270,7 @@ Gateways 2024 is an opportunity for users, developers, and providers to showcase
 
 Gateway Focus Week is a workshop designed for innovative research teams to collaborate on producing a robust sustainability plan. Leaders and teams at all project stages can benefit from the supportive, immersive setting that Focus Week provides. Working closely with peers and experienced coaches, you will learn new skills and immediately apply them to your gateway. Thanks to the generous support of NSF, we are able to offer this workshop without registration fees. Attendees will only need to cover travel, lodging, and meal costs.
 
-Apply for this free workshop at https://sciencegateways.org/focus-week.
+Apply for this free workshop at [https://sciencegateways.org/focus-week](https://sciencegateways.org/focus-week).
 
 
 
