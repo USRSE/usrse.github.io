@@ -116,7 +116,7 @@ Suggestions for media, other resources (such as guides), speakers, and future ac
 
 ### Regular monthly working group meeting survey
 
-The co-chairs of the RSE Empowerment in National Labs working group are currently conducting a survey to assess if there are other meeting time options that may better accomodate a greater number of participants at the regular monthly meetings.  If you are a member of the working group, or would like to become a member, please fill out the following simple survey: [2024 US-RSE National Labs WG Meeting Times](https://forms.gle/zJ1YiKkhyQ6utZyX6).
+The co-chairs of the RSE Empowerment in National Labs working group are currently conducting a survey to assess if there are other meeting time options that may better accommodate a greater number of participants at the regular monthly meetings.  If you are a member of the working group, or would like to become a member, please fill out the following simple survey: [2024 US-RSE National Labs WG Meeting Times](https://forms.gle/zJ1YiKkhyQ6utZyX6).
 
 ### Focus group summary presentation
 
@@ -207,7 +207,7 @@ If you have any questions regarding the research study, please contact Matthew A
 
 This research has been reviewed according to University of Alabama procedures for research involving human subjects. If you have any questions about your rights as a participant in this study or any concerns or complaints, please contact the University of Alabama Office of Research Compliance at 1-877-820-3066.
 
-## Survey to better understand code revew practices of RSEs
+## Survey to better understand code review practices of RSEs
 
 Dr. Jeffrey Carver, Dr. Nasir Eisty, and Md Ariful Malik of the University of Alabama are conducting a study to understand the practices, impacts and barriers of code review techniques for RSEs.
 
