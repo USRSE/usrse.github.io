@@ -180,6 +180,10 @@ Do you lead an RSE group?  Do you want to talk to others about the challenges of
 <a name="events"></a>
 # **Interesting Events and Opportunities**
 
+## Center for Open-Source Research Software Stewardship and Advancement (CORSA)
+
+The [DOE-funded CORSA project](https://github.com/corsa-center/oss-documents/blob/main/README.md) has been collecting guidance, documents, examples, templates for open-source software projects, such as on governance, roadmaps, contributing, code of conduct, DEI, licenses, etc. Please feel free to add additional items, as PRs or new issues.
+
 ## Survey on Generative AI for Scientific Software Development
 
 Dr. Elle O'Brien at the University of Michigan will be [conducting studies](https://docs.google.com/forms/d/e/1FAIpQLSc1_p82Rglu6r4cTIvms823SuCvb81ygWBBRWvhdLP6eyV4nQ/viewform) about how scientists are using generative AI tools as part of their scientific software development. 
@@ -273,13 +277,6 @@ Gateway Focus Week is a workshop designed for innovative research teams to colla
 Apply for this free workshop at [https://sciencegateways.org/focus-week](https://sciencegateways.org/focus-week).
 
 
-
-## Center for Open-Source Research Software Stewardship and Advancement (CORSA)
-
-The [DOE-funded CORSA project](https://github.com/corsa-center/oss-documents/blob/main/README.md) has been collecting guidance, documents, examples, templates for open-source software projects, such as on governance, roadmaps, contributing, code of conduct, DEI, licenses, etc. Please feel free to add additional items, as PRs or new issues.
-
-
-
 ## Running List of Conferences and Events 
 
 [Previously shared conferences and events.](https://docs.google.com/document/d/1l6zf3oHlKP3dLapR6QxQMMAD1c76-4UlR1WEKM4YVOk/edit?usp=sharing)
@@ -287,7 +284,11 @@ The [DOE-funded CORSA project](https://github.com/corsa-center/oss-documents/blo
 
 <a name="reads"></a>
 # **Interesting Reads, Videos, or Podcasts**
-
+* [A special issue of PeerJ Computer Science on Software Citation, Indexing, and Discoverability](https://peerj.com/collections/84-software) edited by Daniel S. Katz and Neil Chue Hong
+* [The Value of Open Source Software](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4693148) by Manuel Hoffman, Frank Nagle, and Yanuo Zhou
+* [Approaches to scaling up reproducibility in research organisations](https://zenodo.org/records/10663903) by Michelle Barker and Neil Chue Hong
+* [How to Sustain a Scientific Open-Source Software Ecosystem: Learning from the Astropy Project](https://arxiv.org/abs/2402.15081) by Jiayi Sun, Aarya Patil, Youhai Li, Jin L.C. Guo, and Shurui Zhou
+* [The White House Office of Science & Technology Policy Open Science Recognition Challenge](https://www.challenge.gov/?challenge=ostp-year-of-open-science-recognition-challenge) by The White House Office of Science and Technology Policy (OSTP)
 * [Sustainable Software in Academia - Joint SSE and OSPO Workshop 2024](https://mediaspace.gatech.edu/playlist/details/1_bp88rfti) by Sustainable Software in Academia
 * [Code for Thought: The making of a diveRSE community - Jeremy Cohen, Michael McLeod](https://www.youtube.com/playlist?list=PL-YIfuwj8R2jB6YR8i0dOOM3R95j1ISE_) by Peter Schmidt
 * [Pair Programming With Generative AI](https://www.computer.org/csdl/magazine/so/2024/03/10493185/1VTveFojex2) by IEEE Software
