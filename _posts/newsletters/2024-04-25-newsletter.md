@@ -128,12 +128,12 @@ Thank you to everyone who participated in the 2024 working group survey and focu
 
 In “[Building and running containers on HPC systems - a (not at all) comprehensive talk](https://mit.zoom.us/meeting/register/tJAqcuuuqD4oGdBu6MCy5MQv8JUC6tMA2nL_)”, Subil Abraham from Oak Ridge National Laboratory will talk about containerization in an HPC environment.
 
-More information: https://drive.google.com/file/d/1_fEsaha4ged7TxWJGWmVYYy0d3DB_j7O
+More information: [https://drive.google.com/file/d/1_fEsaha4ged7TxWJGWmVYYy0d3DB_j7O](https://drive.google.com/file/d/1_fEsaha4ged7TxWJGWmVYYy0d3DB_j7O)
 
 
 ## Testing Working Group - New!
 
-The Testing Working Group aims to bring together RSEs, researchers, and practitioners to discuss current limitations in testing research software, share knowledge, and collectively address cutting-edge challenges, thereby advancing the reliability and quality of research software. This will include examining, adapting, and using valuable industry software testing practices and methodologies, as well as studying and harnessing AI technologies. Some key focus areas include testing legacy code, ensuring comprehensive code coverage, and enhancing overall verification and validation processes. https://us-rse.org/wg/testing/
+The Testing Working Group aims to bring together RSEs, researchers, and practitioners to discuss current limitations in testing research software, share knowledge, and collectively address cutting-edge challenges, thereby advancing the reliability and quality of research software. This will include examining, adapting, and using valuable industry software testing practices and methodologies, as well as studying and harnessing AI technologies. Some key focus areas include testing legacy code, ensuring comprehensive code coverage, and enhancing overall verification and validation processes. [https://us-rse.org/wg/testing/](https://us-rse.org/wg/testing/)
 
 ## User Experience Working Group 
 
@@ -244,16 +244,16 @@ Testing software to ensure its correctness is a challenging yet critical task th
 
 [Getting it Right: System Testing of Scientific Software](https://exascaleproject.zoomgov.com/meeting/register/vJItcemvpj8iG8vyauLJ4M6hukBbw4D3fxM) will discuss system testing for scientific software, present some challenges, such as configurability, and present some techniques that can be used to help improve the testing process.
 
-Details: https://ideas-productivity.org/events/hpcbp-083-gettingitright
+Details: [https://ideas-productivity.org/events/hpcbp-083-gettingitright](https://ideas-productivity.org/events/hpcbp-083-gettingitright)
 
 ## ModelShare series 
 
 This series is aimed at developing good practices and recommendations for improving metadata in computational model-sharing and publishing platforms. 
 
-Registration for the Sustainability session can be found here: https://ucsd.zoom.us/meeting/register/tJUpdeirqz8oHd3yLHoPYrtwanqB1ijVtlb0#/registration. 
+Registration for the Sustainability session can be found here: [https://ucsd.zoom.us/meeting/register/tJUpdeirqz8oHd3yLHoPYrtwanqB1ijVtlb0#/registration](https://ucsd.zoom.us/meeting/register/tJUpdeirqz8oHd3yLHoPYrtwanqB1ijVtlb0#/registration). 
 
 More information about the Sloan funded ModelShare series can be found here:
-https://share.openmodelingfoundation.org/.
+[https://share.openmodelingfoundation.org/](https://share.openmodelingfoundation.org/).
 
 
 ## Science Gateways Center of Excellence (SGX3) events
@@ -263,8 +263,8 @@ https://share.openmodelingfoundation.org/.
 Gateways 2024 is an opportunity for users, developers, and providers to showcase their science gateways, accommodating teaching, empowering and engaging research, and providing technologies to various communities. It will also offer diverse options for sharing and publishing work and networking in the community. The format includes tutorial sessions, presentations, panels, posters, demos, and a BYOP: Bring Your Own Portal. Being that Bozeman is in the big sky country, we want to focus on expanding the horizons of science gateways to include new communities and fields.
 * **Tutorial submissions** are due May 3, 2024.
 * **Paper, demo, and panel submissions** are due May 27, 2024.
-* Poster and BYOP - Bring Your Own Portal submissions** are due July 29, 2024.
-* Learn more at https://sciencegateways.org/gateways2024-cfp.
+* Poster and BYOP - Bring Your Own Portal submissions are due July 29, 2024.
+* Learn more at [https://sciencegateways.org/gateways2024-cfp](https://sciencegateways.org/gateways2024-cfp).
 
 **Focus Week – a sustainability workshop in Austin, TX from August 5-7, 2024**
 
@@ -341,7 +341,7 @@ These opportunities were recently posted to the [RSE Opportunities page](https:/
 1. [Research Software Engineer II: Princeton University](https://main-princeton.icims.com/jobs/18904/research-software-engineer-ii/job), Princeton, NJ Posted: Apr 17, 2024
 2. [Technical Staff: Million Concepts](https://millionconcepts.com/jobs.html#technical-staff), remote Posted: Apr 17, 2024
 3. [Associate/Research Software Engineer/Senior: The National Center for Supercomputing Applications](https://illinois.csod.com/ux/ats/careersite/1/home/requisition/9969?c=illinois), Urbana, IL Posted: Apr 12, 2024
-4. [Senior Atmospheric or Climate Scientist: Eagle Rock Analytics, Sacramento](https://eaglerockanalytics.com/career/senior-atmospheric-or-climate-scientist-remote-full-time-sacramento-ca/), CA (or remote) Posted: Apr 12, 2024
+4. [Senior Atmospheric or Climate Scientist: Eagle Rock Analytics](https://eaglerockanalytics.com/career/senior-atmospheric-or-climate-scientist-remote-full-time-sacramento-ca/), Sacramento, CA (or remote) Posted: Apr 12, 2024
 5. [Postdoctoral Research Associate - Grid Modeling: Oak Ridge National Laboratory](https://jobs.ornl.gov/job/Knoxville-Postdoctoral-Research-Associate-Grid-Modeling-TN-37932/1150809700/), Knoxville, TN Posted: Apr 09, 2024
 6. [Software Engineer: Statewide California Earthquake Center](https://usccareers.usc.edu/job/los-angeles/software-engineer/1209/63510061216), Los Angeles, CA Posted: Apr 05, 2024
 7. [Senior Software Engineer: Pittsburgh Supercomputing Center](https://www.psc.edu/senior-software-engineer-2021474/), Pittsburgh, PA (remote eligible) Posted: Apr 05, 2024
