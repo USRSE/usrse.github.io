@@ -7,8 +7,6 @@ permalink: /community-funds/
 menubar_toc: true
 ---
 
-## Community and Travel Funds
-
 ### Overview
 
 Part of the [Alfred P. Sloan Foundation grant](https://us-rse.org/2023-04-27-sloan-grant-initiatives/)
@@ -55,12 +53,11 @@ or ask in the [`#community-grants`](https://app.slack.com/client/T8ZT4PJSW/C05M3
 
 ### Application Details
 
-- **Next Application Deadline**: March 31, 2024
+- **Next Application Deadline**: June 30, 2024
 - **[Application Form](https://forms.gle/hXL95UymjTcR3Kb29)**
 
 The next round of application deadlines will be:
 
-- June 30, 2024
 - September 30, 2024
 - December 31, 2024
 
