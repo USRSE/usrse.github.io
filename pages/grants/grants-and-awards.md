@@ -42,8 +42,9 @@ activities such as, but not limited to:
 Applications are accepted on a quarterly basis. They are evaluated based on
 potential for positive impact on the community, alignment to the US-RSE mission,
 availability (or lack thereof) of funding, the submitting members’
-qualifications, and current or previous US-RSE activity. **Please note that
-consideration is weighted by the level of US-RSE community engagement.**
+qualifications, and the submitting members' current or previous US-RSE activity
+(note that this factor weighs heavily in the committee's decision making
+process).
 
 Funded applicants are expected to provide a short report (a paragraph or two)
 to be included on US-RSE’s website as a blog post or part of the newsletter.
@@ -138,9 +139,9 @@ The application will request the following details:
   <summary><b>Q: What are examples of approved travel expenses?</b></summary>
     A: Some examples of approved travel expenses are economy-class airfare, baggage fees,
     hotel costs, conference or event registration, and per diem for meals. The full
-    details can be found in our
-    [General Travel Reimbursement Guidelines](https://docs.google.com/document/d/1bXxgWqiKljF8VzftJMa_CdSzNrlO0z2tIVfTy-_Qg6o)
-    document.
+    details can be found in our 
+    <a href="https://docs.google.com/document/d/1bXxgWqiKljF8VzftJMa_CdSzNrlO0z2tIVfTy-_Qg6o" target="_blank">
+      General Travel Reimbursement Guidelines</a> document.
 </details>
 
 <details>
