@@ -10,11 +10,12 @@ menubar_toc: true
 ## Community Awards
 
 ### Year 2024 Community Awards Winners
-Congratulations to our outstanding winners!
+**Congratulations to our outstanding winners!**
 * Impact Award: [Winner's Name] for their exceptional contributions to the Research Software Engineer community.
 * Excellence in Service Award: [Winner's Name] for their dedication and commitment to the US-RSE organization and community.
 
-Learn more about our winners and their achievements HERE.
+
+Learn more about our winners and their achievements [HERE](/2024-29-05-community-awards-results/).
 
 ### Overview
 
