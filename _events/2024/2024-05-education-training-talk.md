@@ -38,7 +38,7 @@ Subil Abraham is an HPC Engineer in the Oak Ridge Leadership Computing Facility 
 
 ### Note
 
-More information about this event can be found on [the flyer(https://drive.google.com/file/d/1_fEsaha4ged7TxWJGWmVYYy0d3DB_j7O).
+More information about this event can be found on [the flyer](https://drive.google.com/file/d/1_fEsaha4ged7TxWJGWmVYYy0d3DB_j7O).
 
 ### Registration
 
