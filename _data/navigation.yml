@@ -42,8 +42,8 @@
       link: share
     - name: Community Whitepapers
       link: community-whitepapers
-    - name: Funds and Awards
-      link: funds-and-awards/
+    - name: Community Funds
+      link: community-funds/
     - name: Community Awards
       link: community-awards/
 - name: Working Groups
@@ -111,8 +111,8 @@
       link: wg/education_training/seminar_series/
     - name: Organizations
       link: resources/organizations/
-    - name: Funds and Awards
-      link: funds-and-awards/
+    - name: Community Funds
+      link: community-funds/
     - name: Community Awards
       link: community-awards/
 
