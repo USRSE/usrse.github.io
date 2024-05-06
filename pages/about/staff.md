@@ -1,21 +1,20 @@
 ---
 layout: page
-title: Executive Director
-permalink: /about/executive-director/
+title: US-RSE Staff
+permalink: /about/staff/
 subtitle: Sustainability for the US-RSE Association 
 menubar: about
 menubar_toc: true
 set_last_modified: true
 ---
 
+|**Community Manager**|**Executive Director**|
+|:---:|:---:|
+| Sophia Anyatonwu | Sandra Gesing |
+| [sophia@us-rse.org](mailto:sophia@us-rse.org) | [sandra@us-rse.org](mailto:sandra@us-rse.org) |
+| [Sophia's LinkedIn](https://www.linkedin.com/in/sophiaanyatonwu/) | [Sandra's LinkedIn](https://www.linkedin.com/in/sandragesing/) |
+| | [Sandra's Homepage](http://sandra-gesing.com/) |
 
-### Executive Director
-
-Sandra Gesing
-
-[sandra@us-rse.org](mailto:sandra@us-rse.org)
-
-[Sandra's Homepage](http://sandra-gesing.com/)
 
 ### Message from the Executive Director October 2023
 
