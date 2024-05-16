@@ -1,0 +1,50 @@
+name: Post New Jobs
+
+on:
+  push:
+    paths:
+      - '_data/related-jobs.yml'
+    branches:
+      - main
+
+jobs:
+  jobs-poster:
+    runs-on: ubuntu-latest
+    name: Run Jobs Poster
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - id: updater
+        name: Job Updater
+        uses: rseng/jobs-updater@0.0.13
+        with:
+          filename: "_data/related-jobs.yml"
+
+          # Fields to include (all but url will have title before)
+          keys: "name,location,url"
+
+          # Field to determine job uniqueness
+          unique: "url"
+
+          hashtag: "#RSEng-related"
+
+          deploy: true
+          test: false
+
+          # Deploy to Slack channel
+          slack_deploy: true
+          slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
+
+          # Don't deploy to social media
+          twitter_deploy: false
+          mastodon_deploy: false
+
+      - run: echo ${{ steps.updater.outputs.fields }}
+        name: Show Fields Used
+        shell: bash
+
+      - run: echo ${{ steps.updater.outputs.matrix }}
+        name: Show New Jobs
+        shell: bash
