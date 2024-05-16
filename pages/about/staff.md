@@ -10,7 +10,8 @@ set_last_modified: true
 
 |**Community Manager**|**Executive Director**|
 |:---:|:---:|
-| <img width="200" alt="Sophia Anyatonwu" src="https://github.com/USRSE/usrse.github.io/assets/4429799/fa981384-f986-4a80-a02b-07fad91b2fa6"> | <img width="200" alt="Sandra Gesing" src="https://github.com/USRSE/usrse.github.io/assets/4429799/14beafdb-5dd8-4a6b-8338-f6a00ebd9a97"> |
+| <img width="200" alt="Sophia Anyatonwu" src="https://github.com/USRSE/usrse.github.io/assets/4429799/fa981384-f986-4a80-a02b-07fad91b2fa6"> | <img width="200" alt="Sandra Gesing" src="https://github.com/USRSE/usrse.github.io/assets/4429799/ea3951bf-52c7-4b82-811b-8288334d1c95">
+ |
 
 | Sophia Anyatonwu | Sandra Gesing |
 | [sophia@us-rse.org](mailto:sophia@us-rse.org) | [sandra@us-rse.org](mailto:sandra@us-rse.org) |
