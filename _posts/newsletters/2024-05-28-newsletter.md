@@ -31,8 +31,8 @@ In this issue:
 
 <a name="community-funds"></a>
 # **1. Community and Travel Funds program: 4th German Conference on Research Software Engineering**
-![Florian Goth & deRSEv2](https://hackmd.io/_uploads/Hyk70W6XC.jpg =2191x380)
-*Credit: Florian Goth & deRSE*
+<img src=“{{ site.baseurl }}/assets/img/Florian Goth & deRSEv2.jpg =2191x380” alt=“Credit: Florian Goth & deRSE”>
+
 
 Daniel S. Katz applied for and was selected to receive travel funding that allowed him to attend the 4th German Conference on Research Software Engineering (deRSE24, [https://events.hifis.net/event/994/](https://events.hifis.net/event/994/)) in Würzburg, Germany, in March. He gave a 30-minute talk there on US-RSE, co-authored with Ian Cosden and Jeffrey C. Carver, titled "US-RSE: Today’s successes and tomorrow’s challenges." Slides from the presentation, which were prepared and then discussed with current and past steering US-RSE committee members, are available at [https://doi.org/10.5281/zenodo.10732103](https://doi.org/10.5281/zenodo.10732103). 
 
@@ -97,7 +97,7 @@ The May Community Call was all about Open Source Program Offices (OSPOs).
 
 <a name="member-spotlight"></a> 
 ### **Member Spotlight - Greg Lemieux** 
-![2024_EESA_Lemieux](https://hackmd.io/_uploads/r1i56BYzA.jpg =215x300) 
+<img src=“{{ site.baseurl }}/assets/img/2024_EESA_Lemieux.jpg =215x300” alt=“Greg Lemiuex”>
 
 
 **Background**
