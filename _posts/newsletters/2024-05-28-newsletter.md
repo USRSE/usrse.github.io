@@ -97,7 +97,7 @@ The May Community Call was all about Open Source Program Offices (OSPOs).
 
 <a name="member-spotlight"></a> 
 ### **Member Spotlight - Greg Lemieux** 
-<img src=“{{ site.baseurl }}/assets/img/2024_EESA_Lemieux.jpg =215x300” alt=“Greg Lemiuex”>
+<img src=“{{ site.baseurl }}/assets/img/2024_EESA_Lemieux.jpg =215x300” alt=“Greg Lemieux”>
 
 
 **Background**
