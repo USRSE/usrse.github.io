@@ -14,8 +14,8 @@ In this issue:
 * [Membership Benefits](#membershipbenefits)
 * [US-RSE Conference 2024](#conference2024)
 * [Community News](#news)
-    * [Member Spotlight](#member-spotlight)
     * [Community Calls](#community-calls)
+    * [Member Spotlight](#member-spotlight)
 * [Interesting Events and Opportunities](#events)
 * [Interesting Reads, Videos, or Podcasts](#reads)
 * [US-RSE Outreach](#outreach)
@@ -47,11 +47,11 @@ Overall, Dan is thankful to US-RSE and the Sloan Foundation for the opportunity 
 <a name="membershipbenefits"></a>
 # **2. Membership Benefits**  
 
-The US-RSE leadership team (Executive Director, Community Manager, and Steering Committee) have been strategizing about how to bring additional membership benefits to you, our valued members. We are excited to bring a new benefit, one that we hope is the first of many new tangible benefits for US-RSE members!
+The US-RSE leadership team (Executive Director, Community Manager, and Steering Committee) has been strategizing about how to bring additional membership benefits to you, our valued members. We are excited to bring a new benefit, one that we hope is the first of many new tangible benefits for US-RSE members!
 
 We’ve negotiated/partnered with the [Agile Alliance](https://www.agilealliance.org/) to bring discounted rates to their upcoming conference. Agile Alliance is a global non-profit membership organization founded on the [Manifesto for Agile Software Development](https://www.agilealliance.org/agile101/the-agile-manifesto/). They support people and organizations who explore, apply and expand Agile values, principles, and practices. There is some clear overlap with US-RSE with goals in regard to agile development and material that can benefit people in agile software development and/or agile management.
 
-Agile Alliance has their [Agile 2024 conference](https://www.agilealliance.org/agile2024/) from July 22-26th, 2024 at the Gaylord Texan. As US-RSE member you can get **$200** off the registration fee with this code specifically for US-RSE **AA21US-RSE!**.
+Agile Alliance has their [Agile 2024 conference](https://www.agilealliance.org/agile2024/) from July 22-26th, 2024 at the Gaylord Texan. As a US-RSE member you can get **$200** off the registration fee with this code specifically for US-RSE **AA21US-RSE!**.
 
 Do you have suggestions for other organizations that could be potential US-RSE partners? Or other member benefits that you’d like to see? If so email [sandra@us-rse.org](mailto:sandra@us-rse.org).
 
@@ -79,6 +79,21 @@ Two hotels within a short walking distance are available with a special rate for
 <a name="news"></a> 
 # **4. Community News** 
 
+<a name="community-calls"></a>
+### **Community Calls**
+
+**June Community Call** 
+
+The next community call will be on Friday, June 14, 2pm ET/1pm CT/12pm MT/11am PT.
+
+Call for Presenters: If you are interested in presenting, please get in touch with Julia Damerow and Abbey Roelofs in the [#communitycalls](https://app.slack.com/client/T8ZT4PJSW/CLBDQMJH5) channel or by messaging them directly.
+
+
+**May Community Call (Past)**
+
+The May Community Call was all about Open Source Program Offices (OSPOs).
+
+-----------------
 
 <a name="member-spotlight"></a> 
 ### **Member Spotlight - Greg Lemieux** 
@@ -105,21 +120,6 @@ I co-chair the US-RSE RSE Empowerment in National Labs Working Group. Members fr
 
 
 
-<a name="community-calls"></a>
-### **Community Calls**
-
-**June Community Call** 
-
-The next community call will be on Friday, June 14th, 2pm ET/1pm CT/12pm MT/11am PT.
-
-Call for Presenters: If you are interested in presenting, please get in touch with Julia Damerow and Abbey Roelofs in the [#communitycalls](https://app.slack.com/client/T8ZT4PJSW/CLBDQMJH5) channel or by messaging them directly.
-
-
-**May Community Call (Past)**
-
-The May Community Call was all about Open Source Program Offices (OSPOs).
-
-
 -----------------
 
 
@@ -128,7 +128,7 @@ The May Community Call was all about Open Source Program Offices (OSPOs).
 
 ### 💥**Get Your Magical US-RSE Unicorn - Edition 2024!** 
 
-Would you like to support US-RSE and get a magical unicorn? The magical unicorn - Edition 2024 is here! [https://give.communityin.org/02OaKa?ref=ab_5CNhbc](https://give.communityin.org/02OaKa?ref=ab_5CNhbc)
+Would you like to support US-RSE and get a magical unicorn? Our magical unicorn - Edition 2024 is here! [https://give.communityin.org/02OaKa?ref=ab_5CNhbc](https://give.communityin.org/02OaKa?ref=ab_5CNhbc)
 
 
 ### 💥**SGX3 Gateway Central Explainer Video Contest**  
@@ -211,7 +211,7 @@ The [Software Tools for Supporting Network Science event](https://netsci.nascol.
 
 ### **💡Strengthening Development Workflows by Graphically Communicating Elements of Software Design**
 
-This presentation will take place on June 12 1:00 pm - 2:00 pm EDT. Research software projects have unique constraints from funding agencies and incentives for the researchers who produce the software. To address these challenges and improve understanding of software architecture for research projects, this webinar presents methods for visually communicating elements of software design and incorporating them into typical software development workflows.
+This presentation will take place on June 12, 1:00 pm - 2:00 pm EDT. Research software projects have unique constraints from funding agencies and incentives for the researchers who produce the software. To address these challenges and improve understanding of software architecture for research projects, this webinar presents methods for visually communicating elements of software design and incorporating them into typical software development workflows.
 
 Details: [https://ideas-productivity.org/events/hpcbp-084-communicatingdesign](https://ideas-productivity.org/events/hpcbp-084-communicatingdesign)
 
@@ -230,7 +230,7 @@ This is a [short course](https://gw-ospo.github.io/oss-licensing/intro.html) tha
 
 ### **💡Hamlyn Symposium in London: Open-Source Software for Surgical Technologies**
 
-Open-source software libraries for surgical technologies include areas on computer assisted surgery, medical robotics and medical imaging (e.g. SciKit-Surgery, 3DSlicer, Holohub, MONAI, PLUS, KitwareMedical, and FAST). These libraries have shown great progress in the last twenty years due to their rapid innovation and adaption to new technologies, continuous release of open software and datasets for algorithm evaluation, good documentation and educational resources for students, researchers, engineers and clinicians, and parentships between academia and industry. 
+Open-source software libraries for surgical technologies include areas on computer assisted surgery, medical robotics and medical imaging (e.g. SciKit-Surgery, 3DSlicer, Holohub, MONAI, PLUS, KitwareMedical, and FAST). These libraries have shown great progress in the last twenty years due to their rapid innovation and adaption to new technologies, continuous release of open software and datasets for algorithm evaluation, good documentation and educational resources for students, researchers, engineers and clinicians, and partnerships between academia and industry. 
 
 Details: [https://www.hamlynsymposium.org/events/open-source-software-for-surgical-technologies-2/](https://www.hamlynsymposium.org/events/open-source-software-for-surgical-technologies-2/)
 
