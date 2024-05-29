@@ -69,8 +69,8 @@ Two hotels within a short walking distance are available with a special rate for
 
 *Important Dates* 
 
-* **Papers and Notebooks:** Monday, May 20 
-* **Posters and Talks:** Monday, June 3 (Deadline Extension) 
+* **Papers and Notebooks:** Monday, June 3 (Deadline Extension)
+* **Posters and Talks:** Monday, June 3
 * **Conference Date:** October 15-17, 2024, Albuquerque, NM 
 
 -----------------
