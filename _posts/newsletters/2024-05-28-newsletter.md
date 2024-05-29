@@ -51,7 +51,7 @@ The US-RSE leadership team (Executive Director, Community Manager, and Steering 
 
 We’ve negotiated/partnered with the [Agile Alliance](https://www.agilealliance.org/) to bring discounted rates to their upcoming conference. Agile Alliance is a global non-profit membership organization founded on the [Manifesto for Agile Software Development](https://www.agilealliance.org/agile101/the-agile-manifesto/). They support people and organizations who explore, apply and expand Agile values, principles, and practices. There is some clear overlap with US-RSE with goals in regard to agile development and material that can benefit people in agile software development and/or agile management.
 
-Agile Alliance has their [Agile 2024 conference](https://www.agilealliance.org/agile2024/) from July 22-26th, 2024 at the Gaylord Texan. As a US-RSE member you can get **$200** off the registration fee with this code specifically for US-RSE **AA21US-RSE!**.
+Agile Alliance has their [Agile 2024 conference](https://www.agilealliance.org/agile2024/) from July 22-26th, 2024 at the Gaylord Texan. As a US-RSE member you can get **$200** off the registration fee with this code specifically for US-RSE **AA21US-RSE!**
 
 Do you have suggestions for other organizations that could be potential US-RSE partners? Or other member benefits that you’d like to see? If so email [sandra@us-rse.org](mailto:sandra@us-rse.org).
 
