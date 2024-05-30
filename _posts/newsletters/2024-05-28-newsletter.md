@@ -18,7 +18,6 @@ In this issue:
     * [Member Spotlight](#member-spotlight)
 * [Interesting Events and Opportunities](#events)
 * [Interesting Reads, Videos, or Podcasts](#reads)
-* [US-RSE Outreach](#outreach)
 * [US-RSE Financials](#financials)
 * [Steering Committee Update](#sc-update)
 * [Get Involved](#involved)
