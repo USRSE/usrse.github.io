@@ -13,5 +13,6 @@ extend-ignore-re = [
     "Nam Pho",
     "SLAC",
     "Paul Hsi",
-    "NWO"
+    "NWO",
+    "ND"
 ]
