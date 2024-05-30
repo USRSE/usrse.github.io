@@ -12,8 +12,8 @@ The US-RSE Community Awards are a new initiative, launched in 2024 to celebrate 
 
 **Inaugural Winners:**
 We are thrilled to announce the inaugural winners of the US-RSE Community Awards, who have demonstrated remarkable dedication, creativity, and commitment to the RSE community, and RSE organization. Their contributions have made a significant difference, and we are grateful for their tireless efforts.
-* Impact Award: [Winner's Name] ([Winner's Institution])
-* Excellence in Service Award: [Winner's Name] ([Winner's Institution])
+* **Impact Award: DANIEL S. KATZ, National Center for Supercomputing Applications (NCSA) and University of Illinois Urbana-Champaign.**
+* **Excellence in Service Award: CHRISTINA MAIMONE, Northwestern University.**
   
 **Celebrating Excellence:**
 We are pleased to acknowledge the exceptional individuals who have made significant contributions to the Research Software Engineer community. Their dedication, innovation, and leadership have made a lasting impact, and we are honored to recognize their achievements with these awards.
