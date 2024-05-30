@@ -263,7 +263,7 @@ From a financial perspective, 2023 was an exciting year for US-RSE. We were awar
 The majority of the grant from the Sloan Foundation is budgeted to pay for our new Executive Director and Community Manager. Besides that we've budgeted money to support staff travel, the US-RSE conference, fund community activities through our new Community and Travel Fund program, and fund smaller items such as code of conduct trainings for our code of conduct committee members. CI charges 10% of our income for providing resources, infrastructure, and support (trust us when we say we make good use of those resources). Switching from OCF to CI turned out to been an unexpectedly complex change and it has been a very steep learning curve. We appreciate our members' patience as we navigate the world of non-profit regulations and guidelines.  
 
 -----------------
-<a name="#sc-update"></a>
+<a name="sc-update"></a>
 # **8. Steering Committee Update**
 
 In April 2024, the Steering Committee continued to look at logistics for the upcoming US-RSE'24 conference, identified a preferred potential location for US-RSE'25, and began conversations with a potential conference chair at this location. We also discussed and approved a proposal from the Executive Director to work with Agile Alliance to give our members a discount to their conference and continued to discuss organizational memberships. We heard from members of the Community and Travel Funds Committee about a shortage of reviewers for the recent round of submissions, and several Steering Committee members volunteered to assist in the review process. Finally, the Community Awards Committee chairs shared that the first round of community award recipients have been identified and will be announced at the end of May.
