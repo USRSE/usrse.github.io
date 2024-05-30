@@ -432,5 +432,9 @@
         "name": "David Brownell",
         "orcid": "0000-0002-5078-9711",
         "blog": "https://github.com/davidbrownell"
+    },
+    "jperrsau-at-nrel": {
+        "name": "jperrsau-at-nrel",
+        "blog": "https://github.com/jperrsau-at-nrel"
     }
 }

@@ -850,6 +850,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/6353056?v=4"
             ]
+        },
+        {
+            "login": "jperrsau-at-nrel",
+            "name": "jperrsau-at-nrel",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/jperrsau-at-nrel",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/171282530?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
