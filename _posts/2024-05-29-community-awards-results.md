@@ -13,6 +13,10 @@ The US-RSE Community Awards are a new initiative, launched in 2024 to celebrate 
 **Inaugural Winners:**
 We are thrilled to announce the inaugural winners of the US-RSE Community Awards, who have demonstrated remarkable dedication, creativity, and commitment to the RSE community, and RSE organization. Their contributions have made a significant difference, and we are grateful for their tireless efforts.
 * **Impact Award: DANIEL S. KATZ, National Center for Supercomputing Applications (NCSA) and University of Illinois Urbana-Champaign.**
+
+**About Daniel S. Katz:**  Daniel S. Katz is a pioneer in research software engineering, promoting the field and its professionals. He co-founded US-RSE and led working groups that established software citation standards, ensuring recognition for RSEs and their software in journals. Katz also co-founded the Journal of Open Source Software (JOSS), providing a platform for crediting research software work, and co-led the development of FAIR for Research Software (FAIR4RS) principles, promoting transparency and accessibility. Additionally, he co-founded and co-led the US Research Software Sustainability Institute (URSSI) and Research Software Alliance (ReSA), supporting the growth and sustainability of research software engineering. Katz has also co-organized numerous events and workshops, and has written extensively on RSEng, giving numerous talks. His work has helped shape the field, promoting recognition and value for research software and those who develop and maintain it. Through his tireless efforts, Katz has made a profound impact on the RSE community, both domestically and internationally.
+
+
 * **Excellence in Service Award: CHRISTINA MAIMONE, Northwestern University.**
   
 **Celebrating Excellence:**
