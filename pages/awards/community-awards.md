@@ -15,7 +15,7 @@ menubar_toc: true
 * **Excellence in Service Award: **CHRISTINA MAIMONE**, for her dedication and commitment to the US-RSE organization and community.**
 
 
-Learn more about our winners and their achievements [HERE](/2024-29-05-community-awards-results/).
+Learn more about our winners and their achievements [HERE](/2024-05-29-community-awards-results/).
 
 ### Overview
 
