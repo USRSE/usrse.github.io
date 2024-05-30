@@ -11,8 +11,8 @@ menubar_toc: true
 
 ### Year 2024 Community Awards Winners
 **Congratulations to our outstanding winners!**
-* **Impact Award: **DANIEL S. KATZ**,  for his exceptional contributions to the Research Software Engineer community.**
-* **Excellence in Service Award: **CHRISTINA MAIMONE**, for her dedication and commitment to the US-RSE organization and community.**
+* **Impact Award: DANIEL S. KATZ,  for his exceptional contributions to the Research Software Engineer community.**
+* **Excellence in Service Award: CHRISTINA MAIMONE, for her dedication and commitment to the US-RSE organization and community.**
 
 
 Learn more about our winners and their achievements [HERE](/2024-05-29-community-awards-results/).
