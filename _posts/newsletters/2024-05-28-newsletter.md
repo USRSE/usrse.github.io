@@ -264,7 +264,7 @@ The majority of the grant from the Sloan Foundation is budgeted to pay for our n
 
 -----------------
 <a name="#sc-update"></a>
-# **8. Steering Committee Recap**
+# **8. Steering Committee Update**
 
 In April 2024, the Steering Committee continued to look at logistics for the upcoming US-RSE'24 conference, identified a preferred potential location for US-RSE'25, and began conversations with a potential conference chair at this location. We also discussed and approved a proposal from the Executive Director to work with Agile Alliance to give our members a discount to their conference and continued to discuss organizational memberships. We heard from members of the Community and Travel Funds Committee about a shortage of reviewers for the recent round of submissions, and several Steering Committee members volunteered to assist in the review process. Finally, the Community Awards Committee chairs shared that the first round of community award recipients have been identified and will be announced at the end of May.
 
