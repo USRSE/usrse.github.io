@@ -18,7 +18,6 @@ In this issue:
     * [Member Spotlight](#member-spotlight)
 * [Interesting Events and Opportunities](#events)
 * [Interesting Reads, Videos, or Podcasts](#reads)
-* [US-RSE Financials](#financials)
 * [Steering Committee Update](#sc-update)
 * [Get Involved](#involved)
 * [Recent Job Postings](#jobs)
@@ -254,25 +253,17 @@ Details: [https://www.hamlynsymposium.org/events/open-source-software-for-surgic
 *  [Racial Equity Tools Glossary](https://www.racialequitytools.org/glossary) by Racial Equity Tools
 *  [There’s no such thing as sustainable research software](https://danielskatzblog.wordpress.com/2024/05/13/no-sustainable-research-software/) by Daniel S. Katz
 
------------------
-
-<a name="financials"></a>
-# **7. US-RSE Financials**
-
-From a financial perspective, 2023 was an exciting year for US-RSE. We were awarded a two-year grant from the Alfred P. Sloan Foundation and switched fiscal sponsors. We are very grateful to the Open Collective Foundation (OCF) that was our fiscal sponsor until last spring. However, with the awarded grant our needs changed and we are now a fiscally sponsored project of [Community Initiatives](https://communityinitiatives.org/) (CI). CI gives us the structure and resources to hire staff such as the Executive Director and the Community Manager, accept donations and reimburse members for expenses they incurred on behalf of US-RSE. The community funds possible via the Alfred P. Sloan grant are also awarded via CI.
-
-The majority of the grant from the Sloan Foundation is budgeted to pay for our new Executive Director and Community Manager. Besides that we've budgeted money to support staff travel, the US-RSE conference, fund community activities through our new Community and Travel Fund program, and fund smaller items such as code of conduct trainings for our code of conduct committee members. CI charges 10% of our income for providing resources, infrastructure, and support (trust us when we say we make good use of those resources). Switching from OCF to CI turned out to been an unexpectedly complex change and it has been a very steep learning curve. We appreciate our members' patience as we navigate the world of non-profit regulations and guidelines.  
 
 -----------------
 <a name="sc-update"></a>
-# **8. Steering Committee Update**
+# **7. Steering Committee Update**
 
 In April 2024, the Steering Committee continued to look at logistics for the upcoming US-RSE'24 conference, identified a preferred potential location for US-RSE'25, and began conversations with a potential conference chair at this location. We also discussed and approved a proposal from the Executive Director to work with Agile Alliance to give our members a discount to their conference and continued to discuss organizational memberships. We heard from members of the Community and Travel Funds Committee about a shortage of reviewers for the recent round of submissions, and several Steering Committee members volunteered to assist in the review process. Finally, the Community Awards Committee chairs shared that the first round of community award recipients have been identified and will be announced at the end of May.
 
 -----------------
 
 <a name="involved"></a>
-# **9. Get Involved**
+# **8. Get Involved**
 
 There are lots of ways to get involved with the US-RSE community. Of course, you can [join us on Slack](https://us-rse.org/join). We’re also looking for ideas and help in many other places. See our [list of projects](https://docs.google.com/document/d/1jjVD0WkeeWZJI6yqSKyMdIjtClzolsxv75RkpLju17I/edit?usp=sharing) and let us know how you’d like to help. Help with things like the Website Committee, Social Media, Community Engagement, Fundraising, and Newsletter are all needed and welcome.
 
@@ -295,7 +286,7 @@ As always, we thank everyone who is already contributing for their help in shapi
 -----------------
 
 <a name="jobs"></a>
-# **10. Recent Job Postings**
+# **9. Recent Job Postings**
 
 These opportunities were recently posted to the [RSE Opportunities page](https://us-rse.org/jobs/):
 
