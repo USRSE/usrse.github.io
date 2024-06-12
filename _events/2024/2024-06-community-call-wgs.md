@@ -21,6 +21,7 @@ The working groups who will present at our community call are:
 - DEI 
 - Code Review 
 - RSE Empowerment in National Labs 
+- User Experience
 
 
 
