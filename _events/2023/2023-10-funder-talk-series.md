@@ -20,7 +20,7 @@ Visit the [Funder Talk Series]({{ site.baseurl }}/wg/outreach/#funder-series) fo
 
 ## Event
 
-This talk in the US-RSE Funder Talk Serie featured two speakers from Schmidt Futures:
+This talk in the US-RSE Funder Talk Series featured two speakers from Schmidt Futures:
 
 * Stuart Feldman, Chief Scientist
 * James Ricci, Director
