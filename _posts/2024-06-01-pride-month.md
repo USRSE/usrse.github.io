@@ -35,6 +35,9 @@ We'll be publishing these posts during the month of June to highlight such
 people, where we talk about the person and tie their work and life to the RSE
 movement.
 
+* [Sally Ride]({% post_url 2024-06-12-pride-spotlight-sally-ride %}) -
+  June 14, 2024
+
 In conjunction with the weekly blog posts, we ask the community to think about
 how they will celebrate and reflect on pride this month. This will likely come
 in many different forms for each individual. Checkout the resources below to
