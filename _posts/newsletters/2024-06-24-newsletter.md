@@ -268,17 +268,6 @@ In July 2024, the US Research Software Sustainability Institute (URSSI) will be 
 
 [Supercomputing Spotlights](https://siag-sc.org/the-accomplishments-of-the-exascale-computing-project.html) is a new webinar series featuring short presentations that highlight the impact and successes of high-performance computing (HPC) throughout our world. Presentations, emphasizing achievements and opportunities in HPC, are intended for the broad international community, especially students and newcomers to the field. 
 
-
-
-### **💡The Hawaii International Conference on System Sciences**
-
-HICSS-58 (The Hawaii International Conference on System Sciences) will take place on the Big Island from Jan 7 - 10, 2025. The submission deadline is on June 15, 2024. 
-
-Interesting Minitracks:
-* [Software Sustainability: Research on Usability, Maintainability and Reproducibility](https://hicss.hawaii.edu/tracks-58/software-technology/#software-sustainability-research-on-usability-maintainability-and-reproducibility-minitrack)
-* [Impact of AI on Software Engineering](https://hicss.hawaii.edu/tracks-58/software-technology/#impact-of-ai-on-software-engineering-minitrack)
-
-
 ### **💡OSS Licensing for Research and Education**
 
 This is a [short course](https://gw-ospo.github.io/oss-licensing/intro.html) that introduces researchers (doctoral students, postdocs, staff researchers and PIs) to the essentials of open-source software (OSS) licensing for research and educational purposes. The course duration should be about 3 hours when taught live, and we will also produce an online version for self-study.
@@ -294,7 +283,7 @@ This is a [short course](https://gw-ospo.github.io/oss-licensing/intro.html) tha
 # **7. Interesting Reads, Videos, or Podcasts**
 * [Funding Open Source Science Software](https://geoiac.notion.site/Funding-Open-Source-Science-Software-b11741a8c9a24a91b8a367629092f674) by  Georgia Iacovou
 * [Code for Thought: Research Software Engineering Workshop at ISC 2024 in Hamburg](https://codeforthought.buzzsprout.com/1326658/15243430-en-research-software-engineering-workshop-at-isc-2024-in-hamburg) by Peter Schmidt
-* [Code for Thought: Make Science and Software FAIR (again) - Jamie Quinn](https://codeforthought.buzzsprout.com/1326658/15210839-en-a-national-day-for-research-software-the-escience-center) by Peter Schmidt
+* [Code for Thought: Make Science and Software FAIR (again) - Jamie Quinn](https://codeforthought.buzzsprout.com/1326658/15189970-en-bytesized-rse-make-science-and-software-fair-again-jamie-quinn) by Peter Schmidt
 * [Code for Thought: A National Day for Research Software - the eScience Center](https://codeforthought.buzzsprout.com/1326658/15210839-en-a-national-day-for-research-software-the-escience-center) by Peter Schmidt
 * [There’s no such thing as sustainable research software](https://danielskatzblog.wordpress.com/2024/05/13/no-sustainable-research-software/) by Daniel S. Katz
 * [Connecting research computing, data & software professionals](https://coco.cyberinfrastructure.org/) by Community of Communities
