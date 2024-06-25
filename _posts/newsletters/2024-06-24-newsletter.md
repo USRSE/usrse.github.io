@@ -77,7 +77,7 @@ Do you have suggestions for other organizations that could be potential US-RSE p
 
 ### **Conference Updates**  
 
-![Registration is open!]({{ site.baseurl }}/assets/img/USRSE2024_ZiaLogo resized.png "Conference Logo"){:height="215px" width="300px"}
+![Registration is open!]({{ site.baseurl }}/assets/img/USRSE2024_ZiaLogo resized.png "Conference Logo"){:height="115px" width="200px"}
 
 **[Registration is open!](https://us-rse.org/usrse24/attend/register/)**
 
@@ -127,7 +127,7 @@ Regular meetings of the International Council of RSE Associations are starting u
 <a name="member-spotlight"></a> 
 ### **Member Spotlight - Josh Teves** 
 
-![Josh Teves]({{ site.baseurl }}/assets/img/josh_member_spotlight.png "Josh Teves"){:height="215px" width="300px"}
+![Josh Teves]({{ site.baseurl }}/assets/img/josh_member_spotlight.png "Josh Teves"){:height="115px" width="200px"}
 
 **Background**
 
