@@ -11,6 +11,7 @@ In this monthly newsletter, we share recent, current, and planned activities of 
 In this issue:
 
 * [Community Awards](#community-awards)
+* [Community and Travel Funds](#community-funds)
 * [Membership Benefits](#membershipbenefits)
 * [US-RSE Conference 2024](#conference2024)
 * [Community News](#news)
