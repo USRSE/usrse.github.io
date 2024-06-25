@@ -57,6 +57,12 @@ Christina Maimone is a dedicated champion of the US-RSE organization, providing 
 
 
 **Nominations for the 2025 awards are expected to open in February 2025. More information can be found on the [US-RSE awards webpage](https://us-rse.org/community-awards/).**
+<a name="community-funds"></a>
+2. Community and Travel Funds - June 30 Deadline
+
+Don't miss out on the opportunity to apply for funding through the Community and Travel Funds program. This program aims to support and strengthen the US-RSE community by fostering diversity, connecting individuals, and promoting career growth in the field of Research Software Engineering. Funding is available for both community-focused initiatives and individual applicants, with grants ranging from $100 to $10,000 per proposal. Whether you're organizing local RSE events, attending conferences to share your work, or seeking professional development opportunities, this program can provide the financial support you need. Applications are accepted quarterly and evaluated based on their potential impact, alignment with the US-RSE mission, and the qualifications and involvement of the applicants.
+
+The next application deadline is June 30, 2024. Don't miss the deadline to submit your proposal and take advantage of this incredible opportunity to advance your career and contribute to the RSE community. See the [Community and Travel Funds page](https://us-rse.org/community-funds/) for more details.
 
 <a name="membershipbenefits"></a>
 # **2. Membership Benefits**  
