@@ -90,12 +90,16 @@ Do you have suggestions for other organizations that could be potential US-RSE p
 ![Registration is open!]({{ site.baseurl }}/assets/img/USRSE2024_ZiaLogo resized.png "Conference Logo")
 
 -----------------
+**Conference Date**   
+
+October 15-17, 2024, Albuquerque, NM (Early bird registration ends on September 1, 2024).
+
 
 **Travel Arrangements**
 
 Two hotels within a short walking distance are available with a special rate for those attending US-RSE’24. Are you getting ready and making travel arrangements? Please consider booking at one of these convenient locations! Visit the Travel page for codes, booking links, and more [https://us-rse.org/usrse24/attend/travel/](https://us-rse.org/usrse24/attend/travel/).  
 
-**Conference Date:** October 15-17, 2024, Albuquerque, NM 
+
 
 -----------------
 
