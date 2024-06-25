@@ -39,7 +39,7 @@ We are thrilled to announce the inaugural winners of the US-RSE Community Awards
 
 
 
-Daniel S. Katz is a pioneer in research software engineering, promoting the field and its professionals. He co-founded US-RSE and led working groups that established software citation standards, ensuring recognition for RSEs and their software in journals. Katz also co-founded the Journal of Open Source Software (JOSS), providing a platform for crediting research software work, and co-led the development of FAIR for Research Software (FAIR4RS) principles, promoting transparency and accessibility. Additionally, he co-founded and co-led the US Research Software Sustainability Institute (URSSI) and Research Software Alliance (ReSA), supporting the growth and sustainability of research software engineering. Katz has also co-organized numerous events and workshops, and has written extensively on RSEng, giving numerous talks. His work has helped shape the field, promoting recognition and value for research software and those who develop and maintain it. Through his tireless efforts, Katz has made a profound impact on the RSE community, both domestically and internationally.
+Daniel S. Katz is a pioneer in research software engineering, promoting the field and its professionals. He co-founded US-RSE and led working groups that established software citation standards, ensuring recognition for RSEs and their software in journals. Katz also co-founded the Journal of Open Source Software (JOSS), providing a platform for crediting research software work, and co-led the development of FAIR for Research Software (FAIR4RS) principles, promoting transparency and accessibility. Additionally, he co-founded and co-led the US Research Software Sustainability Institute (URSSI) and Research Software Alliance (ReSA), supporting the growth and sustainability of research software engineering. Katz has also co-organized numerous events and workshops, and has written extensively on research software engineering (RSEng), giving numerous talks. His work has helped shape the field, promoting recognition and value for research software and those who develop and maintain it. Through his tireless efforts, Katz has made a profound impact on the RSE community, both domestically and internationally.
 
 ### 🏆 Excellence in Service Award: Christina Maimone, Northwestern University
 
@@ -77,8 +77,9 @@ Do you have suggestions for other organizations that could be potential US-RSE p
 
 ### **Conference Updates**  
 
- ![image](https://hackmd.io/_uploads/SkDLcMR4R.png)
- **[Registration is open!](https://us-rse.org/usrse24/attend/register/)**
+![Registration is open!]({{ site.baseurl }}/assets/img/USRSE2024_ZiaLogo resized.png "Conference Logo"){:height="215px" width="300px"}
+
+**[Registration is open!](https://us-rse.org/usrse24/attend/register/)**
 
 -----------------
 
@@ -118,7 +119,7 @@ The next RSE Empowerment in National Labs working group meeting will be July 16 
 
 ### **International Council of RSE Associations**
 
-Regular meetings of the International Council of RSE Associations are starting up again!  After a lull for the past year, and with the coordination help of ReSA (Research Software Alliance) representatives of the US-RSE will meet as part of the Intl Council to discuss and share topics on the common and unique challenges faced by RSE across the world.  Though these discussions and networking we hope to share effective strategies in supporting RSEs while strengthening our own by learning of the successes at other international RSE associations.  Feel free to reach out to Keith Beattie or Rinku Gupta via Slack (your US-RSE International Council representatives) with any questions you have about the International Council of RSE Associations.
+Regular meetings of the International Council of RSE Associations are starting up again!  After a lull for the past year, and with the coordination help of ReSA (Research Software Alliance) representatives of the US-RSE will meet as part of the Intl Council to discuss and share topics on the common and unique challenges faced by RSE across the world.  Through these discussions and networking, we hope to share effective strategies in supporting RSEs while strengthening our own by learning of the successes at other international RSE associations.  Feel free to reach out to Keith Beattie or Rinku Gupta via Slack (your US-RSE International Council representatives) with any questions you have about the International Council of RSE Associations.
 
 -----------------
 
@@ -126,15 +127,13 @@ Regular meetings of the International Council of RSE Associations are starting u
 <a name="member-spotlight"></a> 
 ### **Member Spotlight - Josh Teves** 
 
-![Josh member spotlight](https://hackmd.io/_uploads/ByGCO-04A.png =350x300)
-
-
+![Josh Teves]({{ site.baseurl }}/assets/img/josh_member_spotlight.png "Josh Teves"){:height="215px" width="300px"}
 
 **Background**
 
 Hi! My name is Josh.
 
-My career in research software engineering started by total accident. In college, while pursuing a Bachelor's degree in physics, I did research with an atmospheric physicist. We used instruments in the field to measure rain drop sizes, but the software that these instruments came with was terrible. For example, the field site frequently lost power and, due to the bad software, when the instrument rebooted it would not correctly synchronize the clock. We needed to get some analysis software to look through and figure out when that would happen, so that we would know where to truncate data that would eventually be analyzed and used to make scientific inferences. I spent a lot of time doing this and I really liked it. I liked it so much that I decided to start a PhD program. Unfortunately, I hated doing the PhD and so I left my program and began looking for relevant jobs. 
+My career in research software engineering started by total accident. In college, while pursuing a Bachelor's degree in physics, I did research with an atmospheric physicist. We used instruments in the field to measure raindrop sizes, but the software that these instruments came with was terrible. For example, the field site frequently lost power and, due to the bad software, when the instrument rebooted it would not correctly synchronize the clock. We needed to get some analysis software to look through and figure out when that would happen so that we would know where to truncate data that would eventually be analyzed and used to make scientific inferences. I spent a lot of time doing this and I really liked it. I liked it so much that I decided to start a PhD program. Unfortunately, I hated doing the PhD so I left my program and began looking for relevant jobs. 
 
 **Research Software Engineering**
 
@@ -144,7 +143,7 @@ In 2021, I officially heard about the Research Software Engineering field throug
 
 **US-RSE Involvement**
 
-A past project that I enjoyed working on as a member of US-RSE is an article that I helped write in 2022 about RSEs at national labs. The article was for the Computing in Science and Engineering Special Edition. My colleague, Miranda Mundt, suggested that we write an article as a group. It was ultimately a great experience to see people at other national labs, learn about the differences between labs and universities and consider how the impact is different. The group was coordinated well and we also received good reviews and feedback on the article. 
+A past project that I enjoyed working on as a member of US-RSE is an article that I helped write in 2022 about RSEs at national labs. The article was for the Computing in Science and Engineering Special Edition. My colleague, Miranda Mundt, suggested that we write an article as a group. It was ultimately a great experience to see people at other national labs, learn about the differences between labs and universities, and consider how the impact is different. The group was coordinated well and we also received good reviews and feedback on the article. 
 
 -----------------
 
@@ -168,7 +167,7 @@ We are looking for panelists for a US-RSE 2024 Birds of a Feather conversation, 
 * What types of institutional support and infrastructure are needed to support RSEs and scholars in the humanities and social sciences vs. other domains?
 * How might the DH RSE experience benefit and inform RSE roles in other domains?
 
-For more details and to indicate your interest to be a panelist, please complete this [nomination form](https://) by July 15, 2024.
+For more details and to indicate your interest in being a panelist, please complete this [nomination form](https://docs.google.com/forms/d/e/1FAIpQLScUPTT8f8VYK4P3nSVAvzKIX6zx6SQ1sjWXzHqAScNjIUlo_g/viewform) by July 15, 2024.
 
 
 ### 💥**Get Your Magical US-RSE Unicorn - Edition 2024!** 
@@ -180,7 +179,7 @@ Would you like to support US-RSE and get a magical unicorn? Our magical unicorn 
 The [FORCOLAB](https://shuiblue.github.io/forcolab-uoft/) at the University of Toronto (UofT)is conducting a research study on understanding the refactoring practices and challenges in open-source scientific software. The main objective is to better support refactoring tasks during scientific software development. Please share your refactoring experiences in open-source scientific software [by completing this survey](https://forms.office.com/pages/responsepage.aspx?id=JsKqeAMvTUuQN7RtVsVSEDG3WKvjM4pHu7QCZXS8hkhUNFVWQTA1RDIzNkZYSjNDMzNSM1VSVjVPMi4u).
 ### 💥**Survey on Software Environments for Heliophysics**
 
-For RSEs in helio/solar physics-- IHDEA (International Heliophysics Data Environment Alliance) has formed a working group to define common heliophysics tools/software in python which the community may one day be able to use and base their software off of.  They are collecting some initial feedback about the kinds of software folks in the community are using using this short survey: [https://forms.gle/DumtthpGytnhWpCk6](https://forms.gle/DumtthpGytnhWpCk6).
+For RSEs in helio/solar physics-- IHDEA (International Heliophysics Data Environment Alliance) has formed a working group to define common heliophysics tools/software in python which the community may one day be able to use and base their software off of.  They are collecting some initial feedback about the kinds of software folks in the community are using this short survey: [https://forms.gle/DumtthpGytnhWpCk6](https://forms.gle/DumtthpGytnhWpCk6).
 
 
 ### **💥Center for Open-Source Research Software Stewardship and Advancement (CORSA)**
