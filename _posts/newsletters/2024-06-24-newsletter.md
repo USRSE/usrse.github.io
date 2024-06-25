@@ -16,6 +16,8 @@ In this issue:
 * [US-RSE Conference 2024](#conference2024)
 * [Community News](#news)
     * [Community Calls](#community-calls)
+    * [RSE Empowerment in National Labs](#wg-national-labs-empowerment)
+    * [International Council of RSE Associations](#international-council)
     * [Member Spotlight](#member-spotlight)
     * [Pilot Program](#pilot-program)
 * [Interesting Events and Opportunities](#events)
@@ -58,15 +60,16 @@ Christina Maimone is a dedicated champion of the US-RSE organization, providing 
 
 
 **Nominations for the 2025 awards are expected to open in February 2025. More information can be found on the [US-RSE awards webpage](https://us-rse.org/community-awards/).**
-<a name="community-funds"></a>
-2. Community and Travel Funds - June 30 Deadline
+
+<a name="community-funds"></a> 
+# **2. Community and Travel Funds - June 30 Deadline**
 
 Don't miss out on the opportunity to apply for funding through the Community and Travel Funds program. This program aims to support and strengthen the US-RSE community by fostering diversity, connecting individuals, and promoting career growth in the field of Research Software Engineering. Funding is available for both community-focused initiatives and individual applicants, with grants ranging from $100 to $10,000 per proposal. Whether you're organizing local RSE events, attending conferences to share your work, or seeking professional development opportunities, this program can provide the financial support you need. Applications are accepted quarterly and evaluated based on their potential impact, alignment with the US-RSE mission, and the qualifications and involvement of the applicants.
 
 The next application deadline is June 30, 2024. Don't miss the deadline to submit your proposal and take advantage of this incredible opportunity to advance your career and contribute to the RSE community. See the [Community and Travel Funds page](https://us-rse.org/community-funds/) for more details.
 
 <a name="membershipbenefits"></a>
-# **2. Membership Benefits**  
+# **3. Membership Benefits**  
 
 The US-RSE leadership team (Executive Director, Community Manager, and Steering Committee) have been strategizing about how to bring additional membership benefits to you, our valued members. We are excited to bring a new benefit, one that we hope is the first of many new tangible benefits for US-RSE members!
 
@@ -80,7 +83,7 @@ Do you have suggestions for other organizations that could be potential US-RSE p
 
 
 <a name="conference2024"></a>
-# **3. US-RSE Conference 2024 (USRSE'24)**  
+# **4. US-RSE Conference 2024 (USRSE'24)**  
 
 ### **[Registration is open!](https://us-rse.org/usrse24/attend/register/)**  
 
@@ -92,17 +95,13 @@ Do you have suggestions for other organizations that could be potential US-RSE p
 
 Two hotels within a short walking distance are available with a special rate for those attending US-RSE’24. Are you getting ready and making travel arrangements? Please consider booking at one of these convenient locations! Visit the Travel page for codes, booking links, and more [https://us-rse.org/usrse24/attend/travel/](https://us-rse.org/usrse24/attend/travel/).  
 
-*Important Dates* 
-
-* **Papers and Notebooks:** Monday, June 3 (Deadline Extension) 
-* **Posters and Talks:** Monday, June 17 
-* **Conference Date:** October 15-17, 2024, Albuquerque, NM 
+**Conference Date:** October 15-17, 2024, Albuquerque, NM 
 
 -----------------
 
 
 <a name="news"></a> 
-# **4. Community News** 
+# **5. Community News** 
 
 <a name="community-calls"></a>
 ### **Community Calls**
@@ -118,10 +117,13 @@ Call for Presenters: If you are interested in presenting, please get in touch wi
 
 The June Community Call was all about US-RSE Working Groups.
 
+<a name="wg-national-labs-empowerment"></a>
 ### **RSE Empowerment in National Labs**  
 
-The next RSE Empowerment in National Labs working group meeting will be July 16 at 1pm ET/ 12pm CT/ 11am MT/ 10am PT.  Please note that this date is one week earlier than normal!  We will be holding a discussion about the [COLABS proposal](https://colabs-science.github.io/) with David Bernholdt from Oak Ridge National Laboratory.  The meeting is open to all US-RSE members who are interested.  You can find a link to the meeting in the bookmarks section of the [#national-labs](https://usrse.slack.com/channels/national-labs). 
+The next RSE Empowerment in National Labs working group meeting will be July 16 at 1pm ET/ 12pm CT/ 11am MT/ 10am PT.  Please note that this date is one week earlier than normal!  We will be holding a discussion about the [COLABS proposal](https://colabs-science.github.io/) with David Bernholdt from Oak Ridge National Laboratory.  The meeting is open to all US-RSE members who are interested.  You can find a link to the meeting in the bookmarks section of the [#national-labs](https://usrse.slack.com/channels/national-labs) Slack channel. 
 
+
+<a name="international-council"></a>
 ### **International Council of RSE Associations**
 
 Regular meetings of the International Council of RSE Associations are starting up again!  After a lull for the past year, and with the coordination help of ReSA (Research Software Alliance) representatives of the US-RSE will meet as part of the Intl Council to discuss and share topics on the common and unique challenges faced by RSE across the world.  Through these discussions and networking, we hope to share effective strategies in supporting RSEs while strengthening our own by learning of the successes at other international RSE associations.  Feel free to reach out to Keith Beattie or Rinku Gupta via Slack (your US-RSE International Council representatives) with any questions you have about the International Council of RSE Associations.
@@ -162,7 +164,7 @@ In an effort to foster and support a spirit of appreciation within our community
 
 
 <a name="events"></a>
-# **5. Interesting Events and Opportunities**
+# **6. Interesting Events and Opportunities**
 
 ### 💥**Call for BoF Panelists at US-RSE’24**
 
@@ -285,7 +287,7 @@ This is a [short course](https://gw-ospo.github.io/oss-licensing/intro.html) tha
 -----------------
 
 <a name="reads"></a>
-# **6. Interesting Reads, Videos, or Podcasts**
+# **7. Interesting Reads, Videos, or Podcasts**
 * [Funding Open Source Science Software](https://geoiac.notion.site/Funding-Open-Source-Science-Software-b11741a8c9a24a91b8a367629092f674) by  Georgia Iacovou
 * [Code for Thought: Research Software Engineering Workshop at ISC 2024 in Hamburg](https://codeforthought.buzzsprout.com/1326658/15243430-en-research-software-engineering-workshop-at-isc-2024-in-hamburg) by Peter Schmidt
 * [Code for Thought: Make Science and Software FAIR (again) - Jamie Quinn](https://codeforthought.buzzsprout.com/1326658/15210839-en-a-national-day-for-research-software-the-escience-center) by Peter Schmidt
@@ -296,13 +298,6 @@ This is a [short course](https://gw-ospo.github.io/oss-licensing/intro.html) tha
 * [Ten simple rules for pushing boundaries of inclusion at academic events](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011797) by Siobhan Mackenzie Hall, Daniel Kochin, Carmel Carne, Patricia Herterich, Kristen Lenay Lewers, Mohamed Abdelhack, Arun Ramasubramanian, Juno Felecia, Michael Alphonse, Visotheary Ung, Sara El-Gebali, Christopher Brian Currin, Esther Plomp, Rachel Thompson, Malvika Sharan  
 * [Inclusive Language in Technology](https://www.aswf.io/blog/inclusive-language/) by Academy Software Foundation
 * [Racial Equity Tools Glossary](https://www.racialequitytools.org/glossary) by Racial Equity Tools
-
------------------
-<a name="community-funds"></a>
-# **7. Community and Travel Funds program**
-
-
-Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/funds-and-awards/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more. 
 
 -----------------
 
