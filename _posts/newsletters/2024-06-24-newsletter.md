@@ -10,21 +10,21 @@ In this monthly newsletter, we share recent, current, and planned activities of 
 
 In this issue:
 
-* [Community Awards](#community-awards)
-* [Community and Travel Funds](#community-funds)
-* [Membership Benefits](#membershipbenefits)
-* [US-RSE Conference 2024](#conference2024)
-* [Community News](#news)
+* [1. Community Awards](#community-awards)
+* [2. Community and Travel Funds](#community-funds)
+* [3. Membership Benefits](#membershipbenefits)
+* [4. US-RSE Conference 2024](#conference2024)
+* [5. Community News](#news)
     * [Community Calls](#community-calls)
     * [RSE Empowerment in National Labs](#wg-national-labs-empowerment)
     * [International Council of RSE Associations](#international-council)
     * [Member Spotlight](#member-spotlight)
     * [Pilot Program](#pilot-program)
-* [Interesting Events and Opportunities](#events)
-* [Interesting Reads, Videos, or Podcasts](#reads)
-* [Steering Committee Update](#sc-update)
-* [Get Involved](#involved)
-* [Recent Job Postings](#jobs)
+* [6. Interesting Events and Opportunities](#events)
+* [7. Interesting Reads, Videos, or Podcasts](#reads)
+* [8. Steering Committee Update](#sc-update)
+* [9. Get Involved](#involved)
+* [10. Recent Job Postings](#jobs)
 
 
 
