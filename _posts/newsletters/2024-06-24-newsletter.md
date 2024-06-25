@@ -32,7 +32,7 @@ In this issue:
 -----------------
 
 <a name="community-awards"></a>
-# **1. 2024 Community Award Results**  
+# **1. 2024 Community Awards Results**  
 
 ## **Congratulations to our outstanding winners!**
 
@@ -130,7 +130,7 @@ The next RSE Empowerment in National Labs working group meeting will be July 16 
 <a name="international-council"></a>
 ### **International Council of RSE Associations**
 
-Regular meetings of the International Council of RSE Associations are starting up again!  After a lull for the past year, and with the coordination help of ReSA (Research Software Alliance) representatives of the US-RSE will meet as part of the Intl Council to discuss and share topics on the common and unique challenges faced by RSE across the world.  Through these discussions and networking, we hope to share effective strategies in supporting RSEs while strengthening our own by learning of the successes at other international RSE associations.  Feel free to reach out to Keith Beattie or Rinku Gupta via Slack (your US-RSE International Council representatives) with any questions you have about the International Council of RSE Associations.
+Regular meetings of the International Council of RSE Associations are starting up again!  After a lull for the past year, and with the coordination help of ReSA (Research Software Alliance), representatives of the US-RSE will meet as part of the Intl Council to discuss and share topics on the common and unique challenges faced by RSEs across the world.  Through these discussions and networking, we hope to share effective strategies in supporting RSEs while strengthening our own by learning of the successes at other international RSE associations.  Feel free to reach out to Keith Beattie or Rinku Gupta via Slack (your US-RSE International Council representatives) with any questions you have about the International Council of RSE Associations.
 
 -----------------
 
@@ -281,7 +281,8 @@ This is a [short course](https://gw-ospo.github.io/oss-licensing/intro.html) tha
 
 <a name="reads"></a>
 # **7. Interesting Reads, Videos, or Podcasts**
-* [Funding Open Source Science Software](https://geoiac.notion.site/Funding-Open-Source-Science-Software-b11741a8c9a24a91b8a367629092f674) by  Georgia Iacovou
+* [Funder community focuses on crucial role of research software](https://www.researchsoft.org/blog/2024-06-20/) by Kim Hartley, Michelle Barker, and Daniel S. Katz
+* [Funding Open Source Science Software](https://geoiac.notion.site/Funding-Open-Source-Science-Software-b11741a8c9a24a91b8a367629092f674) by Georgia Iacovou
 * [Code for Thought: Research Software Engineering Workshop at ISC 2024 in Hamburg](https://codeforthought.buzzsprout.com/1326658/15243430-en-research-software-engineering-workshop-at-isc-2024-in-hamburg) by Peter Schmidt
 * [Code for Thought: Make Science and Software FAIR (again) - Jamie Quinn](https://codeforthought.buzzsprout.com/1326658/15189970-en-bytesized-rse-make-science-and-software-fair-again-jamie-quinn) by Peter Schmidt
 * [Code for Thought: A National Day for Research Software - the eScience Center](https://codeforthought.buzzsprout.com/1326658/15210839-en-a-national-day-for-research-software-the-escience-center) by Peter Schmidt
