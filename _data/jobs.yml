@@ -1,13 +1,64 @@
+- expires: 2024-09-30
+  location: Manifest Technologies, New Haven, CT / Remote
+  name: Full-stack Software Engineer
+  posted: 2024-06-24
+  url: https://www.manifesttech.io/career/full-stack-software-engineer
+- expires: 2024-08-20
+  location: Henry M Jackson Foundation, Frederick, MD
+  name: Computational Research Scientist II - FEA
+  posted: 2024-06-20
+  url: https://jobs.hjf.org/jobs/4394?lang=en-us
+- expires: 2024-08-20
+  location: Henry M Jackson Foundation, Frederick, MD
+  name: Computational Research Scientist II - PDM
+  posted: 2024-06-20
+  url: https://jobs.hjf.org/jobs/4391?lang=en-us
+- expires: 2024-08-20
+  location: Henry M Jackson Foundation, Frederick, MD
+  name: Computational Research Scientist III - PDM
+  posted: 2024-06-20
+  url: https://jobs.hjf.org/jobs/4390?lang=en-us
+- expires: 2024-08-20
+  location: Henry M Jackson Foundation, Frederick, MD
+  name: Computational Research Scientist III
+  posted: 2024-06-20
+  url: https://jobs.hjf.org/jobs/4393?lang=en-us
+- expires: 2024-07-09
+  location: Lawrence Berkeley National Lab, Berkeley, CA (hybrid possible)
+  name: Computer Systems Engineer
+  posted: 2024-06-18
+  url: https://jobs.lbl.gov/jobs/computer-systems-engineer-6548
+- expires: 2024-08-09
+  location: National Center for Supercomputing Applications, Urbana, IL
+  name: Research Software Developer
+  posted: 2024-06-17
+  url: https://illinois.csod.com/ats/careersite/jobdetails.aspx?c=illinois&id=10893
+- expires: 2024-07-31
+  location: Lawrence Berkeley National Laboratory, on-site, hybrid, full-time telework
+    or remote
+  name: User Experience Researcher
+  posted: 2024-06-14
+  url: https://jobs.lbl.gov/jobs/user-experience-researcher-6536
+- expires: 2024-07-19
+  location: University of Pennsylvania, Philadelphia, PA
+  name: Sr. Application Developer / Application Developer C
+  posted: 2024-06-14
+  url: https://wd1.myworkdaysite.com/recruiting/upenn/careers-at-penn/job/David-Rittenhouse-Laboratory/Sr-Application-Developer---Application-Developer-C--Department-of-Physics-and-Astronomy_JR00091703
+- expires: 2024-06-30
+  location: Dartmouth College, Hanover, NH -- hybrid 2 days/week on campus
+  name: Research Software Engineer II (RSEII), Scientific and High Performance Computing
+  posted: 2024-06-10
+  url: https://searchjobs.dartmouth.edu/postings/74000
+- expires: 2024-07-12
+  location: Columbia University, New York City, NY
+  name: Research Software Engineer, Computational Neuroscience and Behavior
+  posted: 2024-06-05
+  url: https://apply.interfolio.com/147471
 - expires: 2024-08-30
   location: Navteca in support of NASA JSC, Greenbelt, MD, Houston TX, Remote
   name: DevOps Platform Engineer
   posted: 2024-05-29
   url: https://navteca.bamboohr.com/careers/25
-- expires: 2024-05-31
-  location: SLAC National Laboratory, flexible
-  name: Rubin Observatory Campaign Management Services Developer
-  posted: 2024-05-29
-  url: https://erp-hprdext.erp.slac.stanford.edu/psc/hprdext/EMPLOYEE/SL_CG/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=5936&PostingSeq=1
 - expires: 2024-07-01
   location: Sandia National Laboratories, Albuquerque, NM (remote possible)
   name: Postdoctoral Appointee - Topology/Shape/Inverse Optimization
@@ -95,37 +146,11 @@
   name: Postdoctoral Research Associate - Grid Modeling
   posted: 2024-04-09
   url: https://jobs.ornl.gov/job/Knoxville-Postdoctoral-Research-Associate-Grid-Modeling-TN-37932/1150809700/
-- expires: 2024-04-20
-  location: Sandia National Laboratories, Location Flexible
-  name: Full Stack Software Developer
-  posted: 2024-04-05
-  url: https://sandia.jobs/albuquerque-nm/computer-science-full-stack-software-developer-experienced/BC0AA426D57C4FE787D62952DBAF3F91/job/
-- expires: 2024-06-05
-  location: Pittsburgh Supercomputing Center, Pittsburgh, PA (remote eligible)
-  name: Senior Software Engineer
-  posted: 2024-04-05
-  url: https://www.psc.edu/senior-software-engineer-2021474/
 - expires: 2024-06-01
   location: Statewide California Earthquake Center, Los Angeles, CA
   name: Software Engineer
   posted: 2024-04-05
   url: https://usccareers.usc.edu/job/los-angeles/software-engineer/1209/63510061216
-- expires: 2024-04-15
-  location: National Center for Atmospheric Research, Boulder, CO
-  name: Software Engineer II
-  posted: 2024-03-20
-  url: https://ucar.wd5.myworkdayjobs.com/UCAR_Careers/job/Mesa-Lab-Building/CGD-Software-Engineer-II_REQ-2024-67-1
-- expires: 2024-04-15
-  location: University of West Florida, Pensacola, FL (fully remote eligible from
-    the US)
-  name: Research Software Engineer
-  posted: 2024-03-04
-  url: https://careersmanager.pageuppeople.com/997/cw/en-us/job/495401/research-software-engineer-12895t
-- expires: 2024-04-30
-  location: Climate Modeling Alliance (CliMA), Caltech, Pasadena, CA
-  name: Software Engineer
-  posted: 2024-02-27
-  url: https://phf.tbe.taleo.net/phf03/ats/careers/v2/viewRequisition?org=CALTECH&cws=37&rid=9594
 - expires: 2024-07-01
   location: Johns Hopkins University, Baltimore, MD
   name: Research Software Engineer with UI/UX Concentration
@@ -151,21 +176,6 @@
   name: Software Scientist
   posted: 2024-01-24
   url: https://openfree.energy/careers/postings/2024-9677
-- expires: 2024-04-01
-  location: Syracuse University, Syracuse, NY
-  name: Postdoc - Syracuse University Open Source Project Office
-  posted: 2024-01-09
-  url: https://www.sujobopps.com/postings/103239
-- expires: 2024-03-31
-  location: Harvard Medical School, Boston, MA (on-site)
-  name: Software Engineer/Developer
-  posted: 2023-12-19
-  url: https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25240&siteid=5341&PageType=JobDetails&jobid=1999498
-- expires: 2024-05-15
-  location: Kitware, Clifton Park, NY
-  name: OSTP Software Developer
-  posted: 2023-11-30
-  url: https://jobs.lever.co/kitware/cbd8d199-9830-4416-a46e-42fafee85449
 - expires: 2024-05-31
   location: Iowa State University, Ames, Iowa
   name: Researcher and Engineer Positions in Advanced Wireless, Open RAN, and Rural
