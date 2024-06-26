@@ -233,6 +233,10 @@ If you are willing to participate in this study, please click [here](https://uni
 
 # Upcoming Events
  
+### **💡US-RSE Booth at the PEARC24 Conference**
+
+We will have a booth at [PEARC24](https://pearc.acm.org/pearc24/)! Please join us at the conference or in Providence, RI between July 21-25. Additionally, we have a [#pearc24](https://usrse.slack.com/archives/C079VRVQ22E) Slack channel for discussions and announcements for the conference.
+
 ### **💡Call for Abstracts: Research Software Engineers in HPC**
 
 *To be held as part of SC24, Atlanta, GA, USA and online.*
