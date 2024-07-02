@@ -9,8 +9,8 @@ baseurl: ""  # for testing, also check .circleci/circle_urls.sh
 title-img: /assets/img/main_logo_transparent.png  # baseurl will be prepended
 twitter-img: /assets/img/main_logo_transparent.png  # url + baseurl will be prepended
 banner: /assets/img/main_logo_transparent.png
-# icon: /assets/img/main_logo_transparent.png
-icon: /assets/img/USRSE_Pride_6ColorChevronsSquare.png
+icon: /assets/img/main_logo_transparent.png
+# icon: /assets/img/USRSE_Pride_6ColorChevronsSquare.png
 domain: https://us-rse.org
 
 email: contact@us-rse.org
