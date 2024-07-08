@@ -14,7 +14,7 @@ time:
 Our **July Community Call** will be all about **Version Control Systems** on Thursday, July 11, 12pm ET/11am CT/10am MT/9am PT.
 
 
-Asking if you were using a version control system would probably make you say: of course I do! So we won’t ask you that. Instead we ask: which one(s) are you using? GitHub, GitLab, Bitbucket, or something way more exotic? Are you using these tools in unique or novel ways? Our July Community Call will be all about version control systems! How are you using them? What’s your favorite feature? What drives you crazy? Do the researchers you work with use them too? Come and join us for a fun hour filled with commits, versions, and hopefully not too many pushes!
+Asking if you were using a version control system would probably make you say: of course I do! So we won’t ask you that. Instead we ask: which one(s) are you using? SVN, Git, Mercurial, or something way more exotic? And what services do you use? GitHub, GitLab, Bitbucket, something else? Are you using these tools in unique or novel ways? Our July Community Call will be all about version control systems and their ecosystems! How are you using them? What’s your favorite feature? What drives you crazy? Do the researchers you work with use them too? Come and join us for a fun hour filled with commits, versions, and hopefully not too many pushes!
 
 
 
