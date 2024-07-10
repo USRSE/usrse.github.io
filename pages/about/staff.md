@@ -10,7 +10,7 @@ set_last_modified: true
 
 |**Community Manager**|**Executive Director**|
 |:---:|:---:|
-| <img width="200" alt="Sophia Anyatonwu" src="{{ site.baseurl }}/../../assets/img/sophia.png"> | <img width="200" alt="Sandra Gesing" src="{{ site.baseurl }}/../../assets/img/sandra.png"> |
+| <img width="200" alt="Sophia Anyatonwu" src="{{ site.baseurl }}/../../../assets/img/sophia.png"> | <img width="200" alt="Sandra Gesing" src="{{ site.baseurl }}/../../../assets/img/sandra.png"> |
 | Sophia Anyatonwu | Sandra Gesing |
 | [sophia@us-rse.org](mailto:sophia@us-rse.org) | [sandra@us-rse.org](mailto:sandra@us-rse.org) |
 | [Sophia's LinkedIn](https://www.linkedin.com/in/sophiaanyatonwu/) | [Sandra's LinkedIn](https://www.linkedin.com/in/sandragesing/) |
