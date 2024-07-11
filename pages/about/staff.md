@@ -1,21 +1,40 @@
 ---
 layout: page
-title: Executive Director
-permalink: /about/executive-director/
+title: US-RSE Staff
+permalink: /about/staff/
 subtitle: Sustainability for the US-RSE Association 
 menubar: about
 menubar_toc: true
 set_last_modified: true
 ---
 
-
-### Executive Director
-
-Sandra Gesing
-
-[sandra@us-rse.org](mailto:sandra@us-rse.org)
-
-[Sandra's Homepage](http://sandra-gesing.com/)
+<div class="container text-center">
+    <div class="row justify-content-around">
+        <div class="col-10 col-sm-6 col-xl-5 px-0">
+        <div class="card h-100">
+            <img src="{{ site.baseurl }}/assets/img/sandra.png" class="card-img-top p-0" alt="Executive Director - Sandra Gesing">
+            <div class="card-body">
+                <h4 class="card-title">Executive Director</h4>
+                <h5 class="card-subtitle">Sandra Gesing</h5>
+                <a href="mailto:sandra@us-rse.org">sandra@us-rse.org</a><br>
+                <a href="https://www.linkedin.com/in/sandragesing/">Sandra's LinkedIn</a><br>
+                <a href="http://sandra-gesing.com/">Sandra's Website</a>
+            </div>
+        </div>
+        </div>
+        <div class="col-10 col-sm-6 col-xl-5 px-0">
+        <div class="card h-100">
+            <img src="{{ site.baseurl }}/assets/img/sophia.png" class="card-img-top p-0" alt="Community Manager - Sophia Anyatonwu">
+            <div class="card-body">
+                <h4 class="card-title">Community Manager</h4>
+                <h5 class="card-subtitle">Sophia Anyatonwu</h5>
+                <a href="mailto:sophia@us-rse.org">sophia@us-rse.org</a><br>
+                <a href="https://www.linkedin.com/in/sophiaanyatonwu/">Sophia's LinkedIn</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
 
 ### Message from the Executive Director October 2023
 
