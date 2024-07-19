@@ -14,10 +14,12 @@ respected for advancing science, technology, and society through the transformat
 The number of individual members of US-RSE has grown from about 20 in 2018 to more than 2500 in 2024. 
 
 **Become an Organizational Founding Member**
+
 US-RSE will soon start the pilot phase of an organizational membership program. The pilot phase will give organizations 
 the opportunity to be recognized in perpetuity as founding members of US-RSE.
 
 **Why support US-RSE?**
+
 US-RSE offers a variety of services to its individual and organizational members. Examples include
 <ul>
 <li>Our annual conference</li> 
@@ -40,10 +42,12 @@ US-RSE offers a variety of services to its individual and organizational members
 <li>[Career Guide Brochure](https://zenodo.org/records/10073233) for RSEs in collaboration with IEEE Computer Society (25 pages)</li>
 </ul>
 </ul>
+
 By joining US-RSE as an organizational member you will ensure the continuation and expansion of these offerings along 
 with exclusive organizational member benefits (details coming soon).
 
 **How to join?**
+
 If you would like to join, please contact our Executive Director Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.org).
 
 {% include member-graph.html %}
