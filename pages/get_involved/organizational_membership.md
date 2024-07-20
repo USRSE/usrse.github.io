@@ -3,7 +3,7 @@ layout: page
 title: Organizational Membership - Coming Soon!
 permalink: /org-membership/
 subtitle: Why should my organization become a member of US-RSE?
-menubar: get-involved
+menubar: true
 ---
 
 The US Research Software Engineer Association (US-RSE) is the leading professional community of research software engineering 
