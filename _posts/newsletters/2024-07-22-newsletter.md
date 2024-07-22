@@ -238,7 +238,8 @@ This workshop will bring together RSEs and allies involved in HPC, from all over
 * [Code for Thought: The Turing Way Part 2: From Handbook to Community](https://codeforthought.buzzsprout.com/1326658/15355230-en-the-turing-way-part-2-from-handbook-to-community) by Peter Schmidt
 * [Code for Thought - CERN: Keeping the lights on with OpenStack and Kubernetes - Spyridon Trigazis](https://codeforthought.buzzsprout.com/1326658/15321543-en-cern-keeping-the-lights-on-with-openstack-and-kubernetes-spyridon-trigazis) by Peter Schmidt
 * [Funding Open Source Science Software](https://geoiac.notion.site/Funding-Open-Source-Science-Software-b11741a8c9a24a91b8a367629092f674) by  Georgia Iacovou
-* [There’s no such thing as sustainable research software](https://danielskatzblog.wordpress.com/2024/05/13/no-sustainable-research-software/) by Daniel S. Katz
+
+  
 -----------------
 
 <a name="involved"></a>
