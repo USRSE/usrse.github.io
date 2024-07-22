@@ -72,7 +72,7 @@ Tutorials will be online only and conducted virtually in the weeks prior to the 
 # **3. Community News** 
 
 <a name="community-calls"></a>
-### **1. Community Calls**
+### **Community Calls**
 
 ***August Community Call - Summertime Coffee Chat*** 
 
@@ -87,21 +87,21 @@ The July Community Call was all about Version Control Platforms
 
 
 <a name="community-funds"></a>
-### **2. Community and Travel Funds program**
+### **Community and Travel Funds program**
 
 Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/funds-and-awards/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more. 
 
 **Next Application Deadline:** September 30, 2024.
 
 <a name="wg-national-labs-empowerment"></a>
-### **3. RSE Empowerment in National Labs**
+### **RSE Empowerment in National Labs**
 
 The next RSE Empowerment in National Labs working group meeting will be Thursday August 22 at 3pm ET/ 2pm CT/ 1pm MT / 12pm PT. We will be holding a discussion about the COLABS proposal with David Bernholdt from Oak Ridge National Laboratory. The meeting is open to all US-RSE members who are interested. You can find a link to the meeting in the bookmarks section of the [#national-labs](https://usrse.slack.com/archives/C01EML6TRDY) Slack channel.
 
 -----------------
 
 <a name="member-spotlight"></a> 
-### **4. Member Spotlight - Jamil Gafur** 
+### **Member Spotlight - Jamil Gafur** 
 
 ![Jamil Gafur]({{ site.baseurl }}/assets/img/jamil_gafur.png "Jamil Gafur")
 
@@ -131,7 +131,7 @@ Another aspect of the US-RSE community that I particularly enjoy is the memes ch
 -----------------
 
 <a name="meetups"></a>
-### **5. Local Meetups**
+### **Local Meetups**
 
 Are you hosting a local meetup for RSEs? Have you hosted one in the past year? We would love to hear more about your experience. Please email [sophia@us-rse.org](sophia@us-rse.org) or message me on Slack.
 
