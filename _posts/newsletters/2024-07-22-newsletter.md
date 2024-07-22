@@ -15,10 +15,10 @@ In this issue:
 * [2. US-RSE Conference 2024](#conference2024)
 * [3. Community News](#news)
     * [Community Calls](#community-calls)
-    * [Local Meetups](#meetups)
-    * [Community and Travel Funds](#community-funds)
-    * [National Labs](#national-labs)
+    * [RSE Empowerment in National Labs](#wg-national-labs-empowerment)
     * [Member Spotlight](#member-spotlight)
+    * [Community and Travel Funds](#community-funds)
+    * [Local Meetups](#meetups)
 * [4. Interesting Events and Opportunities](#events)
 * [5. Interesting Reads, Videos, or Podcasts](#reads)
 * [6. Get Involved](#involved)
@@ -44,23 +44,27 @@ Do you have suggestions for other organizations that could be potential US-RSE p
 # **2. US-RSE Conference 2024 (USRSE'24)**  
 
 ### **[Registration is open!](https://us-rse.org/usrse24/attend/register/)**  
-### **[View our Full Program!](https://us-rse.org/usrse24/program/)**
 
- ![image](https://hackmd.io/_uploads/SkDLcMR4R.png)
- 
+![Registration is open!]({{ site.baseurl }}/assets/img/USRSE2024_ZiaLogo resized.png "Conference Logo")
 
 -----------------
-**Travel Arrangements**
-
-Two hotels within a short walking distance are available with a special rate for those attending US-RSE’24. Are you getting ready and making travel arrangements? Please consider booking at one of these convenient locations! Visit the Travel page for codes, booking links, and more [https://us-rse.org/usrse24/attend/travel/](https://us-rse.org/usrse24/attend/travel/).  
-
-**Conference Date**
+**1. Conference Date**
 
 October 15-17, 2024, Albuquerque, NM 
 
-**US-RSE 2024 Tutorials**
+
+**2. Travel Arrangements**
+
+Two hotels within a short walking distance are available with a special rate for those attending US-RSE’24. Are you getting ready and making travel arrangements? Please consider booking at one of these convenient locations! Visit the Travel page for codes, booking links, and more [https://us-rse.org/usrse24/attend/travel/](https://us-rse.org/usrse24/attend/travel/).  
+
+
+**3. US-RSE 2024 Tutorials**
 
 Tutorials will be online only and conducted virtually in the weeks prior to the conference https://buff.ly/4f6USF4.
+
+**4. Conference Program Timetable**
+
+[View our Program Timetable!](https://us-rse.org/usrse24/program/)
 
 -----------------
 
@@ -74,38 +78,32 @@ Tutorials will be online only and conducted virtually in the weeks prior to the 
 
 The next community call will take place on **Friday, August 9, at 2pm ET/1pm CT/12pm MT/11am PT.**
 
-Call for Presenters: If you are interested in presenting, please get in touch with Julia Damerow and Abbey Roelofs in the [#communitycalls](https://app.slack.com/client/T8ZT4PJSW/CLBDQMJH5) channel or by messaging them directly.
+Call for Presenters: If you are interested in presenting at an upcoming community call, then please get in touch with Julia Damerow and Abbey Roelofs in the [#communitycalls](https://app.slack.com/client/T8ZT4PJSW/CLBDQMJH5) channel or by messaging them directly.
 
 
 ***July Community Call (Past)***   
 
-The July Community Call was all about Version Control Platforms.
-
-
-<a name="meetups"></a>
-### **2. Local Meetups**
-
-Are you hosting a local meetup for RSEs? Have you hosted one in the past year? We would love to hear more about your experience. Please email [sophia@us-rse.org](sophia@us-rse.org) or message me on Slack.
+The July Community Call was all about Version Control Platforms
 
 
 <a name="community-funds"></a>
-### **3. Community and Travel Funds program**
+### **2. Community and Travel Funds program**
 
 Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/funds-and-awards/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more. 
 
 **Next Application Deadline:** September 30, 2024.
 
-<a name="national-labs"></a>
-### **4. RSE Empowerment in National Labs**
+<a name="wg-national-labs-empowerment"></a>
+### **3. RSE Empowerment in National Labs**
 
-The next RSE Empowerment in National Labs working group meeting will be Thursday August 22 at 3pm ET/ 2pm CT/ 1pm MT / 12pm PT. We will be holding a discussion about the COLABS proposal with David Bernholdt from Oak Ridge National Laboratory. The meeting is open to all US-RSE members who are interested. You can find a link to the meeting in the bookmarks section of the #national-labs Slack channel.
+The next RSE Empowerment in National Labs working group meeting will be Thursday August 22 at 3pm ET/ 2pm CT/ 1pm MT / 12pm PT. We will be holding a discussion about the COLABS proposal with David Bernholdt from Oak Ridge National Laboratory. The meeting is open to all US-RSE members who are interested. You can find a link to the meeting in the bookmarks section of the [#national-labs](https://usrse.slack.com/archives/C01EML6TRDY) Slack channel.
 
 -----------------
 
 <a name="member-spotlight"></a> 
-### **5. Member Spotlight - Jamil Gafur** 
+### **4. Member Spotlight - Jamil Gafur** 
 
-![IMG_20240604_160648](https://hackmd.io/_uploads/SJzkr_YPA.jpg =300x350)
+![Jamil Gafur]({{ site.baseurl }}/assets/img/jamil_gafur.png "Jamil Gafur")
 
 
 **Background**
@@ -129,6 +127,13 @@ Discovering this field was a revelation; I found immense enjoyment in the work a
 The Education and Training Working Group's seminars and the training materials on the US-RSE website have been invaluable resources for me. I take pride in contributing to the compilation of training resources featured on the site, which are designed for self-paced learning and offer members opportunities to acquire various skills.
 
 Another aspect of the US-RSE community that I particularly enjoy is the memes channel I introduced on our Slack platform. This channel has been a lighthearted yet effective way to foster camaraderie and build a sense of community among members. Beyond sharing funny and relatable content, it has helped us connect on a more personal level, enhancing our overall experience as part of the US-RSE network. Building this community through humor has been a refreshing and positive contribution to our journey in the RSE field together.
+
+-----------------
+
+<a name="meetups"></a>
+### **5. Local Meetups**
+
+Are you hosting a local meetup for RSEs? Have you hosted one in the past year? We would love to hear more about your experience. Please email [sophia@us-rse.org](sophia@us-rse.org) or message me on Slack.
 
 -----------------
 
