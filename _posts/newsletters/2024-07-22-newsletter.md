@@ -15,8 +15,10 @@ In this issue:
 * [2. US-RSE Conference 2024](#conference2024)
 * [3. Community News](#news)
     * [Community Calls](#community-calls)
-    * [Member Spotlight](#member-spotlight)
+    * [Local Meetups](#meetups)
     * [Community and Travel Funds](#community-funds)
+    * [National Labs](#national-labs)
+    * [Member Spotlight](#member-spotlight)
 * [4. Interesting Events and Opportunities](#events)
 * [5. Interesting Reads, Videos, or Podcasts](#reads)
 * [6. Get Involved](#involved)
@@ -66,7 +68,7 @@ Tutorials will be online only and conducted virtually in the weeks prior to the 
 # **3. Community News** 
 
 <a name="community-calls"></a>
-### **Community Calls**
+### **1. Community Calls**
 
 ***August Community Call - Summertime Coffee Chat*** 
 
@@ -80,27 +82,28 @@ Call for Presenters: If you are interested in presenting, please get in touch wi
 The July Community Call was all about Version Control Platforms.
 
 
+<a name="meetups"></a>
+### **2. Local Meetups**
 
-### **Local Meetups**
-
-Are you hosting a local meet up for RSEs? Have you hosted one in the past year? We would love to hear more about your experience. Please email [sophia@us-rse.org](sophia@us-rse.org) or message me on Slack.
+Are you hosting a local meetup for RSEs? Have you hosted one in the past year? We would love to hear more about your experience. Please email [sophia@us-rse.org](sophia@us-rse.org) or message me on Slack.
 
 
-
-### **Community and Travel Funds program**
+<a name="community-funds"></a>
+### **3. Community and Travel Funds program**
 
 Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/funds-and-awards/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more. 
 
 **Next Application Deadline:** September 30, 2024.
 
-### **RSE Empowerment in National Labs**
+<a name="national-labs"></a>
+### **4. RSE Empowerment in National Labs**
 
 The next RSE Empowerment in National Labs working group meeting will be Thursday August 22 at 3pm ET/ 2pm CT/ 1pm MT / 12pm PT. We will be holding a discussion about the COLABS proposal with David Bernholdt from Oak Ridge National Laboratory. The meeting is open to all US-RSE members who are interested. You can find a link to the meeting in the bookmarks section of the #national-labs Slack channel.
 
 -----------------
 
 <a name="member-spotlight"></a> 
-### **Member Spotlight - Jamil Gafur** 
+### **5. Member Spotlight - Jamil Gafur** 
 
 ![IMG_20240604_160648](https://hackmd.io/_uploads/SJzkr_YPA.jpg =300x350)
 
@@ -111,7 +114,7 @@ Hi! My name is Jamil.
 
 As a first-generation Guyanese student from New York, my undergraduate journey illuminated the transformative potential of computer science across diverse disciplines. My initial experience in software development for domain scientists occurred in my third year of undergrad, where I integrated computational methods into their work. This opportunity revealed how my contributions could positively impact various domains. Subsequently, I expanded my experiences to prestigious institutions such as Los Alamos National Lab (LANL) and the National Renewable Energy Lab (NREL) before embarking on a doctoral program here at the University of Iowa.
 
-Throughout my works, I have always collaborated closely with domain scientists. This was unknowingly my first step as a Research Software Engineer (RSE) and I eventually found the United States Research Software Engineer Assocaition (US-RSE) in my first year of my Ph.D. Upon finding the US-RSE Association, my experience deepened my commitment to empowering scientists by enabling them to implement robust software solutions, thereby enhancing the reproducibility and impact of their research.
+Throughout my works, I have always collaborated closely with domain scientists. This was unknowingly my first step as a Research Software Engineer (RSE) and I eventually found the United States Research Software Engineer Association (US-RSE) in my first year of my Ph.D. Upon finding the US-RSE Association, my experience deepened my commitment to empowering scientists by enabling them to implement robust software solutions, thereby enhancing the reproducibility and impact of their research.
 
 
 **Research Software Engineering**
