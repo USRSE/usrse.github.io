@@ -19,8 +19,8 @@ In this issue:
     * [Community and Travel Funds](#community-funds)
 * [4. Interesting Events and Opportunities](#events)
 * [5. Interesting Reads, Videos, or Podcasts](#reads)
-* [7. Get Involved](#involved)
-* [8. Recent Job Postings](#jobs)
+* [6. Get Involved](#involved)
+* [7. Recent Job Postings](#jobs)
 
 
 -----------------
