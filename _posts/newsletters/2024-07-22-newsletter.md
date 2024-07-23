@@ -48,21 +48,21 @@ Do you have suggestions for other organizations that could be potential US-RSE p
 ![Registration is open!]({{ site.baseurl }}/assets/img/USRSE2024_ZiaLogo resized.png "Conference Logo")
 
 -----------------
-**1. Conference Date**
+**Conference Date**
 
 October 15-17, 2024, Albuquerque, NM 
 
 
-**2. Travel Arrangements**
+**Travel Arrangements**
 
 Two hotels within a short walking distance are available with a special rate for those attending US-RSE’24. Are you getting ready and making travel arrangements? Please consider booking at one of these convenient locations! Visit the Travel page for codes, booking links, and more [https://us-rse.org/usrse24/attend/travel/](https://us-rse.org/usrse24/attend/travel/).  
 
 
-**3. US-RSE 2024 Tutorials**
+**US-RSE 2024 Tutorials**
 
 Tutorials will be online only and conducted virtually in the weeks prior to the conference https://buff.ly/4f6USF4.
 
-**4. Conference Program Timetable**
+**Conference Program Timetable**
 
 [View our Program Timetable!](https://us-rse.org/usrse24/program/)
 
@@ -270,9 +270,9 @@ These opportunities were recently posted to the [RSE Opportunities page](https:/
 
 1. [Software Engineer](https://careersearch.stanford.edu/jobs/software-engineer-26078): Stanford University, Stanford, CA or Remote Posted: Jul 19, 2024
 2. [Software Developer Beamline Controls](https://jobs.lbl.gov/jobs/software-developer-beamline-controls-6603): Berkeley Lab, Berkeley, California Posted: Jul 17, 2024
-3. [Research Software Engineer](https://jobs.bnl.gov/job/upton/research-software-engineer/3437/67378557872): Brookhaven National Laboratory, Upton, NY Posted: Jul 12, 2024
+3. [Research Software Engineer](https://jobs.bnl.gov/job/upton/research-software-engineer/3437/67378557872): Brookhaven National Laboratory, Upton, NY Posted: Jul 12, 2024  
 4. [Chief Technology Officer and Director for Software](https://recruiting2.ultipro.com/SPA1004AURA/JobBoard/57b96f30-6a4b-42cc-8f73-d417a17b54e9/OpportunityDetail?opportunityId=3f55028a-6d04-4f1d-84af-1d66d754a4f1): NOIRLab/AURA, Tucson, AZ, USA | La Serena, Chile | Hilo, HI, USA Posted: Jul 11, 2024
-5. [Cloud Data Scientist and Software Engineer](https://earthbigdata.com/careers): Earth Big Data, Remote, US Posted: Jul 10, 2024
+5. [Cloud Data Scientist and Software Engineer](https://earthbigdata.com/careers): Earth Big Data, Remote, US Posted: Jul 10, 2024  
 6. [Senior Software Developer](https://careers.northwestern.edu/psp/hr857prd_er/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=50289&PostingSeq=1): Northwestern University, Evanston IL / Hybrid Posted: Jul 02, 2024
 7. [Database Engineer](https://cornell.wd1.myworkdayjobs.com/en-US/CornellCareerPage/details/Database-Engineer_WDR-00042849-1?q=ornithology): Cornell Lab of Ornithology, Hybrid/Remote (Ithaca, NY) Posted: Jun 27, 2024
 8. [User Experience Researcher](https://cornell.wd1.myworkdayjobs.com/en-US/CornellCareerPage/details/Database-Engineer_WDR-00042849-1?q=ornithology): Lawrence Berkeley National Laboratory, Berkeley, CA Posted: Jun 26, 2024
