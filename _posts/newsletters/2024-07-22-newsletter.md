@@ -15,9 +15,9 @@ In this issue:
 * [2. US-RSE Conference 2024](#conference2024)
 * [3. Community News](#news)
     * [Community Calls](#community-calls)
+    * [Community and Travel Funds](#community-funds)
     * [RSE Empowerment in National Labs](#wg-national-labs-empowerment)
     * [Member Spotlight](#member-spotlight)
-    * [Community and Travel Funds](#community-funds)
     * [Local Meetups](#meetups)
 * [4. Interesting Events and Opportunities](#events)
 * [5. Interesting Reads, Videos, or Podcasts](#reads)
@@ -83,7 +83,7 @@ Call for Presenters: If you are interested in presenting at an upcoming communit
 
 ***July Community Call (Past)***   
 
-The July Community Call was all about Version Control Platforms
+The July Community Call was all about Version Control.
 
 
 <a name="community-funds"></a>
@@ -133,7 +133,7 @@ Another aspect of the US-RSE community that I particularly enjoy is the memes ch
 <a name="meetups"></a>
 ### **Local Meetups**
 
-Are you hosting a local meetup for RSEs? Have you hosted one in the past year? We would love to hear more about your experience. Please email [sophia@us-rse.org](sophia@us-rse.org) or message me on Slack.
+Are you hosting a local meetup for RSEs? Have you hosted one in the past year? We would love to hear more about your experience. Please email [sophia@us-rse.org](sophia@us-rse.org) or contact me through Slack.
 
 -----------------
 
@@ -156,7 +156,7 @@ Join this conversation about [Equity, Diversity, Inclusion and Accessibility (ED
 The [FORCOLAB](https://shuiblue.github.io/forcolab-uoft/) at the University of Toronto (UofT)is conducting a research study on understanding the refactoring practices and challenges in open-source scientific software. The main objective is to better support refactoring tasks during scientific software development. Please share your refactoring experiences in open-source scientific software [by completing this survey](https://forms.office.com/pages/responsepage.aspx?id=JsKqeAMvTUuQN7RtVsVSEDG3WKvjM4pHu7QCZXS8hkhUNFVWQTA1RDIzNkZYSjNDMzNSM1VSVjVPMi4u).
 ### 💥**Survey on Software Environments for Heliophysics**
 
-For RSEs in helio/solar physics-- IHDEA (International Heliophysics Data Environment Alliance) has formed a working group to define common heliophysics tools/software in python which the community may one day be able to use and base their software off of.  They are collecting some initial feedback about the kinds of software folks in the community are using using this short survey:[https://forms.gle/DumtthpGytnhWpCk6](https://forms.gle/DumtthpGytnhWpCk6).
+For RSEs in helio/solar physics-- IHDEA (International Heliophysics Data Environment Alliance) has formed a working group to define common heliophysics tools/software in python which the community may one day be able to use and base their software off of.  They are collecting some initial feedback about the kinds of software folks in the community are using using this short survey: [https://forms.gle/DumtthpGytnhWpCk6](https://forms.gle/DumtthpGytnhWpCk6).
 
 
 ### **💥Center for Open-Source Research Software Stewardship and Advancement (CORSA)**
@@ -199,11 +199,11 @@ Details: [https://ideas-productivity.org/events/hpcbp-0086-softwaresustainabilit
 
 ### **💡Call for Participants: Open Science “Dynamic Convergence” Workshop**
 
-The workshop will bring together researchers, students, policymakers, funders, and other stakeholders to highlight impactful open science activities; explore collaboration opportunities; and find practical ways to speed up the global adoption of open science. More information about the program and logistics will be shared shortly. Please use this form to express your interest in participating in the workshop: https://forms.gle/rm9aaahGXZNmj4bs9. **Applications will close 31 July 2024.** 
+The workshop will bring together researchers, students, policymakers, funders, and other stakeholders to highlight impactful open science activities; explore collaboration opportunities; and find practical ways to speed up the global adoption of open science. More information about the program and logistics will be shared shortly. Please use this form to express your interest in participating in the workshop: [https://forms.gle/rm9aaahGXZNmj4bs9](https://forms.gle/rm9aaahGXZNmj4bs9). **Applications will close 31 July 2024.** 
 
 ### **💡Open Science Success Stories in Heliophysics and the Geosciences**
 
-Please submit your stories to the “Open to Celebrate” session at AGU [https://agu.confex.com/agu/agu24/prelim.cgi/Session/229151](https://agu.confex.com/agu/agu24/prelim.cgi/Session/229151)!
+Please submit your stories to the “Open to Celebrate” session at AGU: [https://agu.confex.com/agu/agu24/prelim.cgi/Session/229151](https://agu.confex.com/agu/agu24/prelim.cgi/Session/229151)!
 
 ### **💡Lawrence Livermore National Laboratory Tutorials for Open Source Projects**
 
@@ -219,7 +219,7 @@ This workshop will bring together RSEs and allies involved in HPC, from all over
 
 ### **💡The accomplishments of the Exascale Computing Project**
 
-[Supercomputing Spotlights](https://siag-sc.org/the-accomplishments-of-the-exascale-computing-project.html) is a new webinar series featuring short presentations that highlight the impact and successes of high-performance computing (HPC) throughout our world. Presentations, emphasizing achievements and opportunities in HPC, are intended for the broad international community, especially students and newcomers to the field. 
+[Supercomputing Spotlights](https://siag-sc.org/) is a new webinar series featuring short presentations that highlight the impact and successes of high-performance computing (HPC) throughout our world. Presentations, emphasizing achievements and opportunities in HPC, are intended for the broad international community, especially students and newcomers to the field. 
 
 
 ### Running List of Conferences and Events 
@@ -275,7 +275,7 @@ These opportunities were recently posted to the [RSE Opportunities page](https:/
 5. [Cloud Data Scientist and Software Engineer](https://earthbigdata.com/careers): Earth Big Data, Remote, US Posted: Jul 10, 2024  
 6. [Senior Software Developer](https://careers.northwestern.edu/psp/hr857prd_er/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=50289&PostingSeq=1): Northwestern University, Evanston IL / Hybrid Posted: Jul 02, 2024
 7. [Database Engineer](https://cornell.wd1.myworkdayjobs.com/en-US/CornellCareerPage/details/Database-Engineer_WDR-00042849-1?q=ornithology): Cornell Lab of Ornithology, Hybrid/Remote (Ithaca, NY) Posted: Jun 27, 2024
-8. [User Experience Researcher](https://cornell.wd1.myworkdayjobs.com/en-US/CornellCareerPage/details/Database-Engineer_WDR-00042849-1?q=ornithology): Lawrence Berkeley National Laboratory, Berkeley, CA Posted: Jun 26, 2024
+8. [User Experience Researcher](https://jobs.lbl.gov/jobs/user-experience-researcher-6565): Lawrence Berkeley National Laboratory, Berkeley, CA Posted: Jun 26, 2024
 9. [Software Engineering Manager](https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25240&siteid=5341#jobDetails=2009078_5341): Library Innovation Lab, Harvard Law School, Cambridge, MA (Hybrid- and Remote-eligible) Posted: Jun 26, 2024
 10. [Full-stack Software Engineer: Manifest Technologies](https://www.manifesttech.io/career/full-stack-software-engineer), New Haven, CT / Remote Posted: Jun 24, 2024
 1. [Computational Research Scientist III](https://jobs.hjf.org/jobs/4393?lang=en-us): Henry M Jackson Foundation, Frederick, MD Posted: Jun 20, 2024]
@@ -284,8 +284,8 @@ These opportunities were recently posted to the [RSE Opportunities page](https:/
 4. [Computational Research Scientist II - FEA](https://jobs.hjf.org/jobs/4394?lang=en-us): Henry M Jackson Foundation, Frederick, MD Posted: Jun 20, 2024
 6. [Research Software Developer](https://illinois.csod.com/ux/ats/careersite/1/home/requisition/10893?c=illinois): National Center for Supercomputing Applications, Urbana, IL Posted: Jun 17, 2024
 14. [Postdoctoral Appointee – Machine Learning for X-ray Science](https://argonne.wd1.myworkdayjobs.com/Argonne_Careers/job/Lemont-IL-USA/Postdoctoral-Appointee---Machine-Learning-for-X-ray-Science_418219): Argonne National Laboratory, Lemont, IL USA Posted: May 16, 2024
-15. [Research Scientist, Computational Fluid Dynamics Applications](https://argonne.wd1.myworkdayjobs.com/Argonne_Careers/job/Lemont-IL-USA/Postdoctoral-Appointee---Machine-Learning-for-X-ray-Science_418219): Oak Ridge National Laboratory, Oak Ridge, TN Posted: May 09, 2024
-17. [Research Scientist III, Computational Fluid Dynamics Applications: Oak Ridge National Laboratory](https://jobs.ornl.gov/Exempt/job/Oak-Ridge-Research-Scientist%2C-Computational-Fluid-Dynamics-Applications-TN-37830/1166277400/), Oak Ridge, TN Posted: May 09, 2024
+15. [Research Scientist, Computational Fluid Dynamics Applications](https://jobs.ornl.gov/job/Oak-Ridge-Research-Scientist%2C-Computational-Fluid-Dynamics-Applications-TN-37716/1166253500/): Oak Ridge National Laboratory, Oak Ridge, TN Posted: May 09, 2024
+17. [Research Scientist III, Computational Fluid Dynamics Applications](https://jobs.ornl.gov/Exempt/job/Oak-Ridge-Research-Scientist%2C-Computational-Fluid-Dynamics-Applications-TN-37830/1166277400/): Oak Ridge National Laboratory], Oak Ridge, TN Posted: May 09, 2024
 
 
 
