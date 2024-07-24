@@ -96,7 +96,7 @@ Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for t
 <a name="wg-national-labs-empowerment"></a>
 ### **RSE Empowerment in National Labs**
 
-The next RSE Empowerment in National Labs working group meeting will be Thursday August 22 at 3pm ET/ 2pm CT/ 1pm MT / 12pm PT. We will be holding a discussion about the COLABS proposal with David Bernholdt from Oak Ridge National Laboratory. The meeting is open to all US-RSE members who are interested. You can find a link to the meeting in the bookmarks section of the [#national-labs](https://usrse.slack.com/archives/C01EML6TRDY) Slack channel.
+The next RSE Empowerment in National Labs working group meeting will be Thursday August 22 at 3pm ET/ 2pm CT/ 1pm MT / 12pm PT. We will be continuing our "RSEs in the National Labs" speaker series with a presentation from Alicia Evans. She will be talking about her experience working at the National Institute of Child Health and Human Development ([NICHD](https://www.nichd.nih.gov/)). This meeting is open to all US-RSE members who are interested. You can find a link to the meeting in the bookmarks section of the [#national-labs](https://usrse.slack.com/channels/national-labs) Slack channel.
 
 -----------------
 
