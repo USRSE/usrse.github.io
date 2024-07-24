@@ -103,7 +103,7 @@ The next RSE Empowerment in National Labs working group meeting will be Thursday
 <a name="member-spotlight"></a> 
 ### **Member Spotlight - Jamil Gafur** 
 
-![Jamil Gafur]({{ site.baseurl }}/assets/img/jamil_gafur.png "Jamil Gafur")
+![Jamil Gafur]({{ site.baseurl }}/assets/img/jamil_gafur2.jpg "Jamil Gafur")
 
 
 **Background**
