@@ -60,7 +60,7 @@ Two hotels within a short walking distance are available with a special rate for
 
 **US-RSE 2024 Tutorials**
 
-Tutorials will be online only and conducted virtually in the weeks prior to the conference https://buff.ly/4f6USF4.
+Tutorials will be online only and conducted virtually in the weeks prior to the conference [https://buff.ly/4f6USF4](https://buff.ly/3SgI7xJ ).
 
 **Conference Program Timetable**
 
