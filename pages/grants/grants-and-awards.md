@@ -159,6 +159,6 @@ The application will request the following details:
     if your event is timed such that it occurs within 45 days of a quarterly deadline
     (e.g., event is July 20th and you are submitting for the June 30th deadline),
     please send an email to <a href="mailto:grants@us-rse.org">grants@us-rse.org</a>
-    to let us know. We will endeavor to expedite the reviewal process so we can
+    to let us know. We will endeavor to expedite the review process so we can
     inform you in a timely manner of our decision.
 </details>
