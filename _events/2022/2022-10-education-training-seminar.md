@@ -18,7 +18,7 @@ US-RSE is happy to be starting a new series of technical talks and tutorials rel
 
 ## Event
 
-The inaugural talk of the US-RSE Education & Training Seminar Series will feature Angela Herring from Los Alamos National Laboratory who will speak about Agile Project Managment for Research Software.
+The inaugural talk of the US-RSE Education & Training Seminar Series will feature Angela Herring from Los Alamos National Laboratory who will speak about Agile Project Management for Research Software.
 This event will take place **Wednesday, October 19th at 4 PM ET, 3 PM CT, 2 PM MT, 1 PM PT**
 
 *Abstract*: The Agile project management method, Scrum, has become a standard methodology for developing software for commercial, industrial, and even medical applications. However, Scrum is less commonly used in research environments. In this talk, I will give an overview of basic Scrum methodology and describe modifications I have used to successfully apply Scrum within research software development teams.
