@@ -38,6 +38,7 @@ activities such as, but not limited to:
 - Having US-RSE sponsor non-US-RSE events, such as other conferences, where sponsorship would be an effective advertisement and outreach mechanism.
 - Pursuing individual professional development that could benefit the community, such as obtaining trainer certifications.
 - Technical infrastructure costs related to working group activities (e.g., A/V services).
+- Funds to support official US-RSE Working Group activities (e.g., specific swag for events, speaker fees)
 
 Applications are accepted on a quarterly basis. They are evaluated based on
 potential for positive impact on the community, alignment to the US-RSE mission,
@@ -54,13 +55,13 @@ or ask in the [`#community-grants`](https://app.slack.com/client/T8ZT4PJSW/C05M3
 
 ### Application Details
 
-- **Next Application Deadline**: June 30, 2024
+- **Next Application Deadline**: September 30, 2024
 - **[Application Form](https://forms.gle/hXL95UymjTcR3Kb29)**
 
 The next round of application deadlines will be:
 
-- September 30, 2024
 - December 31, 2024
+- March 31, 2025
 
 The application will request the following details:
 
@@ -150,4 +151,14 @@ The application will request the following details:
     receipts or invoices to confirm the amount to reimburse. If the requested
     funds required a signed contract, this must be done through our fiscal sponsor,
     Community Initiatives.
+</details>
+
+<details>
+  <summary><b>Q: What should I do if the date of my request is very soon after the deadline?</b></summary>
+    A: While we regularly review on a quarterly basis to ensure fairness of the process,
+    if your event is timed such that it occurs within 45 days of a quarterly deadline
+    (e.g., event is July 20th and you are submitting for the June 30th deadline),
+    please send an email to <a href="mailto:grants@us-rse.org">grants@us-rse.org</a>
+    to let us know. We will endeavor to expedite the review process so we can
+    inform you in a timely manner of our decision.
 </details>
