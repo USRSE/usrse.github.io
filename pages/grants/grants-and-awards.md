@@ -140,7 +140,7 @@ The application will request the following details:
   <summary><b>Q: What are examples of approved travel expenses?</b></summary>
     A: Some examples of approved travel expenses are economy-class airfare, baggage fees,
     hotel costs, conference or event registration, and per diem for meals. The full
-    details can be found in our 
+    details can be found in our
     <a href="https://docs.google.com/document/d/1bXxgWqiKljF8VzftJMa_CdSzNrlO0z2tIVfTy-_Qg6o" target="_blank">
       General Travel Reimbursement Guidelines</a> document.
 </details>
@@ -161,4 +161,14 @@ The application will request the following details:
     please send an email to <a href="mailto:grants@us-rse.org">grants@us-rse.org</a>
     to let us know. We will endeavor to expedite the review process so we can
     inform you in a timely manner of our decision.
+</details>
+
+<details>
+  <summary><b>Q: Can I request funding for food during an event?</b></summary>
+  A: Yes. However, the application should be clear about how US-RSE funding for
+  the food will meet the goals of the program stated above. For example, will it
+  encourage people to attend your event who might not otherwise attend? Will you
+  use it as a way to “advertise” US-RSE to people who may not be aware of it
+  (e.g. “Food sponsored by US-RSE”)? Please note that due to limited funds,
+  requests for food-related grants will be evaluated with careful consideration.
 </details>
