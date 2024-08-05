@@ -7,8 +7,8 @@ duration: 60
 repeated: false
 category: dei
 time:
-  - - start: 2024-08-08 14:00 EST
-      end: 2024-08-08 15:00 EST
+  - - start: 2024-08-08 18:00
+      end: 2024-08-08 19:00
 ---
 
 The next DEI Working Group (@wg-dei) meeting is scheduled for **Thursday,
