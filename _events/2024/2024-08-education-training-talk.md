@@ -45,7 +45,7 @@ setup, primarily for creating "code links": using the output of one simulation a
 
 ### Note
 
-More information about this event can be found on [the flyer](https://drive.google.com/drive/folders/1A16FUlXw7TBRZfHnlKgmFpeBsditqzTN).
+More information about this event can be found on [the flyer](https://drive.google.com/file/d/1ew_GsfyjAEqg9wfTUDYrqYs_cD_aWCJs/view?usp=sharing).
 
 ### Registration
 
