@@ -28,7 +28,7 @@ Members of the working group that drafted these questions
 were
 [Abbey Roelofs (UM)](https://lsa.umich.edu/technology-services/people/research-computing-and-infrastructure/aheinlei.html),
 [Cherry Liu (GaTech)](https://www.cc.gatech.edu/people/fang-cherry-liu),
-[Rafael Mudafort (NREL)](https://www.nrel.gov/research/staff/rafael-mudafort.html),
+[Rafael Mudafort (NREL)](https://research-hub.nrel.gov/en/persons/rafael-mudafort),
 [David Nicholson (EI)](https://nicholdav.info/),
 [Zhiyong Zhang (Stanford)](https://profiles.stanford.edu/zhiyong-zhang),
 [Claire Wyatt (SSI)](https://society-rse.org/about/governance/claire-wyatt/),
