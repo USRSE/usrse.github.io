@@ -43,7 +43,7 @@ how they will celebrate and reflect on pride this month. This will likely come
 in many different forms for each individual. Checkout the resources below to
 inspire your introspection throughout the month. Finally, please consider
 joining us at our [bi-weekly DEI-WG
-call](https://us-rse.org/events/repeated/dei-working-group-call/) (the next on
+call](link _events/repeated/dei-working-group-call.md) (the next on
 is on Wednesday, June 19th at 12PT/3ET).
 
 We'd also like to bring to your attention the
