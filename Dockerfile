@@ -14,11 +14,11 @@ FROM jekyll/jekyll:3.8
 ENV JEKYLL_UID=1000
 ENV JEKYLL_GID=1000
 
-USER ${JEKYLL_UID}
-
 ## Install required gems
 COPY ./Gemfile ./Gemfile
 RUN bundle install
+
+USER ${JEKYLL_UID}
 
 ## Copy source files
 COPY --chown=${JEKYLL_UID}:${JEKYLL_GID} ./ ./
