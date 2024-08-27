@@ -25,16 +25,22 @@ In this issue:
 * [8. Get Involved](#involved)
 * [9. Recent Job Postings](#jobs)
 
-
 -----------------
 <a name="ED-update"></a>
 # **1. Updates from the Executive Director**
 
-Our Executive Director Sandra Gesing will be at the [RSECon24](https://rsecon24.society-rse.org/) from September 2-5, 2024 giving a keynote in the [worldwide session](https://rsecon24.society-rse.org/programme/rse-worldwide/).
+*Recent and Current Activities*
 
-She will be on the Strategy and Policy Panel at the [RSEAA24 - A research software community event for Asia and Australia](https://rseaa.org/) taking place online from September 10-13, 2024.
+Our Executive Director, Sandra Gesing, is finalizing an organizational membership model in collaboration with the Steering Committee and the Commmunity Manager. If you would like to know more and/or would like to suggest contacts at your affiliation for her to reach out to, then please email her at [sandra@us-rse.org](sandra@us-rse.org). 
 
-The [Chicago IEEE Computer Society Chapter](https://www.computer.org/communities/find-a-chapter) plans a talk in September featuring Sandra presenting about US-RSE in a hybrid event in Chicago (location and date to be announced).
+Sandra applied for several federal fundings (successfully or under review) and she is working with [RBW Strategy](https://rbwstrategy.com/) on a fundraising strategy in the non-profit world. Furthermore, she is finalizing the second version of the business plan for US-RSE.
+[Details are here.](https://docs.google.com/document/d/1UVHQuo5uQfJNePaH38ApYCJKgunnGD6HZD9dHP9141g/edit?usp=sharing)
+
+
+*Sandra's Outreach in September*
+* Keynote in the [worldwide session](https://rsecon24.society-rse.org/programme/rse-worldwide/) at the [RSECon24](https://rsecon24.society-rse.org/) taking place from September 2-5, 2024 in Newcastle, UK
+* Panelist on the Strategy and Policy Panel at the [RSEAA24 - A research software community event for Asia and Australia](https://rseaa.org/) taking place online from September 10-13, 2024
+* The [Chicago IEEE Computer Society Chapter](https://www.computer.org/communities/find-a-chapter) plans a talk in September featuring Sandra presenting about US-RSE in a hybrid event in Chicago (location and date to be announced).
 
 -----------------
 
@@ -43,16 +49,16 @@ The [Chicago IEEE Computer Society Chapter](https://www.computer.org/communities
 # **2. Fall Update🍂**
 
 Take a look at some of what we've been up to in the community over the past 8 months! Feel free to contact me (sophia@us-rse.org) or our Executive Director, Sandra Gesing (sandra@us-rse.org), if you would like to hear more or get involved! 
-![Fall Update Collage](https://hackmd.io/_uploads/BJAh3pXiR.png)
-
+![Fall Update Collage!]({{ site.baseurl }}/assets/img/Fall Update Collage resized.png "Fall Update Image")
 
 ## [2024 Community and Staff Outreach Database](https://docs.google.com/spreadsheets/d/105Xy9oioi8_6vpP478HeINEvQLiIC3932cVecL5PEk4/edit?usp=sharing)
 
 **Community Member Outreach**
-![Community Member Outreach](https://hackmd.io/_uploads/SkwYZ67i0.png)
+![Community Member Outreach]({{ site.baseurl }}/assets/img/Community Member Outreach.png "Community Member Outreach Table Image")
 
 **Staff Outreach**
-![Staff Outreach](https://hackmd.io/_uploads/rJAPmpmiR.png)
+![Staff Outreach]({{ site.baseurl }}/assets/img/Staff Outreach.png "Staff Outreach Table Image")
+
 
 ## Opportunities to Get Involved 
 
@@ -97,16 +103,13 @@ This seminar also directly advanced the US-RSE mission by providing RSEs with op
 US-RSE Community and Travel Funds were used to support a [STEM education research software engineering](https://PROSE.runestone.academy) community social at [MAA Mathfest](https://maa.org/event/mathfest/)!
 
 -----------------
-
-
 <a name="conference2024"></a>
 # **4. US-RSE Conference 2024 (USRSE'24)**  
 
 ### **[Early bird registration ends September 1!](https://us-rse.org/usrse24/attend/register/)**  
 ### **[View our Full Program - All times listed are in Mountain Time (MT)!](https://us-rse.org/usrse24/program/)**
 
- ![image](https://hackmd.io/_uploads/SkDLcMR4R.png)
- 
+![Conference Registration]({{ site.baseurl }}/assets/img/USRSE2024_ZiaLogo resized.png "Conference Logo")
 
 -----------------
 **Conference Date**
@@ -117,14 +120,20 @@ October 15-17, 2024, Albuquerque, NM
 
 Two hotels within a short walking distance are available with a special rate for those attending US-RSE’24. Are you getting ready and making travel arrangements? Please consider booking at one of these convenient locations! Visit the Travel page for codes, booking links, and more [https://us-rse.org/usrse24/attend/travel/](https://us-rse.org/usrse24/attend/travel/).  
 
+**Travel Support Program**
+
+Applications are open. Review the details here [https://us-rse.org/usrse24/2024-08-09-travel-support/](https://us-rse.org/usrse24/2024-08-09-travel-support/)
 
 **US-RSE 2024 Tutorials**
 
-Tutorials will be online only and conducted virtually in the weeks prior to the conference https://buff.ly/4f6USF4.
+Tutorials will be online only and conducted virtually in the weeks prior to the conference https://us-rse.org/usrse24/program/tutorials/.
 
 **US-RSE 2024 Preconference Sessions**
 
-Preconference sessions are currently set to take place the week of September 16, 2024. More details to come!
+Preconference sessions will be online and are currently set to take place on September 16, 18, and 20. More details to come!
+* September 16, 10am MT - [“So this is your first conference”](https://zoom.us/meeting/register/tJYld-qorj4rG9cbG2jbYCKKz8q7DqclD47l#/registration)
+* September 18, 12pm MT - [“What to do in ABQ”](https://zoom.us/meeting/register/tJEqdeipqTwtEtRqMT1L2CD4ZK9dBOxbF0TK#/registration)
+* September 20, 10am MT - [“RSE challenges in industry, government, and academia: Birds of a feather”](https://zoom.us/meeting/register/tJwofuCsrT8qGNSCkBb5XlKv9mPI0H6r08N3#/registration)
 
 -----------------
 
@@ -163,7 +172,7 @@ Are you hosting a local meet up for RSEs? Have you hosted one in the past year? 
 <a name="member-spotlight"></a> 
 ### **Member Spotlight**
 
-![lezlie_member_spotlight](https://hackmd.io/_uploads/BkxNsdIoR.jpg)
+![Lezlie España]({{ site.baseurl }}/assets/img/lezlie_member_spotlight.png "Lezlie España")
 
 **Background**
 
