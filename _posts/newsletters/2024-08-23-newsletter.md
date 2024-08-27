@@ -243,6 +243,16 @@ If you are willing to participate in this study, please click [here](https://uni
 -----------------
 
 # Upcoming Events
+
+### 💡**US-RSE will have a booth at the Supercomputing Conference in November** 
+
+After the successes with our booths in the last years at SC, we will have again a booth at [SC24](https://sc24.supercomputing.org/), November 17-22, 2024 in Atlanta, GA. We are looking for volunteers to take over some booth times (1-2 hours). You can sign up [here](https://docs.google.com/spreadsheets/d/1BpOoEqi3MFu9cG2Ch-DN7-wImzhWy2rIsRUU7m5A7jA/edit?usp=sharing) if you are interested.
+
+### 💡**US-RSE will have a booth at the AGU Fall Meeting in December** 
+
+US-RSE will have the first time a booth at the [AGU Fall Meeting](https://www.agu.org/annual-meeting) from December 9-13, 2024 in Washington, DC. We are looking for volunteers to take over some booth times (3-4 hours). We can offer up to three free booth registrations for AGU. Please email Sandra Gesing at sandra@us-rse.org if you are interested in a booth registration.
+
+
 ### **💡 Application for the Leadership-Class Computing Facility (LCCF) Internship Program at TACC**
 
 Are you interested in acquiring the computational skills necessary to enter the tech workforce?  This unique opportunity includes training to access cutting-edge computing resources, workplace readiness training, and team-building opportunities. Hybrid and remote positions are available. 
