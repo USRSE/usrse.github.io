@@ -43,16 +43,16 @@ The [Chicago IEEE Computer Society Chapter](https://www.computer.org/communities
 # **2. Fall Update🍂**
 
 Take a look at some of what we've been up to in the community over the past 8 months! Feel free to contact me (sophia@us-rse.org) or our Executive Director, Sandra Gesing (sandra@us-rse.org), if you would like to hear more or get involved! 
-![Fall Update Collage](https://hackmd.io/_uploads/BJAh3pXiR.png)
-
+![Fall Update Collage!]({{ site.baseurl }}/assets/img/Fall Update Collage.png "Fall Update Image")
 
 ## [2024 Community and Staff Outreach Database](https://docs.google.com/spreadsheets/d/105Xy9oioi8_6vpP478HeINEvQLiIC3932cVecL5PEk4/edit?usp=sharing)
 
 **Community Member Outreach**
-![Community Member Outreach](https://hackmd.io/_uploads/SkwYZ67i0.png)
+![Community Member Outreach]({{ site.baseurl }}/assets/img/Community Member Outreach.png "Community Member Outreach Table Image")
 
 **Staff Outreach**
-![Staff Outreach](https://hackmd.io/_uploads/rJAPmpmiR.png)
+![Staff Outreach]({{ site.baseurl }}/assets/img/Staff Outreach.png "Staff Outreach Table Image")
+
 
 ## Opportunities to Get Involved 
 
@@ -103,7 +103,7 @@ US-RSE Community and Travel Funds were used to support a [STEM education researc
 ### **[Early bird registration ends September 1!](https://us-rse.org/usrse24/attend/register/)**  
 ### **[View our Full Program - All times listed are in Mountain Time (MT)!](https://us-rse.org/usrse24/program/)**
 
- ![image](https://hackmd.io/_uploads/SkDLcMR4R.png)
+![Conference Registration]({{ site.baseurl }}/assets/img/USRSE2024_ZiaLogo resized.png "Conference Logo")
 
 -----------------
 **Conference Date**
@@ -166,7 +166,7 @@ Are you hosting a local meet up for RSEs? Have you hosted one in the past year? 
 <a name="member-spotlight"></a> 
 ### **Member Spotlight**
 
-![lezlie_member_spotlight](https://hackmd.io/_uploads/BkxNsdIoR.jpg)
+![Lezlie España]({{ site.baseurl }}/assets/img/lezlie_member_spotlight.png "Lezlie España")
 
 **Background**
 
