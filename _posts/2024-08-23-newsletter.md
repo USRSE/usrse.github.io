@@ -97,8 +97,6 @@ This seminar also directly advanced the US-RSE mission by providing RSEs with op
 US-RSE Community and Travel Funds were used to support a [STEM education research software engineering](https://PROSE.runestone.academy) community social at [MAA Mathfest](https://maa.org/event/mathfest/)!
 
 -----------------
-
-
 <a name="conference2024"></a>
 # **4. US-RSE Conference 2024 (USRSE'24)**  
 
@@ -106,7 +104,6 @@ US-RSE Community and Travel Funds were used to support a [STEM education researc
 ### **[View our Full Program - All times listed are in Mountain Time (MT)!](https://us-rse.org/usrse24/program/)**
 
  ![image](https://hackmd.io/_uploads/SkDLcMR4R.png)
- 
 
 -----------------
 **Conference Date**
@@ -117,14 +114,20 @@ October 15-17, 2024, Albuquerque, NM
 
 Two hotels within a short walking distance are available with a special rate for those attending US-RSE’24. Are you getting ready and making travel arrangements? Please consider booking at one of these convenient locations! Visit the Travel page for codes, booking links, and more [https://us-rse.org/usrse24/attend/travel/](https://us-rse.org/usrse24/attend/travel/).  
 
+**Travel Support Program**
+
+Applications are open. Review the details here [https://us-rse.org/usrse24/2024-08-09-travel-support/](https://us-rse.org/usrse24/2024-08-09-travel-support/)
 
 **US-RSE 2024 Tutorials**
 
-Tutorials will be online only and conducted virtually in the weeks prior to the conference https://buff.ly/4f6USF4.
+Tutorials will be online only and conducted virtually in the weeks prior to the conference https://us-rse.org/usrse24/program/tutorials/.
 
 **US-RSE 2024 Preconference Sessions**
 
-Preconference sessions are currently set to take place the week of September 16, 2024. More details to come!
+Preconference sessions will be online and are currently set to take place on September 16, 18, and 20. More details to come!
+* September 16, 10am MT - [“So this is your first conference”](https://zoom.us/meeting/register/tJYld-qorj4rG9cbG2jbYCKKz8q7DqclD47l#/registration)
+* September 18, 12pm MT - [“What to do in ABQ”](https://zoom.us/meeting/register/tJEqdeipqTwtEtRqMT1L2CD4ZK9dBOxbF0TK#/registration)
+* September 20, 10am MT - [“RSE challenges in industry, government, and academia: Birds of a feather”](https://zoom.us/meeting/register/tJwofuCsrT8qGNSCkBb5XlKv9mPI0H6r08N3#/registration)
 
 -----------------
 
