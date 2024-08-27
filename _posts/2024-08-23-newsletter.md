@@ -43,7 +43,7 @@ The [Chicago IEEE Computer Society Chapter](https://www.computer.org/communities
 # **2. Fall Update🍂**
 
 Take a look at some of what we've been up to in the community over the past 8 months! Feel free to contact me (sophia@us-rse.org) or our Executive Director, Sandra Gesing (sandra@us-rse.org), if you would like to hear more or get involved! 
-![Fall Update Collage!]({{ site.baseurl }}/assets/img/Fall Update Collage.png "Fall Update Image")
+![Fall Update Collage!]({{ site.baseurl }}/assets/img/Fall Update Collage resized.png "Fall Update Image")
 
 ## [2024 Community and Staff Outreach Database](https://docs.google.com/spreadsheets/d/105Xy9oioi8_6vpP478HeINEvQLiIC3932cVecL5PEk4/edit?usp=sharing)
 
