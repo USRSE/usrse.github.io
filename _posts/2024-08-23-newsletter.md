@@ -149,7 +149,7 @@ The August Community Call was a Community Coffee Chat☕.
 
 The RSE Empowerment in National Labs working group is looking for US-RSE members to present in our "RSEs in the National Labs" series for our monthly calls in 2025!  The goal of this series is to provide US-RSE members with a venue to hear about the diversity of experience working at the various US sponsored research institutions.  If you are interested in presenting you experience, please reach out to the working group chairs.
 
-The next RSE Empowerment in National Labs community call will be Tuesday September 24 at 1pm ET/ 12pm CT/ 11am MT / 10am PT and is open to all US-RSE members.  We will be continuting our "RSEs in the National Labs" speaker series with a presentation from Jon Guyer. He will be talking about his experience working at the National Institute of Standards and Technology ([NIST](https://www.nist.gov/)). You can find a link to the call in the bookmarks section of the [#national-labs](https://usrse.slack.com/channels/national-labs) Slack channel.
+The next RSE Empowerment in National Labs community call will be Tuesday September 24 at 1pm ET/ 12pm CT/ 11am MT / 10am PT and is open to all US-RSE members.  We will be continuing our "RSEs in the National Labs" speaker series with a presentation from Jon Guyer. He will be talking about his experience working at the National Institute of Standards and Technology ([NIST](https://www.nist.gov/)). You can find a link to the call in the bookmarks section of the [#national-labs](https://usrse.slack.com/channels/national-labs) Slack channel.
 
 <a name="meetups"></a>
 ### **Local Meetups**
