@@ -53,10 +53,12 @@ Take a look at some of what we've been up to in the community over the past 8 mo
 
 ## [2024 Community and Staff Outreach Database](https://docs.google.com/spreadsheets/d/105Xy9oioi8_6vpP478HeINEvQLiIC3932cVecL5PEk4/edit?usp=sharing)
 
-**Community Member Outreach**
+**Community Member Outreach**      
+
 ![Community Member Outreach]({{ site.baseurl }}/assets/img/Community Member Outreach.png "Community Member Outreach Table Image")
 
-**Staff Outreach**
+**Staff Outreach**   
+
 ![Staff Outreach]({{ site.baseurl }}/assets/img/Staff Outreach.png "Staff Outreach Table Image")
 
 
@@ -172,7 +174,7 @@ Are you hosting a local meet up for RSEs? Have you hosted one in the past year? 
 <a name="member-spotlight"></a> 
 ### **Member Spotlight**
 
-![Lezlie España]({{ site.baseurl }}/assets/img/lezlie_member_spotlight.png "Lezlie España")
+![Lezlie España]({{ site.baseurl }}/assets/img/lezlie_member_spotlight.jpg "Lezlie España")
 
 **Background**
 
