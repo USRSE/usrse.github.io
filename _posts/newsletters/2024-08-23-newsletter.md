@@ -31,7 +31,7 @@ In this issue:
 
 *Recent and Current Activities*
 
-Our Executive Director, Sandra Gesing, is finalizing an organizational membership model in collaboration with the Steering Committee and the Commmunity Manager. If you would like to know more and/or would like to suggest contacts at your affiliation for her to reach out to, then please email her at [sandra@us-rse.org](sandra@us-rse.org). 
+Our Executive Director, Sandra Gesing, is finalizing an organizational membership model in collaboration with the Steering Committee and the Community Manager. If you would like to know more and/or would like to suggest contacts at your affiliation for her to reach out to, then please email her at [sandra@us-rse.org](sandra@us-rse.org). 
 
 Sandra applied for several federal fundings (successfully or under review) and she is working with [RBW Strategy](https://rbwstrategy.com/) on a fundraising strategy in the non-profit world. Furthermore, she is finalizing the second version of the business plan for US-RSE.
 [Details are here.](https://docs.google.com/document/d/1UVHQuo5uQfJNePaH38ApYCJKgunnGD6HZD9dHP9141g/edit?usp=sharing)
