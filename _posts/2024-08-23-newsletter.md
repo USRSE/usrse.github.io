@@ -18,8 +18,8 @@ In this issue:
 * [5. Community News](#news)
     * [Community Calls](#community-calls)
     * [RSE Empowerment in National Labs](#wg-national-labs-empowerment)   
-    * [Member Spotlight](#member-spotlight)
     * [Local Meetups](#meetups)
+    * [Member Spotlight](#member-spotlight) 
 * [6. Interesting Events and Opportunities](#events)
 * [7. Interesting Reads, Videos, or Podcasts](#reads)
 * [8. Get Involved](#involved)
@@ -235,7 +235,7 @@ If you are willing to participate in this study, please click [here](https://uni
 -----------------
 
 # Upcoming Events
-### **💡 Application for the Leadership-Class Computing Facility (LCCF) Internship Program at TACC**
+### **💡Application for the Leadership-Class Computing Facility (LCCF) Internship Program at TACC**
 
 Are you interested in acquiring the computational skills necessary to enter the tech workforce?  This unique opportunity includes training to access cutting-edge computing resources, workplace readiness training, and team-building opportunities. Hybrid and remote positions are available. 
 
@@ -301,8 +301,9 @@ Registration is free. To sign up please fill out this [Google form](https://docs
 * [Code for Thought: Digital Research Academy - A Grassroots Network for Trainers](https://codeforthought.buzzsprout.com/1326658/15369343-en-digital-research-academy-a-grassroots-network-for-trainers) by Peter Schmidt
 * [Code for Thought: The Turing Way Part 2: From Handbook to Community](https://codeforthought.buzzsprout.com/1326658/15355230-en-the-turing-way-part-2-from-handbook-to-community) by Peter Schmidt
 * [Code for Thought - CERN: Keeping the lights on with OpenStack and Kubernetes - Spyridon Trigazis](https://codeforthought.buzzsprout.com/1326658/15321543-en-cern-keeping-the-lights-on-with-openstack-and-kubernetes-spyridon-trigazis) by Peter Schmidt
+* [There's no such thing as sustainable research software](https://danielskatzblog.wordpress.com/2024/05/13/no-sustainable-research-software/) by Daniel S. Katz
 * [Funding Open Source Science Software](https://geoiac.notion.site/Funding-Open-Source-Science-Software-b11741a8c9a24a91b8a367629092f674) by  Georgia Iacovou
-* [There’s no such thing as sustainable research software](https://danielskatzblog.wordpress.com/2024/05/13/no-sustainable-research-software/) by Daniel S. Katz
+
 -----------------
 
 <a name="involved"></a>
