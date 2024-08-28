@@ -17,9 +17,9 @@ In this issue:
 * [4. US-RSE Conference 2024](#conference2024)
 * [5. Community News](#news)
     * [Community Calls](#community-calls)
-    * [RSE Empowerment in National Labs](#wg-national-labs-empowerment)   
-    * [Member Spotlight](#member-spotlight)
+    * [RSE Empowerment in National Labs](#wg-national-labs-empowerment)
     * [Local Meetups](#meetups)
+    * [Member Spotlight](#member-spotlight)
 * [6. Interesting Events and Opportunities](#events)
 * [7. Interesting Reads, Videos, or Podcasts](#reads)
 * [8. Get Involved](#involved)
@@ -253,7 +253,7 @@ After the successes with our booths in the last years at SC, we will have again 
 US-RSE will have the first time a booth at the [AGU Fall Meeting](https://www.agu.org/annual-meeting) from December 9-13, 2024 in Washington, DC. We are looking for volunteers to take over some booth times (3-4 hours). We can offer up to three free booth registrations for AGU. Please email Sandra Gesing at sandra@us-rse.org if you are interested in a booth registration.
 
 
-### **💡 Application for the Leadership-Class Computing Facility (LCCF) Internship Program at TACC**
+### **💡Application for the Leadership-Class Computing Facility (LCCF) Internship Program at TACC**
 
 Are you interested in acquiring the computational skills necessary to enter the tech workforce?  This unique opportunity includes training to access cutting-edge computing resources, workplace readiness training, and team-building opportunities. Hybrid and remote positions are available. 
 
@@ -319,8 +319,10 @@ Registration is free. To sign up please fill out this [Google form](https://docs
 * [Code for Thought: Digital Research Academy - A Grassroots Network for Trainers](https://codeforthought.buzzsprout.com/1326658/15369343-en-digital-research-academy-a-grassroots-network-for-trainers) by Peter Schmidt
 * [Code for Thought: The Turing Way Part 2: From Handbook to Community](https://codeforthought.buzzsprout.com/1326658/15355230-en-the-turing-way-part-2-from-handbook-to-community) by Peter Schmidt
 * [Code for Thought - CERN: Keeping the lights on with OpenStack and Kubernetes - Spyridon Trigazis](https://codeforthought.buzzsprout.com/1326658/15321543-en-cern-keeping-the-lights-on-with-openstack-and-kubernetes-spyridon-trigazis) by Peter Schmidt
-* [Funding Open Source Science Software](https://geoiac.notion.site/Funding-Open-Source-Science-Software-b11741a8c9a24a91b8a367629092f674) by Georgia Iacovou
-* [There’s no such thing as sustainable research software](https://danielskatzblog.wordpress.com/2024/05/13/no-sustainable-research-software/) by Daniel S. Katz
+* [There’s no such thing as sustainable research software](https://danielskatzblog.wordpress.com/2024/05/13/no-sustainable-research-software/) by Daniel S. Katz   
+* [Funding Open Source Science Software](https://geoiac.notion.site/Funding-Open-Source-Science-Software-b11741a8c9a24a91b8a367629092f674) by Georgia Iacovou   
+
+
 -----------------
 
 <a name="involved"></a>
@@ -366,6 +368,7 @@ These opportunities were recently posted to the [RSE Opportunities page](https:/
 14. [Database Engineer](https://cornell.wd1.myworkdayjobs.com/en-US/CornellCareerPage/job/Ithaca-Tompkins-County/Database-Engineer_WDR-00042849-1?q=ornithology): Cornell Lab of Ornithology, Hybrid/Remote (Ithaca, NY) Posted: Jun 27, 2024
 15. [Software Engineering Manager](https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25240&siteid=5341#jobDetails=2009078_5341): Library Innovation Lab, Harvard Law School, Cambridge, MA (Hybrid- and Remote-eligible) Posted: Jun 26, 2024
 16. [Full-stack Software Engineer](https://www.manifesttech.io/career/full-stack-software-engineer): Manifest Technologies, New Haven, CT / Remote Posted: Jun 24, 2024
+    
 
 
 
