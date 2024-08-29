@@ -165,14 +165,14 @@ The next RSE Empowerment in National Labs community call will be Tuesday Septemb
 <a name="meetups"></a>
 ### **Local Meetups**
 
-Are you hosting a local meet up for RSEs? Have you hosted one in the past year? We would love to hear more about your experience. Please email [sophia@us-rse.org](sophia@us-rse.org) or message me on Slack.
+Are you hosting a local meetup for RSEs? Have you hosted one in the past year? We would love to hear more about your experience. Please email [sophia@us-rse.org](sophia@us-rse.org) or message me on Slack.
 
 * **Upcoming Meetups**
     * DMV-RSE in-person meetup on September 26
 
 -----------------
 <a name="member-spotlight"></a> 
-### **Member Spotlight**
+### **Member Spotlight - Lezlie España**
 
 ![Lezlie España]({{ site.baseurl }}/assets/img/lezlie_member_spotlight.jpg "Lezlie España")
 
