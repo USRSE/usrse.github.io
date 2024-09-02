@@ -1,4 +1,35 @@
 - expires: 2024-09-16
+  location: NSF National Center for Atmospheric Research, Boulder, CO (Can be remote/flexible)
+  name: Software Engineer II
+  posted: 2024-08-30
+  url: https://ucar.wd5.myworkdayjobs.com/UCAR_Careers/job/Mesa-Lab-Building/Software-Engineer-II_REQ-2024-167-1
+- expires: 2024-09-29
+  location: NSLS-II at Brookhaven National Laboratory, Upton, NY
+  name: Scientific Web Applications Developer (junior, 3-7 years exp)
+  posted: 2024-08-29
+  url: https://jobs.bnl.gov/job/upton/scientific-web-applications-developer/3437/69293702576
+- expires: 2024-09-29
+  location: NSLS-II at Brookhaven National Laboratory, Upton, NY
+  name: Scientific Web Applications Developer (senior, 8+ years exp)
+  posted: 2024-08-29
+  url: https://jobs.bnl.gov/job/upton/scientific-web-applications-developer/3437/69293701232
+- expires: 2024-10-30
+  location: National Science Foundation National Center for Atmospheric Research (NSF-NCAR),
+    Boulder, CO (hybrid)
+  name: Associate Data Scientist II
+  posted: 2024-08-28
+  url: https://ucar.wd5.myworkdayjobs.com/UCAR_Careers/job/Center-Green-1/Associate-Data-Scientist-II_REQ-2024-171
+- expires: 2024-09-26
+  location: NSLS-II at Brookhaven National Laboratory, Upton, NY
+  name: Research Software Engineer
+  posted: 2024-08-26
+  url: https://jobs.bnl.gov/job/upton/research-software-engineer/3437/68796372608
+- expires: 2024-09-06
+  location: Center for Digital Antiquity at Arizona State University, Tempe, AZ
+  name: Research Software Engineer
+  posted: 2024-08-20
+  url: https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25620&siteid=5494&PageType=JobDetails&jobid=4986776
+- expires: 2024-09-16
   location: University of Delaware, DE (hybrid)
   name: Research Software Engineer (RSE)
   posted: 2024-08-14
@@ -8,12 +39,6 @@
   name: Research Software Engineer
   posted: 2024-08-09
   url: https://www.uvmjobs.com/postings/74936
-- expires: 2024-08-15
-  location: Center for High Throughput Computing, University of Wisconsin-Madison,
-    Madison, WI
-  name: Research Cyberinfrastructure Specialist
-  posted: 2024-08-02
-  url: https://jobs.wisc.edu/jobs/chtc-research-cyberinfrastructure-specialist-madison-wisconsin-united-states
 - expires: 2024-12-31
   location: Henry M Jackson Foundation, Frederick, MD
   name: Computational Research Scientist II - Toxicology
@@ -64,11 +89,6 @@
   name: Cloud Data Scientist and Software Engineer
   posted: 2024-07-10
   url: https://earthbigdata.com/careers
-- expires: 2024-08-01
-  location: Northwestern University, Evanston IL / Hybrid
-  name: Senior Software Developer
-  posted: 2024-07-02
-  url: https://careers.northwestern.edu/psp/hr857prd_er/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=50289&PostingSeq=1
 - expires: 2024-07-15
   location: Carl R. Woese Institute for Genomic Biology, University of Illinois Urbana-Champaign,
     Urbana, IL/hybrid
@@ -131,11 +151,6 @@
   name: Sr. Application Developer / Application Developer C
   posted: 2024-06-14
   url: https://wd1.myworkdaysite.com/recruiting/upenn/careers-at-penn/job/David-Rittenhouse-Laboratory/Sr-Application-Developer---Application-Developer-C--Department-of-Physics-and-Astronomy_JR00091703
-- expires: 2024-06-30
-  location: Dartmouth College, Hanover, NH -- hybrid 2 days/week on campus
-  name: Research Software Engineer II (RSEII), Scientific and High Performance Computing
-  posted: 2024-06-10
-  url: https://searchjobs.dartmouth.edu/postings/74000
 - expires: 2024-07-12
   location: Columbia University, New York City, NY
   name: Research Software Engineer, Computational Neuroscience and Behavior
@@ -146,16 +161,6 @@
   name: DevOps Platform Engineer
   posted: 2024-05-29
   url: https://navteca.bamboohr.com/careers/25
-- expires: 2024-07-01
-  location: Sandia National Laboratories, Albuquerque, NM (remote possible)
-  name: Postdoctoral Appointee - Topology/Shape/Inverse Optimization
-  posted: 2024-05-29
-  url: https://sandia.jobs/albuquerque-nm/postdoctoral-appointee-topologyshapeinverse-optimization-remote/0B71FE6998BF43079B9E7004FE315491/job/
-- expires: 2024-06-30
-  location: Sandia National Laboratories, Albuquerque, NM
-  name: Postdoctoral Appointee - Software Engineering Research
-  posted: 2024-05-28
-  url: https://sandia.jobs/albuquerque-nm/postdoctoral-appointee-software-engineering-research/A18CDDA58285406AAD11799640C1B105/job/
 - expires: 2024-07-31
   location: Argonne National Laboratory, Lemont, IL USA
   name: "Postdoctoral Appointee \u2013 Machine Learning for X-ray Science"
@@ -176,34 +181,8 @@
   name: Research Scientist, Computational Fluid Dynamics Applications
   posted: 2024-05-09
   url: https://jobs.ornl.gov/job-invite/13025/
-- expires: 2024-06-15
-  location: NASA GSFC / Science Systems and Applications, Inc (SSAI), Greenbelt, MD
-    / remote
-  name: Software Engineer- Modeling Workflows and Orchestration
-  posted: 2024-05-07
-  url: https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=a40f480a-47ae-461b-bf11-ceedb843d226&ccId=19000101_000001&lang=en_US&jobId=469805
-- expires: 2024-07-01
-  location: Johns Hopkins University, Baltimore, MD
-  name: Research Software Engineer
-  posted: 2024-04-30
-  url: https://jobs.jhu.edu/job/Baltimore-Research-Software-Engineer-MD-21218/1159478500/
-- expires: 2024-06-30
-  location: Million Concepts, remote
-  name: Technical Staff
-  posted: 2024-04-17
-  url: https://millionconcepts.com/jobs.html#technical-staff
 - expires: 2025-04-01
   location: The National Center for Supercomputing Applications, Urbana, IL
   name: Associate/Research Software Engineer/Senior
   posted: 2024-04-12
   url: https://illinois.csod.com/ux/ats/careersite/1/home/requisition/9969?c=illinois
-- expires: 2024-07-01
-  location: Johns Hopkins University, Baltimore, MD
-  name: Research Software Engineer with UI/UX Concentration
-  posted: 2024-02-27
-  url: https://jobs.jhu.edu/job/Baltimore-Scientific-Software-Engineer-with-UIUX-Concentration-MD-21218/1136677600/
-- expires: 2024-06-21
-  location: Stanford University, Stanford, CA or remote
-  name: Software Engineer
-  posted: 2024-02-16
-  url: https://careersearch.stanford.edu/jobs/software-engineer-24496
