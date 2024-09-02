@@ -185,10 +185,6 @@ Importantly, once you create the bot you'll need to add the following secrets to
  
 Yes, this means that the tokens are specific to this account.
 
-#### Post New Jobs to Mastadon
-
-TBD: we welcome contributions to make this happen
-
 #### Greetings
 
 This simple greetings action greets first-time users (for issues).
