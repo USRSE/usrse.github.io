@@ -17,7 +17,7 @@ jobs:
     - name: Check Spelling
       uses: crate-ci/typos@master # we should really incorporate all new changes
       with:
-        files: ./_posts ./pages ./README.md
+        files: ./_posts ./_events ./pages ./README.md
         config: ./.github/workflows/typo_config.toml
 
     - name: URLs-checker
