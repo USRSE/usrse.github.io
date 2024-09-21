@@ -18,7 +18,12 @@ election_results: 2024-12-20T00:00:00 +0000
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 {% capture nom_open %}{{nominations_open | date: '%s'}}{% endcapture %}
 
+{% if nowunix < nom_open %}
+**Elections are open! Please see the "Nominations and Candidate Information"
+section to apply for or nominate someone for the US-RSE Steering Committee**
+{% else %}
 **Elections for the US-RSE Steering Committee are around the corner**
+{% endif %}
 
 <hr>
 
