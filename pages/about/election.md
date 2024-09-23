@@ -9,8 +9,8 @@ nominations_open: 2024-10-11 23:59:59 -1000
 nominations_close: 2024-11-01 23:59:59 -1000
 membership_deadline: 2024-11-08 23:59:59 -1000
 candidate_announcements: 2024-11-08 23:59:59 -1000
-annual_general_meeting: 2024-12-06 12:00:00 -0500
-voting_open: 2024-12-06 12:00:00 -0500
+annual_general_meeting: 2024-12-05 14:00:00 -0500
+voting_open: 2024-12-05 14:00:00 -0500
 voting_close: 2024-12-13T23:59:59 -1000
 election_results: 2024-12-20T00:00:00 +0000
 ---
