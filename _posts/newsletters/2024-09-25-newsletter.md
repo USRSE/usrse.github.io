@@ -46,6 +46,10 @@ This workshop is tailored for early career research software engineers who are e
 
 * **Sept 27, 10:00 AM	|** Student Program Workshop - [Register Now](https://zoom.us/meeting/register/tJIof-2rqD0oHtJfCfZU80dkQvf5zFKmXNF8)
 
+**Join us at the Nuclear History Museum in Albuquerque, NM!**
+
+🎉 Join us for a special visit to the Nuclear History Museum after US-RSE'24 on Oct 17, 6-9PM MT, courtesy of projectEureka by Omnibond! Open to all RSEs and allies. Free entry, food trucks available. Family and friends welcome. RSVP here: [https://forms.gle/fBfpYUBktopFLc3C8](https://forms.gle/fBfpYUBktopFLc3C8).
+
 **US-RSE 2024 Tutorials**
 
 Tutorials will be online only and conducted virtually the week prior to the conference [https://us-rse.org/usrse24/program/tutorials/](https://us-rse.org/usrse24/program/tutorials/).
