@@ -19,8 +19,9 @@ In this issue:
     * [Local Meetups](#meetups)
 * [6. Interesting Events and Opportunities](#events)
 * [7. Interesting Reads, Videos, or Podcasts](#reads)
-* [8. Get Involved](#involved)
-* [9. Recent Job Postings](#jobs)
+* [8. Steering Committee Update](#sc-update)
+* [9. Get Involved](#involved)
+* [10. Recent Job Postings](#jobs)
 
 -----------------
 
@@ -246,9 +247,19 @@ The [Open Source Software for Fusion Energy (OSSFE) Conference](https://ossfe.gi
 * [Research Software, Citation, and FAIR at FORCE2024](https://upstream.force11.org/research-software-citation-fair-force2024/) by Daniel S. Katz
 
 -----------------
+<a name="sc-update"></a>
+
+# **8. Steering Committee Update**
+
+While the Steering Committee newsletter updates took a break over the summer, the Steering Committee definitely did not! We had a busy and productive summer with many areas of focus.
+* Yearly Budget: We finalized the 2024-2025 fiscal year budget. This involved many conversations about processes and precedents as the Steering Committee and Executive Director learned how best to work together, but resulted in what we are optimistic will be a sustainable budget and good communication practices for the future.
+* US-RSE’25 Planning: We identified a second General Chair to share in the responsibility of organizing the US-RSE'25 conference and starting working out the financial and administrative logistics of having conference chairs who are separate from the Steering Committee (a first for our conference). We also discussed issues relating to US-RSE'24, including travel award details, program logistics and collaboration with outside organizations, and non-standard sponsorship opportunities outside those listed on our website.
+* Organization Membership: We spent considerable time with our Executive Director finalizing the details and presentation of our organization membership program. This program is expected to launch before the end of the year and will be a way for organizations to increase their involvement with US-RSE while receiving some perks, as well as a way for US-RSE to raise funds for ongoing programs.
+In addition to prioritizing these larger areas of focus, we covered a number of smaller topics, including Executive Director attendance at conferences, our next round of Community Funds awards, and the upcoming Steering Committee annual elections. 
+
 
 <a name="involved"></a>
-# **8. Get Involved**
+# **9. Get Involved**
 
 New guidance was recently released on how to create new [Affinity Groups](https://us-rse.org/wg/group-management/form-an-affinity-group) and [Working Groups](https://us-rse.org/wg/group-management/form-a-working-group). If you see an unmet need in the US-RSE community, we encourage you to create your own group!
 
@@ -269,7 +280,7 @@ As always, we thank everyone who is already contributing for their help in shapi
 -----------------
 
 <a name="jobs"></a>
-# **9. Recent Job Postings**
+# **10. Recent Job Postings**
 
 These opportunities were recently posted to the [RSE Opportunities page](https://us-rse.org/jobs/):
 
