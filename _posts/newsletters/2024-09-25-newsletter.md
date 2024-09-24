@@ -128,7 +128,8 @@ The September Community Call was on GPU Frameworks.
 
 The RSE Empowerment in National Labs working group is looking for US-RSE members to present in our “RSEs in the National Labs” series for our monthly calls in 2025! The goal of this series is to provide US-RSE members with a venue to hear about the diversity of experience working at the various US sponsored research institutions. If you are interested in presenting you experience, please reach out to the working group chairs.
 
-The next RSE Empowerment in National Labs community call will be Thursday October 24 at 3pm ET/ 2pm CT/ 1pm MT / 12pm PT and is open to all US-RSE members. We will be continuing our “RSEs in the National Labs” speaker series with a presentation from Sara Miskovish. She will be talking about her experience working at [SLAC National Accelerator Laboratory](https://www6.slac.stanford.edu/). You can find a link to the call in the bookmarks section of the [#national-labs](https://usrse.slack.com/archives/national-labs) Slack channel.
+The next RSE Empowerment in National Labs community call will be Thursday October 24 at 3pm ET/ 2pm CT/ 1pm MT / 12pm PT and is open to all US-RSE members. We will have a post-USRSE conference report back from the co-chairs and provide an opportunity for USRSE members to discuss what they learned.  We will also hold a discussion on our plans for 2025 including setting up for our next co-chair nominations.   You can find a link to the call in the bookmarks section of the [#national-labs](https://usrse.slack.com/archives/national-labs) Slack channel.
+
 
 <a name="meetups"></a>
 ### **Local Meetups**
@@ -288,34 +289,34 @@ As always, we thank everyone who is already contributing for their help in shapi
 
 These opportunities were recently posted to the [RSE Opportunities page](https://us-rse.org/jobs/):
 
-
-1. [Research Software Engineer](https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25620&siteid=5494&PageType=JobDetails&jobid=4986776#jobDetails=4986776_5494): Center for Digital Antiquity at Arizona State University, Tempe, AZ Posted: Aug 20, 2024
-2. [Research Software Engineer (RSE)](https://drive.google.com/file/d/1Nyb3AFyylRW40qPOuWA33MRAlndhAVXs/view): University of Delaware, DE (hybrid) Posted: Aug 14, 2024
-3. [Research Software Engineer](https://www.uvmjobs.com/postings/74936): University of Vermont, Burlington, VT Posted: Aug 09, 2024
-4. [Computational Research Scientist II - Bone/Musculoskeletal Biomechanics](https://jobs.hjf.org/jobs/4644?lang=en-us): Henry M Jackson Foundation, Frederick, MD Posted: Jul 30, 2024
-5. [Computational Research Scientist I - Bone/Musculoskeletal Biomechanics](https://jobs.hjf.org/jobs/4640?lang=en-us): Henry M Jackson Foundation, Frederick, MD Posted: Jul 30, 2024
-6. [Computational Research Scientist III - Toxicology](https://jobs.hjf.org/jobs/4415?lang=en-us): Henry M Jackson Foundation, Frederick, MD Posted: Jul 30, 2024
-7. [Computational Research Scientist II - Toxicology](https://jobs.hjf.org/jobs/4414?lang=en-us): Henry M Jackson Foundation, Frederick, MD Posted: Jul 30, 2024
-8. [Lead Research Software Engineer](https://main-princeton.icims.com/jobs/19506/lead-research-software-engineer/job): Princeton University, Princeton, NJ Posted: Jul 22, 2024
-9. [Software Engineer](https://careersearch.stanford.edu/jobs/software-engineer-26078): Stanford University, Stanford, CA or Remote Posted: Jul 19, 2024
-10. [Software Developer Beamline Controls](https://jobs.lbl.gov/jobs/software-developer-beamline-controls-6603): Berkeley Lab, Berkeley, California Posted: Jul 17, 2024
-11. [Research Software Engineer](https://jobs.bnl.gov/job/upton/research-software-engineer/3437/68796372608): Brookhaven National Laboratory, Upton, NY Posted: Jul 12, 2024
-12. [Chief Technology Officer and Director for Software](https://recruiting2.ultipro.com/SPA1004AURA/JobBoard/57b96f30-6a4b-42cc-8f73-d417a17b54e9/OpportunityDetail?opportunityId=3f55028a-6d04-4f1d-84af-1d66d754a4f1): NOIRLab/AURA, Tucson, AZ, USA | La Serena, Chile | Hilo, HI, USA Posted: Jul 11, 2024
-13. [Cloud Data Scientist and Software Engineer](https://earthbigdata.com/careers): Earth Big Data, Remote, US Posted: Jul 10, 2024
-14. [Database Engineer](https://cornell.wd1.myworkdayjobs.com/en-US/CornellCareerPage/job/Ithaca-Tompkins-County/Database-Engineer_WDR-00042849-1?q=ornithology): Cornell Lab of Ornithology, Hybrid/Remote (Ithaca, NY) Posted: Jun 27, 2024
-15. [Software Engineering Manager](https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25240&siteid=5341#jobDetails=2009078_5341): Library Innovation Lab, Harvard Law School, Cambridge, MA (Hybrid- and Remote-eligible) Posted: Jun 26, 2024
-16. [Full-stack Software Engineer](https://www.manifesttech.io/career/full-stack-software-engineer): Manifest Technologies, New Haven, CT / Remote Posted: Jun 24, 2024
-    
-
-
-
-
-
+1. [Research Software Developer](https://careerspub.universityofcalifornia.edu/psc/ucsb/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&JobOpeningId=72846&PostingSeq=1&SiteId=31&languageCd=ENG&FOCUS=Applicant&): National Center for Ecological Analysis & Synthesis, UC Santa Barbara, Santa Barbara, CA Posted: Sep 23, 2024
+2. [Quantum Architect, Simulation & Software](https://www.psiquantum.com/apply?gh_jid=6036333003): PsiQuantum, Palo Alto, CA or remote Posted: Sep 21, 2024	
+3. [Engineering Scientist](https://utaustin.wd1.myworkdayjobs.com/UTstaff/job/PICKLE-RESEARCH-CAMPUS/Engineering-Scientist_R_00035318): Texas Advanced Computing Center, Austin, Texas Posted: Sep 20, 2024	
+4. [Research Software Engineer II](https://main-princeton.icims.com/jobs/19738/research-software-engineer-ii/job?mobile=false&width=1110&height=500&bga=true&needsRedirect=false&jan1offset=-360&jun1offset=-300): Center for Digital Humanities at Princeton University, Princeton, NJ Posted: Sep 18, 2024
+5. [Computer Systems Engineer](https://jobs.lbl.gov/jobs/computer-systems-engineer-6703): Lawrence Berkeley National Laboratory, Berkeley, CA Posted: Sep 11, 2024	
+6. [Senior Full-Stack Geospatial Developer](https://eaglerockanalytics.com/career/senior-full-stack-geospatial-or-scientific-developer-remote-full-time-sacramento-ca/): Eagle Rock Analytics, Sacramento, CA / Remote Posted: Sep 10, 2024
+7. [Research Scientist II/Senior](https://careers.hprod.onehcm.usg.edu/psp/careers/CAREERS/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=3000&JobOpeningId=276858&PostingSeq=1): Georgia Institute of Technology, Remote Eligible Posted: Sep 10, 2024	
+8. [Scientific Web Applications Developer (senior, 8+ years exp)](https://jobs.bnl.gov/job/upton/scientific-web-applications-developer/3437/69293701232): NSLS-II at Brookhaven National Laboratory, Upton, NY Posted: Aug 29, 2024	
+9. [Scientific Web Applications Developer (junior, 3-7 years exp)](https://jobs.bnl.gov/job/upton/scientific-web-applications-developer/3437/69293702576): NSLS-II at Brookhaven National Laboratory, Upton, NY Posted: Aug 29, 2024	
+10. [Associate Data Scientist II](https://ucar.wd5.myworkdayjobs.com/UCAR_Careers/job/Center-Green-1/Associate-Data-Scientist-II_REQ-2024-171): National Science Foundation National Center for Atmospheric Research (NSF-NCAR), Boulder, CO (hybrid) Posted: Aug 28, 2024
+11. [Research Software Engineer](https://jobs.bnl.gov/job/upton/research-software-engineer/3437/68796372608): NSLS-II at Brookhaven National Laboratory, Upton, NY Posted: Aug 26, 2024	
+12. [Research Software Engineer](https://www.uvmjobs.com/postings/74936): University of Vermont, Burlington, VT Posted: Aug 09, 2024
+13. [Computational Research Scientist II - Bone/Musculoskeletal Biomechanics](https://jobs.hjf.org/jobs/4644?lang=en-us): Henry M Jackson Foundation, Frederick, MD Posted: Jul 30, 2024
+14. [Computational Research Scientist I - Bone/Musculoskeletal Biomechanics](https://jobs.hjf.org/jobs/4640?lang=en-us): Henry M Jackson Foundation, Frederick, MD Posted: Jul 30, 2024
+15. [Computational Research Scientist III - Toxicology](https://jobs.hjf.org/jobs/4415?lang=en-us): Henry M Jackson Foundation, Frederick, MD Posted: Jul 30, 2024
+16. [Computational Research Scientist II - Toxicology](https://jobs.hjf.org/jobs/4414?lang=en-us): Henry M Jackson Foundation, Frederick, MD Posted: Jul 30, 2024 
+17. [Lead Research Software Engineer](https://main-princeton.icims.com/jobs/19506/lead-research-software-engineer/job): Princeton University, Princeton, NJ Posted: Jul 22, 2024
+18. [Software Engineer](https://careersearch.stanford.edu/jobs/software-engineer-26078): Stanford University, Stanford, CA or Remote Posted: Jul 19, 2024
+19. [Research Software Engineer](https://jobs.bnl.gov/job/upton/research-software-engineer/3437/68796372608): Brookhaven National Laboratory, Upton, NY Posted: Jul 12, 2024
+20. [Chief Technology Officer and Director for Software](https://recruiting2.ultipro.com/SPA1004AURA/JobBoard/57b96f30-6a4b-42cc-8f73-d417a17b54e9/OpportunityDetail?opportunityId=3f55028a-6d04-4f1d-84af-1d66d754a4f1): NOIRLab/AURA, Tucson, AZ, USA | La Serena, Chile | Hilo, HI, USA Posted: Jul 11, 2024
+21. [Software Engineering Manager](https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25240&siteid=5341#jobDetails=2009078_5341): Library Innovation Lab, Harvard Law School, Cambridge, MA (Hybrid- and Remote-eligible) Posted: Jun 26, 2024
+22. [Full-stack Software Engineer](https://www.manifesttech.io/career/full-stack-software-engineer): Manifest Technologies, New Haven, CT / Remote Posted: Jun 24, 2024
 
 
 ### Related Openings
-1. [Research Data Analyst Associate: Northwestern University](https://careers.northwestern.edu/psc/hr857prd_er/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=50098&PostingSeq=1), Chicago, IL Posted: Apr 30, 2024
 
+1. [Director of Research Computing](https://www.lerner.ccf.org/careers/faculty/): Cleveland Clinic, Cleveland, OH/Hybrid Posted: Sep 10, 2024
+2. [Senior HPC Specialist](https://uscareers-nyu.icims.com/jobs/13834/senior-hpc-specialist/job): New York University, New York, NY (mostly remote - more than 60% of time) Posted: Sep 05, 2024
 
 
 ### Other Job Boards
