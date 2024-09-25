@@ -17,5 +17,6 @@ extend-ignore-re = [
     "ND",
     "AAS",
     "Villegas",
-    "Wil"
+    "Wil",
+    "Lok"
 ]
