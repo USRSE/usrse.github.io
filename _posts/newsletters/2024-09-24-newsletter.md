@@ -99,7 +99,7 @@ Data sharing and providing efficient and equitable access to scientific and engi
 
 ## **Chemists Who Code – Isaac Spackman**
 
-[Insert Photo]
+![Chemists Who Code]({{ site.baseurl }}/assets/img/spackman_sept_mtg_2024(2).jpg "Chemists Who Code")
   
 **Summary**
 
