@@ -43,7 +43,6 @@ October 15-17, 2024, Albuquerque, NM
 **US-RSE 2024 Special Session**
 
 This workshop is tailored for early career research software engineers who are eager to establish and enhance their digital footprint. 
-
 * Sept 27, 10:00 AM	| Student Program Workshop - [Register Now](https://zoom.us/meeting/register/tJIof-2rqD0oHtJfCfZU80dkQvf5zFKmXNF8)
 
 **Join us at the Nuclear History Museum in Albuquerque, NM!**
@@ -53,29 +52,21 @@ This workshop is tailored for early career research software engineers who are e
 **US-RSE 2024 Tutorials**
 
 Tutorials will be online only and conducted virtually the week prior to the conference [https://us-rse.org/usrse24/program/tutorials/](https://us-rse.org/usrse24/program/tutorials/).
-
 * Oct 7, 11:00 AM | Globus Compute: Managed Compute Across the Computing Continuum, Kyle Chard, Yadu Babuji, Reid Mello - [Register Now](https://zoom.us/meeting/register/tJwkc-iorz0qG9LjZ4bpUvLV3O4Tcz4jEFL-#/registration)
-
 * Oct 7, 3:00 PM | GitHub Actions for Scientific Data Workflows, Valentina Staneva, Quinn Brencher - [Register Now](https://zoom.us/meeting/register/tJEudO2tpjoqG9XF2XNXFKQ_HRXZZ8YDXh7I#/registration)
-
 * Oct 8, 11:00 AM | Overview of GIS Open Source Software Ecosystem and Theory, Dennis Milechin - [Register Now](https://zoom.us/meeting/register/tJIocumhrj8uGdzeUsarR1uTccELjtrXw09O#/registration)
-
 * Oct 9, 11:00 AM | Rapid Prototyping for a Usable React-based Web Application with STRUDEL, Cody O'Donnell, Rajshree Deshmukh, Lavanya Ramakrishnan - [Register Now](https://zoom.us/meeting/register/tJMqd--tqzooHtEtl3ABiR4WBM5nMdwpl83I#/registration)
-
 * Oct 10, 11:00 AM | Leveraging Django Views and Permissions at Object-Level: The gist of an envisioned solution for managing agricultural datasets, Diego Menéndez, Danying Shao - [Register Now](https://zoom.us/meeting/register/tJMtd--hqTooHtKXAz0AIVo6qx-3EJUwVeZZ#/registration)
-
 * Oct 11, 8:00 AM | Research Data Automation with Globus Flows and Globus Compute, Lee Liming - [Register Now](https://zoom.us/meeting/register/tJMkfumgqjgtH9WoOoVRPLQZXrhI4AXqW6fN#/registration)
 
 
 **US-RSE 2024 Keynote Speakers**
-
 * Oct 15, 9:00 AM | [Research Software Engineers: where it started and where it’s going](https://us-rse.org/usrse24/program/keynotes/#simon-hettrick)
 
-    Professor Simon Hettrick is Director of Strategy at the Software Sustainability Institute and a Director of the Southampton Research Software Group.
-
+Professor Simon Hettrick is Director of Strategy at the Software Sustainability Institute and a Director of the Southampton Research Software Group.
 * Oct 16, 9:00 AM | [US-RSE  Together We Grow Strong RSE Careers and a Thriving Community](https://us-rse.org/usrse24/program/keynotes/#sandra-gesing)
 
-    Sandra Gesing is the inaugural Executive Director of the US Research Software Engineer Association (US-RSE) and a Senior Researcher at the San Diego Supercomputer Center (SDSC).
+Sandra Gesing is the inaugural Executive Director of the US Research Software Engineer Association (US-RSE) and a Senior Researcher at the San Diego Supercomputer Center (SDSC).
 
 
 -----------------
@@ -117,7 +108,7 @@ US-RSE funding was used to provide refreshments to graduate and undergraduate st
 
 **Call for Presenters:** If you are interested in presenting, please get in touch with Julia Damerow and Abbey Roelofs in the [#communitycalls](https://app.slack.com/client/T8ZT4PJSW/CLBDQMJH5) channel or by messaging them directly.
 
-Due to conference planning activities, we will not have a community call for the month of October.
+Due to conference planning activities, we will not have a community call in October.
 
 ***September Community Call (Past)***   
 
