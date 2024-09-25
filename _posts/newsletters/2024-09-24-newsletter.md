@@ -17,11 +17,11 @@ In this issue:
     * [Community Calls](#community-calls)
     * [RSE Empowerment in National Labs](#wg-national-labs-empowerment)
     * [Local Meetups](#meetups)
-* [6. Interesting Events and Opportunities](#events)
-* [7. Interesting Reads, Videos, or Podcasts](#reads)
-* [8. Steering Committee Update](#sc-update)
-* [9. Get Involved](#involved)
-* [10. Recent Job Postings](#jobs)
+* [4. Interesting Events and Opportunities](#events)
+* [5. Interesting Reads, Videos, or Podcasts](#reads)
+* [6. Steering Committee Update](#sc-update)
+* [7. Get Involved](#involved)
+* [8. Recent Job Postings](#jobs)
 
 -----------------
 
@@ -98,7 +98,7 @@ US-RSE funding was used to provide refreshments to graduate and undergraduate st
 -----------------
 
 <a name="news"></a> 
-# **5. Community News** 
+# **3. Community News** 
 
 <a name="community-calls"></a>
 ### **Community Calls**
@@ -129,7 +129,7 @@ Are you hosting a local meetup for RSEs? Have you hosted one in the past year? W
 -----------------
 
 <a name="events"></a>
-# **6. Interesting Events and Opportunities**
+# **4. Interesting Events and Opportunities**
 
 ### 💥**Get Your Magical US-RSE Unicorn - Edition 2024!** 
 
@@ -227,7 +227,7 @@ The [Open Source Software for Fusion Energy (OSSFE) Conference](https://ossfe.gi
 -----------------
 
 <a name="reads"></a>
-# **7. Interesting Reads, Videos, or Podcasts**
+# **5. Interesting Reads, Videos, or Podcasts**
 
 * [Code for Thought - Beyond Open Research - Imperial College](https://codeforthought.buzzsprout.com/1326658/episodes/15611170-en-beyond-open-research-imperial-college) by Peter Schmidt
 * [Code for Thought - Going Large - CERN VM/VMFS - Laura Promberger, Jakob Blomer](https://codeforthought.buzzsprout.com/1326658/episodes/15623664-en-going-large-cern-vm-vmfs-laura-promberger-jakob-blomer) by Peter Schmidt
@@ -244,7 +244,7 @@ The [Open Source Software for Fusion Energy (OSSFE) Conference](https://ossfe.gi
 -----------------
 <a name="sc-update"></a>
 
-# **8. Steering Committee Update**
+# **6. Steering Committee Update**
 
 While the Steering Committee newsletter updates took a break over the summer, the Steering Committee definitely did not! We had a busy and productive summer with many areas of focus.
 * Yearly Budget: We finalized the 2024-2025 fiscal year budget. This involved many conversations about processes and precedents as the Steering Committee and Executive Director learned how best to work together, but resulted in what we are optimistic will be a sustainable budget and good communication practices for the future.
@@ -254,7 +254,7 @@ In addition to prioritizing these larger areas of focus, we covered a number of 
 
 
 <a name="involved"></a>
-# **9. Get Involved**
+# **7. Get Involved**
 
 New guidance was recently released on how to create new [Affinity Groups](https://us-rse.org/wg/group-management/form-an-affinity-group) and [Working Groups](https://us-rse.org/wg/group-management/form-a-working-group). If you see an unmet need in the US-RSE community, we encourage you to create your own group!
 
@@ -275,7 +275,7 @@ As always, we thank everyone who is already contributing for their help in shapi
 -----------------
 
 <a name="jobs"></a>
-# **10. Recent Job Postings**
+# **8. Recent Job Postings**
 
 These opportunities were recently posted to the [RSE Opportunities page](https://us-rse.org/jobs/):
 
