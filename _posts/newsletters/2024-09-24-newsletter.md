@@ -43,7 +43,7 @@ October 15-17, 2024, Albuquerque, NM
 **US-RSE 2024 Special Session**
 
 This workshop is tailored for early career research software engineers who are eager to establish and enhance their digital footprint. 
-* **Sept 27, 10:00 AM** Student Program Workshop - [Register Now](https://zoom.us/meeting/register/tJIof-2rqD0oHtJfCfZU80dkQvf5zFKmXNF8)
+* **Sept 27, 12:00 PM** Student Program Workshop - [Register Now](https://zoom.us/meeting/register/tJIof-2rqD0oHtJfCfZU80dkQvf5zFKmXNF8)
 
 **Join us at the Nuclear History Museum in Albuquerque, NM!**
 
@@ -89,7 +89,7 @@ Data sharing and providing efficient and equitable access to scientific and engi
 
 ## **Chemists Who Code – Isaac Spackman**
 
-![Chemists Who Code]({{ site.baseurl }}/assets/img/spackman_sept_mtg_2024(2).jpg "Chemists Who Code")
+![Chemists Who Code]({{ site.baseurl }}/assets/img/spackman_sept_mtg_2024(3).jpg "Chemists Who Code")
   
 **Summary**
 
