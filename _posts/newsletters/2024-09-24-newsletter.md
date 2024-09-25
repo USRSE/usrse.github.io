@@ -118,7 +118,7 @@ The September Community Call was on GPU Frameworks.
 
 The RSE Empowerment in National Labs working group is looking for US-RSE members to present in our “RSEs in the National Labs” series for our monthly calls in 2025! The goal of this series is to provide US-RSE members with a venue to hear about the diversity of experience working at the various US sponsored research institutions. If you are interested in presenting you experience, please reach out to the working group chairs.
 
-The next RSE Empowerment in National Labs community call will be Thursday October 24 at 3pm ET/ 2pm CT/ 1pm MT / 12pm PT and is open to all US-RSE members. We will have a post-USRSE conference report back from the co-chairs and provide an opportunity for USRSE members to discuss what they learned.  We will also hold a discussion on our plans for 2025 including setting up for our next co-chair nominations.   You can find a link to the call in the bookmarks section of the [#national-labs](https://usrse.slack.com/archives/national-labs) Slack channel.
+The next RSE Empowerment in National Labs community call will be Thursday, October 24 at 3pm ET/ 2pm CT/ 1pm MT / 12pm PT and is open to all US-RSE members. We will have a post-US-RSE conference report back from the co-chairs and provide an opportunity for US-RSE members to discuss what they learned.  We will also hold a discussion on our plans for 2025 including setting up for our next co-chair nominations.   You can find a link to the call in the bookmarks section of the [#national-labs](https://usrse.slack.com/archives/national-labs) Slack channel.
 
 
 <a name="meetups"></a>
@@ -298,7 +298,7 @@ These opportunities were recently posted to the [RSE Opportunities page](https:/
 17. [Lead Research Software Engineer](https://main-princeton.icims.com/jobs/19506/lead-research-software-engineer/job): Princeton University, Princeton, NJ Posted: Jul 22, 2024
 18. [Software Engineer](https://careersearch.stanford.edu/jobs/software-engineer-26078): Stanford University, Stanford, CA or Remote Posted: Jul 19, 2024
 19. [Research Software Engineer](https://jobs.bnl.gov/job/upton/research-software-engineer/3437/68796372608): Brookhaven National Laboratory, Upton, NY Posted: Jul 12, 2024
-20. [Chief Technology Officer and Director for Software](https://recruiting2.ultipro.com/SPA1004AURA/JobBoard/57b96f30-6a4b-42cc-8f73-d417a17b54e9/OpportunityDetail?opportunityId=3f55028a-6d04-4f1d-84af-1d66d754a4f1): NOIRLab/AURA, Tucson, AZ, USA | La Serena, Chile | Hilo, HI, USA Posted: Jul 11, 2024
+20. [Chief Technology Officer and Director for Software](https://recruiting2.ultipro.com/SPA1004AURA/JobBoard/57b96f30-6a4b-42cc-8f73-d417a17b54e9/OpportunityDetail?opportunityId=3f55028a-6d04-4f1d-84af-1d66d754a4f1): NOIRLab - AURA, Tucson, AZ, USA | La Serena, Chile | Hilo, HI, USA Posted: Jul 11, 2024
 21. [Software Engineering Manager](https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25240&siteid=5341#jobDetails=2009078_5341): Library Innovation Lab, Harvard Law School, Cambridge, MA (Hybrid- and Remote-eligible) Posted: Jun 26, 2024
 22. [Full-stack Software Engineer](https://www.manifesttech.io/career/full-stack-software-engineer): Manifest Technologies, New Haven, CT / Remote Posted: Jun 24, 2024
 
