@@ -15,5 +15,8 @@ extend-ignore-re = [
     "Paul Hsi",
     "NWO",
     "ND",
+    "AAS",
+    "Villegas",
+    "Wil",
     "Lok"
 ]

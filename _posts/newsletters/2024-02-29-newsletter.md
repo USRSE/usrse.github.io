@@ -374,7 +374,7 @@ The [Sustainable Scientific Software Conference](https://s3c.sandia.gov/) will t
 
 ## SciPy 2024
 
-The [23nd annual SciPy conference](https://www.scipy2024.scipy.org/) will be held July 8-14 in Tacoma, WA at the Tacoma Convention Center. 
+The [23rd annual SciPy conference](https://www.scipy2024.scipy.org/) will be held July 8-14 in Tacoma, WA at the Tacoma Convention Center.
 
 SciPy brings together attendees from industry, academia and government to showcase their latest projects, learn from skilled users and developers, and collaborate on code development. 
 
