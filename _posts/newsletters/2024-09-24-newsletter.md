@@ -43,7 +43,7 @@ October 15-17, 2024, Albuquerque, NM
 **US-RSE 2024 Special Session**
 
 This workshop is tailored for early career research software engineers who are eager to establish and enhance their digital footprint. 
-* Sept 27, 10:00 AM Student Program Workshop - [Register Now](https://zoom.us/meeting/register/tJIof-2rqD0oHtJfCfZU80dkQvf5zFKmXNF8)
+* **Sept 27, 10:00 AM** Student Program Workshop - [Register Now](https://zoom.us/meeting/register/tJIof-2rqD0oHtJfCfZU80dkQvf5zFKmXNF8)
 
 **Join us at the Nuclear History Museum in Albuquerque, NM!**
 
@@ -249,7 +249,7 @@ The [Open Source Software for Fusion Energy (OSSFE) Conference](https://ossfe.gi
 While the Steering Committee newsletter updates took a break over the summer, the Steering Committee definitely did not! We had a busy and productive summer with many areas of focus.
 * Yearly Budget: We finalized the 2024-2025 fiscal year budget. This involved many conversations about processes and precedents as the Steering Committee and Executive Director learned how best to work together, but resulted in what we are optimistic will be a sustainable budget and good communication practices for the future.
 * US-RSE’25 Planning: We identified a second General Chair to share in the responsibility of organizing the US-RSE'25 conference and starting working out the financial and administrative logistics of having conference chairs who are separate from the Steering Committee (a first for our conference). We also discussed issues relating to US-RSE'24, including travel award details, program logistics and collaboration with outside organizations, and non-standard sponsorship opportunities outside those listed on our website.
-* Organization Membership: We spent considerable time with our Executive Director finalizing the details and presentation of our organization membership program. This program is expected to launch before the end of the year and will be a way for organizations to increase their involvement with US-RSE while receiving some perks, as well as a way for US-RSE to raise funds for ongoing programs.
+* Organizational Membership: We spent considerable time with our Executive Director finalizing the details and presentation of our organizational membership program. This program is expected to launch before the end of the year and will be a way for organizations to increase their involvement with US-RSE while receiving some perks, as well as a way for US-RSE to raise funds for ongoing programs.
 In addition to prioritizing these larger areas of focus, we covered a number of smaller topics, including Executive Director attendance at conferences, our next round of Community Funds awards, and the upcoming Steering Committee annual elections. 
 
 
