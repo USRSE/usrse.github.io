@@ -298,7 +298,7 @@ These opportunities were recently posted to the [RSE Opportunities page](https:/
 17. [Lead Research Software Engineer](https://main-princeton.icims.com/jobs/19506/lead-research-software-engineer/job): Princeton University, Princeton, NJ Posted: Jul 22, 2024
 18. [Software Engineer](https://careersearch.stanford.edu/jobs/software-engineer-26078): Stanford University, Stanford, CA or Remote Posted: Jul 19, 2024
 19. [Research Software Engineer](https://jobs.bnl.gov/job/upton/research-software-engineer/3437/68796372608): Brookhaven National Laboratory, Upton, NY Posted: Jul 12, 2024
-20. [Chief Technology Officer and Director for Software](https://recruiting2.ultipro.com/SPA1004AURA/JobBoard/57b96f30-6a4b-42cc-8f73-d417a17b54e9/OpportunityDetail?opportunityId=3f55028a-6d04-4f1d-84af-1d66d754a4f1): NOIRLab - AURA, Tucson, AZ, USA | La Serena, Chile | Hilo, HI, USA Posted: Jul 11, 2024
+20. [Chief Technology Officer and Director for Software](https://recruiting2.ultipro.com/SPA1004AURA/JobBoard/57b96f30-6a4b-42cc-8f73-d417a17b54e9/OpportunityDetail?opportunityId=3f55028a-6d04-4f1d-84af-1d66d754a4f1): NOIRLab AURA, Tucson, AZ, USA | La Serena, Chile | Hilo, HI, USA Posted: Jul 11, 2024
 21. [Software Engineering Manager](https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25240&siteid=5341#jobDetails=2009078_5341): Library Innovation Lab, Harvard Law School, Cambridge, MA (Hybrid- and Remote-eligible) Posted: Jun 26, 2024
 22. [Full-stack Software Engineer](https://www.manifesttech.io/career/full-stack-software-engineer): Manifest Technologies, New Haven, CT / Remote Posted: Jun 24, 2024
 
