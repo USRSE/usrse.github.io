@@ -93,7 +93,7 @@ What the PR submitter is responsible for:
   * Failed URL check where you know the URL is actually OK: OK to ignore.
   * Failed URL on another page outside of your PR: fix it if you can.  If you can't fix it (not sure what to replace it with, etc.), please note the problem in the PR discussion.  The person who merges the PR may choose to ignore the issue.  
 * Spellchecker: Click on the Details link, then expand the Check Spelling section of the report that comes up to identify the issue.
-  * Spelling issue in a file that is part of the PR: you must fix it.  If it's a legitimate word, you may need to add an exception to [`.github/workflows/typo_config.toml`](.github/workflows/topy_config.toml)
+  * Spelling issue in a file that is part of the PR: you must fix it.  If it's a legitimate word, you may need to add an exception to [`.github/workflows/typo_config.toml`](.github/workflows/typo_config.toml)
   * Spelling issue in a file that is not part of the PR: this generally shouldn't happen, as previous PRs have also had the spellchecker run.   
   
 Questions?  Not sure what to do or what the problem is?  Ask on the #website channel on Slack.  
