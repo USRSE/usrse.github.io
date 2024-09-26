@@ -3,10 +3,22 @@ layout: none
 permalink: /api/jobs.json
 excluded_in_search: true
 ---
-{% assign sorted_jobs = site.data.jobs | sort: "posted" | reverse %}[{% for job in sorted_jobs %}{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}{% capture expires %}{{ job.expires | date: '%s'}}{% endcapture %}{% capture posted %}{{ job.posted | date: '%b %d, %Y'}}{% endcapture %}{% if expires > nowunix %}{
+{%- assign sorted_jobs = site.data.jobs | sort: "posted" | reverse -%}
+{%- capture nowunix -%}{{'now' | date: '%s'}}{%- endcapture -%}
+[
+{%- for job in sorted_jobs -%}
+   {%- capture expires -%}{{ job.expires | date: '%s'}}{%- endcapture -%}
+   {%- capture posted -%}{{ job.posted | date: '%b %d, %Y'}}{%- endcapture -%}
+   {% if expires > nowunix %}
+   {
         "title": {{ job.name | jsonify }},
-        {% if posted != '' %}"published": "{{ posted }}",{% endif %}
-        "location": {{ job.location| jsonify }},
+        {%- if posted != '' %}
+        "published": "{{ posted }}",
+        {%- endif %}
+        "location": {{ job.location | jsonify }},
         "url": "{{ job.url }}"
-   }{% if forloop.last %}{% else %},{% endif %}{% endif %}
-{% endfor %}{}]
+   },
+   {%- endif %}
+{%- endfor %}
+   {}
+]
