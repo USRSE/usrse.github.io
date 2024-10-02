@@ -7,7 +7,7 @@ menubar: get-involved
 menubar_toc: true
 ---
 
-The US Research Software Engineer Association (US-RSE) is the leading
+The US Research Software Engineer Association (US-RSE)[^1] is the leading
 professional community of research software engineering practitioners in the
 United States.
 US-RSE's four-pronged mission aims to foster community, promote RSEs’ impact on
@@ -125,7 +125,7 @@ possibility to become an organizational founding member if joining by
 December 1, 2025.
 Besides the benefits listed in Table 1 and Table 2, US-RSE provides the
 following opportunities:
-- Organizations can gift annual memberships to other organizations. 
+- Organizations can gift annual memberships to other organizations.[^2]
 - A 5-year membership can be purchased for the price of a 4-year membership.
 
 
@@ -144,12 +144,12 @@ Sandra Gesing, at [sandra@us-rse.org](mailto:sandra@us-rse.org).
 | A spotlight of an organizational member or a representative of an organizational member posted to the website linked via the newsletter | \- | \- | 1 per year |
 | Members can request promotional US-RSE stickers and brochures once per year[^4]  | 20 brochures/50 special member stickers  | 100 brochures/200 special member stickers  | 100 brochures/200 special member stickers  |
 | Discount of 20% for sponsorship at conference | \- | \- | ✓ |
-| Members can request promotional US-RSE stickers and brochures once per year[^5]  | 20 brochures/50 special member stickers  | 100 brochures/200 special member stickers  | 100 brochures/200 special member stickers  |
 
 Table 1: The benefits of the three tiers of the US-RSE organizational membership
 model **for organizations joining between December 1 (year before) and July 31**.
 If an organization joins on or after December 1, the official membership starts
 on January 1 and lasts until December 31 of the following year.
+{: style="font-size: 0.7em; font-style: italic" }
 
 
 |  | Basic | Standard | Premier |
@@ -158,9 +158,11 @@ on January 1 and lasts until December 31 of the following year.
 | Quarterly members-only meetings with Executive Director and other representatives of the US-RSE Leadership | 1 person | 1 person | 2 persons |
 | Highlighted positions in job board | \- | 1 highlighted per year | 2 highlighted per year |
 | A spotlight of an organizational member or a representative of an organizational member posted to the website linked via the newsletter | \- | \- | 1 per year |
-| Members can request promotional US-RSE stickers and brochures once per year  | 20 brochures/50 special member stickers  | 100 brochures/200 special member stickers  | 100 brochures/200 special member stickers  |
+| Members can request promotional US-RSE stickers and brochures once per year[^4]  | 20 brochures/50 special member stickers  | 100 brochures/200 special member stickers  | 100 brochures/200 special member stickers  |
 
-Table 2: The benefits of the three tiers of the US-RSE organizational membership model **for organizations joining between August 1 and November 30**.
+Table 2: The benefits of the three tiers of the US-RSE organizational membership
+model **for organizations joining between August 1 and November 30**.
+{: style="font-size: 0.7em; font-style: italic" }
 
 
 |  | Basic | Standard | Premier |
@@ -168,10 +170,17 @@ Table 2: The benefits of the three tiers of the US-RSE organizational membership
 | Academic (R1 and R2), national labs, non-profits, small companies (1-20 employees), foundations  | $1000 per year | $2000 per year | $4000 per year |
 | Academic (Not R1 or R2) | $500 per year | $1000 per year | $2000 per year |
 | MSIs, HBCUs  | $500 per year | $1000 per year | $2000 per year |
-| Industry | Contact Executive Director[^6] | $5000 per year | $10000 per year |
+| Industry | Contact Executive Director[^5] | $5000 per year | $10000 per year |
 
 Table 3: Membership fees
+{: style="font-size: 0.7em; font-style: italic" }
 
 
 [^1]: US-RSE is a fiscally sponsored project by Community Initiatives. https://communityinitiatives.org/
-
+[^2]: Please contact the Executive Director for initiating the process
+[^3]: For example, “Founding Organizational Member 2024”
+[^4]: Please contact the Community Manager for US-RSE stickers and promotional material
+[^5]: The ED will talk with the company and summarize the reasons for the SC why
+    the company aims for basic membership. The SC will vote on it and a simple
+    majority is sufficient to allow the company to join, with the price to be
+    negotiated between the company and Executive Director.
