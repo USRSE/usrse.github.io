@@ -6,7 +6,11 @@ subtitle: Why should I join the US-RSE Association?
 menubar: get-involved
 ---
 
-Individual membership in the US-RSE Association is free. We will offer [organizational membership](https://us-rse.org/org-membership) for a membership fee soon. Our email announcements and newsletters are sent to individual and organizational members. 
+Individual membership in the US-RSE Association is free.
+We will offer [organizational membership](/org-membership) for a membership fee
+soon.
+Our email announcements and newsletters are sent to individual and
+organizational members. 
 
 By joining the US-RSE Association as an individual member you will:
 
