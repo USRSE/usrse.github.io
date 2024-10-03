@@ -7,8 +7,7 @@ menubar: get-involved
 ---
 
 Individual membership in the US-RSE Association is free.
-We will offer [organizational membership](/org-membership) for a membership fee
-soon.
+We offer [organizational membership](/org-membership) for a membership fee.
 Our email announcements and newsletters are sent to individual and
 organizational members. 
 
