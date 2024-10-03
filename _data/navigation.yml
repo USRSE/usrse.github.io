@@ -34,6 +34,8 @@
   dropdown:
     - name: Join US-RSE
       link: join
+    - name: Organizational Membership
+      link: org-membership
     - name: Support US-RSE
       link: support
     - name: Get Involved

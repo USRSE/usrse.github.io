@@ -7,8 +7,9 @@ menubar_toc: true
 menubar: get-involved
 ---
 
-The US-RSE Association is a new organization that needs community involvement to grow and mature.  
+The US-RSE Association is a new organization that needs community involvement to grow and mature.
 
+We offer individual membership and we will soon start the pilot phase for organizational membership that will give organizations the opportunity to be recognized in perpetuity as founding members of US-RSE.
 
 {% include notification.html message="Most of our interaction is via Slack: usrse.slack.com.  You'll receive a link to join the Slack space when you [join US-RSE](https://us-rse.org/join/).  If you have already joined US-RSE but can't get into Slack, email contact@us-rse.org for help." %}
 
