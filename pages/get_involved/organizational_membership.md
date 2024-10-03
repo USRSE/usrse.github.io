@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Organizational Membership - Coming Soon!
+title: Organizational Membership
 permalink: /org-membership/
 subtitle: Why should my organization become a member of US-RSE?
 menubar: get-involved
