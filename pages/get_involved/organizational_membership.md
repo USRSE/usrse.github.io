@@ -175,6 +175,18 @@ model **for organizations joining between August 1 and November 30**.
 Table 3: Membership fees
 {: style="font-size: 0.7em; font-style: italic" }
 
+## Current Organizational Founding Members
+
+### Standard Level
+
+<div class="row justify-content-center">
+    {%- assign sorted = site.data.org-members | sort: "date_joined" -%}
+    {%- for item in sorted -%}
+    <div class="col-6 col-md-4 align-self-center p-1">
+        {% include org-member-card.html %}
+    </div>
+    {%- endfor -%}
+</div>
 
 [^1]: US-RSE is a fiscally sponsored project by Community Initiatives. https://communityinitiatives.org/
 [^2]: Please contact the Executive Director for initiating the process
