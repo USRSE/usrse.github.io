@@ -17,7 +17,7 @@ election_results: 2024-12-20T00:00:00 +0000
 
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 {% capture nom_open %}{{page.nominations_open | date: '%s'}}{% endcapture %}
-{% if nowunix < nom_open %}
+{% if nowunix >= nom_open %}
 **Elections are open! Please see the "Nominations and Candidate Information"
 section to apply for or nominate someone for the US-RSE Steering Committee**
 {% else %}
@@ -107,7 +107,7 @@ Alternatively, if you know of a member who you think would make a good
 candidate, you can submit a nomination for someone else, who will be invited to run.
 All US-RSE members in good standing are eligible to be nominated as candidates.
 
-{% if nowunix <= nom_open %}
+{% if nowunix >= nom_open %}
 ### Nomination Form
 
 The nomination form can be found [HERE](https://docs.google.com/forms/d/e/1FAIpQLSdymmrCfE3QgKmeOmPUSeaDhEEG2z0adxfmiNGHbO3C6nv1YA/viewform). Please fill this form for self-nomination OR if you are nominating someone else.
