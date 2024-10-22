@@ -93,7 +93,7 @@ Dan also reached out to other organizations that might have interest, such as Ca
 
 > Subject: [campuschampions] Research Software Engineer survey
 > 
-> Are you an Research Software Engineer in the United States? Do you work professionally in software in a research environment, at least partly writing code for other people? Your job title might be research programmer, facilitator, postdoctoral researcher, or research assistant. If so, please fill out this short survey, being run by the UK Software Sustainability Institute with the idea of understanding and helping to organize the US RSE community: [http://bit.ly/US-RSE-2017-survey](http://bit.ly/US-RSE-2017-survey) (Please feel free to forward this to others, particularly possible RSEs in your center or at your university.)
+> Are you an Research Software Engineer in the United States? Do you work professionally in software in a research environment, at least partly writing code for other people? Your job title might be research programmer, facilitator, postdoctoral researcher, or research assistant. If so, please fill out this short survey, being run by the UK Software Sustainability Institute with the idea of understanding and helping to organize the US RSE community: http<nolink>://bit.ly/US-RSE-2017-survey (Please feel free to forward this to others, particularly possible RSEs in your center or at your university.)
 >
 > -- 
 > Daniel S. Katz
