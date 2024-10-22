@@ -8,11 +8,10 @@ items:
       of interest to US-RSE members.
     link: newsletters/
     link_name: Newsletters
-  - title: US-RSE Conference 2024
-    subtitle: Join us in Albuquerque, NM, October 15-17
-    link: https://us-rse.org/usrse24/
-    link_name: Conference Page
-    link_name: Learn More
+  - title: USRSE'25
+    subtitle: Help plan US-RSE's third conference.  Volunteers of all experience levels needed!
+    link: https://us-rse.org/usrse25/
+    link_name: Volunteer
   - title: 2024 US-RSE Community Awards Winners Announced
     subtitle: >
       The 2024 Community Awards winners are: Daniel S. Katz for US-RSE Impact
