@@ -140,7 +140,7 @@ Items you may have missed on the blog and Slack:
 * The [Gateways 2021](https://sciencegateways.org/web/gateways2021/welcome) abstract proceedings are published in [Zenodo](https://zenodo.org/communities/gateways-2021?page=1&size=20) with contributions such as [Leveraging Traits for Highly Interactive Computational Tools in Jupyter](https://zenodo.org/record/5570605#.YXXjZtNKjPY) and [A Template for Rapid Development of Interactive Computing Tools](https://zenodo.org/record/5570549#.YXXjqtNKjPY)
 * [Supporting Equity and Inclusion of Deaf and Hard-of-Hearing Individuals in Professional Organizations](https://www.frontiersin.org/articles/10.3389/feduc.2021.755457/full)
 * [Software Team Experiences and Challenges: A Report from Day 1 of the 2021 Collegeville Workshop on Scientific Software](https://bssw.io/blog_posts/software-team-experiences-and-challenges-a-report-from-day-1-of-the-2021-collegeville-workshop-on-scientific-software)
-* SIAM News: [US-RSE: Supporting the Research Software Engineer](https://sinews.siam.org/Details-Page/us-rse-supporting-the-research-software-engineer)
+* SIAM News: [US-RSE: Supporting the Research Software Engineer](https://web.archive.org/web/20211001141519/https://sinews.siam.org/Details-Page/us-rse-supporting-the-research-software-engineer)
 * Kate Keahey and Rinku Gupta, [The Contributions of Scientific Software to Scientific Discovery](https://bssw.io/blog_posts/the-contributions-of-scientific-software-to-scientific-discovery)
 * Daniel S. Katz, Kenton McHenry, and Jong S. Lee, [Senior level RSE career paths (with an s)](https://danielskatzblog.wordpress.com/2021/09/27/senior-rse-paths/)
 

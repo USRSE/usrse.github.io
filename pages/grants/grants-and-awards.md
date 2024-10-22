@@ -1,13 +1,11 @@
 ---
 layout: page
-title: Funds and Awards
+title: Community and Travel Funds
 subtitle:
 menubar: get-involved
-permalink: /funds-and-awards/
+permalink: /community-funds/
 menubar_toc: true
 ---
-
-## Community and Travel Funds
 
 ### Overview
 
@@ -40,11 +38,14 @@ activities such as, but not limited to:
 - Having US-RSE sponsor non-US-RSE events, such as other conferences, where sponsorship would be an effective advertisement and outreach mechanism.
 - Pursuing individual professional development that could benefit the community, such as obtaining trainer certifications.
 - Technical infrastructure costs related to working group activities (e.g., A/V services).
+- Funds to support official US-RSE Working Group activities (e.g., specific swag for events, speaker fees)
 
 Applications are accepted on a quarterly basis. They are evaluated based on
 potential for positive impact on the community, alignment to the US-RSE mission,
-availability (or lack thereof) of funding, and the submitting members’
-qualifications, including previous US-RSE activity.
+availability (or lack thereof) of funding, the submitting members’
+qualifications, and the submitting members' current or previous US-RSE activity
+(note that this factor weighs heavily in the committee's decision making
+process).
 
 Funded applicants are expected to provide a short report (a paragraph or two)
 to be included on US-RSE’s website as a blog post or part of the newsletter.
@@ -54,14 +55,13 @@ or ask in the [`#community-grants`](https://app.slack.com/client/T8ZT4PJSW/C05M3
 
 ### Application Details
 
-- **Next Application Deadline**: March 31, 2024
+- **Next Application Deadline**: September 30, 2024
 - **[Application Form](https://forms.gle/hXL95UymjTcR3Kb29)**
 
 The next round of application deadlines will be:
 
-- June 30, 2024
-- September 30, 2024
 - December 31, 2024
+- March 31, 2025
 
 The application will request the following details:
 
@@ -117,7 +117,7 @@ The application will request the following details:
 <details>
   <summary><b>Q: Can I request funding to support my PhD?</b></summary>
     A: It depends. These funds are not intended to provide general support or stipends for a PhD student for a semester. We will, however,
-    consider requests for funding to support specific efforts that involve US-RSE or RSEs as part of a PhD (e.g., a user study amongst RSEs).
+    consider requests for funding to support specific efforts that involve US-RSE or RSEs as part of a PhD (e.g., reimbursements for journal publication fees).
     If you believe you have a unique case, please email us at <a href="mailto:grants@us-rse.org">grants@us-rse.org</a>.
 </details>
 
@@ -125,4 +125,50 @@ The application will request the following details:
   <summary><b>Q: Can I request funding to purchase personal equipment for my research?</b></summary>
     A: No; this is outside the scope of this program. We may consider requests to purchase
     shared resources.
+</details>
+
+<details>
+  <summary><b>Q: Can I request funds to attend the US-RSE annual conference?</b></summary>
+    A: The conference planning committee applies regularly for targeted travel grants
+    specifically for the US-RSE annual conference. We prefer those looking for
+    travel support for that specific conference to use those application processes
+    instead, which will be announced via email, on Slack, and on the appropriate
+    US-RSE conference website.
+</details>
+
+<details>
+  <summary><b>Q: What are examples of approved travel expenses?</b></summary>
+    A: Some examples of approved travel expenses are economy-class airfare, baggage fees,
+    hotel costs, conference or event registration, and per diem for meals. The full
+    details can be found in our
+    <a href="https://docs.google.com/document/d/1bXxgWqiKljF8VzftJMa_CdSzNrlO0z2tIVfTy-_Qg6o" target="_blank">
+      General Travel Reimbursement Guidelines</a> document.
+</details>
+
+<details>
+  <summary><b>Q: How are funds distributed?</b></summary>
+    A: The preferred method of fund distribution is through reimbursal. We request
+    receipts or invoices to confirm the amount to reimburse. If the requested
+    funds required a signed contract, this must be done through our fiscal sponsor,
+    Community Initiatives.
+</details>
+
+<details>
+  <summary><b>Q: What should I do if the date of my request is very soon after the deadline?</b></summary>
+    A: While we regularly review on a quarterly basis to ensure fairness of the process,
+    if your event is timed such that it occurs within 45 days of a quarterly deadline
+    (e.g., event is July 20th and you are submitting for the June 30th deadline),
+    please send an email to <a href="mailto:grants@us-rse.org">grants@us-rse.org</a>
+    to let us know. We will endeavor to expedite the review process so we can
+    inform you in a timely manner of our decision.
+</details>
+
+<details>
+  <summary><b>Q: Can I request funding for food during an event?</b></summary>
+  A: Yes. However, the application should be clear about how US-RSE funding for
+  the food will meet the goals of the program stated above. For example, will it
+  encourage people to attend your event who might not otherwise attend? Will you
+  use it as a way to “advertise” US-RSE to people who may not be aware of it
+  (e.g. “Food sponsored by US-RSE”)? Please note that due to limited funds,
+  requests for food-related grants will be evaluated with careful consideration.
 </details>

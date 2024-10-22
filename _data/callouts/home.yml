@@ -8,15 +8,14 @@ items:
       of interest to US-RSE members.
     link: newsletters/
     link_name: Newsletters
-  - title: RSE Career Guide
-    subtitle: A joint publication from US-RSE and the IEEE Computer Society
-    link: https://doi.org/10.5281/zenodo.10073232
-    link_name: >
-      "Research Software Engineers: Creating a Career Path—and a Career"
+  - title: US-RSE Conference 2024
+    subtitle: Join us in Albuquerque, NM, October 15-17
+    link: https://us-rse.org/usrse24/
+    link_name: Conference Page
     link_name: Learn More
-  - title: Community Awards
+  - title: 2024 US-RSE Community Awards Winners Announced
     subtitle: >
-      US-RSE is accepting applications for the US-RSE Excellence in Service
-      and US-RSE Impact Awards! Nominations close on March 29, 2024.
-    link: /community-awards/
+      The 2024 Community Awards winners are: Daniel S. Katz for US-RSE Impact
+      Award and Christina Maimone for US-RSE Excellence in Service Award.
+    link: https://us-rse.org/community-awards/
     link_name: Learn More

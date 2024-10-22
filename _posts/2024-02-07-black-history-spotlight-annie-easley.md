@@ -15,7 +15,7 @@ personal stories.
 ## This week's Black History Month spotlight features Annie Easley
 
 {% include image.html
-url="https://image.cleveland.com/home/cleve-media/pgfull/img/plain-dealer/photo/2017/02/23/-8f07f7971aa2b185.JPG"
+url="https://www1.grc.nasa.gov/wp-content/uploads/GRC-1976-C-00926-300x300.jpg"
 description="Annie Easley works on a NASA computer. (Photo Courtesy of NASA)"
 style="float:right; padding:1em; max-width:350px" %}
 

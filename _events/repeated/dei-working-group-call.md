@@ -2,7 +2,7 @@
 title: Diversity, Equity, and Inclusion Working Group Call
 subtitle:
 location: Virtual
-expires: 2024-12-31
+expires: 2024-08-01
 event_date: "every other Wednesday at 3PM Eastern"
 layout: event
 category: dei

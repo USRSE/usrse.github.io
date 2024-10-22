@@ -5,41 +5,74 @@ permalink: /about/election/
 menubar: about
 menubar_toc: true
 set_last_modified: true
+nominations_open: 2024-10-11 23:59:59 -1000
+nominations_close: 2024-11-01 23:59:59 -1000
+membership_deadline: 2024-11-08 23:59:59 -1000
+candidate_announcements: 2024-11-08 23:59:59 -1000
+annual_general_meeting: 2024-12-05 14:00:00 -0500
+voting_open: 2024-12-05 14:00:00 -0500
+voting_close: 2024-12-13T23:59:59 -1000
+election_results: 2024-12-20T00:00:00 +0000
 ---
 
-**The [Election Results](/2023-12-10-election-results/) are in!  Congratulations to Abbey Roelofs, Alex Koufos, Ian Cosden, Jeff Carver and Keith Beattie.**
-
-**Following the conclusion of the 2023 US-RSE Steering Committee elections, the information below is accessible on this webpage for readers or  US-RSE members interested in participating in the Steering Committee in the future. Please note that this webpage will be updated in latter part of 2024 for the new SC elections.**
+{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+{% capture nom_open %}{{page.nominations_open | date: '%s'}}{% endcapture %}
+{% if nowunix >= nom_open %}
+**Elections are open! Please see the "Nominations and Candidate Information"
+section to apply for or nominate someone for the US-RSE Steering Committee**
+{% else %}
+**Elections for the US-RSE Steering Committee are around the corner**
+{% endif %}
 
 <hr>
 
-<!-- The 2023 US-RSE Steering Committee elections are happening this December. -->
+<!-- The 2024 US-RSE Steering Committee elections are happening this December. -->
 
-If you're interested in becoming part of the Steering Committee, we suggest you have a look at [Guidance for Potential Steering Committee Candidates](/2022-07-01-candidate-guidance/).
+If you're interested in becoming part of the Steering Committee, we suggest you
+have a look at
+[Guidance for Potential Steering Committee Candidates](/2022-07-01-candidate-guidance/).
 
 
-## 2023 Election Timeline
+## 2024 Election Timeline
 
-* [Nominations open](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform): October 13, 2023
-* Nominations Due Date (Extended):  Nov 3, 2023
-* Deadline to [join US-RSE](/join) to be eligible to vote: Nov 8, 2023
-* Candidate Announcement Date: Nov 10, 2023
-* [Candidates Announced](/2023-11-10-sc-candidates/): Nov 10, 2023 
-* [Annual US-RSE General Meeting](https://us-rse.org/events/2023/2023-12-AGM), including candidate statements: Dec 1, 2023
-* Voting Open: Dec 1-8, 2023
-* [Election Results announced](/2023-12-10-election-results/): by December 15, 2023
-<!-- * Election Results announced: by Dec 15, 2023 -->
-* Elected Steering Committee members take office: Jan 1, 2024
+* Nominations open:
+  **{{ page.nominations_open | date: "%B %-d, %Y" }}** <!-- Should be link to form once open -->
+* Nominations Due Date:
+  **{{ page.nominations_close | date: "%A %B %e, %Y at %H:%M (Hawaii)" }}**
+* Deadline to [join US-RSE](/join) to be eligible to vote:
+  **{{ page.membership_deadline | date: "%B %-d, %Y at %H:%M (Hawaii)" }}**
+* Planned Candidate Announcement Date:
+  **{{ page.candidate_announcements | date: "%B %-d, %Y" }}**
+<!--* [Candidates Announced](/2023-11-10-sc-candidates/): **November 8, 2024**-->
+* Annual US-RSE General Meeting, including candidate statements:
+  **{{ page.annual_general_meeting | date: "%B %-d, %Y at %H:%M (Eastern)" }}**
+* Voting Open:
+  **{{ page.voting_open | date: "%B %-d, %Y at %H:%M (Eastern)" }} -
+    {{ page.voting_close | date: "%B %-d, %Y at %H:%M (Hawaii)" }}**
+* Planned Election Results Announcement Date:
+  **{{ page.election_results | date: "%B %-d, %Y" }}**
+* Elected Steering Committee members take office:
+  **January 1, 2025**
 
 
 ## Positions and Eligibility
 
-Five Steering Committee seats are open in this election, each for a 2-year term (January 1, 2024 through December 31, 2025). The following steering committee members have terms that end this year: Nicole Brewer, Jeff Carver, Ian Cosden, Sandra Gesing, and Christina Maimone. 
-All US-RSE members in good standing as of the day nominations open are eligible for nomination. 
+Four Steering Committee seats are open in this election, each for a 2-year term
+(January 1, 2025 through December 31, 2027).
+The following steering committee members have terms that end this year:
+Miranda Mundt, Rinku Gupta, Kenton McHenry, and Julia Damerow.
+All US-RSE members in good standing as of the day nominations open are eligible
+for nomination. 
 
-The US-RSE Steering Committee sets its own meeting frequency and timing.  Currently, the Steering Committee meets every two weeks on Fridays.  The Steering Committee meeting frequency and schedule for 2024 will be determined once new members are elected.
+The US-RSE Steering Committee sets its own meeting frequency and timing.
+Currently, the Steering Committee meets every two weeks on Fridays.
+The Steering Committee meeting frequency and schedule for 2025 will be
+determined once new members are elected.
 
-The responsibilities of Steering Committee members are detailed in the [US-RSE Membership and Governance](https://github.com/USRSE/documents/blob/master/governance.md) document. They include:
+The responsibilities of Steering Committee members are detailed in the
+[US-RSE Membership and Governance](https://github.com/USRSE/documents/blob/master/governance.md)
+document.
+They include:
 
 * Setting the overall policy and direction of the US-RSE Association
 * Being responsible for day-to-day activities, operations, and development of the US-RSE Association
@@ -65,16 +98,22 @@ Additionally, Steering Committee members are expected to:
 
 <!-- **[Candidate Information is Available](/2022-11-18-sc-candidates/)** -->
 
-Nominations open on October 13, 2023 and close on November 03, 2023. 
+Nominations will open on {{ page.nominations_open | date: "%B %e, %Y" }} and
+close on {{ page.nominations_close | date: "%B %e, %Y" }} (see above for more 
+details.)
 
 Once nominations open up, interested members are encouraged to nominate themselves.
 Alternatively, if you know of a member who you think would make a good
-candidate, you can submit a nomination 
-for someone else, who will be invited to run.  All US-RSE members in good standing are eligible to be nominated as candidates.
+candidate, you can submit a nomination for someone else, who will be invited to run.
+All US-RSE members in good standing are eligible to be nominated as candidates.
 
-**Nomination Form**
+{% if nowunix >= nom_open %}
+### Nomination Form
 
-The nomination form can be found [HERE](https://docs.google.com/forms/d/e/1FAIpQLScJcBNhvT0qDGwXgM5qsRbonVQ9TVsutacupXBl_7NJz2zTcw/viewform). Please fill this form for self-nomination OR if you are nominating someone else. If nominating someone else, then please fill the form early so that we can contact the nominated person and obtain their nomination materials before the nominations due date of Nov 03, 2023.
+The nomination form can be found [HERE](https://docs.google.com/forms/d/e/1FAIpQLSdymmrCfE3QgKmeOmPUSeaDhEEG2z0adxfmiNGHbO3C6nv1YA/viewform). Please fill this form for self-nomination OR if you are nominating someone else.
+If nominating someone else, then please fill the form early so that we can
+contact the nominated person and obtain their nomination materials before the
+nominations due date of November 01, 2024.
 
 On the nomination form, expect to provide the following information.
 
@@ -83,10 +122,11 @@ On the nomination form, expect to provide the following information.
 * Nominee's name and email
 * Short statement about why you think the nominated individual will make a good Steering Committee member
 
-Nominations of others will only be shared with the Election Chair and the
-nominated individual. The Election Chair will contact the nominated individual
-to let them know they were nominated, and by whom, and to confirm their
-interest in participating. The information will not be made public.
+Nominations of others will only be shared with the Election Chairs and the
+nominated individual.
+The Election Chairs will contact the nominated individual to let them know they
+were nominated, and by whom, and to confirm their interest in participating.
+The information will not be made public.
 
 **Self-nomination or Accepted Nomination:**
 
@@ -95,28 +135,29 @@ interest in participating. The information will not be made public.
 * Why do you want to be on the US-RSE Steering Committee? (<=1000 characters)
 * How do you contribute to the US-RSE Association or RSE community more broadly? (<= 1500 characters)
 
-All candidate information will be shared on the US-RSE website.  Additionally, candidates will have a chance to share information about themselves at the Annual General Meeting on December 1, 2023.
+All candidate information will be shared on the US-RSE website.
+Additionally, candidates will have a chance to share information about
+themselves at the Annual General Meeting on December 6, 2024.
 
-An [#election channel is available on Slack](https://usrse.slack.com/archives/C01BC66Q16E) for any discussion with or about candidates.
+An [#election channel is available on Slack](https://usrse.slack.com/archives/C01BC66Q16E)
+for any discussion with or about candidates.
 
-## Candidate Meeting
+{% endif %}
 
-For the 2023 election, we are planning a meeting of all of the candidates before names are released publicly.  This will be an opportunity for candidates to learn who else is running and discuss how they want to share information about themselves during the Annual General Meeting.
-
-UPDATE (Nov 8th 2023): The Candidate Meeting was deemed unnecessary for the 2023 US-RSE election and was subsequently cancelled.
 
 ## Voting
 
 If there are more candidates than seats available, an election will be held.  
 
-Elections will be run through
-https://electionbuddy.com.  US-RSE members' email
-addresses will be shared with this site for the sole purpose of voting.  Each
-US-RSE member as of November 8, 2023, gets one ballot with the voting rule of
-[single transferable vote
-(STV)](https://electionbuddy.com/features/voting-systems/stv-voting).  This
-voting rule asks each voter to rank the candidates, and seats are allocated
-across candidates using this ranking information.  
+Elections will be run through https://electionbuddy.com.
+US-RSE members' email addresses will be shared with this site for the sole
+purpose of voting.
+Each US-RSE member as of
+{{ page.membership_deadline | date: "%B %-d, %Y at %H:%M (Hawaii)" }},
+gets one ballot with the voting rule of
+[single transferable vote (STV)](https://electionbuddy.com/features/voting-systems/stv-voting).
+This voting rule asks each voter to rank the candidates, and seats are allocated
+across candidates using this ranking information.
 
 The results of the election are valid regardless of the turnout rate for the
 election.
@@ -124,5 +165,7 @@ election.
 
 ## Questions?
 
-Contact Election Chairs on Slack or email: [Rinku Gupta](mailto:rgupta@anl.gov) and [Kenton McHenry](mailto:mchenry@illinois.edu).
+Contact Election Chairs on Slack or email:
+- [Alex Koufos](mailto:akoufos@stanford.edu)
+- [Keith Beattie](mailto:ksbeattie@lbl.gov).
 

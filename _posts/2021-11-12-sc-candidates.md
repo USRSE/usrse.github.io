@@ -126,7 +126,7 @@ participated in multiple US-RSE
 written [blog
 posts](https://urssi.us/blog/2019/04/16/why-research-software-engineers/) and
 co-authored
-[articles](https://sinews.siam.org/Details-Page/us-rse-supporting-the-research-software-engineer),
+[articles](https://web.archive.org/web/20211001141519/https://sinews.siam.org/Details-Page/us-rse-supporting-the-research-software-engineer),
 [papers](https://arxiv.org/pdf/2103.01880.pdf), and
 [presentations](https://meetings.siam.org/sess/dsp_talk.cfm?p=109617) promoting
 RSEs. I’m the lead PI (along with Co-PIs Jeff Carver and Dan Katz) on a Sloan

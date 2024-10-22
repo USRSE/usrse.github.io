@@ -13,8 +13,8 @@
       link: about/governance/
     - name: Steering Committee
       link: about/steering-committee/
-    - name: Executive Director
-      link: about/executive-director/
+    - name: Staff
+      link: about/staff/
     - name: Election
       link: about/election/
     - name: Financial Status
@@ -34,6 +34,8 @@
   dropdown:
     - name: Join US-RSE
       link: join
+    - name: Organizational Membership
+      link: org-membership
     - name: Support US-RSE
       link: support
     - name: Get Involved
@@ -42,8 +44,8 @@
       link: share
     - name: Community Whitepapers
       link: community-whitepapers
-    - name: Funds and Awards
-      link: funds-and-awards/
+    - name: Community Funds
+      link: community-funds/
     - name: Community Awards
       link: community-awards/
 - name: Working Groups
@@ -111,8 +113,8 @@
       link: wg/education_training/seminar_series/
     - name: Organizations
       link: resources/organizations/
-    - name: Funds and Awards
-      link: funds-and-awards/
+    - name: Community Funds
+      link: community-funds/
     - name: Community Awards
       link: community-awards/
 

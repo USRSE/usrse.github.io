@@ -3,7 +3,7 @@
 https://us-rse.org
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-79-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-80-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -93,7 +93,7 @@ What the PR submitter is responsible for:
   * Failed URL check where you know the URL is actually OK: OK to ignore.
   * Failed URL on another page outside of your PR: fix it if you can.  If you can't fix it (not sure what to replace it with, etc.), please note the problem in the PR discussion.  The person who merges the PR may choose to ignore the issue.  
 * Spellchecker: Click on the Details link, then expand the Check Spelling section of the report that comes up to identify the issue.
-  * Spelling issue in a file that is part of the PR: you must fix it.  If it's a legitimate word, you may need to add an exception to [`.github/workflows/typo_config.toml`](.github/workflows/topy_config.toml)
+  * Spelling issue in a file that is part of the PR: you must fix it.  If it's a legitimate word, you may need to add an exception to [`.github/workflows/typo_config.toml`](.github/workflows/typo_config.toml)
   * Spelling issue in a file that is not part of the PR: this generally shouldn't happen, as previous PRs have also had the spellchecker run.   
   
 Questions?  Not sure what to do or what the problem is?  Ask on the #website channel on Slack.  
@@ -224,6 +224,7 @@ tool to generate a contributors graphic below.
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/sanyatonwu"><img src="https://avatars.githubusercontent.com/u/155703270?v=4?s=100" width="100px;" alt="sanyatonwu"/><br /><sub><b>sanyatonwu</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=sanyatonwu" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/davidbrownell"><img src="https://avatars.githubusercontent.com/u/6353056?v=4?s=100" width="100px;" alt="David Brownell"/><br /><sub><b>David Brownell</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=davidbrownell" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/jperrsau-at-nrel"><img src="https://avatars.githubusercontent.com/u/171282530?v=4?s=100" width="100px;" alt="jperrsau-at-nrel"/><br /><sub><b>jperrsau-at-nrel</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jperrsau-at-nrel" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>

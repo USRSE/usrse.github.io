@@ -5,8 +5,6 @@ show_hero: true
 callouts: home
 permalink: /
 full_width: true
-# hero_link: 2023-06-01-pride-month
-# hero_link_text: Celebrate Pride Month with US-RSE!
 ---
 
 <div class="card" style="padding:50px; margin-top:-50px">

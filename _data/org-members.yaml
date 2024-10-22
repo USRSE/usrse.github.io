@@ -1,0 +1,7 @@
+- name: "Center for Research Computing - University of Notre Dame"
+  url: https://crc.nd.edu/
+  figure: logo-crc-notre.png
+  acronym: "CRC"
+  date_joined: 2024-10-10
+  founding_member: true
+  tier: "Standard"

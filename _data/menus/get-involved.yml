@@ -2,6 +2,8 @@
   items:
     - name: Join US-RSE
       link: join
+    - name: Organizational Membership
+      link: org-membership
     - name: Support US-RSE
       link: support
     - name: Get Involved
@@ -10,6 +12,6 @@
       link: share
     - name: Community Whitepapers
       link: community-whitepapers
-    - name: Funds and Awards
-      link: funds-and-awards
+    - name: Community Funds
+      link: community-funds
 
