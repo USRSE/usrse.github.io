@@ -18,3 +18,5 @@ The results of this survey will be greatly beneficial to US-RSE as we move forwa
 The more responses we have, the better our knowledge.
 
 For more details on the survey visit [https://software.ac.uk/news/complete-international-rse-survey-and-help-us-understand-rse-community](https://software.ac.uk/news/complete-international-rse-survey-and-help-us-understand-rse-community). 
+
+**NOTE: this survey has ended and the results can be found [here](https://softwaresaved.github.io/international-survey-2022/).**
