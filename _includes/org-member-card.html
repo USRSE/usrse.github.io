@@ -1,7 +1,14 @@
-<div class="card d-flex text-center border-0 m-0">
-    <img class="card-img-top" 
+<div
+    class="card d-flex text-center border-0 m-0"
+    {% if item.background -%}
+    style="background-color: {{ item.background }}"
+    {%- endif -%}
+    >
+    <img class="card-img" 
         src="{{ site.baseurl }}/assets/img/org-logos/{{ item.figure }}"
         alt="{{ item.name }}{%-if item.acronym -%}&nbsp;({{ item.acronym }}){%- endif -%}"
     >
-    <a href="{{ item.url }}" class="stretched-link" target="_blank"></a>
+    <div class="card-img-overlay">
+        <a href="{{ item.url }}" class="stretched-link" target="_blank"></a>
+    </div>
 </div>
