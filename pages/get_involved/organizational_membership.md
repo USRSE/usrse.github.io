@@ -175,18 +175,33 @@ model **for organizations joining between August 1 and November 30**.
 Table 3: Membership fees
 {: style="font-size: 0.7em; font-style: italic" }
 
+
 ## Current Organizational Founding Members
 
+
+{% if site.data.org-members.premier %}
+### Premier Level
+
+{% assign org_tier = site.data.org-members.premier | sort: "date_joined" %}
+{% include org-card-group.html %}
+{% endif %}
+
+
+{% if site.data.org-members.standard %}
 ### Standard Level
 
-<div class="row justify-content-center">
-    {%- assign sorted = site.data.org-members | sort: "date_joined" -%}
-    {%- for item in sorted -%}
-    <div class="col-6 col-md-4 align-self-center p-1">
-        {% include org-member-card.html %}
-    </div>
-    {%- endfor -%}
-</div>
+{% assign org_tier = site.data.org-members.standard | sort: "date_joined" %}
+{% include org-card-group.html %}
+{% endif %}
+
+
+{% if site.data.org-members.basic %}
+### Basic Level
+
+{% assign org_tier = site.data.org-members.basic | sort: "date_joined" %}
+{% include org-card-group.html %}
+{% endif %}    
+
 
 [^1]: US-RSE is a fiscally sponsored project by Community Initiatives. https://communityinitiatives.org/
 [^2]: Please contact the Executive Director for initiating the process
