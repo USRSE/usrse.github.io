@@ -15,6 +15,6 @@ standard:
     date_joined: 2024-10-28
     founding_member: true
     tier: "Standard"
-    background: rgba(0.0, 0.0, 0.0, 1.0)
+    background: rgba(0, 0, 0, 0.7)
 
 premier:
