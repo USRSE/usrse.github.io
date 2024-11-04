@@ -30,6 +30,9 @@ as a bridge to form future working groups. Affinity groups may be affiliated wit
 other organizations, e.g., a Women in HPC affinity group, to foster connections
 across groups.
 
+**Regional groups** are also considered affinity groups but will have `rg-` prepend
+names rather than `ag-`.
+
 ## How to Form a New Group
 
 There are two requirements for forming a new affinity group:

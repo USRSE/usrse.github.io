@@ -38,7 +38,8 @@ provides a process for getting your new group set up, including all of the infra
 to support it.
 
 Please review the
-<a href="{{ site.baseurl }}/wg/group-management/form-an-affinity-group" target="_blank">Processes and Requirements for Forming US-RSE Affinity Groups</a>
+<a href="{{ site.baseurl }}/wg/group-management/form-an-affinity-group"
+target="_blank">Processes and Requirements for Forming US-RSE Affinity Groups</a>
 page for more details!
 
 <hr>
@@ -64,8 +65,12 @@ on leadership roles will likely benefit more than early career RSEs.
 
 <h3><a href="{{ site.baseurl }}/ag/neuro-rse/">Neuro-RSE</a></h3>
 
-Neuroscience RSE (Neuro-RSE) is an affinity group for those working on research software in neuroscience. We meet to support each other and discuss common issues and concerns.
+Neuroscience RSE (Neuro-RSE) is an affinity group for those working on research
+software in neuroscience. We meet to support each other and discuss common issues and concerns.
 
-Neuro-RSE is open to anyone who considers themselves a research software engineer and who works in the field of neuroscience, regardless of job title or domain. This includes grad students, postdocs, and professors, as well as those in permanent positions with "engineer" or "scientist" in their title.
+Neuro-RSE is open to anyone who considers themselves a research software engineer
+and who works in the field of neuroscience, regardless of job title or domain.
+This includes grad students, postdocs, and professors, as well as those in permanent
+positions with "engineer" or "scientist" in their title.
 
 <hr>
