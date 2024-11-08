@@ -22,17 +22,7 @@ set_last_modified: true
             </div>
         </div>
         </div>
-        <div class="col-10 col-sm-6 col-xl-5 px-0">
-        <div class="card h-100">
-            <img src="{{ site.baseurl }}/assets/img/sophia.png" class="card-img-top p-0" alt="Community Manager - Sophia Anyatonwu">
-            <div class="card-body">
-                <h4 class="card-title">Community Manager</h4>
-                <h5 class="card-subtitle">Sophia Anyatonwu</h5>
-                <a href="mailto:sophia@us-rse.org">sophia@us-rse.org</a><br>
-                <a href="https://www.linkedin.com/in/sophiaanyatonwu/">Sophia's LinkedIn</a>
-            </div>
-        </div>
-        </div>
+
     </div>
 </div>
 
