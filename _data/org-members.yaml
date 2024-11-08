@@ -16,5 +16,26 @@ standard:
     founding_member: true
     tier: "Standard"
     background: rgba(0, 0, 0, 0.7)
+  - name: "NSF National Center for Atmospheric Research"
+    url: https://ncar.ucar.edu/
+    figure: logo-ncar.png
+    acronym: NCAR
+    date_joined: 2024-11-05
+    founding_member: true
+    tier: "Standard"
+  - name: "Pasteur ISI"
+    url: https://pasteurlabs.ai/
+    figure: logo-pasteur.png
+    acronym:
+    date_joined: 2024-11-07
+    founding_member: true
+    tier: "Standard"
+  - name: "Research Technologies - Indiana University"
+    url: https://uits.iu.edu/about/org-structure/research-technologies/
+    figure: logo-uits-indiana.png
+    acronym: UITS
+    date_joined: 2024-11-07
+    founding_member: true
+    tier: "Standard"
 
 premier:
