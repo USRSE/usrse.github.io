@@ -8,7 +8,7 @@ set_last_modified: true
 nominations_open: 2024-10-11 23:59:59 -1000
 nominations_close: 2024-11-01 23:59:59 -1000
 membership_deadline: 2024-11-08 23:59:59 -1000
-candidate_announcements: 2024-11-08 23:59:59 -1000
+candidate_announcements: 2024-11-08 17:00:00 -0800
 annual_general_meeting: 2024-12-05 14:00:00 -0500
 voting_open: 2024-12-05 14:00:00 -0500
 voting_close: 2024-12-13T23:59:59 -1000
@@ -17,9 +17,21 @@ election_results: 2024-12-20T00:00:00 +0000
 
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 {% capture nom_open %}{{page.nominations_open | date: '%s'}}{% endcapture %}
-{% if nowunix >= nom_open %}
-**Elections are open! Please see the "Nominations and Candidate Information"
-section to apply for or nominate someone for the US-RSE Steering Committee**
+{% capture nom_close %}{{page.nominations_close | date: '%s'}}{% endcapture %}
+{% capture can_ann %}{{page.candidate_announcements | date: '%s'}}{% endcapture %}
+{% capture vote_open %}{{page.voting_open | date: '%s'}}{% endcapture %}
+{% capture vote_close %}{{page.voting_close | date: '%s'}}{% endcapture %}
+
+{% if nowunix >= nom_open and nowunix < nom_close %}
+**Election process has begun. Nominations are open! Please see the "Nominations
+and Candidate Information" section to apply for or nominate someone for the
+US-RSE Steering Committee**
+{% elsif nowunix >= nom_close and nowunix < can_ann %}
+**Nominations have closed! We will be announcing the candidates shortly.**
+{% elsif nowunix >= can_ann and nowunix < vote_open %}
+**Meet the [nominees for this year's Steering Committee](#candidate-information)!**
+{% elsif nowunix >= vote_open and nowunix < vote_close %}
+**Voting for the US-RSE Steering Committee are now open!**
 {% else %}
 **Elections for the US-RSE Steering Committee are around the corner**
 {% endif %}
@@ -107,7 +119,7 @@ Alternatively, if you know of a member who you think would make a good
 candidate, you can submit a nomination for someone else, who will be invited to run.
 All US-RSE members in good standing are eligible to be nominated as candidates.
 
-{% if nowunix >= nom_open %}
+{% if nowunix >= nom_open and nowunix < nom_close %}
 ### Nomination Form
 
 The nomination form can be found [HERE](https://docs.google.com/forms/d/e/1FAIpQLSdymmrCfE3QgKmeOmPUSeaDhEEG2z0adxfmiNGHbO3C6nv1YA/viewform). Please fill this form for self-nomination OR if you are nominating someone else.
@@ -141,6 +153,34 @@ themselves at the Annual General Meeting on December 6, 2024.
 
 An [#election channel is available on Slack](https://usrse.slack.com/archives/C01BC66Q16E)
 for any discussion with or about candidates.
+
+{% elsif nowunix >= nom_close and nowunix < can_ann %}
+### Nomination Form
+
+Nominations are now closed. We will be announcing the candidates soon!
+
+{% elsif nowunix >= can_ann %}
+### Nomination Form
+
+Nominations are now closed and our candidates for next cycle can be found below.
+
+### Candidate Information
+
+Candidates are listed in alphabetical order.
+- Anees Ur Rahman
+- Chen Zhang
+- Cordero Core
+- Daniel Madren
+- Julia Damerow
+- Kenton McHenry
+- Lezlie Espana
+- Miranda Mundt
+- Sujata Goswami
+
+More information about the candidates and their responses to the nomination
+questions will be available soon.
+
+<!-- More information about the candidates can be [found here](/2024-11-08-sc-candidates). -->
 
 {% endif %}
 
