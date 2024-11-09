@@ -29,7 +29,7 @@ US-RSE Steering Committee**
 {% elsif nowunix >= nom_close and nowunix < can_ann %}
 **Nominations have closed! We will be announcing the candidates shortly.**
 {% elsif nowunix >= can_ann and nowunix < vote_open %}
-**Meet the nominees for this year's Steering Committee!**
+**Meet the [nominees for this year's Steering Committee](#candidate-information)!**
 {% elsif nowunix >= vote_open and nowunix < vote_close %}
 **Voting for the US-RSE Steering Committee are now open!**
 {% else %}
