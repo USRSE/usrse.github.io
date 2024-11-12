@@ -7,8 +7,8 @@ duration: 60
 repeated: false
 category: community-call
 time:
-    - - start: 2024-11-14T16:00:00Z
-        end: 2024-11-14T17:00:00Z
+    - - start: 2024-11-14T17:00:00Z
+        end: 2024-11-14T18:00:00Z
 ---
 
 The **November US-RSE Community Call** will be all about **computational workflow tools** on Thursday, November 14, 12pm ET/11am CT/10am MT/9am PT. What is that, you ask? Come find out! Parsl and Pegasus are your daily bread and butter? Join us to talk shop with other RSEs! As usual we will have a few speakers that will tell us how they use the tools of their choice before we dive into breakout discussions. Come join us on Zoom!
