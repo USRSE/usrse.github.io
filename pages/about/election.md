@@ -29,7 +29,7 @@ US-RSE Steering Committee**
 {% elsif nowunix >= nom_close and nowunix < can_ann %}
 **Nominations have closed! We will be announcing the candidates shortly.**
 {% elsif nowunix >= can_ann and nowunix < vote_open %}
-**Meet the [nominees for this year's Steering Committee](#candidate-information)!**
+**Meet the [2024 Steering Committee candidates](#candidate-information)!**
 {% elsif nowunix >= vote_open and nowunix < vote_close %}
 **Voting for the US-RSE Steering Committee are now open!**
 {% else %}
@@ -177,10 +177,7 @@ Candidates are listed in alphabetical order.
 - Miranda Mundt
 - Sujata Goswami
 
-More information about the candidates and their responses to the nomination
-questions will be available soon.
-
-<!-- More information about the candidates can be [found here](/2024-11-08-sc-candidates). -->
+More information about the candidates can be [found here](/2024-11-08-sc-candidates).
 
 {% endif %}
 

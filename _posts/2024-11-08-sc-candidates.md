@@ -14,18 +14,20 @@ please use the #election channel on Slack. You must be [registered as a member](
 by Friday, November 8th to be eligible to vote in this election.
 
 Candidates are listed in alphabetical order.
-- Anees Ur Rahman
-- Chen Zhang
-- Cordero Core
-- Daniel Madren
-- Julia Damerow
-- Kenton McHenry
-- Lezlie Espana
-- Miranda Mundt
-- Sujata Goswami
+- [Anees Ur Rahman](#anees)
+- [Chen Zhang](#chen)
+- [Cordero Core ](#cordero)
+- [Daniel Madren ](#daniel)
+- [Julia Damerow](#julia)
+- [Kenton McHenry](#kenton)
+- [Lezlie Espana](#lezlie)
+- [Miranda Mundt](#miranda)
+- [Sujata Goswami](#sujata)
 
 More information about the candidates can be found below.
 
+<a name="anees"></a>
+<br>
 ## Anees Ur Rahman
 
 [Email](mailto:aneeskhattak085@gmail.com), [Profile](https://www.linkedin.com/in/aneeskhattak)
@@ -44,7 +46,8 @@ Furthermore, I contribute to the community by sharing my expertise through publi
 
 Through these activities, I aim to strengthen the RSE community, advocate for the recognition of RSEs, and contribute to the development of a robust and supportive network that empowers research software engineers to excel in their roles.
 
-
+<a name="chen"></a>
+<br>
 ## Chen Zhang
 
 [Email](mailto:zhangc@ornl.gov), [Profile](https://www.ornl.gov/staff-profile/chen-zhang)
@@ -59,9 +62,11 @@ I would like to contribute to the broader RSE community by fostering collaborati
 
 I am also committed to exploring new methods for acknowledging RSE contributions, with a focus on increasing visibility for their work. This includes advocating for the inclusion of RSE achievements in institutional performance reviews and promotion processes, as well as finding opportunities to publicly celebrate impactful scientific software projects. Through these efforts, I aim to help elevate the profile of RSEs and highlight the essential role of software in advancing scientific research.
 
-Furthermore, I would like to enhance the RSE community's connectivity, whether through online forums, community meetups, or contributions to open-source RSE resources. I also plan to initiate discussions about generative AI in the RSE community, exploring how it can be leveraged to promote RSE roles while mitigating potential negative impacts on entry-level RSE work. These initiatives are intended to help build a supportive network where RSEs can thrive and receive the recognition they deserve.
+Furthermore, I would like to enhance the RSE community's connectivity, whether through online forums, community meetups, or contributions to open-source RSE resources. I also plan to initiate discussions about generative AI in the RSE community, exploring how it can be leveraged to promote RSE roles while mitigating potential negative impacts on entry-level RSE work. These initiatives are intended to help build a supportive network where RSEs can thrive and receive recognition.
 
-## Cordero (khor-dair-oh) Core (khor) (he/him/his)
+<a name="cordero"></a>
+<br>
+## Cordero Core (khor-dair-oh khor) (he/him/his)
 
 [Email](mailto:cdcore@uw.edu), [Profile](https://www.linkedin.com/in/corderocore/)
 
@@ -72,13 +77,15 @@ I am drawn to the US-RSE Steering Committee because I believe deeply in creating
 
 **How do you contribute to the US-RSE Association or RSE community more broadly?**
 
- Building on my commitment to fostering community and inclusivity, my contributions to the US-RSE Association are centered on creating spaces that allow RSEs to connect, learn, and thrive together. As Co-Chair for the Diversity Committee, I led efforts to create pre-conference sessions aimed at welcoming and supporting a diverse group of attendees. These sessions provided guidance and opportunities to address unique challenges, and through them, I built meaningful connections with members that deepened during the conference. My suggestion to offer professional headshots also helped make the conference a more memorable, supportive experience, bringing an innovative touch that attendees appreciated.
+Building on my commitment to fostering community and inclusivity, my contributions to the US-RSE Association are centered on creating spaces that allow RSEs to connect, learn, and thrive together. As Co-Chair for the Diversity Committee, I led efforts to create pre-conference sessions aimed at welcoming and supporting a diverse group of attendees. These sessions provided guidance and opportunities to address unique challenges, and through them, I built meaningful connections with members that deepened during the conference. My suggestion to offer professional headshots also helped make the conference a more memorable, supportive experience, bringing an innovative touch that attendees appreciated.
 
 Locally, I extended this sense of connection by creating the Seattle Affinity Group and organizing Seattle RSE Meetups. These gatherings have become spaces where RSEs share their journeys and feel a genuine sense of belonging, reinforcing the idea that we grow stronger as a collective. My blog amplifies this mission, addressing challenges BIPOC RSEs face and ensuring diverse voices are heard and valued.
 
 In all my efforts, I strive to build a resilient, inclusive RSE community that empowers each member to engage fully, feel represented, and thrive in both their work and community.
 
-## Daniel (DAN-yuhl) Madren (MAD-ren) (he/him)
+<a name="daniel"></a>
+<br>
+## Daniel Madren (DAN-yuhl MAD-ren) (he/him)
 
 [Email](mailto:dmadren@purdue.edu), [Profile](http://linkedin.com/in/danielmadren)
 
@@ -90,8 +97,9 @@ I am dedicated to advancing the Research Software Engineering (RSE) community by
 
 My contributions to the RSE community span leadership, development, and strategy. At Purdue, I helped establish the RSE Center, creating scalable models, working with faculty, and developing funding mechanisms for long-term RSE growth. Collaborating with institutions like Notre Dame, I’ve promoted partnerships to improve Indiana’s research infrastructure. I’m passionate about connecting people and fostering synergies across research centers, seeing firsthand how shared resources drive innovation. This is evident in my role with the RSE Group Leaders, volunteering at PEARC, and connecting with the European RSE organization. At SC, I’m presenting “Self-Sustaining Operational Models in RSE” and leading a workshop on agile project management for 70+ young professionals, sharing my vision for scalable RSE practices internationally. As a US-RSE Steering Committee member, I’ll leverage my expertise to expand RSE across the U.S., knowing that, as Aristotle said, “the whole is greater than the sum of its parts.”
 
-
-## Julia (U-lia) Damerow (she/her)
+<a name="julia"></a>
+<br>
+## Julia Damerow (U-lia) (she/her)
 
 [Email](mailto:jdamerow@asu.edu), [Profile](https://www.linkedin.com/in/julia-damerow)
 
@@ -103,6 +111,8 @@ As it is the case for many RSEs, my career path was more of a winding road than 
 
 I have been on the US-RSE Steering Committee since 2021 and have served as its treasurer since 2022. In this role, I have supported US-RSE's transition to our current fiscal sponsor, Community Initiatives (CI), and continue to work closely with CI on financial matters for US-RSE. I co-organize US-RSE’s monthly community calls, contribute as a member of both the Education and Training Working Group and the Code Review Working Group, and have co-organized the US-RSE Virtual Workshops in 2021 and 2022. In 2023, I co-chaired the first US-RSE conference, and as treasurer, I was also involved in the financial aspects of US-RSE’24. In addition to my work with US-RSE, I serve on the steering committee of DHTech, a community of people doing technical work in digital humanities. DHTech hosts virtual meetups, conference workshops, and a bi-monthly newsletter. I am also actively involved in the DHTech Community Code Review Working Group, where we organize code reviews for digital humanities projects. As Lead Scientific Software Engineer at Arizona State University, I developed a course on research software engineering fundamentals that introduces graduate students to essential software engineering best practices and technologies. I also work extensively with student workers, mentoring them in software development. While most of them move on to work for tech companies after graduation, they learn about the research software engineering profession through their work with me.
 
+<a name="kenton"></a>
+<br>
 ## Kenton McHenry
 
 [Email](mailto:mchenry@illinois.edu), [Profile](http://www.linkedin.com/in/kenton-mchenry)
@@ -113,11 +123,11 @@ For over 35 years, the National Center for Supercomputing Applications (NCSA) ha
 
 **How do you contribute to the US-RSE Association or RSE community more broadly?**
 
-I have long bemoaned to my coworkers and bosses on how software is not treated nearly as seriously as it should be in science. And not just the software but the people who create and run it are often not recognized proportionally to the impact their work has on the scientific results. Finally putting some “skin in the game”, I started an informal “CSE Cabal” at LBL (CSE is the job title for Software Engineers) to support and build a community of RSEs. I’m now turning that into an LBL-RSE affiliate group. Having made some traction with upper management at LBL, I am now the lead of a new Sustainable Software Engineering group with 6 RSEs working across multiple scientific disciplines. This came as a result of me successfully demonstrating, over the course of several years, the importance and impact of having a funded “Software Engineering” effort on multiple DOE projects.
+As a current member of the US-RSE Steering Committee, I have contributed in various roles, including as an Elections Chair for the 2023 elections, helping organize the first US-RSE Community Awards, and serving as liaison to the Research Computing and Data Community Builders group. Last year, I acted as Technical Program Chair for our inaugural US-RSE conference, where I collaborated with subcommittees to announce a call for submissions, oversee reviews, and create the program.  In my role as an RSE at the University of Illinois, I helped establish a team of 50 RSEs, officially adopted the RSE title, improved HR practices around RSEs, and initiated a career path. Leveraging this experience I served on the ADSA/US-RSE Career Support Workshop steering committee, where I facilitated a working group that authored a book chapter on managing RSE groups as a guide for new RSE teams.  Beyond these efforts, I have advocated for formal recognition of software contributions in scientific research. I drove the NSF-funded EarthCube initiative to classify notebooks as peer-reviewed scholarly objects, which resulted in a Sloan-funded project with the American Geophysical Union and Wiley where I contributed to developing a process that allows AGU and other publishers to accept notebooks as peer-reviewed publications.  As a McNair Scholar, a program focused on increasing diversity in PhD attainment, I am committed to enhancing diversity within both computer science and the RSE profession.
 
-I’ve been an active member of the BSSw and US-RSE for several years now, participating in meetings and producing content for web sites and working groups.  Most recently, I led a Birds of a Feather session at the US-RSE23 conference on “What it means to be an RSE at a National Lab” where we explored the differences between and challenges faced by RSE at various National Labs.
-
-## Lezlie (Lez-lee) Espana (eh-spawn-yuh) (she/her)
+<a name="lezlie"></a>
+<br>
+## Lezlie Espana (Lez-lee eh-spawn-yuh) (she/her)
 
 [Email](mailto:mohammadi_shad@harvard.edu), [Profile](https://www.linkedin.com/in/mmsh/)
 
@@ -133,7 +143,9 @@ Since joining the US-RSE in 2022, I’ve contributed to several working groups a
 
 Outside of the US-RSE, I work with medical, undergraduate, and graduate students that rotate through our research lab and have the unique opportunity to expose them to RSE techniques and ideas (and the US-RSE). While not directly related to the RSE community, I’m actively working in my department’s Justice, Equity, Diversity, and Inclusion group and serving on the steering committee for the local LGBTQ+ Alliance in my county. These community experiences continually inform my interactions with RSEs both at my institution and in the US-RSE.
 
-## Miranda (Mer-an-duh) Mundt Muh-n-dt (like Bundt cake, but with an M) (she/her)
+<a name="miranda"></a>
+<br>
+## Miranda Mundt (Mer-an-duh Muh-n-dt; like Bundt cake, but with an M) (she/her)
 
 [Email](mailto:mmundt@sandia.gov), [Website](https://mrmundt.github.io/),
 [Profile](https://www.linkedin.com/in/mirandamundt/)
@@ -148,7 +160,9 @@ The work is not done yet. I’d like to continue to help US-RSE grow into an eve
 
 I have been a member of US-RSE since 2020 and have been an active member of multiple working groups including Diversity, Equity, and Inclusion; Outreach; and the Group Management Working Group. In previous years I have organized workshops, such as RSEs in eScience, and led multi-institution collaborations between RSEs within US-RSE to publish papers in Computational Science and Engineering (CISE) and in response to Requests for Information (RFIs). In the last two years as a member of the Steering Committee, I was one of the architects of the Community and Travel Funds program, the first open-to-all-members avenue for the community to request funds for community and individual purposes, and contributed heavily to many precedential decisions (as well as coining the term “Season of Precedents”). Additionally, I acted as the co-General Chair for US-RSE’24 in Albuquerque, NM, our second conference in what will hopefully be a very long and fruitful series, which received stellar reviews and feedback from the overall community. Outside US-RSE, I lead a Research Software Engineering Community of Practice within Sandia National Laboratories. In my “day job,” I act as both a researcher and practitioner with a focus on software engineering for scientific projects and fundamental research into research software engineering topics such as reproducibility and testing.
 
-## Sujata (Su-jata) Goswami (G-oh-s-w-AA-m-ee) (she/her/hers)
+<a name="sujata"></a>
+<br>
+## Sujata Goswami (Su-jata G-oh-s-w-AA-m-ee) (she/her/hers)
 
 [Email](mailto:sujatagoswami@lbl.gov), [Profile](https://www.linkedin.com/in/sujata-goswami/)
 
@@ -160,10 +174,10 @@ Finally, being part of the committee would allow me to contribute directly to ou
 
 **How do you contribute to the US-RSE Association or RSE community more broadly?**
 
-1. Community Building and Networking: I participate in US-RSE events, webinars, and working groups. I enjoy connecting with other RSEs, exchanging ideas on best practices, and discussing the latest advancements in research software. This networking helps grow the community and provides support for RSEs navigating the challenges of this relatively new career path.
+**Community Building and Networking**: I engage in US-RSE events, webinars, and working groups to connect with other RSEs, exchange ideas on best practices, and discuss advancements in research software. These activities strengthen the RSE community, build support networks, and offer resources for those navigating this emerging field.
 
-2. Mentorship and Professional Development: I’m committed to helping early-career RSEs and others considering RSE as a career path. Whether through informal mentorship or participating in workshops, I aim to share resources, help with career advice, and provide insights into the skill sets that make RSEs valuable. These efforts help strengthen the pipeline of future RSEs and highlight the rewarding aspects of the role.
+**Mentorship and Professional Development**: I support early-career RSEs and those considering the RSE path by offering resources, career advice, and insights into essential skills. Through informal mentorship and workshops, I aim to build a robust pipeline of future RSEs, showcasing the rewarding aspects of this profession.
 
-3. Advocacy and Awareness: Within my institution and professional networks, I advocate for the value of RSEs and the critical role they play in advancing research. This includes promoting fair recognition, funding, and career paths for RSEs, as well as helping researchers understand the long-term impact of investing in robust software development practices.
+**Advocacy and Awareness**: I advocate for the recognition of RSEs within my institution and networks, highlighting their vital role in research. This includes promoting fair funding, career paths, and educating researchers on the lasting value of investing in strong software practices.
 
-4. Knowledge Sharing and Open-Source Contributions: I aim to contribute to open-source projects and share resources on software best practices, tools, and workflows that support reproducibility and efficiency in research. By doing this, I aim to raise awareness about RSE best practices and help researchers, even beyond the core RSE community, adopt sustainable software development principles.
+**Knowledge Sharing and Open-Source Contributions**: I contribute to open-source projects and share best practices, tools, and workflows to support research reproducibility. By promoting sustainable software practices, I hope to encourage researchers across fields to adopt lasting, effective development approaches.
