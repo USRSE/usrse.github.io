@@ -129,7 +129,7 @@ As a current member of the US-RSE Steering Committee, I have contributed in vari
 <br>
 ## Lezlie Espana (Lez-lee eh-spawn-yuh) (she/her)
 
-[Email](mailto:mohammadi_shad@harvard.edu), [Profile](https://www.linkedin.com/in/mmsh/)
+[Email](mailto:mohammadi_shad@harvard.edu), [Profile](https://www.linkedin.com/in/lezlieespana)
 
 **Why do you want to be on the US-RSE Steering Committee?**
 
