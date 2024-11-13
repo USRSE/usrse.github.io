@@ -96,7 +96,7 @@ Additionally, Steering Committee members are expected to:
 * Contribute to US-RSE operations through activities such as
   * Updating the website
   * Writing newsletters and communications
-  * Organizing and leading community calls and events
+  * Organizing and leading community events
   * Engaging with community members on Slack
 * Help further the community by
   * Participating on international RSE committees
