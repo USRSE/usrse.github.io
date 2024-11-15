@@ -20,7 +20,6 @@ In this issue:
     * [Annual General Meeting (AGM)](#agm)
     * [Community Calls](#community-calls)
     * [RSE Empowerment in National Labs](#wg-national-labs-empowerment)
-    * [Local Meetups](#meetups)
 * [7. Interesting Events and Opportunities](#events)
 * [8. Interesting Reads, Videos, or Podcasts](#reads)
 * [9. Steering Committee Update](#sc-update)
@@ -159,11 +158,11 @@ Do you think the [FAIR principles for Research Software](https://doi.org/10.1549
 
 2+ years after publishing, with over 500 people involved, we’re keen to understand if the FAIR principles have been useful & usable. If not, we’re asking the community what needs changing to make them work.
 
-Survey: https://forms.gle/sRhRQD4gWBQWzcGS7
+Survey: [https://forms.gle/sRhRQD4gWBQWzcGS7](https://forms.gle/sRhRQD4gWBQWzcGS7)
 
 Webinars about the review process:
-1. Nov 25, 2024, 9 am ET / 8 am CT / 7 am MT / 6 am PT - https://illinois.zoom.us/meeting/register/tZYkduiurTIvE9QYmlH6qg51h-SSoyprzUef
-2. Dec 5, 2024, 7 pm ET / 6 pm CT / 5 pm MT / 4 pm PT - https://illinois.zoom.us/meeting/register/tZwod-6gqj4qE9Ewl7M-890S-VYNkUM4UiKh
+1. Nov 25, 2024, 9 am ET / 8 am CT / 7 am MT / 6 am PT - [https://illinois.zoom.us/meeting/register/tZYkduiurTIvE9QYmlH6qg51h-SSoyprzUef](https://illinois.zoom.us/meeting/register/tZYkduiurTIvE9QYmlH6qg51h-SSoyprzUef)
+2. Dec 5, 2024, 7 pm ET / 6 pm CT / 5 pm MT / 4 pm PT - [https://illinois.zoom.us/meeting/register/tZwod-6gqj4qE9Ewl7M-890S-VYNkUM4UiKh](https://illinois.zoom.us/meeting/register/tZwod-6gqj4qE9Ewl7M-890S-VYNkUM4UiKh)
 
 ### 💥**A Survey on Refactoring Practices in the Development of Scientific Software**
 
