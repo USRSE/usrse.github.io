@@ -55,13 +55,13 @@ or ask in the [`#community-grants`](https://app.slack.com/client/T8ZT4PJSW/C05M3
 
 ### Application Details
 
-- **Next Application Deadline**: September 30, 2024
+- **Next Application Deadline**: December 31, 2024
 - **[Application Form](https://forms.gle/hXL95UymjTcR3Kb29)**
 
 The next round of application deadlines will be:
 
-- December 31, 2024
 - March 31, 2025
+- June 30, 2025
 
 The application will request the following details:
 

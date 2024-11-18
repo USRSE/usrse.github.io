@@ -19,9 +19,4 @@ The more responses we have, the better our knowledge.
 
 For more details on the survey visit [https://software.ac.uk/news/complete-international-rse-survey-and-help-us-understand-rse-community](https://software.ac.uk/news/complete-international-rse-survey-and-help-us-understand-rse-community). 
 
-**You can complete the 2021 RSE survey in
-[English](https://softwaresaved.limequery.com/386272?lang=en),
-[French](https://softwaresaved.limequery.com/386272?lang=fr),
-[German](https://softwaresaved.limequery.com/386272?lang=de-informal),
-or [Spanish](https://softwaresaved.limequery.com/386272?lang=es).**
-
+**NOTE: this survey has ended and the results can be found [here](https://softwaresaved.github.io/international-survey-2022/).**

@@ -1,0 +1,41 @@
+basic:
+
+standard:
+  - name: "Center for Research Computing - University of Notre Dame"
+    url: https://crc.nd.edu/
+    figure: logo-crc-notre.png
+    acronym: "CRC"
+    date_joined: 2024-10-10
+    founding_member: true
+    tier: "Standard"
+  - name: "Rosen Center for Advanced Computing - Purdue"
+    url: https://www.rcac.purdue.edu/
+    figure: logo-rcac-purdue.png
+    acronym: "RCAC"
+    date_joined: 2024-10-28
+    founding_member: true
+    tier: "Standard"
+    background: rgba(0, 0, 0, 0.7)
+  - name: "NSF National Center for Atmospheric Research"
+    url: https://ncar.ucar.edu/
+    figure: logo-ncar.png
+    acronym: NCAR
+    date_joined: 2024-11-05
+    founding_member: true
+    tier: "Standard"
+  - name: "Pasteur ISI"
+    url: https://pasteurlabs.ai/
+    figure: logo-pasteur.png
+    acronym:
+    date_joined: 2024-11-07
+    founding_member: true
+    tier: "Standard"
+  - name: "Research Technologies - Indiana University"
+    url: https://uits.iu.edu/about/org-structure/research-technologies/
+    figure: logo-uits-indiana.png
+    acronym: UITS
+    date_joined: 2024-11-07
+    founding_member: true
+    tier: "Standard"
+
+premier:

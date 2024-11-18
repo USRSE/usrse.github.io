@@ -1,3 +1,78 @@
+- expires: 2025-06-01
+  location: Princeton University, Princeton, NJ
+  name: Research Software Engineer I
+  posted: 2024-11-15
+  url: https://main-princeton.icims.com/jobs/20160/research-software-engineer-i/job?mode=view
+- expires: 2025-02-26
+  location: Princeton University and NOAA GFDL, Princeton, NJ
+  name: Postdoctoral Research Associate - data science and engineering
+  posted: 2024-11-15
+  url: https://puwebp.princeton.edu/AcadHire/apply/application.xhtml?listingId=36921
+- expires: 2024-11-30
+  location: WEC, IFAS, University of Florida, Gainesville, FL, US
+  name: Computer Vision Developer
+  posted: 2024-11-14
+  url: https://jabberwocky.weecology.org/2024/11/14/were-hiring-a-computer-vision-developer/
+- expires: 2024-12-15
+  location: International Brain Laboratory, multiple locations, full remote work possible
+  name: Research Software Engineer
+  posted: 2024-11-06
+  url: https://drive.google.com/file/d/11jgmO0dyJehNFO9UrCeimW_4o8cs7o7T/view
+- expires: 2024-11-19
+  location: University of Colorado, Boulder, Boulder, CO
+  name: Data Systems Team Lead
+  posted: 2024-11-06
+  url: https://jobs.colorado.edu/jobs/JobDetail/Data-Systems-Team-Lead/60284
+- expires: 2024-11-30
+  location: Science Systems and Applications, Inc., Greenbelt, MD
+  name: Senior Cloud Engineering Team Lead
+  posted: 2024-10-30
+  url: https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=a40f480a-47ae-461b-bf11-ceedb843d226&ccId=19000101_000001&jobId=479506&source=CC2&lang=en_US
+- expires: 2024-11-07
+  location: Pacific Northwest National Laboratory, Richland or Seattle, WA
+  name: Systems Biology Modeling Lead
+  posted: 2024-10-30
+  url: https://careers-pnnl.icims.com/jobs/9807/systems-biology-modeling-lead/job
+- expires: 2024-11-05
+  location: CIRES (positioned at NOAA/SWPC), Boulder, CO (hybrid)
+  name: Full Stack Software Developer
+  posted: 2024-10-29
+  url: https://jobs.colorado.edu/jobs/JobDetail?jobId=60092
+- expires: 2024-11-25
+  location: Johns Hopkins University, Baltimore, Maryland
+  name: Sr. Software Engineer
+  posted: 2024-10-24
+  url: https://jobs.jhu.edu/job/Baltimore-Sr_-Software-Engineer-MD-21202/1222311100/
+- expires: 2024-11-18
+  location: Amentum (NASA Contractor), Houston, TX (remote/flexible)
+  name: HPC Research Software Engineer
+  posted: 2024-10-22
+  url: https://www.amentumcareers.com/jobs/hpc-research-software-engineer-houston-texas-united-states
+- expires: 2024-11-04
+  location: Lawrence Berkeley National Lab, Berkeley, CA
+  name: Research Software Engineer
+  posted: 2024-10-15
+  url: https://jobs.lbl.gov/jobs/research-software-engineer-6752
+- expires: 2024-11-01
+  location: Lawrence Berkeley National Laboratory, Berkeley, CA (Hybrid)
+  name: Research Software Engineer (HYBRID)
+  posted: 2024-10-15
+  url: https://jobs.lbl.gov/jobs/research-software-engineer-hybrid-6750
+- expires: 2024-11-11
+  location: Science Systems and Applications, Inc., Greenbelt, MD
+  name: Ocean Modeling Integration/Testing/Validation (ITV) Developer
+  posted: 2024-10-15
+  url: https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=a40f480a-47ae-461b-bf11-ceedb843d226&jobId=475705&lang=en_US
+- expires: 2024-11-02
+  location: Space Telescope Science Institute, Baltimore, MD (Hybrid)
+  name: Level I Software Engineer (Scientific Python Programmer)
+  posted: 2024-10-03
+  url: https://recruiting2.ultipro.com/SPA1004AURA/JobBoard/93330e50-7b3a-4ba8-94f2-6f32360aa4e1/OpportunityDetail?opportunityId=765c1d8c-975f-4ce2-830c-efd68dbe8691
+- expires: 2024-10-31
+  location: Science Systems and Applications, Inc., Greenbelt, MD
+  name: Atmospheric Data Assimilation Software Engineer
+  posted: 2024-10-01
+  url: https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=a40f480a-47ae-461b-bf11-ceedb843d226&ccId=19000101_000001&jobId=475218&source=CC2&lang=en_US
 - expires: 2024-10-26
   location: University of Illinois Urbana-Champaign, Urbana, IL
   name: Staff or Senior Research Engineer or Scientist
@@ -38,17 +113,12 @@
   location: Georgia Institute of Technology, Remote Eligible
   name: Research Scientist II/Senior
   posted: 2024-09-10
-  url: https://careers.hprod.onehcm.usg.edu/psp/careers/CAREERS/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=3000&JobOpeningId=276858&PostingSeq=1
+  url: https://careers.hprod.onehcm.usg.edu/psp/careers/CAREERS/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=3000&JobOpeningId=277720&PostingSeq=1
 - expires: 2024-10-31
   location: Eagle Rock Analytics, Sacramento, CA / Remote
   name: Senior Full-Stack Geospatial Developer
   posted: 2024-09-10
   url: https://eaglerockanalytics.com/career/senior-full-stack-geospatial-or-scientific-developer-remote-full-time-sacramento-ca/
-- expires: 2024-09-16
-  location: NSF National Center for Atmospheric Research, Boulder, CO (Can be remote/flexible)
-  name: Software Engineer II
-  posted: 2024-08-30
-  url: https://ucar.wd5.myworkdayjobs.com/UCAR_Careers/job/Mesa-Lab-Building/Software-Engineer-II_REQ-2024-167-1
 - expires: 2024-09-29
   location: NSLS-II at Brookhaven National Laboratory, Upton, NY
   name: Scientific Web Applications Developer (junior, 3-7 years exp)
@@ -70,16 +140,6 @@
   name: Research Software Engineer
   posted: 2024-08-26
   url: https://jobs.bnl.gov/job/upton/research-software-engineer/3437/68796372608
-- expires: 2024-09-06
-  location: Center for Digital Antiquity at Arizona State University, Tempe, AZ
-  name: Research Software Engineer
-  posted: 2024-08-20
-  url: https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25620&siteid=5494&PageType=JobDetails&jobid=4986776
-- expires: 2024-09-16
-  location: University of Delaware, DE (hybrid)
-  name: Research Software Engineer (RSE)
-  posted: 2024-08-14
-  url: https://drive.google.com/file/d/1Nyb3AFyylRW40qPOuWA33MRAlndhAVXs/view?usp=sharing
 - expires: 2024-12-31
   location: University of Vermont, Burlington, VT
   name: Research Software Engineer
@@ -105,7 +165,7 @@
   name: Computational Research Scientist II - Bone/Musculoskeletal Biomechanics
   posted: 2024-07-30
   url: https://jobs.hjf.org/jobs/4644?lang=en-us
-- expires: 2024-11-01
+- expires: 2024-12-31
   location: Princeton University, Princeton, NJ
   name: Lead Research Software Engineer
   posted: 2024-07-22
@@ -115,11 +175,6 @@
   name: Software Engineer
   posted: 2024-07-19
   url: https://careersearch.stanford.edu/jobs/software-engineer-26078
-- expires: 2024-08-25
-  location: Berkeley Lab, Berkeley, California
-  name: Software Developer Beamline Controls
-  posted: 2024-07-17
-  url: https://jobs.lbl.gov/jobs/software-developer-beamline-controls-6603
 - expires: 2024-10-01
   location: Brookhaven National Laboratory, Upton, NY
   name: Research Software Engineer
@@ -130,72 +185,17 @@
   name: Chief Technology Officer and Director for Software
   posted: 2024-07-11
   url: https://recruiting2.ultipro.com/SPA1004AURA/JobBoard/57b96f30-6a4b-42cc-8f73-d417a17b54e9/OpportunityDetail?opportunityId=3f55028a-6d04-4f1d-84af-1d66d754a4f1
-- expires: 2024-08-31
-  location: Earth Big Data, Remote, US
-  name: Cloud Data Scientist and Software Engineer
-  posted: 2024-07-10
-  url: https://earthbigdata.com/careers
-- expires: 2024-08-31
-  location: Cornell Lab of Ornithology, Hybrid/Remote (Ithaca, NY)
-  name: Database Engineer
-  posted: 2024-06-27
-  url: https://cornell.wd1.myworkdayjobs.com/en-US/CornellCareerPage/details/Database-Engineer_WDR-00042849-1?q=ornithology
 - expires: 2024-09-30
   location: Library Innovation Lab, Harvard Law School, Cambridge, MA (Hybrid- and
     Remote-eligible)
   name: Software Engineering Manager
   posted: 2024-06-26
   url: https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25240&siteid=5341#jobDetails=2009078_5341
-- expires: 2024-07-31
-  location: Lawrence Berkeley National Laboratory, Berkeley, CA
-  name: User Experience Researcher
-  posted: 2024-06-26
-  url: https://jobs.lbl.gov/jobs/user-experience-researcher-6565
 - expires: 2024-09-30
   location: Manifest Technologies, New Haven, CT / Remote
   name: Full-stack Software Engineer
   posted: 2024-06-24
   url: https://www.manifesttech.io/career/full-stack-software-engineer
-- expires: 2024-08-20
-  location: Henry M Jackson Foundation, Frederick, MD
-  name: Computational Research Scientist II - PDM
-  posted: 2024-06-20
-  url: https://jobs.hjf.org/jobs/4391?lang=en-us
-- expires: 2024-08-20
-  location: Henry M Jackson Foundation, Frederick, MD
-  name: Computational Research Scientist III - PDM
-  posted: 2024-06-20
-  url: https://jobs.hjf.org/jobs/4390?lang=en-us
-- expires: 2024-08-20
-  location: Henry M Jackson Foundation, Frederick, MD
-  name: Computational Research Scientist III
-  posted: 2024-06-20
-  url: https://jobs.hjf.org/jobs/4393?lang=en-us
-- expires: 2024-08-30
-  location: Navteca in support of NASA JSC, Greenbelt, MD, Houston TX, Remote
-  name: DevOps Platform Engineer
-  posted: 2024-05-29
-  url: https://navteca.bamboohr.com/careers/25
-- expires: 2024-07-31
-  location: Argonne National Laboratory, Lemont, IL USA
-  name: "Postdoctoral Appointee \u2013 Machine Learning for X-ray Science"
-  posted: 2024-05-16
-  url: https://argonne.wd1.myworkdayjobs.com/Argonne_Careers/job/Lemont-IL-USA/Postdoctoral-Appointee---Machine-Learning-for-X-ray-Science_418219
-- expires: 2024-08-09
-  location: Oak Ridge National Laboratory, Oak Ridge, TN
-  name: Research Scientist III, Computational Fluid Dynamics Applications
-  posted: 2024-05-09
-  url: https://jobs.ornl.gov/job-invite/13030/
-- expires: 2024-08-08
-  location: Oak Ridge National Laboratory, Oak Ridge, TN
-  name: Research Scientist II, Computational Fluid Dynamics Applications
-  posted: 2024-05-09
-  url: https://jobs.ornl.gov/job-invite/13027/
-- expires: 2024-08-08
-  location: Oak Ridge National Laboratory, Oak Ridge, TN
-  name: Research Scientist, Computational Fluid Dynamics Applications
-  posted: 2024-05-09
-  url: https://jobs.ornl.gov/job-invite/13025/
 - expires: 2025-04-01
   location: The National Center for Supercomputing Applications, Urbana, IL
   name: Associate/Research Software Engineer/Senior

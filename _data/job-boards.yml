@@ -7,3 +7,5 @@ boards:
     url: https://academicdatascience.org/jobs
   - name: High Performance Computing (HPC) Jobs from hpc.social
     url: https://hpc.social/jobs/
+  - name: SGX3 and SGCI Science Gateways Community Jobs Board
+    url: https://sciencegateways.org/networking-community/jobs

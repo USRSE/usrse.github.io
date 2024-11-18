@@ -66,3 +66,40 @@ right of the page. This means to add a last modified date to a page, simply upda
 ```yaml
 set_last_modified: true
 ```
+
+### How do I add an organizational member?
+
+The organizational members page will automatically populate the bottom of the
+page once you modify the `_data/org-members.yaml` file and add their logo image
+to `assets/img/org-logos`.
+The `_data/org-members.yaml` file has three arrays for each tier we have.
+If the member is a "Basic" tier member, you would add them in the `basic:`
+section.
+Each entry takes the following variables:
+
+`name`
+: The full name of the member (used to fill the alt option of the img)
+
+`url`
+: The URL the organization wants their logo to redirect if clicked
+
+`figure`
+: The filename, with extension, of the image (do not include the path)
+
+`acronym` (optional)
+: An acronym of the member (if included, it will be part of the alt option of
+  the img)
+
+`date_joined` [format: `YYYY-MM-DD`]
+: When the member joined/paid (used to order the logos in each tier)
+
+`founding_member`
+: Whether the member is a founding member (currently not used)
+
+`tier`
+: The tier they paid for (also the section the entry is in)
+
+
+Make sure you add each logo to `assets/img/org-logos` directory.
+Generally, the images have been named with the following format
+`logo-acronym-institution`, but this isn't strict.

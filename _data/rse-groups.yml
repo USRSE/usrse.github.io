@@ -85,3 +85,13 @@
 - institution: University of Vermont
   name: Research Computing
   url: https://www.uvm.edu/it/research-computing
+- institution: Oak Ridge National Laboratory
+  name: Nuclear Code Integration Group
+  url: https://www.ornl.gov/group/nci
+- institution: Mississippi State University
+  name: High Performance Computing Collaboratory
+  url: https://www.hpc.msstate.edu
+- institution: Dartmouth College
+  name: Research Software Engineering
+  url: https://rc.dartmouth.edu/index.php/research-software-engineering/
+  

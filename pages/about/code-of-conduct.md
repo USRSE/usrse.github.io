@@ -40,10 +40,9 @@ $(document).ready(function(){
 <p>
     The current Code of Conduct Committee consists of:
     <ul>
+        <li> Ludovico Bianchi</li>
         <li> Lezlie Espa&ntilde;a</li>
-        <li> David Nicholson</li>
-        <li> Joshua Teves (on leave from approximately late February to mid April)</li>
-        <li> Ludovico Bianchi (temporarily standing in from approximately late February to mid April) </li>
+        <li> Joshua Teves</li>
     </ul>
     You may reach any of them on the US-RSE slack individually or email <a href="mailto:coc@us-rse.org">coc@us-rse.org</a> in order to contact them.
 </p>
