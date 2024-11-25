@@ -75,7 +75,7 @@ positions with "engineer" or "scientist" in their title.
 
 <h3><a href="{{ site.baseurl }}/ag/dmv-rse/">DMV-RSE</a></h3>
 
-DMV (Delaware-Maryland-Viriginia) RSE is a regional affinity group for professionals in RSE and RSE-adjacent disciplines.
+DMV (Delaware-Maryland-Virginia) RSE is a regional affinity group for professionals in RSE and RSE-adjacent disciplines.
 We organize informal gatherings where interested professionals can connect and learn from each others.
 
 <hr>
