@@ -9,7 +9,7 @@ set_last_modified: true
 
 # Overview
 
-DMV (Delaware-Maryland-Viriginia) RSE is a regional affinity group for professionals in RSE and RSE-adjacent disciplines. We organize informal gatherings where interested professionals can connect and learn from each other.
+DMV (Delaware-Maryland-Virginia) RSE is a regional affinity group for professionals in RSE and RSE-adjacent disciplines. We organize informal gatherings where interested professionals can connect and learn from each other.
 
 # Membership
 
