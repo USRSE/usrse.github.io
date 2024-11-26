@@ -3,7 +3,7 @@ layout: page
 title: DMV-RSE Affinity Group
 subtitle:
 menubar:
-permalink: /ag/dmv-rse
+permalink: /ag/dmv-rse/
 set_last_modified: true
 ---
 
