@@ -13,7 +13,7 @@ DMV (Delaware-Maryland-Virginia) RSE is a regional affinity group for profession
 
 # Membership
 
-DMV-RSE is open to anyone who considers themselves a research software engineer and lives in the DMV area, regardless of job title or domain. This includes workers in academic research (students, postdocs, and professors), as well as RSE professionals in government, industry and other sectors (e.g. non-profit orgs).  
+DMV-RSE is open to anyone who considers themselves a research software engineer or ally and lives in the DMV area, regardless of job title or domain. This includes workers in academic research (students, postdocs, and professors), as well as RSE professionals in government, industry and other sectors (e.g. non-profit orgs).  
 
 To stay informed, please:
 
