@@ -861,6 +861,28 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/171282530?v=4"
             ]
+        },
+        {
+            "login": "KristijanArmeni",
+            "name": "Kristijan Armeni",
+            "contributions": [
+                "code"
+            ],
+            "profile": "www.kristijanarmeni.net",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/14061041?v=4"
+            ]
+        },
+        {
+            "login": "jmelot",
+            "name": "Jennifer Melot",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/jmelot",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/1252409?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
