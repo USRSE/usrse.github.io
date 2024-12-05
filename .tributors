@@ -436,5 +436,17 @@
     "jperrsau-at-nrel": {
         "name": "jperrsau-at-nrel",
         "blog": "https://github.com/jperrsau-at-nrel"
+    },
+    "KristijanArmeni": {
+        "name": "Kristijan Armeni",
+        "bio": "cognitive neuroscientist;\r\nMEG, natural language processing, neural networks",
+        "blog": "www.kristijanarmeni.net",
+        "orcid": "0000-0001-8391-8965",
+        "affiliation": "Johns Hopkins University"
+    },
+    "jmelot": {
+        "name": "Jennifer Melot",
+        "bio": "Software engineer @georgetown-cset. Profile picture is of a Long-billed Curlew by Ingrid Taylar",
+        "blog": "https://github.com/jmelot"
     }
 }
