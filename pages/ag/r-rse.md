@@ -1,6 +1,6 @@
 ---
 layout: page
-title: R Affinity Group
+title: R-RSE Affinity Group
 subtitle:
 menubar:
 permalink: /ag/r-rse/
