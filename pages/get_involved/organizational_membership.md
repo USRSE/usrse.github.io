@@ -17,7 +17,7 @@ role in promoting RSEs to be universally respected for advancing science,
 technology, and society through the transformative power of research software
 engineering.
 The number of individual members of US-RSE has grown from about 20 in 2018 to
-over 2700 in 2024.
+over 3000 in 2024.
 
 {% include member-graph.html %}
 
