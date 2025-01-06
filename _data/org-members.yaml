@@ -39,3 +39,10 @@ standard:
     tier: "Standard"
 
 premier:
+  - name: "University of Illinois Urbana-Champaign"
+    url: https://illinois.edu/
+    figure: logo-uiuc.png
+    acronym: UIUC
+    date_joined: 2024-11-22
+    founding_member: true
+    tier: "Premier"
