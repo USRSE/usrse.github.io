@@ -139,7 +139,7 @@ The application will request the following details:
 <details>
   <summary><b>Q: What are examples of approved travel expenses?</b></summary>
     A: Some examples of approved travel expenses are economy-class airfare, baggage fees,
-    hotel costs, conference or event registration, and per diem for meals. The full
+    hotel costs, conference or event registration, and meals (with receipts). The full
     details can be found in our
     <a href="https://docs.google.com/document/d/1bXxgWqiKljF8VzftJMa_CdSzNrlO0z2tIVfTy-_Qg6o" target="_blank">
       General Travel Reimbursement Guidelines</a> document.

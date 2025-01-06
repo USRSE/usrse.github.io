@@ -73,4 +73,13 @@ and who works in the field of neuroscience, regardless of job title or domain.
 This includes grad students, postdocs, and professors, as well as those in permanent
 positions with "engineer" or "scientist" in their title.
 
+<h3><a href="{{ site.baseurl }}/ag/dmv-rse/">DMV-RSE</a></h3>
+
+DMV (Delaware-Maryland-Virginia) RSE is a regional affinity group for professionals in RSE and RSE-adjacent disciplines.
+We organize informal gatherings where interested professionals can connect and learn from each others.
+
+<h3><a href="{{ site.baseurl }}/ag/r-rse/">R-RSE</a></h3>
+
+The R Affinity Group (R-RSE) exists to increase the representation of R users in the US-RSE community and provide opportunities for members to develop R skills.
+
 <hr>

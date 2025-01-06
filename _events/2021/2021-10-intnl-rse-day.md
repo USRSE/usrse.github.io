@@ -22,7 +22,7 @@ of the day's events.
 _First International RSE Day Virtual Workshop Events Oct 14, 11:00 AM Eastern - 4:45 PM Eastern._
 
 An NSF-funded workshop titled “Building the research innovation workforce: a workshop
-to identify new insights and directions to advance the research computing community” recently found that collaborations between research software engineers, cyberinfrastructure professionals, and researchers were key to the research computing community [https://www.rcac.purdue.edu/files/ciworkforce2020/report.pdf](https://www.rcac.purdue.edu/files/ciworkforce2020/report.pdf).
+to identify new insights and directions to advance the research computing community” recently found that collaborations between research software engineers, cyberinfrastructure professionals, and researchers were key to the research computing community [https://www.rcac.purdue.edu/ciworkforce2020](https://www.rcac.purdue.edu/ciworkforce2020).
 
 But what do successful RSE, CI professional, and researcher teams and stakeholder interactions look like? How are they funded and how did people get started in this career?
 
