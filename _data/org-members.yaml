@@ -39,3 +39,17 @@ standard:
     tier: "Standard"
 
 premier:
+  - name: "University of Illinois Urbana-Champaign"
+    url: https://illinois.edu/
+    figure: logo-uiuc.png
+    acronym: UIUC
+    date_joined: 2024-11-22
+    founding_member: true
+    tier: "Premier"
+  - name: "Lawrence Berkeley National Laboratory"
+    url: https://lbl.gov
+    figure: logo-lbl.png
+    acronym: LBL
+    date_joined: 2024-12-19
+    founding_member: true
+    tier: "Premier"
