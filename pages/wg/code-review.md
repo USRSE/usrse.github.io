@@ -33,6 +33,9 @@ on the US-RSE slack.
 
 - [code-review.org](https://code-review.org/)
 - [Tidyteam code review principles](https://code-review.tidyverse.org/)
+- [Code review training module](https://intersect-training.org/Code-Review/)
+- ["How to do Code Reviews Like a Human"](https://www.youtube.com/watch?v=0t4_MfHgb_A) (lecture recording)
+- ["Contemporary Peer Code Review Practices in Research Software"](https://carver.cs.ua.edu/Slides/2019/CodeReviewTutorial/TutorialSlides.pdf) (slides)
 
 ### Automated Code Review Tools
 
