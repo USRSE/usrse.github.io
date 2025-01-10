@@ -49,7 +49,7 @@ on the US-RSE slack.
 
 ## Volunteer Opportunities
 
-- [rOpenSci](https://ropensci.org/)
+- [rOpenSci](https://ropensci.org/software-review)
 - [pyOpenSci](https://www.pyopensci.org/)
 - [JOSS](https://joss.theoj.org/)
 - [DHTech](https://dhcodereview.github.io/)
