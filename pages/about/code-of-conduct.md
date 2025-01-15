@@ -41,7 +41,7 @@ $(document).ready(function(){
     The current Code of Conduct Committee consists of:
     <ul>
         <li> Ludovico Bianchi</li>
-        <li> Lezlie Espa&ntilde;a</li>
+        <li> Suzanne Prentice</li>
         <li> Joshua Teves</li>
     </ul>
     You may reach any of them on the US-RSE slack individually or email <a href="mailto:coc@us-rse.org">coc@us-rse.org</a> in order to contact them.
