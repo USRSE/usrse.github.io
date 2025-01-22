@@ -3,7 +3,7 @@
 https://us-rse.org
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-82-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-83-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -227,6 +227,7 @@ tool to generate a contributors graphic below.
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/jperrsau-at-nrel"><img src="https://avatars.githubusercontent.com/u/171282530?v=4?s=100" width="100px;" alt="jperrsau-at-nrel"/><br /><sub><b>jperrsau-at-nrel</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jperrsau-at-nrel" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="www.kristijanarmeni.net"><img src="https://avatars.githubusercontent.com/u/14061041?v=4?s=100" width="100px;" alt="Kristijan Armeni"/><br /><sub><b>Kristijan Armeni</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=KristijanArmeni" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/jmelot"><img src="https://avatars.githubusercontent.com/u/1252409?v=4?s=100" width="100px;" alt="Jennifer Melot"/><br /><sub><b>Jennifer Melot</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jmelot" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://budhram.com.np"><img src="https://avatars.githubusercontent.com/u/1132451?v=4?s=100" width="100px;" alt="Budh Ram Gurung (BRG)"/><br /><sub><b>Budh Ram Gurung (BRG)</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=brgnepal" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
