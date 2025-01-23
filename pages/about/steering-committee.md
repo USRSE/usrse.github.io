@@ -11,15 +11,15 @@ set_last_modified: true
 
 ### Current Steering Committee
 
-* Keith Beattie, Lawrence Berkeley National Laboratory, 2024-2025
-* Jeffrey C. Carver, University of Alabama, 2019-2025
-* Cordero Core, University of Washington, 2025-2026
-* Ian Cosden, Princeton University, 2019-2025
-* Julia Damerow, Arizona State University, 2021-2026
-* Alex Koufos, Stanford University, 2024-2025
+* Keith Beattie, Lawrence Berkeley National Laboratory, 2024-2025, Co-Secretary, International Council Rep
+* Jeffrey C. Carver, University of Alabama, 2019-2025, Vice Chair
+* Cordero Core, University of Washington, 2025-2026, Election Co-Chair
+* Ian Cosden, Princeton University, 2019-2025, Chair, International Council Rep
+* Julia Damerow, Arizona State University, 2021-2026, Treasurer
+* Alex Koufos, Stanford University, 2024-2025, Co-Secretary
 * Kenton McHenry, University of Illinois at Urbana-Champaign, 2023-2026
-* Miranda Mundt, Sandia National Laboratories, 2023-2026
-* Abbey Roelofs, University of Michigan, 2024-2025
+* Miranda Mundt, Sandia National Laboratories, 2023-2026, Election Co-Chair
+* Abbey Roelofs, University of Michigan, 2024-2025, Deputy Treasurer
 
 ### Former Steering Committee Members
 
