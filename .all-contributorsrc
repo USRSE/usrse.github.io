@@ -883,6 +883,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/1252409?v=4"
             ]
+        },
+        {
+            "login": "brgnepal",
+            "name": "Budh Ram Gurung (BRG)",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://budhram.com.np",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/1132451?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

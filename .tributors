@@ -448,5 +448,10 @@
         "name": "Jennifer Melot",
         "bio": "Software engineer @georgetown-cset. Profile picture is of a Long-billed Curlew by Ingrid Taylar",
         "blog": "https://github.com/jmelot"
+    },
+    "brgnepal": {
+        "name": "Budh Ram Gurung (BRG)",
+        "bio": "Open Source Advocate, Software Developer, IT Career Coach and Entrepreneur",
+        "blog": "https://budhram.com.np"
     }
 }
