@@ -23,22 +23,23 @@ talk about the person and tie their work and life to the RSE movement.
   [Wikipedia](https://en.wikipedia.org/wiki/A._Philip_Randolph)
 * Check back here for links as articles are posted
 
-In addition, we’re excited to host a discussion (tentatively on 2/20).
-[@Cordero Core](https://usrse.slack.com/team/U0523JRUDE3) shared one of his
-favorite YouTube channels with us from Garrison Hayes. We invite you to watch
-the three episodes linked below from [Garrison Hayes' YouTube
+In addition, we’re excited to host a **Zoom discussion on Thursday, February
+20th at noon PT / 3 PM ET**. [@Cordero
+Core](https://usrse.slack.com/team/U0523JRUDE3) shared one of his favorite
+YouTube channels with us from Garrison Hayes. We invite you to watch the three
+episodes linked below from [Garrison Hayes' YouTube
 channel](https://www.youtube.com/@GarrisonHayes/featured), and then come
-prepared for a lively, engaging, and thought provoking conversation with us on
-Thursday, February 20th and continuing in the
-[\#dei-discussion](https://usrse.slack.com/archives/C01C8CJQ7AP) channel on
-Slack. For those that aren't familiar, Garrison explores a variety of
-interesting questions, usually at the intersection of Black history, politics
-and current events.
+prepared for a lively, engaging, and thought provoking conversation with us
+over Zoom on Thursday, February 20th and continuing in the [`#dei-discussion`
+channel](https://usrse.slack.com/archives/C01C8CJQ7AP) on Slack (details and
+link in the channel). For those that aren't familiar, Garrison explores a
+variety of interesting questions, usually at the intersection of Black history,
+politics and current events.
 
 * [Why the right is so obsessed with
   DEI](https://www.youtube.com/watch?v=ARKvxeNCp84)
-* [Tim Scott and the “token black
-  guy”](https://www.youtube.com/watch?v=TcEOpjV1Upc)
+* [Tim Scott and the "token black
+  guy"](https://www.youtube.com/watch?v=TcEOpjV1Upc)
 * [Why are Black people still
   Christian?](https://www.youtube.com/watch?v=lKSF1huXOuw)
 
@@ -48,9 +49,13 @@ hashtag `#usrse-blackhistory`.
 
 ### **Events/Conferences**
 
+* [**US-RSE Zoom Discussion**](https://usrse.slack.com/archives/C01C8CJQ7AP) -
+  Thursday, February 20 - Garrison Hayes episodes on DEI, the "token black
+  guy", and Black Christians - Register on Slack in the [`#dei-discussion`
+  channel](https://usrse.slack.com/archives/C01C8CJQ7AP)
 * [Black Tech Week](https://blacktechweek.com/) \- July 14-16 at the Aronoff
   Center in Cincinnati, OH
-* [BitCon 2025](https://bitcon.blacksintechnology.net/) \- BITCON is the annual
+* [BitCon 2026](https://bitcon.blacksintechnology.net/) \- BITCON is the annual
   conference for the largest community of Black technology professionals
   globally
 * [Black Women in Data Summit 2025](https://www.blackwomenindata.com/) \-
