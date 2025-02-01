@@ -37,6 +37,13 @@ standard:
     date_joined: 2024-11-07
     founding_member: true
     tier: "Standard"
+  - name: "Globus - A UChicago non-profit service"
+    url: https://globus.org
+    figure: logo-globus.png
+    acronym: 
+    date_joined: 2025-01-05
+    founding_member: true
+    tier: "Standard"
 
 premier:
   - name: "University of Illinois Urbana-Champaign"
