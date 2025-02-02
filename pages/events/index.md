@@ -26,17 +26,14 @@ permalink: /events/
       </div>
       <div class="col-xs-4 float-right">
         <h6 style="text-align: right; color: rgb(168, 168, 168)">
-          October 2025
+          October 6-8, 2025
         </h6>
       </div>
   </div>
   <div class="card-body">
-    <h6 class="card-subtitle mb-2">
-    TBA
-    </h6>
-    
     <p class="card-text">
-      TBA. 
+      Join several hundred of your RSE colleagues and RSE-allies in Philadelphia in October.<br><br>
+        <a href=""/usrse25/">Learn more about the conference</a>.
     </p>
 
   </div>
