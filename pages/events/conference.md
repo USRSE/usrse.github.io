@@ -32,7 +32,7 @@ permalink: /events/conference/
     </h6>
     
     <p class="card-text">
-      October 6-8, 2025
+      Share your work, improve your skills, and connect with other RSEs
     </p>
 
   </div>
