@@ -21,7 +21,7 @@ permalink: /events/
   <div class="card-header" style="background-color: {{ color }};">
       <div class="col-sm-8">
         <h5 style="margin: 0px -15px; color: rgb(255, 255, 255)">
-          USRSE'25: Philadelphia, PA
+          USRSE'25: Code, Practices, and People
         </h5>
       </div>
       <div class="col-xs-4 float-right">
@@ -32,8 +32,8 @@ permalink: /events/
   </div>
   <div class="card-body">
     <p class="card-text">
-      Join several hundred of your RSE colleagues and RSE-allies in Philadelphia in October.<br><br>
-        <a href=""/usrse25/">Learn more about the conference</a>.
+      Join several hundred of your RSE colleagues and RSE-allies in Philadelphia, PA in October.<br><br>
+        <a href="{{ site.baseurl }}/usrse25/">Learn more about the conference</a>.
     </p>
 
   </div>
