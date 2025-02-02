@@ -27,8 +27,8 @@ to help you deal with problematic statements, like "Women need to learn to be
 more confident." The guide provides questions to ask and comments to add
 that can prevent these problematic statements from derailing a discussion.
 Two more guides we'd like to highlight are aimed specifically at interrupting bias
-[in industry](https://ncwit.org/resource/biasindustry/)
-and [in academic settings](https://ncwit.org/resource/biasacademic/).
+[in industry](https://web.archive.org/web/20240918183150/https://ncwit.org/web/20240918183150/https://ncwit.org/resource/biasindustry/)
+and [in academic settings](https://web.archive.org/web/20240920195042/https://ncwit.org/web/20240920195042/https://ncwit.org/resource/biasacademic/).
 
 The DEI working group is building a collection of resources like these
 so that we can learn from organizations like NCWIT
