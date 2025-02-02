@@ -21,10 +21,10 @@ rrule:
   - RDATE;TZID=America/New_York:20220127T120000
 ---
 
-Planning meetings for USRSE monthly community calls occur on the fourth Thursday of each month. 12:00-13:00 Eastern. This is a working meeting to
+Planning meetings for US-RSE monthly community calls occur on the fourth Thursday of each month. 12:00-13:00 Eastern. This is a working meeting to
 plan for the next community call. All are welcome to join the call, zoom details will be posted to the Community Call channel.
 
 Any and all suggestions for community topics are 
 welcome at [https://github.com/USRSE/monthly-community-calls/issues](https://github.com/USRSE/monthly-community-calls/issues).
-Anyone in USRSE is super welcome to lead a call on a topic of their choosing. Feel free to reach out to the organizers (currently Julia Damerow and
-Abbey Roelofs) on USRSE slack ("@Julia Damerow" and/or "@Abbey Roelofs") or elsewhere if you would like to host (or help with) a call.
+Anyone in US-RSE is super welcome to lead a call on a topic of their choosing. Feel free to reach out to the organizers (currently Julia Damerow and
+Abbey Roelofs) on US-RSE Slack ("@Julia Damerow" and/or "@Abbey Roelofs") or elsewhere if you would like to host (or help with) a call.
