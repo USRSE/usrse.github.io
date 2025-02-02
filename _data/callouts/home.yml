@@ -3,7 +3,7 @@ style: is-light
 items:
   - title: Read our latest newsletter
     subtitle: >
-      Learn about recent and planned activities of the US-RSE Association, current job postings, community news.<br>
+      Learn about recent and planned activities of the US-RSE Association, current job postings, community news, and more.<br>
     link: newsletters/
     link_name: Newsletters
   - title: USRSE'25
