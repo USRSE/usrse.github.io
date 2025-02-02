@@ -32,7 +32,7 @@ permalink: /events/
   </div>
   <div class="card-body">
     <p class="card-text">
-      Join several hundred of your RSE colleagues and RSE-allies in Philadelphia, PA in October.<br><br>
+      Join several hundred of your RSE colleagues and RSE allies in Philadelphia, PA, October 6-8, 2025.<br><br>
         <a href="{{ site.baseurl }}/usrse25/">Learn more about the conference</a>.
     </p>
 
