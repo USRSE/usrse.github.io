@@ -86,7 +86,7 @@ hashtag `#usrse-blackhistory`.
 
 ### **Articles/Podcasts/Shows**
 
-* [She Stared It](https://www.imdb.com/title/tt5202656/) \- an award-winning
+* [She Started It](https://www.imdb.com/title/tt5202656/) \- an award-winning
   documentary that provides a rare look in the lives of five ambitious young
   women entrepreneurs (Thuy, Stacey, Sheena, Brienne and Agathe) who will stop
   at nothing to pursue their startup dreams.
