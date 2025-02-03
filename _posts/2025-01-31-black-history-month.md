@@ -55,7 +55,7 @@ hashtag `#usrse-blackhistory`.
   channel](https://usrse.slack.com/archives/C01C8CJQ7AP)
 * [Black Tech Week](https://blacktechweek.com/) \- July 14-16 at the Aronoff
   Center in Cincinnati, OH
-* [BitCon 2026](https://bitcon.blacksintechnology.net/) \- BITCON is the annual
+* [BITCON 2025](https://bitcon.blacksintechnology.net/) \- BITCON is the annual
   conference for the largest community of Black technology professionals
   globally
 * [Black Women in Data Summit 2025](https://www.blackwomenindata.com/) \-
