@@ -5,6 +5,8 @@ show_hero: true
 callouts: home
 permalink: /
 full_width: true
+hero_link: 2025-01-31-black-history-month
+hero_link_text: Celebrate Black History Month with US-RSE!
 ---
 
 <div class="card" style="padding:50px; margin-top:-50px">
