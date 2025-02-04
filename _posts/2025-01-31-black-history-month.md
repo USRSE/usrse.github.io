@@ -7,7 +7,7 @@ date: 2025-01-31
 ---
 
 ![Black History Month Logo]({{ site.baseurl }}/assets/img/BHMlogo.png){:
-.align-center .width-half}
+style="display: block; margin: auto; max-width: 600px;" }
 
 US-RSE’s [DEI working group (DEI-WG)](https://us-rse.org/wg/dei/) is proud to
 lead the US-RSE’s participation in celebrating [Black History
@@ -19,9 +19,9 @@ accomplishments in their careers and their personal stories. We’ll be
 publishing these posts throughout February to highlight such people, where we
 talk about the person and tie their work and life to the RSE movement.
 
-* A. Phillip Randolph \-
-  [Wikipedia](https://en.wikipedia.org/wiki/A._Philip_Randolph)
-* Check back here for links as articles are posted
+* [**A. Phillip Randolph**](/2025-01-31-randolph) \- Discover the inspiring
+  journey of Dr. Randolph, a pioneer in research software engineering.
+* *Check back here for links as articles are posted*
 
 In addition, we’re excited to host a **Zoom discussion on Thursday, February
 20th at noon PT / 3 PM ET**. [@Cordero
