@@ -22,17 +22,17 @@ permalink: /events/conference/
       </div>
       <div class="col-xs-4 float-right">
         <h6 style="text-align: right; color: rgb(168, 168, 168)">
-          October 2025
+          October 6-8, 2025
         </h6>
       </div>
   </div>
   <div class="card-body">
     <h6 class="card-subtitle mb-2">
-    TBA
+    Code, Practices, and People
     </h6>
     
     <p class="card-text">
-      TBA
+      Share your work, improve your skills, and connect with other RSEs
     </p>
 
   </div>

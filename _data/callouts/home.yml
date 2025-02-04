@@ -3,18 +3,16 @@ style: is-light
 items:
   - title: Read our latest newsletter
     subtitle: >
-      In this monthly newsletter, we share recent, current, and planned
-      activities of the US-RSE Association, and related news that we think is
-      of interest to US-RSE members.
+      Learn about recent and planned activities of the US-RSE Association, current job postings, community news, and more.<br>
     link: newsletters/
     link_name: Newsletters
   - title: USRSE'25
-    subtitle: Help make US-RSE's third conference in 2025 great!  Volunteers of all experience levels are needed to join the conference planning committee.
-    link: https://us-rse.org/usrse25/about/organization/
-    link_name: Volunteer
+    subtitle: >
+      Plan to join us at our third conference in Philadelphia, PA, October 6-8, 2025.<br><br>
+    link: https://us-rse.org/usrse25/
+    link_name: Save the Date
   - title: 2024 US-RSE Community Awards Winners Announced
     subtitle: >
-      The 2024 Community Awards winners are: Daniel S. Katz for US-RSE Impact
-      Award and Christina Maimone for US-RSE Excellence in Service Award.
+      Daniel S. Katz: US-RSE Impact Award; <br>Christina Maimone: US-RSE Excellence in Service Award
     link: https://us-rse.org/community-awards/
     link_name: Learn More

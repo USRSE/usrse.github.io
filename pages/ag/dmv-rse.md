@@ -31,10 +31,11 @@ We organize in-person meetups approximately every 2-3 months. These are currentl
 
 ## Upcoming meetups
 
-- January 22, 2025: Career development in RSE: from writing successful recommendation letters to publishing research code with examples from space physics projects.
+- Spring 2025: TBD
 
 ## Archive of past meetups
 
+- January 22, 2025: Career development in RSE. [https://lu.ma/w6oij0lp]()
 - September 26, 2024: Data Pipelines. [https://lu.ma/n1yxzw4a]()
 
 # Group coordinators
