@@ -25,7 +25,7 @@ $ bundle exec jekyll serve
 ```
 
 and open your browser to <http://localhost:4000>.
-If you are having trouble try `rm -rf _site`, followed by `bundle update`, then `bundle exec jekyll serve`.
+If you are having trouble try `rm -rf _site Gemfile.lock`, followed by `bundle update`, then `bundle exec jekyll serve`.
 
 
 ## Container-based development
@@ -75,7 +75,7 @@ podman run --rm -it -p 4000:4000 \
     us-rse-website:latest
 ```
 
-If these commands fail, you may need to address any discrepancies between the user/group mapping in your container runtime and the permissions on the directory where the volume mount resides.
+If these commands fail with Ruby/Jekyll errors, remove your local copy of `Gemfile.lock` with `rm Gemfile.lock` and try again.  If these commands fail with permission errors, you may need to address discrepancies between the user/group mapping in your container runtime and the permissions on the directory where the volume mount resides.
 
 Edit a source file and save the changes. You will see Jekyll automatically regenerate the site, after which you can reload the page in your browser to see the rendered changes.
 
