@@ -27,20 +27,29 @@ on the US-RSE slack.
 
 # Work Products
 
-TBD.
+## Code Review Resources
 
-------
+### Code Review Tutorials and Good Practices
 
-<!-- 
-## TOPIC 1
+- [code-review.org](https://code-review.org/)
+- [Tidyteam code review principles](https://code-review.tidyverse.org/)
+- [Code review training module](https://intersect-training.org/Code-Review/)
+- ["How to do Code Reviews Like a Human"](https://www.youtube.com/watch?v=0t4_MfHgb_A) (lecture recording)
+- ["Contemporary Peer Code Review Practices in Research Software"](https://carver.cs.ua.edu/Slides/2019/CodeReviewTutorial/TutorialSlides.pdf) (slides)
 
-Put data about intended efforts or work products here.
+### Automated Code Review Tools
 
-------
+- [Repo-Review](https://learn.scientific-python.org/development/guides/repo-review/)
+- [Codefair](https://github.com/fairdataihub/codefair-app)
 
-## TOPIC 2
+### Code Review Anxiety
 
-Put data about intended efforts or work products here.
+- [Understanding and Effectively Mitigating Code Review Anxiety](https://osf.io/preprints/psyarxiv/8k5a4)
+- [The Code Review Anxiety Workbook](https://developer-success-lab.gitbook.io/code-review-anxiety-workbook-1)
 
-------
--->
+## Volunteer Opportunities
+
+- [rOpenSci](https://ropensci.org/software-review)
+- [pyOpenSci](https://www.pyopensci.org/)
+- [JOSS](https://joss.theoj.org/)
+- [DHTech](https://dhcodereview.github.io/)
