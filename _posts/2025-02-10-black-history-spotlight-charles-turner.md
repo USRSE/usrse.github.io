@@ -25,9 +25,8 @@ Recently, while reading Lars Chittka's 2022 book, [_The Mind of a
 Bee_](https://press.princeton.edu/books/hardcover/9780691180472/the-mind-of-a-bee),
 I became intrigued by the story of zoologist [Charles Henry
 Turner](https://en.wikipedia.org/wiki/Charles_Henry_Turner_(zoologist)).
-In recognition of Black History Month (and coincidentally Turner's
-birthday), I'd like to share a short summary of what I learned about
-this outstanding Black American scientist.
+In recognition of Black History Month, I'd like to share a short summary
+of what I learned about this outstanding Black American scientist.
 
 Charles Henry Turner was born in Cincinnati, Ohio in 1867, just two
 years after the end of the Civil War.  Turner excelled in school and was
