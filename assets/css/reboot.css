@@ -3857,7 +3857,7 @@ body:hover .visually-hidden a, body:hover .visually-hidden input, body:hover .vi
 }
 .footnotes ol, .footnotes li, .footnotes p {
     margin-bottom: 0;
-    font-size: .75em;
+    font-size: .9em;
 }
 a.reversefootnote {
     color: #7a8288;
