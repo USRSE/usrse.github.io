@@ -21,6 +21,10 @@ talk about the person and tie their work and life to the RSE movement.
 
 * [**A. Phillip Randolph**](/2025-01-31-randolph) \- Discover the inspiring
   journey of Dr. Randolph, a pioneer in research software engineering.
+* [**Charles Henry
+  Turner**](/2025-02-10-black-history-spotlight-charles-turner) \- Discover the
+  pioneering work of Charles Turner, a trailblazing zoologist who advanced our
+  understanding of animal behavior.
 * *Check back here for links as articles are posted*
 
 In addition, we’re excited to host a **Zoom discussion on Thursday, February
