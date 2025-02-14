@@ -28,7 +28,8 @@ politics and current events.
 [Registration link on Slack in the `#dei-discussion`
 channel](https://usrse.slack.com/archives/C01C8CJQ7AP/p1739487182502559)
 
-Join us on Feb 20th for a lively, engaging, and thought provoking conversation.
+Join us on Feb 20th (noon PT / 3 PM ET) for a lively, engaging, and thought
+provoking conversation.
 
 - [Why the right is so obsessed with
   DEI](https://www.youtube.com/watch?v=ARKvxeNCp84)
