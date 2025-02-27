@@ -453,5 +453,10 @@
         "name": "Budh Ram Gurung (BRG)",
         "bio": "Open Source Advocate, Software Developer, IT Career Coach and Entrepreneur",
         "blog": "https://budhram.com.np"
+    },
+    "Aariq": {
+        "name": "Eric R. Scott",
+        "bio": "Scientific Programmer & Educator at University of Arizona",
+        "blog": "www.ericrscott.com"
     }
 }
