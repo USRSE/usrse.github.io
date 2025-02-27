@@ -29,10 +29,11 @@ talk about the person and tie their work and life to the RSE movement.
   painstaking mathematical modeling and early computer programming, she helped
   define the precise shape of the Earth — a crucial advancement in the
   development of satellite geodesy.
-* **Charles R. Drew** - read about his pioneering work in blood banking,
-  transfusion medicine, and medical informatics.
+* [**Charles R. Drew**](/2025-02-25-black-history-spotlight-charles-r-drew) \-
+  read about his pioneering work in blood banking, transfusion medicine, and
+  medical informatics.
 
-In addition, we’re excited to host a **Zoom discussion on Thursday, February
+In addition, we're excited to host a **Zoom discussion on Thursday, February
 20th at noon PT / 3 PM ET**. [@Cordero
 Core](https://usrse.slack.com/team/U0523JRUDE3) shared one of his favorite
 YouTube channels with us from Garrison Hayes. We invite you to watch the three
