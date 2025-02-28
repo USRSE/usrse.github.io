@@ -19,7 +19,7 @@ to help address these biases.
 
 We would like to pass along some of the resources that the speakers shared.
 The first resource is the NCWIT's
-[critical listening guide](https://ncwit.org/resources/critical-listening-guide/).
+[critical listening guide](https://web.archive.org/web/20250206085740/https://ncwit.org/resources/critical-listening-guide/).
 This guide addresses common misunderstandings that arise during discussions of
 these topics.
 In it you'll find concrete responses and links to primary research
