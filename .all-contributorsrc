@@ -894,6 +894,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/1132451?v=4"
             ]
+        },
+        {
+            "login": "Aariq",
+            "name": "Eric R. Scott",
+            "contributions": [
+                "code"
+            ],
+            "profile": "www.ericrscott.com",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/25404783?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
