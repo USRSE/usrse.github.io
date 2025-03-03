@@ -36,6 +36,7 @@ on the US-RSE slack.
 - [Code review training module](https://intersect-training.org/Code-Review/)
 - ["How to do Code Reviews Like a Human"](https://www.youtube.com/watch?v=0t4_MfHgb_A) (lecture recording)
 - ["Contemporary Peer Code Review Practices in Research Software"](https://carver.cs.ua.edu/Slides/2019/CodeReviewTutorial/TutorialSlides.pdf) (slides)
+- [Stanford Health Policy Data Science Lab guidelines on code review](https://stanfordhpds.github.io/lab_manual/chapters/08-code-review.html)
 
 ### Automated Code Review Tools
 
