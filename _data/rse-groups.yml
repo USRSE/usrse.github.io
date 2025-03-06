@@ -28,8 +28,8 @@
 - name: Department of Physics
   url: https://phy.princeton.edu/
   institution: Princeton University
-- name: Scientific Solutions Group
-  url: https://communityhub.purdue.edu/groups/ssg
+- name: Center for Research Software Engineering
+  url: https://rcac.purdue.edu/rse
   institution: Purdue University
 - name: Data, Analytics & Research Computing at the GSB
   url: https://gsbresearchhub.stanford.edu/support-units/darc
