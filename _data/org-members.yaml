@@ -44,6 +44,13 @@ standard:
     date_joined: 2025-01-05
     founding_member: true
     tier: "Standard"
+  - name: "Academic Data Science Alliance"
+    url: https://academicdatascience.org/
+    figure: logo-adsa.png
+    acronym: ADSA
+    date_joined: 2025-03-10
+    founding_member: true
+    tier: "Standard"
 
 premier:
   - name: "University of Illinois Urbana-Champaign"
