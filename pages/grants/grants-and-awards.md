@@ -51,17 +51,17 @@ Funded applicants are expected to provide a short report (a paragraph or two)
 to be included on US-RSE’s website as a blog post or part of the newsletter.
 
 If you have questions, please send them via email to [grants@us-rse.org](mailto:grants@us-rse.org)
-or ask in the [`#community-grants`](https://app.slack.com/client/T8ZT4PJSW/C05M3F8FH08) Slack channel.
+or ask in the [`#community-funds`](https://app.slack.com/client/T8ZT4PJSW/C05M3F8FH08) Slack channel.
 
 ### Application Details
 
-- **Next Application Deadline**: December 31, 2024
+- **Next Application Deadline**: March 31, 2025
 - **[Application Form](https://forms.gle/hXL95UymjTcR3Kb29)**
 
 The next round of application deadlines will be:
 
-- March 31, 2025
 - June 30, 2025
+- September 31, 2025
 
 The application will request the following details:
 
@@ -100,8 +100,17 @@ The application will request the following details:
 </details>
 
 <details>
+  <summary><b>Q: How often can I receive individual funding?</b></summary>
+  A: Individual funding can be granted once per rolling calendar year
+  (e.g., if your application is accepted for the September 2025 deadline,
+  you cannot submit another individual application until the September 2026
+  deadline). Community applications are <b>NOT</b> subject to this rule.
+</details>
+
+<details>
   <summary><b>Q: Can a travel reimbursement be retroactive (i.e., used for a conference that has recently passed from before the review period)?</b></summary>
-    A: No; applications must be for a future event. Applications are reviewed every quarter. See above for more details on upcoming deadlines.
+    A: No; applications must be for a future event. Applications are reviewed every quarter.
+    See above for more details on upcoming deadlines.
 </details>
 
 <details>
@@ -170,5 +179,5 @@ The application will request the following details:
   encourage people to attend your event who might not otherwise attend? Will you
   use it as a way to “advertise” US-RSE to people who may not be aware of it
   (e.g. “Food sponsored by US-RSE”)? Please note that due to limited funds,
-  requests for food-related grants will be evaluated with careful consideration.
+  requests for food-related costs will be evaluated with careful consideration.
 </details>
