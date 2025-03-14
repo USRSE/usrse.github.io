@@ -905,6 +905,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/25404783?v=4"
             ]
+        },
+        {
+            "login": "glentner",
+            "name": "Geoffrey Lentner",
+            "contributions": [
+                "code"
+            ],
+            "profile": "lentner.io",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/8965948?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

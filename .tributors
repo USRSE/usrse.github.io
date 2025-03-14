@@ -458,5 +458,11 @@
         "name": "Eric R. Scott",
         "bio": "Scientific Programmer & Educator at University of Arizona",
         "blog": "www.ericrscott.com"
+    },
+    "glentner": {
+        "name": "Geoffrey Lentner",
+        "email": "glentner@purdue.edu",
+        "bio": "Lead Research Data Scientist. Astrophysicist. Software Developer. I care about open science and open source.",
+        "blog": "lentner.io"
     }
 }
