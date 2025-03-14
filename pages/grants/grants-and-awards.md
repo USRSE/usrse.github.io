@@ -148,7 +148,7 @@ The application will request the following details:
 <details>
   <summary><b>Q: What are examples of approved travel expenses?</b></summary>
     A: Some examples of approved travel expenses are economy-class airfare, baggage fees,
-    hotel costs, conference or event registration, and meals (with receipts). The full
+    hotel costs, and conference or event registration (we do not reimburse meals or provide a per diem). The full
     details can be found in our
     <a href="https://docs.google.com/document/d/1bXxgWqiKljF8VzftJMa_CdSzNrlO0z2tIVfTy-_Qg6o" target="_blank">
       General Travel Reimbursement Guidelines</a> document.
@@ -156,7 +156,7 @@ The application will request the following details:
 
 <details>
   <summary><b>Q: How are funds distributed?</b></summary>
-    A: The preferred method of fund distribution is through reimbursal. We request
+    A: The preferred method of fund distribution is through reimbursement. We request
     receipts or invoices to confirm the amount to reimburse. If the requested
     funds required a signed contract, this must be done through our fiscal sponsor,
     Community Initiatives.
