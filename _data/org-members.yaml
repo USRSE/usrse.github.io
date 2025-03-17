@@ -51,6 +51,13 @@ standard:
     date_joined: 2025-03-10
     founding_member: true
     tier: "Standard"
+  - name: "Research Software Alliance"
+    url: https://www.researchsoft.org/
+    figure: logo-resa.png
+    acronym: ReSA
+    date_joined: 2025-03-13
+    founding_member: true
+    tier: "Standard"
 
 premier:
   - name: "University of Illinois Urbana-Champaign"
