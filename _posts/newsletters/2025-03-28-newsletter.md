@@ -137,7 +137,7 @@ Through these partnerships, US-RSE will join ReSA’s and ADSA’s organizations
 <a name="peer-news"></a>
 ### **Celebrating Our Peers**
 
-This month, we're celebrating Dr. Daniel Katz!
+This month, we're celebrating Dr. Daniel S. Katz!
 In addition to his mouthful of a title as — deep breath —
 Chief Scientist, NCSA & Research Associate Professor, 
 Siebel School of Computing and Data Science & Research Associate Professor, School of Information Sciences (iSchool), University of Illinois Urbana-Champaign (phew!),
