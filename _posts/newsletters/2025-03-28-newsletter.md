@@ -145,7 +145,7 @@ Dr. Katz was this month selected as a [2025 *HPCwire Person to Watch*](https://w
 
 2025 is an exciting year for HPC; the growing virtuous cycle of HPC acceleration due to the convergence of AI, Big Data, Quantum Computing, and HPC is opening new vistas for research and discovery breakthroughs. HPCwire's *12 People to Watch* are at the forefront of these trends, adapting new technology to our rapidly-changing world in order to unlock the answers to the biggest societal challenges of our time and make the impossible, possible.
 
-You can read the full announcement and an in-depth interview with Dr. Katz by HPCwire [on the HPCwire website](https://www.hpcwire.com/people-to-watch-2025-daniel-katz/). Congratulations, Daniel, on this illustrious shout out!
+You can read the full announcement and an in-depth interview with Dr. Katz by HPCwire [on the HPCwire website](https://www.hpcwire.com/people-to-watch-2025-daniel-katz/). Congratulations, Dan, on this illustrious shout out!
 
 <a name="community-calls"></a>
 ### **Community Calls**
