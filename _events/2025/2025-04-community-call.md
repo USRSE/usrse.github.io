@@ -1,19 +1,19 @@
 ---
-title: February 2025 Community Call
-expires: 2025-02-14
-event_date: "February 14, 2025"
+title: April 2025 Community Call
+expires: 2025-04-11
+event_date: "April 11, 2025"
 layout: event
 duration: 60
 repeated: false
 category: community-call
 time:
-    - - start: 2025-02-14T19:00:00Z
-        end: 2025-02-14T20:00:00Z
+    - - start: 2025-02-14T18:00:00Z
+        end: 2025-02-14T19:00:00Z
 ---
 
-Our **February Community Call** will be all about **Open Source Software Foundations** on Friday, February 14, at 2pm ET/1pm CT/12pm MT/11am PT.
+Our **April Community Call** will be all about **Git Branching Strategies and Continuous Integration Tools** on Friday, April 11, at 2pm ET/1pm CT/12pm MT/11am PT.
 
-There are a number of Open Source Software Foundations, such as [NumFOCUS](https://numfocus.org/), [HPSF](https://hpsf.io/), [Apache Software Foundation](https://www.apache.org/), [Eclipse Foundation](https://www.eclipse.org/org/), [OMSF](https://omsf.io/), etc. These foundations provide a neutral home for software projects, and also a non-profit that can accept donations, and in many cases, can apply for grants and hire staff.  In this call, we'll first hear from two foundations, Leah Silen for NumFOCUS and Christian Trott for HPSF, then we'll hear from a few projects that are part of such foundations (including Matt Thompson from Open Force Field and Andrew Fullard from TARDIS), and finally we'll have an open Q&A about such foundations with attendees.
+Let’s preface this month’s topic by saying that we assume you are using Git and GitHub or GitLab. (If not, you should absolutely join this call and learn what that is and why you should use it!) What is your favorite Git branching strategy? How does it work with your continuous integration tools? Do you live in a labyrinth of branches or do you work from main? How long do your branches live? Have you been in merge hell, and how did you get out? How did your continuous integration tools help you get out of a messy code situation? Join us for April’s community call to talk nerdy about Git, continuous integration tools, and everything related!
 
 
 #### Registration details
