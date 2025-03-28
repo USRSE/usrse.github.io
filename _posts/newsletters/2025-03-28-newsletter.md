@@ -141,7 +141,7 @@ This month, we're celebrating Dr. Daniel S. Katz!
 In addition to his mouthful of a title as — deep breath —
 Chief Scientist, NCSA & Research Associate Professor, 
 Siebel School of Computing and Data Science & Research Associate Professor, School of Information Sciences (iSchool), University of Illinois Urbana-Champaign (phew!),
-Dr. Katz was this month selected as a [2025 *HPCwire Person to Watch*](https://www.hpcwire.com/people-to-watch-2025/). This program recognizes HPC professionals who play leading roles in driving innovation within their particular fields, making significant contributions to society as a whole.
+Dan was selected as a [2025 *HPCwire Person to Watch*](https://www.hpcwire.com/people-to-watch-2025/). This program recognizes HPC professionals who play leading roles in driving innovation within their particular fields, making significant contributions to society as a whole.
 
 2025 is an exciting year for HPC; the growing virtuous cycle of HPC acceleration due to the convergence of AI, Big Data, Quantum Computing, and HPC is opening new vistas for research and discovery breakthroughs. HPCwire's *12 People to Watch* are at the forefront of these trends, adapting new technology to our rapidly-changing world in order to unlock the answers to the biggest societal challenges of our time and make the impossible, possible.
 
