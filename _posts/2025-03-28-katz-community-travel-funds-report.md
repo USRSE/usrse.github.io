@@ -29,7 +29,7 @@ A few other random thoughts:
 
 * I was surprised by the number of talks that had slides decorated with generative AI images. In some cases, the images were helpful in illustrating the ideas, but in many, they were just visual noise that, for me, took away from the actual content of the talk.
 * I felt like there were a lot of quite different views of what RSEs are, how they work, how they fit into an organization, and how they work with one or more projects. I guess this isn't much different than the US, though I did feel like there might have been some systematic difference between the experience of RSEs in the two countries, but not in a way I can easily describe.
-Having the RSE and SE meetings co-located, with some common events and common breaks, was useful, and I am envious that this happens in Germany. I wonder if we could get a subset of the US SE community to work more closely with US-RSE, or at least to talk more together?
+* Having the RSE and SE meetings co-located, with some common events and common breaks, was useful, and I am envious that this happens in Germany. I wonder if we could get a subset of the US SE community to work more closely with US-RSE, or at least to talk more together?
 
 Again, I really appreciate the support from US-RSE that enabled me to attend this meeting!
 
