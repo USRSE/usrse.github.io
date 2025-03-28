@@ -84,7 +84,7 @@ In addition to the above, we've been working on a number of other efforts. These
 
 *Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/funds-and-awards/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more.*
 
-Recently, Dr. Daniel Katz received funding to attend the [deRSE25 conference](https://us-rse.org/usrse25/participate/) in Germany. He presented a talk and a poster, and you can read more about his experience in this [Community and Travel Funds report](https://us-rse.org/2025-03-28-katz-community-travel-funds-report.md).
+Recently, Dr. Daniel Katz received funding to attend the [deRSE25 conference](https://events.hifis.net/e/derse25) in Germany. He presented a talk and a poster, and you can read more about his experience in this [Community and Travel Funds report](https://us-rse.org/2025-03-28-katz-community-travel-funds-report.md).
 
 The next application deadline is **March 31, 2025**. We encourage you to apply for funding to support your community and travel needs!
 The application process is simple and straightforward. You can find the application form [here](https://us-rse.org/funds-and-awards/).
