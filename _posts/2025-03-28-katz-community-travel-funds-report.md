@@ -5,7 +5,7 @@ tags: [community-awards, usrse, conference, travel-fund, talk, poster]
 author: Tinashe Michael Tapera
 ---
 
-I'm thankful to have been partially supported by US-RSE's Community and Travel Funds program, using a grant from the Alfred P Sloan foundation, to attend the 2025 German RSE Conference (deRSE25), which was co-located with the 2025 German Software Engineering Conference (SE25). While at the conference in Karlsruhe, Germany, I presented one talk and one poster.
+I'm thankful to have been partially supported by US-RSE's Community and Travel Funds program, using a grant from the Alfred P Sloan foundation, to attend the [2025 German RSE Conference (deRSE25)](https://events.hifis.net/e/derse25), which was co-located with the 2025 German Software Engineering Conference (SE25). While at the conference in Karlsruhe, Germany, I presented one talk and one poster.
 
 Talk title: _Katz, D. S., Clifford, B., Hunter Kesling, K., Chard, K., & Babuji, Y. (2025, February 25). **Research Software Phases, Sustainability, and RSEs.** 5th conference for Research Software Engineering in Germany (deRSE25), Karlsruhe, Germany. Zenodo. <https://doi.org/10.5281/zenodo.14922563>
 
