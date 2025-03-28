@@ -7,8 +7,8 @@ duration: 60
 repeated: false
 category: community-call
 time:
-    - - start: 2025-02-14T18:00:00Z
-        end: 2025-02-14T19:00:00Z
+    - - start: 2025-04-11T18:00:00Z
+        end: 2025-04-11T19:00:00Z
 ---
 
 Our **April Community Call** will be all about **Git Branching Strategies and Continuous Integration Tools** on Friday, April 11, at 2pm ET/1pm CT/12pm MT/11am PT.
