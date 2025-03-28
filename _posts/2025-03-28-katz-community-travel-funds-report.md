@@ -13,7 +13,7 @@ Talk title: _Katz, D. S., Clifford, B., Hunter Kesling, K., Chard, K., & Babuji,
 
 After the talk, a few people came up to me to say that they had similar experiences, and we started discussing a collaborative paper to look at three such projects.
 
-The poster, which was also presented at US-RSE'24 in Albuquerque, was: _Yehudi, Y., Cashman, M., Felderer, M., Goedicke, M., Hasselbring, W., Katz, D. S., Löffler, F., Müller, S., & Rumpe, B. (2025). **Towards Defining Lifecycles and Categories of Research Software.** deRSE25 Conference, Karlsruhe. Zenodo. https://doi.org/10.5281/zenodo.15002661_
+The poster, which was also presented at US-RSE'24 in Albuquerque, was: _Yehudi, Y., Cashman, M., Felderer, M., Goedicke, M., Hasselbring, W., Katz, D. S., Löffler, F., Müller, S., & Rumpe, B. (2025). **Towards Defining Lifecycles and Categories of Research Software.** deRSE25 Conference, Karlsruhe. Zenodo. <https://doi.org/10.5281/zenodo.15002661>
 
 > Research software comes in many forms at various stages of development. Traditional software engineering models often fall short in meeting the unique needs of Research Software Engineering (RSE) projects, confusing users, developers, funders, and stakeholders.
 A collaborative effort between software engineering researchers (SERs) and RSEs at a Dagstuhl seminar aimed to address this issue. The group found discrepancies in terminology and definitions, such as varying views on the stage of a software project.
