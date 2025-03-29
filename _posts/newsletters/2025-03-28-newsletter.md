@@ -191,7 +191,7 @@ If you are interested in being interviewed, please fill out [this short informat
 
 **HICSS 2025**
 
-(Important Dates: April 10, 2025 - Poster Submission Deadline)
+(Important Dates: June 15, 2025 - Paper Submission Deadline)
 
 The [59th Hawaii International Conference on System Sciences (HICSS)](https://hicss.hawaii.edu/) will take place at [Hyatt Regency, Maui, HI](https://www.hyatt.com/hyatt-regency/en-US/oggrm-hyatt-regency-maui-resort-and-spa), on January 6-9, 2026.  The deadline for submissions is June 15, 2025. Minitracks of interest include:
 
@@ -216,7 +216,7 @@ The poster session provides a valuable opportunity for researchers to present on
 
 (Important Dates: 28 April 2025 - Proposal Deadline)
 
-PyOhio is the free annual conference for people interested in the Python programming language, based in Ohio, and open to attendees from anywhere and with any experience level. This year's event will be held Saturday & Sunday July 26 & 27, 2025 at the Cleveland State University Student Center in Cleveland, OH. More details about PyOhio are available at the conference website: https://www.pyohio.org/
+PyOhio is the free annual conference for people interested in the Python programming language, based in Ohio, and open to attendees from anywhere and with any experience level. This year's event will be held Saturday & Sunday July 26 & 27, 2025 at the Cleveland State University Student Center in Cleveland, OH. More details about PyOhio are available at the conference website: [https://www.pyohio.org/](https://www.pyohio.org/)
 
 **The Developing Heliophysics Standards and Cross-science Collaborations Workshop** 
 
@@ -255,7 +255,7 @@ the Periodic Table? What is Citation Fever and how can you avoid contracting it?
 <a name="involved"></a>
 # **9. Get Involved**
 
-Volunteering with US-RSE is a great way to build your professional network and gain skills that can help you take the next step in your career.  A great way to start is by joining a working group.  Reach out to contact@us-rse.org or ask on Slack if you have questions about getting started.  
+Volunteering with US-RSE is a great way to build your professional network and gain skills that can help you take the next step in your career.  A great way to start is by joining a working group.  Reach out to [contact@us-rse.org](mailto:contact@us-rse.org) or ask on Slack if you have questions about getting started.  
 
 New guidance was recently released on how to create new [Affinity Groups](https://us-rse.org/wg/group-management/form-an-affinity-group) and [Working Groups](https://us-rse.org/wg/group-management/form-a-working-group). If you see an unmet need in the US-RSE community, we encourage you to create your own group!
 
