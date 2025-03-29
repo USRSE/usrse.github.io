@@ -69,7 +69,7 @@ Questions about the submission process? Contact [usrse2025@easychair.org](mailto
 -----------------
 
 <a name="sc-update"></a>
-# **2. Steering Committee Updates**  
+# **3. Steering Committee Updates**  
 
 The newsletter may have been taking a break for the past few months, but the Steering Committee wasn't! Starting in January, we welcomed our newest SC member Cordero Core, reviewed our SC roles, and added new internal roles for Conference Liaisons and chairs for the Awards and Community Funds Working Groups. Ian Cosden remains the Steering Committee Chair, and the full list of roles is available on the [website](https://us-rse.org/about/steering-committee/). 
 
@@ -87,7 +87,7 @@ In addition to the above, we've been working on a number of other efforts. These
 
 
 <a name="community-funds"></a>
-# **3. Community and Travel Funds program**
+# **4. Community and Travel Funds program**
 **Next Application Deadline:** March 31, 2025
 
 *Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/funds-and-awards/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more.*
@@ -99,7 +99,7 @@ The application process is simple and straightforward. You can find the applicat
 
 -----------
 <a name="orgmember"></a>
-# **4. Organizational Founding Membership**  
+# **5. Organizational Founding Membership**  
 
 US-RSE envisions a future where Research Software Engineers are universally respected for advancing science, technology, and society through the transformative power of research software engineering.
 We’re excited to share that the momentum around our Organizational Founding Membership continues to grow! See the list below for the current members (six more are onboarding at the moment).
@@ -126,7 +126,7 @@ Please reach out to Sandra Gesing at sandra@us-rse.org if you are interested in 
 -----------------
 
 <a name="news"></a> 
-# **5. Community News** 
+# **6. Community News** 
 
 <a name="partnerships"></a>
 ### **New Community Partnerships**
@@ -161,7 +161,7 @@ The March Community Call was about Code Reviews, and is available [here on YouTu
 -----------------
 
 <a name="events"></a>
-# **6. Interesting Opportunities and Events**
+# **7. Interesting Opportunities and Events**
 
 ### **US-RSE has partnered with Reach The World for a webinar series for K-12 students**
 
@@ -229,7 +229,7 @@ The workshop will be hosted in Van Allen Hall on the University of Iowa campus, 
 -----------------
 
 <a name="reads"></a>
-# **7. Interesting Reads, Videos, or Podcasts**
+# **8. Interesting Reads, Videos, or Podcasts**
 
 ### **Researchers share computational tricks at unique Los Alamos conference**
 
@@ -253,7 +253,7 @@ the Periodic Table? What is Citation Fever and how can you avoid contracting it?
 
 -----------------
 <a name="involved"></a>
-# **8. Get Involved**
+# **9. Get Involved**
 
 Volunteering with US-RSE is a great way to build your professional network and gain skills that can help you take the next step in your career.  A great way to start is by joining a working group.  Reach out to contact@us-rse.org or ask on Slack if you have questions about getting started.  
 
@@ -277,7 +277,7 @@ As always, we thank everyone who is already contributing for their help in shapi
 -----------------
 
 <a name="jobs"></a>
-# **9. Recent Job Postings**
+# **10. Recent Job Postings**
 
 These opportunities were recently posted to the [RSE Opportunities page](https://us-rse.org/jobs/):
 
