@@ -65,6 +65,17 @@ Questions about the submission process? Contact [usrse2025@easychair.org](mailto
 
 — [Sandra](https://us-rse.org/about/staff/)
 
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+  <img src="{{ site.baseurl }}/assets/img/newsletter-202503/postcards.jpg" 
+       alt="US-RSE Postcards handed out at the event" 
+       title="US-RSE Postcards handed out at the event" 
+       style="max-height: 300px; width: auto; display: block;" />
+  <img src="{{ site.baseurl }}/assets/img/newsletter-202503/20250326_112810.jpg" 
+       alt="Sandra Gesing at Capitol Hill" 
+       title="Sandra Gesing at Capitol Hill" 
+       style="max-height: 300px; width: auto; display: block;" />
+</div>
+
 -----------------
 
 <a name="sc-update"></a>
@@ -190,17 +201,33 @@ If you are interested in being interviewed, please fill out [this short informat
 
 🦄 They Arrived as a Herd… But They’re Ready to Travel to You! 🚀
 
-![US-RSE Unicorn]({{ site.baseurl }}/assets/img/newsletter-202503/640cfde67663483d9c19a2655309a086_large.jpg "US-RSE Unicorn"){:style="display: block; margin: auto; max-width: 600px;" }
+<div style="display: flex; align-items: flex-start; gap: 15px; flex-direction: row-reverse;">
+  <img src="{{ site.baseurl }}/assets/img/newsletter-202503/640cfde67663483d9c19a2655309a086_large.jpg" 
+       alt="US-RSE Unicorn" 
+       title="US-RSE Unicorn" 
+       style="max-width: 300px; height: auto; margin-left: 15px;" />
+  <div>
+    <p>
+      <a href="https://give.communityin.org/unicorn2025?ref=ab_20w0PysS59P20w0PysS59P">
+        The 2025 US-RSE magical unicorns have officially arrived!
+      </a> They came as a herd, packed together in a carton, just like how research software engineers come together to build a stronger community. But now, these unicorns are ready to set off on their own journeys—finding new homes with RSEs, allies, and supporters like you.
+    </p>
+    <p>
+      This year’s edition proudly wears a red shirt featuring the US-RSE logo integrated with 2025, symbolizing another year of growth, collaboration, and impact. Just like our community, these unicorns remind us that while we each have our own paths, we are part of something bigger—a movement dedicated to advancing research software and supporting those who make it happen.
+    </p>
+    <p>
+      By adopting a unicorn, you’re not just getting a fun desk companion—you’re also supporting US-RSE’s mission to strengthen the RSE community, advocate for recognition, and create more opportunities for collaboration.
+    </p>
+    <p>
+    📦 Limited supply—once they leave the herd, they’re gone!
+    </p>
 
-[The 2025 US-RSE magical unicorns have officially arrived!](https://give.communityin.org/unicorn2025?ref=ab_20w0PysS59P20w0PysS59P) They came as a herd, packed together in a carton, just like how research software engineers come together to build a stronger community. But now, these unicorns are ready to set off on their own journeys—finding new homes with RSEs, allies, and supporters like you.
-
-This year’s edition proudly wears a red shirt featuring the US-RSE logo integrated with 2025, symbolizing another year of growth, collaboration, and impact. Just like our community, these unicorns remind us that while we each have our own paths, we are part of something bigger—a movement dedicated to advancing research software and supporting those who make it happen.
-
-By adopting a unicorn, you’re not just getting a fun desk companion—you’re also supporting US-RSE’s mission to strengthen the RSE community, advocate for recognition, and create more opportunities for collaboration.
-
-📦 Limited supply—once they leave the herd, they’re gone!
-
-🚚 They’ll ship for free within the US! 🚚
+    <p>
+    🚚 They’ll ship for free within the US! 🚚
+    </p>
+    
+  </div>
+</div>
 
 If you're from another country and want to get your hands on a unicorn, reach out to us, and we'll find out whether we can arrange shipping for you.
 
