@@ -6,7 +6,7 @@ category: newsletter
 tags: [newsletter, March]
 ---
 
-### We're back! 
+### 🎊We're back!🎊
 
 After a brief hiatus, the US-RSE Newsletter is back in production!
 
@@ -32,7 +32,7 @@ In this issue:
 -----------------
 
 <a name="conference2025"></a>
-# **1. US-RSE Conference 2025 (USRSE'25)**  
+# 🏔️**1. US-RSE Conference 2025 (USRSE'25)**🏔️
 
 **Call for Submissions**
 
@@ -60,7 +60,7 @@ Questions about the submission process? Contact [usrse2025@easychair.org](mailto
 -----------------
 
 <a name="capitol-hill"></a>
-## **2. Our Executive Director Sandra Gesing was at Capitol Hill!**
+## 🤵‍♀️**2. Our Executive Director Sandra Gesing was at Capitol Hill!**🤵‍♀️
 
 > This week, I had the opportunity to visit Capitol Hill for a series of energizing and insightful meetings with congressional staff. The atmosphere was buzzing—with long lines to get into the buildings and not much seating beyond the occasional restroom bench! I met with staff members from the offices of Senator Adam Schiff, Senator Richard Durbin, Representative John Garamendi, Representative Mike Thompson, and Representative Ken Calvert. We had thoughtful conversations about the critical role of workforce development, nonprofit organizations’ impact, and Research Software Engineers’ growing importance. It was a great first step in getting US-RSE on their radar.
 
@@ -69,7 +69,7 @@ Questions about the submission process? Contact [usrse2025@easychair.org](mailto
 -----------------
 
 <a name="sc-update"></a>
-# **3. Steering Committee Updates**  
+# 💼**3. Steering Committee Updates**💼  
 
 The newsletter may have been taking a break for the past few months, but the Steering Committee wasn't! Starting in January, we welcomed our newest SC member Cordero Core, reviewed our SC roles, and added new internal roles for Conference Liaisons and chairs for the Awards and Community Funds Working Groups. Ian Cosden remains the Steering Committee Chair, and the full list of roles is available on the [website](https://us-rse.org/about/steering-committee/). 
 
@@ -87,19 +87,19 @@ In addition to the above, we've been working on a number of other efforts. These
 
 
 <a name="community-funds"></a>
-# **4. Community and Travel Funds program**
-**Next Application Deadline:** March 31, 2025
+# 🎁**4. Community and Travel Funds program**🎁
+**Next Application Deadline:** March 31, 2025🗓️
 
 *Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/funds-and-awards/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more.*
 
 Recently, Dr. Daniel Katz received funding to attend the [deRSE25 conference](https://events.hifis.net/e/derse25) in Germany. He presented a talk and a poster, and you can read more about his experience in this [Community and Travel Funds report](https://us-rse.org/2025-03-28-katz-community-travel-funds-report.md).
 
-The next application deadline is **March 31, 2025**. We encourage you to apply for funding to support your community and travel needs!
+🗓️The next application deadline is **March 31, 2025**. We encourage you to apply for funding to support your community and travel needs!
 The application process is simple and straightforward. You can find the application form [here](https://us-rse.org/funds-and-awards/).
 
 -----------
 <a name="orgmember"></a>
-# **5. Organizational Founding Membership**  
+# 🙌**5. Organizational Founding Membership**🙌  
 
 US-RSE envisions a future where Research Software Engineers are universally respected for advancing science, technology, and society through the transformative power of research software engineering.
 We’re excited to share that the momentum around our Organizational Founding Membership continues to grow! See the list below for the current members (six more are onboarding at the moment).
@@ -126,17 +126,17 @@ Please reach out to Sandra Gesing at sandra@us-rse.org if you are interested in 
 -----------------
 
 <a name="news"></a> 
-# **6. Community News** 
+# 🗣️**6. Community News**🗣️ 
 
 <a name="partnerships"></a>
-### **New Community Partnerships**
+### 🤝**New Community Partnerships**🤝
 
 We are excited to announce two new partnerships: US-RSE partners with the [Research Software Alliance (ReSA)](https://www.researchsoft.org) and the [Academic Data Science Alliance (ADSA)](https://academicdatascience.org)! The first collaboration unites research software professionals worldwide and both partnerships reinforce our shared commitment to advancing research software and data science, supporting career development, and fostering a sustainable research ecosystem.
 
 Through these partnerships, US-RSE will join ReSA’s and ADSA’s organizations and they will join US-RSE, enhancing collaboration and knowledge exchange. By working together, we are creating new opportunities for joint initiatives, co-hosted events, and greater visibility for research software professionals and data scientists.
 
 <a name="peer-news"></a>
-### **Celebrating Our Peers**
+### 🥂**Celebrating Our Peers**🥂
 
 This month, we're celebrating Dr. Daniel S. Katz!
 In addition to his mouthful of a title as — deep breath —
@@ -149,7 +149,7 @@ Dan was selected as a [2025 *HPCwire Person to Watch*](https://www.hpcwire.com/p
 You can read the full announcement and an in-depth interview with Dr. Katz by HPCwire [on the HPCwire website](https://www.hpcwire.com/people-to-watch-2025-daniel-katz/). Congratulations, Dan, on this illustrious shout out!
 
 <a name="community-calls"></a>
-### **Community Calls**
+### ☎️**Community Calls**☎️
 
 The next community call will take place on Friday, April 11, from 2-3PM Eastern. We'll be discussing `git` branching strategies and continuous integration (CI) tools. If you have a strong preference for a tool or workflow, good or bad experiences, or general tips to share about either one of these, we'd love to hear from you! To join the call, follow [this link](https://us-rse.org/wg/community-calls/) to get the Zoom invite.
 
@@ -161,7 +161,7 @@ The March Community Call was about Code Reviews, and is available [here on YouTu
 -----------------
 
 <a name="events"></a>
-# **7. Interesting Opportunities and Events**
+# 🤸**7. Interesting Opportunities and Events**🤸
 
 ### **US-RSE has partnered with Reach The World for a webinar series for K-12 students**
 
@@ -187,7 +187,36 @@ Your participation is completely voluntary and confidential. Information will be
 We would greatly appreciate your participation and insights. Thank you in advance!
 If you are interested in being interviewed, please fill out [this short information form](https://universityofalabama.az1.qualtrics.com/jfe/form/SV_e39KXNkAYyjVtEG ) so we can contact you to schedule an interview.
 
-### **Upcoming Events**
+### 😲**Get Your Magical US-RSE Unicorn - Edition 2025!**😲
+
+🦄 They Arrived as a Herd… But They’re Ready to Travel to You! 🚀
+
+![US-RSE Unicorn]({{ site.baseurl }}/assets/img/newsletter-202503/640cfde67663483d9c19a2655309a086_large.jpg "US-RSE Unicorn"){:style="display: block; margin: auto; max-width: 600px;" }
+
+The 2025 US-RSE magical unicorns have officially arrived! They came as a herd, packed together in a carton, just like how research software engineers come together to build a stronger community. But now, these unicorns are ready to set off on their own journeys—finding new homes with RSEs, allies, and supporters like you.
+
+This year’s edition proudly wears a red shirt featuring the US-RSE logo integrated with 2025, symbolizing another year of growth, collaboration, and impact. Just like our community, these unicorns remind us that while we each have our own paths, we are part of something bigger—a movement dedicated to advancing research software and supporting those who make it happen.
+
+By adopting a unicorn, you’re not just getting a fun desk companion—you’re also supporting US-RSE’s mission to strengthen the RSE community, advocate for recognition, and create more opportunities for collaboration.
+
+📦 Limited supply—once they leave the herd, they’re gone!
+
+🚚 They’ll ship for free within the US! 🚚
+
+If you're from another country and want to get your hands on a unicorn, reach out to us, and we'll find out whether we can arrange shipping for you.
+
+Don't miss out on this opportunity to own a piece of US-RSE magic and donate to get your Unicorn 2025 Edition today. This edition will be available while supplies last until December 10, 2025 ✨🦄✨
+
+### 🗓️**Upcoming Events**🗓️
+
+**eScience 2025**
+(Important Dates: May 5, 2025 - Tutorial Submission Deadline)
+
+IEEE eScience 2025 (September 15-18, 2025) brings together leading interdisciplinary research communities, developers and users of eScience applications and enabling IT technologies. The objective of the eScience Conference is to promote and encourage all aspects of eScience and its associated technologies, applications, algorithms and tools with a strong focus on practical solutions and challenges. eScience 2025 interprets eScience in its broadest meaning that enables and improves innovation in data- and compute-intensive research across all domain sciences ranging from traditional areas in physics and earth sciences to more recent fields such as social sciences, arts and humanities, and artificial intelligence for a wide variety of target architectures including HPC, cloud and IoT infrastructures.
+
+The 21st IEEE International Conference on e-Science is co-located with the 6th Global Research Platform Workshop (6GRP) in Chicago, IL, USA. Both audiences share common interests, content, and culture. Co-location provides attendees with the option to register for both events.
+
+Find out more [here](https://www.escience-conference.org/2025/)
 
 **HICSS 2025**
 
@@ -229,7 +258,7 @@ The workshop will be hosted in Van Allen Hall on the University of Iowa campus, 
 -----------------
 
 <a name="reads"></a>
-# **8. Interesting Reads, Videos, or Podcasts**
+# 📚**8. Interesting Reads, Videos, or Podcasts**🎥
 
 ### **Researchers share computational tricks at unique Los Alamos conference**
 
@@ -247,13 +276,15 @@ the Periodic Table? What is Citation Fever and how can you avoid contracting it?
 
 ### **#code4thought Episodes Released this Month**
 
+> Submitted by Peter Schmidt
+
 1. [ByteSized RSE: What's the carbon footprint of my app?](https://codeforthought.buzzsprout.com/1326658/episodes/16791082-en-bytesized-rse-what-s-the-carbon-footprint-of-my-app)
 
 2. [ByteSized RSE: Project Management with GitHub](https://codeforthought.buzzsprout.com/1326658/episodes/16273876-en-bytesized-rse-project-management-with-github)
 
 -----------------
 <a name="involved"></a>
-# **9. Get Involved**
+# 👋**9. Get Involved**👋
 
 Volunteering with US-RSE is a great way to build your professional network and gain skills that can help you take the next step in your career.  A great way to start is by joining a working group.  Reach out to [contact@us-rse.org](mailto:contact@us-rse.org) or ask on Slack if you have questions about getting started.  
 
@@ -277,7 +308,7 @@ As always, we thank everyone who is already contributing for their help in shapi
 -----------------
 
 <a name="jobs"></a>
-# **10. Recent Job Postings**
+# 👩‍💼**10. Recent Job Postings**👨‍💼
 
 These opportunities were recently posted to the [RSE Opportunities page](https://us-rse.org/jobs/):
 
@@ -331,7 +362,7 @@ The following boards might also be of interest.
 Please read our [job posting policy](/jobs/policy/) first, then fill out this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSfYK64R1c0rj-ERldGLxuqedLIbsYPZXj9uBplDRYNmnND10Q/viewform?usp=sf_link) to request additions to the job board.
 
 
-**This newsletter is a joint effort of members of the US-RSE Association.**
+🙏**This newsletter is a joint effort of members of the US-RSE Association.**🙏
 
 © US-RSE • 2021-2025 • US-RSE is a fiscally sponsored project of [Community Initiatives](http://communityin.org/), a 501(c)(3) nonprofit organization.
 
