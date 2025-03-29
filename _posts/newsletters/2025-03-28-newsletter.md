@@ -193,7 +193,7 @@ If you are interested in being interviewed, please fill out [this short informat
 
 ![US-RSE Unicorn]({{ site.baseurl }}/assets/img/newsletter-202503/640cfde67663483d9c19a2655309a086_large.jpg "US-RSE Unicorn"){:style="display: block; margin: auto; max-width: 600px;" }
 
-The 2025 US-RSE magical unicorns have officially arrived! They came as a herd, packed together in a carton, just like how research software engineers come together to build a stronger community. But now, these unicorns are ready to set off on their own journeys—finding new homes with RSEs, allies, and supporters like you.
+[The 2025 US-RSE magical unicorns have officially arrived!](https://give.communityin.org/unicorn2025?ref=ab_20w0PysS59P20w0PysS59P) They came as a herd, packed together in a carton, just like how research software engineers come together to build a stronger community. But now, these unicorns are ready to set off on their own journeys—finding new homes with RSEs, allies, and supporters like you.
 
 This year’s edition proudly wears a red shirt featuring the US-RSE logo integrated with 2025, symbolizing another year of growth, collaboration, and impact. Just like our community, these unicorns remind us that while we each have our own paths, we are part of something bigger—a movement dedicated to advancing research software and supporting those who make it happen.
 
@@ -206,6 +206,8 @@ By adopting a unicorn, you’re not just getting a fun desk companion—you’re
 If you're from another country and want to get your hands on a unicorn, reach out to us, and we'll find out whether we can arrange shipping for you.
 
 Don't miss out on this opportunity to own a piece of US-RSE magic and donate to get your Unicorn 2025 Edition today. This edition will be available while supplies last until December 10, 2025 ✨🦄✨
+
+👉 [https://give.communityin.org/unicorn2025?ref=ab_20w0PysS59P20w0PysS59P](https://give.communityin.org/unicorn2025?ref=ab_20w0PysS59P20w0PysS59P)
 
 ### 🗓️**Upcoming Events**🗓️
 
@@ -268,7 +270,7 @@ Scientists encompassing multiple disciplines and security clearance levels spent
 
 ### **Volume 4 of the Journal of Immaterial Science**
 
-> Submitted by me, because sometimes laughter is the best medicine
+> Submitted by Tinashe Michael Tapera
 
 The 2024 publication of your premium source for made up science is [now available](https://jabde.com/2025/03/22/j-immat-sci-volume-4/)! This parody journal, started in 2020,
 is a lighthearted blog B. McGraw, a fictional character portrayed as a software developer and researcher with humorous credentials. The journal’s tagline, “Because the answer to bad misinformation is better misinformation,” should tell you all you need to know about its comedic and fictional nature. *Should Neutron Stars be Added to
