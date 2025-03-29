@@ -52,7 +52,7 @@ on the US-RSE slack.
 
 ## Code Review Anxiety
 
-- [Understanding and Effectively Mitigating Code Review Anxiety](https://osf.io/preprints/psyarxiv/8k5a4)
+- [Understanding and Effectively Mitigating Code Review Anxiety](https://osf.io/preprints/psyarxiv/8k5a4_v1)
 - [The Code Review Anxiety Workbook](https://developer-success-lab.gitbook.io/code-review-anxiety-workbook-1)
 
 <hr class="my-5">

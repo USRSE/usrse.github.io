@@ -15,20 +15,19 @@ In this monthly newsletter, we share recent, current, and planned activities of 
 In this issue:
 
 * [1. USRSE'25 Conference](#conference2025)
-* [2. Steering Committee Updates](#sc-update)
-* [3. Organizational Founding Membership](#orgmember)
-* [4. Community and Travel Funds](#community-funds)
-* [5. Community News](#news)
+* [2. Our Executive Director Sandra Gesing was at Capitol Hill!](#capitol-hill)
+* [3. Steering Committee Updates](#sc-update)
+* [4. Organizational Founding Membership](#orgmember)
+* [5. Community and Travel Funds](#community-funds)
+* [6. Community News](#news)
     * [New Community Partnerships](#partnerships)
-    * [Our Executive Director Sandra Gesing was at Capitol Hill!
-](#capitol-hill)
     * [Celebrating Our Peers](#peer-news)
     * [Community Calls](#community-calls)
     * [RSE Empowerment in National Labs](#wg-national-labs-empowerment)
-* [6. Interesting Events and Opportunities](#events)
-* [7. Interesting Reads, Videos, or Podcasts](#reads)
-* [8. Get Involved](#involved)
-* [9. Recent Job Postings](#jobs)
+* [7. Interesting Opportunities and Events](#events)
+* [8. Interesting Reads, Videos, or Podcasts](#reads)
+* [9. Get Involved](#involved)
+* [10. Recent Job Postings](#jobs)
 
 -----------------
 
@@ -57,6 +56,15 @@ Visit the [conference website](https://us-rse.org/usrse25/participate/) for furt
 Interested in reviewing submissions?  Please volunteer as a reviewer by [filling out this form](https://forms.gle/wj2ufbMJaLB1ExR77) before April 1st. 
 
 Questions about the submission process? Contact [usrse2025@easychair.org](mailto:usrse2025@easychair.org).
+
+-----------------
+
+<a name="capitol-hill"></a>
+## **2. Our Executive Director Sandra Gesing was at Capitol Hill!**
+
+> This week, I had the opportunity to visit Capitol Hill for a series of energizing and insightful meetings with congressional staff. The atmosphere was buzzing—with long lines to get into the buildings and not much seating beyond the occasional restroom bench! I met with staff members from the offices of Senator Adam Schiff, Senator Richard Durbin, Representative John Garamendi, Representative Mike Thompson, and Representative Ken Calvert. We had thoughtful conversations about the critical role of workforce development, nonprofit organizations’ impact, and Research Software Engineers’ growing importance. It was a great first step in getting US-RSE on their radar.
+
+— [Sandra](https://us-rse.org/about/staff/)
 
 -----------------
 
@@ -101,6 +109,10 @@ Organizational support helps sustain and expand vital community offerings, inclu
 
 Please reach out to Sandra Gesing at sandra@us-rse.org if you are interested in becoming an organizational founding member! 
 
+### Premier Members
+- [University of Illinois Urbana-Champaign](https://illinois.edu/)
+- [Lawrence Berkeley National Laboratory](https://lbl.gov)
+
 ### Standard Members
 - [Center for Research Computing - University of Notre Dame](https://crc.nd.edu/)
 - [Rosen Center for Advanced Computing - Purdue](https://www.rcac.purdue.edu/)
@@ -111,10 +123,6 @@ Please reach out to Sandra Gesing at sandra@us-rse.org if you are interested in 
 - [Academic Data Science Alliance](https://academicdatascience.org/)
 - [Research Software Alliance](https://www.researchsoft.org/)
 
-### Premier Members
-- [University of Illinois Urbana-Champaign](https://illinois.edu/)
-- [Lawrence Berkeley National Laboratory](https://lbl.gov)
-
 -----------------
 
 <a name="news"></a> 
@@ -123,16 +131,9 @@ Please reach out to Sandra Gesing at sandra@us-rse.org if you are interested in 
 <a name="partnerships"></a>
 ### **New Community Partnerships**
 
-We are excited to announce two new partnerships: US-RSE partners with the Research Software Alliance (ReSA) and the Academic Data Science Alliance (ADSA)! The first collaboration unites research software professionals worldwide and both partnerships reinforce our shared commitment to advancing research software and data science, supporting career development, and fostering a sustainable research ecosystem.
+We are excited to announce two new partnerships: US-RSE partners with the [Research Software Alliance (ReSA)](https://www.researchsoft.org) and the [Academic Data Science Alliance (ADSA)](https://academicdatascience.org)! The first collaboration unites research software professionals worldwide and both partnerships reinforce our shared commitment to advancing research software and data science, supporting career development, and fostering a sustainable research ecosystem.
 
 Through these partnerships, US-RSE will join ReSA’s and ADSA’s organizations and they will join US-RSE, enhancing collaboration and knowledge exchange. By working together, we are creating new opportunities for joint initiatives, co-hosted events, and greater visibility for research software professionals and data scientists.
-
-<a name="capitol-hill"></a>
-### **Our Executive Director Sandra Gesing was at Capitol Hill!**
-
-> This week, I had the opportunity to visit Capitol Hill for a series of energizing and insightful meetings with congressional staff. The atmosphere was buzzing—with long lines to get into the buildings and not much seating beyond the occasional restroom bench! I met with staff members from the offices of Senator Adam Schiff, Senator Richard Durbin, Representative John Garamendi, Representative Mike Thompson, and Representative Ken Calvert. We had thoughtful conversations about the critical role of workforce development, nonprofit organizations’ impact, and Research Software Engineers’ growing importance. It was a great first step in getting US-RSE on their radar.
-
-— [Sandra](https://us-rse.org/about/staff/)
 
 <a name="peer-news"></a>
 ### **Celebrating Our Peers**
@@ -150,7 +151,7 @@ You can read the full announcement and an in-depth interview with Dr. Katz by HP
 <a name="community-calls"></a>
 ### **Community Calls**
 
-The next community call will take place on [foobar].
+The next community call will take place on Friday, April 11, from 2-3PM Eastern. We'll be discussing `git` branching strategies and continuous integration (CI) tools. If you have a strong preference for a tool or workflow, good or bad experiences, or general tips to share about either one of these, we'd love to hear from you! To join the call, follow [this link](https://us-rse.org/wg/community-calls/) to get the Zoom invite.
 
 ***March Community Call (Past)***   
 
@@ -160,21 +161,22 @@ The March Community Call was about Code Reviews, and is available [here on YouTu
 -----------------
 
 <a name="events"></a>
-# **6. Interesting Events and Opportunities**
+# **6. Interesting Opportunities and Events**
 
-### US-RSE has partnered with Reach The World for a webinar series for K-12 students
+### **US-RSE has partnered with Reach The World for a webinar series for K-12 students**
+
 We have started an exciting webinar series for K-12 students in collaboration with Reach The World. Classrooms can sign up for free!
 We have already over 500 students registered and there is space for more!
-Please forward to schools, teachers, K-12 students. Don’t hesitate to contact Sandra Gesing (sandra@us-rse.org) if you have questions.
+Please forward to schools, teachers, K-12 students. Don’t hesitate to contact [Sandra Gesing](mailto:sandra@us-rse.org) if you have questions.
 
-### Supercomputing and the Future of AI: A Virtual Exchange Program for K-12 Classes
+**[Supercomputing and the Future of AI: A Virtual Exchange Program for K-12 Classes]((https://reachtheworld.org/supercomputing-and-future-ai-0))**
 
-[What makes a supercomputer “super”? What is quantum computing? What’s the difference, and how does AI (artificial intelligence) fit in?](https://reachtheworld.org/supercomputing-and-future-ai-0)
+What makes a supercomputer “super”? What is quantum computing? What’s the difference, and how does AI (artificial intelligence) fit in?
 
 Journey behind the headlines with an exciting new opportunity for K-12 classrooms! US-RSE has partnered with global education non-profit Reach the World to launch a free eight-week virtual exchange program that answers these questions and much more. Students will travel virtually to places like the San Diego Supercomputing Center to see firsthand how data scientists and research software engineers are harnessing today’s incredible computing power to process, interpret and draw conclusions from vast collections of data in a way that was previously unthinkable!
-Don’t miss this chance to inspire the next generation of innovators! Register today at bit.ly/rtwexplore
+Don’t miss this chance to inspire the next generation of innovators! Register today at [bit.ly/rtwexplore](https://bit.ly/rtwexplore).
 
-### **Upcoming Events**
+### **Code Review Study**
 
 Dr. Jeffrey Carver, Dr. Nasir Eisty, and Md Ariful Malik from the University of Alabama are conducting a study to explore the code review process used by Research Software Engineers (RSEs).
 
@@ -183,8 +185,46 @@ As an RSE, we invite you to participate in an interview to share your experience
 Your participation is completely voluntary and confidential. Information will be kept anonymous, and with your approval, we will record the audio of the interview. Any personal information will be deleted after the interview. You may choose to withdraw at any time before or during the interview. To be eligible, you must be 18 years or older. This study has been approved by the University of Alabama Institutional Review Board.
 
 We would greatly appreciate your participation and insights. Thank you in advance!
-If you are interested in being interviewed, please fill out this short information form so we can contact you to schedule an interview.
-https://universityofalabama.az1.qualtrics.com/jfe/form/SV_e39KXNkAYyjVtEG 
+If you are interested in being interviewed, please fill out [this short information form](https://universityofalabama.az1.qualtrics.com/jfe/form/SV_e39KXNkAYyjVtEG ) so we can contact you to schedule an interview.
+
+### **Upcoming Events**
+
+**HICSS 2025**
+
+(Important Dates: April 10, 2025 - Poster Submission Deadline)
+
+The [59th Hawaii International Conference on System Sciences (HICSS)](https://hicss.hawaii.edu/) will take place at [Hyatt Regency, Maui, HI](https://www.hyatt.com/hyatt-regency/en-US/oggrm-hyatt-regency-maui-resort-and-spa), on January 6-9, 2026.  The deadline for submissions is June 15, 2025. Minitracks of interest include:
+
+* Software Sustainability: Research on Usability, Maintainability, and Reproducibility
+* Impact of AI on Software Engineering
+
+**Open Molecular Software Foundation (OMSF) 3rd Annual Symposium 2025**
+
+Comprised of a community of contributors, academics, and industry partners, OMSF's mission is to shed light on computational chemistry through the power of open software. The Open Molecular Software Foundation is headed to Boston, MA on Friday, May 9th, 2025 for our third symposium! We will be hearing from all of our team and projects, both storied and fresh, as we host another unforgettable community gathering.
+
+This will be the second time OMSF gathers in Boston - we are so excited to be traveling back to such a vibrant, historical city. And with so many of our community working and living around the New England area, it's a great place to host our conference - we hope you can come!
+
+Registration is open and free! Whether you are along time partner, new contributor, or are just interested in learning more, you are welcome to attend. Space will be limited, so be sure [grab your spot as soon as you can](https://www.zeffy.com/ticketing/omsf-symposium--2025?ref=news.omsf.io).
+
+**37th International Conference on Scalable Scientific Data Management**
+
+The International Conference on Scalable Scientific Data Management (SSDBM) 2025 is a premier forum for researchers, practitioners, and experts to discuss the latest advancements in scalable scientific data management. Building on the strong foundation of SSDBM, the 2025 conference broadens its scope to encompass all areas of scalable scientific data management, fostering a dynamic environment for the exchange of cutting-edge research, practical system designs, implementations, and evaluations. SSDBM 2025 will feature a single-track program to maximize interaction and discussion, including invited talks, panels, and demonstrations. Hosted by The Ohio State University, SSDBM 2025 continues its tradition of promoting collaboration and innovation in scientific data management, high-performance data analysis, and the management of distributed datasets.
+
+The poster session provides a valuable opportunity for researchers to present ongoing work, discuss novel problems and solutions, and receive insightful feedback from the SSDBM community. Accepted posters will also be featured in a short presentation slot during the conference. Posters will undergo a light review for scope and presentation quality. The number of accepted posters is limited by space constraints. See the [Call for Posters](https://ssdbm.org/2025/callposter) for more details.
+
+**PyOhio 2025 Call for Proposals**
+
+(Important Dates: 28 April 2025 - Proposal Deadline)
+
+PyOhio is the free annual conference for people interested in the Python programming language, based in Ohio, and open to attendees from anywhere and with any experience level. This year's event will be held Saturday & Sunday July 26 & 27, 2025 at the Cleveland State University Student Center in Cleveland, OH. More details about PyOhio are available at the conference website: https://www.pyohio.org/
+
+**The Developing Heliophysics Standards and Cross-science Collaborations Workshop** 
+
+(Important Dates: 27 July 2025 - In-person Registration Deadline, 7 August 2025 - Virtual Registration Deadline)
+
+The Developing Heliophysics Standards and Cross-science Collaborations Workshop will take place at the University of Iowa in Iowa City, IA, from August 11-15, 2025. This hybrid workshop invites mission and modeling software developers in Heliophysics and related sciences to discuss potential software standards and foster collaborations to address technical challenges. The event focuses on improving Open Science practices in mission- and model-related software development across solar physics, space physics, ITM sciences, and more. Attendees from all career stages and specializations are welcome to explore best practices, standards, and opportunities for collaboration to enhance efficiency and innovation in the field.
+
+The workshop will be hosted in Van Allen Hall on the University of Iowa campus, with no registration fee required. In-person attendance is limited by venue capacity, with priority given to mission and modeling software developers. Registration deadlines are July 27, 2025, for in-person attendees and August 7, 2025, for virtual participants. Abstract submissions are due by June 30, 2025, though mission-related software abstracts are not being solicited. For more details, registration, and abstract submission, visit [https://tinyurl.com/HelioSoft2025](https://tinyurl.com/HelioSoft2025).
 
 -----------------
 
@@ -204,6 +244,12 @@ Scientists encompassing multiple disciplines and security clearance levels spent
 The 2024 publication of your premium source for made up science is [now available](https://jabde.com/2025/03/22/j-immat-sci-volume-4/)! This parody journal, started in 2020,
 is a lighthearted blog B. McGraw, a fictional character portrayed as a software developer and researcher with humorous credentials. The journal’s tagline, “Because the answer to bad misinformation is better misinformation,” should tell you all you need to know about its comedic and fictional nature. *Should Neutron Stars be Added to
 the Periodic Table? What is Citation Fever and how can you avoid contracting it? And did you know that Molecular Computers can run DOOM?* All of this exciting non-science is ready for you to consume and trick your friends with over on the official [Journal of Astrological Big Data Ecology website](https://jabde.com).
+
+### **#code4thought Episodes Released this Month**
+
+1. [ByteSized RSE: What's the carbon footprint of my app?](https://codeforthought.buzzsprout.com/1326658/episodes/16791082-en-bytesized-rse-what-s-the-carbon-footprint-of-my-app)
+
+2. [ByteSized RSE: Project Management with GitHub](https://codeforthought.buzzsprout.com/1326658/episodes/16273876-en-bytesized-rse-project-management-with-github)
 
 -----------------
 <a name="involved"></a>

@@ -21,7 +21,7 @@ Through their work, they explored concepts like software maturity, intended audi
 Community input is sought to improve these tools in future iterations.
 
 There was a lot of good discussion about the poster, and I captured the contributions of others as sticky notes, as seen below. The group of authors is now considering writing a paper based on this to a call open to deRSE25 attendees to expand their presentations into papers.
-![Poster with sticky notes]({{ site.baseurl }}/assets/img/post-2025-03-28/0_StickyNotes.jpg "Poster with sticky notes"){:style="display: block; margin: auto; max-width: 600px;" }
+![Poster with sticky notes]({{ site.baseurl }}/assets/img/post-2025-03-28/poster.jpg "Poster with sticky notes"){:style="display: block; margin: auto; max-width: 600px;" }
 
 In addition to presenting, I also enjoyed attending. I was also at deRSE last year, so I've gotten to know a number of people in the German RSE community, and it was nice to meet them again and to be able to find out about their recent work.
 
