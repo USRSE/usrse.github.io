@@ -299,7 +299,7 @@ Scientists encompassing multiple disciplines and security clearance levels spent
 > Submitted by Tinashe Michael Tapera
 
 The 2024 publication of your premium source for made up science is [now available](https://jabde.com/2025/03/22/j-immat-sci-volume-4/)! This parody journal, started in 2020,
-is a lighthearted blog B. McGraw, a fictional character portrayed as a software developer and researcher with humorous credentials. The journal’s tagline, “Because the answer to bad misinformation is better misinformation,” should tell you all you need to know about its comedic and fictional nature. *Should Neutron Stars be Added to
+is a lighthearted blog by B. McGraw, a fictional character portrayed as a software developer and researcher with humorous credentials. The journal’s tagline, “Because the answer to bad misinformation is better misinformation,” should tell you all you need to know about its comedic and fictional nature. *Should Neutron Stars be Added to
 the Periodic Table? What is Citation Fever and how can you avoid contracting it? And did you know that Molecular Computers can run DOOM?* All of this exciting non-science is ready for you to consume and trick your friends with over on the official [Journal of Astrological Big Data Ecology website](https://jabde.com).
 
 ### **#code4thought Episodes Released this Month**
