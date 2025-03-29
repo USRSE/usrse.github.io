@@ -23,7 +23,6 @@ In this issue:
     * [New Community Partnerships](#partnerships)
     * [Celebrating Our Peers](#peer-news)
     * [Community Calls](#community-calls)
-    * [RSE Empowerment in National Labs](#wg-national-labs-empowerment)
 * [7. Interesting Opportunities and Events](#events)
 * [8. Interesting Reads, Videos, or Podcasts](#reads)
 * [9. Get Involved](#involved)
