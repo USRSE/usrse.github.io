@@ -916,6 +916,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/8965948?v=4"
             ]
+        },
+        {
+            "login": "TinasheMTapera",
+            "name": "Tinashe Michael Tapera",
+            "contributions": [
+                "code"
+            ],
+            "profile": "http://www.tinashemtapera.com",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/15770644?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

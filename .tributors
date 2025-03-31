@@ -464,5 +464,12 @@
         "email": "glentner@purdue.edu",
         "bio": "Lead Research Data Scientist. Astrophysicist. Software Developer. I care about open science and open source.",
         "blog": "lentner.io"
+    },
+    "TinasheMTapera": {
+        "name": "Tinashe Michael Tapera",
+        "bio": "Interdisciplinary comp sci graduate Student at Northeastern University | Data Scientist @Climate-Smart-Public-Health",
+        "blog": "http://www.tinashemtapera.com",
+        "orcid": "0000-0001-9080-5010",
+        "affiliation": "University of Pennsylvania"
     }
 }
