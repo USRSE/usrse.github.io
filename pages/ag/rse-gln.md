@@ -57,7 +57,7 @@ Both groups have Slack channels in the US-RSE space for collaboration.
 # Questions?
 
 Reach out to RSE-GLN coordinators
-[Christina Maimone](mailto:christina.maimone@northwestern.edu) and
+[Daniel Madren](mailto:dmadren@purdue.edu) and
 [Adam Rubens](mailto: Adam.Rubens@nyulangone.org) with questions.  
 
 
