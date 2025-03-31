@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Daniel Katz' Community and Travel Funds Report: deRSE25"
+title: "Dan Katz' Community and Travel Funds Report: deRSE25"
 tags: [community-awards, usrse, conference, travel-fund, talk, poster]
-author: Tinashe Michael Tapera
+author: Daniel S. Katz
 ---
 
 I'm thankful to have been partially supported by US-RSE's Community and Travel Funds program, using a grant from the Alfred P Sloan foundation, to attend the [2025 German RSE Conference (deRSE25)](https://events.hifis.net/e/derse25), which was co-located with the 2025 German Software Engineering Conference (SE25). While at the conference in Karlsruhe, Germany, I presented one talk and one poster.
