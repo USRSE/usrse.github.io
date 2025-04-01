@@ -927,6 +927,28 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/15770644?v=4"
             ]
+        },
+        {
+            "login": "dphow",
+            "name": "Daniel Howard",
+            "contributions": [
+                "code"
+            ],
+            "profile": "dphow.github.io",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/8248595?v=4"
+            ]
+        },
+        {
+            "login": "DMadren",
+            "name": "DMadren",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/DMadren",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/204754096?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
