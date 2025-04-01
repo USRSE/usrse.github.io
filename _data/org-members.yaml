@@ -51,6 +51,7 @@ standard:
     date_joined: 2025-03-10
     founding_member: true
     tier: "Standard"
+    contact: "Micaela Parker <micaela@academicdatascience.org>"
   - name: "Research Software Alliance"
     url: https://www.researchsoft.org/
     figure: logo-resa.png
@@ -58,6 +59,15 @@ standard:
     date_joined: 2025-03-13
     founding_member: true
     tier: "Standard"
+    contact: "Michelle Barker <barkermd@outlook.com>"
+  - name: "Omnibond"
+    url: https://omnibond.com/
+    figure: logo-omnibond.png
+    acronym: 
+    date_joined: 2025-03-29
+    founding_member: true
+    tier: "Standard"
+    contact: "Boyd Wilson <boyd@omnibond.com>"
 
 premier:
   - name: "University of Illinois Urbana-Champaign"
