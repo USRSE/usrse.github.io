@@ -99,7 +99,12 @@ Each entry takes the following variables:
 `tier`
 : The tier they paid for (also the section the entry is in)
 
+`contact` [format: `First Last <email@example.com>`]
+: The main point of contact for the organization
+
 
 Make sure you add each logo to `assets/img/org-logos` directory.
 Generally, the images have been named with the following format
 `logo-acronym-institution`, but this isn't strict.
+There is a [form](https://forms.gle/xXREVtJB2z6Ux1rA7) for people to use to
+provide the details above.
