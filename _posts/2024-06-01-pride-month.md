@@ -58,6 +58,6 @@ Resources:
 * [Popular pride parades around the country](https://travel.usnews.com/features/top-pride-parades-and-celebrations-in-the-us)
 * [Out In Tech Events](https://outintech.com/events/)
 * [Human Rights Campaign](https://www.hrc.org/)
-* [What are Gender Pronouns? Why Do They Matter? - NIH Office of Equity, Diversity, and Inclusion](https://www.edi.nih.gov/blog/communities/what-are-gender-pronouns-why-do-they-matter)
+* [What are Gender Pronouns? Why Do They Matter? - NIH Office of Equity, Diversity, and Inclusion](https://web.archive.org/web/20241209190608/https://www.edi.nih.gov/the-EDI-pulse-blog/what-are-gender-pronouns-why-do-they-matter)
 * [Transgender History - Wikipedia](https://en.wikipedia.org/wiki/Transgender_history)
 * [US-RSE DEI Resources](https://docs.google.com/spreadsheets/d/e/2PACX-1vRwwTmM29KHDXd7s5clv1EcwITxPMNi7yIyaBUS_rwvJw87yHqgMDJU-kANFZQ1W2y3sz9GHoizmh7v/pubhtml?gid=0&single=true)
