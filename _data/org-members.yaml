@@ -1,4 +1,12 @@
 basic:
+  - name: "Open OnDemand"
+    url: https://openondemand.org/
+    figure: logo-open-ondemand.png
+    acronym: "OOO"
+    date_joined: 2025-04-10
+    founding_member: true
+    tier: "Basic"
+    contact: "Alan Chalker <alanc@osc.edu>"
 
 standard:
   - name: "Center for Research Computing - University of Notre Dame"
