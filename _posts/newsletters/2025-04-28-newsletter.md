@@ -243,6 +243,6 @@ Please read our [job posting policy](/jobs/policy/) first, then fill out this [G
 
 **This newsletter is a joint effort of members of the US-RSE Association.**
 
-© US-RSE • 2021-2025 • US-RSE is a fiscally sponsored project of [Community Initiatives](http://communityin.org/), a 501(c)(3) nonprofit organization.
+© US-RSE • 2021-2024 • US-RSE is a fiscally sponsored project of [Community Initiatives](http://communityin.org/), a 501(c)(3) nonprofit organization.
 
 [Email](mailto:contact@us-rse.org) [Mastodon](https://fosstodon.org/@us_rse) [Twitter](https://twitter.com/us_rse) [YouTube](https://youtube.com/@us_rse) [LinkedIn](https://linkedin.com/company/us-rse/) [GitHub](https://github.com/USRSE)
