@@ -31,17 +31,18 @@ We organize in-person meetups approximately every 2-3 months. These are currentl
 
 ## Upcoming meetups
 
-- Spring 2025: TBD
+- May 15, 2025: Maintaining open-source software over the decade time scale: lessons learned and best practices. [https://lu.ma/f260643d]
 
 ## Archive of past meetups
 
+- April 14, 2025: DMV-RSE Social. [https://lu.ma/ifn6fn2c]
 - January 22, 2025: Career development in RSE. [https://lu.ma/w6oij0lp]()
 - September 26, 2024: Data Pipelines. [https://lu.ma/n1yxzw4a]()
 
 # Group coordinators
 
 - [Jennifer Melot](https://cset.georgetown.edu/staff/jennifer-melot/), Technical Lead for the Emerging Technology Observatory initiative at Georgetown's Center for Security and Emerging Technology, managing a small engineering team and building data pipelines and web applications.
-- [Kristijan Armeni](https://www.kristijanarmeni.net), Assistant Research Scientist at the Johns Hopkins University, Department of Psychological and Brain Sciences, working at the intersection of computational cognitive neuroscience, AI, and language
+- [Kristijan Armeni](https://www.kristijanarmeni.net), previously Assistant Research Scientist at the Johns Hopkins University, Department of Psychological and Brain Sciences, working at the intersection of computational cognitive neuroscience, AI, and language
 
 # Questions?
 
