@@ -297,7 +297,7 @@ As always, we thank everyone who is already contributing for their help in shapi
 
 [US-RSE Working Groups](https://us-rse.org/working-groups/):
 
-{% assign wgs = site.data.menus.working-groups.items %}
+{% assign wgs = site.data.menus["working-groups"][0].items %}
 
 <ul>
 {% for wg in wgs %}
