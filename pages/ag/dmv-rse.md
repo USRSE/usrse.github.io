@@ -31,11 +31,11 @@ We organize in-person meetups approximately every 2-3 months. These are currentl
 
 ## Upcoming meetups
 
-- May 15, 2025: Maintaining open-source software over the decade time scale: lessons learned and best practices. [https://lu.ma/f260643d]
+- May 15, 2025: Maintaining open-source software over the decade time scale: lessons learned and best practices. [https://lu.ma/f260643d]()
 
 ## Archive of past meetups
 
-- April 14, 2025: DMV-RSE Social. [https://lu.ma/ifn6fn2c]
+- April 14, 2025: DMV-RSE Social. [https://lu.ma/ifn6fn2c]()
 - January 22, 2025: Career development in RSE. [https://lu.ma/w6oij0lp]()
 - September 26, 2024: Data Pipelines. [https://lu.ma/n1yxzw4a]()
 
