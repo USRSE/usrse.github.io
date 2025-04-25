@@ -4,7 +4,7 @@ title: US-RSE April 2025 Newsletter
 subtitle: April 2025 
 category: newsletter
 tags: [newsletter, April]
-date: 2025-04-28 00:00:00 -0400
+date: 2025-04-25 00:00:00 -0400
 ---
 
 <a name="top"></a>
