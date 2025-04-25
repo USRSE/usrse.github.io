@@ -68,7 +68,7 @@ standard:
     founding_member: true
     tier: "Standard"
     contact: "Michelle Barker <barkermd@outlook.com>"
-  - name: "Omnibond"
+  - name: "Omnibond (Project EUREKA!)"
     url: https://omnibond.com/
     figure: logo-omnibond.png
     acronym: 
@@ -90,5 +90,12 @@ premier:
     figure: logo-lbl.png
     acronym: LBL
     date_joined: 2024-12-19
+    founding_member: true
+    tier: "Premier"
+  - name: "Princeton University"
+    url: https://princeton.edu
+    figure: logo-princeton.png
+    acronym: PU
+    date_joined: 2024-04-01 # I DONT KNOW WHAT DATE TO PUT HERE
     founding_member: true
     tier: "Premier"
