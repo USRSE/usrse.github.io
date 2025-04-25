@@ -297,19 +297,6 @@ As always, we thank everyone who is already contributing for their help in shapi
 
 [US-RSE Working Groups](https://us-rse.org/working-groups/):
 
-<!--Have a new WG to add? Do so here!-->
-
-* [Code Review](https://us-rse.org/wg/code-review/)
-* [Community Calls](https://us-rse.org/wg/community-calls/)
-* [Diversity, Equity, and Inclusion](https://us-rse.org/wg/dei/)
-* [Education & Training](https://us-rse.org/wg/education_training/)
-* [Group Management](https://us-rse.org/wg/group-management/)
-* [Mentorship Program](https://us-rse.org/wg/mentorship-program/)
-* [RSE Empowerment in National Labs](https://us-rse.org/wg/rse-empowerment-national-labs/)
-* [Testing](https://us-rse.org/wg/testing/)
-* [User Experience](https://us-rse.org/wg/ux/)
-* [Website](https://us-rse.org/wg/website/)
-
 {% assign wgs = site.data.menus.working-groups.items %}
 
 <ul>
