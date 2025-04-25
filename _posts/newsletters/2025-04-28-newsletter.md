@@ -146,7 +146,7 @@ Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.or
 
 <!--Community call news goes here-->
 
-The next community call will be all about **conferences** take place on May 8th at 11AM CDT/12 noon EST. Please visit the [Community Calls Website](https://us-rse.org/events/category/#community-call) for more information and to access the registration link.
+The next community call will be all about **conferences** and will take place on May 8th at 11AM CDT/12 noon EST. Please visit the [Community Calls Website](https://us-rse.org/events/category/#community-call) for more information and to access the registration link.
 
 ***April Community Call (Past)***   
 
