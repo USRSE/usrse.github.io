@@ -1,0 +1,7 @@
+<div class="alert alert-info" role="alert" style="margin-bottom: 30px;">
+    <h4 class="alert-heading">📢 {{ include.title }}</h4>
+    <p><strong>📅 When:</strong> {{ include.when }}</p>
+    <p><strong>📍 Where:</strong> {{ include.where }}</p>
+    <p>{{ include.preamble | markdownify }}</p>
+    <p>{{ include.links | markdownify | replace: '<a ', '<a target="_blank" rel="noopener" ' }}</p>
+  </div>

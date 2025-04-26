@@ -94,14 +94,27 @@ In March, the Steering Committee looked at financing for the US-RSE'25 conferenc
 
 <a name="community-funds"></a>
 # ✈️ **4. Community and Travel Funds program**
-**Next Application Deadline:** March 31, 2025
+
+{% assign current_month = 'now' | date: '%m' | plus: 0 %}
+{% assign current_year = 'now' | date: '%Y' %}
+
+{% if current_month <= 3 %}
+  {% assign next_deadline = current_year | append: "-03-31" %}
+{% elsif current_month <= 6 %}
+  {% assign next_deadline = current_year | append: "-06-30" %}
+{% elsif current_month <= 9 %}
+  {% assign next_deadline = current_year | append: "-09-30" %}
+{% elsif current_month <= 12 %}
+  {% assign next_deadline = current_year | append: "-12-31" %}
+{% endif %}
+
+<div class="alert alert-primary" role="alert">
+  <strong>Next Application Deadline:</strong> {{ next_deadline | date: "%B %-d, %Y" }}
+</div>
 
 *Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/funds-and-awards/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more.*
 
-<!--Update program details-->
-
-
-The next application deadline is **March 31, 2025**. We encourage you to apply for funding to support your community and travel needs!
+The next application deadline is **{{ next_deadline | date: "%B %-d, %Y" }}**. We encourage you to apply for funding to support your community and travel needs!  
 The application process is simple and straightforward. You can find the application form [here](https://us-rse.org/funds-and-awards/).
 
 
@@ -137,7 +150,7 @@ Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.or
 -----------------
 
 <a name="news"></a> 
-# 🗞️ **5. Community News** 
+# 🗞️ **6. Community News** 
 
 <!--Someone you want to shoutout? DO IT HERE!-->
 
@@ -150,17 +163,22 @@ The next community call will be all about **conferences** and will take place on
 
 ***April Community Call (Past)***   
 
-The April Community Call was about **git branching strategies and continuous integration tools**, and is available on YouTube [here](https://www.youtube.com/watch?v=UdpjTha4F4M).
+The April Community Call was about **git branching strategies and continuous integration tools**, and is available on YouTube:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+  <img src="https://img.youtube.com/vi/UdpjTha4F4M/hqdefault.jpg" 
+       alt="YouTube Video Thumbnail" 
+       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; cursor: pointer;" 
+       onclick="this.outerHTML='<iframe width=\'560\' height=\'315\' src=\'https://www.youtube.com/embed/UdpjTha4F4M?autoplay=1\' title=\'YouTube video player\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' allowfullscreen style=\'position: absolute; top: 0; left: 0; width: 100%; height: 100%;\'></iframe>'">
+</div>
 
 ----------------
 
 <a name="events"></a>
 -----------------
-# 👀 **6. Interesting Events and Opportunities**
+# 👀 **7. Interesting Events and Opportunities**
 
 Save the date! All of the most exciting events and opportunities in the RSE community are listed here.
-
-<!--Advertise your interesting opportunities here-->
 
 #### 😲_**Get Your Magical US-RSE Unicorn - Edition 2025!**_😲
 
@@ -208,58 +226,95 @@ Save the date! All of the most exciting events and opportunities in the RSE comm
 
 👉 [https://give.communityin.org/unicorn2025?ref=ab_20w0PysS59P20w0PysS59P](https://give.communityin.org/unicorn2025?ref=ab_20w0PysS59P20w0PysS59P)
 
-#### _**R-RSE Affinity Group (Project 2)**_
+<!--
 
-<div style="overflow: hidden;">
+Advertise your interesting opportunities here
 
-  <img src="https://rworks.dev/posts/welcome-to-rworks/images/r-love.png" 
-       alt="Artwork by @allison_horst on Twitter" 
-       style="float: right; max-width: 300px; width: 100%; height: auto; margin: 0 20px 20px 0; border-radius: 10px;">
+        We're using an html-box for automating opportunities.
+        They look pretty, and are easy to use.
+        Just copy the code in the include block below, and fill in the details in markdown.
 
-  <p>
-    Interested in designing and launching a mini-hackathon, codeathon, or other R-focused project? 
-    Come join the <a href="https://us-rse.org/ag/r-rse/" target="_blank" rel="noopener">R-RSE Affinity Group (R-RSE)</a> 
-    for Project 2 of 3 that we are making available this year! R-RSE exists to increase the representation of R users in the US-RSE community 
-    and provide opportunities for members to develop R skills.
-  </p>
+{% include opportunity-box.html 
+    title="Awesome opportunity" 
+    preamble="Are you an R user passionate about software engineering and collaboration?  
+Join the **R-RSE Affinity Group** to connect with fellow R users, share projects, and build community."
+    links="[Learn more about R-RSE](https://us-rse.org/ag/r-rse/)"
+%}
+-->
 
-  <p>
-    Submit your plan by June 6, 2025. More details can be found 
-    <a href="https://docs.google.com/document/d/1fEL6H4-FW-C_OaB0oMp5iw9_5KJYgbOk6xpnW0sMSDY/edit?tab=t.b8icz0xlc3zz" target="_blank" rel="noopener">here</a>.
-  </p>
 
-</div>
 
-<!--Advertise your events in May and beyond here-->
+{% include opportunity-box.html 
+    title="R-RSE Affinity Group (Project 2)" 
+    preamble="
+<img src='https://rworks.dev/posts/welcome-to-rworks/images/r-love.png' 
+       alt='Artwork by @allison_horst on Twitter' 
+       style='float: right; max-width: 300px; width: 100%; height: auto; margin: 0 20px 20px 0; border-radius: 10px;'>
 
-#### _DMV-RSE Meetup: Maintaining open-source software over the decade time scale: lessons learned and best practices_
+Interested in designing and launching a mini-hackathon, codeathon, or other R-focused project?
 
+Come join the [R-RSE Affinity Group (R-RSE)](https://us-rse.org/ag/r-rse/) for Project 2 of 3 that we are making available this year! R-RSE exists to increase the representation of R users in the US-RSE community  and provide opportunities for members to develop R skills.
+"
+links="Submit your plan by June 6, 2025. More details can be found [here](https://docs.google.com/document/d/1fEL6H4-FW-C_OaB0oMp5iw9_5KJYgbOk6xpnW0sMSDY/edit?tab=t.b8icz0xlc3zz)!"
+%}
+
+
+<!--
+        Advertise your events and opportunities in in the coming months and beyond here!
+
+        We're using an html-box for automating events.
+        They look pretty, and are easy to use.
+        Just copy the code in the include block below, and fill in the details in markdown.
+
+{% include event-box.html 
+    
+    title="My cool event" 
+    when="Tomorrow, May 15, 5:30–7:00 PM" 
+    where="My place"
+    preamble="Come on over to my cool event. It's going to be **awesome**! Here's a list of things we can do:
+    - eat pizza
+    - drink soda
+    - play games
+    - have fun
+    It's all in markdown too!"
+    links="Make sure to include a CALL TO ACTION: Show up by registering[here](https://example.com) or on [Meetup](https://example.com)"
+%}
+
+-->
+
+{% include event-box.html 
+    
+    title="DMV-RSE Meetup: Maintaining Open-Source Software" 
+    
+    when="Thursday, May 15, 5:30–7:00 PM" 
+    
+    where="Martin Luther King Jr. Memorial Library, Washington DC"
+    
+    preamble="
 The [Delaware-Maryland-Virginia (DMV) RSE](https://us-rse.org/ag/dmv-rse/) affinity group is hosting a third in-person DMV Research Software Engineers meetup on May 15 in Washington DC! Join us to learn about a new RSE topic, connect with fellow RSE professionals in the area, and make friends!
 
-**Speaker**: [Ryan Dale](https://irp.nih.gov/pi/ryan-dale), a senior scientist and Head of the Bioinformatics and Scientific Programming Core at the National Institute of Child Health and Human Development will share insights about what it takes to maintain software for 14 years (and counting). Ryan's talk will touch on various hot topics in research software engineering like journal article citations vs. actual usage, engaging with a community of users, working with GitHub and various online providers, building out your online CV, and more.
+**Speaker**: [Ryan Dale](https://irp.nih.gov/pi/ryan-dale), a senior scientist and Head of the Bioinformatics and Scientific Programming Core at the National Institute of Child Health and Human Development will share insights about what it takes to maintain software for 14 years (and counting). Ryan's talk will touch on various hot topics in research software engineering like journal article citations vs. actual usage, engaging with a community of users, working with GitHub and various online providers, building out your online CV, and more."
+    
+    links="Register and details on [Luma](https://lu.ma/f260643d) or via [Meetup](https://www.meetup.com/dc-research-software-engineers/events/307019826/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link)"
+%}
 
-**When**: Thursday, May 15, 5.30-7pm
-
-**Where**: Martin Luther King Jr. Memorial Library, Washginton DC
-
-Register and details on [Luma](https://lu.ma/f260643d) or via [Meetup](https://www.meetup.com/dc-research-software-engineers/events/307019826/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link). 
-
-#### _Non-Government Career Paths for U.S. Federal Data Scientists_
-
-rOpenSci and Openscapes are lucky to have as members many U.S. federal employees who enrich our work and community. In a time of great uncertainty for so many government workers, we want to support our members who are considering their next career steps.
-Join us on Tuesday, May 6 at 8:30PM EDT for a discussion and networking event for and with current and former U.S. federal government data scientists.
-We will be joined by co-hosts discussing their career paths in other sectors after serving at U.S. federal agencies. Follow this link to register: [rOpenSci](https://ropensci.org/events/datasci-careers-feds/)
-
-**When**: Tuesday, May 6, 8:30PM EDT
-
-**Where**: Online
+{% include event-box.html 
+    
+    title="Non-Government Career Paths for U.S. Federal Data Scientists" 
+    when="Tuesday, May 6, 8:30 PM EDT" 
+    where="Online"
+    preamble="
+rOpenSci and Openscapes are lucky to have as members many U.S. federal employees who enrich our work and community. In a time of great uncertainty for so many government workers, we want to support our members who are considering their next career steps. Join us on Tuesday, May 6 at 8:30PM EDT for a discussion and networking event for and with current and former U.S. federal government data scientists. We will be joined by co-hosts discussing their career paths in other sectors after serving at U.S. federal agencies.
+"
+    links="Follow this link to register: [rOpenSci](https://ropensci.org/events/datasci-careers-feds/)"
+%}
 
 > Have an event you want people to know about? Please send us your suggestions for the next newsletter using the #newsletters channel in the USRSE Slack!
 
 -----------------
 
 <a name="reads"></a>
-# 📚 **7. Featured Reads, Videos, and Podcasts**
+# 📚 **8. Featured Reads, Videos, and Podcasts**
 
 Stay informed with the latest publications, conversations, and entertaining content from the research software engineering community.
 
@@ -287,7 +342,7 @@ Recent episodes from the **Code4Thought** podcast:
 
 -----------------
 <a name="involved"></a>
-# 🏃 **8. Get Involved**
+# 🏃 **9. Get Involved**
 
 Volunteering with US-RSE is a great way to build your professional network and gain skills that can help you take the next step in your career.  A great way to start is by joining a working group.  Reach out to contact@us-rse.org or ask on Slack if you have questions about getting started.  
 
@@ -312,7 +367,7 @@ As always, we thank everyone who is already contributing for their help in shapi
 -----------------
 
 <a name="jobs"></a>
-# 🧑‍💼 **9. Recent Job Postings**
+# 🧑‍💼 **10. Recent Job Postings**
 
 These opportunities were recently posted to the [RSE Opportunities page](https://us-rse.org/jobs/):
 

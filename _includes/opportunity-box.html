@@ -1,0 +1,5 @@
+<div class="alert alert-success" role="alert" style="margin-bottom: 30px;">
+  <h4 class="alert-heading">🚀 {{ include.title }}</h4>
+  <p>{{ include.preamble | markdownify }}</p>
+  <p>{{ include.links | markdownify | replace: '<a ', '<a target="_blank" rel="noopener" ' }}</p>
+</div>
