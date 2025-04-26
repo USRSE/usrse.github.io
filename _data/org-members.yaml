@@ -96,6 +96,15 @@ premier:
     url: https://princeton.edu
     figure: logo-princeton.png
     acronym: PU
-    date_joined: 2024-04-01 # I DONT KNOW WHAT DATE TO PUT HERE
+    date_joined: 2025-04-01 # I DONT KNOW WHAT DATE TO PUT HERE
     founding_member: true
     tier: "Premier"
+
+  - name: "Sandia National Laboratories"
+    url: https://www.sandia.gov/
+    figure: logo-sandia.png
+    acronym: SNL
+    date_joined: 2025-04-01 # DUMMY DATE HERE AS WELL
+    founding_member: true
+    tier: "Premier"
+
