@@ -92,3 +92,11 @@ premier:
     date_joined: 2024-12-19
     founding_member: true
     tier: "Premier"
+  - name: "Sandia"
+    url: https://www.sandia.gov/
+    figure: logo-sandia.svg
+    acronym: 
+    date_joined: 2025-04-24
+    founding_member: true
+    tier: "Premier"
+    contact: "Miranda Mundt <mmundt@sandia.gov>"
