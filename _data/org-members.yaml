@@ -99,12 +99,11 @@ premier:
     date_joined: 2025-04-01 # I DONT KNOW WHAT DATE TO PUT HERE
     founding_member: true
     tier: "Premier"
-
-  - name: "Sandia National Laboratories"
+  - name: "Sandia"
     url: https://www.sandia.gov/
-    figure: logo-sandia.png
-    acronym: SNL
-    date_joined: 2025-04-01 # DUMMY DATE HERE AS WELL
+    figure: logo-sandia.svg
+    acronym: 
+    date_joined: 2025-04-24
     founding_member: true
     tier: "Premier"
-
+    contact: "Miranda Mundt <mmundt@sandia.gov>"
