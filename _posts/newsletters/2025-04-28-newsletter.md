@@ -165,11 +165,11 @@ The next community call will be all about **conferences** and will take place on
 
 The April Community Call was about **git branching strategies and continuous integration tools**, and is available on YouTube:
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+<div style="position: relative; width: 100%; max-width: 640px; margin: 0 auto; overflow: hidden; background: #000; aspect-ratio: 16 / 9;">
   <img src="https://img.youtube.com/vi/UdpjTha4F4M/hqdefault.jpg" 
        alt="YouTube Video Thumbnail" 
        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; cursor: pointer;" 
-       onclick="this.outerHTML='<iframe width=\'560\' height=\'315\' src=\'https://www.youtube.com/embed/UdpjTha4F4M?autoplay=1\' title=\'YouTube video player\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' allowfullscreen style=\'position: absolute; top: 0; left: 0; width: 100%; height: 100%;\'></iframe>'">
+       onclick="this.outerHTML='<iframe width=\'640\' height=\'360\' src=\'https://www.youtube.com/embed/UdpjTha4F4M?autoplay=1\' title=\'YouTube video player\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' allowfullscreen style=\'position: absolute; top: 0; left: 0; width: 100%; height: 100%;\'></iframe>'">
 </div>
 
 ----------------
@@ -242,7 +242,43 @@ Join the **R-RSE Affinity Group** to connect with fellow R users, share projects
 %}
 -->
 
+{% include opportunity-box.html 
+    title="Supercomputing and the Future of AI: A Virtual Exchange Program for K-12 Classes 🤖" 
+    preamble="
 
+> We have started an exciting webinar series for K-12 students in collaboration with Reach The World. Classrooms can sign up for free! We have already over 500 students registered and there is space for more!
+Please forward to schools, teachers, K-12 students. Don’t hesitate to contact [Sandra Gesing](mailto:sandra@us-rse.org) if you have questions.
+
+What makes a supercomputer “super”? What is quantum computing? What’s the difference, and how does AI (artificial intelligence) fit in?
+
+Journey behind the headlines with an exciting new opportunity for K-12 classrooms! US-RSE has partnered with global education non-profit Reach the World to launch a free eight-week virtual exchange program that answers these questions and much more. Students will travel virtually to places like the San Diego Supercomputing Center to see firsthand how data scientists and research software engineers are harnessing today’s incredible computing power to process, interpret and draw conclusions from vast collections of data in a way that was previously unthinkable!
+"
+    links="Don’t miss this chance to inspire the next generation of innovators! Register today at [bit.ly/rtwexplore](https://bit.ly/rtwexplore)"
+%}
+
+{% include opportunity-box.html 
+    title="Code Review Study" 
+    preamble="Dr. Jeffrey Carver, Dr. Nasir Eisty, and Md Ariful Malik from the University of Alabama are conducting a study to explore the code review process used by Research Software Engineers (RSEs).
+
+As an RSE, we invite you to participate in an interview to share your experiences with the code review process. The interview will take approximately 15–20 minutes and can be conducted via Zoom or in person, depending on your preference.
+
+Your participation is completely voluntary and confidential. Information will be kept anonymous, and with your approval, we will record the audio of the interview. Any personal information will be deleted after the interview. You may choose to withdraw at any time before or during the interview. To be eligible, you must be 18 years or older. This study has been approved by the University of Alabama Institutional Review Board."
+    links="We would greatly appreciate your participation and insights. Thank you in advance!
+If you are interested in being interviewed, please fill out [this short information form](https://universityofalabama.az1.qualtrics.com/jfe/form/SV_e39KXNkAYyjVtEG ) so we can contact you to schedule an interview."
+%}
+
+{% include opportunity-box.html 
+    title="Spack User Survey, 2025" 
+    preamble="
+📣 **Calling all Spack users** 📣
+
+We are running a Spack User Survey for 2025! We’d love to get your feedback so that we can present the results next month at the *first ever in-person Spack User Meeting, May 7-8!*
+
+The past three surveys were extremely useful for guiding priorities for Spack feature development, and we’ve really appreciated the detailed feedback from all of you. By filing out the survey, you can help us recognize trends in the project over time. With the 1.0 release approaching in June, now’s your chance to tell us what to do next. Please take the time to let us know how you feel! This should take ~10-15 minutes, though some questions are free-form and we do love details.
+Thanks in advance for your time!
+"
+    links="The form is available [here](https://forms.gle/G7xoddMwPF1k1BxT7), and will stay open through Saturday, May 3."
+%}
 
 {% include opportunity-box.html 
     title="R-RSE Affinity Group (Project 2)" 
@@ -284,6 +320,44 @@ links="Submit your plan by June 6, 2025. More details can be found [here](https:
 
 {% include event-box.html 
     
+    title="eScience 2025" 
+    when="September 15-18, 2025" 
+    where="Chicago, IL, USA"
+    preamble="IEEE eScience 2025 (September 15-18, 2025) brings together leading interdisciplinary research communities, developers and users of eScience applications and enabling IT technologies. The objective of the eScience Conference is to promote and encourage all aspects of eScience and its associated technologies, applications, algorithms and tools with a strong focus on practical solutions and challenges. eScience 2025 interprets eScience in its broadest meaning that enables and improves innovation in data- and compute-intensive research across all domain sciences ranging from traditional areas in physics and earth sciences to more recent fields such as social sciences, arts and humanities, and artificial intelligence for a wide variety of target architectures including HPC, cloud and IoT infrastructures.
+
+The 21st IEEE International Conference on e-Science is co-located with the 6th Global Research Platform Workshop (6GRP) in Chicago, IL, USA. Both audiences share common interests, content, and culture. Co-location provides attendees with the option to register for both events."
+    links="Find out more [here](https://www.escience-conference.org/2025/). Tutorial submission deadline is **May 5 2025!**"
+%}
+
+{% include event-box.html 
+    
+    title="59th Hawaii International Conference on System Sciences (HICSS) 🏝️" 
+    when="January 6-9, 2026" 
+    where="Hyatt Regency, Maui, HI"
+    preamble="The [59th Hawaii International Conference on System Sciences (HICSS)](https://hicss.hawaii.edu/) will take place at [Hyatt Regency, Maui, HI](https://www.hyatt.com/hyatt-regency/en-US/oggrm-hyatt-regency-maui-resort-and-spa), on January 6-9, 2026. Minitracks of interest include:
+
+* Software Sustainability: Research on Usability, Maintainability, and Reproducibility
+* Impact of AI on Software Engineering"
+    links="The deadline for submissions is June 15, 2025. For more information, please visit the [HICSS website](https://hicss.hawaii.edu/)."
+%}
+
+{% include event-box.html 
+    
+    title="Healthcare and Life Sciences (HCLS) Symposium @KGC2025" 
+    when="Tuesday, May 06, 2025" 
+    where="(Hybrid) San Diego, CA, USA"
+    preamble="
+💭 Curious about the most up-to-date knowledge-centric #AI use-cases in health care & life sciences (#HCLS)? If so, this event is **NOT TO BE MISSED**:
+
+This year's Knowledge Graph Conference (#KGC2025) is happy to host some of the most engaging subject matter experts from institutions like **Stanford University, Rensselaer Polytechnic Institute, EPAM Systems, AbbVie, Accenture, Schrödinger, Thoughtworks, Scripps Research, The University of Texas at Austin, Graphwise, Bristol Myers Squibb, XponentL Data, ONTOFORCE, and more**, this year on May 6, 2025‼️ 
+
+And for the first time, we co-created a satellite venue in San Diego, Southern California 🤗 
+"
+    links="Each ticket includes online access to the HCLS Symposium on May 6, as well as the Knowledge Graph Conference of 2025 (May 5-9). It also includes in-person networking in San Diego during May 6. Register [here](https://www.premiumdiscovery.group/event-details/hcls-symposium-kgc2025)!"
+%}
+
+{% include event-box.html 
+    
     title="DMV-RSE Meetup: Maintaining Open-Source Software" 
     
     when="Thursday, May 15, 5:30–7:00 PM" 
@@ -319,11 +393,16 @@ rOpenSci and Openscapes are lucky to have as members many U.S. federal employees
 Stay informed with the latest publications, conversations, and entertaining content from the research software engineering community.
 
 ### 📑 Recent Publications
+<!-- 
+TODO: Create a publications template
+-->
 
 - **E. A. Jensen, D. S. Katz**, _"Awareness of FAIR and FAIR4RS among International Research Software Funders,"_ Scientific Data, Vol. 12, Article 627, 2025. [Read the article.](https://doi.org/10.1038/s41597-025-04820-4)
 
 - **B. U. Westner, D. R. McCloy, E. Larson, A. Gramfort, D. S. Katz, A. M. Smith, A. Delorme, V. Litvak, S. Makeig, R. Oostenveld, J.-M. Schoffelen, T. Tierney**,  
 _"Cycling on the Freeway: The Perilous State of Open-Source Neuroscience Software,"_ Imaging Neuroscience, 2025. [Read the article.](https://doi.org/10.1162/imag_a_00554)
+
+- **Mourão, E., Trevisan, D., Viterbo, J., Sobral, A. P. B., da Silva, M., & Pantoja, C. E.**, _"Investigating the Adoption of Research Software: From Success Factors to Challenges Faced by Brazilian Academic Researchers,"_ Journal of Software Engineering Research and Development, 13(1), 13:218 – 13:241, 2025. [Read the article.](https://doi.org/10.5753/jserd.2025.3696)
 
 ### 🎧 Podcast Highlights
 
