@@ -92,14 +92,14 @@ premier:
     date_joined: 2024-12-19
     founding_member: true
     tier: "Premier"
-  - name: "Princeton University"
-    url: https://princeton.edu
-    figure: logo-princeton.png
-    acronym: PU
-    date_joined: 2025-04-01 # I DONT KNOW WHAT DATE TO PUT HERE
-    founding_member: true
-    tier: "Premier"
-  - name: "Sandia"
+  # - name: "Princeton University" # NOT ADDING UNTIL WE HAVE AN OFFICIAL LOGO
+  #   url: https://princeton.edu
+  #   figure:                 
+  #   acronym:
+  #   date_joined:
+  #   founding_member: true
+  #   tier: "Premier"
+  - name: "Sandia National Laboratories"
     url: https://www.sandia.gov/
     figure: logo-sandia.svg
     acronym: 

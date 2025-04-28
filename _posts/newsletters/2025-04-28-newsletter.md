@@ -136,6 +136,8 @@ Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.or
 {% for org in site.data.org-members.premier %}
 - [{{ org.name }}]({{ org.url }})
 {% endfor %}
+<!--TODO Remove this next month when official logo is added to org-members.yaml-->
+- [Princeton University](https://www.princeton.edu/)
 
 ### Standard Members
 {% for org in site.data.org-members.standard %}
