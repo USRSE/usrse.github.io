@@ -243,6 +243,18 @@ Join the **R-RSE Affinity Group** to connect with fellow R users, share projects
 -->
 
 {% include opportunity-box.html 
+    title="SuperComputing '25 Volunteer Reviewer" 
+    preamble="
+We are seeking reviewers for Student Volunteer applications for SC25. Student Volunteers are a vital part of SC who work hard to make the conference run smoothly. The Student Volunteers program offers students an opportunity to enjoy greater involvement with and give back to the HPC community; many volunteer for multiple years and some join the SC committee after graduating.
+    
+Applications close May 31st 2025, and reviews will be due June 27th, 2025. The expected workload is approximately 6-12 applications, and they are in short essay answer format. We expect reviews to take between 2-6 hours total."
+    links="If you’re interested in reviewing Student Volunteer applications or have any questions please contact the Student Volunteer chair, Betsy Hillery at eahillery@purdue.edu or the Vice Student Volunteer chair, Suzanne Prentice at prenticest@ornl.gov by May 15th, 2025. Reach out to Suzanne Prentice on Slack if you have any questions.
+
+[SC '25 Website](https://sc25.supercomputing.org)
+"
+%}
+
+{% include opportunity-box.html 
     title="Supercomputing and the Future of AI: A Virtual Exchange Program for K-12 Classes 🤖" 
     preamble="
 
@@ -317,6 +329,19 @@ links="Submit your plan by June 6, 2025. More details can be found [here](https:
 %}
 
 -->
+
+{% include event-box.html 
+    
+    title="Developing Heliophysics Standards and Cross-science Collaborations Workshop" 
+    when="August 11-15, 2025" 
+    where="Iowa City, IA"
+    preamble="
+The Developing Heliophysics Standards and Cross-science Collaborations Workshop will take place at the University of Iowa in Iowa City, IA, from August 11-15, 2025. This hybrid workshop invites mission and modeling software developers in Heliophysics and related sciences to discuss potential software standards and foster collaborations to address technical challenges. The event focuses on improving Open Science practices in mission- and model-related software development across solar physics, space physics, ITM sciences, and more. Attendees from all career stages and specializations are welcome to explore best practices, standards, and opportunities for collaboration to enhance efficiency and innovation in the field.
+
+The workshop will be hosted in Van Allen Hall on the University of Iowa campus, with no registration fee required. In-person attendance is limited by venue capacity, with priority given to mission and modeling software developers."
+    
+    links="Registration deadlines are July 27, 2025, for in-person attendees and August 7, 2025, for virtual participants. Abstract submissions are due by June 30, 2025, though mission-related software abstracts are not being solicited. For more details, registration, and abstract submission, visit [https://tinyurl.com/HelioSoft2025](https://tinyurl.com/HelioSoft2025)"
+%}
 
 {% include event-box.html 
     
