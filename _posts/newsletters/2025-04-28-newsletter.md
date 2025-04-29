@@ -11,8 +11,9 @@ date: 2025-04-25 00:00:00 -0400
 
 ### 💜 This Month: Celebrating Our RSE Community 💜
 
+<!--
 <img src="https://quotation.io/quotes/every-person-defined-communities-belongs.jpg" alt="Orson Scott Card Quote: Every Person is defined by the communities she belongs to.">
-
+-->
 <!--Headline-->
 
 In this monthly newsletter, we share recent, current, and planned activities of the US-RSE Association, and related news that we think is of interest to US-RSE members. Newsletters are also available on our [website](https://us-rse.org/newsletters/) alongside the growing resources and information on the US-RSE Association. To receive our newsletter, [join US-RSE](https://us-rse.org/join/).
