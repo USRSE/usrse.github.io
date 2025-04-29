@@ -68,7 +68,7 @@ standard:
     founding_member: true
     tier: "Standard"
     contact: "Michelle Barker <barkermd@outlook.com>"
-  - name: "Omnibond"
+  - name: "Omnibond (Project EUREKA!)"
     url: https://omnibond.com/
     figure: logo-omnibond.png
     acronym: 
@@ -92,7 +92,14 @@ premier:
     date_joined: 2024-12-19
     founding_member: true
     tier: "Premier"
-  - name: "Sandia"
+  # - name: "Princeton University" # NOT ADDING UNTIL WE HAVE AN OFFICIAL LOGO
+  #   url: https://princeton.edu
+  #   figure:                 
+  #   acronym:
+  #   date_joined:
+  #   founding_member: true
+  #   tier: "Premier"
+  - name: "Sandia National Laboratories"
     url: https://www.sandia.gov/
     figure: logo-sandia.svg
     acronym: 

@@ -27,8 +27,27 @@
             </div>
         </div>
     </section>
-    {% unless page.hide_footer %}{% include footer.html %}{% endunless %}
-    {% include footer-scripts.html %}
-    {% if page.set_last_modified %}{% include last-modified.html %}{% endif %}
+    
+    <a href="#top" id="back-to-top" title="Back to Top" align="center">⬆️ Back to top ⬆️</a>
+    
+    <script>
+        console.log('Scroll event listener registered');
+        window.addEventListener("scroll", function() {
+            console.log('scrolling...', window.scrollY);
+            var backToTopButton = document.getElementById("back-to-top");
+            if (window.scrollY > 300) {
+                console.log('Show button');
+                backToTopButton.style.display = "block";
+            } else {
+                console.log('Hide button');
+                backToTopButton.style.display = "none";
+            }
+        });
+    </script>
+
+{% unless page.hide_footer %}{% include footer.html %}{% endunless %}
+{% include footer-scripts.html %}
+{% if page.set_last_modified %}{% include last-modified.html %}{% endif %}
+
   </body>
 </html>
