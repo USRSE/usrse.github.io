@@ -107,3 +107,11 @@ premier:
     founding_member: true
     tier: "Premier"
     contact: "Miranda Mundt <mmundt@sandia.gov>"
+  - name: "NumFOCUS"
+    url: https://numfocus.org/
+    figure: logo-numfocus.png
+    acronym: 
+    date_joined: 2025-05-01
+    founding_member: true
+    tier: "Premier"
+    contact: "Jim Weiss <jim@numfocus.org>"
