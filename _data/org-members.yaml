@@ -92,13 +92,14 @@ premier:
     date_joined: 2024-12-19
     founding_member: true
     tier: "Premier"
-  # - name: "Princeton University" # NOT ADDING UNTIL WE HAVE AN OFFICIAL LOGO
-  #   url: https://princeton.edu
-  #   figure:                 
-  #   acronym:
-  #   date_joined:
-  #   founding_member: true
-  #   tier: "Premier"
+  - name: "Princeton University"
+    url: https://researchcomputing.princeton.edu/
+    figure: logo-princeton.png                
+    acronym:
+    date_joined: 2025-04-18
+    founding_member: true
+    tier: "Premier"
+    contact: "Ian Cosden <icosden@princeton.edu>"
   - name: "Sandia National Laboratories"
     url: https://www.sandia.gov/
     figure: logo-sandia.svg
@@ -107,3 +108,11 @@ premier:
     founding_member: true
     tier: "Premier"
     contact: "Miranda Mundt <mmundt@sandia.gov>"
+  - name: "NumFOCUS"
+    url: https://numfocus.org/
+    figure: logo-numfocus.png
+    acronym: 
+    date_joined: 2025-05-01
+    founding_member: true
+    tier: "Premier"
+    contact: "Jim Weiss <jim@numfocus.org>"
