@@ -3,7 +3,7 @@
 https://us-rse.org
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-88-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-89-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -235,6 +235,7 @@ tool to generate a contributors graphic below.
       <td align="center" valign="top" width="14.28%"><a href="http://www.tinashemtapera.com"><img src="https://avatars.githubusercontent.com/u/15770644?v=4?s=100" width="100px;" alt="Tinashe Michael Tapera"/><br /><sub><b>Tinashe Michael Tapera</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=TinasheMTapera" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="dphow.github.io"><img src="https://avatars.githubusercontent.com/u/8248595?v=4?s=100" width="100px;" alt="Daniel Howard"/><br /><sub><b>Daniel Howard</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=dphow" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/DMadren"><img src="https://avatars.githubusercontent.com/u/204754096?v=4?s=100" width="100px;" alt="DMadren"/><br /><sub><b>DMadren</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=DMadren" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/luet"><img src="https://avatars.githubusercontent.com/u/5649484?v=4?s=100" width="100px;" alt="David Luet"/><br /><sub><b>David Luet</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=luet" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
