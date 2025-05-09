@@ -99,11 +99,11 @@ Active members attend our regular meetings at least once a quarter (once every 3
 
 - [African Brain Data Science Academy](https://africanbraindatanetwork.com/abds-academy/)
 - Cold Spring Harbor Laboratory [summer schools](https://meetings.cshl.edu/courseshome.aspx), especially [Computational Neuroscience: Vision](https://meetings.cshl.edu/courses.aspx?course=C-VISI&year=24) (every other year)
-- [NeuroDataReHack](https://neurodatawithoutborders.github.io/nwb_hackathons/HCK21_2024_Janelia_NDRH/)
+- [NeuroDataReHack](https://nwb.org/events/hck24-2025-janelia-ndrh/)
 - [Neurohackademy](https://neurohackademy.org/) (neuroimaging-focused)
 - [Neuromatch Academy](https://academy.neuromatch.io/) (online)
-- [NWB User Days and Hackathons](https://www.nwb.org/nwb-events/)
+- [NWB Events (Workshops, Hackathons, Tutorials)](https://nwb.org/events/)
 - [ODIN Symposium](https://odin.mit.edu/)
-- [OHBM Brainhack](https://ohbm.github.io/hackathon2023/)
-- [Pre-Cosyne Brainhack](https://pre-cosyne-brainhack.github.io/hackathon2024/)
+- [OHBM Brainhack](https://ohbm.github.io/hackathon2025/)
+- [Pre-Cosyne Brainhack](https://pre-cosyne-brainhack.github.io/hackathon2025/)
 
