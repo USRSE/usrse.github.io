@@ -481,6 +481,11 @@
         "bio": "Passionate towards applying mathematical expertise to complex problems, especially those related to the climate and\r\nenvironment by developing HPC software.",
         "blog": "dphow.github.io"
     },
+    "rly": {
+        "name": "Ryan Ly",
+        "bio": "Neuroscience research software engineer. Technical lead of the NWB data standard and software for neurophysiology. ",
+        "blog": "nwb.org"
+    },
     "luet": {
         "name": "David Luet",
         "email": "luet@princeton.edu",

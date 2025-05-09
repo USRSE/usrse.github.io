@@ -951,6 +951,17 @@
             ]
         },
         {
+            "login": "rly",
+            "name": "Ryan Ly",
+            "contributions": [
+                "code"
+            ],
+            "profile": "nwb.org",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/310197?v=4"
+            ]
+        },
+        {
             "login": "luet",
             "name": "David Luet",
             "contributions": [
