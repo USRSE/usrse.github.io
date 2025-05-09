@@ -949,6 +949,28 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/204754096?v=4"
             ]
+        },
+        {
+            "login": "rly",
+            "name": "Ryan Ly",
+            "contributions": [
+                "code"
+            ],
+            "profile": "nwb.org",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/310197?v=4"
+            ]
+        },
+        {
+            "login": "luet",
+            "name": "David Luet",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/luet",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/5649484?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
