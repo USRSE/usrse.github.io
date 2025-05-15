@@ -58,8 +58,9 @@ body:
       description: Paste the link to the HackMD collaborative draft
       placeholder: https://hackmd.io/@usrse/newsletter-April-2025
 
-  - type: textarea
+    - type: textarea
     id: notes
     attributes:
       label: Additional Notes
       description: Anything else to note or watch out for this edition?
+      placeholder: Add any notes, context, or reminders here...
