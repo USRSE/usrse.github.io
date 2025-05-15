@@ -34,7 +34,7 @@ body:
     attributes:
       label: Headline Highlights
       description: Brief description of main highlights or themes for this edition
-      placeholder: Community celebrations, RSE’25 announcement, job board, etc.
+      placeholder: "Community celebrations, RSE’25 announcement, job board, etc."
 
   - type: markdown
     attributes:
