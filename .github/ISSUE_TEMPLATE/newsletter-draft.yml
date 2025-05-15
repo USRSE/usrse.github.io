@@ -58,7 +58,7 @@ body:
       description: Paste the link to the HackMD collaborative draft
       placeholder: https://hackmd.io/@usrse/newsletter-April-2025
 
-    - type: textarea
+  - type: textarea
     id: notes
     attributes:
       label: Additional Notes
