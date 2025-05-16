@@ -1,0 +1,54 @@
+name: Generate Newsletter File
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  generate-newsletter:
+    if: contains(github.event.issue.title, 'Newsletter Draft:')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Extract inputs from issue body
+        id: vars
+        run: |
+          month=$(echo "${{ github.event.issue.body }}" | grep -i "Month" -A 1 | tail -n 1 | xargs)
+          year=$(echo "${{ github.event.issue.body }}" | grep -i "Year" -A 1 | tail -n 1 | xargs)
+          date="${year}-$(date +%m)-01"
+          slug_month=$(echo "$month" | tr '[:upper:]' '[:lower:]')
+          filename="_posts/${date}-newsletter.md"
+
+          echo "month=$month" >> $GITHUB_OUTPUT
+          echo "year=$year" >> $GITHUB_OUTPUT
+          echo "date=$date" >> $GITHUB_OUTPUT
+          echo "filename=$filename" >> $GITHUB_OUTPUT
+
+      - name: Generate newsletter file from template
+        run: |
+          mkdir -p _posts
+          cp _template/newsletter-template.md ${{ steps.vars.outputs.filename }}
+
+          sed -i "s/{{ month }}/${{ steps.vars.outputs.month }}/g" ${{ steps.vars.outputs.filename }}
+          sed -i "s/{{ year }}/${{ steps.vars.outputs.year }}/g" ${{ steps.vars.outputs.filename }}
+          sed -i "s/{{ date }}/${{ steps.vars.outputs.date }}/g" ${{ steps.vars.outputs.filename }}
+
+      - name: Commit and push draft
+        run: |
+          branch="draft-newsletter-${{ steps.vars.outputs.month }}-${{ steps.vars.outputs.year }}"
+          git checkout -b "$branch"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ${{ steps.vars.outputs.filename }}
+          git commit -m "Add newsletter draft for ${{ steps.vars.outputs.month }} ${{ steps.vars.outputs.year }}"
+          git push origin "$branch"
+
+      - name: Comment on issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} \
+            --body "✅ Draft created: [${{ steps.vars.outputs.filename }}](https://github.com/${{ github.repository }}/blob/${branch}/${{ steps.vars.outputs.filename }}) in branch \`${branch}\`"
