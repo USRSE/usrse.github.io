@@ -6,7 +6,7 @@ on:
 
 jobs:
   generate-newsletter:
-    if: contains(github.event.issue.title, 'Newsletter Draft')
+    if: contains(github.event.issue.title, 'Newsletter Draft:')
     runs-on: ubuntu-latest
 
     steps:
