@@ -1,6 +1,6 @@
 name: "Newsletter Draft: New Edition"
 description: "Start a new US-RSE newsletter draft and prepare for collaborative editing."
-title: "Newsletter Draft: [Month Year]"
+title: "Newsletter Draft [Month Year]"
 labels: ["newsletter", "draft"]
 assignees: ["@your-username"]
 body:
@@ -36,15 +36,18 @@ body:
       description: Brief description of main highlights or themes for this edition
       placeholder: "Community celebrations, RSE’25 announcement, job board, etc."
 
-  - type: markdown
+  - type: textarea
+    id: tasks
     attributes:
+      label: Newsletter Tasks
+      description: Checklist to complete this edition
       value: |
         ### 🛠️ Tasks
 
         - [ ] Create new markdown draft using Jekyll post format  
         - [ ] Add file to `_posts/` with filename: `YYYY-MM-DD-newsletter.md`
         - [ ] Add YAML frontmatter with correct `title`, `date`, and tags
-        - [ ] Push draft to `draft-newsletter-[month-year]` branch
+        - [ ] Push draft to `feature/draft-newsletter-[month-year]` branch
         - [ ] Create HackMD mirror and paste link below
         - [ ] Share HackMD link in Slack `#newsletters` channel
         - [ ] Open PR into `develop` with `[WIP] Newsletter [Month Year]`
