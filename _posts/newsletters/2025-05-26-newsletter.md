@@ -9,13 +9,19 @@ date: YYYY-MM-DD 00:00:00 -0400
 
 <a name="top"></a>
 
-### 💜 This Month: [Headline Theme] 💜
+### 💜 This Month: Meetups! 💜
 
 In this monthly newsletter, we share recent, current, and planned activities of the US-RSE Association, and related news that we think is of interest to US-RSE members. Newsletters are also available on our [website](https://us-rse.org/newsletters/). To receive our newsletter, [join US-RSE](https://us-rse.org/join/).
 
+This month, we want to highlight the importance of meetups in our community. 
+
+[TODO: pics from meetups we can gather]
+
+Meetups are a great way to connect with fellow Research Software Engineers, share knowledge, and build relationships. Whether you're interested in discussing best practices, collaborating on projects, or simply networking, meetups provide a valuable platform for engagement. Read on to hear about how our members are using meetups to connect with each other and the community at large.
+
 In this issue:
 * [1. USRSE'25 Conference](#conference2025)
-* [2. [HEADLINE THEME](#headline)
+* [2. [HEADLINE THEME]](#headline)
 * [3. Steering Committee Updates](#sc-update)
 * [4. Organizational Founding Membership](#orgmember)
 * [5. Community and Travel Funds](#community-funds)
@@ -30,12 +36,37 @@ In this issue:
 <a name="conference2025"></a>
 # 🔔 **1. US-RSE Conference 2025 (USRSE'25)**
 
-<!-- Update with current announcements -->
+<p align="center">
+  <img src="https://us-rse.org/usrse25/assets/img/banner.png" alt="USRSE25 Banner" style="width: 1000px; height: auto;">
+</p>
+
+**Call for Submissions**
+
+**We continue to invite poster submissions for [USRSE'25](https://us-rse.org/usrse25/participate/)**, the third annual conference from the United States Research Software Engineer Association ([US-RSE](https://us-rse.org/)), to be held in 🦅 **Philadelphia, Pennsylvania 🦅 October 6-8, 2025**. 
+
+Do you write code for your research? Are you curious about career paths available to computational researchers? If so, USRSE’25 is the perfect venue to showcase your work\!
+
+Whether you’re a data scientist, digital humanist, scientific programmer, software developer, or research software user, US-RSE is where people at the intersection of code and research come together. The USRSE'25 conference is your chance to connect with peers, mentors, and experts in the fast-growing world of research software. Don’t just take our word for it—100% of last year's post-conference survey respondents said they would return and recommend the conference to others.
+
+This year’s conference theme is **“Code, Practices, and People.”** While the deadline for papers and other formats has passed, _poster submissions are still welcome and are due July 20, 2025\. _
+
+Visit the [conference website](https://us-rse.org/usrse25/participate/) for further details including:
+
+- Technical topics of interest aligned with the conference theme (see last year’s [program](https://us-rse.org/usrse24/program/) for ideas)  
+- Submission formats, templates, and associated deadlines   
+- ***New Journal Opportunity***: authors whose papers are accepted to USRSE’25 will be invited to submit to a [special issue](https://us-rse.org/usrse25/participate/special-issue/) of the journal Future Generation Computer Systems. Check our [previous special issues](https://www.sciencedirect.com/special-issue/10GXQ2MQKBW).
+- How and where to submit  
+- Dates for notification of acceptance and other important dates  
+- Venue, hotel, and travel [details](https://us-rse.org/usrse25/attend/) 
+
+Questions about the submission process? Contact [usrse2025@easychair.org](mailto:usrse2025@easychair.org).
 
 -----------------
 
 <a name="headline"></a>
-# 💟 **2. [HEADLINE]**
+# 👯 **2. How Meetups Help Us Connect**
+
+Meetups are a vital part of any community, and US-RSE is no exception. They provide a space for our members to connect, share ideas, and collaborate on projects. This month, we want to highlight some of the recent meetups that have taken place in our community.
 
 <!-- Add monthly theme / highlight -->
 
@@ -51,9 +82,13 @@ In this issue:
 <a name="orgmember"></a>
 # 🤝 **4. Organizational Founding Membership**
 
-Organizations that join on or before **November 30, 2025** will be recognized in perpetuity as founding members. Current fee lock through **December 31, 2028**.
+US-RSE envisions a future where Research Software Engineers are universally respected for advancing science, technology, and society through the transformative power of research software engineering.
+We’re excited to share that the momentum around our Organizational Founding Membership continues to grow! See the list below for the current members (six more are onboarding at the moment).
 
-Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.org) if you are interested in becoming a member.
+Organizations that join on or before November 30, 2025, will be recognized in perpetuity as founding members. Founding organizations will also lock in current membership fees through December 31, 2028.
+Organizational support helps sustain and expand vital community offerings, including the annual conference, monthly calls and newsletter, job board, working groups, and new resources.
+
+Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.org) if you are interested in becoming an organizational founding member!
 
 ### Premier Members
 {% for org in site.data.org-members.premier %}
@@ -73,7 +108,7 @@ Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.or
 -----------------
 
 <a name="community-funds"></a>
-# ✈️ **5. Community and Travel Funds Program**
+# ✈️ **4. Community and Travel Funds program**
 
 {% assign current_month = 'now' | date: '%m' | plus: 0 %}
 {% assign current_year = 'now' | date: '%Y' %}
@@ -84,7 +119,7 @@ Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.or
   {% assign next_deadline = current_year | append: "-06-30" %}
 {% elsif current_month <= 9 %}
   {% assign next_deadline = current_year | append: "-09-30" %}
-{% else %}
+{% elsif current_month <= 12 %}
   {% assign next_deadline = current_year | append: "-12-31" %}
 {% endif %}
 
@@ -92,15 +127,36 @@ Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.or
   <strong>Next Application Deadline:</strong> {{ next_deadline | date: "%B %-d, %Y" }}
 </div>
 
-You can apply at [us-rse.org/funds-and-awards](https://us-rse.org/funds-and-awards/)
+*Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/funds-and-awards/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more.*
+
+The next application deadline is **{{ next_deadline | date: "%B %-d, %Y" }}**. We encourage you to apply for funding to support your community and travel needs!  
+The application process is simple and straightforward. You can find the application form [here](https://us-rse.org/funds-and-awards/).
 
 -----------------
 
-<a name="news"></a>
-# 🗞️ **6. Community News**
+<a name="news"></a> 
+# 🗞️ **6. Community News** 
 
+<!--Someone you want to shoutout? DO IT HERE!-->
+
+<a name="community-calls"></a>
 ### **Community Calls**
-<!-- Add Upcoming and Previous calls here -->
+
+<!--Community call news goes here-->
+
+[TODO]
+The next community call will be all about **conferences** and will take place on June 13th at 1PM CDT/2PM EST. Please visit the [Community Calls Website](https://us-rse.org/events/category/#community-call) for more information and to access the registration link.
+
+***May Community Call (Past)***   
+
+The May Community Call was about **git branching strategies and continuous integration tools**, and is available on YouTube:
+
+<div style="position: relative; width: 100%; max-width: 640px; margin: 0 auto; overflow: hidden; background: #000; aspect-ratio: 16 / 9;">
+  <img src="https://img.youtube.com/vi/UdpjTha4F4M/hqdefault.jpg" 
+       alt="YouTube Video Thumbnail" 
+       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; cursor: pointer;" 
+       onclick="this.outerHTML='<iframe width=\'640\' height=\'360\' src=\'https://www.youtube.com/embed/UdpjTha4F4M?autoplay=1\' title=\'YouTube video player\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' allowfullscreen style=\'position: absolute; top: 0; left: 0; width: 100%; height: 100%;\'></iframe>'">
+</div>
 
 -----------------
 
