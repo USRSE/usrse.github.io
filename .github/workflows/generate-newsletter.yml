@@ -55,11 +55,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh issue comment ${{ github.event.issue.number }} --body '
-Draft file created for **${{ steps.vars.outputs.month }} ${{ steps.vars.outputs.year }}** at `${{ steps.vars.outputs.filename }}` in branch `${{ steps.vars.outputs.branch }}`.
-
-You can now:
-1. Open the branch in VS Code using GitFlow (`feature/newsletter-${{ steps.vars.outputs.year }}-${{ steps.vars.outputs.month_num }}`)
-2. Edit and review the draft
-3. Open a PR into `develop` when ready
-'
+          gh issue comment ${{ github.event.issue.number }} --body "Draft file created for **${{ steps.vars.outputs.month }} ${{ steps.vars.outputs.year }}** at \`${{ steps.vars.outputs.filename }}\` in branch \`${{ steps.vars.outputs.branch }}\`.\n\nYou can now:\n1. Open the branch in VS Code using GitFlow (\`feature/newsletter-${{ steps.vars.outputs.year }}-${{ steps.vars.outputs.month_num }}\`)\n2. Edit and review the draft\n3. Open a PR into \`develop\` when ready"
