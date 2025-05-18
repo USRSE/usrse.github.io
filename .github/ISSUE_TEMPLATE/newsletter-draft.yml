@@ -2,7 +2,7 @@ name: "Newsletter Draft: New Edition"
 description: "Start a new US-RSE newsletter draft and prepare for collaborative editing."
 title: "Newsletter Draft [Month Year]"
 labels: ["newsletter", "draft"]
-assignees: ["@your-username"]
+assignees: ["@TinasheMTapera"]
 body:
   - type: markdown
     attributes:
@@ -48,9 +48,14 @@ body:
         - [ ] Add file to `_posts/` with filename: `YYYY-MM-DD-newsletter.md`
         - [ ] Add YAML frontmatter with correct `title`, `date`, and tags
         - [ ] Push draft to `feature/draft-newsletter-[month-year]` branch
-        - [ ] Create HackMD mirror and paste link below
-        - [ ] Share HackMD link in Slack `#newsletters` channel
+        - [ ] Share HackMD link in Slack channels
+          - [ ] `#newsletters`
+          - [ ] `#working-group-chairs`
+          - [ ] `#community-calls`
+          - [ ] `#events`
+          - [ ] `#general`
         - [ ] Open PR into `develop` with `[WIP] Newsletter [Month Year]`
+        - [ ] Create HackMD mirror and paste link below
         - [ ] Collect input and finalize sections by [insert target date]
         - [ ] Finalize and merge to `main`
 
