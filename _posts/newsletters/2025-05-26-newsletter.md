@@ -40,26 +40,20 @@ In this issue:
   <img src="https://us-rse.org/usrse25/assets/img/banner.png" alt="USRSE25 Banner" style="width: 1000px; height: auto;">
 </p>
 
-**Call for Submissions**
+Are you making plans to join us in 🦅 **Philadelphia, Pennsylvania 🦅 October 6-8, 2025**? The theme for the third annual conference from the United States Research Software Engineer Association ([US-RSE](https://us-rse.org/)) is **“Code, Practices, and People.”** 
 
-**We continue to invite poster submissions for [USRSE'25](https://us-rse.org/usrse25/participate/)**, the third annual conference from the United States Research Software Engineer Association ([US-RSE](https://us-rse.org/)), to be held in 🦅 **Philadelphia, Pennsylvania 🦅 October 6-8, 2025**. 
+The conference organizers are pleased to share that we received many high quality submissions to the upcoming conference. Thank you to all who submitted your work! Reviews are underway and notifications should be sent by July 14. Registration will open in June.
 
-Do you write code for your research? Are you curious about career paths available to computational researchers? If so, USRSE’25 is the perfect venue to showcase your work\!
+**While the submission deadline for most formats has passed, we continue to invite poster submissions for [USRSE'25](https://us-rse.org/usrse25/participate/)**.  Poster submissions will be accepted through July 20, 2025\. 
 
-Whether you’re a data scientist, digital humanist, scientific programmer, software developer, or research software user, US-RSE is where people at the intersection of code and research come together. The USRSE'25 conference is your chance to connect with peers, mentors, and experts in the fast-growing world of research software. Don’t just take our word for it—100% of last year's post-conference survey respondents said they would return and recommend the conference to others.
-
-This year’s conference theme is **“Code, Practices, and People.”** While the deadline for papers and other formats has passed, _poster submissions are still welcome and are due July 20, 2025\. _
+Whether you’re a research software engineer, data scientist, digital humanist, scientific programmer, software developer, or research software user, US-RSE is where people at the intersection of code and research come together. The USRSE'25 conference is your chance to connect with peers, mentors, and experts in the fast-growing world of research software. Don’t just take our word for it—100% of last year's post-conference survey respondents said they would return and recommend the conference to others.
 
 Visit the [conference website](https://us-rse.org/usrse25/participate/) for further details including:
 
-- Technical topics of interest aligned with the conference theme (see last year’s [program](https://us-rse.org/usrse24/program/) for ideas)  
-- Submission formats, templates, and associated deadlines   
-- ***New Journal Opportunity***: authors whose papers are accepted to USRSE’25 will be invited to submit to a [special issue](https://us-rse.org/usrse25/participate/special-issue/) of the journal Future Generation Computer Systems. Check our [previous special issues](https://www.sciencedirect.com/special-issue/10GXQ2MQKBW).
-- How and where to submit  
-- Dates for notification of acceptance and other important dates  
 - Venue, hotel, and travel [details](https://us-rse.org/usrse25/attend/) 
+- Posters: how and where to submit (still have questions? contact [usrse2025@easychair.org](mailto:usrse2025@easychair.org))  
+- Dates for notification of acceptance and other important dates  
 
-Questions about the submission process? Contact [usrse2025@easychair.org](mailto:usrse2025@easychair.org).
 
 -----------------
 
