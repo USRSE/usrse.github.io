@@ -28,7 +28,7 @@
           <ul>
             {% for item in page.carousels[number].images %}
             <li class="carousel__slide">
-              <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: 'carousel image' }}">
+              <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.alt | default: 'carousel image' }}">
             </li>
             {% endfor %}
           </ul>

@@ -33,6 +33,8 @@ This month, we're highlighting the importance and impact of meetups in our commu
   <img src="{{ site.baseurl }}/assets/img/newsletter-202505/brooke-cagle--uHVRvDr7pg-unsplash.jpg" alt="Meetups stock photo" style="width: 750px; height: auto;">
 </p>
 
+<p><img src="{{ '/assets/img/newsletter-202505/IMG_2725 (1).jpg' | relative_url }}" alt="Test image"></p>
+
 Meetups are a great way to connect with fellow Research Software Engineers, share knowledge, and build relationships. Whether you're interested in discussing best practices, collaborating on projects, or networking and making friends, meetups provide a valuable platform for engagement. Read on to hear about how our members are using meetups to connect with each other and the community at large.
 
 In this issue:
