@@ -5,21 +5,21 @@ subtitle: "👯 This Month: Meetups! 👯"
 category: newsletter
 tags: [newsletter, May]
 date: 2025-05-28 00:00:00 -0400
-image: /assets/img/newsletter-202505/brooke-cagle--uHVRvDr7pg-unsplash.jpg
+image: "assets/img/newsletter-202505/brooke-cagle--uHVRvDr7pg-unsplash.jpg"
 carousels:
   - images: 
-    - image: /assets/img/dmv-rse-jan22_1.jpg
-    - image: /assets/img/dmv-rse-jan22_2.jpg
-    - image: /assets/img/dmv-rse-jan22_3.jpg
+    - image: "assets/img/dmv-rse-jan22_1.jpg"
+    - image: "assets/img/dmv-rse-jan22_2.jpg"
+    - image: "assets/img/dmv-rse-jan22_3.jpg"
   - images: 
-    - image: /assets/img/newsletter-202505/IMG_2725 (1).jpg
-    - image: /assets/img/newsletter-202505/IMG_7213.jpg
-    - image: /assets/img/newsletter-202505/IMG_1849.jpg
-    - image: /assets/img/newsletter-202505/IMG_1846.jpg
-    - image: /assets/img/newsletter-202505/IMG_1842.jpg
-    - image: /assets/img/newsletter-202505/IMG_1839.jpg
-    - image: /assets/img/newsletter-202505/IMG_1836.jpg
-    - image: /assets/img/newsletter-202505/IMG_1833.jpg
+    - image: "assets/img/newsletter-202505/IMG_2725 (1).jpg"
+    - image: "assets/img/newsletter-202505/IMG_7213.jpg"
+    - image: "assets/img/newsletter-202505/IMG_1849.jpg"
+    - image: "assets/img/newsletter-202505/IMG_1846.jpg"
+    - image: "assets/img/newsletter-202505/IMG_1842.jpg"
+    - image: "assets/img/newsletter-202505/IMG_1839.jpg"
+    - image: "assets/img/newsletter-202505/IMG_1836.jpg"
+    - image: "assets/img/newsletter-202505/IMG_1833.jpg"
 
 ---
 

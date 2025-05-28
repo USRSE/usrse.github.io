@@ -4,17 +4,17 @@ title: "Daniel Madren's Community and Travel Funds Report: Indiana Regional Grou
 tags: [community-awards, usrse, travel-fund, networking, affinity-group]
 author: Daniel Madren
 date: 2025-05-27
-image: /assets/img/newsletter-202505/IMG_2725 (1).jpg
+image: "assets/img/newsletter-202505/IMG_2725 (1).jpg"
 carousels:
   - images: 
-    - image: /assets/img/newsletter-202505/IMG_2725 (1).jpg
-    - image: /assets/img/newsletter-202505/IMG_7213.jpg
-    - image: /assets/img/newsletter-202505/IMG_1849.jpg
-    - image: /assets/img/newsletter-202505/IMG_1846.jpg
-    - image: /assets/img/newsletter-202505/IMG_1842.jpg
-    - image: /assets/img/newsletter-202505/IMG_1839.jpg
-    - image: /assets/img/newsletter-202505/IMG_1836.jpg
-    - image: /assets/img/newsletter-202505/IMG_1833.jpg
+    - image: "assets/img/newsletter-202505/IMG_2725 (1).jpg"
+    - image: "assets/img/newsletter-202505/IMG_7213.jpg"
+    - image: "assets/img/newsletter-202505/IMG_1849.jpg"
+    - image: "assets/img/newsletter-202505/IMG_1846.jpg"
+    - image: "assets/img/newsletter-202505/IMG_1842.jpg"
+    - image: "assets/img/newsletter-202505/IMG_1839.jpg"
+    - image: "assets/img/newsletter-202505/IMG_1836.jpg"
+    - image: "assets/img/newsletter-202505/IMG_1833.jpg"
 ---
 
 Thanks to the US-RSE Community and Travel Funds program, supported by the Alfred P. Sloan Foundation, I had the chance to bring together RSE team members from Purdue, Indiana University, and the University of Notre Dame for a meetup in Indianapolis. We wanted to better understand how each of our teams operate, where we’re running into the same challenges, and how we might work together to build something more intentional: a sustainable, connected US-RSE Indiana Regional Group.
