@@ -4,7 +4,8 @@ title: US-RSE May 2025 Newsletter
 subtitle: "👯 This Month: Meetups! 👯"
 category: newsletter
 tags: [newsletter, May]
-date: YYYY-MM-DD 00:00:00 -0400
+date: 2025-05-28 00:00:00 -0400
+image: /assets/img/newsletter-202505/brooke-cagle--uHVRvDr7pg-unsplash.jpg
 carousels:
   - images: 
     - image: /assets/img/dmv-rse-jan22_1.jpg
