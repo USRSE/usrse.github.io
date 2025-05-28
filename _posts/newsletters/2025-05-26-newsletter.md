@@ -5,6 +5,7 @@ subtitle: "👯 This Month: Meetups! 👯"
 category: newsletter
 tags: [newsletter, May]
 date: 2025-05-28 00:00:00 -0400
+author: Tinashe M. Tapera
 image: "/assets/img/newsletter-202505/brooke-cagle--uHVRvDr7pg-unsplash.jpg"
 carousels:
   - images: 
@@ -32,8 +33,6 @@ This month, we're highlighting the importance and impact of meetups in our commu
 <p align="center">
   <img src="{{ site.baseurl }}/assets/img/newsletter-202505/brooke-cagle--uHVRvDr7pg-unsplash.jpg" alt="Meetups stock photo" style="width: 750px; height: auto;">
 </p>
-
-<p><img src="{{ '/assets/img/newsletter-202505/IMG_2725 (1).jpg' | relative_url }}" alt="Test image"></p>
 
 Meetups are a great way to connect with fellow Research Software Engineers, share knowledge, and build relationships. Whether you're interested in discussing best practices, collaborating on projects, or networking and making friends, meetups provide a valuable platform for engagement. Read on to hear about how our members are using meetups to connect with each other and the community at large.
 
@@ -85,19 +84,17 @@ Meetups are a vital part of any community, and US-RSE is no exception. They prov
 
 The [DC/Maryland/Virginia Regional Group (RG-DMV)](https://us-rse.org/ag/dmv-rse/) hosts formal and informal gatherings every 2–3 months, offering professionals a chance to learn from and inspire each other. In January, they held a meetup focused on career development in research software engineering.
 
-The event featured [Dr. Angeline Burrell](https://github.com/aburrell), a research physicist at the Naval Research Laboratory, who led a conversation on writing effective recommendation letters, publishing research code for impact, and incentivizing code and data sharing in grant applications — and, of course, pizza!
+The event featured [Dr. Angeline Burrell](https://github.com/aburrell), a research physicist at the Naval Research Laboratory, who led a conversation on writing effective recommendation letters, publishing research code for impact, and incentivizing code and data sharing in grant applications — and, of course, featured pizza!
 
 {% include carousel.html height="45" unit="%" duration="10" number="1" %}
 
-One attendee summed it up perfectly:
+"A half-hour presentation led to about an hour of rich discussion and experience-sharing among RSEs from diverse research environments," said one attendee, summarizing the value of the event. "Just what this meetup is supposed to do!"
 
-"A half-hour presentation led to about an hour of rich discussion and experience-sharing among RSEs from diverse research environments… Just what this meetup is supposed to do!"
-
-And, between formal events, you can often hear the [#rg-dmv-rse channel on Slack](https://us-rse.org/ag/dmv-rse/) buzzing away actively as they plan and attend in-person social events across the region.
+Between formal events, the [#rg-dmv-rse channel on Slack](https://us-rse.org/ag/dmv-rse/) can often be heard buzzing away actively as they plan, attend, and chat about in-person social events they host across the region.
 
 ## Indiana Regional Group
 
-No meetup in your area yet? Start one! That’s exactly what **Daniel Madren** did in the Indianapolis area. In April 2025, Daniel organized the first Indiana Regional Group meetup, bringing together RSEs from Indiana University, Purdue, and Notre Dame.
+_But what if there's no meetup in my locale?_ you may be asking. Well, starting one himself is exactly what **Daniel Madren** did for local Hoosier-RSEs in the Indianapolis area. In April 2025, Daniel organized the first Indiana Regional Group meetup, bringing together RSEs from Indiana University, Purdue, and Notre Dame.
 
 "We wanted to better understand how each of our teams operate," he said. "And how we might build something more intentional: a sustainable, connected US-RSE Indiana Regional Group."
 
