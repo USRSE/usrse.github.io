@@ -336,7 +336,7 @@ Accepted papers will be presented at the workshop alongside invited talks from l
 - Camera Ready: July 22, 2025  
 - Workshop: September 8, 2025
 
-[Submit your paper via ICPP Linklings](https://www.icpp-conf.org/2025/submit) • [Workshop Info](https://www.icpp-conf.org/2025/workshops#AI4Dev)"
+[Workshop Info](https://ornl.github.io/events/AI4Dev-ICPP-2025/)"
 %}
 
 {% include opportunity-box.html 
