@@ -12208,3 +12208,43 @@ html body #back-to-top {
   html body #back-to-top:hover {
     opacity: 1 !important;
   }
+
+.carousel-wrapper {
+  max-width: 960px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
+.glider img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.glider-contain {
+  position: relative;
+}
+
+.glider-prev,
+.glider-next {
+  background: #eee;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.glider-prev {
+  left: -1rem;
+}
+
+.glider-next {
+  right: -1rem;
+}

@@ -57,6 +57,13 @@ body:
         - [ ] Open PR into `develop` with `[WIP] Newsletter [Month Year]`
         - [ ] Create HackMD mirror and paste link below
         - [ ] Collect input and finalize sections by [insert target date]
+          - [ ] Develop content for headline
+          - [ ] Gather Steering Committee updates
+          - [ ] Update community call details and youtube links
+          - [ ] Forward previous month's events and opportunities
+          - [ ] Clear slack list triage
+          - [ ] Get new events and opportunities from slack #events & #general
+          - [ ] Check job posting links
         - [ ] Finalize and merge to `main`
 
   - type: input
