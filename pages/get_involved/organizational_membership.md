@@ -182,7 +182,9 @@ Table 3: Membership fees
 
 
 {% if site.data.org-members.premier %}
-### Premier Level
+### Premier Level ($2000 - $10000)
+
+---
 
 {% assign org_tier = site.data.org-members.premier | sort: "date_joined" %}
 {% include org-card-group.html %}
@@ -190,16 +192,18 @@ Table 3: Membership fees
 
 
 {% if site.data.org-members.standard %}
-### Standard Level
+### Standard Level ($1000 - $5000)
 
+---
 {% assign org_tier = site.data.org-members.standard | sort: "date_joined" %}
 {% include org-card-group.html %}
 {% endif %}
 
 
 {% if site.data.org-members.basic %}
-### Basic Level
+### Basic Level ($500 - $1000)
 
+---
 {% assign org_tier = site.data.org-members.basic | sort: "date_joined" %}
 {% include org-card-group.html %}
 {% endif %}    
