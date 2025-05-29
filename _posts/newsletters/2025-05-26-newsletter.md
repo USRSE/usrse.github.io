@@ -183,7 +183,9 @@ The application process is simple and straightforward. You can find the applicat
 
 <!--Community call news goes here-->
 
-The next community call topic is still TBD (check back here for updates) and will take place on June 13th at 1PM CDT/2PM EST. Please visit the [Community Calls Website](https://us-rse.org/events/category/#community-call) for more information and to access the registration link.
+The next community call topic will be on **AI in Research Software Engineering** and will take place on June 13th at 1PM CDT/2PM EST. Please visit the [Community Calls Website](https://us-rse.org/events/category/#community-call) for more information and to access the registration link.
+
+> It’s been almost two years since we lasted talked about AI, ChatGPT, and LLMs in RSEng, and a lot has changed in that time! Let’s get together and share how we’re using these tools today to write code, check code, or otherwise help out in our roles as RSEs. What do they mean for our job? How are they best deployed? Do they create trustworthy code? Or maybe you use them for research rather than for creating code for research? What do they mean for the next generation of research software engineers? These and so many more questions will be discussed at our next community call.
 
 ***May Community Call (Past)***   
 
