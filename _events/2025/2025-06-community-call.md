@@ -7,8 +7,8 @@ duration: 60
 repeated: false
 category: community-call
 time:
-    - - start: 2025-04-13T18:00:00Z
-        end: 2025-04-13T19:00:00Z
+    - - start: 2025-06-13T18:00:00Z
+        end: 2025-06-13T19:00:00Z
 ---
 
 Our **June Community Call** will be all about **AI in Research Software Engineering** on Friday, June 13, at 2pm ET/1pm CT/12pm MT/11am PT.
