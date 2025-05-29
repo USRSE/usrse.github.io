@@ -116,3 +116,11 @@ premier:
     founding_member: true
     tier: "Premier"
     contact: "Jim Weiss <jim@numfocus.org>"
+  - name: "Coalition for Academic Scientific Computation"
+    acronym: "CASC"
+    contact: "Kathryn Kelley <kelley@casc.org> "
+    tier: "Premier"
+    date_joined: 2025-05-28
+    url: https://casc.org/
+    figure: logo-casc.png
+
