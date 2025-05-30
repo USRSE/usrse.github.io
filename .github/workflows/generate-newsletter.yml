@@ -35,9 +35,9 @@ jobs:
           fi
       
           month_num=$(date -d "$month 1" '+%m')
-          date="${year}-${month_num}-01"
+          date="${year}-${month_num}"
           branch="feature/newsletter-${year}-${month_num}"
-          filename="_posts/${date}-newsletter.md"
+          filename="_posts/newsletters/${date}-newsletter.md"
       
           echo "✅ Parsed values:"
           echo "  Title: $title"
