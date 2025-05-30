@@ -122,9 +122,7 @@ In May, the Steering Committee continued advancing priorities identified during 
 # 🤝 **4. Organizational Founding Membership**
 
 US-RSE envisions a future where Research Software Engineers are universally respected for advancing science, technology, and society through the transformative power of research software engineering.
-We’re excited to share that the momentum around our Organizational Founding Membership continues to grow! See the list below for the current members (six more are onboarding at the moment).
-
-Organizations that join on or before November 30, 2025, will be recognized in perpetuity as founding members. Founding organizations will also lock in current membership fees through December 31, 2028.
+We’re excited to share that the momentum around our Organizational Founding Membership continues to grow! Our current members are listed below, and organizations that join on or before November 30, 2025, will be recognized in perpetuity as founding members. Founding organizations will also lock in current membership fees through December 31, 2028.
 Organizational support helps sustain and expand vital community offerings, including the annual conference, monthly calls and newsletter, job board, working groups, and new resources.
 
 Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.org) if you are interested in becoming an organizational founding member!
