@@ -265,17 +265,12 @@ Join the **R-RSE Affinity Group** to connect with fellow R users, share projects
 %}
 -->
 {% include opportunity-box.html 
-    title="Supercomputing and the Future of AI: A Virtual Exchange Program for K-12 Classes 🤖" 
+    title="Supercomputing and the Future of AI: Watch the Full Virtual Exchange Series On-Demand! 🤖" 
     preamble="
-
-> We have started an exciting webinar series for K-12 students in collaboration with Reach The World. Classrooms can sign up for free! We have already over 500 students registered and there is space for more!
-Please forward to schools, teachers, K-12 students. Don’t hesitate to contact [Sandra Gesing](mailto:sandra@us-rse.org) if you have questions.
-
-What makes a supercomputer “super”? What is quantum computing? What’s the difference, and how does AI (artificial intelligence) fit in?
-
-Journey behind the headlines with an exciting new opportunity for K-12 classrooms! US-RSE has partnered with global education non-profit Reach the World to launch a free eight-week virtual exchange program that answers these questions and much more. Students will travel virtually to places like the San Diego Supercomputing Center to see firsthand how data scientists and research software engineers are harnessing today’s incredible computing power to process, interpret and draw conclusions from vast collections of data in a way that was previously unthinkable!
+Our exciting webinar series for K–12 classrooms, presented in partnership with Reach the World, has officially wrapped! Over the past ten weeks, more than 840 students joined us to explore the fascinating world of supercomputing, quantum computing, and artificial intelligence.
+Now, all episodes are available to watch on-demand along with companion journal articles that bring the topics to life for students, educators, and curious minds of all ages. Together with Reach the World, US-RSE created this virtual exchange to offer a behind-the-scenes look at how research software engineers and data scientists use cutting-edge computing to tackle real-world challenges.
 "
-    links="Don’t miss this chance to inspire the next generation of innovators! Register today at [bit.ly/rtwexplore](https://bit.ly/rtwexplore)"
+    links="Learn more at [ReachTheWorld.org](https://reachtheworld.org/supercomputing-and-future-ai-0), and please reach out to [Sandra Gesing](mailto:sandra@us-rse.org) with any questions"
 %}
 
 {% include opportunity-box.html 
@@ -383,6 +378,22 @@ These grants aim to help scholars and research teams address immediate needs suc
 %}
 
 -->
+
+{% include event-box.html 
+    
+    title="Hawaii International Conference on System Sciences (HICSS)" 
+    when="June 15, 2025 - Paper Submission Deadline" 
+    where="Hyatt Regency, Maui, HI"
+    preamble="**HICSS 2025**
+
+The 59th Hawaii International Conference on System Sciences (HICSS) will take place at Hyatt Regency, Maui, HI, on January 6-9, 2026. The deadline for submissions is June 15, 2025. Minitracks of interest include:
+
+- Software Sustainability: Research on Usability, Maintainability, and Reproducibility
+- Impact of AI on Software Engineering"
+    links="
+Find out more about the conference and submit your paper at [HICSS 2025](https://hicss.hawaii.edu/).
+"
+%}
 
 {% include event-box.html 
     
