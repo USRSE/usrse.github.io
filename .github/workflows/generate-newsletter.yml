@@ -19,23 +19,18 @@ jobs:
           echo "${{ github.event.issue.body }}"
           echo "-------------------------------------------"
 
-      - name: Extract values from issue body
+      - name: Extract values from issue title
         id: vars
         run: |
-          cat << 'EOF' > body.txt
-          ${{ github.event.issue.body }}
-          EOF
+          title="${{ github.event.issue.title }}"
       
-          echo "--------- RAW ISSUE BODY ---------"
-          cat body.txt
-          echo "----------------------------------"
-      
-          # Parse using awk from the saved file
-          month=$(awk '/### Newsletter Month/ {getline; print}' body.txt | xargs)
-          year=$(awk '/### Newsletter Year/ {getline; print}' body.txt | xargs)
+          # Extract month and year using awk
+          month=$(echo "$title" | awk -F': ' '{print $2}' | awk '{print $1}')
+          year=$(echo "$title" | awk -F': ' '{print $2}' | awk '{print $2}')
       
           if [ -z "$month" ] || [ -z "$year" ]; then
-            echo "❌ Could not extract month or year from issue body."
+            echo "❌ Could not extract month or year from title."
+            echo "Title was: $title"
             exit 1
           fi
       
@@ -45,6 +40,7 @@ jobs:
           filename="_posts/${date}-newsletter.md"
       
           echo "✅ Parsed values:"
+          echo "  Title: $title"
           echo "  Month: $month"
           echo "  Year: $year"
           echo "  Month Num: $month_num"
