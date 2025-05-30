@@ -22,27 +22,28 @@ jobs:
       - name: Extract values from issue body
         id: vars
         run: |
-          body="${{ github.event.issue.body }}"
-
+          cat << 'EOF' > body.txt
+          ${{ github.event.issue.body }}
+          EOF
+      
           echo "--------- RAW ISSUE BODY ---------"
-          echo "$body"
+          cat body.txt
           echo "----------------------------------"
-
-          # Parse the body using reliable pattern matching
-          month=$(echo "$body" | awk '/### Newsletter Month/ {getline; print}' | xargs)
-          year=$(echo "$body" | awk '/### Newsletter Year/ {getline; print}' | xargs)
-
+      
+          # Parse using awk from the saved file
+          month=$(awk '/### Newsletter Month/ {getline; print}' body.txt | xargs)
+          year=$(awk '/### Newsletter Year/ {getline; print}' body.txt | xargs)
+      
           if [ -z "$month" ] || [ -z "$year" ]; then
             echo "❌ Could not extract month or year from issue body."
             exit 1
           fi
-
-          # Convert month name to number
+      
           month_num=$(date -d "$month 1" '+%m')
           date="${year}-${month_num}-01"
           branch="feature/newsletter-${year}-${month_num}"
           filename="_posts/${date}-newsletter.md"
-
+      
           echo "✅ Parsed values:"
           echo "  Month: $month"
           echo "  Year: $year"
@@ -50,7 +51,7 @@ jobs:
           echo "  Date: $date"
           echo "  Branch: $branch"
           echo "  Filename: $filename"
-
+      
           echo "month=$month" >> $GITHUB_OUTPUT
           echo "month_num=$month_num" >> $GITHUB_OUTPUT
           echo "year=$year" >> $GITHUB_OUTPUT
