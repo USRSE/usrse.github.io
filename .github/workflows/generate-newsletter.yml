@@ -13,6 +13,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Print raw issue body
+        run: |
+          echo "--------- GITHUB.EVENT.ISSUE.BODY ---------"
+          echo "${{ github.event.issue.body }}"
+          echo "-------------------------------------------"
+
       - name: Extract values from issue body
         id: vars
         run: |
