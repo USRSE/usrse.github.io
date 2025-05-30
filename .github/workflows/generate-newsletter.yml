@@ -24,9 +24,11 @@ jobs:
         run: |
           body="${{ github.event.issue.body }}"
       
-          echo "Raw issue body:"
+          echo "RAW ISSUE BODY START"
           echo "$body"
+          echo "RAW ISSUE BODY END"
       
+          # Use awk to find the lines after each heading
           month=$(echo "$body" | awk '/### Newsletter Month/ {getline; print}' | xargs)
           year=$(echo "$body" | awk '/### Newsletter Year/ {getline; print}' | xargs)
       
