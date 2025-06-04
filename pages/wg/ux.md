@@ -26,6 +26,9 @@ surfacing and tracking the impacts of UX on improving scientific software
 products), and the challenges of adapting commercial UX practices to
 scientific environments.
 
+The working group meets on the 3rd Thursday of the month at 4pm Eastern and 
+welcomes asynchronous participation from people who are unable to join those meetings.
+
 To get involved,
 visit the [`#wg-ux`](https://usrse.slack.com/messages/wg-ux) channel on
 the US-RSE slack or contact the co-chairs at
