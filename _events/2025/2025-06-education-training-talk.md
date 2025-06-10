@@ -46,7 +46,7 @@ from the University of Texas at Austin.
 
 ### Note
 
-More information about this event can be found on [the flyer](https://drive.google.com/file/d/1GAcFnlGDAR8RtVTiOOJzRK7Q5xLWG0WU/view?usp=drive_link).
+More information about this event can be found on [the flyer](https://drive.google.com/drive/folders/1vjhffXAx9deTehCuWaXFrQFN23imu8xn).
 
 ### Registration
 
