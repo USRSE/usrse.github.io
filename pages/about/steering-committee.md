@@ -17,7 +17,7 @@ set_last_modified: true
 * Ian Cosden, Princeton University, 2019-2025, Chair, International Council Rep
 * Julia Damerow, Arizona State University, 2021-2026, Treasurer
 * Alex Koufos, Stanford University, 2024-2025, Co-Secretary
-* Kenton McHenry, University of Illinois at Urbana-Champaign, 2023-2026
+* Kenton McHenry, University of Illinois Urbana-Champaign, 2023-2026
 * Miranda Mundt, Sandia National Laboratories, 2023-2026, Election Co-Chair
 * Abbey Roelofs, University of Michigan, 2024-2025, Deputy Treasurer
 
@@ -28,7 +28,7 @@ set_last_modified: true
 * Sandra Gesing, University of Illinois Discovery Partner Institute, 2019-2023
 * Christina Maimone, Northwestern University, 2019-2023
 * Chris Hill, MIT, 2019-2022
-* Daniel S. Katz, University of Illinois at Urbana-Champaign, 2019-2022
+* Daniel S. Katz, University of Illinois Urbana-Champaign, 2019-2022
 * Lance Parsons, Princeton University, 2019-2022
 * Charles Ferenbaugh, Los Alamos National Laboratory, 2019-2021
 * Jordan Perr-Sauer, National Renewable Energy Laboratory, 2019-2020
