@@ -14,7 +14,7 @@ accomplishments in their careers and their personal stories.
 
 {% include image.html
 url="https://upload.wikimedia.org/wikipedia/commons/4/4f/Edie_Windsor_DC_Pride_2017.jpg"
-description="Edie Windsor at DC Price, 2017, Photo by Rex Block, CC0
+description="Edie Windsor at DC Pride, 2017, Photo by Rex Block, CC0
 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons"
 style="float:right; padding:1em; max-width:350px;" %}
 
@@ -34,7 +34,7 @@ she started as a mainframe programmer and later rose to "the company's highest
 technical rank, Senior Systems Programmer, on the strength of her top-notch
 debugging skills. 'They couldn't fix the code because they couldn't read it,'
 Edith told a journalist. 'But I could read code until it wrapped around the
-room and back again. A guy I was working with said, ‘give this woman a roll of
+room and back again. A guy I was working with said, 'give this woman a roll of
 toilet paper, she can do anything.'" During this time, in 1963, she met and
 began dating Thea Spyer, who asked Edith to marry her in 1967, and they began
 living together six months later.
@@ -61,7 +61,7 @@ Again
 [quoting](https://anitab.org/profile/remembering-edith-windsor-tech-pioneer-equality-advocate/)
 AnitaB.org, "Edith was recognized by the National Computing Conference as an
 operating systems pioneer. In 2013, she was the Grand Marshal of the New York
-City LGBT Pride March and a runner-up for Time's Person of the Year.” She died
+City LGBT Pride March and a runner-up for Time's Person of the Year." She died
 in 2017, and was eulogized by Hillary Clinton. Barack Obama said about her,
 "America's long journey towards equality has been guided by countless small
 acts of persistence, and fueled by the stubborn willingness of quiet heroes to
