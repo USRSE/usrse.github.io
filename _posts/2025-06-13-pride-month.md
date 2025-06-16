@@ -33,7 +33,8 @@ We’ll be publishing these posts during the month of June to highlight such
 people, where we talk about the person and tie their work and life to the RSE
 movement.
 
-<!-- List of posts here -->
+* [Edith Windsor]({% post_url 2025-06-16-edith-windsor %}) -
+  June 16, 2025
 
 In conjunction with these blog posts, we ask the community to think about how
 they will celebrate and reflect on pride this month. This will likely come in
