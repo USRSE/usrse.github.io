@@ -61,7 +61,7 @@ He provides leadership, strategic guidance, and coordination of trans-NIH FAIR d
 
 <br>
 
-![Lori A. J. Scott-Sheldon, PhD](https://www.lifespan.org/sites/default/files/styles/provider_headshot/public/2020-10/scott-sheldon-lori-phd-2013-web.jpg){: style="float: left; margin-right: 10px; clear: left; width: 143px; height: 177px;"}
+![Lori A. J. Scott-Sheldon, PhD](https://www.brownhealth.org/sites/default/files/styles/provider_headshot/public/2020-10/scott-sheldon-lori-phd-2013-web.jpg){: style="float: left; margin-right: 10px; clear: left; width: 143px; height: 177px;"}
 
 **Lori A. J. Scott-Sheldon, PhD**<br>
 Program Chief, Data Science and Emerging Methodologies in HIV<br>
