@@ -69,4 +69,4 @@ speak out for what's right. Few were as small in stature as Edith Windsor — an
 few made as big a difference to America."
 
 [Read more about US-RSE's planned Pride Month
-activities](https://us-rse.org/2026-06-13-pride-month/).
+activities]({% post_url 2025-06-13-pride-month %}).
