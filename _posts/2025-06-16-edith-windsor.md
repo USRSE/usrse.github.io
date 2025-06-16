@@ -26,7 +26,7 @@ at IBM and then a software development consultant in her own company?
 Edith (Edie) Schlain was born in 1929 in Philadelphia. She graduated from
 Temple in 1950, where she met her future husband, Saul Windsor, who she married
 in 1951 and divorced in 1952. She later earned a master's in math from NYU in 1957.
-She then joined IBM, where she worked for 16 years  in senior technical
+She then joined IBM, where she worked for 16 years in senior technical
 and management positions related to systems architecture and implementation of
 operating systems and language processors. As AnitaB.org
 [describes](https://anitab.org/profile/remembering-edith-windsor-tech-pioneer-equality-advocate/),
