@@ -1,0 +1,58 @@
+name: Generate Newsletter File
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  generate-newsletter:
+    if: contains(github.event.issue.title, 'Newsletter Draft:')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Extract values from issue body
+        id: vars
+        run: |
+          month=$(echo "${{ github.event.issue.body }}" | grep -i "Newsletter Month" -A 1 | tail -n 1 | xargs)
+          year=$(echo "${{ github.event.issue.body }}" | grep -i "Newsletter Year" -A 1 | tail -n 1 | xargs)
+          # Convert month name to MM
+          month_num=$(date -d "$month 1" '+%m')
+          date="${year}-${month_num}-01"
+          branch="feature/newsletter-${year}-${month_num}"
+          filename="_posts/${date}-newsletter.md"
+
+          echo "month=$month" >> $GITHUB_OUTPUT
+          echo "month_num=$month_num" >> $GITHUB_OUTPUT
+          echo "year=$year" >> $GITHUB_OUTPUT
+          echo "date=$date" >> $GITHUB_OUTPUT
+          echo "branch=$branch" >> $GITHUB_OUTPUT
+          echo "filename=$filename" >> $GITHUB_OUTPUT
+
+      - name: Create feature branch from develop
+        run: |
+          git fetch origin develop
+          git checkout -b "${{ steps.vars.outputs.branch }}" origin/develop
+
+      - name: Generate newsletter draft from template
+        run: |
+          cp _template/newsletter-template.md "${{ steps.vars.outputs.filename }}"
+          sed -i "s/{{ month }}/${{ steps.vars.outputs.month }}/g" "${{ steps.vars.outputs.filename }}"
+          sed -i "s/{{ year }}/${{ steps.vars.outputs.year }}/g" "${{ steps.vars.outputs.filename }}"
+          sed -i "s/{{ date }}/${{ steps.vars.outputs.date }}/g" "${{ steps.vars.outputs.filename }}"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${{ steps.vars.outputs.filename }}"
+          git commit -m "Add newsletter draft for ${{ steps.vars.outputs.month }} ${{ steps.vars.outputs.year }}"
+          git push origin "${{ steps.vars.outputs.branch }}"
+
+      - name: Comment on issue with branch details
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --body "Draft file created for **${{ steps.vars.outputs.month }} ${{ steps.vars.outputs.year }}** at \`${{ steps.vars.outputs.filename }}\` in branch \`${{ steps.vars.outputs.branch }}\`.\n\nYou can now:\n1. Open the branch in VS Code using GitFlow (\`feature/newsletter-${{ steps.vars.outputs.year }}-${{ steps.vars.outputs.month_num }}\`)\n2. Edit and review the draft\n3. Open a PR into \`develop\` when ready"

@@ -57,7 +57,8 @@ jobs:
           https://bitcon.blacksintechnology.net/,\
           https://travel.usnews.com/features/top-pride-parades-and-celebrations-in-the-us,\
           https://family.20thcenturystudios.com/movies/hidden-figures,\
-          https://www.usatoday.com/story/money/2023/06/07/silicon-valley-tech-black-history-roy-clay/70262081007/"
+          https://www.usatoday.com/story/money/2023/06/07/silicon-valley-tech-black-history-roy-clay/70262081007/,\
+          https://aaan.uic.edu/student-engagement/uic-black-tech-scholars-program/"
 
         # Exclude these files from the checker
         exclude_files: "README.md,\
@@ -69,4 +70,5 @@ jobs:
           _config.yml,\
           tests/test_,\
           .github/workflows,\
+          .github/ISSUE_TEMPLATE,\
           _posts/newsletters/"

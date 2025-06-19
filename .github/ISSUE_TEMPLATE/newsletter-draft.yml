@@ -1,0 +1,81 @@
+name: "Newsletter Draft: New Edition"
+description: "Start a new US-RSE newsletter draft and prepare for collaborative editing."
+title: "Newsletter Draft [Month Year]"
+labels: ["newsletter", "draft"]
+assignees: ["@TinasheMTapera"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✨ Newsletter Draft Checklist
+
+        This issue helps coordinate the creation of a new US-RSE newsletter edition and synchronize collaboration across GitHub and HackMD.
+
+  - type: input
+    id: month
+    attributes:
+      label: Newsletter Month
+      description: Month of the newsletter edition (e.g., April)
+      placeholder: "April"
+    validations:
+      required: true
+
+  - type: input
+    id: year
+    attributes:
+      label: Newsletter Year
+      description: Year of the newsletter edition (e.g., 2025)
+      placeholder: "2025"
+    validations:
+      required: true
+
+  - type: textarea
+    id: highlights
+    attributes:
+      label: Headline Highlights
+      description: Brief description of main highlights or themes for this edition
+      placeholder: "Community celebrations, RSE’25 announcement, job board, etc."
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Newsletter Tasks
+      description: Checklist to complete this edition
+      value: |
+        ### 🛠️ Tasks
+
+        - [ ] Create new markdown draft using Jekyll post format  
+        - [ ] Add file to `_posts/` with filename: `YYYY-MM-DD-newsletter.md`
+        - [ ] Add YAML frontmatter with correct `title`, `date`, and tags
+        - [ ] Push draft to `feature/draft-newsletter-[month-year]` branch
+        - [ ] Share HackMD link in Slack channels
+          - [ ] `#newsletters`
+          - [ ] `#working-group-chairs`
+          - [ ] `#community-calls`
+          - [ ] `#events`
+          - [ ] `#general`
+        - [ ] Open PR into `develop` with `[WIP] Newsletter [Month Year]`
+        - [ ] Create HackMD mirror and paste link below
+        - [ ] Collect input and finalize sections by [insert target date]
+          - [ ] Develop content for headline
+          - [ ] Gather Steering Committee updates
+          - [ ] Update community call details and youtube links
+          - [ ] Forward previous month's events and opportunities
+          - [ ] Clear slack list triage
+          - [ ] Get new events and opportunities from slack #events & #general
+          - [ ] Check job posting links
+        - [ ] Finalize and merge to `main`
+
+  - type: input
+    id: hackmd-link
+    attributes:
+      label: HackMD Link
+      description: Paste the link to the HackMD collaborative draft
+      placeholder: "https://hackmd.io/@usrse/newsletter-April-2025"
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Anything else to note or watch out for this edition?
+      placeholder: Add any notes, context, or reminders here...
