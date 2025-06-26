@@ -18,10 +18,10 @@ Equity, and Inclusion Working Group
 at the US-RSE Association presents its next instance of the DEI Media Club.
 
 For this next session of the DEI Media Club, we will be discussing an episode
-of [reWorked - The Diversity and Inclusion
-Podcast](https://theewgroup.com/podcast/) - [Series 4, Episode 6: Building safe
+of *reWorked - The Diversity and Inclusion
+Podcast* - Series 4, Episode 6: Building safe
 spaces and harnessing psychological
-safety](https://feeds.buzzsprout.com/151841.rss).
+safety".
 
 To prepare:
 
@@ -30,9 +30,7 @@ To prepare:
    to let us know you interested
 
 2. Listen to Series 4, Episode 6: Building safe spaces and harnessing
-   psychological safety - [Apple
-   Podcasts](https://podcasts.apple.com/gb/podcast/reworked/id1342204629)
-   [RSS](https://feeds.buzzsprout.com/151841.rss)
+   psychological safety (*podcast no longer available*)
 
 3. Come prepared to discuss!
 
