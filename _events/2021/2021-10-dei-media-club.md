@@ -19,7 +19,7 @@ at the US-RSE Association presents its next instance of the DEI Media Club.
 
 For this next session of the DEI Media Club, we will be discussing an episode
 of *reWorked - The Diversity and Inclusion
-Podcast* - Series 4, Episode 6: Building safe
+Podcast*, Series 4, Episode 6: "Building safe
 spaces and harnessing psychological
 safety".
 
