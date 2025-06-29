@@ -112,8 +112,8 @@ As you'd expect, most visitors come from desktop devices, with the most popular 
 </p>
 
 What surprises me is the poor representation of 
-privacy-focused tools like Firefox, Opera, and Brave.** Perhaps online privacy
-consciousness would be an interesting topic for a future community call!**
+privacy-focused tools like Firefox, Opera, and Brave. **Perhaps online privacy
+consciousness would be an interesting topic for a future community call?**
 
 ### Bounce Rate & Engagement
 
