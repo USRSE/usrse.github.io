@@ -72,7 +72,7 @@ optimize website usage. Using a few simple techniques and powerful tools like Go
 
 ### Top Pages
 
-When not accounting for the home page, we can see that the jobs page
+When not accounting for the home page, we can see that **the jobs page**
 is the most utilized resource on the website. This is closely followed by conference
 page resources:
 
@@ -86,17 +86,18 @@ to automate and streamline the process as much as we can with a Job Board bot
 on Slack for job seekers, and and an easy-to-use [job posting form](https://docs.google.com/forms/d/e/1FAIpQLSfYK64R1c0rj-ERldGLxuqedLIbsYPZXj9uBplDRYNmnND10Q/viewform) for job posters. 
 It's encouraging to see that our job board is a valuable resource for our community. 
 
+<!-- Decidedly uninteresting or cannot nail down the data in time
 ### Traffic Sources
-
-
 ### Top Referrers
+-->
+
 
 ### Geography
 
 The US makes up the vast majority of our traffic, of course. But get this — we have page 
 views pinging from 153 different countries and territories, including Northern Mariana 
-Islands, Slovakia, Tajikstan, and Zimbabwe. However, we have to consider the possibility of 
-bots, crawlers, and VPNs inflating these numbers, so we should take this with a grain of salt.
+Islands, Slovakia, Tajikstan, and Zimbabwe. However, _we have to consider the possibility of 
+bots, crawlers, and VPNs_ inflating these numbers, so we should take this with a grain of salt.
 
 <p align="center">
   <img src="{{ site.baseurl }}/assets/img/newsletter-202506/world_map.png" alt="Geography" style="width: 750px; height: auto;">
@@ -111,19 +112,39 @@ As you'd expect, most visitors come from desktop devices, with the most popular 
 </p>
 
 What surprises me is the poor representation of 
-privacy-focused tools like Firefox, Opera, and Brave. Perhaps online privacy
-consciousness would be an interesting topic for a future community call!
+privacy-focused tools like Firefox, Opera, and Brave.** Perhaps online privacy
+consciousness would be an interesting topic for a future community call!**
 
-### Bounce Rate
+### Bounce Rate & Engagement
+
+We found that overall the **average engagement time per active user per month is 1m 06s**. Per 
+session of using our site, the **average engagement time is only 38 seconds**. This is quite
+low, and may suggest that visitors are mostly landing at the site in order to redirect elsewhere (such as during a job search). So, it begs the question: how can we improve the experience on the website to encourage users to visit and stay longer, and ultimately  explore more? What do _you_ expect to interact with when you visit the US-RSE website? How can we make visiting the site more valuable for you? Let us know by pinging the Slack #website channel...
 
 ### Trends
 
+That being said, this writer is proud to report that our website has had an overall increase
+in traffic since we reinvigorated the newsletter in March.
+
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/img/newsletter-202506/visit_trend.png" alt="Trends" style="width: 750px; height: auto;">
+</p>
+
 ### New vs. Returning Visitors
 
-### Most Clicked Links
+The comparison between new and returning visitors is a great way to measure the growth of our community. We can see that the number of returning users spikes quickly after the conference,
+and dwindles slowly as people move on to other things. New user attraction should be a priority, however, so _we should think about ways to keep that post conference momentum going_.
 
-### Newsletter Traffic Impact
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+  <img src="{{ site.baseurl }}/assets/img/newsletter-202506/new_users.png" alt="New Visitors" style="width: 45%; height: auto;">
+  <img src="{{ site.baseurl }}/assets/img/newsletter-202506/returning_users.png" alt="Returning Visitors" style="width: 45%; height: auto;">
+</div>
 
+### Conclusion
+
+Web analytics can offer a valuable snapshot of how a community and visiting audiences engage with a digital organization. For us, the data highlights the importance of our job board, and the (potentially) global reach of our resources, but also points out opportunities to improve engagement and retention. And this is just a basic breakdown of stock charts provided by the Google Analytics4 service... what more could we uncover as we dig into deeper data points?
+
+As US-RSE continues to grow, your feedback will be essential in shaping the tools, resources, and interfaces we implement for the community. So, we ask you — _what would make the US-RSE website more useful?_ Share your thoughts in the #website Slack channel by joining the org and signing up to the slack group Slack [here](https://us-rse.org/get-involved/). Together, we can make us-rse.org an even more vibrant hub for research software engineers!
 
 -----------------
 
