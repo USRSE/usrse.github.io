@@ -235,14 +235,15 @@ In our last community call, we discussed the use of AI tools in research softwar
 <div style="position: relative; width: 100%; max-width: 640px; margin: 0 auto; overflow: hidden; background: #000; aspect-ratio: 16 / 9;">
 <iframe width="640" height="360" src="https://www.mentimeter.com/app/presentation/bliky4qmh79edkh4xgqb5vcox91bmjez/view?question=1jh3d4m6sgi5" title="Mentimeter June 2025" frameborder="0" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
-
+<!--
+TBD with latest call
 <div style="position: relative; width: 100%; max-width: 640px; margin: 0 auto; overflow: hidden; background: #000; aspect-ratio: 16 / 9;">
   <img src="https://img.youtube.com/vi/UdpjTha4F4M/hqdefault.jpg" 
        alt="YouTube Video Thumbnail" 
        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; cursor: pointer;" 
        onclick="this.outerHTML='<iframe width=\'640\' height=\'360\' src=\'https://www.youtube.com/embed/UdpjTha4F4M?autoplay=1\' title=\'YouTube video player\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' allowfullscreen style=\'position: absolute; top: 0; left: 0; width: 100%; height: 100%;\'></iframe>'">
 </div>
-
+-->
 -----------------
 
 <a name="events"></a>
