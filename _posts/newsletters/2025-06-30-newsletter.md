@@ -4,7 +4,7 @@ title: US-RSE June 2025 Newsletter
 subtitle: "🔍 This Month: A Peek at the US-RSE Website — What Brings You Here? 🔍"
 category: newsletter
 tags: [newsletter, June]
-date: 2025-06-30 00:00:00 -0400
+date: 2025-06-29 00:00:00 -0400
 author: Tinashe M. Tapera
 image: "/assets/img/newsletter-202506/photo-1629904869392-ae2a682d4d01.jpeg"
 ---
