@@ -1,6 +1,6 @@
 ---
 title: July 2025 Community Call
-expires: 2025-07-08
+expires: 2025-07-10
 event_date: "July 10, 2025"
 layout: event
 duration: 60
