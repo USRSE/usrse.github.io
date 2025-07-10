@@ -2277,6 +2277,18 @@ tr, td, th {
     background-color: #006292;
     color: #fff;
 }
+.btn--bluesky {
+    background-color: #007bb6;
+    color: #fff;
+}
+.btn--bluesky:visited {
+    background-color: #007bb6;
+    color: #fff;
+}
+.btn--bluesky:hover {
+    background-color: #006292;
+    color: #fff;
+}
 .btn--block {
     display: block;
     width: 100%}
@@ -3678,6 +3690,9 @@ body:hover .visually-hidden a, body:hover .visually-hidden input, body:hover .vi
 }
 .social-icons .fa-mastodon {
     color: #2b90d9;
+}
+.social-icons .fa-bluesky {
+    color: #1185fe;
 }
 .social-icons .fa-pinterest, .social-icons .fa-pinterest-p, .social-icons .fa-pinterest-square {
     color: #cb2027;
