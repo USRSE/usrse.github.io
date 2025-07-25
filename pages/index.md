@@ -2,8 +2,6 @@
 subtitle: in support of research.
 layout: page
 show_hero: true
-hero_link: 2025-06-13-pride-month
-hero_link_text: Celebrate Pride Month with US-RSE!
 callouts: home
 permalink: /
 full_width: true
