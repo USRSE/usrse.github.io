@@ -636,7 +636,7 @@ title: US-RSE June 2025 Newsletter
 subtitle: "🔍 This Month: A Peek at the US-RSE Website — What Brings You Here? 🔍"
 category: newsletter
 tags: [newsletter, June]
-date: 2025-06-30 00:00:00 -0400
+date: 2025-06-29 00:00:00 -0400
 author: Tinashe M. Tapera
 image: "/assets/img/newsletter-202506/photo-1629904869392-ae2a682d4d01.jpeg"
 ---
@@ -744,8 +744,8 @@ As you'd expect, most visitors come from desktop devices, with the most popular 
 </p>
 
 What surprises me is the poor representation of 
-privacy-focused tools like Firefox, Opera, and Brave.** Perhaps online privacy
-consciousness would be an interesting topic for a future community call!**
+privacy-focused tools like Firefox, Opera, and Brave. **Perhaps online privacy
+consciousness would be an interesting topic for a future community call?**
 
 ### Bounce Rate & Engagement
 
@@ -867,7 +867,8 @@ In our last community call, we discussed the use of AI tools in research softwar
 <div style="position: relative; width: 100%; max-width: 640px; margin: 0 auto; overflow: hidden; background: #000; aspect-ratio: 16 / 9;">
 <iframe width="640" height="360" src="https://www.mentimeter.com/app/presentation/bliky4qmh79edkh4xgqb5vcox91bmjez/view?question=1jh3d4m6sgi5" title="Mentimeter June 2025" frameborder="0" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
-
+<!--
+TBD with latest call
 <div style="position: relative; width: 100%; max-width: 640px; margin: 0 auto; overflow: hidden; background: #000; aspect-ratio: 16 / 9;">
   <img src="https://img.youtube.com/vi/UdpjTha4F4M/hqdefault.jpg" 
        alt="YouTube Video Thumbnail" 
