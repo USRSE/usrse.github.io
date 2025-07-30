@@ -8,12 +8,11 @@ items:
     link_name: Newsletters
   - title: USRSE'25
     subtitle: >
-      Plan to join us at our third conference in Philadelphia, PA, October 6-8, 2025.<br><br>
+      Join us at our third conference in Philadelphia, PA, October 6-8, 2025.<br><br>
     link: https://us-rse.org/usrse25/
-    link_name: Save the Date
-  - title: 2025 US-RSE Community Awards
+    link_name: Register Now!
+  - title: US-RSE Organizational Membership
     subtitle: >
-      US-RSE is accepting nominations for the US-RSE Technical Excellence and
-      US-RSE Community Impact and Leadership Awards! Nominations close July 11, 2025.
-    link: https://us-rse.org/community-awards/
+      Support US-RSE as an organizational member.  Join by December 1, 2025 to be a Founding Member.
+    link: https://us-rse.org/org-membership/
     link_name: Learn More
