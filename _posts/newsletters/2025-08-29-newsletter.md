@@ -4,7 +4,7 @@ title: US-RSE August 2025 Newsletter
 subtitle: "⛰️ This Month: What to Expect at USRSE'25 ⛰️"
 category: newsletter
 tags: [newsletter, August]
-date: 2025-08-29 00:00:00 -0400
+date: 2025-08-28 00:00:00 -0400
 author: Tinashe M. Tapera
 image: "/assets/img/newsletter-202508/mikael-kristenson-3aVlWP-7bg8-unsplash.jpg"
 carousels:
