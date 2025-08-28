@@ -423,7 +423,7 @@ Whether you're a seasoned gateway developer or just getting started, Gateways is
 We invite the submission of papers and abstracts related to science gateways. All contributions will be subject to standard peer review on quality and relevance. This will apply to tutorial sessions, papers, panels, posters, demos, and BYOP (Bring Your Own Portal). Tutorial sessions, papers, panels, posters, and demos will be published openly accessible in Zenodo. Please note that authors of papers will be invited to submit an extended and updated version of their paper for a special issue journal on science gateways.
 - Tutorial submissions are due ~~June 16, 2025 **July 9, 2025 (Extended!)**~~
 - Paper, demo, and panel submissions are due ~~June 16, 2025 **July 9, 2025 (Extended!)**~~
-- Poster and BYOP - Bring Your Own Portal submissions are due ~~ **August 4, 2025** ~~
+- Poster and BYOP - Bring Your Own Portal submissions are due ~~**August 4, 2025**~~
 - Student Poster submissions are due **September 10, 2025**
 "
     
