@@ -57,23 +57,24 @@ Active members attend our regular meetings at least once a quarter (once every 3
 
 - [Academic Data Science Alliance job board](https://academicdatascience.org/jobs/) (skews academic)
 - [neurotechx job board](https://neurotechx.com/find-a-job/)
-- [RSE job board ](https://society-rse.org/careers/vacancies/) (international)
-- [SfN job board ](https://neurojobs.sfn.org/jobs/) (skews academic)
+- [RSE job board](https://society-rse.org/careers/vacancies/) (international)
+- [SfN job board](https://neurojobs.sfn.org/jobs/) (skews academic)
 - [US-RSE job board](https://us-rse.org/jobs/)
-- [world wide neuro job board ](https://www.world-wide.org/jobs/) (skews academic)
+- [world wide neuro job board](https://www.world-wide.org/jobs/) (skews academic)
 
 ## Other places to find jobs
 
 - [jobRxiv job board](https://jobrxiv.org/) (skews academic)
 - [HigherEdJobs job board](https://www.higheredjobs.com/search/) (skews academic)
+- [NeuroTechX job board](https://neurotechx.com/find-a-job/) (skews industry)
 - Institution/company websites
 - The usual job search websites (e.g., Google, Indeed, LinkedIn, Glassdoor)
-- Twitter (seriously)
+- X, Bluesky, Mastodon (seriously)
 
 ## Mailing lists
 
 - [comp-neuro mailing list](https://www.cnsorg.org/comp-neuro-mailing-list)
-- [cvnet mailing list](http://nephoscale.ewind.com/mailman/listinfo/cvnet) (skews academic)
+- [cvnet mailing list](https://info.cvnet.org) (skews academic)
 - [visionlist mailing list](http://visionscience.com/mailman/listinfo/visionlist_visionscience.com) (skews academic)
 - [connectionists mailing list](https://mailman.srv.cs.cmu.edu/mailman/listinfo/connectionists) (skews academic)
 
