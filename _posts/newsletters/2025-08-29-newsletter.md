@@ -47,7 +47,7 @@ In this issue:
 </p>
 
 The stage is set for our third annual US-RSE conference, themed **“Code, Practices, and People”**, and we can't wait to welcome you to Philadelphia's Marriott in Old City, October 6-8! Travel details are available on the
-[conference website](https://us-rse.org/usrse25/attend/travel/), which includes information on how to get to Philly, accessiblity details, special hotel room rates (**special rates available until September 12**), an announcement from our
+[conference website](https://us-rse.org/usrse25/attend/travel/), which includes information on how to get to Philly, accessibility details, special hotel room rates (**special rates available until September 12**), an announcement from our
 collaborators at the Sustainable Horizons Institute about the [Building Engagement program](https://shinstitute.org/building-engagement-us-rse-2025/) happening at USRSE'25,
 and details about financial support available to a limited number of attendees, generously provided by the Sloan Foundation ([Apply here by August 29th](https://us-rse.org/usrse25/attend/financialsupport/)). 
 Philadelphia is a vibrant city with a rich history, food culture, and array of scientific and artistic highlights, so we encourage you to soak in its many attractions while 
