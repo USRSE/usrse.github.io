@@ -55,13 +55,8 @@ or ask in the [`#community-funds`](https://app.slack.com/client/T8ZT4PJSW/C05M3F
 
 ### Application Details
 
-- **Next Application Deadline**: June 30, 2025
+- **Next Application Deadline**: September 30, 2025
 - **[Application Form](https://forms.gle/hXL95UymjTcR3Kb29)**
-
-The next round of application deadlines will be:
-
-- September 30, 2025
-- December 31, 2025
 
 The application will request the following details:
 
