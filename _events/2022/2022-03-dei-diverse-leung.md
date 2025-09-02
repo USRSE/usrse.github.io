@@ -20,7 +20,7 @@ time:
 
 DiveRSE is delighted to welcome Mary Ann Leung, Ph.D., Founder and President of the [Sustainable Horizons Institute](https://shinstitute.org/), as our inaugural speaker in the DiveRSE talk series looking at diversity, equity and inclusion in the Research Software Engineering (RSE) community.
 
-The series runs from March 2022 and is linked to the ["Vive la différence - research software engineers" workshop](https://www.researchsoft.org/events/2022-04/) being hosted at the [Lorentz Center](https://www.lorentzcenter.nl/) in The Netherlands in April 2022.
+The series runs from March 2022 and is linked to the ["Vive la différence - research software engineers" workshop](https://www.researchsoft.org/events/events-past/2022-04/) being hosted at the [Lorentz Center](https://www.lorentzcenter.nl/) in The Netherlands in April 2022.
 
 The keynote talk explores what it takes to achieve DEI, also known as equity, diversity, inclusion (EDI) and justice, equity, diversity, inclusion (JEDI) and how reframing DEI within RSE could increase innovation and developer productivity. We will also consider how cultivating respect and embracing difference could help to normalize inclusion.
 
