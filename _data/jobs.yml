@@ -1,10 +1,12 @@
 - expires: 2025-12-28
-  location: Pittsburgh Supercomputing Center, Carnegie Mellon University, Pittsburgh, PA
+  location: Pittsburgh Supercomputing Center, Carnegie Mellon University, Pittsburgh,
+    PA
   name: Computational Scientist
   posted: 2025-08-28
   url: https://www.psc.edu/computational-scientist-2023583/
 - expires: 2025-12-28
-  location: Pittsburgh Supercomputing Center, Carnegie Mellon University, Pittsburgh, PA
+  location: Pittsburgh Supercomputing Center, Carnegie Mellon University, Pittsburgh,
+    PA
   name: Associate Computational Scientist
   posted: 2025-08-28
   url: https://www.psc.edu/associate-computational-scientist-2023584/
@@ -51,11 +53,6 @@
   name: Research Software Engineer II
   posted: 2025-07-08
   url: https://main-princeton.icims.com/jobs/20864/research-software-engineer-ii/job
-- expires: 2025-08-15
-  location: Commonwealth Fusion Systems, Remote or Devens, MA
-  name: "Senior Scientific Software Engineer \u2013 Magnet Protection Systems"
-  posted: 2025-06-28
-  url: https://jobs.lever.co/cfsenergy/47651999-559c-490a-af33-24a11a6f77a6
 - expires: 2025-08-30
   location: University of Delaware, Newark, DE
   name: Research Software Engineer
