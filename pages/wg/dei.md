@@ -42,7 +42,7 @@ by reaching out to the working group in Slack or through the form above.
 
 ## DEI Media Club
 
-The US-RSE DEI working group hosts monthly DEI Media Club discussions in which we invite participants to read, listen to, or watch the chosen monthly DEI media and come ready to discuss the content as a small group. In 2021, we hosted three sessions to discuss the book "Better Allies" by Karen Catlin and two Podcast sessions to discuss series 4, episode 6 of [reWorked - The Diversity and Inclusion Podcast](https://theewgroup.com/podcast/) and [Code Switch - The Folk Devil Made Me Do It](https://www.npr.org/2021/08/20/1029775224/the-folk-devil-made-me-do-it).
+The US-RSE DEI working group hosts monthly DEI Media Club discussions in which we invite participants to read, listen to, or watch the chosen monthly DEI media and come ready to discuss the content as a small group. In 2021, we hosted three sessions to discuss the book "Better Allies" by Karen Catlin and two Podcast sessions to discuss series 4, episode 6 of *reWorked - The Diversity and Inclusion Podcast* and [Code Switch - The Folk Devil Made Me Do It](https://www.npr.org/2021/08/20/1029775224/the-folk-devil-made-me-do-it).
 
 These are announced via the [`#events`](https://usrse.slack.com/messages/events) and [`#dei-discussion`](https://usrse.slack.com/messages/dei-discussion) channels on the US-RSE slack, as well as in monthly newsletters, and are hosted virtually via Zoom.
 
