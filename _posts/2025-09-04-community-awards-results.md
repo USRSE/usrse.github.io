@@ -49,7 +49,7 @@ earned his MS degree in Computer Systems Engineering from the University of
 Houston and a bachelor's degree in electrical engineering from
 Anna University, India.
 
-**Professional: Daniela Cassol, Mario Melara, Elais Player-Jackson,
+**Professional: JAWS Team - Daniela Cassol, Mario Melara, Elais Player-Jackson,
 Ramani Kothadia, Setareh Sarrafan, Nicholas Tyler**
 
 JAWS (JGI Analysis Workflow Service) is a scalable, multi-site workflow execution framework
@@ -113,7 +113,7 @@ Ms. Gupta is Editor-in-Chief of the Better Scientific Software website
 (BSSw.io), a community resource focused on improving software quality and
 sustainability in computational science. She is also a recognized leader in
 the Research Software Engineer (RSE) movement. She served on the US-RSE
-Association Board (2023–2024) and has helped define and advocate for the
+Association Steering Committee (2023–2024) and has helped define and advocate for the
 RSE role at Argonne and across the broader HPC community. She has led
 lab-wide initiatives, cross-divisional collaboration, and peer networks
 supporting RSEs.
