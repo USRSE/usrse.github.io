@@ -13,7 +13,8 @@ The North Carolina Regional Group connects US-RSE members in North Carolina and 
 
 # Membership
 
-The North Carolina Regional Group is intended for 
+The North Carolina Regional Group is <a href="{{site.baseurl}}/about/affinity-groups/">US-RSE Regional Group</a>
+intended to bring together research software engineers in North Carolina.
 
 To stay informed, please:
 
