@@ -480,11 +480,11 @@ These opportunities were recently posted to the [RSE Opportunities page](https:/
 
 <!--Insert RSE specific job postings here-->
 
-{% assign today = site.time | date: "%Y-%m-%d" %}
+{% assign today = 'now' | date: "%Y-%m-%d" %}
 <ul>
 {% for job in site.data.jobs %}
-  {% assign job_expiry = job.expires | date: "%Y-%m-%d" %}
-  {% if job_expiry >= today %}
+  {% assign expires_formatted = job.expires | date: "%Y-%m-%d" %}
+  {% if expires_formatted >= today %}
     <li>
       <strong><a href="{{ job.url }}" target="_blank" rel="noopener">{{ job.name }}</a></strong><br>
       📍 {{ job.location }}<br>

@@ -92,8 +92,23 @@ Four Steering Committee seats are open in this election, each for a 2-year term
 The following steering committee members have terms that end this year:
 Abbey Roelofs, Alex Koufos, Ian Cosden, Jeff Carver, and Keith Beattie.
 {% endif %}
-All US-RSE members in good standing as of the day nominations open are eligible
-for nomination.
+
+### Eligibility
+
+Steering Committee (SC) candidates must have a meaningful connection to,
+history with, and vested interest in the community of Research Software
+Engineers (RSEs) in the United States (US). To ensure that the SC can
+effectively advocate for and address the needs of the RSE community in the
+US, candidates must have a demonstrated history of engagement within US-RSE.
+
+Candidates must both live in the US and be affiliated with or retired from
+a US entity or self-employed. Exceptions to the residency and affiliation
+requirement will be considered on a case-by-case basis.
+
+The exception process will be led by the two Election Chairs who will create
+a subcommittee that includes several other members of the US-RSE community.
+
+### Responsibilities
 
 The US-RSE Steering Committee sets its own meeting frequency and timing.
 Currently, the Steering Committee meets every two weeks on Fridays.
