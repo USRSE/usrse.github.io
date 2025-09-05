@@ -50,7 +50,7 @@ Houston and a bachelor's degree in electrical engineering from
 Anna University, India.
 
 **Professional: JAWS Team - Daniela Cassol, Mario Melara, Elais Player-Jackson,
-Ramani Kothadia, Setareh Sarrafan, Nicholas Tyler**
+Ramani Kothadia, Setareh Sarrafan, Seung-Jin Sul, Nicholas Tyler**
 
 JAWS (JGI Analysis Workflow Service) is a scalable, multi-site workflow execution framework
 developed at the Department of Energy (DOE) Joint Genome Institute (JGI), to support
