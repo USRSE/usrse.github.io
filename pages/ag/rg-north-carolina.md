@@ -30,7 +30,7 @@ We're just starting, so who knows what we will do?
 
 ## Upcoming meetups
 
-- September 16, 2025: <a href="{{site.baseurl}}/events/2025/09/rg-nc-meetup-1/">Meetup 1</a>
+- September 16, 2025 at 5pm ET: <a href="{{site.baseurl}}/events/2025/2025-09-rg-nc-meetup-1/">Meetup 1</a> at <a href="https://www.yelp.com/biz/namu-durham">Namu</a>, 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
 
 ## Archive of past meetups
 
