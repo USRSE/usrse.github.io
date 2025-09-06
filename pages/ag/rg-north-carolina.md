@@ -46,4 +46,4 @@ We're just starting, so who knows what we will do?
 
 Reach out to group coordinators
 [Gaurav Vaidya](mailto:gaurav@ggvaidya.com) or
-[Bradley Saul](https://www.functionalstatistics.com/)
+[Bradley Saul](mailto:bradleysaul@fastmail.com)
