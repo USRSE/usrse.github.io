@@ -82,4 +82,8 @@ We organize informal gatherings where interested professionals can connect and l
 
 The R Affinity Group (R-RSE) exists to increase the representation of R users in the US-RSE community and provide opportunities for members to develop R skills.
 
+<h3><a href="{{ site.baseurl }}/ag/rg-north-carolina/">North Carolina Regional Group</a></h3>
+
+The North Carolina Regional Group connects US-RSE members in North Carolina and organizes local events.
+
 <hr>
