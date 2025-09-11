@@ -496,5 +496,11 @@
     "TatsatJha": {
         "name": "TatsatJha",
         "blog": "https://github.com/TatsatJha"
+    },
+    "gaurav": {
+        "name": "Gaurav Vaidya",
+        "email": "gaurav@ggvaidya.com",
+        "bio": "Semantic web technologist at @RENCI at the University of North Carolina at Chapel Hill.",
+        "blog": "http://www.ggvaidya.com/"
     }
 }
