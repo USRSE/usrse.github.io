@@ -18,9 +18,9 @@ intended to bring together research software engineers in North Carolina.
 
 To stay informed, please:
 
-* Join [US-RSE](https://us-rse.org/join/).
+* [Join US-RSE]({{site.baseurl}}/join/).
 * Subscribe to event announcements by joining one of:
-  * The [US-RSE Slack `#rg-north-carolina` channel](https://usrse.slack.com/messages/rg-north-carolina) (you will need to join US-RSE first!)
+  * The [US-RSE Slack `#rg-north-carolina` channel](https://usrse.slack.com/messages/rg-north-carolina)
   * Our [Google group](https://groups.google.com/a/us-rse.org/g/rg-north-carolina/about) (mailing list)
 
 If you are interested in giving a talk or have other ideas for a future meetup, please contact one of the coordinators (see the [Questions?](#questions) section below).
