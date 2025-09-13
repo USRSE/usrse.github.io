@@ -22,4 +22,5 @@ I'm planning to stay there until 7pm at least, so no worries if you're running l
 Please <a href="mailto:gaurav@ggvaidya.com">email me</a> or message me on Slack if you can't find us.
 
 You can find out more about our group on [our regional group page]({{ site.baseurl }}/ag/rg-north-carolina/)
-or by joining the `#rg-north-carolina` channel on the [US-RSE Slack]({{site.baseurl}}/get-involved/).
+or by joining the [US-RSE Slack `#rg-north-carolina` channel](https://usrse.slack.com/messages/rg-north-carolina)
+(you will need to [join US-RSE]({{site.baseurl}}/join/) first!).
