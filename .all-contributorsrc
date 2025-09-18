@@ -993,6 +993,28 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/23979?v=4"
             ]
+        },
+        {
+            "login": "suzanneprentice",
+            "name": "Suzanne Prentice",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/suzanneprentice",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/38380629?v=4"
+            ]
+        },
+        {
+            "login": "cdcore09",
+            "name": "Cordero Core",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/cdcore09",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/127983572?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

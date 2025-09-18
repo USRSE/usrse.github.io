@@ -502,5 +502,16 @@
         "email": "gaurav@ggvaidya.com",
         "bio": "Semantic web technologist at @RENCI at the University of North Carolina at Chapel Hill.",
         "blog": "http://www.ggvaidya.com/"
+    },
+    "suzanneprentice": {
+        "name": "Suzanne Prentice",
+        "orcid": "0009-0001-6990-8311",
+        "affiliation": "Oak Ridge National Laboratory",
+        "blog": "https://github.com/suzanneprentice"
+    },
+    "cdcore09": {
+        "name": "Cordero Core",
+        "bio": "A software-focused Software Engineer with extensive experience in leveraging Python, JavaScript, and Go for SDLC, medical, e-commerce, data analytic, and AI sol",
+        "blog": "https://github.com/cdcore09"
     }
 }
