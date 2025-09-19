@@ -17,9 +17,10 @@ The North Carolina Regional Group will hold its first in-person meeting on Septe
 
 <!--more-->
 
-We'll meet in the restaurant section of <a href="https://www.yelp.com/biz/namu-durham">Namu Durham</a>, 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
+We'll meet in the restaurant section of [Namu Durham](https://www.yelp.com/biz/namu-durham), 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
 I'm planning to stay there until 7pm at least, so no worries if you're running late.
 Please <a href="mailto:gaurav@ggvaidya.com">email me</a> or message me on Slack if you can't find us.
 
-You can find out more about our group on <a href="{{ site.baseurl }}/ag/rg-north-carolina/">our regional group page</a>
-or by joining the `#rg-north-carolina` channel on the [US-RSE Slack](https://us-rse.org/slack/).
+You can find out more about our group on [our regional group page]({{ site.baseurl }}/ag/rg-north-carolina/)
+or by joining the [US-RSE Slack `#rg-north-carolina` channel](https://usrse.slack.com/messages/rg-north-carolina)
+(you will need to [join US-RSE]({{site.baseurl}}/join/) first!).
