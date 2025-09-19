@@ -3,7 +3,7 @@
 https://us-rse.org
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-92-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-94-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -241,6 +241,8 @@ tool to generate a contributors graphic below.
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://www.ggvaidya.com/"><img src="https://avatars.githubusercontent.com/u/23979?v=4?s=100" width="100px;" alt="Gaurav Vaidya"/><br /><sub><b>Gaurav Vaidya</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=gaurav" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/suzanneprentice"><img src="https://avatars.githubusercontent.com/u/38380629?v=4?s=100" width="100px;" alt="Suzanne Prentice"/><br /><sub><b>Suzanne Prentice</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=suzanneprentice" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/cdcore09"><img src="https://avatars.githubusercontent.com/u/127983572?v=4?s=100" width="100px;" alt="Cordero Core"/><br /><sub><b>Cordero Core</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=cdcore09" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
