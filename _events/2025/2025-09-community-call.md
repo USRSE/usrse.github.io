@@ -1,7 +1,7 @@
 ---
 title: September 2025 Community Call
 expires: 2025-09-11
-event_date: "Septmeber 11, 2025"
+event_date: "September 11, 2025"
 layout: event
 duration: 60
 repeated: false
