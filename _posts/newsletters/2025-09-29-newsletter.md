@@ -21,14 +21,15 @@ be prepared and ready to make the most of this year's exciting conference! Read 
 
 In this issue:
 * [1. USRSE'25 Conference](#conference2025)
-* [2. Steering Committee Updates](#sc-update)
-* [3. Organizational Founding Membership](#orgmember)
-* [4. Community and Travel Funds](#community-funds)
-* [5. Community News](#news)
-* [6. Interesting Events and Opportunities](#events)
-* [7. Featured Reads, Videos, or Podcasts](#reads)
-* [8. Get Involved](#involved)
-* [9. Recent Job Postings](#jobs)
+* [2. Executive Director's Update](#headline)
+* [3. Steering Committee Updates](#sc-update)
+* [4. Organizational Founding Membership](#orgmember)
+* [5. Community and Travel Funds](#community-funds)
+* [6. Community News](#news)
+* [7. Interesting Events and Opportunities](#events)
+* [8. Featured Reads, Videos, or Podcasts](#reads)
+* [9. Get Involved](#involved)
+* [10. Recent Job Postings](#jobs)
 
 -----------------
 
