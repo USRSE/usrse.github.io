@@ -288,7 +288,7 @@ The US-RSE DEI Working Group is seeking input from the community! We’re explor
 
 Let’s work together to make US-RSE a place where everyone feels they belong.
 "
-    links="If you have suggestions, big or small, please share them in the #dei-disccussion Slack channel or reach out directly to the [DEI Working Group](mailto:wg-dei@us-rse.org). Your feedback will help guide our future initiatives and ensure they reflect the needs of our diverse community.
+    links="If you have suggestions, big or small, please share them in the #dei-discussion Slack channel or reach out directly to the [DEI Working Group](mailto:wg-dei@us-rse.org). Your feedback will help guide our future initiatives and ensure they reflect the needs of our diverse community.
 "
 %}
 
