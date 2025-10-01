@@ -456,7 +456,7 @@ software ecosystems and maintaining the longevity of high-performance computing 
 
 - **G. O’Brien**, _"How Scientists Use Large Language Models to Program,"_ *CHI ’25: Proceedings of the CHI Conference on Human Factors in Computing Systems*, pp. 1–16, 2025. [Read the article.](https://doi.org/10.1145/3706598.3713668)
 
-- **D. Mittal**, _"A Study for Application of Decision Making Model in a Public Organization,"_ *Spectrum of Operational Research*, vol. 3, no. 1, 2026. [Read the article.](https://www.sor-journal.org/index.php/sor/article/view/40)
+- **D. Mittal**, _"A Study for Application of Decision Making Model in a Public Organization,"_ *Spectrum of Operational Research*, vol. 3, no. 1, 2025. [Read the article.](https://www.sor-journal.org/index.php/sor/article/view/40)
 
 - **W. F. Godoy, T. Melnichenko, P. Valero-Lara, W. Elwasif, P. Fackler, R. Ferreira Da Silva, K. Teranishi, J. S. Vetter**, _"Mojo: MLIR-Based Performance-Portable HPC Science Kernels on GPUs for the Python Ecosystem,"_ *WACCPD Workshop at IEEE/ACM SC25: The International Conference for High Performance Computing, Networking, Storage, and Analysis*, St. Louis, MO, Nov 16–21, 2025. [Read the article.](https://doi.org/10.48550/arXiv.2509.21039)
 
