@@ -456,11 +456,11 @@ software ecosystems and maintaining the longevity of high-performance computing 
 
 - **G. O’Brien**, _"How Scientists Use Large Language Models to Program,"_ *CHI ’25: Proceedings of the CHI Conference on Human Factors in Computing Systems*, pp. 1–16, 2025. [Read the article.](https://doi.org/10.1145/3706598.3713668)
 
-- **R. Haines**, _"Building a National Community of Research Software Engineers,"_ *Society of Research Software Engineering Journal*, vol. 1, no. 1, 2025. [Read the article.](https://www.sor-journal.org/index.php/sor/article/view/40)
+- **D. Mittal**, _"A Study for Application of Decision Making Model in a Public Organization,"_ *Spectrum of Operational Research*, vol. 3, no. 1, 2026. [Read the article.](https://www.sor-journal.org/index.php/sor/article/view/40)
 
 - **W. F. Godoy, T. Melnichenko, P. Valero-Lara, W. Elwasif, P. Fackler, R. Ferreira Da Silva, K. Teranishi, J. S. Vetter**, _"Mojo: MLIR-Based Performance-Portable HPC Science Kernels on GPUs for the Python Ecosystem,"_ *WACCPD Workshop at IEEE/ACM SC25: The International Conference for High Performance Computing, Networking, Storage, and Analysis*, St. Louis, MO, Nov 16–21, 2025. [Read the article.](https://doi.org/10.48550/arXiv.2509.21039)
 
-<!-- Add new articles and podcast links -->
+- **D. S. Katz, E. A. Jensen, M. Barker**, _"Understanding and advancing research software grant funding models,"_ *Open Research Europe*, vol. 5, p. 199, Jul 25, 2025. [Read the article.](https://doi.org/10.12688/openreseurope.20210.1)
 ### 📝 Blog Posts
 
 - **P. Suber**, _"Guest Post – Code Plagiarism and AI Create New Challenges for Publishing Integrity,"_ *The Scholarly Kitchen*, Aug 28, 2025. [Read the post.](https://scholarlykitchen.sspnet.org/2025/08/28/guest-post-code-plagiarism-and-ai-create-new-challenges-for-publishing-integrity/)
