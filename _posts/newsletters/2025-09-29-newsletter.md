@@ -122,7 +122,7 @@ Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.or
 -----------------
 
 <a name="community-funds"></a>
-# ✈️ **4. Community and Travel Funds program**
+# ✈️ **5. Community and Travel Funds program**
 
 {% assign current_month = 'now' | date: '%m' | plus: 0 %}
 {% assign current_year = 'now' | date: '%Y' %}
