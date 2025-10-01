@@ -130,7 +130,7 @@ Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.or
 
 *Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/community-funds/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more.*
 
-The Community and Travel Funds Program is not currently accepting applications. We hope to obtain more funding in the future
+The Community and Travel Funds Program is not currently accepting applications. We hope to obtain more funding in the future.
 Please check back on the program page [here](https://us-rse.org/funds-and-awards/).
 
 -----------------
