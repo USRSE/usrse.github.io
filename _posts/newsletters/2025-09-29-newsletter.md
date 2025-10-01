@@ -124,27 +124,14 @@ Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.or
 <a name="community-funds"></a>
 # ✈️ **5. Community and Travel Funds program**
 
-{% assign current_month = 'now' | date: '%m' | plus: 0 %}
-{% assign current_year = 'now' | date: '%Y' %}
-
-{% if current_month <= 3 %}
-  {% assign next_deadline = current_year | append: "-03-31" %}
-{% elsif current_month <= 6 %}
-  {% assign next_deadline = current_year | append: "-06-30" %}
-{% elsif current_month <= 9 %}
-  {% assign next_deadline = current_year | append: "-09-30" %}
-{% elsif current_month <= 12 %}
-  {% assign next_deadline = current_year | append: "-12-31" %}
-{% endif %}
-
 <div class="alert alert-primary" role="alert">
-  <strong>Next Application Deadline:</strong> {{ next_deadline | date: "%B %-d, %Y" }}
+  <strong>No new applications are being accepted at this time.</strong>
 </div>
 
-*Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/funds-and-awards/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more.*
+*Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/community-funds/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more.*
 
-The next application deadline is **{{ next_deadline | date: "%B %-d, %Y" }}**. We encourage you to apply for funding to support your community and travel needs!  
-The application process is simple and straightforward. You can find the application form [here](https://us-rse.org/funds-and-awards/).
+The Community and Travel Funds Program is not currently accepting applications. We hope to obtain more funding in the future
+Please check back on the program page [here](https://us-rse.org/funds-and-awards/).
 
 -----------------
 
