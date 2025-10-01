@@ -450,7 +450,7 @@ software ecosystems and maintaining the longevity of high-performance computing 
 - **D. S. Katz, E. A. Jensen, M. Barker**, _"Understanding and advancing research software grant funding models,"_ *Open Research Europe*, vol. 5, p. 199, Jul 25, 2025. [Read the article.](https://doi.org/10.12688/openreseurope.20210.1)
 ### 📝 Blog Posts
 
-- **P. Suber**, _"Guest Post – Code Plagiarism and AI Create New Challenges for Publishing Integrity,"_ *The Scholarly Kitchen*, Aug 28, 2025. [Read the post.](https://scholarlykitchen.sspnet.org/2025/08/28/guest-post-code-plagiarism-and-ai-create-new-challenges-for-publishing-integrity/)
+- **D. Katz, M. Hosseini, S. Edmunds**, _"Guest Post – Code Plagiarism and AI Create New Challenges for Publishing Integrity,"_ *The Scholarly Kitchen*, Aug 28, 2025. [Read the post.](https://scholarlykitchen.sspnet.org/2025/08/28/guest-post-code-plagiarism-and-ai-create-new-challenges-for-publishing-integrity/)
 
 - **Stack Overflow**, _"Stack Overflow Developer Survey 2025,"_ *Stack Overflow Insights*, 2025. [Read the report.](https://survey.stackoverflow.co/2025/)
 
