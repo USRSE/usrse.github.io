@@ -57,7 +57,7 @@ or ask in the [`#community-funds`](https://app.slack.com/client/T8ZT4PJSW/C05M3F
 
 ### Application Details
 
-- Not Current Accepting Applications
+- Not Currently Accepting Applications
 
 The application will request the following details:
 
