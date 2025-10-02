@@ -124,27 +124,14 @@ Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.or
 <a name="community-funds"></a>
 # ✈️ **5. Community and Travel Funds program**
 
-{% assign current_month = 'now' | date: '%m' | plus: 0 %}
-{% assign current_year = 'now' | date: '%Y' %}
-
-{% if current_month <= 3 %}
-  {% assign next_deadline = current_year | append: "-03-31" %}
-{% elsif current_month <= 6 %}
-  {% assign next_deadline = current_year | append: "-06-30" %}
-{% elsif current_month <= 9 %}
-  {% assign next_deadline = current_year | append: "-09-30" %}
-{% elsif current_month <= 12 %}
-  {% assign next_deadline = current_year | append: "-12-31" %}
-{% endif %}
-
 <div class="alert alert-primary" role="alert">
-  <strong>Next Application Deadline:</strong> {{ next_deadline | date: "%B %-d, %Y" }}
+  <strong>No new applications are being accepted at this time.</strong>
 </div>
 
-*Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/funds-and-awards/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more.*
+*Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/community-funds/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more.*
 
-The next application deadline is **{{ next_deadline | date: "%B %-d, %Y" }}**. We encourage you to apply for funding to support your community and travel needs!  
-The application process is simple and straightforward. You can find the application form [here](https://us-rse.org/funds-and-awards/).
+The Community and Travel Funds Program is not currently accepting applications. We hope to obtain more funding in the future.
+Please check back on the program page [here](https://us-rse.org/funds-and-awards/).
 
 -----------------
 
@@ -456,14 +443,14 @@ software ecosystems and maintaining the longevity of high-performance computing 
 
 - **G. O’Brien**, _"How Scientists Use Large Language Models to Program,"_ *CHI ’25: Proceedings of the CHI Conference on Human Factors in Computing Systems*, pp. 1–16, 2025. [Read the article.](https://doi.org/10.1145/3706598.3713668)
 
-- **R. Haines**, _"Building a National Community of Research Software Engineers,"_ *Society of Research Software Engineering Journal*, vol. 1, no. 1, 2025. [Read the article.](https://www.sor-journal.org/index.php/sor/article/view/40)
+- **D. Mittal**, _"A Study for Application of Decision Making Model in a Public Organization,"_ *Spectrum of Operational Research*, vol. 3, no. 1, 2025. [Read the article.](https://www.sor-journal.org/index.php/sor/article/view/40)
 
 - **W. F. Godoy, T. Melnichenko, P. Valero-Lara, W. Elwasif, P. Fackler, R. Ferreira Da Silva, K. Teranishi, J. S. Vetter**, _"Mojo: MLIR-Based Performance-Portable HPC Science Kernels on GPUs for the Python Ecosystem,"_ *WACCPD Workshop at IEEE/ACM SC25: The International Conference for High Performance Computing, Networking, Storage, and Analysis*, St. Louis, MO, Nov 16–21, 2025. [Read the article.](https://doi.org/10.48550/arXiv.2509.21039)
 
-<!-- Add new articles and podcast links -->
+- **D. S. Katz, E. A. Jensen, M. Barker**, _"Understanding and advancing research software grant funding models,"_ *Open Research Europe*, vol. 5, p. 199, Jul 25, 2025. [Read the article.](https://doi.org/10.12688/openreseurope.20210.1)
 ### 📝 Blog Posts
 
-- **P. Suber**, _"Guest Post – Code Plagiarism and AI Create New Challenges for Publishing Integrity,"_ *The Scholarly Kitchen*, Aug 28, 2025. [Read the post.](https://scholarlykitchen.sspnet.org/2025/08/28/guest-post-code-plagiarism-and-ai-create-new-challenges-for-publishing-integrity/)
+- **D. Katz, M. Hosseini, S. Edmunds**, _"Guest Post – Code Plagiarism and AI Create New Challenges for Publishing Integrity,"_ *The Scholarly Kitchen*, Aug 28, 2025. [Read the post.](https://scholarlykitchen.sspnet.org/2025/08/28/guest-post-code-plagiarism-and-ai-create-new-challenges-for-publishing-integrity/)
 
 - **Stack Overflow**, _"Stack Overflow Developer Survey 2025,"_ *Stack Overflow Insights*, 2025. [Read the report.](https://survey.stackoverflow.co/2025/)
 
