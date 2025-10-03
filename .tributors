@@ -513,5 +513,9 @@
         "name": "Cordero Core",
         "bio": "A software-focused Software Engineer with extensive experience in leveraging Python, JavaScript, and Go for SDLC, medical, e-commerce, data analytic, and AI sol",
         "blog": "https://github.com/cdcore09"
+    },
+    "maneesha": {
+        "name": "maneesha",
+        "blog": "https://github.com/maneesha"
     }
 }
