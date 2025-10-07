@@ -145,7 +145,7 @@ Additionally, Steering Committee members are expected to:
 {% if nowunix >= season_start and nowunix < season_end %}
 Nominations will open on {{ page.nominations_open | date: "%B %e, %Y" }} and
 close on {{ page.nominations_close | date: "%B %e, %Y" }} (see above for more 
-details.)
+details).
 {% endif %}
 
 Once nominations open, interested members are encouraged to nominate themselves.
@@ -161,8 +161,8 @@ All US-RSE members in good standing are eligible to be nominated as candidates.
 
 The nomination form can be found
 [HERE](https://docs.google.com/forms/d/e/1FAIpQLSdCcBFdYLmZqG8US8oBttvMUtB9owQ5YOzUIcaKfJCCW5gn9w/viewform).
-Please fill this form for self-nomination OR if you are nominating someone else.
-If nominating someone else, then please fill the form early so that we can
+Please complete this form for self-nomination OR if you are nominating someone else.
+If nominating someone else, please complete the form early so that we can
 contact the nominated person and obtain their nomination materials before the
 nominations due date of November 03, 2025.
 
@@ -241,5 +241,5 @@ election.
 
 Contact Election Chairs on Slack or email:
 - [Cordero Core](mailto:cdcore@uw.edu)
-- [Miranda Mundt](mailto:mmundt@sandia.gov).
+- [Miranda Mundt](mailto:mmundt@sandia.gov)
 
