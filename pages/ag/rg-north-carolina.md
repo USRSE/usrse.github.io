@@ -27,15 +27,16 @@ If you are interested in giving a talk or have other ideas for a future meetup, 
 
 # Activities
 
-We're just starting, so who knows what we will do?
+We're just starting, so who knows what we will do? So far it's been mostly social get-togethers, but we hope to
+organize more structured events in the future.
 
 ## Upcoming meetups
 
-- September 16, 2025 at 5pm ET: [Meetup 1]({{site.baseurl}}/events/2025/2025-09-rg-nc-meetup-1/) at [Namu](https://www.yelp.com/biz/namu-durham), 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
+- October 21, 2025 at 5pm ET: [October Meetup]({{site.baseurl}}/events/2025/2025-10-rg-nc-meetup/) at [Namu](https://www.yelp.com/biz/namu-durham), 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
 
 ## Archive of past meetups
 
-- _None as yet_
+- September 16, 2025 at 5pm ET: [Meetup 1]({{site.baseurl}}/events/2025/2025-09-rg-nc-meetup-1/) at [Namu](https://www.yelp.com/biz/namu-durham), 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
 
 # Group coordinators
 
