@@ -21,5 +21,6 @@ We'll meet in the restaurant section of <a href="https://www.yelp.com/biz/namu-d
 I'm planning to stay there until 7pm at least, so no worries if you're running late.
 Please <a href="mailto:gaurav@ggvaidya.com">email me</a> or message me on Slack if you can't find us.
 
-You can find out more about our group on <a href="{{ site.baseurl }}/ag/rg-north-carolina/">our regional group page</a>
-or by joining the `#rg-north-carolina` channel on the [US-RSE Slack](https://us-rse.org/slack/).
+You can find out more about our group on [our regional group page]({{ site.baseurl }}/ag/rg-north-carolina/)
+or by joining the [US-RSE Slack `#rg-north-carolina` channel](https://usrse.slack.com/messages/rg-north-carolina)
+(you will need to [join US-RSE]({{site.baseurl}}/join/) first!).
