@@ -13,7 +13,7 @@ time:
      end: 2025-10-21T19:00:00-04:00
 ---
 
-The North Carolina Regional Group will hold an in-person social meeting on September 16th, 2025 at 5:00pm ET.
+The North Carolina Regional Group will hold an in-person social meeting on October 21st, 2025 at 5:00pm ET.
 
 <!--more-->
 
