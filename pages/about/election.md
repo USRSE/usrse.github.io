@@ -5,16 +5,16 @@ permalink: /about/election/
 menubar: about
 menubar_toc: true
 set_last_modified: true
-nominations_open: 2024-10-11 23:59:59 -1000
-nominations_close: 2024-11-01 23:59:59 -1000
-membership_deadline: 2024-11-08 23:59:59 -1000
-candidate_announcements: 2024-11-08 17:00:00 -0800
-annual_general_meeting: 2024-12-05 14:00:00 -0500
-voting_open: 2024-12-05 14:00:00 -0500
-voting_close: 2024-12-13T23:59:59 -1000
-election_results: 2024-12-20T00:00:00 +0000
-election_season_start: 2024-09-12
-election_season_end: 2025-02-01
+nominations_open: 2025-10-12 23:59:59 -1000
+nominations_close: 2025-11-03 23:59:59 -1000
+membership_deadline: 2025-11-14 23:59:59 -1000
+candidate_announcements: 2025-11-14 17:00:00 -0800
+annual_general_meeting: 2025-12-04 13:00:00 -0500
+voting_open: 2025-12-04 13:00:00 -0500
+voting_close: 2025-12-12 23:59:59 -1000
+election_results: 2025-12-19 00:00:00 +0000
+election_season_start: 2025-10-07
+election_season_end: 2026-02-01
 ---
 
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
@@ -37,7 +37,7 @@ US-RSE Steering Committee
 {%- elsif nowunix >= nom_close and nowunix < can_ann -%}
 Nominations have closed! We will be announcing the candidates shortly.
 {%- elsif nowunix >= can_ann and nowunix < vote_open -%}
-Meet the [2024 Steering Committee candidates](#candidate-information)!
+Meet the [2025 Steering Committee candidates](#candidate-information)!
 {%- elsif nowunix >= vote_open and nowunix < vote_close -%}
 Voting for the US-RSE Steering Committee are now open!
 {%- else -%}
@@ -50,7 +50,7 @@ Elections for the US-RSE Steering Committee happen near the end of each year
 
 <!-- Timetime or congratulations section -->
 {% if nowunix >= season_start and nowunix < season_end %}
-## 2024 Election Timeline
+## 2025 Election Timeline
 
 * Nominations open:
   **{{ page.nominations_open | date: "%B %-d, %Y" }}** <!-- Should be link to form once open -->
@@ -70,7 +70,9 @@ Elections for the US-RSE Steering Committee happen near the end of each year
   **{{ page.election_results | date: "%B %-d, %Y" }}**
 * Elected Steering Committee members take office:
   **January 1, {{ year | plus: 1 }}**
+
 {% else %}
+
 ## Congratulations to the {{ year }} - {{ year | plus: 2 }} Steering Committee Cohort!
 
 - Cordero Core
@@ -87,10 +89,8 @@ have a look at
 ## Positions and Eligibility
 
 {% if nowunix >= season_start and nowunix < results %}
-Four Steering Committee seats are open in this election, each for a 2-year term
+Five Steering Committee seats are open in this election, each for a 2-year term
 (January 1, {{ year | plus: 1 }} through December 31, {{ year | plus: 3 }}).
-The following steering committee members have terms that end this year:
-Abbey Roelofs, Alex Koufos, Ian Cosden, Jeff Carver, and Keith Beattie.
 {% endif %}
 
 ### Eligibility
@@ -145,10 +145,10 @@ Additionally, Steering Committee members are expected to:
 {% if nowunix >= season_start and nowunix < season_end %}
 Nominations will open on {{ page.nominations_open | date: "%B %e, %Y" }} and
 close on {{ page.nominations_close | date: "%B %e, %Y" }} (see above for more 
-details.)
+details).
 {% endif %}
 
-Once nominations open up, interested members are encouraged to nominate themselves.
+Once nominations open, interested members are encouraged to nominate themselves.
 Alternatively, if you know of a member who you think would make a good
 candidate, you can submit a nomination for someone else, who will be invited to run.
 All US-RSE members in good standing are eligible to be nominated as candidates.
@@ -159,16 +159,20 @@ All US-RSE members in good standing are eligible to be nominated as candidates.
   {% if nowunix >= nom_open and nowunix < nom_close %}
 ### Nomination Form
 
-The nomination form can be found [HERE](https://docs.google.com/forms/d/e/1FAIpQLSdymmrCfE3QgKmeOmPUSeaDhEEG2z0adxfmiNGHbO3C6nv1YA/viewform). Please fill this form for self-nomination OR if you are nominating someone else.
-If nominating someone else, then please fill the form early so that we can
+The nomination form can be found
+[HERE](https://docs.google.com/forms/d/e/1FAIpQLSdCcBFdYLmZqG8US8oBttvMUtB9owQ5YOzUIcaKfJCCW5gn9w/viewform).
+Please complete this form for self-nomination OR if you are nominating someone else.
+If nominating someone else, please complete the form early so that we can
 contact the nominated person and obtain their nomination materials before the
-nominations due date of November 01, 2024.
+nominations due date of November 03, 2025.
 
 On the nomination form, expect to provide the following information.
 
 **If Nominating Someone Else:**
+
 * Your name and email
 * Nominee's name and email
+* Physical location of both nominee and their organization (within or outside of U.S.)
 * Short statement about why you think the nominated individual will make a good Steering Committee member
 
 Nominations of others will only be shared with the Election Chairs and the
@@ -180,13 +184,14 @@ The information will not be made public.
 **Self-nomination or Accepted Nomination:**
 
 * Your name and a publicly-shareable email
+* Physical location of both you and your organization (within or outside of U.S.)
 * A link to a resume, CV, LinkedIn profile, or professional website
 * Why do you want to be on the US-RSE Steering Committee? (<=1000 characters)
 * How do you contribute to the US-RSE Association or RSE community more broadly? (<= 1500 characters)
 
 All candidate information will be shared on the US-RSE website.
 Additionally, candidates will have a chance to share information about
-themselves at the Annual General Meeting on December 6, 2024.
+themselves at the Annual General Meeting on December 4, 2025.
 
 An [#election channel is available on Slack](https://usrse.slack.com/archives/C01BC66Q16E)
 for any discussion with or about candidates.
@@ -205,17 +210,10 @@ Nominations are now closed and our candidates for next cycle can be found below.
 ### Candidate Information
 
 Candidates are listed in alphabetical order.
-- Anees Ur Rahman
-- Chen Zhang
-- Cordero Core
-- Daniel Madren
-- Julia Damerow
-- Kenton McHenry
-- Lezlie Espana
-- Miranda Mundt
-- Sujata Goswami
 
-More information about the candidates can be [found here](/2024-11-08-sc-candidates).
+- 
+
+More information about the candidates can be [found here](/).
 
   {% endif %}
 {% endif %}
@@ -242,6 +240,6 @@ election.
 ## Questions?
 
 Contact Election Chairs on Slack or email:
-- [Alex Koufos](mailto:akoufos@stanford.edu)
-- [Keith Beattie](mailto:ksbeattie@lbl.gov).
+- [Cordero Core](mailto:cdcore@uw.edu)
+- [Miranda Mundt](mailto:mmundt@sandia.gov)
 
