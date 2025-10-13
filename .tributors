@@ -518,5 +518,10 @@
     "maneesha": {
         "name": "maneesha",
         "blog": "https://github.com/maneesha"
+    },
+    "jlcohoon": {
+        "name": "Hannah Cohoon",
+        "bio": "Doc student at UT's iSchool",
+        "blog": "https://github.com/jlcohoon"
     }
 }
