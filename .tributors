@@ -457,7 +457,8 @@
     "Aariq": {
         "name": "Eric R. Scott",
         "bio": "Scientific Programmer & Educator at University of Arizona",
-        "blog": "www.ericrscott.com"
+        "blog": "www.ericrscott.com",
+        "email": "scottericr@gmail.com"
     },
     "glentner": {
         "name": "Geoffrey Lentner",
