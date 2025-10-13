@@ -26,8 +26,23 @@ channel on the US-RSE slack or contact us on the
 
 # Work Products
 
-TBD.
-
+## Talks Slides and Recordings
+- "Software testing for Fisheries Integrated Modeling System (FIMS): strategies, challenges, and opportunities"
+  - Author: Bai Li
+  - Date: May 21, 2025
+  - [Slides](https://drive.google.com/file/d/1dd4ZypC0S6FOVnQIEEvIMuIP0ZJX7ZFl/view?usp=drive_link)
+  - [Video](https://www.youtube.com/watch?v=h8WmLmiQrYU)
+- "Move Fast and Don’t Break Things: How testing enabled a total rewrite of critical infrastructure"
+    - Author: Ethan Holz
+    - Date: July 23, 2025
+    - [Slides](https://drive.google.com/file/d/1Re3GzB1IeCoFgAhnR0jOgBPszYjpiv1h/view?usp=drive_link)
+    - [Video](https://www.youtube.com/watch?v=h7lhscImPJs)
+- "Automated Testing vs The Enemies of the Release Process"
+    - Author: Ben Clifford
+    - Date: August 17, 2025
+    - [Slides](https://drive.google.com/file/d/1E3dDE6Eqri5HqAQhhSTnslZ_xaDAOPWc/view?usp=drive_link)
+    - [Video](https://www.youtube.com/watch?v=sPOLAUmjLjE)
+  
 ------
 
 <!-- 

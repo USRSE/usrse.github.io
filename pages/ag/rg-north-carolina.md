@@ -18,10 +18,10 @@ intended to bring together research software engineers in North Carolina.
 
 To stay informed, please:
 
-* Join [US-RSE](https://us-rse.org/join/).
+* [Join US-RSE]({{site.baseurl}}/join/).
 * Subscribe to event announcements by joining one of:
-  * The `#rg-north-carolina` channel on the US-RSE slack.
-  * Our [Google group](https://groups.google.com/a/us-rse.org/g/rg-north-carolina/about)
+  * The [US-RSE Slack `#rg-north-carolina` channel](https://usrse.slack.com/messages/rg-north-carolina)
+  * Our [Google group](https://groups.google.com/a/us-rse.org/g/rg-north-carolina/about) (mailing list)
 
 If you are interested in giving a talk or have other ideas for a future meetup, please contact one of the coordinators (see the [Questions?](#questions) section below).
 
@@ -32,11 +32,11 @@ organize more structured events in the future.
 
 ## Upcoming meetups
 
-- October 13, 2025 at 5pm ET: <a href="{{site.baseurl}}/events/2025/2025-10-rg-nc-meetup-2/">Meetup 2</a> at <a href="https://www.yelp.com/biz/namu-durham">Namu</a>, 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
+- October 21, 2025 at 5pm ET: [October Meetup]({{site.baseurl}}/events/2025/2025-10-rg-nc-meetup/) at [Namu](https://www.yelp.com/biz/namu-durham), 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
 
 ## Archive of past meetups
 
-- September 16, 2025 at 5pm ET: <a href="{{site.baseurl}}/events/2025/2025-09-rg-nc-meetup-1/">Meetup 1</a> at <a href="https://www.yelp.com/biz/namu-durham">Namu</a>, 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
+- September 16, 2025 at 5pm ET: [Meetup 1]({{site.baseurl}}/events/2025/2025-09-rg-nc-meetup-1/) at [Namu](https://www.yelp.com/biz/namu-durham), 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
 
 # Group coordinators
 
