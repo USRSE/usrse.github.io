@@ -31,6 +31,9 @@ on the US-RSE slack.
 
 <hr class="w-50">
 
+## Code Review Working Group Demos
+- [Reproducibility Audit - March 27, 2025](https://www.youtube.com/watch?v=Q2ZsLbBkWrk) 
+
 ## Code Review Tutorials and Good Practices
 
 - [code-review.org (tutorial)](https://code-review.org/)
