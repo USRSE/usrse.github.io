@@ -78,7 +78,7 @@ standard:
     contact: "Boyd Wilson <boyd@omnibond.com>"
   - name: Darthmouth
     url: https://home.dartmouth.edu/
-    figure: logo-dartmouth.jpg
+    figure: logo-dartmouth.png
     acronym:
     date_joined: 2025-10-15
     founding_member: true
@@ -130,4 +130,7 @@ premier:
     date_joined: 2025-05-28
     url: https://casc.org/
     figure: logo-casc.png
-
+  - name: "The Carpentries"
+    tier: "Premier"
+    date_joined: 2025-10-17
+    figure: logo-carpentries.png
