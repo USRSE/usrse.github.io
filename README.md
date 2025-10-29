@@ -3,7 +3,7 @@
 https://us-rse.org
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-94-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-96-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -243,6 +243,8 @@ tool to generate a contributors graphic below.
       <td align="center" valign="top" width="14.28%"><a href="http://www.ggvaidya.com/"><img src="https://avatars.githubusercontent.com/u/23979?v=4?s=100" width="100px;" alt="Gaurav Vaidya"/><br /><sub><b>Gaurav Vaidya</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=gaurav" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/suzanneprentice"><img src="https://avatars.githubusercontent.com/u/38380629?v=4?s=100" width="100px;" alt="Suzanne Prentice"/><br /><sub><b>Suzanne Prentice</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=suzanneprentice" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/cdcore09"><img src="https://avatars.githubusercontent.com/u/127983572?v=4?s=100" width="100px;" alt="Cordero Core"/><br /><sub><b>Cordero Core</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=cdcore09" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/maneesha"><img src="https://avatars.githubusercontent.com/u/829690?v=4?s=100" width="100px;" alt="maneesha"/><br /><sub><b>maneesha</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=maneesha" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/jlcohoon"><img src="https://avatars.githubusercontent.com/u/4965832?v=4?s=100" width="100px;" alt="Hannah Cohoon"/><br /><sub><b>Hannah Cohoon</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jlcohoon" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>

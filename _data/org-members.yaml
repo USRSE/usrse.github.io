@@ -76,6 +76,13 @@ standard:
     founding_member: true
     tier: "Standard"
     contact: "Boyd Wilson <boyd@omnibond.com>"
+  - name: Darthmouth
+    url: https://home.dartmouth.edu/
+    figure: logo-dartmouth.jpg
+    acronym:
+    date_joined: 2025-10-15
+    founding_member: true
+    tier: "Standard"
 
 premier:
   - name: "University of Illinois Urbana-Champaign"

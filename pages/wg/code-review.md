@@ -9,15 +9,15 @@ set_last_modified: true
 
 # Overview
 
-This working group grew out of a BoF at the US-RSE conference. The chairs,
-listed below, were two of the panelists in the BoF Discussion. It was evident
+This working group grew out of a BoF at the US-RSE conference. The original chairs,
+Jeff Carver and Troy Comi, were two of the panelists in the BoF Discussion. It was evident
 from the discussion that there was a strong desire to continue this discussion
 beyond the BoF. 
 
 The goal of this working group is to build a community of RSEs who are
 interested in code review. The working group will provide a forum to gather
 resources related to code review, discuss the use of code review in research
-software project, and seek help in conducting code reviews. 
+software project, and host code-review-related activities for the US-RSE community. 
 
 To get involved, visit the
 [`#wg-code-review`](https://usrse.slack.com/messages/wg-code-review) channel
@@ -30,6 +30,9 @@ on the US-RSE slack.
 # Code Review Resources
 
 <hr class="w-50">
+
+## Code Review Working Group Demos
+- [Reproducibility Audit - March 27, 2025](https://www.youtube.com/watch?v=Q2ZsLbBkWrk) 
 
 ## Code Review Tutorials and Good Practices
 

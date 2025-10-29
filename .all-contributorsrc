@@ -1015,6 +1015,28 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/127983572?v=4"
             ]
+        },
+        {
+            "login": "maneesha",
+            "name": "maneesha",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/maneesha",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/829690?v=4"
+            ]
+        },
+        {
+            "login": "jlcohoon",
+            "name": "Hannah Cohoon",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/jlcohoon",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/4965832?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

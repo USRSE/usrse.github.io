@@ -7,6 +7,8 @@ permalink: /community-funds/
 menubar_toc: true
 ---
 
+### NOTE: The Community & Travel Funds Program is not currently accepting applications. We hope to obtain more funding in the future. 
+
 ### Overview
 
 Part of the [Alfred P. Sloan Foundation grant](https://us-rse.org/2023-04-27-sloan-grant-initiatives/)
@@ -55,8 +57,7 @@ or ask in the [`#community-funds`](https://app.slack.com/client/T8ZT4PJSW/C05M3F
 
 ### Application Details
 
-- **Next Application Deadline**: September 30, 2025
-- **[Application Form](https://forms.gle/hXL95UymjTcR3Kb29)**
+- Not Currently Accepting Applications
 
 The application will request the following details:
 

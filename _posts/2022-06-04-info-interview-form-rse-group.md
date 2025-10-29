@@ -30,7 +30,7 @@ were
 [Cherry Liu (GaTech)](https://www.cc.gatech.edu/people/fang-cherry-liu),
 [Rafael Mudafort (NREL)](https://research-hub.nrel.gov/en/persons/rafael-mudafort),
 [David Nicholson (EI)](https://nicholdav.info/),
-[Zhiyong Zhang (Stanford)](https://profiles.stanford.edu/zhiyong-zhang),
+[Zhiyong Zhang (Stanford)](https://srcc.stanford.edu/support/consulting/profiles/zhang),
 [Claire Wyatt (SSI)](https://society-rse.org/about/governance/claire-wyatt/),
 [Simon Hettrick (Southampton)](https://www.ecs.soton.ac.uk/people/sjh1l06),
 [Nasir Eisty (Boise State U)](https://nasireisty.com/),

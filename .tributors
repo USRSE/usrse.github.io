@@ -457,7 +457,8 @@
     "Aariq": {
         "name": "Eric R. Scott",
         "bio": "Scientific Programmer & Educator at University of Arizona",
-        "blog": "www.ericrscott.com"
+        "blog": "www.ericrscott.com",
+        "email": "scottericr@gmail.com"
     },
     "glentner": {
         "name": "Geoffrey Lentner",
@@ -513,5 +514,14 @@
         "name": "Cordero Core",
         "bio": "A software-focused Software Engineer with extensive experience in leveraging Python, JavaScript, and Go for SDLC, medical, e-commerce, data analytic, and AI sol",
         "blog": "https://github.com/cdcore09"
+    },
+    "maneesha": {
+        "name": "maneesha",
+        "blog": "https://github.com/maneesha"
+    },
+    "jlcohoon": {
+        "name": "Hannah Cohoon",
+        "bio": "Doc student at UT's iSchool",
+        "blog": "https://github.com/jlcohoon"
     }
 }

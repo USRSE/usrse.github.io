@@ -44,7 +44,7 @@ Examples include:
 - Our annual conference
   - The [2023 inaugural conference](https://us-rse.org/usrse23/) and [2024](https://us-rse.org/usrse24/) were a
     resounding success with 250 attendees in 2023 and 276 attendees in 2024.
-  - [2025](https://us-rse.org/usrse25/) takes place in October 2025 in Philidelphia.
+  - [2025](https://us-rse.org/usrse25/) takes place in October 2025 in Philadelphia.
 - [Monthly community calls](/events/#community-call)
 - [A monthly newsletter](/newsletters/)
 - 15 [working groups](/working-groups/) and [affinity groups](/about/affinity-groups/)
