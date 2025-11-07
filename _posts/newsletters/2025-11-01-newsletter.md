@@ -88,7 +88,7 @@ SC25, the International Conference for High Performance Computing, Networking, S
 
 This year, we have representation from US-RSE in multiple capacities, including:
 
-- **Dan Katz**, presenting \"Research Software Engineering in the Age of AI\" panel on Thursday, 20 Nov 2025, 1:30 pm - 3:00 pm, rooms 240-241-242 [Link here.](https://sc25.conference-program.com/presentation/?id=pan109&sess=sess351)
+- **Daniel S. Katz**, moderating the \"Research Software Engineering in the Age of AI\" panel on Thursday, 20 Nov 2025, 1:30 pm - 3:00 pm, rooms 240-241-242 [Link here.](https://sc25.conference-program.com/presentation/?id=pan109&sess=sess351)
 
 - The **RSE-HPC workshop** at SC25 this year, on Sunday, 16 November 2025 from 9:00 am - 5:30 pm in room 267: [Link here.](https://sc25.conference-program.com/session/?sess=sess234)
 
