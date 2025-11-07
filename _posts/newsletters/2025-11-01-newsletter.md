@@ -98,7 +98,7 @@ This year, we have representation from US-RSE in multiple capacities, including:
 
 - **Social Hour Nov 18 7–9pm**: No sign-up needed—just join us!
 
-- **We're looking for volunteers!** Please use this sign-up sheet to help staff the booth or assist with other activities during the conference: [Volunteer Sign-Up Sheet](https://docs.google.com/spreadsheets/d/19bqils_HVh7_PSH02NiMpgN6RvyySbKF06qn6irH5jc/edit?gid=0#gid=0)
+- **We're looking for volunteers** to help staff the booth or assist with other activities during the conference: Please use this sign-up sheet [Volunteer Sign-Up Sheet](https://docs.google.com/spreadsheets/d/19bqils_HVh7_PSH02NiMpgN6RvyySbKF06qn6irH5jc/edit?gid=0#gid=0)
 
 See the [event website](https://sc25.supercomputing.org) to learn more and plan for your attendance, and hop into our Slack channel #sc-conference-planning to connect, coordinate, and get the latest updates
 
