@@ -329,7 +329,7 @@ More information is available at [https://good2026.org](https://good2026.org)"
 
 - **Di Cosmo, R., Granger, S., Hinsen, K., Jullien, N., Le Berre, D., Louvet, V., Maumet, C., Maurice, C., Monat, R., & Rougier, N. P.** (2025). _"Stop treating code like an afterthought: Record, share and value it."_ Nature, 646(8084), 284–286. [Read the article.](https://doi.org/10.1038/d41586-025-03196-0)
 
-- **Academic Data Science Alliance** (2025). _"Finding Computing and Data Infrastructure to Get Started in Data-Intensive Research"_. [Read the post.](https://academicdatascience.org/resources/community-blog/get-started-in-data-intensive-research/)
+- **Atkins, P., Gesing, S., Katz, D. S., Stone, S., & Washington, T.** (2025). _"Finding Computing and Data Infrastructure to Get Started in Data-Intensive Research"_. Academic Data Science Alliance. [Read the post.](https://academicdatascience.org/resources/community-blog/get-started-in-data-intensive-research/)
 
 - **Kaiser, J., & Datta, S.** (2021). _"Probabilistic computing with p-bits."_ Applied Physics Letters, 119(15), 150503. [Read the article.](https://doi.org/10.1063/5.0067927)
 
