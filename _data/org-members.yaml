@@ -136,4 +136,4 @@ premier:
     date_joined: 2025-10-17
     figure: logo-carpentries.png
     url: https://carpentries.org/
-    contact: "Kari Jordan kariljordan@carpentries.org"
+    contact: "Kari Jordan <kariljordan@carpentries.org>"
