@@ -154,7 +154,7 @@ Please check back on the program page [here](https://us-rse.org/funds-and-awards
 
 ### Newsletter Cadence Update
 
-Notice anything odd about the timing of this newsletter? We are shifting our newsletter cadence to release at the beginning of each month, rather than end-of-month. This will help us better align with other US-RSE administration teams and provide a more consistent schedule for our readers. Additionally, if you'd like to help us review and edit future newsletters, please reach out to [Tinashe M. Tapera](mailto:tinashemtapera@gmail.com)
+Notice anything odd about the timing of this newsletter? We are shifting our newsletter cadence to come out at the beginning of each month, rather than the end of the month. This will help us better align with other US-RSE administration teams and provide a more consistent schedule for our readers. Additionally, if you'd like to help us review and edit future newsletters, please reach out to [Tinashe M. Tapera](mailto:tinashemtapera@gmail.com)
 
 <a name="community-calls"></a>
 ### **Community Calls**
