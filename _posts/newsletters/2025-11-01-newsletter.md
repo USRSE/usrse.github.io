@@ -343,8 +343,6 @@ More information is available at [https://good2026.org](https://good2026.org)"
 
 - **Saul, B.** (2025). _"Great expectations: Unifying Statistical Theory and Programming."_ arXiv. [Read the pre-print.](https://doi.org/10.48550/arXiv.2510.09853)
 
-- **Nature Portfolio** (2025). _"Six factors affecting reproducibility in life science research and how to handle them."_ [Read the editorial.](https://www.nature.com/articles/d42473-019-00004-y)
-
 - **Wyrich, M., Tinnes, C., Baltes, S., & Apel, S.** (2025). _"The Silent Scientist: When Software Research Fails to Reach Its Audience."_ [Read the post.](https://cacm.acm.org/opinion/the-silent-scientist-when-software-research-fails-to-reach-its-audience/)
 
 - **Katz, D., Jensen, E., & Barker, M.** (2025). _"Understanding and advancing research software grant funding models."_ [Read the article.](https://doi.org/10.12688/openreseurope.20210.1)
