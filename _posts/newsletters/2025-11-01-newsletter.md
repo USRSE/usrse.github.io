@@ -222,7 +222,7 @@ Now, all episodes are available to watch on-demand along with companion journal 
 
 {% include opportunity-box.html 
     title="FAIR4RS Survey" 
-    preamble="We are conducting a survey : Standards Inputs/Outputs survey  for Actionable FAIR4RS Task Force
+    preamble="The Actionable FAIR4RS Task Force is conducting a survey: "Standards Inputs/Outputs survey for Actionable FAIR4RS Task Force".
 We’re collecting how our community reads, writes and exchanges data from the software they develop/ maintain, with a focus on file formats, metadata standards, and APIs. Responses are anonymous unless you give contact details. Estimated time: 6–8 minutes."
     links="Find the survey [here](https://docs.google.com/forms/d/e/1FAIpQLSfN3UqKsKyMxO5bADav50U3cFeYrcSw26eHEDjoRf0-53fz2w/viewform)"
 %}
