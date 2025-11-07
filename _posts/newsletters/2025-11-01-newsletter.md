@@ -35,7 +35,7 @@ In this issue:
 <a name="conference2025"></a>
 # 🔔 **1. US-RSE Conference 2025 (USRSE'25)**
 
-Our third annual conference in Philadelphia was a huge success! We had over 275 attendees from over 140 universities, national labs, companies, 
+Our third annual conference in Philadelphia was a huge success! We overcame a number of difficulties caused by the government shutdown, and had over 275 attendees from over 140 universities, national labs, companies, 
 research institutes, and other organizations from all across the country, with an amazing array of talks, keynotes, posters, panels, workshops, and 
 networking events. A huge thank you to all of you who attended, presented, volunteered, and sponsored the event.
 
