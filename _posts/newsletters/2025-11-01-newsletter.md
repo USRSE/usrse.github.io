@@ -22,8 +22,8 @@ In this issue:
 * [1. USRSE'25 Recap](#conference2025)
 * [2. USRSE'26 Announcement](#conference2026)
 * [3. Steering Committee Updates](#sc-update)
-* [4. Organizational Founding Membership](#orgmember)
-* [5. Community and Travel Funds](#community-funds)
+* [4. SC25 Conference!](#sc25)
+* [5. Organizational Founding Membership](#orgmember)
 * [6. Community News](#news)
 * [7. Interesting Events and Opportunities](#events)
 * [8. Featured Reads, Videos, or Podcasts](#reads)
@@ -52,9 +52,13 @@ You can find the full proceedings, including talks, posters, and panels, on the 
 -----------------
 
 <a name="conference2026"></a>
-# **2. USRSE'26 Conference**
+# 😲 **2. USRSE'26 Conference**
 
-USRSE'25 may have just wrapped up, but planning for USRSE'26 is already underway.  The fourth annual conference will be in the San Francisco Bay Area in Fall 2026.  
+USRSE'25 may have just wrapped up, but planning for USRSE'26 is already underway.  The fourth annual conference will be in.......
+
+<div class="alert alert-primary" role="alert">
+  <strong>The San Francisco Bay Area in Fall 2026!</strong>
+</div>
 
 You can volunteer for the planning committee at https://us-rse.org/usrse26/
 
@@ -73,8 +77,36 @@ The committee also began preparations for the upcoming International RSE Survey 
 
 -----------------
 
+<a name="sc25"></a>
+# 💎 **4. SC25: The International Conference for High Performance Computing, Networking, Storage, and Analysis**
+
+<div class="alert alert-primary" role="alert">
+  <strong>Join US-RSE at SC25!</strong>
+
+SC25, the International Conference for High Performance Computing, Networking, Storage, and Analysis, is the premier global conference for the HPC community. This year’s event will be held in <strong>St. Louis, MO, USA</strong>, from <strong>November 16–21, 2025</strong>, with both in-person and virtual attendance options.
+</div>
+
+This year, we have representation from US-RSE in multiple capacities, including:
+
+- **Dan Katz**, presenting \"Research Software Engineering in the Age of AI\" panel on Thursday, 20 Nov 2025, 1:30 pm - 3:00 pm, rooms 240-241-242 [Link here.](https://sc25.conference-program.com/presentation/?id=pan109&sess=sess351)
+
+- The **RSE-HPC workshop** at SC25 this year, on Sunday, 16 November 2025 from 9:00 am - 5:30 pm in room 267: [Link here.](https://sc25.conference-program.com/session/?sess=sess234)
+
+- Find us at Booth **#3911**: Stop by to say hello, meet fellow RSEs, and learn what’s new in our community!
+
+- **Focus Group Nov 18 6-7pm**: State of AI at the RSE Workplace
+
+- **Social Hour Nov 18 7–9pm**: No sign-up needed—just join us!
+
+- **We're looking for volunteers!** Please use this sign-up sheet to help staff the booth or assist with other activities during the conference: [Volunteer Sign-Up Sheet](https://docs.google.com/spreadsheets/d/19bqils_HVh7_PSH02NiMpgN6RvyySbKF06qn6irH5jc/edit?gid=0#gid=0)
+
+See the [event website](https://sc25.supercomputing.org) to learn more and plan for your attendance, and hop into our Slack channel #sc-conference-planning to connect, coordinate, and get the latest updates
+
+
+-----------------
+
 <a name="orgmember"></a>
-# 🤝 **4. Organizational Founding Membership**
+# 🤝 **5. Organizational Founding Membership**
 
 US-RSE envisions a future where Research Software Engineers are universally respected for advancing science, technology, and society through the transformative power of research software engineering.
 We’re excited to share that the momentum around our Organizational Founding Membership continues to grow! See the list below for the current members (six more are onboarding at the moment).
@@ -99,7 +131,7 @@ Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.or
 - [{{ org.name }}]({{ org.url }})
 {% endfor %}
 
------------------
+<!-- -----------------
 
 <a name="community-funds"></a>
 # ✈️ **5. Community and Travel Funds program**
@@ -111,7 +143,7 @@ Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.or
 *Part of the Alfred P. Sloan Foundation grant for US-RSE has been delegated for the [Community and Travel Funds program](https://us-rse.org/community-funds/). Members of US-RSE can apply for funds for community or individual purposes for event costs, get-togethers, travel funding, and more.*
 
 The Community and Travel Funds Program is not currently accepting applications. We hope to obtain more funding in the future.
-Please check back on the program page [here](https://us-rse.org/funds-and-awards/).
+Please check back on the program page [here](https://us-rse.org/funds-and-awards/). -->
 
 -----------------
 
@@ -284,29 +316,6 @@ We look forward to seeing you at AGU25—and to showcasing the amazing impact of
 As with at GOOD25, the conference will kick off on Monday afternoon (March 9) with the optional Contributor Jam, an intensive deep dive into our code and documentation which will prepare attendees to contribute back to the Open OnDemand open source project."
     links="Registration and the Call for Proposals are now open! We encourage an array of presentation modalities, including posters, prerecorded talks, and more (see website for details). Submissions are due on Dec 12, 2025.
 More information is available at [https://good2026.org](https://good2026.org)"
-%}
-
-
-{% include event-box.html 
-    
-    title="SC25: The International Conference for High Performance Computing, Networking, Storage, and Analysis" 
-    when="November 16–21" 
-    where="St. Louis, MO, USA, and online" 
-    preamble="SC25, the International Conference for High Performance Computing, Networking, Storage, and Analysis, is the premier global conference for the HPC community. This year’s event will be held in St. Louis, MO, USA, from November 16–21, 2025, with both in-person and virtual attendance options.
-
-This year, we have representation from US-RSE in multiple capacities, including:
-
-- **Dan Katz**, presenting \"Research Software Engineering in the Age of AI\" panel on Thursday, 20 Nov 2025, 1:30 pm - 3:00 pm, rooms 240-241-242 [Link here.](https://sc25.conference-program.com/presentation/?id=pan109&sess=sess351)
-
-- The **RSE-HPC workshop** at SC25 this year, on Sunday, 16 November 2025 from 9:00 am - 5:30 pm in room 267: [Link here.](https://sc25.conference-program.com/session/?sess=sess234)
-
-- Find us at Booth #3911: Stop by to say hello, meet fellow RSEs, and learn what’s new in our community!
-
-- Focus Group Nov 18 6-7pm: State of AI at the RSE Workplace
-
-- Social Hour Nov 18 7–9pm: No sign-up needed—just join us!
-"
-    links="See the [event website](https://sc25.supercomputing.org) to learn more and plan for your attendance, and hop into our Slack channel #sc-conference-planning to connect, coordinate, and get the latest updates"
 %}
 
 <!-- end event boxes-->
