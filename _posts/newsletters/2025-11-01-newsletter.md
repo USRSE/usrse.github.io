@@ -94,9 +94,9 @@ This year, we have representation from US-RSE in multiple capacities, including:
 
 - Find us at Booth **#3911**: Stop by to say hello, meet fellow RSEs, and learn what’s new in our community!
 
-- **Focus Group Nov 18 6-7pm**: State of AI at the RSE Workplace
+- **Focus Group Nov 18 6-7pm**: State of AI at the RSE Workplace, combined with...
 
-- **Social Hour Nov 18 7–9pm**: No sign-up needed—just join us!
+- **Social Hour Nov 18 7–9pm**: No sign-up needed—just join us at [Top Golf at the Four Seasons](http://maps.app.goo.gl/QZot6BJnk1W1DVpx6)!
 
 - **We're looking for volunteers** to help staff the booth or assist with other activities during the conference: Please use this sign-up sheet [Volunteer Sign-Up Sheet](https://docs.google.com/spreadsheets/d/19bqils_HVh7_PSH02NiMpgN6RvyySbKF06qn6irH5jc/edit?gid=0#gid=0)
 
@@ -239,7 +239,7 @@ Now, all episodes are available to watch on-demand along with companion journal 
 
 {% include opportunity-box.html 
     title="FAIR4RS Survey" 
-    preamble="The Actionable FAIR4RS Task Force is conducting a survey: "Standards Inputs/Outputs survey for Actionable FAIR4RS Task Force".
+    preamble="The Actionable FAIR4RS Task Force is conducting a survey: \"Standards Inputs/Outputs survey for Actionable FAIR4RS Task Force\".
 The task force is collecting information on how our community reads, writes, and exchanges data from the software they develop/ maintain, with a focus on file formats, metadata standards, and APIs. Responses are anonymous unless you give contact details. Estimated time: 6–8 minutes."
     links="Find the survey [here](https://docs.google.com/forms/d/e/1FAIpQLSfN3UqKsKyMxO5bADav50U3cFeYrcSw26eHEDjoRf0-53fz2w/viewform)"
 %}
