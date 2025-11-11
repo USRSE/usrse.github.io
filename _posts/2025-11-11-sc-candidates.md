@@ -132,7 +132,7 @@ As a Steering Committee member, I hope to contribute strategic thinking, technic
 
 **How do you contribute to the US-RSE Association or RSE community more broadly?**
 My contribution to the broader RSE community comes from building and connecting ecosystems that unite research, engineering, and people (I am people oriented).
-At Nubank, I led organizations focused on essential platforms (high scalabilty), AI enablement, and data infrastructure that serve tens of millions of users. These initiatives advance many of the same principles valued by the RSE community: reproducibility, scalability, and research-informed software design.
+At Nubank, I led organizations focused on essential platforms (high scalability), AI enablement, and data infrastructure that serve tens of millions of users. These initiatives advance many of the same principles valued by the RSE community: reproducibility, scalability, and research-informed software design.
 Previously, at Globo.com, I was manager at Big Data & AI division—creating ML Ops and recommendation, experimentation platforms that bridged academic research with real-world impact. This experience shaped my view that software engineering and scientific research are not separate disciplines but parts of the same creative continuum.
 Beyond technical work, I'm deeply committed to mentorship and inclusion. I've coached engineers transitioning from QA to full-stack, mentored women in tech, and supported open conversations on diversity and leadership in AI.
 Through these efforts, I aim to make the RSE community more global, connected, and inclusive—ensuring that research software thrives not just in labs, but in every environment where knowledge and technology meet.
