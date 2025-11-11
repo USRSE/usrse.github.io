@@ -35,7 +35,7 @@ In this issue:
 <a name="conference2025"></a>
 # 🔔 **1. US-RSE Conference 2025 (USRSE'25)**
 
-Our third annual conference in Philadelphia was a huge success! We had over 275 attendees from over 140 universities, national labs, companies, 
+Our third annual conference in Philadelphia was a huge success! We overcame a number of difficulties caused by the government shutdown, and had over 275 attendees from over 140 universities, national labs, companies, 
 research institutes, and other organizations from all across the country, with an amazing array of talks, keynotes, posters, panels, workshops, and 
 networking events. A huge thank you to all of you who attended, presented, volunteered, and sponsored the event.
 
@@ -88,7 +88,7 @@ SC25, the International Conference for High Performance Computing, Networking, S
 
 This year, we have representation from US-RSE in multiple capacities, including:
 
-- **Dan Katz**, presenting \"Research Software Engineering in the Age of AI\" panel on Thursday, 20 Nov 2025, 1:30 pm - 3:00 pm, rooms 240-241-242 [Link here.](https://sc25.conference-program.com/presentation/?id=pan109&sess=sess351)
+- **Daniel S. Katz**, moderating the \"Research Software Engineering in the Age of AI\" panel on Thursday, 20 Nov 2025, 1:30 pm - 3:00 pm, rooms 240-241-242 [Link here.](https://sc25.conference-program.com/presentation/?id=pan109&sess=sess351)
 
 - The **RSE-HPC workshop** at SC25 this year, on Sunday, 16 November 2025 from 9:00 am - 5:30 pm in room 267: [Link here.](https://sc25.conference-program.com/session/?sess=sess234)
 
@@ -98,7 +98,7 @@ This year, we have representation from US-RSE in multiple capacities, including:
 
 - **Social Hour Nov 18 7–9pm**: No sign-up needed—just join us!
 
-- **We're looking for volunteers!** Please use this sign-up sheet to help staff the booth or assist with other activities during the conference: [Volunteer Sign-Up Sheet](https://docs.google.com/spreadsheets/d/19bqils_HVh7_PSH02NiMpgN6RvyySbKF06qn6irH5jc/edit?gid=0#gid=0)
+- **We're looking for volunteers** to help staff the booth or assist with other activities during the conference: Please use this sign-up sheet [Volunteer Sign-Up Sheet](https://docs.google.com/spreadsheets/d/19bqils_HVh7_PSH02NiMpgN6RvyySbKF06qn6irH5jc/edit?gid=0#gid=0)
 
 See the [event website](https://sc25.supercomputing.org) to learn more and plan for your attendance, and hop into our Slack channel #sc-conference-planning to connect, coordinate, and get the latest updates
 
@@ -171,7 +171,7 @@ Registration is free, but required for all attendees, so please make sure to [si
 
 ### Newsletter Cadence Update
 
-Notice anything odd about the timing of this newsletter? We are shifting our newsletter cadence to release at the beginning of each month, rather than end-of-month. This will help us better align with other US-RSE administration teams and provide a more consistent schedule for our readers. Additionally, if you'd like to help us review and edit future newsletters, please reach out to [Tinashe M. Tapera](mailto:tinashemtapera@gmail.com)
+Notice anything odd about the timing of this newsletter? We are shifting our newsletter cadence to come out at the beginning of each month, rather than the end of the month. This will help us better align with other US-RSE administration teams and provide a more consistent schedule for our readers. Additionally, if you'd like to help us review and edit future newsletters, please reach out to [Tinashe M. Tapera](mailto:tinashemtapera@gmail.com)
 
 <a name="community-calls"></a>
 ### **Community Calls**
@@ -239,8 +239,8 @@ Now, all episodes are available to watch on-demand along with companion journal 
 
 {% include opportunity-box.html 
     title="FAIR4RS Survey" 
-    preamble="We are conducting a survey : Standards Inputs/Outputs survey  for Actionable FAIR4RS Task Force
-We’re collecting how our community reads, writes and exchanges data from the software they develop/ maintain, with a focus on file formats, metadata standards, and APIs. Responses are anonymous unless you give contact details. Estimated time: 6–8 minutes."
+    preamble="The Actionable FAIR4RS Task Force is conducting a survey: "Standards Inputs/Outputs survey for Actionable FAIR4RS Task Force".
+The task force is collecting information on how our community reads, writes, and exchanges data from the software they develop/ maintain, with a focus on file formats, metadata standards, and APIs. Responses are anonymous unless you give contact details. Estimated time: 6–8 minutes."
     links="Find the survey [here](https://docs.google.com/forms/d/e/1FAIpQLSfN3UqKsKyMxO5bADav50U3cFeYrcSw26eHEDjoRf0-53fz2w/viewform)"
 %}
 
@@ -346,7 +346,7 @@ More information is available at [https://good2026.org](https://good2026.org)"
 
 - **Di Cosmo, R., Granger, S., Hinsen, K., Jullien, N., Le Berre, D., Louvet, V., Maumet, C., Maurice, C., Monat, R., & Rougier, N. P.** (2025). _"Stop treating code like an afterthought: Record, share and value it."_ Nature, 646(8084), 284–286. [Read the article.](https://doi.org/10.1038/d41586-025-03196-0)
 
-- **Academic Data Science Alliance** (2025). _"Finding Computing and Data Infrastructure to Get Started in Data-Intensive Research"_. [Read the post.](https://academicdatascience.org/resources/community-blog/get-started-in-data-intensive-research/)
+- **Atkins, P., Gesing, S., Katz, D. S., Stone, S., & Washington, T.** (2025). _"Finding Computing and Data Infrastructure to Get Started in Data-Intensive Research"_. Academic Data Science Alliance. [Read the post.](https://academicdatascience.org/resources/community-blog/get-started-in-data-intensive-research/)
 
 - **Kaiser, J., & Datta, S.** (2021). _"Probabilistic computing with p-bits."_ Applied Physics Letters, 119(15), 150503. [Read the article.](https://doi.org/10.1063/5.0067927)
 
@@ -359,8 +359,6 @@ More information is available at [https://good2026.org](https://good2026.org)"
 - **Ramanathan, S., & Sengupta, A.** (2025). _"Introduction to Neuromorphic Computing."_ Cambridge University Press. [Pre-order the book.](https://www.cambridge.org/core/books/introduction-to-neuromorphic-computing/853942021D89F82AED182F9021E7E0F5)
 
 - **Saul, B.** (2025). _"Great expectations: Unifying Statistical Theory and Programming."_ arXiv. [Read the pre-print.](https://doi.org/10.48550/arXiv.2510.09853)
-
-- **Nature Portfolio** (2025). _"Six factors affecting reproducibility in life science research and how to handle them."_ [Read the editorial.](https://www.nature.com/articles/d42473-019-00004-y)
 
 - **Wyrich, M., Tinnes, C., Baltes, S., & Apel, S.** (2025). _"The Silent Scientist: When Software Research Fails to Reach Its Audience."_ [Read the post.](https://cacm.acm.org/opinion/the-silent-scientist-when-software-research-fails-to-reach-its-audience/)
 
