@@ -24,7 +24,7 @@ In this issue:
 * [3. Steering Committee Updates](#sc-update)
 * [4. SC25 Conference!](#sc25)
 * [5. Organizational Founding Membership](#orgmember)
-* [6. Community News](#news)
+* [6. Community News (Including a Special Announcement about the AGM!)](#news)
 * [7. Interesting Events and Opportunities](#events)
 * [8. Featured Reads, Videos, or Podcasts](#reads)
 * [9. Get Involved](#involved)
@@ -151,6 +151,23 @@ Please check back on the program page [here](https://us-rse.org/funds-and-awards
 # 🗞️ **6. Community News** 
 
 <!--Someone you want to shoutout? DO IT HERE!-->
+
+### Annual General Meeting!
+
+<div class="alert alert-primary" role="alert">
+  <strong>Save the Date: US-RSE AGM on December 4, 2025!</strong>
+</div>
+
+The sixth US-RSE Association Annual General Meeting (AGM) will take place on Thursday, December 4th, 2025 at 1 PM ET / 10 AM PT.
+
+Registration is free, but required for all attendees, so please make sure to [sign up here](https://us-rse.org/events/2025/2025-12-AGM/). The agenda will include:
+
+- State of the US-RSE Association: The 2025 year in review and plans for 2026
+- Updates from our Executive Director
+- Updates from Working Groups
+- Meet the Steering Committee Candidates
+- Financial Status and Budget Review
+- US-RSE leadership Q&A & Open Member Discussion
 
 ### Newsletter Cadence Update
 
