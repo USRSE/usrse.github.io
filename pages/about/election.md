@@ -8,7 +8,7 @@ set_last_modified: true
 nominations_open: 2025-10-12 23:59:59 -1000
 nominations_close: 2025-11-03 23:59:59 -1000
 membership_deadline: 2025-11-14 23:59:59 -1000
-candidate_announcements: 2025-11-11 17:00:00 -0800
+candidate_announcements: 2025-11-10 17:00:00 -0800
 annual_general_meeting: 2025-12-04 13:00:00 -0500
 voting_open: 2025-12-04 13:00:00 -0500
 voting_close: 2025-12-12 23:59:59 -1000
