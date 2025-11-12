@@ -17,6 +17,6 @@ The workshop will have breakout sessions focused on a number of different topics
 
 The event will be held in the [Rubenstein Forum](https://davidrubensteinforum.uchicago.edu/) at the University of Chicago. We are arranging a room block at the nearby [Study Hotel](https://www.thestudyatuniversityofchicago.com). Some travel and hotel funding will be available for those that do not have alternative sources of funding to cover their attendance.
 
-If you are interested in participating in this workshop, please use [this form](https://form.jotform.com/221427005930042) to tell us a little about yourself and your interest and expertise in this area. **Applications should be submitted by June 15, 2022.** 
+If you are interested in participating in this workshop, please use this form to tell us a little about yourself and your interest and expertise in this area. **Applications should be submitted by June 15, 2022.** 
 
 The workshop program committee will invite approximately 40 participants. Those not selected for participation may be contacted at a later date to assist with reviewing material produced at the workshop. We will notify applicants of their participation status by July 8, 2022. 
