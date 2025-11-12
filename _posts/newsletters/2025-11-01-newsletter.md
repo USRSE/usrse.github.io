@@ -84,17 +84,23 @@ The committee also began preparations for the upcoming International RSE Survey 
   <strong>Join US-RSE at SC25!</strong>
 
 SC25, the International Conference for High Performance Computing, Networking, Storage, and Analysis, is the premier global conference for the HPC community. This year’s event will be held in <strong>St. Louis, MO, USA</strong>, from <strong>November 16–21, 2025</strong>, with both in-person and virtual attendance options.
+<br>
+<strong>Interested in volunteering? See below for more details!</strong>
 </div>
 
 This year, we have representation from US-RSE in multiple capacities, including:
 
-- **Daniel S. Katz**, moderating the \"Research Software Engineering in the Age of AI\" panel on Thursday, 20 Nov 2025, 1:30 pm - 3:00 pm, rooms 240-241-242 [Link here.](https://sc25.conference-program.com/presentation/?id=pan109&sess=sess351)
+- **Daniel S. Katz**, moderating the _Research Software Engineering in the Age of AI_ panel on Thursday, 20 November, 1:30 pm - 3:00 pm, rooms 240-241-242 [Link here.](https://sc25.conference-program.com/presentation/?id=pan109&sess=sess351)
+
+- **Sandra Gesing**, representing RSE's on the _Finding Your Career Fit_ panel discussion titled, "Voices from the Field: Navigating Careers in Academia, Government, and Industry," on Monday Nov 17th, 3:30-4:45pm. Location: Room 262
+
+- **Sandra Gesing**, speaking in the Birds of a Feather (BoF) session "Scientific Software and the People Who Make It Happen: Building Our Communities and Practices", on Wednesday 19 November in Room 131 [Link here.](https://sc25.conference-program.com/presentation/?id=bof123&sess=sess465)
 
 - The **RSE-HPC workshop** at SC25 this year, on Sunday, 16 November 2025 from 9:00 am - 5:30 pm in room 267: [Link here.](https://sc25.conference-program.com/session/?sess=sess234)
 
 - Find us at Booth **#3911**: Stop by to say hello, meet fellow RSEs, and learn what’s new in our community!
 
-- **Focus Group Nov 18 6-7pm**: State of AI at the RSE Workplace, combined with...
+- **Sandra Gesing and Steve Van Tuyl** co-lead the RSE Focus Group on November 18th from 6-7pm. The topic will be _The State of AI at the RSE Workplace_, which will be immediately followed by...
 
 - **Social Hour Nov 18 7–9pm**: No sign-up needed—just join us at [Top Golf at the Four Seasons](http://maps.app.goo.gl/QZot6BJnk1W1DVpx6)!
 
@@ -168,6 +174,10 @@ Registration is free, but required for all attendees, so please make sure to [si
 - Meet the Steering Committee Candidates
 - Financial Status and Budget Review
 - US-RSE leadership Q&A & Open Member Discussion
+
+### Steering Committee Election Candidates
+
+The 17 candidates running for the 5 open Steering Committee seats this year have been announced! You can find their bios and statements on the [candidates page](https://us-rse.org/2025-11-11-sc-candidates/). To vote, visit the #election channel in Slack — please note that you must be a US-RSE member to participate in the election. Visit the [elections page](https://us-rse.org/about/election/) to learn more.
 
 ### Newsletter Cadence Update
 
