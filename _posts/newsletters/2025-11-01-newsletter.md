@@ -194,7 +194,7 @@ The next community call will be on Thursday, November 13, 2025, 12pm ET/11am CT/
 
 **Abstract:**
 
-It’s no secret—funding for RSEs and RSE work can sometimes feel like hunting for treasure without a map. In this month’s community call, we’re diving into the big questions: How do you find funding? How do you actually secure it? And perhaps the trickiest part—how do you convince funders that your project (or your role as an RSE) is worth investing in?
+It’s no secret — funding for RSEs and RSE work can sometimes feel like hunting for treasure without a map. In this month’s community call, we’re diving into the big questions: How do you find funding? How do you actually secure it? And perhaps the trickiest part—how do you convince funders that your project (or your role as an RSE) is worth investing in?
 But maybe grants aren’t the only answer. Are there other ways to keep a project alive and thriving? Have you found creative approaches to support your work when grants didn’t come through?
 We’d love for you to bring your stories—both the epic wins and the “learning experiences” (aka not-so-successful applications). Come swap tips, share laughs, and pick up ideas from others who are navigating the same unpredictable funding waters.
 
