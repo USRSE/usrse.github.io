@@ -5,7 +5,7 @@ subtitle: "💟 This Month: Thank YOU for a Successful USRSE'25 💟"
 category: newsletter
 tags: [newsletter, November]
 date: 2025-11-06 00:00:00 -0400
-author: Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor)
+author: Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Dan Katz & Miranda Mundt (Reviewers)
 image: "/assets/img/newsletter-202511/LAV04283.jpg"
 ---
 
@@ -60,7 +60,7 @@ USRSE'25 may have just wrapped up, but planning for USRSE'26 is already underway
   <strong>The San Francisco Bay Area in Fall 2026!</strong>
 </div>
 
-You can volunteer for the planning committee at https://us-rse.org/usrse26/
+You can volunteer for the planning committee at [https://us-rse.org/usrse26/](https://us-rse.org/usrse26/)
 
 Start working on those paper submissions for next year as well.  Expect the submission deadline to be in late Spring 2026.  Accepted full papers have a publication opportunity following the conference, so block off time on your calendar now to work on that write-up you've been putting off.
 
