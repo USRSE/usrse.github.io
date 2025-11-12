@@ -255,7 +255,7 @@ The task force is collecting information on how our community reads, writes, and
 %}
 
 {% include opportunity-box.html 
-    title="Contribute to the future of DEI in USRSE" 
+    title="Contribute to the future of DEI in US-RSE" 
     preamble="
 The US-RSE DEI Working Group is seeking input from the community! We’re exploring new ways to foster diversity, equity, and inclusion within our organization and would love to hear your ideas. What would make US-RSE a more inclusive and welcoming space for you and others?
 
