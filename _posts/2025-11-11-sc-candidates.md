@@ -246,7 +246,7 @@ I actively contribute to US-RSE through leadership, outreach, and cross-communit
 <br>
 ## Primus Chimdia Kabuo
 
-[Email](mailto:primuschimdia.kabuo@outlook.com), [Profile](banner.primusckabuo.dev)
+[Email](mailto:primuschimdia.kabuo@outlook.com), [Profile](https://banner.primusckabuo.dev)
 
 **Why do you want to be on the US-RSE Steering Committee?**<br>
 I want to join the US-RSE Steering Committee to help shape how our community presents and positions itself to a broader audience. In a field centered on software and research, I see an opportunity to bring a user-forward, design-aware perspective that complements our technical strengths. I'm passionate about improving how we communicate our values — ensuring that US-RSE's outreach, branding, and public narrative are clear, compelling, and accessible. Serving on the committee aligns with my long-term commitment to advancing the RSE profession, and it would allow me to contribute strategically to how we set direction, share knowledge, and cultivate an inclusive, forward-looking community.
@@ -308,7 +308,7 @@ I actively contribute to the RSE community by mentoring junior engineers, sharin
 <br>
 ## Sunil Netra
 
-[Email](mailto:snetra82@gmaul.com)
+[Email](mailto:snetra82@gmail.com)
 
 **Why do you want to be on the US-RSE Steering Committee?**<br>
 I want to join the US-RSE Steering Committee to help strengthen the bridge between research and practical software engineering. Having worked extensively in scalable systems, automation, and AI integration, I've seen how strong engineering practices can accelerate scientific progress and collaboration. I'm passionate about fostering a community that empowers Research Software Engineers to share knowledge, adopt best practices, and influence policy and culture across organizations. By contributing my technical and leadership experience, I hope to help shape initiatives that enhance visibility, sustainability, and career growth for RSEs nationwide.
