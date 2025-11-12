@@ -177,7 +177,7 @@ Registration is free, but required for all attendees, so please make sure to [si
 
 ### Steering Committee Election Candidates
 
-The 17 candidates running for the 5 open Steering Committee seats this year have been announced! You can find their bios and statements on the [candidates page](https://us-rse.org/2025-11-11-sc-candidates/). To vote, visit the #election channel in Slack — please note that you must be a US-RSE member to participate in the election. Visit the [elections page](https://us-rse.org/about/election/) to learn more.
+The 17 candidates running for the 5 open Steering Committee seats this year have been announced! You can find their bios and statements on the [candidates page](https://us-rse.org/2025-11-11-sc-candidates/). To vote, visit the #election channel in Slack — please note that you must be a US-RSE member **by Friday, November 14th** to participate in the election. Visit the [elections page](https://us-rse.org/about/election/) to learn more.
 
 ### Newsletter Cadence Update
 
