@@ -177,7 +177,7 @@ Registration is free, but required for all attendees, so please make sure to [si
 
 ### Steering Committee Election Candidates
 
-The 17 candidates running for the 5 open Steering Committee seats this year have been announced! You can find their bios and statements on the [candidates page](https://us-rse.org/2025-11-11-sc-candidates/). To vote, visit the #election channel in Slack — please note that you must be a US-RSE member to participate in the election. Visit the [elections page](https://us-rse.org/about/election/) to learn more.
+The 17 candidates running for the 5 open Steering Committee seats this year have been announced! You can find their bios and statements on the [candidates page](https://us-rse.org/2025-11-11-sc-candidates/). To vote, visit the #election channel in Slack — please note that you must be a US-RSE member **by Friday, November 14th** to participate in the election. Visit the [elections page](https://us-rse.org/about/election/) to learn more.
 
 ### Newsletter Cadence Update
 
@@ -194,7 +194,7 @@ The next community call will be on Thursday, November 13, 2025, 12pm ET/11am CT/
 
 **Abstract:**
 
-It’s no secret—funding for RSEs and RSE work can sometimes feel like hunting for treasure without a map. In this month’s community call, we’re diving into the big questions: How do you find funding? How do you actually secure it? And perhaps the trickiest part—how do you convince funders that your project (or your role as an RSE) is worth investing in?
+It’s no secret — funding for RSEs and RSE work can sometimes feel like hunting for treasure without a map. In this month’s community call, we’re diving into the big questions: How do you find funding? How do you actually secure it? And perhaps the trickiest part—how do you convince funders that your project (or your role as an RSE) is worth investing in?
 But maybe grants aren’t the only answer. Are there other ways to keep a project alive and thriving? Have you found creative approaches to support your work when grants didn’t come through?
 We’d love for you to bring your stories—both the epic wins and the “learning experiences” (aka not-so-successful applications). Come swap tips, share laughs, and pick up ideas from others who are navigating the same unpredictable funding waters.
 
@@ -255,7 +255,7 @@ The task force is collecting information on how our community reads, writes, and
 %}
 
 {% include opportunity-box.html 
-    title="Contribute to the future of DEI in USRSE" 
+    title="Contribute to the future of DEI in US-RSE" 
     preamble="
 The US-RSE DEI Working Group is seeking input from the community! We’re exploring new ways to foster diversity, equity, and inclusion within our organization and would love to hear your ideas. What would make US-RSE a more inclusive and welcoming space for you and others?
 
