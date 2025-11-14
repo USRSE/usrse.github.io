@@ -19,8 +19,7 @@ intended to bring together research software engineers in the St. Louis Metro re
 To stay informed, please:
 
 * [Join US-RSE]({{site.baseurl}}/join/).
-* Subscribe to event announcements by joining one of:
-  * The [US-RSE Slack `#rg-stl` channel](https://usrse.slack.com/messages/rg-stl)
+* Subscribe to event announcements by joining the [US-RSE Slack `#rg-stl` channel](https://usrse.slack.com/messages/rg-stl).
 
 If you are interested in giving a talk or have other ideas for a future meetup, please contact one of the coordinators (see the [Questions?](#questions) section below).
 
