@@ -86,4 +86,8 @@ The R Affinity Group (R-RSE) exists to increase the representation of R users in
 
 The North Carolina Regional Group connects US-RSE members in North Carolina and organizes local events.
 
+<h3><a href="{{ site.baseurl }}/ag/rg-stl/">St. Louis Metro Regional Group</a></h3>
+
+The St. Louis Metro Regional Group connects US-RSE members in the St. Louis Metro region and organizes local events.
+
 <hr>
