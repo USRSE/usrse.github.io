@@ -83,6 +83,7 @@ standard:
     date_joined: 2025-10-15
     founding_member: true
     tier: "Standard"
+    contact: Will Cowen <William.M.Cowen@dartmouth.edu>
 
 premier:
   - name: "University of Illinois Urbana-Champaign"
@@ -134,3 +135,5 @@ premier:
     tier: "Premier"
     date_joined: 2025-10-17
     figure: logo-carpentries.png
+    url: https://carpentries.org/
+    contact: "Kari Jordan <kariljordan@carpentries.org>"
