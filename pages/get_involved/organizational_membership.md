@@ -24,15 +24,17 @@ over 3000 in 2024.
 
 ## Pilot Phase: Become an Organizational Founding Member
 
-On October 1, 2024, US-RSE will start the pilot phase of an organizational
-membership program, which will run through November 30, 2025.
+On October 1, 2024, US-RSE started the pilot phase of an organizational
+membership program, which ran through November 30, 2025. 
+We are thrilled to announce that we have extended the pilot phase 
+until June 30, 2026.
 The pilot phase for organizational founding members will give organizations the
 opportunity to be recognized in perpetuity as founding members of US-RSE.
-Every organization joining on or before November 30, 2025 will be considered an
+Every organization joining on or before June 30, 20265 will be considered an
 organizational founding member.
 The annual membership fees (see Table 3) will remain the same for founding
 members until December 31, 2028.
-Organizations joining on or after December 1, 2025 are ineligible to become an
+Organizations joining on or after July 1, 2026 are ineligible to become an
 organizational founding member.
 
 
@@ -42,9 +44,8 @@ US-RSE offers a variety of services to its individual and organizational members
 Examples include:
 
 - Our annual conference
-  - The [2023 inaugural conference](https://us-rse.org/usrse23/) and [2024](https://us-rse.org/usrse24/) were a
-    resounding success with 250 attendees in 2023 and 276 attendees in 2024.
-  - [2025](https://us-rse.org/usrse25/) takes place in October 2025 in Philadelphia.
+  - The first three USRSE conferences were resounding success with 250 - 286 participants. 
+  - [USRSE'26](https://us-rse.org/usrse26/)) will take place in October 2026 in the Bay Area.
 - [Monthly community calls](/events/#community-call)
 - [A monthly newsletter](/newsletters/)
 - 15 [working groups](/working-groups/) and [affinity groups](/about/affinity-groups/)
