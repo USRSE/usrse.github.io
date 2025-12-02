@@ -25,12 +25,13 @@ over 3000 in 2024.
 ## Pilot Phase: Become an Organizational Founding Member
 
 On October 1, 2024, US-RSE started the pilot phase of an organizational
-membership program, which ran through November 30, 2025. 
-We are thrilled to announce that we have extended the pilot phase 
-until June 30, 2026.
+membership program, which was planned to ran through November 30, 2025. 
+
+**We are thrilled to share that we’re extending the Founding Member deadline. Some organizations are actively working through their internal review processes, and we are glad to provide time for those to be completed through June 30, 2026.**
+
 The pilot phase for organizational founding members will give organizations the
 opportunity to be recognized in perpetuity as founding members of US-RSE.
-Every organization joining on or before June 30, 20265 will be considered an
+Every organization joining on or before June 30, 2026 will be considered an
 organizational founding member.
 The annual membership fees (see Table 3) will remain the same for founding
 members until December 31, 2028.
