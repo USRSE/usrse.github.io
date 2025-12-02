@@ -27,7 +27,7 @@ over 3000 in 2024.
 On October 1, 2024, US-RSE started the pilot phase of an organizational
 membership program, which was planned to ran through November 30, 2025. 
 
-**We are thrilled to share that we’re extending the Founding Member deadline. Some organizations are actively working through their internal review processes, and we are glad to provide time for those to be completed through June 30, 2026.**
+**We are thrilled to share that we’re extending the Founding Member deadline. Some organizations are actively working through their internal review processes, and we are glad to provide time to organizations to join as Founding Members through June 30, 2026.**
 
 The pilot phase for organizational founding members will give organizations the
 opportunity to be recognized in perpetuity as founding members of US-RSE.
