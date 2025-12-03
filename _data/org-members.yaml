@@ -7,6 +7,14 @@ basic:
     founding_member: true
     tier: "Basic"
     contact: "Alan Chalker <alanc@osc.edu>"
+  - name: "Renaissance Computing Institute"
+    url: https://renci.org/
+    figure: logo-renci.png
+    acronym: "RENCI"
+    date_joined: 2025-12-10
+    founding_member: true
+    tier: "Basic"
+    contact: "Stephanie Suber <subers@renci.org>"
 
 standard:
   - name: "Center for Research Computing - University of Notre Dame"
@@ -84,6 +92,22 @@ standard:
     founding_member: true
     tier: "Standard"
     contact: Will Cowen <William.M.Cowen@dartmouth.edu>
+  - name: University of Florida Research Computing
+    url: https://www.rc.ufl.edu/
+    figure: logo-rc-ufl.png
+    acronym: RC-UFL
+    date_joined: 2025-11-16
+    founding_member: true
+    tier: "Standard"
+    contact: Ying Zhang <yingz@ufl.edu>
+  - name: University of Colorado Anchutz
+    url: https://www.cuanschutz.edu/
+    figure: logo-cu-anschutz.png
+    acronym: CU Anschutz
+    date_joined: 2025-11-26
+    founding_member: true
+    tier: "Standard"
+    contact: Dave Bunten <DAVE.BUNTEN@cuanschutz.edu>
 
 premier:
   - name: "University of Illinois Urbana-Champaign"
