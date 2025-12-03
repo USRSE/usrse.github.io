@@ -15,7 +15,6 @@ basic:
     founding_member: true
     tier: "Basic"
     contact: "Stephanie Suber <subers@renci.org>"
-    background: rgba(0, 0, 0, 0.3)
 
 standard:
   - name: "Center for Research Computing - University of Notre Dame"
