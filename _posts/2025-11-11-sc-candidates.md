@@ -17,21 +17,12 @@ Candidates are listed in alphabetical order.
 
 - [Abbey Roelofs](#abbey)
 - [Abrar Hossain](#abrar)
-- [Akshay Mittal](#akshay)
 - [Alex Koufos](#alex)
-- [Débora Martins de Moura](#debora)
-- [Fabio Andrijauskas](#fabio)
 - [Ian Cosden](#ian)
 - [Jeff Carver](#jeff)
 - [Keith Beattie](#keith)
-- [Kiran Kalyanaraman](#kiran)
-- [Milan Parikh](#milan)
 - [Pengyin Shan](#pengyin)
 - [Primus Chimdia Kabuo](#primus)
-- [Sai Kalyani Rachapalli](#sai)
-- [Sridevi Narayana Wagle](#sridevi)
-- [Sridhar Rao Muthineni](#sridhar)
-- [Sunil Netra](#sunil)
 
 More information about the candidates can be found below.
 
@@ -71,18 +62,6 @@ Education & Workforce Development: I co-authored "A Hands-On Approach to Teachin
 Community Leadership & Advocacy: As ACM UToledo President and ACCESS Student Champion, I organize career fairs and workshops, and promote cyberinfrastructure access. I review for PEARC'25 and volunteer at HiPC'24 and AGU'24. I advocate for RSE as a career path, helping students explore nontraditional academic routes and bridging computing with domain science.
 
 
-<a name="akshay"></a>
-<br>
-## Akshay Mittal
-
-[Email](mailto:akshaycanodia@gmail.com), [Profile](https://www.linkedin.com/in/akshaymittal143/)
-
-**Why do you want to be on the US-RSE Steering Committee?**<br>
-I want to join the US-RSE Steering Committee to help strengthen the community of research software engineers by fostering collaboration, mentorship, and professional development. With over a decade of experience in software engineering, cloud-native systems, and AI/ML-driven research, I bring practical expertise in building high-performance, reproducible, and secure research software. I am passionate about bridging academia and industry, supporting early-career researchers, and promoting best practices in software sustainability. Serving on the committee will allow me to contribute strategically to advancing RSE visibility, community engagement, and impactful initiatives across the US.
-
-**How do you contribute to the US-RSE Association or RSE community more broadly?**<br>
-I contribute to the RSE community by actively mentoring researchers and early-career software engineers in building sustainable, reproducible, and high-performance research software. I have organized and led technical meetups, workshops, and hackathons, helping over 500 participants improve coding practices, workflow automation, and cloud-native deployments for research projects. As a frequent speaker at conferences and contributor to open-source projects, I promote knowledge sharing and collaboration between academia and industry. I also support RSE initiatives by reviewing research software for reproducibility, advising on best practices for software sustainability, and helping integrate AI/ML-driven approaches into research workflows. Through these activities, I aim to strengthen the community, empower researchers to adopt modern software practices, and foster an inclusive and vibrant RSE ecosystem in the US.
-
 
 <a name="alex"></a>
 <br>
@@ -116,41 +95,6 @@ I've been involved with the US-RSE for roughly five years now, and in that time 
 - Collaborating with Stanford faculty and staff to formalize the RSE position as an official role on campus, creating a sustainable career path for future RSEs.
 
 Through these activities, and more, I aim to keep the US-RSE visible, inclusive, and usefulÑespecially for researchers who haven't yet heard the term RSE. By connecting people, improving resources, and advocating for institutional recognition, I hope to strengthen the community for years to come.
-
-
-<a name="debora"></a>
-<br>
-## Débora Martins de Moura
-
-[Email](mailto:mmoura.debora@gmail.com), [Profile](https://www.linkedin.com/in/debora-martins-de-moura/)
-
-**Why do you want to be on the US-RSE Steering Committee?**<br>
-I want to be part of the US-RSE Steering Committee to help strengthen the bridge between research and large-scale engineering practice. Throughout my career, I've seen how reproducible, data-driven software transforms not only organizations but entire communities of knowledge.
-At Nubank, I lead engineering teams that build data and AI platforms serving more than 100 million users across Latin America. Before that, I worked Globo.com's Big Data & AI division, connecting research and production through ML Ops, profiling, recommendation and experimentation systems. 
-I believe the US-RSE has a unique opportunity to expand beyond academia, embracing engineers and leaders from industry who share the same passion for sustainable, research-driven software.
-As a Steering Committee member, I hope to contribute strategic thinking, technical depth, and a global perspective—while fostering inclusion, mentorship, and collaboration across sectors.
-
-**How do you contribute to the US-RSE Association or RSE community more broadly?**<br>
-My contribution to the broader RSE community comes from building and connecting ecosystems that unite research, engineering, and people (I am people oriented).
-At Nubank, I led organizations focused on essential platforms (high scalability), AI enablement, and data infrastructure that serve tens of millions of users. These initiatives advance many of the same principles valued by the RSE community: reproducibility, scalability, and research-informed software design.
-Previously, at Globo.com, I was manager at Big Data & AI division—creating ML Ops and recommendation, experimentation platforms that bridged academic research with real-world impact. This experience shaped my view that software engineering and scientific research are not separate disciplines but parts of the same creative continuum.
-Beyond technical work, I'm deeply committed to mentorship and inclusion. I've coached engineers transitioning from QA to full-stack, mentored women in tech, and supported open conversations on diversity and leadership in AI.
-Through these efforts, I aim to make the RSE community more global, connected, and inclusive—ensuring that research software thrives not just in labs, but in every environment where knowledge and technology meet.
-
-
-<a name="fabio"></a>
-<br>
-## Fabio Andrijauskas
-
-[Email](mailto:fandrijauskas@ucsd.edu), [Profile](https://www.linkedin.com/in/fabio-andrijauskas/)
-
-**Why do you want to be on the US-RSE Steering Committee?**<br>
-The US-RSE is a vibrant community that highlights various software aspects. I am enthusiastic about contributing to the growth and advancement of this community.
-
-**How do you contribute to the US-RSE Association or RSE community more broadly?**<br>
-As a Senior Software Developer at the San Diego Supercomputer Center, I support and contribute to research initiatives within the Open Science Grid and Open Science Data Federation. My work focuses on advancing high-performance computing (HPC) solutions and fostering open science collaborations, leveraging my extensive experience in computational systems and software support. 
-
-With over a decade of expertise in high-performance computing and software engineering, I bring a strong foundation in distributed systems, data federation, and scientific computing. Passionate about enabling cutting-edge research, I aim to facilitate scientific discovery through scalable computational frameworks that empower researchers across diverse disciplines.
 
 
 <a name="ian"></a>
@@ -198,37 +142,6 @@ I currently serve on the US-RSE Steering Committee participating in discussions 
 Advocating for RSEs has been a passion of mine long before the RSE term existed. Having long challenged my co-workers on the way scientific software is developed and how those who build and maintain it are not seen as equal partners in the research mission, I am now at a point in my career where I can apply my experiences and take greater risks in supporting RSEs than I have previously been able to. To that end, I now lead a group of RSEs at LBL and a local, albeit informal LBL-RSE effort doing at the single lab-level what the US-RSE does for the RSEs across the country. This year I was able to get LBL to become a founding organizational member of the US-RSE at the premier level for 5 years. Continuing in that supportive spirit, I plan on bringing an experienced perspective to the organization on how we can best support RSE as currently described in our mission statement.
 
 
-<a name="kiran"></a>
-<br>
-## Kiran Kalyanaraman
-
-[Email](mailto:kirank.rmk@gmail.com), [Profile](https://www.linkedin.com/in/kirankkalyanaraman/)
-
-**Why do you want to be on the US-RSE Steering Committee?**<br>
-I want to serve on the US-RSE Steering Committee to strengthen the community of Research Software Engineers and elevate their role in advancing scientific innovation. With 15+ years in software engineering, cloud, and product management, I've led cross-disciplinary teams building data and AI platforms that support large-scale research. I'm passionate about mentorship, career development, and fostering inclusion within technical communities. I aim to help expand US-RSE's outreach, strengthen partnerships with academia and industry, and develop programs that empower RSEs to grow as recognized leaders in research computing and open science.
-
-**How do you contribute to the US-RSE Association or RSE community more broadly?**<br>
-I contribute to the RSE community by promoting open, reproducible, and sustainable research software practices across disciplines. I collaborate with academic researchers to design cloud-based data platforms and machine-learning pipelines that make research results easier to share and validate. I frequently mentor early-career RSEs and students through academic programs and technical judging panels, focusing on software sustainability, documentation, and version-controlled workflows.
-I actively engage in professional societies such as IEEE and the Soft Computing Research Society, sharing talks and publications on AI-driven research software design. I also advocate for open-source adoption and FAIR data principles in collaborative projects. Through these efforts, I aim to strengthen the RSE community's connection to academia, advance reproducibility standards, and highlight the indispensable role of RSEs in accelerating credible, transparent scientific discovery.
-
-
-<a name="milan"></a>
-<br>
-## Milan Parikh
-
-[Email](mailto:parikh.milan87@gmail.com), [Profile](https://www.linkedin.com/in/mjparikh)
-
-**Why do you want to be on the US-RSE Steering Committee?**<br>
-I want to serve on the US-RSE Steering Committee to help strengthen the bridge between research, software engineering, and community leadership. My background as an Lean Enterprise Data Architect and senior IEEE member has taught me the value of structured collaboration and open standards in advancing research computing. The RSE movement reflects a vital shift toward recognizing software as a core part of research outcomes, not a secondary tool. I want to help shape policies and programs that support sustainable RSE careers, equitable community representation, and collaboration between academia, government, and industry. I bring experience leading technical communities, mentoring early-career engineers, and organizing professional networks that connect research and practice. My focus would be on outreach, professional recognition, and shared learning frameworks for RSEs across disciplines.
-
-**How do you contribute to the US-RSE Association or RSE community more broadly?**<br>
-I contribute to the broader RSE community through technical leadership, mentorship, and active engagement in professional societies. As an Enterprise Solution Architect specializing in data platforms, low-code systems, and AI integration, I advocate for the application of software engineering principles in research workflows. I mentor early-career professionals and student developers through IEEE and BCS programs, helping them adopt sustainable coding, data management, and automation practices aligned with reproducible research.
-
-I frequently publish and present on topics connecting research computing with enterprise innovation, covering areas like Microsoft Fabric, Power Platform, and responsible AI. These engagements promote cross-disciplinary collaboration between academia and industry.
-
-I also support open knowledge exchange by reviewing conference papers, organizing technical sessions, and serving on committees focused on software reliability and data governance. My ongoing work emphasizes the professional recognition of RSEs as equal partners in research, advocating for better visibility, structured career pathways, and mentorship programs that strengthen both technical and community foundations of the RSE movement.
-
-
 <a name="pengyin"></a>
 <br>
 ## Pengyin Shan
@@ -255,67 +168,3 @@ I want to join the US-RSE Steering Committee to help shape how our community pre
 My contributions to the RSE community are grounded in building tools, platforms, and experiences that emphasize usability, accessibility, and impact. I actively promote design thinking and user experience as essential parts of sustainable research software development. By combining technical fluency with communication and visual design skills, I help bridge the gap between functionality and adoption — ensuring that software not only works but resonates with its users.
 I contribute to community growth by sharing knowledge on modern development practices, open-source collaboration, and emerging technologies. I also engage in mentoring and collaborative projects that encourage inclusivity and professional development among RSEs.
 If elected, I would extend this contribution through the US-RSE Steering Committee by supporting initiatives like the website, events, and working groups — helping present our collective work with greater polish, clarity, and consistency. My goal is to help US-RSE thrive both technically and publicly, strengthening our visibility and influence across research and industry.
-
-
-<a name="sai"></a>
-<br>
-## Sai Kalyani Rachapalli
-
-[Email](mailto:rsaikalyani@gmail.com), [Profile](https://www.linkedin.com/in/sai-kalyani-rachapalli/)
-
-**Why do you want to be on the US-RSE Steering Committee?**<br>
-I want to join the US-RSE Steering Committee to help advance the visibility, sustainability, and recognition of Research Software Engineers across academia and industry. With over a decade of experience in data engineering, analytics, and applied research, I've built scalable ETL and AI/ML systems that enable reproducibility, automation, and performance at scale—core to the RSE mission. My roles at EverBank, Wells Fargo, Volkswagen, and Availity have shown me how research-driven engineering transforms outcomes across domains. As a former Teaching Assistant at Eastern Michigan University and active mentor, I value fostering growth, inclusivity, and collaboration. On the committee, I aim to advocate for clear RSE career pathways, promote skill-building in computational research, and strengthen academia–industry partnerships to expand the impact and recognition of RSE work nationwide.
-
-**How do you contribute to the US-RSE Association or RSE community more broadly?**<br>
-My contributions to the broader RSE community focus on advancing data engineering excellence, reproducible research practices, and professional mentoring that bridge academia and industry. With over a decade of experience in data integration, automation, and large-scale analytics across finance, manufacturing, and healthcare, I build systems that reflect RSE values—sustainability, collaboration, and innovation.
-
-At EverBank, Wells Fargo, and Volkswagen, I have led the design and optimization of ETL and AI/ML data pipelines that support research-driven decision-making and real-time analytics. These efforts have enhanced reproducibility, transparency, and accessibility of data workflows, aligning closely with US-RSE's mission to promote best practices in research software.
-
-Beyond my technical leadership, I actively mentor junior engineers and analysts on software engineering principles, version control, and data quality standards—skills essential for RSE growth. As a Teaching Assistant at Eastern Michigan University, I supported undergraduate research in statistical methods, helping students translate theory into computation.
-
-As an active reviewer for IEEE and ACM, I contribute to the integrity of research in data science and software systems. Through these professional and scholarly efforts, I strive to strengthen the bridge between scientific discovery and engineering practice—the foundation of the RSE community.
-
-
-<a name="sridevi"></a>
-<br>
-## Sridevi Narayana Wagle
-
-[Email](mailto:sridevi.wagle@pnnl.gov), [Profile](https://drive.google.com/file/d/1DOgoU19eKUpe6g_EIF7jTFCHiRBX489z/view)
-
-**Why do you want to be on the US-RSE Steering Committee?**<br>
-I want to join the US-RSE Steering Committee to help build a more inclusive, collaborative, and sustainable research software community. As a new member with 8 years of experience bridging research and software engineering, I bring expertise in AI/ML pipelines, visualization tools, and interdisciplinary projects, including work on the world's first wireless ultrasound transducer. I have organized workshops, presented at international conferences, and mentored colleagues, emphasizing accessibility and reproducibility. I aim to contribute to US-RSE by fostering community engagement, and promoting best practices in research software, helping the organization grow and empower members across disciplines.
-
-**How do you contribute to the US-RSE Association or RSE community more broadly?**<br>
-As a new member of the US-RSE community, I bring extensive experience at the intersection of research and software engineering that can directly benefit the RSE community. Over 8 years, I've developed AI/ML pipelines, interactive visualization tools, and automated workflows for interdisciplinary projects, enabling scientists to work with complex data and models more effectively. At Siemens Healthineers, I contributed to the world's first wireless ultrasound transducer, performing formal verification and automation that ensured reliability and safety - experience that demonstrates my ability to deliver robust, high-impact software in critical domains. I have published research on explainable ML, retrieval-augmented LLMs, and democratized machine learning, and presented at international conferences. I also have experience organizing workshops and events, giving me insight into building inclusive, engaging experiences.
-
-I am passionate about mentoring and supporting colleagues and interns, helping them build confidence in computational methods and navigate software-driven research. I am eager to engage with US-RSE, contribute to working groups, and help expand the community's reach, fostering sustainable practices, inclusivity, and equitable access to research software tools. My goal is to leverage my technical expertise, interdisciplinary experience, and event-organizing skills to strengthen the RSE ecosystem in the U.S.
-
-
-<a name="sridhar"></a>
-<br>
-## Sridhar Rao Muthineni
-
-[Email](mailto:sridhar.rao.m@gmail.com), [Profile](https://www.linkedin.com/in/macsridhar/)
-
-**Why do you want to be on the US-RSE Steering Committee?**<br>
-I want to serve on the US-RSE Steering Committee to help elevate the visibility and impact of Research Software Engineers across industries. With extensive experience leading healthcare technology initiatives like Health4Me and Optum, I understand the value of well-engineered research software in solving real-world problems. I'm passionate about mentoring, fostering inclusive collaboration, and advocating for professional growth within the RSE community. Joining the committee would allow me to contribute strategically, support emerging talent, and help shape initiatives that strengthen the RSE ecosystem nationwide.
-
-**How do you contribute to the US-RSE Association or RSE community more broadly?**<br>
-I actively contribute to the RSE community by mentoring junior engineers, sharing best practices in scalable software design, and promoting cross-disciplinary collaboration. My work leading major healthcare applications like Health4Me and Optum has demonstrated how RSEs can drive innovation in high-impact domains. I regularly engage in knowledge-sharing forums, advocate for the professional recognition of RSEs, and support inclusive hiring practices. I also champion the integration of modern engineering principles into research workflows, helping bridge the gap between academic research and industry-grade software. Through these efforts, I aim to strengthen the visibility, value, and sustainability of the RSE profession.
-
-
-<a name="sunil"></a>
-<br>
-## Sunil Netra
-
-[Email](mailto:snetra82@gmail.com)
-
-**Why do you want to be on the US-RSE Steering Committee?**<br>
-I want to join the US-RSE Steering Committee to help strengthen the bridge between research and practical software engineering. Having worked extensively in scalable systems, automation, and AI integration, I've seen how strong engineering practices can accelerate scientific progress and collaboration. I'm passionate about fostering a community that empowers Research Software Engineers to share knowledge, adopt best practices, and influence policy and culture across organizations. By contributing my technical and leadership experience, I hope to help shape initiatives that enhance visibility, sustainability, and career growth for RSEs nationwide.
-
-**How do you contribute to the US-RSE Association or RSE community more broadly?**<br>
-I contribute to the broader RSE community by promoting best practices in software engineering, automation, and AI to support research and innovation. Throughout my career, I've focused on building scalable, reliable, and data-driven systems that enable teams to move from experimentation to impactful implementation. I actively mentor engineers and researchers, encouraging collaboration, reproducibility, and the use of modern development practices that strengthen the quality and sustainability of research software.
-
-I also advocate for open communication and shared learning—organizing technical discussions, supporting cross-domain knowledge exchange, and highlighting the importance of long-term software maintenance in research environments. My goal is to empower engineers and scientists to work together more effectively, producing robust tools that accelerate discovery and innovation.
-
-By serving the US-RSE community, I aim to help grow a stronger, more connected network of professionals advancing research through software excellence.

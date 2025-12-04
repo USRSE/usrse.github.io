@@ -213,21 +213,12 @@ Candidates are listed in alphabetical order.
 
 - Abbey Roelofs
 - Abrar Hossain
-- Akshay Mittal
 - Alex Koufos
-- Débora Martins de Moura
-- Fabio Andrijauskas
 - Ian Cosden
 - Jeff Carver
 - Keith Beattie
-- Kiran Kalyanaraman
-- Milan Parikh
 - Pengyin Shan
 - Primus Chimdia Kabuo
-- Sai Kalyani Rachapalli
-- Sridevi Narayana Wagle
-- Sridhar Rao Muthineni
-- Sunil Netra
 
 More information about the candidates can be [found here](/2025-11-11-sc-candidates).
 
