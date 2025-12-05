@@ -12,7 +12,7 @@ permalink: /events/conference/
   <a href="{{ site.baseurl }}/usrse25/" class="stretched-link">
   </a>
   
-  {% assign color = "#790c63" %}
+  {% assign color = "#717171" %}
 
   <div class="card-header" style="background-color: {{ color }};">
       <div class="col-sm-8">

@@ -11,9 +11,9 @@ permalink: /events/
 
 <div class="row">
 
-    <div class="col" style="margin-bottom: 20px;">
-<div class="card h-100" id="usrse24">
-  <a href="{{ site.baseurl }}/usrse25/" class="stretched-link">
+<div class="col" style="margin-bottom: 20px;">
+<div class="card h-100" id="usrse26">
+  <a href="{{ site.baseurl }}/usrse26/" class="stretched-link">
   </a>
   
   {% assign color = "#790c63" %}
@@ -21,19 +21,21 @@ permalink: /events/
   <div class="card-header" style="background-color: {{ color }};">
       <div class="col-sm-8">
         <h5 style="margin: 0px -15px; color: rgb(255, 255, 255)">
-          USRSE'25: Code, Practices, and People
+          <!-- USRSE'26: Conference Motto -->
+          USRSE'26
         </h5>
       </div>
       <div class="col-xs-4 float-right">
         <h6 style="text-align: right; color: rgb(168, 168, 168)">
-          October 6-8, 2025
+          <!-- October 20-22, 2026 -->
+          October 2026
         </h6>
       </div>
   </div>
   <div class="card-body">
     <p class="card-text">
-      Join several hundred of your RSE colleagues and RSE allies in Philadelphia, PA, October 6-8, 2025.<br><br>
-        <a href="{{ site.baseurl }}/usrse25/">Learn more about the conference</a>.
+      Join several hundred of your RSE colleagues and RSE allies in the SF Bay Area.<br><br>
+        <a href="{{ site.baseurl }}/usrse26/">Learn more about the conference</a>.
     </p>
 
   </div>
