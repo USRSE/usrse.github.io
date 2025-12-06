@@ -34,7 +34,7 @@ permalink: /events/
   </div>
   <div class="card-body">
     <p class="card-text">
-      Join several hundred of your RSE colleagues and RSE allies in the SF Bay Area.<br><br>
+      Join several hundred of your RSE colleagues and RSE allies at our 4th annual conference to be held in the SF Bay Area.<br><br>
         <a href="{{ site.baseurl }}/usrse26/">Learn more about the conference</a>.
     </p>
 
