@@ -1,0 +1,66 @@
+name: Generate llms.txt
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  generate-llms-txt:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: Build Jekyll site
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll build
+
+      - name: Generate llms.txt
+        run: |
+          python scripts/generate_llms_txt.py
+
+      - name: Check llms.txt was generated
+        run: |
+          if [ ! -f llms.txt ]; then
+            echo "Error: llms.txt was not generated"
+            exit 1
+          fi
+          echo "llms.txt successfully generated"
+          echo "File size: $(wc -c < llms.txt) bytes"
+          echo "Line count: $(wc -l < llms.txt) lines"
+
+      - name: Upload llms.txt as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: llms-txt
+          path: llms.txt
+          retention-days: 30
+
+      - name: Display first 50 lines of llms.txt
+        run: |
+          echo "=== First 50 lines of llms.txt ==="
+          head -n 50 llms.txt
