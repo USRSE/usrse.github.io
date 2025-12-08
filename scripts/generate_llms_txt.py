@@ -25,7 +25,7 @@ class HTMLTextExtractor(HTMLParser):
         self.in_skip = False
         self.skip_tags = {'nav', 'footer', 'script', 'style', 'noscript', 'header'}
 
-    def handle_starttag(self, tag, _attrs):
+    def handle_starttag(self, tag, attrs):
         if tag == 'title':
             self.in_title = True
         elif tag in self.skip_tags:
@@ -69,7 +69,7 @@ def load_config(repo_root):
 def extract_page_info(html_path):
     """Extract title and text content from an HTML file."""
     try:
-        with open(html_path, 'r', encoding='utf-8', errors='ignore') as f:
+        with open(html_path, 'r', encoding='utf-8', errors='replace') as f:
             content = f.read()
 
         parser = HTMLTextExtractor()
@@ -153,9 +153,9 @@ def build_canonical_url(base_url, baseurl, rel_path):
     # Remove index.html from path
     path_str = str(rel_path)
     if path_str.endswith('index.html'):
-        path_str = path_str[:-10]  # Remove 'index.html'
+        path_str = path_str[:-len('index.html')]  # Remove 'index.html'
     elif path_str.endswith('.html'):
-        path_str = path_str[:-5]  # Remove '.html'
+        path_str = path_str[:-len('.html')]  # Remove '.html'
 
     # Ensure trailing slash for directories
     if not path_str or path_str.endswith('/'):
