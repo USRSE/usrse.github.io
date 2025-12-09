@@ -17,6 +17,9 @@ permalink: /jobs/
 {% assign internships = site.data.internships | sort: "posted" | reverse %}
 {% include joblist.html section_heading="### Internships" sorted_jobs=internships %}
 
+{% assign freelance = site.data.freelance | sort: "posted" | reverse %}
+{% include joblist.html section_heading="### Freelance Opportunities" sorted_jobs=freelance %}
+
 {% assign board_size = site.data.job-boards.boards | size %}
 {% if board_size > 0 %}
 
