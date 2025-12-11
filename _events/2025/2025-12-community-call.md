@@ -7,11 +7,11 @@ duration: 60
 repeated: false
 category: community-call
 time:
-    - - start: 2025-12-12T17:00:00Z
-        end: 2025-12-12T18:00:00Z
+    - - start: 2025-12-12T19:00:00Z
+        end: 2025-12-12T20:00:00Z
 ---
 
-Our **December Community Call** will be about **RSE Careers: Hiring, Getting Hired, and Everything in Between** on Friday, December 12, 12pm ET/11am CT/10am MT/9am PT.
+Our **December Community Call** will be about **RSE Careers: Hiring, Getting Hired, and Everything in Between** on Friday, December 12, 2pm ET/1pm CT/12pm MT/11am PT.
 
 In spite of the title Research Software Engineer, a number of us are involved with hardware as well. Have you built, modified, worked with, or integrated hardware into a system for research? Have you built or maintained hardware-adjacent software? Come tell us about it! Are you just curious about how software engineers could ever end up working with circuits and mechanical bits? Join us to see some examples of projects by members of our community and discuss the unique challenges of integrating the physical with the digital.
 
