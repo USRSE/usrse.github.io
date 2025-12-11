@@ -44,7 +44,7 @@ jobs:
         # Exclude these patterns from the checker
         exclude_patterns: supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com,jobs.colorado.edu,zoom.us,danielskatz.org,usrse.github.io.wiki.git,ornl.gov,jobs.bnl.gov,https://www.rd-alliance.org/,https://uwhires.admin.washington.edu/,https://careers.umich.edu/,https://twitter.com/us_rse,https://twitter.com/us_rse/status/1447622175133945860,https://twitter.com/iancosden/status/1122937311644323841
         # Only include these files
-        include_files: _data/jobs.yml,_data/related-jobs.yml,_data/internships.yml
+        include_files: _data/jobs.yml,_data/related-jobs.yml,_data/internships.yml,_data/freelance.yml
 
     - name: Push Fixes
       env:
@@ -55,7 +55,7 @@ jobs:
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@users.noreply.github.com"
 
-        git add _data/jobs.yml _data/related-jobs.yml _data/internships.yml
+        git add _data/jobs.yml _data/related-jobs.yml _data/internships.yml _data/freelance.yml
 
         set +e
         git status | grep modified
