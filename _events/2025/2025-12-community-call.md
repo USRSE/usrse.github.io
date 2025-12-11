@@ -7,8 +7,8 @@ duration: 60
 repeated: false
 category: community-call
 time:
-    - - start: 2025-12-11T16:00:00Z
-        end: 2025-12-11T17:00:00Z
+    - - start: 2025-12-12T17:00:00Z
+        end: 2025-12-12T18:00:00Z
 ---
 
 Our **December Community Call** will be about **RSE Careers: Hiring, Getting Hired, and Everything in Between** on Friday, December 12, 12pm ET/11am CT/10am MT/9am PT.
