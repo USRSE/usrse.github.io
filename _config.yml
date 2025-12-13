@@ -46,6 +46,9 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
 
+include:
+  - llms.txt
+
 exclude:
   - Gemfile
   - Gemfile.lock

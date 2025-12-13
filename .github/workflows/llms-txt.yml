@@ -1,0 +1,101 @@
+name: Generate llms.txt
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      git-ref:
+        description: Git Hash (Optional)
+        required: false
+
+# Cancel in-progress runs when a new run is triggered
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+# Restrict permissions following security best practices
+permissions:
+  contents: read
+
+jobs:
+  generate-llms-txt:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.git-ref || github.ref }}
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: 'scripts/requirements.txt'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Build Jekyll site
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll build --verbose
+
+          # Verify _site directory was created
+          if [ ! -d "_site" ]; then
+            echo "Error: Jekyll build failed - _site directory not found"
+            exit 1
+          fi
+          echo "Jekyll build successful"
+
+      - name: Generate llms.txt
+        run: |
+          python scripts/generate_llms_txt.py
+
+      - name: Validate llms.txt output
+        run: |
+          if [ ! -f llms.txt ]; then
+            echo "Error: llms.txt was not generated"
+            exit 1
+          fi
+
+          # Check file is not empty
+          if [ ! -s llms.txt ]; then
+            echo "Error: llms.txt is empty"
+            exit 1
+          fi
+
+          echo "llms.txt successfully generated and validated"
+          echo "File size: $(wc -c < llms.txt) bytes"
+          echo "Line count: $(wc -l < llms.txt) lines"
+          echo ""
+          echo "Statistics:"
+          echo "- Sections: $(grep -c '^## ' llms.txt || echo '0')"
+          echo "- Pages: $(grep -c '^- \[' llms.txt || echo '0')"
+
+      - name: Upload llms.txt as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: llms-txt
+          path: llms.txt
+          retention-days: 30
+
+      - name: Display first 50 lines of llms.txt
+        run: |
+          echo "=== First 50 lines of llms.txt ==="
+          head -n 50 llms.txt
