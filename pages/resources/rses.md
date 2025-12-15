@@ -10,7 +10,7 @@ subtitle: Resources for RSEs
 - [Hiring, Managing, and Retaining Data Scientists and Research Software Engineers in Academia: A Career Guidebook from ADSA and US-RSE](https://doi.org/10.5281/zenodo.8264152){:target="_blank"}
 - [Research Software Engineers: Creating a Career Path—and a Career](https://doi.org/10.5281/zenodo.10073233){:target="_blank"}
 - [Getting Started with the RSE Movement within your Organization: A Guide for Individuals](https://doi.org/10.5281/zenodo.10436166){:target="_blank"}
-- [Illustrating Impacts of User Experience Work in Research Software Engineering](){:target="_blank"}
+- [Illustrating Impacts of User Experience Work in Research Software Engineering](https://zenodo.org/records/17944188){:target="_blank"}
 
 ## USRSE Conference Proceedings
 
