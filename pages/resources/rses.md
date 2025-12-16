@@ -21,7 +21,9 @@ subtitle: Resources for RSEs
 
 ## Community Resources
 
-- [Developer Stories Podcast](https://rseng.github.io/devstories/) to hear diverse stories of growth and discovery from our community.
+- [Computing in Science & Engineering (CiSE)](https://www.computer.org/csdl/magazine/cs/2025/02), Special Issue on Research Software Engineering: Discovering and Bridging Knowledge Gaps (editors: S. Druskat, L. Grunske, C. Jay, D. S. Katz,) v.27(2), IEEE, April-June 2025.
+- [Code for Thought](https://codeforthought.buzzsprout.com/) podcast: the podcast about software for research and the people who make it.  
+- Archive of [RSE Stories](https://us-rse.org/rse-stories/) and [Developer Stories](https://rseng.github.io/devstories/) podcasts to hear diverse stories of growth and discovery from our community.
 
 [US-RSE Newsletters]({{ site.baseurl }}/newsletters/) include links to papers and other RSE-related resources.
  
