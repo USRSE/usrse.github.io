@@ -18,7 +18,7 @@ jobs:
 
       - id: updater
         name: Job Updater
-        uses: rseng/jobs-updater@720adda
+        uses: rseng/jobs-updater@e38506c1bd06587fc1b1af1024371998557dbff9
         with:
           filename: "_data/jobs.yml"
 
