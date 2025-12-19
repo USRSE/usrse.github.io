@@ -42,8 +42,6 @@
       link: get-involved
     - name: Share
       link: share
-    - name: Community Whitepapers
-      link: community-whitepapers
     - name: Community Funds
       link: community-funds/
     - name: Community Awards
@@ -107,25 +105,12 @@
       link: archive
 - name: Resources
   dropdown:
-    - name: RSE Resources
+    - name: Resources
       link: resources/rses/
     - name: Education & Training Seminars
       link: wg/education_training/seminar_series/
-    - name: Organizations
+    - name: RSE Organizations
       link: resources/organizations/
-    - name: Community Funds
-      link: community-funds/
-    - name: Community Awards
-      link: community-awards/
-
-- name: External
-  dropdown:
     - name: RSE Map
       link: "https://us-rse.org/usrse-map"
-      external: true
-    - name: Developer Stories Podcast
-      link: "https://rseng.github.io/devstories/"
-      external: true
-    - name: Community Blogs
-      link: "https://us-rse.org/blog"
-      external: true
+
