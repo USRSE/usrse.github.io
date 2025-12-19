@@ -101,6 +101,8 @@
       link: newsletters
     - name: News and Updates
       link: news
+    - name: Messages from Leadership
+      link: news/leadership
     - name: News Archive
       link: archive
 - name: Resources
