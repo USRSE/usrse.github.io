@@ -36,7 +36,7 @@ This event took place **Monday, April 3rd at 1 PM ET, 12 PM CT, 11 AM MT, 10 AM 
 
 ### Biographies
 
-![Susan Gregurick, PhD](https://datascience.nih.gov/sites/default/files/Gregurick_286x400.png){: style="float: left; margin-right: 10px; clear: left; width: 143px; height: 200px;"}
+![Susan Gregurick, PhD](https://web.archive.org/web/20250405060419/https://datascience.nih.gov/sites/default/files/Gregurick_286x400.png){: style="float: left; margin-right: 10px; clear: left; width: 143px; height: 200px;"}
 
 **Susan Gregurick, PhD**<br>
 Associate Director for Data Science<br>
@@ -48,7 +48,7 @@ She was instrumental in the creation of the Office of Data Science Strategy in 2
 
 <br>
 
-![Ishwar Chandramouliswaran, MS, MBA](https://datascience.nih.gov/sites/default/files/ishwar-240x312.png){: style="float: left; margin-right: 10px; clear: left; width: 143px; height: 200px;"}
+![Ishwar Chandramouliswaran, MS, MBA](https://web.archive.org/web/20250202105602/https://www.datascience.nih.gov/sites/default/files/ishwar-240x312.png){: style="float: left; margin-right: 10px; clear: left; width: 143px; height: 200px;"}
 
 **Ishwar Chandramouliswaran, MS, MBA**<br>
 Program Director<br>
@@ -75,7 +75,7 @@ She leads efforts to expand the sharing and reuse of data in the field of HIV, i
 
 <br>
 
-![Heidi Sofia, PhD](https://datascience.nih.gov/sites/default/files/HeidiSofia.png){: style="float: left; margin-right: 10px; clear: left; width: 143px; height: 189px;"}
+![Heidi Sofia, PhD](https://web.archive.org/web/20250405091702/https://datascience.nih.gov/sites/default/files/HeidiSofia.png){: style="float: left; margin-right: 10px; clear: left; width: 143px; height: 189px;"}
 
 **Heidi Sofia, PhD**<br>
 Program Director<br>

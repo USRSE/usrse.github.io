@@ -38,20 +38,6 @@ the US-RSE slack or contact the co-chairs at
 
 # Work Products
 
-TBD.
+Working paper: [Illustrating Impacts of User Experience Work in Research Software Engineering](https://zenodo.org/records/17944188)
 
-------
 
-<!-- 
-## TOPIC 1
-
-Put data about intended efforts or work products here.
-
-------
-
-## TOPIC 2
-
-Put data about intended efforts or work products here.
-
-------
--->

@@ -29,3 +29,7 @@ email list</a>. You may request join the list serve directly via our
 [Google Group page](https://groups.google.com/a/us-rse.org/g/wg-national-labs-empowerment/).
 
 **Co-Chairs**: Patrick Diehl (LANL), Jonathan Guyer (NIST), Daniel Howard (NSF NCAR), and Gregory Lemieux (LBNL), 
+
+# Work Products
+
+[Getting Started with the RSE Movement within your Organization: A Guide for Individuals](https://doi.org/10.5281/zenodo.10436166)
