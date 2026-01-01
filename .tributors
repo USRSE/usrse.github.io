@@ -471,7 +471,8 @@
         "bio": "Interdisciplinary comp sci graduate Student at Northeastern University | Data Scientist @Climate-Smart-Public-Health",
         "blog": "http://www.tinashemtapera.com",
         "orcid": "0000-0001-9080-5010",
-        "affiliation": "University of Pennsylvania"
+        "affiliation": "University of Pennsylvania",
+        "email": "ttapera@hsph.harvard.edu"
     },
     "DMadren": {
         "name": "DMadren",
