@@ -2,7 +2,7 @@
 title: Community Call Planning Meeting
 subtitle:
 location: Virtual
-expires: 2025-12-11
+expires: 2026-12-11
 event_date: "fourth Thursday each month 12:00-13:00 Eastern"
 layout: event
 category: community-call
