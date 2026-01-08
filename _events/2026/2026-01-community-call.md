@@ -1,7 +1,7 @@
 ---
 title: January 2026 Community Call
 expires: 2026-01-08
-event_date: "January 8, 2025"
+event_date: "January 8, 2026"
 layout: event
 duration: 60
 repeated: false
