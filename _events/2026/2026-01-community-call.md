@@ -1,14 +1,14 @@
 ---
 title: January 2026 Community Call
-expires: 2026-01-08
+expires: 2026-01-09
 event_date: "January 8, 2026"
 layout: event
 duration: 60
 repeated: false
 category: community-call
 time:
-    - - start: 2026-01-08T16:00:00Z
-        end: 2026-01-08T17:00:00Z
+    - - start: 2026-01-08T17:00:00Z
+        end: 2026-01-08T18:00:00Z
 ---
 
 
