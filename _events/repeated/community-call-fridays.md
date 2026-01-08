@@ -2,7 +2,7 @@
 title: Even Months Community Call
 subtitle:
 location: Virtual
-expires: 2025-12-11
+expires: 2026-12-11
 event_date: "alternating 2nd Thursday (12:00-1:00pm ET) and 2nd Friday (2:00-3:00pm ET)"
 layout: event
 category: community-call
