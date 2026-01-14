@@ -117,7 +117,7 @@ Our Annual General Meeting for 2025 took place on December 4th, 2025. If you mis
 - Reviewing US-RSE's community activities, such our website, job board, monthly newsletter and community calls, Slack channels, various subcommunity events, and social media presence.
 - Discussing funding opportunities, such as the transformative grant from the Sloan Foundation and US-RSE's operation as a project under Community Initiatives.
 - Reviewing leadership roles and volunteers, such as our Executive Director, the Steering Committee, and the numerous opportunities for community members to get involved through working groups, organizing committees, or community engagement.
-- Celebrating 2025's achievements and impact, including the 2025 conference in Philadelphia attracting over 300 participants, our community and travel funding program awards to numerous recepients.
+- Celebrating 2025's achievements and impact, including the 2025 conference in Philadelphia attracting over 300 participants, our community and travel funding program awards to numerous recipients.
 - Promoting our advocacy and outreach, engaging with organizations like NSF, the US Department of Labor, the OECD, and K-12 students.
 - Celebrating the success of our organizational membership program, including over 20 founding members.
 - Acknowledging our numerous Working Groups and Regional Groups.
