@@ -1,0 +1,48 @@
+- key: obrien2025llm
+  type: inproceedings
+  title: How Scientists Use Large Language Models to Program
+  authors: O'Brien, G.
+  authors_raw: O'Brien, G.
+  year: '2025'
+  read_status: Unread
+  booktitle: 'CHI ''25: Proceedings of the CHI Conference on Human Factors in Computing
+    Systems'
+  pages: 1--16
+  doi: 10.1145/3706598.3713668
+  url: https://doi.org/10.1145/3706598.3713668
+  keywords:
+  - newsletter
+- key: perezriverol2025opensource
+  type: article
+  title: Open-Source and FAIR Research Software for Proteomics
+  authors: Perez-Riverol, Y., Bittremieux, W., Noble, W. S., et al. (17 more)
+  authors_raw: Perez-Riverol, Y. and Bittremieux, W. and Noble, W. S. and Martens,
+    L. and Bilbao, A. and Lazear, M. R. and Grüning, B. and Katz, D. S. and MacCoss,
+    M. J. and Dai, C. and Eng, J. K. and Bouwmeester, R. and Shortreed, M. R. and
+    Audain, E. and Sachsenberg, T. and Van Goey, J. and Wallmann, G. and Wen, B. and
+    Käll, L. and Fondrie, W. E.
+  year: '2025'
+  read_status: Read
+  journal: Journal of Proteome Research
+  volume: '24'
+  number: '5'
+  pages: 2222--2234
+  doi: 10.1021/acs.jproteome.4c01079
+  url: https://doi.org/10.1021/acs.jproteome.4c01079
+  keywords:
+  - newsletter
+- key: mittal2025cloud
+  type: misc
+  title: From Cloud Chaos to Developer Delight --- A Practical Guide to Building Your
+    First Internal Developer Platform
+  authors: Mittal, A.
+  authors_raw: Mittal, A.
+  year: '2025'
+  read_status: Unread
+  howpublished: Medium
+  month: May
+  day: '19'
+  url: https://medium.com/@akshaymittal_90606/from-cloud-chaos-to-developer-delight-a-practical-guide-to-building-your-first-internal-ff3d12834ad0
+  keywords:
+  - newsletter
+  - blog
