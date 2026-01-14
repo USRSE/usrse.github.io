@@ -32,10 +32,11 @@ organize more structured events in the future.
 
 ## Upcoming meetups
 
-- October 21, 2025 at 5pm ET: [October Meetup]({{site.baseurl}}/events/2025/2025-10-rg-nc-meetup/) at [Namu](https://www.yelp.com/biz/namu-durham), 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
+- January 21, 2026 at 5pm ET: [January Meetup]({{site.baseurl}}/events/2026/2026-01-rg-nc-meetup/) at [Namu](https://www.yelp.com/biz/namu-durham), 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
 
 ## Archive of past meetups
 
+- October 21, 2025 at 5pm ET: [October Meetup]({{site.baseurl}}/events/2025/2025-10-rg-nc-meetup/) at [Namu](https://www.yelp.com/biz/namu-durham), 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
 - September 16, 2025 at 5pm ET: [Meetup 1]({{site.baseurl}}/events/2025/2025-09-rg-nc-meetup-1/) at [Namu](https://www.yelp.com/biz/namu-durham), 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
 
 # Group coordinators
