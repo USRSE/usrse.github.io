@@ -315,12 +315,12 @@ Please share with anyone who may be interested! Financial support is available."
 As research becomes more collaborative, attribution systems built for journal articles no longer suffice. We need infrastructure for sharing and attributing discrete research contributions: results, claims, and the building blocks of scientific arguments.
 MIRA is a Navigation Fund supported production-focused workshop convening 22 researchers, engineers, designers, and ecosystem specialists to develop and implement interoperable standards for modular research attribution across participating platforms.
 While the physical workshop is limited to 22 participants, we will host virtual sessions before and after, so don't hesitate to get involved!"
-  links="Learn more and apply by January 15, 2026: [https://www.mira.science/](https://www.mira.science/)"
+  links="Learn more and apply by January 23, 2026: [https://www.mira.science/](https://www.mira.science/)"
 %}
 
 {% include opportunity-box.html 
     title="PEARC26 Special RSE Track: Research Software Engineering: People, Practice, and Impact" 
-    preamble="For the first time, PEARC26 is having a Special RSE Track: Research Software Engineering: People, Practice, and Impact, and CFP is now available, along with the Call for Reviewers! :fire::fire:"
+    preamble="For the first time, PEARC26 is having a Special RSE Track: Research Software Engineering: People, Practice, and Impact, and CFP is now available, along with the Call for Reviewers!"
     links="Submission deadlines
 
 Full papers due Feb 9, 2026
@@ -346,13 +346,6 @@ Camera-ready papers: March 6th, 2026
 Workshop: [https://sites.google.com/view/hpai4s/](https://sites.google.com/view/hpai4s/)
 
 More info: [https://www.ipdps.org/ipdps2026/2026-workshops.html](https://www.ipdps.org/ipdps2026/2026-workshops.html)"
-%}
-
-{% include opportunity-box.html 
-    title="Durham HPC Days 2026" 
-    preamble="Registrations have opened for the Durham HPC Days 15-19 June 2026, Durham, UK!
-The call for session proposals is also open and closes January 31, 2026. An open call for talks will open early 2026."
-    links="Check out the website for more information: [https://hpc-days.github.io/Durham-HPC-Days-2026/](https://hpc-days.github.io/Durham-HPC-Days-2026/)"
 %}
 
 {% include opportunity-box.html 
@@ -463,7 +456,7 @@ We also have a CISL Outreach, Development, and Education (CODE) Intern, for grad
     preamble="We are thrilled to announce the 2026 Global Open OnDemand (GOOD26) Conference, an event for the entire Open OnDemand community! GOOD26 is a four-day in-person gathering taking place from March 9-12, 2026 at the University of Utah in Salt Lake City. Attendees will have the opportunity to participate in live keynote sessions, talks, BoFs, and tutorials that share insights and best practices, explore new features, and strengthen the Open OnDemand community.
 As with at GOOD25, the conference will kick off on Monday afternoon (March 9) with the optional Contributor Jam, an intensive deep dive into our code and documentation which will prepare attendees to contribute back to the Open OnDemand open source project."
     links="Registration and the Call for Proposals are now open! We encourage an array of presentation modalities, including posters, prerecorded talks, and more (see website for details). Submissions are due on Dec 12, 2025.
-More information is available at [https://good2026.org](https://good2026.org)"
+More information is available at [https://www.good2026.openondemand.org](https://www.good2026.openondemand.org)"
 %}
 
 {% include event-box.html 
@@ -474,21 +467,6 @@ More information is available at [https://good2026.org](https://good2026.org)"
     preamble="Registrations have opened for the Durham HPC Days 15-19 June 2026, Durham, UK!
 The call for session proposals is also open and closes January 31, 2026. An open call for talks will open early 2026."
     links="Check out the website for more information: [https://hpc-days.github.io/Durham-HPC-Days-2026/](https://hpc-days.github.io/Durham-HPC-Days-2026/)"
-%}
-
-{% include event-box.html 
-    
-    title="User Experience (UX) Resources for Scientific Software" 
-    when="February 10, 2026" 
-    where="Online"
-    preamble="The [STRUDEL](https://strudel.science/) team is excited to host an in person contribution event at the AI Futures Lab in downtown Berkeley, CA on Tuesday February 10th, 2026 :date:
-Register today to join us if you are interested in:
-Contributing to open source science user experience/user interface design resources—ideas, design, code, documentation, website, etc.
-Trying out different AI tools & models in the design and development of open source resources
-Being publicly recognized as a contributor to the STRUDEL project
-Networking with expert practitioners from a range of scientific software and open source communities
-We anticipate sessions between 9am-5:00pm including a networking hour. Dropping in and out as your schedule allows is completely fine. Light breakfast, lunch, and snacks will be provided along with opportunities to network with a range of community members."
-    links="Sign up link [here](http://go.lbl.gov/strudelFeb26)"
 %}
 
 {% include event-box.html 
@@ -515,7 +493,7 @@ Environmental, Earth, and Climate Sciences
 Maintainers and Community
 Biological and Medical Sciences
 Scientific Computing in Education
-SciPy 2026 will take place from July 13-19 this year and is hosted at University of Minnesota in Minneapolis, MN, USA. The talk, tutorial, and poster submission deadline is February 25th, 2026 but as you can make edits to your proposals after submission up until the deadline submit early! :slightly_smiling_face:
+SciPy 2026 will take place from July 13-19 this year and is hosted at University of Minnesota in Minneapolis, MN, USA. The talk, tutorial, and poster submission deadline is February 25th, 2026 but as you can make edits to your proposals after submission up until the deadline submit early!
 "
     links="Registration: [https://pretalx.com/scipy-2026/cfp
     ](https://pretalx.com/scipy-2026/cfp
