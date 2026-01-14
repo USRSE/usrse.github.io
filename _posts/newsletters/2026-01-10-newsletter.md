@@ -55,7 +55,7 @@ Mastodon: [https://fosstodon.org/@us_rse](https://fosstodon.org/@us_rse)
 
 X: [https://x.com/us_rse](https://x.com/us_rse)
 
-Wishing you a restful and joyful holiday season as we wrap up an amazing year together! 😊🌟
+We hope you had a restful and joyful holiday season, and we look forward to another amazing year together! 😊🌟
 
 -----------------
 
