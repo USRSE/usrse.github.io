@@ -1,6 +1,6 @@
 ---
 title: North Carolina Regional Group Meetup January 2026
-location: https://us06web.zoom.us/j/86736347243?pwd=VxcVga9fO3AtbTNbqxajz7IHWeoxXa.1
+url: https://us06web.zoom.us/j/86736347243?pwd=VxcVga9fO3AtbTNbqxajz7IHWeoxXa.1
 excerpt_separator: <!--more-->
 expires: 2026-01-21
 event_date: "January 21, 2026"
@@ -9,8 +9,8 @@ duration: 120
 repeated: false
 category: social
 time:
- - - start: 2026-01-21T17:00:00-04:00
-     end: 2026-01-21T19:00:00-04:00
+ - - start: 2026-01-21T17:00:00-05:00
+     end: 2026-01-21T19:00:00-05:00
 ---
 
 The North Carolina Regional Group will hold a virtual social meeting on Wednesday, January 21st, 2026 at 5:00pm ET.
