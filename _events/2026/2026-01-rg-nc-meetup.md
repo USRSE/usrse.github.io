@@ -1,6 +1,6 @@
 ---
 title: North Carolina Regional Group Meetup January 2026
-location: Namu, 5420 Durham-Chapel Hill Blvd, Durham, NC 27707
+location: https://us06web.zoom.us/j/86736347243?pwd=VxcVga9fO3AtbTNbqxajz7IHWeoxXa.1
 excerpt_separator: <!--more-->
 expires: 2026-01-21
 event_date: "January 21, 2026"
@@ -13,13 +13,13 @@ time:
      end: 2026-01-21T19:00:00-04:00
 ---
 
-The North Carolina Regional Group will hold an in-person social meeting on Wednesday, January 21st, 2026 at 5:00pm ET.
+The North Carolina Regional Group will hold a virtual social meeting on Wednesday, January 21st, 2026 at 5:00pm ET.
 
 <!--more-->
 
-We'll meet in the restaurant section of <a href="https://www.yelp.com/biz/namu-durham">Namu Durham</a>, 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
-I'm planning to stay there until 7pm at least, so no worries if you're running late.
-Please <a href="mailto:gaurav@ggvaidya.com">email me</a> or message me on Slack if you can't find us.
+We'll meet [on Zoom](https://us06web.zoom.us/j/86736347243?pwd=VxcVga9fO3AtbTNbqxajz7IHWeoxXa.1).
+I'm planning to stay on the Zoom until 7pm, so no worries if you're running late.
+Please <a href="mailto:gaurav@ggvaidya.com">email me</a> or message me on Slack if you can't get in.
 
 You can find out more about our group on [our regional group page]({{ site.baseurl }}/ag/rg-north-carolina/)
 or by joining the [US-RSE Slack `#rg-north-carolina` channel](https://usrse.slack.com/messages/rg-north-carolina)

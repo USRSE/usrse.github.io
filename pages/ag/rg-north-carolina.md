@@ -32,7 +32,7 @@ organize more structured events in the future.
 
 ## Upcoming meetups
 
-- January 21, 2026 at 5pm ET: [January Meetup]({{site.baseurl}}/events/2026/2026-01-rg-nc-meetup/) at [Namu](https://www.yelp.com/biz/namu-durham), 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
+- January 21, 2026 at 5pm ET: [January Meetup]({{site.baseurl}}/events/2026/2026-01-rg-nc-meetup/), virtual.
 
 ## Archive of past meetups
 
