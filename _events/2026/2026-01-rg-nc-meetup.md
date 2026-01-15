@@ -1,6 +1,6 @@
 ---
 title: North Carolina Regional Group Meetup January 2026
-url: https://us06web.zoom.us/j/86736347243?pwd=VxcVga9fO3AtbTNbqxajz7IHWeoxXa.1
+location: Online via Zoom
 excerpt_separator: <!--more-->
 expires: 2026-01-21
 event_date: "January 21, 2026"
