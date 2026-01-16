@@ -1,4 +1,3 @@
-Gemfile
 *.gem
 .jekyll-cache
 .bundle
@@ -7,3 +6,4 @@ _site
 Gemfile.lock
 .idea
 .DS_Store
+vendor/

@@ -524,5 +524,9 @@
         "name": "Hannah Cohoon",
         "bio": "Doc student at UT's iSchool",
         "blog": "https://github.com/jlcohoon"
+    },
+    "manbat": {
+        "name": "manbat",
+        "blog": "https://github.com/manbat"
     }
 }
