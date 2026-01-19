@@ -98,7 +98,7 @@ Active members attend our regular meetings at least once a quarter (once every 3
 
 ## Summer schools, workshops, etc.
 
-- [African Brain Data Science Academy](https://africanbraindatanetwork.com/abds-academy/)
+- [African Brain Data Science Academy](https://africanbraindatanetwork.com/academy/)
 - Cold Spring Harbor Laboratory [summer schools](https://meetings.cshl.edu/courseshome.aspx), especially [Computational Neuroscience: Vision](https://meetings.cshl.edu/courses.aspx?course=C-VISI&year=24) (every other year)
 - [NeuroDataReHack](https://nwb.org/events/hck24-2025-janelia-ndrh/)
 - [Neurohackademy](https://neurohackademy.org/) (neuroimaging-focused)
