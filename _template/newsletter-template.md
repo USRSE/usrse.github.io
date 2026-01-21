@@ -239,24 +239,44 @@ Join the **R-RSE Affinity Group** to connect with fellow R users, share projects
 <a name="reads"></a>
 # 📚 **8. Featured Reads, Videos, and Podcasts**
 
-<!-- Add new articles and podcast links -->
+<!--
+  This section now uses an automated bibliography system powered by Zotero and BibTeX.
+  
+  Workflow:
+  1. Throughout the month, collect interesting media in Zotero with the tag "newsletter"
+  2. Use Zotero's read status plugin to mark items as "Read" or "Unread"
+  3. Export the Zotero collection to _data/interesting_reads.bib (BibTeX format)
+  4. Run: python scripts/bibtex_to_yaml.py (converts BibTeX to YAML)
+  5. The bibliography will automatically render below, filtered by read_status
+  
+  Manual entries can still be added in the sections below if needed.
+-->
 
 ### 📑 Recent Publications
 
-<!-- 
+{% comment %}
+  Automatically render unread publications from the bibliography
+{% endcomment %}
+{% for entry in site.data.interesting_reads %}
+  {% if entry.read_status == 'Unread' and entry.type != 'misc' %}
+{% include bibliography-entry.html entry=entry %}
+  {% endif %}
+{% endfor %}
 
-Template format for publications:
-
-- **Y. Perez-Riverol, W. Bittremieux, W. S. Noble, L. Martens, A. Bilbao, M. R. Lazear, B. Grüning, D. S. Katz, M. J. MacCoss, C. Dai, J. K. Eng, R. Bouwmeester, M. R. Shortreed, E. Audain, T. Sachsenberg, J. Van Goey, G. Wallmann, B. Wen, L. Käll, W. E. Fondrie**, _"Open-Source and FAIR Research Software for Proteomics,"_ *Journal of Proteome Research*, Vol. 24, No. 5, pp. 2222–2234, 2025. [Read the article.](https://doi.org/10.1021/acs.jproteome.4c01079) 
-
--->
+<!-- You can still add manual entries here if needed -->
 
 ### 📝 Blog Posts
 
-<!--
-Template format for blog posts:
-- **A. Mittal**, _"From Cloud Chaos to Developer Delight — A Practical Guide to Building Your First Internal Developer Platform,"_ Medium, May 19, 2025. [Read the post.](https://medium.com/@akshaymittal_90606/from-cloud-chaos-to-developer-delight-a-practical-guide-to-building-your-first-internal-ff3d12834ad0)
--->
+{% comment %}
+  Automatically render unread blog posts from the bibliography
+{% endcomment %}
+{% for entry in site.data.interesting_reads %}
+  {% if entry.read_status == 'Unread' and entry.type == 'misc' %}
+{% include bibliography-entry.html entry=entry %}
+  {% endif %}
+{% endfor %}
+
+<!-- You can still add manual entries here if needed -->
 
 ### 🎧 Podcast Highlights
 
