@@ -28,11 +28,15 @@ We have a Slack channel in the US-RSE space for discussions.
 
 # Questions?
 
-Reach out to the Neuro-RSE coordinators Billy Broderick or David Nicholson on the [US-RSE slack](https://us-rse.org/join/) with questions.
+Reach out to the Neuro-RSE coordinators Jordan Fox or Steph Prince on the [US-RSE slack](https://us-rse.org/join/) with questions.
 
 # Group coordinators
 
-- [Billy Broderick](wfbroderick.com/), data scientist at [Flatiron Institute's Center For Computational Neuroscience](https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/) 
+- [Jordan Fox](https://jmrfox.github.io/), computational scientist, postdoc in neuroscience at [Albert Einstein College of Medicine](https://einsteinmed.edu/departments/neuroscience)
+- [Steph Prince](https://github.com/stephprince), data engineer
+
+## Former group coordinators
+- [Billy Broderick](wfbroderick.com/), Associate Research Scientist, Software in [NeuroRSE group](https://neurorse.flatironinstitute.org/), [Flatiron Institute's Center For Computational Neuroscience](https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/) 
 - [David Nicholson](https://nicholdav.info/), lead developer of the [VocalPy software community](http://www.vocalpy.org/)
 
 # Active members
