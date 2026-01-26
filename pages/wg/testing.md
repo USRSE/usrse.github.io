@@ -27,7 +27,8 @@ channel on the US-RSE slack or contact us on the
 # Work Products
 
 ## Talks Slides and Recordings
-- "Software testing for Fisheries Integrated Modeling System (FIMS): strategies, challenges, and opportunities"
+- "Software testing for Fisheries Integrated Modeling System (FIMS):
+  strategies, challenges, and opportunities"
   - Author: Bai Li
   - Date: May 21, 2025
   - [Slides](https://drive.google.com/file/d/1dd4ZypC0S6FOVnQIEEvIMuIP0ZJX7ZFl/view?usp=drive_link)
@@ -42,6 +43,12 @@ channel on the US-RSE slack or contact us on the
     - Date: August 17, 2025
     - [Slides](https://drive.google.com/file/d/1E3dDE6Eqri5HqAQhhSTnslZ_xaDAOPWc/view?usp=drive_link)
     - [Video](https://www.youtube.com/watch?v=sPOLAUmjLjE)
+- "Testing the (almost) untestable: Some ideas for automated testing
+  of scientific software that is big, slow, or non-reproducible"
+    - Author: Gaurav Vaidya
+    - Date: December 17, 2025
+    - [Slides](https://drive.google.com/file/d/1Obj4DqHgPxUazaWe915l8rEFnQ1QhCnL/view?usp=drive_link)
+    - [Video](https://www.youtube.com/watch?v=C2Nf6qyErWo)
   
 ------
 
