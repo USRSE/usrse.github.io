@@ -1037,6 +1037,28 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/4965832?v=4"
             ]
+        },
+        {
+            "login": "manbat",
+            "name": "manbat",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/manbat",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/41646490?v=4"
+            ]
+        },
+        {
+            "login": "jmrfox",
+            "name": "Jordan M. R. Fox, PhD",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://jmrfox.github.io/",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/26258770?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7

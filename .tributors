@@ -524,5 +524,17 @@
         "name": "Hannah Cohoon",
         "bio": "Doc student at UT's iSchool",
         "blog": "https://github.com/jlcohoon"
+    },
+    "manbat": {
+        "name": "manbat",
+        "blog": "https://github.com/manbat"
+    },
+    "jmrfox": {
+        "name": "Jordan M. R. Fox, PhD",
+        "email": "jordanmrfox@gmail.com",
+        "bio": "Computational neuroscientist. Reformed theoretical nuclear physicist. I model complex systems with simulation and statistics.",
+        "blog": "https://jmrfox.github.io/",
+        "orcid": "0000-0002-1363-9845",
+        "affiliation": "Albert Einstein College of Medicine"
     }
 }

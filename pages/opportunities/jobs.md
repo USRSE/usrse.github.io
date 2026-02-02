@@ -7,9 +7,11 @@ permalink: /jobs/
 {% assign us-rse_jobs = site.data.us-rse-jobs | sort: "posted" | reverse %}
 {% include joblist.html section_heading="## Current US-RSE Association Openings" sorted_jobs=us-rse_jobs %}
 
+{% assign org-member_jobs = site.data.org-member-jobs | sort: "posted" | reverse %}
+{% include joblist.html section_heading="## Organizational Members' RSE Openings" sorted_jobs=org-member_jobs %}
 
 {% assign rse_jobs = site.data.jobs | sort: "posted" | reverse %}
-{% include joblist.html section_heading="## Current RSE Openings" sorted_jobs=rse_jobs %}
+{% include joblist.html section_heading="## Additional RSE Openings" sorted_jobs=rse_jobs %}
 
 {% assign related_jobs = site.data.related-jobs | sort: "posted" | reverse %}
 {% include joblist.html section_heading="### Related Openings" sorted_jobs=related_jobs %}
