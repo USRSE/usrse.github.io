@@ -13,7 +13,7 @@ time:
 ---
 
 The Testing working group is happy to announce a new talk on Software
-Testing on Wednesday February 18, 1-2 PM EDT.
+Testing on Wednesday February 18, 1-2 PM EST.
 
 Title: **Your Requirements Specification as an Executable Test Suite** 
 
