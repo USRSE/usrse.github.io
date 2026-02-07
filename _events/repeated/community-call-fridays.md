@@ -3,7 +3,7 @@ title: Even Months Community Call
 subtitle:
 location: Virtual
 expires: 2026-12-11
-event_date: "alternating 2nd Thursday (12:00-1:00pm ET) and 2nd Friday (2:00-3:00pm ET)"
+event_date: "2nd Friday (2:00-3:00pm ET)"
 layout: event
 category: community-call
 time:
@@ -17,7 +17,7 @@ repeated: true
 rrule:
 # second Friday of every other month
   - DTSTART;TZID=America/New_York:20220610T140000
-  - RRULE:UNTIL=20251211T120000;FREQ=MONTHLY;INTERVAL=2;BYDAY=+2FR
+  - RRULE:UNTIL=20261211T120000;FREQ=MONTHLY;INTERVAL=2;BYDAY=+2FR
   - RDATE;TZID=America/New_York:20220610T140000
 ---
 
