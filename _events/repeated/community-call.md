@@ -18,7 +18,7 @@ rrule:
 # second Thursday of every other month
   - DTSTART;TZID=America/New_York:20220714T120000
   - RDATE;TZID=America/New_York:20220714T120000
-  - RRULE:UNTIL=20251211T120000;FREQ=MONTHLY;INTERVAL=2;BYDAY=+2TH
+  - RRULE:UNTIL=20261211T120000;FREQ=MONTHLY;INTERVAL=2;BYDAY=+2TH
 ---
 
 The US-RSE community calls of each odd month (Jan, Mar, May, Jul, Sep, Nov) take place on the second Thursday of the month, 12:00-1:00pm ET on Zoom. Community call topics, agenda, and zoom registration announcements are posted to Slack and sent to the US-RSE email list.
