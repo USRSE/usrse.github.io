@@ -55,7 +55,7 @@ by the GMWG.
 
 New affinity groups will be:
 
-- Added to the active Affinity Groups list on the US-RSE website
+- Added to the <a href="{{ site.baseurl }}affinity-groups/" target="_blank">active Affinity Groups list</a> on the US-RSE website
 - Supplied a:
   - Slack channel
   - Other offerings as appropriate (e.g., user group, webpage, GitHub repository,
