@@ -61,7 +61,7 @@ New affinity groups will be:
   - Other offerings as appropriate (e.g., user group, webpage, GitHub repository,
     Google Drive folder)
     - NOTE: If you'd like to make a webpage, you are encouraged to use
-      <a href="{{ site.baseurl }}/wg/group-management/ag-template" target="_blank">the template</a>.
+      <a href="{{ site.baseurl }}/wg/group-management/ag-template" target="_blank">the template</a>. Web pages for affinity groups are not required to be part of the US-RSE site, unlike pages for working groups.
 
 
 **Naming Conventions**
