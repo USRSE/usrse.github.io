@@ -72,9 +72,12 @@ as African Americans in tech have been doing for decades.
 
 <div class="alert alert-primary" role="alert">
 "It’s important to have as many voices as possible because inclusion really fuels innovation. If we want to see the best of the best in terms of technology, we need to make sure that voices that have been at the margins are really included."
+
+<br>
 <strong>- Annie Jean-Baptiste, Head of Product Inclusion at Google LLC during a panel at CES 2021</strong>
 
-[Source](https://blogs.oracle.com/cx/12-motivating-quotes-by-black-leaders-in-tech)
+<a href="https://blogs.oracle.com/cx/12-motivating-quotes-by-black-leaders-in-tech">Source</a>
+
 </div>
 
 > Author Tinashe M. Tapera is a Black Zimbabwean who moved to the U.S. in 2013 at age 19,
