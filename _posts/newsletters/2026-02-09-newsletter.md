@@ -92,9 +92,17 @@ as a participant and as an ally 😁
 ### 📣 Mark Your Calendars for USRSE'26! 📣
 We're thrilled to announce that USRSE'26 will be held at the San Jose Marriott from October 19-21, 2026 in San Jose, California!
 
-### 🌟 Call for Volunteers and Committee Members 🌟
+Thank you for the overwhelming response to our recent call for volunteers. We are excited to share that general chairs have been appointed to lead each of the core committees for USRSE’26.
 
-We're looking for enthusiastic volunteers to help organize this exciting event. If you're interested in contributing, please fill out this form. Committee selection will happen this month, so if you're interested in playing a key role in the conference organization, make sure to apply soon! If you're interested in one of the chair roles, please submit your form before January 11, 2026. For more details about the roles and responsibilities, check out our organization page.
+These chairs have begun assembling sub‑teams from the pool of volunteers who expressed interest in supporting the respective areas. If you were not selected for a chair position, please stay tuned, as chairs reach out for volunteers for these committee positions.
+
+**What’s next?**
+
+* **Committee Formation:** Sub‑teams will be formed shortly; be on the lookout for an email from a perspective committee chair with details.
+* **Conference Planning Milestones:** Upcoming milestones—including abstract deadlines, sponsorship outreach, and technical program, will be announced on the official USRSE’26 site over the next few months.
+* **Stay Informed:** Regular updates will be posted at [us-rse.org/usrse26](https://us-rse.org/usrse26). Please bookmark the page and check back frequently for the latest information.
+
+Your continued involvement is essential to the success of USRSE’26. We look forward to collaborating with you to deliver a vibrant, inclusive, and impactful conference.
 
 ### 📧 Join Our Mailing List 📧
 
@@ -128,7 +136,7 @@ Paris, France, Sandra will be online for the events: [https://www.oecd.org/en/ev
 
 - Sandra will be meeting with Senators and Governors in Washington, DC, March 9 — if you'll be in the area, reach out!
 
-- CASC meeting, March 10-12,  [https://casc.org/event/casc-spring-2026-meeting/](https://casc.org/event/casc-spring-2026-meeting/)
+- CASC meeting, March 10-12,  [https://casc.org/event/casc-spring-2026-meeting/](https://casc.org/event/casc-spring-2026-meeting/), Sandra will be there on the 10th
 
 - The NAIRR Annual Meeting will happen on March 10-13, Arlington, VA — Sandra will be available from March 11-13, and giving a talk; see [https://events.internet2.edu/eSites/nairr2026/Welcome](https://events.internet2.edu/eSites/nairr2026/Welcome) for details
 
