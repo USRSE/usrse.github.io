@@ -1,15 +1,15 @@
 ---
 title: Continuous Integration and Continuous Delivery (CI/CD) with GitHub Actions
 subtitle: US-RSE Education & Training Seminar Series
-expires: 2026-02-24
-event_date: "February 24, 2026"
+expires: 2026-03-24
+event_date: "March 24, 2026"
 layout: event
 duration: 120
 repeated: false
 category: education-training
 time:
-    - - start: 2026-02-24T18:00:00Z
-        end: 2026-02-24T20:00:00Z
+    - - start: 2026-03-24T18:00:00Z
+        end: 2026-03-24T20:00:00Z
 ---
 
 ## US-RSE Education & Training Seminar Series
@@ -42,4 +42,4 @@ More information about this event can be found on [the flyer]().
 
 ### Registration
 
-You can [register on Zoom]() for this tutorial.
+You can [register on Zoom](https://mit.zoom.us/meeting/register/CK8SOKkgTS6atgqLi6Kthg#/registration) for this tutorial.
