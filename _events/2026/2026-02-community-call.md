@@ -7,8 +7,8 @@ duration: 60
 repeated: false
 category: community-call
 time:
-    - - start: 2026-02-13T17:00:00Z
-        end: 2026-02-13T18:00:00Z
+    - - start: 2026-02-13T19:00:00Z
+        end: 2026-02-13T20:00:00Z
 ---
 
 
