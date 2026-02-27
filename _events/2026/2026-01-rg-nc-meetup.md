@@ -47,7 +47,7 @@ or by joining the [US-RSE Slack `#rg-north-carolina` channel](https://usrse.slac
   * Tools/techniques/"something new I've learned"
     * How to deliver software to non-technical people
     * How do you provide instructions that are complete but not overly technical
-    * How to handle different kinds of interests
+    * How to handle different kinds of inputs
   * Collaborate with other groups in our area:
     * [Research Triangle Park R User Group](https://www.meetup.com/rtp-r-user-group/)
     * [Triangle Python Group](https://www.meetup.com/tripython/)
