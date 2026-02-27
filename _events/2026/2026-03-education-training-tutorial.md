@@ -38,7 +38,7 @@ Andres is a Research Software Engineer at Princeton University, working with the
 
 ### Note
 
-More information about this event can be found on [the flyer]().
+More information about this event can be found on [the flyer](https://drive.google.com/file/d/1O_-4iAjXb6TJmi7bXPQ9VaN2FTo_s1nS/view?usp=sharing).
 
 ### Registration
 
