@@ -27,7 +27,7 @@ or by joining the [US-RSE Slack `#rg-north-carolina` channel](https://usrse.slac
 (you will need to [join US-RSE]({{site.baseurl}}/join/) first!).
 
 ## Meeting notes
-* Detailed notes are available [on Slack](https://usrse.slack.com/docs/T8ZT4PJSW/F0AA6F82JHY)
+* Detailed notes are available [on Slack](https://usrse.slack.com/docs/T8ZT4PJSW/F0AA6F82JHY).
 * What should we do as a group?
   * Start with casual, social meetings, then work our way up to larger meetings with invited speakers.
   * We could have themed causal meetings -- "Next month we'll meet at X and talk about Y"
