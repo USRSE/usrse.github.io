@@ -13,7 +13,7 @@ time:
      end: 2026-03-24T19:00:00-04:00
 ---
 
-The North Carolina Regional Group will hold a social meeting on Tuesday, March 24, 2026 at 5:00pm ET at [Boxyard RTP](https://boxyard.rtp.org/vendors/).
+The North Carolina Regional Group will hold a social meeting on Tuesday, March 24, 2026 at 5:00pm ET at [Boxyard RTP](https://boxyard.rtp.org/vendors/) in the Research Triangle Park, Durham NC.
 
 <!--more-->
 
