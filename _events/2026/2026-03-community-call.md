@@ -7,8 +7,8 @@ duration: 60
 repeated: false
 category: community-call
 time:
-    - - start: 2026-03-12T17:00:00Z
-        end: 2026-03-12T18:00:00Z
+    - - start: 2026-03-12T16:00:00Z
+        end: 2026-03-12T17:00:00Z
 ---
 
 Our **March Community Call** will be all about **Legacy Code: Horrors and Successes on Thursday, March 12**, 12pm ET/11am CT/10am MT/9am PT.
