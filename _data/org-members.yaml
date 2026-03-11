@@ -108,6 +108,22 @@ standard:
     founding_member: true
     tier: "Standard"
     contact: Dave Bunten <DAVE.BUNTEN@cuanschutz.edu>
+  - name: Open Molecular Software Foundation
+    url: https://omsf.io/
+    figure: logo-omsf.svg
+    acronym: OMSF
+    date_joined: 2025-10-29
+    founding_member: true
+    tier: "Standard"
+    contact: David Swenson <david.swenson@omsf.io>
+  - name: University of Chicago's Data Science Institute
+    url: https://datascience.uchicago.edu/
+    figure: logo-uchicago-dsi.png
+    acronym: UChicago DSI
+    date_joined: 2026-02-24
+    founding_member: true
+    tier: "Standard"
+    contact: Nicholas Ross <nickross@uchicago.edu>
 
 premier:
   - name: "University of Illinois Urbana-Champaign"
