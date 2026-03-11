@@ -3,7 +3,7 @@
 https://us-rse.org
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-98-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-99-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -247,6 +247,9 @@ tool to generate a contributors graphic below.
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/jlcohoon"><img src="https://avatars.githubusercontent.com/u/4965832?v=4?s=100" width="100px;" alt="Hannah Cohoon"/><br /><sub><b>Hannah Cohoon</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jlcohoon" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/manbat"><img src="https://avatars.githubusercontent.com/u/41646490?v=4?s=100" width="100px;" alt="manbat"/><br /><sub><b>manbat</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=manbat" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://jmrfox.github.io/"><img src="https://avatars.githubusercontent.com/u/26258770?v=4?s=100" width="100px;" alt="Jordan M. R. Fox, PhD"/><br /><sub><b>Jordan M. R. Fox, PhD</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jmrfox" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><img src="?s=100" width="100px;" alt="J.C."/><br /><sub><b>J.C.</b></sub><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jsubida" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
