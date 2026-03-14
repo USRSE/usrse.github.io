@@ -1,19 +1,22 @@
 ---
-title: December 2025 Community Call
-expires: 2025-12-12
-event_date: "December 12, 2025"
+title: February 2026 Community Call
+expires: 2026-02-13
+event_date: "February 13, 2026"
 layout: event
 duration: 60
 repeated: false
 category: community-call
 time:
-    - - start: 2025-12-12T17:00:00Z
-        end: 2025-12-12T18:00:00Z
+    - - start: 2026-02-13T19:00:00Z
+        end: 2026-02-13T20:00:00Z
 ---
 
-Our **December Community Call** will be about **how RSEs do hardware, too!** on Friday, December 12, 12pm ET/11am CT/10am MT/9am PT.
 
-In spite of the title Research Software Engineer, a number of us are involved with hardware as well. Have you built, modified, worked with, or integrated hardware into a system for research? Have you built or maintained hardware-adjacent software? Come tell us about it! Are you just curious about how software engineers could ever end up working with circuits and mechanical bits? Join us to see some examples of projects by members of our community and discuss the unique challenges of integrating the physical with the digital.
+
+Our February Community Call will be all about Web and Mobile Apps as Research Software on Friday, February 13, at 2pm ET/1pm CT/12pm MT/11am PT.
+
+When you think of research software, is a web page or mobile app the first thing that comes to mind? Maybe not, but there are many members of our community who do this regularly! Come learn about how these web and mobile apps are contributing to research, the unique challenges involved in developing research code for these platforms, and the tools and techniques that make this possible.
+
 
 The typical structure of a community call starts with an overview of recent US-RSE updates, followed by short presentations. After the presentations we will break out into smaller groups in which we discuss the call topic. Everyone is welcome to join the discussion or just hang back and listen in. If you prefer just to listen in, that is perfectly fine, but we encourage you to share your opinions and thoughts as you feel comfortable. If you want to switch to another group, this is also fine. Just go back to the main room and let the call organizers know.
 
