@@ -1,0 +1,23 @@
+layout: post
+title: "US-RSE March 2026 Newsletter"
+subtitle: "💋 Who Run the Code…? GIRLS! 💋"
+category: newsletter
+tags: [newsletter, March]
+date: 2026-03-12 00:00:00 -0400
+author: "Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden (Editor)"
+image: "/assets/img/newsletter-202603/Hedy-Lamarr-2-Carlson-Caspers-300x187.jpg"
+img_alttext: "Hedy Lamarr in front of her frequency-hopping, spread-spectrum communications patent."
+next_meeting_date: Friday, April 10, 2026, 1:00 PM EST
+sections:
+  preamble: true
+  headline: true
+  conference: true
+  execupdate: false
+  scupdate: false
+  orgmember: true
+  communityfunds: false
+  news: true
+  events: true
+  reads: true
+  involved: true
+  jobs: true

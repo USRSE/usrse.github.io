@@ -1,0 +1,79 @@
+---
+format:
+  gfm:
+    wrap: auto
+    toc: true
+    toc-depth: 2
+    number-sections: true
+---
+
+<a name="top"></a>
+
+:::{.content-visible when-meta="sections.preamble"}
+{{< include _preamble.md >}}
+:::
+
+```{=html}
+<p align="center">
+  <img src="{{ site.baseurl }}{{< meta image >}}" alt="{{< meta img_alttext >}}" style="width: 750px; height: auto;">
+</p>
+```
+
+In this issue:
+
+--------
+
+:::{.content-visible when-meta="sections.headline"}
+{{< include _headline.md >}}
+:::
+
+:::{.content-visible when-meta="sections.conference"}
+{{< include _conference.md >}}
+:::
+
+:::{.content-visible when-meta="sections.execupdate"}
+{{< include _execupdate.md >}}
+:::
+
+:::{.content-visible when-meta="sections.scupdate"}
+{{< include _scupdate.md >}}
+:::
+
+:::{.content-visible when-meta="sections.orgmember"}
+{{< include _orgmember.md >}}
+:::
+
+:::{.content-visible when-meta="sections.communityfunds"}
+{{< include _communityfunds.md >}}
+:::
+
+:::{.content-visible when-meta="sections.news"}
+{{< include _news.md >}}
+
+Our next meeting is scheduled for {{< meta next_meeting_date >}}. We hope to see you there!
+--------
+:::
+
+:::{.content-visible when-meta="sections.events"}
+{{< include _events.md >}}
+:::
+
+:::{.content-visible when-meta="sections.reads"}
+{{< include _reads.md >}}
+:::
+
+:::{.content-visible when-meta="sections.involved"}
+{{< include _involved.md >}}
+:::
+
+:::{.content-visible when-meta="sections.jobs"}
+{{< include _jobs.md >}}
+:::
+
+**This newsletter is a joint effort of members of the US-RSE Association.**
+
+```{=markdown}
+© US-RSE • 2021–{{ 'now' | date: "%Y" }} • US-RSE is a fiscally sponsored project of [Community Initiatives](http://communityin.org/)
+
+[Email](mailto:contact@us-rse.org) [Mastodon](https://fosstodon.org/@us_rse) [Twitter](https://twitter.com/us_rse) [YouTube](https://youtube.com/@us_rse) [LinkedIn](https://linkedin.com/company/us-rse/) [GitHub](https://github.com/USRSE)
+```
