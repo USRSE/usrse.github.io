@@ -114,7 +114,7 @@ women.
 
 ------------------------------------------------------------------------
 
-## 📣 Mark Your Calendars for USRSE'26! 📣
+## 📣 Mark Your Calendars for USRSE’26! 📣
 
 <a name="conference2026"></a>
 
@@ -132,7 +132,7 @@ as chairs reach out for volunteers for these committee positions.
 
 **What’s next?**
 
-- **Call for Proposals:** The Call for Proposal will be announced later
+- **Call for Proposals:** The Call for Proposals will be announced later
   this month. Additional upcoming milestones will be announced on the
   official USRSE’26 site over the next few months.
 - **Committee Formation:** Sub‑teams will be formed shortly; be on the
