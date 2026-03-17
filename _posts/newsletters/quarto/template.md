@@ -12,16 +12,13 @@ Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden
   🤝](#handshake-organizational-founding-membership-handshake)
 - [<span class="toc-section-number">4</span> 🗞️ Community News
   🗞️](#newspaper_roll-community-news-newspaper_roll)
-- [<span class="toc-section-number">5</span> Our next meeting is
-  scheduled for Friday, April 10, 2026, 1:00 PM EST. We hope to see you
-  there!](#our-next-meeting-is-scheduled-for---we-hope-to-see-you-there)
-- [<span class="toc-section-number">6</span> 👀 Interesting Events and
+- [<span class="toc-section-number">5</span> 👀 Interesting Events and
   Opportunities 👀](#eyes-interesting-events-and-opportunities-eyes)
-- [<span class="toc-section-number">7</span> 📚 Featured Reads, Videos,
+- [<span class="toc-section-number">6</span> 📚 Featured Reads, Videos,
   and Podcasts 📚](#books-featured-reads-videos-and-podcasts-books)
-- [<span class="toc-section-number">8</span> 🏃 Get Involved!
+- [<span class="toc-section-number">7</span> 🏃 Get Involved!
   🏃](#running-get-involved-running)
-- [<span class="toc-section-number">9</span> 🧑‍💼 Recent Job Postings
+- [<span class="toc-section-number">8</span> 🧑‍💼 Recent Job Postings
   🧑‍💼](#office_worker-recent-job-postings-office_worker)
 
 <a name="top"></a>
@@ -260,7 +257,10 @@ diffferent edge cases that can come up when handling them.
 </div>
 -->
 
-## Our next meeting is scheduled for Friday, April 10, 2026, 1:00 PM EST. We hope to see you there!
+Our next meeting is scheduled for Friday, April 10, 2026, 1:00 PM EST.
+We hope to see you there!
+
+------------------------------------------------------------------------
 
 ## 👀 Interesting Events and Opportunities 👀
 

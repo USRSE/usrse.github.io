@@ -51,6 +51,7 @@ In this issue:
 {{< include _news.md >}}
 
 Our next meeting is scheduled for {{< meta next_meeting_date >}}. We hope to see you there!
+
 --------
 :::
 
