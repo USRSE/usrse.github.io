@@ -22,7 +22,7 @@ sections:
   reads: true
   involved: true
   jobs: true
-  ---
+---
 
 <a name="top"></a>
 
