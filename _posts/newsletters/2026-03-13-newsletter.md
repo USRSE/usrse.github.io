@@ -22,7 +22,7 @@ sections:
   reads: true
   involved: true
   jobs: true
----
+  ---
 
 <a name="top"></a>
 
@@ -38,7 +38,6 @@ advance the field of research software engineering together.
 </p>
 
 In this issue:
-
 
 - [<span class="toc-section-number">1</span> 🔔 Celebrating Women in
   RSE! 🔔](#bell-celebrating-women-in-rse-bell)
@@ -121,14 +120,14 @@ women.
 Save the date for USRSE’26: Advancing Science in the Age of AI
 
 We’re thrilled to announce that USRSE’26 will be held at the San Jose
-Marriott from October 19-21, 2026 in San Jose, California, with the 
-theme "Advancing Science in the Age of AI".
+Marriott from October 19-21, 2026 in San Jose, California, with the
+theme “Advancing Science in the Age of AI”.
 
-General chairs have been appointed to lead each of the core committees 
-for USRSE’26. These chairs have begun assembling sub‑teams from the 
-pool of volunteers who expressed interest in supporting the respective 
-areas. If you were not selected for a chair position, please stay tuned,
-as chairs reach out for volunteers for these committee positions.
+General chairs have been appointed to lead each of the core committees
+for USRSE’26. These chairs have begun assembling sub‑teams from the pool
+of volunteers who expressed interest in supporting the respective areas.
+If you were not selected for a chair position, please stay tuned, as
+chairs reach out for volunteers for these committee positions.
 
 **What’s next?**
 
