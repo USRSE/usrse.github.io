@@ -114,29 +114,29 @@ women.
 
 ------------------------------------------------------------------------
 
-## 📣 Mark Your Calendars for USRSE’26! 📣
+## 📣 Mark Your Calendars for USRSE'26! 📣
 
 <a name="conference2026"></a>
 
+Save the date for USRSE’26: Advancing Science in the Age of AI
+
 We’re thrilled to announce that USRSE’26 will be held at the San Jose
-Marriott from October 19-21, 2026 in San Jose, California!
+Marriott from October 19-21, 2026 in San Jose, California, with the 
+theme "Advancing Science in the Age of AI".
 
-Thank you for the overwhelming response to our recent call for
-volunteers. We are excited to share that general chairs have been
-appointed to lead each of the core committees for USRSE’26.
-
-These chairs have begun assembling sub‑teams from the pool of volunteers
-who expressed interest in supporting the respective areas. If you were
-not selected for a chair position, please stay tuned, as chairs reach
-out for volunteers for these committee positions.
+General chairs have been appointed to lead each of the core committees 
+for USRSE’26. These chairs have begun assembling sub‑teams from the 
+pool of volunteers who expressed interest in supporting the respective 
+areas. If you were not selected for a chair position, please stay tuned,
+as chairs reach out for volunteers for these committee positions.
 
 **What’s next?**
 
+- **Call for Proposals:** The Call for Proposal will be announced later
+  this month. Additional upcoming milestones will be announced on the
+  official USRSE’26 site over the next few months.
 - **Committee Formation:** Sub‑teams will be formed shortly; be on the
   lookout for an email from a perspective committee chair with details.
-- **Conference Planning Milestones:** Upcoming milestones—including
-  abstract deadlines, sponsorship outreach, and technical program, will
-  be announced on the official USRSE’26 site over the next few months.
 - **Stay Informed:** Regular updates will be posted at
   [us-rse.org/usrse26](https://us-rse.org/usrse26). Please bookmark the
   page and check back frequently for the latest information.
