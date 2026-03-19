@@ -1,0 +1,16 @@
+{% assign ref = include.ref %}
+
+{% capture authors -%}
+{%- if ref.author -%}
+  {%- for a in ref.author -%}
+    {%- if forloop.index <= 3 -%}
+      {{ a.family }}, {{ a.given | slice: 0 }}.{% if forloop.index < 3 and forloop.index < ref.author.size %}, {% endif %}
+    {%- elsif forloop.index == 4 -%}
+      et al.
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- endcapture %}
+
+- **{{ authors }}**{% if ref.issued %} ({{ ref.issued | date: "%Y" }}){% endif %}.  _{{ ref.title }}_, {% if ref.container-title %}*{{ ref.container-title }}*{% endif %}{% if ref.volume %} {{ ref.volume }}{% endif %}{% if ref.issue %}({{ ref.issue }}){% endif %}. {% if ref.url %}[Listen here🔊.]( {{ ref.url }} ){% endif %}

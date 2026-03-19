@@ -1,0 +1,355 @@
+---
+nocite: "[@*]"
+references:
+- abstract: Scientists, research institutions, funders, libraries and
+    publishers must all improve software practices.
+  accessed: 2025-11-07
+  annote: |
+    Bandiera_abtest: a\
+    Cg_type: Comment\
+    Subject_term: Computer science, Software, Scientific community,
+    Research management\
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.784Z
+  author:
+  - family: Di Cosmo
+    given: Roberto
+  - family: Granger
+    given: Sabrina
+  - family: Hinsen
+    given: Konrad
+  - family: Jullien
+    given: Nicolas
+  - family: Le Berre
+    given: Daniel
+  - family: Louvet
+    given: Violaine
+  - family: Maumet
+    given: Camille
+  - family: Maurice
+    given: Clémentine
+  - family: Monat
+    given: Raphaël
+  - family: Rougier
+    given: Nicolas P.
+  container-title: Nature
+  doi: 10.1038/d41586-025-03196-0
+  id: dicosmoStopTreatingCode2025
+  issn: 1476-4687
+  issue: 8084
+  issued: 2025-10
+  keyword: Computer science,Research management,Scientific
+    community,Software
+  language: en-US
+  page: 284-286
+  publisher: Nature Publishing Group
+  title: "Stop treating code like an afterthought: Record, share and
+    value it"
+  title-short: Stop treating code like an afterthought
+  type: article-journal
+  url: "https://www.nature.com/articles/d41586-025-03196-0"
+  volume: 646
+- abstract: CCC is hosting a two-day visioning workshop to explore how
+    humans and machines may team up to solve some of the most pressing
+    scientific problems through citizen science, crowdsourcing, and
+    community-engaged science.
+  accessed: 2026-03-13
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-03-16T01:28:24.888Z
+  author:
+  - family: Forston
+    given: Lucy
+  - family: Shanley
+    given: Lea
+  - family: Berger-Wolf
+    given: Tanya
+  - family: Crowston
+    given: Kevin
+  - family: Jackson
+    given: Corey
+  - family: Savage
+    given: Saiph
+  - family: Griffin
+    given: Haley
+  id: forstonGrandChallengesConvergence2026
+  issued: 2026
+  language: en-US
+  status: pre-published
+  title: Grand Challenges for the Convergence of Computational and
+    Citizen Science Research - CCC
+  type: webpage
+  url: "https://cra.org/ccc/events/grand-challenges-for-the-convergence-of-computational-and-citizen-science-research/"
+- abstract: Helpful questions and guide for finding the right resources
+    for your large-scale data or advanced computing project.
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.785Z
+  author:
+  - family: Gesing
+    given: Sandra
+  - family: Stone
+    given: Sarah
+  - family: Washington
+    given: Talitha
+  id: gesingFindingComputingData2025
+  issued: 2025-11-03
+  language: en-US
+  publisher: Academic Data Science Alliance
+  title: Finding Computing and Data Infrastructure to Get Started in
+    Data-Intensive Research
+  type: webpage
+  url: "https://academicdatascience.org/resources/community-blog/get-started-in-data-intensive-research/"
+- abstract: Digital computers store information in the form of bits that
+    can take on one of two values 0 and 1, while quantum computers are
+    based on qubits that are described by a complex wavefunction, whose
+    squared magnitude gives the probability of measuring either 0 or 1.
+    Here, we make the case for a probabilistic computer based on p-bits,
+    which take on values 0 and 1 with controlled probabilities and can
+    be implemented with specialized compact energy-efficient hardware.
+    We propose a generic architecture for such p-computers and emulate
+    systems with thousands of p-bits to show that they can significantly
+    accelerate randomized algorithms used in a wide variety of
+    applications including but not limited to Bayesian networks,
+    optimization, Ising models, and quantum Monte Carlo.
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  author:
+  - family: Kaiser
+    given: Jan
+  - family: Datta
+    given: Supriyo
+  container-title: Applied Physics Letters
+  doi: 10.1063/5.0067927
+  id: kaiserProbabilisticComputingPbits2021
+  issn: 0003-6951, 1077-3118
+  issue: 15
+  issued: 2021-10-11
+  keyword: Computer Science - Emerging Technologies,Condensed Matter -
+    Disordered Systems and Neural Networks,Quantum Physics
+  page: 150503
+  title: Probabilistic computing with p-bits
+  type: article-journal
+  url: "http://arxiv.org/abs/2108.09836"
+  volume: 119
+- abstract: There has been a resurgence of interest in optical computing
+    over the past decade, both in academia and in industry, with much of
+    the excitement centered around special-purpose optical computers for
+    neural-network processing. Optical computing has been a topic of
+    periodic study for over 50 years, including for neural networks
+    three decades ago, and a wide variety of optical-computing schemes
+    and architectures have been proposed. In this paper we provide a
+    systematic explanation of why and how optics might be able to give
+    speed or energy-efficiency benefits over electronics for computing,
+    enumerating 11 features of optics that can be harnessed when
+    designing an optical computer. One often-mentioned motivation for
+    optical computing -- that the speed of light \$c\$ is fast -- is not
+    a key differentiating physical property of optics for computing;
+    understanding where an advantage could come from is more subtle. We
+    discuss how gaining an advantage over state-of-the-art electronic
+    processors will likely only be achievable by careful design that
+    harnesses more than one of the 11 features, while avoiding a number
+    of pitfalls that we describe.
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  author:
+  - family: McMahon
+    given: Peter L.
+  container-title: Nature Reviews Physics
+  container-title-short: Nat Rev Phys
+  doi: 10.1038/s42254-023-00645-5
+  id: mcmahonPhysicsOpticalComputing2023
+  issn: 2522-5820
+  issue: 12
+  issued: 2023-10-09
+  keyword: Computer Science - Emerging Technologies,Computer Science -
+    Neural and Evolutionary Computing,Physics - Applied
+    Physics,Physics - Optics,Quantum Physics
+  page: 717-734
+  title: The physics of optical computing
+  type: article-journal
+  url: "http://arxiv.org/abs/2308.00088"
+  volume: 5
+- abstract: Lost for more than half a century, the rare Chinese
+    typewriter whose name means "clear and fast" was discovered in a New
+    York basement and entrusted to Stanford Libraries.
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.785Z
+  id: MingKwaiPrototypeOrigin
+  language: en-US
+  title: MingKwai prototype, the 'origin of Chinese computing,' finds a
+    home at Stanford
+  type: webpage
+  url: "https://news.stanford.edu/stories/2025/05/mingkwai-chinese-typewriter-prototype-stanford-libraries"
+- abstract: Calls to recognize research software engineers are not new
+    --- but such professionals are needed now more than ever.
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  container-title: Nature Reviews Physics
+  container-title-short: Nat Rev Phys
+  doi: 10.1038/s42254-025-00852-2
+  id: PhysicsNeedsResearch2025
+  issn: 2522-5820
+  issue: 7
+  issued: 2025-07
+  keyword: Computational science
+  language: en-US
+  page: 349-349
+  publisher: Nature Publishing Group
+  title: Physics needs research software engineers
+  type: article-journal
+  url: "https://www.nature.com/articles/s42254-025-00852-2"
+  volume: 7
+- abstract: Artificial intelligence is transforming industries and
+    society, but its high energy demands challenge global sustainability
+    goals. Biological intelligence, in contrast, offers both good
+    performance and exceptional energy efficiency. Neuromorphic
+    computing, a growing field inspired by the structure and function of
+    the brain, aims to create energy-efficient algorithms and hardware
+    by integrating insights from biology, physics, computer science, and
+    electrical engineering. This concise and accessible book delves into
+    the principles, mechanisms, and properties of neuromorphic systems.
+    It opens with a primer on biological intelligence, describing
+    learning mechanisms in both simple and complex organisms, then turns
+    to the application of these principles and mechanisms in the
+    development of artificial synapses and neurons, circuits, and
+    architectures. The text also delves into neuromorphic algorithm
+    design, and the unique challenges faced by algorithmic researchers
+    working in this area. The book concludes with a selection of
+    practice problems, with solutions available to instructors online.
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  author:
+  - family: Ramanathan
+    given: Shriram
+  - family: Sengupta
+    given: Abhronil
+  id: ramanathanIntroductionNeuromorphicComputing2025
+  isbn: 978-1-009-56434-2
+  issued: 2025
+  publisher: Cambridge University Press
+  publisher-place: Cambridge
+  title: Introduction to Neuromorphic Computing
+  type: book
+  url: "https://www.cambridge.org/core/books/introduction-to-neuromorphic-computing/853942021D89F82AED182F9021E7E0F5"
+- abstract: Beginning in the 1970s, statistician-cum-logician Per
+    Martin-L\\\"of wrote a series of papers developing what became
+    Martin-L\\\"of type theory, realizing a system where the distinction
+    between mathematics and programming disappears. Inspired by this
+    vision, this paper introduces dependent type theory (of which
+    Martin-L\\\"of type theory is an example) to a statistical audience.
+    Examples from statistics and probability theory demonstrate how
+    dependent type theory and an algebraic perspective can unify the
+    theoretical and computational concerns of statistics, ensuring
+    rigorous, machine-checked proofs and executable software.
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.785Z
+  author:
+  - family: Saul
+    given: Bradley
+  doi: 10.48550/arXiv.2510.09853
+  id: saulGreatExpectationsUnifying2025
+  issued: 2025-10-10
+  keyword: Statistics - Computation
+  status: pre-published
+  title: "Great expectations: Unifying Statistical Theory and
+    Programming"
+  title-short: Great expectations
+  type: webpage
+  url: "http://arxiv.org/abs/2510.09853"
+- abstract: "English Edition (ByteSized): In this first episode of the
+    new ByteSized dRTP season, sponsored by the STEP-UP programme from
+    the EPSRC (UK) you'll meet Richard Acton. Richard created a tool to
+    help you keep track of all the steps you should take t\\..."
+  accessed: 2026-03-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-03-16T01:28:24.888Z
+  author:
+  - family: Schmidt
+    given: Peter
+  id: schmidtByteSizedHowGet2026
+  issued: 2026-03-03
+  language: en-US
+  title: "\\[EN\\] ByteSized: How to get your (digital) ducks in a row -
+    with Richard Acton - Code for Thought"
+  title-short: \[EN\] ByteSized
+  type: song
+  url: "https://www.buzzsprout.com/1326658/episodes/18674534-en-bytesized-how-to-get-your-digital-ducks-in-a-row-with-richard-acton"
+- abstract: "English Edition:&nbsp;Meet Thomas White from DESY (German
+    Electron Synchrotron) who is the creator and maintainer of the tool
+    CrystFEL. The tool to help understand and analyse the structure of
+    materials such as crystals and proteins. Thomas and I \\..."
+  accessed: 2026-03-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-03-16T01:28:24.887Z
+  author:
+  - family: Schmidt
+    given: Peter
+  id: schmidtRevealingStructureCrystals2026
+  issued: 2026-03-10
+  language: en-US
+  title: \[EN\] Revealing the structure of crystals and proteins with
+    CrystFEL - Thomas White - Code for Thought
+  type: song
+  url: "https://www.buzzsprout.com/1326658/episodes/18674558-en-revealing-the-structure-of-crystals-and-proteins-with-crystfel-thomas-white"
+- accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.785Z
+  id: SilentScientistWhen2025
+  issued: 2025-10-10
+  language: en-US
+  title: "The Silent Scientist: When Software Research Fails to Reach
+    Its Audience -- Communications of the ACM"
+  title-short: The Silent Scientist
+  type: webpage
+  url: "https://cacm.acm.org/opinion/the-silent-scientist-when-software-research-fails-to-reach-its-audience/"
+- abstract: Scientific advancement depends on a strong foundation of
+    data credibility. However, scientific findings in biomedical
+    research are not always reproducible. Meet the organizations that
+    are promoting best practices and helping researchers perform the
+    highest-quality science.
+  accessed: 2025-11-07
+  annote: |
+    Bandiera_abtest: a\
+    Cg_type: Advertisement Feature\
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  id: SixFactorsAffecting
+  language: en-US
+  title: Six factors affecting reproducibility in life science research
+    and how to handle them
+  type: article-journal
+  url: "https://www.nature.com/articles/d42473-019-00004-y"
+- abstract: Read the latest article version by Daniel S. Katz, Eric A.
+    Jensen, Michelle Barker at Open Research Europe
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  doi: 10.12688/openreseurope.20210.1
+  id: UnderstandingAdvancingResearch2025
+  issued: 2025-07-25
+  language: en-US
+  publisher: Open Research Europe \| Open Access Publishing Platform
+  title: Understanding and advancing research software grant funding
+    models
+  type: webpage
+  url: "https://open-research-europe.ec.europa.eu/articles/5-199/v1"
+---
+

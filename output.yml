@@ -1,0 +1,35 @@
+---
+nocite: "[@*]"
+references:
+- abstract: CCC is hosting a two-day visioning workshop to explore how
+    humans and machines may team up to solve some of the most pressing
+    scientific problems through citizen science, crowdsourcing, and
+    community-engaged science.
+  accessed: 2026-03-13
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-03-13T19:09:25.151Z
+  author:
+  - family: Forston
+    given: Lucy
+  - family: Shanley
+    given: Lea
+  - family: Berger-Wolf
+    given: Tanya
+  - family: Crowston
+    given: Kevin
+  - family: Jackson
+    given: Corey
+  - family: Savage
+    given: Saiph
+  - family: Griffin
+    given: Haley
+  id: forstonGrandChallengesConvergence2026
+  issued: 2026
+  language: en-US
+  title: Grand Challenges for the Convergence of Computational and
+    Citizen Science Research - CCC
+  type: report
+  url: "https://cra.org/ccc/events/grand-challenges-for-the-convergence-of-computational-and-citizen-science-research/"
+---
+
