@@ -245,7 +245,7 @@ Code: Horrors and Successes**!
 We heard stories from Keith, James, Brad, and more about some of the
 projects they’ve inherited and how they dealt with codebases with
 developers in absentia, cryptic comments and functions, and the
-diffferent edge cases that can come up when handling them.
+different edge cases that can come up when handling them.
 
 <!-- Add a link to the recording of the call if available 
 **TBD last call**
