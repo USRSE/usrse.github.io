@@ -1059,6 +1059,17 @@
             "avatar_url": [
                 "https://avatars.githubusercontent.com/u/26258770?v=4"
             ]
+        },
+        {
+            "login": "jsubida",
+            "name": "J.C.",
+            "contributions": [
+                "code"
+            ],
+            "profile": null,
+            "avatar_url": [
+                null
+            ]
         }
     ],
     "contributorsPerLine": 7

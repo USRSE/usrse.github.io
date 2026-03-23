@@ -53,6 +53,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - quarto
 
 livereload: true
 

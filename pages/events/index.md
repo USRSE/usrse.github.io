@@ -21,20 +21,18 @@ permalink: /events/
   <div class="card-header" style="background-color: {{ color }};">
       <div class="col-sm-8">
         <h5 style="margin: 0px -15px; color: rgb(255, 255, 255)">
-          <!-- USRSE'26: Conference Motto -->
-          USRSE'26
+          USRSE'26: Advancing Science in the Age of AI
         </h5>
       </div>
       <div class="col-xs-4 float-right">
         <h6 style="text-align: right; color: rgb(168, 168, 168)">
-          <!-- October 20-22, 2026 -->
-          October 2026
+          October 19-21, 2026
         </h6>
       </div>
   </div>
   <div class="card-body">
     <p class="card-text">
-      Join several hundred of your RSE colleagues and RSE allies at our 4th annual conference to be held in the SF Bay Area.<br><br>
+      Join several hundred of your RSE colleagues and RSE allies at our 4th annual conference to be held at the San Jose Marriott in San Jose, CA.<br><br>
         <a href="{{ site.baseurl }}/usrse26/">Learn more about the conference</a>.
     </p>
 

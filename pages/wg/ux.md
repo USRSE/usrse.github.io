@@ -34,7 +34,7 @@ visit the [`#wg-ux`](https://usrse.slack.com/messages/wg-ux) channel on
 the US-RSE slack or contact the co-chairs at
 <a href="mailto:wg-ux@us-rse.org">wg-ux@us-rse.org</a>.
 
-**Co-Chairs**: Drew Paine, Hannah Cohoon
+**Co-Chairs**: Hannah Cohoon, Mary Goldman
 
 # Work Products
 
