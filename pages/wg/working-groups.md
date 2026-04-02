@@ -156,6 +156,24 @@ more details.
 
 <hr>
 
+<h3><a href="{{ site.baseurl }}/wg/rse-gln/">RSE Group Leaders' Network</a></h3>
+
+The RSE Group Leaders' Network (RSE-GLN) is a group of individuals leading RSE teams
+who meet to support their peers with the challenges of leading RSE groups.
+
+The primary membership is for those who currently lead a team and have, or are
+actively in the process of hiring, at least one direct report; additional members
+may be invited, such as those who have been in leadership positions in the past.
+This is to ensure that members have a network of peers in similar situations who are
+facing similar challenges.
+
+To get involved, visit the
+[`#rse-gln`](https://usrse.slack.com/messages/rse-gln) channel on the US-RSE Slack.
+
+Visit the [RSE Group Leaders' Network page]({{ site.baseurl }}/wg/rse-gln/) for more details.
+
+<hr>
+
 <h3><a href="{{ site.baseurl }}/wg/testing/">Testing</a></h3>
 
 The Testing Working Group aims to bring together RSEs, researchers, and practitioners
