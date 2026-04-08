@@ -2,8 +2,8 @@
 layout: page
 title: RSE Group Leaders' Network
 subtitle:
-menubar:
-permalink: /ag/rse-gln/
+menubar: working-groups
+permalink: /wg/rse-gln/
 set_last_modified: true
 ---
 
