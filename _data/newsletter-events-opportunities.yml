@@ -63,18 +63,6 @@
     Register for the Summit [here](https://rdapassociation.org/event-6558393).
     If you have any questions or concerns during registration, please contact us at [summit@rdapassociation.org](mailto:summit@rdapassociation.org).
 
-- expires: 2026-03-18
-  type: event
-  title: "HPC Best Practices Webinar: One Good Tutorial: Defining a “Minimum Viable Documentation Product” for Scientific Software"
-  when: March 18 1:00pm - 2:00pm EDT
-  where: Online
-  preamble: |
-    Many of us aspire to provide high-quality documentation alongside our scientific software. However, we rarely have much time to write it, and it is easy to get stuck staring at the proverbial “blank page” when we finally sit down to begin.
-    In this talk, I present recommendations based on the concept of a “minimum viable documentation product”: what is the least amount of documentation you need to prepare while still serving your users well? These recommendations are collected in a new resource called [One Good Tutorial](https://onegoodtutorial.org/), whose name captures the central idea. You need to provide one good tutorial that shows people how—and why—to use your code. You should provide more than that, but not much more. One Good Tutorial outlines a checklist of nine essential elements that your documentation should almost certainly include. The resource also offers a “playbook” with a suggested workflow for creating a new, checklist-compliant documentation set, along with supporting in-depth guides. I also discuss the design and implementation of the resource itself.
-    This work was supported by a 2025 Better Scientific Software Fellowship.
-  links: |
-    Register [here](https://www.zoomgov.com/meeting/register/wjQvbQjnQRiNqG9p6McZJw)
-
 - expires: 2026-04-15
   type: event
   title: "Sixth Chameleon User Meeting"
