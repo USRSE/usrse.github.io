@@ -1,6 +1,158 @@
 ---
 nocite: "[@*]"
 references:
+- accessed: 2026-04-08
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-09T23:30:32.242Z
+  author:
+  - family: Besser
+    given: Stephanie
+  - family: Jensen
+    given: Eric
+  - family: Katz
+    given: Daniel
+  id: besserHowGenerativeAI
+  title: How generative AI is shaping research \... \| Open Research
+    Europe
+  type: webpage
+  url: "https://open-research-europe.ec.europa.eu/articles/6-56/v1"
+- abstract: A group of well-known open source programmers and a VC have
+    launched the Open Source Endowment. They hope this new method will
+    provide funding for good.
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-09T23:30:32.243Z
+  author:
+  - family: Bort
+    given: Julie
+  id: bortVCBignameProgrammers2026
+  issued: 2026-02-26
+  language: en-US
+  publisher: TechCrunch
+  title: A VC and some big-name programmers are trying to solve open
+    source's funding problem, permanently
+  type: webpage
+  url: "https://techcrunch.com/2026/02/26/a-vc-and-some-big-name-programmers-are-trying-to-solve-open-sources-funding-problem-permanently/"
+- abstract: "Presentations by Olivia Newton (University of Montana) and
+    Andrew Schmeder (LBNL) on March 3 in the Consortium for the
+    Advancement of Scientific Software (CASS; https://cass.community/)
+    User/Developer Experience working group. The speakers discuss
+    research software engineers, how they work in teams with AI tools,
+    and what performance they can expect from AI t"
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-09T23:30:32.242Z
+  id: casscommunityAITeamworkTooling2026
+  issued: 2026-03-04
+  title: AI teamwork and tooling for research software engineers
+  type: motion_picture
+  url: "https://www.youtube.com/watch?v=Xq93CVDCuds"
+- abstract: Data-analysis and modelling positions are already becoming
+    obsolete, but hands-on experimentalists can breathe easy for now.
+  accessed: 2026-04-08
+  annote: |
+    Bandiera_abtest: a\
+    Cg_type: News\
+    Subject_term: Machine learning, Careers\
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-09T01:03:26.826Z
+  author:
+  - family: Chen
+    given: Edward
+  container-title: Nature
+  doi: 10.1038/d41586-026-00444-9
+  id: chenAIThreateningScience2026
+  issn: 1476-4687
+  issue: 8104
+  issued: 2026-02-20
+  keyword: Careers,Machine learning
+  language: en-US
+  page: 19-20
+  publisher: Nature Publishing Group
+  title: AI is threatening science jobs. Which ones are most at risk?
+  type: article-journal
+  url: "https://www.nature.com/articles/d41586-026-00444-9"
+  volume: 651
+- abstract: The integration of AI into scientific work holds significant
+    potential to accelerate innovation. We surveyed researchers in two
+    leading German research organizations to examine AI adoption,
+    barriers, and perceived impact on research. Researchers are widely
+    using AI tools -- often for primary and creative tasks -- and many
+    expect the technology to be transformative for research. Effective
+    use appears linked to both hands-on experience and engagement with
+    learning resources. A persistent gender gap in AI use is closely
+    associated with differences in familiarity, suggesting a potential
+    focus for organizational efforts. Legal uncertainty and privacy
+    concerns also emerge as major barriers, with researchers calling for
+    clear, high-level regulatory guidance. Overall, our findings suggest
+    directions where institutional actions might be explored to promote
+    more equitable and effective AI adoption.
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-09T01:03:26.826Z
+  author:
+  - family: Chugunova
+    given: Marina
+  - family: Harhoff
+    given: Dietmar
+  - family: Hölzle
+    given: Katharina
+  - family: Kaschub
+    given: Verena
+  - family: Malagimani
+    given: Sonal
+  - family: Morgalla
+    given: Ulrike
+  - family: Rose
+    given: Robert
+  container-title: Research Policy
+  container-title-short: Research Policy
+  doi: 10.1016/j.respol.2025.105381
+  id: chugunovaWhoUsesAI2026
+  issn: 0048-7333
+  issue: 2
+  issued: 2026-03-01
+  keyword: AI,Innovation,Research,Survey evidence,Technology adoption
+  page: 105381
+  title: Who uses AI in research, and for what? [Large-scale]{.nocase}
+    survey evidence from Germany
+  title-short: Who uses AI in research, and for what?
+  type: article-journal
+  url: "https://www.sciencedirect.com/science/article/pii/S0048733325002100"
+  volume: 55
+- abstract: "interview: Codestrap founders say we need to dial down the
+    hype and sort through the mess"
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-09T23:30:32.242Z
+  author:
+  - family: Claburn
+    given: Thomas
+  id: claburnAIStillDoesnt
+  language: en-US
+  title: AI still doesn't work very well in business, reckoning soon
+  type: webpage
+  url: "https://www.theregister.com/2026/03/17/ai_businesses_faking_it_reckoning_coming_codestrap/"
+- abstract: ": As of April 24 you'll be feeding the Octocat unless you
+    opt out"
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-09T23:30:32.242Z
+  author:
+  - family: Claburn
+    given: Thomas
+  id: claburnGitHubWeGoing
+  language: en-US
+  title: "GitHub: We going to train on your data after all"
+  title-short: GitHub
+  type: webpage
+  url: "https://www.theregister.com/2026/03/26/github_ai_training_policy_changes/"
 - abstract: Scientists, research institutions, funders, libraries and
     publishers must all improve software practices.
   accessed: 2025-11-07
@@ -49,14 +201,56 @@ references:
   type: article-journal
   url: "https://www.nature.com/articles/d41586-025-03196-0"
   volume: 646
+- abstract: Research software (also called scientific software) is
+    essential for advancing scientific endeavours. Research software
+    encapsulates complex algorithms and domain-specific knowledge and is
+    a fundamental component of all science. A pervasive challenge in
+    developing research software is technical debt, which can adversely
+    affect reliability, maintainability, and scientific validity.
+    Research software often relies on the initiative of the scientific
+    community for maintenance, requiring diverse expertise in both
+    scientific and software engineering domains. The extent and nature
+    of technical debt in research software are little studied, in
+    particular, what forms it takes, and what the science teams
+    developing this software think about their technical debt. In this
+    paper we describe our multi-method study examining technical debt in
+    research software. We begin by examining instances of self-reported
+    technical debt in research code, examining 28k code comments across
+    nine research software projects. Then, building on our findings, we
+    interview research software engineers and scientists about how this
+    technical debt manifests itself in their experience, and what costs
+    it has for research software and research outputs more generally. We
+    identify nine types of self-admitted technical debt unique to
+    research software, and four themes impacting this technical debt.
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-09T01:03:26.827Z
+  author:
+  - family: Ernst
+    given: Neil A.
+  - family: Awon
+    given: Ahmed Musa
+  - family: Hingmire
+    given: Swapnil
+  - family: Li
+    given: Ze Shi
+  doi: 10.48550/arXiv.2603.20415
+  id: ernstNatureTechnicalDebt2026
+  issued: 2026-03-20
+  keyword: Computer Science - Software Engineering
+  status: pre-published
+  title: The Nature of Technical Debt in Research Software
+  type: webpage
+  url: "http://arxiv.org/abs/2603.20415"
 - abstract: CCC is hosting a two-day visioning workshop to explore how
     humans and machines may team up to solve some of the most pressing
     scientific problems through citizen science, crowdsourcing, and
     community-engaged science.
   accessed: 2026-03-13
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-03-16T01:28:24.888Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-04-13T15:23:11.431Z
   author:
   - family: Forston
     given: Lucy
@@ -188,6 +382,33 @@ references:
     home at Stanford
   type: webpage
   url: "https://news.stanford.edu/stories/2025/05/mingkwai-chinese-typewriter-prototype-stanford-libraries"
+- abstract: A practice for finding peace in your dependency tree.
+  accessed: 2026-04-13
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-13T15:22:56.592Z
+  author:
+  - family: Nesbitt
+    given: Andrew
+  id: nesbittGuidedMeditationDevelopers2026
+  issued: 2026-03-15
+  title: Guided Meditation for Developers
+  type: webpage
+  url: "https://nesbitt.io/2026/03/15/guided-meditation-for-developers.html"
+- abstract: Accelerates Codex growth to power the next generation of
+    Python developer tools
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-09T23:30:32.241Z
+  author:
+  - family: OpenAI
+  id: openaiOpenAIAcquireAstral2026
+  issued: 2026-04-08
+  language: en-US
+  title: OpenAI to acquire Astral
+  type: webpage
+  url: "https://openai.com/index/openai-to-acquire-astral/"
 - abstract: Calls to recognize research software engineers are not new
     --- but such professionals are needed now more than ever.
   accessed: 2025-11-07
@@ -243,6 +464,55 @@ references:
   title: Introduction to Neuromorphic Computing
   type: book
   url: "https://www.cambridge.org/core/books/introduction-to-neuromorphic-computing/853942021D89F82AED182F9021E7E0F5"
+- abstract: Slide set of the accepted rapid access micro talks at USRSE
+    25.
+  accessed: 2026-04-09
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-04-09T23:30:44.373Z
+  author:
+  - family: Ruchti
+    given: Carol
+  - family: Ogundipe
+    given: Michael
+  - family: Ward
+    given: Brian
+  - family: Hillegas
+    given: Curt
+  - family: Mizrachi
+    given: Eli
+  - family: Brownell
+    given: Dave
+  - family: Tapera
+    given: Tinashe Michael
+  - family: Soules
+    given: Jeff
+  - family: Lackie
+    given: Paula
+  - family: Ruchti
+    given: Carol
+  - family: Ogundipe
+    given: Michael
+  - family: Ward
+    given: Brian
+  - family: Hillegas
+    given: Curt
+  - family: Mizrachi
+    given: Eli
+  - family: Brownell
+    given: Dave
+  - family: Tapera
+    given: Tinashe Michael
+  - family: Soules
+    given: Jeff
+  - family: Lackie
+    given: Paula
+  doi: 10.5281/zenodo.17297728
+  id: ruchtiUSRSE25Rapid2025
+  issued: 2025-10-08
+  title: USRSE 25 rapid access micro talks
+  type: manuscript
+  url: "https://zenodo.org/records/17297728"
 - abstract: Beginning in the 1970s, statistician-cum-logician Per
     Martin-L\\\"of wrote a series of papers developing what became
     Martin-L\\\"of type theory, realizing a system where the distinction
@@ -270,14 +540,46 @@ references:
   title-short: Great expectations
   type: webpage
   url: "http://arxiv.org/abs/2510.09853"
+- abstract: "English Edition: how are real numbers e.g. 0.1 represented
+    on computers? What can go wrong with using their representation in
+    calculations? And does it matter? These and other questions are the
+    subject of this ByteSized episode with my guests Prof\\..."
+  accessed: 2026-04-13
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-13T15:25:58.924Z
+  id: schmidtByteSizedFunFloating2026
+  issued: 2026-03-31
+  language: en-US
+  title: "\\[EN\\] ByteSized: Fun with floating points - U Ruede, A Herten
+    and E di Napoli - Code for Thought"
+  title-short: \[EN\] ByteSized
+  type: motion_picture
+  url: "https://www.buzzsprout.com/1326658/episodes/18841644-en-bytesized-fun-with-floating-points-u-ruede-a-herten-and-e-di-napoli"
+- abstract: "English Edition: how are real numbers e.g. 0.1 represented
+    on computers? What can go wrong with using their representation in
+    calculations? And does it matter? These and other questions are the
+    subject of this ByteSized episode with my guests Prof\\..."
+  accessed: 2026-04-13
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-13T15:25:58.925Z
+  id: schmidtByteSizedFunFloating2026a
+  issued: 2026-03-31
+  language: en-US
+  title: "\\[EN\\] ByteSized: Fun with floating points - U Ruede, A Herten
+    and E di Napoli - Code for Thought"
+  title-short: \[EN\] ByteSized
+  type: motion_picture
+  url: "https://www.buzzsprout.com/1326658/episodes/18841644-en-bytesized-fun-with-floating-points-u-ruede-a-herten-and-e-di-napoli"
 - abstract: "English Edition (ByteSized): In this first episode of the
     new ByteSized dRTP season, sponsored by the STEP-UP programme from
     the EPSRC (UK) you'll meet Richard Acton. Richard created a tool to
     help you keep track of all the steps you should take t\\..."
   accessed: 2026-03-16
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-03-16T01:28:24.888Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-04-13T15:23:08.156Z
   author:
   - family: Schmidt
     given: Peter
@@ -289,14 +591,31 @@ references:
   title-short: \[EN\] ByteSized
   type: song
   url: "https://www.buzzsprout.com/1326658/episodes/18674534-en-bytesized-how-to-get-your-digital-ducks-in-a-row-with-richard-acton"
-- abstract: "English Edition:&nbsp;Meet Thomas White from DESY (German
+- abstract: "English Edition:\\&nbsp;NextBrain is a next generation atlas
+    of the human brain. Juan Eugenio Iglesias Gonzales from
+    Massachusetts General in Boston, US, has been leading this project.
+    My colleague James Hughes (University College London) and I
+    were\\..."
+  accessed: 2026-04-13
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-13T15:25:58.927Z
+  id: schmidtNextBrainExploringHuman2026
+  issued: 2026-03-17
+  language: en-US
+  title: "\\[EN\\] NextBrain: Exploring the human brain - Eugenio
+    Iglesias, James Hughes - Code for Thought"
+  title-short: \[EN\] NextBrain
+  type: motion_picture
+  url: "https://www.buzzsprout.com/1326658/episodes/18717155-en-nextbrain-exploring-the-human-brain-eugenio-iglesias-james-hughes"
+- abstract: "English Edition:\\&nbsp;Meet Thomas White from DESY (German
     Electron Synchrotron) who is the creator and maintainer of the tool
     CrystFEL. The tool to help understand and analyse the structure of
     materials such as crystals and proteins. Thomas and I \\..."
   accessed: 2026-03-16
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-03-16T01:28:24.887Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-04-13T15:23:08.155Z
   author:
   - family: Schmidt
     given: Peter
@@ -307,6 +626,23 @@ references:
     CrystFEL - Thomas White - Code for Thought
   type: song
   url: "https://www.buzzsprout.com/1326658/episodes/18674558-en-revealing-the-structure-of-crystals-and-proteins-with-crystfel-thomas-white"
+- abstract: "English Edition:\\&nbsp;for this episode we're going \\\"up
+    North\\\", to visit the Research Software Engineering team of the
+    University of Newcastle. The team has been hosting the UK RSE
+    Conference in 2022 and 2024 and here is a chance to meet at least
+    s\\..."
+  accessed: 2026-04-13
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-13T15:25:58.926Z
+  id: schmidtTeamPortraitResearch2026
+  issued: 2026-03-24
+  language: en-US
+  title: "\\[EN\\] Team Portrait: Research Software Engineering in
+    Newcastle - Code for Thought"
+  title-short: \[EN\] Team Portrait
+  type: motion_picture
+  url: "https://codeforthought.buzzsprout.com/1326658/episodes/18761138-en-team-portrait-research-software-engineering-in-newcastle"
 - accessed: 2025-11-07
   annote: |
     Read_Status: Read\
@@ -336,6 +672,151 @@ references:
     and how to handle them
   type: article-journal
   url: "https://www.nature.com/articles/d42473-019-00004-y"
+- abstract: Anthropic claimed 100% of Claude Code is AI-written. A
+    source leak exposed a 3,167-line function, regex sentiment analysis,
+    and 250K wasted API calls daily
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-09T23:30:32.242Z
+  author:
+  - family: Stetskov
+    given: Denis
+  id: stetskovClaudeCodesSource2025
+  issued: 2025-09-19
+  language: en-US
+  title: "Claude Code's Source: 3,167-Line Function, Regex Sentiment"
+  title-short: Claude Code's Source
+  type: webpage
+  url: "https://techtrenches.dev/p/the-snake-that-ate-itself-what-claude"
+- abstract: The Apple Calculator leaked 32GB of RAM.
+  accessed: 2026-04-15
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-15T11:36:50.658Z
+  author:
+  - family: Stetskov
+    given: Denis
+  id: stetskovGreatSoftwareQuality2026
+  issued: 2026-04-01
+  language: en-US
+  title: "The Great Software Quality Collapse: How We Normalized
+    Catastrophe"
+  title-short: The Great Software Quality Collapse
+  type: webpage
+  url: "https://techtrenches.dev/p/the-great-software-quality-collapse"
+- abstract: Claude Code and I rewrote a nine year old, complex Python
+    project I maintain, in GoLang, in 5 Days
+  accessed: 2026-04-15
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-15T11:36:50.659Z
+  author:
+  - family: Substack
+  id: substackArtificialIntelligenceCan
+  language: en-US
+  title: Artificial Intelligence can Erase Technical Debt
+  type: webpage
+  url: "https://substack.com/home/post/p-193978032"
+- abstract: "We present the \\\"Stewardship and Advancement of Programming
+    Systems and Tools\\\" (S4PST) project report for the calendar years
+    2024 and 2025. S4PST is dedicated to the stewardship and advancement
+    of Programming Systems and Tools (PST) mainly targeting
+    high-performance computing (HPC) for the scientific community. The
+    project is part of the funded software stewardship organizations
+    (SSOs) selected by ASCR as part of the NGSST program, and a member
+    of CASS: the Consortiumfor the Advancement of Scientific Software."
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-04-09T23:30:32.242Z
+  author:
+  - family: Teranishi
+    given: Keita
+  - family: Godoy
+    given: William
+  - family: Valero Lara
+    given: Pedro
+  - family: Schanen
+    given: Michel
+  - family: Applencourt
+    given: Thomas
+  - family: Hueckelheim
+    given: Jan
+  - family: Raffenetti
+    given: Ken
+  - family: Thakur
+    given: Rajeev
+  - family: Videau
+    given: Brice
+  - family: Zhou
+    given: Hui
+  - family: Rouson
+    given: Damian
+  - family: Bonachea
+    given: Dan
+  - family: Hargrove
+    given: Paul
+  - family: Richardson
+    given: Brad
+  - family: Rasmussen
+    given: Katherine
+  - family: Blashcke
+    given: Johannes
+  - family: Laguna
+    given: Ignacio
+  - family: Doerfert
+    given: Johannes
+  - family: Georgakoudis
+    given: Giorgis
+  - family: Parasyris
+    given: Konstantinos
+  - family: Penades
+    given: Kevin
+  - family: Cormick
+    given: Patrick
+  - family: Edelman
+    given: Alan
+  - family: Alomairy
+    given: Rabab
+  - family: Samaroo
+    given: Julian
+  - family: Arndt
+    given: Daniel
+  - family: Denny
+    given: Joel
+  - family: Lebrun-Grandie
+    given: Damien
+  - family: Lee
+    given: Seyong
+  - family: Naughton III
+    given: Thomas
+  - family: Pophale
+    given: Swaroop
+  - family: Parete-Koon
+    given: Suzanne
+  - family: Trott
+    given: Christian
+  - family: Rajamanickam
+    given: Siva
+  - family: Kelley
+    given: Brian
+  - family: Aiken
+    given: Alex
+  - family: Chandrasekaran
+    given: Sunita
+  doi: 10.2172/3016977
+  id: teranishiS4PSTStewardshipAdvancement2026
+  issued: 2026-01-12
+  language: en-US
+  number: ORNL/SPR--2026/4406
+  publisher: Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United
+    States)
+  title: "S4PST: Stewardship and Advancement for Programming Systems and
+    Tools 2024-2025 Project Report"
+  title-short: S4PST
+  type: report
+  url: "https://www.osti.gov/biblio/3016977"
 - abstract: Read the latest article version by Daniel S. Katz, Eric A.
     Jensen, Michelle Barker at Open Research Europe
   accessed: 2025-11-07

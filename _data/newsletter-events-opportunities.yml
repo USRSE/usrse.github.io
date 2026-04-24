@@ -27,6 +27,46 @@
 
 #--------------------
 # Events
+# - expires: 2026-04-13
+#   type: event
+#   title: National Laboratories Sustainable Scientific Software Conference: Introduction to Agile Development
+#   when: Tuesday, April 14th, 12:00 PM - 1:00 PM MDT
+#   where: My house
+#   preamble: |
+#     The NLS³C CoP fosters collaboration among individuals interacting with software repositories across the U.S. National Labs complex. Our mission is to enhance the development culture by promoting best practices, knowledge sharing, and standards that improve quality and sustainability. We empower developers, project managers, and decision-makers through valuable resources, including monthly webinars. By cultivating a network of early adopters, we aim to drive culture change and transform the software landscape within the National Labs.
+#   links: |
+#     Registration:  [Click here](https://events.gcc.teams.microsoft.com/event/6c39cfd8-2974-4fe8-8d1c-ed26a052b337@7ccb5a20-a303-498c-b0c1-29007381b574)
+
+- expires: 2026-04-16
+  type: event
+  title: "UX Working Group Meeting: Making Interviewing Accessible"
+  when: Tuesday, April 16th, 4:00 PM EST
+  where: Zoom
+  preamble: |
+    Our next meeting will be a joint meeting between us and #wg-diversity-equity-inclusion: Making Interviewing Accessible! Join us to level up your user interview game. Darren Butler will lead us in a hands-on workshop on accessible UX interview techniques. Hope to see you there!
+  links: |
+    Link: Join [Zoom Meeting](https://lbnl.zoom.us/j/91963632563?pwd=Rbni2b1chhxhb4jHVtmEzrEWbZuee7.1)
+
+# - expires: 2026-04-13
+#   type: event
+#   title: National Laboratories Sustainable Scientific Software Conference: Introduction to Agile Development
+#   when: Tuesday, April 14th, 12:00 PM - 1:00 PM MDT
+#   where: My house
+#   preamble: |
+#     The NLS³C CoP fosters collaboration among individuals interacting with software repositories across the U.S. National Labs complex. Our mission is to enhance the development culture by promoting best practices, knowledge sharing, and standards that improve quality and sustainability. We empower developers, project managers, and decision-makers through valuable resources, including monthly webinars. By cultivating a network of early adopters, we aim to drive culture change and transform the software landscape within the National Labs.
+#   links: |
+#     Registration:  [Click here](https://events.gcc.teams.microsoft.com/event/6c39cfd8-2974-4fe8-8d1c-ed26a052b337@7ccb5a20-a303-498c-b0c1-29007381b574)
+
+- expires: 2026-04-16
+  type: event
+  title: "UX Working Group Meeting: Making Interviewing Accessible"
+  when: Tuesday, April 16th, 4:00 PM EST
+  where: Zoom
+  preamble: |
+    Our next meeting will be a joint meeting between us and #wg-diversity-equity-inclusion: Making Interviewing Accessible! Join us to level up your user interview game. Darren Butler will lead us in a hands-on workshop on accessible UX interview techniques. Hope to see you there!
+  links: |
+    Link: Join [Zoom Meeting](https://lbnl.zoom.us/j/91963632563?pwd=Rbni2b1chhxhb4jHVtmEzrEWbZuee7.1)
+
 - expires: 2026-04-01
   type: event
   title: Improving Scientific Software Conference 2026
@@ -90,9 +130,32 @@
   links: |
     For more information, visit: [dash.heliophysics.net](https://dash.heliophysics.net/) and [ihdea.net](https://ihdea.net/).
 
+- expires: 2026-10-23
+  type: event
+  title: "US-RSE Chicago Regional Meetup!🍃"
+  when: April 23, 2026, 5:30 PM - 7:00 PM CDT
+  where: Loyola University, Chicago, IL
+  preamble: |
+    Join us for the first Chicago Research Software Engineers (RSE) Meetup! This kickoff event is a casual, social gathering designed to bring together people across the Chicago area who are interested in the intersection of software and research.
+    We'll have pizza, light icebreakers, and plenty of time to meet others from universities, labs, and industry. We'll also include a few short, informal talks introducing the RSE community, what the role looks like in practice, and how you can get involved locally and nationally.
+    Whether you identify as an RSE, write code for research, are curious about the field, or just want to meet others working in similar spaces, this is a great place to start.
+    Come hang out, meet the community, and help shape the future of RSE in Chicago.
+  links: |
+    The event is being organized via Meetup.com, so please RSVP there if you plan to attend: [Chicago RSE Meetup](https://www.meetup.com/us-rse-chicago-regional-community/events/313402749/?eventOrigin=group_upcoming_events)
 
 #-------------------
 # Opportunities
+- expires: 2026-06-15
+  type: opportunity
+  title: "HICSS 2027 Call for Participation: Minitracks relevant to RSEs🤩"
+  preamble: |
+    The Hawaii International Conference on System Sciences (HICSS) invites submission of papers to its 60th annual conference, HICSS 2027, which will be held January 5-8, 2027 in Hawaii. HICSS solicits papers that emphasize advances in research and development in several areas of system sciences. As a premier interdisciplinary conference covering a wide range of topics 
+    in information systems and technology, two Minitracks at the conference appear particularly relevant to research software engineers (RSEs):
+    1. AI's impact on Software Engineering
+    2. Sustainable Software: Usable, Maintainable, and Reproducible
+  links:  |
+    Learn more at the HICSS [website](https://hicss.hawaii.edu/tracks-and-minitracks/software-technology/), and if you have any other questions, feel free to reach out to Sandra on Slack or [via email](mailto:sandra@us-rse.org)
+
 - expires: 2026-12-31
   type: opportunity
   title: "Supercomputing and the Future of AI: Watch the Full Virtual Exchange Series On-Demand! 🤖"
@@ -235,3 +298,4 @@
     Thank you to the Alfred P. Sloan Foundation for generously supporting this program and helping us grow the next generation of research software engineering talent.
   links: |
     Learn more and apply by March 31, 2026 at: [Princeton RSE Summer Fellowship](https://researchcomputing.princeton.edu/services/research-software-engineering/2026-research-software-engineering-summer-fellows-program)
+

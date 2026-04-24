@@ -1,91 +1,138 @@
-# US-RSE March 2026 Newsletter
+# US-RSE April 2026 Newsletter
 Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden
 (Editor)
-2026-03-12
+2026-04-13
 
-- [<span class="toc-section-number">1</span> 🔔 Celebrating Women in
-  RSE! 🔔](#bell-celebrating-women-in-rse-bell)
+- [<span class="toc-section-number">1</span> 🔔 Just Slack Me, Whenever!
+  🔔](#bell-just-slack-me-whenever-bell)
 - [<span class="toc-section-number">2</span> 📣 Mark Your Calendars for
   USRSE’26! 📣](#mega-mark-your-calendars-for-usrse26-mega)
-- [<span class="toc-section-number">3</span> 🤝 Organizational Founding
+- [<span class="toc-section-number">3</span> 📝 From the Executive Desk…
+  📝](#pencil-from-the-executive-desk-pencil)
+- [<span class="toc-section-number">4</span> 🛞 Steering Committee
+  Updates 🛞](#wheel-steering-committee-updates-wheel)
+- [<span class="toc-section-number">5</span> 🤝 Organizational Founding
   Membership
   🤝](#handshake-organizational-founding-membership-handshake)
-- [<span class="toc-section-number">4</span> 🗞️ Community News
+- [<span class="toc-section-number">6</span> 🗞️ Community News
   🗞️](#newspaper_roll-community-news-newspaper_roll)
-- [<span class="toc-section-number">5</span> 👀 Interesting Events and
+- [<span class="toc-section-number">7</span> 👀 Interesting Events and
   Opportunities 👀](#eyes-interesting-events-and-opportunities-eyes)
-- [<span class="toc-section-number">6</span> 📚 Featured Reads, Videos,
+- [<span class="toc-section-number">8</span> 📚 Featured Reads, Videos,
   and Podcasts 📚](#books-featured-reads-videos-and-podcasts-books)
-- [<span class="toc-section-number">7</span> 🏃 Get Involved!
+- [<span class="toc-section-number">9</span> 🏃 Get Involved!
   🏃](#running-get-involved-running)
-- [<span class="toc-section-number">8</span> 🧑‍💼 Recent Job Postings
+- [<span class="toc-section-number">10</span> 🧑‍💼 Recent Job Postings
   🧑‍💼](#office_worker-recent-job-postings-office_worker)
 
 <a name="top"></a>
 
-Welcome to the March 2026 issue of the US Research Software Engineer
-(US-RSE) newsletter! Right off of the heels of Black History Month, this
-March we are taking the opportunity to celebrate all of the women in
-Research Software Engineering, because March is Women’s History Month!
-We hope you find this issue informative and inspiring as we continue to
-advance the field of research software engineering together.
+Welcome to the April 2026 issue of the US Research Software Engineer
+(US-RSE) newsletter! If you’re reading this, you’re probably connected
+with US-RSE through Slack, which is our organization’s primary platform
+for instant messaging. Most people consider Slack a necessary burden of
+the workplace, having taken the place of phone calls, fax, pagers, and
+email. But is there more to Slack than annoying notifications? Today
+we’re going to discuss what Slack is, how it came about, and how US-RSE
+members use it to connect, grow, and make real, lasting impact beyond
+just their code editors.
 
 <p align="center">
-  <img src="{{ site.baseurl }}/assets/img/newsletter-202603/Hedy-Lamarr-2-Carlson-Caspers-300x187.jpg" alt="Hedy Lamarr in front of her frequency-hopping, spread-spectrum communications patent." style="width: 750px; height: auto;">
+  <img src="{{ site.baseurl }}/assets/img/newsletter-202604/austin-distel-gUIJ0YszPig-unsplash.jpg" alt="Slack message with team communicating and collaborating in app on desktop and mobile." style="width: 750px; height: auto;">
 </p>
 
 In this issue:
 
 ------------------------------------------------------------------------
 
-## 🔔 Celebrating Women in RSE! 🔔
+## 🔔 Just Slack Me, Whenever! 🔔
 
 <a name="headline"></a>
 
-March is Women’s History Month — or as we like to say in RSE circles:
-who run the code? Girls. 💻✨
+In 2012, software engineer Stewart Butterfield was hard at work on what
+he believed to be the next big thing in MMORPGs. The game, called
+“Glitch,” ended up being a commercial flop, and Butterfield and his team
+needed to pivot quickly to make the most of the 6 million dollars they
+had left from investor Ben Horowitz. Instead of throwing in the towel,
+Butterfield called Horowitz on the phone and proposed a new idea.
+Throughout the development process, Butterfield told Horowitz, the team
+of engineers had developed a novel instant messaging system to
+facilitate communication in-game, and in the process of [eating their
+own dog food](https://en.wikipedia.org/wiki/Eating_your_own_dog_food),
+discovered that the system worked really well for managing their work
+communications, too. Butterfield proposed that their company, then
+called Tiny Speck, pivot to focus on building a new product based on
+this instant messaging system. The result was the creation of Slack,
+which has since become one of the most popular communication platforms
+in the world.
 
-This month, we’re celebrating the women who build, debug, refactor,
-merge, deploy, and somehow still remember to update the README. Despite
-often being overlooked, women have always been involved in the evolution
-of computing. For example, Wi-Fi, the technology you’re probably using
-to read this article right now, wouldn’t exist if it weren’t for the
-invention of, “An Extraordinary New Communication System,” called
-*frequency hopping*, patented in 1942. The technology was primarily used
-in warfare, allowing torpedoes to reach their targets undetected in WWII
-and beyond. The inventor? None other than *actress-turned self-taught
-engineer* [Hedy
-Lamarr](https://www.netgear.com/hub/network/meet-the-mother-of-wifi/),
-earning her a posthumous induction into the National Inventors Hall of
-Fame, and the endearing title, “The Mother of Wi-FI.”
+Today, Slack powers communication and collaboration for millions of
+users and businesses, and has transformed the way teams collaborate and
+communicate. At US-RSE, we of course use Slack to manage internal
+communications between leadership teams, but more importantly, it has
+grown to become the virtual landing page for our community. At present,
+there are over 140 individual channels dating back to 2018, with over
+3100 unique member accounts participating in the conversation. Some days
+see over 500 messages going back and forth between members and channels:
 
-Fast forward to today, and women continue to contribute significantly to
-research and engineering. You may remember that in 2019 the first ever
-image of a black hole was captured by the Event Horizon Telescope (EHT).
-The lead researcher and algorithm developer on the team was 29-(at the
-time)-year-old [Katie Bouman of
-MIT](https://www.bbc.com/news/science-environment-47891902), whose work
-has helped to confirm some of Einstein’s most radical theories about the
-fabric of the universe itself.
+<p align="center">
 
-It’s abundantly clear that women have been shaping computational science
-and research all throughout history, even when history chooses to
-relegate them footnotes.
+<img src="{{ site.baseurl }}/assets/img/newsletter-202604/messages.png" alt="Plot of message volume in Slack" style="width: 750px; height: auto;"/>
+</p>
 
-**Research software engineering is no exception.** Women in our
-community are designing infrastructure, leading teams, strengthening
-open science, and mentoring the next generation of RSEs. So, this March,
-take an opportunity to shine a spotlight on women in computing in your
-life. Make the active choice to amplify voices and celebrate the talent
-that keeps our science running. Because great research software doesn’t
-just happen — it’s built by people. And a lot of the time, it’s built by
-women.
+One unique feature of Slack is the ability to create channels, which act
+as virtual rooms dedicated to specific topics, projects, or interests.
+These channels can be private or public, allowing teams to organize
+conversations by priority, relevance, and interest. At US-RSE, we also
+have meta-grouping channels, such as “Working Groups,” (`#wg-`) and
+“Regional Groups,” (`#rg-`), which serve as hubs for specific
+communities within our larger organization. For example, the
+`#wg-code-review` and `wg-diversity-equity-inclusion` channels are
+spaces for members to discuss and collaborate on code review practices
+and DEI initiatives, respectively. The `#rg-nyc` channel serves as a hub
+for members located in and around the greater New York City area, where
+they plan get-togethers and other in-person events. Participating in
+public channels is a great way to stay informed about what’s going on in
+the community, and importantly, it allows everyone in the Slack channel
+to follow the conversation and chime in when they have something to
+contribute. This helps us all, “[learn with the garage door
+open](https://notes.andymatuschak.org/About_these_notes?stackedNotes=z21cgR9K3UcQ5a7yPsj2RUim3oM2TzdBByZu),”
+increasing the accessibility of our conversations and the impact of our
+work.
 
-> Looking for a fun historical movie to celebrate women in computational
-> science? The famous “Hidden Figures” mathematicians of NASA were a
-> group of women responsible for calculating trajectories that got
-> humans to the Moon whose [theatrical
-> movie](https://en.wikipedia.org/wiki/Hidden_Figures) is a MUST-SEE!
+<p align="center">
+
+<img src="{{ site.baseurl }}/assets/img/newsletter-202604/channels.png" alt="Plot of channel activity in Slack" style="width: 750px; height: auto;"/>
+</p>
+
+It may be obvious that the `#general` channel has the most messages, but
+did you know that in a one-year span, some of the most active channels
+include `#random`, `#events`, and `#wg-ux`? The most popular
+language-specific channel in the Slack was, of course, `#python`, and
+the most active regional group channel was `#rg-north-carolina`.
+
+<p align="center">
+
+<img src="{{ site.baseurl }}/assets/img/newsletter-202604/top_channels.png" alt="Table of top channels in Slack" style="width: 750px; height: auto;"/>
+</p>
+
+And while we as RSEs may still be evaluating AI for its usefulness in
+our work, Slack’s built-in AI summarization tool tells us that there are
+a wide array of conversations happening in our Slack, from conference
+planning, to project management, to hiring and funding announcements.
+
+<p align="center">
+
+<img src="{{ site.baseurl }}/assets/img/newsletter-202604/slack.gif" alt="Screen capture of Slack's AI summarization tool" style="width: 750px; height: auto;"/>
+</p>
+
+If you haven’t already, we encourage you to join our Slack and get
+involved in the conversation. It’s a great way to stay informed about
+what’s going on in the community, connect with other members, and
+contribute to the ongoing work of US-RSE. You can get onto our Slack by
+joining US-RSE free, [here](https://us-rse.org/join/).
+
+See you on Slack!
 
 ------------------------------------------------------------------------
 
@@ -93,23 +140,27 @@ women.
 
 <a name="conference2026"></a>
 
-Save the date for USRSE’26: Advancing Science in the Age of AI
+Save the date for USRSE’26: **Advancing Science in the Age of AI**
 
 We’re thrilled to announce that USRSE’26 will be held at the San Jose
 Marriott from October 19-21, 2026 in San Jose, California, with the
-theme “Advancing Science in the Age of AI”.
+theme **“Advancing Science in the Age of AI”.**
 
-General chairs have been appointed to lead each of the core committees
-for USRSE’26. These chairs have begun assembling sub‑teams from the pool
-of volunteers who expressed interest in supporting the respective areas.
-If you were not selected for a chair position, please stay tuned, as
-chairs reach out for volunteers for these committee positions.
+Chairs have been appointed to lead each of the core committees for
+USRSE’26. These chairs have begun assembling sub‑teams from the pool of
+volunteers who expressed interest in supporting the respective areas. If
+you were not selected for a chair position, please stay tuned, as chairs
+reach out for volunteers for these committee positions.
 
 **What’s next?**
 
-- **Call for Proposals:** The Call for Proposals will be announced later
-  this month. Additional upcoming milestones will be announced on the
-  official USRSE’26 site over the next few months.
+- **Call for Proposals:** Submit your work via papers, short talks,
+  BoFs, workshops, or posters. [View
+  More](https://us-rse.org/usrse26/participate/)
+- **Call for Reviewers:** Play a key role in creating a dynamic and
+  varied technical program that will appeal to conference attendees from
+  all RSE backgrounds. [Apply to
+  Review](https://forms.gle/hDGsK52sJFqUA2MA7)
 - **Committee Formation:** Sub‑teams will be formed shortly; be on the
   lookout for an email from a perspective committee chair with details.
 - **Stay Informed:** Regular updates will be posted at
@@ -138,6 +189,71 @@ information will be coming your way in the months ahead. Stay tuned at
 [us-rse.org/usrse26](https://us-rse.org/usrse26)!
 
 We’re looking forward to seeing you all in **San Jose**!
+
+------------------------------------------------------------------------
+
+## 📝 From the Executive Desk… 📝
+
+<a name="executive-desk"></a> <!-- Sandra's News -->
+
+In March, I attended Capitol Hill coffee hours with Senator Dick Durbin
+and Senator Tammy Duckworth, where I had the opportunity to introduce
+the mission and growing impact of the US Research Software Engineer
+(US-RSE) Association and take an important step toward raising awareness
+of the critical role of research software in advancing U.S. science. In
+addition, I met with staff from Senator Alex Padilla for an in-depth
+discussion; they expressed strong interest and requested follow-up
+materials — both quantitative and qualitative data and insights — to
+better understand the needs and contributions of the RSE community.
+While these meetings may appear inconsequential, they’re seedlings for
+longer-term engagement between the RSE community and key stakeholders in
+Washington, DC, and we are encouraged by the fact that our message is
+starting to reach key audiences in government.
+
+<p align="center">
+
+<img src="{{ site.baseurl }}/assets/img/newsletter-202604/20260312-donnell-390.jpg" alt="Sandra with Senators Duckworth & Durbin" style="width: 750px; height: auto;"/>
+</p>
+
+<p align="center">
+
+<img src="{{ site.baseurl }}/assets/img/newsletter-202604/20260310_162030.jpg" alt="Sandra with Senator Padilla Staff Member" style="width: 750px; height: auto;"/>
+</p>
+
+------------------------------------------------------------------------
+
+## 🛞 Steering Committee Updates 🛞
+
+<a name="sc-update"></a>
+
+<!-- Fill in with current Steering Committee news -->
+
+It’s been a while since you’ve heard from us in the newsletter, but the
+Steering Committee has been hard at work! Together with our Executive
+Director, we’ve have done considerable work to support planning of the
+USRSE’26 conference, including confirming the selection of a venue and
+reviewing preliminary cost estimations. We’ve also already started
+looking ahead to USRSE’27 and beyond. We’re developing a conference
+hosting application process to identify potential future conference
+locations and chairs farther in advance—more on that in coming months.
+Additionally, we discussed our policies on issuing statements related to
+government actions and current events, as well as on the use of AI
+notetakers during our virtual events, which culminated in an official
+recommendation delivered to the Code of Conduct Committee on the latter.
+
+Following the cancellation of our planned January retreat due to a
+combination of weather and illness, the US-RSE Leadership team held two
+half-day virtual planning sessions in February, focused on increasing
+the sustainability of our annual conference and updating our governance
+model to reflect the growing size and responsibilities of our
+organization. We’re following this up with an in-person working session
+at the end of this month, where we’ll meet for two days in Chicago with
+the Executive Director in a concentrated effort to finalize our
+recommendations for governance model updates.
+<p align="center">
+
+<img src="{{ site.baseurl }}/assets/img/newsletter-202604/sc-update-image.png" alt="Screen capture of Steering Committee meeting on Zoom" style="width: 750px; height: auto;"/>
+</p>
 
 ------------------------------------------------------------------------
 
@@ -193,44 +309,16 @@ interested in becoming an organizational founding member!
 
 <!--Someone you want to shoutout? DO IT HERE!-->
 
-#### Women’s History Month in US-RSE
+The US-RSE community is full of talented, brilliant people doing amazing
+work, and every so often, we capture the interactions and collaborations
+that make our community special on video! Here’s a YouTube video of a
+recent **Education & Training Working Group** meeting, where **Andres
+Rios-Tascon** presented his tutorial on Continuous Integration and
+Continuous Delivery (CI/CD) with GitHub Actions.
 
-Here at US-RSE, we continue our commitment to Diversity, Equity, and
-Inclusion. Our community is strengthened by the wide range of
-experiences, backgrounds, and perspectives that each of our members
-brings. This March, we are proud to recognize and celebrate the women in
-Research Software Engineering whose leadership, creativity, and
-perseverance support and elevate our work.
-
-If you are a woman RSE, we are celebrating you. Your skill and
-dedication advance research, support teams, and open doors for others
-who may be building their own paths in technical fields. Your presence
-and contributions encourage colleagues and future RSEs, sometimes
-through direct mentorship and sometimes simply by being visible in
-spaces where representation has not always been guaranteed.
-
-Women in science, engineering, and computing have faced and overcome
-significant obstacles throughout history. Despite these challenges,
-women have driven discovery, shaped computing, and changed the course of
-research and technology. Today, women continue to innovate and lead
-across academia, national labs, industry, and open source communities,
-bringing insight and expertise that strengthen the broader research
-landscape.
-
-We wish all the women in the RSE community a meaningful and joyful
-Women’s History Month. May this month bring recognition, celebration,
-and renewed energy. Thank you for your work, your resilience, and the
-creativity you bring to the community.
-
-– US-RSE DEI Working Group
-
-#### Working Group News
-
-The Education and Training Working Group’s next Seminar Series Tutorial
-is coming up Tuesday March 24, 2-4pm ET (11am-1pm PT)! In Continuous
-Integration and Continuous Delivery (CI/CD) with GitHub Actions, Andres
-Rios-Tascon from Princeton University will walk you through using
-GitHub’s CI/CD tools.
+<a href="https://www.youtube.com/watch?v=UPAeZg14Hto" target="_blank" rel="noopener noreferrer" style="display:block; position:relative; width:100%; max-width:640px; margin:0 auto; text-decoration:none;">
+<img src="https://img.youtube.com/vi/UPAeZg14Hto/hqdefault.jpg" alt="Watch this video on YouTube" style="display:block; width:100%; height:auto; border:0;">
+</a>
 
 > Did you know that we have a community Code of Conduct? Anyone is able
 > to view it in the `#code_of_conduct` Slack channel, under `Files`!
@@ -257,7 +345,7 @@ different edge cases that can come up when handling them.
 </div>
 -->
 
-Our next meeting is scheduled for Friday, April 10, 2026, 1:00 PM EST.
+Our next meeting is scheduled for Thursday, May 14, 2026, 12:00PM EST.
 We hope to see you there!
 
 ------------------------------------------------------------------------
@@ -328,7 +416,7 @@ the `#newsletters` channel!
 {% assign other = refs | where: "type", "webpage" %}
 
 {% if other.size > 0 %}
-### 📇 Blog Posts & Other Reads
+### 📇 Blog Posts, Videos, & Other Reads
 {% for ref in other %}
 {% include citation.html ref=ref %}
 {% endfor %}

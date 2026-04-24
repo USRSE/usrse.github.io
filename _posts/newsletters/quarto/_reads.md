@@ -27,7 +27,7 @@
 {% assign other = refs | where: "type", "webpage" %}
 
 {% if other.size > 0 %}
-### 📇 Blog Posts & Other Reads
+### 📇 Blog Posts, Videos, & Other Reads
 {% for ref in other %}
 {% include citation.html ref=ref %}
 {% endfor %}
