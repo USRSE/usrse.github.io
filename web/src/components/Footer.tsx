@@ -29,16 +29,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
+            <div className="mb-4">
               <img
-                src="/logo-circular.png"
-                alt=""
-                className="h-10 w-10 rounded-full"
-              />
-              <img
-                src="/logo-main.png"
+                src="/us-rse-logo-001.svg"
                 alt="US-RSE"
-                className="h-7"
+                className="h-12"
               />
             </div>
             <p className="text-sm text-neutral-500 leading-relaxed mb-6">
