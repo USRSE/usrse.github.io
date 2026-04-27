@@ -41,22 +41,20 @@ export function Nav() {
         Skip to main content
       </a>
 
+      {/* Purple brand accent bar */}
+      <div className="h-1 bg-purple-500" aria-hidden="true" />
+
       <nav
-        className="bg-purple-500 h-16 flex items-center px-6 lg:px-10"
+        className="bg-white border-b border-neutral-100 h-16 flex items-center px-6 lg:px-10"
         aria-label="Primary navigation"
       >
         <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 group">
+          <a href="/" className="flex items-center group">
             <img
-              src="/logo-circular.png"
-              alt=""
-              className="h-9 w-9 rounded-full group-hover:brightness-110 transition"
-            />
-            <img
-              src="/logo-main.png"
+              src="/us-rse-logo-001.svg"
               alt="US-RSE"
-              className="h-7 hidden sm:block"
+              className="h-10 group-hover:opacity-80 transition-opacity"
             />
           </a>
 
@@ -73,7 +71,7 @@ export function Nav() {
               >
                 <a
                   href={link.href}
-                  className="text-white/90 hover:text-white text-sm font-medium px-3.5 py-2 rounded-md hover:bg-white/10 transition-all duration-200 inline-flex items-center gap-1"
+                  className="text-neutral-600 hover:text-purple-600 text-sm font-medium px-3.5 py-2 rounded-md hover:bg-neutral-50 transition-all duration-200 inline-flex items-center gap-1"
                 >
                   {link.label}
                   {link.children && (
@@ -113,14 +111,14 @@ export function Nav() {
           <div className="flex items-center gap-3">
             <a
               href="#join"
-              className="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-purple-500 bg-white rounded-lg hover:bg-teal-50 transition-colors shadow-sm"
+              className="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors shadow-sm"
             >
               Join Us
             </a>
 
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 text-white hover:bg-white/10 rounded-md transition-colors"
+              className="lg:hidden p-2 text-neutral-700 hover:bg-neutral-100 rounded-md transition-colors"
               aria-expanded={mobileOpen}
               aria-label="Toggle navigation menu"
             >
