@@ -1,5 +1,6 @@
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
+import { LogoMarquee } from "@/components/LogoMarquee";
 import { Mission } from "@/components/Mission";
 import { Stats } from "@/components/Stats";
 import { WorkingGroups } from "@/components/WorkingGroups";
@@ -14,6 +15,7 @@ export function App() {
       <Nav />
       <main>
         <Hero />
+        <LogoMarquee />
         <Mission />
         <Stats />
         <WorkingGroups />
