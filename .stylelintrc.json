@@ -1,0 +1,56 @@
+{
+  "rules": {
+    "color-no-invalid-hex": true,
+
+    "font-family-no-duplicate-names": true,
+    "font-family-no-missing-generic-family-keyword": true,
+
+    "function-no-unknown": [true, {
+      "ignoreFunctions": ["clamp", "min", "max", "env", "var", "linear-gradient", "radial-gradient"]
+    }],
+
+    "unit-no-unknown": true,
+    "property-no-unknown": true,
+    "keyframe-declaration-no-important": true,
+
+    "declaration-block-no-duplicate-properties": [true, {
+      "ignore": ["consecutive-duplicates-with-different-syntaxes"]
+    }],
+    "declaration-block-no-shorthand-property-overrides": true,
+
+    "block-no-empty": true,
+
+    "selector-pseudo-class-no-unknown": [true, {
+      "ignorePseudoClasses": ["global", "local"]
+    }],
+    "selector-pseudo-element-no-unknown": true,
+    "selector-type-no-unknown": [true, {
+      "ignore": ["custom-elements"]
+    }],
+
+    "no-duplicate-at-import-rules": true,
+    "no-duplicate-selectors": null,
+    "no-empty-source": true,
+    "no-invalid-double-slash-comments": true,
+
+    "comment-no-empty": true,
+
+    "custom-property-pattern": [
+      "^[a-z][a-z0-9]*(-[a-z0-9]+)*$",
+      {
+        "message": "Token names must be kebab-case (e.g. --color-brand-primary)",
+        "severity": "warning"
+      }
+    ],
+
+    "value-keyword-case": ["lower", {
+      "ignoreKeywords": [
+        "Montserrat", "Roboto", "Fira Code", "Fira Mono",
+        "JetBrains Mono", "Cascadia Code", "BlinkMacSystemFont",
+        "Segoe UI", "Helvetica Neue", "Lucida Grande", "Arial"
+      ]
+    }],
+
+    "color-hex-length": "long"
+  }
+}

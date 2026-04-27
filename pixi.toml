@@ -1,0 +1,101 @@
+[workspace]
+name = "us-rse-design-system"
+description = "US-RSE Design System — tokens, tooling, and validation"
+version = "0.1.0"
+channels = ["conda-forge"]
+platforms = ["osx-arm64", "osx-64", "linux-64", "linux-aarch64"]
+
+[dependencies]
+# CSS processing and bundling (lightningcss CLI has jemalloc issues on osx-arm64;
+# bundling is handled via the Node.js postcss script instead)
+# Linting
+stylelint = ">=17.9.1,<18"
+# Formatting
+prettier = ">=3.8.3,<4"
+# Node.js runtime for scripts and bundling
+nodejs = ">=22,<26"
+
+[tasks]
+
+# ---------------------------------------------------------------------------
+# lint
+# Run stylelint over all token CSS files.
+# Uses .stylelintrc.json for configuration.
+# ---------------------------------------------------------------------------
+lint = { cmd = "stylelint 'design-system/tokens/**/*.css'", description = "Lint all token CSS files" }
+
+# ---------------------------------------------------------------------------
+# lint-fix
+# Auto-fix stylelint issues where possible.
+# ---------------------------------------------------------------------------
+lint-fix = { cmd = "stylelint --fix 'design-system/tokens/**/*.css'", description = "Auto-fix lint issues" }
+
+# ---------------------------------------------------------------------------
+# format
+# Format all CSS files with prettier.
+# ---------------------------------------------------------------------------
+format = { cmd = "prettier --write 'design-system/**/*.css'", description = "Format all CSS files" }
+
+# ---------------------------------------------------------------------------
+# format-check
+# Check formatting without writing (for CI).
+# ---------------------------------------------------------------------------
+format-check = { cmd = "prettier --check 'design-system/**/*.css'", description = "Check CSS formatting" }
+
+# ---------------------------------------------------------------------------
+# install-node-deps
+# Install Node.js dependencies (postcss + plugins) into node_modules.
+# Run once after cloning or when package.json changes.
+# ---------------------------------------------------------------------------
+install-node-deps = { cmd = "npm install --prefer-offline", description = "Install Node.js deps (postcss, postcss-import, cssnano)" }
+
+# ---------------------------------------------------------------------------
+# build
+# Bundle all token files into a single dist/tokens.css.
+# Uses postcss + postcss-import to resolve @import chains.
+# Uses cssnano for minification.
+# Output: dist/tokens.css (readable) + dist/tokens.min.css (minified)
+# ---------------------------------------------------------------------------
+build = { cmd = "node scripts/build.mjs", description = "Bundle tokens into dist/" }
+
+# ---------------------------------------------------------------------------
+# validate
+# Run the token hierarchy validator script.
+# Checks that:
+#   - Tier 2 tokens only reference Tier 1 tokens
+#   - Tier 3 tokens only reference Tier 2 tokens
+#   - No raw hex/px/rem literals appear in Tier 2 or Tier 3
+#   - All var() references resolve to a defined token
+# ---------------------------------------------------------------------------
+validate = { cmd = "node scripts/validate-tokens.mjs", description = "Validate token hierarchy contract" }
+
+# ---------------------------------------------------------------------------
+# contrast
+# Run the WCAG contrast ratio checker on all color token pairings.
+# Reports which pairings pass/fail WCAG 2.2 AA (4.5:1 normal, 3:1 large).
+# ---------------------------------------------------------------------------
+contrast = { cmd = "node scripts/check-contrast.mjs", description = "Check WCAG 2.2 AA contrast ratios" }
+
+# ---------------------------------------------------------------------------
+# check
+# Run the full quality gate: validate + lint + format-check + contrast.
+# Used in CI to confirm the token system is healthy before merge.
+# ---------------------------------------------------------------------------
+check = { cmd = "pixi run validate && pixi run lint && pixi run format-check && pixi run contrast", description = "Full quality gate (validate + lint + format + contrast)" }
+
+# ---------------------------------------------------------------------------
+# dev
+# Watch token files for changes, re-bundle on save.
+# Useful during token authoring.
+# ---------------------------------------------------------------------------
+dev = { cmd = "node scripts/watch.mjs", description = "Watch tokens and rebuild on change" }
+
+[feature.ci.tasks]
+# Variant of check with JUnit/JSON output for CI systems
+check-ci = { cmd = "pixi run validate && stylelint --formatter json 'design-system/tokens/**/*.css' > reports/stylelint.json ; pixi run contrast", description = "CI check with machine-readable output" }
+
+[environments]
+# Default environment — used for local development
+default = { features = [], solve-group = "main" }
+# CI environment — includes the ci feature's check-ci task
+ci = { features = ["ci"], solve-group = "main" }

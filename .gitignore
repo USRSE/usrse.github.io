@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# pixi environments
+.pixi/
+
+# Build output
+dist/
+
+# CI reports
+reports/*.json
+
+# Lock files (pixi)
+pixi.lock
+
+# OS
+.DS_Store
+Thumbs.db

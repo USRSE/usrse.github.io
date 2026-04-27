@@ -1,0 +1,15 @@
+{
+  "name": "us-rse-design-system",
+  "version": "0.1.0",
+  "description": "US-RSE Design System — CSS token bundling dependencies",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "postcss": "^8.4.49",
+    "postcss-import": "^16.1.0",
+    "cssnano": "^7.0.6"
+  }
+}
