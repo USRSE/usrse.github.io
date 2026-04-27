@@ -1,0 +1,247 @@
+/**
+ * US-RSE Design System — Card Component
+ *
+ * Consumes exclusively --card-* component tokens from tokens/components.css.
+ *
+ * Variants:   base, featured (teal left border), compact
+ * Interactive: clickable card with proper focus management
+ * Sub-elements: card-header, card-body, card-footer, card-meta, card-title
+ * Layout:     grid helper for card collections
+ *
+ * The card's hover lift is a compound transition (color + shadow). The lift
+ * motion is suppressed under prefers-reduced-motion via the token system —
+ * --transition-lift resolves to "none" when the token is zeroed in dark-mode.css.
+ */
+
+/* =============================================================================
+   BASE CARD
+   ============================================================================= */
+
+.usrse-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-bg);
+  border: var(--card-border-width) solid var(--card-border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: var(--card-padding);
+  transition: var(--card-transition);
+
+  /* Prevent content from overflowing the border-radius */
+  overflow: hidden;
+}
+
+/* =============================================================================
+   HOVER LIFT — base card (no pointer interaction by default)
+   Interactive cards get the full interactive treatment via --interactive modifier.
+   A plain .usrse-card still lifts on hover for visual feedback in card lists.
+   ============================================================================= */
+
+.usrse-card:hover {
+  background-color: var(--card-bg-hover);
+  border-color: var(--card-border-hover);
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* =============================================================================
+   VARIANT — FEATURED
+   Adds a teal left border accent to highlight priority content.
+   Used for pinned posts, announcements, and featured events.
+   ============================================================================= */
+
+.usrse-card--featured {
+  border-inline-start: var(--card-featured-border-width) solid var(--card-featured-border);
+  /* Compensate padding so inner content stays aligned with non-featured cards */
+  padding-inline-start: calc(var(--card-padding) - var(--card-featured-border-width));
+}
+
+/* =============================================================================
+   VARIANT — COMPACT
+   Reduces padding for dense layouts like sidebars, lists, or widget panels.
+   ============================================================================= */
+
+.usrse-card--compact {
+  padding: var(--card-padding-sm);
+}
+
+/* =============================================================================
+   VARIANT — SPACIOUS
+   Extra padding for hero-like card displays.
+   ============================================================================= */
+
+.usrse-card--spacious {
+  padding: var(--card-padding-lg);
+}
+
+/* =============================================================================
+   VARIANT — FLAT
+   Removes shadow and border for cards embedded in already-elevated surfaces.
+   ============================================================================= */
+
+.usrse-card--flat {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.usrse-card--flat:hover {
+  box-shadow: var(--card-shadow);
+  border-color: var(--card-border-hover);
+}
+
+/* =============================================================================
+   INTERACTIVE CARD
+   Wraps a link around the entire card. The <a> element or a button acting as
+   the card root gets these styles. Keyboard focus is handled on the element
+   itself, not on child links.
+   ============================================================================= */
+
+.usrse-card--interactive {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+
+  /* Ensure the card itself receives focus, not inner links */
+  outline: none;
+}
+
+.usrse-card--interactive:hover {
+  background-color: var(--card-bg-hover);
+  border-color: var(--card-border-hover);
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+.usrse-card--interactive:active {
+  transform: translateY(0);
+  box-shadow: var(--card-shadow);
+}
+
+/* Focus ring for keyboard navigation — always visible, never suppressed */
+.usrse-card--interactive:focus-visible {
+  outline: 2px solid var(--card-featured-border);
+  outline-offset: 2px;
+  box-shadow: var(--card-shadow-hover);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .usrse-card--interactive:hover {
+    transform: none;
+  }
+}
+
+/* =============================================================================
+   SUB-ELEMENTS
+   ============================================================================= */
+
+/* Header — typically holds meta and title */
+.usrse-card__header {
+  margin-block-end: var(--card-footer-pt);
+}
+
+/* Meta — small uppercase label above the title (e.g., "Event", "Blog Post") */
+.usrse-card__meta {
+  font-size: var(--card-meta-font-size);
+  color: var(--card-meta-color);
+  letter-spacing: var(--card-meta-letter-spacing);
+  text-transform: uppercase;
+  margin-block-end: 0.5em;
+  font-weight: 600;
+}
+
+/* Title */
+.usrse-card__title {
+  font-size: var(--card-title-font-size);
+  font-family: var(--card-title-font-family);
+  font-weight: var(--card-title-font-weight);
+  color: var(--card-title-color);
+  line-height: var(--card-title-line-height);
+  margin: 0;
+}
+
+/* Title link — inherits color, underlines on hover for interactive cards */
+.usrse-card__title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.usrse-card__title a:hover {
+  text-decoration: underline;
+}
+
+.usrse-card__title a:focus-visible {
+  outline: 2px solid var(--card-featured-border);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Body — primary card content */
+.usrse-card__body {
+  flex: 1; /* Fills available height so footers are flush to bottom */
+  font-size: var(--card-body-font-size);
+  color: var(--card-body-color);
+  line-height: var(--card-body-line-height);
+  margin-block-start: 0.75em;
+}
+
+/* Footer — action area or secondary metadata */
+.usrse-card__footer {
+  margin-block-start: var(--card-footer-pt);
+  padding-block-start: var(--card-footer-pt);
+  border-block-start: 1px solid var(--card-divider);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* =============================================================================
+   CARD IMAGE
+   Full-width image at the top of the card. Sits outside the padding by using
+   negative margin — works because the card has overflow: hidden.
+   ============================================================================= */
+
+.usrse-card__image {
+  display: block;
+  width: calc(100% + (var(--card-padding) * 2));
+  margin-inline: calc(var(--card-padding) * -1);
+  margin-block-start: calc(var(--card-padding) * -1);
+  margin-block-end: var(--card-padding);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =============================================================================
+   CARD GRID — Layout helper for card collections
+   Uses CSS Grid with a responsive auto-fill pattern. Cards naturally wrap
+   without breakpoint-specific classes.
+   ============================================================================= */
+
+.usrse-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+  gap: 1.5rem;
+}
+
+/* Dense variant for compact card grids (e.g., tag/member lists) */
+.usrse-card-grid--dense {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+  gap: 1rem;
+}
+
+/* Wide variant for fewer, larger cards (e.g., featured content) */
+.usrse-card-grid--wide {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr));
+  gap: 2rem;
+}
+
+/* Single column on mobile regardless of grid variant */
+@media (max-width: 639px) {
+  .usrse-card-grid,
+  .usrse-card-grid--dense,
+  .usrse-card-grid--wide {
+    grid-template-columns: 1fr;
+  }
+}

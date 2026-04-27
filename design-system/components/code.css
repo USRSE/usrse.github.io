@@ -1,0 +1,355 @@
+/**
+ * US-RSE Design System — Code Component
+ *
+ * Consumes exclusively --code-* component tokens from tokens/components.css.
+ *
+ * Code is a first-class citizen for Research Software Engineers. These styles
+ * match the production us-rse.org rouge highlighter behavior precisely.
+ *
+ * Covers:
+ *   - Inline code (within prose)
+ *   - Code block (dark background, scrollable)
+ *   - Code header (language label + copy button)
+ *   - Syntax token color classes
+ *   - Line numbers
+ *   - Scrollable code container
+ *
+ * Production notes from components.css:
+ *   - Inline: bg #f5f5f5 (neutral-100), text #da1039 (danger-700), 0.875em, no radius
+ *   - Block: dark bg (neutral-900), light text (neutral-100)
+ */
+
+/* =============================================================================
+   INLINE CODE
+   Matches production: .highlight code, p > code, li > code
+   ============================================================================= */
+
+.usrse-code,
+:not(pre) > code {
+  font-family: var(--code-font-family);
+  font-size: var(--code-inline-font-size);
+  font-weight: 400;
+  line-height: inherit; /* Don't disrupt surrounding text line height */
+
+  color: var(--code-inline-text);
+  background-color: var(--code-inline-bg);
+  border-radius: var(--code-inline-radius);
+
+  padding-block: var(--code-inline-padding-y);
+  padding-inline: var(--code-inline-padding-x);
+
+  /* Prevent inline code from causing line breaks */
+  word-break: break-word;
+  overflow-wrap: break-word;
+
+  /* Suppress Bulma's default code styles during coexistence */
+  border: none;
+}
+
+/* =============================================================================
+   CODE BLOCK WRAPPER
+   Handles the outer container: border, radius, shadow, scroll.
+   ============================================================================= */
+
+.usrse-code-block {
+  position: relative;
+  margin-block: 1.5rem;
+  border-radius: var(--code-block-radius);
+  border: 1px solid var(--code-block-border);
+  box-shadow: var(--code-block-shadow);
+  overflow: hidden; /* Clips the header and pre to the border-radius */
+
+  /* Ensure the block doesn't grow wider than its container */
+  max-width: 100%;
+}
+
+/* =============================================================================
+   CODE BLOCK HEADER — language label + copy button
+   ============================================================================= */
+
+.usrse-code-block__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+
+  background-color: var(--code-header-bg);
+  border-block-end: 1px solid var(--code-header-border);
+
+  /* Prevents header from scrolling with code content */
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 1;
+}
+
+/* Language label (e.g., "python", "bash") */
+.usrse-code-block__lang {
+  font-family: var(--code-font-family);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--code-header-text);
+  text-transform: lowercase;
+  letter-spacing: 0.04em;
+  user-select: none;
+}
+
+/* Copy to clipboard button */
+.usrse-code-block__copy {
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.25rem 0.625rem;
+
+  font-family: var(--code-font-family);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: var(--code-header-text);
+  letter-spacing: 0.04em;
+
+  background: transparent;
+  border: 1px solid var(--code-block-border);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.usrse-code-block__copy:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--code-block-text);
+}
+
+.usrse-code-block__copy:focus-visible {
+  outline: 2px solid var(--code-token-keyword);
+  outline-offset: 2px;
+}
+
+/* Success state — briefly shown after copy */
+.usrse-code-block__copy[data-copied="true"] {
+  color: var(--code-token-string);
+  border-color: var(--code-token-string);
+}
+
+/* =============================================================================
+   PRE — the scrollable code container
+   ============================================================================= */
+
+.usrse-code-block pre,
+.usrse-pre {
+  margin: 0;
+  padding: var(--code-block-padding);
+  background-color: var(--code-block-bg);
+  color: var(--code-block-text);
+  overflow-x: auto;
+
+  /* Prevent WebKit from adding scroll shadows */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Code inside the pre */
+.usrse-code-block pre code,
+.usrse-code-block code,
+.usrse-pre code {
+  display: block;
+  font-family: var(--code-font-family);
+  font-size: var(--code-font-size);
+  line-height: var(--code-line-height);
+  color: inherit;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  white-space: pre;
+  tab-size: 2;
+  -moz-tab-size: 2;
+}
+
+/* =============================================================================
+   STANDALONE CODE BLOCK (without header)
+   When used as a bare <pre><code> without the wrapper structure.
+   ============================================================================= */
+
+.usrse-code-block--bare {
+  border-radius: var(--code-block-radius);
+}
+
+.usrse-code-block--bare pre {
+  border-radius: var(--code-block-radius);
+}
+
+/* =============================================================================
+   LINE NUMBERS
+   Applied via class on the <code> or <pre> element.
+   Uses CSS counter — no JavaScript required.
+   ============================================================================= */
+
+.usrse-code-block--line-numbers code,
+.usrse-code--line-numbers {
+  counter-reset: usrse-line;
+}
+
+.usrse-code-block--line-numbers code .usrse-code-line,
+.usrse-code--line-numbers .usrse-code-line {
+  display: block;
+  counter-increment: usrse-line;
+  padding-inline-start: 3.5em; /* Space for the line number */
+  position: relative;
+}
+
+.usrse-code-block--line-numbers code .usrse-code-line::before,
+.usrse-code--line-numbers .usrse-code-line::before {
+  content: counter(usrse-line);
+  position: absolute;
+  inset-inline-start: 0;
+  width: 2.5em;
+  text-align: right;
+  color: var(--code-token-comment);
+  user-select: none;
+  padding-inline-end: 0.75em;
+  border-inline-end: 1px solid var(--code-block-border);
+}
+
+/* =============================================================================
+   SYNTAX HIGHLIGHTING — Token color classes
+   These map to the --code-token-* variables defined in components.css.
+   Rouge (Jekyll's highlighter) and Prism use similar span-based output.
+   The classes below cover the most common token types.
+   ============================================================================= */
+
+/* Keywords: def, class, if, for, return, import, etc. */
+.usrse-token-keyword,
+.highlight .k,
+.highlight .kd,
+.highlight .kn,
+.highlight .kr,
+.highlight .kt {
+  color: var(--code-token-keyword);
+}
+
+/* Strings: "text", 'text', """docstrings""" */
+.usrse-token-string,
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .se,
+.highlight .si,
+.highlight .ss {
+  color: var(--code-token-string);
+}
+
+/* Comments: # inline, /* block */
+.usrse-token-comment,
+.highlight .c,
+.highlight .c1,
+.highlight .cm,
+.highlight .cs {
+  color: var(--code-token-comment);
+  font-style: italic;
+}
+
+/* Numbers: integers, floats, hex */
+.usrse-token-number,
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo {
+  color: var(--code-token-number);
+}
+
+/* Function / method names */
+.usrse-token-function,
+.highlight .nf,
+.highlight .nc {
+  color: var(--code-token-function);
+}
+
+/* Operators: +, -, =, ==, ->, :: */
+.usrse-token-operator,
+.highlight .o,
+.highlight .ow {
+  color: var(--code-token-operator);
+}
+
+/* Variables, identifiers */
+.usrse-token-variable,
+.highlight .n,
+.highlight .nb,
+.highlight .nd {
+  color: var(--code-token-variable);
+}
+
+/* Punctuation: (, ), {, }, [, ], ; */
+.highlight .p {
+  color: var(--code-token-variable);
+}
+
+/* Built-in names */
+.highlight .bp {
+  color: var(--code-token-keyword);
+}
+
+/* Decorator */
+.highlight .nd {
+  color: var(--code-token-function);
+}
+
+/* String interpolation */
+.highlight .si {
+  color: var(--code-token-operator);
+}
+
+/* Highlighted line (for callouts) */
+.usrse-code-line--highlight,
+.highlight .hll {
+  background-color: rgba(255, 255, 255, 0.07);
+  display: block;
+  margin-inline: calc(var(--code-block-padding) * -1);
+  padding-inline: var(--code-block-padding);
+}
+
+/* =============================================================================
+   TERMINAL / SHELL VARIANT
+   Dark green prompt, softer palette for command-line examples.
+   ============================================================================= */
+
+.usrse-code-block--shell pre {
+  background-color: #0d1117;
+}
+
+/* Shell prompt — typically the $ or > character at line start */
+.usrse-token-prompt {
+  color: var(--code-token-string);
+  user-select: none; /* Prevents copying the prompt with the command */
+}
+
+/* =============================================================================
+   SCROLLABLE CODE — wraps a code block with explicit max-height
+   ============================================================================= */
+
+.usrse-code-block--scroll pre {
+  max-height: 28rem;
+  overflow-y: auto;
+}
+
+/* Custom scrollbar for code blocks (WebKit/Blink only) */
+.usrse-code-block pre::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.usrse-code-block pre::-webkit-scrollbar-track {
+  background: var(--code-header-bg);
+}
+
+.usrse-code-block pre::-webkit-scrollbar-thumb {
+  background: var(--code-block-border);
+  border-radius: 9999px;
+}
+
+.usrse-code-block pre::-webkit-scrollbar-thumb:hover {
+  background: var(--code-token-comment);
+}

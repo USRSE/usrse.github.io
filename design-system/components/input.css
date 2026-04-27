@@ -1,0 +1,488 @@
+/**
+ * US-RSE Design System — Form Input Component
+ *
+ * Consumes exclusively --input-*, --checkbox-*, --textarea-* component tokens.
+ *
+ * Covered controls: text, email, password, number, search, textarea, select,
+ *                   checkbox, radio
+ * States:           default, hover, focus, error, success, disabled
+ * Sub-elements:     label, helper text, error message, required/optional indicator
+ * Patterns:         input group (prepend/append), form field (label + input + help)
+ *
+ * Accessibility contract:
+ *   - Every input MUST have an associated <label> (visible or sr-only)
+ *   - Error messages MUST be linked via aria-describedby
+ *   - Required fields use aria-required="true" AND a visual indicator
+ *   - Focus is never suppressed
+ */
+
+/* =============================================================================
+   FORM FIELD — wrapper for label + input + helper/error
+   ============================================================================= */
+
+.usrse-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--input-label-gap);
+}
+
+/* Stack multiple fields with consistent spacing */
+.usrse-form > .usrse-field + .usrse-field {
+  margin-block-start: 1.25rem;
+}
+
+/* =============================================================================
+   LABEL
+   ============================================================================= */
+
+.usrse-label {
+  font-size: var(--input-label-font-size);
+  font-weight: var(--input-label-font-weight);
+  color: var(--input-label-color);
+  line-height: 1.4;
+  cursor: default;
+}
+
+/* Required indicator — screen readers use the aria-required attribute,
+   the asterisk is decorative and aria-hidden */
+.usrse-label__required {
+  color: var(--input-border-error);
+  margin-inline-start: 0.25em;
+  aria-hidden: true;
+}
+
+/* Optional indicator — suppressed by default, show when most fields are required */
+.usrse-label__optional {
+  color: var(--input-placeholder);
+  font-weight: 400;
+  font-size: 0.875em;
+  margin-inline-start: 0.35em;
+}
+
+/* =============================================================================
+   BASE INPUT — text, email, password, number, search
+   ============================================================================= */
+
+.usrse-input {
+  display: block;
+  width: 100%;
+  height: var(--input-height-md);
+  padding-block: var(--input-padding-y-md);
+  padding-inline: var(--input-padding-x-md);
+
+  font-family: var(--input-font-family);
+  font-size: var(--input-font-size);
+  font-weight: var(--input-font-weight);
+  line-height: var(--input-line-height);
+  color: var(--input-text);
+
+  background-color: var(--input-bg);
+  border: var(--input-border-width) solid var(--input-border);
+  border-radius: var(--input-radius);
+  box-shadow: var(--input-shadow);
+
+  transition: var(--input-transition);
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.usrse-input::placeholder {
+  color: var(--input-placeholder);
+}
+
+/* Hover — strengthen border */
+.usrse-input:hover:not(:disabled):not([aria-disabled="true"]) {
+  border-color: var(--input-border-hover);
+}
+
+/* Focus — teal ring, always visible */
+.usrse-input:focus,
+.usrse-input:focus-visible {
+  border-color: var(--input-border-focus);
+  box-shadow: var(--input-shadow-focus);
+}
+
+/* =============================================================================
+   SIZE MODIFIERS
+   ============================================================================= */
+
+.usrse-input--sm {
+  height: var(--input-height-sm);
+  padding-block: var(--input-padding-y-sm);
+  padding-inline: var(--input-padding-x-sm);
+  font-size: var(--input-font-size-sm);
+}
+
+.usrse-input--lg {
+  height: var(--input-height-lg);
+  padding-block: var(--input-padding-y-lg);
+  padding-inline: var(--input-padding-x-lg);
+  font-size: var(--input-font-size-lg);
+}
+
+/* =============================================================================
+   STATE — ERROR
+   ============================================================================= */
+
+.usrse-input--error,
+.usrse-input[aria-invalid="true"] {
+  border-color: var(--input-border-error);
+  color: var(--input-text-error);
+}
+
+.usrse-input--error:focus,
+.usrse-input[aria-invalid="true"]:focus {
+  box-shadow: var(--input-shadow-error);
+}
+
+/* =============================================================================
+   STATE — SUCCESS
+   ============================================================================= */
+
+.usrse-input--success {
+  border-color: var(--input-border-success);
+}
+
+.usrse-input--success:focus {
+  box-shadow: var(--input-shadow-success);
+}
+
+/* =============================================================================
+   STATE — DISABLED
+   ============================================================================= */
+
+.usrse-input:disabled,
+.usrse-input[aria-disabled="true"] {
+  background-color: var(--input-bg-disabled);
+  color: var(--input-text-disabled);
+  border-color: var(--input-border-disabled);
+  cursor: var(--input-cursor-disabled);
+  opacity: 1; /* Override browser default — we control colors explicitly */
+}
+
+/* =============================================================================
+   TEXTAREA
+   Vertically resizable, min height enforced.
+   ============================================================================= */
+
+.usrse-textarea {
+  /* Inherit all input styles */
+  display: block;
+  width: 100%;
+  padding-block: var(--input-padding-y-md);
+  padding-inline: var(--input-padding-x-md);
+
+  font-family: var(--input-font-family);
+  font-size: var(--input-font-size);
+  font-weight: var(--input-font-weight);
+  line-height: var(--input-line-height);
+  color: var(--input-text);
+
+  background-color: var(--input-bg);
+  border: var(--input-border-width) solid var(--input-border);
+  border-radius: var(--input-radius);
+  box-shadow: var(--input-shadow);
+
+  transition: var(--input-transition);
+  outline: none;
+  appearance: none;
+
+  /* Textarea-specific */
+  height: auto;
+  min-height: var(--textarea-min-height);
+  resize: var(--textarea-resize);
+}
+
+.usrse-textarea::placeholder {
+  color: var(--input-placeholder);
+}
+
+.usrse-textarea:hover:not(:disabled) {
+  border-color: var(--input-border-hover);
+}
+
+.usrse-textarea:focus,
+.usrse-textarea:focus-visible {
+  border-color: var(--input-border-focus);
+  box-shadow: var(--input-shadow-focus);
+}
+
+.usrse-textarea--error,
+.usrse-textarea[aria-invalid="true"] {
+  border-color: var(--input-border-error);
+}
+
+.usrse-textarea--error:focus,
+.usrse-textarea[aria-invalid="true"]:focus {
+  box-shadow: var(--input-shadow-error);
+}
+
+.usrse-textarea:disabled {
+  background-color: var(--input-bg-disabled);
+  color: var(--input-text-disabled);
+  border-color: var(--input-border-disabled);
+  cursor: var(--input-cursor-disabled);
+  resize: none;
+}
+
+/* =============================================================================
+   SELECT
+   Custom arrow replaces the browser's native indicator.
+   The select remains native for accessibility — only the visual is overridden.
+   ============================================================================= */
+
+.usrse-select {
+  display: block;
+  width: 100%;
+  height: var(--input-height-md);
+  padding-block: var(--input-padding-y-md);
+  padding-inline-start: var(--input-padding-x-md);
+  /* Right padding makes room for the custom arrow */
+  padding-inline-end: 2.5rem;
+
+  font-family: var(--input-font-family);
+  font-size: var(--input-font-size);
+  font-weight: var(--input-font-weight);
+  line-height: var(--input-line-height);
+  color: var(--input-text);
+
+  background-color: var(--input-bg);
+  /* Custom chevron-down arrow via SVG data URI */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23767e80' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+
+  border: var(--input-border-width) solid var(--input-border);
+  border-radius: var(--input-radius);
+  box-shadow: var(--input-shadow);
+
+  transition: var(--input-transition);
+  outline: none;
+  /* Remove native select arrow on WebKit/Blink */
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.usrse-select:hover:not(:disabled) {
+  border-color: var(--input-border-hover);
+}
+
+.usrse-select:focus,
+.usrse-select:focus-visible {
+  border-color: var(--input-border-focus);
+  box-shadow: var(--input-shadow-focus);
+}
+
+.usrse-select--error,
+.usrse-select[aria-invalid="true"] {
+  border-color: var(--input-border-error);
+}
+
+.usrse-select:disabled {
+  background-color: var(--input-bg-disabled);
+  color: var(--input-text-disabled);
+  border-color: var(--input-border-disabled);
+  cursor: var(--input-cursor-disabled);
+}
+
+/* =============================================================================
+   CHECKBOX & RADIO
+   Custom appearance while remaining accessible native controls.
+   The actual <input> is visually styled; the browser handles all a11y behavior.
+   ============================================================================= */
+
+/* Shared wrapper for checkbox and radio + label pairs */
+.usrse-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.usrse-check__control {
+  /* The actual native input — styled with custom appearance */
+  flex-shrink: 0;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  margin-block-start: 0.125em; /* Optical alignment with label text */
+
+  background-color: var(--checkbox-bg);
+  border: var(--input-border-width) solid var(--checkbox-border);
+
+  transition: var(--input-transition);
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+/* Checkbox — square with rounded corners */
+.usrse-check__control[type="checkbox"] {
+  border-radius: var(--checkbox-radius);
+}
+
+/* Radio — full circle */
+.usrse-check__control[type="radio"] {
+  border-radius: var(--radio-radius);
+}
+
+/* Checked state — teal fill with white checkmark or dot */
+.usrse-check__control:checked {
+  background-color: var(--checkbox-checked-bg);
+  border-color: var(--checkbox-checked-border);
+}
+
+/* Checkmark via SVG background on checkbox */
+.usrse-check__control[type="checkbox"]:checked {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath d='M12.207 4.793a1 1 0 0 1 0 1.414l-5 5a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L6.5 9.086l4.293-4.293a1 1 0 0 1 1.414 0z'/%3E%3C/svg%3E");
+  background-size: 0.875rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Dot via radial gradient on radio */
+.usrse-check__control[type="radio"]:checked {
+  background-image: radial-gradient(
+    circle,
+    #ffffff 35%,
+    transparent 40%
+  );
+}
+
+/* Focus ring */
+.usrse-check__control:focus,
+.usrse-check__control:focus-visible {
+  box-shadow: var(--checkbox-focus-shadow);
+}
+
+/* Disabled */
+.usrse-check__control:disabled {
+  background-color: var(--input-bg-disabled);
+  border-color: var(--input-border-disabled);
+  cursor: var(--input-cursor-disabled);
+}
+
+.usrse-check__control:disabled + .usrse-check__label {
+  color: var(--input-text-disabled);
+  cursor: var(--input-cursor-disabled);
+}
+
+/* Label text associated with the control */
+.usrse-check__label {
+  font-size: var(--input-font-size);
+  color: var(--input-text);
+  line-height: var(--input-line-height);
+}
+
+/* =============================================================================
+   HELPER TEXT
+   ============================================================================= */
+
+.usrse-field-help {
+  font-size: var(--input-help-font-size);
+  color: var(--input-help-color);
+  margin-block-start: var(--input-help-gap);
+  line-height: 1.4;
+}
+
+/* =============================================================================
+   ERROR MESSAGE
+   Link to the input via aria-describedby on the input element.
+   ============================================================================= */
+
+.usrse-field-error {
+  font-size: var(--input-error-font-size);
+  color: var(--input-error-color);
+  margin-block-start: var(--input-error-gap);
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+}
+
+/* Error icon (optional — insert via ::before if adding icon font, or via SVG inline) */
+.usrse-field-error::before {
+  content: "";
+  display: inline-block;
+  width: 0.875em;
+  height: 0.875em;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23ef2e55'%3E%3Cpath fill-rule='evenodd' d='M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0zm-8-5a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-4.5A.75.75 0 0 1 10 5zm0 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-shrink: 0;
+}
+
+/* =============================================================================
+   INPUT GROUP — prepend/append icons or text to inputs
+   ============================================================================= */
+
+.usrse-input-group {
+  display: flex;
+  align-items: stretch;
+}
+
+/* The prepend/append slot */
+.usrse-input-group__addon {
+  display: flex;
+  align-items: center;
+  padding-inline: 0.75rem;
+  background-color: var(--input-bg-disabled);
+  border: var(--input-border-width) solid var(--input-border);
+  color: var(--input-placeholder);
+  font-size: var(--input-font-size);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Prepend — left side */
+.usrse-input-group__addon:first-child {
+  border-end-end-radius: 0;
+  border-start-end-radius: 0;
+  border-inline-end: none;
+  border-start-start-radius: var(--input-radius);
+  border-end-start-radius: var(--input-radius);
+}
+
+/* Append — right side */
+.usrse-input-group__addon:last-child {
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;
+  border-inline-start: none;
+  border-start-end-radius: var(--input-radius);
+  border-end-end-radius: var(--input-radius);
+}
+
+/* Input inside a group — flatten the joined edges */
+.usrse-input-group .usrse-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.usrse-input-group .usrse-input:not(:first-child) {
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;
+}
+
+.usrse-input-group .usrse-input:not(:last-child) {
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+}
+
+/* Addon button variant */
+.usrse-input-group .usrse-button {
+  border-radius: 0;
+  flex-shrink: 0;
+}
+
+.usrse-input-group .usrse-button:last-child {
+  border-start-end-radius: var(--input-radius);
+  border-end-end-radius: var(--input-radius);
+}
+
+.usrse-input-group .usrse-button:first-child {
+  border-start-start-radius: var(--input-radius);
+  border-end-start-radius: var(--input-radius);
+}

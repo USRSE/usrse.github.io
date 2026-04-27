@@ -1,0 +1,287 @@
+/**
+ * US-RSE Design System — Table Component
+ *
+ * Consumes exclusively --table-* component tokens from tokens/components.css.
+ *
+ * Features:
+ *   - Responsive wrapper (horizontal scroll on mobile)
+ *   - Striped rows (even rows get alt background)
+ *   - Hover row highlight
+ *   - Header styling with uppercase labels
+ *   - Compact / comfortable density variants
+ *   - Sortable column headers (CSS-only indicators, JS adds aria-sort)
+ *   - Selected row state (checkbox pattern)
+ *
+ * Tables are a core component for RSE audiences who read data frequently.
+ * Precision and legibility are prioritized over visual decoration.
+ */
+
+/* =============================================================================
+   RESPONSIVE WRAPPER
+   Enables horizontal scroll on narrow viewports without breaking layout.
+   The wrapper is the only element that should have overflow — not the table itself.
+   ============================================================================= */
+
+.usrse-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  /* Subtle scroll shadow indicators on webkit */
+  -webkit-overflow-scrolling: touch;
+
+  /* Border and radius clip to the wrapper so the table corners are visible */
+  border: var(--table-border-width) solid var(--table-border);
+  border-radius: var(--table-radius);
+  box-shadow: var(--shadow-card, 0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+/* =============================================================================
+   BASE TABLE
+   ============================================================================= */
+
+.usrse-table {
+  width: 100%;
+  min-width: 32rem; /* Prevents collapse below readable width */
+  border-collapse: collapse;
+  font-size: var(--table-font-size);
+  line-height: var(--table-line-height);
+  color: var(--table-row-text);
+  background-color: var(--table-row-bg);
+
+  /* Table should fill the wrapper, not overflow independently */
+  display: table;
+}
+
+/* =============================================================================
+   TABLE HEADER
+   ============================================================================= */
+
+.usrse-table thead {
+  background-color: var(--table-header-bg);
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 1;
+}
+
+.usrse-table th {
+  padding-block: var(--table-header-padding-y);
+  padding-inline: var(--table-header-padding-x);
+
+  font-size: var(--table-font-size);
+  font-weight: var(--table-header-font-weight);
+  color: var(--table-header-text);
+  text-align: start;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  border-block-end: 2px solid var(--table-border);
+  user-select: none;
+}
+
+/* Right-aligned numeric column header */
+.usrse-table th.usrse-table__col--numeric,
+.usrse-table td.usrse-table__col--numeric {
+  text-align: end;
+}
+
+/* =============================================================================
+   TABLE BODY ROWS
+   ============================================================================= */
+
+.usrse-table tbody tr {
+  background-color: var(--table-row-bg);
+  border-block-end: var(--table-border-width) solid var(--table-row-border);
+  transition: background-color 0.1s ease;
+}
+
+/* Remove border from last row — the wrapper provides the outer edge */
+.usrse-table tbody tr:last-child {
+  border-block-end: none;
+}
+
+.usrse-table td {
+  padding-block: var(--table-row-padding-y);
+  padding-inline: var(--table-row-padding-x);
+  vertical-align: middle;
+}
+
+/* =============================================================================
+   STRIPED ROWS
+   Even rows get the alternate background for easier row tracking.
+   Applied via modifier on the table, not on individual rows, so the pattern
+   is predictable regardless of how many rows are rendered.
+   ============================================================================= */
+
+.usrse-table--striped tbody tr:nth-child(even) {
+  background-color: var(--table-row-bg-alt);
+}
+
+/* =============================================================================
+   HOVER STATE
+   ============================================================================= */
+
+.usrse-table--hoverable tbody tr:hover {
+  background-color: var(--table-row-bg-hover);
+}
+
+/* =============================================================================
+   SELECTED ROW
+   Applied when a row checkbox is checked. JS toggles aria-selected on the <tr>.
+   ============================================================================= */
+
+.usrse-table tbody tr[aria-selected="true"],
+.usrse-table tbody tr.usrse-table__row--selected {
+  background-color: var(--table-row-bg-hover);
+  /* Left indicator line for visual clarity */
+  box-shadow: inset 3px 0 0 var(--table-border);
+}
+
+/* Checkbox cell — first column when using row selection */
+.usrse-table__col--checkbox {
+  width: 2.5rem;
+  padding-inline: 0.75rem;
+}
+
+/* =============================================================================
+   SORTABLE COLUMN HEADERS
+   CSS shows the indicator. JS controls aria-sort for screen readers.
+   aria-sort="ascending" | "descending" | "none"
+   ============================================================================= */
+
+.usrse-table th[aria-sort] {
+  cursor: pointer;
+  padding-inline-end: 1.75rem; /* Room for the sort indicator */
+  position: relative;
+}
+
+.usrse-table th[aria-sort]:hover {
+  background-color: var(--table-row-bg-hover);
+}
+
+.usrse-table th[aria-sort]:focus-visible {
+  outline: 2px solid var(--table-border);
+  outline-offset: -2px;
+}
+
+/* Sort indicator — neutral state: double arrow */
+.usrse-table th[aria-sort="none"]::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0.625rem;
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+  width: 0.6em;
+  height: 0.9em;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 16' fill='%23767e80'%3E%3Cpath d='M5 0L0 6h10L5 0zm0 16l5-6H0l5 6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.5;
+}
+
+/* Ascending: arrow up */
+.usrse-table th[aria-sort="ascending"]::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0.625rem;
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+  width: 0.7em;
+  height: 0.7em;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10' fill='%23188eac'%3E%3Cpath d='M5 0L0 10h10L5 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Descending: arrow down */
+.usrse-table th[aria-sort="descending"]::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0.625rem;
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+  width: 0.7em;
+  height: 0.7em;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10' fill='%23188eac'%3E%3Cpath d='M5 10L0 0h10L5 10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Active sort column header — teal text */
+.usrse-table th[aria-sort="ascending"],
+.usrse-table th[aria-sort="descending"] {
+  color: var(--table-border); /* Uses the table border token which resolves to teal border */
+}
+
+/* =============================================================================
+   DENSITY VARIANTS
+   ============================================================================= */
+
+/* Compact — tighter row height, denser data display */
+.usrse-table--compact th {
+  padding-block: calc(var(--table-header-padding-y) * 0.65);
+  padding-inline: calc(var(--table-header-padding-x) * 0.75);
+}
+
+.usrse-table--compact td {
+  padding-block: calc(var(--table-row-padding-y) * 0.65);
+  padding-inline: calc(var(--table-row-padding-x) * 0.75);
+}
+
+/* Comfortable — more generous spacing for readable lists */
+.usrse-table--comfortable th {
+  padding-block: calc(var(--table-header-padding-y) * 1.5);
+}
+
+.usrse-table--comfortable td {
+  padding-block: calc(var(--table-row-padding-y) * 1.5);
+}
+
+/* =============================================================================
+   FOOTER ROW — summary row at the bottom (totals, averages)
+   ============================================================================= */
+
+.usrse-table tfoot tr {
+  background-color: var(--table-header-bg);
+  border-block-start: 2px solid var(--table-border);
+}
+
+.usrse-table tfoot td {
+  font-weight: 600;
+}
+
+/* =============================================================================
+   CAPTION — accessible table description
+   ============================================================================= */
+
+.usrse-table caption {
+  caption-side: top;
+  text-align: start;
+  font-size: var(--table-font-size);
+  font-weight: 600;
+  color: var(--table-header-text);
+  padding-block-end: 0.5rem;
+  /* Caption is outside the table border so no padding needed for alignment */
+}
+
+/* =============================================================================
+   CELL CONTENT HELPERS
+   ============================================================================= */
+
+/* Monospace cell — for IDs, hashes, file paths */
+.usrse-table__cell--mono {
+  font-family: var(--code-font-family, monospace);
+  font-size: 0.8125rem;
+}
+
+/* Nowrap cell — prevents wrapping in constrained columns */
+.usrse-table__cell--nowrap {
+  white-space: nowrap;
+}
+
+/* Truncating cell — clips text with ellipsis, requires fixed column width */
+.usrse-table__cell--truncate {
+  max-width: 12rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

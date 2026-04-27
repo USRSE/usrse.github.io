@@ -1,0 +1,345 @@
+/**
+ * US-RSE Design System — Button Component
+ *
+ * Consumes exclusively --button-* component tokens from tokens/components.css.
+ * Never reference semantic or global tokens directly in this file.
+ *
+ * Variants:   primary (teal), secondary (outlined teal), ghost, accent (purple), danger
+ * Sizes:      sm, md (default), lg
+ * States:     default, hover, focus, active, disabled, loading
+ * Icons:      icon-only, icon-left, icon-right
+ *
+ * BEM-like naming under the .usrse- prefix ensures zero conflict during
+ * Jekyll/Bulma migration while both systems coexist on the page.
+ */
+
+/* =============================================================================
+   BASE — Structural styles shared by every button variant
+   ============================================================================= */
+
+.usrse-button {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  white-space: nowrap;
+
+  /* Default size — md */
+  height: var(--button-height-md);
+  padding-block: var(--button-padding-y-md);
+  padding-inline: var(--button-padding-x-md);
+  font-size: var(--button-font-size-md);
+
+  /* Typography */
+  font-family: var(--button-font-family);
+  font-weight: var(--button-font-weight);
+  letter-spacing: var(--button-letter-spacing);
+  line-height: 1;
+  text-decoration: none;
+
+  /* Visual */
+  border-radius: var(--button-radius);
+  border: 1px solid transparent;
+  cursor: var(--button-cursor);
+  transition: var(--button-transition);
+
+  /* Prevent text selection on rapid click */
+  user-select: none;
+  -webkit-user-select: none;
+
+  /* Contain the loading spinner */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Remove default button browser styles */
+.usrse-button:not([class*="usrse-button--"]) {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Focus — visible ring for keyboard navigation. Never suppressed. */
+.usrse-button:focus-visible {
+  outline: none;
+  box-shadow: var(--button-primary-shadow-focus);
+}
+
+/* =============================================================================
+   SIZE MODIFIERS
+   ============================================================================= */
+
+.usrse-button--sm {
+  height: var(--button-height-sm);
+  padding-block: var(--button-padding-y-sm);
+  padding-inline: var(--button-padding-x-sm);
+  font-size: var(--button-font-size-sm);
+}
+
+.usrse-button--lg {
+  height: var(--button-height-lg);
+  padding-block: var(--button-padding-y-lg);
+  padding-inline: var(--button-padding-x-lg);
+  font-size: var(--button-font-size-lg);
+}
+
+/* =============================================================================
+   VARIANT — PRIMARY (teal, the main action)
+   ============================================================================= */
+
+.usrse-button--primary {
+  background-color: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  border-color: var(--button-primary-border);
+}
+
+.usrse-button--primary:hover:not(:disabled):not([aria-disabled="true"]) {
+  background-color: var(--button-primary-bg-hover);
+  border-color: var(--button-primary-border-hover);
+}
+
+.usrse-button--primary:active:not(:disabled):not([aria-disabled="true"]) {
+  background-color: var(--button-primary-bg-active);
+}
+
+.usrse-button--primary:focus-visible {
+  box-shadow: var(--button-primary-shadow-focus);
+}
+
+/* =============================================================================
+   VARIANT — SECONDARY (outlined teal)
+   ============================================================================= */
+
+.usrse-button--secondary {
+  background-color: var(--button-secondary-bg);
+  color: var(--button-secondary-text);
+  border-color: var(--button-secondary-border);
+}
+
+.usrse-button--secondary:hover:not(:disabled):not([aria-disabled="true"]) {
+  background-color: var(--button-secondary-bg-hover);
+  color: var(--button-secondary-text-hover);
+  border-color: var(--button-secondary-border-hover);
+}
+
+.usrse-button--secondary:active:not(:disabled):not([aria-disabled="true"]) {
+  background-color: var(--button-secondary-bg-active);
+}
+
+.usrse-button--secondary:focus-visible {
+  box-shadow: var(--button-secondary-shadow-focus);
+}
+
+/* =============================================================================
+   VARIANT — GHOST (transparent, low-emphasis)
+   ============================================================================= */
+
+.usrse-button--ghost {
+  background-color: var(--button-ghost-bg);
+  color: var(--button-ghost-text);
+  border-color: var(--button-ghost-border);
+}
+
+.usrse-button--ghost:hover:not(:disabled):not([aria-disabled="true"]) {
+  background-color: var(--button-ghost-bg-hover);
+  color: var(--button-ghost-text-hover);
+}
+
+.usrse-button--ghost:active:not(:disabled):not([aria-disabled="true"]) {
+  background-color: var(--button-ghost-bg-active);
+}
+
+.usrse-button--ghost:focus-visible {
+  box-shadow: var(--button-ghost-shadow-focus);
+}
+
+/* =============================================================================
+   VARIANT — ACCENT (purple, secondary brand action)
+   ============================================================================= */
+
+.usrse-button--accent {
+  background-color: var(--button-accent-bg);
+  color: var(--button-accent-text);
+  border-color: var(--button-accent-border);
+}
+
+.usrse-button--accent:hover:not(:disabled):not([aria-disabled="true"]) {
+  background-color: var(--button-accent-bg-hover);
+  border-color: var(--button-accent-border-hover);
+}
+
+.usrse-button--accent:active:not(:disabled):not([aria-disabled="true"]) {
+  background-color: var(--button-accent-bg-active);
+}
+
+.usrse-button--accent:focus-visible {
+  box-shadow: var(--button-accent-shadow-focus);
+}
+
+/* =============================================================================
+   VARIANT — DANGER (destructive actions)
+   ============================================================================= */
+
+.usrse-button--danger {
+  background-color: var(--button-danger-bg);
+  color: var(--button-danger-text);
+  border-color: var(--button-danger-border);
+}
+
+.usrse-button--danger:hover:not(:disabled):not([aria-disabled="true"]) {
+  background-color: var(--button-danger-bg-hover);
+  border-color: var(--button-danger-border-hover);
+}
+
+.usrse-button--danger:active:not(:disabled):not([aria-disabled="true"]) {
+  background-color: var(--button-danger-bg-active);
+}
+
+.usrse-button--danger:focus-visible {
+  box-shadow: var(--button-danger-shadow-focus);
+}
+
+/* =============================================================================
+   STATE — DISABLED
+   Applied via :disabled pseudo-class or aria-disabled="true" for non-button
+   elements (e.g., <a> links styled as buttons).
+   ============================================================================= */
+
+.usrse-button:disabled,
+.usrse-button[aria-disabled="true"] {
+  opacity: var(--button-disabled-opacity);
+  cursor: var(--button-disabled-cursor);
+  pointer-events: none;
+}
+
+/* =============================================================================
+   STATE — LOADING
+   Show a spinner and hide text. Uses aria-busy="true" for accessibility.
+   The spinner is CSS-only — no JS required.
+   ============================================================================= */
+
+.usrse-button--loading,
+.usrse-button[aria-busy="true"] {
+  cursor: wait;
+  pointer-events: none;
+}
+
+/* Hide button text visually while loading but keep it for screen readers */
+.usrse-button--loading .usrse-button__text,
+.usrse-button[aria-busy="true"] .usrse-button__text {
+  visibility: hidden;
+}
+
+/* Spinner overlaid in center, inherits button text color */
+.usrse-button--loading::after,
+.usrse-button[aria-busy="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 1em;
+  height: 1em;
+  margin: -0.5em 0 0 -0.5em;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: usrse-button-spin 0.6s linear infinite;
+}
+
+@keyframes usrse-button-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Respect reduced motion — show static indicator instead of spinning */
+@media (prefers-reduced-motion: reduce) {
+  .usrse-button--loading::after,
+  .usrse-button[aria-busy="true"]::after {
+    animation: none;
+    border-right-color: currentColor;
+    opacity: 0.5;
+  }
+}
+
+/* =============================================================================
+   ICON SUPPORT
+   ============================================================================= */
+
+/* Icon-only: square, no text visible to sighted users.
+   Always include aria-label or aria-labelledby on the button element. */
+.usrse-button--icon-only {
+  padding-inline: 0;
+  width: var(--button-height-md);
+}
+
+.usrse-button--icon-only.usrse-button--sm {
+  width: var(--button-height-sm);
+}
+
+.usrse-button--icon-only.usrse-button--lg {
+  width: var(--button-height-lg);
+}
+
+/* Scale icon SVG to fit the button label size */
+.usrse-button__icon {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  /* pointer-events: none ensures icon clicks pass through to button */
+  pointer-events: none;
+}
+
+/* =============================================================================
+   FULL WIDTH MODIFIER
+   ============================================================================= */
+
+.usrse-button--full {
+  width: 100%;
+}
+
+/* =============================================================================
+   BUTTON GROUP
+   Groups related buttons with collapsed internal borders.
+   ============================================================================= */
+
+.usrse-button-group {
+  display: inline-flex;
+  align-items: center;
+}
+
+.usrse-button-group .usrse-button {
+  border-radius: 0;
+}
+
+.usrse-button-group .usrse-button:first-child {
+  border-start-start-radius: var(--button-radius);
+  border-end-start-radius: var(--button-radius);
+}
+
+.usrse-button-group .usrse-button:last-child {
+  border-start-end-radius: var(--button-radius);
+  border-end-end-radius: var(--button-radius);
+}
+
+/* Collapse adjacent borders to avoid double borders */
+.usrse-button-group .usrse-button + .usrse-button {
+  margin-inline-start: -1px;
+}
+
+/* Raise focused button above siblings so the focus ring is fully visible */
+.usrse-button-group .usrse-button:focus-visible {
+  z-index: 1;
+  position: relative;
+}
+
+/* =============================================================================
+   RESPONSIVE — Reduce padding on very small screens
+   ============================================================================= */
+
+@media (max-width: 639px) {
+  .usrse-button--lg {
+    padding-inline: var(--button-padding-x-md);
+    height: var(--button-height-md);
+    font-size: var(--button-font-size-md);
+  }
+}

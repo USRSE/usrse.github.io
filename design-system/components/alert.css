@@ -1,0 +1,255 @@
+/**
+ * US-RSE Design System — Alert / Notification Component
+ *
+ * Consumes exclusively --alert-* component tokens from tokens/components.css.
+ *
+ * Variants:     success, warning, danger, info, neutral
+ * Structure:    left-border accent, optional icon column, optional close button
+ * Dismissible:  data-dismissed="true" hides via animation; JS removes from DOM
+ * Accessibility: role="alert" for assertive announcements (danger, error)
+ *                role="status" for polite announcements (success, info)
+ *                Each alert should have aria-live="polite" or "assertive"
+ *
+ * Works without JavaScript — the close button can be a form submit that
+ * server-side renders the page without the alert.
+ */
+
+/* =============================================================================
+   BASE ALERT
+   ============================================================================= */
+
+.usrse-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+
+  padding: var(--alert-padding);
+  border-radius: var(--alert-radius);
+  border-inline-start: var(--alert-border-width) solid transparent;
+
+  font-size: var(--alert-font-size);
+  line-height: var(--alert-line-height);
+
+  /* Compensate for the left border in the overall width */
+  position: relative;
+}
+
+/* =============================================================================
+   VARIANT — SUCCESS
+   ============================================================================= */
+
+.usrse-alert--success {
+  background-color: var(--alert-success-bg);
+  border-inline-start-color: var(--alert-success-border);
+  color: var(--alert-success-text);
+}
+
+.usrse-alert--success .usrse-alert__icon {
+  color: var(--alert-success-icon);
+}
+
+/* =============================================================================
+   VARIANT — WARNING
+   ============================================================================= */
+
+.usrse-alert--warning {
+  background-color: var(--alert-warning-bg);
+  border-inline-start-color: var(--alert-warning-border);
+  color: var(--alert-warning-text);
+}
+
+.usrse-alert--warning .usrse-alert__icon {
+  color: var(--alert-warning-icon);
+}
+
+/* =============================================================================
+   VARIANT — DANGER / ERROR
+   ============================================================================= */
+
+.usrse-alert--danger {
+  background-color: var(--alert-danger-bg);
+  border-inline-start-color: var(--alert-danger-border);
+  color: var(--alert-danger-text);
+}
+
+.usrse-alert--danger .usrse-alert__icon {
+  color: var(--alert-danger-icon);
+}
+
+/* =============================================================================
+   VARIANT — INFO
+   ============================================================================= */
+
+.usrse-alert--info {
+  background-color: var(--alert-info-bg);
+  border-inline-start-color: var(--alert-info-border);
+  color: var(--alert-info-text);
+}
+
+.usrse-alert--info .usrse-alert__icon {
+  color: var(--alert-info-icon);
+}
+
+/* =============================================================================
+   VARIANT — NEUTRAL
+   ============================================================================= */
+
+.usrse-alert--neutral {
+  background-color: var(--alert-neutral-bg);
+  border-inline-start-color: var(--alert-neutral-border);
+  color: var(--alert-neutral-text);
+}
+
+/* =============================================================================
+   ICON SLOT
+   Holds a 20×20 SVG or icon-font glyph.
+   ============================================================================= */
+
+.usrse-alert__icon {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  margin-block-start: 0.1em; /* Optical alignment with first line of text */
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.usrse-alert__icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+/* =============================================================================
+   CONTENT AREA
+   ============================================================================= */
+
+.usrse-alert__content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Alert title — optional, stronger heading for multi-line alerts */
+.usrse-alert__title {
+  font-weight: 600;
+  margin-block-end: 0.25em;
+  line-height: 1.4;
+}
+
+/* Alert body text — the main message */
+.usrse-alert__body {
+  margin: 0;
+  line-height: var(--alert-line-height);
+}
+
+/* Links inside alert body inherit the alert's text color and get underline */
+.usrse-alert__body a {
+  color: inherit;
+  font-weight: 600;
+  text-underline-offset: 2px;
+}
+
+.usrse-alert__body a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* =============================================================================
+   CLOSE BUTTON (dismissible alerts)
+   ============================================================================= */
+
+.usrse-alert__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-inline-start: auto;
+  margin-block-start: -0.15rem; /* Pull up to align with text cap height */
+
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: currentColor;
+  opacity: 0.6;
+
+  transition: opacity 0.15s ease, background-color 0.15s ease;
+}
+
+.usrse-alert__close:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.usrse-alert__close:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  opacity: 1;
+}
+
+/* CSS-only X icon */
+.usrse-alert__close::before {
+  content: "×";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* =============================================================================
+   DISMISSIBLE — animated exit
+   JS sets data-dismissed="true". The animation plays, then JS removes the element.
+   Without JS, the close button submits a form or follows a link that reloads
+   the page without the alert.
+   ============================================================================= */
+
+.usrse-alert[data-dismissed="true"] {
+  animation: usrse-alert-dismiss 0.25s ease forwards;
+}
+
+@keyframes usrse-alert-dismiss {
+  from {
+    opacity: 1;
+    transform: scaleY(1);
+    max-height: 20rem;
+    margin-block-end: inherit;
+    padding: inherit;
+  }
+  to {
+    opacity: 0;
+    transform: scaleY(0);
+    max-height: 0;
+    margin-block-end: 0;
+    padding-block: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .usrse-alert[data-dismissed="true"] {
+    animation: none;
+    display: none;
+  }
+}
+
+/* =============================================================================
+   ALERT STACK — multiple alerts stacked vertically
+   ============================================================================= */
+
+.usrse-alert-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* =============================================================================
+   INLINE ALERT VARIANT — compact, no border-radius, for form-level errors
+   ============================================================================= */
+
+.usrse-alert--inline {
+  border-radius: 0;
+  padding-block: 0.625rem;
+  padding-inline: 1rem;
+  font-size: 0.875rem;
+}

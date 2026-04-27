@@ -1,0 +1,264 @@
+/**
+ * US-RSE Design System — Hero Section Component
+ *
+ * Consumes exclusively --hero-* component tokens from tokens/components.css.
+ *
+ * Variants:   primary (solid teal), gradient (teal-to-purple), subtle (light bg)
+ * Sizes:      sm, md (default), lg
+ * Sub-elements: eyebrow, title, subtitle, body, cta-group
+ * Responsive: gradient on mobile (production-matched behavior), prose max-width
+ *
+ * Production note from components.css:
+ *   - Solid teal (#188eac) on desktop
+ *   - Gradient (141deg teal-800 → teal-500 → teal-400) on mobile in production
+ *   - Title and subtitle are PURPLE (#741755) on teal — the defining US-RSE identity
+ *   - Body text is white on teal
+ */
+
+/* =============================================================================
+   BASE HERO
+   ============================================================================= */
+
+.usrse-hero {
+  position: relative;
+  width: 100%;
+  background-color: var(--hero-bg);
+  color: var(--hero-text);
+
+  padding-block: var(--hero-padding-y);
+  padding-inline: var(--hero-padding-x);
+}
+
+/* Inner container — constrains readable content width */
+.usrse-hero__container {
+  max-width: var(--layout-max-wide, 1216px);
+  margin-inline: auto;
+}
+
+/* Prose width constraint — keeps long text from spanning the full viewport */
+.usrse-hero__content {
+  max-width: 52rem;
+}
+
+/* Centered layout variant */
+.usrse-hero--centered .usrse-hero__content {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.usrse-hero--centered .usrse-hero__cta-group {
+  justify-content: center;
+}
+
+/* =============================================================================
+   VARIANT — PRIMARY (solid teal, production default)
+   Desktop: solid #188eac
+   Mobile: teal gradient (production-matched)
+   ============================================================================= */
+
+.usrse-hero--primary {
+  background-color: var(--hero-bg);
+}
+
+/* On mobile, switch to the gradient to match production behavior */
+@media (max-width: 768px) {
+  .usrse-hero--primary {
+    background: var(--hero-bg-gradient-mobile);
+    background-color: var(--hero-bg); /* Fallback for browsers without gradient support */
+  }
+}
+
+/* =============================================================================
+   VARIANT — GRADIENT (teal-to-purple, design system extension)
+   Used for conference banners, featured announcements, campaign pages.
+   ============================================================================= */
+
+.usrse-hero--gradient {
+  background: var(--hero-bg-gradient-brand);
+  background-color: var(--hero-bg); /* Fallback */
+}
+
+/* Override title color to white on the gradient — purple on teal is the convention,
+   but on a teal-purple gradient, purple title may not have sufficient contrast
+   at the right edge. White is the safe choice here. */
+.usrse-hero--gradient .usrse-hero__title {
+  color: var(--hero-text);
+}
+
+.usrse-hero--gradient .usrse-hero__subtitle {
+  color: var(--hero-text-secondary);
+}
+
+/* =============================================================================
+   VARIANT — SUBTLE (light teal tint, for secondary pages)
+   Uses --hero-bg-subtle which is teal-50. Text switches to dark.
+   ============================================================================= */
+
+.usrse-hero--subtle {
+  background-color: var(--hero-bg-subtle);
+  color: var(--hero-text-subtle);
+}
+
+.usrse-hero--subtle .usrse-hero__title {
+  color: var(--hero-title-color); /* purple on light teal is fine — 3.1:1 large text */
+}
+
+.usrse-hero--subtle .usrse-hero__subtitle {
+  color: var(--hero-subtitle-color);
+}
+
+.usrse-hero--subtle .usrse-hero__eyebrow {
+  color: var(--color-text-secondary, #4d5456);
+  opacity: 1;
+}
+
+/* =============================================================================
+   SIZE MODIFIERS
+   ============================================================================= */
+
+.usrse-hero--sm {
+  padding-block: var(--hero-padding-y-sm);
+}
+
+.usrse-hero--lg {
+  /* A double section-lg creates a substantial visual break */
+  padding-block: calc(var(--hero-padding-y) * 1.5);
+}
+
+/* =============================================================================
+   TYPOGRAPHY SUB-ELEMENTS
+   ============================================================================= */
+
+/* Eyebrow — small caps label above the title (e.g., "Annual Conference 2024") */
+.usrse-hero__eyebrow {
+  display: block;
+  font-size: var(--hero-eyebrow-font-size);
+  font-weight: var(--hero-eyebrow-font-weight);
+  letter-spacing: var(--hero-eyebrow-letter-spacing);
+  text-transform: uppercase;
+  color: var(--hero-eyebrow-color);
+  /* 50% opacity keeps the label from competing with the title */
+  opacity: 0.85;
+  margin-block-end: 0.75em;
+}
+
+/* Title — the primary headline. Purple on teal is the production identity. */
+.usrse-hero__title {
+  font-size: var(--hero-title-font-size);
+  font-family: var(--hero-title-font-family);
+  font-weight: var(--hero-title-font-weight);
+  line-height: var(--hero-title-line-height);
+  letter-spacing: var(--hero-title-letter-spacing);
+  color: var(--hero-title-color);
+  margin: 0;
+}
+
+/* Subtitle — slightly smaller, also purple on teal in production */
+.usrse-hero__subtitle {
+  font-size: var(--hero-subtitle-font-size);
+  font-weight: var(--hero-subtitle-font-weight);
+  line-height: var(--hero-subtitle-line-height);
+  color: var(--hero-subtitle-color);
+  margin-block-start: 0.5em;
+  margin-block-end: 0;
+}
+
+/* Body — supplementary text, white (#fff) for legibility on teal/purple */
+.usrse-hero__body {
+  font-size: 1rem;
+  line-height: 1.625;
+  color: var(--hero-text-secondary);
+  max-width: var(--layout-max-prose, 65ch);
+  margin-block-start: 1rem;
+}
+
+/* =============================================================================
+   CTA GROUP — row of buttons below the hero text
+   ============================================================================= */
+
+.usrse-hero__cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--hero-cta-gap);
+  margin-block-start: var(--hero-cta-mt);
+  align-items: center;
+}
+
+/* Inverse button for use on colored hero backgrounds.
+   White fill on teal/purple meets accessible contrast. */
+.usrse-hero__cta-group .usrse-button--ghost {
+  color: var(--hero-text);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.usrse-hero__cta-group .usrse-button--ghost:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: var(--hero-text);
+}
+
+/* =============================================================================
+   HERO IMAGE — optional split layout (text left, image right)
+   ============================================================================= */
+
+.usrse-hero--split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.usrse-hero--split .usrse-hero__content {
+  max-width: none;
+}
+
+.usrse-hero__image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.usrse-hero__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+/* =============================================================================
+   RESPONSIVE
+   ============================================================================= */
+
+@media (max-width: 768px) {
+  .usrse-hero {
+    padding-block: var(--hero-padding-y-sm);
+    padding-inline: var(--hero-padding-x-mobile);
+  }
+
+  .usrse-hero--lg {
+    padding-block: var(--hero-padding-y);
+  }
+
+  .usrse-hero--split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Stack CTA buttons on narrow screens */
+  .usrse-hero__cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .usrse-hero__cta-group .usrse-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .usrse-hero__title {
+    /* Floor the fluid clamp at a readable minimum */
+    font-size: clamp(1.75rem, 6vw, var(--hero-title-font-size));
+  }
+}

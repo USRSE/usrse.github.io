@@ -1,0 +1,539 @@
+/**
+ * US-RSE Design System — Navigation Component
+ *
+ * Consumes exclusively --nav-* component tokens from tokens/components.css.
+ *
+ * Production-matched behavior documented in components.css:
+ *   - Navbar: purple (#741755) background, white text — Bulma .is-primary override
+ *   - Active dropdown item: teal (#188eac) background, white text
+ *   - Mobile menu: teal gradient (141deg)
+ *   - Back-to-top: purple pill (#741755)
+ *
+ * This component is built to coexist with Bulma during migration.
+ * All classes are prefixed .usrse- to avoid cascade conflicts.
+ *
+ * Progressive enhancement: mobile menu works via the :target CSS technique
+ * as a baseline. JavaScript can enhance with ARIA and animation.
+ */
+
+/* =============================================================================
+   SKIP LINK — accessibility: first focusable element on the page
+   Visually hidden until focused; moves to top-left corner on focus.
+   ============================================================================= */
+
+.usrse-skip-link {
+  position: fixed;
+  inset-block-start: -100%;
+  inset-inline-start: var(--skip-link-padding-x, 1rem);
+
+  background-color: var(--skip-link-bg);
+  color: var(--skip-link-text);
+  font-weight: var(--skip-link-font-weight);
+  padding-block: var(--skip-link-padding-y);
+  padding-inline: var(--skip-link-padding-x);
+  border-radius: var(--skip-link-radius);
+  text-decoration: none;
+  z-index: var(--skip-link-z);
+
+  transition: inset-block-start 0.1s ease;
+}
+
+/* On focus: slide into view at the top of the viewport */
+.usrse-skip-link:focus,
+.usrse-skip-link:focus-visible {
+  inset-block-start: 1rem;
+  outline: 2px solid var(--color-text-inverse, #fff);
+  outline-offset: 2px;
+}
+
+/* =============================================================================
+   TOPBAR NAVBAR — Purple background, sticky
+   ============================================================================= */
+
+.usrse-nav {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: var(--nav-z);
+
+  display: flex;
+  align-items: stretch;
+  height: var(--nav-height);
+  padding-inline: var(--nav-padding-x);
+
+  background-color: var(--nav-bg);
+  border-block-end: var(--nav-border-width) solid var(--nav-border);
+  box-shadow: var(--nav-shadow);
+
+  transition: var(--nav-transition);
+}
+
+/* Solid shadow on scroll — JS adds this class when window.scrollY > 0 */
+.usrse-nav--scrolled {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Inner container — constrains content to max-width */
+.usrse-nav__container {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  max-width: var(--layout-max-wide, 1216px);
+  margin-inline: auto;
+  gap: 0;
+}
+
+/* =============================================================================
+   LOGO
+   ============================================================================= */
+
+.usrse-nav__brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+  margin-inline-end: auto;
+}
+
+.usrse-nav__logo {
+  height: var(--nav-logo-height);
+  width: auto;
+  display: block;
+}
+
+/* =============================================================================
+   NAV ITEMS CONTAINER — Desktop
+   ============================================================================= */
+
+.usrse-nav__menu {
+  display: flex;
+  align-items: stretch;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+/* =============================================================================
+   NAV ITEM — desktop link with optional dropdown
+   ============================================================================= */
+
+.usrse-nav__item {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.usrse-nav__link {
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+  padding-block: var(--nav-link-padding-y);
+  padding-inline: var(--nav-link-padding-x);
+
+  font-size: var(--nav-link-font-size);
+  font-weight: var(--nav-link-font-weight);
+  letter-spacing: var(--nav-link-letter-spacing);
+  color: var(--nav-link-color);
+  text-decoration: none;
+
+  white-space: nowrap;
+  transition: var(--nav-transition);
+  border-radius: var(--nav-link-radius);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.usrse-nav__link:hover,
+.usrse-nav__link[aria-expanded="true"] {
+  color: var(--nav-link-color-hover);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.usrse-nav__link:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline-offset: -2px;
+}
+
+/* Dropdown chevron icon */
+.usrse-nav__link--has-dropdown::after {
+  content: "";
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-0.15em);
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+}
+
+.usrse-nav__link--has-dropdown[aria-expanded="true"]::after {
+  transform: rotate(-135deg) translateY(0.15em);
+}
+
+/* =============================================================================
+   DROPDOWN PANEL
+   Appears on hover (CSS :hover for progressive enhancement) or on
+   aria-expanded="true" (set by JS for full a11y behavior).
+   ============================================================================= */
+
+.usrse-nav__dropdown {
+  position: absolute;
+  inset-block-start: 100%;
+  inset-inline-start: 0;
+  z-index: var(--nav-dropdown-z);
+
+  min-width: var(--nav-dropdown-min-width);
+  padding-block: var(--nav-dropdown-padding-y);
+
+  background-color: var(--nav-dropdown-bg);
+  border: 1px solid var(--nav-dropdown-border);
+  border-radius: var(--nav-dropdown-radius);
+  box-shadow: var(--nav-dropdown-shadow);
+
+  list-style: none;
+  margin: 0;
+
+  /* Hidden by default */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease,
+    visibility 0.15s;
+  pointer-events: none;
+}
+
+/* CSS-only show on hover (progressive enhancement) */
+.usrse-nav__item:hover .usrse-nav__dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* JS-controlled show via aria-expanded */
+.usrse-nav__link[aria-expanded="true"] + .usrse-nav__dropdown,
+.usrse-nav__item[data-open] .usrse-nav__dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .usrse-nav__dropdown {
+    transition: none;
+  }
+}
+
+/* =============================================================================
+   DROPDOWN ITEMS
+   ============================================================================= */
+
+.usrse-nav__dropdown-item {
+  display: block;
+  padding-block: var(--nav-dropdown-item-padding-y);
+  padding-inline: var(--nav-dropdown-item-padding-x);
+
+  font-size: var(--nav-dropdown-item-font-size);
+  color: var(--nav-dropdown-item-color);
+  text-decoration: none;
+
+  transition: var(--nav-transition);
+  white-space: nowrap;
+}
+
+.usrse-nav__dropdown-item:hover {
+  background-color: var(--nav-dropdown-item-bg-hover);
+  color: var(--nav-dropdown-item-color-hover);
+}
+
+/* Active item — teal background, white text (matches production) */
+.usrse-nav__dropdown-item--active,
+.usrse-nav__dropdown-item[aria-current="page"] {
+  background-color: var(--nav-dropdown-item-bg-active);
+  color: var(--nav-dropdown-item-color-active);
+}
+
+.usrse-nav__dropdown-item:focus-visible {
+  outline: 2px solid var(--nav-dropdown-item-bg-active);
+  outline-offset: -2px;
+  border-radius: 2px;
+}
+
+/* Dropdown separator */
+.usrse-nav__dropdown-separator {
+  height: 1px;
+  background-color: var(--nav-dropdown-border);
+  margin-block: 0.25rem;
+  margin-inline: var(--nav-dropdown-item-padding-x);
+}
+
+/* =============================================================================
+   HAMBURGER BUTTON — Mobile only
+   ============================================================================= */
+
+.usrse-nav__burger {
+  display: none; /* Hidden on desktop */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  margin-inline-start: auto;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--nav-link-radius);
+
+  transition: var(--nav-transition);
+}
+
+.usrse-nav__burger:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 2px;
+}
+
+/* Three-line icon */
+.usrse-nav__burger-line {
+  display: block;
+  width: 1.375rem;
+  height: 2px;
+  background-color: var(--nav-link-color);
+  border-radius: 9999px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Animate to X when open */
+.usrse-nav__burger[aria-expanded="true"] .usrse-nav__burger-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.usrse-nav__burger[aria-expanded="true"] .usrse-nav__burger-line:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.usrse-nav__burger[aria-expanded="true"] .usrse-nav__burger-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .usrse-nav__burger-line {
+    transition: none;
+  }
+}
+
+/* =============================================================================
+   MOBILE MENU PANEL — teal gradient, full-width below navbar
+   ============================================================================= */
+
+.usrse-nav__mobile-menu {
+  display: none; /* Shown by JS or :target */
+  position: fixed;
+  inset-block-start: var(--nav-height);
+  inset-inline: 0;
+  z-index: var(--nav-mobile-z);
+
+  background: var(--nav-mobile-bg-gradient);
+  box-shadow: var(--nav-mobile-shadow);
+  overflow-y: auto;
+  max-height: calc(100dvh - var(--nav-height));
+
+  padding-block: 1rem;
+  padding-inline: var(--nav-padding-x-mobile);
+}
+
+/* JS-controlled open state */
+.usrse-nav__mobile-menu[aria-hidden="false"],
+.usrse-nav__mobile-menu--open {
+  display: block;
+}
+
+/* Mobile nav links */
+.usrse-nav__mobile-link {
+  display: flex;
+  align-items: center;
+  padding-block: 0.875rem;
+  padding-inline: 0.5rem;
+
+  color: var(--nav-link-color);
+  font-size: var(--nav-link-font-size);
+  font-weight: var(--nav-link-font-weight);
+  letter-spacing: var(--nav-link-letter-spacing);
+  text-decoration: none;
+
+  border-block-end: 1px solid rgba(255, 255, 255, 0.15);
+  transition: var(--nav-transition);
+}
+
+.usrse-nav__mobile-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: var(--nav-link-radius);
+}
+
+.usrse-nav__mobile-link:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 2px;
+  border-radius: var(--nav-link-radius);
+}
+
+/* Mobile sub-links (nested items from dropdown) */
+.usrse-nav__mobile-sublink {
+  display: block;
+  padding-block: 0.625rem;
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 0.5rem;
+
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.8125rem;
+  text-decoration: none;
+
+  border-block-end: 1px solid rgba(255, 255, 255, 0.1);
+  transition: var(--nav-transition);
+}
+
+.usrse-nav__mobile-sublink:hover {
+  color: var(--nav-link-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: var(--nav-link-radius);
+}
+
+/* =============================================================================
+   RESPONSIVE — show burger, hide desktop menu on mobile
+   ============================================================================= */
+
+@media (max-width: 768px) {
+  .usrse-nav {
+    height: var(--nav-height-mobile);
+    padding-inline: var(--nav-padding-x-mobile);
+  }
+
+  .usrse-nav__logo {
+    height: var(--nav-logo-height-mobile);
+  }
+
+  .usrse-nav__menu {
+    display: none;
+  }
+
+  .usrse-nav__burger {
+    display: flex;
+  }
+
+  .usrse-nav__mobile-menu {
+    inset-block-start: var(--nav-height-mobile);
+    max-height: calc(100dvh - var(--nav-height-mobile));
+  }
+}
+
+/* =============================================================================
+   SIDEBAR NAVIGATION
+   Used for section menus on documentation, settings, or category pages.
+   White background with teal active state.
+   ============================================================================= */
+
+.usrse-nav-sidebar {
+  background-color: var(--nav-sidebar-bg);
+  padding-block: 1rem;
+}
+
+/* Section label (e.g., "Resources", "Community") */
+.usrse-nav-sidebar__label {
+  font-size: var(--nav-sidebar-label-font-size);
+  font-weight: var(--nav-sidebar-label-weight);
+  color: var(--nav-sidebar-label-color);
+  letter-spacing: var(--nav-sidebar-label-tracking);
+  text-transform: uppercase;
+
+  padding-block: 0.375rem;
+  padding-inline: 1rem;
+  margin-block-start: 1.25rem;
+  margin-block-end: 0.25rem;
+}
+
+.usrse-nav-sidebar__label:first-child {
+  margin-block-start: 0;
+}
+
+/* Sidebar link */
+.usrse-nav-sidebar__link {
+  display: block;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+
+  font-size: 0.9375rem;
+  color: var(--nav-sidebar-link-color);
+  text-decoration: none;
+  border-radius: var(--nav-link-radius);
+
+  transition: var(--nav-transition);
+}
+
+.usrse-nav-sidebar__link:hover {
+  background-color: var(--nav-sidebar-link-active-bg);
+  color: var(--nav-sidebar-link-active-color);
+}
+
+/* Active page link */
+.usrse-nav-sidebar__link--active,
+.usrse-nav-sidebar__link[aria-current="page"] {
+  background-color: var(--nav-sidebar-link-active-bg);
+  color: var(--nav-sidebar-link-active-color);
+  font-weight: 600;
+}
+
+.usrse-nav-sidebar__link:focus-visible {
+  outline: 2px solid var(--nav-sidebar-link-active-color);
+  outline-offset: -2px;
+}
+
+/* =============================================================================
+   BACK-TO-TOP BUTTON — production: purple pill, bottom-right
+   ============================================================================= */
+
+.usrse-back-to-top {
+  position: fixed;
+  inset-block-end: 1.5rem;
+  inset-inline-end: 1.5rem;
+  z-index: var(--back-to-top-z);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+
+  background-color: var(--back-to-top-bg);
+  color: var(--back-to-top-color);
+  border-radius: var(--back-to-top-radius);
+  box-shadow: var(--back-to-top-shadow);
+
+  opacity: var(--back-to-top-opacity);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.usrse-back-to-top:hover {
+  opacity: var(--back-to-top-opacity-hover);
+}
+
+.usrse-back-to-top:focus-visible {
+  outline: 2px solid var(--back-to-top-color);
+  outline-offset: 2px;
+  opacity: var(--back-to-top-opacity-hover);
+}
+
+/* Hidden until JS determines scroll position */
+.usrse-back-to-top[hidden] {
+  display: none;
+}

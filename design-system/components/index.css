@@ -1,0 +1,56 @@
+/**
+ * US-RSE Design System — Component Entry Point
+ *
+ * Single import for all component CSS. This file does NOT import the token
+ * system — the token system is loaded separately via tokens/index.css.
+ * Load order must be:
+ *
+ *   1. tokens/index.css     — All design tokens (global, semantic, component, dark-mode)
+ *   2. components/index.css — All component implementations (this file)
+ *
+ * Usage in HTML:
+ *   <link rel="stylesheet" href="/design-system/tokens/index.css">
+ *   <link rel="stylesheet" href="/design-system/components/index.css">
+ *
+ * Usage in a bundler (Vite, webpack, esbuild, Jekyll asset pipeline):
+ *   @import url('../tokens/index.css');
+ *   @import url('./components/index.css');
+ *
+ * Or using JS module imports (Vite / webpack):
+ *   import '/design-system/tokens/index.css';
+ *   import '/design-system/components/index.css';
+ *
+ * Component load order rationale:
+ *   - utilities.css is last so its classes can override component defaults
+ *     when used inline (e.g., adding "mt-8" to a card)
+ *   - nav.css comes early so the skip link z-index is established before
+ *     other components that create stacking contexts
+ *   - index.css for components does not create any :root declarations —
+ *     only tokens/index.css owns that space
+ *
+ * Class prefix reference:
+ *   All classes use the .usrse- prefix to avoid cascade conflicts with
+ *   Bulma and Jekyll theme styles during the migration period.
+ *   Utility classes (sr-only, text-sm, mt-4, etc.) are unprefixed for
+ *   brevity — they are single-property and unlikely to conflict.
+ */
+
+/* 1. Navigation — sets z-index layers early; contains the skip link */
+@import url("./nav.css");
+
+/* 2. Atoms — smallest indivisible components */
+@import url("./button.css");
+@import url("./badge.css");
+
+/* 3. Molecules — groups of atoms */
+@import url("./input.css");
+@import url("./alert.css");
+@import url("./code.css");
+
+/* 4. Organisms — complex, section-level components */
+@import url("./card.css");
+@import url("./table.css");
+@import url("./hero.css");
+
+/* 5. Utilities — single-purpose helpers; must be last to win specificity ties */
+@import url("./utilities.css");
