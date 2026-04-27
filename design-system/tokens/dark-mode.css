@@ -1,0 +1,322 @@
+/**
+ * US-RSE Design System — Dark Mode Overrides
+ *
+ * This file overrides Tier 2 semantic tokens only. No Tier 1 (global) or Tier
+ * 3 (component) tokens are redefined here — components inherit dark mode
+ * automatically through the semantic token layer.
+ *
+ * Activation strategy:
+ *   - System preference: @media (prefers-color-scheme: dark)
+ *   - Manual override:   [data-theme="dark"] attribute on <html>
+ *   - Light forced:      [data-theme="light"] attribute wins over system pref
+ *
+ * Color approach for dark mode:
+ *   - Teal palette inverts toward lighter steps (primary becomes teal-400)
+ *   - Purple accent stays accessible on dark surfaces
+ *   - Surfaces use neutral-900 → neutral-800 → neutral-700 elevation stack
+ *   - Text inverts: primary is neutral-50, secondary is neutral-400
+ *   - Semantic status colors shift to lighter steps for dark surface legibility
+ *
+ * Contrast verification (dark mode, text on surface-page neutral-950):
+ *   neutral-50  on neutral-950: ~18:1  — AAA
+ *   neutral-200 on neutral-950: ~12:1  — AAA
+ *   neutral-400 on neutral-950:  ~6:1  — AA
+ *   teal-300    on neutral-950:  ~6.8:1 — AA
+ *   teal-400    on neutral-950:  ~4.5:1 — AA (large text / UI minimum)
+ *   purple-300  on neutral-950:  ~7.4:1 — AA
+ *
+ * Dark mode button text:
+ *   White (#fff) on teal-400 (#2cb4d2) = 2.45:1 — FAILS AA.
+ *   Use --color-text-inverse (neutral-950) on teal-400 buttons in dark mode.
+ *   The button primary variant should set color: var(--color-text-inverse) in dark mode.
+ *
+ * Reduced motion:
+ *   @media (prefers-reduced-motion: reduce) overrides are included at the
+ *   bottom of this file to disable all non-essential transitions globally.
+ */
+
+/* =============================================================================
+   DARK MODE — System Preference
+   Activates when the OS is set to dark mode and no data-theme is set
+   ============================================================================= */
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    /* Surface (backgrounds) */
+    --color-surface-page: var(--color-neutral-950);
+    --color-surface-subtle: var(--color-neutral-900);
+    --color-surface-base: var(--color-neutral-900);
+    --color-surface-raised: var(--color-neutral-800);
+    --color-surface-overlay: var(--color-neutral-800);
+    --color-surface-hover: var(--color-neutral-800);
+    --color-surface-pressed: var(--color-neutral-700);
+    --color-surface-selected: rgba(24, 142, 172, 0.15);
+    --color-surface-selected-hover: rgba(24, 142, 172, 0.25);
+    --color-surface-primary: rgba(24, 142, 172, 0.12);
+    --color-surface-accent: rgba(116, 23, 85, 0.15);
+
+    /* Text */
+    --color-text-primary: var(--color-neutral-50);
+    --color-text-secondary: var(--color-neutral-400);
+    --color-text-tertiary: var(--color-neutral-500);
+    --color-text-disabled: var(--color-neutral-600);
+    --color-text-inverse: var(--color-neutral-950);
+    --color-text-inverse-secondary: var(--color-neutral-800);
+    --color-text-brand: var(--color-teal-300);
+    --color-text-accent: var(--color-purple-300);
+
+    /* Links */
+    --color-link-default: var(--color-purple-300);
+    --color-link-hover: var(--color-purple-200);
+    --color-link-active: var(--color-purple-100);
+    --color-link-visited: var(--color-purple-400);
+    --color-link-nav: var(--color-teal-300);
+    --color-link-nav-hover: var(--color-teal-200);
+    --color-link-nav-active: var(--color-teal-400);
+
+    /* Brand */
+    --color-brand-primary: var(--color-teal-400);
+    --color-brand-primary-hover: var(--color-teal-300);
+    --color-brand-primary-active: var(--color-teal-200);
+    --color-brand-primary-subtle: rgba(24, 142, 172, 0.12);
+    --color-brand-primary-muted: rgba(24, 142, 172, 0.2);
+
+    --color-brand-accent: var(--color-purple-400);
+    --color-brand-accent-hover: var(--color-purple-300);
+    --color-brand-accent-active: var(--color-purple-200);
+    --color-brand-accent-subtle: rgba(116, 23, 85, 0.15);
+    --color-brand-accent-muted: rgba(116, 23, 85, 0.25);
+
+    /* Borders */
+    --color-border-subtle: var(--color-neutral-800);
+    --color-border-default: var(--color-neutral-700);
+    --color-border-strong: var(--color-neutral-500);
+    --color-border-inverse: var(--color-neutral-200);
+    --color-border-brand: var(--color-teal-400);
+    --color-border-accent: var(--color-purple-400);
+    --color-border-focus: var(--color-teal-300);
+
+    /* Semantic — Success */
+    --color-success: var(--color-success-400);
+    --color-success-hover: var(--color-success-300);
+    --color-success-subtle: rgba(72, 199, 116, 0.12);
+    --color-success-text: var(--color-success-300);
+    --color-success-border: var(--color-success-500);
+    --color-on-success: var(--color-neutral-950);
+
+    /* Semantic — Warning */
+    --color-warning: var(--color-warning-400);
+    --color-warning-hover: var(--color-warning-300);
+    --color-warning-subtle: rgba(255, 221, 87, 0.1);
+    --color-warning-text: var(--color-warning-400);
+    --color-warning-border: var(--color-warning-500);
+    --color-on-warning: var(--color-neutral-950);
+
+    /* Semantic — Danger */
+    --color-danger: var(--color-danger-400);
+    --color-danger-hover: var(--color-danger-300);
+    --color-danger-subtle: rgba(241, 70, 104, 0.12);
+    --color-danger-text: var(--color-danger-300);
+    --color-danger-border: var(--color-danger-500);
+    --color-on-danger: var(--color-neutral-950);
+
+    /* Semantic — Info */
+    --color-info: var(--color-info-400);
+    --color-info-hover: var(--color-info-300);
+    --color-info-subtle: rgba(50, 152, 220, 0.12);
+    --color-info-text: var(--color-info-300);
+    --color-info-border: var(--color-info-500);
+    --color-on-info: var(--color-neutral-950);
+
+    /* Overlays */
+    --color-overlay-dark-sm: rgba(0, 0, 0, 0.2);
+    --color-overlay-dark-md: rgba(0, 0, 0, 0.4);
+    --color-overlay-dark-lg: rgba(0, 0, 0, 0.6);
+    --color-overlay-dark-xl: rgba(0, 0, 0, 0.8);
+
+    /* Shadows (darker environments need deeper shadows) */
+    --shadow-sm: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 0.5em 1.5em -0.125em rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.25);
+    --shadow-lg: 0 1em 2em -0.25em rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(0, 0, 0, 0.3);
+    --shadow-xl: 0 1.5em 3em -0.5em rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(0, 0, 0, 0.35);
+    --shadow-focus-teal: 0 0 0 0.2em rgba(44, 180, 210, 0.4);
+    --shadow-focus-purple: 0 0 0 0.2em rgba(201, 78, 153, 0.4);
+    --shadow-focus-default: 0 0 0 0.2em rgba(80, 145, 230, 0.35);
+  }
+}
+
+/* =============================================================================
+   DARK MODE — Manual data-theme="dark" attribute
+   Applies dark mode regardless of OS preference. Useful for user preference
+   toggles stored in localStorage.
+   ============================================================================= */
+
+[data-theme="dark"] {
+  /* Surface */
+  --color-surface-page: var(--color-neutral-950);
+  --color-surface-subtle: var(--color-neutral-900);
+  --color-surface-base: var(--color-neutral-900);
+  --color-surface-raised: var(--color-neutral-800);
+  --color-surface-overlay: var(--color-neutral-800);
+  --color-surface-hover: var(--color-neutral-800);
+  --color-surface-pressed: var(--color-neutral-700);
+  --color-surface-selected: rgba(24, 142, 172, 0.15);
+  --color-surface-selected-hover: rgba(24, 142, 172, 0.25);
+  --color-surface-primary: rgba(24, 142, 172, 0.12);
+  --color-surface-accent: rgba(116, 23, 85, 0.15);
+
+  /* Text */
+  --color-text-primary: var(--color-neutral-50);
+  --color-text-secondary: var(--color-neutral-400);
+  --color-text-tertiary: var(--color-neutral-500);
+  --color-text-disabled: var(--color-neutral-600);
+  --color-text-inverse: var(--color-neutral-950);
+  --color-text-inverse-secondary: var(--color-neutral-800);
+  --color-text-brand: var(--color-teal-300);
+  --color-text-accent: var(--color-purple-300);
+
+  /* Links */
+  --color-link-default: var(--color-purple-300);
+  --color-link-hover: var(--color-purple-200);
+  --color-link-active: var(--color-purple-100);
+  --color-link-visited: var(--color-purple-400);
+  --color-link-nav: var(--color-teal-300);
+  --color-link-nav-hover: var(--color-teal-200);
+  --color-link-nav-active: var(--color-teal-400);
+
+  /* Brand */
+  --color-brand-primary: var(--color-teal-400);
+  --color-brand-primary-hover: var(--color-teal-300);
+  --color-brand-primary-active: var(--color-teal-200);
+  --color-brand-primary-subtle: rgba(24, 142, 172, 0.12);
+  --color-brand-primary-muted: rgba(24, 142, 172, 0.2);
+
+  --color-brand-accent: var(--color-purple-400);
+  --color-brand-accent-hover: var(--color-purple-300);
+  --color-brand-accent-active: var(--color-purple-200);
+  --color-brand-accent-subtle: rgba(116, 23, 85, 0.15);
+  --color-brand-accent-muted: rgba(116, 23, 85, 0.25);
+
+  /* Borders */
+  --color-border-subtle: var(--color-neutral-800);
+  --color-border-default: var(--color-neutral-700);
+  --color-border-strong: var(--color-neutral-500);
+  --color-border-inverse: var(--color-neutral-200);
+  --color-border-brand: var(--color-teal-400);
+  --color-border-accent: var(--color-purple-400);
+  --color-border-focus: var(--color-teal-300);
+
+  /* Semantic — Success */
+  --color-success: var(--color-success-400);
+  --color-success-hover: var(--color-success-300);
+  --color-success-subtle: rgba(72, 199, 116, 0.12);
+  --color-success-text: var(--color-success-300);
+  --color-success-border: var(--color-success-500);
+  --color-on-success: var(--color-neutral-950);
+
+  /* Semantic — Warning */
+  --color-warning: var(--color-warning-400);
+  --color-warning-hover: var(--color-warning-300);
+  --color-warning-subtle: rgba(255, 221, 87, 0.1);
+  --color-warning-text: var(--color-warning-400);
+  --color-warning-border: var(--color-warning-500);
+  --color-on-warning: var(--color-neutral-950);
+
+  /* Semantic — Danger */
+  --color-danger: var(--color-danger-400);
+  --color-danger-hover: var(--color-danger-300);
+  --color-danger-subtle: rgba(241, 70, 104, 0.12);
+  --color-danger-text: var(--color-danger-300);
+  --color-danger-border: var(--color-danger-500);
+  --color-on-danger: var(--color-neutral-950);
+
+  /* Semantic — Info */
+  --color-info: var(--color-info-400);
+  --color-info-hover: var(--color-info-300);
+  --color-info-subtle: rgba(50, 152, 220, 0.12);
+  --color-info-text: var(--color-info-300);
+  --color-info-border: var(--color-info-500);
+  --color-on-info: var(--color-neutral-950);
+
+  /* Overlays */
+  --color-overlay-dark-sm: rgba(0, 0, 0, 0.2);
+  --color-overlay-dark-md: rgba(0, 0, 0, 0.4);
+  --color-overlay-dark-lg: rgba(0, 0, 0, 0.6);
+  --color-overlay-dark-xl: rgba(0, 0, 0, 0.8);
+
+  /* Shadows */
+  --shadow-sm: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 0.5em 1.5em -0.125em rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 1em 2em -0.25em rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 1.5em 3em -0.5em rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(0, 0, 0, 0.35);
+  --shadow-focus-teal: 0 0 0 0.2em rgba(44, 180, 210, 0.4);
+  --shadow-focus-purple: 0 0 0 0.2em rgba(201, 78, 153, 0.4);
+  --shadow-focus-default: 0 0 0 0.2em rgba(80, 145, 230, 0.35);
+}
+
+/* =============================================================================
+   LIGHT MODE — Forced override
+   Ensures light mode even when the OS is set to dark. Used when a user
+   explicitly chooses light mode via the site's theme toggle.
+   ============================================================================= */
+
+[data-theme="light"] {
+  /* Restore all semantic token defaults (they match Tier 1 light values) */
+  /* No overrides needed — semantic.css light-mode values are the defaults */
+  color-scheme: light;
+}
+
+/* =============================================================================
+   REDUCED MOTION — Disable all non-essential transitions globally
+   Respects the user's OS-level "Reduce Motion" preference.
+   Components that use motion for critical communication (loading spinners,
+   progress indicators) should use their own reduced-motion fallbacks.
+   ============================================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-normal: 0ms;
+    --duration-slow: 0ms;
+    --duration-slower: 0ms;
+
+    --transition-base: none;
+    --transition-colors: none;
+    --transition-opacity: none;
+    --transition-shadow: none;
+    --transition-transform: none;
+    --transition-interactive: none;
+    --transition-expand: none;
+    --transition-fade: none;
+    --transition-lift: none;
+    --transition-slide: none;
+  }
+
+  /* Belt-and-suspenders: ensure no animations play via element rules */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* =============================================================================
+   COLOR SCHEME DECLARATIONS
+   Inform the browser which color modes are supported. This affects
+   native browser UI elements (scrollbars, form controls, etc.)
+   ============================================================================= */
+
+:root {
+  color-scheme: light dark;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}

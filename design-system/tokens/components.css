@@ -1,0 +1,639 @@
+/**
+ * US-RSE Design System — Tier 3: Component Tokens
+ *
+ * Component-specific design decisions. These tokens bind semantic tokens
+ * (Tier 2) to the exact properties of individual components.
+ *
+ * Rules:
+ *   - Every value here MUST reference a Tier 2 semantic token
+ *   - These tokens are the only layer that components consume directly
+ *   - Changing a component's visual style is done here, not in component code
+ *   - Naming convention: --[component]-[property]-[variant/state]
+ *
+ * Components covered:
+ *   Button, Badge, Tag, Input, Select, Textarea, Checkbox, Radio,
+ *   Card, Alert, Avatar, Nav, Hero, Code, Table, Pagination
+ */
+
+:root {
+  /* =========================================================================
+     BUTTON
+     Variants: primary, secondary, ghost, danger, accent
+     Sizes: sm, md, lg
+     ========================================================================= */
+
+  /* Structure */
+  --button-radius: var(--radius-button);
+  --button-font-family: var(--font-family-ui);
+  --button-font-weight: var(--weight-ui);
+  --button-letter-spacing: var(--tracking-ui);
+  --button-transition: var(--transition-interactive);
+  --button-cursor: pointer;
+
+  /* Size — sm */
+  --button-height-sm: 2rem; /* 32px */
+  --button-padding-x-sm: var(--space-3);
+  --button-padding-y-sm: var(--space-1-5);
+  --button-font-size-sm: var(--text-sm);
+
+  /* Size — md (default) */
+  --button-height-md: 2.5rem; /* 40px */
+  --button-padding-x-md: var(--space-5);
+  --button-padding-y-md: var(--space-2);
+  --button-font-size-md: var(--text-base);
+
+  /* Size — lg */
+  --button-height-lg: 3rem; /* 48px */
+  --button-padding-x-lg: var(--space-6);
+  --button-padding-y-lg: var(--space-3);
+  --button-font-size-lg: var(--text-lg);
+
+  /* Variant — primary (teal) */
+  --button-primary-bg: var(--color-brand-primary);
+  --button-primary-bg-hover: var(--color-brand-primary-hover);
+  --button-primary-bg-active: var(--color-brand-primary-active);
+  --button-primary-text: var(--color-text-inverse);
+  --button-primary-border: var(--color-brand-primary);
+  --button-primary-border-hover: var(--color-brand-primary-hover);
+  --button-primary-shadow-focus: var(--shadow-focus-teal);
+
+  /* Variant — secondary (outlined teal) */
+  --button-secondary-bg: var(--color-surface-base);
+  --button-secondary-bg-hover: var(--color-brand-primary-subtle);
+  --button-secondary-bg-active: var(--color-brand-primary-muted);
+  --button-secondary-text: var(--color-brand-primary);
+  --button-secondary-text-hover: var(--color-brand-primary-hover);
+  --button-secondary-border: var(--color-brand-primary);
+  --button-secondary-border-hover: var(--color-brand-primary-hover);
+  --button-secondary-shadow-focus: var(--shadow-focus-teal);
+
+  /* Variant — ghost (no background) */
+  --button-ghost-bg: var(--color-transparent);
+  --button-ghost-bg-hover: var(--color-surface-hover);
+  --button-ghost-bg-active: var(--color-surface-pressed);
+  --button-ghost-text: var(--color-text-secondary);
+  --button-ghost-text-hover: var(--color-text-primary);
+  --button-ghost-border: var(--color-transparent);
+  --button-ghost-shadow-focus: var(--shadow-focus-default);
+
+  /* Variant — accent (purple) */
+  --button-accent-bg: var(--color-brand-accent);
+  --button-accent-bg-hover: var(--color-brand-accent-hover);
+  --button-accent-bg-active: var(--color-brand-accent-active);
+  --button-accent-text: var(--color-text-inverse);
+  --button-accent-border: var(--color-brand-accent);
+  --button-accent-border-hover: var(--color-brand-accent-hover);
+  --button-accent-shadow-focus: var(--shadow-focus-purple);
+
+  /* Variant — danger (red) */
+  --button-danger-bg: var(--color-danger);
+  --button-danger-bg-hover: var(--color-danger-hover);
+  --button-danger-bg-active: var(--color-danger-text);
+  --button-danger-text: var(--color-on-danger);
+  --button-danger-border: var(--color-danger);
+  --button-danger-border-hover: var(--color-danger-hover);
+  --button-danger-shadow-focus: 0 0 0 0.2em rgba(241, 70, 104, 0.3);
+
+  /* Disabled state (applies to all variants) */
+  --button-disabled-opacity: var(--opacity-50);
+  --button-disabled-cursor: not-allowed;
+
+  /* =========================================================================
+     BADGE / TAG
+     Badges: pill-shaped, semantic color fill
+     Tags: rectangular, outlined
+     ========================================================================= */
+
+  /* Badge structure */
+  --badge-radius: var(--radius-badge);
+  --badge-font-size: var(--text-xs);
+  --badge-font-weight: var(--weight-label);
+  --badge-letter-spacing: var(--tracking-caps);
+  --badge-padding-x: var(--space-2);
+  --badge-padding-y: var(--space-0-5);
+
+  /* Badge variants */
+  --badge-primary-bg: var(--color-brand-primary);
+  --badge-primary-text: var(--color-text-inverse);
+  --badge-accent-bg: var(--color-brand-accent);
+  --badge-accent-text: var(--color-text-inverse);
+  --badge-success-bg: var(--color-success);
+  --badge-success-text: var(--color-on-success);
+  --badge-warning-bg: var(--color-warning);
+  --badge-warning-text: var(--color-on-warning);
+  --badge-danger-bg: var(--color-danger);
+  --badge-danger-text: var(--color-on-danger);
+  --badge-info-bg: var(--color-info);
+  --badge-info-text: var(--color-on-info);
+  --badge-neutral-bg: var(--color-neutral-200);
+  --badge-neutral-text: var(--color-text-primary);
+
+  /* Tag structure */
+  --tag-radius: var(--radius-tag);
+  --tag-font-size: var(--text-sm);
+  --tag-font-weight: var(--weight-body);
+  --tag-padding-x: var(--space-3);
+  --tag-padding-y: var(--space-1);
+  --tag-border-width: var(--border-width-1);
+  --tag-primary-bg: var(--color-brand-primary-subtle);
+  --tag-primary-text: var(--color-brand-primary);
+  --tag-primary-border: var(--color-brand-primary-muted);
+  --tag-accent-bg: var(--color-brand-accent-subtle);
+  --tag-accent-text: var(--color-brand-accent);
+  --tag-accent-border: var(--color-brand-accent-muted);
+  --tag-neutral-bg: var(--color-surface-subtle);
+  --tag-neutral-text: var(--color-text-secondary);
+  --tag-neutral-border: var(--color-border-default);
+
+  /* =========================================================================
+     INPUT / SELECT / TEXTAREA
+     ========================================================================= */
+
+  /* Structure */
+  --input-radius: var(--radius-input);
+  --input-font-family: var(--font-family-ui);
+  --input-font-size: var(--text-base);
+  --input-font-weight: var(--weight-body);
+  --input-line-height: var(--leading-normal);
+  --input-transition: var(--transition-interactive);
+
+  /* Size — sm */
+  --input-height-sm: 2rem;
+  --input-padding-x-sm: var(--space-3);
+  --input-padding-y-sm: var(--space-1-5);
+  --input-font-size-sm: var(--text-sm);
+
+  /* Size — md (default) */
+  --input-height-md: 2.5rem;
+  --input-padding-x-md: var(--space-4);
+  --input-padding-y-md: var(--space-2);
+
+  /* Size — lg */
+  --input-height-lg: 3rem;
+  --input-padding-x-lg: var(--space-4);
+  --input-padding-y-lg: var(--space-3);
+  --input-font-size-lg: var(--text-lg);
+
+  /* Colors — default state */
+  --input-bg: var(--color-surface-base);
+  --input-text: var(--color-text-primary);
+  --input-placeholder: var(--color-text-tertiary);
+  --input-border: var(--color-border-default);
+  --input-border-width: var(--border-width-1);
+  --input-shadow: var(--shadow-input);
+
+  /* Colors — hover */
+  --input-border-hover: var(--color-border-strong);
+
+  /* Colors — focus */
+  --input-border-focus: var(--color-brand-primary);
+  --input-shadow-focus: var(--shadow-input-focus);
+
+  /* Colors — error */
+  --input-border-error: var(--color-danger);
+  --input-shadow-error: 0 0 0 0.2em rgba(241, 70, 104, 0.2);
+  --input-text-error: var(--color-danger-text);
+
+  /* Colors — success */
+  --input-border-success: var(--color-success);
+  --input-shadow-success: 0 0 0 0.2em rgba(72, 199, 116, 0.2);
+
+  /* Colors — disabled */
+  --input-bg-disabled: var(--color-surface-subtle);
+  --input-text-disabled: var(--color-text-disabled);
+  --input-border-disabled: var(--color-border-subtle);
+  --input-cursor-disabled: not-allowed;
+
+  /* Label */
+  --input-label-font-size: var(--text-sm);
+  --input-label-font-weight: var(--weight-label);
+  --input-label-color: var(--color-text-primary);
+  --input-label-gap: var(--space-stack-2xs);
+
+  /* Help text */
+  --input-help-font-size: var(--text-xs);
+  --input-help-color: var(--color-text-secondary);
+  --input-help-gap: var(--space-stack-2xs);
+
+  /* Error message */
+  --input-error-font-size: var(--text-xs);
+  --input-error-color: var(--color-danger-text);
+  --input-error-gap: var(--space-stack-2xs);
+
+  /* Textarea-specific */
+  --textarea-min-height: 6rem;
+  --textarea-resize: vertical;
+
+  /* Checkbox / Radio */
+  --checkbox-size: 1rem;
+  --checkbox-radius: var(--radius-sm);
+  --checkbox-border: var(--color-border-strong);
+  --checkbox-bg: var(--color-surface-base);
+  --checkbox-checked-bg: var(--color-brand-primary);
+  --checkbox-checked-border: var(--color-brand-primary);
+  --checkbox-focus-shadow: var(--shadow-input-focus);
+  --radio-radius: var(--radius-full);
+
+  /* =========================================================================
+     CARD
+     ========================================================================= */
+
+  --card-bg: var(--color-surface-base);
+  --card-bg-hover: var(--color-surface-hover);
+  --card-border-width: var(--border-width-1);
+  --card-border: var(--color-border-subtle);
+  --card-border-hover: var(--color-border-default);
+  --card-radius: var(--radius-card);
+  --card-shadow: var(--shadow-card);
+  --card-shadow-hover: var(--shadow-card-hover);
+  --card-padding: var(--space-inset-lg);
+  --card-padding-sm: var(--space-inset-md);
+  --card-padding-lg: var(--space-inset-xl);
+  --card-transition: var(--transition-interactive), var(--transition-lift);
+
+  /* Card sub-elements */
+  --card-title-font-size: var(--text-h4);
+  --card-title-font-family: var(--font-family-display);
+  --card-title-font-weight: var(--weight-heading);
+  --card-title-color: var(--color-text-primary);
+  --card-title-line-height: var(--leading-heading);
+
+  --card-meta-font-size: var(--text-xs);
+  --card-meta-color: var(--color-text-secondary);
+  --card-meta-letter-spacing: var(--tracking-caps);
+
+  --card-body-font-size: var(--text-base);
+  --card-body-color: var(--color-text-secondary);
+  --card-body-line-height: var(--leading-relaxed);
+
+  --card-divider: var(--color-border-subtle);
+  --card-footer-pt: var(--space-4);
+
+  /* Featured / highlighted card */
+  --card-featured-border: var(--color-brand-primary);
+  --card-featured-border-width: var(--border-width-4);
+
+  /* =========================================================================
+     ALERT / NOTIFICATION BANNER
+     ========================================================================= */
+
+  --alert-radius: var(--radius-card);
+  --alert-padding: var(--space-inset-md);
+  --alert-border-width: var(--border-width-4);
+  --alert-font-size: var(--text-base);
+  --alert-line-height: var(--leading-normal);
+
+  --alert-success-bg: var(--color-success-subtle);
+  --alert-success-border: var(--color-success);
+  --alert-success-text: var(--color-success-text);
+  --alert-success-icon: var(--color-success);
+
+  --alert-warning-bg: var(--color-warning-subtle);
+  --alert-warning-border: var(--color-warning-border);
+  --alert-warning-text: var(--color-warning-text);
+  --alert-warning-icon: var(--color-warning-border);
+
+  --alert-danger-bg: var(--color-danger-subtle);
+  --alert-danger-border: var(--color-danger);
+  --alert-danger-text: var(--color-danger-text);
+  --alert-danger-icon: var(--color-danger);
+
+  --alert-info-bg: var(--color-info-subtle);
+  --alert-info-border: var(--color-info);
+  --alert-info-text: var(--color-info-text);
+  --alert-info-icon: var(--color-info);
+
+  --alert-neutral-bg: var(--color-surface-subtle);
+  --alert-neutral-border: var(--color-border-default);
+  --alert-neutral-text: var(--color-text-primary);
+
+  /* =========================================================================
+     NAVIGATION (Site Header & Sidebar)
+     Production behavior confirmed from USRSE/usrse.github.io source:
+     - Navbar uses .is-primary which maps to PURPLE (#741755) in the custom
+       Bulma build — this is a deliberate override from Bulma's default.
+     - Teal (#188eac) appears as the active item bg in the dropdown only.
+     - All nav text and links are white on the purple bar.
+     ========================================================================= */
+
+  /* Topbar — purple background, matching production .navbar.is-primary */
+  --nav-height: 3.5rem; /* 56px */
+  --nav-height-mobile: 3rem; /* 48px */
+  --nav-bg: var(--color-brand-accent); /* #741755 purple — production */
+  --nav-bg-hover: var(--color-brand-accent); /* hover stays same in production */
+  --nav-border: var(--color-transparent); /* no border — Bulma navbar default */
+  --nav-border-width: var(--border-width-0);
+  --nav-shadow: var(--shadow-none); /* no shadow — production */
+  --nav-z: var(--z-nav);
+  --nav-padding-x: var(--space-inline-xl);
+  --nav-padding-x-mobile: var(--space-inline-md);
+  --nav-transition: var(--transition-interactive);
+
+  /* Nav link — white text on purple bar */
+  --nav-link-color: var(--color-text-inverse); /* #fff — production */
+  --nav-link-color-hover: var(--color-text-inverse); /* #fff — stays white on hover */
+  --nav-link-color-active: var(--color-text-inverse); /* #fff */
+  --nav-link-bg-hover: var(--color-brand-accent); /* #741755 — same bg on hover */
+  --nav-link-font-size: var(--text-sm);
+  --nav-link-font-weight: var(--weight-ui);
+  --nav-link-letter-spacing: var(--tracking-ui);
+  --nav-link-padding-x: var(--space-3);
+  --nav-link-padding-y: var(--space-2);
+  --nav-link-radius: var(--radius-md);
+
+  /* Dropdown menu — appears on hover, white background */
+  --nav-dropdown-bg: var(--color-surface-overlay);
+  --nav-dropdown-border: var(--color-border-subtle);
+  --nav-dropdown-shadow: var(--shadow-dropdown);
+  --nav-dropdown-radius: var(--radius-lg);
+  --nav-dropdown-padding-y: var(--space-2);
+  --nav-dropdown-min-width: 12rem;
+  --nav-dropdown-z: var(--z-dropdown);
+
+  /* Dropdown items — dark text on white, active item gets teal background */
+  --nav-dropdown-item-padding-x: var(--space-4);
+  --nav-dropdown-item-padding-y: var(--space-2);
+  --nav-dropdown-item-font-size: var(--text-sm);
+  --nav-dropdown-item-color: var(--color-text-primary);
+  --nav-dropdown-item-color-hover: var(--color-text-inverse);
+  --nav-dropdown-item-bg-hover: var(--color-surface-selected);
+  /* Active dropdown item uses teal — production: background-color: #188eac */
+  --nav-dropdown-item-bg-active: var(--color-brand-primary);
+  --nav-dropdown-item-color-active: var(--color-text-inverse);
+
+  /* Mobile menu — teal gradient (production: linear-gradient 141deg teal) */
+  --nav-mobile-bg: var(--color-brand-primary);
+  --nav-mobile-bg-gradient: linear-gradient(
+    141deg,
+    var(--color-teal-800) 0%,
+    var(--color-teal-500) 71%,
+    var(--color-teal-400) 100%
+  );
+  --nav-mobile-shadow: var(--shadow-xl);
+  --nav-mobile-z: var(--z-modal);
+
+  /* Sidebar navigation (menubar) — white background, purple active link */
+  --nav-sidebar-bg: var(--color-surface-base);
+  --nav-sidebar-link-color: var(--color-text-primary);
+  --nav-sidebar-link-active-bg: var(--color-brand-primary-subtle);
+  --nav-sidebar-link-active-color: var(--color-brand-primary);
+  --nav-sidebar-label-font-size: var(--text-xs);
+  --nav-sidebar-label-weight: var(--weight-label);
+  --nav-sidebar-label-color: var(--color-text-secondary);
+  --nav-sidebar-label-tracking: var(--tracking-caps);
+
+  /* Back-to-top button — production uses purple with 50px radius */
+  --back-to-top-bg: var(--color-brand-accent); /* #741755 — production */
+  --back-to-top-color: var(--color-text-inverse);
+  --back-to-top-radius: var(--radius-full);
+  --back-to-top-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  --back-to-top-opacity: 0.7;
+  --back-to-top-opacity-hover: 1;
+  --back-to-top-z: var(--z-index-raised);
+
+  /* Logo */
+  --nav-logo-height: 2.25rem; /* 36px */
+  --nav-logo-height-mobile: 1.75rem; /* 28px */
+
+  /* =========================================================================
+     HERO SECTION
+     ========================================================================= */
+
+  --hero-padding-y: var(--space-section-lg);
+  --hero-padding-y-sm: var(--space-section-md);
+  --hero-padding-x: var(--space-inline-xl);
+  --hero-padding-x-mobile: var(--space-inline-md);
+
+  /* Primary hero — teal solid (production: .hero.is-primary = #188eac) */
+  --hero-bg: var(--color-brand-primary); /* #188eac — production */
+
+  /* Bold hero gradient (mobile only in production — desktop is solid teal) */
+  --hero-bg-gradient-mobile: linear-gradient(
+    141deg,
+    var(--color-teal-800) 0%,
+    var(--color-teal-500) 71%,
+    var(--color-teal-400) 100%
+  );
+
+  /* Accent hero — teal-to-purple gradient (design system extension) */
+  --hero-bg-gradient-brand: linear-gradient(
+    135deg,
+    var(--color-teal-700) 0%,
+    var(--color-teal-500) 40%,
+    var(--color-purple-500) 100%
+  );
+
+  /* Subtle hero — light teal surface */
+  --hero-bg-subtle: var(--color-brand-primary-subtle);
+  --hero-text-subtle: var(--color-text-primary);
+
+  /* Hero body text (not title/subtitle) — white in production */
+  --hero-text: var(--color-text-inverse);
+  --hero-text-secondary: rgba(255, 255, 255, 0.7); /* production: rgba(255,255,255,.7) */
+
+  /* Typography */
+  --hero-title-font-size: var(--text-display-xl);
+  --hero-title-font-family: var(--font-family-display);
+  --hero-title-font-weight: var(--weight-display);
+  --hero-title-line-height: var(--leading-display);
+  --hero-title-letter-spacing: var(--tracking-display);
+  /*
+   * Production note: .hero.is-primary .title { color: #741755 }
+   * The hero title and subtitle are PURPLE on the TEAL background.
+   * This is the defining visual contrast of US-RSE's identity.
+   * Contrast ratio: #741755 on #188eac = ~3.1:1 (large text AA pass at ≥18px bold).
+   * For body/normal text sizes, use white (--color-text-inverse) instead.
+   */
+  --hero-title-color: var(--color-brand-accent); /* #741755 purple — production */
+  --hero-subtitle-color: var(--color-brand-accent); /* #741755 purple — production */
+
+  --hero-subtitle-font-size: var(--text-xl);
+  --hero-subtitle-font-weight: var(--weight-body);
+  --hero-subtitle-line-height: var(--leading-relaxed);
+
+  --hero-eyebrow-font-size: var(--text-sm);
+  --hero-eyebrow-font-weight: var(--weight-label);
+  --hero-eyebrow-letter-spacing: var(--tracking-caps);
+  /* White (#fff on #188eac = 3.82:1) passes large text AA.
+     Teal-200 (#96ddf0 on #188eac = 2.53:1) fails — white is the correct choice. */
+  --hero-eyebrow-color: var(--color-text-inverse);
+
+  /* CTA button group spacing */
+  --hero-cta-gap: var(--space-4);
+  --hero-cta-mt: var(--space-8);
+
+  /* =========================================================================
+     CODE BLOCK
+     Research Software Engineers read and write code. These components
+     must be first-class citizens of the design system.
+     ========================================================================= */
+
+  --code-font-family: var(--font-family-code);
+  --code-font-size: var(--text-sm);
+  --code-line-height: var(--leading-relaxed);
+
+  /* Inline code — matches production exactly */
+  /* Production: background-color: #f5f5f5; color: #da1039; font-size: .875em; padding: .25em .5em */
+  --code-inline-bg: var(--color-code-inline-bg); /* #f5f5f5 */
+  --code-inline-text: var(--color-code-inline-text); /* #da1039 */
+  --code-inline-font-size: 0.875em; /* .875em — production */
+  --code-inline-padding-x: var(--space-2); /* 0.5em — production */
+  --code-inline-padding-y: var(--space-1); /* 0.25em — production */
+  --code-inline-radius: var(--radius-none); /* no radius — production */
+
+  /* Code block */
+  --code-block-bg: var(--color-neutral-900);
+  --code-block-text: var(--color-neutral-100);
+  --code-block-border: var(--color-neutral-700);
+  --code-block-radius: var(--radius-lg);
+  --code-block-padding: var(--space-inset-lg);
+  --code-block-shadow: var(--shadow-md);
+
+  /* Code block header (language label, copy button) */
+  --code-header-bg: var(--color-neutral-800);
+  --code-header-border: var(--color-neutral-700);
+  --code-header-text: var(--color-neutral-400);
+
+  /* Syntax token colors (dark theme) */
+  --code-token-keyword: var(--color-teal-300);
+  --code-token-string: var(--color-success-300);
+  --code-token-comment: var(--color-neutral-500);
+  --code-token-number: var(--color-warning-400);
+  --code-token-function: var(--color-purple-300);
+  --code-token-operator: var(--color-teal-200);
+  --code-token-variable: var(--color-neutral-100);
+
+  /* =========================================================================
+     TABLE
+     Data density is respected — these components must be legible and precise
+     ========================================================================= */
+
+  --table-font-size: var(--text-sm);
+  --table-line-height: var(--leading-normal);
+  --table-border: var(--color-border-default);
+  --table-border-width: var(--border-width-1);
+  --table-radius: var(--radius-lg);
+
+  /* Header row */
+  --table-header-bg: var(--color-surface-subtle);
+  --table-header-text: var(--color-text-primary);
+  --table-header-font-weight: var(--weight-label);
+  --table-header-padding-x: var(--space-4);
+  --table-header-padding-y: var(--space-3);
+
+  /* Body row */
+  --table-row-bg: var(--color-surface-base);
+  --table-row-bg-alt: var(--color-surface-subtle);
+  --table-row-bg-hover: var(--color-surface-selected);
+  --table-row-text: var(--color-text-primary);
+  --table-row-padding-x: var(--space-4);
+  --table-row-padding-y: var(--space-3);
+  --table-row-border: var(--color-border-subtle);
+
+  /* =========================================================================
+     AVATAR
+     ========================================================================= */
+
+  --avatar-radius: var(--radius-avatar);
+  --avatar-border: var(--color-surface-base);
+  --avatar-border-width: var(--border-width-2);
+  --avatar-bg: var(--color-brand-primary-subtle);
+  --avatar-text: var(--color-brand-primary);
+  --avatar-font-weight: var(--weight-semibold);
+
+  /* Sizes */
+  --avatar-size-xs: 1.5rem; /* 24px */
+  --avatar-size-sm: 2rem; /* 32px */
+  --avatar-size-md: 2.5rem; /* 40px */
+  --avatar-size-lg: 3rem; /* 48px */
+  --avatar-size-xl: 4rem; /* 64px */
+  --avatar-size-2xl: 5rem; /* 80px */
+
+  /* =========================================================================
+     PAGINATION
+     ========================================================================= */
+
+  --pagination-font-size: var(--text-sm);
+  --pagination-font-weight: var(--weight-ui);
+  --pagination-gap: var(--space-1);
+
+  /* Item */
+  --pagination-item-height: 2.25rem;
+  --pagination-item-min-width: 2.25rem;
+  --pagination-item-padding-x: var(--space-3);
+  --pagination-item-radius: var(--radius-md);
+  --pagination-item-bg: var(--color-surface-base);
+  --pagination-item-text: var(--color-text-secondary);
+  --pagination-item-border: var(--color-border-default);
+  --pagination-item-bg-hover: var(--color-surface-hover);
+  --pagination-item-text-hover: var(--color-text-primary);
+
+  /* Active item */
+  --pagination-item-bg-active: var(--color-brand-primary);
+  --pagination-item-text-active: var(--color-text-inverse);
+  --pagination-item-border-active: var(--color-brand-primary);
+
+  /* =========================================================================
+     TOOLTIP
+     ========================================================================= */
+
+  --tooltip-bg: var(--color-neutral-800);
+  --tooltip-text: var(--color-neutral-0);
+  --tooltip-font-size: var(--text-xs);
+  --tooltip-padding-x: var(--space-3);
+  --tooltip-padding-y: var(--space-1-5);
+  --tooltip-radius: var(--radius-tooltip);
+  --tooltip-shadow: var(--shadow-lg);
+  --tooltip-z: var(--z-tooltip);
+  --tooltip-max-width: 16rem;
+
+  /* =========================================================================
+     MODAL / DIALOG
+     ========================================================================= */
+
+  --modal-bg: var(--color-surface-overlay);
+  --modal-radius: var(--radius-modal);
+  --modal-shadow: var(--shadow-modal);
+  --modal-padding: var(--space-inset-xl);
+  --modal-border: var(--color-border-subtle);
+  --modal-border-width: var(--border-width-1);
+  --modal-z: var(--z-modal);
+
+  --modal-max-width-sm: 28rem; /* 448px */
+  --modal-max-width-md: 36rem; /* 576px */
+  --modal-max-width-lg: 48rem; /* 768px */
+
+  /* Header */
+  --modal-header-pb: var(--space-4);
+  --modal-header-border: var(--color-border-subtle);
+  --modal-title-font-size: var(--text-h4);
+  --modal-title-font-weight: var(--weight-heading);
+  --modal-title-color: var(--color-text-primary);
+
+  /* Backdrop */
+  --modal-backdrop-bg: var(--color-overlay-dark-xl);
+  --modal-backdrop-z: var(--z-backdrop);
+
+  /* =========================================================================
+     SKIP LINK (Accessibility)
+     Must be visible on keyboard focus, positioned at the top of the page
+     ========================================================================= */
+
+  --skip-link-bg: var(--color-brand-primary);
+  --skip-link-text: var(--color-text-inverse);
+  --skip-link-font-weight: var(--weight-ui);
+  --skip-link-padding-x: var(--space-4);
+  --skip-link-padding-y: var(--space-2);
+  --skip-link-radius: var(--radius-md);
+  --skip-link-z: var(--z-index-max);
+
+  /* =========================================================================
+     FOCUS RING (Global keyboard focus)
+     Never use outline: none without this replacement
+     ========================================================================= */
+
+  --focus-ring-color: var(--color-brand-primary);
+  --focus-ring-width: 0.2em;
+  --focus-ring-offset: 2px;
+  --focus-ring-shadow: var(--shadow-focus-teal);
+}

@@ -1,0 +1,57 @@
+/**
+ * US-RSE Design System — Token Index
+ *
+ * Single entry point for the entire token system. Import only this file in
+ * your application. The cascade order below is intentional and must not change:
+ *
+ *   1. global.css    — Tier 1: Raw primitive values (no semantic meaning)
+ *   2. semantic.css  — Tier 2: Semantic aliases that map globals to intent
+ *   3. components.css — Tier 3: Component-specific bindings of semantic tokens
+ *   4. dark-mode.css — Dark mode overrides for Tier 2 semantic tokens only
+ *
+ * Usage:
+ *   @import url('/design-system/tokens/index.css');
+ *
+ *   Or in a bundler (Vite, webpack, esbuild):
+ *   import '/design-system/tokens/index.css';
+ *
+ * Font loading:
+ *   The token system references Montserrat, Roboto, and Fira Code.
+ *   Load these via Google Fonts or self-host them:
+ *
+ *   Google Fonts (add to <head> before this stylesheet):
+ *   <link rel="preconnect" href="https://fonts.googleapis.com">
+ *   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ *   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+ *
+ * Browser support:
+ *   CSS custom properties: all modern browsers (Chrome 49+, Firefox 31+,
+ *   Safari 9.1+, Edge 15+). No IE11 support — use a PostCSS plugin if needed.
+ *
+ *   clamp() for fluid type: Chrome 79+, Firefox 75+, Safari 13.1+.
+ *   Fallback font-sizes are set in global.css for older browsers via cascade.
+ *
+ * Token hierarchy contract:
+ *   - Components MUST NOT reference Tier 1 (global) tokens directly
+ *   - Components MUST use Tier 3 (component) tokens
+ *   - Tier 3 tokens MUST reference Tier 2 (semantic) tokens
+ *   - Tier 2 tokens MUST reference Tier 1 (global) tokens
+ *   - Raw values (hex, px, rem literals) MUST NOT appear in Tier 2 or Tier 3
+ *
+ * Theming:
+ *   Add data-theme="dark" to <html> to activate dark mode manually.
+ *   Remove the attribute to restore light mode.
+ *   The system also responds to prefers-color-scheme automatically.
+ */
+
+/* 1. Primitive values — the raw material */
+@import url("./global.css");
+
+/* 2. Semantic intent — maps primitives to design purpose */
+@import url("./semantic.css");
+
+/* 3. Component bindings — maps semantic tokens to component properties */
+@import url("./components.css");
+
+/* 4. Dark mode — overrides semantic tokens for dark contexts */
+@import url("./dark-mode.css");

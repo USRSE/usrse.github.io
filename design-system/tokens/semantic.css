@@ -1,0 +1,356 @@
+/**
+ * US-RSE Design System — Tier 2: Semantic / Alias Tokens
+ *
+ * This file maps raw global tokens (Tier 1) to design intent. This is the
+ * layer that changes when you switch themes, brands, or color modes.
+ *
+ * Rules:
+ *   - Every value here MUST reference a Tier 1 token (--color-*, --space-*, etc.)
+ *   - Never use raw hex, px, or numeric values in this file
+ *   - Never reference these tokens directly from components — use component
+ *     tokens (components.css) for component-specific bindings
+ *
+ * Token naming convention:
+ *   --[category]-[role]-[modifier]
+ *   e.g.: --color-surface-raised, --color-text-secondary, --space-section-y
+ */
+
+:root {
+  /* =========================================================================
+     COLOR — BRAND
+     ========================================================================= */
+
+  --color-brand-primary: var(--color-teal-500); /* #188eac — production anchor */
+  --color-brand-primary-hover: var(--color-teal-600); /* #1685a1 — production hover */
+  --color-brand-primary-active: var(--color-teal-700); /* #157c96 — production active */
+  --color-brand-primary-subtle: var(--color-teal-50); /* #edf9fd — production is-light bg */
+  --color-brand-primary-muted: var(--color-teal-100);
+  /* #1a9bbc is the production text color on is-primary.is-light surfaces.
+     Between teal-400 and teal-500 perceptually. Used as text-on-light-teal. */
+  --color-brand-primary-light-text: #1a9bbc; /* production: button/tag.is-primary.is-light color */
+
+  --color-brand-accent: var(--color-purple-500);
+  --color-brand-accent-hover: var(--color-purple-600);
+  --color-brand-accent-active: var(--color-purple-700);
+  --color-brand-accent-subtle: var(--color-purple-50);
+  --color-brand-accent-muted: var(--color-purple-100);
+
+  /* =========================================================================
+     COLOR — SURFACE (backgrounds and containers)
+     ========================================================================= */
+
+  /* Page-level backgrounds */
+  --color-surface-page: var(--color-neutral-0);
+  --color-surface-subtle: var(--color-neutral-50);
+
+  /* Component backgrounds (cards, panels, sidebars) */
+  --color-surface-base: var(--color-neutral-0);
+  --color-surface-raised: var(--color-neutral-0);
+  --color-surface-overlay: var(--color-neutral-0);
+
+  /* Interactive surface states */
+  --color-surface-hover: var(--color-neutral-50);
+  --color-surface-pressed: var(--color-neutral-100);
+  --color-surface-selected: var(--color-teal-50);
+  --color-surface-selected-hover: var(--color-teal-100);
+
+  /* Tinted brand surfaces */
+  --color-surface-primary: var(--color-teal-50); /* #edf9fd — production primary light */
+  --color-surface-accent: var(--color-purple-50);
+
+  /*
+   * Named surfaces extracted from production stylesheet
+   * Footer: #fafafa (production .footer background)
+   * Section bg: white with border-radius 3px (production default layout)
+   * Code inline: #f5f5f5 bg, #da1039 text (production rouge highlighter)
+   */
+  --color-surface-footer: var(--color-neutral-50); /* #fafafa — production footer */
+  --color-surface-section: var(--color-neutral-0); /* white — production .section */
+  --color-surface-notification: var(
+    --color-teal-50
+  ); /* #edf9fd — production notification.is-primary.is-light */
+
+  /* Inline code colors — production rouge/Bulma defaults */
+  --color-code-inline-bg: var(--color-neutral-100); /* #f5f5f5 */
+  --color-code-inline-text: var(--color-danger-700); /* #da1039 — production */
+
+  /* =========================================================================
+     COLOR — TEXT
+     ========================================================================= */
+
+  /* Primary reading text — must be ≥4.5:1 on surface-page */
+  --color-text-primary: var(--color-neutral-900);
+
+  /* Secondary — labels, metadata, captions */
+  --color-text-secondary: var(--color-neutral-600);
+
+  /* Tertiary — placeholder, disabled, supplementary */
+  --color-text-tertiary: var(--color-neutral-400);
+
+  /* Disabled text */
+  --color-text-disabled: var(--color-neutral-300);
+
+  /* Inverse — text on dark/colored backgrounds */
+  --color-text-inverse: var(--color-neutral-0);
+  --color-text-inverse-secondary: var(--color-neutral-200);
+
+  /* Brand-colored text */
+  --color-text-brand: var(--color-teal-700);
+  --color-text-accent: var(--color-purple-500);
+
+  /* =========================================================================
+     COLOR — LINKS
+     Link teal meets 3.4:1 contrast on white (large text AA).
+     Link purple meets 8.5:1 contrast on white (AAA for all text).
+     For body links, purple is preferred for accessibility.
+     ========================================================================= */
+
+  --color-link-default: var(--color-purple-500);
+  --color-link-hover: var(--color-purple-600);
+  --color-link-active: var(--color-purple-700);
+  --color-link-visited: var(--color-purple-700);
+
+  /*
+   * Navigation links — white text on purple navbar background.
+   * Production: .navbar.is-primary links are color: #fff
+   * The active dropdown item gets teal bg (#188eac) with white text.
+   * These tokens describe the navbar bar itself, not in-page nav links.
+   */
+  --color-link-nav: var(--color-neutral-0); /* #fff on purple bar */
+  --color-link-nav-hover: var(--color-neutral-0); /* stays white on hover */
+  --color-link-nav-active: var(--color-neutral-0); /* white — active state */
+  --color-link-nav-dropdown: var(--color-text-primary); /* dark on white dropdown */
+  --color-link-nav-dropdown-hover: var(--color-brand-primary); /* teal on hover in dropdown */
+
+  /* =========================================================================
+     COLOR — BORDER
+     ========================================================================= */
+
+  --color-border-subtle: var(--color-neutral-100);
+  --color-border-default: var(--color-neutral-200);
+  --color-border-strong: var(--color-neutral-400);
+  --color-border-inverse: var(--color-neutral-700);
+
+  --color-border-brand: var(--color-teal-500);
+  --color-border-accent: var(--color-purple-500);
+
+  /* Focus rings (keyboard navigation) */
+  --color-border-focus: var(--color-teal-500);
+
+  /* =========================================================================
+     COLOR — SEMANTIC STATUS
+     Success, Warning, Danger, Info — extracted from us-rse.org production
+     ========================================================================= */
+
+  /* Success */
+  --color-success: var(--color-success-500);
+  --color-success-hover: var(--color-success-600);
+  --color-success-subtle: var(--color-success-100);
+  /* success-700 (#27a04f) = 3.37:1 on white — fails normal AA.
+     success-800 (#1a7a3a) = ~5.7:1 on white — passes AA for all text. */
+  --color-success-text: var(--color-success-800);
+  --color-success-border: var(--color-success-400);
+  /* White on success-500 = 2.17:1 — fails all WCAG thresholds.
+     Use neutral-950 (dark) text on success-colored surfaces. */
+  --color-on-success: var(--color-neutral-950);
+
+  /* Warning */
+  --color-warning: var(--color-warning-500);
+  --color-warning-hover: var(--color-warning-600);
+  --color-warning-subtle: var(--color-warning-100);
+  /* Warning text must be dark — yellow on white fails contrast */
+  --color-warning-text: var(--color-warning-900);
+  --color-warning-border: var(--color-warning-600);
+  --color-on-warning: var(--color-neutral-950);
+
+  /* Danger / Error */
+  --color-danger: var(--color-danger-500);
+  --color-danger-hover: var(--color-danger-600);
+  --color-danger-subtle: var(--color-danger-100);
+  --color-danger-text: var(--color-danger-700);
+  --color-danger-border: var(--color-danger-400);
+  --color-on-danger: var(--color-neutral-0);
+
+  /* Info */
+  --color-info: var(--color-info-500);
+  --color-info-hover: var(--color-info-600);
+  --color-info-subtle: var(--color-info-100);
+  --color-info-text: var(--color-info-700);
+  --color-info-border: var(--color-info-400);
+  --color-on-info: var(--color-neutral-0);
+
+  /* =========================================================================
+     COLOR — OVERLAYS & SCRIMS
+     ========================================================================= */
+
+  --color-overlay-light: rgba(255, 255, 255, 0.25);
+  --color-overlay-dark-sm: rgba(10, 10, 10, 0.1);
+  --color-overlay-dark-md: rgba(10, 10, 10, 0.25);
+  --color-overlay-dark-lg: rgba(10, 10, 10, 0.4);
+  --color-overlay-dark-xl: rgba(0, 0, 0, 0.7);
+  --color-overlay-gray: rgba(54, 54, 54, 0.3);
+
+  /* Text selection — production uses #590040 exactly (::selection { background: #590040 !important })
+     This is darker/more saturated than purple-600 (#641349). Defined as a literal. */
+  --color-selection-bg: #590040;
+  --color-selection-text: var(--color-neutral-0);
+
+  /* =========================================================================
+     TYPOGRAPHY — Semantic Bindings
+     ========================================================================= */
+
+  --font-family-prose: var(--font-family-body);
+  --font-family-ui: var(--font-family-body);
+  --font-family-display: var(--font-family-heading);
+  --font-family-code: var(--font-family-mono);
+
+  /* Heading scale */
+  --text-display-2xl: var(--font-size-display-2xl);
+  --text-display-xl: var(--font-size-display-xl);
+  --text-display-lg: var(--font-size-display-lg);
+  --text-h1: var(--font-size-h1);
+  --text-h2: var(--font-size-h2);
+  --text-h3: var(--font-size-h3);
+  --text-h4: var(--font-size-h4);
+  --text-h5: var(--font-size-h5);
+  --text-h6: var(--font-size-h6);
+
+  /* Body scale */
+  --text-xl: var(--font-size-xl);
+  --text-lg: var(--font-size-lg);
+  --text-base: var(--font-size-base);
+  --text-sm: var(--font-size-sm);
+  --text-xs: var(--font-size-xs);
+
+  /* Leading (line height) semantic aliases */
+  --leading-display: var(--line-height-tight);
+  --leading-heading: var(--line-height-snug);
+  --leading-body: var(--line-height-normal);
+  --leading-relaxed: var(--line-height-relaxed);
+  --leading-ui: var(--line-height-none);
+
+  /* Tracking (letter spacing) semantic aliases */
+  --tracking-display: var(--letter-spacing-tight);
+  --tracking-heading: var(--letter-spacing-normal);
+  --tracking-body: var(--letter-spacing-normal);
+  --tracking-ui: var(--letter-spacing-wide);
+  --tracking-caps: var(--letter-spacing-caps);
+
+  /* Font weight semantic aliases */
+  --weight-display: var(--font-weight-bold);
+  --weight-heading: var(--font-weight-semibold);
+  --weight-subheading: var(--font-weight-medium);
+  --weight-body: var(--font-weight-regular);
+  --weight-ui: var(--font-weight-medium);
+  --weight-label: var(--font-weight-semibold);
+  --weight-code: var(--font-weight-regular);
+
+  /* =========================================================================
+     SPACING — Semantic Aliases
+     Maps raw scale steps to layout intent
+     ========================================================================= */
+
+  /* Inline (horizontal) spacing — within components */
+  --space-inline-2xs: var(--space-1); /*  4px — icon margins, tight gaps */
+  --space-inline-xs: var(--space-2); /*  8px — small component padding */
+  --space-inline-sm: var(--space-3); /* 12px */
+  --space-inline-md: var(--space-4); /* 16px — standard component padding */
+  --space-inline-lg: var(--space-6); /* 24px */
+  --space-inline-xl: var(--space-8); /* 32px */
+
+  /* Stack (vertical) spacing — between sibling elements */
+  --space-stack-2xs: var(--space-1); /*  4px — tight label/input gap */
+  --space-stack-xs: var(--space-2); /*  8px — icon + text */
+  --space-stack-sm: var(--space-3); /* 12px */
+  --space-stack-md: var(--space-4); /* 16px — paragraph spacing */
+  --space-stack-lg: var(--space-6); /* 24px — section sub-elements */
+  --space-stack-xl: var(--space-8); /* 32px */
+  --space-stack-2xl: var(--space-12); /* 48px — between major content blocks */
+
+  /* Inset (padding inside containers) */
+  --space-inset-xs: var(--space-2); /*  8px — tight cards, badges */
+  --space-inset-sm: var(--space-3); /* 12px */
+  --space-inset-md: var(--space-4); /* 16px — standard card padding */
+  --space-inset-lg: var(--space-6); /* 24px — generous card padding */
+  --space-inset-xl: var(--space-8); /* 32px — section padding */
+
+  /* Section (page-level vertical rhythm) */
+  --space-section-xs: var(--space-8); /*  32px — compact sections */
+  --space-section-sm: var(--space-12); /*  48px */
+  --space-section-md: var(--space-16); /*  64px — standard section padding */
+  --space-section-lg: var(--space-24); /*  96px — hero sections */
+  --space-section-xl: var(--space-32); /* 128px — major page sections */
+
+  /* Layout max-widths (reference values, apply via max-width property) */
+  --layout-max-prose: 65ch; /* ~680px at 16px — optimal reading width */
+  --layout-max-content: var(--space-48); /* 192px × 5 via CSS calc → use 960px */
+  --layout-max-wide: 1216px; /* Matches production xl breakpoint */
+  --layout-max-full: 1408px; /* Matches production 2xl breakpoint */
+
+  /* =========================================================================
+     BORDER RADIUS — Semantic Aliases
+     ========================================================================= */
+
+  --radius-button: var(--radius-md); /* 4px — production standard */
+  --radius-input: var(--radius-md); /* 4px */
+  --radius-card: var(--radius-lg); /* 6px */
+  --radius-badge: var(--radius-full); /* pill */
+  --radius-tag: var(--radius-md); /* 4px */
+  --radius-modal: var(--radius-xl); /* 8px */
+  --radius-image: var(--radius-lg); /* 6px */
+  --radius-avatar: var(--radius-full); /* circle */
+  --radius-tooltip: var(--radius-sm); /* 2px */
+
+  /* =========================================================================
+     SHADOW — Semantic Aliases (elevation system)
+     ========================================================================= */
+
+  --shadow-card: var(--shadow-sm);
+  --shadow-card-hover: var(--shadow-md);
+  --shadow-dropdown: var(--shadow-md);
+  --shadow-modal: var(--shadow-xl);
+  --shadow-input: var(--shadow-inset-sm);
+  --shadow-input-focus: var(--shadow-focus-teal);
+
+  /* =========================================================================
+     Z-INDEX — Semantic Aliases
+     ========================================================================= */
+
+  --z-nav: var(--z-index-sticky);
+  --z-dropdown: var(--z-index-dropdown);
+  --z-backdrop: var(--z-index-overlay);
+  --z-modal: var(--z-index-modal);
+  --z-tooltip: var(--z-index-popover);
+  --z-toast: var(--z-index-toast);
+
+  /* =========================================================================
+     TRANSITION — Composed values (Tier 1 tokens composed here, not in global)
+     Composed transitions reference other Tier 1 tokens via var(), so they
+     live in Tier 2 to satisfy the hierarchy contract.
+     ========================================================================= */
+
+  --transition-base: all var(--duration-normal) var(--ease-in-out);
+  --transition-colors:
+    color var(--duration-normal) var(--ease-in-out),
+    background-color var(--duration-normal) var(--ease-in-out),
+    border-color var(--duration-normal) var(--ease-in-out);
+  --transition-opacity: opacity var(--duration-normal) var(--ease-in-out);
+  --transition-shadow: box-shadow var(--duration-normal) var(--ease-in-out);
+  --transition-transform: transform var(--duration-normal) var(--ease-out);
+
+  /* Semantic aliases for intent-named transitions */
+  --transition-interactive: var(--transition-colors);
+  --transition-expand: var(--transition-base);
+  --transition-fade: var(--transition-opacity);
+  --transition-lift: var(--transition-shadow);
+  --transition-slide: var(--transition-transform);
+
+  /* =========================================================================
+     TYPOGRAPHY — Missing semantic aliases used by components.css
+     ========================================================================= */
+
+  /* --leading-normal and --weight-semibold are shorthand aliases for
+     frequently used global token values, defined here for component use. */
+  --leading-normal: var(--line-height-normal);
+  --weight-semibold: var(--font-weight-semibold);
+}
