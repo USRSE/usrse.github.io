@@ -1,14 +1,30 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-const navLinks = [
+interface NavChild {
+  label: string;
+  href: string;
+  /** If true, use React Router Link instead of <a> */
+  route?: boolean;
+}
+
+interface NavItem {
+  label: string;
+  href: string;
+  route?: boolean;
+  children?: NavChild[];
+}
+
+const navLinks: NavItem[] = [
   {
     label: "About",
-    href: "#about",
+    href: "/about/mission",
+    route: true,
     children: [
-      { label: "Mission", href: "#mission" },
-      { label: "What is an RSE?", href: "#rse" },
-      { label: "DEI Statement", href: "#dei" },
-      { label: "Governance", href: "#governance" },
+      { label: "Mission", href: "/about/mission", route: true },
+      { label: "What is an RSE?", href: "/about/what-is-an-rse", route: true },
+      { label: "DEI Statement", href: "/about/dei", route: true },
+      { label: "Governance", href: "/about/governance", route: true },
     ],
   },
   {
@@ -26,6 +42,27 @@ const navLinks = [
   { label: "Resources", href: "#resources" },
   { label: "News", href: "#news" },
 ];
+
+function NavLink({ href, route, className, children, onClick }: {
+  href: string;
+  route?: boolean;
+  className?: string;
+  children: React.ReactNode;
+  onClick?: () => void;
+}) {
+  if (route) {
+    return (
+      <Link to={href} className={className} onClick={onClick}>
+        {children}
+      </Link>
+    );
+  }
+  return (
+    <a href={href} className={className} onClick={onClick}>
+      {children}
+    </a>
+  );
+}
 
 export function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -50,13 +87,13 @@ export function Nav() {
       >
         <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
           {/* Logo */}
-          <a href="/" className="flex items-center group">
+          <Link to="/" className="flex items-center group">
             <img
               src="/us-rse-logo-001.svg"
               alt="US-RSE"
               className="h-10 group-hover:opacity-80 transition-opacity"
             />
-          </a>
+          </Link>
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-1">
@@ -69,8 +106,9 @@ export function Nav() {
                 }
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <a
+                <NavLink
                   href={link.href}
+                  route={link.route}
                   className="text-neutral-600 hover:text-purple-600 text-sm font-medium px-3.5 py-2 rounded-md hover:bg-neutral-50 transition-all duration-200 inline-flex items-center gap-1"
                 >
                   {link.label}
@@ -85,20 +123,21 @@ export function Nav() {
                       <path d="M19 9l-7 7-7-7" />
                     </svg>
                   )}
-                </a>
+                </NavLink>
 
                 {/* Dropdown */}
                 {link.children && activeDropdown === link.label && (
                   <div className="absolute top-full left-0 pt-2 animate-slide-down">
                     <div className="bg-white rounded-xl shadow-lg border border-neutral-100 py-2 min-w-48">
                       {link.children.map((child) => (
-                        <a
+                        <NavLink
                           key={child.label}
                           href={child.href}
+                          route={child.route}
                           className="block px-4 py-2.5 text-sm text-neutral-700 hover:bg-teal-50 hover:text-teal-700 transition-colors"
                         >
                           {child.label}
-                        </a>
+                        </NavLink>
                       ))}
                     </div>
                   </div>
@@ -109,12 +148,12 @@ export function Nav() {
 
           {/* CTA + Mobile toggle */}
           <div className="flex items-center gap-3">
-            <a
-              href="#join"
+            <Link
+              to="/about/mission"
               className="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors shadow-sm"
             >
               Join Us
-            </a>
+            </Link>
 
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
@@ -136,40 +175,43 @@ export function Nav() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden fixed inset-0 top-16 z-40 bg-gradient-to-br from-teal-900 via-teal-700 to-teal-500 animate-fade-in overflow-y-auto">
+        <div className="lg:hidden fixed inset-0 top-[calc(4rem+4px)] z-40 bg-gradient-to-br from-teal-900 via-teal-700 to-teal-500 animate-fade-in overflow-y-auto">
           <div className="px-6 py-8 space-y-2">
             {navLinks.map((link) => (
               <div key={link.label}>
-                <a
+                <NavLink
                   href={link.href}
+                  route={link.route}
                   className="block text-white text-lg font-medium py-3 border-b border-white/10"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
-                </a>
+                </NavLink>
                 {link.children && (
                   <div className="pl-4 pb-2">
                     {link.children.map((child) => (
-                      <a
+                      <NavLink
                         key={child.label}
                         href={child.href}
+                        route={child.route}
                         className="block text-white/70 hover:text-white py-2 text-sm"
                         onClick={() => setMobileOpen(false)}
                       >
                         {child.label}
-                      </a>
+                      </NavLink>
                     ))}
                   </div>
                 )}
               </div>
             ))}
             <div className="pt-6">
-              <a
-                href="#join"
+              <Link
+                to="/about/mission"
                 className="block text-center w-full px-6 py-3 bg-white text-purple-500 font-bold rounded-xl shadow-lg"
+                onClick={() => setMobileOpen(false)}
               >
                 Join US-RSE
-              </a>
+              </Link>
             </div>
           </div>
         </div>
