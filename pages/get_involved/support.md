@@ -20,7 +20,7 @@ resources to sustain.
   <p class="has-text-white is-size-5 mb-4">
     Your contribution directly supports the people, events, and infrastructure that make the US-RSE community thrive.
   </p>
-  <a class="button is-warning is-large is-rounded has-text-weight-bold"
+  <a class="btn btn-warning btn-lg"
      href="https://give.communityin.org/us-rse-donate?ref=ab_8CNhW0"
      target="_blank" rel="noopener">
     Donate to US-RSE
