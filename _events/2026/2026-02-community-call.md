@@ -1,0 +1,27 @@
+---
+title: February 2026 Community Call
+expires: 2026-02-13
+event_date: "February 13, 2026"
+layout: event
+duration: 60
+repeated: false
+category: community-call
+time:
+    - - start: 2026-02-13T19:00:00Z
+        end: 2026-02-13T20:00:00Z
+---
+
+
+
+Our February Community Call will be all about Web and Mobile Apps as Research Software on Friday, February 13, at 2pm ET/1pm CT/12pm MT/11am PT.
+
+When you think of research software, is a web page or mobile app the first thing that comes to mind? Maybe not, but there are many members of our community who do this regularly! Come learn about how these web and mobile apps are contributing to research, the unique challenges involved in developing research code for these platforms, and the tools and techniques that make this possible.
+
+
+The typical structure of a community call starts with an overview of recent US-RSE updates, followed by short presentations. After the presentations we will break out into smaller groups in which we discuss the call topic. Everyone is welcome to join the discussion or just hang back and listen in. If you prefer just to listen in, that is perfectly fine, but we encourage you to share your opinions and thoughts as you feel comfortable. If you want to switch to another group, this is also fine. Just go back to the main room and let the call organizers know.
+
+#### Registration details
+
+Information on how to register for the Zoom meeting will be sent via email
+and posted in the `#general` channel on Slack. The registration link can also be found in the pinned messages and channel description of the `#communitycalls` channel on Slack.
+

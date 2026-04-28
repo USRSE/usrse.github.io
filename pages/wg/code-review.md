@@ -42,7 +42,7 @@ on the US-RSE slack.
 - ["How to do Code Reviews Like a Human"](https://www.youtube.com/watch?v=0t4_MfHgb_A) (lecture recording)
 - ["Contemporary Peer Code Review Practices in Research Software"](https://carver.cs.ua.edu/Slides/2019/CodeReviewTutorial/TutorialSlides.pdf) (slides)
 - ["Code Review Views" (slides)](https://drive.google.com/file/d/1qszIciQ2RWVYK1fzxk1XI7QkOJcHsWuB/view)
-- [Stanford Health Policy Data Science - "Code Review"](https://stanfordhpds.github.io/lab_manual/chapters/08-code-review.html)
+- [Stanford Health Policy Data Science - "Code Review"](https://stanfordhpds.github.io/lab_manual/chapters/09-code-review.html)
 - [rOpenSci - "Guide for Reviewers"](https://devguide.ropensci.org/softwarereview_reviewer.html)
 - [Code for Thought - "Planning your research software - a workshop in Paris" (podcast)](https://play.pocketcasts.com/podcasts/7eedc800-37ef-0139-3323-0acc26574db2/d2238833-2777-4693-a958-dbddabac0c7e?t=1973)
 - [Lab Handbooks (collection)](https://github.com/cct-datascience/open-lab-handbooks?tab=readme-ov-file)
