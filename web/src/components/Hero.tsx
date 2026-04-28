@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section
       id="main-content"
-      className="relative min-h-[85vh] flex items-center overflow-hidden bg-gradient-to-br from-teal-950 via-teal-800 to-teal-600"
+      className="relative min-h-[85vh] flex items-center overflow-hidden bg-gradient-to-br from-purple-950 via-purple-700 to-purple-500"
     >
       {/* Network animation background */}
       <div className="absolute inset-0 opacity-60">
@@ -39,7 +39,7 @@ export function Hero() {
               className="font-display text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-6 animate-slide-up"
               style={{ animationDelay: "100ms" }}
             >
-              <span className="text-purple-300">Great ideas</span>
+              <span className="text-teal-300">Great ideas</span>
               <br />
               <span className="text-white">deserve great</span>
               <br />
@@ -63,7 +63,7 @@ export function Hero() {
             >
               <a
                 href="#join"
-                className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-purple-600 font-bold rounded-xl hover:bg-teal-50 transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 px-7 py-3.5 bg-teal-500 text-white font-bold rounded-xl hover:bg-teal-400 transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
               >
                 Join the Community
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

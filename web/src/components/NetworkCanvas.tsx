@@ -56,8 +56,9 @@ export function NetworkCanvas() {
     }));
 
     const connectionDistance = 140;
-    const teal = { r: 24, g: 142, b: 172 }; // #188eac
-    const purple = { r: 116, g: 23, b: 85 }; // #741755
+    // Primary: purple (matches hero bg), accent: teal (pops as highlights)
+    const purple = { r: 180, g: 100, b: 150 }; // lighter purple for visibility on dark purple bg
+    const teal = { r: 91, g: 202, b: 230 }; // #5bcae6 teal-300
 
     const animate = () => {
       const rect = canvas.getBoundingClientRect();
@@ -94,9 +95,9 @@ export function NetworkCanvas() {
             const alpha = (1 - dist / connectionDistance) * 0.15;
             // Interpolate between teal and purple based on position
             const mix = (nodes[i].y / h + nodes[j].y / h) / 2;
-            const r = Math.round(teal.r + (purple.r - teal.r) * mix);
-            const g = Math.round(teal.g + (purple.g - teal.g) * mix);
-            const b = Math.round(teal.b + (purple.b - teal.b) * mix);
+            const r = Math.round(purple.r + (teal.r - purple.r) * mix);
+            const g = Math.round(purple.g + (teal.g - purple.g) * mix);
+            const b = Math.round(purple.b + (teal.b - purple.b) * mix);
 
             ctx.beginPath();
             ctx.moveTo(nodes[i].x, nodes[i].y);
@@ -113,9 +114,9 @@ export function NetworkCanvas() {
         const pulseRadius =
           node.radius + Math.sin(node.pulse) * 0.5;
         const mix = node.y / h;
-        const r = Math.round(teal.r + (purple.r - teal.r) * mix);
-        const g = Math.round(teal.g + (purple.g - teal.g) * mix);
-        const b = Math.round(teal.b + (purple.b - teal.b) * mix);
+        const r = Math.round(purple.r + (teal.r - purple.r) * mix);
+        const g = Math.round(purple.g + (teal.g - purple.g) * mix);
+        const b = Math.round(purple.b + (teal.b - purple.b) * mix);
 
         ctx.beginPath();
         ctx.arc(node.x, node.y, pulseRadius, 0, Math.PI * 2);
