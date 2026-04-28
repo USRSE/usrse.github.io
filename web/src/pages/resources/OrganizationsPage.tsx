@@ -125,7 +125,7 @@ export function OrganizationsPage() {
             >
               <span className="text-sm font-semibold text-neutral-800">{group.institution}</span>
               <span className="text-sm text-neutral-400 ml-2">{group.group}</span>
-              <span className="font-mono text-[10px] text-neutral-300 ml-1.5">&nearr;</span>
+              <span className="font-mono text-[10px] text-neutral-300 ml-1.5">{"\u2197"}</span>
             </div>
           ))}
         </div>
