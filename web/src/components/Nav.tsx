@@ -1,49 +1,167 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-interface NavChild {
-  label: string;
-  href: string;
-  /** If true, use React Router Link instead of <a> */
-  route?: boolean;
-}
+/* ── Types ─────────────────────────────────────────────────────────── */
 
-interface NavItem {
+interface SimpleLink {
   label: string;
   href: string;
   route?: boolean;
-  children?: NavChild[];
+  desc?: string;
 }
 
-const navLinks: NavItem[] = [
+interface MegaMenuColumn {
+  heading: string;
+  links: SimpleLink[];
+}
+
+interface NavItemSimple {
+  label: string;
+  href: string;
+  route?: boolean;
+  type: "link";
+}
+
+interface NavItemDropdown {
+  label: string;
+  href: string;
+  route?: boolean;
+  type: "dropdown";
+  children: SimpleLink[];
+}
+
+interface NavItemMega {
+  label: string;
+  href: string;
+  route?: boolean;
+  type: "mega";
+  columns: MegaMenuColumn[];
+  /** Optional featured callout on the right side */
+  featured?: { label: string; desc: string; href: string; route?: boolean };
+}
+
+type NavItem = NavItemSimple | NavItemDropdown | NavItemMega;
+
+/* ── Navigation Data ───────────────────────────────────────────────── */
+
+const navItems: NavItem[] = [
   {
     label: "About",
     href: "/about/mission",
     route: true,
+    type: "mega",
+    columns: [
+      {
+        heading: "Organization",
+        links: [
+          { label: "Mission", href: "/about/mission", route: true, desc: "What we stand for" },
+          { label: "What is an RSE?", href: "/about/what-is-an-rse", route: true, desc: "The role defined" },
+          { label: "DEI Statement", href: "/about/dei", route: true, desc: "Inclusion & equity" },
+          { label: "Code of Conduct", href: "/about/code-of-conduct", route: true, desc: "Community standards" },
+          { label: "Sponsors", href: "/about/sponsors", route: true, desc: "Who supports us" },
+        ],
+      },
+      {
+        heading: "Leadership",
+        links: [
+          { label: "Governance", href: "/about/governance", route: true, desc: "How we're organized" },
+          { label: "Board of Directors", href: "/about/board", route: true, desc: "Elected leadership" },
+          { label: "Staff", href: "/about/staff", route: true, desc: "Operations team" },
+          { label: "Elections", href: "/about/elections", route: true, desc: "Annual voting process" },
+          { label: "Financial Status", href: "/about/financial-status", route: true, desc: "Transparency reports" },
+        ],
+      },
+    ],
+    featured: {
+      label: "Contact Us",
+      desc: "Questions? Reach the team at contact@us-rse.org",
+      href: "mailto:contact@us-rse.org",
+    },
+  },
+  {
+    label: "Community",
+    href: "/community/working-groups",
+    route: true,
+    type: "mega",
+    columns: [
+      {
+        heading: "Working Groups",
+        links: [
+          { label: "All Working Groups", href: "/community/working-groups", route: true, desc: "Community-led teams" },
+          { label: "Code Review", href: "#wg-code-review" },
+          { label: "Education & Training", href: "#wg-edu" },
+          { label: "DEI", href: "#wg-dei" },
+          { label: "Mentorship Program", href: "#wg-mentorship" },
+          { label: "Testing", href: "#wg-testing" },
+        ],
+      },
+      {
+        heading: "Connect",
+        links: [
+          { label: "Affinity Groups", href: "/community/affinity-groups", route: true, desc: "Identity & regional communities" },
+          { label: "Community Calls", href: "/community/calls", route: true, desc: "Monthly virtual meetings" },
+          { label: "Community Awards", href: "/community/awards", route: true, desc: "Recognizing contributions" },
+          { label: "Community Funds", href: "/community/funds", route: true, desc: "Funding for initiatives" },
+        ],
+      },
+    ],
+    featured: {
+      label: "Join US-RSE",
+      desc: "Free membership. Open to anyone supporting the RSE mission.",
+      href: "/community/working-groups",
+      route: true,
+    },
+  },
+  {
+    label: "Events",
+    href: "/events",
+    route: true,
+    type: "dropdown",
     children: [
-      { label: "Mission", href: "/about/mission", route: true },
-      { label: "What is an RSE?", href: "/about/what-is-an-rse", route: true },
-      { label: "DEI Statement", href: "/about/dei", route: true },
-      { label: "Governance", href: "/about/governance", route: true },
+      { label: "Upcoming Events", href: "/events", route: true },
+      { label: "Calendar", href: "/events/calendar", route: true },
+      { label: "USRSE'26 Conference", href: "/events/usrse26", route: true },
     ],
   },
   {
-    label: "Get Involved",
-    href: "#involved",
+    label: "Opportunities",
+    href: "/jobs",
+    route: true,
+    type: "dropdown",
     children: [
-      { label: "Join US-RSE", href: "#join" },
-      { label: "Working Groups", href: "#wg" },
-      { label: "Affinity Groups", href: "#affinity" },
-      { label: "Community Funds", href: "#funds" },
+      { label: "Job Board", href: "/jobs", route: true },
+      { label: "Post a Job", href: "/jobs/submit", route: true },
+      { label: "Volunteer with US-RSE", href: "/jobs/volunteer", route: true },
     ],
   },
-  { label: "Events", href: "#events" },
-  { label: "Job Board", href: "#jobs" },
-  { label: "Resources", href: "#resources" },
-  { label: "News", href: "#news" },
+  {
+    label: "News",
+    href: "/news",
+    route: true,
+    type: "dropdown",
+    children: [
+      { label: "Newsletters", href: "/news", route: true },
+      { label: "News & Updates", href: "/news/updates", route: true },
+      { label: "From Leadership", href: "/news/leadership", route: true },
+    ],
+  },
+  {
+    label: "Resources",
+    href: "/resources",
+    route: true,
+    type: "dropdown",
+    children: [
+      { label: "Resources Hub", href: "/resources", route: true },
+      { label: "Education & Training", href: "/resources/education", route: true },
+      { label: "RSE Organizations", href: "/resources/organizations", route: true },
+      { label: "RSE Map", href: "/resources/map", route: true },
+    ],
+  },
 ];
 
-function NavLink({ href, route, className, children, onClick }: {
+/* ── Helper ────────────────────────────────────────────────────────── */
+
+function SmartLink({ href, route, className, children, onClick }: {
   href: string;
   route?: boolean;
   className?: string;
@@ -51,22 +169,18 @@ function NavLink({ href, route, className, children, onClick }: {
   onClick?: () => void;
 }) {
   if (route) {
-    return (
-      <Link to={href} className={className} onClick={onClick}>
-        {children}
-      </Link>
-    );
+    return <Link to={href} className={className} onClick={onClick}>{children}</Link>;
   }
-  return (
-    <a href={href} className={className} onClick={onClick}>
-      {children}
-    </a>
-  );
+  return <a href={href} className={className} onClick={onClick}>{children}</a>;
 }
+
+/* ── Component ─────────────────────────────────────────────────────── */
 
 export function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [activeMenu, setActiveMenu] = useState<string | null>(null);
+
+  const closeMobile = () => setMobileOpen(false);
 
   return (
     <header className="sticky top-0 z-50">
@@ -95,26 +209,27 @@ export function Nav() {
             />
           </Link>
 
-          {/* Desktop nav */}
-          <div className="hidden lg:flex items-center gap-1">
-            {navLinks.map((link) => (
+          {/* ── Desktop Nav ────────────────────────────────────────── */}
+          <div className="hidden lg:flex items-center gap-0.5">
+            {navItems.map((item) => (
               <div
-                key={link.label}
+                key={item.label}
                 className="relative"
-                onMouseEnter={() =>
-                  link.children && setActiveDropdown(link.label)
-                }
-                onMouseLeave={() => setActiveDropdown(null)}
+                onMouseEnter={() => item.type !== "link" && setActiveMenu(item.label)}
+                onMouseLeave={() => setActiveMenu(null)}
               >
-                <NavLink
-                  href={link.href}
-                  route={link.route}
-                  className="text-neutral-600 hover:text-purple-600 text-sm font-medium px-3.5 py-2 rounded-md hover:bg-neutral-50 transition-all duration-200 inline-flex items-center gap-1"
+                {/* Trigger */}
+                <SmartLink
+                  href={item.href}
+                  route={item.route}
+                  className="text-neutral-600 hover:text-purple-600 text-sm font-medium px-3 py-2 rounded-md hover:bg-neutral-50 transition-all duration-200 inline-flex items-center gap-1"
                 >
-                  {link.label}
-                  {link.children && (
+                  {item.label}
+                  {item.type !== "link" && (
                     <svg
-                      className="w-3.5 h-3.5 opacity-60"
+                      className={`w-3.5 h-3.5 opacity-50 transition-transform duration-200 ${
+                        activeMenu === item.label ? "rotate-180" : ""
+                      }`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -123,21 +238,83 @@ export function Nav() {
                       <path d="M19 9l-7 7-7-7" />
                     </svg>
                   )}
-                </NavLink>
+                </SmartLink>
 
-                {/* Dropdown */}
-                {link.children && activeDropdown === link.label && (
-                  <div className="absolute top-full left-0 pt-2 animate-slide-down">
+                {/* ── Mega Menu Panel ─────────────────────────────── */}
+                {item.type === "mega" && activeMenu === item.label && (
+                  <div className="absolute top-full -left-4 pt-3 animate-slide-down">
+                    <div className="bg-white rounded-2xl shadow-xl border border-neutral-100 p-6 flex gap-0" style={{ minWidth: "540px" }}>
+                      {/* Columns */}
+                      <div className="flex gap-8 flex-1">
+                        {item.columns.map((col) => (
+                          <div key={col.heading} className="min-w-[180px]">
+                            <p className="text-[11px] font-mono uppercase tracking-wider text-neutral-400 mb-3">
+                              {col.heading}
+                            </p>
+                            <ul className="space-y-0.5">
+                              {col.links.map((link) => (
+                                <li key={link.label}>
+                                  <SmartLink
+                                    href={link.href}
+                                    route={link.route}
+                                    className="group block px-2.5 py-2 -mx-2.5 rounded-lg hover:bg-neutral-50 transition-colors"
+                                  >
+                                    <span className="block text-sm font-medium text-neutral-800 group-hover:text-purple-700 transition-colors">
+                                      {link.label}
+                                    </span>
+                                    {link.desc && (
+                                      <span className="block text-[11px] text-neutral-400 mt-0.5">
+                                        {link.desc}
+                                      </span>
+                                    )}
+                                  </SmartLink>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Featured callout */}
+                      {item.featured && (
+                        <div className="ml-6 pl-6 border-l border-neutral-100 w-48 shrink-0 flex flex-col justify-center">
+                          <SmartLink
+                            href={item.featured.href}
+                            route={item.featured.route}
+                            className="group"
+                          >
+                            <p className="text-sm font-bold text-neutral-900 group-hover:text-purple-700 transition-colors">
+                              {item.featured.label}
+                            </p>
+                            <p className="text-[11px] text-neutral-400 mt-1 leading-relaxed">
+                              {item.featured.desc}
+                            </p>
+                            <span className="inline-flex items-center gap-1 text-[11px] font-medium text-teal-600 mt-2 group-hover:text-teal-700 transition-colors">
+                              Learn more
+                              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                              </svg>
+                            </span>
+                          </SmartLink>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {/* ── Simple Dropdown ─────────────────────────────── */}
+                {item.type === "dropdown" && activeMenu === item.label && (
+                  <div className="absolute top-full left-0 pt-3 animate-slide-down">
                     <div className="bg-white rounded-xl shadow-lg border border-neutral-100 py-2 min-w-48">
-                      {link.children.map((child) => (
-                        <NavLink
+                      {item.children.map((child) => (
+                        <SmartLink
                           key={child.label}
                           href={child.href}
                           route={child.route}
-                          className="block px-4 py-2.5 text-sm text-neutral-700 hover:bg-teal-50 hover:text-teal-700 transition-colors"
+                          className="block px-4 py-2.5 text-sm text-neutral-700 hover:bg-neutral-50 hover:text-purple-700 transition-colors"
                         >
                           {child.label}
-                        </NavLink>
+                        </SmartLink>
                       ))}
                     </div>
                   </div>
@@ -149,7 +326,7 @@ export function Nav() {
           {/* CTA + Mobile toggle */}
           <div className="flex items-center gap-3">
             <Link
-              to="/about/mission"
+              to="#join"
               className="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors shadow-sm"
             >
               Join Us
@@ -173,49 +350,115 @@ export function Nav() {
         </div>
       </nav>
 
-      {/* Mobile menu */}
+      {/* ── Mobile Menu ────────────────────────────────────────────── */}
       {mobileOpen && (
-        <div className="lg:hidden fixed inset-0 top-[calc(4rem+4px)] z-40 bg-gradient-to-br from-teal-900 via-teal-700 to-teal-500 animate-fade-in overflow-y-auto">
-          <div className="px-6 py-8 space-y-2">
-            {navLinks.map((link) => (
-              <div key={link.label}>
-                <NavLink
-                  href={link.href}
-                  route={link.route}
-                  className="block text-white text-lg font-medium py-3 border-b border-white/10"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {link.label}
-                </NavLink>
-                {link.children && (
-                  <div className="pl-4 pb-2">
-                    {link.children.map((child) => (
-                      <NavLink
-                        key={child.label}
-                        href={child.href}
-                        route={child.route}
-                        className="block text-white/70 hover:text-white py-2 text-sm"
-                        onClick={() => setMobileOpen(false)}
-                      >
-                        {child.label}
-                      </NavLink>
-                    ))}
-                  </div>
+        <div className="lg:hidden fixed inset-0 top-[calc(4rem+4px)] z-40 bg-white animate-fade-in overflow-y-auto">
+          <div className="px-6 py-6 space-y-1">
+            {navItems.map((item) => (
+              <div key={item.label} className="border-b border-neutral-100 last:border-0">
+                {item.type === "link" ? (
+                  <SmartLink
+                    href={item.href}
+                    route={item.route}
+                    className="block text-neutral-900 font-medium py-3.5"
+                    onClick={closeMobile}
+                  >
+                    {item.label}
+                  </SmartLink>
+                ) : (
+                  <MobileAccordion item={item} onNavigate={closeMobile} />
                 )}
               </div>
             ))}
-            <div className="pt-6">
-              <Link
-                to="/about/mission"
-                className="block text-center w-full px-6 py-3 bg-white text-purple-500 font-bold rounded-xl shadow-lg"
-                onClick={() => setMobileOpen(false)}
+
+            <div className="pt-4">
+              <SmartLink
+                href="#join"
+                className="block text-center w-full px-6 py-3 bg-purple-500 text-white font-bold rounded-xl shadow-sm"
+                onClick={closeMobile}
               >
                 Join US-RSE
-              </Link>
+              </SmartLink>
             </div>
           </div>
         </div>
       )}
     </header>
+  );
+}
+
+/* ── Mobile Accordion ──────────────────────────────────────────────── */
+
+function MobileAccordion({
+  item,
+  onNavigate,
+}: {
+  item: NavItemDropdown | NavItemMega;
+  onNavigate: () => void;
+}) {
+  const [open, setOpen] = useState(false);
+
+  const allLinks: SimpleLink[] =
+    item.type === "mega"
+      ? item.columns.flatMap((col) => col.links)
+      : item.children;
+
+  return (
+    <div>
+      <button
+        onClick={() => setOpen(!open)}
+        className="flex items-center justify-between w-full text-neutral-900 font-medium py-3.5"
+      >
+        {item.label}
+        <svg
+          className={`w-4 h-4 text-neutral-400 transition-transform duration-200 ${
+            open ? "rotate-180" : ""
+          }`}
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+
+      {open && (
+        <div className="pb-3 space-y-0.5">
+          {item.type === "mega" &&
+            item.columns.map((col) => (
+              <div key={col.heading} className="mb-3 last:mb-0">
+                <p className="text-[10px] font-mono uppercase tracking-wider text-neutral-400 px-3 mb-1">
+                  {col.heading}
+                </p>
+                {col.links.map((link) => (
+                  <SmartLink
+                    key={link.label}
+                    href={link.href}
+                    route={link.route}
+                    className="block px-3 py-2 text-sm text-neutral-600 hover:text-purple-700 hover:bg-neutral-50 rounded-lg transition-colors"
+                    onClick={onNavigate}
+                  >
+                    {link.label}
+                  </SmartLink>
+                ))}
+              </div>
+            ))}
+
+          {item.type === "dropdown" &&
+            allLinks.map((link) => (
+              <SmartLink
+                key={link.label}
+                href={link.href}
+                route={link.route}
+                className="block px-3 py-2 text-sm text-neutral-600 hover:text-purple-700 hover:bg-neutral-50 rounded-lg transition-colors"
+                onClick={onNavigate}
+              >
+                {link.label}
+              </SmartLink>
+            ))}
+        </div>
+      )}
+    </div>
   );
 }
