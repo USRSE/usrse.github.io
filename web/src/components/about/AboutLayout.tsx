@@ -5,6 +5,12 @@ const aboutPages = [
   { path: "/about/what-is-an-rse", label: "What is an RSE?", shortLabel: "RSE" },
   { path: "/about/dei", label: "DEI Statement", shortLabel: "DEI" },
   { path: "/about/governance", label: "Governance", shortLabel: "Gov" },
+  { path: "/about/board", label: "Board of Directors", shortLabel: "Board" },
+  { path: "/about/elections", label: "Elections", shortLabel: "Vote" },
+  { path: "/about/code-of-conduct", label: "Code of Conduct", shortLabel: "CoC" },
+  { path: "/about/sponsors", label: "Sponsors", shortLabel: "Spon" },
+  { path: "/about/staff", label: "Staff", shortLabel: "Staff" },
+  { path: "/about/financial-status", label: "Financial Status", shortLabel: "Finance" },
 ];
 
 interface AboutLayoutProps {
