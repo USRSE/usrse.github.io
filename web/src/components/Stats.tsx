@@ -2,10 +2,10 @@ import { useInView } from "@/hooks/useInView";
 import { useEffect, useState } from "react";
 
 const stats = [
-  { value: 2400, suffix: "+", label: "Members", description: "Across universities, labs & industry" },
+  { value: 4000, suffix: "+", label: "Members", description: "Across universities, labs & industry" },
   { value: 11, suffix: "", label: "Working Groups", description: "Active collaborative teams" },
   { value: 190, suffix: "+", label: "Institutions", description: "Represented in our community" },
-  { value: 6, suffix: "", label: "Years Strong", description: "Growing since 2018" },
+  { value: 8, suffix: "", label: "Years Strong", description: "Growing since 2018" },
 ];
 
 function AnimatedCounter({

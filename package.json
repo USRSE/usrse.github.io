@@ -11,5 +11,6 @@
     "postcss": "^8.4.49",
     "postcss-import": "^16.1.0",
     "cssnano": "^7.0.6"
-  }
+  },
+  "packageManager": "npm@11.13.0"
 }
