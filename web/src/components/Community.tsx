@@ -83,21 +83,21 @@ export function Community() {
 
         {/* Join CTA */}
         <div
-          className={`mt-20 text-center ${isInView ? "animate-slide-up" : "opacity-0"}`}
+          className={`mt-20 border-t border-neutral-100 pt-12 ${isInView ? "animate-slide-up" : "opacity-0"}`}
           style={{ animationDelay: "500ms" }}
         >
-          <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-8 rounded-2xl bg-gradient-to-r from-teal-50 to-purple-50 border border-teal-100">
-            <div className="text-left">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div>
               <h3 className="text-lg font-bold text-neutral-900">
                 Ready to join?
               </h3>
-              <p className="text-sm text-neutral-500">
+              <p className="text-sm text-neutral-500 mt-1">
                 Membership is free and open to anyone supporting the RSE mission.
               </p>
             </div>
             <a
               href="#join"
-              className="shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-teal-500 hover:bg-teal-600 text-white font-bold rounded-xl transition-colors shadow-md"
+              className="shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-teal-500 hover:bg-teal-600 text-white font-bold rounded-xl transition-colors"
             >
               Become a Member
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

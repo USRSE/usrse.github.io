@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useInView } from "@/hooks/useInView";
 
 const featuredJobs = [
@@ -50,15 +51,15 @@ export function JobBoard() {
               looking for research software expertise.
             </p>
           </div>
-          <a
-            href="#all-jobs"
+          <Link
+            to="/jobs"
             className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-purple-500 hover:bg-purple-600 rounded-xl transition-colors shadow-sm"
           >
             Browse all positions
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
-          </a>
+          </Link>
         </div>
 
         {/* Job listing */}
@@ -119,9 +120,9 @@ export function JobBoard() {
         <div className="mt-8 text-center">
           <p className="text-sm text-neutral-400">
             Hiring RSEs?{" "}
-            <a href="#post-job" className="text-teal-600 hover:text-teal-700 font-medium underline underline-offset-2">
+            <Link to="/jobs/submit" className="text-teal-600 hover:text-teal-700 font-medium underline underline-offset-2">
               Post a position for free
-            </a>
+            </Link>
           </p>
         </div>
       </div>

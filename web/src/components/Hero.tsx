@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { NetworkCanvas } from "./NetworkCanvas";
 
 export function Hero() {
@@ -30,7 +31,7 @@ export function Hero() {
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8 animate-fade-in">
               <span className="w-2 h-2 rounded-full bg-teal-300 animate-pulse-soft" />
               <span className="text-xs font-medium text-white/80 tracking-wide uppercase">
-                2,400+ Members Strong
+                4,000+ Members Strong
               </span>
             </div>
 
@@ -70,12 +71,12 @@ export function Hero() {
                   <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </a>
-              <a
-                href="#about"
+              <Link
+                to="/about/what-is-an-rse"
                 className="inline-flex items-center gap-2 px-7 py-3.5 bg-white/10 backdrop-blur-sm text-white font-medium rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-200"
               >
                 What is an RSE?
-              </a>
+              </Link>
             </div>
           </div>
 
