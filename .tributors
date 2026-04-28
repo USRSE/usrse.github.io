@@ -540,5 +540,12 @@
     "jsubida": {
         "name": "J.C.",
         "blog": null
+    },
+    "pengyin-shan": {
+        "name": "Pengyin Shan",
+        "bio": "A Full Stack Developer",
+        "orcid": "0009-0009-6309-380X",
+        "affiliation": "University of Illinois Urbana-Champaign",
+        "blog": "https://github.com/pengyin-shan"
     }
 }

@@ -3,7 +3,7 @@
 https://us-rse.org
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-99-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-100-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -250,6 +250,7 @@ tool to generate a contributors graphic below.
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><img src="?s=100" width="100px;" alt="J.C."/><br /><sub><b>J.C.</b></sub><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jsubida" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/pengyin-shan"><img src="https://avatars.githubusercontent.com/u/92752107?v=4?s=100" width="100px;" alt="Pengyin Shan"/><br /><sub><b>Pengyin Shan</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=pengyin-shan" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
