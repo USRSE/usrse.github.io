@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { AboutLayout } from "@/components/about/AboutLayout";
 
 const platinumSponsors = [
@@ -20,6 +19,88 @@ const travelSupportSponsors = [
   "Sustainable Horizons Institute",
   "Schmidt Sciences",
 ];
+
+type Accent = "purple" | "teal" | "neutral";
+
+interface SponsorPathway {
+  num: string;
+  eyebrow: string;
+  title: string;
+  lead: string;
+  funds: string[];
+  ctaLabel: string;
+  ctaHref: string;
+  accent: Accent;
+}
+
+const sponsorPathways: SponsorPathway[] = [
+  {
+    num: "01",
+    eyebrow: "For individuals",
+    title: "Make a gift",
+    lead: "Tax-deductible donations through our fiscal sponsor, Community Initiatives. Every gift — at any level — compounds directly into programs and scholarships.",
+    funds: [
+      "Student & early-career travel scholarships",
+      "Community calls and working-group infrastructure",
+      "Newsletter, website, and member resources",
+    ],
+    ctaLabel: "Give today",
+    ctaHref: "mailto:info@us-rse.org?subject=Individual%20gift%20to%20US-RSE",
+    accent: "purple",
+  },
+  {
+    num: "02",
+    eyebrow: "For organizations",
+    title: "Become a year-round partner",
+    lead: "For universities, national labs, and companies who want to support the profession across the full calendar — not just at the conference.",
+    funds: [
+      "Year-round community programs",
+      "Staff time and governance",
+      "Eleven active working groups",
+    ],
+    ctaLabel: "Start the conversation",
+    ctaHref: "mailto:info@us-rse.org?subject=Organization%20partnership%20with%20US-RSE",
+    accent: "teal",
+  },
+  {
+    num: "03",
+    eyebrow: "For USRSE'26",
+    title: "Sponsor the conference",
+    lead: "Platinum, Gold, and Travel-Support tiers available for our annual conference — Oct 19–21, 2026. Request the prospectus for tier benefits.",
+    funds: [
+      "Keynote and plenary programming",
+      "Workshops, mentoring, and BoF sessions",
+      "Travel grants for students and underrepresented groups",
+    ],
+    ctaLabel: "Request the prospectus",
+    ctaHref: "mailto:info@us-rse.org?subject=USRSE%2726%20sponsorship%20prospectus",
+    accent: "neutral",
+  },
+];
+
+const accentStyles: Record<
+  Accent,
+  { border: string; num: string; arrow: string; hoverText: string }
+> = {
+  purple: {
+    border: "border-purple-500",
+    num: "text-purple-500",
+    arrow: "text-purple-500",
+    hoverText: "group-hover:text-purple-700",
+  },
+  teal: {
+    border: "border-teal-500",
+    num: "text-teal-600",
+    arrow: "text-teal-600",
+    hoverText: "group-hover:text-teal-700",
+  },
+  neutral: {
+    border: "border-neutral-900",
+    num: "text-neutral-900",
+    arrow: "text-neutral-700",
+    hoverText: "group-hover:text-neutral-900",
+  },
+};
 
 export function SponsorsPage() {
   return (
@@ -141,31 +222,113 @@ export function SponsorsPage() {
         </div>
       </section>
 
-      {/* ── Support CTA ─────────────────────────────────────────── */}
-      <section>
-        <h2 className="font-display text-3xl font-bold text-neutral-900 mb-3">
-          Support US-RSE
+      {/* ── Become a Sponsor — three pathways ───────────────────── */}
+      <section id="become-a-sponsor" className="scroll-mt-24">
+        <div className="flex items-baseline gap-3 mb-4">
+          <p className="font-mono text-xs uppercase tracking-wider text-neutral-400">
+            Three ways to help
+          </p>
+          <span
+            className="flex-1 h-px bg-neutral-200"
+            aria-hidden="true"
+          />
+        </div>
+
+        <h2 className="font-display text-4xl lg:text-5xl font-bold text-neutral-900 tracking-tight mb-4">
+          Become a sponsor.
         </h2>
-        <p className="text-neutral-500 leading-relaxed mb-6 max-w-xl">
-          Your support helps sustain the community, fund conferences, and
-          advance the recognition of research software engineering as a
-          profession.
+        <p className="text-neutral-500 leading-relaxed mb-14 max-w-2xl">
+          Your support sustains the community, funds the conference, and
+          advances the recognition of research software engineering as a
+          profession. Pick the pathway that fits — we&rsquo;ll take it from
+          there.
         </p>
-        <Link
-          to="/#join"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-purple-700 text-white text-sm font-semibold rounded-lg hover:bg-purple-800 transition-colors"
-        >
-          Make a Contribution
-          <svg
-            className="w-4 h-4"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-neutral-200">
+          {sponsorPathways.map((p) => {
+            const a = accentStyles[p.accent];
+            return (
+              <a
+                key={p.num}
+                href={p.ctaHref}
+                className={`group relative bg-white pt-10 pb-8 px-6 md:px-7 border-t-2 ${a.border} flex flex-col transition-colors hover:bg-neutral-50/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2`}
+              >
+                {/* Top row: eyebrow + number */}
+                <div className="flex items-baseline justify-between mb-7">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-neutral-500">
+                    {p.eyebrow}
+                  </span>
+                  <span
+                    className={`font-display text-sm font-bold tabular-nums ${a.num}`}
+                  >
+                    {p.num}
+                  </span>
+                </div>
+
+                {/* Title */}
+                <h3 className="font-display text-2xl lg:text-[1.6rem] font-bold text-neutral-900 leading-[1.15] tracking-tight mb-4 text-balance">
+                  {p.title}
+                </h3>
+
+                {/* Lead paragraph */}
+                <p className="text-sm text-neutral-500 leading-relaxed mb-8 text-pretty">
+                  {p.lead}
+                </p>
+
+                {/* Funds list */}
+                <div className="pt-5 mb-7 border-t border-neutral-100">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-3">
+                    Your support funds
+                  </p>
+                  <ul className="space-y-1.5">
+                    {p.funds.map((f) => (
+                      <li
+                        key={f}
+                        className="flex gap-2.5 text-xs text-neutral-600 leading-relaxed"
+                      >
+                        <span
+                          className={`${a.arrow} select-none shrink-0`}
+                          aria-hidden="true"
+                        >
+                          →
+                        </span>
+                        <span>{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* CTA */}
+                <span
+                  className={`mt-auto inline-flex items-center gap-2 font-semibold text-sm text-neutral-900 ${a.hoverText} transition-colors`}
+                >
+                  {p.ctaLabel}
+                  <svg
+                    className="w-4 h-4 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    aria-hidden="true"
+                  >
+                    <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </span>
+              </a>
+            );
+          })}
+        </div>
+
+        <p className="mt-6 text-xs text-neutral-400 font-mono">
+          Prefer a direct line? Email{" "}
+          <a
+            href="mailto:info@us-rse.org"
+            className="text-teal-600 hover:text-teal-800 transition-colors"
           >
-            <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
-          </svg>
-        </Link>
+            info@us-rse.org
+          </a>
+          .
+        </p>
       </section>
     </AboutLayout>
   );
