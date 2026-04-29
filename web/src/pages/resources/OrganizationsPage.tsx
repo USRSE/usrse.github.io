@@ -1,3 +1,4 @@
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ResourcesLayout } from "@/components/resources/ResourcesLayout";
 import { useInView } from "@/hooks/useInView";
 
@@ -18,6 +19,9 @@ const organizations: Organization[] = [
   { name: "URSSI", url: "https://urssi.us", domain: "urssi.us", desc: "US research software sustainability planning" },
   { name: "Research Software Alliance (ReSA)", url: "https://researchsoft.org", domain: "researchsoft.org", desc: "Global network for research software policy and practice" },
 ];
+
+type GroupType = "University" | "National Lab" | "Agency";
+type FilterType = "All" | GroupType;
 
 interface RSEGroup {
   institution: string;
@@ -62,9 +66,94 @@ const rseGroups: RSEGroup[] = [
   { institution: "University of Washington", group: "Scientific Computing" },
 ];
 
+function classify(institution: string): GroupType {
+  if (/National Lab|National Laborator/i.test(institution)) return "National Lab";
+  if (institution === "NASA") return "Agency";
+  return "University";
+}
+
+const filterTypes: FilterType[] = ["All", "University", "National Lab", "Agency"];
+
+/**
+ * Render text with the matching query substring wrapped in <mark>.
+ * Case-insensitive; preserves original casing of the text.
+ */
+function highlight(text: string, query: string) {
+  if (!query) return text;
+  const q = query.trim();
+  if (!q) return text;
+  const idx = text.toLowerCase().indexOf(q.toLowerCase());
+  if (idx === -1) return text;
+  return (
+    <>
+      {text.slice(0, idx)}
+      <mark className="bg-teal-100 text-teal-900 rounded px-0.5">
+        {text.slice(idx, idx + q.length)}
+      </mark>
+      {text.slice(idx + q.length)}
+    </>
+  );
+}
+
 export function OrganizationsPage() {
   const { ref: orgsRef, isInView: orgsInView } = useInView(0.1);
-  const { ref: groupsRef, isInView: groupsInView } = useInView(0.1);
+  const { ref: groupsRef, isInView: groupsInView } = useInView(0.05);
+
+  const [query, setQuery] = useState("");
+  const [activeType, setActiveType] = useState<FilterType>("All");
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Keyboard shortcuts: `/` focuses the input from anywhere on the page,
+  // `Esc` clears it when focused.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement | null;
+      const typing =
+        target &&
+        (target.tagName === "INPUT" ||
+          target.tagName === "TEXTAREA" ||
+          target.isContentEditable);
+
+      if (e.key === "/" && !typing) {
+        e.preventDefault();
+        inputRef.current?.focus();
+        inputRef.current?.select();
+      }
+      if (e.key === "Escape" && document.activeElement === inputRef.current) {
+        setQuery("");
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  const typeCounts = useMemo(() => {
+    const counts: Record<FilterType, number> = {
+      All: rseGroups.length,
+      University: 0,
+      "National Lab": 0,
+      Agency: 0,
+    };
+    for (const g of rseGroups) counts[classify(g.institution)]++;
+    return counts;
+  }, []);
+
+  const filteredGroups = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return rseGroups.filter((g) => {
+      const matchesType =
+        activeType === "All" || classify(g.institution) === activeType;
+      if (!matchesType) return false;
+      if (!q) return true;
+      return (
+        g.institution.toLowerCase().includes(q) ||
+        g.group.toLowerCase().includes(q)
+      );
+    });
+  }, [query, activeType]);
+
+  const hasQuery = query.trim().length > 0;
+  const isFiltered = hasQuery || activeType !== "All";
 
   return (
     <ResourcesLayout
@@ -114,21 +203,160 @@ export function OrganizationsPage() {
           University, national lab, and agency teams dedicated to research software engineering.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-0">
-          {rseGroups.map((group, i) => (
-            <div
-              key={`${group.institution}-${group.group}`}
-              className={`py-2.5 border-b border-neutral-50 ${
-                groupsInView ? "animate-slide-up" : "opacity-0"
-              }`}
-              style={{ animationDelay: `${Math.min(i * 30, 600)}ms` }}
-            >
-              <span className="text-sm font-semibold text-neutral-800">{group.institution}</span>
-              <span className="text-sm text-neutral-400 ml-2">{group.group}</span>
-              <span className="font-mono text-[10px] text-neutral-300 ml-1.5">{"\u2197"}</span>
+        {/* ── Filter bar ─────────────────────────────────────────────── */}
+        <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:gap-8">
+          {/* Running count, large typographic anchor */}
+          <div className="flex items-baseline gap-3 lg:shrink-0">
+            <span className="font-display text-5xl lg:text-6xl font-bold text-neutral-900 tabular-nums leading-none">
+              {filteredGroups.length.toString().padStart(2, "0")}
+            </span>
+            <span className="font-mono text-xs uppercase tracking-wider text-neutral-400">
+              of {rseGroups.length}
+              <br />
+              groups
+            </span>
+          </div>
+
+          {/* Search input */}
+          <div className="flex-1 w-full">
+            <label htmlFor="rse-search" className="sr-only">
+              Search institutional groups
+            </label>
+            <div className="relative group">
+              <svg
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400 group-focus-within:text-teal-600 transition-colors"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-3-3" />
+              </svg>
+              <input
+                ref={inputRef}
+                id="rse-search"
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search by institution or group name"
+                spellCheck={false}
+                autoComplete="off"
+                className="w-full h-12 pl-11 pr-24 bg-white border border-neutral-200 rounded-xl text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/15 transition"
+              />
+              {hasQuery ? (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setQuery("");
+                    inputRef.current?.focus();
+                  }}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 px-2 py-1 font-mono text-[10px] uppercase tracking-wider text-neutral-500 hover:text-neutral-900 border border-neutral-200 rounded transition-colors"
+                  aria-label="Clear search"
+                >
+                  Clear
+                </button>
+              ) : (
+                <kbd className="hidden md:flex absolute right-3 top-1/2 -translate-y-1/2 items-center justify-center w-6 h-6 font-mono text-[11px] text-neutral-500 bg-neutral-100 border border-neutral-200 rounded">
+                  /
+                </kbd>
+              )}
             </div>
-          ))}
+          </div>
         </div>
+
+        {/* Type chips */}
+        <div className="flex flex-wrap gap-2 mb-8">
+          {filterTypes.map((t) => {
+            const isActive = activeType === t;
+            return (
+              <button
+                key={t}
+                type="button"
+                onClick={() => setActiveType(t)}
+                className={`inline-flex items-baseline gap-2 px-3.5 py-1.5 rounded-full text-sm font-medium transition-all border ${
+                  isActive
+                    ? "bg-neutral-900 text-white border-neutral-900"
+                    : "bg-white text-neutral-600 border-neutral-200 hover:border-neutral-400 hover:text-neutral-900"
+                }`}
+                aria-pressed={isActive}
+              >
+                {t}
+                <span
+                  className={`font-mono text-[10px] tabular-nums ${
+                    isActive ? "text-white/60" : "text-neutral-400"
+                  }`}
+                >
+                  {typeCounts[t]}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* ── Results ─────────────────────────────────────────────── */}
+        {filteredGroups.length === 0 ? (
+          <div className="py-16 text-center border-t border-b border-neutral-100">
+            <p className="font-mono text-xs uppercase tracking-wider text-neutral-400 mb-3">
+              No matches
+            </p>
+            <p className="font-display text-2xl font-bold text-neutral-900 mb-3">
+              Nothing here yet &mdash; that could be your group.
+            </p>
+            <p className="text-sm text-neutral-500 max-w-md mx-auto mb-6">
+              If your institution has an RSE team we should list, open a pull
+              request on our GitHub and we&rsquo;ll add it.
+            </p>
+            <button
+              type="button"
+              onClick={() => {
+                setQuery("");
+                setActiveType("All");
+              }}
+              className="inline-flex items-center gap-2 text-sm font-medium text-teal-700 hover:text-teal-900 transition-colors"
+            >
+              Reset filters
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path d="M4 4v5h5M20 20v-5h-5" />
+                <path d="M4 9a8 8 0 0114-3M20 15a8 8 0 01-14 3" />
+              </svg>
+            </button>
+          </div>
+        ) : (
+          <ul
+            key={`${query}-${activeType}`}
+            className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-0"
+          >
+            {filteredGroups.map((g, i) => {
+              const type = classify(g.institution);
+              return (
+                <li
+                  key={`${g.institution}-${g.group}`}
+                  className={`group py-3 border-b border-neutral-100 ${
+                    groupsInView ? "animate-slide-up" : "opacity-0"
+                  }`}
+                  style={{
+                    animationDelay: isFiltered
+                      ? `${Math.min(i * 20, 200)}ms`
+                      : `${Math.min(i * 30, 600)}ms`,
+                  }}
+                >
+                  <div className="flex items-baseline gap-2 flex-wrap">
+                    <span className="text-sm font-semibold text-neutral-900">
+                      {highlight(g.institution, query)}
+                    </span>
+                    <span className="text-sm text-neutral-500">
+                      {highlight(g.group, query)}
+                    </span>
+                    <span className="font-mono text-[9px] uppercase tracking-wider text-neutral-300 ml-auto shrink-0 group-hover:text-teal-500 transition-colors">
+                      {type}
+                    </span>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        )}
 
         <p className="text-sm text-neutral-400 mt-6 font-mono">
           {rseGroups.length} groups listed &mdash; submit additions via GitHub
