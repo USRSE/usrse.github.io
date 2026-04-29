@@ -1,4 +1,5 @@
 import { AboutLayout } from "@/components/about/AboutLayout";
+import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { useInView } from "@/hooks/useInView";
 
 export function MissionPage() {
@@ -14,7 +15,12 @@ export function MissionPage() {
         teaser: "Learn who Research Software Engineers are",
       }}
     >
-      {/* Opening narrative — editorial prose, not a summary block */}
+      {/* Community photo */}
+      <div className="mb-12">
+        <PhotoPlaceholder label="US-RSE community at a conference" aspect="ultrawide" />
+      </div>
+
+      {/* Opening narrative */}
       <p className="text-xl text-neutral-700 leading-relaxed mb-16 max-w-2xl">
         The US Research Software Engineer Association (US-RSE) is a
         community-driven effort focused on the increasingly important role of

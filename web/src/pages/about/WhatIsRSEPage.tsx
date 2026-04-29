@@ -113,6 +113,65 @@ export function WhatIsRSEPage() {
         </div>
       </div>
 
+      {/* ── Code example — SHOW what RSE work looks like ──────────── */}
+      <div className="mb-16">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+          RSE Work in Practice
+        </h2>
+        <p className="text-neutral-500 text-sm mb-4">
+          A simplified example of research software — making a scientific workflow reproducible:
+        </p>
+        <div className="bg-neutral-900 rounded-xl p-5 overflow-x-auto">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="font-mono text-[10px] uppercase tracking-wider text-neutral-500">climate_pipeline.py</span>
+          </div>
+          <pre className="text-sm font-mono leading-relaxed">
+            <code>
+              <span className="text-teal-300">import</span>{" "}
+              <span className="text-neutral-100">xarray</span>{" "}
+              <span className="text-teal-300">as</span>{" "}
+              <span className="text-neutral-100">xr</span>{"\n"}
+              <span className="text-teal-300">from</span>{" "}
+              <span className="text-neutral-100">dask.distributed</span>{" "}
+              <span className="text-teal-300">import</span>{" "}
+              <span className="text-neutral-100">Client</span>{"\n\n"}
+              <span className="text-neutral-500"># Parallelized analysis across 50 years of climate data</span>{"\n"}
+              <span className="text-teal-300">def</span>{" "}
+              <span className="text-purple-300">compute_anomalies</span>
+              <span className="text-neutral-400">(</span>
+              <span className="text-neutral-100">dataset</span>
+              <span className="text-neutral-400">:</span>{" "}
+              <span className="text-neutral-100">xr.Dataset</span>
+              <span className="text-neutral-400">)</span>{" "}
+              <span className="text-neutral-400">-&gt;</span>{" "}
+              <span className="text-neutral-100">xr.Dataset</span>
+              <span className="text-neutral-400">:</span>{"\n"}
+              <span className="text-neutral-100">{"    "}climatology</span>{" "}
+              <span className="text-neutral-400">=</span>{" "}
+              <span className="text-neutral-100">dataset.groupby</span>
+              <span className="text-neutral-400">(</span>
+              <span className="text-success-300">"time.month"</span>
+              <span className="text-neutral-400">)</span>
+              <span className="text-neutral-100">.mean</span>
+              <span className="text-neutral-400">(</span>
+              <span className="text-success-300">"time"</span>
+              <span className="text-neutral-400">)</span>{"\n"}
+              <span className="text-neutral-100">{"    "}</span>
+              <span className="text-teal-300">return</span>{" "}
+              <span className="text-neutral-100">dataset.groupby</span>
+              <span className="text-neutral-400">(</span>
+              <span className="text-success-300">"time.month"</span>
+              <span className="text-neutral-400">)</span>{" "}
+              <span className="text-neutral-400">-</span>{" "}
+              <span className="text-neutral-100">climatology</span>
+            </code>
+          </pre>
+        </div>
+        <p className="text-xs text-neutral-400 mt-3">
+          RSEs make code like this robust, tested, documented, and reusable across research groups.
+        </p>
+      </div>
+
       {/* ── CTA — not a card, just a clear ask ─────────────────────── */}
       <div className="border-t border-neutral-100 pt-10">
         <h3 className="text-lg font-bold text-neutral-900 mb-2">

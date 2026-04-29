@@ -1,4 +1,5 @@
 import { EventsLayout } from "@/components/events/EventsLayout";
+import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { useInView } from "@/hooks/useInView";
 
 const getInvolved = [
@@ -91,6 +92,23 @@ export function ConferencePage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ── Past Conferences Gallery ──────────────────────────────── */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-2">
+          Past Conferences
+        </h2>
+        <p className="text-neutral-500 mb-6">
+          Moments from USRSE'23 (Chicago), USRSE'24 (Albuquerque), and USRSE'25 (Philadelphia).
+        </p>
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
+          <PhotoPlaceholder label="USRSE'25 group photo" aspect="wide" className="col-span-2 lg:col-span-2" />
+          <PhotoPlaceholder label="Keynote speaker" aspect="wide" />
+          <PhotoPlaceholder label="Workshop session" aspect="wide" />
+          <PhotoPlaceholder label="Poster session" aspect="wide" />
+          <PhotoPlaceholder label="Networking event" aspect="wide" />
         </div>
       </section>
 
