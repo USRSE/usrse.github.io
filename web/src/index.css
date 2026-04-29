@@ -295,6 +295,38 @@
   position: relative;
 }
 
+/* =========================================================================
+   MAPLIBRE OVERRIDES — dark theme controls
+   ========================================================================= */
+
+.maplibregl-ctrl-group {
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 8px !important;
+}
+
+.maplibregl-ctrl-group button {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.maplibregl-ctrl-group button + button {
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.maplibregl-ctrl-group button .maplibregl-ctrl-icon {
+  filter: invert(1) brightness(0.7);
+}
+
+.maplibregl-ctrl-group button:hover .maplibregl-ctrl-icon {
+  filter: invert(1) brightness(1);
+}
+
+.maplibregl-ctrl-attrib {
+  display: none !important;
+}
+
 @utility bg-grid {
   background-image: linear-gradient(
       to right,
