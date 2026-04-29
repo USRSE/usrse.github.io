@@ -40,9 +40,9 @@ export function Hero() {
               className="font-display text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-6 animate-slide-up"
               style={{ animationDelay: "100ms" }}
             >
-              <span className="text-teal-300">Great ideas</span>
+              <span className="text-teal-300">The people</span>
               <br />
-              <span className="text-white">deserve great</span>
+              <span className="text-white">behind research</span>
               <br />
               <span className="text-white">software.</span>
             </h1>
@@ -52,9 +52,10 @@ export function Hero() {
               className="text-lg lg:text-xl text-white/70 leading-relaxed max-w-xl mb-10 animate-slide-up"
               style={{ animationDelay: "250ms" }}
             >
-              We are the United States Research Software Engineer Association — a
-              community of people who make research software happen. We advocate,
-              connect, and build the future of computational research.
+              The largest community of Research Software Engineers in
+              the US — researchers, engineers, and allies building the
+              software that powers scientific breakthroughs and fighting
+              for the careers of those who make it.
             </p>
 
             {/* CTAs */}
@@ -62,21 +63,21 @@ export function Hero() {
               className="flex flex-wrap gap-4 animate-slide-up"
               style={{ animationDelay: "400ms" }}
             >
-              <a
-                href="#join"
+              <Link
+                to="/about/what-is-an-rse"
                 className="inline-flex items-center gap-2 px-7 py-3.5 bg-teal-500 text-white font-bold rounded-xl hover:bg-teal-400 transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
               >
-                Join the Community
+                See if you're an RSE
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
-              </a>
-              <Link
-                to="/about/what-is-an-rse"
+              </Link>
+              <a
+                href="#join"
                 className="inline-flex items-center gap-2 px-7 py-3.5 bg-white/10 backdrop-blur-sm text-white font-medium rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-200"
               >
-                What is an RSE?
-              </Link>
+                Join for free
+              </a>
             </div>
           </div>
 
@@ -97,15 +98,15 @@ export function Hero() {
                 <br />
                 San Jose, California
               </p>
-              <a
-                href="#conference"
+              <Link
+                to="/events/usrse26"
                 className="inline-flex items-center text-sm font-medium text-teal-300 hover:text-teal-200 transition-colors"
               >
                 Learn more
                 <svg className="w-3.5 h-3.5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

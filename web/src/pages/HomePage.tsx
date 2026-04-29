@@ -1,13 +1,15 @@
 import { Hero } from "@/components/Hero";
 import { LogoMarquee } from "@/components/LogoMarquee";
 import { Mission } from "@/components/Mission";
+import { WhatIsRSE } from "@/components/WhatIsRSE";
 import { Stats } from "@/components/Stats";
 import { CommunityMap } from "@/components/CommunityMap";
 import { PhotoStrip } from "@/components/PhotoPlaceholder";
 import { WorkingGroups } from "@/components/WorkingGroups";
-import { Events } from "@/components/Events";
-import { Community } from "@/components/Community";
 import { JobBoard } from "@/components/JobBoard";
+import { Events } from "@/components/Events";
+import { NewsletterCTA } from "@/components/NewsletterCTA";
+import { Community } from "@/components/Community";
 
 export function HomePage() {
   return (
@@ -15,25 +17,27 @@ export function HomePage() {
       <Hero />
       <LogoMarquee />
       <Mission />
+      <WhatIsRSE />
       <Stats />
       <CommunityMap />
 
-      {/* Community in action — photo strip */}
+      {/* Community in action — swap these with real conference photos */}
       <PhotoStrip
         photos={[
-          { label: "Conference keynote", span: "wide" },
-          { label: "Workshop session" },
-          { label: "Networking break" },
-          { label: "Panel discussion", span: "wide" },
+          { label: "USRSE'25 keynote speaker", span: "wide" },
+          { label: "Workshop hands-on session" },
+          { label: "Hallway networking" },
+          { label: "Panel discussion at USRSE'24", span: "wide" },
           { label: "Poster session" },
-          { label: "Group photo" },
+          { label: "USRSE'25 group photo" },
         ]}
       />
 
       <WorkingGroups />
-      <Events />
-      <Community />
       <JobBoard />
+      <Events />
+      <NewsletterCTA />
+      <Community />
     </>
   );
 }

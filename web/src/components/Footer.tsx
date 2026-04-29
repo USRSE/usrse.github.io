@@ -1,24 +1,24 @@
 const footerLinks = {
   Organization: [
-    { label: "About", href: "#about" },
-    { label: "Mission", href: "#mission" },
-    { label: "Governance", href: "#governance" },
-    { label: "Code of Conduct", href: "#coc" },
-    { label: "DEI Statement", href: "#dei" },
+    { label: "Mission", href: "/about/mission" },
+    { label: "Governance", href: "/about/governance" },
+    { label: "Board of Directors", href: "/about/board" },
+    { label: "Code of Conduct", href: "/about/code-of-conduct" },
+    { label: "DEI Statement", href: "/about/dei" },
   ],
   Community: [
-    { label: "Working Groups", href: "#wg" },
-    { label: "Events", href: "#events" },
-    { label: "Job Board", href: "#jobs" },
-    { label: "Community Awards", href: "#awards" },
-    { label: "Newsletter", href: "#newsletter" },
+    { label: "Working Groups", href: "/community/working-groups" },
+    { label: "Events", href: "/events" },
+    { label: "Job Board", href: "/jobs" },
+    { label: "Community Awards", href: "/community/awards" },
+    { label: "Newsletter", href: "/news" },
   ],
   Resources: [
-    { label: "RSE Stories", href: "#stories" },
-    { label: "Publications", href: "#publications" },
-    { label: "Tutorials", href: "#tutorials" },
+    { label: "Education & Training", href: "/resources/education" },
+    { label: "RSE Organizations", href: "/resources/organizations" },
+    { label: "Volunteer", href: "/jobs/volunteer" },
     { label: "GitHub", href: "https://github.com/USRSE" },
-    { label: "Documentation", href: "#docs" },
+    { label: "Sponsors", href: "/about/sponsors" },
   ],
 };
 
