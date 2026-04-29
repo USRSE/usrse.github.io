@@ -13,7 +13,7 @@ resources to sustain.
 
 <div class="donate-hero notification has-text-centered" style="padding: 2.5rem 2rem; margin: 1.5rem 0 2rem;">
   <p class="mb-3">
-    <p class="mb-3" style="display:inline-block; background:rgba(255,255,255,0.15); border: 1.5px solid rgba(255,255,255,0.5); border-radius: 6px; padding: 0.4rem 0.9rem; font-weight: 600; font-size: 0.95rem;">
+    <p class="mb-3" style="display:inline-block; background:rgba(255,255,255,0.15); border: 1.5px solid rgba(255,255,255,0.5); border-radius: 6px; padding: 0.4rem 0.9rem; font-weight: 600; font-size: 0.95rem; color: white;">
       ✓ US-RSE is a 501(c)(3) nonprofit — donations are tax-deductible!
     </p>
   </p>
