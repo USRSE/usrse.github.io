@@ -1,23 +1,39 @@
+import { Link } from "react-router-dom";
 import { AboutLayout } from "@/components/about/AboutLayout";
+import { useInView } from "@/hooks/useInView";
 
-const platinumSponsors = [
-  "University of Illinois Urbana-Champaign",
-  "Princeton University",
-  "SHI",
-  "Dell Technologies",
-  "Schmidt Sciences",
-];
+interface Tier {
+  name: string;
+  sponsors: string[];
+  titleSize: string;
+  titleWeight: string;
+}
 
-const goldSponsors = [
-  "Globus",
-  "Los Alamos National Laboratory",
-  "IBM",
-  "HPE / AMD",
-];
-
-const travelSupportSponsors = [
-  "Sustainable Horizons Institute",
-  "Schmidt Sciences",
+const conferenceTiers: Tier[] = [
+  {
+    name: "Platinum",
+    sponsors: [
+      "University of Illinois Urbana-Champaign",
+      "Princeton University",
+      "SHI",
+      "Dell Technologies",
+      "Schmidt Sciences",
+    ],
+    titleSize: "text-2xl lg:text-3xl",
+    titleWeight: "font-bold text-neutral-800",
+  },
+  {
+    name: "Gold",
+    sponsors: ["Globus", "Los Alamos National Laboratory", "IBM", "HPE / AMD"],
+    titleSize: "text-lg lg:text-xl",
+    titleWeight: "font-semibold text-neutral-700",
+  },
+  {
+    name: "Travel Support",
+    sponsors: ["Sustainable Horizons Institute", "Schmidt Sciences"],
+    titleSize: "text-base",
+    titleWeight: "font-medium text-neutral-600",
+  },
 ];
 
 type Accent = "purple" | "teal" | "neutral";
@@ -102,7 +118,48 @@ const accentStyles: Record<
   },
 };
 
+interface Bridge {
+  eyebrow: string;
+  title: string;
+  teaser: string;
+  path: string;
+}
+
+const bridges: Bridge[] = [
+  {
+    eyebrow: "Purpose",
+    title: "Our Mission",
+    teaser: "What US-RSE stands for and works toward.",
+    path: "/about/mission",
+  },
+  {
+    eyebrow: "Accountability",
+    title: "Financial Status",
+    teaser: "Where the money comes from and where it goes.",
+    path: "/about/financial-status",
+  },
+  {
+    eyebrow: "Framework",
+    title: "Governance",
+    teaser: "The structure that stewards every sponsor gift.",
+    path: "/about/governance",
+  },
+  {
+    eyebrow: "Values",
+    title: "DEI Statement",
+    teaser: "The commitments shaping how funds are deployed.",
+    path: "/about/dei",
+  },
+];
+
 export function SponsorsPage() {
+  const { ref: stanceRef, isInView: stanceInView } = useInView(0.2);
+  const { ref: primaryRef, isInView: primaryInView } = useInView(0.1);
+  const { ref: tiersRef, isInView: tiersInView } = useInView(0.05);
+  const { ref: individualRef, isInView: individualInView } = useInView(0.1);
+  const { ref: pathwaysRef, isInView: pathwaysInView } = useInView(0.05);
+  const { ref: bridgeRef, isInView: bridgeInView } = useInView(0.1);
+
   return (
     <AboutLayout
       title="Sponsors"
@@ -114,144 +171,184 @@ export function SponsorsPage() {
         teaser: "The team behind the community",
       }}
     >
-      {/* ── Primary Funder ──────────────────────────────────────── */}
-      <section className="mb-20">
-        <p className="font-mono text-xs uppercase tracking-wider text-neutral-400 mb-3">
-          Primary Grant Funding
+      {/* ── The stance — manifesto + framing ─────────────────────── */}
+      <section
+        ref={stanceRef}
+        className={`mb-20 ${stanceInView ? "animate-slide-up" : "opacity-0"}`}
+      >
+        <p className="font-mono text-xs uppercase tracking-[0.25em] text-teal-700 mb-6">
+          The people who make it possible
         </p>
-        <h2 className="font-display text-4xl lg:text-5xl font-bold text-neutral-900 tracking-tight mb-4">
+        <p className="font-display text-3xl lg:text-5xl font-bold text-neutral-900 tracking-tight leading-[1.1] mb-10 text-balance max-w-4xl">
+          Every program, every conference, every travel grant &mdash; someone
+          made it possible.
+        </p>
+        <p className="text-lg text-neutral-600 leading-relaxed max-w-2xl">
+          US-RSE is sustained through a mix of grant funding, institutional
+          sponsorships, and individual gifts &mdash; all stewarded through a
+          501(c)(3) fiscal structure. What&rsquo;s below is a record of who
+          built the foundation.
+        </p>
+      </section>
+
+      {/* ── Primary funder — Sloan ───────────────────────────────── */}
+      <section
+        ref={primaryRef}
+        className={`mb-20 pt-12 border-t border-neutral-200 ${
+          primaryInView ? "animate-slide-up" : "opacity-0"
+        }`}
+      >
+        <p className="font-mono text-xs uppercase tracking-[0.25em] text-purple-600 mb-3">
+          Primary grant funder
+        </p>
+        <h2 className="font-display text-4xl lg:text-5xl font-bold text-neutral-900 tracking-tight mb-4 text-balance">
           Alfred P. Sloan Foundation
         </h2>
-        <p className="text-neutral-500 leading-relaxed max-w-2xl">
-          The Alfred P. Sloan Foundation has been the primary funder of US-RSE,
-          providing the grant support that has enabled the organization to grow
-          from a grassroots initiative into a thriving professional community
-          with dedicated staff, annual conferences, and sustained programs.
+        <p className="text-neutral-600 leading-relaxed max-w-2xl">
+          The Alfred P. Sloan Foundation has been the primary funder of
+          US-RSE, providing the grant support that enabled the organization
+          to grow from a grassroots initiative into a thriving professional
+          community with dedicated staff, annual conferences, and sustained
+          programs.
         </p>
       </section>
 
-      {/* ── Conference Sponsors ─────────────────────────────────── */}
-      <section className="mb-20">
-        <div className="flex items-baseline gap-3 mb-10">
-          <h2 className="text-2xl font-bold text-neutral-900">
-            Conference Sponsors
-          </h2>
-          <span className="font-mono text-sm text-purple-500">USRSE'25</span>
-        </div>
-
-        {/* Platinum tier */}
-        <div className="mb-12">
-          <p className="font-mono text-xs uppercase tracking-wider text-neutral-400 mb-4">
-            Platinum
-          </p>
-          <div className="space-y-1.5">
-            {platinumSponsors.map((name) => (
-              <p
-                key={name}
-                className="font-display text-2xl lg:text-3xl font-bold text-neutral-800 leading-tight"
-              >
-                {name}
-              </p>
-            ))}
-          </div>
-        </div>
-
-        {/* Gold tier */}
-        <div className="mb-12">
-          <p className="font-mono text-xs uppercase tracking-wider text-neutral-400 mb-4">
-            Gold
-          </p>
-          <div className="space-y-1">
-            {goldSponsors.map((name) => (
-              <p
-                key={name}
-                className="font-heading text-lg lg:text-xl font-semibold text-neutral-700 leading-snug"
-              >
-                {name}
-              </p>
-            ))}
-          </div>
-        </div>
-
-        {/* Travel Support */}
-        <div className="mb-12">
-          <p className="font-mono text-xs uppercase tracking-wider text-neutral-400 mb-4">
-            Travel Support
-          </p>
-          <div className="space-y-1">
-            {travelSupportSponsors.map((name) => (
-              <p
-                key={name}
-                className="text-base font-medium text-neutral-600 leading-snug"
-              >
-                {name}
-              </p>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Individual Sponsors ─────────────────────────────────── */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-3">
-          Individual Sponsors
-        </h2>
-        <p className="text-neutral-500 leading-relaxed">
-          We gratefully acknowledge the many individuals who have contributed
-          personal donations to support US-RSE's programs, events, and community
-          infrastructure. Every contribution, regardless of size, strengthens the
-          RSE movement.
-        </p>
-      </section>
-
-      {/* ── Fiscal Sponsorship ──────────────────────────────────── */}
-      <section className="mb-16">
-        <div className="py-6 border-t border-b border-neutral-200">
-          <p className="font-mono text-xs uppercase tracking-wider text-neutral-400 mb-2">
-            Fiscal Sponsor
-          </p>
-          <p className="font-heading text-lg font-bold text-neutral-900">
-            Community Initiatives
-          </p>
-          <p className="text-sm text-neutral-500 mt-1">
-            US-RSE operates as a fiscally sponsored project of Community
-            Initiatives, a 501(c)(3) nonprofit organization. This structure
-            allows tax-deductible donations and provides organizational
-            governance.
-          </p>
-        </div>
-      </section>
-
-      {/* ── Become a Sponsor — three pathways ───────────────────── */}
-      <section id="become-a-sponsor" className="scroll-mt-24">
+      {/* ── Conference sponsors — tiered ─────────────────────────── */}
+      <section ref={tiersRef} className="mb-20">
         <div className="flex items-baseline gap-3 mb-4">
-          <p className="font-mono text-xs uppercase tracking-wider text-neutral-400">
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-neutral-400">
+            Conference sponsors
+          </p>
+          <span className="flex-1 h-px bg-neutral-200" aria-hidden="true" />
+          <span className="font-mono text-[11px] text-purple-600 tracking-wider">
+            USRSE&rsquo;25
+          </span>
+        </div>
+        <h2 className="font-display text-3xl lg:text-4xl font-bold text-neutral-900 tracking-tight mb-3">
+          The organizations behind the conference.
+        </h2>
+        <p className="text-neutral-500 leading-relaxed max-w-2xl mb-12">
+          Eleven institutions underwrote USRSE&rsquo;25 across three tiers,
+          funding keynotes, workshops, and travel grants.
+        </p>
+
+        <div className="space-y-12">
+          {conferenceTiers.map((tier, i) => (
+            <div
+              key={tier.name}
+              className={`${tiersInView ? "animate-slide-up" : "opacity-0"}`}
+              style={{ animationDelay: `${i * 100}ms` }}
+            >
+              <div className="flex items-baseline gap-3 mb-5">
+                <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-teal-700">
+                  {tier.name}
+                </p>
+                <span className="flex-1 h-px bg-neutral-100" aria-hidden="true" />
+                <span className="font-mono text-[10px] text-neutral-400 tabular-nums">
+                  {tier.sponsors.length.toString().padStart(2, "0")}
+                </span>
+              </div>
+              <div className="space-y-1.5">
+                {tier.sponsors.map((name) => (
+                  <p
+                    key={name}
+                    className={`font-display ${tier.titleSize} ${tier.titleWeight} tracking-tight leading-tight`}
+                  >
+                    {name}
+                  </p>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Individual giving + fiscal mechanism ─────────────────── */}
+      <section ref={individualRef} className="mb-20">
+        <div className="flex items-baseline gap-3 mb-4">
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-neutral-400">
+            Individual giving
+          </p>
+          <span className="flex-1 h-px bg-neutral-200" aria-hidden="true" />
+        </div>
+        <h2 className="font-display text-3xl lg:text-4xl font-bold text-neutral-900 tracking-tight mb-4 text-balance max-w-3xl">
+          Hundreds of smaller gifts, stewarded through a 501(c)(3).
+        </h2>
+        <p className="text-neutral-600 leading-relaxed max-w-2xl mb-10">
+          We gratefully acknowledge the many individuals who have contributed
+          personal donations to support US-RSE&rsquo;s programs, events, and
+          community infrastructure. Every contribution, regardless of size,
+          strengthens the RSE movement.
+        </p>
+
+        {/* Fiscal mechanism — elevated callout */}
+        <div
+          className={`grid grid-cols-1 md:grid-cols-2 gap-px bg-neutral-200 ${
+            individualInView ? "animate-slide-up" : "opacity-0"
+          }`}
+          style={{ animationDelay: "150ms" }}
+        >
+          <div className="bg-teal-50/50 p-6 md:p-7">
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-teal-700 mb-2">
+              Tax-deductible
+            </p>
+            <p className="font-display text-lg font-bold text-neutral-900 tracking-tight mb-1.5">
+              Your gift is deductible in the US.
+            </p>
+            <p className="text-sm text-neutral-600 leading-relaxed">
+              Because we operate under a 501(c)(3) fiscal sponsor, donations
+              qualify for the standard charitable deduction.
+            </p>
+          </div>
+          <div className="bg-white p-6 md:p-7">
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-400 mb-2">
+              Fiscal sponsor
+            </p>
+            <p className="font-display text-lg font-bold text-neutral-900 tracking-tight mb-1.5">
+              Community Initiatives
+            </p>
+            <p className="text-sm text-neutral-600 leading-relaxed">
+              A 501(c)(3) nonprofit that handles legal structure, financial
+              oversight, and fund stewardship for US-RSE.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Become a sponsor — three pathways (preserved) ────────── */}
+      <section
+        id="become-a-sponsor"
+        ref={pathwaysRef}
+        className="mb-20 scroll-mt-24"
+      >
+        <div className="flex items-baseline gap-3 mb-4">
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-neutral-400">
             Three ways to help
           </p>
-          <span
-            className="flex-1 h-px bg-neutral-200"
-            aria-hidden="true"
-          />
+          <span className="flex-1 h-px bg-neutral-200" aria-hidden="true" />
         </div>
 
-        <h2 className="font-display text-4xl lg:text-5xl font-bold text-neutral-900 tracking-tight mb-4">
+        <h2 className="font-display text-3xl lg:text-4xl font-bold text-neutral-900 tracking-tight mb-4">
           Become a sponsor.
         </h2>
-        <p className="text-neutral-500 leading-relaxed mb-14 max-w-2xl">
+        <p className="text-neutral-500 leading-relaxed mb-12 max-w-2xl">
           Your support sustains the community, funds the conference, and
           advances the recognition of research software engineering as a
-          profession. Pick the pathway that fits — we&rsquo;ll take it from
-          there.
+          profession. Pick the pathway that fits &mdash; we&rsquo;ll take it
+          from there.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-neutral-200">
-          {sponsorPathways.map((p) => {
+          {sponsorPathways.map((p, i) => {
             const a = accentStyles[p.accent];
             return (
               <a
                 key={p.num}
                 href={p.ctaHref}
-                className={`group relative bg-white pt-10 pb-8 px-6 md:px-7 border-t-2 ${a.border} flex flex-col transition-colors hover:bg-neutral-50/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2`}
+                className={`group relative bg-white pt-10 pb-8 px-6 md:px-7 border-t-2 ${a.border} flex flex-col transition-colors hover:bg-neutral-50/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${
+                  pathwaysInView ? "animate-slide-up" : "opacity-0"
+                }`}
+                style={{ animationDelay: `${i * 100}ms` }}
               >
                 {/* Top row: eyebrow + number */}
                 <div className="flex items-baseline justify-between mb-7">
@@ -323,12 +420,61 @@ export function SponsorsPage() {
           Prefer a direct line? Email{" "}
           <a
             href="mailto:info@us-rse.org"
-            className="text-teal-600 hover:text-teal-800 transition-colors"
+            className="text-teal-700 hover:text-teal-900 transition-colors"
           >
             info@us-rse.org
           </a>
           .
         </p>
+      </section>
+
+      {/* ── Continue exploring — bridge cards ────────────────────── */}
+      <section
+        ref={bridgeRef}
+        className="mb-4 pt-12 border-t-2 border-neutral-900"
+      >
+        <div className="flex items-baseline gap-3 mb-4">
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-neutral-400">
+            Continue exploring
+          </p>
+          <span className="flex-1 h-px bg-neutral-200" aria-hidden="true" />
+        </div>
+        <h2 className="font-display text-2xl lg:text-3xl font-bold text-neutral-900 tracking-tight mb-10">
+          The organization you&rsquo;d be funding.
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-neutral-200">
+          {bridges.map((b, i) => (
+            <Link
+              key={b.path}
+              to={b.path}
+              className={`group bg-white p-6 md:p-7 flex items-center gap-5 hover:bg-neutral-50 transition-colors ${
+                bridgeInView ? "animate-slide-up" : "opacity-0"
+              }`}
+              style={{ animationDelay: `${i * 80}ms` }}
+            >
+              <div className="flex-1">
+                <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">
+                  {b.eyebrow}
+                </p>
+                <h3 className="font-display text-lg font-bold text-neutral-900 tracking-tight mb-1 group-hover:text-teal-700 transition-colors">
+                  {b.title}
+                </h3>
+                <p className="text-sm text-neutral-500">{b.teaser}</p>
+              </div>
+              <svg
+                className="w-5 h-5 text-neutral-400 group-hover:text-teal-700 transition-all group-hover:translate-x-1 shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+                aria-hidden="true"
+              >
+                <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+          ))}
+        </div>
       </section>
     </AboutLayout>
   );
