@@ -142,7 +142,6 @@ const navItems: NavItem[] = [
     children: [
       { label: "Newsletters", href: "/news", route: true },
       { label: "News & Updates", href: "/news/updates", route: true },
-      { label: "From Leadership", href: "/news/leadership", route: true },
     ],
   },
   {

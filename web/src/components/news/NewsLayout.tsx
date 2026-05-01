@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 const newsPages = [
   { path: "/news", label: "Newsletters", shortLabel: "Letters" },
   { path: "/news/updates", label: "News & Updates", shortLabel: "News" },
-  { path: "/news/leadership", label: "From Leadership", shortLabel: "Lead" },
 ];
 
 interface NewsLayoutProps {

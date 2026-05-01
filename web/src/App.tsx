@@ -25,7 +25,6 @@ import { SubmitJobPage } from "@/pages/jobs/SubmitJobPage";
 import { VolunteerPage } from "@/pages/jobs/VolunteerPage";
 import { NewslettersPage } from "@/pages/news/NewslettersPage";
 import { NewsUpdatesPage } from "@/pages/news/NewsUpdatesPage";
-import { LeadershipMessagesPage } from "@/pages/news/LeadershipMessagesPage";
 import { ResourcesHubPage } from "@/pages/resources/ResourcesHubPage";
 import { EducationPage } from "@/pages/resources/EducationPage";
 import { OrganizationsPage } from "@/pages/resources/OrganizationsPage";
@@ -64,7 +63,6 @@ export function App() {
             <Route path="/jobs/volunteer" element={<VolunteerPage />} />
             <Route path="/news" element={<NewslettersPage />} />
             <Route path="/news/updates" element={<NewsUpdatesPage />} />
-            <Route path="/news/leadership" element={<LeadershipMessagesPage />} />
             <Route path="/resources" element={<ResourcesHubPage />} />
             <Route path="/resources/education" element={<EducationPage />} />
             <Route path="/resources/organizations" element={<OrganizationsPage />} />
