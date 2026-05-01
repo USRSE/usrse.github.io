@@ -95,7 +95,7 @@ const bridges: Bridge[] = [
     eyebrow: "Belonging",
     title: "Affinity Groups",
     teaser: "Communities within the community.",
-    path: "/community/affinity",
+    path: "/community/affinity-groups",
   },
   {
     eyebrow: "Access",
@@ -305,7 +305,7 @@ export function DEIPage() {
           <div className="flex flex-wrap items-center gap-x-5 gap-y-1 font-mono text-[11px] uppercase tracking-wider text-neutral-400">
             <span>or</span>
             <Link
-              to="/community/affinity"
+              to="/community/affinity-groups"
               className="text-neutral-700 hover:text-purple-700 transition-colors"
             >
               Affinity groups

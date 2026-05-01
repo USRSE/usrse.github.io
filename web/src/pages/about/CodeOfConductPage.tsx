@@ -146,7 +146,7 @@ const bridges: Bridge[] = [
     eyebrow: "Belonging",
     title: "Affinity Groups",
     teaser: "Communities within the community, where you'll find support.",
-    path: "/community/affinity",
+    path: "/community/affinity-groups",
   },
   {
     eyebrow: "Accountability",
