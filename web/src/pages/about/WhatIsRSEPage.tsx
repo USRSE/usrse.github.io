@@ -184,9 +184,9 @@ const bridges: Bridge[] = [
   },
   {
     eyebrow: "Learning",
-    title: "Education & Training",
-    teaser: "Tools, tutorials, and training for research software.",
-    path: "/resources/education",
+    title: "Learn",
+    teaser: "Seminars, tutorials, and references for research software.",
+    path: "/resources",
   },
 ];
 

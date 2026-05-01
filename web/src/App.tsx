@@ -25,10 +25,8 @@ import { SubmitJobPage } from "@/pages/jobs/SubmitJobPage";
 import { VolunteerPage } from "@/pages/jobs/VolunteerPage";
 import { NewslettersPage } from "@/pages/news/NewslettersPage";
 import { NewsUpdatesPage } from "@/pages/news/NewsUpdatesPage";
-import { ResourcesHubPage } from "@/pages/resources/ResourcesHubPage";
-import { EducationPage } from "@/pages/resources/EducationPage";
-import { OrganizationsPage } from "@/pages/resources/OrganizationsPage";
-import { MapPage } from "@/pages/resources/MapPage";
+import { LearnPage } from "@/pages/resources/LearnPage";
+import { DirectoryPage } from "@/pages/resources/DirectoryPage";
 import { ScrollToTop } from "@/components/ScrollToTop";
 
 export function App() {
@@ -63,10 +61,8 @@ export function App() {
             <Route path="/jobs/volunteer" element={<VolunteerPage />} />
             <Route path="/news" element={<NewslettersPage />} />
             <Route path="/news/updates" element={<NewsUpdatesPage />} />
-            <Route path="/resources" element={<ResourcesHubPage />} />
-            <Route path="/resources/education" element={<EducationPage />} />
-            <Route path="/resources/organizations" element={<OrganizationsPage />} />
-            <Route path="/resources/map" element={<MapPage />} />
+            <Route path="/resources" element={<LearnPage />} />
+            <Route path="/resources/directory" element={<DirectoryPage />} />
           </Routes>
         </main>
         <Footer />

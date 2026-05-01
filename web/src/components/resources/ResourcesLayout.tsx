@@ -1,10 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 
 const resourcesPages = [
-  { path: "/resources", label: "Resources Hub", shortLabel: "Hub" },
-  { path: "/resources/education", label: "Education & Training", shortLabel: "Edu" },
-  { path: "/resources/organizations", label: "RSE Organizations", shortLabel: "Orgs" },
-  { path: "/resources/map", label: "RSE Map", shortLabel: "Map" },
+  { path: "/resources", label: "Learn", shortLabel: "Learn" },
+  { path: "/resources/directory", label: "Directory", shortLabel: "Dir" },
 ];
 
 interface ResourcesLayoutProps {

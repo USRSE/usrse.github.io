@@ -150,10 +150,8 @@ const navItems: NavItem[] = [
     route: true,
     type: "dropdown",
     children: [
-      { label: "Resources Hub", href: "/resources", route: true },
-      { label: "Education & Training", href: "/resources/education", route: true },
-      { label: "RSE Organizations", href: "/resources/organizations", route: true },
-      { label: "RSE Map", href: "/resources/map", route: true },
+      { label: "Learn", href: "/resources", route: true },
+      { label: "Directory", href: "/resources/directory", route: true },
     ],
   },
 ];

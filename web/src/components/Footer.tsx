@@ -14,8 +14,8 @@ const footerLinks = {
     { label: "Newsletter", href: "/news" },
   ],
   Resources: [
-    { label: "Education & Training", href: "/resources/education" },
-    { label: "RSE Organizations", href: "/resources/organizations" },
+    { label: "Learn", href: "/resources" },
+    { label: "Directory", href: "/resources/directory" },
     { label: "Volunteer", href: "/jobs/volunteer" },
     { label: "GitHub", href: "https://github.com/USRSE" },
     { label: "Sponsors", href: "/about/sponsors" },
