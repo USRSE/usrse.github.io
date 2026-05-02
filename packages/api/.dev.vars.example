@@ -1,0 +1,3 @@
+# Copy this file to .dev.vars (gitignored). wrangler dev reads it as Worker
+# env bindings. For production, set with: wrangler secret put DATABASE_URL
+DATABASE_URL=postgres://user:password@host.neon.tech/dbname?sslmode=require

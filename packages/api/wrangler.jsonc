@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "us-rse-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-05-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  }
+  // Environment variables (DATABASE_URL) are injected via:
+  //   - .dev.vars   for local `wrangler dev`
+  //   - `wrangler secret put DATABASE_URL` for production
+}
