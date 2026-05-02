@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from "@workos-inc/authkit-react";
 
 /* ── Types ─────────────────────────────────────────────────────────── */
 
@@ -321,9 +322,10 @@ export function Nav() {
           </div>
 
           {/* CTA + Mobile toggle */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1.5">
+            <UserNavSlot />
             <Link
-              to="#join"
+              to="/sign-up"
               className="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors shadow-sm"
             >
               Join Us
@@ -368,14 +370,15 @@ export function Nav() {
               </div>
             ))}
 
-            <div className="pt-4">
-              <SmartLink
-                href="#join"
+            <div className="pt-4 space-y-3">
+              <UserNavSlotMobile onNavigate={closeMobile} />
+              <Link
+                to="/sign-up"
                 className="block text-center w-full px-6 py-3 bg-purple-500 text-white font-bold rounded-xl shadow-sm"
                 onClick={closeMobile}
               >
                 Join US-RSE
-              </SmartLink>
+              </Link>
             </div>
           </div>
         </div>
@@ -456,6 +459,153 @@ function MobileAccordion({
             ))}
         </div>
       )}
+    </div>
+  );
+}
+
+/* ── Auth slots ────────────────────────────────────────────────────── */
+
+function userInitials(name: string | null | undefined, email: string | null | undefined): string {
+  const source = (name || email || "").trim();
+  if (!source) return "?";
+  const parts = source.split(/\s+/).filter(Boolean);
+  if (parts.length >= 2) return (parts[0][0] + parts[1][0]).toUpperCase();
+  return source.slice(0, 2).toUpperCase();
+}
+
+function UserNavSlot() {
+  const { user, signIn, signOut } = useAuth();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onClick = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("mousedown", onClick);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onClick);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
+  if (!user) {
+    return (
+      <button
+        onClick={() => signIn()}
+        className="hidden sm:inline-flex items-center px-3 py-2 text-sm font-medium text-neutral-700 hover:text-purple-700 hover:bg-neutral-50 rounded-md transition-colors"
+      >
+        Sign In
+      </button>
+    );
+  }
+
+  const fullName = [user.firstName, user.lastName].filter(Boolean).join(" ") || null;
+  const initials = userInitials(fullName, user.email);
+
+  return (
+    <div ref={ref} className="hidden sm:block relative">
+      <button
+        onClick={() => setOpen((o) => !o)}
+        className="flex items-center gap-2 pl-1 pr-2 py-1 rounded-full hover:bg-neutral-50 transition-colors"
+        aria-haspopup="menu"
+        aria-expanded={open}
+        aria-label="Account menu"
+      >
+        {user.profilePictureUrl ? (
+          <img
+            src={user.profilePictureUrl}
+            alt=""
+            className="w-8 h-8 rounded-full object-cover"
+          />
+        ) : (
+          <span className="w-8 h-8 rounded-full bg-purple-500 text-white text-xs font-semibold grid place-items-center">
+            {initials}
+          </span>
+        )}
+        <svg
+          className={`w-3.5 h-3.5 text-neutral-500 transition-transform ${open ? "rotate-180" : ""}`}
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </button>
+
+      {open && (
+        <div
+          role="menu"
+          className="absolute right-0 top-full mt-2 w-64 bg-white rounded-xl shadow-xl border border-neutral-100 p-2 animate-slide-down"
+        >
+          <div className="px-3 py-2.5 border-b border-neutral-100 mb-1">
+            <p className="text-sm font-semibold text-neutral-900 truncate">
+              {fullName || user.email}
+            </p>
+            {fullName && (
+              <p className="text-xs text-neutral-500 truncate">{user.email}</p>
+            )}
+          </div>
+          <button
+            onClick={() => {
+              setOpen(false);
+              signOut();
+            }}
+            className="w-full text-left px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50 rounded-lg transition-colors"
+            role="menuitem"
+          >
+            Sign out
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function UserNavSlotMobile({ onNavigate }: { onNavigate: () => void }) {
+  const { user, signIn, signOut } = useAuth();
+
+  if (!user) {
+    return (
+      <button
+        onClick={() => {
+          onNavigate();
+          signIn();
+        }}
+        className="block text-center w-full px-6 py-3 border border-purple-500 text-purple-700 font-semibold rounded-xl hover:bg-purple-50 transition-colors"
+      >
+        Sign In
+      </button>
+    );
+  }
+
+  const fullName = [user.firstName, user.lastName].filter(Boolean).join(" ") || null;
+
+  return (
+    <div className="border border-neutral-200 rounded-xl overflow-hidden">
+      <div className="px-4 py-3 bg-neutral-50">
+        <p className="text-sm font-semibold text-neutral-900 truncate">
+          {fullName || user.email}
+        </p>
+        {fullName && (
+          <p className="text-xs text-neutral-500 truncate">{user.email}</p>
+        )}
+      </div>
+      <button
+        onClick={() => {
+          onNavigate();
+          signOut();
+        }}
+        className="block w-full text-left px-4 py-3 text-sm text-neutral-700 border-t border-neutral-100 hover:bg-neutral-50 transition-colors"
+      >
+        Sign out
+      </button>
     </div>
   );
 }

@@ -27,6 +27,9 @@ import { NewslettersPage } from "@/pages/news/NewslettersPage";
 import { NewsUpdatesPage } from "@/pages/news/NewsUpdatesPage";
 import { LearnPage } from "@/pages/resources/LearnPage";
 import { DirectoryPage } from "@/pages/resources/DirectoryPage";
+import { SignInPage } from "@/pages/auth/SignInPage";
+import { SignUpPage } from "@/pages/auth/SignUpPage";
+import { CallbackPage } from "@/pages/auth/CallbackPage";
 import { ScrollToTop } from "@/components/ScrollToTop";
 
 export function App() {
@@ -63,6 +66,9 @@ export function App() {
             <Route path="/news/updates" element={<NewsUpdatesPage />} />
             <Route path="/resources" element={<LearnPage />} />
             <Route path="/resources/directory" element={<DirectoryPage />} />
+            <Route path="/sign-in" element={<SignInPage />} />
+            <Route path="/sign-up" element={<SignUpPage />} />
+            <Route path="/auth/callback" element={<CallbackPage />} />
           </Routes>
         </main>
         <Footer />

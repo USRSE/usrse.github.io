@@ -13,6 +13,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.2.4",
     "@us-rse/design-system": "*",
+    "@workos-inc/authkit-react": "^0.16.1",
     "maplibre-gl": "^5.24.0",
     "motion": "^12.38.0",
     "react": "^19.2.5",
