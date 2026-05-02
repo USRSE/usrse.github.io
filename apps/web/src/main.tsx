@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { AuthKitProvider } from "@workos-inc/authkit-react";
 import "./index.css";
 import { App } from "./App";
+import { RootErrorBoundary } from "./components/RootErrorBoundary";
 
 const clientId = import.meta.env.VITE_WORKOS_CLIENT_ID;
 const redirectUri = import.meta.env.VITE_WORKOS_REDIRECT_URI;
@@ -39,13 +40,15 @@ if (!clientId) {
 } else {
   root.render(
     <StrictMode>
-      <AuthKitProvider
-        clientId={clientId}
-        redirectUri={redirectUri}
-        devMode={import.meta.env.DEV}
-      >
-        <App />
-      </AuthKitProvider>
+      <RootErrorBoundary>
+        <AuthKitProvider
+          clientId={clientId}
+          redirectUri={redirectUri}
+          devMode={import.meta.env.DEV}
+        >
+          <App />
+        </AuthKitProvider>
+      </RootErrorBoundary>
     </StrictMode>
   );
 }
