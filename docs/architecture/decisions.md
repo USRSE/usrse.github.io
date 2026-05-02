@@ -4,6 +4,20 @@ Key decisions made during the US-RSE website redesign, in reverse chronological 
 
 ---
 
+### 2026-05-02: Turborepo monorepo with npm workspaces (Approved)
+
+- **Decision:** Restructure the repo into a Turborepo monorepo. `apps/*` for runnable apps (`apps/web`), `packages/*` for shared libraries (`packages/design-system`). One root `package.json` with `workspaces: ["apps/*", "packages/*"]`, one root `package-lock.json`, one `turbo.json` orchestrating `build`/`dev`/`lint`/`typecheck`/`test`. Pixi is retained for token tooling and continues to live at the repo root.
+- **Why:** Issue [#1933](../../../../issues/1933) calls for an upcoming elections app to live alongside the marketing site. Two sibling top-level dirs (`web/` + `design-system/`) had no contract between them — every consumer would have used relative paths. Workspaces make `@us-rse/design-system` an installable package, so future apps depend on it the same way (and we never reach for `../../packages/...`). Turbo gives us shared task pipelines and remote-cache-ready builds without coupling to a specific framework. npm workspaces (over pnpm) was chosen because it matches the existing lockfile and adds zero install-time tooling.
+- **Result:** `web/` → `apps/web/`, `design-system/` → `packages/design-system/` with a new `package.json` exporting `dist/tokens.css`. `scripts/` and `dist/` moved inside the package. `pixi.toml` paths repointed. `apps/web` declares `"@us-rse/design-system": "*"` even though its current Tailwind theme is inline — the edge exists so future workspaces consume tokens via the package boundary, not relative paths. `pixi run check` and `npx turbo run build` both pass.
+
+### 2026-05-02: Pixi stays at the repo root, owns token tooling (Approved)
+
+- **Decision:** Keep `pixi.toml` at the repo root rather than moving it inside `packages/design-system/`. Turbo handles JS/TS task graphs; pixi handles Node + Python tooling (stylelint, prettier, contrast, validator, watcher).
+- **Why:** Pixi installs a managed environment with conda-forge tools that aren't easy to express as devDependencies (stylelint version pin, prettier version pin, deterministic Node). Pulling those into `packages/design-system/package.json` would require two mental models (npm-managed in some places, pixi-managed in others) and double-install on every fresh clone. Keeping pixi at root means `pixi run check` works from one canonical place regardless of which workspace someone is in.
+- **Result:** `pixi.toml` tasks invoke scripts at `packages/design-system/scripts/*.mjs`. The watcher's child `pixi run` calls `cd` back to `repoRoot` so pixi finds its config. Two systems, side-by-side, no overlap.
+
+---
+
 ### 2026-04-28: MapLibre GL for community map (Approved)
 
 - **Decision:** Use MapLibre GL with CartoDB dark-matter basemap for the homepage community map, matching the SSEC project's approach.
