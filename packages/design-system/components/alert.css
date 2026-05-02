@@ -176,7 +176,9 @@
   color: currentColor;
   opacity: 0.6;
 
-  transition: opacity 0.15s ease, background-color 0.15s ease;
+  transition:
+    opacity 0.15s ease,
+    background-color 0.15s ease;
 }
 
 .usrse-alert__close:hover {

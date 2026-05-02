@@ -308,7 +308,9 @@
   height: 2px;
   background-color: var(--nav-link-color);
   border-radius: 9999px;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 /* Animate to X when open */

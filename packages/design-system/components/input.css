@@ -345,11 +345,7 @@
 
 /* Dot via radial gradient on radio */
 .usrse-check__control[type="radio"]:checked {
-  background-image: radial-gradient(
-    circle,
-    #ffffff 35%,
-    transparent 40%
-  );
+  background-image: radial-gradient(circle, #ffffff 35%, transparent 40%);
 }
 
 /* Focus ring */
