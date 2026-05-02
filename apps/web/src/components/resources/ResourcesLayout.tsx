@@ -149,7 +149,7 @@ export function ResourcesLayout({
                 </svg>
               </Link>
             ) : (
-              <Link to="#join" className="group flex items-center gap-3 px-5 py-4 rounded-xl hover:bg-white hover:shadow-sm transition-all text-right">
+              <Link to="/sign-up" className="group flex items-center gap-3 px-5 py-4 rounded-xl hover:bg-white hover:shadow-sm transition-all text-right">
                 <div>
                   <p className="text-xs text-neutral-400 font-medium">Get Involved</p>
                   <p className="text-sm font-semibold text-neutral-700 group-hover:text-teal-700 transition-colors">Join US-RSE</p>

@@ -151,7 +151,7 @@ export function CommunityLayout({
                 </svg>
               </Link>
             ) : (
-              <Link to="/#join" className="group flex items-center gap-3 px-5 py-4 rounded-xl bg-purple-50 hover:bg-purple-100 transition-all text-right">
+              <Link to="/sign-up" className="group flex items-center gap-3 px-5 py-4 rounded-xl bg-purple-50 hover:bg-purple-100 transition-all text-right">
                 <div>
                   <p className="text-xs text-purple-600 font-medium">Ready to get involved?</p>
                   <p className="text-sm font-bold text-purple-700">Join US-RSE</p>

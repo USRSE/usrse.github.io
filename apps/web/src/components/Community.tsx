@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useInView } from "@/hooks/useInView";
 
 const testimonials = [
@@ -95,15 +96,15 @@ export function Community() {
                 Membership is free and open to anyone supporting the RSE mission.
               </p>
             </div>
-            <a
-              href="#join"
+            <Link
+              to="/sign-up"
               className="shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-teal-500 hover:bg-teal-600 text-white font-bold rounded-xl transition-colors"
             >
               Become a Member
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

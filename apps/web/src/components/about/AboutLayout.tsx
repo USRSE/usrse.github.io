@@ -209,7 +209,7 @@ export function AboutLayout({
               </Link>
             ) : (
               <Link
-                to="/#join"
+                to="/sign-up"
                 className="group flex items-center gap-3 px-5 py-4 rounded-xl bg-teal-50 hover:bg-teal-100 transition-all text-right"
               >
                 <div>

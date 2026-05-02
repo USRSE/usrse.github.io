@@ -72,12 +72,12 @@ export function Hero() {
                   <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </Link>
-              <a
-                href="#join"
+              <Link
+                to="/sign-up"
                 className="inline-flex items-center gap-2 px-7 py-3.5 bg-white/10 backdrop-blur-sm text-white font-medium rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-200"
               >
                 Join for free
-              </a>
+              </Link>
             </div>
           </div>
 
