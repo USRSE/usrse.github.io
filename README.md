@@ -5,64 +5,51 @@ The redesigned website for the [United States Research Software Engineer Associa
 ## Quick Start
 
 ```bash
-cd web
-npm install
-npm run dev
+npm install                       # installs all workspaces
+npm run dev                       # turbo runs dev across apps
 ```
 
-Open [http://localhost:5173](http://localhost:5173).
+Or run a single app:
+
+```bash
+npm -w @us-rse/web run dev        # http://localhost:5173
+```
 
 ## Project Structure
 
+This repo is a [Turborepo](https://turbo.build/) monorepo with npm workspaces. Apps live under `apps/`, shared packages under `packages/`.
+
 ```
-us-rse-site/
-├── web/                          # React application (Vite)
-│   ├── src/
-│   │   ├── components/           # Shared UI components
-│   │   │   ├── about/            # AboutLayout (shared for About pages)
-│   │   │   ├── community/        # CommunityLayout
-│   │   │   ├── events/           # EventsLayout
-│   │   │   ├── jobs/             # JobsLayout (Opportunities)
-│   │   │   ├── news/             # NewsLayout
-│   │   │   ├── resources/        # ResourcesLayout
-│   │   │   ├── Nav.tsx           # Mega-menu navigation
-│   │   │   ├── Footer.tsx        # Site footer with socials
-│   │   │   ├── Hero.tsx          # Animated hero with network canvas
-│   │   │   ├── CommunityMap.tsx  # MapLibre GL full-bleed map
-│   │   │   ├── NetworkCanvas.tsx # Canvas particle animation
-│   │   │   ├── LogoMarquee.tsx   # Scrolling member/sponsor logos
-│   │   │   └── ...
-│   │   ├── pages/                # Route-level page components
-│   │   │   ├── about/            # 10 About sub-pages
-│   │   │   ├── community/        # 5 Community sub-pages
-│   │   │   ├── events/           # 3 Events sub-pages
-│   │   │   ├── jobs/             # 3 Opportunities sub-pages
-│   │   │   ├── news/             # 3 News sub-pages
-│   │   │   ├── resources/        # 4 Resources sub-pages
-│   │   │   └── HomePage.tsx      # Homepage
-│   │   ├── hooks/                # Custom React hooks
-│   │   ├── App.tsx               # Router + route definitions
-│   │   ├── main.tsx              # Entry point
-│   │   └── index.css             # Tailwind theme + custom utilities
-│   ├── public/                   # Static assets (logos, board photos)
-│   └── index.html                # HTML shell with font preloads
-├── design-system/                # CSS design token system
-│   ├── tokens/                   # Three-tier CSS custom properties
-│   │   ├── global.css            # Tier 1: raw primitives (209 tokens)
-│   │   ├── semantic.css          # Tier 2: intent aliases (178 tokens)
-│   │   ├── components.css        # Tier 3: component bindings (387 tokens)
-│   │   └── dark-mode.css         # Dark mode overrides
-│   ├── components/               # CSS component implementations
-│   ├── PRINCIPLES.md             # 5 design principles
-│   ├── README.md                 # Design system documentation
-│   ├── COMPONENTS.md             # Component API reference
-│   └── TOKENS.md                 # Token hierarchy reference
-├── public/                       # Source images (logos, board photos)
-├── scripts/                      # Build and validation scripts
+usrse.github.io/
+├── apps/
+│   └── web/                      # React marketing site (Vite + TS)
+│       ├── src/
+│       │   ├── components/       # Shared UI components
+│       │   ├── pages/            # Route-level pages
+│       │   ├── hooks/            # Custom React hooks
+│       │   ├── App.tsx           # Router + route definitions
+│       │   ├── main.tsx          # Entry point
+│       │   └── index.css         # Tailwind theme + custom utilities
+│       ├── public/               # Static assets
+│       └── index.html            # HTML shell with font preloads
+├── packages/
+│   └── design-system/            # @us-rse/design-system — CSS token system
+│       ├── tokens/               # Three-tier CSS custom properties
+│       │   ├── global.css        # Tier 1: raw primitives (209 tokens)
+│       │   ├── semantic.css      # Tier 2: intent aliases (178 tokens)
+│       │   ├── components.css    # Tier 3: component bindings (387 tokens)
+│       │   └── dark-mode.css     # Dark mode overrides
+│       ├── components/           # CSS component implementations
+│       ├── scripts/              # build, validate, contrast, watch
+│       ├── dist/                 # Bundled tokens.css / tokens.min.css
+│       ├── PRINCIPLES.md         # 5 design principles
+│       ├── COMPONENTS.md         # Component API reference
+│       └── TOKENS.md             # Token hierarchy reference
 ├── docs/                         # Specs and design documents
-│   └── superpowers/specs/        # Approved design specs
-├── pixi.toml                     # Design system workspace tasks
-└── package.json                  # Root package (PostCSS tooling)
+├── public/                       # Source images (logos, board photos)
+├── turbo.json                    # Turborepo pipeline (build/dev/lint/typecheck)
+├── package.json                  # Root workspaces config
+└── pixi.toml                     # Token tooling (validate/lint/format/contrast)
 ```
 
 ## Tech Stack
@@ -116,7 +103,7 @@ Each section has its own layout component with:
 
 ## Design System
 
-The CSS design system lives in `design-system/` and is independent of the React app. It uses a three-tier token architecture:
+The CSS design system is published as the workspace package `@us-rse/design-system` from `packages/design-system/` and consumed by `apps/web` via the workspace symlink. It uses a three-tier token architecture:
 
 ```
 Tier 1 (global.css)    → Raw values: --color-teal-500, --space-4
@@ -129,21 +116,27 @@ Tier 3 (components.css) → Scoped: --button-primary-bg, --card-radius
 Run the design system quality gate:
 ```bash
 pixi run check    # validate + lint + format + contrast
-pixi run build    # bundle into dist/
+pixi run build    # bundle into packages/design-system/dist/
 pixi run dev      # watch and rebuild
 ```
 
 ## Key Commands
 
 ```bash
-# Web app
-cd web && npm run dev       # Start dev server
-cd web && npm run build     # Production build
+# Monorepo (Turborepo)
+npm run dev                         # All apps in dev mode
+npm run build                       # All workspace builds
+npm run lint                        # All workspace lints
+npm run typecheck                   # All workspace type checks
 
-# Design system
-pixi run check              # Full quality gate
-pixi run contrast           # WCAG 2.2 AA verification
-pixi run validate           # Token hierarchy validator
+# Single workspace
+npm -w @us-rse/web run dev          # Start the web dev server
+npm -w @us-rse/web run build        # Build only the web app
+
+# Design system (pixi handles Node + Python tooling)
+pixi run check                      # Full quality gate
+pixi run contrast                   # WCAG 2.2 AA verification
+pixi run validate                   # Token hierarchy validator
 ```
 
 ## Brand Colors

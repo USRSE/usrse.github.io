@@ -91,10 +91,10 @@ function findRawLiterals(css, file) {
 
 // ─── load files ───────────────────────────────────────────────────────────────
 
-const globalCSS    = readCSS('design-system/tokens/global.css');
-const semanticCSS  = readCSS('design-system/tokens/semantic.css');
-const componentCSS = readCSS('design-system/tokens/components.css');
-const darkCSS      = readCSS('design-system/tokens/dark-mode.css');
+const globalCSS    = readCSS('tokens/global.css');
+const semanticCSS  = readCSS('tokens/semantic.css');
+const componentCSS = readCSS('tokens/components.css');
+const darkCSS      = readCSS('tokens/dark-mode.css');
 
 const tier1 = extractDefined(globalCSS);
 const tier2 = extractDefined(semanticCSS);

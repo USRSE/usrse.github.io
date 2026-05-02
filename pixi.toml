@@ -22,25 +22,25 @@ nodejs = ">=22,<26"
 # Run stylelint over all token CSS files.
 # Uses .stylelintrc.json for configuration.
 # ---------------------------------------------------------------------------
-lint = { cmd = "stylelint 'design-system/tokens/**/*.css'", description = "Lint all token CSS files" }
+lint = { cmd = "stylelint 'packages/design-system/tokens/**/*.css'", description = "Lint all token CSS files" }
 
 # ---------------------------------------------------------------------------
 # lint-fix
 # Auto-fix stylelint issues where possible.
 # ---------------------------------------------------------------------------
-lint-fix = { cmd = "stylelint --fix 'design-system/tokens/**/*.css'", description = "Auto-fix lint issues" }
+lint-fix = { cmd = "stylelint --fix 'packages/design-system/tokens/**/*.css'", description = "Auto-fix lint issues" }
 
 # ---------------------------------------------------------------------------
 # format
 # Format all CSS files with prettier.
 # ---------------------------------------------------------------------------
-format = { cmd = "prettier --write 'design-system/**/*.css'", description = "Format all CSS files" }
+format = { cmd = "prettier --write 'packages/design-system/**/*.css'", description = "Format all CSS files" }
 
 # ---------------------------------------------------------------------------
 # format-check
 # Check formatting without writing (for CI).
 # ---------------------------------------------------------------------------
-format-check = { cmd = "prettier --check 'design-system/**/*.css'", description = "Check CSS formatting" }
+format-check = { cmd = "prettier --check 'packages/design-system/**/*.css'", description = "Check CSS formatting" }
 
 # ---------------------------------------------------------------------------
 # install-node-deps
@@ -56,7 +56,7 @@ install-node-deps = { cmd = "npm install --prefer-offline", description = "Insta
 # Uses cssnano for minification.
 # Output: dist/tokens.css (readable) + dist/tokens.min.css (minified)
 # ---------------------------------------------------------------------------
-build = { cmd = "node scripts/build.mjs", description = "Bundle tokens into dist/" }
+build = { cmd = "node packages/design-system/scripts/build.mjs", description = "Bundle tokens into packages/design-system/dist/" }
 
 # ---------------------------------------------------------------------------
 # validate
@@ -67,14 +67,14 @@ build = { cmd = "node scripts/build.mjs", description = "Bundle tokens into dist
 #   - No raw hex/px/rem literals appear in Tier 2 or Tier 3
 #   - All var() references resolve to a defined token
 # ---------------------------------------------------------------------------
-validate = { cmd = "node scripts/validate-tokens.mjs", description = "Validate token hierarchy contract" }
+validate = { cmd = "node packages/design-system/scripts/validate-tokens.mjs", description = "Validate token hierarchy contract" }
 
 # ---------------------------------------------------------------------------
 # contrast
 # Run the WCAG contrast ratio checker on all color token pairings.
 # Reports which pairings pass/fail WCAG 2.2 AA (4.5:1 normal, 3:1 large).
 # ---------------------------------------------------------------------------
-contrast = { cmd = "node scripts/check-contrast.mjs", description = "Check WCAG 2.2 AA contrast ratios" }
+contrast = { cmd = "node packages/design-system/scripts/check-contrast.mjs", description = "Check WCAG 2.2 AA contrast ratios" }
 
 # ---------------------------------------------------------------------------
 # check
@@ -88,11 +88,12 @@ check = { cmd = "pixi run validate && pixi run lint && pixi run format-check && 
 # Watch token files for changes, re-bundle on save.
 # Useful during token authoring.
 # ---------------------------------------------------------------------------
-dev = { cmd = "node scripts/watch.mjs", description = "Watch tokens and rebuild on change" }
+dev = { cmd = "node packages/design-system/scripts/watch.mjs", description = "Watch tokens and rebuild on change" }
 
 [feature.ci.tasks]
 # Variant of check with JUnit/JSON output for CI systems
-check-ci = { cmd = "pixi run validate && stylelint --formatter json 'design-system/tokens/**/*.css' > reports/stylelint.json ; pixi run contrast", description = "CI check with machine-readable output" }
+check-ci = { cmd = "pixi run validate && stylelint --formatter json 'packages/design-system/tokens/**/*.css' > reports/stylelint.json ; pixi run contrast", description = "CI check with machine-readable output" }
+
 
 [environments]
 # Default environment — used for local development

@@ -1,0 +1,32 @@
+{
+  "name": "@us-rse/design-system",
+  "version": "0.1.0",
+  "description": "US-RSE Design System — design tokens, components, and styling primitives",
+  "private": true,
+  "type": "module",
+  "main": "dist/tokens.css",
+  "style": "dist/tokens.css",
+  "files": [
+    "dist",
+    "tokens",
+    "components"
+  ],
+  "exports": {
+    ".": "./dist/tokens.css",
+    "./tokens.css": "./dist/tokens.css",
+    "./tokens.min.css": "./dist/tokens.min.css",
+    "./tokens/*": "./tokens/*",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate-tokens.mjs",
+    "contrast": "node scripts/check-contrast.mjs",
+    "dev": "node scripts/watch.mjs"
+  },
+  "dependencies": {
+    "cssnano": "^7.0.6",
+    "postcss": "^8.4.49",
+    "postcss-import": "^16.1.0"
+  }
+}

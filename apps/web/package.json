@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "@us-rse/web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,10 +7,12 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "typecheck": "tsc -b --noEmit",
     "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.4",
+    "@us-rse/design-system": "*",
     "maplibre-gl": "^5.24.0",
     "motion": "^12.38.0",
     "react": "^19.2.5",

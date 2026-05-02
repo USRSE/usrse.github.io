@@ -1,16 +1,25 @@
 {
-  "name": "us-rse-design-system",
+  "name": "us-rse-monorepo",
   "version": "0.1.0",
-  "description": "US-RSE Design System — CSS token bundling dependencies",
+  "description": "US-RSE monorepo — marketing site, apps, and shared design system",
   "private": true,
   "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test"
   },
-  "dependencies": {
-    "postcss": "^8.4.49",
-    "postcss-import": "^16.1.0",
-    "cssnano": "^7.0.6"
+  "devDependencies": {
+    "turbo": "^2.3.3"
   },
-  "packageManager": "npm@11.13.0"
+  "packageManager": "npm@11.13.0",
+  "engines": {
+    "node": ">=22"
+  }
 }

@@ -1,7 +1,7 @@
 /**
  * US-RSE Design System — Token Bundler
  *
- * Resolves all @import chains in design-system/tokens/index.css and writes:
+ * Resolves all @import chains in tokens/index.css and writes:
  *   dist/tokens.css     — full readable bundle
  *   dist/tokens.min.css — minified bundle for production
  *
@@ -17,9 +17,9 @@ import postcssImport from 'postcss-import';
 import cssnano from 'cssnano';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const root      = resolve(__dirname, '..');
-const entry     = resolve(root, 'design-system/tokens/index.css');
-const outDir    = resolve(root, 'dist');
+const pkgRoot   = resolve(__dirname, '..');
+const entry     = resolve(pkgRoot, 'tokens/index.css');
+const outDir    = resolve(pkgRoot, 'dist');
 
 mkdirSync(outDir, { recursive: true });
 

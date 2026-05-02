@@ -4,8 +4,16 @@ node_modules/
 # pixi environments
 .pixi/
 
+# AI docs
+/.claude/
+
+# Secrets
+*.env
+*.secret
+
 # Build output
 dist/
+.turbo/
 
 # CI reports
 reports/*.json

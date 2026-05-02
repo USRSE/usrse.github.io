@@ -1,7 +1,7 @@
 /**
  * US-RSE Design System — Token Watcher
  *
- * Watches design-system/tokens/ for changes and re-runs the build + validate
+ * Watches tokens/ for changes and re-runs the build + validate
  * pipeline on every save. Uses Node.js built-in fs.watch (no extra deps).
  *
  * Usage: pixi run dev
@@ -13,8 +13,9 @@ import { fileURLToPath } from 'url';
 import { execSync } from 'child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const root      = resolve(__dirname, '..');
-const tokensDir = resolve(root, 'design-system/tokens');
+const pkgRoot   = resolve(__dirname, '..');
+const repoRoot  = resolve(pkgRoot, '../..');
+const tokensDir = resolve(pkgRoot, 'tokens');
 
 function timestamp() {
   return new Date().toLocaleTimeString('en-US', { hour12: false });
@@ -22,7 +23,7 @@ function timestamp() {
 
 function runStep(label, cmd) {
   try {
-    execSync(cmd, { cwd: root, stdio: 'pipe' });
+    execSync(cmd, { cwd: repoRoot, stdio: 'pipe' });
     console.log(`  \x1b[32m✓\x1b[0m ${label}`);
     return true;
   } catch (e) {
