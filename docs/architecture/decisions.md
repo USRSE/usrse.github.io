@@ -4,6 +4,30 @@ Key decisions made during the US-RSE website redesign, in reverse chronological 
 
 ---
 
+### 2026-05-02: Pages → Worker via `_redirects` rewrite, not direct calls + CORS (Approved)
+
+- **Decision:** The SPA reaches the API by calling `/api/*` on its own origin. Cloudflare Pages rewrites those requests to the Worker URL via a `_redirects` rule with status 200. The browser never sees a cross-origin call to `*.workers.dev`.
+- **Why:** Same-origin removes a whole category of problems before they happen — no CORS preflights, no `SameSite` cookie surprises if we later add session cookies, no third-party-origin tracking-protection breakage in Safari, and the SPA code stays portable (`fetch('/api/health')` works the same in dev via Vite proxy and in prod via Pages rewrite). The cost is a single line in `_redirects`. Direct calls to the Worker URL would have required permissive CORS and would couple the SPA to the Worker's account-scoped `*.workers.dev` hostname.
+- **Result:** `apps/web/public/_redirects` has two rules in order: `/api/*` → Worker URL with `:splat`, then `/*` → `/index.html` for the SPA fallback. The Worker's Hono `cors()` is currently permissive but should be tightened to the Pages origin once the prod surface is stable.
+
+### 2026-05-02: Hono on Cloudflare Workers for the API (Approved)
+
+- **Decision:** Build the API as a Cloudflare Worker using [Hono](https://hono.dev/) for routing and `@neondatabase/serverless` (HTTP driver) to talk to Neon. The Worker lives at `packages/api` in the monorepo as workspace `@us-rse/api`. Deploy via Wrangler from a developer machine.
+- **Why:** The Neon HTTP driver was built for edge runtimes and avoids the connection-pool problems classic Postgres clients have on serverless. Hono is small (no Express baggage), TypeScript-first, and has a routing model that scales from 1 endpoint to 100. Cloudflare Workers ship with `nodejs_compat`, `wrangler secret`, and observability — every operational concern we'd otherwise solve ourselves. The repo is already on Cloudflare for Pages, so staying in one provider keeps DNS and account permissions simple.
+- **Result:** `packages/api` is a working workspace with `GET /health` returning `{ ok: true, db: "neon", result: { one: 1 }, latencyMs: <n> }` from a real `SELECT 1` against Neon. Cold-call latency in prod is ~360ms; warm calls are under 200ms. CI deploy from `main` is a follow-up; for now `wrangler deploy` runs from a developer terminal.
+
+### 2026-05-02: AuthKit React SPA via PKCE, no backend mediator (Approved)
+
+- **Decision:** Use `@workos-inc/authkit-react` with PKCE entirely in the SPA. The WorkOS-hosted sign-in page handles every auth method (Google, Microsoft, GitHub, Apple, email link, password); the browser carries the access token in memory; no backend session server.
+- **Why:** A v1 marketing site doesn't need server-side session management — the only thing protected is the future member portal, and we can add a backend session layer when we add the portal. PKCE keeps the access token short-lived and scoped to a single browser, which is acceptable for the read-light surface area we'll have through issue #2. Building a backend session layer just to forward auth to a hosted UI would have been weeks of work for negative value at this stage. The fallback path — adding a session backend later — doesn't require ripping out AuthKit React; it requires adding a server that exchanges the SDK's token for an HTTP-only cookie.
+- **Result:** Sign-in works end-to-end in production: Nav button → AuthKit hosted page → provider auth → callback → home page with avatar menu. Implementation is `apps/web/src/main.tsx` (provider mount), `apps/web/src/pages/auth/*` (3 routes), and `apps/web/src/components/Nav.tsx` (auth-aware menu). Redirect URI in WorkOS dashboard, Pages env, and code are byte-identical at `https://usrse-github-io.pages.dev/auth/callback`. Currently using WorkOS's staging environment; production WorkOS env is a launch-checklist item.
+
+### 2026-05-02: Render-time errors must be visible, not silent (Approved)
+
+- **Decision:** Wrap the React root in a class-based `RootErrorBoundary` and add a pre-render env check in `main.tsx` that bypasses `AuthKitProvider` entirely when `VITE_WORKOS_CLIENT_ID` is missing.
+- **Why:** A misconfigured `AuthKitProvider` throws synchronously during render. With React 19's strict-mode commit semantics and no error boundary, the result is a fully blank page — `<div id="root">` empty, no console errors visible without DevTools, no clue what broke. We lost real time on a Cloudflare deploy debugging session that turned out to be unrelated to auth (wrong build output dir) but was indistinguishable from an auth init failure because the symptom was identical: blank page. Visible error states are non-negotiable for any deploy that can hit production.
+- **Result:** Two layers of defense. Layer 1 — `main.tsx` checks for `clientId`; if absent, renders a styled "Configuration error" page directly without ever calling `AuthKitProvider`. Layer 2 — `RootErrorBoundary` (`apps/web/src/components/RootErrorBoundary.tsx`) catches anything that throws during initial render and displays the error name, message, and stack on the page, also logging to console. Future deploys with config drift fail visibly.
+
 ### 2026-05-02: Turborepo monorepo with npm workspaces (Approved)
 
 - **Decision:** Restructure the repo into a Turborepo monorepo. `apps/*` for runnable apps (`apps/web`), `packages/*` for shared libraries (`packages/design-system`). One root `package.json` with `workspaces: ["apps/*", "packages/*"]`, one root `package-lock.json`, one `turbo.json` orchestrating `build`/`dev`/`lint`/`typecheck`/`test`. Pixi is retained for token tooling and continues to live at the repo root.
