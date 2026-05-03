@@ -1,0 +1,134 @@
+import { relations, sql } from "drizzle-orm";
+import {
+  boolean,
+  index,
+  numeric,
+  pgTable,
+  text,
+  timestamp,
+  uuid,
+} from "drizzle-orm/pg-core";
+import { userRole } from "./enums";
+import {
+  careerStages,
+  countries,
+  institutions,
+  pronouns,
+} from "./vocab";
+
+export const users = pgTable(
+  "users",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    workosId: text("workos_id").notNull().unique(),
+    email: text("email").notNull().unique(),
+    role: userRole("role").notNull().default("member"),
+    termsAcceptedAt: timestamp("terms_accepted_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    privacyAcceptedAt: timestamp("privacy_accepted_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    marketingConsent: boolean("marketing_consent").notNull().default(false),
+    isLegacyImport: boolean("is_legacy_import").notNull().default(false),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    deletedAt: timestamp("deleted_at", { withTimezone: true }),
+  },
+  (t) => [
+    index("users_active_idx")
+      .on(t.id)
+      .where(sql`deleted_at IS NULL`),
+    index("users_legacy_import_idx")
+      .on(t.isLegacyImport)
+      .where(sql`is_legacy_import = true`),
+  ]
+);
+
+export const profiles = pgTable(
+  "profiles",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    userId: uuid("user_id")
+      .notNull()
+      .unique()
+      .references(() => users.id, { onDelete: "cascade" }),
+    slug: text("slug").notNull().unique(),
+    displayName: text("display_name").notNull(),
+    headline: text("headline"),
+    pronounId: uuid("pronoun_id").references(() => pronouns.id, {
+      onDelete: "set null",
+    }),
+    bio: text("bio"),
+    photoUrl: text("photo_url"),
+    institutionId: uuid("institution_id").references(() => institutions.id, {
+      onDelete: "set null",
+    }),
+    jobTitle: text("job_title"),
+    careerStageId: uuid("career_stage_id").references(() => careerStages.id, {
+      onDelete: "set null",
+    }),
+    githubUrl: text("github_url"),
+    linkedinUrl: text("linkedin_url"),
+    orcid: text("orcid"),
+    websiteUrl: text("website_url"),
+    countryId: uuid("country_id").references(() => countries.id, {
+      onDelete: "set null",
+    }),
+    region: text("region"),
+    city: text("city"),
+    latitude: numeric("latitude", { precision: 9, scale: 6 }),
+    longitude: numeric("longitude", { precision: 9, scale: 6 }),
+    showOnMap: boolean("show_on_map").notNull().default(false),
+    publicLocation: text("public_location"),
+    isPublic: boolean("is_public").notNull().default(true),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    deletedAt: timestamp("deleted_at", { withTimezone: true }),
+  },
+  (t) => [
+    index("profiles_institution_idx").on(t.institutionId),
+    index("profiles_country_idx").on(t.countryId),
+    index("profiles_show_on_map_idx")
+      .on(t.showOnMap)
+      .where(sql`show_on_map = true`),
+  ]
+);
+
+export const usersRelations = relations(users, ({ one }) => ({
+  profile: one(profiles, {
+    fields: [users.id],
+    references: [profiles.userId],
+  }),
+}));
+
+export const profilesRelations = relations(profiles, ({ one }) => ({
+  user: one(users, {
+    fields: [profiles.userId],
+    references: [users.id],
+  }),
+  pronoun: one(pronouns, {
+    fields: [profiles.pronounId],
+    references: [pronouns.id],
+  }),
+  institution: one(institutions, {
+    fields: [profiles.institutionId],
+    references: [institutions.id],
+  }),
+  careerStage: one(careerStages, {
+    fields: [profiles.careerStageId],
+    references: [careerStages.id],
+  }),
+  country: one(countries, {
+    fields: [profiles.countryId],
+    references: [countries.id],
+  }),
+}));
