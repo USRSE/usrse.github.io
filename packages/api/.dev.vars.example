@@ -1,3 +1,17 @@
 # Copy this file to .dev.vars (gitignored). wrangler dev reads it as Worker
-# env bindings. For production, set with: wrangler secret put DATABASE_URL
+# env bindings. For production, set with:
+#   wrangler secret put DATABASE_URL          --cwd packages/api
+#   wrangler secret put WORKOS_CLIENT_ID      --cwd packages/api
+#   wrangler secret put WORKOS_WEBHOOK_SECRET --cwd packages/api
+
+# Neon connection string. Use the Neon dashboard's "Connection string" copy.
 DATABASE_URL=postgres://user:password@host.neon.tech/dbname?sslmode=require
+
+# WorkOS client ID — same value as VITE_WORKOS_CLIENT_ID in apps/web. The
+# Worker uses it to derive the JWKS URL for verifying access tokens.
+WORKOS_CLIENT_ID=client_01...
+
+# WorkOS webhook signing secret. Found in the WorkOS dashboard under Webhooks
+# when you create the webhook endpoint. Required for /webhooks/workos to
+# verify event authenticity.
+WORKOS_WEBHOOK_SECRET=
