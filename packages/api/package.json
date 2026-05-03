@@ -8,14 +8,21 @@
     "dev": "wrangler dev --port 8787",
     "build": "wrangler deploy --dry-run --outdir dist",
     "typecheck": "tsc --noEmit",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "db:seed": "tsx scripts/seed.ts"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.1.0",
+    "drizzle-orm": "^0.45.2",
     "hono": "^4.12.16"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260502.1",
+    "drizzle-kit": "^0.31.10",
+    "tsx": "^4.19.0",
     "typescript": "~6.0.2",
     "wrangler": "^4.87.0"
   }
