@@ -46,6 +46,15 @@ webhooksRoute.post("/workos", async (c) => {
     secret: c.env.WORKOS_WEBHOOK_SECRET,
   });
   if (!ok) {
+    const sigPreview = sigHeader.replace(/v1=([0-9a-f]{8})[0-9a-f]+/, "v1=$1…");
+    console.warn(
+      "WorkOS webhook signature mismatch",
+      JSON.stringify({
+        signatureHeaderPreview: sigPreview,
+        bodyLength: body.length,
+        secretConfigured: c.env.WORKOS_WEBHOOK_SECRET.length > 0,
+      })
+    );
     return c.json({ ok: false, error: "Invalid signature" }, 401);
   }
 
