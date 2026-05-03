@@ -15,10 +15,12 @@
     "db:seed": "tsx scripts/seed.ts"
   },
   "dependencies": {
+    "@hono/zod-validator": "^0.7.6",
     "@neondatabase/serverless": "^1.1.0",
     "drizzle-orm": "^0.45.2",
     "hono": "^4.12.16",
-    "jose": "^6.2.3"
+    "jose": "^6.2.3",
+    "zod": "^4.4.2"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260502.1",
