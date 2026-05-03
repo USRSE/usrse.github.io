@@ -1,12 +1,11 @@
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { neon } from "@neondatabase/serverless";
+import { meRoute } from "./routes/me";
+import { webhooksRoute } from "./routes/webhooks";
+import type { AppEnv } from "./types";
 
-type Env = {
-  DATABASE_URL: string;
-};
-
-const app = new Hono<{ Bindings: Env }>();
+const app = new Hono<AppEnv>();
 
 app.use(
   "*",
@@ -20,10 +19,7 @@ app.get("/", (c) => c.json({ name: "@us-rse/api", ok: true }));
 
 app.get("/health", async (c) => {
   if (!c.env.DATABASE_URL) {
-    return c.json(
-      { ok: false, error: "DATABASE_URL not configured" },
-      500
-    );
+    return c.json({ ok: false, error: "DATABASE_URL not configured" }, 500);
   }
 
   const sql = neon(c.env.DATABASE_URL);
@@ -38,5 +34,8 @@ app.get("/health", async (c) => {
     latencyMs,
   });
 });
+
+app.route("/webhooks", webhooksRoute);
+app.route("/me", meRoute);
 
 export default app;
