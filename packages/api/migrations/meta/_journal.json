@@ -15,6 +15,13 @@
       "when": 1777811066905,
       "tag": "0001_steady_maria_hill",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1777822796590,
+      "tag": "0002_cute_prism",
+      "breakpoints": true
     }
   ]
 }
