@@ -21,6 +21,8 @@ import {
   degreeTypes,
   disciplines,
   engagementTypes,
+  eventCommitteeAreas,
+  leadershipPositions,
   pronouns,
   skills,
 } from "../src/db/schema/index";
@@ -133,6 +135,62 @@ const careerStagesSeed = [
   { slug: "retired", label: "Retired", sortOrder: 70 },
 ];
 
+const leadershipPositionsSeed = [
+  {
+    slug: "president",
+    label: "President",
+    positionType: "board" as const,
+    sortOrder: 10,
+  },
+  {
+    slug: "vice_president",
+    label: "Vice President",
+    positionType: "board" as const,
+    sortOrder: 20,
+  },
+  {
+    slug: "treasurer",
+    label: "Treasurer",
+    positionType: "board" as const,
+    sortOrder: 30,
+  },
+  {
+    slug: "secretary",
+    label: "Secretary",
+    positionType: "board" as const,
+    sortOrder: 40,
+  },
+  {
+    slug: "member_at_large",
+    label: "Member-at-Large",
+    positionType: "board" as const,
+    sortOrder: 50,
+  },
+  {
+    slug: "executive_director",
+    label: "Executive Director",
+    positionType: "executive" as const,
+    sortOrder: 100,
+  },
+];
+
+const eventCommitteeAreasSeed = [
+  { slug: "general", label: "General", sortOrder: 10 },
+  {
+    slug: "technical_program",
+    label: "Technical Program",
+    sortOrder: 20,
+  },
+  { slug: "communications", label: "Communications", sortOrder: 30 },
+  { slug: "logistics", label: "Logistics", sortOrder: 40 },
+  { slug: "sponsorship", label: "Sponsorship", sortOrder: 50 },
+  {
+    slug: "community_engagement",
+    label: "Community Engagement",
+    sortOrder: 60,
+  },
+];
+
 type CountrySeed = { isoAlpha2: string; isoAlpha3: string; name: string };
 type SkillSeed = { name: string; slug: string };
 type DisciplineSeed = { name: string; slug: string };
@@ -153,6 +211,18 @@ async function seed() {
   console.log("Seeding career stages…");
   await db.insert(careerStages).values(careerStagesSeed).onConflictDoNothing();
 
+  console.log("Seeding leadership positions…");
+  await db
+    .insert(leadershipPositions)
+    .values(leadershipPositionsSeed)
+    .onConflictDoNothing();
+
+  console.log("Seeding event committee areas…");
+  await db
+    .insert(eventCommitteeAreas)
+    .values(eventCommitteeAreasSeed)
+    .onConflictDoNothing();
+
   console.log("Seeding countries…");
   const countriesData = loadJson<CountrySeed[]>("countries.json").map(
     (c, i) => ({ ...c, sortOrder: i * 10 })
@@ -172,14 +242,18 @@ async function seed() {
   );
   await db.insert(disciplines).values(disciplinesData).onConflictDoNothing();
 
-  console.log("\nDone. Counts:");
-  console.log(`  pronouns:         ${pronounsSeed.length}`);
-  console.log(`  degree_types:     ${degreeTypesSeed.length}`);
-  console.log(`  engagement_types: ${engagementTypesSeed.length}`);
-  console.log(`  career_stages:    ${careerStagesSeed.length}`);
-  console.log(`  countries:        ${countriesData.length}`);
-  console.log(`  skills:           ${skillsData.length}`);
-  console.log(`  disciplines:      ${disciplinesData.length}`);
+  console.log("\nDone. Seed list sizes:");
+  console.log(`  pronouns:                 ${pronounsSeed.length}`);
+  console.log(`  degree_types:             ${degreeTypesSeed.length}`);
+  console.log(`  engagement_types:         ${engagementTypesSeed.length}`);
+  console.log(`  career_stages:            ${careerStagesSeed.length}`);
+  console.log(`  leadership_positions:     ${leadershipPositionsSeed.length}`);
+  console.log(
+    `  event_committee_areas:    ${eventCommitteeAreasSeed.length}`
+  );
+  console.log(`  countries:                ${countriesData.length}`);
+  console.log(`  skills:                   ${skillsData.length}`);
+  console.log(`  disciplines:              ${disciplinesData.length}`);
 }
 
 seed().catch((err) => {
