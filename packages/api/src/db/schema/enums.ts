@@ -54,3 +54,8 @@ export const eventCommitteeLevel = pgEnum("event_committee_level", [
   "chair",
   "co_chair",
 ]);
+
+export const eventPresenterRole = pgEnum("event_presenter_role", [
+  "lead",
+  "contributor",
+]);

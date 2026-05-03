@@ -6,5 +6,6 @@ export * from "./groups";
 export * from "./joins";
 export * from "./events";
 export * from "./committees";
+export * from "./sessions";
 export * from "./leadership";
 export * from "./audit";
