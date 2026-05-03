@@ -27,9 +27,15 @@ export async function verifyWorkosWebhookSignature(opts: {
   const expected = parts.v1;
   if (!timestamp || !expected) return false;
 
-  const ts = Number(timestamp);
-  if (!Number.isFinite(ts)) return false;
-  const skew = Math.abs(Date.now() / 1000 - ts);
+  const tsRaw = Number(timestamp);
+  if (!Number.isFinite(tsRaw)) return false;
+  // WorkOS sends the timestamp in milliseconds (13 digits at the time of
+  // writing). Older docs and SDKs assume seconds. Accept either by treating
+  // anything >= 1e12 as ms and normalizing to seconds for the freshness
+  // check. The HMAC payload still uses the original string so it doesn't
+  // matter which unit is on the wire.
+  const tsSec = tsRaw >= 1e12 ? tsRaw / 1000 : tsRaw;
+  const skew = Math.abs(Date.now() / 1000 - tsSec);
   if (skew > tolerance) return false;
 
   const enc = new TextEncoder();
