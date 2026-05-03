@@ -22,6 +22,7 @@ import {
   disciplines,
   engagementTypes,
   eventCommitteeAreas,
+  eventSessionTypes,
   leadershipPositions,
   pronouns,
   skills,
@@ -191,6 +192,15 @@ const eventCommitteeAreasSeed = [
   },
 ];
 
+const eventSessionTypesSeed = [
+  { slug: "talk", label: "Talk / Presentation", sortOrder: 10 },
+  { slug: "poster", label: "Poster", sortOrder: 20 },
+  { slug: "bof", label: "Birds of a Feather", sortOrder: 30 },
+  { slug: "workshop", label: "Workshop", sortOrder: 40 },
+  { slug: "paper", label: "Paper / Proceedings", sortOrder: 50 },
+  { slug: "notebook", label: "Notebook", sortOrder: 60 },
+];
+
 type CountrySeed = { isoAlpha2: string; isoAlpha3: string; name: string };
 type SkillSeed = { name: string; slug: string };
 type DisciplineSeed = { name: string; slug: string };
@@ -223,6 +233,12 @@ async function seed() {
     .values(eventCommitteeAreasSeed)
     .onConflictDoNothing();
 
+  console.log("Seeding event session types…");
+  await db
+    .insert(eventSessionTypes)
+    .values(eventSessionTypesSeed)
+    .onConflictDoNothing();
+
   console.log("Seeding countries…");
   const countriesData = loadJson<CountrySeed[]>("countries.json").map(
     (c, i) => ({ ...c, sortOrder: i * 10 })
@@ -250,6 +266,9 @@ async function seed() {
   console.log(`  leadership_positions:     ${leadershipPositionsSeed.length}`);
   console.log(
     `  event_committee_areas:    ${eventCommitteeAreasSeed.length}`
+  );
+  console.log(
+    `  event_session_types:      ${eventSessionTypesSeed.length}`
   );
   console.log(`  countries:                ${countriesData.length}`);
   console.log(`  skills:                   ${skillsData.length}`);
