@@ -4,4 +4,7 @@ export * from "./users";
 export * from "./career";
 export * from "./groups";
 export * from "./joins";
+export * from "./events";
+export * from "./committees";
+export * from "./leadership";
 export * from "./audit";

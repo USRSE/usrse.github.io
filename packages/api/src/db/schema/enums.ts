@@ -25,3 +25,32 @@ export const vocabStatus = pgEnum("vocab_status", [
 ]);
 
 export const orgTier = pgEnum("org_tier", ["premier", "standard", "basic"]);
+
+export const eventType = pgEnum("event_type", [
+  "conference",
+  "workshop",
+  "meetup",
+  "webinar",
+  "community_call",
+  "other",
+]);
+
+export const eventAttendanceRole = pgEnum("event_attendance_role", [
+  "attendee",
+  "speaker",
+  "organizer",
+  "sponsor",
+  "volunteer",
+]);
+
+export const leadershipPositionType = pgEnum("leadership_position_type", [
+  "board",
+  "executive",
+  "staff",
+  "advisor",
+]);
+
+export const eventCommitteeLevel = pgEnum("event_committee_level", [
+  "chair",
+  "co_chair",
+]);
