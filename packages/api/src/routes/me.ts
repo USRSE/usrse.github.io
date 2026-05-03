@@ -96,26 +96,45 @@ function shapeUser(user: UserRow) {
 
 meRoute.get("/", async (c) => {
   const workosId = c.get("workosUserId");
-  const db = createDb(c.env.DATABASE_URL);
 
-  const user = await db.query.users.findFirst({
-    where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
-    with: { profile: true },
-  });
-
-  if (!user) {
+  if (!c.env.DATABASE_URL) {
+    console.error("/me: DATABASE_URL is not configured");
     return c.json(
-      {
-        ok: false,
-        error: "user_pending",
-        message:
-          "Your account is being provisioned. Please retry in a moment.",
-      },
-      404
+      { ok: false, error: "internal", message: "Database is not configured" },
+      500
     );
   }
 
-  return c.json({ ok: true, user: shapeUser(user) });
+  try {
+    const db = createDb(c.env.DATABASE_URL);
+
+    const user = await db.query.users.findFirst({
+      where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
+      with: { profile: true },
+    });
+
+    if (!user) {
+      return c.json(
+        {
+          ok: false,
+          error: "user_pending",
+          message:
+            "Your account is being provisioned. Please retry in a moment.",
+        },
+        404
+      );
+    }
+
+    return c.json({ ok: true, user: shapeUser(user) });
+  } catch (e) {
+    const message = e instanceof Error ? e.message : String(e);
+    const stack = e instanceof Error ? e.stack : undefined;
+    console.error("/me handler failed", JSON.stringify({ message, stack }));
+    return c.json(
+      { ok: false, error: "internal", message },
+      500
+    );
+  }
 });
 
 meRoute.patch(

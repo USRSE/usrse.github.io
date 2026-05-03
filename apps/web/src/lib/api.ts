@@ -1,24 +1,25 @@
 import { useAuth } from "@workos-inc/authkit-react";
+import { useCallback, useRef } from "react";
 
 /**
- * Returns a fetch function that targets the @us-rse/api Worker via the
- * same-origin /api/* proxy and attaches the WorkOS access token in the
+ * Returns a stable fetch function that targets the @us-rse/api Worker via
+ * the same-origin /api/* proxy and attaches the WorkOS access token in the
  * Authorization header for authenticated routes.
  *
- * Usage:
- *
- *   const apiFetch = useApi();
- *   const res = await apiFetch("/me");
- *   const data = await res.json();
+ * The returned function is referentially stable across renders so it can be
+ * safely used as a dependency in useEffect / useCallback without triggering
+ * re-fetch loops.
  */
 export function useApi() {
   const { getAccessToken } = useAuth();
+  const getAccessTokenRef = useRef(getAccessToken);
+  getAccessTokenRef.current = getAccessToken;
 
-  return async function apiFetch(
+  return useCallback(async function apiFetch(
     path: string,
     init?: RequestInit
   ): Promise<Response> {
-    const token = await getAccessToken().catch(() => null);
+    const token = await getAccessTokenRef.current().catch(() => null);
 
     const headers = new Headers(init?.headers);
     if (token && !headers.has("Authorization")) {
@@ -27,5 +28,5 @@ export function useApi() {
 
     const url = path.startsWith("/api/") ? path : `/api${path}`;
     return fetch(url, { ...init, headers });
-  };
+  }, []);
 }
