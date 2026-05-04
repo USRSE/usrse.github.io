@@ -1,0 +1,85 @@
+# Deploys the worker (packages/api) and the web app (apps/web) to
+# Cloudflare on every push to a tracked branch, then verifies the
+# live worker SHA matches the just-pushed commit so a stalled
+# deploy can never quietly serve stale code again.
+#
+# Required GitHub repo secrets:
+#   CLOUDFLARE_API_TOKEN  — token with "Workers Scripts:Edit" +
+#                            "Pages:Edit" + "Account:Read"
+#   CLOUDFLARE_ACCOUNT_ID — the leadership-28b account
+#                            (28b57474f911b12125c7fa2feaf89c21)
+
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+      - cdcore09/site-redesign
+  workflow_dispatch:
+
+# A single in-flight deploy at a time per branch. Anything queued
+# behind a still-running run gets cancelled so we never deploy
+# yesterday's commit on top of today's.
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Build web
+        run: npm run build --workspace=@us-rse/web
+
+      - name: Deploy worker
+        working-directory: packages/api
+        # GIT_SHA flows through to the worker via wrangler --var,
+        # surfaced by /health for the verify step below.
+        run: |
+          npx wrangler deploy --var GIT_SHA:${{ github.sha }}
+
+      - name: Verify worker is live on this commit
+        run: |
+          expected="${{ github.sha }}"
+          url="https://us-rse-api.leadership-28b.workers.dev/health"
+          for attempt in $(seq 1 12); do
+            response=$(curl -sf "$url" || echo '{}')
+            live=$(echo "$response" | sed -n 's/.*"version":"\([^"]*\)".*/\1/p')
+            if [ "$live" = "$expected" ]; then
+              echo "✓ Worker is live on $expected"
+              exit 0
+            fi
+            echo "Attempt $attempt: live=\"$live\" expected=\"$expected\" — retrying in 5s"
+            sleep 5
+          done
+          echo "::error::Worker still not on $expected after 60s — deploy may have failed"
+          exit 1
+
+      - name: Deploy web (Cloudflare Pages)
+        working-directory: apps/web
+        run: |
+          npx wrangler pages deploy dist \
+            --project-name usrse-github-io \
+            --branch ${{ github.ref_name }} \
+            --commit-hash ${{ github.sha }} \
+            --commit-dirty=true

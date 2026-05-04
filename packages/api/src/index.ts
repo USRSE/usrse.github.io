@@ -19,8 +19,13 @@ app.use(
 app.get("/", (c) => c.json({ name: "@us-rse/api", ok: true }));
 
 app.get("/health", async (c) => {
+  // Version exposed unconditionally so the CI verify step can run
+  // even when the DB is unavailable. CI compares this against the
+  // just-pushed git SHA to confirm the new worker is actually live.
+  const version = c.env.GIT_SHA ?? "dev";
+
   if (!c.env.DATABASE_URL) {
-    return c.json({ ok: false, error: "DATABASE_URL not configured" }, 500);
+    return c.json({ ok: false, version, error: "DATABASE_URL not configured" }, 500);
   }
 
   const sql = neon(c.env.DATABASE_URL);
@@ -30,6 +35,7 @@ app.get("/health", async (c) => {
 
   return c.json({
     ok: true,
+    version,
     db: "neon",
     result: rows[0],
     latencyMs,
