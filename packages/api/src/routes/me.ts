@@ -1,10 +1,11 @@
 import { Hono } from "hono";
-import { and, eq, isNull, ne } from "drizzle-orm";
+import { and, eq, isNull } from "drizzle-orm";
 import { z } from "zod";
 import { zValidator } from "@hono/zod-validator";
 import { createDb } from "../db";
 import { profiles, users } from "../db/schema";
 import { loadMemberDossier } from "../lib/dossier";
+import { buildProfileSlug } from "../lib/member-id";
 import { requireAuth } from "../middleware/auth";
 import type { AppEnv } from "../types";
 
@@ -12,17 +13,12 @@ export const meRoute = new Hono<AppEnv>();
 
 meRoute.use("*", requireAuth);
 
-const SLUG_PATTERN = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const ORCID_PATTERN = /^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$/;
 
+// Slug is derived server-side from displayName + memberId — clients
+// don't supply it. See buildProfileSlug for the format.
 const profilePatchSchema = z
   .object({
-    slug: z
-      .string()
-      .min(1)
-      .max(50)
-      .regex(SLUG_PATTERN, "slug must be lowercase kebab-case")
-      .optional(),
     displayName: z.string().min(1).max(100).optional(),
     headline: z.string().max(140).nullable().optional(),
     bio: z.string().max(5000).nullable().optional(),
@@ -136,47 +132,29 @@ meRoute.patch(
       );
     }
 
-    if (input.slug) {
-      const collision = await db.query.profiles.findFirst({
-        where: and(
-          eq(profiles.slug, input.slug),
-          ne(profiles.userId, user.id)
-        ),
-        columns: { id: true },
-      });
-      if (collision) {
-        return c.json(
-          {
-            ok: false,
-            error: "slug_conflict",
-            message: "That slug is already in use by another member.",
-          },
-          409
-        );
-      }
-    }
-
     try {
       if (user.profile) {
+        // Slug stays put once set — renaming yourself doesn't move
+        // your URL, which keeps existing links to the profile alive.
         await db
           .update(profiles)
           .set({ ...input, updatedAt: new Date() })
           .where(eq(profiles.userId, user.id));
       } else {
-        if (!input.slug || !input.displayName) {
+        if (!input.displayName) {
           return c.json(
             {
               ok: false,
               error: "missing_fields",
-              message:
-                "slug and displayName are required when creating a profile.",
+              message: "displayName is required when creating a profile.",
             },
             400
           );
         }
+        const slug = buildProfileSlug(input.displayName, user.memberId);
         await db.insert(profiles).values({
           userId: user.id,
-          slug: input.slug,
+          slug,
           displayName: input.displayName,
           ...input,
         });
