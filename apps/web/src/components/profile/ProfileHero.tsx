@@ -26,7 +26,13 @@ interface ProfileHeroProps {
 }
 
 function formatJoinedDate(iso: string): string {
-  const d = new Date(iso);
+  // Safari is strict about Date parsing — refuses "YYYY-MM-DD HH:MM:SS"
+  // (with a space) which Postgres may return through some drivers.
+  // Replace the space with T as a defensive normalizer, then guard
+  // against Invalid Date so a quirky timestamp can never crash the
+  // page.
+  const d = new Date(iso.replace(" ", "T"));
+  if (Number.isNaN(d.getTime())) return "recently";
   return d.toLocaleDateString(undefined, { month: "long", year: "numeric" });
 }
 
