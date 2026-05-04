@@ -299,7 +299,10 @@ export function computeBadges(input: ComputeInput): Badge[] {
 
 function toIso(d: Date | string): string {
   if (d instanceof Date) return d.toISOString();
-  return d;
+  // Neon's HTTP driver hands timestamp columns back as plain strings
+  // in "YYYY-MM-DD HH:MM:SS+00" format. Convert to true ISO-8601 so
+  // Safari's stricter Date parser doesn't choke downstream.
+  return new Date(d.replace(" ", "T")).toISOString();
 }
 
 /**

@@ -41,7 +41,12 @@ export interface MemberDossier {
   role: string;
   marketingConsent: boolean;
   isLegacyImport: boolean;
-  createdAt: Date;
+  // ISO-8601 string. Neon's HTTP driver sometimes returns Postgres
+  // timestamps as plain strings in "YYYY-MM-DD HH:MM:SS+00" format
+  // (space, not T) — Chrome accepts that but Safari throws on
+  // `new Date(s)`. Normalize at the boundary so every consumer gets
+  // a parseable ISO string.
+  createdAt: string;
   profile: {
     id: string;
     slug: string;
@@ -284,6 +289,7 @@ export async function loadMemberDossier(
 
   return {
     ...u,
+    createdAt: toIso(u.createdAt),
     profile: profileRows[0] ?? null,
     experiences: experienceRows.map((e) => ({
       id: e.id,
@@ -329,4 +335,20 @@ export async function loadMemberDossierBySlug(
   if (!profileRow[0]) return null;
   if (!profileRow[0].isPublic) return null;
   return loadMemberDossier(db, profileRow[0].userId);
+}
+
+/**
+ * Normalize whatever the driver hands back for a timestamp column
+ * into a Safari-parseable ISO-8601 string. Neon's HTTP driver returns
+ * Postgres timestamps as raw strings in "YYYY-MM-DD HH:MM:SS+00"
+ * format (with a space, not a T) — Chrome accepts that but Safari
+ * throws on `new Date(s)`. Routing through Date guarantees the wire
+ * format is always proper ISO regardless of what the driver returns.
+ */
+function toIso(v: Date | string): string {
+  if (v instanceof Date) return v.toISOString();
+  // Replace the space separator with T before parsing so Safari
+  // doesn't choke on the input itself; the resulting Date is then
+  // serialized back out via toISOString.
+  return new Date(v.replace(" ", "T")).toISOString();
 }
