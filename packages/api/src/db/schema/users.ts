@@ -21,6 +21,7 @@ export const users = pgTable(
   {
     id: uuid("id").primaryKey().defaultRandom(),
     workosId: text("workos_id").notNull().unique(),
+    memberId: text("member_id").notNull().unique(),
     email: text("email").notNull().unique(),
     role: userRole("role").notNull().default("member"),
     termsAcceptedAt: timestamp("terms_accepted_at", { withTimezone: true })

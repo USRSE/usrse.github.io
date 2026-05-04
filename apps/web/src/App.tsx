@@ -31,6 +31,7 @@ import { SignInPage } from "@/pages/auth/SignInPage";
 import { SignUpPage } from "@/pages/auth/SignUpPage";
 import { CallbackPage } from "@/pages/auth/CallbackPage";
 import { AccountPage } from "@/pages/account/AccountPage";
+import { MemberPage } from "@/pages/members/MemberPage";
 import { ScrollToTop } from "@/components/ScrollToTop";
 
 export function App() {
@@ -71,6 +72,7 @@ export function App() {
             <Route path="/sign-up" element={<SignUpPage />} />
             <Route path="/auth/callback" element={<CallbackPage />} />
             <Route path="/account" element={<AccountPage />} />
+            <Route path="/members/:slug" element={<MemberPage />} />
           </Routes>
         </main>
         <Footer />

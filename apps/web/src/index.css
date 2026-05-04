@@ -336,3 +336,47 @@
     linear-gradient(to bottom, var(--color-neutral-100) 1px, transparent 1px);
   background-size: 3rem 3rem;
 }
+
+/* =========================================================================
+   PROFILE EDITORIAL FORM CONTROLS
+   ========================================================================= */
+
+@layer components {
+  .editorial-input,
+  .editorial-textarea {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--color-neutral-300);
+    border-radius: 0;
+    padding: 0.5rem 0 0.6rem 0;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--color-neutral-900);
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+  }
+  .editorial-input::placeholder,
+  .editorial-textarea::placeholder {
+    color: var(--color-neutral-300);
+    font-style: italic;
+  }
+  .editorial-input:hover,
+  .editorial-textarea:hover {
+    border-bottom-color: var(--color-neutral-500);
+  }
+  .editorial-input:focus,
+  .editorial-textarea:focus {
+    outline: none;
+    border-bottom-color: var(--color-purple-500);
+    background: linear-gradient(
+      to top,
+      rgba(116, 23, 85, 0.03),
+      transparent 30%
+    );
+  }
+  .editorial-textarea {
+    resize: vertical;
+    line-height: 1.6;
+    min-height: 8rem;
+  }
+}

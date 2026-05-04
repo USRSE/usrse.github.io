@@ -2,6 +2,7 @@ import { Hono } from "hono";
 import { eq } from "drizzle-orm";
 import { createDb } from "../db";
 import { profiles, users } from "../db/schema";
+import { generateMemberId } from "../lib/member-id";
 import { verifyWorkosWebhookSignature } from "../lib/verify-webhook";
 import type { AppEnv } from "../types";
 
@@ -89,13 +90,24 @@ async function handleUserCreated(
   db: ReturnType<typeof createDb>,
   workosUser: WorkosUser
 ) {
-  await db
-    .insert(users)
-    .values({
-      workosId: workosUser.id,
-      email: workosUser.email,
-    })
-    .onConflictDoNothing({ target: users.workosId });
+  for (let attempts = 0; attempts < 5; attempts++) {
+    try {
+      await db
+        .insert(users)
+        .values({
+          workosId: workosUser.id,
+          memberId: generateMemberId(),
+          email: workosUser.email,
+        })
+        .onConflictDoNothing({ target: users.workosId });
+      return;
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : String(e);
+      if (/users_member_id_unique/.test(msg)) continue;
+      throw e;
+    }
+  }
+  throw new Error("Could not generate unique member_id after 5 attempts");
 }
 
 async function handleUserUpdated(

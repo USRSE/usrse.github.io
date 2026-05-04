@@ -22,6 +22,13 @@
       "when": 1777822796590,
       "tag": "0002_cute_prism",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1777851314255,
+      "tag": "0003_flat_shinobi_shaw",
+      "breakpoints": true
     }
   ]
 }

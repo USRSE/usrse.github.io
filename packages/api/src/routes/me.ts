@@ -4,6 +4,7 @@ import { z } from "zod";
 import { zValidator } from "@hono/zod-validator";
 import { createDb } from "../db";
 import { profiles, users } from "../db/schema";
+import { loadMemberDossier } from "../lib/dossier";
 import { requireAuth } from "../middleware/auth";
 import type { AppEnv } from "../types";
 
@@ -49,51 +50,6 @@ const profilePatchSchema = z
 
 type ProfilePatch = z.infer<typeof profilePatchSchema>;
 
-interface UserRow {
-  id: string;
-  email: string;
-  role: string;
-  marketingConsent: boolean;
-  isLegacyImport: boolean;
-  createdAt: Date;
-  profile: typeof profiles.$inferSelect | null;
-}
-
-function shapeUser(user: UserRow) {
-  return {
-    id: user.id,
-    email: user.email,
-    role: user.role,
-    marketingConsent: user.marketingConsent,
-    isLegacyImport: user.isLegacyImport,
-    createdAt: user.createdAt,
-    profile: user.profile
-      ? {
-          id: user.profile.id,
-          slug: user.profile.slug,
-          displayName: user.profile.displayName,
-          headline: user.profile.headline,
-          bio: user.profile.bio,
-          photoUrl: user.profile.photoUrl,
-          jobTitle: user.profile.jobTitle,
-          githubUrl: user.profile.githubUrl,
-          linkedinUrl: user.profile.linkedinUrl,
-          orcid: user.profile.orcid,
-          websiteUrl: user.profile.websiteUrl,
-          pronounId: user.profile.pronounId,
-          institutionId: user.profile.institutionId,
-          careerStageId: user.profile.careerStageId,
-          countryId: user.profile.countryId,
-          region: user.profile.region,
-          city: user.profile.city,
-          showOnMap: user.profile.showOnMap,
-          publicLocation: user.profile.publicLocation,
-          isPublic: user.profile.isPublic,
-        }
-      : null,
-  };
-}
-
 meRoute.get("/", async (c) => {
   const workosId = c.get("workosUserId");
 
@@ -110,7 +66,7 @@ meRoute.get("/", async (c) => {
 
     const user = await db.query.users.findFirst({
       where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
-      with: { profile: true },
+      columns: { id: true },
     });
 
     if (!user) {
@@ -125,7 +81,11 @@ meRoute.get("/", async (c) => {
       );
     }
 
-    return c.json({ ok: true, user: shapeUser(user) });
+    const dossier = await loadMemberDossier(db, user.id);
+    if (!dossier) {
+      return c.json({ ok: false, error: "internal" }, 500);
+    }
+    return c.json({ ok: true, user: dossier });
   } catch (e) {
     const message = e instanceof Error ? e.message : String(e);
     const stack = e instanceof Error ? e.stack : undefined;
@@ -237,13 +197,10 @@ meRoute.patch(
       throw e;
     }
 
-    const updated = await db.query.users.findFirst({
-      where: eq(users.id, user.id),
-      with: { profile: true },
-    });
+    const updated = await loadMemberDossier(db, user.id);
     if (!updated) {
       return c.json({ ok: false, error: "internal" }, 500);
     }
-    return c.json({ ok: true, user: shapeUser(updated) });
+    return c.json({ ok: true, user: updated });
   }
 );

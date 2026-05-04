@@ -21,19 +21,105 @@ export interface CurrentMemberProfile {
   linkedinUrl: string | null;
   orcid: string | null;
   websiteUrl: string | null;
+  pronounLabel: string | null;
+  institutionName: string | null;
+  careerStageLabel: string | null;
+  countryName: string | null;
+  region: string | null;
+  city: string | null;
   isPublic: boolean;
   showOnMap: boolean;
   publicLocation: string | null;
 }
 
+export interface ExperienceItem {
+  id: string;
+  title: string;
+  organization: string;
+  startDate: string;
+  endDate: string | null;
+  isCurrent: boolean;
+  description: string | null;
+}
+
+export interface EducationItem {
+  id: string;
+  institution: string;
+  degreeLabel: string;
+  fieldOfStudy: string | null;
+  startYear: number | null;
+  endYear: number | null;
+  description: string | null;
+}
+
+export interface CertificationItem {
+  id: string;
+  name: string;
+  issuingOrg: string;
+  issueDate: string | null;
+  expiryDate: string | null;
+  credentialUrl: string | null;
+}
+
+export interface LeadershipItem {
+  id: string;
+  positionType: "board" | "executive" | "staff" | "advisor";
+  label: string;
+  startDate: string;
+  endDate: string | null;
+}
+
+export interface ConferenceItem {
+  eventId: string;
+  slug: string;
+  name: string;
+  location: string | null;
+  startDate: string;
+  endDate: string | null;
+  role: string;
+  notes: string | null;
+}
+
+export type BadgeTier = "milestone" | "conference" | "service";
+
+export type BadgeAccent =
+  | "neutral"
+  | "purple"
+  | "teal"
+  | "amber"
+  | "rose"
+  | "graphite";
+
+export interface BadgeItem {
+  id: string;
+  tier: BadgeTier;
+  kind: string;
+  title: string;
+  subtitle: string;
+  accent: BadgeAccent;
+  earnedAt: string;
+  description: string;
+  weight: "solid" | "outline" | "double";
+}
+
 export interface CurrentMember {
   id: string;
+  memberId: string;
   email: string;
   role: string;
   marketingConsent: boolean;
   isLegacyImport: boolean;
   createdAt: string;
   profile: CurrentMemberProfile | null;
+  experiences: ExperienceItem[];
+  education: EducationItem[];
+  certifications: CertificationItem[];
+  skills: { name: string; slug: string }[];
+  disciplines: { name: string }[];
+  engagementTypes: { label: string }[];
+  conferences: ConferenceItem[];
+  leadership: LeadershipItem[];
+  badges: BadgeItem[];
 }
 
 interface State {
