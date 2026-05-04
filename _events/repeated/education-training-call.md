@@ -3,21 +3,21 @@ title: Education and Training Call
 subtitle:
 location: Virtual
 expires: 2023-12-31
-event_date: "first Tuesday each month 10:30-11:30 Eastern"
+event_date: "first Monday each month 1:00-2:00 Eastern"
 layout: event
 category: education-training
 time:
-  - - start: 2023-08-01 10:30 EST
+  - - start: 2026-06-01 1:00 EST
 
 repeated: true
 
 rrule:
-  - DTSTART;TZID=America/New_York:20230801T103000
-  - RRULE:FREQ=MONTHLY;WKST=MO;BYDAY=+1TU  
-  - RDATE;TZID=America/New_York:20230801T103000
+  - DTSTART;TZID=America/New_York:20260601T130000
+  - RRULE:FREQ=MONTHLY;WKST=MO;BYDAY=+1MO  
+  - RDATE;TZID=America/New_York:20260601T130000
 ---
 
-The Education & Training Working group monthly meeting occurs on the first Tuesday of each month. 10:30-11:30 ET.
+The Education & Training Working group monthly meeting occurs on the first Monday of each month. 1:00-1:00 ET.
 
 See the [Education & Training Working Group webpage](https://us-rse.org/wg/education_training/) for more
 information about the group and how to get involved.
