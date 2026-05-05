@@ -1,10 +1,17 @@
+import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { usePublicMember } from "@/hooks/usePublicMember";
+import {
+  useCurrentMember,
+  type CurrentMember,
+} from "@/hooks/useCurrentMember";
 import { ProfileView } from "@/pages/account/ProfileView";
 
 export function MemberPage() {
   const { slug } = useParams<{ slug: string }>();
   const { status, member, error } = usePublicMember(slug);
+  const current = useCurrentMember();
+  const [override, setOverride] = useState<CurrentMember | null>(null);
 
   if (status === "loading") return <SkeletonState />;
 
@@ -48,7 +55,26 @@ export function MemberPage() {
     );
   }
 
-  return <ProfileView member={member} isOwner={false} />;
+  // Owner detection: signed-in user's profile slug matches the slug
+  // being viewed. When that's true, render the richer CurrentMember
+  // (which carries fields the public payload doesn't) so the inline
+  // editors have everything they need, and let edits flow back via
+  // the override state so saves are reflected without a refetch.
+  const isOwner =
+    current.status === "ready" &&
+    current.member !== null &&
+    current.member.profile?.slug === slug;
+
+  const displayMember =
+    isOwner && current.member ? override ?? current.member : member;
+
+  return (
+    <ProfileView
+      member={displayMember}
+      isOwner={isOwner}
+      onMemberUpdated={isOwner ? (next) => setOverride(next) : undefined}
+    />
+  );
 }
 
 function SkeletonState() {

@@ -553,12 +553,20 @@ function UserNavSlot() {
             )}
           </div>
           <Link
-            to="/account"
+            to="/me"
             onClick={() => setOpen(false)}
             className="block px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50 rounded-lg transition-colors"
             role="menuitem"
           >
             My profile
+          </Link>
+          <Link
+            to="/account"
+            onClick={() => setOpen(false)}
+            className="block px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50 rounded-lg transition-colors"
+            role="menuitem"
+          >
+            Settings
           </Link>
           <button
             onClick={() => {
@@ -606,11 +614,18 @@ function UserNavSlotMobile({ onNavigate }: { onNavigate: () => void }) {
         )}
       </div>
       <Link
-        to="/account"
+        to="/me"
         onClick={onNavigate}
         className="block w-full text-left px-4 py-3 text-sm text-neutral-700 border-t border-neutral-100 hover:bg-neutral-50 transition-colors"
       >
         My profile
+      </Link>
+      <Link
+        to="/account"
+        onClick={onNavigate}
+        className="block w-full text-left px-4 py-3 text-sm text-neutral-700 border-t border-neutral-100 hover:bg-neutral-50 transition-colors"
+      >
+        Settings
       </Link>
       <button
         onClick={() => {

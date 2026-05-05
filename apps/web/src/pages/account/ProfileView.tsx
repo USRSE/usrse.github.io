@@ -1,5 +1,4 @@
 import { useMemo } from "react";
-import { useAuth } from "@workos-inc/authkit-react";
 import { useInView } from "@/hooks/useInView";
 import { IdentitySection } from "@/components/profile/IdentitySection";
 import { CareerArcSection } from "@/components/profile/CareerArcSection";
@@ -85,8 +84,6 @@ export function ProfileView({
   isOwner,
   onMemberUpdated,
 }: ProfileViewProps) {
-  const { ref: footRef, isInView: footInView } = useInView(0.05);
-
   const profile = member.profile;
   const fallback = isCurrentMember(member) ? member.email : member.memberId;
   const displayName =
@@ -113,7 +110,7 @@ export function ProfileView({
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-24">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
-          <ProfileSidebar sections={buildSidebarSections(isOwner && isCurrentMember(member))} />
+          <ProfileSidebar sections={SIDEBAR_SECTIONS} />
           <div className="flex-1 min-w-0">
         {/* ── 01 · IDENTITY ─────────────────────────────────────── */}
         <RevealOnView>
@@ -198,17 +195,6 @@ export function ProfileView({
           </SectionFrame>
         </RevealOnView>
 
-        {/* ── 09 · ACCOUNT (owner only) ─────────────────────────── */}
-        {isOwner && isCurrentMember(member) && (
-          <div
-            ref={footRef}
-            className={`mt-16 pt-12 border-t border-neutral-200 ${
-              footInView ? "animate-fade-in" : "opacity-0"
-            }`}
-          >
-            <AccountFooter member={member} />
-          </div>
-        )}
           </div>
         </div>
       </div>
@@ -382,49 +368,11 @@ function ContactBylines({
   );
 }
 
-function AccountFooter({ member }: { member: CurrentMember }) {
-  const { signOut } = useAuth();
-  return (
-    <SectionFrame number="09" eyebrow="Account" accent="neutral">
-      <div className="bg-neutral-50 rounded-3xl px-6 lg:px-8 py-6 mb-6">
-        <dl className="space-y-3">
-          <FootRow label="Email" value={member.email} />
-          <FootRow
-            label="Marketing"
-            value={member.marketingConsent ? "Opted in" : "Not subscribed"}
-          />
-          {member.isLegacyImport && (
-            <FootRow label="Origin" value="Imported from legacy roster" />
-          )}
-        </dl>
-      </div>
-      <button
-        onClick={() => signOut()}
-        className="font-mono text-[11px] uppercase tracking-[0.25em] text-neutral-500 hover:text-purple-700 transition-colors"
-      >
-        ↩ sign out
-      </button>
-    </SectionFrame>
-  );
-}
-
-function FootRow({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="grid grid-cols-3 gap-4">
-      <dt className="font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-400 self-center">
-        {label}
-      </dt>
-      <dd className="col-span-2 text-sm text-neutral-800 break-all self-center">
-        {value}
-      </dd>
-    </div>
-  );
-}
-
 // Sidebar section list. Recognition keeps its own anchor id
 // ("recognition") because ProfileHero links to #recognition; the
 // rest fall through to SectionFrame's default `section-${number}`.
-const BASE_SIDEBAR_SECTIONS: SidebarSection[] = [
+// Account settings live at /account, not in the dossier.
+const SIDEBAR_SECTIONS: SidebarSection[] = [
   { id: "section-01", number: "01", label: "Identity" },
   { id: "section-02", number: "02", label: "Affiliation" },
   { id: "section-03", number: "03", label: "Career Arc" },
@@ -434,14 +382,6 @@ const BASE_SIDEBAR_SECTIONS: SidebarSection[] = [
   { id: "section-07", number: "07", label: "On Stage" },
   { id: "section-08", number: "08", label: "Connect" },
 ];
-
-function buildSidebarSections(includeAccount: boolean): SidebarSection[] {
-  if (!includeAccount) return BASE_SIDEBAR_SECTIONS;
-  return [
-    ...BASE_SIDEBAR_SECTIONS,
-    { id: "section-09", number: "09", label: "Account" },
-  ];
-}
 
 /**
  * Public profiles don't carry email/marketing/legacy-import fields. Pad

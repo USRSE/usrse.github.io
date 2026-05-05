@@ -42,6 +42,9 @@ const AccountPage = lazy(() =>
 const MemberPage = lazy(() =>
   import("@/pages/members/MemberPage").then((m) => ({ default: m.MemberPage }))
 );
+const MeRedirect = lazy(() =>
+  import("@/pages/account/MeRedirect").then((m) => ({ default: m.MeRedirect }))
+);
 
 export function App() {
   return (
@@ -85,6 +88,14 @@ export function App() {
               element={
                 <Suspense fallback={<RouteFallback />}>
                   <AccountPage />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/me"
+              element={
+                <Suspense fallback={<RouteFallback />}>
+                  <MeRedirect />
                 </Suspense>
               }
             />
