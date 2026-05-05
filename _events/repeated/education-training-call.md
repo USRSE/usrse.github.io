@@ -7,7 +7,7 @@ event_date: "first Monday each month 1:00-2:00 Eastern"
 layout: event
 category: education-training
 time:
-  - - start: 2026-06-01 13:00 EST
+  - - start: 2026-06-01 13:00 EDT
 
 repeated: true
 
