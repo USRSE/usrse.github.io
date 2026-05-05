@@ -8,4 +8,5 @@ export * from "./events";
 export * from "./committees";
 export * from "./sessions";
 export * from "./leadership";
+export * from "./works";
 export * from "./audit";

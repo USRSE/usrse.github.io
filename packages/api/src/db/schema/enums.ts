@@ -59,3 +59,24 @@ export const eventPresenterRole = pgEnum("event_presenter_role", [
   "lead",
   "contributor",
 ]);
+
+// External / scholarly works carried in the `works` table. ORCID's own
+// taxonomy has ~30 work-types; we collapse them into this smaller set
+// at import time so the On Stage UI has a stable vocabulary to render
+// against. "other" catches the long tail (patents, datasets we choose
+// not to surface, etc.) and lets the importer never reject a record.
+export const workType = pgEnum("work_type", [
+  "paper",
+  "talk",
+  "panel",
+  "workshop",
+  "software",
+  "dataset",
+  "other",
+]);
+
+// "orcid" rows are re-fetched from pub.orcid.org and keyed by their
+// ORCID put-code; they should not be hand-edited (edits would be
+// clobbered on the next import). "manual" rows are member-entered and
+// the member is the source of truth.
+export const workSource = pgEnum("work_source", ["orcid", "manual"]);

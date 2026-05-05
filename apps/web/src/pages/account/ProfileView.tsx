@@ -138,7 +138,7 @@ export function ProfileView({
 
         {/* ── 07 · ON STAGE ─────────────────────────────────────── */}
         <RevealOnView>
-          <OnStageSection isOwner={isOwner} />
+          <OnStageSection works={member.works ?? []} />
         </RevealOnView>
 
           </div>

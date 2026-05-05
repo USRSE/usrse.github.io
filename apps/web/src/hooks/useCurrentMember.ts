@@ -102,6 +102,33 @@ export interface BadgeItem {
   weight: "solid" | "outline" | "double";
 }
 
+export type WorkType =
+  | "paper"
+  | "talk"
+  | "panel"
+  | "workshop"
+  | "software"
+  | "dataset"
+  | "other";
+
+export type WorkSource = "orcid" | "manual";
+
+export interface WorkItem {
+  id: string;
+  type: WorkType;
+  title: string;
+  venue: string | null;
+  workDate: string | null;
+  doi: string | null;
+  url: string | null;
+  pdfUrl: string | null;
+  slidesUrl: string | null;
+  videoUrl: string | null;
+  abstract: string | null;
+  collaborators: string[];
+  source: WorkSource;
+}
+
 export interface CurrentMember {
   id: string;
   memberId: string;
@@ -119,6 +146,7 @@ export interface CurrentMember {
   engagementTypes: { label: string }[];
   conferences: ConferenceItem[];
   leadership: LeadershipItem[];
+  works: WorkItem[];
   badges: BadgeItem[];
 }
 

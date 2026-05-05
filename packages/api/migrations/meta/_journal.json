@@ -29,6 +29,13 @@
       "when": 1777851314255,
       "tag": "0003_flat_shinobi_shaw",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1778008481860,
+      "tag": "0004_damp_katie_power",
+      "breakpoints": true
     }
   ]
 }

@@ -32,6 +32,7 @@ import {
   userSkills,
   users,
   degreeTypes,
+  works,
 } from "../db/schema";
 
 export interface MemberDossier {
@@ -81,7 +82,24 @@ export interface MemberDossier {
   engagementTypes: { label: string }[];
   conferences: ConferenceRow[];
   leadership: LeadershipRow[];
+  works: WorkRow[];
   badges: Badge[];
+}
+
+export interface WorkRow {
+  id: string;
+  type: "paper" | "talk" | "panel" | "workshop" | "software" | "dataset" | "other";
+  title: string;
+  venue: string | null;
+  workDate: string | null;
+  doi: string | null;
+  url: string | null;
+  pdfUrl: string | null;
+  slidesUrl: string | null;
+  videoUrl: string | null;
+  abstract: string | null;
+  collaborators: string[];
+  source: "orcid" | "manual";
 }
 
 export interface ExperienceRow {
@@ -165,6 +183,7 @@ export async function loadMemberDossier(
     engagementRows,
     attendanceRows,
     leadershipRows,
+    workRows,
   ] = await Promise.all([
     db
       .select({
@@ -285,6 +304,26 @@ export async function loadMemberDossier(
         )
       )
       .orderBy(desc(leadershipTerms.startDate)),
+    db
+      .select({
+        id: works.id,
+        type: works.type,
+        title: works.title,
+        venue: works.venue,
+        workDate: works.workDate,
+        doi: works.doi,
+        url: works.url,
+        pdfUrl: works.pdfUrl,
+        slidesUrl: works.slidesUrl,
+        videoUrl: works.videoUrl,
+        abstract: works.abstract,
+        collaborators: works.collaborators,
+        source: works.source,
+      })
+      .from(works)
+      .where(and(eq(works.userId, u.id), isNull(works.deletedAt)))
+      // Newest first; null dates fall to the bottom.
+      .orderBy(desc(works.workDate)),
   ]);
 
   return {
@@ -314,6 +353,7 @@ export async function loadMemberDossier(
     engagementTypes: engagementRows,
     conferences: attendanceRows,
     leadership: leadershipRows,
+    works: workRows,
     badges: computeBadges({
       createdAt: u.createdAt,
       isLegacyImport: u.isLegacyImport,

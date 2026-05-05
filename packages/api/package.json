@@ -12,7 +12,9 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:studio": "drizzle-kit studio",
-    "db:seed": "tsx scripts/seed.ts"
+    "db:seed": "tsx scripts/seed.ts",
+    "db:apply": "tsx scripts/apply-migration.ts",
+    "import:orcid": "tsx scripts/import-orcid.ts"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.7.6",
