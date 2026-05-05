@@ -6,7 +6,10 @@ import { App } from "./App";
 import { RootErrorBoundary } from "./components/RootErrorBoundary";
 
 const clientId = import.meta.env.VITE_WORKOS_CLIENT_ID;
-const redirectUri = import.meta.env.VITE_WORKOS_REDIRECT_URI;
+// Derived at runtime so the same bundle works on localhost, preview deploys,
+// and production. Every origin used here must be listed as an allowed redirect
+// URI in the WorkOS dashboard.
+const redirectUri = `${window.location.origin}/auth/callback`;
 const root = createRoot(document.getElementById("root")!);
 
 if (!clientId) {

@@ -4,10 +4,12 @@
 # deploy can never quietly serve stale code again.
 #
 # Required GitHub repo secrets:
-#   CLOUDFLARE_API_TOKEN  — token with "Workers Scripts:Edit" +
-#                            "Pages:Edit" + "Account:Read"
-#   CLOUDFLARE_ACCOUNT_ID — the leadership-28b account
-#                            (28b57474f911b12125c7fa2feaf89c21)
+#   CLOUDFLARE_API_TOKEN     — token with "Workers Scripts:Edit" +
+#                                "Pages:Edit" + "Account:Read"
+#   CLOUDFLARE_ACCOUNT_ID    — the leadership-28b account
+#                                (28b57474f911b12125c7fa2feaf89c21)
+#   VITE_WORKOS_CLIENT_ID    — WorkOS AuthKit public client id; baked into
+#                                the web bundle at build time by Vite
 
 name: Deploy
 
@@ -49,6 +51,8 @@ jobs:
         run: npm run typecheck
 
       - name: Build web
+        env:
+          VITE_WORKOS_CLIENT_ID: ${{ secrets.VITE_WORKOS_CLIENT_ID }}
         run: npm run build --workspace=@us-rse/web
 
       - name: Deploy worker
