@@ -12,6 +12,7 @@ import {
 } from "@/components/profile/SectionFrame";
 import { ProfileHero } from "@/components/profile/ProfileHero";
 import { ProfileJourneyFooter } from "@/components/profile/ProfileJourneyFooter";
+import { buildContactLinks } from "@/components/profile/ContactBylines";
 import {
   ProfileSidebar,
   type SidebarSection,
@@ -37,46 +38,6 @@ function initialsFor(displayName: string | undefined, fallback: string) {
 
 function isCurrentMember(m: ProfileMember): m is CurrentMember {
   return "email" in m;
-}
-
-interface ContactLink {
-  label: string;
-  href: string;
-  display: string;
-}
-
-function buildContactLinks(member: ProfileMember): ContactLink[] {
-  const p = member.profile;
-  if (!p) return [];
-  const out: ContactLink[] = [];
-  if (p.websiteUrl)
-    out.push({
-      label: "Website",
-      href: p.websiteUrl,
-      display: p.websiteUrl.replace(/^https?:\/\/(www\.)?/, ""),
-    });
-  if (p.githubUrl)
-    out.push({
-      label: "GitHub",
-      href: p.githubUrl,
-      display: p.githubUrl.replace(/^https?:\/\/(www\.)?github\.com\//, "@"),
-    });
-  if (p.linkedinUrl)
-    out.push({
-      label: "LinkedIn",
-      href: p.linkedinUrl,
-      display: p.linkedinUrl.replace(
-        /^https?:\/\/(www\.)?linkedin\.com\//,
-        "/"
-      ),
-    });
-  if (p.orcid)
-    out.push({
-      label: "ORCID",
-      href: `https://orcid.org/${p.orcid}`,
-      display: p.orcid,
-    });
-  return out;
 }
 
 export function ProfileView({
@@ -106,6 +67,7 @@ export function ProfileView({
         joinedIso={member.createdAt}
         isOwner={isOwner}
         badges={member.badges ?? []}
+        contactLinks={contactLinks}
       />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-24">
@@ -177,22 +139,6 @@ export function ProfileView({
         {/* ── 07 · ON STAGE ─────────────────────────────────────── */}
         <RevealOnView>
           <OnStageSection isOwner={isOwner} />
-        </RevealOnView>
-
-        {/* ── 08 · CONNECT ──────────────────────────────────────── */}
-        <RevealOnView>
-          <SectionFrame
-            number="08"
-            eyebrow="Connect"
-            accent="purple"
-            action={isOwner ? <EditStub /> : null}
-          >
-            {contactLinks.length > 0 ? (
-              <ContactBylines links={contactLinks} displayName={displayName} />
-            ) : (
-              <NotYetWritten message="external links not yet added" />
-            )}
-          </SectionFrame>
         </RevealOnView>
 
           </div>
@@ -326,48 +272,6 @@ function Pillar({
   );
 }
 
-function ContactBylines({
-  links,
-  displayName,
-}: {
-  links: ContactLink[];
-  displayName: string;
-}) {
-  const firstName = displayName.split(/\s+/)[0] || "this member";
-  return (
-    <div className="flex flex-col sm:flex-row sm:items-baseline gap-x-6 gap-y-4 flex-wrap">
-      <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-neutral-400 shrink-0">
-        Find {firstName} on
-      </p>
-      <ul className="flex flex-wrap gap-2">
-        {links.map((l) => (
-          <li key={l.label}>
-            <a
-              href={l.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-baseline gap-2 px-3 py-1.5 rounded-full border border-neutral-200 hover:border-purple-400 transition-colors"
-            >
-              <span className="text-[10px] font-semibold uppercase tracking-wider text-purple-600 group-hover:text-purple-800 transition-colors">
-                {l.label}
-              </span>
-              <span className="font-mono text-xs text-neutral-600 group-hover:text-neutral-900 transition-colors break-all">
-                {l.display}
-              </span>
-              <span
-                aria-hidden="true"
-                className="text-neutral-300 group-hover:text-teal-500 transition-colors text-xs"
-              >
-                ↗
-              </span>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
 // Sidebar section list. Recognition keeps its own anchor id
 // ("recognition") because ProfileHero links to #recognition; the
 // rest fall through to SectionFrame's default `section-${number}`.
@@ -380,7 +284,6 @@ const SIDEBAR_SECTIONS: SidebarSection[] = [
   { id: "section-05", number: "05", label: "Craft" },
   { id: "section-06", number: "06", label: "Community" },
   { id: "section-07", number: "07", label: "On Stage" },
-  { id: "section-08", number: "08", label: "Connect" },
 ];
 
 /**

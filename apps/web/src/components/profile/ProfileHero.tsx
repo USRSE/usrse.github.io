@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { formatMemberId } from "@/lib/member-id";
 import { BadgeGlyph } from "./HexStamp";
+import { ContactBylines, type ContactLink } from "./ContactBylines";
 import type { BadgeItem } from "@/hooks/useCurrentMember";
 
 /**
@@ -23,6 +24,7 @@ interface ProfileHeroProps {
   joinedIso: string;
   isOwner: boolean;
   badges?: BadgeItem[];
+  contactLinks?: ContactLink[];
 }
 
 function formatJoinedDate(iso: string): string {
@@ -47,6 +49,7 @@ export function ProfileHero({
   joinedIso,
   isOwner,
   badges = [],
+  contactLinks = [],
 }: ProfileHeroProps) {
   // Pick the most "interesting" badges to surface up top: milestones
   // first (rare, prestige), then most-recent contribution badges
@@ -198,6 +201,19 @@ export function ProfileHero({
                 </span>
               )}
             </a>
+          </div>
+        )}
+
+        {contactLinks.length > 0 && (
+          <div
+            className="mt-6 animate-fade-in"
+            style={{ animationDelay: "520ms" }}
+          >
+            <ContactBylines
+              links={contactLinks}
+              displayName={displayName}
+              tone="dark"
+            />
           </div>
         )}
       </div>
