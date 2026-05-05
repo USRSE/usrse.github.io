@@ -13,6 +13,10 @@ export function Portrait({ photoUrl, initials, memberId }: PortraitProps) {
         <img
           src={photoUrl}
           alt=""
+          width={800}
+          height={1000}
+          fetchPriority="high"
+          decoding="async"
           className="w-full h-full object-cover grayscale-[40%] transition-all duration-700 group-hover:grayscale-0 group-hover:scale-[1.02]"
         />
       ) : (

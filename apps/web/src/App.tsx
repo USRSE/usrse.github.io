@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -30,9 +31,17 @@ import { DirectoryPage } from "@/pages/resources/DirectoryPage";
 import { SignInPage } from "@/pages/auth/SignInPage";
 import { SignUpPage } from "@/pages/auth/SignUpPage";
 import { CallbackPage } from "@/pages/auth/CallbackPage";
-import { AccountPage } from "@/pages/account/AccountPage";
-import { MemberPage } from "@/pages/members/MemberPage";
 import { ScrollToTop } from "@/components/ScrollToTop";
+
+// Profile pages share ProfileView and a heavy section graph (motion,
+// per-section components). Code-splitting them keeps that bundle out
+// of the initial download for visitors who never view a profile.
+const AccountPage = lazy(() =>
+  import("@/pages/account/AccountPage").then((m) => ({ default: m.AccountPage }))
+);
+const MemberPage = lazy(() =>
+  import("@/pages/members/MemberPage").then((m) => ({ default: m.MemberPage }))
+);
 
 export function App() {
   return (
@@ -71,12 +80,34 @@ export function App() {
             <Route path="/sign-in" element={<SignInPage />} />
             <Route path="/sign-up" element={<SignUpPage />} />
             <Route path="/auth/callback" element={<CallbackPage />} />
-            <Route path="/account" element={<AccountPage />} />
-            <Route path="/members/:slug" element={<MemberPage />} />
+            <Route
+              path="/account"
+              element={
+                <Suspense fallback={<RouteFallback />}>
+                  <AccountPage />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/members/:slug"
+              element={
+                <Suspense fallback={<RouteFallback />}>
+                  <MemberPage />
+                </Suspense>
+              }
+            />
           </Routes>
         </main>
         <Footer />
       </div>
     </BrowserRouter>
   );
+}
+
+// Minimal placeholder during chunk fetch — both profile pages render
+// their own richer skeleton/loading states once the chunk arrives,
+// so this just reserves vertical space and avoids a flash of empty
+// chrome on slow networks.
+function RouteFallback() {
+  return <div className="min-h-[60vh]" aria-hidden="true" />;
 }
