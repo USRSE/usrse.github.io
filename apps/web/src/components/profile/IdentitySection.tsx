@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { Portrait } from "./Portrait";
 import { SectionFrame, NotYetWritten } from "./SectionFrame";
+import { PhotoUploader } from "./PhotoUploader";
 import { useApi } from "@/lib/api";
 import type { CurrentMember } from "@/hooks/useCurrentMember";
 
@@ -17,7 +18,6 @@ interface IdentityField {
   headline: string;
   bio: string;
   jobTitle: string;
-  photoUrl: string;
   region: string;
   city: string;
   publicLocation: string;
@@ -25,6 +25,10 @@ interface IdentityField {
   isPublic: boolean;
 }
 
+// Photo isn't a form field anymore — it has its own dedicated
+// upload/url/delete endpoints (see PhotoUploader). The PATCH
+// /me/profile request omits photoUrl entirely so the form save
+// can never accidentally clobber a freshly-uploaded photo.
 function fieldsFromMember(member: CurrentMember): IdentityField {
   const p = member.profile;
   return {
@@ -33,7 +37,6 @@ function fieldsFromMember(member: CurrentMember): IdentityField {
     headline: p?.headline ?? "",
     bio: p?.bio ?? "",
     jobTitle: p?.jobTitle ?? "",
-    photoUrl: p?.photoUrl ?? "",
     region: "",
     city: "",
     publicLocation: p?.publicLocation ?? "",
@@ -69,7 +72,9 @@ export function IdentitySection({
       {editing ? (
         <IdentityEditor
           member={member}
+          initials={initials}
           onCancel={() => setEditing(false)}
+          onPhotoChanged={(next) => onSaved?.(next)}
           onSaved={(next) => {
             setEditing(false);
             onSaved?.(next);
@@ -170,12 +175,16 @@ function IdentityRead({
 
 function IdentityEditor({
   member,
+  initials,
   onCancel,
   onSaved,
+  onPhotoChanged,
 }: {
   member: CurrentMember;
+  initials: string;
   onCancel: () => void;
   onSaved: (next: CurrentMember) => void;
+  onPhotoChanged: (next: CurrentMember) => void;
 }) {
   const apiFetch = useApi();
   const [fields, setFields] = useState<IdentityField>(() =>
@@ -201,7 +210,6 @@ function IdentityEditor({
       headline: fields.headline.trim() || null,
       bio: fields.bio.trim() || null,
       jobTitle: fields.jobTitle.trim() || null,
-      photoUrl: fields.photoUrl.trim() || null,
       publicLocation: fields.publicLocation.trim() || null,
       showOnMap: fields.showOnMap,
       isPublic: fields.isPublic,
@@ -291,18 +299,11 @@ function IdentityEditor({
             placeholder="Research Software Engineer"
           />
         </Field>
-        <Field
-          label="Photo URL"
-          id="photoUrl"
-          hint="upload coming later — paste a URL for now"
-        >
-          <input
-            id="photoUrl"
-            type="url"
-            value={fields.photoUrl}
-            onChange={(e) => set("photoUrl", e.target.value)}
-            className="editorial-input"
-            placeholder="https://…"
+        <Field label="Photo" id="photo">
+          <PhotoUploader
+            currentPhotoUrl={member.profile?.photoUrl ?? null}
+            initials={initials}
+            onChanged={onPhotoChanged}
           />
         </Field>
         <Field

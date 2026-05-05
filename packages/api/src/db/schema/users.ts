@@ -66,6 +66,13 @@ export const profiles = pgTable(
     }),
     bio: text("bio"),
     photoUrl: text("photo_url"),
+    // R2 object key for the photo we host (when source is an upload
+    // or url-import). Null when photoUrl points at an external host
+    // or there's no photo. Distinct from photoUrl so we can swap the
+    // public URL prefix later (custom domain) without losing the
+    // storage handle, and so we can clean up the old object on
+    // replacement.
+    photoStorageKey: text("photo_storage_key"),
     institutionId: uuid("institution_id").references(() => institutions.id, {
       onDelete: "set null",
     }),

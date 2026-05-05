@@ -12,6 +12,10 @@ export type Bindings = {
    * the just-pushed commit. Empty during local `wrangler dev`.
    */
   GIT_SHA?: string;
+  /** R2 bucket holding member profile photos. */
+  PROFILE_PHOTOS: R2Bucket;
+  /** Public base URL for profile-photo bucket reads (r2.dev today). */
+  PROFILE_PHOTOS_PUBLIC_URL: string;
 };
 
 export type Variables = {

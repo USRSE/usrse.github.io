@@ -1,0 +1,1 @@
+ALTER TABLE "profiles" ADD COLUMN "photo_storage_key" text;

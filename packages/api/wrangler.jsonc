@@ -6,6 +6,21 @@
   "compatibility_flags": ["nodejs_compat"],
   "observability": {
     "enabled": true
+  },
+  // R2 buckets — one per logical asset domain. Each binding name is
+  // SCREAMING_SNAKE_CASE so Workers env access (env.PROFILE_PHOTOS)
+  // reads cleanly. Public reads go through the bucket's r2.dev URL,
+  // exposed to the worker via PROFILE_PHOTOS_PUBLIC_URL so we never
+  // hardcode the prefix in code (cleaner swap when we move to a
+  // custom domain later).
+  "r2_buckets": [
+    {
+      "binding": "PROFILE_PHOTOS",
+      "bucket_name": "usrse-profile-photos"
+    }
+  ],
+  "vars": {
+    "PROFILE_PHOTOS_PUBLIC_URL": "https://pub-12a8fe7ab15d4128be3f4867cc11b99f.r2.dev"
   }
   // Environment variables (DATABASE_URL) are injected via:
   //   - .dev.vars   for local `wrangler dev`
