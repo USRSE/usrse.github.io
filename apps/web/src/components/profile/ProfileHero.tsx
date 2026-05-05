@@ -4,7 +4,7 @@ import { BadgeGlyph } from "./HexStamp";
 import type { BadgeItem } from "@/hooks/useCurrentMember";
 
 /**
- * Cap on the hero "Decorations" strip. Higher than 3 so the strip can
+ * Cap on the hero "Achievements" strip. Higher than 3 so the strip can
  * actually showcase a member's accomplishments, low enough that it
  * doesn't compete with the breadcrumb or push the headline down. The
  * larger Recognition section below is the canonical surface for the
@@ -182,7 +182,7 @@ export function ProfileHero({
             style={{ animationDelay: "440ms" }}
           >
             <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/40 shrink-0">
-              Decorations
+              Achievements
             </span>
             <a
               href="#recognition"
@@ -206,7 +206,7 @@ export function ProfileHero({
 }
 
 /**
- * Small dark-mode hex mark used in the hero "Decorations" strip.
+ * Small dark-mode hex mark used in the hero "Achievements" strip.
  * Reuses the same BadgeGlyph as the full Recognition section so a
  * speaker badge here reads as the same idea as a speaker badge below
  * — just smaller and tuned for the purple gradient backdrop.

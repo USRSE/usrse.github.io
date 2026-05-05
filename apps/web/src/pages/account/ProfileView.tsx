@@ -13,6 +13,10 @@ import {
 } from "@/components/profile/SectionFrame";
 import { ProfileHero } from "@/components/profile/ProfileHero";
 import { ProfileJourneyFooter } from "@/components/profile/ProfileJourneyFooter";
+import {
+  ProfileSidebar,
+  type SidebarSection,
+} from "@/components/profile/ProfileSidebar";
 import type { CurrentMember } from "@/hooks/useCurrentMember";
 import type { PublicMember } from "@/hooks/usePublicMember";
 
@@ -108,6 +112,9 @@ export function ProfileView({
       />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-24">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
+          <ProfileSidebar sections={buildSidebarSections(isOwner && isCurrentMember(member))} />
+          <div className="flex-1 min-w-0">
         {/* ── 01 · IDENTITY ─────────────────────────────────────── */}
         <RevealOnView>
           <IdentitySection
@@ -202,6 +209,8 @@ export function ProfileView({
             <AccountFooter member={member} />
           </div>
         )}
+          </div>
+        </div>
       </div>
 
       <ProfileJourneyFooter isOwner={isOwner} hasProfile={!!profile} />
@@ -410,6 +419,28 @@ function FootRow({ label, value }: { label: string; value: string }) {
       </dd>
     </div>
   );
+}
+
+// Sidebar section list. Recognition keeps its own anchor id
+// ("recognition") because ProfileHero links to #recognition; the
+// rest fall through to SectionFrame's default `section-${number}`.
+const BASE_SIDEBAR_SECTIONS: SidebarSection[] = [
+  { id: "section-01", number: "01", label: "Identity" },
+  { id: "section-02", number: "02", label: "Affiliation" },
+  { id: "section-03", number: "03", label: "Career Arc" },
+  { id: "recognition", number: "04", label: "Recognition" },
+  { id: "section-05", number: "05", label: "Craft" },
+  { id: "section-06", number: "06", label: "Community" },
+  { id: "section-07", number: "07", label: "On Stage" },
+  { id: "section-08", number: "08", label: "Connect" },
+];
+
+function buildSidebarSections(includeAccount: boolean): SidebarSection[] {
+  if (!includeAccount) return BASE_SIDEBAR_SECTIONS;
+  return [
+    ...BASE_SIDEBAR_SECTIONS,
+    { id: "section-09", number: "09", label: "Account" },
+  ];
 }
 
 /**

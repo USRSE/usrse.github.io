@@ -34,7 +34,10 @@ export function SectionFrame({
   id,
 }: SectionFrameProps) {
   return (
-    <section id={id} className="mb-20 lg:mb-28">
+    <section
+      id={id ?? `section-${number}`}
+      className="mb-20 lg:mb-28 scroll-mt-24"
+    >
       <div className="flex items-baseline gap-3 mb-8 lg:mb-10">
         <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-400">
           {number}
