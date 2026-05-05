@@ -8,23 +8,27 @@ interface CraftSectionProps {
   isOwner: boolean;
 }
 
-// Unified chip DNA across all Craft sub-sections so the eyebrow
-// (05.a, 05.b, 05.c) does the categorical labeling instead of three
-// chip vocabularies competing for attention. Resting state is shared;
-// hover lifts to a sub-section accent so the page's dot-language
-// (teal / purple / amber) stays alive without shouting at rest.
+// Chip DNA cribbed from the Connect bylines (ProfileView.tsx) so the
+// pages's pill vocabulary stays consistent: rounded-full, quiet
+// neutral border, accent lives in the *ink* not the fill. Each
+// Craft sub-section gets its own accent so the eye can sort by
+// color before reading the eyebrow — teal disciplines, purple
+// languages, amber skills.
 type ChipAccent = "teal" | "purple" | "amber";
 
-const CHIP_HOVER: Record<ChipAccent, string> = {
-  teal: "hover:border-teal-300 hover:text-teal-700 hover:bg-teal-50/40",
+const CHIP_BASE =
+  "inline-flex items-baseline px-3 py-1.5 rounded-full border font-mono text-xs transition-colors cursor-default";
+
+const CHIP_VARIANT: Record<ChipAccent, string> = {
+  teal: "border-neutral-200 text-teal-700 hover:border-teal-400 hover:text-teal-900 hover:bg-teal-50/30",
   purple:
-    "hover:border-purple-300 hover:text-purple-700 hover:bg-purple-50/40",
+    "border-neutral-200 text-purple-700 hover:border-purple-400 hover:text-purple-900 hover:bg-purple-50/30",
   amber:
-    "hover:border-amber-300 hover:text-amber-700 hover:bg-amber-50/40",
+    "border-neutral-200 text-amber-700 hover:border-amber-400 hover:text-amber-900 hover:bg-amber-50/30",
 };
 
 function chipClass(accent: ChipAccent): string {
-  return `font-mono text-[11px] px-2.5 py-1 rounded-[2px] bg-white border border-neutral-200 text-neutral-700 transition-colors cursor-default ${CHIP_HOVER[accent]}`;
+  return `${CHIP_BASE} ${CHIP_VARIANT[accent]}`;
 }
 
 export function CraftSection({
