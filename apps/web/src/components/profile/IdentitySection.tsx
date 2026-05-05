@@ -206,7 +206,9 @@ function IdentityEditor({
 
     const body: Record<string, unknown> = {
       displayName: fields.displayName.trim() || undefined,
-      slug: fields.slug.trim() || undefined,
+      // Slug is server-derived from displayName + memberId; the
+      // backend's .strict() schema rejects it as an unknown key,
+      // so the form never sends it (and the input is read-only).
       headline: fields.headline.trim() || null,
       bio: fields.bio.trim() || null,
       jobTitle: fields.jobTitle.trim() || null,
@@ -277,16 +279,15 @@ function IdentityEditor({
         <Field
           label="Slug"
           id="slug"
-          required
-          hint="lowercase-kebab-case · used in /members/your-slug"
+          hint="derived from your display name and member id · used in /members/your-slug"
         >
           <input
             id="slug"
             type="text"
             value={fields.slug}
-            onChange={(e) => set("slug", e.target.value.toLowerCase())}
-            className="editorial-input font-mono"
-            placeholder="your-name"
+            readOnly
+            disabled
+            className="editorial-input font-mono opacity-60 cursor-not-allowed"
           />
         </Field>
         <Field label="Job title" id="jobTitle">
