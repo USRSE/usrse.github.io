@@ -3,7 +3,7 @@ import { and, eq, isNull } from "drizzle-orm";
 import { z } from "zod";
 import { zValidator } from "@hono/zod-validator";
 import { createDb } from "../db";
-import { profiles, users } from "../db/schema";
+import { countries, profiles, users } from "../db/schema";
 import { loadMemberDossier } from "../lib/dossier";
 import { buildProfileSlug } from "../lib/member-id";
 import { requireAuth } from "../middleware/auth";
@@ -42,8 +42,23 @@ const profilePatchSchema = z
     institutionId: z.uuid().nullable().optional(),
     careerStageId: z.uuid().nullable().optional(),
     countryId: z.uuid().nullable().optional(),
+    // ISO 3166-1 alpha-2 alternative to countryId. The frontend's
+    // location combobox returns ISO codes (Photon GeoJSON gives a
+    // `properties.countrycode`), and resolving them to our internal
+    // UUID server-side spares the client from round-tripping the
+    // countries vocab on every profile save.
+    countryIso2: z
+      .string()
+      .regex(/^[A-Za-z]{2}$/, "ISO alpha-2 must be two letters")
+      .nullable()
+      .optional(),
     region: z.string().max(100).nullable().optional(),
     city: z.string().max(100).nullable().optional(),
+    // Coordinates from a geocoded place pick. Numeric column on the
+    // DB side is numeric(9,6) so it stores ~1cm precision and any
+    // valid lat/long fits.
+    latitude: z.number().min(-90).max(90).nullable().optional(),
+    longitude: z.number().min(-180).max(180).nullable().optional(),
     showOnMap: z.boolean().optional(),
     publicLocation: z.string().max(140).nullable().optional(),
     isPublic: z.boolean().optional(),
@@ -139,13 +154,39 @@ meRoute.patch(
       );
     }
 
+    // Resolve countryIso2 → countryId before the DB write. Done
+    // here rather than in the zod schema because it requires a DB
+    // lookup. If both are present, the explicit countryId wins.
+    const { countryIso2, ...rest } = input;
+    const patch: Record<string, unknown> = { ...rest };
+    if (countryIso2 != null && patch.countryId === undefined) {
+      const iso = countryIso2.toUpperCase();
+      const match = await db
+        .select({ id: countries.id })
+        .from(countries)
+        .where(eq(countries.isoAlpha2, iso))
+        .limit(1);
+      patch.countryId = match[0]?.id ?? null;
+    }
+
+    // Drizzle's numeric column wants strings. Convert lat/lng if
+    // present; null stays null.
+    if (patch.latitude !== undefined) {
+      patch.latitude =
+        patch.latitude == null ? null : String(patch.latitude);
+    }
+    if (patch.longitude !== undefined) {
+      patch.longitude =
+        patch.longitude == null ? null : String(patch.longitude);
+    }
+
     try {
       if (user.profile) {
         // Slug stays put once set — renaming yourself doesn't move
         // your URL, which keeps existing links to the profile alive.
         await db
           .update(profiles)
-          .set({ ...input, updatedAt: new Date() })
+          .set({ ...patch, updatedAt: new Date() })
           .where(eq(profiles.userId, user.id));
       } else {
         if (!input.displayName) {
@@ -163,7 +204,7 @@ meRoute.patch(
           userId: user.id,
           slug,
           displayName: input.displayName,
-          ...input,
+          ...patch,
         });
       }
     } catch (e) {
