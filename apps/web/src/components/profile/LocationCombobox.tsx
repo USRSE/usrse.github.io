@@ -73,7 +73,15 @@ interface PhotonFeature {
 interface Suggestion extends LocationValue {
   /** Stable key for React reconciliation across debounced refetches. */
   key: string;
-  /** Secondary line shown under `display` in the menu (city type, country). */
+  /**
+   * Primary line shown in the dropdown — includes the country for
+   * disambiguation across same-named cities. Distinct from
+   * `display` (the saved value), which omits the country since the
+   * country renders separately on the dossier alongside the place
+   * line and would otherwise duplicate.
+   */
+  menuLine: string;
+  /** Secondary line shown under `menuLine` (place kind, country code). */
   secondary: string;
 }
 
@@ -408,7 +416,7 @@ export function LocationCombobox({
                   }`}
                 />
                 <p className="text-sm text-neutral-900 leading-tight">
-                  {s.display}
+                  {s.menuLine}
                 </p>
                 {s.secondary && (
                   <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-400 mt-0.5">
@@ -502,11 +510,27 @@ function featureToSuggestion(f: PhotonFeature): Suggestion | null {
 
   if (!primary && !country) return null;
 
-  const displayParts: string[] = [];
-  if (primary) displayParts.push(primary);
-  if (region && region !== primary) displayParts.push(region);
-  let display = displayParts.join(", ");
-  if (country) display = display ? `${display} · ${country}` : country;
+  // menuLine — what the user sees in the dropdown. Includes the
+  // country so "Boulder, Colorado · United States" is distinguishable
+  // from "Boulder, Wyoming · United States".
+  const menuParts: string[] = [];
+  if (primary) menuParts.push(primary);
+  if (region && region !== primary) menuParts.push(region);
+  let menuLine = menuParts.join(", ");
+  if (country) menuLine = menuLine ? `${menuLine} · ${country}` : country;
+
+  // display — what gets saved as profile.publicLocation. Country is
+  // intentionally omitted because the dossier composes the public
+  // place line as `publicLocation · countryName` from the resolved
+  // country reference; including the country name in the saved
+  // string would render twice ("Seattle · US · US"). When the picked
+  // result IS a country (primary === country), the saved display is
+  // empty and the dossier renders the country alone.
+  const saveParts: string[] = [];
+  if (primary && primary !== country) saveParts.push(primary);
+  if (region && region !== primary && region !== country)
+    saveParts.push(region);
+  const display = saveParts.join(", ");
 
   // Type/value tag plus country code in the secondary line — gives
   // the user enough context to disambiguate cities sharing a name.
@@ -519,6 +543,7 @@ function featureToSuggestion(f: PhotonFeature): Suggestion | null {
   return {
     key: `${countryIso2 ?? ""}-${lat}-${lng}-${primary}`,
     display,
+    menuLine,
     city: p.city ?? primary ?? null,
     region: region || null,
     countryIso2,

@@ -98,7 +98,6 @@ export function ProfileView({
               careerStageLabel={profile?.careerStageLabel ?? null}
               location={profile?.publicLocation ?? null}
               countryName={profile?.countryName ?? null}
-              disciplines={member.disciplines ?? []}
             />
           </SectionFrame>
         </RevealOnView>
@@ -177,21 +176,29 @@ function Affiliation({
   careerStageLabel,
   location,
   countryName,
-  disciplines,
 }: {
   jobTitle: string | null;
   institutionName: string | null;
   careerStageLabel: string | null;
   location: string | null;
   countryName: string | null;
-  disciplines: { name: string }[];
 }) {
-  if (!jobTitle && !location && !institutionName && disciplines.length === 0) {
+  if (!jobTitle && !location && !institutionName) {
     return (
-      <NotYetWritten message="institution, discipline, and field will live here" />
+      <NotYetWritten message="institution, role, and location will live here" />
     );
   }
-  const placeLine = [location, countryName].filter(Boolean).join(" · ");
+  // Defensive de-dupe: legacy saves and free-text entries can already
+  // contain the country name in the location string. Only append
+  // countryName when it isn't already present in the location text,
+  // so we never render "Seattle, Washington · United States · United
+  // States."
+  const locationContainsCountry = Boolean(
+    location && countryName && location.toLowerCase().includes(countryName.toLowerCase())
+  );
+  const placeLine = locationContainsCountry
+    ? location
+    : [location, countryName].filter(Boolean).join(" · ");
   return (
     <div className="space-y-10">
       {/* Three pillars — gap-px gradient seam, no per-cell shadow.
@@ -205,27 +212,6 @@ function Affiliation({
         />
         <Pillar label="Institution" value={institutionName} accent="neutral" />
         <Pillar label="Based in" value={placeLine || null} accent="teal" />
-      </div>
-
-      {/* Disciplines — chip ribbon, no card */}
-      <div>
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-400 mb-4">
-          02.d · Disciplines
-        </p>
-        {disciplines.length === 0 ? (
-          <NotYetWritten message="disciplines not yet tagged" />
-        ) : (
-          <ul className="flex flex-wrap gap-2">
-            {disciplines.map((d) => (
-              <li
-                key={d.name}
-                className="font-mono text-[11px] px-2.5 py-1 rounded-full bg-white border border-neutral-200 text-neutral-700 hover:border-purple-300 hover:text-purple-700 transition-colors cursor-default"
-              >
-                {d.name}
-              </li>
-            ))}
-          </ul>
-        )}
       </div>
     </div>
   );
