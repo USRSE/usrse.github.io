@@ -1,35 +1,1802 @@
 [
-  { "name": "Python", "slug": "python" },
-  { "name": "R", "slug": "r" },
-  { "name": "Julia", "slug": "julia" },
-  { "name": "C++", "slug": "cpp" },
-  { "name": "C", "slug": "c" },
-  { "name": "Fortran", "slug": "fortran" },
-  { "name": "JavaScript", "slug": "javascript" },
-  { "name": "TypeScript", "slug": "typescript" },
-  { "name": "Rust", "slug": "rust" },
-  { "name": "Go", "slug": "go" },
-  { "name": "Java", "slug": "java" },
-  { "name": "Bash / Shell", "slug": "bash-shell" },
-  { "name": "MATLAB", "slug": "matlab" },
-  { "name": "HPC", "slug": "hpc" },
-  { "name": "MPI", "slug": "mpi" },
-  { "name": "OpenMP", "slug": "openmp" },
-  { "name": "CUDA", "slug": "cuda" },
-  { "name": "GPU Computing", "slug": "gpu-computing" },
-  { "name": "Containers (Docker/Podman)", "slug": "containers" },
-  { "name": "Singularity / Apptainer", "slug": "singularity" },
-  { "name": "Kubernetes", "slug": "kubernetes" },
-  { "name": "CI/CD", "slug": "ci-cd" },
-  { "name": "Testing & Test Automation", "slug": "testing" },
-  { "name": "Software Architecture", "slug": "software-architecture" },
-  { "name": "Documentation", "slug": "documentation" },
-  { "name": "Git & Version Control", "slug": "git" },
-  { "name": "Reproducible Research", "slug": "reproducible-research" },
-  { "name": "Open Source Community", "slug": "open-source-community" },
-  { "name": "Data Engineering", "slug": "data-engineering" },
-  { "name": "Machine Learning", "slug": "machine-learning" },
-  { "name": "Numerical Methods", "slug": "numerical-methods" },
-  { "name": "Scientific Visualization", "slug": "scientific-visualization" },
-  { "name": "Workflow Management", "slug": "workflow-management" }
+  {
+    "name": "3D Reconstruction",
+    "slug": "3d-reconstruction"
+  },
+  {
+    "name": "3D Slicer",
+    "slug": "3d-slicer"
+  },
+  {
+    "name": "A/B Testing",
+    "slug": "ab-testing"
+  },
+  {
+    "name": "Accelerate (Hugging Face)",
+    "slug": "accelerate-hf"
+  },
+  {
+    "name": "Active Learning",
+    "slug": "active-learning"
+  },
+  {
+    "name": "Adversarial Examples",
+    "slug": "adversarial-examples"
+  },
+  {
+    "name": "Adversarial Robustness",
+    "slug": "adversarial-robustness"
+  },
+  {
+    "name": "Agent-Based Modeling",
+    "slug": "agent-based-modeling"
+  },
+  {
+    "name": "Agile Methodology",
+    "slug": "agile-methodology"
+  },
+  {
+    "name": "AI Agents",
+    "slug": "ai-agents"
+  },
+  {
+    "name": "AI Alignment",
+    "slug": "ai-alignment"
+  },
+  {
+    "name": "AI Ethics",
+    "slug": "ai-ethics"
+  },
+  {
+    "name": "AI Safety",
+    "slug": "ai-safety"
+  },
+  {
+    "name": "Airflow",
+    "slug": "airflow"
+  },
+  {
+    "name": "AlphaFold",
+    "slug": "alphafold"
+  },
+  {
+    "name": "Amazon Web Services (AWS)",
+    "slug": "aws"
+  },
+  {
+    "name": "Amber",
+    "slug": "amber"
+  },
+  {
+    "name": "Angular",
+    "slug": "angular"
+  },
+  {
+    "name": "Anomaly Detection",
+    "slug": "anomaly-detection"
+  },
+  {
+    "name": "Ansible",
+    "slug": "ansible"
+  },
+  {
+    "name": "Apache Arrow",
+    "slug": "apache-arrow"
+  },
+  {
+    "name": "Apache Beam",
+    "slug": "apache-beam"
+  },
+  {
+    "name": "Apache Flink",
+    "slug": "apache-flink"
+  },
+  {
+    "name": "Apache Iceberg",
+    "slug": "apache-iceberg"
+  },
+  {
+    "name": "Apache Kafka",
+    "slug": "apache-kafka"
+  },
+  {
+    "name": "Apache Spark",
+    "slug": "apache-spark"
+  },
+  {
+    "name": "API Design",
+    "slug": "api-design"
+  },
+  {
+    "name": "ArcGIS",
+    "slug": "arcgis"
+  },
+  {
+    "name": "Argo CD",
+    "slug": "argo-cd"
+  },
+  {
+    "name": "ASE (Atomic Simulation Environment)",
+    "slug": "ase"
+  },
+  {
+    "name": "AutoML",
+    "slug": "automl"
+  },
+  {
+    "name": "Backend Development",
+    "slug": "backend-development"
+  },
+  {
+    "name": "Bash / Shell",
+    "slug": "bash-shell"
+  },
+  {
+    "name": "Bayesian Inference",
+    "slug": "bayesian-inference"
+  },
+  {
+    "name": "Bayesian Neural Networks",
+    "slug": "bayesian-neural-networks"
+  },
+  {
+    "name": "Bayesian Optimization",
+    "slug": "bayesian-optimization"
+  },
+  {
+    "name": "Behavior-Driven Development (BDD)",
+    "slug": "bdd"
+  },
+  {
+    "name": "BentoML",
+    "slug": "bentoml"
+  },
+  {
+    "name": "Bias & Fairness in ML",
+    "slug": "bias-fairness-ml"
+  },
+  {
+    "name": "BIDS (Brain Imaging Data Structure)",
+    "slug": "bids"
+  },
+  {
+    "name": "Bioconductor",
+    "slug": "bioconductor"
+  },
+  {
+    "name": "Biopython",
+    "slug": "biopython"
+  },
+  {
+    "name": "BLAST",
+    "slug": "blast"
+  },
+  {
+    "name": "Bokeh",
+    "slug": "bokeh"
+  },
+  {
+    "name": "Bowtie / Bowtie2",
+    "slug": "bowtie"
+  },
+  {
+    "name": "BWA",
+    "slug": "bwa"
+  },
+  {
+    "name": "C",
+    "slug": "c"
+  },
+  {
+    "name": "C++",
+    "slug": "cpp"
+  },
+  {
+    "name": "Causal Inference",
+    "slug": "causal-inference"
+  },
+  {
+    "name": "Causal Machine Learning",
+    "slug": "causal-machine-learning"
+  },
+  {
+    "name": "Cell Ranger",
+    "slug": "cell-ranger"
+  },
+  {
+    "name": "CellProfiler",
+    "slug": "cellprofiler"
+  },
+  {
+    "name": "CESM (Community Earth System Model)",
+    "slug": "cesm"
+  },
+  {
+    "name": "CFD (Computational Fluid Dynamics)",
+    "slug": "computational-fluid-dynamics"
+  },
+  {
+    "name": "Chain-of-Thought Prompting",
+    "slug": "chain-of-thought"
+  },
+  {
+    "name": "CHARMM",
+    "slug": "charmm"
+  },
+  {
+    "name": "Chroma (Vector DB)",
+    "slug": "chroma-db"
+  },
+  {
+    "name": "CI/CD",
+    "slug": "ci-cd"
+  },
+  {
+    "name": "ClearML",
+    "slug": "clearml"
+  },
+  {
+    "name": "Climate Data Operators (CDO)",
+    "slug": "cdo"
+  },
+  {
+    "name": "CLIP",
+    "slug": "clip"
+  },
+  {
+    "name": "Cloud Architecture",
+    "slug": "cloud-architecture"
+  },
+  {
+    "name": "Cloud Computing",
+    "slug": "cloud-computing"
+  },
+  {
+    "name": "Clustering",
+    "slug": "clustering"
+  },
+  {
+    "name": "Code Coverage",
+    "slug": "code-coverage"
+  },
+  {
+    "name": "Code Generation",
+    "slug": "code-generation"
+  },
+  {
+    "name": "Code Review",
+    "slug": "code-review"
+  },
+  {
+    "name": "Common Workflow Language (CWL)",
+    "slug": "cwl"
+  },
+  {
+    "name": "Computer Vision",
+    "slug": "computer-vision"
+  },
+  {
+    "name": "conda",
+    "slug": "conda"
+  },
+  {
+    "name": "conda-forge",
+    "slug": "conda-forge"
+  },
+  {
+    "name": "Constitutional AI",
+    "slug": "constitutional-ai"
+  },
+  {
+    "name": "Containers (Docker/Podman)",
+    "slug": "containers"
+  },
+  {
+    "name": "Continuous Deployment",
+    "slug": "continuous-deployment"
+  },
+  {
+    "name": "Continuous Integration",
+    "slug": "continuous-integration"
+  },
+  {
+    "name": "Contrastive Learning",
+    "slug": "contrastive-learning"
+  },
+  {
+    "name": "Convolutional Neural Networks (CNN)",
+    "slug": "cnn"
+  },
+  {
+    "name": "CP2K",
+    "slug": "cp2k"
+  },
+  {
+    "name": "Cromwell",
+    "slug": "cromwell"
+  },
+  {
+    "name": "Cross-Validation",
+    "slug": "cross-validation"
+  },
+  {
+    "name": "CUDA",
+    "slug": "cuda"
+  },
+  {
+    "name": "Curriculum Learning",
+    "slug": "curriculum-learning"
+  },
+  {
+    "name": "Cypress",
+    "slug": "cypress"
+  },
+  {
+    "name": "D3.js",
+    "slug": "d3"
+  },
+  {
+    "name": "Dagster",
+    "slug": "dagster"
+  },
+  {
+    "name": "Dask",
+    "slug": "dask"
+  },
+  {
+    "name": "Data Augmentation",
+    "slug": "data-augmentation"
+  },
+  {
+    "name": "Data Engineering",
+    "slug": "data-engineering"
+  },
+  {
+    "name": "Data Lakes",
+    "slug": "data-lakes"
+  },
+  {
+    "name": "Data Pipelines",
+    "slug": "data-pipelines"
+  },
+  {
+    "name": "Data Visualization",
+    "slug": "data-visualization-skill"
+  },
+  {
+    "name": "Data Warehousing",
+    "slug": "data-warehousing"
+  },
+  {
+    "name": "Database Administration",
+    "slug": "database-administration"
+  },
+  {
+    "name": "Databricks",
+    "slug": "databricks"
+  },
+  {
+    "name": "dbt",
+    "slug": "dbt"
+  },
+  {
+    "name": "Debugging",
+    "slug": "debugging"
+  },
+  {
+    "name": "Decision Trees",
+    "slug": "decision-trees"
+  },
+  {
+    "name": "Deep Learning",
+    "slug": "deep-learning-skill"
+  },
+  {
+    "name": "DeepSpeed",
+    "slug": "deepspeed"
+  },
+  {
+    "name": "Delta Lake",
+    "slug": "delta-lake"
+  },
+  {
+    "name": "Density Functional Theory (DFT)",
+    "slug": "dft"
+  },
+  {
+    "name": "DESeq2",
+    "slug": "deseq2"
+  },
+  {
+    "name": "Design Systems",
+    "slug": "design-systems"
+  },
+  {
+    "name": "Detectron2",
+    "slug": "detectron2"
+  },
+  {
+    "name": "DevOps",
+    "slug": "devops"
+  },
+  {
+    "name": "Differential Privacy",
+    "slug": "differential-privacy"
+  },
+  {
+    "name": "Diffusion Models",
+    "slug": "diffusion-models"
+  },
+  {
+    "name": "Dimensionality Reduction (PCA/UMAP/t-SNE)",
+    "slug": "dimensionality-reduction"
+  },
+  {
+    "name": "Direct Preference Optimization (DPO)",
+    "slug": "dpo"
+  },
+  {
+    "name": "Discrete Event Simulation",
+    "slug": "discrete-event-simulation"
+  },
+  {
+    "name": "Distributed Computing",
+    "slug": "distributed-computing"
+  },
+  {
+    "name": "Django",
+    "slug": "django"
+  },
+  {
+    "name": "Docker",
+    "slug": "docker"
+  },
+  {
+    "name": "Documentation",
+    "slug": "documentation"
+  },
+  {
+    "name": "Domain-Driven Design",
+    "slug": "ddd"
+  },
+  {
+    "name": "Doxygen",
+    "slug": "doxygen"
+  },
+  {
+    "name": "DuckDB",
+    "slug": "duckdb"
+  },
+  {
+    "name": "DVC (Data Version Control)",
+    "slug": "dvc"
+  },
+  {
+    "name": "E3SM (Energy Exascale Earth System Model)",
+    "slug": "e3sm"
+  },
+  {
+    "name": "EasyBuild",
+    "slug": "easybuild"
+  },
+  {
+    "name": "edgeR",
+    "slug": "edger"
+  },
+  {
+    "name": "Embedded Systems Development",
+    "slug": "embedded-systems-development"
+  },
+  {
+    "name": "Embedding Models",
+    "slug": "embedding-models"
+  },
+  {
+    "name": "Encryption",
+    "slug": "encryption"
+  },
+  {
+    "name": "End-to-End Testing",
+    "slug": "e2e-testing"
+  },
+  {
+    "name": "Ensemble Learning",
+    "slug": "ensemble-learning"
+  },
+  {
+    "name": "Event-Driven Architecture",
+    "slug": "event-driven-architecture"
+  },
+  {
+    "name": "Experimental Design",
+    "slug": "experimental-design"
+  },
+  {
+    "name": "Explainability (SHAP/LIME)",
+    "slug": "explainability-shap-lime"
+  },
+  {
+    "name": "Express.js",
+    "slug": "express"
+  },
+  {
+    "name": "FAISS",
+    "slug": "faiss"
+  },
+  {
+    "name": "fastai",
+    "slug": "fastai"
+  },
+  {
+    "name": "FastAPI",
+    "slug": "fastapi"
+  },
+  {
+    "name": "Feature Engineering",
+    "slug": "feature-engineering"
+  },
+  {
+    "name": "Federated Learning",
+    "slug": "federated-learning"
+  },
+  {
+    "name": "Few-Shot Learning",
+    "slug": "few-shot-learning"
+  },
+  {
+    "name": "Finite Difference Method (FDM)",
+    "slug": "fdm"
+  },
+  {
+    "name": "Finite Element Method (FEM)",
+    "slug": "fem"
+  },
+  {
+    "name": "Finite Volume Method (FVM)",
+    "slug": "fvm"
+  },
+  {
+    "name": "Flask",
+    "slug": "flask"
+  },
+  {
+    "name": "Fortran",
+    "slug": "fortran"
+  },
+  {
+    "name": "Foundation Models",
+    "slug": "foundation-models"
+  },
+  {
+    "name": "FreeSurfer",
+    "slug": "freesurfer"
+  },
+  {
+    "name": "Frontend Development",
+    "slug": "frontend-development"
+  },
+  {
+    "name": "FSL",
+    "slug": "fsl"
+  },
+  {
+    "name": "Full-Stack Development",
+    "slug": "full-stack-development"
+  },
+  {
+    "name": "Function Calling / Tool Use",
+    "slug": "function-calling-tool-use"
+  },
+  {
+    "name": "Fuzz Testing",
+    "slug": "fuzz-testing"
+  },
+  {
+    "name": "Galaxy",
+    "slug": "galaxy"
+  },
+  {
+    "name": "GATK",
+    "slug": "gatk"
+  },
+  {
+    "name": "Gaussian",
+    "slug": "gaussian"
+  },
+  {
+    "name": "Gaussian Processes",
+    "slug": "gaussian-processes"
+  },
+  {
+    "name": "Gazebo",
+    "slug": "gazebo"
+  },
+  {
+    "name": "GDAL / OGR",
+    "slug": "gdal"
+  },
+  {
+    "name": "Geant4",
+    "slug": "geant4"
+  },
+  {
+    "name": "Generative Adversarial Networks (GAN)",
+    "slug": "gan"
+  },
+  {
+    "name": "Gensim",
+    "slug": "gensim"
+  },
+  {
+    "name": "ggplot2",
+    "slug": "ggplot2"
+  },
+  {
+    "name": "Git & Version Control",
+    "slug": "git"
+  },
+  {
+    "name": "GitHub",
+    "slug": "github"
+  },
+  {
+    "name": "GitHub Actions",
+    "slug": "github-actions"
+  },
+  {
+    "name": "GitLab",
+    "slug": "gitlab"
+  },
+  {
+    "name": "GitLab CI",
+    "slug": "gitlab-ci"
+  },
+  {
+    "name": "Go",
+    "slug": "go"
+  },
+  {
+    "name": "Google BigQuery",
+    "slug": "bigquery"
+  },
+  {
+    "name": "Google Cloud Platform (GCP)",
+    "slug": "gcp"
+  },
+  {
+    "name": "Google Earth Engine",
+    "slug": "google-earth-engine"
+  },
+  {
+    "name": "GPU Computing",
+    "slug": "gpu-computing"
+  },
+  {
+    "name": "Gradient Boosting (XGBoost/LightGBM/CatBoost)",
+    "slug": "gradient-boosting"
+  },
+  {
+    "name": "Grafana",
+    "slug": "grafana"
+  },
+  {
+    "name": "Grant Writing",
+    "slug": "grant-writing"
+  },
+  {
+    "name": "Graph Neural Networks (GNN)",
+    "slug": "gnn"
+  },
+  {
+    "name": "GraphQL",
+    "slug": "graphql"
+  },
+  {
+    "name": "GROMACS",
+    "slug": "gromacs"
+  },
+  {
+    "name": "gRPC",
+    "slug": "grpc"
+  },
+  {
+    "name": "HDF5",
+    "slug": "hdf5"
+  },
+  {
+    "name": "Helm",
+    "slug": "helm"
+  },
+  {
+    "name": "HIPAA Compliance",
+    "slug": "hipaa"
+  },
+  {
+    "name": "HOOMD-Blue",
+    "slug": "hoomd-blue"
+  },
+  {
+    "name": "HPC",
+    "slug": "hpc"
+  },
+  {
+    "name": "Hugging Face Hub",
+    "slug": "huggingface-hub"
+  },
+  {
+    "name": "Hugging Face Transformers",
+    "slug": "huggingface"
+  },
+  {
+    "name": "Hydra (Config Management)",
+    "slug": "hydra-config"
+  },
+  {
+    "name": "Hyperparameter Optimization",
+    "slug": "hyperparameter-optimization"
+  },
+  {
+    "name": "Hypothesis (Property-Based Testing)",
+    "slug": "hypothesis-testing-tool"
+  },
+  {
+    "name": "Image Captioning",
+    "slug": "image-captioning"
+  },
+  {
+    "name": "Image Classification",
+    "slug": "image-classification"
+  },
+  {
+    "name": "Image Generation",
+    "slug": "image-generation"
+  },
+  {
+    "name": "Image Registration",
+    "slug": "image-registration"
+  },
+  {
+    "name": "ImageJ / Fiji",
+    "slug": "imagej-fiji"
+  },
+  {
+    "name": "Infrastructure as Code",
+    "slug": "infrastructure-as-code"
+  },
+  {
+    "name": "Integration Testing",
+    "slug": "integration-testing"
+  },
+  {
+    "name": "Interaction Design",
+    "slug": "interaction-design"
+  },
+  {
+    "name": "Interpretability",
+    "slug": "interpretability"
+  },
+  {
+    "name": "iris (Met Office)",
+    "slug": "iris"
+  },
+  {
+    "name": "ITK",
+    "slug": "itk"
+  },
+  {
+    "name": "Java",
+    "slug": "java"
+  },
+  {
+    "name": "JavaScript",
+    "slug": "javascript"
+  },
+  {
+    "name": "JAX",
+    "slug": "jax"
+  },
+  {
+    "name": "Jenkins",
+    "slug": "jenkins"
+  },
+  {
+    "name": "Jest",
+    "slug": "jest"
+  },
+  {
+    "name": "Julia",
+    "slug": "julia"
+  },
+  {
+    "name": "Jupyter",
+    "slug": "jupyter"
+  },
+  {
+    "name": "Jupyter Book",
+    "slug": "jupyter-book"
+  },
+  {
+    "name": "JupyterHub",
+    "slug": "jupyterhub"
+  },
+  {
+    "name": "JupyterLab",
+    "slug": "jupyterlab"
+  },
+  {
+    "name": "Kallisto",
+    "slug": "kallisto"
+  },
+  {
+    "name": "Keras",
+    "slug": "keras"
+  },
+  {
+    "name": "Kernel Methods",
+    "slug": "kernel-methods"
+  },
+  {
+    "name": "Kibana",
+    "slug": "kibana"
+  },
+  {
+    "name": "Knowledge Distillation",
+    "slug": "knowledge-distillation"
+  },
+  {
+    "name": "Kokkos",
+    "slug": "kokkos"
+  },
+  {
+    "name": "KServe",
+    "slug": "kserve"
+  },
+  {
+    "name": "KubeFlow",
+    "slug": "kubeflow"
+  },
+  {
+    "name": "Kubernetes",
+    "slug": "kubernetes"
+  },
+  {
+    "name": "LAMMPS",
+    "slug": "lammps"
+  },
+  {
+    "name": "LangChain",
+    "slug": "langchain"
+  },
+  {
+    "name": "LangGraph",
+    "slug": "langgraph"
+  },
+  {
+    "name": "LaTeX",
+    "slug": "latex"
+  },
+  {
+    "name": "Leaflet",
+    "slug": "leaflet"
+  },
+  {
+    "name": "Linear Algebra",
+    "slug": "linear-algebra"
+  },
+  {
+    "name": "Linting & Static Analysis",
+    "slug": "linting-static-analysis"
+  },
+  {
+    "name": "Linux Systems Administration",
+    "slug": "linux-sysadmin"
+  },
+  {
+    "name": "LiteLLM",
+    "slug": "litellm"
+  },
+  {
+    "name": "llama.cpp",
+    "slug": "llama-cpp"
+  },
+  {
+    "name": "LlamaIndex",
+    "slug": "llamaindex"
+  },
+  {
+    "name": "Load Testing",
+    "slug": "load-testing"
+  },
+  {
+    "name": "LoRA (Low-Rank Adaptation)",
+    "slug": "lora"
+  },
+  {
+    "name": "Machine Learning",
+    "slug": "machine-learning"
+  },
+  {
+    "name": "Markov Chain Monte Carlo (MCMC)",
+    "slug": "mcmc"
+  },
+  {
+    "name": "MATLAB",
+    "slug": "matlab"
+  },
+  {
+    "name": "matplotlib",
+    "slug": "matplotlib"
+  },
+  {
+    "name": "Membership Inference Attacks",
+    "slug": "membership-inference"
+  },
+  {
+    "name": "Mentoring",
+    "slug": "mentoring"
+  },
+  {
+    "name": "Meta-Learning",
+    "slug": "meta-learning"
+  },
+  {
+    "name": "Metaflow",
+    "slug": "metaflow"
+  },
+  {
+    "name": "Microservices",
+    "slug": "microservices"
+  },
+  {
+    "name": "Microsoft Azure",
+    "slug": "azure"
+  },
+  {
+    "name": "Milvus",
+    "slug": "milvus"
+  },
+  {
+    "name": "MkDocs",
+    "slug": "mkdocs"
+  },
+  {
+    "name": "MLflow",
+    "slug": "mlflow"
+  },
+  {
+    "name": "MMDetection",
+    "slug": "mmdetection"
+  },
+  {
+    "name": "Mobile Development",
+    "slug": "mobile-development"
+  },
+  {
+    "name": "Model Cards",
+    "slug": "model-cards"
+  },
+  {
+    "name": "Model Compression",
+    "slug": "model-compression"
+  },
+  {
+    "name": "Model Evaluation",
+    "slug": "model-evaluation"
+  },
+  {
+    "name": "Molecular Dynamics",
+    "slug": "molecular-dynamics-skill"
+  },
+  {
+    "name": "MongoDB",
+    "slug": "mongodb"
+  },
+  {
+    "name": "Monte Carlo Methods",
+    "slug": "monte-carlo-methods"
+  },
+  {
+    "name": "MoveIt",
+    "slug": "moveit"
+  },
+  {
+    "name": "MPI",
+    "slug": "mpi"
+  },
+  {
+    "name": "Multi-Modal Learning",
+    "slug": "multi-modal-learning"
+  },
+  {
+    "name": "Multi-Task Learning",
+    "slug": "multi-task-learning"
+  },
+  {
+    "name": "Mutation Testing",
+    "slug": "mutation-testing"
+  },
+  {
+    "name": "Mypy / Type Checking",
+    "slug": "type-checking"
+  },
+  {
+    "name": "MySQL",
+    "slug": "mysql"
+  },
+  {
+    "name": "NAMD",
+    "slug": "namd"
+  },
+  {
+    "name": "Named Entity Recognition (NER)",
+    "slug": "ner"
+  },
+  {
+    "name": "napari",
+    "slug": "napari"
+  },
+  {
+    "name": "Natural Language Processing (NLP)",
+    "slug": "nlp"
+  },
+  {
+    "name": "NCO (NetCDF Operators)",
+    "slug": "nco"
+  },
+  {
+    "name": "NetCDF",
+    "slug": "netcdf"
+  },
+  {
+    "name": "Network Administration",
+    "slug": "network-administration"
+  },
+  {
+    "name": "Neural Architecture Search (NAS)",
+    "slug": "nas"
+  },
+  {
+    "name": "Next.js",
+    "slug": "nextjs"
+  },
+  {
+    "name": "Nextflow",
+    "slug": "nextflow"
+  },
+  {
+    "name": "nibabel",
+    "slug": "nibabel"
+  },
+  {
+    "name": "nipype",
+    "slug": "nipype"
+  },
+  {
+    "name": "Nix",
+    "slug": "nix"
+  },
+  {
+    "name": "NLTK",
+    "slug": "nltk"
+  },
+  {
+    "name": "Node.js",
+    "slug": "nodejs"
+  },
+  {
+    "name": "Numerical Methods",
+    "slug": "numerical-methods"
+  },
+  {
+    "name": "NumPy",
+    "slug": "numpy"
+  },
+  {
+    "name": "NVIDIA Triton Inference Server",
+    "slug": "nvidia-triton"
+  },
+  {
+    "name": "NWChem",
+    "slug": "nwchem"
+  },
+  {
+    "name": "Object Detection",
+    "slug": "object-detection"
+  },
+  {
+    "name": "Object Tracking",
+    "slug": "object-tracking"
+  },
+  {
+    "name": "Observable",
+    "slug": "observable"
+  },
+  {
+    "name": "Ollama",
+    "slug": "ollama"
+  },
+  {
+    "name": "ONNX",
+    "slug": "onnx"
+  },
+  {
+    "name": "Open Source Community",
+    "slug": "open-source-community"
+  },
+  {
+    "name": "Open Source Maintenance",
+    "slug": "open-source-maintenance"
+  },
+  {
+    "name": "OpenACC",
+    "slug": "openacc"
+  },
+  {
+    "name": "OpenAPI / Swagger",
+    "slug": "openapi"
+  },
+  {
+    "name": "OpenCL",
+    "slug": "opencl"
+  },
+  {
+    "name": "OpenCV",
+    "slug": "opencv"
+  },
+  {
+    "name": "OpenFOAM",
+    "slug": "openfoam"
+  },
+  {
+    "name": "OpenMM",
+    "slug": "openmm"
+  },
+  {
+    "name": "OpenMP",
+    "slug": "openmp"
+  },
+  {
+    "name": "OpenStack",
+    "slug": "openstack"
+  },
+  {
+    "name": "Operations Research",
+    "slug": "operations-research-skill"
+  },
+  {
+    "name": "Optimization",
+    "slug": "optimization-skill"
+  },
+  {
+    "name": "Optuna",
+    "slug": "optuna"
+  },
+  {
+    "name": "Orca",
+    "slug": "orca"
+  },
+  {
+    "name": "Packaging",
+    "slug": "packaging"
+  },
+  {
+    "name": "Pair Programming",
+    "slug": "pair-programming"
+  },
+  {
+    "name": "Pandas",
+    "slug": "pandas"
+  },
+  {
+    "name": "Pangeo",
+    "slug": "pangeo"
+  },
+  {
+    "name": "Parallel Computing",
+    "slug": "parallel-computing-skill"
+  },
+  {
+    "name": "Parallel Storage Systems (Lustre/GPFS/BeeGFS)",
+    "slug": "parallel-storage-systems"
+  },
+  {
+    "name": "ParaView",
+    "slug": "paraview"
+  },
+  {
+    "name": "Parquet",
+    "slug": "parquet"
+  },
+  {
+    "name": "Pegasus",
+    "slug": "pegasus"
+  },
+  {
+    "name": "Penetration Testing",
+    "slug": "penetration-testing"
+  },
+  {
+    "name": "Performance Profiling",
+    "slug": "performance-profiling"
+  },
+  {
+    "name": "Performance Testing",
+    "slug": "performance-testing"
+  },
+  {
+    "name": "Pinecone",
+    "slug": "pinecone"
+  },
+  {
+    "name": "pip",
+    "slug": "pip"
+  },
+  {
+    "name": "pixi",
+    "slug": "pixi"
+  },
+  {
+    "name": "Platform Engineering",
+    "slug": "platform-engineering"
+  },
+  {
+    "name": "PLINK",
+    "slug": "plink"
+  },
+  {
+    "name": "plotly",
+    "slug": "plotly"
+  },
+  {
+    "name": "Polars",
+    "slug": "polars"
+  },
+  {
+    "name": "Pose Estimation",
+    "slug": "pose-estimation"
+  },
+  {
+    "name": "PostgreSQL",
+    "slug": "postgresql"
+  },
+  {
+    "name": "Power BI",
+    "slug": "power-bi"
+  },
+  {
+    "name": "Prefect",
+    "slug": "prefect"
+  },
+  {
+    "name": "Project Management",
+    "slug": "project-management"
+  },
+  {
+    "name": "Prompt Engineering",
+    "slug": "prompt-engineering"
+  },
+  {
+    "name": "Property-Based Testing",
+    "slug": "property-based-testing"
+  },
+  {
+    "name": "Proteomics Pipelines",
+    "slug": "proteomics-pipelines"
+  },
+  {
+    "name": "Prototyping",
+    "slug": "prototyping"
+  },
+  {
+    "name": "Psi4",
+    "slug": "psi4"
+  },
+  {
+    "name": "pymatgen",
+    "slug": "pymatgen"
+  },
+  {
+    "name": "PyMC",
+    "slug": "pymc"
+  },
+  {
+    "name": "pytest",
+    "slug": "pytest"
+  },
+  {
+    "name": "Python",
+    "slug": "python"
+  },
+  {
+    "name": "PyTorch",
+    "slug": "pytorch"
+  },
+  {
+    "name": "PyTorch Lightning",
+    "slug": "pytorch-lightning"
+  },
+  {
+    "name": "QGIS",
+    "slug": "qgis"
+  },
+  {
+    "name": "Quantization",
+    "slug": "quantization"
+  },
+  {
+    "name": "Quantum ESPRESSO",
+    "slug": "quantum-espresso"
+  },
+  {
+    "name": "Quarto",
+    "slug": "quarto"
+  },
+  {
+    "name": "R",
+    "slug": "r"
+  },
+  {
+    "name": "R Markdown",
+    "slug": "r-markdown"
+  },
+  {
+    "name": "Random Forests",
+    "slug": "random-forests"
+  },
+  {
+    "name": "Ray",
+    "slug": "ray"
+  },
+  {
+    "name": "React",
+    "slug": "react"
+  },
+  {
+    "name": "Read the Docs",
+    "slug": "read-the-docs"
+  },
+  {
+    "name": "Recommendation Systems",
+    "slug": "recommendation-systems"
+  },
+  {
+    "name": "Recurrent Neural Networks (RNN/LSTM)",
+    "slug": "rnn-lstm"
+  },
+  {
+    "name": "REDCap",
+    "slug": "redcap"
+  },
+  {
+    "name": "Redis",
+    "slug": "redis"
+  },
+  {
+    "name": "Refactoring",
+    "slug": "refactoring"
+  },
+  {
+    "name": "Reinforcement Learning",
+    "slug": "reinforcement-learning-skill"
+  },
+  {
+    "name": "Reinforcement Learning from Human Feedback (RLHF)",
+    "slug": "rlhf"
+  },
+  {
+    "name": "Release Engineering",
+    "slug": "release-engineering"
+  },
+  {
+    "name": "Reproducible Research",
+    "slug": "reproducible-research"
+  },
+  {
+    "name": "REST APIs",
+    "slug": "rest-apis"
+  },
+  {
+    "name": "Retrieval-Augmented Generation (RAG)",
+    "slug": "rag"
+  },
+  {
+    "name": "ROCm / HIP",
+    "slug": "rocm-hip"
+  },
+  {
+    "name": "ROOT (CERN)",
+    "slug": "root-cern"
+  },
+  {
+    "name": "ROS (Robot Operating System)",
+    "slug": "ros"
+  },
+  {
+    "name": "Rosetta",
+    "slug": "rosetta"
+  },
+  {
+    "name": "RStudio",
+    "slug": "rstudio"
+  },
+  {
+    "name": "Rust",
+    "slug": "rust"
+  },
+  {
+    "name": "Salmon",
+    "slug": "salmon"
+  },
+  {
+    "name": "SAM (Segment Anything)",
+    "slug": "sam-segment-anything"
+  },
+  {
+    "name": "Samtools / Bcftools",
+    "slug": "samtools"
+  },
+  {
+    "name": "SAS",
+    "slug": "sas"
+  },
+  {
+    "name": "Scanpy",
+    "slug": "scanpy"
+  },
+  {
+    "name": "Scientific Visualization",
+    "slug": "scientific-visualization"
+  },
+  {
+    "name": "scikit-learn",
+    "slug": "scikit-learn"
+  },
+  {
+    "name": "SciPy",
+    "slug": "scipy"
+  },
+  {
+    "name": "Scrum",
+    "slug": "scrum"
+  },
+  {
+    "name": "Security Engineering",
+    "slug": "security-engineering"
+  },
+  {
+    "name": "Selenium",
+    "slug": "selenium"
+  },
+  {
+    "name": "Self-Supervised Learning",
+    "slug": "self-supervised-learning"
+  },
+  {
+    "name": "Semantic Segmentation",
+    "slug": "semantic-segmentation"
+  },
+  {
+    "name": "Semantic Versioning",
+    "slug": "semantic-versioning"
+  },
+  {
+    "name": "Sentence Transformers",
+    "slug": "sentence-transformers"
+  },
+  {
+    "name": "Sentiment Analysis",
+    "slug": "sentiment-analysis"
+  },
+  {
+    "name": "Serverless Architecture",
+    "slug": "serverless"
+  },
+  {
+    "name": "Seurat",
+    "slug": "seurat"
+  },
+  {
+    "name": "Singularity / Apptainer",
+    "slug": "singularity"
+  },
+  {
+    "name": "Site Reliability Engineering (SRE)",
+    "slug": "sre"
+  },
+  {
+    "name": "SLAM (Simultaneous Localization and Mapping)",
+    "slug": "slam"
+  },
+  {
+    "name": "SLURM",
+    "slug": "slurm"
+  },
+  {
+    "name": "Snakemake",
+    "slug": "snakemake"
+  },
+  {
+    "name": "Snowflake",
+    "slug": "snowflake"
+  },
+  {
+    "name": "Software Architecture",
+    "slug": "software-architecture"
+  },
+  {
+    "name": "Software Packaging",
+    "slug": "software-packaging"
+  },
+  {
+    "name": "Software Sustainability",
+    "slug": "software-sustainability"
+  },
+  {
+    "name": "Solutions Architecture",
+    "slug": "solutions-architecture"
+  },
+  {
+    "name": "Spack",
+    "slug": "spack"
+  },
+  {
+    "name": "spaCy",
+    "slug": "spacy"
+  },
+  {
+    "name": "Spatial Statistics",
+    "slug": "spatial-statistics"
+  },
+  {
+    "name": "Speech Recognition",
+    "slug": "speech-recognition"
+  },
+  {
+    "name": "Speech Synthesis (TTS)",
+    "slug": "tts"
+  },
+  {
+    "name": "Sphinx",
+    "slug": "sphinx"
+  },
+  {
+    "name": "Stable Diffusion",
+    "slug": "stable-diffusion"
+  },
+  {
+    "name": "Stan",
+    "slug": "stan"
+  },
+  {
+    "name": "STAR (RNA-Seq Aligner)",
+    "slug": "star-aligner"
+  },
+  {
+    "name": "Statistical Modeling",
+    "slug": "statistical-modeling"
+  },
+  {
+    "name": "Streaming Data",
+    "slug": "streaming-data"
+  },
+  {
+    "name": "Subversion (SVN)",
+    "slug": "svn"
+  },
+  {
+    "name": "Supervised Learning",
+    "slug": "supervised-learning"
+  },
+  {
+    "name": "Survival Analysis",
+    "slug": "survival-analysis"
+  },
+  {
+    "name": "SYCL",
+    "slug": "sycl"
+  },
+  {
+    "name": "Synthetic Data Generation",
+    "slug": "synthetic-data-generation"
+  },
+  {
+    "name": "System Design",
+    "slug": "system-design"
+  },
+  {
+    "name": "Tableau",
+    "slug": "tableau"
+  },
+  {
+    "name": "Tailwind CSS",
+    "slug": "tailwind-css"
+  },
+  {
+    "name": "Teaching",
+    "slug": "teaching"
+  },
+  {
+    "name": "Technical Leadership",
+    "slug": "technical-leadership"
+  },
+  {
+    "name": "Technical Writing",
+    "slug": "technical-writing"
+  },
+  {
+    "name": "TensorFlow",
+    "slug": "tensorflow"
+  },
+  {
+    "name": "TensorRT",
+    "slug": "tensorrt"
+  },
+  {
+    "name": "Terraform",
+    "slug": "terraform"
+  },
+  {
+    "name": "Test-Driven Development (TDD)",
+    "slug": "tdd"
+  },
+  {
+    "name": "Testing & Test Automation",
+    "slug": "testing"
+  },
+  {
+    "name": "Threat Modeling",
+    "slug": "threat-modeling"
+  },
+  {
+    "name": "Three.js",
+    "slug": "threejs"
+  },
+  {
+    "name": "Time Series Analysis",
+    "slug": "time-series-analysis-skill"
+  },
+  {
+    "name": "Time Series Forecasting",
+    "slug": "time-series-forecasting"
+  },
+  {
+    "name": "TIMM (PyTorch Image Models)",
+    "slug": "timm"
+  },
+  {
+    "name": "Tokenization",
+    "slug": "tokenization"
+  },
+  {
+    "name": "Topic Modeling",
+    "slug": "topic-modeling"
+  },
+  {
+    "name": "TorchVision",
+    "slug": "torchvision"
+  },
+  {
+    "name": "Transfer Learning",
+    "slug": "transfer-learning"
+  },
+  {
+    "name": "Transformers",
+    "slug": "transformers"
+  },
+  {
+    "name": "TypeScript",
+    "slug": "typescript"
+  },
+  {
+    "name": "UI/UX Design",
+    "slug": "ui-ux-design"
+  },
+  {
+    "name": "Unit Testing",
+    "slug": "unit-testing"
+  },
+  {
+    "name": "Unsupervised Learning",
+    "slug": "unsupervised-learning"
+  },
+  {
+    "name": "User Experience (UX) Research",
+    "slug": "ux-research"
+  },
+  {
+    "name": "User Interface (UI) Design",
+    "slug": "ui-design"
+  },
+  {
+    "name": "Variational Autoencoders (VAE)",
+    "slug": "vae"
+  },
+  {
+    "name": "VASP",
+    "slug": "vasp"
+  },
+  {
+    "name": "Vector Databases",
+    "slug": "vector-databases"
+  },
+  {
+    "name": "Vectorization (SIMD)",
+    "slug": "vectorization"
+  },
+  {
+    "name": "Vega-Lite / Altair",
+    "slug": "vega-altair"
+  },
+  {
+    "name": "VisIt",
+    "slug": "visit"
+  },
+  {
+    "name": "Visual Question Answering",
+    "slug": "vqa"
+  },
+  {
+    "name": "Vitest",
+    "slug": "vitest"
+  },
+  {
+    "name": "vLLM",
+    "slug": "vllm"
+  },
+  {
+    "name": "VTK",
+    "slug": "vtk"
+  },
+  {
+    "name": "Vue",
+    "slug": "vue"
+  },
+  {
+    "name": "Weaviate",
+    "slug": "weaviate"
+  },
+  {
+    "name": "Web Accessibility (a11y)",
+    "slug": "web-accessibility"
+  },
+  {
+    "name": "Web Development",
+    "slug": "web-development"
+  },
+  {
+    "name": "Weights & Biases",
+    "slug": "weights-biases"
+  },
+  {
+    "name": "Whisper",
+    "slug": "whisper"
+  },
+  {
+    "name": "Word Embeddings",
+    "slug": "word-embeddings"
+  },
+  {
+    "name": "Workflow Management",
+    "slug": "workflow-management"
+  },
+  {
+    "name": "WRF (Weather Research and Forecasting)",
+    "slug": "wrf"
+  },
+  {
+    "name": "xarray",
+    "slug": "xarray"
+  },
+  {
+    "name": "YOLO",
+    "slug": "yolo"
+  },
+  {
+    "name": "Zarr",
+    "slug": "zarr"
+  },
+  {
+    "name": "Zero-Shot Learning",
+    "slug": "zero-shot-learning"
+  }
 ]
