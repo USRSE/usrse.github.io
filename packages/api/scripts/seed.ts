@@ -36,7 +36,11 @@ function loadDevVar(name: string): string | undefined {
     const contents = readFileSync(resolve(__dirname, "..", ".dev.vars"), "utf8");
     for (const line of contents.split(/\r?\n/)) {
       const m = line.match(/^([A-Z_][A-Z0-9_]*)=(.*)$/);
-      if (m && m[1] === name) return m[2].replace(/^"(.*)"$/, "$1");
+      if (m && m[1] === name) {
+        // Strip either single or double surrounding quotes — .dev.vars
+        // uses single quotes for DATABASE_URL. Mirrors apply-migration.ts.
+        return m[2].replace(/^"(.*)"$/, "$1").replace(/^'(.*)'$/, "$1");
+      }
     }
   } catch {
     /* missing .dev.vars in CI is fine */

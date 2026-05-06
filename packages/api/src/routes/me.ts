@@ -3,7 +3,15 @@ import { and, eq, isNull } from "drizzle-orm";
 import { z } from "zod";
 import { zValidator } from "@hono/zod-validator";
 import { createDb } from "../db";
-import { countries, profiles, users } from "../db/schema";
+import {
+  countries,
+  disciplines,
+  profiles,
+  skills,
+  userDisciplines,
+  userSkills,
+  users,
+} from "../db/schema";
 import { loadMemberDossier } from "../lib/dossier";
 import { buildProfileSlug } from "../lib/member-id";
 import { requireAuth } from "../middleware/auth";
@@ -440,6 +448,306 @@ meRoute.delete("/profile/photo", async (c) => {
     photoUrl: null,
     photoStorageKey: null,
   });
+
+  const updated = await loadMemberDossier(db, user.id);
+  if (!updated) return c.json({ ok: false, error: "internal" }, 500);
+  return c.json({ ok: true, user: updated });
+});
+
+// ── Vocab edit (disciplines + skills) ────────────────────────────────
+//
+// Owners curate their Craft chips by linking to existing approved
+// vocab rows or proposing new ones. Proposed rows are inserted with
+// status=pending and surface in the dossier with a "pending" mark
+// for the owner; admin approval flips them to status=approved later.
+//
+// Disciplines and skills share identical mechanics — only the vocab
+// + join tables differ — so the resolver helper is generic over the
+// table and the route bodies are short.
+
+const vocabAddSchema = z
+  .object({
+    id: z.uuid().optional(),
+    name: z.string().min(1).max(80).optional(),
+  })
+  .strict()
+  .refine((v) => Boolean(v.id) !== Boolean(v.name), {
+    message: "Provide exactly one of `id` or `name`.",
+  });
+
+type VocabAddInput = z.infer<typeof vocabAddSchema>;
+
+interface VocabResolved {
+  id: string;
+  name: string;
+  slug: string;
+  status: "pending" | "approved";
+}
+
+/**
+ * Slugify a free-text name into the kebab-case form used by the
+ * vocab tables. Strips anything outside [a-z0-9], collapses runs
+ * of separators, and caps at 80 chars to fit the unique index.
+ */
+function slugify(name: string): string {
+  return name
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
+}
+
+/**
+ * Resolve an "existing or proposed" vocab pick into a concrete row.
+ *
+ * - When `id` is supplied, validate it exists and is approved.
+ * - When `name` is supplied, slugify and look up by slug. If a row
+ *   with that slug already exists (any status), reuse it — this
+ *   auto-deduplicates simultaneous proposals of the same term.
+ *   Otherwise insert a new pending row attributed to the suggester.
+ */
+async function resolveVocabPick(
+  db: ReturnType<typeof createDb>,
+  table: typeof disciplines | typeof skills,
+  suggesterId: string,
+  input: VocabAddInput
+): Promise<
+  | { ok: true; row: VocabResolved }
+  | { ok: false; status: 400 | 404; message: string }
+> {
+  if (input.id) {
+    const rows = await db
+      .select({
+        id: table.id,
+        name: table.name,
+        slug: table.slug,
+        status: table.status,
+      })
+      .from(table)
+      .where(eq(table.id, input.id))
+      .limit(1);
+    const row = rows[0];
+    if (!row) {
+      return { ok: false, status: 404, message: "Vocab id not found." };
+    }
+    if (row.status !== "approved") {
+      return {
+        ok: false,
+        status: 400,
+        message: "Vocab id refers to a pending row — propose by name instead.",
+      };
+    }
+    return { ok: true, row: row as VocabResolved };
+  }
+
+  const name = input.name!.trim();
+  if (!name) return { ok: false, status: 400, message: "Name is empty." };
+  const slug = slugify(name);
+  if (!slug) {
+    return {
+      ok: false,
+      status: 400,
+      message: "Name has no slug-safe characters.",
+    };
+  }
+
+  // Reuse an existing slug if present — handles two users proposing
+  // the same term concurrently and avoids unique-constraint races.
+  const existing = await db
+    .select({
+      id: table.id,
+      name: table.name,
+      slug: table.slug,
+      status: table.status,
+    })
+    .from(table)
+    .where(eq(table.slug, slug))
+    .limit(1);
+  if (existing[0]) {
+    return { ok: true, row: existing[0] as VocabResolved };
+  }
+
+  const inserted = await db
+    .insert(table)
+    .values({
+      name,
+      slug,
+      status: "pending",
+      suggestedBy: suggesterId,
+    })
+    .returning({
+      id: table.id,
+      name: table.name,
+      slug: table.slug,
+      status: table.status,
+    });
+  return { ok: true, row: inserted[0] as VocabResolved };
+}
+
+// ── Disciplines ───────────────────────────────────────────────────────
+
+meRoute.post(
+  "/disciplines",
+  zValidator("json", vocabAddSchema, (result, c) => {
+    if (!result.success) {
+      return c.json(
+        {
+          ok: false,
+          error: "invalid_input",
+          issues: result.error.issues.map((i) => ({
+            path: i.path,
+            message: i.message,
+          })),
+        },
+        400
+      );
+    }
+  }),
+  async (c) => {
+    const workosId = c.get("workosUserId");
+    const db = createDb(c.env.DATABASE_URL);
+    const input = c.req.valid("json") as VocabAddInput;
+
+    const user = await db.query.users.findFirst({
+      where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
+      columns: { id: true },
+    });
+    if (!user) {
+      return c.json(
+        { ok: false, error: "user_pending", message: "Account not provisioned." },
+        404
+      );
+    }
+
+    const resolved = await resolveVocabPick(db, disciplines, user.id, input);
+    if (!resolved.ok) {
+      return c.json(
+        { ok: false, error: "invalid_input", message: resolved.message },
+        resolved.status
+      );
+    }
+
+    // Idempotent link — primary key on (userId, disciplineId) means
+    // re-adding is a silent no-op rather than a 409.
+    await db
+      .insert(userDisciplines)
+      .values({ userId: user.id, disciplineId: resolved.row.id })
+      .onConflictDoNothing();
+
+    const updated = await loadMemberDossier(db, user.id);
+    if (!updated) return c.json({ ok: false, error: "internal" }, 500);
+    return c.json({ ok: true, user: updated, discipline: resolved.row });
+  }
+);
+
+meRoute.delete("/disciplines/:id", async (c) => {
+  const workosId = c.get("workosUserId");
+  const id = c.req.param("id");
+  if (!/^[0-9a-f-]{36}$/i.test(id)) {
+    return c.json({ ok: false, error: "invalid_input" }, 400);
+  }
+  const db = createDb(c.env.DATABASE_URL);
+  const user = await db.query.users.findFirst({
+    where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
+    columns: { id: true },
+  });
+  if (!user) {
+    return c.json(
+      { ok: false, error: "user_pending", message: "Account not provisioned." },
+      404
+    );
+  }
+
+  await db
+    .delete(userDisciplines)
+    .where(
+      and(
+        eq(userDisciplines.userId, user.id),
+        eq(userDisciplines.disciplineId, id)
+      )
+    );
+
+  const updated = await loadMemberDossier(db, user.id);
+  if (!updated) return c.json({ ok: false, error: "internal" }, 500);
+  return c.json({ ok: true, user: updated });
+});
+
+// ── Skills ────────────────────────────────────────────────────────────
+
+meRoute.post(
+  "/skills",
+  zValidator("json", vocabAddSchema, (result, c) => {
+    if (!result.success) {
+      return c.json(
+        {
+          ok: false,
+          error: "invalid_input",
+          issues: result.error.issues.map((i) => ({
+            path: i.path,
+            message: i.message,
+          })),
+        },
+        400
+      );
+    }
+  }),
+  async (c) => {
+    const workosId = c.get("workosUserId");
+    const db = createDb(c.env.DATABASE_URL);
+    const input = c.req.valid("json") as VocabAddInput;
+
+    const user = await db.query.users.findFirst({
+      where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
+      columns: { id: true },
+    });
+    if (!user) {
+      return c.json(
+        { ok: false, error: "user_pending", message: "Account not provisioned." },
+        404
+      );
+    }
+
+    const resolved = await resolveVocabPick(db, skills, user.id, input);
+    if (!resolved.ok) {
+      return c.json(
+        { ok: false, error: "invalid_input", message: resolved.message },
+        resolved.status
+      );
+    }
+
+    await db
+      .insert(userSkills)
+      .values({ userId: user.id, skillId: resolved.row.id })
+      .onConflictDoNothing();
+
+    const updated = await loadMemberDossier(db, user.id);
+    if (!updated) return c.json({ ok: false, error: "internal" }, 500);
+    return c.json({ ok: true, user: updated, skill: resolved.row });
+  }
+);
+
+meRoute.delete("/skills/:id", async (c) => {
+  const workosId = c.get("workosUserId");
+  const id = c.req.param("id");
+  if (!/^[0-9a-f-]{36}$/i.test(id)) {
+    return c.json({ ok: false, error: "invalid_input" }, 400);
+  }
+  const db = createDb(c.env.DATABASE_URL);
+  const user = await db.query.users.findFirst({
+    where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
+    columns: { id: true },
+  });
+  if (!user) {
+    return c.json(
+      { ok: false, error: "user_pending", message: "Account not provisioned." },
+      404
+    );
+  }
+
+  await db
+    .delete(userSkills)
+    .where(and(eq(userSkills.userId, user.id), eq(userSkills.skillId, id)));
 
   const updated = await loadMemberDossier(db, user.id);
   if (!updated) return c.json({ ok: false, error: "internal" }, 500);

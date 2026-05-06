@@ -78,8 +78,11 @@ export interface MemberDossier {
   experiences: ExperienceRow[];
   education: EducationRow[];
   certifications: CertificationRow[];
-  skills: { name: string; slug: string }[];
-  disciplines: { name: string }[];
+  // id + status surface so the dossier editor can call
+  // DELETE /me/{disciplines,skills}/:id and render pending chips.
+  // Public consumers can still ignore the extra fields.
+  skills: { id: string; name: string; slug: string; status: string }[];
+  disciplines: { id: string; name: string; slug: string; status: string }[];
   engagementTypes: { label: string }[];
   conferences: ConferenceRow[];
   leadership: LeadershipRow[];
@@ -251,13 +254,23 @@ export async function loadMemberDossier(
       )
       .orderBy(asc(certifications.sortOrder)),
     db
-      .select({ name: skills.name, slug: skills.slug })
+      .select({
+        id: skills.id,
+        name: skills.name,
+        slug: skills.slug,
+        status: skills.status,
+      })
       .from(userSkills)
       .innerJoin(skills, eq(userSkills.skillId, skills.id))
       .where(eq(userSkills.userId, u.id))
       .orderBy(asc(skills.name)),
     db
-      .select({ name: disciplines.name })
+      .select({
+        id: disciplines.id,
+        name: disciplines.name,
+        slug: disciplines.slug,
+        status: disciplines.status,
+      })
       .from(userDisciplines)
       .innerJoin(disciplines, eq(userDisciplines.disciplineId, disciplines.id))
       .where(eq(userDisciplines.userId, u.id))
