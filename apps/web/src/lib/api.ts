@@ -3,9 +3,16 @@ import { useCallback, useRef } from "react";
 
 // Worker is hit cross-origin from the SPA; the worker's CORS middleware
 // allows any origin, and we authenticate with a Bearer token rather than
-// cookies, so no preflight surprises. The URL is already public via
-// _redirects, so hardcoding it here doesn't widen the attack surface.
-const API_BASE_URL = "https://us-rse-api.leadership-28b.workers.dev";
+// cookies, so no preflight surprises.
+//
+// Defaults to the deployed worker so production and previews work
+// without any env wiring. Override locally with VITE_API_BASE_URL in
+// .env.local (e.g. http://localhost:8787 to point at `wrangler dev`)
+// when iterating on backend changes — otherwise the local SPA hits
+// the production worker and you'd ship-debug instead.
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ??
+  "https://us-rse-api.leadership-28b.workers.dev";
 
 /**
  * Returns a stable fetch function that targets the @us-rse/api Worker
