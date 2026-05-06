@@ -129,6 +129,33 @@ export const disciplines = pgTable(
   ]
 );
 
+// Programming languages used in research software. Distinct axis from
+// `skills` because (a) most members have a small finite set rather
+// than a sprawling tool inventory and (b) "I write Fortran" is a
+// different kind of self-description than "I use Snakemake." Mirror
+// shape with disciplines/skills so the editor and resolver helpers
+// stay generic.
+export const languages = pgTable(
+  "languages",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    name: text("name").notNull().unique(),
+    slug: text("slug").notNull().unique(),
+    status: vocabStatus("status").notNull().default("pending"),
+    suggestedBy: uuid("suggested_by").references((): any => users.id, {
+      onDelete: "set null",
+    }),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [
+    index("languages_status_approved_idx")
+      .on(t.status)
+      .where(sql`status = 'approved'`),
+  ]
+);
+
 export const institutions = pgTable(
   "institutions",
   {

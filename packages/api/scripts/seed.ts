@@ -23,6 +23,7 @@ import {
   engagementTypes,
   eventCommitteeAreas,
   eventSessionTypes,
+  languages,
   leadershipPositions,
   pronouns,
   skills,
@@ -208,6 +209,7 @@ const eventSessionTypesSeed = [
 type CountrySeed = { isoAlpha2: string; isoAlpha3: string; name: string };
 type SkillSeed = { name: string; slug: string };
 type DisciplineSeed = { name: string; slug: string };
+type LanguageSeed = { name: string; slug: string };
 
 async function seed() {
   console.log("Seeding pronouns…");
@@ -262,6 +264,13 @@ async function seed() {
   );
   await db.insert(disciplines).values(disciplinesData).onConflictDoNothing();
 
+  console.log("Seeding languages…");
+  const languagesData = loadJson<LanguageSeed[]>("languages.json").map((l) => ({
+    ...l,
+    status: "approved" as const,
+  }));
+  await db.insert(languages).values(languagesData).onConflictDoNothing();
+
   console.log("\nDone. Seed list sizes:");
   console.log(`  pronouns:                 ${pronounsSeed.length}`);
   console.log(`  degree_types:             ${degreeTypesSeed.length}`);
@@ -277,6 +286,7 @@ async function seed() {
   console.log(`  countries:                ${countriesData.length}`);
   console.log(`  skills:                   ${skillsData.length}`);
   console.log(`  disciplines:              ${disciplinesData.length}`);
+  console.log(`  languages:                ${languagesData.length}`);
 }
 
 seed().catch((err) => {

@@ -1,7 +1,7 @@
 import { relations } from "drizzle-orm";
 import { index, pgTable, primaryKey, uuid } from "drizzle-orm/pg-core";
 import { users } from "./users";
-import { disciplines, engagementTypes, skills } from "./vocab";
+import { disciplines, engagementTypes, languages, skills } from "./vocab";
 
 export const userSkills = pgTable(
   "user_skills",
@@ -27,6 +27,19 @@ export const userDisciplines = pgTable(
       .references(() => disciplines.id, { onDelete: "cascade" }),
   },
   (t) => [primaryKey({ columns: [t.userId, t.disciplineId] })]
+);
+
+export const userLanguages = pgTable(
+  "user_languages",
+  {
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    languageId: uuid("language_id")
+      .notNull()
+      .references(() => languages.id, { onDelete: "cascade" }),
+  },
+  (t) => [primaryKey({ columns: [t.userId, t.languageId] })]
 );
 
 export const userEngagementTypes = pgTable(
@@ -66,6 +79,14 @@ export const userDisciplinesRelations = relations(
     }),
   })
 );
+
+export const userLanguagesRelations = relations(userLanguages, ({ one }) => ({
+  user: one(users, { fields: [userLanguages.userId], references: [users.id] }),
+  language: one(languages, {
+    fields: [userLanguages.languageId],
+    references: [languages.id],
+  }),
+}));
 
 export const userEngagementTypesRelations = relations(
   userEngagementTypes,
