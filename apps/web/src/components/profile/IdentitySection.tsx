@@ -1,7 +1,12 @@
 import { useState, type FormEvent } from "react";
+import { Link } from "react-router-dom";
 import { Portrait } from "./Portrait";
 import { SectionFrame, NotYetWritten } from "./SectionFrame";
 import { PhotoUploader } from "./PhotoUploader";
+import {
+  LocationCombobox,
+  type LocationValue,
+} from "./LocationCombobox";
 import { useApi } from "@/lib/api";
 import type { CurrentMember } from "@/hooks/useCurrentMember";
 
@@ -12,11 +17,39 @@ interface IdentitySectionProps {
   onSaved?: (next: CurrentMember) => void;
 }
 
-// Three-state visibility derived from the (isPublic, isDiscoverable)
-// pair on the profile. The form holds a single enum so the radio
-// group has a single source of truth; the API still receives two
-// booleans (mapped at submit time).
-type Visibility = "public" | "listed" | "hidden";
+// Visibility used to live as a fieldset inside this editor, but it
+// belongs with account-level decisions (it's about *who can see you*,
+// not what your bio says). The control now lives on /account; this
+// component shows a small read-only "current state" chip in the
+// editor frame so you don't lose context while editing your bio.
+type VisibilityState = "public" | "listed" | "hidden";
+
+function deriveVisibility(
+  isPublic: boolean,
+  isDiscoverable: boolean
+): VisibilityState {
+  if (isPublic) return "public";
+  if (isDiscoverable) return "listed";
+  return "hidden";
+}
+
+const VISIBILITY_LABEL: Record<VisibilityState, string> = {
+  public: "Public",
+  listed: "Listed (private)",
+  hidden: "Hidden",
+};
+
+const VISIBILITY_ACCENT_TEXT: Record<VisibilityState, string> = {
+  public: "text-teal-700",
+  listed: "text-purple-700",
+  hidden: "text-neutral-500",
+};
+
+const VISIBILITY_ACCENT_DOT: Record<VisibilityState, string> = {
+  public: "bg-teal-500",
+  listed: "bg-purple-500",
+  hidden: "bg-neutral-400",
+};
 
 interface IdentityField {
   displayName: string;
@@ -24,29 +57,9 @@ interface IdentityField {
   headline: string;
   bio: string;
   jobTitle: string;
-  region: string;
-  city: string;
-  publicLocation: string;
+  /** Structured location, owned by the LocationCombobox. */
+  location: LocationValue;
   showOnMap: boolean;
-  visibility: Visibility;
-}
-
-function visibilityFromProfile(
-  isPublic: boolean,
-  isDiscoverable: boolean
-): Visibility {
-  if (isPublic) return "public";
-  if (isDiscoverable) return "listed";
-  return "hidden";
-}
-
-function visibilityToFlags(v: Visibility): {
-  isPublic: boolean;
-  isDiscoverable: boolean;
-} {
-  if (v === "public") return { isPublic: true, isDiscoverable: false };
-  if (v === "listed") return { isPublic: false, isDiscoverable: true };
-  return { isPublic: false, isDiscoverable: false };
 }
 
 // Photo isn't a form field anymore — it has its own dedicated
@@ -61,14 +74,19 @@ function fieldsFromMember(member: CurrentMember): IdentityField {
     headline: p?.headline ?? "",
     bio: p?.bio ?? "",
     jobTitle: p?.jobTitle ?? "",
-    region: "",
-    city: "",
-    publicLocation: p?.publicLocation ?? "",
+    location: {
+      // Display the saved label as-is. Structured fields stay null
+      // until the user picks a fresh suggestion — we don't try to
+      // re-resolve coords on edit-open since the saved value is
+      // already authoritative.
+      display: p?.publicLocation ?? "",
+      countryIso2: null,
+      city: null,
+      region: null,
+      latitude: null,
+      longitude: null,
+    },
     showOnMap: p?.showOnMap ?? false,
-    visibility: visibilityFromProfile(
-      p?.isPublic ?? true,
-      p?.isDiscoverable ?? false
-    ),
   };
 }
 
@@ -231,7 +249,10 @@ function IdentityEditor({
     setError(null);
     setIssues([]);
 
-    const visibilityFlags = visibilityToFlags(fields.visibility);
+    const initialLocation = (member.profile?.publicLocation ?? "").trim();
+    const currentLocation = fields.location.display.trim();
+    const locationChanged = currentLocation !== initialLocation;
+
     const body: Record<string, unknown> = {
       displayName: fields.displayName.trim() || undefined,
       // Slug is server-derived from displayName + memberId; the
@@ -240,11 +261,24 @@ function IdentityEditor({
       headline: fields.headline.trim() || null,
       bio: fields.bio.trim() || null,
       jobTitle: fields.jobTitle.trim() || null,
-      publicLocation: fields.publicLocation.trim() || null,
       showOnMap: fields.showOnMap,
-      isPublic: visibilityFlags.isPublic,
-      isDiscoverable: visibilityFlags.isDiscoverable,
+      // Visibility (isPublic / isDiscoverable) is intentionally
+      // omitted — it lives in the account ledger now (/account#02).
+      // Sending it from this editor would let bio edits silently
+      // overwrite an account-level decision.
     };
+
+    // Only send location fields when the user actually edited them.
+    // If untouched, the existing publicLocation + coords on the DB
+    // are preserved automatically (omitted keys aren't written).
+    if (locationChanged) {
+      body.publicLocation = currentLocation || null;
+      body.city = fields.location.city;
+      body.region = fields.location.region;
+      body.countryIso2 = fields.location.countryIso2;
+      body.latitude = fields.location.latitude;
+      body.longitude = fields.location.longitude;
+    }
     Object.keys(body).forEach((k) => {
       if (body[k] === undefined) delete body[k];
     });
@@ -339,15 +373,13 @@ function IdentityEditor({
         <Field
           label="Public location"
           id="publicLocation"
-          hint="how location appears on your profile"
+          hint="city, region, or country — searchable, with coords on file"
         >
-          <input
+          <LocationCombobox
             id="publicLocation"
-            type="text"
-            value={fields.publicLocation}
-            onChange={(e) => set("publicLocation", e.target.value)}
-            className="editorial-input"
-            placeholder="Seattle, Washington"
+            value={fields.location}
+            onChange={(next) => set("location", next)}
+            placeholder="Seattle, Washington · Munich, Bavaria · Bogotá"
           />
         </Field>
       </div>
@@ -388,9 +420,11 @@ function IdentityEditor({
           <legend className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-400 mb-4">
             Visibility
           </legend>
-          <VisibilityRadio
-            value={fields.visibility}
-            onChange={(v) => set("visibility", v)}
+          <VisibilityRef
+            visibility={deriveVisibility(
+              member.profile?.isPublic ?? true,
+              member.profile?.isDiscoverable ?? false
+            )}
           />
           <div className="mt-6 pt-6 border-t border-neutral-100">
             <Toggle
@@ -475,121 +509,37 @@ function Field({
   );
 }
 
-// Three-up visibility radio. Renders as a stack of options with a
-// numbered eyebrow per row so it sits in the same typographic family
-// as the rest of the dossier sections (01 · IDENTITY, etc.). Each
-// option carries a short hint underneath so the choice is concrete:
-// the consequence of "Listed" vs "Hidden" is stated, not implied.
-const VISIBILITY_OPTIONS: {
-  value: Visibility;
-  label: string;
-  hint: string;
-  accent: "purple" | "teal" | "neutral";
-  marker: string;
-}[] = [
-  {
-    value: "public",
-    label: "Public",
-    hint: "Listed in the directory. Anyone with the link can view your full profile.",
-    accent: "teal",
-    marker: "α",
-  },
-  {
-    value: "listed",
-    label: "Listed (private)",
-    hint: "Listed in the directory by name only. Visitors see a stub — not your full profile.",
-    accent: "purple",
-    marker: "β",
-  },
-  {
-    value: "hidden",
-    label: "Hidden",
-    hint: "Not listed in the directory. The link still works for people who already have it, but they see the stub.",
-    accent: "neutral",
-    marker: "γ",
-  },
-];
-
-function VisibilityRadio({
-  value,
-  onChange,
-}: {
-  value: Visibility;
-  onChange: (v: Visibility) => void;
-}) {
+// Read-only "current visibility" chip. Surfaces the state of the
+// (isPublic, isDiscoverable) pair without offering a control here —
+// the actual radio lives on /account#section-02 where it belongs
+// next to other account-level decisions. Keeps the editor focused
+// on *content* while still giving the editor visible context for
+// who can see what they're writing.
+function VisibilityRef({ visibility }: { visibility: VisibilityState }) {
   return (
-    <div role="radiogroup" aria-label="Profile visibility" className="space-y-2.5">
-      {VISIBILITY_OPTIONS.map((opt) => {
-        const active = value === opt.value;
-        const accentRing =
-          opt.accent === "teal"
-            ? "ring-teal-400 bg-teal-50/40"
-            : opt.accent === "purple"
-              ? "ring-purple-400 bg-purple-50/40"
-              : "ring-neutral-400 bg-neutral-50";
-        const accentDot =
-          opt.accent === "teal"
-            ? "bg-teal-500"
-            : opt.accent === "purple"
-              ? "bg-purple-500"
-              : "bg-neutral-500";
-        const accentEyebrow =
-          opt.accent === "teal"
-            ? "text-teal-600"
-            : opt.accent === "purple"
-              ? "text-purple-600"
-              : "text-neutral-500";
-        return (
-          <label
-            key={opt.value}
-            className={`relative block cursor-pointer rounded-xl border transition-all ${
-              active
-                ? `border-transparent ring-2 ${accentRing}`
-                : "border-neutral-200 hover:border-neutral-300 bg-white"
-            }`}
+    <div className="flex items-center justify-between gap-4 py-3 px-4 bg-neutral-50 rounded-xl border border-neutral-200/70">
+      <div className="flex items-center gap-3 min-w-0">
+        <span
+          aria-hidden="true"
+          className={`w-2.5 h-2.5 rounded-full shrink-0 ${VISIBILITY_ACCENT_DOT[visibility]}`}
+        />
+        <div className="min-w-0">
+          <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-400 mb-0.5">
+            Currently
+          </p>
+          <p
+            className={`text-sm font-semibold ${VISIBILITY_ACCENT_TEXT[visibility]} leading-tight`}
           >
-            <input
-              type="radio"
-              name="visibility"
-              value={opt.value}
-              checked={active}
-              onChange={() => onChange(opt.value)}
-              className="sr-only"
-            />
-            <div className="flex items-start gap-4 p-4">
-              <span
-                aria-hidden="true"
-                className={`mt-1 relative w-4 h-4 shrink-0 rounded-full border-2 transition-colors ${
-                  active
-                    ? "border-transparent"
-                    : "border-neutral-300"
-                }`}
-              >
-                {active && (
-                  <span
-                    className={`absolute inset-0 rounded-full ${accentDot}`}
-                  />
-                )}
-              </span>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-baseline gap-2 mb-1">
-                  <span
-                    className={`font-mono text-[10px] uppercase tracking-[0.3em] ${accentEyebrow}`}
-                  >
-                    {opt.marker}
-                  </span>
-                  <span className="text-sm font-semibold text-neutral-900">
-                    {opt.label}
-                  </span>
-                </div>
-                <p className="text-xs text-neutral-600 leading-relaxed">
-                  {opt.hint}
-                </p>
-              </div>
-            </div>
-          </label>
-        );
-      })}
+            {VISIBILITY_LABEL[visibility]}
+          </p>
+        </div>
+      </div>
+      <Link
+        to="/account#section-02"
+        className="font-mono text-[10px] uppercase tracking-[0.25em] text-purple-600 hover:text-purple-800 transition-colors whitespace-nowrap shrink-0"
+      >
+        change in account →
+      </Link>
     </div>
   );
 }
