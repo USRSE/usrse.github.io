@@ -94,6 +94,16 @@ export const profiles = pgTable(
     showOnMap: boolean("show_on_map").notNull().default(false),
     publicLocation: text("public_location"),
     isPublic: boolean("is_public").notNull().default(true),
+    // When isPublic is false, isDiscoverable controls whether the
+    // member still appears in the directory/search as a stub. Three
+    // privacy states are derived from these two booleans:
+    //   isPublic=true                          → "Public" (full profile, listed)
+    //   isPublic=false, isDiscoverable=true    → "Listed (private)" (stub-only)
+    //   isPublic=false, isDiscoverable=false   → "Hidden" (not listed)
+    // Defaults to false so opting *out* of public visibility is a
+    // single decision — opting *back in* to discovery is a separate
+    // affirmative choice.
+    isDiscoverable: boolean("is_discoverable").notNull().default(false),
     createdAt: timestamp("created_at", { withTimezone: true })
       .notNull()
       .defaultNow(),
