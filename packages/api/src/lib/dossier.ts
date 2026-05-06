@@ -22,6 +22,7 @@ import {
   events,
   experiences,
   institutions,
+  languages,
   leadershipPositions,
   leadershipTerms,
   pronouns,
@@ -29,6 +30,7 @@ import {
   skills,
   userDisciplines,
   userEngagementTypes,
+  userLanguages,
   userSkills,
   users,
   degreeTypes,
@@ -79,10 +81,11 @@ export interface MemberDossier {
   education: EducationRow[];
   certifications: CertificationRow[];
   // id + status surface so the dossier editor can call
-  // DELETE /me/{disciplines,skills}/:id and render pending chips.
-  // Public consumers can still ignore the extra fields.
+  // DELETE /me/{disciplines,skills,languages}/:id and render pending
+  // chips. Public consumers can still ignore the extra fields.
   skills: { id: string; name: string; slug: string; status: string }[];
   disciplines: { id: string; name: string; slug: string; status: string }[];
+  languages: { id: string; name: string; slug: string; status: string }[];
   engagementTypes: { label: string }[];
   conferences: ConferenceRow[];
   leadership: LeadershipRow[];
@@ -184,6 +187,7 @@ export async function loadMemberDossier(
     certificationRows,
     skillRows,
     disciplineRows,
+    languageRows,
     engagementRows,
     attendanceRows,
     leadershipRows,
@@ -276,6 +280,17 @@ export async function loadMemberDossier(
       .where(eq(userDisciplines.userId, u.id))
       .orderBy(asc(disciplines.name)),
     db
+      .select({
+        id: languages.id,
+        name: languages.name,
+        slug: languages.slug,
+        status: languages.status,
+      })
+      .from(userLanguages)
+      .innerJoin(languages, eq(userLanguages.languageId, languages.id))
+      .where(eq(userLanguages.userId, u.id))
+      .orderBy(asc(languages.name)),
+    db
       .select({ label: engagementTypes.label })
       .from(userEngagementTypes)
       .innerJoin(
@@ -364,6 +379,7 @@ export async function loadMemberDossier(
       credentialUrl: c.credentialUrl,
     })),
     skills: skillRows,
+    languages: languageRows,
     disciplines: disciplineRows,
     engagementTypes: engagementRows,
     conferences: attendanceRows,

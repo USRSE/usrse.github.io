@@ -5,6 +5,7 @@ import {
   careerStages,
   countries,
   disciplines,
+  languages,
   skills,
 } from "../db/schema/vocab";
 import type { AppEnv } from "../types";
@@ -36,50 +37,65 @@ vocabRoute.get("/", async (c) => {
   try {
     const db = createDb(c.env.DATABASE_URL);
 
-    const [disciplineRows, skillRows, careerStageRows, countryRows] =
-      await Promise.all([
-        db
-          .select({
-            id: disciplines.id,
-            name: disciplines.name,
-            slug: disciplines.slug,
-          })
-          .from(disciplines)
-          .where(eq(disciplines.status, "approved"))
-          .orderBy(asc(disciplines.name)),
-        db
-          .select({
-            id: skills.id,
-            name: skills.name,
-            slug: skills.slug,
-          })
-          .from(skills)
-          .where(eq(skills.status, "approved"))
-          .orderBy(asc(skills.name)),
-        db
-          .select({
-            id: careerStages.id,
-            slug: careerStages.slug,
-            label: careerStages.label,
-          })
-          .from(careerStages)
-          .where(eq(careerStages.status, "approved"))
-          .orderBy(asc(careerStages.sortOrder), asc(careerStages.label)),
-        db
-          .select({
-            id: countries.id,
-            isoAlpha2: countries.isoAlpha2,
-            name: countries.name,
-          })
-          .from(countries)
-          .orderBy(asc(countries.sortOrder), asc(countries.name)),
-      ]);
+    const [
+      disciplineRows,
+      skillRows,
+      languageRows,
+      careerStageRows,
+      countryRows,
+    ] = await Promise.all([
+      db
+        .select({
+          id: disciplines.id,
+          name: disciplines.name,
+          slug: disciplines.slug,
+        })
+        .from(disciplines)
+        .where(eq(disciplines.status, "approved"))
+        .orderBy(asc(disciplines.name)),
+      db
+        .select({
+          id: skills.id,
+          name: skills.name,
+          slug: skills.slug,
+        })
+        .from(skills)
+        .where(eq(skills.status, "approved"))
+        .orderBy(asc(skills.name)),
+      db
+        .select({
+          id: languages.id,
+          name: languages.name,
+          slug: languages.slug,
+        })
+        .from(languages)
+        .where(eq(languages.status, "approved"))
+        .orderBy(asc(languages.name)),
+      db
+        .select({
+          id: careerStages.id,
+          slug: careerStages.slug,
+          label: careerStages.label,
+        })
+        .from(careerStages)
+        .where(eq(careerStages.status, "approved"))
+        .orderBy(asc(careerStages.sortOrder), asc(careerStages.label)),
+      db
+        .select({
+          id: countries.id,
+          isoAlpha2: countries.isoAlpha2,
+          name: countries.name,
+        })
+        .from(countries)
+        .orderBy(asc(countries.sortOrder), asc(countries.name)),
+    ]);
 
     return c.json({
       ok: true,
       vocab: {
         disciplines: disciplineRows,
         skills: skillRows,
+        languages: languageRows,
         careerStages: careerStageRows,
         countries: countryRows,
       },

@@ -6,9 +6,11 @@ import { createDb } from "../db";
 import {
   countries,
   disciplines,
+  languages,
   profiles,
   skills,
   userDisciplines,
+  userLanguages,
   userSkills,
   users,
 } from "../db/schema";
@@ -454,7 +456,7 @@ meRoute.delete("/profile/photo", async (c) => {
   return c.json({ ok: true, user: updated });
 });
 
-// ── Vocab edit (disciplines + skills) ────────────────────────────────
+// ── Vocab edit (disciplines + skills + languages) ────────────────────
 //
 // Owners curate their Craft chips by linking to existing approved
 // vocab rows or proposing new ones. Proposed rows are inserted with
@@ -509,7 +511,7 @@ function slugify(name: string): string {
  */
 async function resolveVocabPick(
   db: ReturnType<typeof createDb>,
-  table: typeof disciplines | typeof skills,
+  table: typeof disciplines | typeof skills | typeof languages,
   suggesterId: string,
   input: VocabAddInput
 ): Promise<
@@ -748,6 +750,89 @@ meRoute.delete("/skills/:id", async (c) => {
   await db
     .delete(userSkills)
     .where(and(eq(userSkills.userId, user.id), eq(userSkills.skillId, id)));
+
+  const updated = await loadMemberDossier(db, user.id);
+  if (!updated) return c.json({ ok: false, error: "internal" }, 500);
+  return c.json({ ok: true, user: updated });
+});
+
+// ── Languages ─────────────────────────────────────────────────────────
+
+meRoute.post(
+  "/languages",
+  zValidator("json", vocabAddSchema, (result, c) => {
+    if (!result.success) {
+      return c.json(
+        {
+          ok: false,
+          error: "invalid_input",
+          issues: result.error.issues.map((i) => ({
+            path: i.path,
+            message: i.message,
+          })),
+        },
+        400
+      );
+    }
+  }),
+  async (c) => {
+    const workosId = c.get("workosUserId");
+    const db = createDb(c.env.DATABASE_URL);
+    const input = c.req.valid("json") as VocabAddInput;
+
+    const user = await db.query.users.findFirst({
+      where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
+      columns: { id: true },
+    });
+    if (!user) {
+      return c.json(
+        { ok: false, error: "user_pending", message: "Account not provisioned." },
+        404
+      );
+    }
+
+    const resolved = await resolveVocabPick(db, languages, user.id, input);
+    if (!resolved.ok) {
+      return c.json(
+        { ok: false, error: "invalid_input", message: resolved.message },
+        resolved.status
+      );
+    }
+
+    await db
+      .insert(userLanguages)
+      .values({ userId: user.id, languageId: resolved.row.id })
+      .onConflictDoNothing();
+
+    const updated = await loadMemberDossier(db, user.id);
+    if (!updated) return c.json({ ok: false, error: "internal" }, 500);
+    return c.json({ ok: true, user: updated, language: resolved.row });
+  }
+);
+
+meRoute.delete("/languages/:id", async (c) => {
+  const workosId = c.get("workosUserId");
+  const id = c.req.param("id");
+  if (!/^[0-9a-f-]{36}$/i.test(id)) {
+    return c.json({ ok: false, error: "invalid_input" }, 400);
+  }
+  const db = createDb(c.env.DATABASE_URL);
+  const user = await db.query.users.findFirst({
+    where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
+    columns: { id: true },
+  });
+  if (!user) {
+    return c.json(
+      { ok: false, error: "user_pending", message: "Account not provisioned." },
+      404
+    );
+  }
+
+  await db
+    .delete(userLanguages)
+    .where(
+      and(eq(userLanguages.userId, user.id), eq(userLanguages.languageId, id))
+    );
 
   const updated = await loadMemberDossier(db, user.id);
   if (!updated) return c.json({ ok: false, error: "internal" }, 500);
