@@ -130,6 +130,18 @@ export interface WorkItem {
   source: WorkSource;
 }
 
+/**
+ * A discipline or skill chip on the member's dossier. Status reflects
+ * the controlled-vocab approval state — chips proposed by the user
+ * but not yet reviewed render with a "pending" mark for the owner.
+ */
+export interface VocabItem {
+  id: string;
+  name: string;
+  slug: string;
+  status: "pending" | "approved";
+}
+
 export interface CurrentMember {
   id: string;
   memberId: string;
@@ -142,8 +154,8 @@ export interface CurrentMember {
   experiences: ExperienceItem[];
   education: EducationItem[];
   certifications: CertificationItem[];
-  skills: { name: string; slug: string }[];
-  disciplines: { name: string }[];
+  skills: VocabItem[];
+  disciplines: VocabItem[];
   engagementTypes: { label: string }[];
   conferences: ConferenceItem[];
   leadership: LeadershipItem[];

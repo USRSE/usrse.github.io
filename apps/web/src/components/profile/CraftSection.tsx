@@ -1,11 +1,19 @@
 import { SectionFrame, NotYetWritten } from "./SectionFrame";
-import type { CertificationItem } from "@/hooks/useCurrentMember";
+import { EditableChipList } from "./EditableChipList";
+import { useVocab } from "@/hooks/useVocab";
+import type {
+  CertificationItem,
+  CurrentMember,
+  VocabItem,
+} from "@/hooks/useCurrentMember";
 
 interface CraftSectionProps {
-  skills: { name: string }[];
-  disciplines: { name: string }[];
+  skills: VocabItem[];
+  disciplines: VocabItem[];
   certifications: CertificationItem[];
   isOwner: boolean;
+  /** Refreshed dossier after a chip add/remove — only meaningful for owners. */
+  onMemberUpdated?: (next: CurrentMember) => void;
 }
 
 // Chip DNA cribbed from the Connect bylines (ProfileView.tsx) so the
@@ -36,9 +44,21 @@ export function CraftSection({
   disciplines,
   certifications,
   isOwner,
+  onMemberUpdated,
 }: CraftSectionProps) {
+  // Owner-only — visitors don't trigger the vocab fetch, the chips
+  // they see come straight off the dossier payload.
+  const vocab = useVocab();
+  const handleChange = (next: CurrentMember) => onMemberUpdated?.(next);
+
   const hasAny =
     skills.length || disciplines.length || certifications.length;
+
+  // Owners always see the editor — even when the dossier is empty —
+  // so they have a way to add their first chip without bouncing
+  // through a "not yet written" placeholder. Visitors keep the
+  // existing empty state.
+  const showEmptyState = !hasAny && !isOwner;
 
   return (
     <SectionFrame
@@ -46,15 +66,8 @@ export function CraftSection({
       eyebrow="Craft"
       status="disciplines · languages · skills · credentials"
       accent="teal"
-      action={
-        isOwner ? (
-          <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-300">
-            ✎ soon
-          </span>
-        ) : null
-      }
     >
-      {!hasAny ? (
+      {showEmptyState ? (
         <NotYetWritten message="disciplines, languages, skills, and credentials appear here once added" />
       ) : (
         <div className="space-y-12 lg:space-y-14">
@@ -63,10 +76,20 @@ export function CraftSection({
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-400 mb-5">
               05.a · Disciplines
             </p>
-            {disciplines.length > 0 ? (
+            {isOwner ? (
+              <EditableChipList
+                items={disciplines}
+                vocab={vocab.vocab?.disciplines ?? []}
+                axisLabel="discipline"
+                endpointPath="/me/disciplines"
+                accent="teal"
+                onChanged={handleChange}
+                emptyMessage="add the research areas you work in"
+              />
+            ) : disciplines.length > 0 ? (
               <ul className="flex flex-wrap gap-2">
                 {disciplines.map((d) => (
-                  <li key={d.name} className={chipClass("teal")}>
+                  <li key={d.id} className={chipClass("teal")}>
                     {d.name}
                   </li>
                 ))}
@@ -94,10 +117,20 @@ export function CraftSection({
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-400 mb-5">
               05.c · Skills
             </p>
-            {skills.length > 0 ? (
+            {isOwner ? (
+              <EditableChipList
+                items={skills}
+                vocab={vocab.vocab?.skills ?? []}
+                axisLabel="skill"
+                endpointPath="/me/skills"
+                accent="amber"
+                onChanged={handleChange}
+                emptyMessage="add the tools, frameworks, and methods you work with"
+              />
+            ) : skills.length > 0 ? (
               <ul className="flex flex-wrap gap-2">
                 {skills.map((s) => (
-                  <li key={s.name} className={chipClass("amber")}>
+                  <li key={s.id} className={chipClass("amber")}>
                     {s.name}
                   </li>
                 ))}

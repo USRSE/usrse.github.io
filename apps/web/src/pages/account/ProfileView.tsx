@@ -127,6 +127,7 @@ export function ProfileView({
             disciplines={member.disciplines ?? []}
             certifications={member.certifications ?? []}
             isOwner={isOwner}
+            onMemberUpdated={onMemberUpdated}
           />
         </RevealOnView>
 

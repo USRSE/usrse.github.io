@@ -7,6 +7,12 @@ export interface VocabDiscipline {
   slug: string;
 }
 
+export interface VocabSkill {
+  id: string;
+  name: string;
+  slug: string;
+}
+
 export interface VocabCareerStage {
   id: string;
   slug: string;
@@ -21,6 +27,7 @@ export interface VocabCountry {
 
 export interface Vocab {
   disciplines: VocabDiscipline[];
+  skills: VocabSkill[];
   careerStages: VocabCareerStage[];
   countries: VocabCountry[];
 }
