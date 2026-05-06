@@ -28,6 +28,7 @@ export interface CurrentMemberProfile {
   region: string | null;
   city: string | null;
   isPublic: boolean;
+  isDiscoverable: boolean;
   showOnMap: boolean;
   publicLocation: string | null;
 }

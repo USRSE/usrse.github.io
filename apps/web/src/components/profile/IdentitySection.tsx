@@ -12,6 +12,12 @@ interface IdentitySectionProps {
   onSaved?: (next: CurrentMember) => void;
 }
 
+// Three-state visibility derived from the (isPublic, isDiscoverable)
+// pair on the profile. The form holds a single enum so the radio
+// group has a single source of truth; the API still receives two
+// booleans (mapped at submit time).
+type Visibility = "public" | "listed" | "hidden";
+
 interface IdentityField {
   displayName: string;
   slug: string;
@@ -22,7 +28,25 @@ interface IdentityField {
   city: string;
   publicLocation: string;
   showOnMap: boolean;
+  visibility: Visibility;
+}
+
+function visibilityFromProfile(
+  isPublic: boolean,
+  isDiscoverable: boolean
+): Visibility {
+  if (isPublic) return "public";
+  if (isDiscoverable) return "listed";
+  return "hidden";
+}
+
+function visibilityToFlags(v: Visibility): {
   isPublic: boolean;
+  isDiscoverable: boolean;
+} {
+  if (v === "public") return { isPublic: true, isDiscoverable: false };
+  if (v === "listed") return { isPublic: false, isDiscoverable: true };
+  return { isPublic: false, isDiscoverable: false };
 }
 
 // Photo isn't a form field anymore — it has its own dedicated
@@ -41,7 +65,10 @@ function fieldsFromMember(member: CurrentMember): IdentityField {
     city: "",
     publicLocation: p?.publicLocation ?? "",
     showOnMap: p?.showOnMap ?? false,
-    isPublic: p?.isPublic ?? true,
+    visibility: visibilityFromProfile(
+      p?.isPublic ?? true,
+      p?.isDiscoverable ?? false
+    ),
   };
 }
 
@@ -204,6 +231,7 @@ function IdentityEditor({
     setError(null);
     setIssues([]);
 
+    const visibilityFlags = visibilityToFlags(fields.visibility);
     const body: Record<string, unknown> = {
       displayName: fields.displayName.trim() || undefined,
       // Slug is server-derived from displayName + memberId; the
@@ -214,7 +242,8 @@ function IdentityEditor({
       jobTitle: fields.jobTitle.trim() || null,
       publicLocation: fields.publicLocation.trim() || null,
       showOnMap: fields.showOnMap,
-      isPublic: fields.isPublic,
+      isPublic: visibilityFlags.isPublic,
+      isDiscoverable: visibilityFlags.isDiscoverable,
     };
     Object.keys(body).forEach((k) => {
       if (body[k] === undefined) delete body[k];
@@ -359,13 +388,11 @@ function IdentityEditor({
           <legend className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-400 mb-4">
             Visibility
           </legend>
-          <div className="space-y-4">
-            <Toggle
-              label="Public profile"
-              hint="anyone with the link can view"
-              checked={fields.isPublic}
-              onChange={(v) => set("isPublic", v)}
-            />
+          <VisibilityRadio
+            value={fields.visibility}
+            onChange={(v) => set("visibility", v)}
+          />
+          <div className="mt-6 pt-6 border-t border-neutral-100">
             <Toggle
               label="Show on community map"
               hint="if location is set"
@@ -444,6 +471,125 @@ function Field({
         )}
       </label>
       {children}
+    </div>
+  );
+}
+
+// Three-up visibility radio. Renders as a stack of options with a
+// numbered eyebrow per row so it sits in the same typographic family
+// as the rest of the dossier sections (01 · IDENTITY, etc.). Each
+// option carries a short hint underneath so the choice is concrete:
+// the consequence of "Listed" vs "Hidden" is stated, not implied.
+const VISIBILITY_OPTIONS: {
+  value: Visibility;
+  label: string;
+  hint: string;
+  accent: "purple" | "teal" | "neutral";
+  marker: string;
+}[] = [
+  {
+    value: "public",
+    label: "Public",
+    hint: "Listed in the directory. Anyone with the link can view your full profile.",
+    accent: "teal",
+    marker: "α",
+  },
+  {
+    value: "listed",
+    label: "Listed (private)",
+    hint: "Listed in the directory by name only. Visitors see a stub — not your full profile.",
+    accent: "purple",
+    marker: "β",
+  },
+  {
+    value: "hidden",
+    label: "Hidden",
+    hint: "Not listed in the directory. The link still works for people who already have it, but they see the stub.",
+    accent: "neutral",
+    marker: "γ",
+  },
+];
+
+function VisibilityRadio({
+  value,
+  onChange,
+}: {
+  value: Visibility;
+  onChange: (v: Visibility) => void;
+}) {
+  return (
+    <div role="radiogroup" aria-label="Profile visibility" className="space-y-2.5">
+      {VISIBILITY_OPTIONS.map((opt) => {
+        const active = value === opt.value;
+        const accentRing =
+          opt.accent === "teal"
+            ? "ring-teal-400 bg-teal-50/40"
+            : opt.accent === "purple"
+              ? "ring-purple-400 bg-purple-50/40"
+              : "ring-neutral-400 bg-neutral-50";
+        const accentDot =
+          opt.accent === "teal"
+            ? "bg-teal-500"
+            : opt.accent === "purple"
+              ? "bg-purple-500"
+              : "bg-neutral-500";
+        const accentEyebrow =
+          opt.accent === "teal"
+            ? "text-teal-600"
+            : opt.accent === "purple"
+              ? "text-purple-600"
+              : "text-neutral-500";
+        return (
+          <label
+            key={opt.value}
+            className={`relative block cursor-pointer rounded-xl border transition-all ${
+              active
+                ? `border-transparent ring-2 ${accentRing}`
+                : "border-neutral-200 hover:border-neutral-300 bg-white"
+            }`}
+          >
+            <input
+              type="radio"
+              name="visibility"
+              value={opt.value}
+              checked={active}
+              onChange={() => onChange(opt.value)}
+              className="sr-only"
+            />
+            <div className="flex items-start gap-4 p-4">
+              <span
+                aria-hidden="true"
+                className={`mt-1 relative w-4 h-4 shrink-0 rounded-full border-2 transition-colors ${
+                  active
+                    ? "border-transparent"
+                    : "border-neutral-300"
+                }`}
+              >
+                {active && (
+                  <span
+                    className={`absolute inset-0 rounded-full ${accentDot}`}
+                  />
+                )}
+              </span>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-baseline gap-2 mb-1">
+                  <span
+                    className={`font-mono text-[10px] uppercase tracking-[0.3em] ${accentEyebrow}`}
+                  >
+                    {opt.marker}
+                  </span>
+                  <span className="text-sm font-semibold text-neutral-900">
+                    {opt.label}
+                  </span>
+                </div>
+                <p className="text-xs text-neutral-600 leading-relaxed">
+                  {opt.hint}
+                </p>
+              </div>
+            </div>
+          </label>
+        );
+      })}
     </div>
   );
 }
