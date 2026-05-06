@@ -47,6 +47,7 @@ const profilePatchSchema = z
     showOnMap: z.boolean().optional(),
     publicLocation: z.string().max(140).nullable().optional(),
     isPublic: z.boolean().optional(),
+    isDiscoverable: z.boolean().optional(),
   })
   .strict();
 

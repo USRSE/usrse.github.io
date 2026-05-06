@@ -3,6 +3,7 @@ import { cors } from "hono/cors";
 import { neon } from "@neondatabase/serverless";
 import { meRoute } from "./routes/me";
 import { membersRoute } from "./routes/members";
+import { vocabRoute } from "./routes/vocab";
 import { webhooksRoute } from "./routes/webhooks";
 import type { AppEnv } from "./types";
 
@@ -45,5 +46,6 @@ app.get("/health", async (c) => {
 app.route("/webhooks", webhooksRoute);
 app.route("/me", meRoute);
 app.route("/members", membersRoute);
+app.route("/vocab", vocabRoute);
 
 export default app;

@@ -73,6 +73,7 @@ export interface MemberDossier {
     showOnMap: boolean;
     publicLocation: string | null;
     isPublic: boolean;
+    isDiscoverable: boolean;
   } | null;
   experiences: ExperienceRow[];
   education: EducationRow[];
@@ -211,6 +212,7 @@ export async function loadMemberDossier(
         showOnMap: profiles.showOnMap,
         publicLocation: profiles.publicLocation,
         isPublic: profiles.isPublic,
+        isDiscoverable: profiles.isDiscoverable,
       })
       .from(profiles)
       .leftJoin(pronouns, eq(profiles.pronounId, pronouns.id))
