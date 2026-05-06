@@ -37,6 +37,7 @@ export function usePublicMember(slug: string | undefined): State {
       setState({
         status: "not_found",
         member: null,
+        privateStub: null,
         error: new Error("No slug provided"),
       });
       return;
