@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { CommandPalette } from "@/components/members/CommandPalette";
 import { HomePage } from "@/pages/HomePage";
 import { MissionPage } from "@/pages/about/MissionPage";
 import { WhatIsRSEPage } from "@/pages/about/WhatIsRSEPage";
@@ -41,6 +42,11 @@ const AccountPage = lazy(() =>
 );
 const MemberPage = lazy(() =>
   import("@/pages/members/MemberPage").then((m) => ({ default: m.MemberPage }))
+);
+const MembersIndexPage = lazy(() =>
+  import("@/pages/members/MembersIndexPage").then((m) => ({
+    default: m.MembersIndexPage,
+  }))
 );
 const MeRedirect = lazy(() =>
   import("@/pages/account/MeRedirect").then((m) => ({ default: m.MeRedirect }))
@@ -100,6 +106,14 @@ export function App() {
               }
             />
             <Route
+              path="/members"
+              element={
+                <Suspense fallback={<RouteFallback />}>
+                  <MembersIndexPage />
+                </Suspense>
+              }
+            />
+            <Route
               path="/members/:slug"
               element={
                 <Suspense fallback={<RouteFallback />}>
@@ -110,6 +124,7 @@ export function App() {
           </Routes>
         </main>
         <Footer />
+        <CommandPalette />
       </div>
     </BrowserRouter>
   );

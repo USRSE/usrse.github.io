@@ -99,6 +99,7 @@ const navItems: NavItem[] = [
       {
         heading: "Connect",
         links: [
+          { label: "Member Directory", href: "/members", route: true, desc: "Search the roster" },
           { label: "Affinity Groups", href: "/community/affinity-groups", route: true, desc: "Identity & regional communities" },
           { label: "Community Calls", href: "/community/calls", route: true, desc: "Monthly virtual meetings" },
           { label: "Community Awards", href: "/community/awards", route: true, desc: "Recognizing contributions" },
@@ -561,6 +562,17 @@ function UserNavSlot() {
             My profile
           </Link>
           <Link
+            to="/members"
+            onClick={() => setOpen(false)}
+            className="flex items-center justify-between gap-3 px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50 rounded-lg transition-colors"
+            role="menuitem"
+          >
+            <span>Find a member</span>
+            <kbd className="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-400 px-1.5 py-0.5 border border-neutral-200 rounded">
+              ⌘K
+            </kbd>
+          </Link>
+          <Link
             to="/account"
             onClick={() => setOpen(false)}
             className="block px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50 rounded-lg transition-colors"
@@ -619,6 +631,13 @@ function UserNavSlotMobile({ onNavigate }: { onNavigate: () => void }) {
         className="block w-full text-left px-4 py-3 text-sm text-neutral-700 border-t border-neutral-100 hover:bg-neutral-50 transition-colors"
       >
         My profile
+      </Link>
+      <Link
+        to="/members"
+        onClick={onNavigate}
+        className="block w-full text-left px-4 py-3 text-sm text-neutral-700 border-t border-neutral-100 hover:bg-neutral-50 transition-colors"
+      >
+        Find a member
       </Link>
       <Link
         to="/account"
