@@ -363,18 +363,48 @@ export async function loadMemberDossier(
   };
 }
 
+/**
+ * Result of resolving a public profile by slug. Discriminated by
+ * `kind` so callers can either render the full dossier (public) or a
+ * minimal stub (private) without the API leaking private fields.
+ *
+ *   - "public":  dossier is safe to surface to anyone.
+ *   - "private": only memberId + displayName are surfaced. Lets us
+ *                show "this member exists but is private" instead of
+ *                pretending the slug doesn't exist (which would 404
+ *                shared links every time a member toggles privacy).
+ *   - null:      no row matches the slug at all.
+ */
+export type DossierBySlugResult =
+  | { kind: "public"; dossier: MemberDossier }
+  | { kind: "private"; memberId: string; displayName: string };
+
 export async function loadMemberDossierBySlug(
   db: Db,
   slug: string
-): Promise<MemberDossier | null> {
-  const profileRow = await db
-    .select({ userId: profiles.userId, isPublic: profiles.isPublic })
+): Promise<DossierBySlugResult | null> {
+  const row = await db
+    .select({
+      userId: profiles.userId,
+      isPublic: profiles.isPublic,
+      displayName: profiles.displayName,
+      memberId: users.memberId,
+    })
     .from(profiles)
+    .innerJoin(users, eq(users.id, profiles.userId))
     .where(and(eq(profiles.slug, slug), isNull(profiles.deletedAt)))
     .limit(1);
-  if (!profileRow[0]) return null;
-  if (!profileRow[0].isPublic) return null;
-  return loadMemberDossier(db, profileRow[0].userId);
+  if (!row[0]) return null;
+  if (!row[0].isPublic) {
+    return {
+      kind: "private",
+      memberId: row[0].memberId,
+      displayName: row[0].displayName,
+    };
+  }
+  const dossier = await loadMemberDossier(db, row[0].userId);
+  if (!dossier) return null;
+  return { kind: "public", dossier };
 }
 
 /**

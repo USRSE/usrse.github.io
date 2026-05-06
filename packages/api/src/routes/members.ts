@@ -20,17 +20,31 @@ membersRoute.get("/:slug", async (c) => {
 
   try {
     const db = createDb(c.env.DATABASE_URL);
-    const dossier = await loadMemberDossierBySlug(db, slug);
+    const result = await loadMemberDossierBySlug(db, slug);
 
-    if (!dossier) {
+    if (!result) {
       return c.json(
         { ok: false, error: "not_found", message: "Member not found." },
         404
       );
     }
 
+    // Private profile: surface just enough so the page can confirm
+    // the member exists without exposing any other field. The web
+    // app renders a stub for this shape.
+    if (result.kind === "private") {
+      return c.json({
+        ok: true,
+        private: {
+          memberId: result.memberId,
+          displayName: result.displayName,
+        },
+      });
+    }
+
     // Strip account-private fields for public surface.
-    const { email, marketingConsent, isLegacyImport, ...publicShape } = dossier;
+    const { email, marketingConsent, isLegacyImport, ...publicShape } =
+      result.dossier;
     void email;
     void marketingConsent;
     void isLegacyImport;

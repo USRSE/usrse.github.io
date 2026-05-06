@@ -118,17 +118,20 @@ export function ProfileHero({
           </ol>
         </nav>
 
-        {/* Subtle inline "view public version" link for owners */}
+        {/* Subtle inline "view as public" link for owners. Adds
+            ?view=public so MemberPage flips to the visitor render
+            (public payload, no edit UI) and shows an exit-preview
+            banner. Same URL, no duplicate route. */}
         {isOwner && slug && (
           <p
             className="mb-6 text-xs text-white/40 font-mono animate-fade-in"
             style={{ animationDelay: "40ms" }}
           >
             <Link
-              to={`/members/${slug}`}
+              to={`/members/${slug}?view=public`}
               className="hover:text-teal-300 transition-colors"
             >
-              view public version /members/{slug} ↗
+              view as public ↗
             </Link>
           </p>
         )}
