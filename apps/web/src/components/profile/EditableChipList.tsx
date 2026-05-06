@@ -30,7 +30,7 @@ interface EditableChipListProps {
   /** Resource name used in copy and propose-new affordance ("discipline" / "skill"). */
   axisLabel: string;
   /** Endpoint path to POST adds and DELETE removals against. */
-  endpointPath: "/me/disciplines" | "/me/skills";
+  endpointPath: "/me/disciplines" | "/me/skills" | "/me/languages";
   /** Visual accent for the chips — matches the existing Craft palette. */
   accent: Accent;
   /** Refreshed dossier returned by the mutation endpoint. */

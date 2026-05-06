@@ -125,6 +125,7 @@ export function ProfileView({
           <CraftSection
             skills={member.skills ?? []}
             disciplines={member.disciplines ?? []}
+            languages={member.languages ?? []}
             certifications={member.certifications ?? []}
             isOwner={isOwner}
             onMemberUpdated={onMemberUpdated}

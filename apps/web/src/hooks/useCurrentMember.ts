@@ -156,6 +156,7 @@ export interface CurrentMember {
   certifications: CertificationItem[];
   skills: VocabItem[];
   disciplines: VocabItem[];
+  languages: VocabItem[];
   engagementTypes: { label: string }[];
   conferences: ConferenceItem[];
   leadership: LeadershipItem[];

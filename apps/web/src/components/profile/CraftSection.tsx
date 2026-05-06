@@ -10,6 +10,7 @@ import type {
 interface CraftSectionProps {
   skills: VocabItem[];
   disciplines: VocabItem[];
+  languages: VocabItem[];
   certifications: CertificationItem[];
   isOwner: boolean;
   /** Refreshed dossier after a chip add/remove — only meaningful for owners. */
@@ -42,6 +43,7 @@ function chipClass(accent: ChipAccent): string {
 export function CraftSection({
   skills,
   disciplines,
+  languages,
   certifications,
   isOwner,
   onMemberUpdated,
@@ -52,7 +54,10 @@ export function CraftSection({
   const handleChange = (next: CurrentMember) => onMemberUpdated?.(next);
 
   const hasAny =
-    skills.length || disciplines.length || certifications.length;
+    skills.length ||
+    disciplines.length ||
+    languages.length ||
+    certifications.length;
 
   // Owners always see the editor — even when the dossier is empty —
   // so they have a way to add their first chip without bouncing
@@ -99,17 +104,32 @@ export function CraftSection({
             )}
           </div>
 
-          {/* 05.b · Languages — structural stub. The backend doesn't
-              carry a language vocabulary yet (skills + disciplines
-              are the only vocab tables in vocab.ts), so this row
-              renders the placeholder unconditionally for now. When
-              the data lands it slots in alongside the other chips
-              with no layout change. */}
+          {/* 05.b · Languages */}
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-400 mb-5">
               05.b · Languages
             </p>
-            <NotYetWritten message="programming languages appear here once added to your profile" />
+            {isOwner ? (
+              <EditableChipList
+                items={languages}
+                vocab={vocab.vocab?.languages ?? []}
+                axisLabel="language"
+                endpointPath="/me/languages"
+                accent="purple"
+                onChanged={handleChange}
+                emptyMessage="add the programming languages you write"
+              />
+            ) : languages.length > 0 ? (
+              <ul className="flex flex-wrap gap-2">
+                {languages.map((l) => (
+                  <li key={l.id} className={chipClass("purple")}>
+                    {l.name}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <NotYetWritten message="programming languages appear here once added to your profile" />
+            )}
           </div>
 
           {/* 05.c · Skills */}
