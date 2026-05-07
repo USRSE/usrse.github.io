@@ -1,6 +1,9 @@
 # Frontend Architecture
 
-The US-RSE website is a single-page React application with client-side routing. No backend — the site is static content with interactive components.
+The US-RSE website is a single-page React application with client-side routing. The marketing surface is mostly static content with interactive components; the authenticated surface (`/me`, `/members`, `/account`, ⌘K) talks to the `@us-rse/api` Worker.
+
+!!! info "Member-facing UI is documented separately"
+    For the dossier, account ledger, member directory, vocab editor, location autocomplete, and command palette — see [Dossier — profile, directory, search](./dossier.md). The recognition system rendered at §04 of every dossier is documented in [Badges & Recognition](./badges.md).
 
 ## Component Hierarchy
 

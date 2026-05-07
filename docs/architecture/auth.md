@@ -2,7 +2,7 @@
 
 The marketing site uses [WorkOS AuthKit](https://www.workos.com/docs/user-management/authkit) for identity. Auth runs entirely in the SPA via the `@workos-inc/authkit-react` SDK with PKCE — no backend mediates the OAuth dance, and the WorkOS-hosted UI does the heavy lifting.
 
-This document covers what exists today: the sign-in/sign-up flow, environment configuration, and the integration boundary between WorkOS and our Neon database. The DB-side mapping between a WorkOS identity and an internal user row lives in the schema work for [issue #2](../../../../issues/2) and is not yet implemented.
+This document covers what exists today: the sign-in/sign-up flow, environment configuration, and the integration boundary between WorkOS and our Neon database. The DB-side mapping between a WorkOS identity and an internal user row lives in the schema work for [issue #2](https://github.com/USRSE/usrse.github.io/issues/2) and is not yet implemented.
 
 ## Why AuthKit + PKCE
 

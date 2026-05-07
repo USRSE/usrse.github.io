@@ -1,8 +1,14 @@
 # API and Database
 
-The `@us-rse/api` workspace is a Cloudflare Worker that fronts the Neon Postgres database. Today it exposes a single `/health` endpoint that proves the connection works; the schema work for issue [#2](../../../../issues/2) will fill in the real surface area.
+The `@us-rse/api` workspace is a Cloudflare Worker that fronts the Neon Postgres database. This document covers the runtime architecture, the deploy pipeline, and how the SPA on Cloudflare Pages reaches the Worker without crossing origin boundaries.
 
-This document covers the runtime architecture, the deploy pipeline, and how the SPA on Cloudflare Pages reaches the Worker without crossing origin boundaries.
+!!! info "Endpoint-level documentation"
+    The full API surface and its data model is covered in dedicated docs:
+
+    - [Dossier — profile, directory, search](./dossier.md) — `/me`, `/members`, `/members/:slug`, `/vocab`, vocab editing, location autocomplete, visibility model.
+    - [Badges & Recognition](./badges.md) — the computed-on-read badge system that ships in every dossier response.
+
+    What follows here is the runtime / deploy / hosting layer beneath those endpoints.
 
 ## Runtime topology
 
@@ -119,7 +125,7 @@ The Neon credential never lives in the SPA's env (browser bundle) — only in th
 
 ## What's not built yet
 
-- **Schema, migrations, queries.** No tables exist yet. Issue [#2](../../../../issues/2) covers `users`, `profiles`, career history, vocab tables, and migration tooling.
+- **Schema, migrations, queries.** No tables exist yet. Issue [#2](https://github.com/USRSE/usrse.github.io/issues/2) covers `users`, `profiles`, career history, vocab tables, and migration tooling.
 - **Drizzle ORM integration.** Recommended pairing with `@neondatabase/serverless` for typed queries. Not yet adopted.
 - **JWT verification middleware.** Endpoints past `/health` need to verify the WorkOS access token, extract the `sub` claim, and resolve it to a `users.id`.
 - **CORS lockdown.** Hono's `cors()` is currently `origin: (o) => o ?? "*"`. Should pin to the Pages origin (and later the production custom domain) before the API surface grows.

@@ -2,7 +2,7 @@
 
 The repository is organized as a [Turborepo](https://turbo.build/) monorepo with npm workspaces. Apps live under `apps/`, shared packages under `packages/`. A single root install hoists shared dependencies; Turbo orchestrates `build`, `dev`, `lint`, `typecheck`, and `test` pipelines across workspaces.
 
-This layout was introduced as part of issue [#1934](../../../../issues/1934) (epic [#1933](../../../../issues/1933)) so that the marketing site, the upcoming elections app, and the shared design system can co-exist with one install, one lockfile, and one CI pipeline.
+This layout was introduced as part of issue [#1934](https://github.com/USRSE/usrse.github.io/issues/1934) (epic [#1933](https://github.com/USRSE/usrse.github.io/issues/1933)) so that the marketing site, the upcoming elections app, and the shared design system can co-exist with one install, one lockfile, and one CI pipeline.
 
 ## Layout
 
@@ -125,7 +125,7 @@ import "@us-rse/design-system/tokens.min.css"; // → minified
 
 ## Migration Notes
 
-What moved during the [#1934](../../../../issues/1934) restructure:
+What moved during the [#1934](https://github.com/USRSE/usrse.github.io/issues/1934) restructure:
 
 | Before                          | After                                            |
 | ------------------------------- | ------------------------------------------------ |
