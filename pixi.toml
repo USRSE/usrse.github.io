@@ -14,6 +14,10 @@ stylelint = ">=17.9.1,<18"
 prettier = ">=3.8.3,<4"
 # Node.js runtime for scripts and bundling
 nodejs = ">=22,<26"
+# MkDocs for /docs site
+mkdocs = ">=1.6,<2"
+mkdocs-material = ">=9.5,<10"
+pymdown-extensions = ">=10.7,<11"
 
 [tasks]
 
@@ -89,6 +93,19 @@ check = { cmd = "pixi run validate && pixi run lint && pixi run format-check && 
 # Useful during token authoring.
 # ---------------------------------------------------------------------------
 dev = { cmd = "node packages/design-system/scripts/watch.mjs", description = "Watch tokens and rebuild on change" }
+
+# ---------------------------------------------------------------------------
+# docs
+# MkDocs Material site over the /docs tree. Three tasks:
+#   docs        — serve locally with hot reload (alias for docs-serve)
+#   docs-serve  — same; explicit name
+#   docs-build  — render the static site into site/ for verification or deploy
+# Strict mode in docs-build flags broken links / missing nav entries so CI can
+# treat them as failures.
+# ---------------------------------------------------------------------------
+docs = { cmd = "mkdocs serve --dev-addr 127.0.0.1:8000", description = "Serve the docs site locally with hot reload" }
+docs-serve = { cmd = "mkdocs serve --dev-addr 127.0.0.1:8000", description = "Alias for docs — explicit name" }
+docs-build = { cmd = "mkdocs build --strict --clean", description = "Render the docs site into site/ (strict — fails on broken links)" }
 
 [feature.ci.tasks]
 # Variant of check with JUnit/JSON output for CI systems

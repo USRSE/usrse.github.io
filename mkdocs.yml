@@ -1,0 +1,112 @@
+site_name: US-RSE Engineering Docs
+site_description: Internal engineering documentation for the US-RSE membership platform.
+site_url: https://usrse.github.io/docs/
+repo_url: https://github.com/USRSE/usrse.github.io
+repo_name: USRSE/usrse.github.io
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  # Admonitions: !!! note, !!! warning, !!! tip
+  - admonition
+  - pymdownx.details
+  # Code blocks with language tags + line numbers + copy button
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  # Tables
+  - tables
+  # Task lists (- [x])
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  # Footnotes, abbreviations, attributes
+  - footnotes
+  - abbr
+  - attr_list
+  - md_in_html
+  # Heading anchors
+  - toc:
+      permalink: true
+      permalink_title: Anchor link to this section
+  # Magic links and tabs
+  - pymdownx.magiclink
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/USRSE/usrse.github.io
+    - icon: fontawesome/solid/globe
+      link: https://us-rse.org
+
+# ──────────────────────────────────────────────────────────────────────
+# Navigation
+#
+# Sections map to the existing folder layout under /docs. Add new pages
+# here when they land — strict-mode `mkdocs build` will fail if a doc
+# exists on disk but isn't in the nav, which keeps the index honest.
+# ──────────────────────────────────────────────────────────────────────
+nav:
+  - Home: index.md
+  - Architecture:
+      - Monorepo: architecture/monorepo.md
+      - Frontend: architecture/frontend.md
+      - API & database: architecture/api.md
+      - Authentication: architecture/auth.md
+      - Dossier (profile, directory, search): architecture/dossier.md
+      - Badges & Recognition: architecture/badges.md
+      - Decisions: architecture/decisions.md
+  - Strategy:
+      - Site visual audit (2026-04-29): strategy/2026-04-29-site-visual-audit.md
+  - Specs:
+      - DB schema design (2026-04-28): superpowers/specs/2026-04-28-db-schema-design.md
+      - DB schema amendments (2026-05-02): superpowers/specs/2026-05-02-db-schema-amendments.md
+      - DB schema amendments 2 (2026-05-02): superpowers/specs/2026-05-02-db-schema-amendments-2.md
+      - DB schema amendments 3 (2026-05-02): superpowers/specs/2026-05-02-db-schema-amendments-3.md
