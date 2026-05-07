@@ -19,8 +19,15 @@ import {
   education,
   engagementTypes,
   eventAttendances,
+  eventCommitteeAreas,
+  eventCommitteeAssignments,
   events,
+  eventSessions,
+  eventSessionPresenters,
+  eventSessionTypes,
   experiences,
+  groupMemberships,
+  groups,
   institutions,
   languages,
   leadershipPositions,
@@ -192,6 +199,9 @@ export async function loadMemberDossier(
     attendanceRows,
     leadershipRows,
     workRows,
+    groupMembershipRows,
+    committeeAssignmentRows,
+    sessionPresentationRows,
   ] = await Promise.all([
     db
       .select({
@@ -354,6 +364,87 @@ export async function loadMemberDossier(
       .where(and(eq(works.userId, u.id), isNull(works.deletedAt)))
       // Newest first; null dates fall to the bottom.
       .orderBy(desc(works.workDate)),
+    // Group memberships drive working/affinity/regional group badges.
+    // We pull active and historical rows alike — leftAt distinguishes
+    // current vs alumni at compute time.
+    db
+      .select({
+        groupName: groups.name,
+        groupSlug: groups.slug,
+        groupType: groups.type,
+        role: groupMemberships.role,
+        joinedAt: groupMemberships.joinedAt,
+        leftAt: groupMemberships.leftAt,
+      })
+      .from(groupMemberships)
+      .innerJoin(groups, eq(groupMemberships.groupId, groups.id))
+      .where(
+        and(
+          eq(groupMemberships.userId, u.id),
+          isNull(groups.deletedAt)
+        )
+      )
+      .orderBy(desc(groupMemberships.joinedAt)),
+    // Conference committee leadership (chair / co-chair of an area like
+    // Program Committee). Each row is a service-tier credential.
+    db
+      .select({
+        eventId: events.id,
+        eventSlug: events.slug,
+        eventName: events.name,
+        eventStartDate: events.startDate,
+        areaSlug: eventCommitteeAreas.slug,
+        areaLabel: eventCommitteeAreas.label,
+        level: eventCommitteeAssignments.level,
+      })
+      .from(eventCommitteeAssignments)
+      .innerJoin(
+        events,
+        eq(eventCommitteeAssignments.eventId, events.id)
+      )
+      .innerJoin(
+        eventCommitteeAreas,
+        eq(eventCommitteeAssignments.areaId, eventCommitteeAreas.id)
+      )
+      .where(
+        and(
+          eq(eventCommitteeAssignments.userId, u.id),
+          isNull(eventCommitteeAssignments.deletedAt)
+        )
+      )
+      .orderBy(desc(events.startDate)),
+    // Session presentations let us emit specific kinds (Keynote,
+    // Plenary, Tutorial Lead, etc.) instead of the generic Talk badge
+    // that the event_attendances loop produces from a notes regex.
+    db
+      .select({
+        sessionId: eventSessions.id,
+        eventId: events.id,
+        eventSlug: events.slug,
+        eventStartDate: events.startDate,
+        title: eventSessions.title,
+        typeSlug: eventSessionTypes.slug,
+        typeLabel: eventSessionTypes.label,
+        role: eventSessionPresenters.role,
+      })
+      .from(eventSessionPresenters)
+      .innerJoin(
+        eventSessions,
+        eq(eventSessionPresenters.sessionId, eventSessions.id)
+      )
+      .innerJoin(events, eq(eventSessions.eventId, events.id))
+      .innerJoin(
+        eventSessionTypes,
+        eq(eventSessions.typeId, eventSessionTypes.id)
+      )
+      .where(
+        and(
+          eq(eventSessionPresenters.userId, u.id),
+          isNull(eventSessionPresenters.deletedAt),
+          isNull(eventSessions.deletedAt)
+        )
+      )
+      .orderBy(desc(events.startDate)),
   ]);
 
   return {
@@ -390,6 +481,55 @@ export async function loadMemberDossier(
       isLegacyImport: u.isLegacyImport,
       conferences: attendanceRows,
       leadership: leadershipRows,
+      profile: profileRows[0]
+        ? {
+            displayName: profileRows[0].displayName,
+            headline: profileRows[0].headline,
+            bio: profileRows[0].bio,
+            jobTitle: profileRows[0].jobTitle,
+            institutionName: profileRows[0].institutionName,
+            publicLocation: profileRows[0].publicLocation,
+            orcid: profileRows[0].orcid,
+            githubUrl: profileRows[0].githubUrl,
+            linkedinUrl: profileRows[0].linkedinUrl,
+          }
+        : null,
+      disciplineCount: disciplineRows.length,
+      skillCount: skillRows.length,
+      languageCount: languageRows.length,
+      groupMemberships: groupMembershipRows.map((g) => ({
+        groupName: g.groupName,
+        groupSlug: g.groupSlug,
+        groupType: g.groupType,
+        role: g.role,
+        joinedAt:
+          g.joinedAt instanceof Date
+            ? g.joinedAt.toISOString()
+            : (g.joinedAt as string | null),
+        leftAt:
+          g.leftAt instanceof Date
+            ? g.leftAt.toISOString()
+            : (g.leftAt as string | null),
+      })),
+      committeeAssignments: committeeAssignmentRows.map((c) => ({
+        eventId: c.eventId,
+        eventSlug: c.eventSlug,
+        eventName: c.eventName,
+        eventStartDate: c.eventStartDate,
+        areaSlug: c.areaSlug,
+        areaLabel: c.areaLabel,
+        level: c.level,
+      })),
+      sessionPresentations: sessionPresentationRows.map((p) => ({
+        sessionId: p.sessionId,
+        eventId: p.eventId,
+        eventSlug: p.eventSlug,
+        eventStartDate: p.eventStartDate,
+        title: p.title,
+        typeSlug: p.typeSlug,
+        typeLabel: p.typeLabel,
+        role: p.role,
+      })),
     }),
   };
 }

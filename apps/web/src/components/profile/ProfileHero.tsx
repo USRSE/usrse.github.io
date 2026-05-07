@@ -286,21 +286,110 @@ const HERO_GLYPH_COLOR: Record<BadgeItem["accent"], string> = {
  * (Charter, Three-Peat, First Stage), then meaningful contribution
  * (Spoke, Organized, Sponsored, Volunteered). Plain attendance is
  * worth recognizing in the full section, but it's noise up here.
+ *
+ * Within the milestone tier, hero priority is now layered by rarity:
+ *   1. Speaker streak + Decade Roster + 5-year/10-year anniversary
+ *      and "founding" milestones — the rarest/longest arcs.
+ *   2. Three-Peat / Five-Peat / Charter / Founding Roster (existing).
+ *   3. Profile Complete + breadth-of-craft (Polyglot / Polymath /
+ *      Cross-Disciplinary).
+ *   4. Identity verifications (ORCID / GitHub / LinkedIn) — useful
+ *      to surface but not at the cost of crowding out service tier.
+ *      These sit *below* contribution badges in the hero ordering.
+ *   5. 1-Year anniversary — too common to feature.
  */
+const FEATURED_MILESTONE_PRIORITY: Record<string, number> = {
+  "milestone-speaker-quarter": 1,
+  "milestone-speaker-decade": 2,
+  "milestone-decade-roster": 3,
+  "milestone-anniversary-10": 4,
+  "milestone-five-peat": 5,
+  "milestone-founding-roster": 6,
+  "milestone-anniversary-5": 7,
+  "milestone-three-peat": 8,
+  "milestone-charter-member": 9,
+  "milestone-first-stage": 10,
+  "milestone-profile-complete": 11,
+  "milestone-polymath": 12,
+  "milestone-polyglot": 13,
+  "milestone-cross-disciplinary": 14,
+};
+
+const HERO_HIDDEN_BADGE_IDS = new Set<string>([
+  // 1-year anniversary is more "you signed up" than "you're a
+  // pillar of the community" — leave it for the full Recognition
+  // section.
+  "milestone-anniversary-1",
+]);
+
+const IDENTITY_BADGE_IDS = new Set<string>([
+  "identity-orcid",
+  "identity-github",
+  "identity-linkedin",
+]);
+
 function pickFeaturedBadges(badges: BadgeItem[], limit: number): BadgeItem[] {
   // Service tier (Board, Executive) sits at the top — it's the
   // rarest and most prestigious tier in the system. Then milestones
-  // (Three-Peat, Founding Roster, etc.), then non-attendance
-  // conference contributions. Plain attendance never makes it up
-  // here — those belong to the full Recognition section below.
+  // ranked by their per-id priority (above), then non-attendance
+  // conference contributions, then identity verifications. Plain
+  // attendance and 1-year anniversary never make it up here — those
+  // belong to the full Recognition section below.
+  const visibleMilestones = badges.filter(
+    (b) =>
+      b.tier === "milestone" &&
+      !HERO_HIDDEN_BADGE_IDS.has(b.id) &&
+      !IDENTITY_BADGE_IDS.has(b.id)
+  );
   const service = badges
     .filter((b) => b.tier === "service")
     .sort((a, b) => (a.earnedAt < b.earnedAt ? 1 : -1));
-  const milestones = badges
-    .filter((b) => b.tier === "milestone")
-    .sort((a, b) => (a.earnedAt < b.earnedAt ? 1 : -1));
+  const milestones = visibleMilestones.sort((a, b) => {
+    const pa = FEATURED_MILESTONE_PRIORITY[a.id] ?? 99;
+    const pb = FEATURED_MILESTONE_PRIORITY[b.id] ?? 99;
+    if (pa !== pb) return pa - pb;
+    return a.earnedAt < b.earnedAt ? 1 : -1;
+  });
   const contributions = badges
     .filter((b) => b.tier === "conference" && b.kind !== "Attended")
-    .sort((a, b) => (a.earnedAt < b.earnedAt ? 1 : -1));
-  return [...service, ...milestones, ...contributions].slice(0, limit);
+    .sort((a, b) => {
+      // Phase 2 adds richer session kinds — Keynote / Plenary / Tutorial
+      // Lead etc. — that should outrank the generic Talk and Poster
+      // badges within the contributions bucket. Lower number =
+      // more prominent in the hero strip.
+      const pa = CONTRIBUTION_KIND_PRIORITY[a.kind] ?? 50;
+      const pb = CONTRIBUTION_KIND_PRIORITY[b.kind] ?? 50;
+      if (pa !== pb) return pa - pb;
+      return a.earnedAt < b.earnedAt ? 1 : -1;
+    });
+  const identity = badges.filter((b) => IDENTITY_BADGE_IDS.has(b.id));
+  return [...service, ...milestones, ...contributions, ...identity].slice(
+    0,
+    limit
+  );
 }
+
+/**
+ * Within the conference-contributions bucket, prioritize the rare
+ * keynote/plenary roles ahead of generic talks. Tutorial / Workshop
+ * leads are also distinctive enough to outrank a plain Talk badge.
+ * Unknown kinds default to mid-pack (50).
+ */
+const CONTRIBUTION_KIND_PRIORITY: Record<string, number> = {
+  Keynote: 1,
+  Plenary: 2,
+  "Tutorial Lead": 5,
+  "Workshop Lead": 6,
+  "Panel Chair": 7,
+  "BoF Lead": 8,
+  Panelist: 12,
+  Tutorial: 13,
+  Workshop: 14,
+  BoF: 15,
+  "Lightning Talk": 16,
+  Talk: 20,
+  Poster: 22,
+  Organized: 25,
+  Sponsored: 30,
+  Volunteered: 35,
+};
