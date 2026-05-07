@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Lifetime Achievement",
+    "slug": "lifetime-achievement",
+    "tier": "lifetime",
+    "accent": "graphite",
+    "description": "Recognizes a career of exceptional contribution to the field of research software engineering and to the US-RSE community."
+  },
+  {
+    "name": "USRSE Pioneer",
+    "slug": "usrse-pioneer",
+    "tier": "special",
+    "accent": "purple",
+    "description": "Honors a community member whose early advocacy or organizing work made the US-RSE association possible."
+  },
+  {
+    "name": "Excellence in Service",
+    "slug": "excellence-in-service",
+    "tier": "annual",
+    "accent": "amber",
+    "description": "Annual recognition of sustained, generous service to US-RSE community programs and operations."
+  },
+  {
+    "name": "Mentor of the Year",
+    "slug": "mentor-of-the-year",
+    "tier": "annual",
+    "accent": "teal",
+    "description": "Awarded to a mentor whose guidance materially advanced one or more mentees' careers in research software."
+  },
+  {
+    "name": "Rising Star",
+    "slug": "rising-star",
+    "tier": "annual",
+    "accent": "rose",
+    "description": "Recognizes early-career RSEs whose impact on the community has already been outsized relative to their tenure."
+  },
+  {
+    "name": "Community Builder",
+    "slug": "community-builder",
+    "tier": "annual",
+    "accent": "purple",
+    "description": "For members who have built or sustained working groups, affinity groups, or community calls that the rest of US-RSE relies on."
+  },
+  {
+    "name": "Best Conference Talk",
+    "slug": "best-conference-talk",
+    "tier": "annual",
+    "accent": "purple",
+    "description": "Best oral presentation at the annual US-RSE conference, as judged by the program committee."
+  },
+  {
+    "name": "Best Conference Poster",
+    "slug": "best-conference-poster",
+    "tier": "annual",
+    "accent": "amber",
+    "description": "Best poster at the annual US-RSE conference, as judged by attendee vote and the program committee."
+  }
+]

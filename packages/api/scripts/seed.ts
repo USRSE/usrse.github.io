@@ -16,6 +16,7 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createDb } from "../src/db/index";
 import {
+  awards,
   careerStages,
   countries,
   degreeTypes,
@@ -210,6 +211,13 @@ type CountrySeed = { isoAlpha2: string; isoAlpha3: string; name: string };
 type SkillSeed = { name: string; slug: string };
 type DisciplineSeed = { name: string; slug: string };
 type LanguageSeed = { name: string; slug: string };
+type AwardSeed = {
+  name: string;
+  slug: string;
+  description: string;
+  tier: "lifetime" | "special" | "annual";
+  accent: "purple" | "teal" | "amber" | "rose" | "graphite" | "neutral";
+};
 
 async function seed() {
   console.log("Seeding pronouns…");
@@ -271,6 +279,13 @@ async function seed() {
   }));
   await db.insert(languages).values(languagesData).onConflictDoNothing();
 
+  console.log("Seeding awards…");
+  const awardsData = loadJson<AwardSeed[]>("awards.json").map((a) => ({
+    ...a,
+    status: "approved" as const,
+  }));
+  await db.insert(awards).values(awardsData).onConflictDoNothing();
+
   console.log("\nDone. Seed list sizes:");
   console.log(`  pronouns:                 ${pronounsSeed.length}`);
   console.log(`  degree_types:             ${degreeTypesSeed.length}`);
@@ -287,6 +302,7 @@ async function seed() {
   console.log(`  skills:                   ${skillsData.length}`);
   console.log(`  disciplines:              ${disciplinesData.length}`);
   console.log(`  languages:                ${languagesData.length}`);
+  console.log(`  awards:                   ${awardsData.length}`);
 }
 
 seed().catch((err) => {

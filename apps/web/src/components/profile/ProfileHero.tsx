@@ -299,6 +299,7 @@ const HERO_GLYPH_COLOR: Record<BadgeItem["accent"], string> = {
  *   5. 1-Year anniversary — too common to feature.
  */
 const FEATURED_MILESTONE_PRIORITY: Record<string, number> = {
+  "milestone-sustained-contributor": 0,
   "milestone-speaker-quarter": 1,
   "milestone-speaker-decade": 2,
   "milestone-decade-roster": 3,
@@ -309,6 +310,7 @@ const FEATURED_MILESTONE_PRIORITY: Record<string, number> = {
   "milestone-three-peat": 8,
   "milestone-charter-member": 9,
   "milestone-first-stage": 10,
+  "milestone-first-contribution": 10,
   "milestone-profile-complete": 11,
   "milestone-polymath": 12,
   "milestone-polyglot": 13,

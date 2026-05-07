@@ -174,6 +174,52 @@ export interface SessionPresentationRow {
   role: string;
 }
 
+/** One row of user_awards joined to awards (+ optional event). */
+export interface AwardRow {
+  userAwardId: string;
+  awardSlug: string;
+  awardName: string;
+  /** "lifetime" | "special" | "annual" */
+  awardTier: string;
+  /** "purple" | "teal" | "amber" | "rose" | "graphite" | "neutral" */
+  awardAccent: string;
+  awardDescription: string | null;
+  awardedAt: string | Date;
+  citation: string | null;
+  /** Date of the awarding event when present — drives the "USRSE'YY" stamp on the title. */
+  eventStartDate: string | null;
+  eventName: string | null;
+}
+
+/**
+ * One row of mentorship_pairings, with the *partner* (the other side
+ * of the pairing) resolved against the partner's profile. The badge
+ * layer surfaces the partner's name only when the partner profile is
+ * public — privacy is gated here, not on the route.
+ */
+export interface MentorshipPairingRow {
+  pairingId: string;
+  /** "mentor" | "mentee" — which side the current user is on. */
+  side: "mentor" | "mentee";
+  programSlug: string;
+  startedAt: string | Date;
+  endedAt: string | Date | null;
+  partnerId: string;
+  partnerDisplayName: string | null;
+  partnerSlug: string | null;
+  partnerIsPublic: boolean | null;
+}
+
+/** One row of community_contributions. */
+export interface ContributionRow {
+  id: string;
+  /** "newsletter" | "tutorial" | "guide" | "resource" | "translation" | "community_call_host" | "blog_post" | "podcast" | "other" */
+  kind: string;
+  title: string;
+  url: string | null;
+  publishedAt: string | Date;
+}
+
 interface ComputeInput {
   createdAt: Date | string;
   isLegacyImport: boolean;
@@ -189,6 +235,10 @@ interface ComputeInput {
   groupMemberships: GroupMembershipRow[];
   committeeAssignments: CommitteeAssignmentRow[];
   sessionPresentations: SessionPresentationRow[];
+  /** Phase 3 inputs — recognition signals beyond conferences. */
+  awards: AwardRow[];
+  mentorshipPairings: MentorshipPairingRow[];
+  contributions: ContributionRow[];
 }
 
 /**
@@ -326,6 +376,136 @@ export function computeBadges(input: ComputeInput): Badge[] {
         : `${isCurrent ? "Active in" : "Previously active in"} the ${m.groupName} ${meta.label.toLowerCase()}.`,
       weight: isLead ? "double" : "solid",
     });
+  }
+
+  // ── Phase 3: awards ────────────────────────────────────────────
+  // Each user_award row earns a service-tier badge. Tier on the
+  // award itself drives the visual treatment — lifetime is the
+  // rarest stamp on the dossier and outranks even Board service.
+  for (const a of input.awards) {
+    const accent = (a.awardAccent as BadgeAccent) ?? "amber";
+    const yy = a.eventStartDate ? a.eventStartDate.slice(2, 4) : null;
+    const title = yy ? `${a.awardName} · '${yy}` : a.awardName;
+    const description = a.citation
+      ? `${a.awardDescription ?? a.awardName}. Citation: "${a.citation}"`
+      : (a.awardDescription ?? `${a.awardName} from US-RSE.`);
+    out.push({
+      id: `award-${a.userAwardId}`,
+      tier: "service",
+      kind: a.awardName,
+      title,
+      subtitle:
+        a.awardTier === "lifetime"
+          ? "Lifetime"
+          : a.awardTier === "special"
+            ? "Special"
+            : "Annual",
+      accent,
+      earnedAt: toIso(a.awardedAt),
+      description,
+      weight: "double",
+    });
+  }
+
+  // ── Phase 3: mentorship ───────────────────────────────────────
+  // Both sides of each pairing earn a paired badge. Partner's name
+  // appears in the tooltip only when the partner profile is public —
+  // honors the privacy axis without dropping the badge entirely.
+  for (const p of input.mentorshipPairings) {
+    const isMentor = p.side === "mentor";
+    const partnerLabel =
+      p.partnerIsPublic && p.partnerDisplayName ? p.partnerDisplayName : null;
+    const description = partnerLabel
+      ? isMentor
+        ? `Mentored ${partnerLabel} through the ${p.programSlug} program.`
+        : `Mentored by ${partnerLabel} through the ${p.programSlug} program.`
+      : isMentor
+        ? `Mentored a fellow US-RSE member through the ${p.programSlug} program.`
+        : `Mentored by a fellow US-RSE member through the ${p.programSlug} program.`;
+    out.push({
+      id: `mentorship-${p.pairingId}-${p.side}`,
+      tier: "milestone",
+      kind: isMentor ? "Mentor" : "Mentee",
+      title: isMentor ? "Mentor" : "Mentee",
+      subtitle: p.programSlug,
+      accent: isMentor ? "teal" : "purple",
+      earnedAt: toIso(p.startedAt),
+      description,
+      weight: "solid",
+    });
+  }
+
+  // ── Phase 3: contributions ────────────────────────────────────
+  // One badge per kind the user has contributed to (not one per
+  // row — the badge represents the *practice*, not a specific
+  // newsletter or tutorial). Plus First Contribution and Sustained
+  // Contributor (5+) milestones.
+  if (input.contributions.length > 0) {
+    const byKind = new Map<string, ContributionRow[]>();
+    for (const c of input.contributions) {
+      const list = byKind.get(c.kind) ?? [];
+      list.push(c);
+      byKind.set(c.kind, list);
+    }
+    for (const [kind, rows] of byKind) {
+      const meta = CONTRIBUTION_BADGE[kind];
+      if (!meta) continue;
+      const earliest = rows.reduce((acc, r) => {
+        const rd = toIso(r.publishedAt);
+        return rd < acc ? rd : acc;
+      }, toIso(rows[0].publishedAt));
+      out.push({
+        id: `contribution-${kind}`,
+        tier: "milestone",
+        kind: meta.kindLabel,
+        title: meta.kindLabel,
+        subtitle:
+          rows.length === 1
+            ? meta.singularSubtitle
+            : `${rows.length} ${meta.pluralSubtitle}`,
+        accent: meta.accent,
+        earnedAt: earliest,
+        description: `${meta.descriptionPrefix} ${rows.length === 1 ? "" : `${rows.length} times `}for the US-RSE community.`.trim(),
+        weight: "solid",
+      });
+    }
+
+    // First Contribution — earliest publishedAt across all kinds.
+    const earliestRow = input.contributions
+      .slice()
+      .sort((a, b) =>
+        toIso(a.publishedAt) < toIso(b.publishedAt) ? -1 : 1
+      )[0];
+    out.push({
+      id: "milestone-first-contribution",
+      tier: "milestone",
+      kind: "Milestone",
+      title: "First Contribution",
+      subtitle: contributionTitleFor(earliestRow.kind),
+      accent: "teal",
+      earnedAt: toIso(earliestRow.publishedAt),
+      description: `Made their first contribution to the US-RSE community: "${earliestRow.title}".`,
+      weight: "double",
+    });
+
+    if (input.contributions.length >= 5) {
+      const fifth = input.contributions
+        .slice()
+        .sort((a, b) =>
+          toIso(a.publishedAt) < toIso(b.publishedAt) ? -1 : 1
+        )[4];
+      out.push({
+        id: "milestone-sustained-contributor",
+        tier: "milestone",
+        kind: "Milestone",
+        title: "Sustained Contributor",
+        subtitle: `${input.contributions.length} contributions`,
+        accent: "amber",
+        earnedAt: toIso(fifth.publishedAt),
+        description: `Has made ${input.contributions.length} contributions to the US-RSE community across multiple formats.`,
+        weight: "double",
+      });
+    }
   }
 
   // ── Multi-conference milestones ───────────────────────────────
@@ -787,6 +967,89 @@ function roleSubtitle(role: string, isCurrent: boolean): string {
   const base =
     role === "chair" ? "Chair" : role === "co_chair" ? "Co-Chair" : "Member";
   return isCurrent ? base : `${base} · alumni`;
+}
+
+// ── Phase 3 lookup tables ────────────────────────────────────────────
+
+interface ContributionBadgeMeta {
+  kindLabel: string;
+  /** Subtitle when the user has exactly one contribution of this kind. */
+  singularSubtitle: string;
+  /** Suffix used in the count subtitle ("3 newsletters", "5 tutorials", …). */
+  pluralSubtitle: string;
+  accent: BadgeAccent;
+  descriptionPrefix: string;
+}
+
+const CONTRIBUTION_BADGE: Record<string, ContributionBadgeMeta> = {
+  newsletter: {
+    kindLabel: "Newsletter",
+    singularSubtitle: "Wrote one issue",
+    pluralSubtitle: "newsletters",
+    accent: "purple",
+    descriptionPrefix: "Wrote a US-RSE newsletter",
+  },
+  tutorial: {
+    kindLabel: "Tutorial",
+    singularSubtitle: "Wrote a tutorial",
+    pluralSubtitle: "tutorials",
+    accent: "teal",
+    descriptionPrefix: "Authored a tutorial",
+  },
+  guide: {
+    kindLabel: "Resource Author",
+    singularSubtitle: "Wrote a guide",
+    pluralSubtitle: "guides",
+    accent: "amber",
+    descriptionPrefix: "Authored a community guide",
+  },
+  resource: {
+    kindLabel: "Resource Author",
+    singularSubtitle: "Published a resource",
+    pluralSubtitle: "resources",
+    accent: "amber",
+    descriptionPrefix: "Published a community resource",
+  },
+  translation: {
+    kindLabel: "Translator",
+    singularSubtitle: "Translated a resource",
+    pluralSubtitle: "translations",
+    accent: "rose",
+    descriptionPrefix: "Translated community materials",
+  },
+  community_call_host: {
+    kindLabel: "Call Host",
+    singularSubtitle: "Hosted a call",
+    pluralSubtitle: "calls hosted",
+    accent: "purple",
+    descriptionPrefix: "Hosted a US-RSE community call",
+  },
+  blog_post: {
+    kindLabel: "Blog Author",
+    singularSubtitle: "Wrote a post",
+    pluralSubtitle: "blog posts",
+    accent: "teal",
+    descriptionPrefix: "Wrote a community blog post",
+  },
+  podcast: {
+    kindLabel: "Podcast",
+    singularSubtitle: "Episode appearance",
+    pluralSubtitle: "podcast appearances",
+    accent: "amber",
+    descriptionPrefix: "Appeared on a US-RSE podcast",
+  },
+  other: {
+    kindLabel: "Contribution",
+    singularSubtitle: "One contribution",
+    pluralSubtitle: "contributions",
+    accent: "neutral",
+    descriptionPrefix: "Contributed",
+  },
+};
+
+/** Short title shown in the First Contribution badge subtitle. */
+function contributionTitleFor(kind: string): string {
+  return CONTRIBUTION_BADGE[kind]?.kindLabel ?? "Contribution";
 }
 
 function isProfileComplete(p: ProfileBadgeInput): boolean {

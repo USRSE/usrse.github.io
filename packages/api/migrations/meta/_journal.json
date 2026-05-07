@@ -57,6 +57,13 @@
       "when": 1778098817454,
       "tag": "0007_remarkable_landau",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1778127223156,
+      "tag": "0008_stormy_penance",
+      "breakpoints": true
     }
   ]
 }

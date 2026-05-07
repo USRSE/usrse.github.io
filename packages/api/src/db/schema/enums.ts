@@ -80,3 +80,40 @@ export const workType = pgEnum("work_type", [
 // clobbered on the next import). "manual" rows are member-entered and
 // the member is the source of truth.
 export const workSource = pgEnum("work_source", ["orcid", "manual"]);
+
+// Award rarity tier — drives badge accent and weight. "lifetime" is
+// the rarest (one-and-done), "special" covers ad-hoc community
+// recognition (Pioneer, Honorary), "annual" is the recurring slate
+// (Excellence in Service, Mentor of the Year, etc.).
+export const awardTier = pgEnum("award_tier", [
+  "lifetime",
+  "special",
+  "annual",
+]);
+
+// Visual accent stored on the awards vocab so admins can recolor a
+// new award without redeploying. Keep aligned with BadgeAccent on
+// the frontend.
+export const awardAccent = pgEnum("award_accent", [
+  "purple",
+  "teal",
+  "amber",
+  "rose",
+  "graphite",
+  "neutral",
+]);
+
+// Kinds of community contribution that earn a badge. Open enough to
+// cover most volunteer output without inviting one-off "kind=other"
+// rows that bypass the badge logic.
+export const contributionKind = pgEnum("contribution_kind", [
+  "newsletter",
+  "tutorial",
+  "guide",
+  "resource",
+  "translation",
+  "community_call_host",
+  "blog_post",
+  "podcast",
+  "other",
+]);

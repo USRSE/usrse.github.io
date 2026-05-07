@@ -7,12 +7,14 @@
  * Performs the queries in parallel so a fully-populated profile is
  * still a single round-trip to Neon's HTTP edge.
  */
-import { and, eq, isNull, asc, desc } from "drizzle-orm";
+import { and, eq, isNull, asc, desc, sql } from "drizzle-orm";
 import type { createDb } from "../db";
 import { computeBadges, type Badge } from "./badges";
 export type { Badge, BadgeAccent, BadgeTier } from "./badges";
 import {
+  awards,
   certifications,
+  communityContributions,
   countries,
   careerStages,
   disciplines,
@@ -32,9 +34,11 @@ import {
   languages,
   leadershipPositions,
   leadershipTerms,
+  mentorshipPairings,
   pronouns,
   profiles,
   skills,
+  userAwards,
   userDisciplines,
   userEngagementTypes,
   userLanguages,
@@ -202,6 +206,10 @@ export async function loadMemberDossier(
     groupMembershipRows,
     committeeAssignmentRows,
     sessionPresentationRows,
+    awardRows,
+    mentorPairingRows,
+    menteePairingRows,
+    contributionRows,
   ] = await Promise.all([
     db
       .select({
@@ -445,6 +453,73 @@ export async function loadMemberDossier(
         )
       )
       .orderBy(desc(events.startDate)),
+    // Awards held by this user. Joined to the awards vocab for tier
+    // and accent — and optionally to the awarding event for a
+    // year-stamp on the badge title.
+    db
+      .select({
+        userAwardId: userAwards.id,
+        awardSlug: awards.slug,
+        awardName: awards.name,
+        awardTier: awards.tier,
+        awardAccent: awards.accent,
+        awardDescription: awards.description,
+        awardedAt: userAwards.awardedAt,
+        citation: userAwards.citation,
+        eventStartDate: events.startDate,
+        eventName: events.name,
+      })
+      .from(userAwards)
+      .innerJoin(awards, eq(userAwards.awardId, awards.id))
+      .leftJoin(events, eq(userAwards.awardingEventId, events.id))
+      .where(eq(userAwards.userId, u.id))
+      .orderBy(desc(userAwards.awardedAt)),
+    // Mentorship pairings — two queries (one for each side the user
+    // could be on) so each row can left-join the partner's profile
+    // without alias gymnastics. Privacy gating happens in the
+    // emitter via partnerIsPublic.
+    db
+      .select({
+        pairingId: mentorshipPairings.id,
+        side: sql<"mentor">`'mentor'`,
+        programSlug: mentorshipPairings.programSlug,
+        startedAt: mentorshipPairings.startedAt,
+        endedAt: mentorshipPairings.endedAt,
+        partnerId: mentorshipPairings.menteeId,
+        partnerDisplayName: profiles.displayName,
+        partnerSlug: profiles.slug,
+        partnerIsPublic: profiles.isPublic,
+      })
+      .from(mentorshipPairings)
+      .leftJoin(profiles, eq(profiles.userId, mentorshipPairings.menteeId))
+      .where(eq(mentorshipPairings.mentorId, u.id)),
+    db
+      .select({
+        pairingId: mentorshipPairings.id,
+        side: sql<"mentee">`'mentee'`,
+        programSlug: mentorshipPairings.programSlug,
+        startedAt: mentorshipPairings.startedAt,
+        endedAt: mentorshipPairings.endedAt,
+        partnerId: mentorshipPairings.mentorId,
+        partnerDisplayName: profiles.displayName,
+        partnerSlug: profiles.slug,
+        partnerIsPublic: profiles.isPublic,
+      })
+      .from(mentorshipPairings)
+      .leftJoin(profiles, eq(profiles.userId, mentorshipPairings.mentorId))
+      .where(eq(mentorshipPairings.menteeId, u.id)),
+    // Community contributions — newsletter / tutorial / guide / etc.
+    db
+      .select({
+        id: communityContributions.id,
+        kind: communityContributions.kind,
+        title: communityContributions.title,
+        url: communityContributions.url,
+        publishedAt: communityContributions.publishedAt,
+      })
+      .from(communityContributions)
+      .where(eq(communityContributions.contributorId, u.id))
+      .orderBy(desc(communityContributions.publishedAt)),
   ]);
 
   return {
@@ -529,6 +604,50 @@ export async function loadMemberDossier(
         typeSlug: p.typeSlug,
         typeLabel: p.typeLabel,
         role: p.role,
+      })),
+      awards: awardRows.map((a) => ({
+        userAwardId: a.userAwardId,
+        awardSlug: a.awardSlug,
+        awardName: a.awardName,
+        awardTier: a.awardTier,
+        awardAccent: a.awardAccent,
+        awardDescription: a.awardDescription,
+        awardedAt:
+          a.awardedAt instanceof Date
+            ? a.awardedAt.toISOString()
+            : (a.awardedAt as string),
+        citation: a.citation,
+        eventStartDate: a.eventStartDate,
+        eventName: a.eventName,
+      })),
+      mentorshipPairings: [...mentorPairingRows, ...menteePairingRows].map(
+        (p) => ({
+          pairingId: p.pairingId,
+          side: p.side,
+          programSlug: p.programSlug,
+          startedAt:
+            p.startedAt instanceof Date
+              ? p.startedAt.toISOString()
+              : (p.startedAt as string),
+          endedAt:
+            p.endedAt instanceof Date
+              ? p.endedAt.toISOString()
+              : (p.endedAt as string | null),
+          partnerId: p.partnerId,
+          partnerDisplayName: p.partnerDisplayName,
+          partnerSlug: p.partnerSlug,
+          partnerIsPublic: p.partnerIsPublic,
+        })
+      ),
+      contributions: contributionRows.map((c) => ({
+        id: c.id,
+        kind: c.kind,
+        title: c.title,
+        url: c.url,
+        publishedAt:
+          c.publishedAt instanceof Date
+            ? c.publishedAt.toISOString()
+            : (c.publishedAt as string),
       })),
     }),
   };

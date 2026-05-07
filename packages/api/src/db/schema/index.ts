@@ -10,3 +10,4 @@ export * from "./sessions";
 export * from "./leadership";
 export * from "./works";
 export * from "./audit";
+export * from "./recognition";

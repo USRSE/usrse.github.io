@@ -239,6 +239,38 @@ export function BadgeGlyph({
     return <CommitteeMark color={color} />;
   }
 
+  // Phase 3 — awards, mentorship, contributions.
+  if (badge.id.startsWith("award-")) {
+    return (
+      <AwardMark
+        color={color}
+        tier={badge.subtitle.toLowerCase() as "lifetime" | "special" | "annual"}
+      />
+    );
+  }
+  if (badge.id.startsWith("mentorship-")) {
+    return (
+      <MentorshipMark color={color} mentee={badge.kind === "Mentee"} />
+    );
+  }
+  if (badge.id === "milestone-first-contribution")
+    return <FirstContributionMark color={color} />;
+  if (badge.id === "milestone-sustained-contributor")
+    return <SustainedContributorMark color={color} />;
+  if (badge.id.startsWith("contribution-")) {
+    if (badge.kind === "Newsletter")
+      return <NewsletterMark color={color} />;
+    if (badge.kind === "Tutorial") return <TutorialMark color={color} />;
+    if (badge.kind === "Resource Author")
+      return <ResourceMark color={color} />;
+    if (badge.kind === "Translator")
+      return <TranslatorMark color={color} />;
+    if (badge.kind === "Call Host") return <CallHostMark color={color} />;
+    if (badge.kind === "Blog Author") return <BlogMark color={color} />;
+    if (badge.kind === "Podcast") return <PodcastMark color={color} />;
+    return <ContributionMark color={color} />;
+  }
+
   // Conference badges — role-specific marks for active contribution,
   // year-stamp for plain attendance.
   switch (badge.kind) {
@@ -1117,6 +1149,407 @@ function CommitteeMark({ color }: { color: string }) {
     >
       <circle cx={50} cy={50} r={15} />
       <path d="M 43 51 L 48 56 L 58 44" strokeWidth={2.4} />
+    </g>
+  );
+}
+
+// ── Phase 3 glyphs ──────────────────────────────────────────────────
+
+function AwardMark({
+  color,
+  tier,
+}: {
+  color: string;
+  tier: "lifetime" | "special" | "annual";
+}) {
+  // Trophy + ribbon — varies by tier:
+  //   lifetime: trophy with twin laurels (most ornate)
+  //   special:  star inside a medallion
+  //   annual:   ribbon medallion
+  if (tier === "lifetime") {
+    return (
+      <g
+        stroke={color}
+        strokeWidth={1.6}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      >
+        {/* Laurels */}
+        <path d="M 28 50 Q 24 40 32 32" strokeOpacity={0.55} />
+        <path d="M 30 56 Q 26 60 22 56" strokeOpacity={0.55} />
+        <path d="M 72 50 Q 76 40 68 32" strokeOpacity={0.55} />
+        <path d="M 70 56 Q 74 60 78 56" strokeOpacity={0.55} />
+        {/* Cup body */}
+        <path
+          d="M 38 36 L 62 36 L 60 54 Q 50 60 40 54 Z"
+          fill={color}
+          fillOpacity={0.18}
+        />
+        {/* Handles */}
+        <path d="M 38 40 Q 32 42 32 48" />
+        <path d="M 62 40 Q 68 42 68 48" />
+        {/* Stem + base */}
+        <line x1={50} y1={56} x2={50} y2={64} strokeWidth={2} />
+        <rect x={42} y={64} width={16} height={4} rx={1} fill={color} stroke="none" />
+      </g>
+    );
+  }
+  if (tier === "special") {
+    return (
+      <g>
+        <circle
+          cx={50}
+          cy={50}
+          r={16}
+          fill={color}
+          fillOpacity={0.16}
+          stroke={color}
+          strokeWidth={1.8}
+        />
+        {/* Centered five-point star */}
+        {(() => {
+          const cx = 50;
+          const cy = 50;
+          const outer = 9;
+          const inner = 4;
+          const pts: string[] = [];
+          for (let i = 0; i < 10; i++) {
+            const r = i % 2 === 0 ? outer : inner;
+            const a = (Math.PI / 5) * i - Math.PI / 2;
+            pts.push(`${cx + r * Math.cos(a)},${cy + r * Math.sin(a)}`);
+          }
+          return <polygon points={pts.join(" ")} fill={color} />;
+        })()}
+        {/* Hanging ribbons */}
+        <path
+          d="M 42 64 L 46 74 L 50 70 L 54 74 L 58 64"
+          fill="none"
+          stroke={color}
+          strokeWidth={1.6}
+          strokeLinejoin="round"
+        />
+      </g>
+    );
+  }
+  // annual
+  return (
+    <g>
+      <circle
+        cx={50}
+        cy={48}
+        r={14}
+        fill={color}
+        fillOpacity={0.18}
+        stroke={color}
+        strokeWidth={1.8}
+      />
+      <text
+        x={50}
+        y={49}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily="'Plus Jakarta Sans', system-ui, sans-serif"
+        fontWeight={800}
+        fontSize={14}
+        fill={color}
+      >
+        ★
+      </text>
+      {/* Ribbon tails */}
+      <path
+        d="M 42 60 L 38 76 L 50 70 L 62 76 L 58 60"
+        fill="none"
+        stroke={color}
+        strokeWidth={1.6}
+        strokeLinejoin="round"
+      />
+    </g>
+  );
+}
+
+function MentorshipMark({
+  color,
+  mentee,
+}: {
+  color: string;
+  mentee: boolean;
+}) {
+  // Two figures with a baton passing between them. Mentor variant has
+  // the baton angled away from the central figure (giving); mentee
+  // variant has it angled toward (receiving).
+  return (
+    <g
+      stroke={color}
+      strokeWidth={1.6}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      {/* Two heads */}
+      <circle cx={38} cy={44} r={4} fill={color} stroke="none" />
+      <circle cx={62} cy={44} r={4} fill={color} stroke="none" />
+      {/* Two bodies */}
+      <path
+        d="M 32 60 Q 32 50 38 50 Q 44 50 44 60"
+        fill={color}
+        fillOpacity={0.15}
+      />
+      <path
+        d="M 56 60 Q 56 50 62 50 Q 68 50 68 60"
+        fill={color}
+        fillOpacity={0.15}
+      />
+      {/* Baton — direction flips for mentee */}
+      {mentee ? (
+        <path d="M 56 50 L 44 56" strokeWidth={2.4} />
+      ) : (
+        <path d="M 44 50 L 56 56" strokeWidth={2.4} />
+      )}
+      <circle
+        cx={mentee ? 56 : 44}
+        cy={50}
+        r={2}
+        fill={color}
+        stroke="none"
+      />
+    </g>
+  );
+}
+
+function NewsletterMark({ color }: { color: string }) {
+  // Folded newsletter — masthead block + two text lines.
+  return (
+    <g
+      stroke={color}
+      strokeWidth={1.6}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect
+        x={32}
+        y={34}
+        width={36}
+        height={32}
+        rx={1.5}
+        fill={color}
+        fillOpacity={0.12}
+      />
+      <rect x={36} y={38} width={28} height={6} rx={0.5} fill={color} stroke="none" />
+      <line x1={36} y1={50} x2={62} y2={50} strokeOpacity={0.55} />
+      <line x1={36} y1={56} x2={56} y2={56} strokeOpacity={0.55} />
+      <line x1={36} y1={62} x2={60} y2={62} strokeOpacity={0.55} />
+    </g>
+  );
+}
+
+function ResourceMark({ color }: { color: string }) {
+  // Stacked papers / resource bundle.
+  return (
+    <g
+      stroke={color}
+      strokeWidth={1.6}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect
+        x={36}
+        y={38}
+        width={26}
+        height={32}
+        rx={1.5}
+        fill={color}
+        fillOpacity={0.12}
+      />
+      <rect
+        x={32}
+        y={34}
+        width={26}
+        height={32}
+        rx={1.5}
+        fill="white"
+        stroke={color}
+      />
+      <line x1={36} y1={42} x2={50} y2={42} strokeOpacity={0.55} />
+      <line x1={36} y1={48} x2={52} y2={48} strokeOpacity={0.55} />
+      <line x1={36} y1={54} x2={48} y2={54} strokeOpacity={0.55} />
+    </g>
+  );
+}
+
+function TranslatorMark({ color }: { color: string }) {
+  // Two character glyphs (A and 文-style block) with a bridge between.
+  return (
+    <g>
+      <text
+        x={36}
+        y={54}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily="'Plus Jakarta Sans', system-ui, sans-serif"
+        fontWeight={800}
+        fontSize={20}
+        fill={color}
+      >
+        A
+      </text>
+      <path
+        d="M 44 50 L 56 50"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinecap="round"
+      />
+      <text
+        x={64}
+        y={54}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily="'Plus Jakarta Sans', system-ui, sans-serif"
+        fontWeight={800}
+        fontSize={20}
+        fill={color}
+      >
+        亜
+      </text>
+    </g>
+  );
+}
+
+function CallHostMark({ color }: { color: string }) {
+  // Headset / mic-with-arc — calls in progress.
+  return (
+    <g
+      stroke={color}
+      strokeWidth={1.8}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      fill="none"
+    >
+      <path d="M 30 52 Q 30 36 50 36 Q 70 36 70 52" />
+      <rect x={28} y={50} width={8} height={14} rx={2} fill={color} stroke="none" />
+      <rect x={64} y={50} width={8} height={14} rx={2} fill={color} stroke="none" />
+      {/* Mouthpiece */}
+      <path d="M 64 60 Q 60 66 50 66 Q 46 66 46 62" />
+    </g>
+  );
+}
+
+function BlogMark({ color }: { color: string }) {
+  // Quill on paper.
+  return (
+    <g
+      stroke={color}
+      strokeWidth={1.6}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect
+        x={32}
+        y={36}
+        width={28}
+        height={30}
+        rx={1.5}
+        fill={color}
+        fillOpacity={0.12}
+      />
+      <line x1={36} y1={44} x2={54} y2={44} strokeOpacity={0.55} />
+      <line x1={36} y1={50} x2={50} y2={50} strokeOpacity={0.55} />
+      {/* Quill */}
+      <path
+        d="M 56 36 L 70 50 L 64 56 L 50 42 Z"
+        fill={color}
+        fillOpacity={0.4}
+      />
+      <line x1={64} y1={56} x2={56} y2={64} strokeWidth={2} />
+    </g>
+  );
+}
+
+function PodcastMark({ color }: { color: string }) {
+  // Microphone with broadcast waves.
+  return (
+    <g
+      stroke={color}
+      strokeWidth={1.8}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      fill="none"
+    >
+      <rect x={45} y={32} width={10} height={20} rx={5} fill={color} stroke="none" />
+      <path d="M 38 50 Q 38 60 50 60 Q 62 60 62 50" />
+      <line x1={50} y1={60} x2={50} y2={66} />
+      <line x1={42} y1={66} x2={58} y2={66} />
+      {/* Waves */}
+      <path d="M 28 38 Q 26 42 28 46" strokeOpacity={0.6} />
+      <path d="M 24 34 Q 20 42 24 50" strokeOpacity={0.4} />
+      <path d="M 72 38 Q 74 42 72 46" strokeOpacity={0.6} />
+      <path d="M 76 34 Q 80 42 76 50" strokeOpacity={0.4} />
+    </g>
+  );
+}
+
+function ContributionMark({ color }: { color: string }) {
+  // Generic upward arrow inside a hex-implied frame for the "other"
+  // contribution kind.
+  return (
+    <g
+      stroke={color}
+      strokeWidth={2.2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      fill="none"
+    >
+      <path d="M 50 64 L 50 38 M 38 50 L 50 38 L 62 50" />
+    </g>
+  );
+}
+
+function FirstContributionMark({ color }: { color: string }) {
+  // Number "1" inside a soft circle — the first ascent.
+  return (
+    <g>
+      <circle
+        cx={50}
+        cy={50}
+        r={16}
+        fill={color}
+        fillOpacity={0.14}
+        stroke={color}
+        strokeWidth={1.6}
+      />
+      <text
+        x={50}
+        y={51}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily="'Plus Jakarta Sans', system-ui, sans-serif"
+        fontWeight={800}
+        fontSize={24}
+        fill={color}
+      >
+        1
+      </text>
+    </g>
+  );
+}
+
+function SustainedContributorMark({ color }: { color: string }) {
+  // Five small dots ascending — sustained output rendered as a step
+  // pattern.
+  return (
+    <g fill={color} stroke={color}>
+      <circle cx={32} cy={62} r={2.5} />
+      <circle cx={40} cy={56} r={2.5} />
+      <circle cx={50} cy={50} r={3} />
+      <circle cx={60} cy={44} r={2.5} />
+      <circle cx={68} cy={38} r={2.5} />
+      {/* Connecting line */}
+      <path
+        d="M 32 62 L 40 56 L 50 50 L 60 44 L 68 38"
+        fill="none"
+        strokeWidth={1.5}
+        strokeLinecap="round"
+        strokeOpacity={0.55}
+      />
     </g>
   );
 }
