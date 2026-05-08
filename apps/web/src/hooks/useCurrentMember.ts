@@ -142,6 +142,23 @@ export interface VocabItem {
   status: "pending" | "approved";
 }
 
+/**
+ * One row from user_institutions. The `id` is the join-row id used by
+ * PATCH /me/institutions/:joinId and DELETE /me/institutions/:joinId.
+ * `institutionName` is the canonical name from the institutions table
+ * (so post-merge users always see the canonical form). The dossier
+ * orders these primary-first, then by start date, then by name.
+ */
+export interface AffiliationItem {
+  id: string;
+  institutionId: string;
+  institutionName: string;
+  isPrimary: boolean;
+  role: string | null;
+  startedAt: string | null;
+  endedAt: string | null;
+}
+
 export interface CurrentMember {
   id: string;
   memberId: string;
@@ -151,6 +168,7 @@ export interface CurrentMember {
   isLegacyImport: boolean;
   createdAt: string;
   profile: CurrentMemberProfile | null;
+  affiliations: AffiliationItem[];
   experiences: ExperienceItem[];
   education: EducationItem[];
   certifications: CertificationItem[];

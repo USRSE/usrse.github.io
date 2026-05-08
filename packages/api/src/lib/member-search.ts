@@ -30,6 +30,7 @@ import {
   profiles,
   users,
   userDisciplines,
+  userInstitutions,
 } from "../db/schema";
 
 type Db = ReturnType<typeof createDb>;
@@ -143,7 +144,15 @@ export async function searchMembers(
       })
       .from(profiles)
       .innerJoin(users, eq(users.id, profiles.userId))
-      .leftJoin(institutions, eq(institutions.id, profiles.institutionId))
+      // Join through user_institutions filtered to is_primary=true. The
+      // partial unique index `user_institutions_one_primary_per_user`
+      // guarantees at most one match per user, so this leftJoin can't
+      // duplicate rows.
+      .leftJoin(
+        userInstitutions,
+        and(eq(userInstitutions.userId, users.id), eq(userInstitutions.isPrimary, true))
+      )
+      .leftJoin(institutions, eq(institutions.id, userInstitutions.institutionId))
       .leftJoin(careerStages, eq(careerStages.id, profiles.careerStageId))
       .leftJoin(countries, eq(countries.id, profiles.countryId))
       .where(whereExpr)
@@ -156,7 +165,11 @@ export async function searchMembers(
       .select({ count: sql<number>`count(*)::int` })
       .from(profiles)
       .innerJoin(users, eq(users.id, profiles.userId))
-      .leftJoin(institutions, eq(institutions.id, profiles.institutionId))
+      .leftJoin(
+        userInstitutions,
+        and(eq(userInstitutions.userId, users.id), eq(userInstitutions.isPrimary, true))
+      )
+      .leftJoin(institutions, eq(institutions.id, userInstitutions.institutionId))
       .where(whereExpr),
   ]);
 

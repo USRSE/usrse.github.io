@@ -1,10 +1,11 @@
 import { Hono } from "hono";
-import { asc, eq } from "drizzle-orm";
+import { and, asc, eq, ilike, isNull } from "drizzle-orm";
 import { createDb } from "../db";
 import {
   careerStages,
   countries,
   disciplines,
+  institutions,
   languages,
   skills,
 } from "../db/schema/vocab";
@@ -103,6 +104,55 @@ vocabRoute.get("/", async (c) => {
   } catch (e) {
     const message = e instanceof Error ? e.message : String(e);
     console.error("/vocab failed", message);
+    return c.json({ ok: false, error: "internal", message }, 500);
+  }
+});
+
+/**
+ * Institution name search for the affiliation editor. Institutions are
+ * too numerous (~1,400+) to bundle into the main /vocab response, so
+ * the editor calls this on each keystroke (debounced client-side) and
+ * gets back a small set of approved-and-not-merged candidates ordered
+ * by leading-substring match, then alphabetically.
+ *
+ * No auth — the institution names themselves are non-sensitive
+ * vocabulary, and the directory's filter sidebar will eventually use
+ * the same endpoint.
+ */
+vocabRoute.get("/institutions/search", async (c) => {
+  if (!c.env.DATABASE_URL) {
+    return c.json({ ok: false, error: "internal" }, 500);
+  }
+  const q = (c.req.query("q") ?? "").trim();
+  if (q.length < 2) {
+    return c.json({ ok: true, results: [] });
+  }
+  const limit = Math.min(
+    Math.max(parseInt(c.req.query("limit") ?? "20", 10) || 20, 1),
+    50
+  );
+  try {
+    const db = createDb(c.env.DATABASE_URL);
+    const rows = await db
+      .select({
+        id: institutions.id,
+        name: institutions.name,
+        slug: institutions.slug,
+      })
+      .from(institutions)
+      .where(
+        and(
+          eq(institutions.status, "approved"),
+          isNull(institutions.mergedIntoId),
+          ilike(institutions.name, `%${q}%`)
+        )
+      )
+      .orderBy(asc(institutions.name))
+      .limit(limit);
+    return c.json({ ok: true, results: rows });
+  } catch (e) {
+    const message = e instanceof Error ? e.message : String(e);
+    console.error("/vocab/institutions/search failed", message);
     return c.json({ ok: false, error: "internal", message }, 500);
   }
 });

@@ -9,12 +9,7 @@ import {
   uuid,
 } from "drizzle-orm/pg-core";
 import { userRole } from "./enums";
-import {
-  careerStages,
-  countries,
-  institutions,
-  pronouns,
-} from "./vocab";
+import { careerStages, countries, pronouns } from "./vocab";
 
 export const users = pgTable(
   "users",
@@ -73,9 +68,9 @@ export const profiles = pgTable(
     // storage handle, and so we can clean up the old object on
     // replacement.
     photoStorageKey: text("photo_storage_key"),
-    institutionId: uuid("institution_id").references(() => institutions.id, {
-      onDelete: "set null",
-    }),
+    // institutionId moved to user_institutions join table — a member
+    // can have multiple affiliations now, with one is_primary=true
+    // driving the dossier's "based at" pillar.
     jobTitle: text("job_title"),
     careerStageId: uuid("career_stage_id").references(() => careerStages.id, {
       onDelete: "set null",
@@ -113,7 +108,6 @@ export const profiles = pgTable(
     deletedAt: timestamp("deleted_at", { withTimezone: true }),
   },
   (t) => [
-    index("profiles_institution_idx").on(t.institutionId),
     index("profiles_country_idx").on(t.countryId),
     index("profiles_show_on_map_idx")
       .on(t.showOnMap)
@@ -136,10 +130,6 @@ export const profilesRelations = relations(profiles, ({ one }) => ({
   pronoun: one(pronouns, {
     fields: [profiles.pronounId],
     references: [pronouns.id],
-  }),
-  institution: one(institutions, {
-    fields: [profiles.institutionId],
-    references: [institutions.id],
   }),
   careerStage: one(careerStages, {
     fields: [profiles.careerStageId],

@@ -1,15 +1,12 @@
 import { useMemo } from "react";
 import { useInView } from "@/hooks/useInView";
 import { IdentitySection } from "@/components/profile/IdentitySection";
+import { AffiliationSection } from "@/components/profile/AffiliationSection";
 import { CareerArcSection } from "@/components/profile/CareerArcSection";
 import { CraftSection } from "@/components/profile/CraftSection";
 import { CommunitySection } from "@/components/profile/CommunitySection";
 import { OnStageSection } from "@/components/profile/OnStageSection";
 import { RecognitionSection } from "@/components/profile/RecognitionSection";
-import {
-  SectionFrame,
-  NotYetWritten,
-} from "@/components/profile/SectionFrame";
 import { ProfileHero } from "@/components/profile/ProfileHero";
 import { ProfileJourneyFooter } from "@/components/profile/ProfileJourneyFooter";
 import { buildContactLinks } from "@/components/profile/ContactBylines";
@@ -86,20 +83,15 @@ export function ProfileView({
 
         {/* ── 02 · AFFILIATION ──────────────────────────────────── */}
         <RevealOnView>
-          <SectionFrame
-            number="02"
-            eyebrow="Affiliation"
-            accent="teal"
-            action={isOwner ? <EditStub /> : null}
-          >
-            <Affiliation
-              jobTitle={profile?.jobTitle ?? null}
-              institutionName={profile?.institutionName ?? null}
-              careerStageLabel={profile?.careerStageLabel ?? null}
-              location={profile?.publicLocation ?? null}
-              countryName={profile?.countryName ?? null}
-            />
-          </SectionFrame>
+          <AffiliationSection
+            member={isCurrentMember(member) ? member : asCurrentMemberShim(member)}
+            isOwner={isOwner}
+            jobTitle={profile?.jobTitle ?? null}
+            careerStageLabel={profile?.careerStageLabel ?? null}
+            publicLocation={profile?.publicLocation ?? null}
+            countryName={profile?.countryName ?? null}
+            onMemberUpdated={(next) => onMemberUpdated?.(next)}
+          />
         </RevealOnView>
 
         {/* ── 03 · CAREER ARC ───────────────────────────────────── */}
@@ -161,102 +153,6 @@ function RevealOnView({ children }: { children: React.ReactNode }) {
     >
       {children}
     </div>
-  );
-}
-
-function EditStub() {
-  return (
-    <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-300">
-      ✎ soon
-    </span>
-  );
-}
-
-function Affiliation({
-  jobTitle,
-  institutionName,
-  careerStageLabel,
-  location,
-  countryName,
-}: {
-  jobTitle: string | null;
-  institutionName: string | null;
-  careerStageLabel: string | null;
-  location: string | null;
-  countryName: string | null;
-}) {
-  if (!jobTitle && !location && !institutionName) {
-    return (
-      <NotYetWritten message="institution, role, and location will live here" />
-    );
-  }
-  // Defensive de-dupe: legacy saves and free-text entries can already
-  // contain the country name in the location string. Only append
-  // countryName when it isn't already present in the location text,
-  // so we never render "Seattle, Washington · United States · United
-  // States."
-  const locationContainsCountry = Boolean(
-    location && countryName && location.toLowerCase().includes(countryName.toLowerCase())
-  );
-  const placeLine = locationContainsCountry
-    ? location
-    : [location, countryName].filter(Boolean).join(" · ");
-  return (
-    <div className="space-y-10">
-      {/* Three pillars — gap-px gradient seam, no per-cell shadow.
-          Mirrors MissionPage's "gap-px bg-neutral-200" pillar pattern. */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-gradient-to-r from-purple-200 via-neutral-200 to-teal-200 rounded-3xl overflow-hidden">
-        <Pillar
-          label="Role"
-          value={jobTitle}
-          subValue={careerStageLabel}
-          accent="purple"
-        />
-        <Pillar label="Institution" value={institutionName} accent="neutral" />
-        <Pillar label="Based in" value={placeLine || null} accent="teal" />
-      </div>
-    </div>
-  );
-}
-
-function Pillar({
-  label,
-  value,
-  subValue,
-  accent,
-}: {
-  label: string;
-  value: string | null;
-  subValue?: string | null;
-  accent: "purple" | "teal" | "neutral";
-}) {
-  const accentBar = {
-    purple: "bg-purple-500",
-    teal: "bg-teal-500",
-    neutral: "bg-neutral-300",
-  }[accent];
-  return (
-    <article className="relative bg-white px-6 lg:px-7 py-7">
-      <span
-        aria-hidden="true"
-        className={`absolute top-0 left-6 right-6 h-[3px] rounded-b-full ${accentBar}`}
-      />
-      <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-400 mt-3 mb-3">
-        {label}
-      </p>
-      {value ? (
-        <p className="font-display text-xl lg:text-2xl font-semibold text-neutral-900 leading-tight tracking-tight text-balance">
-          {value}
-        </p>
-      ) : (
-        <p className="text-sm text-neutral-400 italic">not set</p>
-      )}
-      {subValue && (
-        <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-500">
-          {subValue}
-        </p>
-      )}
-    </article>
   );
 }
 
