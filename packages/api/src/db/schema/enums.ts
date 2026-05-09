@@ -2,7 +2,8 @@ import { pgEnum } from "drizzle-orm/pg-core";
 
 export const userRole = pgEnum("user_role", [
   "member",
-  "admin",
+  "staff",
+  "admin",        // legacy — backfilled to staff in 0012, dropped in a future migration
   "super_admin",
 ]);
 
