@@ -3,7 +3,7 @@
  *
  * Reads .data/us-rse-membership-2026-05-02.csv (Google Forms export)
  * and lands every row into `users` + `profiles`, plus auto-proposes
- * pending `institutions` rows for every unique institution name.
+ * pending `organizations` rows for every unique institution name.
  *
  * Idempotent: re-runs upsert on email so the script can be retried
  * if it fails partway through. createdAt is sourced from the CSV
@@ -23,7 +23,7 @@ import { createDb } from "../src/db/index";
 import {
   countries,
   engagementTypes,
-  institutions,
+  organizations,
   profiles,
   userEngagementTypes,
   users,
@@ -304,8 +304,8 @@ async function importCsv() {
     db.select({ id: countries.id, name: countries.name }).from(countries),
     db.select({ id: engagementTypes.id, slug: engagementTypes.slug }).from(engagementTypes),
     db
-      .select({ id: institutions.id, name: institutions.name })
-      .from(institutions),
+      .select({ id: organizations.id, name: organizations.name })
+      .from(organizations),
   ]);
   const countryByName = new Map<string, string>(
     countryRows.map((c) => [c.name.toLowerCase(), c.id])
@@ -317,10 +317,10 @@ async function importCsv() {
     institutionRows.map((i) => [i.name.toLowerCase(), i.id])
   );
   console.log(
-    `  ${countryByName.size} countries, ${engagementBySlug.size} engagement types, ${institutionByName.size} institutions.`
+    `  ${countryByName.size} countries, ${engagementBySlug.size} engagement types, ${institutionByName.size} organizations.`
   );
 
-  // ── First pass: collect unique institutions to propose ────────────
+  // ── First pass: collect unique organizations to propose ────────────
   const newInstitutionsByLower = new Map<string, string>(); // lower → canonical (first-seen) form
   for (const r of dataRows) {
     const rec = rowToRecord(r);
@@ -330,7 +330,7 @@ async function importCsv() {
     if (institutionByName.has(lower)) continue;
     if (!newInstitutionsByLower.has(lower)) newInstitutionsByLower.set(lower, inst);
   }
-  console.log(`Identified ${newInstitutionsByLower.size} new institutions to propose.`);
+  console.log(`Identified ${newInstitutionsByLower.size} new organizations to propose.`);
 
   if (newInstitutionsByLower.size > 0) {
     // Insert in chunks to stay under any single-statement size limit.
@@ -349,10 +349,10 @@ async function importCsv() {
     for (let i = 0; i < toInsert.length; i += chunkSize) {
       const chunk = toInsert.slice(i, i + chunkSize);
       const result = await db
-        .insert(institutions)
+        .insert(organizations)
         .values(chunk)
         .onConflictDoNothing()
-        .returning({ id: institutions.id, name: institutions.name });
+        .returning({ id: organizations.id, name: organizations.name });
       for (const r of result) institutionByName.set(r.name.toLowerCase(), r.id);
       inserted += result.length;
     }
@@ -364,13 +364,13 @@ async function importCsv() {
         .map((t) => t.name);
       if (missing.length > 0) {
         const refetched = await db
-          .select({ id: institutions.id, name: institutions.name })
-          .from(institutions)
-          .where(inArray(institutions.name, missing));
+          .select({ id: organizations.id, name: organizations.name })
+          .from(organizations)
+          .where(inArray(organizations.name, missing));
         for (const r of refetched) institutionByName.set(r.name.toLowerCase(), r.id);
       }
     }
-    console.log(`Inserted ${inserted} pending institutions (cache size now ${institutionByName.size}).`);
+    console.log(`Inserted ${inserted} pending organizations (cache size now ${institutionByName.size}).`);
   }
 
   // ── Second pass: build user + profile + engagement payloads ───────

@@ -68,7 +68,7 @@ export const profiles = pgTable(
     // storage handle, and so we can clean up the old object on
     // replacement.
     photoStorageKey: text("photo_storage_key"),
-    // institutionId moved to user_institutions join table — a member
+    // organizationId moved to user_organizations join table — a member
     // can have multiple affiliations now, with one is_primary=true
     // driving the dossier's "based at" pillar.
     jobTitle: text("job_title"),

@@ -59,7 +59,7 @@ export function ProfileView({
         slug={slug}
         role={member.role}
         jobTitle={profile?.jobTitle ?? null}
-        institutionName={profile?.institutionName ?? null}
+        organizationName={profile?.organizationName ?? null}
         publicLocation={profile?.publicLocation ?? null}
         joinedIso={member.createdAt}
         isOwner={isOwner}

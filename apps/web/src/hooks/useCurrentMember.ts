@@ -22,7 +22,7 @@ export interface CurrentMemberProfile {
   orcid: string | null;
   websiteUrl: string | null;
   pronounLabel: string | null;
-  institutionName: string | null;
+  organizationName: string | null;
   careerStageLabel: string | null;
   countryName: string | null;
   region: string | null;
@@ -143,16 +143,16 @@ export interface VocabItem {
 }
 
 /**
- * One row from user_institutions. The `id` is the join-row id used by
- * PATCH /me/institutions/:joinId and DELETE /me/institutions/:joinId.
- * `institutionName` is the canonical name from the institutions table
+ * One row from user_organizations. The `id` is the join-row id used by
+ * PATCH /me/organizations/:joinId and DELETE /me/organizations/:joinId.
+ * `organizationName` is the canonical name from the organizations table
  * (so post-merge users always see the canonical form). The dossier
  * orders these primary-first, then by start date, then by name.
  */
 export interface AffiliationItem {
   id: string;
-  institutionId: string;
-  institutionName: string;
+  organizationId: string;
+  organizationName: string;
   isPrimary: boolean;
   role: string | null;
   startedAt: string | null;

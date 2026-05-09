@@ -19,7 +19,7 @@ interface ProfileHeroProps {
   slug: string | null;
   role: string;
   jobTitle: string | null;
-  institutionName: string | null;
+  organizationName: string | null;
   publicLocation: string | null;
   joinedIso: string;
   isOwner: boolean;
@@ -44,7 +44,7 @@ export function ProfileHero({
   slug,
   role,
   jobTitle,
-  institutionName,
+  organizationName,
   publicLocation,
   joinedIso,
   isOwner,
@@ -57,7 +57,7 @@ export function ProfileHero({
   // attendance — those belong to the full grid below, not the hero.
   const featured = pickFeaturedBadges(badges, HERO_BADGE_CAP);
   const formattedId = formatMemberId(memberId);
-  const subtitleParts = [jobTitle, institutionName, publicLocation].filter(
+  const subtitleParts = [jobTitle, organizationName, publicLocation].filter(
     (p): p is string => Boolean(p && p.trim())
   );
 

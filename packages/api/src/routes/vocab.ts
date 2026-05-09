@@ -5,7 +5,7 @@ import {
   careerStages,
   countries,
   disciplines,
-  institutions,
+  organizations,
   languages,
   skills,
 } from "../db/schema/vocab";
@@ -109,17 +109,17 @@ vocabRoute.get("/", async (c) => {
 });
 
 /**
- * Institution name search for the affiliation editor. Institutions are
- * too numerous (~1,400+) to bundle into the main /vocab response, so
- * the editor calls this on each keystroke (debounced client-side) and
- * gets back a small set of approved-and-not-merged candidates ordered
- * by leading-substring match, then alphabetically.
+ * Organization name search for the affiliation editor. Organizations
+ * are too numerous (~1,400+) to bundle into the main /vocab response,
+ * so the editor calls this on each keystroke (debounced client-side)
+ * and gets back a small set of approved-and-not-merged candidates
+ * ordered alphabetically.
  *
- * No auth — the institution names themselves are non-sensitive
+ * No auth — the organization names themselves are non-sensitive
  * vocabulary, and the directory's filter sidebar will eventually use
  * the same endpoint.
  */
-vocabRoute.get("/institutions/search", async (c) => {
+vocabRoute.get("/organizations/search", async (c) => {
   if (!c.env.DATABASE_URL) {
     return c.json({ ok: false, error: "internal" }, 500);
   }
@@ -135,24 +135,24 @@ vocabRoute.get("/institutions/search", async (c) => {
     const db = createDb(c.env.DATABASE_URL);
     const rows = await db
       .select({
-        id: institutions.id,
-        name: institutions.name,
-        slug: institutions.slug,
+        id: organizations.id,
+        name: organizations.name,
+        slug: organizations.slug,
       })
-      .from(institutions)
+      .from(organizations)
       .where(
         and(
-          eq(institutions.status, "approved"),
-          isNull(institutions.mergedIntoId),
-          ilike(institutions.name, `%${q}%`)
+          eq(organizations.status, "approved"),
+          isNull(organizations.mergedIntoId),
+          ilike(organizations.name, `%${q}%`)
         )
       )
-      .orderBy(asc(institutions.name))
+      .orderBy(asc(organizations.name))
       .limit(limit);
     return c.json({ ok: true, results: rows });
   } catch (e) {
     const message = e instanceof Error ? e.message : String(e);
-    console.error("/vocab/institutions/search failed", message);
+    console.error("/vocab/organizations/search failed", message);
     return c.json({ ok: false, error: "internal", message }, 500);
   }
 });

@@ -6,13 +6,13 @@ import { createDb } from "../db";
 import {
   countries,
   disciplines,
-  institutions,
   languages,
+  organizations,
   profiles,
   skills,
   userDisciplines,
-  userInstitutions,
   userLanguages,
+  userOrganizations,
   userSkills,
   users,
 } from "../db/schema";
@@ -51,8 +51,8 @@ const profilePatchSchema = z
       .optional(),
     websiteUrl: z.url().max(200).nullable().optional(),
     pronounId: z.uuid().nullable().optional(),
-    // institutionId removed — affiliations are now managed via the
-    // POST/DELETE /me/institutions endpoints since a member can have
+    // organizationId removed — affiliations are now managed via the
+    // POST/DELETE /me/organizations endpoints since a member can have
     // multiple. See packages/api/src/db/schema/joins.ts.
     careerStageId: z.uuid().nullable().optional(),
     countryId: z.uuid().nullable().optional(),
@@ -843,21 +843,21 @@ meRoute.delete("/languages/:id", async (c) => {
   return c.json({ ok: true, user: updated });
 });
 
-// ── Institutions (affiliations) ───────────────────────────────────────
+// ── Organizations (affiliations) ──────────────────────────────────────
 //
 // A member can have many affiliations now. Adds either reference an
-// existing approved institution by id or propose a new one by name
+// existing approved organization by id or propose a new one by name
 // (status=pending, awaiting admin approval). The join row carries
 // per-affiliation metadata: is_primary (drives the dossier "based at"
 // pillar), role, and start/end dates.
 
 /**
- * Resolve an "existing or proposed" institution pick. Mirrors
+ * Resolve an "existing or proposed" organization pick. Mirrors
  * resolveVocabPick but follows the `merged_into_id` chain so members
- * who add a deprecated/duplicate row land on the canonical institution
+ * who add a deprecated/duplicate row land on the canonical organization
  * automatically.
  */
-async function resolveInstitutionPick(
+async function resolveOrganizationPick(
   db: ReturnType<typeof createDb>,
   suggesterId: string,
   input: { id?: string; name?: string }
@@ -866,9 +866,9 @@ async function resolveInstitutionPick(
   | { ok: false; status: 400 | 404; message: string }
 > {
   // Walk a possible merged_into chain to the canonical row. Bounded
-  // depth — institutions don't deep-chain, but a small cap protects
+  // depth — organizations don't deep-chain, but a small cap protects
   // against accidental loops.
-  type InstitutionLookup = {
+  type OrganizationLookup = {
     id: string;
     name: string;
     slug: string;
@@ -880,16 +880,16 @@ async function resolveInstitutionPick(
   ): Promise<VocabResolved | null> => {
     let cursor: string | null = startId;
     for (let depth = 0; depth < 5 && cursor; depth++) {
-      const rows: InstitutionLookup[] = await db
+      const rows: OrganizationLookup[] = await db
         .select({
-          id: institutions.id,
-          name: institutions.name,
-          slug: institutions.slug,
-          status: institutions.status,
-          mergedIntoId: institutions.mergedIntoId,
+          id: organizations.id,
+          name: organizations.name,
+          slug: organizations.slug,
+          status: organizations.status,
+          mergedIntoId: organizations.mergedIntoId,
         })
-        .from(institutions)
-        .where(eq(institutions.id, cursor))
+        .from(organizations)
+        .where(eq(organizations.id, cursor))
         .limit(1);
       const row = rows[0];
       if (!row) return null;
@@ -909,14 +909,14 @@ async function resolveInstitutionPick(
   if (input.id) {
     const resolved = await resolveCanonical(input.id);
     if (!resolved) {
-      return { ok: false, status: 404, message: "Institution id not found." };
+      return { ok: false, status: 404, message: "Organization id not found." };
     }
     if (resolved.status !== "approved") {
       return {
         ok: false,
         status: 400,
         message:
-          "Institution id refers to a pending row — propose by name instead.",
+          "Organization id refers to a pending row — propose by name instead.",
       };
     }
     return { ok: true, row: resolved };
@@ -935,14 +935,14 @@ async function resolveInstitutionPick(
 
   const existingBySlug = await db
     .select({
-      id: institutions.id,
-      name: institutions.name,
-      slug: institutions.slug,
-      status: institutions.status,
-      mergedIntoId: institutions.mergedIntoId,
+      id: organizations.id,
+      name: organizations.name,
+      slug: organizations.slug,
+      status: organizations.status,
+      mergedIntoId: organizations.mergedIntoId,
     })
-    .from(institutions)
-    .where(eq(institutions.slug, slug))
+    .from(organizations)
+    .where(eq(organizations.slug, slug))
     .limit(1);
   if (existingBySlug[0]) {
     const e = existingBySlug[0];
@@ -957,7 +957,7 @@ async function resolveInstitutionPick(
   }
 
   const inserted = await db
-    .insert(institutions)
+    .insert(organizations)
     .values({
       name,
       slug,
@@ -965,17 +965,17 @@ async function resolveInstitutionPick(
       suggestedBy: suggesterId,
     })
     .returning({
-      id: institutions.id,
-      name: institutions.name,
-      slug: institutions.slug,
-      status: institutions.status,
+      id: organizations.id,
+      name: organizations.name,
+      slug: organizations.slug,
+      status: organizations.status,
     });
   return { ok: true, row: inserted[0] as VocabResolved };
 }
 
 const ISO_DATE_PATTERN = /^\d{4}-\d{2}-\d{2}(T.*)?$/;
 
-const institutionAddSchema = z
+const organizationAddSchema = z
   .object({
     id: z.uuid().optional(),
     name: z.string().min(1).max(200).optional(),
@@ -989,9 +989,9 @@ const institutionAddSchema = z
     message: "Provide exactly one of `id` or `name`.",
   });
 
-type InstitutionAddInput = z.infer<typeof institutionAddSchema>;
+type OrganizationAddInput = z.infer<typeof organizationAddSchema>;
 
-const institutionPatchSchema = z
+const organizationPatchSchema = z
   .object({
     isPrimary: z.boolean().optional(),
     role: z.string().max(140).nullable().optional(),
@@ -1008,7 +1008,7 @@ const institutionPatchSchema = z
     { message: "At least one field must be provided." }
   );
 
-type InstitutionPatchInput = z.infer<typeof institutionPatchSchema>;
+type OrganizationPatchInput = z.infer<typeof organizationPatchSchema>;
 
 /**
  * Demote any other primary affiliation for the user. Called before
@@ -1021,21 +1021,21 @@ async function demoteOtherPrimaries(
   exceptJoinId?: string
 ) {
   const conditions = [
-    eq(userInstitutions.userId, userId),
-    eq(userInstitutions.isPrimary, true),
+    eq(userOrganizations.userId, userId),
+    eq(userOrganizations.isPrimary, true),
   ];
   if (exceptJoinId) {
-    conditions.push(sql`${userInstitutions.id} <> ${exceptJoinId}`);
+    conditions.push(sql`${userOrganizations.id} <> ${exceptJoinId}`);
   }
   await db
-    .update(userInstitutions)
+    .update(userOrganizations)
     .set({ isPrimary: false, updatedAt: new Date() })
     .where(and(...conditions));
 }
 
 meRoute.post(
-  "/institutions",
-  zValidator("json", institutionAddSchema, (result, c) => {
+  "/organizations",
+  zValidator("json", organizationAddSchema, (result, c) => {
     if (!result.success) {
       return c.json(
         {
@@ -1053,7 +1053,7 @@ meRoute.post(
   async (c) => {
     const workosId = c.get("workosUserId");
     const db = createDb(c.env.DATABASE_URL);
-    const input = c.req.valid("json") as InstitutionAddInput;
+    const input = c.req.valid("json") as OrganizationAddInput;
 
     const user = await db.query.users.findFirst({
       where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
@@ -1066,7 +1066,7 @@ meRoute.post(
       );
     }
 
-    const resolved = await resolveInstitutionPick(db, user.id, {
+    const resolved = await resolveOrganizationPick(db, user.id, {
       id: input.id,
       name: input.name,
     });
@@ -1083,9 +1083,9 @@ meRoute.post(
     let isPrimary = input.isPrimary;
     if (isPrimary === undefined) {
       const existing = await db
-        .select({ id: userInstitutions.id })
-        .from(userInstitutions)
-        .where(eq(userInstitutions.userId, user.id))
+        .select({ id: userOrganizations.id })
+        .from(userOrganizations)
+        .where(eq(userOrganizations.userId, user.id))
         .limit(1);
       isPrimary = existing.length === 0;
     }
@@ -1094,20 +1094,20 @@ meRoute.post(
       await demoteOtherPrimaries(db, user.id);
     }
 
-    // (user_id, institution_id) is unique — re-adding upgrades the
+    // (user_id, organization_id) is unique — re-adding upgrades the
     // metadata on the existing row instead of duplicating it.
     await db
-      .insert(userInstitutions)
+      .insert(userOrganizations)
       .values({
         userId: user.id,
-        institutionId: resolved.row.id,
+        organizationId: resolved.row.id,
         isPrimary,
         role: input.role ?? null,
         startedAt: input.startedAt ? new Date(input.startedAt) : null,
         endedAt: input.endedAt ? new Date(input.endedAt) : null,
       })
       .onConflictDoUpdate({
-        target: [userInstitutions.userId, userInstitutions.institutionId],
+        target: [userOrganizations.userId, userOrganizations.organizationId],
         set: {
           isPrimary,
           role: input.role ?? null,
@@ -1119,13 +1119,13 @@ meRoute.post(
 
     const updated = await loadMemberDossier(db, user.id);
     if (!updated) return c.json({ ok: false, error: "internal" }, 500);
-    return c.json({ ok: true, user: updated, institution: resolved.row });
+    return c.json({ ok: true, user: updated, organization: resolved.row });
   }
 );
 
 meRoute.patch(
-  "/institutions/:joinId",
-  zValidator("json", institutionPatchSchema, (result, c) => {
+  "/organizations/:joinId",
+  zValidator("json", organizationPatchSchema, (result, c) => {
     if (!result.success) {
       return c.json(
         {
@@ -1147,7 +1147,7 @@ meRoute.patch(
       return c.json({ ok: false, error: "invalid_input" }, 400);
     }
     const db = createDb(c.env.DATABASE_URL);
-    const input = c.req.valid("json") as InstitutionPatchInput;
+    const input = c.req.valid("json") as OrganizationPatchInput;
 
     const user = await db.query.users.findFirst({
       where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
@@ -1162,12 +1162,12 @@ meRoute.patch(
 
     // Verify the join row belongs to this user before any writes.
     const existing = await db
-      .select({ id: userInstitutions.id })
-      .from(userInstitutions)
+      .select({ id: userOrganizations.id })
+      .from(userOrganizations)
       .where(
         and(
-          eq(userInstitutions.id, joinId),
-          eq(userInstitutions.userId, user.id)
+          eq(userOrganizations.id, joinId),
+          eq(userOrganizations.userId, user.id)
         )
       )
       .limit(1);
@@ -1190,9 +1190,9 @@ meRoute.patch(
     }
 
     await db
-      .update(userInstitutions)
+      .update(userOrganizations)
       .set(patch)
-      .where(eq(userInstitutions.id, joinId));
+      .where(eq(userOrganizations.id, joinId));
 
     const updated = await loadMemberDossier(db, user.id);
     if (!updated) return c.json({ ok: false, error: "internal" }, 500);
@@ -1200,7 +1200,7 @@ meRoute.patch(
   }
 );
 
-meRoute.delete("/institutions/:joinId", async (c) => {
+meRoute.delete("/organizations/:joinId", async (c) => {
   const workosId = c.get("workosUserId");
   const joinId = c.req.param("joinId");
   if (!/^[0-9a-f-]{36}$/i.test(joinId)) {
@@ -1221,11 +1221,11 @@ meRoute.delete("/institutions/:joinId", async (c) => {
   // Scoped delete — deleting another user's join id is a silent no-op
   // (returns the user's current dossier unchanged), no information leak.
   await db
-    .delete(userInstitutions)
+    .delete(userOrganizations)
     .where(
       and(
-        eq(userInstitutions.id, joinId),
-        eq(userInstitutions.userId, user.id)
+        eq(userOrganizations.id, joinId),
+        eq(userOrganizations.userId, user.id)
       )
     );
 

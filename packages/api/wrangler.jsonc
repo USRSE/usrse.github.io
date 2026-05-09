@@ -17,10 +17,18 @@
     {
       "binding": "PROFILE_PHOTOS",
       "bucket_name": "usrse-profile-photos"
+    },
+    {
+      "binding": "ORGANIZATION_LOGOS",
+      "bucket_name": "usrse-organization-logos"
     }
   ],
   "vars": {
-    "PROFILE_PHOTOS_PUBLIC_URL": "https://pub-12a8fe7ab15d4128be3f4867cc11b99f.r2.dev"
+    "PROFILE_PHOTOS_PUBLIC_URL": "https://pub-12a8fe7ab15d4128be3f4867cc11b99f.r2.dev",
+    // Set after the bucket is provisioned. Until then, the worker
+    // shouldn't surface logos to clients — gate writes/reads on a
+    // non-empty value.
+    "ORGANIZATION_LOGOS_PUBLIC_URL": ""
   }
   // Environment variables (DATABASE_URL) are injected via:
   //   - .dev.vars   for local `wrangler dev`

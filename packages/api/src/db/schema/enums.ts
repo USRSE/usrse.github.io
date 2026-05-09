@@ -24,7 +24,27 @@ export const vocabStatus = pgEnum("vocab_status", [
   "rejected",
 ]);
 
-export const orgTier = pgEnum("org_tier", ["premier", "standard", "basic"]);
+// Recurring annual support tier paid by member organizations. Drives
+// the org_memberships row, surfaces in directory facets, and feeds
+// the public sponsors page. Renamed/expanded later: keep aligned with
+// the in-kind tier when it lands.
+export const orgMembershipTier = pgEnum("org_membership_tier", [
+  "premier",
+  "standard",
+  "basic",
+]);
+
+// Per-event sponsorship tier — independent of the recurring
+// org_membership tier above. An organization can sponsor an event
+// without being a recurring member, and vice versa.
+export const sponsorTier = pgEnum("sponsor_tier", [
+  "platinum",
+  "gold",
+  "silver",
+  "bronze",
+  "supporter",
+  "in_kind",
+]);
 
 export const eventType = pgEnum("event_type", [
   "conference",

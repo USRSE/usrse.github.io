@@ -71,6 +71,13 @@
       "when": 1778199892091,
       "tag": "0009_user_institutions",
       "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1778308139944,
+      "tag": "0010_organizations_rename",
+      "breakpoints": true
     }
   ]
 }

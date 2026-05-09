@@ -26,11 +26,11 @@ import {
   countries,
   careerStages,
   disciplines,
-  institutions,
+  organizations,
   profiles,
   users,
   userDisciplines,
-  userInstitutions,
+  userOrganizations,
 } from "../db/schema";
 
 type Db = ReturnType<typeof createDb>;
@@ -50,7 +50,7 @@ export type MemberSearchResultPublic = {
   slug: string;
   displayName: string;
   jobTitle: string | null;
-  institutionName: string | null;
+  organizationName: string | null;
   careerStageLabel: string | null;
   publicLocation: string | null;
   countryName: string | null;
@@ -100,7 +100,7 @@ export async function searchMembers(
         ilike(profiles.displayName, needle),
         ilike(profiles.jobTitle, needle),
         ilike(profiles.headline, needle),
-        ilike(institutions.name, needle)
+        ilike(organizations.name, needle)
       )!
     );
   }
@@ -135,7 +135,7 @@ export async function searchMembers(
         slug: profiles.slug,
         displayName: profiles.displayName,
         jobTitle: profiles.jobTitle,
-        institutionName: institutions.name,
+        organizationName: organizations.name,
         careerStageLabel: careerStages.label,
         publicLocation: profiles.publicLocation,
         countryName: countries.name,
@@ -144,15 +144,15 @@ export async function searchMembers(
       })
       .from(profiles)
       .innerJoin(users, eq(users.id, profiles.userId))
-      // Join through user_institutions filtered to is_primary=true. The
-      // partial unique index `user_institutions_one_primary_per_user`
+      // Join through user_organizations filtered to is_primary=true. The
+      // partial unique index `user_organizations_one_primary_per_user`
       // guarantees at most one match per user, so this leftJoin can't
       // duplicate rows.
       .leftJoin(
-        userInstitutions,
-        and(eq(userInstitutions.userId, users.id), eq(userInstitutions.isPrimary, true))
+        userOrganizations,
+        and(eq(userOrganizations.userId, users.id), eq(userOrganizations.isPrimary, true))
       )
-      .leftJoin(institutions, eq(institutions.id, userInstitutions.institutionId))
+      .leftJoin(organizations, eq(organizations.id, userOrganizations.organizationId))
       .leftJoin(careerStages, eq(careerStages.id, profiles.careerStageId))
       .leftJoin(countries, eq(countries.id, profiles.countryId))
       .where(whereExpr)
@@ -166,10 +166,10 @@ export async function searchMembers(
       .from(profiles)
       .innerJoin(users, eq(users.id, profiles.userId))
       .leftJoin(
-        userInstitutions,
-        and(eq(userInstitutions.userId, users.id), eq(userInstitutions.isPrimary, true))
+        userOrganizations,
+        and(eq(userOrganizations.userId, users.id), eq(userOrganizations.isPrimary, true))
       )
-      .leftJoin(institutions, eq(institutions.id, userInstitutions.institutionId))
+      .leftJoin(organizations, eq(organizations.id, userOrganizations.organizationId))
       .where(whereExpr),
   ]);
 
@@ -203,7 +203,7 @@ export async function searchMembers(
           slug: r.slug,
           displayName: r.displayName,
           jobTitle: r.jobTitle,
-          institutionName: r.institutionName,
+          organizationName: r.organizationName,
           careerStageLabel: r.careerStageLabel,
           publicLocation: r.publicLocation,
           countryName: r.countryName,

@@ -9,12 +9,14 @@ import {
   uniqueIndex,
   uuid,
 } from "drizzle-orm/pg-core";
+import { orgMembershipTier, sponsorTier } from "./enums";
+import { events } from "./events";
 import { users } from "./users";
 import {
   disciplines,
   engagementTypes,
-  institutions,
   languages,
+  organizations,
   skills,
 } from "./vocab";
 
@@ -58,26 +60,26 @@ export const userLanguages = pgTable(
 );
 
 /**
- * Member ↔ institution affiliations. Many-to-many because most
+ * Member ↔ organization affiliations. Many-to-many because most
  * members have either cross-appointments or a career arc that spans
- * multiple institutions over time. The partial unique index enforces
+ * multiple organizations over time. The partial unique index enforces
  * "at most one is_primary=true row per user" at the database level —
  * the badge / dossier layers can rely on that invariant without
  * defensive code.
  */
-export const userInstitutions = pgTable(
-  "user_institutions",
+export const userOrganizations = pgTable(
+  "user_organizations",
   {
     id: uuid("id").primaryKey().defaultRandom(),
     userId: uuid("user_id")
       .notNull()
       .references(() => users.id, { onDelete: "cascade" }),
-    institutionId: uuid("institution_id")
+    organizationId: uuid("organization_id")
       .notNull()
-      .references(() => institutions.id, { onDelete: "restrict" }),
+      .references(() => organizations.id, { onDelete: "restrict" }),
     /** Drives the dossier's "based at" pillar and the directory facet. */
     isPrimary: boolean("is_primary").notNull().default(false),
-    /** Optional human role within the institution ("Graduate Student", "Postdoc"). */
+    /** Optional human role within the organization ("Graduate Student", "Postdoc"). */
     role: text("role"),
     startedAt: timestamp("started_at", { withTimezone: true }),
     endedAt: timestamp("ended_at", { withTimezone: true }),
@@ -90,15 +92,94 @@ export const userInstitutions = pgTable(
       .defaultNow(),
   },
   (t) => [
-    uniqueIndex("user_institutions_user_institution_unique").on(
+    uniqueIndex("user_organizations_user_org_unique").on(
       t.userId,
-      t.institutionId
+      t.organizationId
     ),
-    index("user_institutions_user_idx").on(t.userId),
-    index("user_institutions_institution_idx").on(t.institutionId),
-    uniqueIndex("user_institutions_one_primary_per_user")
+    index("user_organizations_user_idx").on(t.userId),
+    index("user_organizations_org_idx").on(t.organizationId),
+    uniqueIndex("user_organizations_one_primary_per_user")
       .on(t.userId)
       .where(sql`is_primary = true`),
+  ]
+);
+
+/**
+ * Recurring annual support tier paid by an organization. Replaces
+ * the booleans `is_org_member` + `org_tier` that lived on
+ * organizations directly; modelling memberships as rows lets a single
+ * org carry a multi-year history (with start/end dates) and lets us
+ * record the next renewal date without column sprawl.
+ *
+ * Active membership is "any row with started_at <= now() AND
+ * (ended_at IS NULL OR ended_at >= now())". The directory's
+ * "Org member" facet and the public sponsors page derive from that
+ * predicate.
+ */
+export const orgMemberships = pgTable(
+  "org_memberships",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    organizationId: uuid("organization_id")
+      .notNull()
+      .references(() => organizations.id, { onDelete: "cascade" }),
+    tier: orgMembershipTier("tier").notNull(),
+    startedAt: timestamp("started_at", { withTimezone: true }).notNull(),
+    endedAt: timestamp("ended_at", { withTimezone: true }),
+    /** Optional next-renewal hint surfaced to admins. */
+    renewalDueAt: timestamp("renewal_due_at", { withTimezone: true }),
+    notes: text("notes"),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [
+    index("org_memberships_org_idx").on(t.organizationId),
+    /** Active rows surface twice — once per tier, but the partial
+        unique on (org_id) WHERE ended_at IS NULL keeps an org from
+        having two simultaneously open memberships. */
+    uniqueIndex("org_memberships_one_active_per_org")
+      .on(t.organizationId)
+      .where(sql`ended_at IS NULL`),
+  ]
+);
+
+/**
+ * Per-event sponsorship from an organization. Independent of
+ * org_memberships — an organization can sponsor an event without
+ * being a recurring member, and vice versa. Drives the data-driven
+ * sponsors strip on each event page and the historical sponsors
+ * roster on /about/sponsors.
+ */
+export const eventSponsorships = pgTable(
+  "event_sponsorships",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    eventId: uuid("event_id")
+      .notNull()
+      .references(() => events.id, { onDelete: "cascade" }),
+    organizationId: uuid("organization_id")
+      .notNull()
+      .references(() => organizations.id, { onDelete: "restrict" }),
+    tier: sponsorTier("tier").notNull(),
+    notes: text("notes"),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [
+    uniqueIndex("event_sponsorships_event_org_unique").on(
+      t.eventId,
+      t.organizationId
+    ),
+    index("event_sponsorships_event_idx").on(t.eventId),
+    index("event_sponsorships_org_idx").on(t.organizationId),
   ]
 );
 
@@ -162,16 +243,40 @@ export const userEngagementTypesRelations = relations(
   })
 );
 
-export const userInstitutionsRelations = relations(
-  userInstitutions,
+export const userOrganizationsRelations = relations(
+  userOrganizations,
   ({ one }) => ({
     user: one(users, {
-      fields: [userInstitutions.userId],
+      fields: [userOrganizations.userId],
       references: [users.id],
     }),
-    institution: one(institutions, {
-      fields: [userInstitutions.institutionId],
-      references: [institutions.id],
+    organization: one(organizations, {
+      fields: [userOrganizations.organizationId],
+      references: [organizations.id],
+    }),
+  })
+);
+
+export const orgMembershipsRelations = relations(
+  orgMemberships,
+  ({ one }) => ({
+    organization: one(organizations, {
+      fields: [orgMemberships.organizationId],
+      references: [organizations.id],
+    }),
+  })
+);
+
+export const eventSponsorshipsRelations = relations(
+  eventSponsorships,
+  ({ one }) => ({
+    event: one(events, {
+      fields: [eventSponsorships.eventId],
+      references: [events.id],
+    }),
+    organization: one(organizations, {
+      fields: [eventSponsorships.organizationId],
+      references: [organizations.id],
     }),
   })
 );

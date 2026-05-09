@@ -36,7 +36,7 @@ function PublicRow({
   const placeLine = [member.publicLocation, member.countryName]
     .filter(Boolean)
     .join(" · ");
-  const subtitleParts = [member.jobTitle, member.institutionName].filter(
+  const subtitleParts = [member.jobTitle, member.organizationName].filter(
     (p): p is string => Boolean(p && p.trim())
   );
 

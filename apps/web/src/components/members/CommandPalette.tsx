@@ -298,7 +298,7 @@ function PaletteRow({
 function renderPublicByline(
   m: Extract<MemberSearchResult, { kind: "public" }>
 ): string {
-  const parts = [m.jobTitle, m.institutionName, m.countryName].filter(
+  const parts = [m.jobTitle, m.organizationName, m.countryName].filter(
     (p): p is string => Boolean(p && p.trim())
   );
   return parts.length > 0 ? parts.join(" · ") : "Member";

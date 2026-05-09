@@ -7,7 +7,7 @@ export interface MemberSearchPublicResult {
   slug: string;
   displayName: string;
   jobTitle: string | null;
-  institutionName: string | null;
+  organizationName: string | null;
   careerStageLabel: string | null;
   publicLocation: string | null;
   countryName: string | null;

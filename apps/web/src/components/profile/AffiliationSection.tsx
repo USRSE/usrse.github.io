@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { SectionFrame, NotYetWritten } from "./SectionFrame";
 import {
-  InstitutionCombobox,
-  type InstitutionSimple,
-} from "./InstitutionCombobox";
+  OrganizationCombobox,
+  type OrganizationSimple,
+} from "./OrganizationCombobox";
 import { useApi } from "@/lib/api";
 import type {
   AffiliationItem,
@@ -16,9 +16,9 @@ import type {
  * Renders one Pillar per affiliation. Primary affiliation always
  * leads. When the viewer is the owner, a secondary editor lets them
  * add/remove/edit affiliations and pick which one is primary. The
- * editor talks to POST/PATCH/DELETE /me/institutions and threads the
+ * editor talks to POST/PATCH/DELETE /me/organizations and threads the
  * refreshed dossier back to onSaved so sibling sections stay in sync
- * (e.g., the hero subtitle reads from profile.institutionName which
+ * (e.g., the hero subtitle reads from profile.organizationName which
  * is sourced from the primary affiliation).
  */
 
@@ -112,7 +112,7 @@ function AffiliationRead({
     affiliations.length === 0
   ) {
     return (
-      <NotYetWritten message="institution, role, and location will live here" />
+      <NotYetWritten message="organization, role, and location will live here" />
     );
   }
 
@@ -121,7 +121,7 @@ function AffiliationRead({
   // local optimistic updates.
   const primary = affiliations.find((a) => a.isPrimary) ?? null;
   const secondaries = affiliations.filter((a) => a !== primary);
-  const primaryName = primary?.institutionName ?? null;
+  const primaryName = primary?.organizationName ?? null;
 
   return (
     <div className="space-y-8">
@@ -133,7 +133,7 @@ function AffiliationRead({
           subValue={careerStageLabel}
           accent="purple"
         />
-        <Pillar label="Institution" value={primaryName} accent="neutral" />
+        <Pillar label="Organization" value={primaryName} accent="neutral" />
         <Pillar label="Based in" value={placeLine || null} accent="teal" />
       </div>
 
@@ -148,7 +148,7 @@ function AffiliationRead({
                 key={a.id}
                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-50 border border-neutral-200 text-sm text-neutral-800"
               >
-                <span>{a.institutionName}</span>
+                <span>{a.organizationName}</span>
                 {a.role && (
                   <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-400">
                     {a.role}
@@ -246,34 +246,34 @@ function AffiliationEditor({
     }
   }
 
-  async function handlePick(item: InstitutionSimple) {
+  async function handlePick(item: OrganizationSimple) {
     setBusyId("__add__");
-    await callApi("/me/institutions", "POST", { id: item.id });
+    await callApi("/me/organizations", "POST", { id: item.id });
     setBusyId(null);
     setAdding(false);
   }
 
   async function handlePropose(name: string) {
     setBusyId("__add__");
-    await callApi("/me/institutions", "POST", { name });
+    await callApi("/me/organizations", "POST", { name });
     setBusyId(null);
     setAdding(false);
   }
 
   async function handleSetPrimary(joinId: string) {
     setBusyId(joinId);
-    await callApi(`/me/institutions/${joinId}`, "PATCH", { isPrimary: true });
+    await callApi(`/me/organizations/${joinId}`, "PATCH", { isPrimary: true });
     setBusyId(null);
   }
 
   async function handleDelete(joinId: string) {
     if (!window.confirm("Remove this affiliation?")) return;
     setBusyId(joinId);
-    await callApi(`/me/institutions/${joinId}`, "DELETE");
+    await callApi(`/me/organizations/${joinId}`, "DELETE");
     setBusyId(null);
   }
 
-  const linkedIds = affiliations.map((a) => a.institutionId);
+  const linkedIds = affiliations.map((a) => a.organizationId);
 
   return (
     <div className="rounded-2xl border border-neutral-200 bg-neutral-50/50 p-5 lg:p-6">
@@ -290,7 +290,7 @@ function AffiliationEditor({
             >
               <div className="min-w-0">
                 <p className="text-sm text-neutral-900 leading-tight truncate">
-                  {a.institutionName}
+                  {a.organizationName}
                 </p>
                 {a.role && (
                   <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-400 mt-0.5">
@@ -318,7 +318,7 @@ function AffiliationEditor({
                   disabled={busyId === a.id}
                   onClick={() => handleDelete(a.id)}
                   className="font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-400 hover:text-rose-600 disabled:opacity-50 transition-colors"
-                  aria-label={`Remove ${a.institutionName}`}
+                  aria-label={`Remove ${a.organizationName}`}
                 >
                   remove
                 </button>
@@ -328,19 +328,19 @@ function AffiliationEditor({
         </ul>
       ) : (
         <p className="text-sm text-neutral-500 italic mb-5">
-          No affiliations yet — add your primary institution below.
+          No affiliations yet — add your primary organization below.
         </p>
       )}
 
       {adding ? (
         <div className="space-y-2">
-          <InstitutionCombobox
+          <OrganizationCombobox
             excludeIds={linkedIds}
             onPick={handlePick}
             onPropose={handlePropose}
             onDismiss={() => setAdding(false)}
             autoFocus
-            placeholder="Search institutions…"
+            placeholder="Search organizations…"
           />
           <button
             type="button"

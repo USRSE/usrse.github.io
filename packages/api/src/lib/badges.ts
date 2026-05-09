@@ -128,7 +128,7 @@ export interface ProfileBadgeInput {
   headline: string | null;
   bio: string | null;
   jobTitle: string | null;
-  institutionName: string | null;
+  organizationName: string | null;
   publicLocation: string | null;
   orcid: string | null;
   githubUrl: string | null;
@@ -1061,7 +1061,7 @@ function isProfileComplete(p: ProfileBadgeInput): boolean {
       p.headline &&
       p.bio &&
       p.jobTitle &&
-      p.institutionName &&
+      p.organizationName &&
       p.publicLocation
   );
 }

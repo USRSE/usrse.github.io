@@ -1,6 +1,5 @@
 import { relations, sql } from "drizzle-orm";
 import {
-  boolean,
   char,
   index,
   integer,
@@ -10,7 +9,7 @@ import {
   uniqueIndex,
   uuid,
 } from "drizzle-orm/pg-core";
-import { orgTier, vocabStatus } from "./enums";
+import { vocabStatus } from "./enums";
 import { users } from "./users";
 
 export const pronouns = pgTable("pronouns", {
@@ -156,32 +155,67 @@ export const languages = pgTable(
   ]
 );
 
-export const institutions = pgTable(
-  "institutions",
+/**
+ * Master directory of organizations referenced anywhere in the app —
+ * member affiliations, recurring memberships, event sponsors,
+ * employer history. Originally `institutions` and limited to the
+ * academic/research case; renamed in 0010 once we needed to model
+ * vendors, sponsors, and conference hosts in the same row space.
+ *
+ * `org_memberships` (recurring tier paid by the org) and
+ * `event_sponsorships` (per-event tier) live in joins so a single
+ * org can carry several relationships over time without column
+ * sprawl on this table.
+ *
+ * Logo columns:
+ *   - `logoUrl`        public URL for the primary mark; null when not
+ *                      uploaded (consumer falls back to InitialsHex).
+ *   - `logoStorageKey` R2 object key for the file we host. Distinct
+ *                      from `logoUrl` so we can rotate the public URL
+ *                      prefix (custom domain) without losing the
+ *                      storage handle, and so we can cleanly delete
+ *                      the old object on replacement.
+ *   - `logoDarkUrl`    optional dark-mode variant.
+ *   - `logoMarkUrl`    optional symbol-only variant for tight rows
+ *                      (cmd-K results, breadcrumbs).
+ *   - `logoUsageConsent` true when the org has signed off on us
+ *                      hosting/displaying the mark. Required before
+ *                      surfacing the logo publicly — admin tools gate
+ *                      on this flag.
+ *   - `logoCredit`     attribution string when the consent terms
+ *                      require it ("Logo © Org, used with permission").
+ */
+export const organizations = pgTable(
+  "organizations",
   {
     id: uuid("id").primaryKey().defaultRandom(),
     name: text("name").notNull().unique(),
     slug: text("slug").notNull().unique(),
     shortName: text("short_name"),
     url: text("url"),
-    isOrgMember: boolean("is_org_member").notNull().default(false),
-    orgTier: orgTier("org_tier"),
+    logoUrl: text("logo_url"),
+    logoStorageKey: text("logo_storage_key"),
+    logoDarkUrl: text("logo_dark_url"),
+    logoMarkUrl: text("logo_mark_url"),
+    logoUsageConsent: text("logo_usage_consent"),
+    logoCredit: text("logo_credit"),
     status: vocabStatus("status").notNull().default("pending"),
     suggestedBy: uuid("suggested_by").references((): any => users.id, {
       onDelete: "set null",
     }),
-    mergedIntoId: uuid("merged_into_id").references((): any => institutions.id, {
-      onDelete: "set null",
-    }),
+    mergedIntoId: uuid("merged_into_id").references(
+      (): any => organizations.id,
+      { onDelete: "set null" }
+    ),
     createdAt: timestamp("created_at", { withTimezone: true })
       .notNull()
       .defaultNow(),
   },
   (t) => [
-    index("institutions_status_approved_idx")
+    index("organizations_status_approved_idx")
       .on(t.status)
       .where(sql`status = 'approved'`),
-    index("institutions_merged_into_idx").on(t.mergedIntoId),
+    index("organizations_merged_into_idx").on(t.mergedIntoId),
   ]
 );
 
@@ -200,14 +234,14 @@ export const disciplinesRelations = relations(disciplines, ({ one }) => ({
   }),
 }));
 
-export const institutionsRelations = relations(institutions, ({ one }) => ({
+export const organizationsRelations = relations(organizations, ({ one }) => ({
   suggestedByUser: one(users, {
-    fields: [institutions.suggestedBy],
+    fields: [organizations.suggestedBy],
     references: [users.id],
   }),
-  mergedInto: one(institutions, {
-    fields: [institutions.mergedIntoId],
-    references: [institutions.id],
-    relationName: "institution_merge",
+  mergedInto: one(organizations, {
+    fields: [organizations.mergedIntoId],
+    references: [organizations.id],
+    relationName: "organization_merge",
   }),
 }));

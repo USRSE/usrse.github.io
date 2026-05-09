@@ -30,8 +30,8 @@ import {
   experiences,
   groupMemberships,
   groups,
-  institutions,
   languages,
+  organizations,
   leadershipPositions,
   leadershipTerms,
   mentorshipPairings,
@@ -41,7 +41,7 @@ import {
   userAwards,
   userDisciplines,
   userEngagementTypes,
-  userInstitutions,
+  userOrganizations,
   userLanguages,
   userSkills,
   users,
@@ -77,12 +77,12 @@ export interface MemberDossier {
     pronounId: string | null;
     pronounLabel: string | null;
     /**
-     * Primary affiliation's institution name. Sourced from the row in
-     * `user_institutions` with is_primary=true. Null when the user
+     * Primary affiliation's organization name. Sourced from the row in
+     * `user_organizations` with is_primary=true. Null when the user
      * has no primary affiliation (or no affiliations at all).
      * The full list lives in `MemberDossier.affiliations`.
      */
-    institutionName: string | null;
+    organizationName: string | null;
     careerStageId: string | null;
     careerStageLabel: string | null;
     countryId: string | null;
@@ -98,8 +98,8 @@ export interface MemberDossier {
   education: EducationRow[];
   certifications: CertificationRow[];
   /**
-   * Member ↔ institution affiliations from `user_institutions`. The
-   * primary affiliation drives `profile.institutionName`; this array
+   * Member ↔ organization affiliations from `user_organizations`. The
+   * primary affiliation drives `profile.organizationName`; this array
    * carries the full list (including secondary affiliations) ordered
    * primary-first, then by startedAt desc.
    */
@@ -119,8 +119,8 @@ export interface MemberDossier {
 
 export interface AffiliationRow {
   id: string;
-  institutionId: string;
-  institutionName: string;
+  organizationId: string;
+  organizationName: string;
   isPrimary: boolean;
   role: string | null;
   startedAt: string | null;
@@ -541,40 +541,40 @@ export async function loadMemberDossier(
       .from(communityContributions)
       .where(eq(communityContributions.contributorId, u.id))
       .orderBy(desc(communityContributions.publishedAt)),
-    // Member ↔ institution affiliations. Primary first (so the
+    // Member ↔ organization affiliations. Primary first (so the
     // dossier's "based at" pillar reads off the head of the list),
-    // then most-recent startedAt, then by institution name.
+    // then most-recent startedAt, then by organization name.
     db
       .select({
-        id: userInstitutions.id,
-        institutionId: institutions.id,
-        institutionName: institutions.name,
-        isPrimary: userInstitutions.isPrimary,
-        role: userInstitutions.role,
-        startedAt: userInstitutions.startedAt,
-        endedAt: userInstitutions.endedAt,
+        id: userOrganizations.id,
+        organizationId: organizations.id,
+        organizationName: organizations.name,
+        isPrimary: userOrganizations.isPrimary,
+        role: userOrganizations.role,
+        startedAt: userOrganizations.startedAt,
+        endedAt: userOrganizations.endedAt,
       })
-      .from(userInstitutions)
+      .from(userOrganizations)
       .innerJoin(
-        institutions,
-        eq(userInstitutions.institutionId, institutions.id)
+        organizations,
+        eq(userOrganizations.organizationId, organizations.id)
       )
-      .where(eq(userInstitutions.userId, u.id))
+      .where(eq(userOrganizations.userId, u.id))
       .orderBy(
-        desc(userInstitutions.isPrimary),
-        desc(userInstitutions.startedAt),
-        asc(institutions.name)
+        desc(userOrganizations.isPrimary),
+        desc(userOrganizations.startedAt),
+        asc(organizations.name)
       ),
   ]);
 
   // Map affiliations into the public shape and pull out the primary
-  // institution name so the dossier's `profile.institutionName` field
+  // organization name so the dossier's `profile.organizationName` field
   // (read by IdentitySection, badges, search results) keeps working
   // without each consumer having to hunt for the primary in the array.
   const affiliations = affiliationRows.map((a) => ({
     id: a.id,
-    institutionId: a.institutionId,
-    institutionName: a.institutionName,
+    organizationId: a.organizationId,
+    organizationName: a.organizationName,
     isPrimary: a.isPrimary,
     role: a.role,
     startedAt:
@@ -586,16 +586,16 @@ export async function loadMemberDossier(
         ? a.endedAt.toISOString()
         : (a.endedAt as string | null),
   }));
-  const primaryInstitutionName =
-    affiliations.find((a) => a.isPrimary)?.institutionName ??
-    affiliations[0]?.institutionName ??
+  const primaryOrganizationName =
+    affiliations.find((a) => a.isPrimary)?.organizationName ??
+    affiliations[0]?.organizationName ??
     null;
 
   return {
     ...u,
     createdAt: toIso(u.createdAt),
     profile: profileRows[0]
-      ? { ...profileRows[0], institutionName: primaryInstitutionName }
+      ? { ...profileRows[0], organizationName: primaryOrganizationName }
       : null,
     affiliations,
     experiences: experienceRows.map((e) => ({
@@ -634,7 +634,7 @@ export async function loadMemberDossier(
             headline: profileRows[0].headline,
             bio: profileRows[0].bio,
             jobTitle: profileRows[0].jobTitle,
-            institutionName: primaryInstitutionName,
+            organizationName: primaryOrganizationName,
             publicLocation: profileRows[0].publicLocation,
             orcid: profileRows[0].orcid,
             githubUrl: profileRows[0].githubUrl,

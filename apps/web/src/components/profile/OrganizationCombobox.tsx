@@ -10,25 +10,25 @@ import { createPortal } from "react-dom";
 import { useApi } from "@/lib/api";
 
 /**
- * Server-side search combobox over the institutions vocabulary.
+ * Server-side search combobox over the organizations vocabulary.
  *
- * Institutions are too numerous to bundle (~1,400+) so this hits
- * /vocab/institutions/search?q= on each keystroke, debounced to keep
+ * Organizations are too numerous to bundle (~1,400+) so this hits
+ * /vocab/organizations/search?q= on each keystroke, debounced to keep
  * the request rate modest. Patterns mirrors VocabCombobox: portaled
  * dropdown, propose-new affordance, keyboard navigation, password-
  * manager-ignore hints.
  */
 
-export interface InstitutionSimple {
+export interface OrganizationSimple {
   id: string;
   name: string;
   slug: string;
 }
 
-interface InstitutionComboboxProps {
-  /** Already-linked institution ids — filtered out so duplicates aren't pickable. */
+interface OrganizationComboboxProps {
+  /** Already-linked organization ids — filtered out so duplicates aren't pickable. */
   excludeIds: string[];
-  onPick: (item: InstitutionSimple) => void;
+  onPick: (item: OrganizationSimple) => void;
   onPropose: (name: string) => void;
   onDismiss?: () => void;
   placeholder?: string;
@@ -38,22 +38,22 @@ interface InstitutionComboboxProps {
 const MAX_VISIBLE = 8;
 const DEBOUNCE_MS = 220;
 
-export function InstitutionCombobox({
+export function OrganizationCombobox({
   excludeIds,
   onPick,
   onPropose,
   onDismiss,
-  placeholder = "Search institutions…",
+  placeholder = "Search organizations…",
   autoFocus = false,
-}: InstitutionComboboxProps) {
+}: OrganizationComboboxProps) {
   const reactId = useId();
-  const inputId = `inst-${reactId}`;
+  const inputId = `org-${reactId}`;
   const listboxId = `${inputId}-listbox`;
   const apiFetch = useApi();
 
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
-  const [results, setResults] = useState<InstitutionSimple[]>([]);
+  const [results, setResults] = useState<OrganizationSimple[]>([]);
   const [loading, setLoading] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [menuRect, setMenuRect] = useState<{
@@ -85,7 +85,7 @@ export function InstitutionCombobox({
     const handle = window.setTimeout(async () => {
       try {
         const res = await apiFetch(
-          `/vocab/institutions/search?q=${encodeURIComponent(q)}&limit=${MAX_VISIBLE}`
+          `/vocab/organizations/search?q=${encodeURIComponent(q)}&limit=${MAX_VISIBLE}`
         );
         if (token !== requestTokenRef.current) return;
         if (!res.ok) {
@@ -95,7 +95,7 @@ export function InstitutionCombobox({
         }
         const body = (await res.json()) as {
           ok: boolean;
-          results?: InstitutionSimple[];
+          results?: OrganizationSimple[];
         };
         setResults(
           (body.results ?? []).filter((r) => !excludeSet.has(r.id))
@@ -250,7 +250,7 @@ export function InstitutionCombobox({
         data-lpignore="true"
         data-bwignore="true"
         data-form-type="other"
-        name={`institution-${reactId}`}
+        name={`organization-${reactId}`}
         className="font-mono text-xs px-3 py-2 rounded-full bg-white border border-dashed border-neutral-300 text-neutral-700 placeholder:text-neutral-400 focus:outline-none focus:border-purple-400 focus:bg-purple-50/30 transition-colors w-full"
       />
 
@@ -330,7 +330,7 @@ export function InstitutionCombobox({
                   }`}
                 />
                 <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-purple-600 mb-0.5">
-                  + Propose new institution
+                  + Propose new organization
                 </p>
                 <p className="text-sm text-neutral-900 leading-tight">
                   "{trimmedQuery}"

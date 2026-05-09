@@ -37,8 +37,8 @@ import { neon } from "@neondatabase/serverless";
 import { drizzle } from "drizzle-orm/neon-http";
 import { and, eq, inArray, isNull, sql as drSql } from "drizzle-orm";
 import {
-  institutions,
-  userInstitutions,
+  organizations,
+  userOrganizations,
   users,
 } from "../src/db/schema";
 
@@ -200,11 +200,11 @@ async function main() {
   // name is a candidate to split.
   const joined = await db
     .select({
-      id: institutions.id,
-      name: institutions.name,
-      mergedIntoId: institutions.mergedIntoId,
+      id: organizations.id,
+      name: organizations.name,
+      mergedIntoId: organizations.mergedIntoId,
     })
-    .from(institutions)
+    .from(organizations)
     .where(drSql`name ~ ' / | \\| |;'`);
   // Filter out names already merged and stylized-pipe names.
   const dbPlans = joined
@@ -223,11 +223,11 @@ async function main() {
   // ── Build email → user.id and name → institution.id maps ──────────
   const allInst = await db
     .select({
-      id: institutions.id,
-      name: institutions.name,
-      slug: institutions.slug,
+      id: organizations.id,
+      name: organizations.name,
+      slug: organizations.slug,
     })
-    .from(institutions);
+    .from(organizations);
   const instByName = new Map<string, string>();
   const instBySlug = new Map<string, string>();
   for (const i of allInst) {
@@ -270,7 +270,7 @@ async function main() {
   console.log(`  ${newNames.length} new institutions to propose`);
   if (!dryRun && newNames.length > 0) {
     const inserted = await db
-      .insert(institutions)
+      .insert(organizations)
       .values(
         newNames.map((name) => ({
           name,
@@ -280,9 +280,9 @@ async function main() {
       )
       .onConflictDoNothing()
       .returning({
-        id: institutions.id,
-        name: institutions.name,
-        slug: institutions.slug,
+        id: organizations.id,
+        name: organizations.name,
+        slug: organizations.slug,
       });
     for (const r of inserted) {
       instByName.set(r.name.toLowerCase(), r.id);
@@ -315,10 +315,10 @@ async function main() {
         continue;
       }
       const res = await db
-        .insert(userInstitutions)
-        .values({ userId, institutionId: instId, isPrimary: false })
+        .insert(userOrganizations)
+        .values({ userId, organizationId: instId, isPrimary: false })
         .onConflictDoNothing()
-        .returning({ id: userInstitutions.id });
+        .returning({ id: userOrganizations.id });
       csvRowsAdded += res.length;
     }
   }
@@ -343,12 +343,12 @@ async function main() {
 
     const linked = await db
       .select({
-        id: userInstitutions.id,
-        userId: userInstitutions.userId,
-        isPrimary: userInstitutions.isPrimary,
+        id: userOrganizations.id,
+        userId: userOrganizations.userId,
+        isPrimary: userOrganizations.isPrimary,
       })
-      .from(userInstitutions)
-      .where(eq(userInstitutions.institutionId, p.id));
+      .from(userOrganizations)
+      .where(eq(userOrganizations.organizationId, p.id));
 
     for (const link of linked) {
       if (!dryRun) {
@@ -356,12 +356,12 @@ async function main() {
         // index would block if the user already has a row for primaryId
         // — fall back to deleting the joined-name row in that case.
         const existing = await db
-          .select({ id: userInstitutions.id })
-          .from(userInstitutions)
+          .select({ id: userOrganizations.id })
+          .from(userOrganizations)
           .where(
             and(
-              eq(userInstitutions.userId, link.userId),
-              eq(userInstitutions.institutionId, primaryId)
+              eq(userOrganizations.userId, link.userId),
+              eq(userOrganizations.organizationId, primaryId)
             )
           )
           .limit(1);
@@ -371,26 +371,26 @@ async function main() {
           // row; if it was secondary the user's mental model was the
           // joined-name was primary, so leave it for them to re-pick.
           await db
-            .delete(userInstitutions)
-            .where(eq(userInstitutions.id, link.id));
+            .delete(userOrganizations)
+            .where(eq(userOrganizations.id, link.id));
         } else {
           await db
-            .update(userInstitutions)
-            .set({ institutionId: primaryId, updatedAt: new Date() })
-            .where(eq(userInstitutions.id, link.id));
+            .update(userOrganizations)
+            .set({ organizationId: primaryId, updatedAt: new Date() })
+            .where(eq(userOrganizations.id, link.id));
           dbRowsRepointed++;
         }
         // Add secondary affiliations.
         for (const sId of secondaryIds) {
           const res = await db
-            .insert(userInstitutions)
+            .insert(userOrganizations)
             .values({
               userId: link.userId,
-              institutionId: sId,
+              organizationId: sId,
               isPrimary: false,
             })
             .onConflictDoNothing()
-            .returning({ id: userInstitutions.id });
+            .returning({ id: userOrganizations.id });
           dbRowsAdded += res.length;
         }
       } else {
@@ -403,9 +403,9 @@ async function main() {
       // Mark the joined-name row merged_into the canonical primary so
       // it no longer appears as an affiliation choice.
       await db
-        .update(institutions)
+        .update(organizations)
         .set({ mergedIntoId: primaryId, status: "rejected" })
-        .where(eq(institutions.id, p.id));
+        .where(eq(organizations.id, p.id));
     }
   }
   console.log(

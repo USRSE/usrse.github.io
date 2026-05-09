@@ -16,6 +16,15 @@ export type Bindings = {
   PROFILE_PHOTOS: R2Bucket;
   /** Public base URL for profile-photo bucket reads (r2.dev today). */
   PROFILE_PHOTOS_PUBLIC_URL: string;
+  /** R2 bucket holding hosted organization logo files. */
+  ORGANIZATION_LOGOS: R2Bucket;
+  /**
+   * Public base URL for organization-logo bucket reads. Empty until
+   * the bucket is provisioned and the URL is filled in via wrangler.
+   * Code that surfaces logos must treat empty-string as "not yet
+   * configured" and fall back to InitialsHex.
+   */
+  ORGANIZATION_LOGOS_PUBLIC_URL: string;
 };
 
 export type Variables = {
