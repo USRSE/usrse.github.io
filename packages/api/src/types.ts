@@ -1,4 +1,5 @@
 import type { JWTPayload } from "jose";
+import type { ActorContext } from "./lib/policies";
 
 export type Bindings = {
   DATABASE_URL: string;
@@ -36,6 +37,8 @@ export type Bindings = {
 export type Variables = {
   workosUserId: string;
   workosClaims: JWTPayload;
+  /** Populated by requireActorContext on /api/admin/* requests. */
+  actor?: ActorContext;
 };
 
 export type AppEnv = {
