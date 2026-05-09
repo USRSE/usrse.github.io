@@ -9,7 +9,7 @@ const root = createRoot(document.getElementById("root")!);
 root.render(
   <AuthShell
     clientId={clientId}
-    appLabel="The marketing site"
+    appLabel="The US-RSE site"
     devMode={import.meta.env.DEV}
   >
     <App />
