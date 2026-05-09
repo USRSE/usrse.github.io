@@ -219,7 +219,18 @@ export async function loadMemberDossier(
       createdAt: users.createdAt,
     })
     .from(users)
-    .where(and(eq(users.id, userId), isNull(users.deletedAt)))
+    .where(
+      and(
+        eq(users.id, userId),
+        isNull(users.deletedAt),
+        // Treat merged users as not loadable. The /me handler walks
+        // the merge chain before getting here and passes the canonical
+        // user id, so reaching this with a merged id is a bug or a
+        // direct admin lookup — either way the dossier shouldn't
+        // surface a row that's been folded away.
+        isNull(users.mergedIntoUserId)
+      )
+    )
     .limit(1);
 
   const u = userRows[0];
@@ -773,7 +784,17 @@ export async function loadMemberDossierBySlug(
     })
     .from(profiles)
     .innerJoin(users, eq(users.id, profiles.userId))
-    .where(and(eq(profiles.slug, slug), isNull(profiles.deletedAt)))
+    .where(
+      and(
+        eq(profiles.slug, slug),
+        isNull(profiles.deletedAt),
+        isNull(users.deletedAt),
+        // Hide merged users from public surface — admin-app future work
+        // could add a 308 redirect to the canonical slug, but a clean
+        // 404 is the safe default until that exists.
+        isNull(users.mergedIntoUserId)
+      )
+    )
     .limit(1);
   if (!row[0]) return null;
   if (!row[0].isPublic) {

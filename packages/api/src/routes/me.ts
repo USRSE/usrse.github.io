@@ -31,6 +31,47 @@ export const meRoute = new Hono<AppEnv>();
 
 meRoute.use("*", requireAuth);
 
+/**
+ * Resolve a WorkOS-authenticated user to the canonical row, walking
+ * the merge chain when applicable. Returns null when no user is
+ * provisioned yet, when the user is soft-deleted, or when the merge
+ * chain is broken (a merged_into target that no longer exists).
+ *
+ * Bounded chain depth — merges shouldn't cascade more than once or
+ * twice in practice, but a small cap protects against accidental
+ * loops a future admin tool might create.
+ */
+async function findCanonicalUser(
+  db: ReturnType<typeof createDb>,
+  workosId: string
+): Promise<{ id: string; memberId: string } | null> {
+  const head = await db
+    .select({
+      id: users.id,
+      memberId: users.memberId,
+      mergedIntoUserId: users.mergedIntoUserId,
+    })
+    .from(users)
+    .where(and(eq(users.workosId, workosId), isNull(users.deletedAt)))
+    .limit(1);
+  let row = head[0];
+  if (!row) return null;
+  for (let depth = 0; depth < 5 && row.mergedIntoUserId; depth++) {
+    const next = await db
+      .select({
+        id: users.id,
+        memberId: users.memberId,
+        mergedIntoUserId: users.mergedIntoUserId,
+      })
+      .from(users)
+      .where(and(eq(users.id, row.mergedIntoUserId), isNull(users.deletedAt)))
+      .limit(1);
+    if (!next[0]) return null;
+    row = next[0];
+  }
+  return { id: row.id, memberId: row.memberId };
+}
+
 const ORCID_PATTERN = /^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$/;
 
 // Slug is derived server-side from displayName + memberId — clients
@@ -96,10 +137,7 @@ meRoute.get("/", async (c) => {
   try {
     const db = createDb(c.env.DATABASE_URL);
 
-    const user = await db.query.users.findFirst({
-      where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
-      columns: { id: true },
-    });
+    const user = await findCanonicalUser(db, workosId);
 
     if (!user) {
       return c.json(
@@ -151,11 +189,7 @@ meRoute.patch(
     const db = createDb(c.env.DATABASE_URL);
     const input = c.req.valid("json") as ProfilePatch;
 
-    const user = await db.query.users.findFirst({
-      where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
-      with: { profile: true },
-    });
-
+    const user = await findCanonicalUser(db, workosId);
     if (!user) {
       return c.json(
         {
@@ -167,6 +201,14 @@ meRoute.patch(
         404
       );
     }
+    // Profile presence drives whether we PATCH or INSERT below.
+    // Pulled separately because findCanonicalUser doesn't carry the
+    // related profile through the chain walk.
+    const existingProfile = await db
+      .select({ id: profiles.id })
+      .from(profiles)
+      .where(eq(profiles.userId, user.id))
+      .limit(1);
 
     // Resolve countryIso2 → countryId before the DB write. Done
     // here rather than in the zod schema because it requires a DB
@@ -195,7 +237,7 @@ meRoute.patch(
     }
 
     try {
-      if (user.profile) {
+      if (existingProfile[0]) {
         // Slug stays put once set — renaming yourself doesn't move
         // your URL, which keeps existing links to the profile alive.
         await db
@@ -257,11 +299,28 @@ meRoute.patch(
 async function resolveOwnerWithProfile(
   db: ReturnType<typeof createDb>,
   workosId: string
-) {
-  return db.query.users.findFirst({
-    where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
-    with: { profile: true },
-  });
+): Promise<{
+  id: string;
+  memberId: string;
+  profile: { id: string; photoStorageKey: string | null } | null;
+} | null> {
+  // Walk the merge chain first — photo writes belong on the canonical
+  // user, not the merged tombstone.
+  const canonical = await findCanonicalUser(db, workosId);
+  if (!canonical) return null;
+  const profile = await db
+    .select({
+      id: profiles.id,
+      photoStorageKey: profiles.photoStorageKey,
+    })
+    .from(profiles)
+    .where(eq(profiles.userId, canonical.id))
+    .limit(1);
+  return {
+    id: canonical.id,
+    memberId: canonical.memberId,
+    profile: profile[0] ?? null,
+  };
 }
 
 async function persistPhotoChange(
@@ -615,10 +674,7 @@ meRoute.post(
     const db = createDb(c.env.DATABASE_URL);
     const input = c.req.valid("json") as VocabAddInput;
 
-    const user = await db.query.users.findFirst({
-      where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
-      columns: { id: true },
-    });
+    const user = await findCanonicalUser(db, workosId);
     if (!user) {
       return c.json(
         { ok: false, error: "user_pending", message: "Account not provisioned." },
@@ -654,10 +710,7 @@ meRoute.delete("/disciplines/:id", async (c) => {
     return c.json({ ok: false, error: "invalid_input" }, 400);
   }
   const db = createDb(c.env.DATABASE_URL);
-  const user = await db.query.users.findFirst({
-    where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
-    columns: { id: true },
-  });
+  const user = await findCanonicalUser(db, workosId);
   if (!user) {
     return c.json(
       { ok: false, error: "user_pending", message: "Account not provisioned." },
@@ -703,10 +756,7 @@ meRoute.post(
     const db = createDb(c.env.DATABASE_URL);
     const input = c.req.valid("json") as VocabAddInput;
 
-    const user = await db.query.users.findFirst({
-      where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
-      columns: { id: true },
-    });
+    const user = await findCanonicalUser(db, workosId);
     if (!user) {
       return c.json(
         { ok: false, error: "user_pending", message: "Account not provisioned." },
@@ -740,10 +790,7 @@ meRoute.delete("/skills/:id", async (c) => {
     return c.json({ ok: false, error: "invalid_input" }, 400);
   }
   const db = createDb(c.env.DATABASE_URL);
-  const user = await db.query.users.findFirst({
-    where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
-    columns: { id: true },
-  });
+  const user = await findCanonicalUser(db, workosId);
   if (!user) {
     return c.json(
       { ok: false, error: "user_pending", message: "Account not provisioned." },
@@ -784,10 +831,7 @@ meRoute.post(
     const db = createDb(c.env.DATABASE_URL);
     const input = c.req.valid("json") as VocabAddInput;
 
-    const user = await db.query.users.findFirst({
-      where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
-      columns: { id: true },
-    });
+    const user = await findCanonicalUser(db, workosId);
     if (!user) {
       return c.json(
         { ok: false, error: "user_pending", message: "Account not provisioned." },
@@ -821,10 +865,7 @@ meRoute.delete("/languages/:id", async (c) => {
     return c.json({ ok: false, error: "invalid_input" }, 400);
   }
   const db = createDb(c.env.DATABASE_URL);
-  const user = await db.query.users.findFirst({
-    where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
-    columns: { id: true },
-  });
+  const user = await findCanonicalUser(db, workosId);
   if (!user) {
     return c.json(
       { ok: false, error: "user_pending", message: "Account not provisioned." },
@@ -1055,10 +1096,7 @@ meRoute.post(
     const db = createDb(c.env.DATABASE_URL);
     const input = c.req.valid("json") as OrganizationAddInput;
 
-    const user = await db.query.users.findFirst({
-      where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
-      columns: { id: true },
-    });
+    const user = await findCanonicalUser(db, workosId);
     if (!user) {
       return c.json(
         { ok: false, error: "user_pending", message: "Account not provisioned." },
@@ -1149,10 +1187,7 @@ meRoute.patch(
     const db = createDb(c.env.DATABASE_URL);
     const input = c.req.valid("json") as OrganizationPatchInput;
 
-    const user = await db.query.users.findFirst({
-      where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
-      columns: { id: true },
-    });
+    const user = await findCanonicalUser(db, workosId);
     if (!user) {
       return c.json(
         { ok: false, error: "user_pending", message: "Account not provisioned." },
@@ -1207,10 +1242,7 @@ meRoute.delete("/organizations/:joinId", async (c) => {
     return c.json({ ok: false, error: "invalid_input" }, 400);
   }
   const db = createDb(c.env.DATABASE_URL);
-  const user = await db.query.users.findFirst({
-    where: and(eq(users.workosId, workosId), isNull(users.deletedAt)),
-    columns: { id: true },
-  });
+  const user = await findCanonicalUser(db, workosId);
   if (!user) {
     return c.json(
       { ok: false, error: "user_pending", message: "Account not provisioned." },

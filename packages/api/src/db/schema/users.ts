@@ -27,6 +27,21 @@ export const users = pgTable(
       .defaultNow(),
     marketingConsent: boolean("marketing_consent").notNull().default(false),
     isLegacyImport: boolean("is_legacy_import").notNull().default(false),
+    /**
+     * When set, this user has been merged into the referenced canonical
+     * user. The row stays for audit (who merged what, when), but
+     * downstream queries — directory listing, public profile lookups —
+     * treat a merged user as not-active. The /me handler walks the
+     * chain so a member whose account got merged still lands on their
+     * canonical dossier when they sign in.
+     *
+     * Mirrors `organizations.merged_into_id`. Reversible because the
+     * source row is preserved.
+     */
+    mergedIntoUserId: uuid("merged_into_user_id").references(
+      (): any => users.id,
+      { onDelete: "set null" }
+    ),
     createdAt: timestamp("created_at", { withTimezone: true })
       .notNull()
       .defaultNow(),
@@ -36,12 +51,24 @@ export const users = pgTable(
     deletedAt: timestamp("deleted_at", { withTimezone: true }),
   },
   (t) => [
+    /**
+     * "Active" now means not soft-deleted AND not merged into another
+     * canonical user. Both conditions hide the row from directory /
+     * public-profile surfaces. The composite predicate is what every
+     * read-side query joins against — making it part of the partial
+     * index keeps the planner happy without a second filter step.
+     */
     index("users_active_idx")
       .on(t.id)
-      .where(sql`deleted_at IS NULL`),
+      .where(sql`deleted_at IS NULL AND merged_into_user_id IS NULL`),
     index("users_legacy_import_idx")
       .on(t.isLegacyImport)
       .where(sql`is_legacy_import = true`),
+    /** Fast lookup of "what did this row merge into" — used by /me's
+        chain walker and any future audit tooling. */
+    index("users_merged_into_idx")
+      .on(t.mergedIntoUserId)
+      .where(sql`merged_into_user_id IS NOT NULL`),
   ]
 );
 

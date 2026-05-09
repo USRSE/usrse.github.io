@@ -78,6 +78,13 @@
       "when": 1778308139944,
       "tag": "0010_organizations_rename",
       "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1778310507730,
+      "tag": "0011_user_merging",
+      "breakpoints": true
     }
   ]
 }

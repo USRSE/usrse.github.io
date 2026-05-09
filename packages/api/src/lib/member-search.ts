@@ -86,11 +86,14 @@ export async function searchMembers(
 ): Promise<MemberSearchResponse> {
   const { q, disciplineIds, careerStageIds, countryIds, limit, offset } = params;
 
-  // Compose WHERE. A row is listable when isPublic OR isDiscoverable
-  // and not soft-deleted on either side of the user/profile join.
+  // Compose WHERE. A row is listable when isPublic OR isDiscoverable,
+  // not soft-deleted on either side of the user/profile join, and not
+  // merged into another canonical user (merged rows are an audit
+  // tombstone — the canonical row carries the surface presence).
   const conditions = [
     isNull(profiles.deletedAt),
     isNull(users.deletedAt),
+    isNull(users.mergedIntoUserId),
     or(eq(profiles.isPublic, true), eq(profiles.isDiscoverable, true)),
   ];
 
