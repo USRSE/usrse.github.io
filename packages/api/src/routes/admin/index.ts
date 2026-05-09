@@ -4,6 +4,7 @@ import { requireActorContext } from "../../middleware/actorContext";
 import { auditMiddleware } from "../../middleware/audit";
 import type { AppEnv } from "../../types";
 import { adminMeRoute } from "./me";
+import { adminAuditRoute } from "./audit";
 
 /**
  * Hono sub-app for /api/admin/*. Order matters:
@@ -21,3 +22,4 @@ adminApi.use("*", requireActorContext);
 adminApi.use("*", auditMiddleware);
 
 adminApi.route("/me", adminMeRoute);
+adminApi.route("/audit", adminAuditRoute);
