@@ -8,6 +8,10 @@ export interface MemberSearchPublicResult {
   displayName: string;
   jobTitle: string | null;
   organizationName: string | null;
+  organizationSlug: string | null;
+  organizationLogoUrl: string | null;
+  organizationLogoMarkUrl: string | null;
+  organizationLogoUsageConsent: string | null;
   careerStageLabel: string | null;
   publicLocation: string | null;
   countryName: string | null;

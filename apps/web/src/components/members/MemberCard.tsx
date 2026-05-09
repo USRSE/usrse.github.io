@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { formatMemberId } from "@/lib/member-id";
+import { OrgLogo } from "@/components/profile/OrgLogo";
 import type { MemberSearchResult } from "@/hooks/useMemberSearch";
 
 /**
@@ -36,9 +37,8 @@ function PublicRow({
   const placeLine = [member.publicLocation, member.countryName]
     .filter(Boolean)
     .join(" · ");
-  const subtitleParts = [member.jobTitle, member.organizationName].filter(
-    (p): p is string => Boolean(p && p.trim())
-  );
+  const hasJob = Boolean(member.jobTitle?.trim());
+  const hasOrg = Boolean(member.organizationName?.trim());
 
   return (
     <Link
@@ -79,16 +79,26 @@ function PublicRow({
           <h3 className="font-display text-xl lg:text-2xl font-semibold text-neutral-900 leading-tight tracking-tight text-balance">
             {member.displayName}
           </h3>
-          {subtitleParts.length > 0 && (
-            <p className="mt-1.5 text-sm lg:text-base text-neutral-600 leading-snug">
-              {subtitleParts.map((part, i) => (
-                <span key={i}>
-                  {part}
-                  {i < subtitleParts.length - 1 && (
-                    <span className="mx-2 text-neutral-300">·</span>
-                  )}
+          {(hasJob || hasOrg) && (
+            <p className="mt-1.5 text-sm lg:text-base text-neutral-600 leading-snug flex flex-wrap items-center gap-x-2 gap-y-1">
+              {hasJob && <span>{member.jobTitle}</span>}
+              {hasJob && hasOrg && (
+                <span className="text-neutral-300" aria-hidden="true">·</span>
+              )}
+              {hasOrg && member.organizationName && (
+                <span className="inline-flex items-center gap-1.5">
+                  <OrgLogo
+                    name={member.organizationName}
+                    slug={member.organizationSlug ?? undefined}
+                    logoUrl={member.organizationLogoUrl}
+                    logoMarkUrl={member.organizationLogoMarkUrl}
+                    logoUsageConsent={member.organizationLogoUsageConsent}
+                    variant="mark"
+                    size="xs"
+                  />
+                  <span>{member.organizationName}</span>
                 </span>
-              ))}
+              )}
             </p>
           )}
           {member.disciplines.length > 0 && (

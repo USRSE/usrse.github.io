@@ -121,6 +121,17 @@ export interface AffiliationRow {
   id: string;
   organizationId: string;
   organizationName: string;
+  organizationSlug: string;
+  /** Hosted full mark — null until uploaded. */
+  organizationLogoUrl: string | null;
+  /** Symbol-only variant — preferred for tight rows. Falls back to logoUrl. */
+  organizationLogoMarkUrl: string | null;
+  /**
+   * Consent string when the org has signed off on us displaying the
+   * mark. Empty / null = OrgLogo falls back to InitialsHex even if
+   * logoUrl is set.
+   */
+  organizationLogoUsageConsent: string | null;
   isPrimary: boolean;
   role: string | null;
   startedAt: string | null;
@@ -549,6 +560,10 @@ export async function loadMemberDossier(
         id: userOrganizations.id,
         organizationId: organizations.id,
         organizationName: organizations.name,
+        organizationSlug: organizations.slug,
+        organizationLogoUrl: organizations.logoUrl,
+        organizationLogoMarkUrl: organizations.logoMarkUrl,
+        organizationLogoUsageConsent: organizations.logoUsageConsent,
         isPrimary: userOrganizations.isPrimary,
         role: userOrganizations.role,
         startedAt: userOrganizations.startedAt,
@@ -575,6 +590,10 @@ export async function loadMemberDossier(
     id: a.id,
     organizationId: a.organizationId,
     organizationName: a.organizationName,
+    organizationSlug: a.organizationSlug,
+    organizationLogoUrl: a.organizationLogoUrl,
+    organizationLogoMarkUrl: a.organizationLogoMarkUrl,
+    organizationLogoUsageConsent: a.organizationLogoUsageConsent,
     isPrimary: a.isPrimary,
     role: a.role,
     startedAt:

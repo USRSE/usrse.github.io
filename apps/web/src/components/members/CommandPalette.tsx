@@ -11,6 +11,7 @@ import { useAuth } from "@workos-inc/authkit-react";
 import { useMemberSearch } from "@/hooks/useMemberSearch";
 import type { MemberSearchResult } from "@/hooks/useMemberSearch";
 import { formatMemberId } from "@/lib/member-id";
+import { OrgLogo } from "@/components/profile/OrgLogo";
 
 /**
  * Global command palette — cmd+k / ctrl+k from anywhere on the site
@@ -281,11 +282,11 @@ function PaletteRow({
         <p className="text-base font-medium text-white truncate">
           {member.displayName}
         </p>
-        <p className="text-xs text-white/50 truncate">
-          {member.kind === "public"
-            ? renderPublicByline(member)
-            : "Private profile"}
-        </p>
+        {member.kind === "public" ? (
+          <PublicByline member={member} />
+        ) : (
+          <p className="text-xs text-white/50 truncate">Private profile</p>
+        )}
       </div>
 
       <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/30 shrink-0 hidden sm:block">
@@ -295,13 +296,45 @@ function PaletteRow({
   );
 }
 
-function renderPublicByline(
-  m: Extract<MemberSearchResult, { kind: "public" }>
-): string {
-  const parts = [m.jobTitle, m.organizationName, m.countryName].filter(
-    (p): p is string => Boolean(p && p.trim())
+function PublicByline({
+  member,
+}: {
+  member: Extract<MemberSearchResult, { kind: "public" }>;
+}) {
+  const job = member.jobTitle?.trim() || null;
+  const org = member.organizationName?.trim() || null;
+  const country = member.countryName?.trim() || null;
+
+  if (!job && !org && !country) {
+    return <p className="text-xs text-white/50 truncate">Member</p>;
+  }
+
+  return (
+    <p className="text-xs text-white/50 truncate flex items-center gap-1.5">
+      {job && <span>{job}</span>}
+      {job && (org || country) && (
+        <span className="text-white/30" aria-hidden="true">·</span>
+      )}
+      {org && (
+        <span className="inline-flex items-center gap-1">
+          <OrgLogo
+            name={org}
+            slug={member.organizationSlug ?? undefined}
+            logoUrl={member.organizationLogoUrl}
+            logoMarkUrl={member.organizationLogoMarkUrl}
+            logoUsageConsent={member.organizationLogoUsageConsent}
+            variant="mark"
+            size="xs"
+          />
+          <span>{org}</span>
+        </span>
+      )}
+      {org && country && (
+        <span className="text-white/30" aria-hidden="true">·</span>
+      )}
+      {country && <span>{country}</span>}
+    </p>
   );
-  return parts.length > 0 ? parts.join(" · ") : "Member";
 }
 
 function PaletteHex({ initials }: { initials: string | null }) {

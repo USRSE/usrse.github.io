@@ -153,6 +153,10 @@ export interface AffiliationItem {
   id: string;
   organizationId: string;
   organizationName: string;
+  organizationSlug: string;
+  organizationLogoUrl: string | null;
+  organizationLogoMarkUrl: string | null;
+  organizationLogoUsageConsent: string | null;
   isPrimary: boolean;
   role: string | null;
   startedAt: string | null;

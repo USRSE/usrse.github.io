@@ -50,7 +50,12 @@ export type MemberSearchResultPublic = {
   slug: string;
   displayName: string;
   jobTitle: string | null;
+  /** Primary org name. Sourced from user_organizations.is_primary=true. */
   organizationName: string | null;
+  organizationSlug: string | null;
+  organizationLogoUrl: string | null;
+  organizationLogoMarkUrl: string | null;
+  organizationLogoUsageConsent: string | null;
   careerStageLabel: string | null;
   publicLocation: string | null;
   countryName: string | null;
@@ -136,6 +141,10 @@ export async function searchMembers(
         displayName: profiles.displayName,
         jobTitle: profiles.jobTitle,
         organizationName: organizations.name,
+        organizationSlug: organizations.slug,
+        organizationLogoUrl: organizations.logoUrl,
+        organizationLogoMarkUrl: organizations.logoMarkUrl,
+        organizationLogoUsageConsent: organizations.logoUsageConsent,
         careerStageLabel: careerStages.label,
         publicLocation: profiles.publicLocation,
         countryName: countries.name,
@@ -204,6 +213,10 @@ export async function searchMembers(
           displayName: r.displayName,
           jobTitle: r.jobTitle,
           organizationName: r.organizationName,
+          organizationSlug: r.organizationSlug,
+          organizationLogoUrl: r.organizationLogoUrl,
+          organizationLogoMarkUrl: r.organizationLogoMarkUrl,
+          organizationLogoUsageConsent: r.organizationLogoUsageConsent,
           careerStageLabel: r.careerStageLabel,
           publicLocation: r.publicLocation,
           countryName: r.countryName,

@@ -4,6 +4,7 @@ import {
   OrganizationCombobox,
   type OrganizationSimple,
 } from "./OrganizationCombobox";
+import { OrgLogo } from "./OrgLogo";
 import { useApi } from "@/lib/api";
 import type {
   AffiliationItem,
@@ -121,7 +122,6 @@ function AffiliationRead({
   // local optimistic updates.
   const primary = affiliations.find((a) => a.isPrimary) ?? null;
   const secondaries = affiliations.filter((a) => a !== primary);
-  const primaryName = primary?.organizationName ?? null;
 
   return (
     <div className="space-y-8">
@@ -133,7 +133,7 @@ function AffiliationRead({
           subValue={careerStageLabel}
           accent="purple"
         />
-        <Pillar label="Organization" value={primaryName} accent="neutral" />
+        <OrgPillar primary={primary} />
         <Pillar label="Based in" value={placeLine || null} accent="teal" />
       </div>
 
@@ -146,8 +146,17 @@ function AffiliationRead({
             {secondaries.map((a) => (
               <li
                 key={a.id}
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-50 border border-neutral-200 text-sm text-neutral-800"
+                className="inline-flex items-center gap-2 pl-1.5 pr-3 py-1 rounded-full bg-neutral-50 border border-neutral-200 text-sm text-neutral-800"
               >
+                <OrgLogo
+                  name={a.organizationName}
+                  slug={a.organizationSlug}
+                  logoUrl={a.organizationLogoUrl}
+                  logoMarkUrl={a.organizationLogoMarkUrl}
+                  logoUsageConsent={a.organizationLogoUsageConsent}
+                  variant="mark"
+                  size="xs"
+                />
                 <span>{a.organizationName}</span>
                 {a.role && (
                   <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-400">
@@ -160,6 +169,47 @@ function AffiliationRead({
         </div>
       )}
     </div>
+  );
+}
+
+/**
+ * Organization pillar — when a primary affiliation exists, lifts the
+ * org name onto its own card with the OrgLogo above. Falls back to a
+ * "not set" pillar when the user hasn't claimed an affiliation yet.
+ */
+function OrgPillar({ primary }: { primary: AffiliationItem | null }) {
+  if (!primary) {
+    return <Pillar label="Organization" value={null} accent="neutral" />;
+  }
+  return (
+    <article className="relative bg-white px-6 lg:px-7 py-7">
+      <span
+        aria-hidden="true"
+        className="absolute top-0 left-6 right-6 h-[3px] bg-neutral-300"
+      />
+      <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-400 mt-3 mb-3">
+        Organization
+      </p>
+      <div className="flex items-center gap-3">
+        <OrgLogo
+          name={primary.organizationName}
+          slug={primary.organizationSlug}
+          logoUrl={primary.organizationLogoUrl}
+          logoMarkUrl={primary.organizationLogoMarkUrl}
+          logoUsageConsent={primary.organizationLogoUsageConsent}
+          variant="primary"
+          size="md"
+        />
+        <p className="font-display text-xl lg:text-2xl font-semibold text-neutral-900 leading-tight tracking-tight text-balance min-w-0">
+          {primary.organizationName}
+        </p>
+      </div>
+      {primary.role && (
+        <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-500">
+          {primary.role}
+        </p>
+      )}
+    </article>
   );
 }
 
@@ -286,9 +336,19 @@ function AffiliationEditor({
           {affiliations.map((a) => (
             <li
               key={a.id}
-              className="flex items-center justify-between gap-3 px-4 py-3 bg-white border border-neutral-200 rounded-xl"
+              className="flex items-center justify-between gap-3 px-3 py-3 bg-white border border-neutral-200 rounded-xl"
             >
-              <div className="min-w-0">
+              <div className="flex items-center gap-3 min-w-0">
+                <OrgLogo
+                  name={a.organizationName}
+                  slug={a.organizationSlug}
+                  logoUrl={a.organizationLogoUrl}
+                  logoMarkUrl={a.organizationLogoMarkUrl}
+                  logoUsageConsent={a.organizationLogoUsageConsent}
+                  variant="mark"
+                  size="sm"
+                />
+                <div className="min-w-0">
                 <p className="text-sm text-neutral-900 leading-tight truncate">
                   {a.organizationName}
                 </p>
@@ -297,6 +357,7 @@ function AffiliationEditor({
                     {a.role}
                   </p>
                 )}
+                </div>
               </div>
               <div className="flex items-center gap-2 flex-shrink-0">
                 {a.isPrimary ? (
