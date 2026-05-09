@@ -1,6 +1,7 @@
 import { Hono } from "hono";
 import { requireAuth } from "../../middleware/auth";
 import { requireActorContext } from "../../middleware/actorContext";
+import { auditMiddleware } from "../../middleware/audit";
 import type { AppEnv } from "../../types";
 import { adminMeRoute } from "./me";
 
@@ -17,5 +18,6 @@ export const adminApi = new Hono<AppEnv>();
 
 adminApi.use("*", requireAuth);
 adminApi.use("*", requireActorContext);
+adminApi.use("*", auditMiddleware);
 
 adminApi.route("/me", adminMeRoute);
