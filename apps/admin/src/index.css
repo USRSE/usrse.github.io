@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "@us-rse/design-system/dist/tokens.css";
+
+html,
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    sans-serif;
+  background: #fafafa;
+  color: #1c1c1e;
+}
