@@ -3,8 +3,10 @@ import {
   canApproveVocab,
   canEditEvent,
   canEditGroup,
+  canEditMembers,
   canEnterAdminApp,
   canMergeUsers,
+  canPromoteToRole,
   canViewAuditLog,
   type ActorContext,
 } from "./index";
@@ -130,5 +132,43 @@ describe("canViewAuditLog", () => {
   });
   it("allows super_admin", () => {
     expect(canViewAuditLog(actor({ systemTier: 2 }))).toBe(true);
+  });
+});
+
+describe("canEditMembers", () => {
+  it("denies plain members", () => {
+    expect(canEditMembers(actor())).toBe(false);
+  });
+  it("allows staff", () => {
+    expect(canEditMembers(actor({ systemTier: 1 }))).toBe(true);
+  });
+  it("allows super_admin", () => {
+    expect(canEditMembers(actor({ systemTier: 2 }))).toBe(true);
+  });
+});
+
+describe("canPromoteToRole", () => {
+  it("staff can grant member", () => {
+    expect(
+      canPromoteToRole(actor({ systemTier: 1 }), { newRole: "member" })
+    ).toBe(true);
+  });
+  it("staff can grant staff", () => {
+    expect(
+      canPromoteToRole(actor({ systemTier: 1 }), { newRole: "staff" })
+    ).toBe(true);
+  });
+  it("staff cannot grant super_admin", () => {
+    expect(
+      canPromoteToRole(actor({ systemTier: 1 }), { newRole: "super_admin" })
+    ).toBe(false);
+  });
+  it("super_admin can grant any role", () => {
+    expect(
+      canPromoteToRole(actor({ systemTier: 2 }), { newRole: "super_admin" })
+    ).toBe(true);
+  });
+  it("plain members cannot grant any role", () => {
+    expect(canPromoteToRole(actor(), { newRole: "member" })).toBe(false);
   });
 });
