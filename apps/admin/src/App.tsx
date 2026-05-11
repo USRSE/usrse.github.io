@@ -4,44 +4,30 @@ import { useActorContext } from "./hooks/useActorContext";
 import { NotEntitled } from "./layout/NotEntitled";
 import { AdminShell } from "./layout/AdminShell";
 import { CallbackPage } from "./pages/auth/CallbackPage";
+import { SignInPage } from "./pages/auth/SignInPage";
 import { DashboardPage } from "./pages/DashboardPage";
 import { AuditPage } from "./pages/AuditPage";
 
 export function App() {
-  const { user: workosUser, isLoading: authLoading, signIn } = useAuth();
+  const { user: workosUser, isLoading: authLoading } = useAuth();
   const actor = useActorContext();
 
-  if (authLoading) return <main className="p-8">Loading…</main>;
-  if (!workosUser) {
-    return (
-      <main className="p-8 font-sans">
-        <h1 className="text-xl font-semibold">US-RSE Admin</h1>
-        <button
-          type="button"
-          onClick={() => signIn()}
-          className="mt-4 px-4 py-2 rounded bg-purple-700 text-white"
-        >
-          Sign in
-        </button>
-      </main>
-    );
-  }
+  if (authLoading) return <FullScreenStatus message="Loading…" />;
+  if (!workosUser) return <SignInPage />;
   if (actor.status === "loading" || actor.status === "idle") {
-    return <main className="p-8">Loading actor context…</main>;
+    return <FullScreenStatus message="Loading actor context…" />;
   }
   if (actor.status === "forbidden") return <NotEntitled />;
   if (actor.status === "user_pending") {
     return (
-      <main className="p-8">
-        Your account is being provisioned — try again in a moment.
-      </main>
+      <FullScreenStatus message="Your account is being provisioned — try again in a moment." />
     );
   }
   if (actor.status === "error" || !actor.actor) {
     return (
-      <main className="p-8">
-        Couldn't load admin context. {actor.error?.message ?? "Unknown error."}
-      </main>
+      <FullScreenStatus
+        message={`Couldn't load admin context. ${actor.error?.message ?? "Unknown error."}`}
+      />
     );
   }
 
@@ -71,6 +57,25 @@ function Stub({ label }: { label: string }) {
       <p className="text-neutral-600">
         Coming soon — see <code>docs/superpowers/specs/</code>.
       </p>
+    </div>
+  );
+}
+
+/**
+ * Branded transient state — shown for short-lived loading and
+ * recoverable error conditions before the shell is mounted. Matches
+ * the SignInPage chrome (purple top accent, centered content) so the
+ * boot sequence reads as one continuous surface.
+ */
+function FullScreenStatus({ message }: { message: string }) {
+  return (
+    <div className="min-h-screen flex flex-col bg-neutral-50">
+      <div className="h-1 bg-purple-700" aria-hidden="true" />
+      <main className="flex-1 flex items-center justify-center px-6 py-16">
+        <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-neutral-500 text-center max-w-md">
+          {message}
+        </p>
+      </main>
     </div>
   );
 }
