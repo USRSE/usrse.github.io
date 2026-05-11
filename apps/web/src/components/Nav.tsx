@@ -3,6 +3,20 @@ import { Link } from "react-router-dom";
 import { useAuth } from "@workos-inc/authkit-react";
 import { useCurrentMember } from "@/hooks/useCurrentMember";
 
+/**
+ * Admin app URL. Defaults are environment-aware so the dropdown's
+ * "Admin portal" link works the same way locally as in prod without
+ * needing per-developer config:
+ *   - prod build  → https://admin.us-rse.org (the deployed Pages project)
+ *   - vite dev    → http://localhost:5174 (the local apps/admin server)
+ *   - override    → set VITE_ADMIN_URL in .env.local for previews
+ */
+const ADMIN_URL: string =
+  import.meta.env.VITE_ADMIN_URL ??
+  (import.meta.env.DEV
+    ? "http://localhost:5174"
+    : "https://admin.us-rse.org");
+
 /* ── Types ─────────────────────────────────────────────────────────── */
 
 interface SimpleLink {
@@ -589,7 +603,7 @@ function UserNavSlot() {
           </Link>
           {isAdmin && (
             <a
-              href="https://admin.us-rse.org"
+              href={ADMIN_URL}
               className="flex items-center justify-between px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50 hover:text-purple-700 rounded-lg transition-colors"
               role="menuitem"
             >
@@ -671,7 +685,7 @@ function UserNavSlotMobile({ onNavigate }: { onNavigate: () => void }) {
       </Link>
       {isAdmin && (
         <a
-          href="https://admin.us-rse.org"
+          href={ADMIN_URL}
           className="flex items-center justify-between w-full px-4 py-3 text-sm text-neutral-700 border-t border-neutral-100 hover:bg-neutral-50 hover:text-purple-700 transition-colors"
         >
           <span>Admin portal</span>
