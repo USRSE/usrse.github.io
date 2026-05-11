@@ -1,14 +1,70 @@
+import { useEffect, useState } from "react";
 import { useAuth } from "@workos-inc/authkit-react";
 
 /**
- * Sign-in surface for admin.us-rse.org. Standalone landing screen
- * shown when no WorkOS session is active. Visually heavier than the
- * inner admin shell (centered, branded) so it reads as a real product
- * entry point, then gives way to the dense workspace treatment after
- * the actor context loads.
+ * Sign-in surface for admin.us-rse.org.
+ *
+ * On first arrival in a tab session, immediately calls `signIn()` —
+ * WorkOS checks for an existing SSO session cookie and silently calls
+ * back with an auth code if one exists, so an admin who is already
+ * signed in elsewhere (e.g., usrse.org) lands straight in the admin
+ * app with no button press.
+ *
+ * If we already auto-redirected once this tab session and the user
+ * returned still unauthenticated (cancelled the WorkOS prompt, or
+ * their session is invalid), we fall back to a manual sign-in card
+ * with an explicit button + an escape link to the public site.
  */
+const ATTEMPT_KEY = "admin:signInAttempted";
+
+/** Clear the attempt flag — called from sign-out paths so the next
+ *  visit gets the auto-redirect experience again instead of being
+ *  stuck on the manual surface. */
+export function clearSignInAttempt() {
+  try {
+    sessionStorage.removeItem(ATTEMPT_KEY);
+  } catch {
+    /* ok */
+  }
+}
+
 export function SignInPage() {
   const { signIn } = useAuth();
+  const [showManual, setShowManual] = useState(false);
+
+  useEffect(() => {
+    let alreadyTried = false;
+    try {
+      alreadyTried = sessionStorage.getItem(ATTEMPT_KEY) === "1";
+    } catch {
+      /* sessionStorage may throw in some private-mode contexts; treat as
+         "haven't tried" so the auto-redirect still runs. */
+    }
+    if (alreadyTried) {
+      setShowManual(true);
+      return;
+    }
+    try {
+      sessionStorage.setItem(ATTEMPT_KEY, "1");
+    } catch {
+      /* ok */
+    }
+    signIn();
+  }, [signIn]);
+
+  if (!showManual) {
+    return (
+      <div className="min-h-screen flex flex-col bg-neutral-50">
+        <div className="h-1 bg-purple-700" aria-hidden="true" />
+        <main className="flex-1 flex items-center justify-center px-6 py-16">
+          <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-neutral-500 text-center">
+            Connecting to WorkOS…
+          </p>
+        </main>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen flex flex-col bg-neutral-50">
       <div className="h-1 bg-purple-700" aria-hidden="true" />

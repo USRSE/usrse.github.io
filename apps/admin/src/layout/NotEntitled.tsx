@@ -1,8 +1,13 @@
 import { useAuth } from "@workos-inc/authkit-react";
+import { clearSignInAttempt } from "../pages/auth/SignInPage";
 
 /** Shown when the actor signed in but has no admin-shaped position. */
 export function NotEntitled() {
   const { signOut } = useAuth();
+  function handleSignOut() {
+    clearSignInAttempt();
+    signOut();
+  }
   return (
     <main
       style={{
@@ -24,7 +29,7 @@ export function NotEntitled() {
       </p>
       <button
         type="button"
-        onClick={() => signOut()}
+        onClick={handleSignOut}
         style={{
           marginTop: "1rem",
           padding: "0.5rem 1rem",

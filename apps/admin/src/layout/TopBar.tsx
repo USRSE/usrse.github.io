@@ -1,5 +1,6 @@
 import { useAuth } from "@workos-inc/authkit-react";
 import type { ActorContext } from "../hooks/useActorContext";
+import { clearSignInAttempt } from "../pages/auth/SignInPage";
 
 interface TopBarProps {
   actor: ActorContext;
@@ -7,6 +8,14 @@ interface TopBarProps {
 
 export function TopBar({ actor }: TopBarProps) {
   const { signOut } = useAuth();
+
+  // Clear the per-tab "we tried to auto-sign-in once" flag before
+  // signing out, otherwise the next visit will land on the manual
+  // sign-in card instead of getting the auto-redirect treatment.
+  function handleSignOut() {
+    clearSignInAttempt();
+    signOut();
+  }
   const tierLabel =
     actor.systemTier === 2
       ? "super admin"
@@ -26,7 +35,7 @@ export function TopBar({ actor }: TopBarProps) {
           </span>
           <button
             type="button"
-            onClick={() => signOut()}
+            onClick={handleSignOut}
             className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-400 hover:text-purple-700"
           >
             sign out
