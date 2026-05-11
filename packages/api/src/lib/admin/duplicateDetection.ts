@@ -215,3 +215,68 @@ export function scoreCandidatePair(input: CandidatePairInput): ScoredPair {
   const tier: Tier = score >= 80 ? "high" : score >= 50 ? "medium" : "weak";
   return { a, b, score, signals, tier };
 }
+
+/**
+ * Given a flat list of CandidateUser rows fetched from the DB, builds
+ * the deduplicated set of pairs surfaced by any anchor. Each pair is
+ * scored once; pairs that don't meet the threshold are dropped.
+ */
+export function buildAndScorePairs(
+  users: CandidateUser[],
+  options: { threshold?: number; limit?: number } = {}
+): ScoredPair[] {
+  const threshold = options.threshold ?? 30;
+  const limit = options.limit ?? 100;
+
+  // Build anchor groups in one pass.
+  const byName = new Map<string, CandidateUser[]>();
+  const byCanonEmail = new Map<string, CandidateUser[]>();
+  const byOrcid = new Map<string, CandidateUser[]>();
+  const byGithub = new Map<string, CandidateUser[]>();
+  const byLinkedin = new Map<string, CandidateUser[]>();
+
+  for (const u of users) {
+    const n = normalizeDisplayName(u.displayName);
+    if (n) push(byName, n, u);
+    const ce = canonicalizeEmailLocal(u.email);
+    if (ce) push(byCanonEmail, ce, u);
+    if (u.orcid) push(byOrcid, u.orcid, u);
+    const gh = canonicalizeGithub(u.githubUrl);
+    if (gh) push(byGithub, gh, u);
+    const li = canonicalizeLinkedin(u.linkedinUrl);
+    if (li) push(byLinkedin, li, u);
+  }
+
+  // Collect candidate pairs from each anchor (groups of 2+), deduplicated.
+  const pairKey = (a: CandidateUser, b: CandidateUser) =>
+    a.id < b.id ? `${a.id}|${b.id}` : `${b.id}|${a.id}`;
+  const seenPairs = new Map<string, CandidatePairInput>();
+  for (const anchor of [byName, byCanonEmail, byOrcid, byGithub, byLinkedin]) {
+    for (const group of anchor.values()) {
+      if (group.length < 2) continue;
+      for (let i = 0; i < group.length; i++) {
+        for (let j = i + 1; j < group.length; j++) {
+          const a = group[i];
+          const b = group[j];
+          const key = pairKey(a, b);
+          if (!seenPairs.has(key)) seenPairs.set(key, { a, b });
+        }
+      }
+    }
+  }
+
+  // Score and filter.
+  const scored: ScoredPair[] = [];
+  for (const p of seenPairs.values()) {
+    const s = scoreCandidatePair(p);
+    if (s.score >= threshold) scored.push(s);
+  }
+  scored.sort((x, y) => y.score - x.score);
+  return scored.slice(0, limit);
+}
+
+function push<K, V>(m: Map<K, V[]>, k: K, v: V): void {
+  const list = m.get(k);
+  if (list) list.push(v);
+  else m.set(k, [v]);
+}

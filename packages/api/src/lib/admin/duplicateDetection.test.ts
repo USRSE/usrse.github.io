@@ -7,7 +7,9 @@ import {
   canonicalizeGithub,
   canonicalizeLinkedin,
   scoreCandidatePair,
+  buildAndScorePairs,
   type CandidatePairInput,
+  type CandidateUser,
 } from "./duplicateDetection";
 
 describe("normalizeDisplayName", () => {
@@ -189,5 +191,92 @@ describe("scoreCandidatePair", () => {
         })
       ).tier
     ).toBe("high"); // 85
+  });
+});
+
+function u(overrides: Partial<CandidateUser> & { id: string }): CandidateUser {
+  return {
+    displayName: null,
+    email: `${overrides.id}@example.com`,
+    orcid: null,
+    githubUrl: null,
+    linkedinUrl: null,
+    primaryOrgId: null,
+    signedUpAt: new Date("2026-01-01T00:00:00Z"),
+    groupIds: new Set(),
+    ...overrides,
+  };
+}
+
+describe("buildAndScorePairs", () => {
+  it("returns no pairs below threshold", () => {
+    const rows = [
+      u({ id: "u1", displayName: "Alice", email: "alice@x.com" }),
+      u({ id: "u2", displayName: "Bob", email: "bob@x.com" }),
+    ];
+    expect(buildAndScorePairs(rows)).toEqual([]);
+  });
+
+  it("surfaces a name-anchor pair above threshold", () => {
+    const rows = [
+      u({ id: "u1", displayName: "Cordero Core", email: "cdcore09@gmail.com" }),
+      u({ id: "u2", displayName: "Cordero Core", email: "cdcore@uw.edu" }),
+    ];
+    const results = buildAndScorePairs(rows);
+    expect(results).toHaveLength(1);
+    expect(results[0].score).toBeGreaterThanOrEqual(30);
+  });
+
+  it("dedupes pairs surfaced from multiple anchors", () => {
+    // Two users matching on BOTH normalized name AND orcid — should
+    // produce ONE pair, scored with both signals.
+    const rows = [
+      u({
+        id: "u1",
+        displayName: "John Smith",
+        email: "j@a.com",
+        orcid: "0000-0001-0000-0001",
+      }),
+      u({
+        id: "u2",
+        displayName: "John Smith",
+        email: "j@b.com",
+        orcid: "0000-0001-0000-0001",
+      }),
+    ];
+    const results = buildAndScorePairs(rows);
+    expect(results).toHaveLength(1);
+    expect(results[0].signals).toContain("orcid");
+    expect(results[0].signals).toContain("displayName");
+  });
+
+  it("caps to the requested limit, sorted by score desc", () => {
+    const rows: CandidateUser[] = [];
+    for (let i = 0; i < 5; i++) {
+      // Five pairs of identically-named users with varying ORCID matches.
+      rows.push(
+        u({
+          id: `a${i}`,
+          displayName: `User ${i}`,
+          email: `a${i}@x.com`,
+          orcid: i === 0 ? "0000-0001-0000-0001" : null,
+        })
+      );
+      rows.push(
+        u({
+          id: `b${i}`,
+          displayName: `User ${i}`,
+          email: `b${i}@x.com`,
+          orcid: i === 0 ? "0000-0001-0000-0001" : null,
+        })
+      );
+    }
+    const results = buildAndScorePairs(rows, { limit: 3 });
+    expect(results).toHaveLength(3);
+    // First should be the ORCID-matched pair (highest score).
+    expect(results[0].signals).toContain("orcid");
+    // Sorted desc.
+    expect(results[0].score).toBeGreaterThanOrEqual(results[1].score);
+    expect(results[1].score).toBeGreaterThanOrEqual(results[2].score);
   });
 });
