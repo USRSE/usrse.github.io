@@ -5,6 +5,7 @@ import { NotEntitled } from "./layout/NotEntitled";
 import { AdminShell } from "./layout/AdminShell";
 import { CallbackPage } from "./pages/auth/CallbackPage";
 import { DashboardPage } from "./pages/DashboardPage";
+import { AuditPage } from "./pages/AuditPage";
 
 export function App() {
   const { user: workosUser, isLoading: authLoading, signIn } = useAuth();
@@ -56,7 +57,7 @@ export function App() {
         <Route path="events" element={<Stub label="Events" />} />
         <Route path="recognition" element={<Stub label="Recognition" />} />
         <Route path="settings" element={<Stub label="Settings" />} />
-        <Route path="audit" element={<Stub label="Audit" />} />
+        <Route path="audit" element={<AuditPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
