@@ -90,6 +90,39 @@ async function handleUserCreated(
   db: ReturnType<typeof createDb>,
   workosUser: WorkosUser
 ) {
+  // First, see if a legacy CSV-imported row exists for this email
+  // and link it to the freshly-arrived WorkOS user id. The CSV
+  // importer writes synthetic `legacy:<email>` strings into workos_id;
+  // any of those should claim their real WorkOS id on first sign-in.
+  const existing = await db.query.users.findFirst({
+    where: eq(users.email, workosUser.email),
+    columns: { id: true, workosId: true },
+  });
+
+  if (existing) {
+    if (existing.workosId.startsWith("legacy:")) {
+      await db
+        .update(users)
+        .set({
+          workosId: workosUser.id,
+          updatedAt: new Date(),
+        })
+        .where(eq(users.id, existing.id));
+      return;
+    }
+    // A row already exists for this email with a non-legacy workos_id —
+    // either it's already linked (no-op) or two different WorkOS users
+    // share an email (unexpected). Log and skip.
+    console.warn("WorkOS user.created: email already linked to a different workos_id", {
+      email: workosUser.email,
+      existingWorkosId: existing.workosId,
+      incomingWorkosId: workosUser.id,
+    });
+    return;
+  }
+
+  // No existing row — insert a fresh one. The 5-attempt loop is for
+  // member_id collisions (generated client-side, unique-constrained).
   for (let attempts = 0; attempts < 5; attempts++) {
     try {
       await db
