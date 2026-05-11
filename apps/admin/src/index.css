@@ -1,11 +1,351 @@
 @import "tailwindcss";
 @import "@us-rse/design-system/tokens.css";
 
-html,
-body {
-  margin: 0;
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    sans-serif;
-  background: #fafafa;
-  color: #1c1c1e;
+/*
+ * US-RSE Design System — Tailwind CSS 4 Theme Configuration
+ *
+ * Maps the existing design token system into Tailwind's CSS-first theming.
+ * Brand colors preserved exactly from us-rse.org production.
+ */
+
+@theme {
+  /* =========================================================================
+     COLOR PALETTE — Brand
+     ========================================================================= */
+
+  /* Teal — Primary brand color (#188eac anchored at 500) */
+  --color-teal-50: #edf9fd;
+  --color-teal-100: #c9eef8;
+  --color-teal-200: #96ddf0;
+  --color-teal-300: #5bcae6;
+  --color-teal-400: #2cb4d2;
+  --color-teal-500: #188eac;
+  --color-teal-600: #1685a1;
+  --color-teal-700: #157c96;
+  --color-teal-800: #0e5f72;
+  --color-teal-900: #08404e;
+  --color-teal-950: #042028;
+
+  /* Purple — Accent / Nav color (#741755 anchored at 500) */
+  --color-purple-50: #fdf0f7;
+  --color-purple-100: #f7d6eb;
+  --color-purple-200: #eeaad6;
+  --color-purple-300: #e07dbc;
+  --color-purple-400: #c94e99;
+  --color-purple-500: #741755;
+  --color-purple-600: #641349;
+  --color-purple-700: #581140;
+  --color-purple-800: #420d30;
+  --color-purple-900: #2c0820;
+  --color-purple-950: #160410;
+
+  /* Neutral — Teal undertone (H=195, S=8%) for brand cohesion */
+  --color-neutral-50: #f5f7f8;
+  --color-neutral-100: #eaeced;
+  --color-neutral-200: #d4d8da;
+  --color-neutral-300: #b8bec1;
+  --color-neutral-400: #767e80;
+  --color-neutral-500: #6b7476;
+  --color-neutral-600: #4d5456;
+  --color-neutral-700: #363c3e;
+  --color-neutral-800: #22282a;
+  --color-neutral-900: #111516;
+  --color-neutral-950: #050809;
+
+  /* Semantic — Success */
+  --color-success-50: #effaf3;
+  --color-success-100: #d4f5e0;
+  --color-success-500: #48c774;
+  --color-success-700: #27a04f;
+  --color-success-800: #1a7a3a;
+
+  /* Semantic — Warning */
+  --color-warning-50: #fffbeb;
+  --color-warning-100: #fff8d6;
+  --color-warning-500: #ffdd57;
+  --color-warning-700: #e6be00;
+
+  /* Semantic — Danger */
+  --color-danger-50: #feecf0;
+  --color-danger-100: #fdd8df;
+  --color-danger-500: #f14668;
+  --color-danger-700: #ef2e55;
+
+  /* =========================================================================
+     TYPOGRAPHY
+     ========================================================================= */
+
+  --font-sans: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-heading: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-mono: "Fira Code", "Fira Mono", "JetBrains Mono", "Cascadia Code",
+    "Courier New", monospace;
+  --font-display: "Plus Jakarta Sans", "Roboto", system-ui, sans-serif;
+
+  /* Fluid type scale */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: clamp(1.5rem, 2vw + 0.5rem, 2rem);
+  --font-size-3xl: clamp(1.875rem, 2.5vw + 0.75rem, 2.5rem);
+  --font-size-4xl: clamp(2.25rem, 3vw + 1rem, 3rem);
+  --font-size-5xl: clamp(2.5rem, 4vw + 1rem, 3.75rem);
+  --font-size-6xl: clamp(3rem, 5vw + 1rem, 4.5rem);
+
+  /* =========================================================================
+     SPACING — Extended
+     ========================================================================= */
+
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+  --spacing-30: 7.5rem;
+
+  /* =========================================================================
+     BORDER RADIUS
+     ========================================================================= */
+
+  --radius-sm: 2px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+  --radius-2xl: 20px;
+  --radius-3xl: 28px;
+
+  /* =========================================================================
+     SHADOWS
+     ========================================================================= */
+
+  --shadow-sm: 0 1px 3px rgba(10, 10, 10, 0.06),
+    0 1px 2px rgba(10, 10, 10, 0.04);
+  --shadow-md: 0 4px 12px rgba(10, 10, 10, 0.08),
+    0 2px 4px rgba(10, 10, 10, 0.04);
+  --shadow-lg: 0 12px 32px rgba(10, 10, 10, 0.1),
+    0 4px 8px rgba(10, 10, 10, 0.06);
+  --shadow-xl: 0 20px 48px rgba(10, 10, 10, 0.12),
+    0 8px 16px rgba(10, 10, 10, 0.08);
+  --shadow-glow-teal: 0 0 24px rgba(24, 142, 172, 0.2);
+  --shadow-glow-purple: 0 0 24px rgba(116, 23, 85, 0.2);
+
+  /* =========================================================================
+     ANIMATION
+     ========================================================================= */
+
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --animate-fade-in: fade-in 0.6s var(--ease-smooth) both;
+  --animate-slide-up: slide-up 0.6s var(--ease-spring) both;
+  --animate-slide-down: slide-down 0.4s var(--ease-smooth) both;
+  --animate-scale-in: scale-in 0.4s var(--ease-spring) both;
+  --animate-pulse-soft: pulse-soft 3s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* =========================================================================
+   BASE LAYER
+   ========================================================================= */
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-neutral-700);
+    background-color: white;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-neutral-900);
+  }
+
+  ::selection {
+    background-color: #590040;
+    color: white;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-teal-500);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* =========================================================================
+   CUSTOM UTILITIES
+   ========================================================================= */
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility text-pretty {
+  text-wrap: pretty;
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+}
+
+@utility gradient-text {
+  background: linear-gradient(
+    135deg,
+    var(--color-teal-600) 0%,
+    var(--color-purple-500) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@utility bg-noise {
+  position: relative;
+}
+
+@utility bg-grid {
+  background-image: linear-gradient(
+      to right,
+      var(--color-neutral-100) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, var(--color-neutral-100) 1px, transparent 1px);
+  background-size: 3rem 3rem;
+}
+
+/* =========================================================================
+   PROFILE EDITORIAL FORM CONTROLS
+   ========================================================================= */
+
+@layer components {
+  .editorial-input,
+  .editorial-textarea {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--color-neutral-300);
+    border-radius: 0;
+    padding: 0.5rem 0 0.6rem 0;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--color-neutral-900);
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+  }
+  .editorial-input::placeholder,
+  .editorial-textarea::placeholder {
+    color: var(--color-neutral-300);
+    font-style: italic;
+  }
+  .editorial-input:hover,
+  .editorial-textarea:hover {
+    border-bottom-color: var(--color-neutral-500);
+  }
+  .editorial-input:focus,
+  .editorial-textarea:focus {
+    outline: none;
+    border-bottom-color: var(--color-purple-500);
+    background: linear-gradient(
+      to top,
+      rgba(116, 23, 85, 0.03),
+      transparent 30%
+    );
+  }
+  .editorial-textarea {
+    resize: vertical;
+    line-height: 1.6;
+    min-height: 8rem;
+  }
 }

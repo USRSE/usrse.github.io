@@ -45,7 +45,7 @@ export function DashboardPage() {
         <h2 className="font-display text-3xl font-semibold tracking-tight">
           Welcome, {actor.user.email.split("@")[0]}
         </h2>
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-500 mt-2">
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-neutral-400 mt-3">
           {actor.systemTier === 2
             ? "super admin"
             : actor.systemTier === 1
@@ -61,7 +61,7 @@ export function DashboardPage() {
           <h3 className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-400 mb-3">
             Recent admin activity
           </h3>
-          <div className="border border-neutral-200 rounded-xl overflow-hidden">
+          <div className="border border-neutral-100 rounded-xl overflow-hidden bg-white">
             {auditError ? (
               <p className="p-4 text-sm text-rose-600">{auditError}</p>
             ) : !recentAudit ? (
@@ -86,7 +86,7 @@ export function DashboardPage() {
                 ))}
               </ul>
             )}
-            <div className="p-3 border-t border-neutral-100 bg-neutral-50/60">
+            <div className="p-3 border-t border-neutral-100 bg-neutral-50">
               <Link
                 to="/audit"
                 className="font-mono text-[10px] uppercase tracking-[0.25em] text-purple-700 hover:text-purple-900"

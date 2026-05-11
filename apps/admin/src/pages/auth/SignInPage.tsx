@@ -55,7 +55,7 @@ export function SignInPage() {
   if (!showManual) {
     return (
       <div className="min-h-screen flex flex-col bg-neutral-50">
-        <div className="h-1 bg-purple-700" aria-hidden="true" />
+        <div className="h-1 bg-purple-500" aria-hidden="true" />
         <main className="flex-1 flex items-center justify-center px-6 py-16">
           <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-neutral-500 text-center">
             Connecting to WorkOS…
@@ -67,13 +67,13 @@ export function SignInPage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-neutral-50">
-      <div className="h-1 bg-purple-700" aria-hidden="true" />
+      <div className="h-1 bg-purple-500" aria-hidden="true" />
       <main className="flex-1 flex items-center justify-center px-6 py-16">
         <div className="w-full max-w-md">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-neutral-400 mb-6">
             Staff workspace
           </p>
-          <h1 className="font-display text-4xl lg:text-5xl font-semibold tracking-tight leading-tight text-neutral-900">
+          <h1 className="font-display text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-neutral-900">
             US-RSE
             <span className="text-neutral-400 font-normal"> / admin</span>
           </h1>

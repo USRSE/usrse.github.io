@@ -17,7 +17,7 @@ export function AdminShell({ actor }: AdminShellProps) {
       <TopBar actor={actor} />
       <div className="flex">
         <Sidebar sections={sections} />
-        <main className="flex-1 px-6 lg:px-10 py-10">
+        <main className="flex-1 px-6 lg:px-10 py-10 lg:py-14 max-w-6xl">
           <Outlet context={{ actor } satisfies AdminShellContext} />
         </main>
       </div>

@@ -9,38 +9,30 @@ export function NotEntitled() {
     signOut();
   }
   return (
-    <main
-      style={{
-        maxWidth: "32rem",
-        margin: "6rem auto",
-        padding: "2rem",
-        border: "1px solid #eaeced",
-        borderRadius: "0.75rem",
-        fontFamily: "system-ui",
-        color: "#363c3e",
-      }}
-    >
-      <h1 style={{ fontSize: "1.25rem", marginTop: 0, color: "#741755" }}>
-        You don't have access to the admin app.
-      </h1>
-      <p>
-        This space is for US-RSE staff, board members, group leads, and event
-        committee chairs. If you should be here, contact a super admin.
-      </p>
-      <button
-        type="button"
-        onClick={handleSignOut}
-        style={{
-          marginTop: "1rem",
-          padding: "0.5rem 1rem",
-          borderRadius: "0.5rem",
-          border: "1px solid #d8d4e5",
-          background: "white",
-          cursor: "pointer",
-        }}
-      >
-        Sign out
-      </button>
-    </main>
+    <div className="min-h-screen flex flex-col bg-neutral-50">
+      <div className="h-1 bg-purple-500" aria-hidden="true" />
+      <main className="flex-1 flex items-center justify-center px-6 py-16">
+        <div className="w-full max-w-md">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-neutral-400 mb-6">
+            Access denied
+          </p>
+          <h1 className="font-display text-3xl lg:text-4xl font-semibold tracking-tight text-neutral-900 mb-6">
+            You don't have access to the admin app.
+          </h1>
+          <p className="text-base text-neutral-600 leading-relaxed">
+            This workspace is for US-RSE staff, board members, group leads, and
+            event committee chairs. If you should be here, contact a super
+            admin.
+          </p>
+          <button
+            type="button"
+            onClick={handleSignOut}
+            className="mt-10 inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white border border-neutral-200 text-neutral-700 font-medium text-sm hover:border-purple-300 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 transition-colors"
+          >
+            Sign out
+          </button>
+        </div>
+      </main>
+    </div>
   );
 }

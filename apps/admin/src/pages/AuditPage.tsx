@@ -74,9 +74,9 @@ export function AuditPage() {
 
       {error && <p className="text-sm text-rose-600 mb-4">{error}</p>}
 
-      <div className="border border-neutral-200 rounded-xl overflow-hidden">
+      <div className="border border-neutral-100 rounded-xl overflow-hidden">
         <table className="w-full text-sm">
-          <thead className="bg-neutral-50 text-left">
+          <thead className="bg-neutral-50/80 text-left">
             <tr>
               <th className="px-3 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-500">
                 When
@@ -94,7 +94,7 @@ export function AuditPage() {
           </thead>
           <tbody>
             {rows.map((r) => (
-              <tr key={r.id} className="border-t border-neutral-100">
+              <tr key={r.id} className="border-t border-neutral-100 hover:bg-neutral-50/40 transition-colors">
                 <td className="px-3 py-2 font-mono text-[11px] text-neutral-600 whitespace-nowrap">
                   {new Date(r.createdAt).toLocaleString()}
                 </td>
@@ -132,7 +132,7 @@ export function AuditPage() {
             type="button"
             onClick={() => void load(cursor)}
             disabled={loading}
-            className="font-mono text-[10px] uppercase tracking-[0.25em] text-purple-700 hover:text-purple-900 disabled:opacity-50"
+            className="font-mono text-[11px] uppercase tracking-[0.25em] text-purple-700 hover:text-purple-900 disabled:opacity-50 px-4 py-2"
           >
             {loading ? "loading…" : "load more"}
           </button>
