@@ -66,7 +66,25 @@ export function useActorContext(): State & { refetch: () => void } {
         return;
       }
       if (res.status === 404) {
-        setState({ status: "user_pending", actor: null, error: null });
+        // Distinguish a real user_pending (API replied with the
+        // structured body) from a "route doesn't exist" 404 (e.g., the
+        // Worker hasn't been deployed with /api/admin/* yet). The
+        // latter masquerading as user_pending masked a deploy gap once
+        // — don't let it happen silently again.
+        const body = (await res.json().catch(() => null)) as
+          | { error?: string }
+          | null;
+        if (body?.error === "user_pending") {
+          setState({ status: "user_pending", actor: null, error: null });
+          return;
+        }
+        setState({
+          status: "error",
+          actor: null,
+          error: new Error(
+            "/admin/me returned 404 — is the Worker deployed with admin routes?"
+          ),
+        });
         return;
       }
       setState({
