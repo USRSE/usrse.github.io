@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "@workos-inc/authkit-react";
+import { useCurrentMember } from "@/hooks/useCurrentMember";
 
 /* ── Types ─────────────────────────────────────────────────────────── */
 
@@ -476,8 +477,14 @@ function userInitials(name: string | null | undefined, email: string | null | un
 
 function UserNavSlot() {
   const { user, signIn, signOut } = useAuth();
+  const { member } = useCurrentMember();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+
+  // Authorization gate — `users.role` is the source of truth for who
+  // can see the admin entry point. A feature flag could be ANDed in
+  // here later for staged rollout (PostHog / Statsig / etc.).
+  const isAdmin = member?.role === "staff" || member?.role === "super_admin";
 
   useEffect(() => {
     if (!open) return;
@@ -580,6 +587,16 @@ function UserNavSlot() {
           >
             Settings
           </Link>
+          {isAdmin && (
+            <a
+              href="https://admin.us-rse.org"
+              className="flex items-center justify-between px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50 hover:text-purple-700 rounded-lg transition-colors"
+              role="menuitem"
+            >
+              <span>Admin portal</span>
+              <span aria-hidden="true" className="text-xs text-neutral-400">↗</span>
+            </a>
+          )}
           <button
             onClick={() => {
               setOpen(false);
@@ -598,6 +615,12 @@ function UserNavSlot() {
 
 function UserNavSlotMobile({ onNavigate }: { onNavigate: () => void }) {
   const { user, signIn, signOut } = useAuth();
+  const { member } = useCurrentMember();
+
+  // Authorization gate — `users.role` is the source of truth for who
+  // can see the admin entry point. A feature flag could be ANDed in
+  // here later for staged rollout (PostHog / Statsig / etc.).
+  const isAdmin = member?.role === "staff" || member?.role === "super_admin";
 
   if (!user) {
     return (
@@ -646,6 +669,15 @@ function UserNavSlotMobile({ onNavigate }: { onNavigate: () => void }) {
       >
         Settings
       </Link>
+      {isAdmin && (
+        <a
+          href="https://admin.us-rse.org"
+          className="flex items-center justify-between w-full px-4 py-3 text-sm text-neutral-700 border-t border-neutral-100 hover:bg-neutral-50 hover:text-purple-700 transition-colors"
+        >
+          <span>Admin portal</span>
+          <span aria-hidden="true" className="text-xs text-neutral-400">↗</span>
+        </a>
+      )}
       <button
         onClick={() => {
           onNavigate();
