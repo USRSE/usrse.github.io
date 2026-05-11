@@ -1,4 +1,5 @@
 import type { JWTPayload } from "jose";
+import type { ActorContext } from "./lib/policies";
 
 export type Bindings = {
   DATABASE_URL: string;
@@ -36,6 +37,16 @@ export type Bindings = {
 export type Variables = {
   workosUserId: string;
   workosClaims: JWTPayload;
+  /** Populated by requireActorContext on /api/admin/* requests. */
+  actor?: ActorContext;
+  /** Set by handlers that mutate; merged into the audit row's payload field. */
+  auditPayload?: Record<string, unknown>;
+  /** Set by handlers right after fetching the row about to change. */
+  auditCapture?: (priorSnapshot: unknown) => void;
+  /** Set by handlers to override the default "method path" action string. */
+  auditAction?: string;
+  /** Set by handlers when the standard inferred target is wrong. */
+  auditTarget?: { type: string; id: string };
 };
 
 export type AppEnv = {

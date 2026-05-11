@@ -10,6 +10,9 @@
   ],
   "scripts": {
     "dev": "turbo run dev",
+    "dev:web": "npm -w @us-rse/web run dev",
+    "dev:admin": "npm -w @us-rse/admin run dev",
+    "dev:api": "npm -w @us-rse/api run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",

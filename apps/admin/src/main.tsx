@@ -1,5 +1,6 @@
 import { createRoot } from "react-dom/client";
 import { AuthShell } from "@us-rse/auth-shell";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import { App } from "./App";
 
@@ -9,9 +10,11 @@ const root = createRoot(document.getElementById("root")!);
 root.render(
   <AuthShell
     clientId={clientId}
-    appLabel="The US-RSE site"
+    appLabel="The admin app"
     devMode={import.meta.env.DEV}
   >
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </AuthShell>
 );

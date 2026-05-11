@@ -8,6 +8,8 @@
     "dev": "wrangler dev --port 8787",
     "build": "wrangler deploy --dry-run --outdir dist",
     "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "deploy": "wrangler deploy",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
@@ -30,6 +32,7 @@
     "drizzle-kit": "^0.31.10",
     "tsx": "^4.19.0",
     "typescript": "~6.0.2",
+    "vitest": "^4.1.5",
     "wrangler": "^4.87.0"
   }
 }
