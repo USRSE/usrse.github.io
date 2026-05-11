@@ -4,6 +4,7 @@ import { useActorContext } from "./hooks/useActorContext";
 import { NotEntitled } from "./layout/NotEntitled";
 import { AdminShell } from "./layout/AdminShell";
 import { CallbackPage } from "./pages/auth/CallbackPage";
+import { DashboardPage } from "./pages/DashboardPage";
 
 export function App() {
   const { user: workosUser, isLoading: authLoading, signIn } = useAuth();
@@ -47,7 +48,7 @@ export function App() {
     <Routes>
       <Route path="/auth/callback" element={<CallbackPage />} />
       <Route element={<AdminShell actor={actor.actor} />}>
-        <Route index element={<DashboardStub />} />
+        <Route index element={<DashboardPage />} />
         <Route path="members" element={<Stub label="Members" />} />
         <Route path="organizations" element={<Stub label="Organizations" />} />
         <Route path="vocab" element={<Stub label="Vocab" />} />
@@ -59,15 +60,6 @@ export function App() {
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
-  );
-}
-
-function DashboardStub() {
-  return (
-    <div>
-      <h2 className="text-2xl font-semibold mb-4">Dashboard</h2>
-      <p className="text-neutral-600">Tiles land in Task 11.</p>
-    </div>
   );
 }
 
