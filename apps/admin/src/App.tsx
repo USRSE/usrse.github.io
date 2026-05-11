@@ -50,43 +50,51 @@ export function App() {
   );
 }
 
-function ComingSoon({ label, number, blurb }: { label: string; number: string; blurb: string }) {
+function FullScreenStatus({ message }: { message: string }) {
   return (
-    <div className="max-w-2xl">
-      <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-neutral-400 mb-3">
-        Section {number}
-      </p>
-      <h2 className="font-display text-3xl lg:text-4xl font-semibold tracking-tight text-neutral-900 mb-4">
-        {label}
-      </h2>
-      <p className="text-base text-neutral-600 leading-relaxed mb-6">
-        {blurb}
-      </p>
-      <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-50 border border-purple-100">
-        <span className="w-1.5 h-1.5 rounded-full bg-purple-500 animate-pulse-soft" />
-        <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-purple-700">
-          In progress · see docs/superpowers/specs
-        </span>
-      </div>
+    <div className="min-h-screen flex flex-col" style={{ background: "var(--admin-paper)" }}>
+      <div className="h-1" style={{ background: "var(--admin-ribbon)" }} aria-hidden="true" />
+      <main className="flex-1 flex items-center justify-center px-6 py-16">
+        <p className="admin-classification">{message}</p>
+      </main>
     </div>
   );
 }
 
-/**
- * Branded transient state — shown for short-lived loading and
- * recoverable error conditions before the shell is mounted. Matches
- * the SignInPage chrome (purple top accent, centered content) so the
- * boot sequence reads as one continuous surface.
- */
-function FullScreenStatus({ message }: { message: string }) {
+function ComingSoon({ label, number, blurb }: { label: string; number: string; blurb: string }) {
+  // Convert "01" → "I", "02" → "II" etc., matching the sidebar's numerals.
+  const arabic = parseInt(number, 10);
+  const romanMap = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
+  const roman = romanMap[arabic] ?? number;
   return (
-    <div className="min-h-screen flex flex-col bg-neutral-50">
-      <div className="h-1 bg-purple-500" aria-hidden="true" />
-      <main className="flex-1 flex items-center justify-center px-6 py-16">
-        <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-neutral-500 text-center max-w-md">
-          {message}
+    <div className="admin-animate-reveal">
+      <p className="admin-classification mb-8">
+        US-RSE · Admin · Register {roman}
+      </p>
+      <h2 className="admin-display mb-6" style={{ fontSize: "clamp(2rem, 3vw + 0.5rem, 3rem)" }}>
+        {label}
+      </h2>
+      <div style={{ borderTop: "1px solid var(--admin-rule)" }} className="pt-6 mb-10">
+        <p className="text-[17px] leading-[1.7]" style={{ color: "var(--admin-ink-medium)", maxWidth: "var(--admin-measure)" }}>
+          {blurb}
         </p>
-      </main>
+      </div>
+      <div
+        className="inline-flex items-center gap-3 px-4 py-2"
+        style={{
+          border: "1px solid var(--admin-rule)",
+          background: "transparent",
+        }}
+      >
+        <span
+          className="w-1.5 h-1.5 rounded-full animate-pulse-soft"
+          style={{ background: "var(--admin-ribbon)" }}
+          aria-hidden="true"
+        />
+        <span className="admin-classification" style={{ color: "var(--admin-ink-medium)" }}>
+          In preparation
+        </span>
+      </div>
     </div>
   );
 }

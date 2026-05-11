@@ -1,0 +1,154 @@
+/*
+ * Admin portal aesthetic — typographic atlas / editorial-research archive.
+ * Layered on top of the brand @theme tokens (Plus Jakarta Sans, Roboto,
+ * Fira Code, the purple/teal scale, etc.) defined in index.css.
+ */
+
+:root {
+  /* Paper-tone surfaces — warm off-white instead of pure white. */
+  --admin-paper: #faf7ef;
+  --admin-paper-edge: #f1ede1;
+  --admin-paper-deep: #ebe6d7;
+
+  /* Ink — deep near-black for ink-on-paper feeling. */
+  --admin-ink: #1a1916;
+  --admin-ink-medium: #57534a;
+  --admin-ink-soft: #8a857a;
+  --admin-marginalia: #a8a293;
+
+  /* Rule lines — hairline dividers. */
+  --admin-rule: #c9c2b3;
+  --admin-rule-subtle: #e6e0d2;
+
+  /* Accents — used sparingly, as ribbon. */
+  --admin-ribbon: var(--color-purple-500);
+  --admin-mark: var(--color-teal-500);
+
+  /* Grid / spacing system on an 8px baseline. */
+  --admin-baseline: 8px;
+  --admin-gutter: 5rem;           /* marginalia gutter on the left edge */
+  --admin-measure: 38rem;         /* optimal line-length for reading prose */
+
+  /* Motion. */
+  --admin-ease-paper: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --admin-ease-ribbon: cubic-bezier(0.4, 0, 0.2, 1);
+  --admin-dur-reveal: 600ms;
+  --admin-dur-ribbon: 200ms;
+  --admin-dur-hover: 150ms;
+}
+
+@layer base {
+  html, body, #root {
+    background-color: var(--admin-paper);
+  }
+  body {
+    color: var(--admin-ink);
+    /* Tabular figures by default so any number column aligns. */
+    font-feature-settings: "tnum", "ss01";
+  }
+  /* Display headlines get old-style figures for the literary feel. */
+  h1, h2, h3, .font-display {
+    font-feature-settings: "onum", "liga", "dlig";
+  }
+  /* Hairline rule helper — used as the primary separator. */
+  hr {
+    border: none;
+    border-top: 1px solid var(--admin-rule);
+    margin: 1.5rem 0;
+  }
+  /* Crisp underline for in-prose links. */
+  a {
+    color: var(--admin-ink);
+    text-decoration: underline;
+    text-decoration-color: var(--admin-rule);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: text-decoration-color var(--admin-dur-hover) var(--admin-ease-ribbon);
+  }
+  a:hover {
+    text-decoration-color: var(--admin-ribbon);
+  }
+}
+
+/* Classification mark — the library call-number style label. */
+@utility admin-classification {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--admin-marginalia);
+  font-feature-settings: "tnum";
+}
+
+/* Marginalia text — gutter annotations. */
+@utility admin-marginalia {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--admin-marginalia);
+  font-feature-settings: "tnum";
+}
+
+/* Editorial-display headline — for frontispiece treatments. */
+@utility admin-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 4vw + 1rem, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--admin-ink);
+  font-feature-settings: "onum", "liga", "dlig";
+}
+
+/* Section title — for the registers under a frontispiece. */
+@utility admin-section-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 2vw + 0.5rem, 2rem);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--admin-ink);
+}
+
+/* Drop cap utility — apply to a span around the first letter. */
+@utility admin-drop-cap {
+  float: left;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 4em;
+  line-height: 0.85;
+  margin: 0.05em 0.1em 0 0;
+  color: var(--admin-ribbon);
+  font-feature-settings: "lnum";
+}
+
+/* Baseline-grid background — debug helper; can be enabled per-page. */
+@utility admin-baseline-grid {
+  background-image: linear-gradient(
+    to bottom,
+    transparent calc(var(--admin-baseline) - 1px),
+    rgba(116, 23, 85, 0.04) calc(var(--admin-baseline) - 1px),
+    rgba(116, 23, 85, 0.04) var(--admin-baseline)
+  );
+  background-size: 100% var(--admin-baseline);
+}
+
+/* Page-reveal animation — slow, paper-like. */
+@keyframes admin-reveal {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@utility admin-animate-reveal {
+  animation: admin-reveal var(--admin-dur-reveal) var(--admin-ease-paper) both;
+}
+
+/* Ribbon slide — for active-state stripes. */
+@keyframes admin-ribbon-slide {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
+}
+@utility admin-animate-ribbon {
+  animation: admin-ribbon-slide var(--admin-dur-ribbon) var(--admin-ease-ribbon) both;
+  transform-origin: top;
+}

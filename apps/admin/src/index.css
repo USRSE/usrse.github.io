@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "@us-rse/design-system/tokens.css";
+@import "./styles/editorial.css";
 
 /*
  * US-RSE Design System — Tailwind CSS 4 Theme Configuration

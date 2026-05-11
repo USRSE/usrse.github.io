@@ -13,12 +13,14 @@ export type AdminShellContext = { actor: ActorContext };
 export function AdminShell({ actor }: AdminShellProps) {
   const sections = useNavSections(actor);
   return (
-    <div className="min-h-screen bg-white text-neutral-900">
+    <div className="min-h-screen flex flex-col" style={{ background: "var(--admin-paper)" }}>
       <TopBar actor={actor} />
-      <div className="flex">
+      <div className="flex flex-1">
         <Sidebar sections={sections} />
-        <main className="flex-1 px-6 lg:px-10 py-10 lg:py-14 max-w-6xl">
-          <Outlet context={{ actor } satisfies AdminShellContext} />
+        <main className="flex-1 min-w-0">
+          <div className="max-w-6xl mx-auto px-8 lg:px-16 py-12 lg:py-16 admin-animate-reveal">
+            <Outlet context={{ actor } satisfies AdminShellContext} />
+          </div>
         </main>
       </div>
     </div>

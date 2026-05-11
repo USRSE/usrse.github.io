@@ -23,121 +23,96 @@ export function AuditPage() {
   const [error, setError] = useState<string | null>(null);
   const [actionFilter, setActionFilter] = useState("");
 
-  const load = useCallback(
-    async (nextCursor: string | null) => {
-      setLoading(true);
-      setError(null);
-      const params = new URLSearchParams({ limit: "50" });
-      if (actionFilter) params.set("action", actionFilter);
-      if (nextCursor) params.set("cursor", nextCursor);
-      try {
-        const res = await apiFetch(`/admin/audit?${params}`);
-        if (!res.ok) {
-          setError(`/admin/audit responded ${res.status}`);
-          return;
-        }
-        const body = (await res.json()) as {
-          ok: true;
-          rows: AuditRow[];
-          nextCursor: string | null;
-        };
-        setRows((prev) => (nextCursor ? [...prev, ...body.rows] : body.rows));
-        setCursor(body.nextCursor);
-        setHasMore(Boolean(body.nextCursor));
-      } catch (e) {
-        setError(e instanceof Error ? e.message : String(e));
-      } finally {
-        setLoading(false);
-      }
-    },
-    [apiFetch, actionFilter]
-  );
+  const load = useCallback(async (nextCursor: string | null) => {
+    setLoading(true);
+    setError(null);
+    const params = new URLSearchParams({ limit: "50" });
+    if (actionFilter) params.set("action", actionFilter);
+    if (nextCursor) params.set("cursor", nextCursor);
+    try {
+      const res = await apiFetch(`/admin/audit?${params}`);
+      if (!res.ok) { setError(`/admin/audit responded ${res.status}`); return; }
+      const body = (await res.json()) as { ok: true; rows: AuditRow[]; nextCursor: string | null };
+      setRows((prev) => (nextCursor ? [...prev, ...body.rows] : body.rows));
+      setCursor(body.nextCursor);
+      setHasMore(Boolean(body.nextCursor));
+    } catch (e) {
+      setError(e instanceof Error ? e.message : String(e));
+    } finally { setLoading(false); }
+  }, [apiFetch, actionFilter]);
 
-  useEffect(() => {
-    void load(null);
-  }, [load]);
+  useEffect(() => { void load(null); }, [load]);
 
   return (
-    <div>
-      <header className="mb-6 flex items-center justify-between">
-        <h2 className="font-display text-2xl font-semibold tracking-tight">
-          Audit log
+    <div className="admin-animate-reveal">
+      <p className="admin-classification mb-8">US-RSE · Admin · Register VIII</p>
+      <div className="flex items-baseline justify-between gap-6 mb-8">
+        <h2 className="admin-display" style={{ fontSize: "clamp(2rem, 3vw + 0.5rem, 3rem)" }}>
+          Audit
         </h2>
         <input
           type="text"
-          placeholder="Filter by action substring…"
+          placeholder="Filter action…"
           value={actionFilter}
           onChange={(e) => setActionFilter(e.target.value)}
-          className="font-mono text-xs px-3 py-1.5 rounded-full border border-neutral-300 w-72"
+          className="font-mono text-xs px-3 py-1.5 w-72 transition-colors"
+          style={{
+            background: "transparent",
+            border: "none",
+            borderBottom: "1px solid var(--admin-rule)",
+            color: "var(--admin-ink)",
+            outline: "none",
+          }}
+          onFocus={(e) => { e.currentTarget.style.borderBottomColor = "var(--admin-ribbon)"; }}
+          onBlur={(e) => { e.currentTarget.style.borderBottomColor = "var(--admin-rule)"; }}
         />
-      </header>
-
-      {error && <p className="text-sm text-rose-600 mb-4">{error}</p>}
-
-      <div className="border border-neutral-100 rounded-xl overflow-hidden">
-        <table className="w-full text-sm">
-          <thead className="bg-neutral-50/80 text-left">
-            <tr>
-              <th className="px-3 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-500">
-                When
-              </th>
-              <th className="px-3 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-500">
-                Actor
-              </th>
-              <th className="px-3 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-500">
-                Action
-              </th>
-              <th className="px-3 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-500">
-                Target
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((r) => (
-              <tr key={r.id} className="border-t border-neutral-100 hover:bg-neutral-50/40 transition-colors">
-                <td className="px-3 py-2 font-mono text-[11px] text-neutral-600 whitespace-nowrap">
-                  {new Date(r.createdAt).toLocaleString()}
-                </td>
-                <td className="px-3 py-2 text-neutral-800">
-                  {r.actorEmail ?? r.actorId}{" "}
-                  <span className="font-mono text-[10px] text-neutral-400">
-                    · {r.actorRole}
-                  </span>
-                </td>
-                <td className="px-3 py-2 font-mono text-[12px] text-neutral-800">
-                  {r.action}
-                </td>
-                <td className="px-3 py-2 font-mono text-[11px] text-neutral-600">
-                  {r.targetType} · {r.targetId.slice(0, 8)}
-                </td>
-              </tr>
-            ))}
-            {rows.length === 0 && !loading && (
-              <tr>
-                <td
-                  colSpan={4}
-                  className="px-3 py-6 text-center text-neutral-500 italic"
-                >
-                  No rows.
-                </td>
-              </tr>
-            )}
-          </tbody>
-        </table>
       </div>
 
-      <div className="mt-4 flex items-center justify-center">
-        {hasMore && (
+      {error && (
+        <p className="mb-6 admin-classification" style={{ color: "var(--color-danger-700)" }}>{error}</p>
+      )}
+
+      <div style={{ borderTop: "1px solid var(--admin-ink)" }}>
+        {rows.map((r, i) => (
+          <div
+            key={r.id}
+            className="grid grid-cols-[3rem_minmax(7rem,auto)_minmax(0,1fr)_minmax(0,1fr)_minmax(7rem,auto)] gap-6 items-baseline py-3 text-[13px]"
+            style={{ borderBottom: "1px solid var(--admin-rule-subtle)" }}
+          >
+            <span className="admin-marginalia tabular-nums">{String(i + 1).padStart(3, "0")}</span>
+            <span className="font-mono tabular-nums whitespace-nowrap" style={{ color: "var(--admin-ink-medium)" }}>
+              {new Date(r.createdAt).toLocaleString()}
+            </span>
+            <span style={{ color: "var(--admin-ink)" }}>
+              {r.actorEmail ?? r.actorId}
+              <span className="admin-marginalia ml-2">· {r.actorRole}</span>
+            </span>
+            <span className="font-mono" style={{ color: "var(--admin-ink)" }}>{r.action}</span>
+            <span className="font-mono admin-marginalia text-right">
+              {r.targetType} · {r.targetId.slice(0, 8)}
+            </span>
+          </div>
+        ))}
+        {rows.length === 0 && !loading && (
+          <p className="py-6 text-center italic" style={{ color: "var(--admin-marginalia)" }}>
+            No entries recorded.
+          </p>
+        )}
+      </div>
+
+      {hasMore && (
+        <div className="mt-8 flex justify-center">
           <button
             type="button"
             onClick={() => void load(cursor)}
             disabled={loading}
-            className="font-mono text-[11px] uppercase tracking-[0.25em] text-purple-700 hover:text-purple-900 disabled:opacity-50 px-4 py-2"
+            className="admin-classification disabled:opacity-50"
+            style={{ color: "var(--admin-ribbon)" }}
           >
-            {loading ? "loading…" : "load more"}
+            {loading ? "Loading…" : "Load more entries →"}
           </button>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }

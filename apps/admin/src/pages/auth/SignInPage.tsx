@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useAuth } from "@workos-inc/authkit-react";
 
 /**
- * Sign-in surface for admin.us-rse.org.
+ * Sign-in surface for admin.us-rse.org — styled as a frontispiece.
  *
  * On first arrival in a tab session, immediately calls `signIn()` —
  * WorkOS checks for an existing SSO session cookie and silently calls
@@ -12,7 +12,7 @@ import { useAuth } from "@workos-inc/authkit-react";
  *
  * If we already auto-redirected once this tab session and the user
  * returned still unauthenticated (cancelled the WorkOS prompt, or
- * their session is invalid), we fall back to a manual sign-in card
+ * their session is invalid), we fall back to a manual sign-in frontispiece
  * with an explicit button + an escape link to the public site.
  */
 const ATTEMPT_KEY = "admin:signInAttempted";
@@ -37,8 +37,7 @@ export function SignInPage() {
     try {
       alreadyTried = sessionStorage.getItem(ATTEMPT_KEY) === "1";
     } catch {
-      /* sessionStorage may throw in some private-mode contexts; treat as
-         "haven't tried" so the auto-redirect still runs. */
+      /* ok */
     }
     if (alreadyTried) {
       setShowManual(true);
@@ -54,47 +53,55 @@ export function SignInPage() {
 
   if (!showManual) {
     return (
-      <div className="min-h-screen flex flex-col bg-neutral-50">
-        <div className="h-1 bg-purple-500" aria-hidden="true" />
+      <div className="min-h-screen flex flex-col" style={{ background: "var(--admin-paper)" }}>
+        <div className="h-1" style={{ background: "var(--admin-ribbon)" }} aria-hidden="true" />
         <main className="flex-1 flex items-center justify-center px-6 py-16">
-          <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-neutral-500 text-center">
-            Connecting to WorkOS…
-          </p>
+          <p className="admin-classification">Connecting to WorkOS…</p>
         </main>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-neutral-50">
-      <div className="h-1 bg-purple-500" aria-hidden="true" />
-      <main className="flex-1 flex items-center justify-center px-6 py-16">
-        <div className="w-full max-w-md">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-neutral-400 mb-6">
-            Staff workspace
+    <div className="min-h-screen flex flex-col" style={{ background: "var(--admin-paper)" }}>
+      <div className="h-1" style={{ background: "var(--admin-ribbon)" }} aria-hidden="true" />
+      <main className="flex-1 flex flex-col items-center justify-center px-8 py-16 admin-animate-reveal">
+        <div className="w-full max-w-2xl">
+          <p className="admin-classification mb-8">
+            US-RSE · Admin · Frontispiece
           </p>
-          <h1 className="font-display text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-neutral-900">
-            US-RSE
-            <span className="text-neutral-400 font-normal"> / admin</span>
+          <h1 className="admin-display mb-8">
+            <span style={{ color: "var(--admin-ink)" }}>The Steward's</span>
+            <br />
+            <span style={{ color: "var(--admin-ribbon)" }}>Workspace.</span>
           </h1>
-          <p className="mt-6 text-base text-neutral-600 leading-relaxed">
-            For US-RSE staff, board members, group leads, and event
-            committee chairs. Sign in with your usual WorkOS account.
-          </p>
+          <div style={{ borderTop: "1px solid var(--admin-rule)" }} className="pt-6 mb-10">
+            <p className="text-[17px] leading-[1.7]" style={{ color: "var(--admin-ink-medium)", maxWidth: "var(--admin-measure)" }}>
+              For US-RSE staff, board members, group leads, and event committee
+              chairs. The community's record is kept here — every member,
+              every organization, every event, every decision — held against
+              the integrity of a well-maintained archive.
+            </p>
+          </div>
           <button
             type="button"
             onClick={() => signIn()}
-            className="mt-10 inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-purple-700 text-white font-medium text-sm tracking-wide shadow-sm hover:bg-purple-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 transition-colors"
+            className="group relative inline-flex items-center gap-3 px-6 py-3 transition-all"
+            style={{
+              background: "var(--admin-ink)",
+              color: "var(--admin-paper)",
+              fontFamily: "var(--font-display)",
+              fontWeight: 600,
+              fontSize: "15px",
+              letterSpacing: "0.02em",
+            }}
           >
-            Sign in
-            <span aria-hidden="true">→</span>
+            <span>Sign in</span>
+            <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
           </button>
-          <div className="mt-12 pt-6 border-t border-neutral-200">
-            <a
-              href="https://usrse.org"
-              className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-400 hover:text-purple-700 transition-colors"
-            >
-              ← Public site
+          <div className="mt-16 pt-6" style={{ borderTop: "1px solid var(--admin-rule-subtle)" }}>
+            <a href="https://usrse.org" className="admin-classification">
+              ← Return to the public site
             </a>
           </div>
         </div>
