@@ -2,6 +2,7 @@ import { relations, sql } from "drizzle-orm";
 import {
   boolean,
   index,
+  jsonb,
   numeric,
   pgTable,
   text,
@@ -165,5 +166,67 @@ export const profilesRelations = relations(profiles, ({ one }) => ({
   country: one(countries, {
     fields: [profiles.countryId],
     references: [countries.id],
+  }),
+}));
+
+export const userMerges = pgTable(
+  "user_merges",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    sourceUserId: uuid("source_user_id")
+      .notNull()
+      .references((): any => users.id, { onDelete: "restrict" }),
+    targetUserId: uuid("target_user_id")
+      .notNull()
+      .references((): any => users.id, { onDelete: "restrict" }),
+    mergedByUserId: uuid("merged_by_user_id").references(
+      (): any => users.id,
+      { onDelete: "set null" }
+    ),
+    reason: text("reason"),
+    repointedRows: jsonb("repointed_rows").notNull(),
+    promotedFields: jsonb("promoted_fields")
+      .notNull()
+      .default(sql`'{}'::jsonb`),
+    revertedAt: timestamp("reverted_at", { withTimezone: true }),
+    revertedByUserId: uuid("reverted_by_user_id").references(
+      (): any => users.id,
+      { onDelete: "set null" }
+    ),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [
+    index("user_merges_source_idx").on(t.sourceUserId),
+    index("user_merges_target_idx").on(t.targetUserId),
+    index("user_merges_merged_by_idx").on(t.mergedByUserId),
+    index("user_merges_created_at_idx").on(t.createdAt),
+    index("user_merges_active_source_idx")
+      .on(t.sourceUserId)
+      .where(sql`reverted_at IS NULL`),
+  ]
+);
+
+export const userMergesRelations = relations(userMerges, ({ one }) => ({
+  sourceUser: one(users, {
+    fields: [userMerges.sourceUserId],
+    references: [users.id],
+    relationName: "merge_source",
+  }),
+  targetUser: one(users, {
+    fields: [userMerges.targetUserId],
+    references: [users.id],
+    relationName: "merge_target",
+  }),
+  mergedBy: one(users, {
+    fields: [userMerges.mergedByUserId],
+    references: [users.id],
+    relationName: "merged_by",
+  }),
+  revertedBy: one(users, {
+    fields: [userMerges.revertedByUserId],
+    references: [users.id],
+    relationName: "reverted_by",
   }),
 }));
