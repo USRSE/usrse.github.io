@@ -135,7 +135,7 @@ export function MembersListPage() {
             </span>
             <span className="truncate" style={{ color: "var(--admin-ink)" }}>
               {r.displayName ?? <em style={{ color: "var(--admin-marginalia)" }}>no name</em>}{" "}
-              <StatusTag deletedAt={r.deletedAt} mergedIntoUserId={r.mergedIntoUserId} isLegacyImport={r.isLegacyImport} />
+              <StatusTag deletedAt={r.deletedAt} mergedIntoUserId={r.mergedIntoUserId} />
             </span>
             <span className="font-mono text-[12px] truncate" style={{ color: "var(--admin-ink-medium)" }}>
               {r.email}
