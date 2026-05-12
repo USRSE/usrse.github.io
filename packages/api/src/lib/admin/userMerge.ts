@@ -1,4 +1,4 @@
-import { eq } from "drizzle-orm";
+import { and, eq, sql } from "drizzle-orm";
 import type { createDb } from "../../db";
 import {
   certifications,
@@ -15,6 +15,7 @@ import {
   userDisciplines,
   userEngagementTypes,
   userLanguages,
+  userMerges,
   userOrganizations,
   userSkills,
   users,
@@ -177,6 +178,21 @@ export async function validateMerge(
       error: "target_deleted",
       message: "Cannot merge into a soft-deleted user. Restore first.",
     };
+  }
+  if (req.promotedFields.length > 0) {
+    const tgtProfile = await db
+      .select({ userId: profiles.userId })
+      .from(profiles)
+      .where(eq(profiles.userId, req.targetUserId))
+      .limit(1);
+    if (tgtProfile.length === 0) {
+      return {
+        status: 409,
+        error: "target_no_profile",
+        message:
+          "Target user has no profile row; cannot promote fields. Create the target profile first.",
+      };
+    }
   }
   return null;
 }
@@ -494,5 +510,295 @@ export async function buildMergeSnapshot(
       audit_log: auditRows.map((r) => r.id),
     },
     conflicts,
+  };
+}
+
+export interface MergeResult {
+  mergeId: string;
+  repointedRows: MergeSnapshot["toRepoint"];
+  conflicts: MergeSnapshot["conflicts"];
+  promotedFields: Record<string, unknown>;
+}
+
+/**
+ * Run the merge as one batched neon-http transaction. Snapshot must be
+ * pre-computed (see buildMergeSnapshot). Caller is responsible for
+ * pre-merge validation.
+ *
+ * Returns the merge_history row id + the manifests so the caller can
+ * audit-capture without re-querying.
+ */
+export async function executeMerge(
+  db: Db,
+  snapshot: MergeSnapshot,
+  req: MergeRequest
+): Promise<MergeResult> {
+  const promotedRecord: Record<string, unknown> = {};
+
+  // Capture pre-merge target values for fields being promoted so unmerge
+  // can restore them.
+  for (const f of req.promotedFields) {
+    if (snapshot.targetProfile) {
+      promotedRecord[f] = snapshot.targetProfile[f] ?? null;
+    } else {
+      promotedRecord[f] = null;
+    }
+  }
+
+  const mergeId = crypto.randomUUID();
+
+  // Build the batched transaction. Each step is its own SQL statement;
+  // neon-http groups them and runs as one round-trip atomic batch.
+  await db.transaction(async (tx) => {
+    // TODO: defensive concurrency guard — re-assert source.mergedIntoUserId
+    // is still null at transaction open (see buildMergeSnapshot docstring on
+    // the snapshot/write race). Single-operator admin makes this optional
+    // for now; if the admin grows multi-operator, add:
+    //   const claimed = await tx.update(users)
+    //     .set({ mergedIntoUserId: snapshot.target.id, ... })
+    //     .where(and(eq(users.id, snapshot.source.id), isNull(users.mergedIntoUserId)))
+    //     .returning({ id: users.id });
+    //   if (claimed.length === 0) throw new MergeRaceError();
+    // and move the final step-5 update to be predicated on isNull.
+
+    // 1. Promote fields from source onto target's profile.
+    if (
+      req.promotedFields.length > 0 &&
+      snapshot.targetProfile &&
+      snapshot.sourceProfile
+    ) {
+      const updates: Record<string, unknown> = { updatedAt: new Date() };
+      for (const f of req.promotedFields) {
+        updates[f] = snapshot.sourceProfile[f];
+      }
+      await tx
+        .update(profiles)
+        .set(updates)
+        .where(eq(profiles.userId, snapshot.target.id));
+    }
+
+    // 2. Straight FK repoints (no join-table conflict to handle).
+    //    communityContributions is handled separately because its user FK
+    //    is contributorId, not userId.
+    const straightTables = [
+      { t: experiences, ids: snapshot.toRepoint.experiences },
+      { t: education, ids: snapshot.toRepoint.education },
+      { t: certifications, ids: snapshot.toRepoint.certifications },
+      { t: works, ids: snapshot.toRepoint.works },
+      { t: leadershipTerms, ids: snapshot.toRepoint.leadership_terms },
+      { t: eventAttendances, ids: snapshot.toRepoint.event_attendances },
+      {
+        t: eventSessionPresenters,
+        ids: snapshot.toRepoint.event_session_presenters,
+      },
+      { t: userAwards, ids: snapshot.toRepoint.user_awards },
+    ] as const;
+    for (const { t, ids } of straightTables) {
+      if (ids.length === 0) continue;
+      await tx
+        .update(t)
+        .set({ userId: snapshot.target.id })
+        .where(sql`${t}.id = ANY(${ids})`);
+    }
+
+    // communityContributions uses contributorId (not userId).
+    if (snapshot.toRepoint.community_contributions.length > 0) {
+      await tx
+        .update(communityContributions)
+        .set({ contributorId: snapshot.target.id })
+        .where(
+          sql`${communityContributions.id} = ANY(${snapshot.toRepoint.community_contributions})`
+        );
+    }
+
+    // Mentorship pairings have two FKs to users — handle each side.
+    if (snapshot.toRepoint.mentorship_pairings_mentor.length > 0) {
+      await tx
+        .update(mentorshipPairings)
+        .set({ mentorId: snapshot.target.id })
+        .where(
+          sql`${mentorshipPairings.id} = ANY(${snapshot.toRepoint.mentorship_pairings_mentor})`
+        );
+    }
+    if (snapshot.toRepoint.mentorship_pairings_mentee.length > 0) {
+      await tx
+        .update(mentorshipPairings)
+        .set({ menteeId: snapshot.target.id })
+        .where(
+          sql`${mentorshipPairings.id} = ANY(${snapshot.toRepoint.mentorship_pairings_mentee})`
+        );
+    }
+
+    // audit_log has actor_id (not user_id).
+    if (snapshot.toRepoint.audit_log.length > 0) {
+      await tx
+        .update(auditLog)
+        .set({ actorId: snapshot.target.id })
+        .where(sql`${auditLog.id} = ANY(${snapshot.toRepoint.audit_log})`);
+    }
+
+    // 3. Join tables WITH (user_id, X) unique constraints.
+    if (snapshot.toRepoint.user_organizations.length > 0) {
+      await tx
+        .update(userOrganizations)
+        .set({ userId: snapshot.target.id })
+        .where(
+          sql`${userOrganizations.id} = ANY(${snapshot.toRepoint.user_organizations})`
+        );
+    }
+    if (snapshot.toRepoint.group_memberships.length > 0) {
+      await tx
+        .update(groupMemberships)
+        .set({ userId: snapshot.target.id })
+        .where(
+          sql`${groupMemberships.id} = ANY(${snapshot.toRepoint.group_memberships})`
+        );
+    }
+    if (snapshot.toRepoint.event_committee_assignments.length > 0) {
+      await tx
+        .update(eventCommitteeAssignments)
+        .set({ userId: snapshot.target.id })
+        .where(
+          sql`${eventCommitteeAssignments.id} = ANY(${snapshot.toRepoint.event_committee_assignments})`
+        );
+    }
+    // Composite-PK join tables (user_disciplines etc.) — (user_id, X) PKs.
+    if (snapshot.toRepoint.user_disciplines.length > 0) {
+      await tx
+        .update(userDisciplines)
+        .set({ userId: snapshot.target.id })
+        .where(
+          and(
+            eq(userDisciplines.userId, snapshot.source.id),
+            sql`${userDisciplines.disciplineId} = ANY(${snapshot.toRepoint.user_disciplines})`
+          )
+        );
+    }
+    if (snapshot.toRepoint.user_skills.length > 0) {
+      await tx
+        .update(userSkills)
+        .set({ userId: snapshot.target.id })
+        .where(
+          and(
+            eq(userSkills.userId, snapshot.source.id),
+            sql`${userSkills.skillId} = ANY(${snapshot.toRepoint.user_skills})`
+          )
+        );
+    }
+    if (snapshot.toRepoint.user_languages.length > 0) {
+      await tx
+        .update(userLanguages)
+        .set({ userId: snapshot.target.id })
+        .where(
+          and(
+            eq(userLanguages.userId, snapshot.source.id),
+            sql`${userLanguages.languageId} = ANY(${snapshot.toRepoint.user_languages})`
+          )
+        );
+    }
+    if (snapshot.toRepoint.user_engagement_types.length > 0) {
+      await tx
+        .update(userEngagementTypes)
+        .set({ userId: snapshot.target.id })
+        .where(
+          and(
+            eq(userEngagementTypes.userId, snapshot.source.id),
+            sql`${userEngagementTypes.engagementTypeId} = ANY(${snapshot.toRepoint.user_engagement_types})`
+          )
+        );
+    }
+
+    // 4. Delete the conflict rows on the source side. Their snapshots
+    //    are already captured for the user_merges manifest.
+    for (const c of snapshot.conflicts) {
+      switch (c.table) {
+        case "user_organizations":
+          await tx
+            .delete(userOrganizations)
+            .where(eq(userOrganizations.id, c.deletedRowId));
+          break;
+        case "group_memberships":
+          await tx
+            .delete(groupMemberships)
+            .where(eq(groupMemberships.id, c.deletedRowId));
+          break;
+        case "event_committee_assignments":
+          await tx
+            .delete(eventCommitteeAssignments)
+            .where(eq(eventCommitteeAssignments.id, c.deletedRowId));
+          break;
+        case "user_disciplines":
+          await tx
+            .delete(userDisciplines)
+            .where(
+              and(
+                eq(userDisciplines.userId, snapshot.source.id),
+                eq(userDisciplines.disciplineId, c.deletedRowId)
+              )
+            );
+          break;
+        case "user_skills":
+          await tx
+            .delete(userSkills)
+            .where(
+              and(
+                eq(userSkills.userId, snapshot.source.id),
+                eq(userSkills.skillId, c.deletedRowId)
+              )
+            );
+          break;
+        case "user_languages":
+          await tx
+            .delete(userLanguages)
+            .where(
+              and(
+                eq(userLanguages.userId, snapshot.source.id),
+                eq(userLanguages.languageId, c.deletedRowId)
+              )
+            );
+          break;
+        case "user_engagement_types":
+          await tx
+            .delete(userEngagementTypes)
+            .where(
+              and(
+                eq(userEngagementTypes.userId, snapshot.source.id),
+                eq(userEngagementTypes.engagementTypeId, c.deletedRowId)
+              )
+            );
+          break;
+      }
+    }
+
+    // 5. Mark source as merged.
+    await tx
+      .update(users)
+      .set({
+        mergedIntoUserId: snapshot.target.id,
+        updatedAt: new Date(),
+      })
+      .where(eq(users.id, snapshot.source.id));
+
+    // 6. Insert the user_merges manifest row INSIDE the transaction so that
+    //    if the worker crashes between batch commit and audit insert, we
+    //    never end up with a soft-merged source that has no manifest.
+    await tx
+      .insert(userMerges)
+      .values({
+        id: mergeId,
+        sourceUserId: snapshot.source.id,
+        targetUserId: snapshot.target.id,
+        mergedByUserId: req.mergedByUserId,
+        reason: req.reason ?? null,
+        repointedRows: snapshot.toRepoint as unknown as Record<string, unknown>,
+        promotedFields: promotedRecord,
+      });
+  });
+
+  return {
+    mergeId,
+    repointedRows: snapshot.toRepoint,
+    conflicts: snapshot.conflicts,
+    promotedFields: promotedRecord,
   };
 }
