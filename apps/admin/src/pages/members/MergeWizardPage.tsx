@@ -30,19 +30,55 @@ interface UserDetail {
 export function MergeWizardPage() {
   const apiFetch = useApi();
   const navigate = useNavigate();
-  const [params] = useSearchParams();
+  const [params, setParams] = useSearchParams();
   const aId = params.get("a");
   const bId = params.get("b");
+
+  // Initialize all wizard state FROM the URL so a tab reload (including
+  // HMR-triggered remounts where React Fast Refresh can't preserve state)
+  // restores progress instead of dropping the admin back at Step I.
+  const initialStep = (() => {
+    const raw = parseInt(params.get("step") ?? "1", 10);
+    return raw === 2 || raw === 3 ? (raw as 2 | 3) : 1;
+  })();
+  const initialCanonical = params.get("canonical");
+  const initialPromote = new Set<PromotableField>(
+    (params.get("promote") ?? "")
+      .split(",")
+      .filter((s): s is PromotableField =>
+        (PROMOTABLE_FIELDS as readonly string[]).includes(s)
+      )
+  );
+  const initialReason = params.get("reason") ?? "";
 
   const [a, setA] = useState<UserDetail | null>(null);
   const [b, setB] = useState<UserDetail | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [step, setStep] = useState<1 | 2 | 3>(1);
-  const [canonicalId, setCanonicalId] = useState<string | null>(null);
-  const [promote, setPromote] = useState<Set<PromotableField>>(new Set());
-  const [reason, setReason] = useState("");
+  const [step, setStep] = useState<1 | 2 | 3>(initialStep);
+  const [canonicalId, setCanonicalId] = useState<string | null>(initialCanonical);
+  const [promote, setPromote] = useState<Set<PromotableField>>(initialPromote);
+  const [reason, setReason] = useState(initialReason);
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+
+  // Mirror wizard state INTO the URL after every change. `replace: true`
+  // keeps browser history clean (we don't want every checkbox to add a
+  // back-button entry).
+  useEffect(() => {
+    const next = new URLSearchParams(params);
+    next.set("step", String(step));
+    if (canonicalId) next.set("canonical", canonicalId); else next.delete("canonical");
+    if (promote.size > 0) next.set("promote", [...promote].join(","));
+    else next.delete("promote");
+    if (reason.trim()) next.set("reason", reason);
+    else next.delete("reason");
+    // Only call setParams if anything actually changed — otherwise we'd
+    // trigger an infinite useEffect loop via the params dependency.
+    if (next.toString() !== params.toString()) {
+      setParams(next, { replace: true });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [step, canonicalId, promote, reason]);
 
   useEffect(() => {
     if (!aId || !bId) {
@@ -59,11 +95,17 @@ export function MergeWizardPage() {
         if (cancelled) return;
         setA(ra as UserDetail);
         setB(rb as UserDetail);
-        // Default canonical = the one with more populated fields.
-        const aCount = countPopulated(ra.profile);
-        const bCount = countPopulated(rb.profile);
-        if (aCount > bCount) setCanonicalId(aId);
-        else if (bCount > aCount) setCanonicalId(bId);
+        // Default canonical = the one with more populated fields — but
+        // only if the URL didn't already restore a choice from a prior
+        // tab state.
+        setCanonicalId((current) => {
+          if (current) return current;
+          const aCount = countPopulated(ra.profile);
+          const bCount = countPopulated(rb.profile);
+          if (aCount > bCount) return aId;
+          if (bCount > aCount) return bId;
+          return null;
+        });
       } catch (e) {
         if (cancelled) return;
         setError(e instanceof Error ? e.message : String(e));
