@@ -4,8 +4,19 @@
 # deploy can never quietly serve stale code again.
 #
 # Required GitHub repo secrets:
-#   CLOUDFLARE_API_TOKEN     — token with "Workers Scripts:Edit" +
-#                                "Pages:Edit" + "Account:Read"
+#   CLOUDFLARE_API_TOKEN     — Account-Owned API Token minted on the
+#                                leadership-28b account with scopes:
+#                                  · Workers Scripts: Edit
+#                                  · Cloudflare Pages: Edit
+#                                  · Workers R2 Storage: Edit (all
+#                                    buckets — covers profile photos
+#                                    and organization logos)
+#                                  · Account Settings: Read
+#                                Account tokens fail `/user/tokens/verify`
+#                                by design — don't trust that endpoint
+#                                as a health check. Use a real
+#                                account-scoped call (`/accounts/{id}/
+#                                workers/scripts`) to confirm reach.
 #   CLOUDFLARE_ACCOUNT_ID    — the leadership-28b account
 #                                (28b57474f911b12125c7fa2feaf89c21)
 #   VITE_WORKOS_CLIENT_ID    — WorkOS AuthKit public client id; baked into
