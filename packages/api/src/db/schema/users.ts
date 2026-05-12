@@ -7,6 +7,7 @@ import {
   pgTable,
   text,
   timestamp,
+  uniqueIndex,
   uuid,
 } from "drizzle-orm/pg-core";
 import { userRole } from "./enums";
@@ -230,3 +231,37 @@ export const userMergesRelations = relations(userMerges, ({ one }) => ({
     relationName: "reverted_by",
   }),
 }));
+
+/**
+ * Admin "not a duplicate" decisions. The candidate-pair scorer is
+ * on-demand, so without persistence the same false-positive pair
+ * would resurface on every load. Pairs are canonical-ordered
+ * (user_a_id < user_b_id by UUID string compare) — enforced both by
+ * a CHECK constraint in the migration and by the dismiss endpoint —
+ * so the unique index catches both orientations.
+ */
+export const duplicateDismissals = pgTable(
+  "duplicate_dismissals",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    userAId: uuid("user_a_id")
+      .notNull()
+      .references((): any => users.id, { onDelete: "cascade" }),
+    userBId: uuid("user_b_id")
+      .notNull()
+      .references((): any => users.id, { onDelete: "cascade" }),
+    dismissedByUserId: uuid("dismissed_by_user_id").references(
+      (): any => users.id,
+      { onDelete: "set null" }
+    ),
+    reason: text("reason"),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [
+    uniqueIndex("duplicate_dismissals_pair_unique").on(t.userAId, t.userBId),
+    index("duplicate_dismissals_user_a_idx").on(t.userAId),
+    index("duplicate_dismissals_user_b_idx").on(t.userBId),
+  ]
+);

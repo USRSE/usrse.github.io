@@ -3,11 +3,14 @@ import { and, asc, eq, ilike, inArray, isNull, isNotNull, or, sql } from "drizzl
 import type { SQL } from "drizzle-orm";
 import { createDb } from "../../../db";
 import {
+  duplicateDismissals,
   organizations,
   profiles,
   userOrganizations,
   users,
 } from "../../../db/schema";
+import { zValidator } from "@hono/zod-validator";
+import { z } from "zod";
 import { canEditMembers, canMergeUsers } from "../../../lib/policies";
 import { requirePolicy } from "../../../middleware/policy";
 import {
@@ -171,7 +174,31 @@ adminUsersRoute.get(
       groupIds: new Set(),
     }));
 
-    const pairs = buildAndScorePairs(candidates, { limit: 100 });
+    // Score un-cropped first; we still want to know the total before
+    // filtering so the response can include a dismissed-count for the UI.
+    const allPairs = buildAndScorePairs(candidates, { limit: 1000 });
+
+    // Filter out pairs the admin has already marked as "not a duplicate".
+    // Pairs in dismissals are stored canonical-ordered (a < b); we
+    // normalize the scored pair the same way when looking up.
+    const dismissalRows = await db
+      .select({
+        userAId: duplicateDismissals.userAId,
+        userBId: duplicateDismissals.userBId,
+      })
+      .from(duplicateDismissals);
+    const dismissedKeys = new Set(
+      dismissalRows.map((d) => `${d.userAId}|${d.userBId}`)
+    );
+    const pairs = allPairs
+      .filter((p) => {
+        const key =
+          p.a.id < p.b.id
+            ? `${p.a.id}|${p.b.id}`
+            : `${p.b.id}|${p.a.id}`;
+        return !dismissedKeys.has(key);
+      })
+      .slice(0, 100);
 
     // Hydrate compact card payloads with org name + photo.
     const userIdsInPairs = new Set<string>();
@@ -205,6 +232,7 @@ adminUsersRoute.get(
 
     return c.json({
       ok: true,
+      dismissedCount: dismissedKeys.size,
       pairs: pairs.map((p) => ({
         score: p.score,
         tier: p.tier,
@@ -261,6 +289,68 @@ adminUsersRoute.get(
         500
       );
     }
+  }
+);
+
+/**
+ * POST /api/admin/users/duplicates/dismiss
+ *
+ * Records a "not a duplicate" decision so the pair never resurfaces in
+ * /admin/users/duplicates. Idempotent — re-dismissing a previously
+ * dismissed pair is a no-op. super_admin only.
+ */
+const dismissDuplicateBodySchema = z.object({
+  userAId: z.uuid(),
+  userBId: z.uuid(),
+  reason: z.string().max(280).optional(),
+});
+
+adminUsersRoute.post(
+  "/duplicates/dismiss",
+  requirePolicy(canMergeUsers, () => undefined),
+  zValidator("json", dismissDuplicateBodySchema, (result, c) => {
+    if (!result.success) {
+      return c.json(
+        { ok: false, error: "invalid_input", issues: result.error.issues },
+        400
+      );
+    }
+  }),
+  async (c) => {
+    if (!c.env.DATABASE_URL)
+      return c.json({ ok: false, error: "internal" }, 500);
+    const db = createDb(c.env.DATABASE_URL);
+    const actor = c.get("actor")!;
+    const body = c.req.valid("json");
+    if (body.userAId === body.userBId) {
+      return c.json(
+        {
+          ok: false,
+          error: "invalid_input",
+          message: "Cannot dismiss a pair with itself.",
+        },
+        400
+      );
+    }
+    // Canonical-order so the unique index catches both orientations.
+    const [a, b] =
+      body.userAId < body.userBId
+        ? [body.userAId, body.userBId]
+        : [body.userBId, body.userAId];
+    await db
+      .insert(duplicateDismissals)
+      .values({
+        userAId: a,
+        userBId: b,
+        dismissedByUserId: actor.user.id,
+        reason: body.reason ?? null,
+      })
+      .onConflictDoNothing();
+
+    c.set("auditAction", "users.duplicate_dismiss");
+    c.set("auditTarget", { type: "users", id: a });
+    c.set("auditPayload", { userAId: a, userBId: b, reason: body.reason ?? null });
+    return c.json({ ok: true });
   }
 );
 

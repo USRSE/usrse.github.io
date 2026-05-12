@@ -25,8 +25,10 @@ interface ScoredPair {
 export function DuplicatesPage() {
   const apiFetch = useApi();
   const [pairs, setPairs] = useState<ScoredPair[] | null>(null);
+  const [dismissedCount, setDismissedCount] = useState(0);
   const [error, setError] = useState<string | null>(null);
   const [filter, setFilter] = useState<"all" | "high" | "medium">("all");
+  const [dismissing, setDismissing] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     let cancelled = false;
@@ -35,8 +37,9 @@ export function DuplicatesPage() {
         const res = await apiFetch("/admin/users/duplicates");
         if (cancelled) return;
         if (!res.ok) { setError(`/admin/users/duplicates responded ${res.status}`); return; }
-        const body = (await res.json()) as { ok: true; pairs: ScoredPair[] };
+        const body = (await res.json()) as { ok: true; pairs: ScoredPair[]; dismissedCount?: number };
         setPairs(body.pairs);
+        setDismissedCount(body.dismissedCount ?? 0);
       } catch (e) {
         if (cancelled) return;
         setError(e instanceof Error ? e.message : String(e));
@@ -44,6 +47,40 @@ export function DuplicatesPage() {
     })();
     return () => { cancelled = true; };
   }, [apiFetch]);
+
+  async function dismissPair(aId: string, bId: string) {
+    const key = `${aId}|${bId}`;
+    setDismissing((s) => new Set(s).add(key));
+    // Optimistically remove from view.
+    const previous = pairs;
+    setPairs((cur) =>
+      cur ? cur.filter((p) => !(p.users[0].id === aId && p.users[1].id === bId)) : cur
+    );
+    setDismissedCount((n) => n + 1);
+    try {
+      const res = await apiFetch("/admin/users/duplicates/dismiss", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userAId: aId, userBId: bId }),
+      });
+      if (!res.ok) {
+        // Roll back on failure.
+        setPairs(previous);
+        setDismissedCount((n) => Math.max(0, n - 1));
+        setError(`Dismiss failed (${res.status})`);
+      }
+    } catch (e) {
+      setPairs(previous);
+      setDismissedCount((n) => Math.max(0, n - 1));
+      setError(e instanceof Error ? e.message : String(e));
+    } finally {
+      setDismissing((s) => {
+        const next = new Set(s);
+        next.delete(key);
+        return next;
+      });
+    }
+  }
 
   if (error) return <p className="admin-classification" style={{ color: "var(--color-danger-700)" }}>{error}</p>;
   if (!pairs) return <p className="admin-marginalia">Computing candidates…</p>;
@@ -72,6 +109,7 @@ export function DuplicatesPage() {
       <div className="flex items-baseline gap-6 mb-10">
         <span className="admin-classification">
           {counts.total} candidates · {counts.high} high · {counts.medium} medium · {counts.weak} weak
+          {dismissedCount > 0 ? ` · ${dismissedCount} dismissed` : ""}
         </span>
         <select
           value={filter}
@@ -104,7 +142,16 @@ export function DuplicatesPage() {
                 </div>
                 <PairCard user={p.users[1]} />
               </div>
-              <div className="mt-6 flex justify-end">
+              <div className="mt-6 flex justify-end items-baseline gap-6">
+                <button
+                  type="button"
+                  onClick={() => void dismissPair(p.users[0].id, p.users[1].id)}
+                  disabled={dismissing.has(`${p.users[0].id}|${p.users[1].id}`)}
+                  className="admin-classification disabled:opacity-50"
+                  style={{ color: "var(--admin-marginalia)" }}
+                >
+                  Not a duplicate ✕
+                </button>
                 <Link
                   to={`/members/duplicates/merge?a=${p.users[0].id}&b=${p.users[1].id}`}
                   className="admin-classification"
