@@ -1,6 +1,18 @@
 import { NavLink } from "react-router-dom";
 import type { NavSection } from "../hooks/useNavSections";
 
+/**
+ * Public web app URL — mirrors the env-aware pattern apps/web uses for
+ * its VITE_ADMIN_URL link. Lets an admin jump back to the member-
+ * facing site without typing the URL: dev → vite (5173), prod →
+ * usrse.org, override via VITE_WEB_URL for preview deploys.
+ */
+const WEB_URL: string =
+  import.meta.env.VITE_WEB_URL ??
+  (import.meta.env.DEV
+    ? "http://localhost:5173"
+    : "https://usrse.org");
+
 interface SidebarProps {
   sections: NavSection[];
 }
@@ -43,7 +55,45 @@ export function Sidebar({ sections }: SidebarProps) {
           </ul>
         </>
       )}
+
+      <ElsewhereColophon />
     </nav>
+  );
+}
+
+/**
+ * Bottom-anchored "colophon" — the editorial convention for a block
+ * that sits below the body and names the publisher/printer. Here it
+ * names the *other* place an admin might want to go: the public site.
+ * Distinct visual class from the numbered workspace items so it
+ * doesn't pretend to be one of them — an "↗" replaces the numeric
+ * prefix to signal an external destination.
+ */
+function ElsewhereColophon() {
+  return (
+    <div className="mt-auto pt-6 pb-8">
+      <div
+        className="mx-8 mb-4"
+        style={{ borderTop: "1px solid var(--admin-rule-subtle)" }}
+      />
+      <p className="admin-classification px-8 mb-3">Elsewhere</p>
+      <a
+        href={WEB_URL}
+        className="group flex items-baseline gap-4 pl-8 pr-6 py-2 text-[15px] transition-colors"
+        style={{ color: "var(--admin-ink-medium)" }}
+      >
+        <span
+          aria-hidden="true"
+          className="font-mono text-[10px] tracking-[0.2em] tabular-nums w-6 inline-block transition-transform group-hover:-translate-y-px group-hover:translate-x-px"
+          style={{ color: "var(--admin-marginalia)" }}
+        >
+          ↗
+        </span>
+        <span className="flex-1 tracking-tight group-hover:text-[color:var(--admin-ink)] transition-colors">
+          public site
+        </span>
+      </a>
+    </div>
   );
 }
 
