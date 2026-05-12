@@ -110,27 +110,38 @@ export function MembersListPage() {
 
       {error && <p className="mb-4 admin-classification" style={{ color: "var(--color-danger-700)" }}>{error}</p>}
 
-      <div style={{ borderTop: "1px solid var(--admin-ink)" }}>
+      <div>
+        <div
+          className="grid grid-cols-[3rem_8rem_minmax(0,1fr)_minmax(0,1fr)_8rem_7rem] gap-6 items-baseline py-2 text-[11px]"
+          style={{ borderTop: "1px solid var(--admin-ink)", borderBottom: "1px solid var(--admin-rule)" }}
+        >
+          <span className="admin-classification">#</span>
+          <span className="admin-classification">Member ID</span>
+          <span className="admin-classification">Name</span>
+          <span className="admin-classification">Email</span>
+          <span className="admin-classification">Role</span>
+          <span className="admin-classification text-right">Joined</span>
+        </div>
         {rows.map((r, i) => (
           <Link
             key={r.id}
             to={`/members/${r.id}`}
-            className="grid grid-cols-[3rem_8rem_1fr_1fr_8rem_auto] gap-6 items-baseline py-3 text-[14px] transition-colors hover:bg-[var(--admin-paper-edge)]"
+            className="grid grid-cols-[3rem_8rem_minmax(0,1fr)_minmax(0,1fr)_8rem_7rem] gap-6 items-baseline py-3 text-[14px] transition-colors hover:bg-[var(--admin-paper-edge)]"
             style={{ borderBottom: "1px solid var(--admin-rule-subtle)" }}
           >
             <span className="admin-marginalia tabular-nums">{String(i + 1).padStart(3, "0")}</span>
-            <span className="font-mono text-[11px] admin-marginalia tabular-nums">
+            <span className="font-mono text-[11px] admin-marginalia tabular-nums truncate">
               {r.memberId}
             </span>
-            <span style={{ color: "var(--admin-ink)" }}>
+            <span className="truncate" style={{ color: "var(--admin-ink)" }}>
               {r.displayName ?? <em style={{ color: "var(--admin-marginalia)" }}>no name</em>}{" "}
               <StatusTag deletedAt={r.deletedAt} mergedIntoUserId={r.mergedIntoUserId} isLegacyImport={r.isLegacyImport} />
             </span>
-            <span className="font-mono text-[12px]" style={{ color: "var(--admin-ink-medium)" }}>
+            <span className="font-mono text-[12px] truncate" style={{ color: "var(--admin-ink-medium)" }}>
               {r.email}
             </span>
             <RoleTag role={r.role} />
-            <span className="admin-marginalia text-right whitespace-nowrap">
+            <span className="admin-marginalia text-right whitespace-nowrap tabular-nums">
               {new Date(r.createdAt).toLocaleDateString()}
             </span>
           </Link>
