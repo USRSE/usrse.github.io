@@ -549,8 +549,12 @@ async function importCsv() {
           institutionId: p.institutionId,
           countryId: p.countryId,
           publicLocation: normalizeWhitespace(p.record.locationPin),
+          // Legacy imports land as "Listed (private)" — discoverable
+          // stubs in the directory and command palette, but no public
+          // detail leaks until the member signs in and opts in. See
+          // privacy-state table in profiles schema for the three states.
           isPublic: false,
-          isDiscoverable: false,
+          isDiscoverable: true,
         };
       })
       .filter((v): v is NonNullable<typeof v> => v !== null);
