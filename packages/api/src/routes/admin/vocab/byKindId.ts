@@ -11,6 +11,7 @@ import {
   userSkills,
   users,
 } from "../../../db/schema";
+import { executeVocabMerge } from "../../../lib/admin/vocabMerge";
 import { findSimilarApproved } from "../../../lib/admin/vocabSimilarity";
 import { isVocabKind, vocabTableFor, type VocabKind } from "../../../lib/admin/vocabTables";
 import type { AppEnv } from "../../../types";
@@ -352,6 +353,64 @@ adminVocabByKindIdRoute.post("/reject", async (c) => {
   c.set("auditPayload", { name: existing.name, slug: existing.slug });
   return c.json({ ok: true });
 });
+
+const mergeBodySchema = z.object({
+  targetId: z.uuid(),
+});
+
+/**
+ * POST /api/admin/vocab/:kind/:id/merge
+ *
+ * Repoint user_<kind> rows from source to target, drop conflicts,
+ * delete source row. Source can be any status; target must be
+ * approved. One db.transaction.
+ */
+adminVocabByKindIdRoute.post(
+  "/merge",
+  zValidator("json", mergeBodySchema, (result, c) => {
+    if (!result.success) {
+      return c.json(
+        { ok: false, error: "invalid_input", issues: result.error.issues },
+        400
+      );
+    }
+  }),
+  async (c) => {
+    const kind = c.req.param("kind");
+    const id = c.req.param("id");
+    if (!isVocabKind(kind))
+      return c.json({ ok: false, error: "invalid_kind" }, 400);
+    if (!id || !/^[0-9a-f-]{36}$/i.test(id))
+      return c.json({ ok: false, error: "invalid_input" }, 400);
+    if (!c.env.DATABASE_URL)
+      return c.json({ ok: false, error: "internal" }, 500);
+    const db = createDb(c.env.DATABASE_URL);
+    const body = c.req.valid("json");
+
+    const result = await executeVocabMerge(db, {
+      kind: kind as VocabKind,
+      sourceId: id,
+      targetId: body.targetId,
+    });
+    if ("error" in result) {
+      return c.json(
+        { ok: false, error: result.error, message: result.message },
+        result.status
+      );
+    }
+
+    c.set("auditAction", "vocab.merge");
+    c.set("auditTarget", { type: kind, id: body.targetId });
+    c.set("auditPayload", {
+      sourceId: id,
+      sourceName: result.sourceName,
+      targetName: result.targetName,
+      repointed: result.repointed,
+      dropped: result.dropped,
+    });
+    return c.json({ ok: true, repointed: result.repointed, dropped: result.dropped });
+  }
+);
 
 /**
  * Local slug builder. The same shape lives inside lib/member-id.ts
