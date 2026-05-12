@@ -237,7 +237,7 @@ export function MemberDetailPage() {
               marginBottom: "-1px",
             }}
           >
-            <span className="tabular-nums mr-2">{["I", "II", "III", "IV"][i]}</span>
+            <span className="tabular-nums mr-2">{String(i + 1).padStart(2, "0")}</span>
             <span>{t === "identity" ? "Identity" : t === "affiliations" ? "Affiliations" : t === "status" ? "Status" : "Audit"}</span>
           </button>
         ))}
