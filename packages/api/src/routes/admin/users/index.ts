@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { and, asc, eq, ilike, isNull, isNotNull, or, sql } from "drizzle-orm";
+import { and, asc, eq, ilike, inArray, isNull, isNotNull, or, sql } from "drizzle-orm";
 import type { SQL } from "drizzle-orm";
 import { createDb } from "../../../db";
 import {
@@ -188,7 +188,7 @@ adminUsersRoute.get(
         ? await db
             .select({ id: organizations.id, name: organizations.name })
             .from(organizations)
-            .where(sql`${organizations.id} = ANY(${[...orgIds]}::uuid[])`)
+            .where(inArray(organizations.id, [...orgIds]))
         : [];
     const orgNameById = new Map(orgRows.map((o) => [o.id, o.name] as const));
 
@@ -199,7 +199,7 @@ adminUsersRoute.get(
         ? await db
             .select({ userId: profiles.userId, photoUrl: profiles.photoUrl })
             .from(profiles)
-            .where(sql`${profiles.userId} = ANY(${[...userIdsInPairs]}::uuid[])`)
+            .where(inArray(profiles.userId, [...userIdsInPairs]))
         : [];
     for (const r of photoRows) photoByUser.set(r.userId, r.photoUrl);
 
