@@ -127,6 +127,7 @@ adminUsersRoute.get(
   async (c) => {
     if (!c.env.DATABASE_URL) return c.json({ ok: false, error: "internal" }, 500);
     const db = createDb(c.env.DATABASE_URL);
+    try {
 
     // Fetch every active user with the fields the scorer needs.
     const baseRows = await db
@@ -240,6 +241,26 @@ adminUsersRoute.get(
         ],
       })),
     });
+    } catch (err) {
+      // Surface the underlying failure to the dev console + response body so
+      // /duplicates 500s stop being opaque. Cloudflare's GIT_SHA is unset in
+      // wrangler dev (var = "dev"), which is how we decide whether to leak
+      // the stack — never on production.
+      const isDev = (c.env.GIT_SHA ?? "dev") === "dev";
+      const message = err instanceof Error ? err.message : String(err);
+      const stack = err instanceof Error ? err.stack : undefined;
+      // eslint-disable-next-line no-console
+      console.error("[/admin/users/duplicates]", message, stack);
+      return c.json(
+        {
+          ok: false,
+          error: "duplicates_failed",
+          message: isDev ? message : "internal",
+          ...(isDev && stack ? { stack } : {}),
+        },
+        500
+      );
+    }
   }
 );
 
