@@ -4,6 +4,7 @@ import { useApi } from "@us-rse/auth-shell";
 
 type VocabKind = "disciplines" | "skills" | "languages";
 type SortMode = "newest" | "most-used" | "strongest-match";
+type StatusFilter = "pending" | "approved" | "rejected" | "all";
 
 interface QueueRow {
   kind: VocabKind;
@@ -20,7 +21,14 @@ interface QueueRow {
 interface QueueResponse {
   ok: true;
   rows: QueueRow[];
-  counts: { total: number; withUsages: number; withStrongMatch: number };
+  counts: {
+    total: number;
+    pending: number;
+    approved: number;
+    rejected: number;
+    withUsages: number;
+    withStrongMatch: number;
+  };
 }
 
 export function VocabQueuePage() {
@@ -32,11 +40,12 @@ export function VocabQueuePage() {
 
   const kind = (params.get("kind") ?? "all") as VocabKind | "all";
   const sort = (params.get("sort") ?? "newest") as SortMode;
+  const status = (params.get("status") ?? "pending") as StatusFilter;
 
   const load = useCallback(async () => {
     setLoading(true);
     setError(null);
-    const sp = new URLSearchParams({ sort });
+    const sp = new URLSearchParams({ sort, status });
     if (kind !== "all") sp.set("kind", kind);
     try {
       const res = await apiFetch(`/admin/vocab/queue?${sp}`);
@@ -50,13 +59,18 @@ export function VocabQueuePage() {
     } finally {
       setLoading(false);
     }
-  }, [apiFetch, kind, sort]);
+  }, [apiFetch, kind, sort, status]);
 
   useEffect(() => { void load(); }, [load]);
 
   function setParam(name: string, value: string) {
     const next = new URLSearchParams(params);
-    if (value && value !== "all" && value !== "newest") next.set(name, value);
+    // Defaults that should NOT appear in the URL.
+    const isDefault =
+      (name === "kind" && value === "all") ||
+      (name === "sort" && value === "newest") ||
+      (name === "status" && value === "pending");
+    if (value && !isDefault) next.set(name, value);
     else next.delete(name);
     setParams(next, { replace: true });
   }
@@ -76,8 +90,22 @@ export function VocabQueuePage() {
       </h2>
       {data && (
         <p className="admin-classification mb-8">
-          {data.counts.total} pending · {data.counts.withUsages} with usages ·{" "}
-          {data.counts.withStrongMatch} with strong match
+          {status === "pending" ? (
+            <>
+              {data.counts.total} pending · {data.counts.withUsages} with usages
+              {" · "}
+              {data.counts.withStrongMatch} with strong match
+            </>
+          ) : status === "all" ? (
+            <>
+              {data.counts.total} terms · {data.counts.pending} pending ·{" "}
+              {data.counts.approved} approved · {data.counts.rejected} rejected
+            </>
+          ) : (
+            <>
+              {data.counts.total} {status} · {data.counts.withUsages} with usages
+            </>
+          )}
         </p>
       )}
 
@@ -94,6 +122,17 @@ export function VocabQueuePage() {
           <option value="languages">Languages</option>
         </select>
         <select
+          value={status}
+          onChange={(e) => setParam("status", e.target.value)}
+          className="admin-classification bg-transparent border-0 outline-none"
+          style={{ color: "var(--admin-ink-medium)" }}
+        >
+          <option value="pending">Pending</option>
+          <option value="approved">Approved</option>
+          <option value="rejected">Rejected</option>
+          <option value="all">All statuses</option>
+        </select>
+        <select
           value={sort}
           onChange={(e) => setParam("sort", e.target.value)}
           className="admin-classification bg-transparent border-0 outline-none ml-auto"
@@ -101,7 +140,9 @@ export function VocabQueuePage() {
         >
           <option value="newest">Newest first</option>
           <option value="most-used">Most used first</option>
-          <option value="strongest-match">Strongest match first</option>
+          {status === "pending" && (
+            <option value="strongest-match">Strongest match first</option>
+          )}
         </select>
       </div>
 
@@ -127,7 +168,22 @@ export function VocabQueuePage() {
             style={{ borderBottom: "1px solid var(--admin-rule-subtle)" }}
           >
             <span className="admin-marginalia tabular-nums">{String(i + 1).padStart(3, "0")}</span>
-            <span className="admin-marginalia truncate">{r.kind}</span>
+            <span className="admin-marginalia truncate">
+              {r.kind}
+              {r.status !== "pending" && (
+                <span
+                  className="ml-2"
+                  style={{
+                    color:
+                      r.status === "approved"
+                        ? "var(--color-success-700)"
+                        : "var(--color-danger-700)",
+                  }}
+                >
+                  · {r.status}
+                </span>
+              )}
+            </span>
             <span className="truncate" style={{ color: "var(--admin-ink)" }}>{r.name}</span>
             <span
               className="text-right tabular-nums"

@@ -53,23 +53,32 @@ adminVocabRoute.get("/queue", async (c) => {
     | "newest"
     | "most-used"
     | "strongest-match";
+  const statusFilter = (c.req.query("status") ?? "pending") as
+    | "pending"
+    | "approved"
+    | "rejected"
+    | "all";
   const kinds = kindFilter && isVocabKind(kindFilter) ? [kindFilter] : KINDS;
 
-  // Load all pending rows + their suggester profile data, per-kind.
-  const pendingByKind = await Promise.all(
-    kinds.map((kind) => loadPendingWithSuggester(db, kind))
+  // Load rows matching the status filter + their suggester profile data,
+  // per-kind. Similar-term hints + sort-by-match are only meaningful for
+  // pending rows, so we conditionally skip that work when status is set
+  // to something else.
+  const rowsByKind = await Promise.all(
+    kinds.map((kind) => loadVocabRowsWithSuggester(db, kind, statusFilter))
   );
 
-  // Load all approved rows per kind (small — ~hundreds per table) so
-  // we can run the similarity scorer in JS without N+1 queries.
-  const approvedByKind = await Promise.all(
-    kinds.map((kind) => loadApprovedNames(db, kind))
-  );
+  // Load approved-pool ONLY when we'll actually score against it (pending
+  // rows benefit from the similar-match hint; other statuses don't).
+  const approvedByKind =
+    statusFilter === "pending"
+      ? await Promise.all(kinds.map((kind) => loadApprovedNames(db, kind)))
+      : kinds.map(() => [] as Array<{ id: string; name: string }>);
 
-  // Load usage counts for the union of pending ids per kind.
+  // Usage counts for every row we're about to return.
   const usageByKind = await Promise.all(
     kinds.map((kind, i) =>
-      loadUsageCounts(db, kind, pendingByKind[i].map((r) => r.id))
+      loadUsageCounts(db, kind, rowsByKind[i].map((r) => r.id))
     )
   );
 
@@ -77,23 +86,26 @@ adminVocabRoute.get("/queue", async (c) => {
   const rows: QueueRow[] = [];
   for (let i = 0; i < kinds.length; i++) {
     const kind = kinds[i];
-    const pending = pendingByKind[i];
+    const rowsForKind = rowsByKind[i];
     const approved = approvedByKind[i];
     const usage = usageByKind[i];
-    for (const p of pending) {
-      const matches = findSimilarApproved(p.name, approved);
+    for (const r of rowsForKind) {
+      const matches =
+        r.status === "pending"
+          ? findSimilarApproved(r.name, approved)
+          : [];
       rows.push({
         kind,
-        id: p.id,
-        name: p.name,
-        slug: p.slug,
-        status: "pending",
+        id: r.id,
+        name: r.name,
+        slug: r.slug,
+        status: r.status,
         createdAt:
-          p.createdAt instanceof Date
-            ? p.createdAt.toISOString()
-            : (p.createdAt as unknown as string),
-        suggestedBy: p.suggester,
-        usageCount: usage.get(p.id) ?? 0,
+          r.createdAt instanceof Date
+            ? r.createdAt.toISOString()
+            : (r.createdAt as unknown as string),
+        suggestedBy: r.suggester,
+        usageCount: usage.get(r.id) ?? 0,
         similarApproved: matches[0]
           ? { id: matches[0].id, name: matches[0].name, score: matches[0].score }
           : null,
@@ -115,6 +127,9 @@ adminVocabRoute.get("/queue", async (c) => {
     rows,
     counts: {
       total: rows.length,
+      pending: rows.filter((r) => r.status === "pending").length,
+      approved: rows.filter((r) => r.status === "approved").length,
+      rejected: rows.filter((r) => r.status === "rejected").length,
       withUsages: rows.filter((r) => r.usageCount > 0).length,
       withStrongMatch: rows.filter(
         (r) => (r.similarApproved?.score ?? 0) >= 80
@@ -196,24 +211,28 @@ adminVocabRoute.get("/:kind", async (c) => {
 
 // ---- Helpers ----
 
-async function loadPendingWithSuggester(
+async function loadVocabRowsWithSuggester(
   db: ReturnType<typeof createDb>,
-  kind: VocabKind
+  kind: VocabKind,
+  statusFilter: "pending" | "approved" | "rejected" | "all"
 ): Promise<
   Array<{
     id: string;
     name: string;
     slug: string;
+    status: "pending" | "approved" | "rejected";
     createdAt: Date;
     suggester: { id: string; displayName: string | null; email: string } | null;
   }>
 > {
   const t = vocabTableFor(kind).vocab;
+  const where = statusFilter === "all" ? undefined : eq(t.status, statusFilter);
   const rows = await db
     .select({
       id: t.id,
       name: t.name,
       slug: t.slug,
+      status: t.status,
       createdAt: t.createdAt,
       suggestedById: t.suggestedBy,
       suggesterEmail: users.email,
@@ -222,13 +241,14 @@ async function loadPendingWithSuggester(
     .from(t)
     .leftJoin(users, eq(users.id, t.suggestedBy))
     .leftJoin(profiles, eq(profiles.userId, t.suggestedBy))
-    .where(eq(t.status, "pending"))
+    .where(where)
     .orderBy(desc(t.createdAt));
 
   return rows.map((r) => ({
     id: r.id,
     name: r.name,
     slug: r.slug,
+    status: r.status,
     createdAt: r.createdAt as Date,
     suggester: r.suggestedById
       ? {
