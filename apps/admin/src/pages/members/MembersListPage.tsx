@@ -3,6 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { useApi } from "@us-rse/auth-shell";
 import { RoleTag } from "../../components/RoleTag";
 import { StatusTag } from "../../components/StatusTag";
+import { useShellActor } from "../../layout/AdminShell";
 
 interface MemberRow {
   id: string;
@@ -22,6 +23,7 @@ type RoleFilter = "" | "member" | "staff" | "super_admin";
 
 export function MembersListPage() {
   const apiFetch = useApi();
+  const actor = useShellActor();
   const [params, setParams] = useSearchParams();
   const [rows, setRows] = useState<MemberRow[]>([]);
   const [cursor, setCursor] = useState<string | null>(null);
@@ -67,9 +69,11 @@ export function MembersListPage() {
         <h2 className="admin-display" style={{ fontSize: "clamp(2rem, 3vw + 0.5rem, 3rem)" }}>
           Members.
         </h2>
-        <Link to="/members/duplicates" className="admin-classification" style={{ color: "var(--admin-ribbon)" }}>
-          Find duplicates →
-        </Link>
+        {actor.systemTier >= 2 && (
+          <Link to="/members/duplicates" className="admin-classification" style={{ color: "var(--admin-ribbon)" }}>
+            Find duplicates →
+          </Link>
+        )}
       </div>
 
       <div className="flex items-baseline gap-6 mb-6">

@@ -1,5 +1,6 @@
 import { Hono } from "hono";
 import { and, asc, eq, ilike, isNull, isNotNull, or, sql } from "drizzle-orm";
+import type { SQL } from "drizzle-orm";
 import { createDb } from "../../../db";
 import {
   organizations,
@@ -40,7 +41,7 @@ adminUsersRoute.get("/", async (c) => {
     200
   );
 
-  const conditions = [] as ReturnType<typeof eq>[];
+  const conditions: SQL[] = [];
 
   if (status === "active") {
     conditions.push(isNull(users.deletedAt));
