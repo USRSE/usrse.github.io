@@ -70,9 +70,9 @@ export function VocabQueuePage() {
 
   return (
     <div className="admin-animate-reveal">
-      <p className="admin-classification mb-6">US-RSE · Admin · Vocab queue</p>
+      <p className="admin-classification mb-6">US-RSE · Admin · Vocab</p>
       <h2 className="admin-display mb-2" style={{ fontSize: "clamp(2rem, 3vw + 0.5rem, 3rem)" }}>
-        Pending review.
+        Vocab.
       </h2>
       {data && (
         <p className="admin-classification mb-8">
