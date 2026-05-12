@@ -12,7 +12,16 @@ import {
   users,
 } from "../../../db/schema";
 import { buildProfileSlug } from "../../../lib/member-id";
-import { canPromoteToRole } from "../../../lib/policies";
+import { canMergeUsers, canPromoteToRole } from "../../../lib/policies";
+import { requirePolicy } from "../../../middleware/policy";
+import {
+  buildMergeSnapshot,
+  executeMerge,
+  executeUnmerge,
+  PROMOTABLE_PROFILE_FIELDS,
+  validateMerge,
+  type PromotableField,
+} from "../../../lib/admin/userMerge";
 import type { AppEnv } from "../../../types";
 
 const ORCID_PATTERN = /^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$/;
@@ -282,5 +291,197 @@ adminUsersByIdRoute.patch(
     c.set("auditTarget", { type: "users", id });
 
     return c.json({ ok: true });
+  }
+);
+
+/**
+ * POST /api/admin/users/:id/soft-delete
+ */
+adminUsersByIdRoute.post("/soft-delete", async (c) => {
+  const id = c.req.param("id");
+  if (!id || !/^[0-9a-f-]{36}$/i.test(id)) {
+    return c.json({ ok: false, error: "invalid_input" }, 400);
+  }
+  if (!c.env.DATABASE_URL) return c.json({ ok: false, error: "internal" }, 500);
+  const db = createDb(c.env.DATABASE_URL);
+
+  const existing = await db
+    .select()
+    .from(users)
+    .where(eq(users.id, id))
+    .limit(1)
+    .then((r) => r[0]);
+  if (!existing) return c.json({ ok: false, error: "not_found" }, 404);
+
+  c.get("auditCapture")?.({ user: existing });
+
+  if (existing.deletedAt === null) {
+    await db
+      .update(users)
+      .set({ deletedAt: new Date(), updatedAt: new Date() })
+      .where(eq(users.id, id));
+  }
+  c.set("auditAction", "users.soft_delete");
+  c.set("auditTarget", { type: "users", id });
+  return c.json({ ok: true });
+});
+
+/**
+ * POST /api/admin/users/:id/restore
+ */
+adminUsersByIdRoute.post("/restore", async (c) => {
+  const id = c.req.param("id");
+  if (!id || !/^[0-9a-f-]{36}$/i.test(id)) {
+    return c.json({ ok: false, error: "invalid_input" }, 400);
+  }
+  if (!c.env.DATABASE_URL) return c.json({ ok: false, error: "internal" }, 500);
+  const db = createDb(c.env.DATABASE_URL);
+
+  const existing = await db
+    .select()
+    .from(users)
+    .where(eq(users.id, id))
+    .limit(1)
+    .then((r) => r[0]);
+  if (!existing) return c.json({ ok: false, error: "not_found" }, 404);
+
+  c.get("auditCapture")?.({ user: existing });
+
+  if (existing.deletedAt !== null) {
+    await db
+      .update(users)
+      .set({ deletedAt: null, updatedAt: new Date() })
+      .where(eq(users.id, id));
+  }
+  c.set("auditAction", "users.restore");
+  c.set("auditTarget", { type: "users", id });
+  return c.json({ ok: true });
+});
+
+const mergeBodySchema = z.object({
+  targetUserId: z.uuid(),
+  promotedFields: z
+    .array(
+      z.enum(
+        PROMOTABLE_PROFILE_FIELDS as unknown as readonly [
+          PromotableField,
+          ...PromotableField[]
+        ]
+      )
+    )
+    .default([]),
+  reason: z.string().max(280).optional(),
+});
+
+/**
+ * POST /api/admin/users/:id/merge
+ *
+ * Source = :id (the URL user), target = body.targetUserId.
+ * Super-admin only via canMergeUsers (the parent canEditMembers gate is broader).
+ */
+adminUsersByIdRoute.post(
+  "/merge",
+  requirePolicy(canMergeUsers, () => undefined),
+  zValidator("json", mergeBodySchema, (result, c) => {
+    if (!result.success) {
+      return c.json(
+        { ok: false, error: "invalid_input", issues: result.error.issues },
+        400
+      );
+    }
+  }),
+  async (c) => {
+    const id = c.req.param("id");
+    if (!id || !/^[0-9a-f-]{36}$/i.test(id)) {
+      return c.json({ ok: false, error: "invalid_input" }, 400);
+    }
+    if (!c.env.DATABASE_URL)
+      return c.json({ ok: false, error: "internal" }, 500);
+    const db = createDb(c.env.DATABASE_URL);
+    const actor = c.get("actor")!;
+    const body = c.req.valid("json");
+
+    const req = {
+      sourceUserId: id,
+      targetUserId: body.targetUserId,
+      mergedByUserId: actor.user.id,
+      promotedFields: body.promotedFields,
+      reason: body.reason,
+    };
+
+    const err = await validateMerge(db, req);
+    if (err)
+      return c.json(
+        { ok: false, error: err.error, message: err.message },
+        err.status
+      );
+
+    const snapshot = await buildMergeSnapshot(db, req);
+    c.get("auditCapture")?.({ source: snapshot.source, target: snapshot.target });
+
+    const result = await executeMerge(db, snapshot, req);
+
+    c.set("auditAction", "users.merge");
+    // auditTarget is the SURVIVING (canonical) user; sourceUserId lives in
+    // payload below so source-side history queries can still find this row
+    // via a payload->>'sourceUserId' = $id filter.
+    c.set("auditTarget", { type: "users", id: req.targetUserId });
+    c.set("auditPayload", {
+      mergeId: result.mergeId,
+      sourceUserId: req.sourceUserId,
+      targetUserId: req.targetUserId,
+      promotedFieldCount: req.promotedFields.length,
+      conflictCount: result.conflicts.length,
+      reason: req.reason ?? null,
+    });
+
+    return c.json({ ok: true, mergeId: result.mergeId });
+  }
+);
+
+const unmergeBodySchema = z.object({
+  mergeId: z.uuid(),
+});
+
+/**
+ * POST /api/admin/users/:id/unmerge
+ *
+ * :id is unused (admin app convention — every action sits under the user's
+ * URL) but the body's mergeId drives the operation.
+ */
+adminUsersByIdRoute.post(
+  "/unmerge",
+  requirePolicy(canMergeUsers, () => undefined),
+  zValidator("json", unmergeBodySchema, (result, c) => {
+    if (!result.success) {
+      return c.json(
+        { ok: false, error: "invalid_input", issues: result.error.issues },
+        400
+      );
+    }
+  }),
+  async (c) => {
+    if (!c.env.DATABASE_URL)
+      return c.json({ ok: false, error: "internal" }, 500);
+    const db = createDb(c.env.DATABASE_URL);
+    const actor = c.get("actor")!;
+    const body = c.req.valid("json");
+
+    const result = await executeUnmerge(db, {
+      mergeId: body.mergeId,
+      revertedByUserId: actor.user.id,
+    });
+    if ("error" in result) {
+      return c.json(
+        { ok: false, error: result.error, message: result.message },
+        result.status
+      );
+    }
+
+    c.set("auditAction", "users.unmerge");
+    c.set("auditTarget", { type: "user_merges", id: result.mergeId });
+    c.set("auditPayload", { mergeId: result.mergeId });
+
+    return c.json({ ok: true, mergeId: result.mergeId });
   }
 );
