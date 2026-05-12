@@ -14,6 +14,7 @@ import { requirePolicy } from "../../../middleware/policy";
 import { findSimilarApproved } from "../../../lib/admin/vocabSimilarity";
 import { isVocabKind, vocabTableFor, type VocabKind } from "../../../lib/admin/vocabTables";
 import type { AppEnv } from "../../../types";
+import { adminVocabByKindIdRoute } from "./byKindId";
 
 export const adminVocabRoute = new Hono<AppEnv>();
 
@@ -320,3 +321,5 @@ async function loadSuggesters(
   }
   return out;
 }
+
+adminVocabRoute.route("/:kind/:id", adminVocabByKindIdRoute);
