@@ -5,23 +5,6 @@ interface SidebarProps {
   sections: NavSection[];
 }
 
-/** Arabic section numbers (00..08) → Roman ordinals for the register. */
-function toRoman(n: number): string {
-  const numerals: Array<[number, string]> = [
-    [10, "X"], [9, "IX"], [5, "V"], [4, "IV"], [1, "I"],
-  ];
-  if (n === 0) return "—"; // Dashboard has no register number
-  let result = "";
-  let rest = n;
-  for (const [val, sym] of numerals) {
-    while (rest >= val) {
-      result += sym;
-      rest -= val;
-    }
-  }
-  return result;
-}
-
 export function Sidebar({ sections }: SidebarProps) {
   const top = sections.filter((s) => s.number === "00");
   const curation = sections.filter((s) => /^0[1-6]$/.test(s.number));
@@ -69,8 +52,6 @@ function Divider() {
 }
 
 function SidebarItem({ section }: { section: NavSection }) {
-  const arabic = parseInt(section.number, 10);
-  const roman = toRoman(arabic);
   return (
     <li>
       <NavLink
@@ -102,9 +83,9 @@ function SidebarItem({ section }: { section: NavSection }) {
               className="font-mono text-[10px] tracking-[0.2em] tabular-nums w-6 inline-block"
               style={{ color: isActive ? "var(--admin-ribbon)" : "var(--admin-marginalia)" }}
             >
-              {roman}
+              {section.number}
             </span>
-            <span className="flex-1 font-display tracking-tight">{section.label}</span>
+            <span className="flex-1 tracking-tight">{section.label}</span>
           </>
         )}
       </NavLink>

@@ -86,15 +86,7 @@ export function SignInPage() {
           <button
             type="button"
             onClick={() => signIn()}
-            className="group relative inline-flex items-center gap-3 px-6 py-3 transition-all"
-            style={{
-              background: "var(--admin-ink)",
-              color: "var(--admin-paper)",
-              fontFamily: "var(--font-display)",
-              fontWeight: 600,
-              fontSize: "15px",
-              letterSpacing: "0.02em",
-            }}
+            className="group relative inline-flex items-center gap-3 px-6 py-3 rounded-md bg-purple-500 text-white font-semibold text-sm shadow-sm transition-colors hover:bg-purple-600"
           >
             <span>Sign in</span>
             <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>

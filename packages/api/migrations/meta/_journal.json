@@ -92,6 +92,20 @@
       "when": 1778335446012,
       "tag": "0012_role_staff",
       "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1778534389381,
+      "tag": "0013_user_merges",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1778560760081,
+      "tag": "0014_duplicate_dismissals",
+      "breakpoints": true
     }
   ]
 }

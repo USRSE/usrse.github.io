@@ -5,20 +5,20 @@
  */
 
 :root {
-  /* Paper-tone surfaces — warm off-white instead of pure white. */
-  --admin-paper: #faf7ef;
-  --admin-paper-edge: #f1ede1;
-  --admin-paper-deep: #ebe6d7;
+  /* Surfaces — aligned to the web app's white-on-cool-neutral palette. */
+  --admin-paper: #ffffff;
+  --admin-paper-edge: var(--color-neutral-50);
+  --admin-paper-deep: var(--color-neutral-100);
 
-  /* Ink — deep near-black for ink-on-paper feeling. */
-  --admin-ink: #1a1916;
-  --admin-ink-medium: #57534a;
-  --admin-ink-soft: #8a857a;
-  --admin-marginalia: #a8a293;
+  /* Ink — cool neutrals matching web app's text scale. */
+  --admin-ink: var(--color-neutral-900);
+  --admin-ink-medium: var(--color-neutral-600);
+  --admin-ink-soft: var(--color-neutral-500);
+  --admin-marginalia: var(--color-neutral-400);
 
-  /* Rule lines — hairline dividers. */
-  --admin-rule: #c9c2b3;
-  --admin-rule-subtle: #e6e0d2;
+  /* Rule lines — hairline dividers, cool-toned to match web. */
+  --admin-rule: var(--color-neutral-200);
+  --admin-rule-subtle: var(--color-neutral-100);
 
   /* Accents — used sparingly, as ribbon. */
   --admin-ribbon: var(--color-purple-500);
@@ -43,8 +43,6 @@
   }
   body {
     color: var(--admin-ink);
-    /* Tabular figures by default so any number column aligns. */
-    font-feature-settings: "tnum", "ss01";
   }
   /* Display headlines get old-style figures for the literary feel. */
   h1, h2, h3, .font-display {

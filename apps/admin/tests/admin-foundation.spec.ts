@@ -17,3 +17,14 @@ test("the auth callback path renders without crashing", async ({ page }) => {
   await page.goto("/auth/callback");
   await expect(page.getByText(/signing you in/i)).toBeVisible();
 });
+
+test("unauthenticated visit to /members triggers sign-in flow", async ({ page }) => {
+  await page.goto("/members");
+  // Auto-redirect kicks in; expect Connecting to WorkOS text (or sign-in card).
+  await expect(page.getByText(/connecting to workos|sign in/i)).toBeVisible();
+});
+
+test("the duplicates page renders its sign-in surface unauthenticated", async ({ page }) => {
+  await page.goto("/members/duplicates");
+  await expect(page.getByText(/connecting to workos|sign in/i)).toBeVisible();
+});
