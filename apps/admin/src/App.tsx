@@ -9,6 +9,7 @@ import { DashboardPage } from "./pages/DashboardPage";
 import { AuditPage } from "./pages/AuditPage";
 import { MembersListPage } from "./pages/members/MembersListPage";
 import { MemberDetailPage } from "./pages/members/MemberDetailPage";
+import { DuplicatesPage } from "./pages/members/DuplicatesPage";
 
 export function App() {
   const { user: workosUser, isLoading: authLoading } = useAuth();
@@ -39,6 +40,7 @@ export function App() {
       <Route element={<AdminShell actor={actor.actor} />}>
         <Route index element={<DashboardPage />} />
         <Route path="members" element={<MembersListPage />} />
+        <Route path="members/duplicates" element={<DuplicatesPage />} />
         <Route path="members/:id" element={<MemberDetailPage />} />
         <Route path="organizations" element={<ComingSoon number="02" label="Organizations" blurb="Org details, logo uploads, recurring memberships, and per-event sponsorships. Schema is in; UI is next." />} />
         <Route path="vocab" element={<ComingSoon number="03" label="Vocab queue" blurb="Approve or reject pending disciplines, skills, languages, and organizations that members propose from their dossiers." />} />
