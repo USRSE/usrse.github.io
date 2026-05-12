@@ -10,11 +10,20 @@ interface AuditRow {
   createdAt: string;
 }
 
+interface RegisterTotals {
+  members: number | null;
+  organizations: number | null;
+}
+
 export function DashboardPage() {
   const actor = useShellActor();
   const apiFetch = useApi();
   const [recentAudit, setRecentAudit] = useState<AuditRow[] | null>(null);
   const [auditError, setAuditError] = useState<string | null>(null);
+  const [totals, setTotals] = useState<RegisterTotals>({
+    members: null,
+    organizations: null,
+  });
 
   useEffect(() => {
     if (actor.systemTier < 2) return;
@@ -29,6 +38,37 @@ export function DashboardPage() {
       } catch (e) {
         if (cancelled) return;
         setAuditError(e instanceof Error ? e.message : String(e));
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [actor.systemTier, apiFetch]);
+
+  // Register totals — only staff+ see Members / Organizations in the
+  // sidebar, so we also gate the dashboard counts the same way to
+  // avoid 403s for plain members. limit=1 keeps the response tiny;
+  // we only care about the total field.
+  useEffect(() => {
+    if (actor.systemTier < 1) return;
+    let cancelled = false;
+    void (async () => {
+      try {
+        const [usersRes, orgsRes] = await Promise.all([
+          apiFetch("/admin/users?limit=1"),
+          apiFetch("/admin/organizations?limit=1"),
+        ]);
+        if (cancelled) return;
+        const next: RegisterTotals = { members: null, organizations: null };
+        if (usersRes.ok) {
+          const body = (await usersRes.json()) as { total?: number };
+          if (typeof body.total === "number") next.members = body.total;
+        }
+        if (orgsRes.ok) {
+          const body = (await orgsRes.json()) as { total?: number };
+          if (typeof body.total === "number") next.organizations = body.total;
+        }
+        if (!cancelled) setTotals(next);
+      } catch {
+        /* totals are a glance affordance, not load-bearing — swallow */
       }
     })();
     return () => { cancelled = true; };
@@ -56,6 +96,31 @@ export function DashboardPage() {
           )}.
         </p>
       </div>
+
+      {actor.systemTier >= 1 && (
+        <section className="mt-16">
+          <p className="admin-classification mb-6">Register · Totals</p>
+          <div
+            className="grid grid-cols-2 gap-px"
+            style={{
+              borderTop: "1px solid var(--admin-rule)",
+              borderBottom: "1px solid var(--admin-rule)",
+              background: "var(--admin-rule-subtle)",
+            }}
+          >
+            <TotalTile
+              eyebrow="α · Members"
+              total={totals.members}
+              to="/members"
+            />
+            <TotalTile
+              eyebrow="β · Organizations"
+              total={totals.organizations}
+              to="/organizations"
+            />
+          </div>
+        </section>
+      )}
 
       {actor.systemTier >= 2 && (
         <section className="mt-16">
@@ -121,5 +186,56 @@ export function DashboardPage() {
         </section>
       )}
     </div>
+  );
+}
+
+/**
+ * Single-stat tile for the dashboard register-totals strip. The number
+ * is the visual anchor; the eyebrow names the register; the tile is
+ * itself the affordance to drill into the corresponding list page.
+ * Editorial sparse: oversized tabular figure, mono eyebrow, ribbon-on-
+ * hover so the link semantics are obvious without explicit chrome.
+ */
+function TotalTile({
+  eyebrow,
+  total,
+  to,
+}: {
+  eyebrow: string;
+  total: number | null;
+  to: string;
+}) {
+  return (
+    <Link
+      to={to}
+      className="group block p-8 transition-colors"
+      style={{ background: "var(--admin-paper)" }}
+    >
+      <p
+        className="admin-classification mb-4 transition-colors group-hover:text-[color:var(--admin-ribbon)]"
+        style={{ color: "var(--admin-marginalia)" }}
+      >
+        {eyebrow}
+      </p>
+      <p
+        className="font-display font-semibold tabular-nums leading-none"
+        style={{
+          fontSize: "clamp(2.5rem, 4vw, 4rem)",
+          color: "var(--admin-ink)",
+        }}
+      >
+        {total === null ? (
+          <span style={{ color: "var(--admin-marginalia)" }}>—</span>
+        ) : (
+          total.toLocaleString()
+        )}
+      </p>
+      <p
+        className="admin-classification mt-4 transition-colors group-hover:text-[color:var(--admin-ribbon)]"
+        style={{ color: "var(--admin-ink-medium)" }}
+      >
+        Browse register →
+      </p>
+    </Link>
   );
 }

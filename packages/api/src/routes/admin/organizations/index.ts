@@ -52,26 +52,29 @@ adminOrganizationsRoute.get("/", async (c) => {
     200
   );
 
-  const conditions: SQL[] = [];
+  // Filter vs page conditions split — same rationale as the users list:
+  // the COUNT(*) should reflect the full filtered set, not the current
+  // pagination cut.
+  const filterConditions: SQL[] = [];
 
   if (status === "active") {
-    conditions.push(isNull(organizations.deletedAt));
-    conditions.push(isNull(organizations.mergedIntoId));
+    filterConditions.push(isNull(organizations.deletedAt));
+    filterConditions.push(isNull(organizations.mergedIntoId));
   } else if (status === "merged") {
-    conditions.push(isNotNull(organizations.mergedIntoId));
+    filterConditions.push(isNotNull(organizations.mergedIntoId));
   } else if (status === "deleted") {
-    conditions.push(isNotNull(organizations.deletedAt));
+    filterConditions.push(isNotNull(organizations.deletedAt));
   }
 
   if (vocab === "pending") {
-    conditions.push(eq(organizations.status, "pending"));
+    filterConditions.push(eq(organizations.status, "pending"));
   } else if (vocab === "approved") {
-    conditions.push(eq(organizations.status, "approved"));
+    filterConditions.push(eq(organizations.status, "approved"));
   }
 
   if (q.trim()) {
     const needle = `%${q.trim()}%`;
-    conditions.push(
+    filterConditions.push(
       or(
         ilike(organizations.name, needle),
         ilike(organizations.slug, needle),
@@ -81,8 +84,9 @@ adminOrganizationsRoute.get("/", async (c) => {
     );
   }
 
+  const pageConditions: SQL[] = [...filterConditions];
   if (cursor) {
-    conditions.push(sql`${organizations.id} > ${cursor}`);
+    pageConditions.push(sql`${organizations.id} > ${cursor}`);
   }
 
   // Subquery for member counts. Drizzle's relational API can't express
@@ -93,26 +97,32 @@ adminOrganizationsRoute.get("/", async (c) => {
     WHERE ${userOrganizations.organizationId} = ${organizations.id}
   )`;
 
-  const rows = await db
-    .select({
-      id: organizations.id,
-      name: organizations.name,
-      slug: organizations.slug,
-      shortName: organizations.shortName,
-      url: organizations.url,
-      logoUrl: organizations.logoUrl,
-      logoMarkUrl: organizations.logoMarkUrl,
-      logoUsageConsent: organizations.logoUsageConsent,
-      status: organizations.status,
-      mergedIntoId: organizations.mergedIntoId,
-      deletedAt: organizations.deletedAt,
-      createdAt: organizations.createdAt,
-      memberCount: memberCountExpr,
-    })
-    .from(organizations)
-    .where(conditions.length ? and(...conditions) : undefined)
-    .orderBy(asc(organizations.id))
-    .limit(limit + 1);
+  const [rows, [{ count: total }]] = await Promise.all([
+    db
+      .select({
+        id: organizations.id,
+        name: organizations.name,
+        slug: organizations.slug,
+        shortName: organizations.shortName,
+        url: organizations.url,
+        logoUrl: organizations.logoUrl,
+        logoMarkUrl: organizations.logoMarkUrl,
+        logoUsageConsent: organizations.logoUsageConsent,
+        status: organizations.status,
+        mergedIntoId: organizations.mergedIntoId,
+        deletedAt: organizations.deletedAt,
+        createdAt: organizations.createdAt,
+        memberCount: memberCountExpr,
+      })
+      .from(organizations)
+      .where(pageConditions.length ? and(...pageConditions) : undefined)
+      .orderBy(asc(organizations.id))
+      .limit(limit + 1),
+    db
+      .select({ count: sql<number>`COUNT(*)::int` })
+      .from(organizations)
+      .where(filterConditions.length ? and(...filterConditions) : undefined),
+  ]);
 
   const hasMore = rows.length > limit;
   const page = hasMore ? rows.slice(0, limit) : rows;
@@ -127,6 +137,7 @@ adminOrganizationsRoute.get("/", async (c) => {
       deletedAt:
         r.deletedAt instanceof Date ? r.deletedAt.toISOString() : r.deletedAt,
     })),
+    total,
     nextCursor,
   });
 });

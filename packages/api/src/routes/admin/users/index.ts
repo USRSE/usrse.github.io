@@ -44,28 +44,31 @@ adminUsersRoute.get("/", async (c) => {
     200
   );
 
-  const conditions: SQL[] = [];
+  // Filter conditions — apply identically to the COUNT and to the page
+  // query. The cursor is NOT a filter; it's a pagination cut, so it's
+  // appended in a separate list used only for the page query.
+  const filterConditions: SQL[] = [];
 
   if (status === "active") {
-    conditions.push(isNull(users.deletedAt));
-    conditions.push(isNull(users.mergedIntoUserId));
+    filterConditions.push(isNull(users.deletedAt));
+    filterConditions.push(isNull(users.mergedIntoUserId));
   } else if (status === "merged") {
-    conditions.push(isNotNull(users.mergedIntoUserId));
+    filterConditions.push(isNotNull(users.mergedIntoUserId));
   } else if (status === "deleted") {
-    conditions.push(isNotNull(users.deletedAt));
+    filterConditions.push(isNotNull(users.deletedAt));
   }
 
   if (role && (role === "member" || role === "staff" || role === "super_admin")) {
-    conditions.push(eq(users.role, role));
+    filterConditions.push(eq(users.role, role));
   }
   if (hasProfile === "true") {
-    conditions.push(isNotNull(profiles.id));
+    filterConditions.push(isNotNull(profiles.id));
   } else if (hasProfile === "false") {
-    conditions.push(isNull(profiles.id));
+    filterConditions.push(isNull(profiles.id));
   }
   if (q.trim()) {
     const needle = `%${q.trim()}%`;
-    conditions.push(
+    filterConditions.push(
       or(
         ilike(profiles.displayName, needle),
         ilike(users.email, needle),
@@ -73,30 +76,41 @@ adminUsersRoute.get("/", async (c) => {
       )!
     );
   }
+
+  const pageConditions: SQL[] = [...filterConditions];
   if (cursor) {
     // Cursor is the last user's id; we paginate alphabetically by id for
     // a stable order.
-    conditions.push(sql`${users.id} > ${cursor}`);
+    pageConditions.push(sql`${users.id} > ${cursor}`);
   }
 
-  const rows = await db
-    .select({
-      id: users.id,
-      memberId: users.memberId,
-      email: users.email,
-      role: users.role,
-      mergedIntoUserId: users.mergedIntoUserId,
-      deletedAt: users.deletedAt,
-      isLegacyImport: users.isLegacyImport,
-      createdAt: users.createdAt,
-      displayName: profiles.displayName,
-      photoUrl: profiles.photoUrl,
-    })
-    .from(users)
-    .leftJoin(profiles, eq(profiles.userId, users.id))
-    .where(conditions.length ? and(...conditions) : undefined)
-    .orderBy(asc(users.id))
-    .limit(limit + 1);
+  // Total + page run in parallel — same join shape so the planner
+  // reuses the same plan.
+  const [rows, [{ count: total }]] = await Promise.all([
+    db
+      .select({
+        id: users.id,
+        memberId: users.memberId,
+        email: users.email,
+        role: users.role,
+        mergedIntoUserId: users.mergedIntoUserId,
+        deletedAt: users.deletedAt,
+        isLegacyImport: users.isLegacyImport,
+        createdAt: users.createdAt,
+        displayName: profiles.displayName,
+        photoUrl: profiles.photoUrl,
+      })
+      .from(users)
+      .leftJoin(profiles, eq(profiles.userId, users.id))
+      .where(pageConditions.length ? and(...pageConditions) : undefined)
+      .orderBy(asc(users.id))
+      .limit(limit + 1),
+    db
+      .select({ count: sql<number>`COUNT(*)::int` })
+      .from(users)
+      .leftJoin(profiles, eq(profiles.userId, users.id))
+      .where(filterConditions.length ? and(...filterConditions) : undefined),
+  ]);
 
   const hasMore = rows.length > limit;
   const page = hasMore ? rows.slice(0, limit) : rows;
@@ -111,6 +125,7 @@ adminUsersRoute.get("/", async (c) => {
       deletedAt:
         r.deletedAt instanceof Date ? r.deletedAt.toISOString() : r.deletedAt,
     })),
+    total,
     nextCursor,
   });
 });

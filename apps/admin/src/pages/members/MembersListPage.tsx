@@ -28,6 +28,7 @@ export function MembersListPage() {
   const [rows, setRows] = useState<MemberRow[]>([]);
   const [cursor, setCursor] = useState<string | null>(null);
   const [hasMore, setHasMore] = useState(false);
+  const [total, setTotal] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -45,10 +46,11 @@ export function MembersListPage() {
     try {
       const res = await apiFetch(`/admin/users?${sp}`);
       if (!res.ok) { setError(`/admin/users responded ${res.status}`); return; }
-      const body = (await res.json()) as { ok: true; rows: MemberRow[]; nextCursor: string | null };
+      const body = (await res.json()) as { ok: true; rows: MemberRow[]; total?: number; nextCursor: string | null };
       setRows((prev) => (nextCursor ? [...prev, ...body.rows] : body.rows));
       setCursor(body.nextCursor);
       setHasMore(Boolean(body.nextCursor));
+      if (typeof body.total === "number") setTotal(body.total);
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
     } finally { setLoading(false); }
@@ -69,11 +71,21 @@ export function MembersListPage() {
         <h2 className="admin-display" style={{ fontSize: "clamp(2rem, 3vw + 0.5rem, 3rem)" }}>
           Members.
         </h2>
-        {actor.systemTier >= 2 && (
-          <Link to="/members/duplicates" className="admin-classification" style={{ color: "var(--admin-ribbon)" }}>
-            Find duplicates →
-          </Link>
-        )}
+        <div className="flex items-baseline gap-6 ml-auto">
+          {total !== null && (
+            <span
+              className="admin-classification tabular-nums"
+              style={{ color: "var(--admin-marginalia)" }}
+            >
+              {total.toLocaleString()} total
+            </span>
+          )}
+          {actor.systemTier >= 2 && (
+            <Link to="/members/duplicates" className="admin-classification" style={{ color: "var(--admin-ribbon)" }}>
+              Find duplicates →
+            </Link>
+          )}
+        </div>
       </div>
 
       <div className="flex items-baseline gap-6 mb-6">

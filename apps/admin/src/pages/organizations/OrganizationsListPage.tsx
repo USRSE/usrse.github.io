@@ -30,6 +30,7 @@ export function OrganizationsListPage() {
   const [rows, setRows] = useState<OrgRow[]>([]);
   const [cursor, setCursor] = useState<string | null>(null);
   const [hasMore, setHasMore] = useState(false);
+  const [total, setTotal] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -54,11 +55,13 @@ export function OrganizationsListPage() {
         const body = (await res.json()) as {
           ok: true;
           rows: OrgRow[];
+          total?: number;
           nextCursor: string | null;
         };
         setRows((prev) => (nextCursor ? [...prev, ...body.rows] : body.rows));
         setCursor(body.nextCursor);
         setHasMore(Boolean(body.nextCursor));
+        if (typeof body.total === "number") setTotal(body.total);
       } catch (e) {
         setError(e instanceof Error ? e.message : String(e));
       } finally {
@@ -89,15 +92,25 @@ export function OrganizationsListPage() {
         >
           Organizations.
         </h2>
-        {actor.systemTier >= 2 && (
-          <Link
-            to="/organizations/duplicates"
-            className="admin-classification"
-            style={{ color: "var(--admin-ribbon)" }}
-          >
-            Find duplicates →
-          </Link>
-        )}
+        <div className="flex items-baseline gap-6 ml-auto">
+          {total !== null && (
+            <span
+              className="admin-classification tabular-nums"
+              style={{ color: "var(--admin-marginalia)" }}
+            >
+              {total.toLocaleString()} total
+            </span>
+          )}
+          {actor.systemTier >= 2 && (
+            <Link
+              to="/organizations/duplicates"
+              className="admin-classification"
+              style={{ color: "var(--admin-ribbon)" }}
+            >
+              Find duplicates →
+            </Link>
+          )}
+        </div>
       </div>
 
       <div className="flex items-baseline gap-6 mb-6">
