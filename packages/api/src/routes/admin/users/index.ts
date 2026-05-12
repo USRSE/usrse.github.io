@@ -14,6 +14,7 @@ import {
   type CandidateUser,
 } from "../../../lib/admin/duplicateDetection";
 import type { AppEnv } from "../../../types";
+import { adminUsersByIdRoute } from "./byId";
 
 export const adminUsersRoute = new Hono<AppEnv>();
 
@@ -240,3 +241,5 @@ adminUsersRoute.get(
     });
   }
 );
+
+adminUsersRoute.route("/:id", adminUsersByIdRoute);
