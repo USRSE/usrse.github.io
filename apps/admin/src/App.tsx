@@ -13,6 +13,8 @@ import { DuplicatesPage } from "./pages/members/DuplicatesPage";
 import { MergeWizardPage } from "./pages/members/MergeWizardPage";
 import { OrganizationsListPage } from "./pages/organizations/OrganizationsListPage";
 import { OrganizationDetailPage } from "./pages/organizations/OrganizationDetailPage";
+import { OrganizationDuplicatesPage } from "./pages/organizations/OrganizationDuplicatesPage";
+import { OrganizationMergeWizardPage } from "./pages/organizations/OrganizationMergeWizardPage";
 
 export function App() {
   const { user: workosUser, isLoading: authLoading } = useAuth();
@@ -47,6 +49,14 @@ export function App() {
         <Route path="members/duplicates" element={<DuplicatesPage />} />
         <Route path="members/:id" element={<MemberDetailPage />} />
         <Route path="organizations" element={<OrganizationsListPage />} />
+        <Route
+          path="organizations/duplicates/merge"
+          element={<OrganizationMergeWizardPage />}
+        />
+        <Route
+          path="organizations/duplicates"
+          element={<OrganizationDuplicatesPage />}
+        />
         <Route path="organizations/:id" element={<OrganizationDetailPage />} />
         <Route path="vocab" element={<ComingSoon number="03" label="Vocab queue" blurb="Approve or reject pending disciplines, skills, languages, and organizations that members propose from their dossiers." />} />
         <Route path="groups" element={<ComingSoon number="04" label="Groups" blurb="Working, affinity, and regional groups. Chair assignments and group page content lifecycle." />} />

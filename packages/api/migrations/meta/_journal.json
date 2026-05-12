@@ -127,6 +127,13 @@
       "when": 1778880000000,
       "tag": "0017_organization_logo_storage_keys",
       "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1778940000000,
+      "tag": "0018_organization_merges",
+      "breakpoints": true
     }
   ]
 }

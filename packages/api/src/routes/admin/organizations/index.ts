@@ -1,10 +1,20 @@
 import { Hono } from "hono";
 import { and, asc, eq, ilike, isNotNull, isNull, or, sql } from "drizzle-orm";
 import type { SQL } from "drizzle-orm";
+import { zValidator } from "@hono/zod-validator";
+import { z } from "zod";
 import { createDb } from "../../../db";
-import { organizations, userOrganizations } from "../../../db/schema";
-import { canEditOrganizations } from "../../../lib/policies";
+import {
+  organizationDuplicateDismissals,
+  organizations,
+  userOrganizations,
+} from "../../../db/schema";
+import { canEditOrganizations, canMergeOrganizations } from "../../../lib/policies";
 import { requirePolicy } from "../../../middleware/policy";
+import {
+  buildAndScoreOrgPairs,
+  type CandidateOrg,
+} from "../../../lib/admin/orgDuplicateDetection";
 import type { AppEnv } from "../../../types";
 import { adminOrganizationsByIdRoute } from "./byId";
 
@@ -120,5 +130,186 @@ adminOrganizationsRoute.get("/", async (c) => {
     nextCursor,
   });
 });
+
+/**
+ * GET /api/admin/organizations/duplicates
+ *
+ * On-demand duplicate scorer mirroring /admin/users/duplicates. Pulls
+ * every active org, anchors + scores in JS, filters out pairs that
+ * have already been dismissed, returns up to 100 with hydrated card
+ * payloads. super_admin only.
+ */
+adminOrganizationsRoute.get(
+  "/duplicates",
+  requirePolicy(canMergeOrganizations, () => undefined),
+  async (c) => {
+    if (!c.env.DATABASE_URL)
+      return c.json({ ok: false, error: "internal" }, 500);
+    const db = createDb(c.env.DATABASE_URL);
+    try {
+      const memberCountExpr = sql<number>`(
+        SELECT COUNT(*)::int FROM ${userOrganizations}
+        WHERE ${userOrganizations.organizationId} = ${organizations.id}
+      )`;
+
+      const baseRows = await db
+        .select({
+          id: organizations.id,
+          name: organizations.name,
+          slug: organizations.slug,
+          shortName: organizations.shortName,
+          url: organizations.url,
+          status: organizations.status,
+          memberCount: memberCountExpr,
+        })
+        .from(organizations)
+        .where(
+          and(
+            isNull(organizations.deletedAt),
+            isNull(organizations.mergedIntoId)
+          )
+        );
+
+      const candidates: CandidateOrg[] = baseRows.map((r) => ({
+        id: r.id,
+        name: r.name,
+        slug: r.slug,
+        shortName: r.shortName,
+        url: r.url,
+        status: r.status,
+        memberCount: r.memberCount,
+      }));
+
+      const allPairs = buildAndScoreOrgPairs(candidates, { limit: 1000 });
+
+      const dismissalRows = await db
+        .select({
+          organizationAId: organizationDuplicateDismissals.organizationAId,
+          organizationBId: organizationDuplicateDismissals.organizationBId,
+        })
+        .from(organizationDuplicateDismissals);
+      const dismissedKeys = new Set(
+        dismissalRows.map((d) => `${d.organizationAId}|${d.organizationBId}`)
+      );
+      const pairs = allPairs
+        .filter((p) => {
+          const key =
+            p.a.id < p.b.id
+              ? `${p.a.id}|${p.b.id}`
+              : `${p.b.id}|${p.a.id}`;
+          return !dismissedKeys.has(key);
+        })
+        .slice(0, 100);
+
+      return c.json({
+        ok: true,
+        dismissedCount: dismissedKeys.size,
+        pairs: pairs.map((p) => ({
+          score: p.score,
+          tier: p.tier,
+          signals: p.signals,
+          organizations: [
+            {
+              id: p.a.id,
+              name: p.a.name,
+              slug: p.a.slug,
+              shortName: p.a.shortName,
+              url: p.a.url,
+              status: p.a.status,
+              memberCount: p.a.memberCount,
+            },
+            {
+              id: p.b.id,
+              name: p.b.name,
+              slug: p.b.slug,
+              shortName: p.b.shortName,
+              url: p.b.url,
+              status: p.b.status,
+              memberCount: p.b.memberCount,
+            },
+          ],
+        })),
+      });
+    } catch (err) {
+      const isDev = (c.env.GIT_SHA ?? "dev") === "dev";
+      const message = err instanceof Error ? err.message : String(err);
+      const stack = err instanceof Error ? err.stack : undefined;
+      console.error("[/admin/organizations/duplicates]", message, stack);
+      return c.json(
+        {
+          ok: false,
+          error: "duplicates_failed",
+          message: isDev ? message : "internal",
+          ...(isDev && stack ? { stack } : {}),
+        },
+        500
+      );
+    }
+  }
+);
+
+/**
+ * POST /api/admin/organizations/duplicates/dismiss
+ *
+ * Persist a "not a duplicate" decision. Idempotent via the pair
+ * unique index — re-dismissing is a no-op.
+ */
+const dismissOrgDuplicateBodySchema = z.object({
+  organizationAId: z.uuid(),
+  organizationBId: z.uuid(),
+  reason: z.string().max(280).optional(),
+});
+
+adminOrganizationsRoute.post(
+  "/duplicates/dismiss",
+  requirePolicy(canMergeOrganizations, () => undefined),
+  zValidator("json", dismissOrgDuplicateBodySchema, (result, c) => {
+    if (!result.success) {
+      return c.json(
+        { ok: false, error: "invalid_input", issues: result.error.issues },
+        400
+      );
+    }
+  }),
+  async (c) => {
+    if (!c.env.DATABASE_URL)
+      return c.json({ ok: false, error: "internal" }, 500);
+    const db = createDb(c.env.DATABASE_URL);
+    const actor = c.get("actor")!;
+    const body = c.req.valid("json");
+    if (body.organizationAId === body.organizationBId) {
+      return c.json(
+        {
+          ok: false,
+          error: "invalid_input",
+          message: "Cannot dismiss a pair with itself.",
+        },
+        400
+      );
+    }
+    const [a, b] =
+      body.organizationAId < body.organizationBId
+        ? [body.organizationAId, body.organizationBId]
+        : [body.organizationBId, body.organizationAId];
+    await db
+      .insert(organizationDuplicateDismissals)
+      .values({
+        organizationAId: a,
+        organizationBId: b,
+        dismissedByUserId: actor.user.id,
+        reason: body.reason ?? null,
+      })
+      .onConflictDoNothing();
+
+    c.set("auditAction", "organizations.duplicate_dismiss");
+    c.set("auditTarget", { type: "organizations", id: a });
+    c.set("auditPayload", {
+      organizationAId: a,
+      organizationBId: b,
+      reason: body.reason ?? null,
+    });
+    return c.json({ ok: true });
+  }
+);
 
 adminOrganizationsRoute.route("/:id", adminOrganizationsByIdRoute);

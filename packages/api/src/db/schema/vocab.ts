@@ -3,6 +3,7 @@ import {
   char,
   index,
   integer,
+  jsonb,
   pgTable,
   text,
   timestamp,
@@ -259,3 +260,107 @@ export const organizationsRelations = relations(organizations, ({ one }) => ({
     relationName: "organization_merge",
   }),
 }));
+
+/**
+ * Audit row for an organization merge. Parallel to user_merges — every
+ * org merge writes one of these inside the same transaction so a
+ * reverse can walk the manifest. repointedRows shape mirrors what
+ * userMerges stores: { toRepoint: {...}, conflicts: [...] }.
+ */
+export const organizationMerges = pgTable(
+  "organization_merges",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    sourceOrganizationId: uuid("source_organization_id")
+      .notNull()
+      .references((): any => organizations.id, { onDelete: "restrict" }),
+    targetOrganizationId: uuid("target_organization_id")
+      .notNull()
+      .references((): any => organizations.id, { onDelete: "restrict" }),
+    mergedByUserId: uuid("merged_by_user_id").references(() => users.id, {
+      onDelete: "set null",
+    }),
+    reason: text("reason"),
+    repointedRows: jsonb("repointed_rows").notNull(),
+    promotedFields: jsonb("promoted_fields")
+      .notNull()
+      .default(sql`'{}'::jsonb`),
+    revertedAt: timestamp("reverted_at", { withTimezone: true }),
+    revertedByUserId: uuid("reverted_by_user_id").references(() => users.id, {
+      onDelete: "set null",
+    }),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [
+    index("organization_merges_source_idx").on(t.sourceOrganizationId),
+    index("organization_merges_target_idx").on(t.targetOrganizationId),
+    index("organization_merges_merged_by_idx").on(t.mergedByUserId),
+    index("organization_merges_created_at_idx").on(t.createdAt),
+    index("organization_merges_active_source_idx")
+      .on(t.sourceOrganizationId)
+      .where(sql`reverted_at IS NULL`),
+  ]
+);
+
+export const organizationMergesRelations = relations(
+  organizationMerges,
+  ({ one }) => ({
+    sourceOrganization: one(organizations, {
+      fields: [organizationMerges.sourceOrganizationId],
+      references: [organizations.id],
+      relationName: "org_merge_source",
+    }),
+    targetOrganization: one(organizations, {
+      fields: [organizationMerges.targetOrganizationId],
+      references: [organizations.id],
+      relationName: "org_merge_target",
+    }),
+    mergedBy: one(users, {
+      fields: [organizationMerges.mergedByUserId],
+      references: [users.id],
+      relationName: "org_merge_merged_by",
+    }),
+    revertedBy: one(users, {
+      fields: [organizationMerges.revertedByUserId],
+      references: [users.id],
+      relationName: "org_merge_reverted_by",
+    }),
+  })
+);
+
+/**
+ * Persisted "not a duplicate" decisions for the org-side admin queue —
+ * parallel to duplicate_dismissals. Pairs are canonical-ordered
+ * (organization_a_id < organization_b_id by UUID string compare) so
+ * the unique index catches both orientations.
+ */
+export const organizationDuplicateDismissals = pgTable(
+  "organization_duplicate_dismissals",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    organizationAId: uuid("organization_a_id")
+      .notNull()
+      .references((): any => organizations.id, { onDelete: "cascade" }),
+    organizationBId: uuid("organization_b_id")
+      .notNull()
+      .references((): any => organizations.id, { onDelete: "cascade" }),
+    dismissedByUserId: uuid("dismissed_by_user_id").references(
+      () => users.id,
+      { onDelete: "set null" }
+    ),
+    reason: text("reason"),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [
+    uniqueIndex("organization_duplicate_dismissals_pair_unique").on(
+      t.organizationAId,
+      t.organizationBId
+    ),
+    index("organization_duplicate_dismissals_a_idx").on(t.organizationAId),
+    index("organization_duplicate_dismissals_b_idx").on(t.organizationBId),
+  ]
+);

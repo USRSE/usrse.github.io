@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { useApi } from "@us-rse/auth-shell";
 import { OrgStatusTag } from "../../components/OrgStatusTag";
+import { useShellActor } from "../../layout/AdminShell";
 
 interface OrgRow {
   id: string;
@@ -24,6 +25,7 @@ type VocabFilter = "all" | "pending" | "approved";
 
 export function OrganizationsListPage() {
   const apiFetch = useApi();
+  const actor = useShellActor();
   const [params, setParams] = useSearchParams();
   const [rows, setRows] = useState<OrgRow[]>([]);
   const [cursor, setCursor] = useState<string | null>(null);
@@ -87,6 +89,15 @@ export function OrganizationsListPage() {
         >
           Organizations.
         </h2>
+        {actor.systemTier >= 2 && (
+          <Link
+            to="/organizations/duplicates"
+            className="admin-classification"
+            style={{ color: "var(--admin-ribbon)" }}
+          >
+            Find duplicates →
+          </Link>
+        )}
       </div>
 
       <div className="flex items-baseline gap-6 mb-6">

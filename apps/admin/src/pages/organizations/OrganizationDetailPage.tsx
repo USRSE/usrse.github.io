@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useApi } from "@us-rse/auth-shell";
 import { EditorialInput } from "../../components/EditorialInput";
 import { OrgStatusTag } from "../../components/OrgStatusTag";
+import { useShellActor } from "../../layout/AdminShell";
 
 type LogoVariant = "main" | "dark" | "mark";
 
@@ -47,6 +48,23 @@ interface DetailResponse {
     targetId: string;
     createdAt: string;
   }>;
+  merges: {
+    inbound: Array<{
+      id: string;
+      sourceOrganizationId: string;
+      mergedByUserId: string | null;
+      createdAt: string;
+      revertedAt: string | null;
+      reason: string | null;
+    }>;
+    outbound: {
+      id: string;
+      targetOrganizationId: string;
+      createdAt: string;
+      revertedAt: string | null;
+      reason: string | null;
+    } | null;
+  };
 }
 
 type Tab = "identity" | "members" | "branding" | "status";
@@ -60,7 +78,9 @@ interface Draft {
 
 export function OrganizationDetailPage() {
   const { id } = useParams<{ id: string }>();
+  const actor = useShellActor();
   const apiFetch = useApi();
+  const navigate = useNavigate();
   const [data, setData] = useState<DetailResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>("identity");
@@ -72,6 +92,15 @@ export function OrganizationDetailPage() {
   });
   const [saveError, setSaveError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
+  const [mergeSearch, setMergeSearch] = useState("");
+  const [mergeResults, setMergeResults] = useState<
+    Array<{
+      id: string;
+      name: string;
+      slug: string;
+      shortName: string | null;
+    }>
+  >([]);
 
   const fetchOrg = useCallback(async () => {
     if (!id) return;
@@ -211,6 +240,51 @@ export function OrganizationDetailPage() {
       await fetchOrg();
     } catch (e) {
       setSaveError(e instanceof Error ? e.message : String(e));
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  // Debounced lookup for the "Merge into another org" picker.
+  useEffect(() => {
+    const term = mergeSearch.trim();
+    if (term.length < 2) {
+      setMergeResults([]);
+      return;
+    }
+    const handle = setTimeout(async () => {
+      try {
+        const sp = new URLSearchParams({ q: term, limit: "10", status: "active" });
+        const res = await apiFetch(`/admin/organizations?${sp}`);
+        if (!res.ok) return;
+        const body = (await res.json()) as {
+          rows: Array<{ id: string; name: string; slug: string; shortName: string | null }>;
+        };
+        setMergeResults(body.rows.filter((r) => r.id !== id));
+      } catch {
+        /* picker is convenience-only — swallow */
+      }
+    }, 200);
+    return () => clearTimeout(handle);
+  }, [apiFetch, id, mergeSearch]);
+
+  async function unmerge(mergeId: string) {
+    if (!data) return;
+    if (!window.confirm("Unmerge this organization?")) return;
+    setSaving(true);
+    setSaveError(null);
+    try {
+      const res = await apiFetch(`/admin/organizations/${data.organization.id}/unmerge`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ mergeId }),
+      });
+      if (!res.ok) {
+        const err = (await res.json().catch(() => null)) as { message?: string } | null;
+        setSaveError(err?.message ?? `POST responded ${res.status}`);
+        return;
+      }
+      await fetchOrg();
     } finally {
       setSaving(false);
     }
@@ -530,7 +604,7 @@ export function OrganizationDetailPage() {
             </p>
           </div>
 
-          {o.mergedIntoId && (
+          {data.merges.outbound && (
             <div>
               <p className="admin-classification mb-3">Merged into</p>
               <p
@@ -539,13 +613,130 @@ export function OrganizationDetailPage() {
               >
                 Folded into{" "}
                 <Link
-                  to={`/organizations/${o.mergedIntoId}`}
+                  to={`/organizations/${data.merges.outbound.targetOrganizationId}`}
                   style={{ color: "var(--admin-ribbon)" }}
                 >
-                  {o.mergedIntoId.slice(0, 8)}…
-                </Link>
-                . Org merging UI ships in phase 3.
+                  {data.merges.outbound.targetOrganizationId.slice(0, 8)}…
+                </Link>{" "}
+                on {new Date(data.merges.outbound.createdAt).toLocaleString()}.
               </p>
+            </div>
+          )}
+
+          {data.merges.inbound.length > 0 && (
+            <div>
+              <p className="admin-classification mb-3">Folded-in sources</p>
+              <ul style={{ borderTop: "1px solid var(--admin-rule)" }}>
+                {data.merges.inbound.map((m) => (
+                  <li
+                    key={m.id}
+                    className="py-3 flex items-baseline justify-between"
+                    style={{
+                      borderBottom: "1px solid var(--admin-rule-subtle)",
+                    }}
+                  >
+                    <span
+                      className="font-mono text-[13px]"
+                      style={{ color: "var(--admin-ink-medium)" }}
+                    >
+                      {m.sourceOrganizationId.slice(0, 8)}… ·{" "}
+                      {new Date(m.createdAt).toLocaleString()}
+                      {m.reason && (
+                        <span className="admin-marginalia ml-3">
+                          {m.reason}
+                        </span>
+                      )}
+                      {m.revertedAt && (
+                        <span className="admin-marginalia ml-3 italic">
+                          reverted
+                        </span>
+                      )}
+                    </span>
+                    {!m.revertedAt && actor.systemTier >= 2 && (
+                      <button
+                        type="button"
+                        onClick={() => void unmerge(m.id)}
+                        disabled={saving}
+                        className="admin-classification disabled:opacity-50"
+                        style={{ color: "var(--admin-ribbon)" }}
+                      >
+                        Unmerge →
+                      </button>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {actor.systemTier >= 2 && !o.mergedIntoId && !o.deletedAt && (
+            <div>
+              <p className="admin-classification mb-3">Merge into another organization</p>
+              <p
+                className="text-[13px] mb-3"
+                style={{ color: "var(--admin-ink-medium)" }}
+              >
+                Find the canonical record this org should be folded into.
+                You'll pick which side is canonical and which fields to
+                promote in the next step.
+              </p>
+              <input
+                type="text"
+                placeholder="Search by name, slug, short name, or URL…"
+                value={mergeSearch}
+                onChange={(e) => setMergeSearch(e.target.value)}
+                className="w-full max-w-lg font-mono text-[13px] py-1.5 outline-none bg-transparent"
+                style={{
+                  borderBottom: "1px solid var(--admin-rule)",
+                  color: "var(--admin-ink)",
+                }}
+              />
+              {mergeResults.length > 0 && (
+                <ul
+                  className="mt-4 max-w-2xl"
+                  style={{ borderTop: "1px solid var(--admin-rule-subtle)" }}
+                >
+                  {mergeResults.map((r) => (
+                    <li
+                      key={r.id}
+                      style={{
+                        borderBottom: "1px solid var(--admin-rule-subtle)",
+                      }}
+                    >
+                      <button
+                        type="button"
+                        onClick={() =>
+                          navigate(
+                            `/organizations/duplicates/merge?a=${o.id}&b=${r.id}`
+                          )
+                        }
+                        className="w-full text-left py-3 grid grid-cols-[1fr_minmax(0,1fr)_8rem] gap-4 items-baseline transition-colors hover:bg-[var(--admin-paper-edge)]"
+                      >
+                        <span style={{ color: "var(--admin-ink)" }}>
+                          {r.name}
+                        </span>
+                        <span
+                          className="font-mono text-[12px] truncate"
+                          style={{ color: "var(--admin-ink-medium)" }}
+                        >
+                          {r.slug}
+                        </span>
+                        <span className="admin-marginalia text-right">
+                          {r.shortName ?? ""}
+                        </span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {mergeSearch.trim().length >= 2 && mergeResults.length === 0 && (
+                <p
+                  className="mt-3 text-[13px] italic"
+                  style={{ color: "var(--admin-marginalia)" }}
+                >
+                  No active organizations match that search.
+                </p>
+              )}
             </div>
           )}
 

@@ -5,11 +5,14 @@ import { z } from "zod";
 import { createDb } from "../../../db";
 import {
   auditLog,
+  organizationMerges,
   organizations,
   profiles,
   userOrganizations,
   users,
 } from "../../../db/schema";
+import { canMergeOrganizations } from "../../../lib/policies";
+import { requirePolicy } from "../../../middleware/policy";
 import {
   deleteOrgLogo,
   isLogoHostingConfigured,
@@ -19,6 +22,14 @@ import {
   storeOrgLogoFromUrl,
   type LogoVariant,
 } from "../../../lib/storage-org-logo";
+import {
+  buildOrgMergeSnapshot,
+  executeOrgMerge,
+  executeOrgUnmerge,
+  PROMOTABLE_ORG_FIELDS,
+  validateOrgMerge,
+  type PromotableOrgField,
+} from "../../../lib/admin/orgMerge";
 import type { AppEnv } from "../../../types";
 
 const SLUG_PATTERN = /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
@@ -145,6 +156,37 @@ adminOrganizationsByIdRoute.get("/", async (c) => {
     .orderBy(desc(auditLog.createdAt))
     .limit(20);
 
+  // Inbound merges — this org is the canonical target. Used to render
+  // "Folded-in sources" with unmerge buttons on the detail page.
+  const inboundMerges = await db
+    .select({
+      id: organizationMerges.id,
+      sourceOrganizationId: organizationMerges.sourceOrganizationId,
+      mergedByUserId: organizationMerges.mergedByUserId,
+      createdAt: organizationMerges.createdAt,
+      revertedAt: organizationMerges.revertedAt,
+      reason: organizationMerges.reason,
+    })
+    .from(organizationMerges)
+    .where(eq(organizationMerges.targetOrganizationId, id))
+    .orderBy(desc(organizationMerges.createdAt));
+
+  // Outbound merge — this org was folded into another.
+  const outboundMerge = orgRow.mergedIntoId
+    ? await db
+        .select()
+        .from(organizationMerges)
+        .where(
+          and(
+            eq(organizationMerges.sourceOrganizationId, id),
+            eq(organizationMerges.targetOrganizationId, orgRow.mergedIntoId)
+          )
+        )
+        .orderBy(desc(organizationMerges.createdAt))
+        .limit(1)
+        .then((r) => r[0] ?? null)
+    : null;
+
   return c.json({
     ok: true,
     organization: {
@@ -175,6 +217,30 @@ adminOrganizationsByIdRoute.get("/", async (c) => {
       createdAt:
         a.createdAt instanceof Date ? a.createdAt.toISOString() : a.createdAt,
     })),
+    merges: {
+      inbound: inboundMerges.map((m) => ({
+        ...m,
+        createdAt:
+          m.createdAt instanceof Date ? m.createdAt.toISOString() : m.createdAt,
+        revertedAt:
+          m.revertedAt instanceof Date ? m.revertedAt.toISOString() : m.revertedAt,
+      })),
+      outbound: outboundMerge
+        ? {
+            id: outboundMerge.id,
+            targetOrganizationId: outboundMerge.targetOrganizationId,
+            createdAt:
+              outboundMerge.createdAt instanceof Date
+                ? outboundMerge.createdAt.toISOString()
+                : outboundMerge.createdAt,
+            revertedAt:
+              outboundMerge.revertedAt instanceof Date
+                ? outboundMerge.revertedAt.toISOString()
+                : outboundMerge.revertedAt,
+            reason: outboundMerge.reason,
+          }
+        : null,
+    },
   });
 });
 
@@ -621,3 +687,124 @@ adminOrganizationsByIdRoute.delete("/logo", async (c) => {
 
   return c.json({ ok: true, variant });
 });
+
+// ── Merge / Unmerge ──────────────────────────────────────────────────
+//
+// Source = :id (URL), target = body.targetOrganizationId. Source is
+// folded into target. super_admin only via canMergeOrganizations.
+
+const orgMergeBodySchema = z.object({
+  targetOrganizationId: z.uuid(),
+  promotedFields: z
+    .array(
+      z.enum(
+        PROMOTABLE_ORG_FIELDS as unknown as readonly [
+          PromotableOrgField,
+          ...PromotableOrgField[]
+        ]
+      )
+    )
+    .default([]),
+  reason: z.string().max(280).optional(),
+});
+
+adminOrganizationsByIdRoute.post(
+  "/merge",
+  requirePolicy(canMergeOrganizations, () => undefined),
+  zValidator("json", orgMergeBodySchema, (result, c) => {
+    if (!result.success) {
+      return c.json(
+        { ok: false, error: "invalid_input", issues: result.error.issues },
+        400
+      );
+    }
+  }),
+  async (c) => {
+    const id = c.req.param("id");
+    if (!id || !/^[0-9a-f-]{36}$/i.test(id)) {
+      return c.json({ ok: false, error: "invalid_input" }, 400);
+    }
+    if (!c.env.DATABASE_URL)
+      return c.json({ ok: false, error: "internal" }, 500);
+    const db = createDb(c.env.DATABASE_URL);
+    const actor = c.get("actor")!;
+    const body = c.req.valid("json");
+
+    const req = {
+      sourceOrganizationId: id,
+      targetOrganizationId: body.targetOrganizationId,
+      mergedByUserId: actor.user.id,
+      promotedFields: body.promotedFields,
+      reason: body.reason,
+    };
+
+    const err = await validateOrgMerge(db, req);
+    if (err)
+      return c.json(
+        { ok: false, error: err.error, message: err.message },
+        err.status
+      );
+
+    const snapshot = await buildOrgMergeSnapshot(db, req);
+    c.get("auditCapture")?.({ source: snapshot.source, target: snapshot.target });
+
+    const result = await executeOrgMerge(db, snapshot, req);
+
+    c.set("auditAction", "organizations.merge");
+    c.set("auditTarget", {
+      type: "organizations",
+      id: req.targetOrganizationId,
+    });
+    c.set("auditPayload", {
+      mergeId: result.mergeId,
+      sourceOrganizationId: req.sourceOrganizationId,
+      targetOrganizationId: req.targetOrganizationId,
+      promotedFieldCount: req.promotedFields.length,
+      conflictCount: result.conflicts.length,
+      reason: req.reason ?? null,
+    });
+
+    return c.json({ ok: true, mergeId: result.mergeId });
+  }
+);
+
+const orgUnmergeBodySchema = z.object({
+  mergeId: z.uuid(),
+});
+
+adminOrganizationsByIdRoute.post(
+  "/unmerge",
+  requirePolicy(canMergeOrganizations, () => undefined),
+  zValidator("json", orgUnmergeBodySchema, (result, c) => {
+    if (!result.success) {
+      return c.json(
+        { ok: false, error: "invalid_input", issues: result.error.issues },
+        400
+      );
+    }
+  }),
+  async (c) => {
+    if (!c.env.DATABASE_URL)
+      return c.json({ ok: false, error: "internal" }, 500);
+    const db = createDb(c.env.DATABASE_URL);
+    const actor = c.get("actor")!;
+    const body = c.req.valid("json");
+
+    const result = await executeOrgUnmerge(db, {
+      mergeId: body.mergeId,
+      revertedByUserId: actor.user.id,
+    });
+    if ("error" in result) {
+      return c.json(
+        { ok: false, error: result.error, message: result.message },
+        result.status
+      );
+    }
+
+    c.set("auditAction", "organizations.unmerge");
+    c.set("auditTarget", { type: "organization_merges", id: result.mergeId });
+    c.set("auditPayload", { mergeId: result.mergeId });
+
+    return c.json({ ok: true, mergeId: result.mergeId });
+  }
+);
