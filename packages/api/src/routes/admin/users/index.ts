@@ -188,7 +188,7 @@ adminUsersRoute.get(
         ? await db
             .select({ id: organizations.id, name: organizations.name })
             .from(organizations)
-            .where(sql`${organizations.id} = ANY(${[...orgIds]})`)
+            .where(sql`${organizations.id} = ANY(${[...orgIds]}::uuid[])`)
         : [];
     const orgNameById = new Map(orgRows.map((o) => [o.id, o.name] as const));
 
@@ -199,7 +199,7 @@ adminUsersRoute.get(
         ? await db
             .select({ userId: profiles.userId, photoUrl: profiles.photoUrl })
             .from(profiles)
-            .where(sql`${profiles.userId} = ANY(${[...userIdsInPairs]})`)
+            .where(sql`${profiles.userId} = ANY(${[...userIdsInPairs]}::uuid[])`)
         : [];
     for (const r of photoRows) photoByUser.set(r.userId, r.photoUrl);
 

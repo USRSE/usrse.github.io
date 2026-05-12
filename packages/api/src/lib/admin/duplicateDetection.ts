@@ -248,12 +248,18 @@ export function buildAndScorePairs(
   }
 
   // Collect candidate pairs from each anchor (groups of 2+), deduplicated.
+  // Skip anchor groups larger than MAX_ANCHOR_GROUP_SIZE — a normalized name
+  // shared by 50+ users is almost certainly a false anchor (common name),
+  // and the n² pair explosion in such a group would blow CPU budget on a
+  // Worker while contributing only noise. Real duplicates of those people
+  // will still surface through OTHER anchors (orcid, github, email).
+  const MAX_ANCHOR_GROUP_SIZE = 50;
   const pairKey = (a: CandidateUser, b: CandidateUser) =>
     a.id < b.id ? `${a.id}|${b.id}` : `${b.id}|${a.id}`;
   const seenPairs = new Map<string, CandidatePairInput>();
   for (const anchor of [byName, byCanonEmail, byOrcid, byGithub, byLinkedin]) {
     for (const group of anchor.values()) {
-      if (group.length < 2) continue;
+      if (group.length < 2 || group.length > MAX_ANCHOR_GROUP_SIZE) continue;
       for (let i = 0; i < group.length; i++) {
         for (let j = i + 1; j < group.length; j++) {
           const a = group[i];
