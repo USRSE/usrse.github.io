@@ -120,6 +120,13 @@
       "when": 1778820000000,
       "tag": "0016_organizations_audit_columns",
       "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1778880000000,
+      "tag": "0017_organization_logo_storage_keys",
+      "breakpoints": true
     }
   ]
 }

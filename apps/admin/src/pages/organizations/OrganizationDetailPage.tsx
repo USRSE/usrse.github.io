@@ -1,8 +1,10 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useApi } from "@us-rse/auth-shell";
 import { EditorialInput } from "../../components/EditorialInput";
 import { OrgStatusTag } from "../../components/OrgStatusTag";
+
+type LogoVariant = "main" | "dark" | "mark";
 
 interface DetailResponse {
   ok: true;
@@ -13,7 +15,11 @@ interface DetailResponse {
     shortName: string | null;
     url: string | null;
     logoUrl: string | null;
+    logoStorageKey: string | null;
+    logoDarkUrl: string | null;
+    logoDarkStorageKey: string | null;
     logoMarkUrl: string | null;
+    logoMarkStorageKey: string | null;
     logoUsageConsent: string | null;
     logoCredit: string | null;
     status: "pending" | "approved";
@@ -43,7 +49,7 @@ interface DetailResponse {
   }>;
 }
 
-type Tab = "identity" | "members" | "status";
+type Tab = "identity" | "members" | "branding" | "status";
 
 interface Draft {
   name: string;
@@ -150,6 +156,85 @@ export function OrganizationDetailPage() {
     }
   }
 
+  // ── Branding ────────────────────────────────────────────────────────
+  // Upload, fetch-from-URL, and delete each take a variant. The API
+  // returns 503 with error:"not_configured" until the R2 bucket is
+  // provisioned — the UI catches that and renders a clear banner
+  // rather than letting the error stack look like a real failure.
+
+  async function uploadLogo(variant: LogoVariant, file: File) {
+    if (!data) return;
+    setSaving(true);
+    setSaveError(null);
+    try {
+      const form = new FormData();
+      form.append("file", file);
+      const res = await apiFetch(
+        `/admin/organizations/${data.organization.id}/logo?variant=${variant}`,
+        { method: "POST", body: form }
+      );
+      if (!res.ok) {
+        const err = (await res.json().catch(() => null)) as {
+          message?: string;
+        } | null;
+        setSaveError(err?.message ?? `Upload responded ${res.status}`);
+        return;
+      }
+      await fetchOrg();
+    } catch (e) {
+      setSaveError(e instanceof Error ? e.message : String(e));
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  async function uploadLogoFromUrl(variant: LogoVariant, sourceUrl: string) {
+    if (!data) return;
+    setSaving(true);
+    setSaveError(null);
+    try {
+      const res = await apiFetch(
+        `/admin/organizations/${data.organization.id}/logo/from-url?variant=${variant}`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ url: sourceUrl }),
+        }
+      );
+      if (!res.ok) {
+        const err = (await res.json().catch(() => null)) as {
+          message?: string;
+        } | null;
+        setSaveError(err?.message ?? `Upload responded ${res.status}`);
+        return;
+      }
+      await fetchOrg();
+    } catch (e) {
+      setSaveError(e instanceof Error ? e.message : String(e));
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  async function deleteLogo(variant: LogoVariant) {
+    if (!data) return;
+    setSaving(true);
+    setSaveError(null);
+    try {
+      const res = await apiFetch(
+        `/admin/organizations/${data.organization.id}/logo?variant=${variant}`,
+        { method: "DELETE" }
+      );
+      if (!res.ok) {
+        setSaveError(`Delete responded ${res.status}`);
+        return;
+      }
+      await fetchOrg();
+    } finally {
+      setSaving(false);
+    }
+  }
+
   if (error)
     return (
       <p
@@ -194,7 +279,7 @@ export function OrganizationDetailPage() {
         className="flex items-baseline gap-8 mb-8"
         style={{ borderBottom: "1px solid var(--admin-rule)" }}
       >
-        {(["identity", "members", "status"] as Tab[]).map((t, i) => (
+        {(["identity", "members", "branding", "status"] as Tab[]).map((t, i) => (
           <button
             key={t}
             type="button"
@@ -213,7 +298,9 @@ export function OrganizationDetailPage() {
                 ? "Identity"
                 : t === "members"
                   ? "Members"
-                  : "Status"}
+                  : t === "branding"
+                    ? "Branding"
+                    : "Status"}
             </span>
           </button>
         ))}
@@ -355,6 +442,51 @@ export function OrganizationDetailPage() {
         </div>
       )}
 
+      {tab === "branding" && (
+        <div className="space-y-10 max-w-2xl">
+          <LogoSlot
+            label="Main logo"
+            hint="Surfaces on member dossiers, the organization detail page, and the public sponsors strip. Use the brand's primary horizontal mark."
+            variant="main"
+            currentUrl={o.logoUrl}
+            ownsStorage={Boolean(o.logoStorageKey)}
+            saving={saving}
+            onUpload={uploadLogo}
+            onFromUrl={uploadLogoFromUrl}
+            onDelete={deleteLogo}
+          />
+          <LogoSlot
+            label="Dark variant"
+            hint="Optional. Falls back to the main logo on dark surfaces if not provided."
+            variant="dark"
+            currentUrl={o.logoDarkUrl}
+            ownsStorage={Boolean(o.logoDarkStorageKey)}
+            saving={saving}
+            onUpload={uploadLogo}
+            onFromUrl={uploadLogoFromUrl}
+            onDelete={deleteLogo}
+          />
+          <LogoSlot
+            label="Mark"
+            hint="Optional. The compact mark / icon — used in the directory list and command palette where the full logo doesn't fit."
+            variant="mark"
+            currentUrl={o.logoMarkUrl}
+            ownsStorage={Boolean(o.logoMarkStorageKey)}
+            saving={saving}
+            onUpload={uploadLogo}
+            onFromUrl={uploadLogoFromUrl}
+            onDelete={deleteLogo}
+          />
+
+          <ConsentAndCredit
+            consent={o.logoUsageConsent}
+            credit={o.logoCredit}
+            saving={saving}
+            onPatch={patch}
+          />
+        </div>
+      )}
+
       {tab === "status" && (
         <div className="space-y-8">
           <div>
@@ -457,5 +589,303 @@ export function OrganizationDetailPage() {
         </div>
       )}
     </div>
+  );
+}
+
+// ─── Branding subcomponents ───────────────────────────────────────────
+
+interface LogoSlotProps {
+  label: string;
+  hint: string;
+  variant: LogoVariant;
+  currentUrl: string | null;
+  ownsStorage: boolean;
+  saving: boolean;
+  onUpload: (variant: LogoVariant, file: File) => Promise<void>;
+  onFromUrl: (variant: LogoVariant, sourceUrl: string) => Promise<void>;
+  onDelete: (variant: LogoVariant) => Promise<void>;
+}
+
+/**
+ * One variant slot — main / dark / mark. Each carries:
+ *   - A preview (current logo or "no logo set" stamp)
+ *   - File upload via a hidden <input type="file"> wired to a button
+ *     so the editorial visual treatment isn't broken by the browser's
+ *     default file-picker chrome
+ *   - From-URL fallback for cases where staff has the canonical URL
+ *     rather than a local file
+ *   - Remove control — clears the column reference; the bytes get
+ *     deleted from R2 only when we own them (ownsStorage)
+ */
+function LogoSlot({
+  label,
+  hint,
+  variant,
+  currentUrl,
+  ownsStorage,
+  saving,
+  onUpload,
+  onFromUrl,
+  onDelete,
+}: LogoSlotProps) {
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const [urlDraft, setUrlDraft] = useState("");
+  const [showUrlInput, setShowUrlInput] = useState(false);
+
+  return (
+    <section>
+      <header className="flex items-baseline justify-between mb-3">
+        <p className="admin-classification">{label}</p>
+        <span
+          className="admin-marginalia"
+          style={{ color: "var(--admin-marginalia)" }}
+        >
+          variant: {variant}
+        </span>
+      </header>
+
+      <div
+        className="flex items-center gap-6 p-4 mb-3"
+        style={{
+          border: "1px solid var(--admin-rule)",
+          background: "var(--admin-paper-edge, transparent)",
+        }}
+      >
+        <div
+          className="w-24 h-24 shrink-0 flex items-center justify-center"
+          style={{ background: "var(--admin-paper, #fff)" }}
+        >
+          {currentUrl ? (
+            <img
+              src={currentUrl}
+              alt=""
+              className="max-w-full max-h-full object-contain"
+            />
+          ) : (
+            <span
+              className="admin-classification text-center"
+              style={{ color: "var(--admin-marginalia)" }}
+            >
+              ∅<br />no logo
+            </span>
+          )}
+        </div>
+        <div className="flex-1 min-w-0">
+          <p
+            className="text-[11px] leading-relaxed mb-3"
+            style={{ color: "var(--admin-ink-medium)" }}
+          >
+            {hint}
+          </p>
+          {currentUrl && (
+            <p
+              className="font-mono text-[10px] truncate"
+              style={{ color: "var(--admin-marginalia)" }}
+              title={currentUrl}
+            >
+              {ownsStorage ? "hosted · " : "external · "}
+              {currentUrl}
+            </p>
+          )}
+        </div>
+      </div>
+
+      <div className="flex items-center gap-5 flex-wrap">
+        <input
+          ref={fileInputRef}
+          type="file"
+          accept="image/jpeg,image/png,image/webp"
+          className="hidden"
+          onChange={(e) => {
+            const file = e.target.files?.[0];
+            if (file) void onUpload(variant, file);
+            // Reset so re-selecting the same file fires onChange.
+            e.target.value = "";
+          }}
+        />
+        <button
+          type="button"
+          onClick={() => fileInputRef.current?.click()}
+          disabled={saving}
+          className="admin-classification disabled:opacity-50"
+          style={{ color: "var(--admin-ribbon)" }}
+        >
+          Upload file →
+        </button>
+        <button
+          type="button"
+          onClick={() => setShowUrlInput((v) => !v)}
+          disabled={saving}
+          className="admin-classification disabled:opacity-50"
+          style={{ color: "var(--admin-ink-medium)" }}
+        >
+          {showUrlInput ? "Cancel URL" : "Or paste URL"}
+        </button>
+        {currentUrl && (
+          <button
+            type="button"
+            onClick={() => void onDelete(variant)}
+            disabled={saving}
+            className="admin-classification disabled:opacity-50"
+            style={{ color: "var(--color-danger-700)" }}
+          >
+            Remove
+          </button>
+        )}
+      </div>
+
+      {showUrlInput && (
+        <div className="mt-4 flex items-center gap-3">
+          <input
+            type="url"
+            value={urlDraft}
+            onChange={(e) => setUrlDraft(e.target.value)}
+            placeholder="https://example.org/logo.png"
+            className="flex-1 bg-transparent border-0 outline-none py-1.5 font-mono text-[13px]"
+            style={{
+              borderBottom: "1px solid var(--admin-rule)",
+              color: "var(--admin-ink)",
+            }}
+          />
+          <button
+            type="button"
+            onClick={() => {
+              if (urlDraft.trim()) {
+                void onFromUrl(variant, urlDraft.trim()).then(() => {
+                  setUrlDraft("");
+                  setShowUrlInput(false);
+                });
+              }
+            }}
+            disabled={saving || !urlDraft.trim()}
+            className="admin-classification disabled:opacity-50"
+            style={{ color: "var(--admin-ribbon)" }}
+          >
+            Fetch →
+          </button>
+        </div>
+      )}
+    </section>
+  );
+}
+
+interface ConsentAndCreditProps {
+  consent: string | null;
+  credit: string | null;
+  saving: boolean;
+  onPatch: (body: Record<string, unknown>) => Promise<void>;
+}
+
+/**
+ * Consent text doubles as a granted-flag (any non-empty value =
+ * granted) and a record of when/how. "Record consent today" stamps an
+ * ISO timestamp so we know when an admin gave the green light;
+ * "Revoke" clears it. Editing the text directly is allowed for cases
+ * where the consent is tied to a specific document or version
+ * ("Logo policy v2 — 2026-05").
+ */
+function ConsentAndCredit({
+  consent,
+  credit,
+  saving,
+  onPatch,
+}: ConsentAndCreditProps) {
+  const [consentDraft, setConsentDraft] = useState(consent ?? "");
+  const [creditDraft, setCreditDraft] = useState(credit ?? "");
+
+  useEffect(() => {
+    setConsentDraft(consent ?? "");
+  }, [consent]);
+  useEffect(() => {
+    setCreditDraft(credit ?? "");
+  }, [credit]);
+
+  const consentGiven = Boolean(consent && consent.trim());
+
+  return (
+    <section
+      className="pt-8"
+      style={{ borderTop: "1px solid var(--admin-rule)" }}
+    >
+      <p className="admin-classification mb-3">Usage consent</p>
+      <p
+        className="text-[12px] mb-4"
+        style={{ color: "var(--admin-ink-medium)", maxWidth: "var(--admin-measure)" }}
+      >
+        Public surfaces hide the logo until this field is non-empty. The text
+        is for the audit trail — typically the date consent was granted or a
+        reference to the org's logo-use policy.
+      </p>
+
+      <div className="flex items-center gap-3 mb-2">
+        <span
+          className="admin-classification"
+          style={{
+            color: consentGiven
+              ? "var(--admin-ribbon)"
+              : "var(--color-danger-700)",
+          }}
+        >
+          {consentGiven ? "Granted" : "Not granted"}
+        </span>
+        <button
+          type="button"
+          onClick={() =>
+            void onPatch({ logoUsageConsent: new Date().toISOString() })
+          }
+          disabled={saving}
+          className="admin-classification disabled:opacity-50"
+          style={{ color: "var(--admin-ribbon)" }}
+        >
+          Record consent today
+        </button>
+        {consentGiven && (
+          <button
+            type="button"
+            onClick={() => void onPatch({ logoUsageConsent: null })}
+            disabled={saving}
+            className="admin-classification disabled:opacity-50"
+            style={{ color: "var(--color-danger-700)" }}
+          >
+            Revoke
+          </button>
+        )}
+      </div>
+
+      <input
+        type="text"
+        value={consentDraft}
+        onChange={(e) => setConsentDraft(e.target.value)}
+        onBlur={() => {
+          const next = consentDraft.trim() === "" ? null : consentDraft.trim();
+          if (next !== consent) void onPatch({ logoUsageConsent: next });
+        }}
+        placeholder="ISO timestamp, policy reference, or note"
+        className="w-full bg-transparent border-0 outline-none py-1.5 font-mono text-[13px]"
+        style={{
+          borderBottom: "1px solid var(--admin-rule)",
+          color: "var(--admin-ink)",
+        }}
+      />
+
+      <p className="admin-classification mt-8 mb-3">Credit string</p>
+      <p
+        className="text-[12px] mb-3"
+        style={{ color: "var(--admin-ink-medium)", maxWidth: "var(--admin-measure)" }}
+      >
+        Attribution line surfaced next to the logo when the org's policy
+        requires it (e.g., "Logo © Organization, used with permission.").
+        Leave blank if no credit line is required.
+      </p>
+      <EditorialInput
+        label="Credit"
+        value={creditDraft}
+        onChange={(e) => setCreditDraft(e.target.value)}
+        onBlur={() => {
+          const next = creditDraft.trim() === "" ? null : creditDraft.trim();
+          if (next !== credit) void onPatch({ logoCredit: next });
+        }}
+      />
+    </section>
   );
 }

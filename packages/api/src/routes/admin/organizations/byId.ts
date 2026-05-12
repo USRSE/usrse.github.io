@@ -10,6 +10,15 @@ import {
   userOrganizations,
   users,
 } from "../../../db/schema";
+import {
+  deleteOrgLogo,
+  isLogoHostingConfigured,
+  LOGO_VARIANTS,
+  LogoUploadError,
+  storeOrgLogo,
+  storeOrgLogoFromUrl,
+  type LogoVariant,
+} from "../../../lib/storage-org-logo";
 import type { AppEnv } from "../../../types";
 
 const SLUG_PATTERN = /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
@@ -27,10 +36,38 @@ const orgPatchSchema = z
     shortName: z.string().max(60).nullable().optional(),
     url: z.url().max(URL_MAX).nullable().optional(),
     status: z.enum(["pending", "approved"]).optional(),
+    /**
+     * Free-form text. Empty / null = no consent → public surfaces hide
+     * the logo. Any non-empty value = consent granted (typically an ISO
+     * timestamp the UI sets via "Record consent today" so we know
+     * *when* the admin gave the green light).
+     */
+    logoUsageConsent: z.string().max(280).nullable().optional(),
+    /** Attribution string surfaced next to the logo when required by
+     *  the org's policy ("Logo © Org, used with permission."). */
+    logoCredit: z.string().max(280).nullable().optional(),
   })
   .strict();
 
 type OrgPatchInput = z.infer<typeof orgPatchSchema>;
+
+/**
+ * Lookup: variant → the two column references the storage helper
+ * writes to. Keeping the mapping in one place means the logo endpoints
+ * stay vary-by-variant without three near-identical handler bodies.
+ */
+const VARIANT_COLUMNS = {
+  main: { url: "logoUrl", key: "logoStorageKey" },
+  dark: { url: "logoDarkUrl", key: "logoDarkStorageKey" },
+  mark: { url: "logoMarkUrl", key: "logoMarkStorageKey" },
+} as const satisfies Record<LogoVariant, { url: string; key: string }>;
+
+function parseVariant(raw: string | undefined): LogoVariant | null {
+  if (!raw) return "main";
+  return (LOGO_VARIANTS as readonly string[]).includes(raw)
+    ? (raw as LogoVariant)
+    : null;
+}
 
 export const adminOrganizationsByIdRoute = new Hono<AppEnv>();
 
@@ -287,4 +324,300 @@ adminOrganizationsByIdRoute.post("/restore", async (c) => {
   c.set("auditAction", "organizations.restore");
   c.set("auditTarget", { type: "organizations", id });
   return c.json({ ok: true });
+});
+
+// ── Logo upload ──────────────────────────────────────────────────────
+//
+// Three variants per org — main / dark / mark — driven by a ?variant=
+// query param. Each variant has its own url + storage_key column pair,
+// so a swap on one variant doesn't touch the other two. All three
+// endpoints below are no-ops until ORGANIZATION_LOGOS is provisioned;
+// they return a structured 503 the admin UI can render as a clear
+// "logo hosting not configured" state.
+
+function notConfiguredResponse() {
+  return {
+    ok: false as const,
+    error: "not_configured" as const,
+    message:
+      "Logo hosting isn't configured yet. The ORGANIZATION_LOGOS R2 bucket needs to be provisioned in the Cloudflare dashboard and its public URL set in wrangler.jsonc before uploads can land.",
+  };
+}
+
+async function loadOrgOr404(c: import("hono").Context<AppEnv>, id: string) {
+  if (!c.env.DATABASE_URL) {
+    return { error: c.json({ ok: false, error: "internal" }, 500) } as const;
+  }
+  const db = createDb(c.env.DATABASE_URL);
+  const existing = await db
+    .select()
+    .from(organizations)
+    .where(eq(organizations.id, id))
+    .limit(1)
+    .then((r) => r[0]);
+  if (!existing) {
+    return { error: c.json({ ok: false, error: "not_found" }, 404) } as const;
+  }
+  return { db, existing } as const;
+}
+
+async function persistLogoChange(
+  db: ReturnType<typeof createDb>,
+  orgId: string,
+  variant: LogoVariant,
+  next: { url: string | null; storageKey: string | null }
+): Promise<void> {
+  const cols = VARIANT_COLUMNS[variant];
+  await db
+    .update(organizations)
+    .set({
+      [cols.url]: next.url,
+      [cols.key]: next.storageKey,
+      updatedAt: new Date(),
+    })
+    .where(eq(organizations.id, orgId));
+}
+
+/**
+ * POST /api/admin/organizations/:id/logo?variant=main|dark|mark
+ *
+ * Multipart upload. The `file` field carries the bytes; the variant
+ * defaults to "main" so callers that only ever upload the primary
+ * logo don't need to think about the query string.
+ */
+adminOrganizationsByIdRoute.post("/logo", async (c) => {
+  const id = c.req.param("id");
+  if (!id || !/^[0-9a-f-]{36}$/i.test(id)) {
+    return c.json({ ok: false, error: "invalid_input" }, 400);
+  }
+  const variant = parseVariant(c.req.query("variant"));
+  if (!variant) {
+    return c.json(
+      {
+        ok: false,
+        error: "invalid_input",
+        message: `variant must be one of ${LOGO_VARIANTS.join(", ")}`,
+      },
+      400
+    );
+  }
+  if (!isLogoHostingConfigured(c.env)) {
+    return c.json(notConfiguredResponse(), 503);
+  }
+
+  const loaded = await loadOrgOr404(c, id);
+  if ("error" in loaded) return loaded.error;
+  const { db, existing } = loaded;
+  c.get("auditCapture")?.({ organization: existing });
+
+  let form: FormData;
+  try {
+    form = await c.req.formData();
+  } catch {
+    return c.json(
+      {
+        ok: false,
+        error: "invalid_input",
+        message: "Expected multipart/form-data",
+      },
+      400
+    );
+  }
+  const file = form.get("file");
+  if (file === null || typeof file === "string") {
+    return c.json(
+      { ok: false, error: "invalid_input", message: "Missing 'file' field" },
+      400
+    );
+  }
+  const blob = file as unknown as Blob;
+  const bytes = new Uint8Array(await blob.arrayBuffer());
+
+  let stored;
+  try {
+    stored = await storeOrgLogo({
+      bucket: c.env.ORGANIZATION_LOGOS!,
+      publicBaseUrl: c.env.ORGANIZATION_LOGOS_PUBLIC_URL,
+      orgId: id,
+      variant,
+      bytes,
+    });
+  } catch (e) {
+    if (e instanceof LogoUploadError) {
+      return c.json(
+        { ok: false, error: "invalid_input", message: e.message },
+        e.status as 400 | 413 | 415
+      );
+    }
+    throw e;
+  }
+
+  // Best-effort cleanup of the prior object for this variant only.
+  const priorKey = existing[VARIANT_COLUMNS[variant].key as keyof typeof existing] as
+    | string
+    | null;
+  if (priorKey) {
+    try {
+      await deleteOrgLogo(c.env.ORGANIZATION_LOGOS!, priorKey);
+    } catch (e) {
+      console.warn("org logo cleanup failed", { key: priorKey, e });
+    }
+  }
+
+  await persistLogoChange(db, id, variant, {
+    url: stored.url,
+    storageKey: stored.storageKey,
+  });
+
+  c.set("auditAction", "organizations.logo_upload");
+  c.set("auditTarget", { type: "organizations", id });
+  c.set("auditPayload", { variant });
+
+  return c.json({ ok: true, variant, url: stored.url });
+});
+
+const logoFromUrlSchema = z
+  .object({ url: z.url().max(2000) })
+  .strict();
+
+/**
+ * POST /api/admin/organizations/:id/logo/from-url?variant=...
+ *
+ * Fetch + persist mirror of the upload endpoint. Defensive on the
+ * outbound fetch: HTTPS only, hard size cap, hard timeout, basic SSRF
+ * guard (lib/storage-org-logo.ts).
+ */
+adminOrganizationsByIdRoute.post(
+  "/logo/from-url",
+  zValidator("json", logoFromUrlSchema, (result, c) => {
+    if (!result.success) {
+      return c.json(
+        {
+          ok: false,
+          error: "invalid_input",
+          issues: result.error.issues.map((i) => ({
+            path: i.path,
+            message: i.message,
+          })),
+        },
+        400
+      );
+    }
+  }),
+  async (c) => {
+    const id = c.req.param("id");
+    if (!id || !/^[0-9a-f-]{36}$/i.test(id)) {
+      return c.json({ ok: false, error: "invalid_input" }, 400);
+    }
+    const variant = parseVariant(c.req.query("variant"));
+    if (!variant) {
+      return c.json(
+        {
+          ok: false,
+          error: "invalid_input",
+          message: `variant must be one of ${LOGO_VARIANTS.join(", ")}`,
+        },
+        400
+      );
+    }
+    if (!isLogoHostingConfigured(c.env)) {
+      return c.json(notConfiguredResponse(), 503);
+    }
+
+    const loaded = await loadOrgOr404(c, id);
+    if ("error" in loaded) return loaded.error;
+    const { db, existing } = loaded;
+    c.get("auditCapture")?.({ organization: existing });
+
+    const { url } = c.req.valid("json");
+    let stored;
+    try {
+      stored = await storeOrgLogoFromUrl({
+        bucket: c.env.ORGANIZATION_LOGOS!,
+        publicBaseUrl: c.env.ORGANIZATION_LOGOS_PUBLIC_URL,
+        orgId: id,
+        variant,
+        sourceUrl: url,
+      });
+    } catch (e) {
+      if (e instanceof LogoUploadError) {
+        return c.json(
+          { ok: false, error: "invalid_input", message: e.message },
+          e.status as 400 | 413 | 415 | 502
+        );
+      }
+      throw e;
+    }
+
+    const priorKey = existing[
+      VARIANT_COLUMNS[variant].key as keyof typeof existing
+    ] as string | null;
+    if (priorKey) {
+      try {
+        await deleteOrgLogo(c.env.ORGANIZATION_LOGOS!, priorKey);
+      } catch (e) {
+        console.warn("org logo cleanup failed", { key: priorKey, e });
+      }
+    }
+
+    await persistLogoChange(db, id, variant, {
+      url: stored.url,
+      storageKey: stored.storageKey,
+    });
+
+    c.set("auditAction", "organizations.logo_upload_from_url");
+    c.set("auditTarget", { type: "organizations", id });
+    c.set("auditPayload", { variant, sourceUrl: url });
+
+    return c.json({ ok: true, variant, url: stored.url });
+  }
+);
+
+/**
+ * DELETE /api/admin/organizations/:id/logo?variant=...
+ *
+ * Clears one variant. Only deletes the R2 object when we own it (the
+ * storage_key column is non-null) — externally-pasted URLs just have
+ * their row reference nulled out.
+ */
+adminOrganizationsByIdRoute.delete("/logo", async (c) => {
+  const id = c.req.param("id");
+  if (!id || !/^[0-9a-f-]{36}$/i.test(id)) {
+    return c.json({ ok: false, error: "invalid_input" }, 400);
+  }
+  const variant = parseVariant(c.req.query("variant"));
+  if (!variant) {
+    return c.json(
+      {
+        ok: false,
+        error: "invalid_input",
+        message: `variant must be one of ${LOGO_VARIANTS.join(", ")}`,
+      },
+      400
+    );
+  }
+
+  const loaded = await loadOrgOr404(c, id);
+  if ("error" in loaded) return loaded.error;
+  const { db, existing } = loaded;
+  c.get("auditCapture")?.({ organization: existing });
+
+  const priorKey = existing[
+    VARIANT_COLUMNS[variant].key as keyof typeof existing
+  ] as string | null;
+  if (priorKey && isLogoHostingConfigured(c.env)) {
+    try {
+      await deleteOrgLogo(c.env.ORGANIZATION_LOGOS!, priorKey);
+    } catch (e) {
+      console.warn("org logo delete failed", { key: priorKey, e });
+    }
+  }
+
+  await persistLogoChange(db, id, variant, { url: null, storageKey: null });
+
+  c.set("auditAction", "organizations.logo_delete");
+  c.set("auditTarget", { type: "organizations", id });
+  c.set("auditPayload", { variant });
+
+  return c.json({ ok: true, variant });
 });
