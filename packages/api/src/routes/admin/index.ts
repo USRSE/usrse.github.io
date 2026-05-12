@@ -7,6 +7,7 @@ import { adminMeRoute } from "./me";
 import { adminAuditRoute } from "./audit";
 import { adminUsersRoute } from "./users";
 import { adminOrganizationsRoute } from "./organizations";
+import { adminVocabRoute } from "./vocab";
 
 /**
  * Hono sub-app for /api/admin/*. Order matters:
@@ -26,4 +27,5 @@ adminApi.use("*", auditMiddleware);
 adminApi.route("/me", adminMeRoute);
 adminApi.route("/audit", adminAuditRoute);
 adminApi.route("/users", adminUsersRoute);
+adminApi.route("/vocab", adminVocabRoute);
 adminApi.route("/organizations", adminOrganizationsRoute);

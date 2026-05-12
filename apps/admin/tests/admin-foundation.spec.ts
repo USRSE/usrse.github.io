@@ -38,3 +38,13 @@ test("an organization detail URL triggers sign-in unauthenticated", async ({ pag
   await page.goto("/organizations/00000000-0000-0000-0000-000000000000");
   await expect(page.getByText(/connecting to workos|sign in/i)).toBeVisible();
 });
+
+test("unauthenticated visit to /vocab triggers sign-in flow", async ({ page }) => {
+  await page.goto("/vocab");
+  await expect(page.getByText(/connecting to workos|sign in/i)).toBeVisible();
+});
+
+test("unauthenticated visit to /vocab/skills triggers sign-in flow", async ({ page }) => {
+  await page.goto("/vocab/skills");
+  await expect(page.getByText(/connecting to workos|sign in/i)).toBeVisible();
+});

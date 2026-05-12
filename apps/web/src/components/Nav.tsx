@@ -7,15 +7,30 @@ import { useCurrentMember } from "@/hooks/useCurrentMember";
  * Admin app URL. Defaults are environment-aware so the dropdown's
  * "Admin portal" link works the same way locally as in prod without
  * needing per-developer config:
- *   - prod build  → https://admin.us-rse.org (the deployed Pages project)
- *   - vite dev    → http://localhost:5174 (the local apps/admin server)
- *   - override    → set VITE_ADMIN_URL in .env.local for previews
+ *   - vite dev          → http://localhost:5174 (the local apps/admin server)
+ *   - any *.pages.dev   → https://us-rse-admin.pages.dev (staging admin)
+ *   - prod build        → https://admin.us-rse.org (the deployed Pages project)
+ *   - override          → set VITE_ADMIN_URL in .env.local for previews
+ *
+ * The pages.dev branch catches both the main staging URL
+ * (usrse-github-io.pages.dev) and per-branch previews
+ * (e.g., cdcore09-site-redesign.usrse-github-io.pages.dev), so
+ * anyone testing on a Pages preview gets the matching staging admin
+ * instead of being shipped over to production.
  */
-const ADMIN_URL: string =
-  import.meta.env.VITE_ADMIN_URL ??
-  (import.meta.env.DEV
-    ? "http://localhost:5174"
-    : "https://admin.us-rse.org");
+function resolveAdminUrl(): string {
+  if (import.meta.env.VITE_ADMIN_URL) return import.meta.env.VITE_ADMIN_URL;
+  if (import.meta.env.DEV) return "http://localhost:5174";
+  if (
+    typeof window !== "undefined" &&
+    window.location.hostname.endsWith(".pages.dev")
+  ) {
+    return "https://us-rse-admin.pages.dev";
+  }
+  return "https://admin.us-rse.org";
+}
+
+const ADMIN_URL: string = resolveAdminUrl();
 
 /* ── Types ─────────────────────────────────────────────────────────── */
 
