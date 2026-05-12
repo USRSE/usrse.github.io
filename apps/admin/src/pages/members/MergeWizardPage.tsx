@@ -151,8 +151,7 @@ export function MergeWizardPage() {
             type="button"
             disabled={!canonicalId}
             onClick={() => setStep(2)}
-            className="inline-flex items-center gap-2 px-6 py-3 disabled:opacity-50"
-            style={{ background: "var(--admin-ink)", color: "var(--admin-paper)", fontFamily: "var(--font-display)", fontWeight: 600 }}
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-purple-500 text-white font-semibold text-sm shadow-sm transition-colors hover:bg-purple-600 disabled:opacity-50"
           >
             Next → Step II
           </button>
@@ -194,8 +193,7 @@ export function MergeWizardPage() {
             <button
               type="button"
               onClick={() => setStep(3)}
-              className="ml-auto inline-flex items-center gap-2 px-6 py-3"
-              style={{ background: "var(--admin-ink)", color: "var(--admin-paper)", fontFamily: "var(--font-display)", fontWeight: 600 }}
+              className="ml-auto inline-flex items-center gap-2 px-6 py-3 rounded-md bg-purple-500 text-white font-semibold text-sm shadow-sm transition-colors hover:bg-purple-600"
             >
               Next → Step III
             </button>
@@ -241,8 +239,7 @@ export function MergeWizardPage() {
               type="button"
               onClick={() => void submitMerge()}
               disabled={submitting}
-              className="ml-auto inline-flex items-center gap-2 px-8 py-3 disabled:opacity-50"
-              style={{ background: "var(--admin-ink)", color: "var(--admin-paper)", fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "16px" }}
+              className="ml-auto inline-flex items-center gap-2 px-8 py-3 rounded-md bg-purple-500 text-white font-semibold text-base shadow-sm transition-colors hover:bg-purple-600 disabled:opacity-50"
             >
               {submitting ? "Merging…" : "Confirm merge"}
             </button>

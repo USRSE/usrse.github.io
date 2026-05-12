@@ -296,8 +296,7 @@ export function MemberDetailPage() {
               type="button"
               onClick={() => void saveIdentity()}
               disabled={saving}
-              className="inline-flex items-center gap-2 px-6 py-3 disabled:opacity-50"
-              style={{ background: "var(--admin-ink)", color: "var(--admin-paper)", fontFamily: "var(--font-display)", fontWeight: 600 }}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-purple-500 text-white font-semibold text-sm shadow-sm transition-colors hover:bg-purple-600 disabled:opacity-50"
             >
               {saving ? "Saving…" : "Save identity"}
             </button>
