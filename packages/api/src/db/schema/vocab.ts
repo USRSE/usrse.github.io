@@ -210,12 +210,24 @@ export const organizations = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true })
       .notNull()
       .defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    deletedAt: timestamp("deleted_at", { withTimezone: true }),
   },
   (t) => [
     index("organizations_status_approved_idx")
       .on(t.status)
       .where(sql`status = 'approved'`),
     index("organizations_merged_into_idx").on(t.mergedIntoId),
+    /**
+     * Mirrors users_active_idx — "active" = not soft-deleted AND not
+     * merged into a canonical org. This is the predicate the org
+     * register's default query joins against.
+     */
+    index("organizations_active_idx")
+      .on(t.id)
+      .where(sql`deleted_at IS NULL AND merged_into_id IS NULL`),
   ]
 );
 

@@ -6,4 +6,5 @@ export { canEditGroup } from "./canEditGroup";
 export { canEditEvent } from "./canEditEvent";
 export { canViewAuditLog } from "./canViewAuditLog";
 export { canEditMembers } from "./canEditMembers";
+export { canEditOrganizations } from "./canEditOrganizations";
 export { canPromoteToRole } from "./canPromoteToRole";

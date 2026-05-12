@@ -28,3 +28,13 @@ test("the duplicates page renders its sign-in surface unauthenticated", async ({
   await page.goto("/members/duplicates");
   await expect(page.getByText(/connecting to workos|sign in/i)).toBeVisible();
 });
+
+test("the organizations register triggers sign-in unauthenticated", async ({ page }) => {
+  await page.goto("/organizations");
+  await expect(page.getByText(/connecting to workos|sign in/i)).toBeVisible();
+});
+
+test("an organization detail URL triggers sign-in unauthenticated", async ({ page }) => {
+  await page.goto("/organizations/00000000-0000-0000-0000-000000000000");
+  await expect(page.getByText(/connecting to workos|sign in/i)).toBeVisible();
+});

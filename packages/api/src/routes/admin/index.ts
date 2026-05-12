@@ -6,6 +6,7 @@ import type { AppEnv } from "../../types";
 import { adminMeRoute } from "./me";
 import { adminAuditRoute } from "./audit";
 import { adminUsersRoute } from "./users";
+import { adminOrganizationsRoute } from "./organizations";
 
 /**
  * Hono sub-app for /api/admin/*. Order matters:
@@ -25,3 +26,4 @@ adminApi.use("*", auditMiddleware);
 adminApi.route("/me", adminMeRoute);
 adminApi.route("/audit", adminAuditRoute);
 adminApi.route("/users", adminUsersRoute);
+adminApi.route("/organizations", adminOrganizationsRoute);
