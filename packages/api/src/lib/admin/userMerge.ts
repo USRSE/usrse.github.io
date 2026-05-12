@@ -790,7 +790,10 @@ export async function executeMerge(
         targetUserId: snapshot.target.id,
         mergedByUserId: req.mergedByUserId,
         reason: req.reason ?? null,
-        repointedRows: snapshot.toRepoint as unknown as Record<string, unknown>,
+        repointedRows: {
+          toRepoint: snapshot.toRepoint,
+          conflicts: snapshot.conflicts,
+        } as unknown as Record<string, unknown>,
         promotedFields: promotedRecord,
       });
   });
@@ -801,4 +804,277 @@ export async function executeMerge(
     conflicts: snapshot.conflicts,
     promotedFields: promotedRecord,
   };
+}
+
+export interface UnmergeRequest {
+  mergeId: string;
+  revertedByUserId: string;
+}
+
+export interface UnmergeValidationError {
+  status: 400 | 404 | 409;
+  error: string;
+  message: string;
+}
+
+/**
+ * Reverses a previously-executed merge. Loads the `user_merges` manifest,
+ * verifies the source still points at the recorded target, then in one
+ * transaction moves every repointed row back to source, restores promoted
+ * profile fields, clears source's `mergedIntoUserId`, and stamps the
+ * manifest row as reverted.
+ */
+export async function executeUnmerge(
+  db: Db,
+  req: UnmergeRequest
+): Promise<UnmergeValidationError | { mergeId: string }> {
+  const mergeRow = await db
+    .select()
+    .from(userMerges)
+    .where(eq(userMerges.id, req.mergeId))
+    .limit(1)
+    .then((r) => r[0]);
+  if (!mergeRow) {
+    return {
+      status: 404,
+      error: "not_found",
+      message: `merge ${req.mergeId} not found.`,
+    };
+  }
+  if (mergeRow.revertedAt !== null) {
+    return {
+      status: 409,
+      error: "already_reverted",
+      message: "This merge has already been reverted.",
+    };
+  }
+
+  const sourceCurrent = await db
+    .select({ mergedIntoUserId: users.mergedIntoUserId })
+    .from(users)
+    .where(eq(users.id, mergeRow.sourceUserId))
+    .limit(1)
+    .then((r) => r[0]);
+  if (!sourceCurrent || sourceCurrent.mergedIntoUserId !== mergeRow.targetUserId) {
+    return {
+      status: 409,
+      error: "stale_merge",
+      message:
+        "Source's merge target no longer matches this merge record. Manual review required.",
+    };
+  }
+
+  // Manifest is { toRepoint, conflicts } as of Task 7 fix-up; older merges
+  // (none exist yet in production — admin endpoint hasn't shipped) would
+  // have the bare toRepoint shape. The fallback handles both.
+  const manifest = mergeRow.repointedRows as unknown as
+    | { toRepoint: MergeSnapshot["toRepoint"]; conflicts: MergeSnapshot["conflicts"] }
+    | MergeSnapshot["toRepoint"];
+  const repointedRows: MergeSnapshot["toRepoint"] =
+    "toRepoint" in manifest ? manifest.toRepoint : manifest;
+  const conflicts: MergeSnapshot["conflicts"] =
+    "conflicts" in manifest ? manifest.conflicts : [];
+  const promotedFields = mergeRow.promotedFields as Record<string, unknown>;
+
+  await db.transaction(async (tx) => {
+    // 1. Move every previously-repointed surrogate-id row back to source.
+    const straightTables = [
+      { t: experiences, ids: repointedRows.experiences },
+      { t: education, ids: repointedRows.education },
+      { t: certifications, ids: repointedRows.certifications },
+      { t: works, ids: repointedRows.works },
+      { t: leadershipTerms, ids: repointedRows.leadership_terms },
+      { t: eventAttendances, ids: repointedRows.event_attendances },
+      { t: eventSessionPresenters, ids: repointedRows.event_session_presenters },
+      { t: userAwards, ids: repointedRows.user_awards },
+    ] as const;
+    for (const { t, ids } of straightTables) {
+      if (ids.length === 0) continue;
+      await tx
+        .update(t)
+        .set({ userId: mergeRow.sourceUserId })
+        .where(sql`${t}.id = ANY(${ids})`);
+    }
+
+    // communityContributions uses contributorId (split per Task 6 adaptation).
+    if (repointedRows.community_contributions.length > 0) {
+      await tx
+        .update(communityContributions)
+        .set({ contributorId: mergeRow.sourceUserId })
+        .where(
+          sql`${communityContributions.id} = ANY(${repointedRows.community_contributions})`
+        );
+    }
+
+    // mentorshipPairings uses mentorId/menteeId (Task 5 adaptation).
+    if (repointedRows.mentorship_pairings_mentor.length > 0) {
+      await tx
+        .update(mentorshipPairings)
+        .set({ mentorId: mergeRow.sourceUserId })
+        .where(
+          sql`${mentorshipPairings.id} = ANY(${repointedRows.mentorship_pairings_mentor})`
+        );
+    }
+    if (repointedRows.mentorship_pairings_mentee.length > 0) {
+      await tx
+        .update(mentorshipPairings)
+        .set({ menteeId: mergeRow.sourceUserId })
+        .where(
+          sql`${mentorshipPairings.id} = ANY(${repointedRows.mentorship_pairings_mentee})`
+        );
+    }
+
+    if (repointedRows.audit_log.length > 0) {
+      await tx
+        .update(auditLog)
+        .set({ actorId: mergeRow.sourceUserId })
+        .where(sql`${auditLog.id} = ANY(${repointedRows.audit_log})`);
+    }
+    if (repointedRows.user_organizations.length > 0) {
+      await tx
+        .update(userOrganizations)
+        .set({ userId: mergeRow.sourceUserId })
+        .where(
+          sql`${userOrganizations.id} = ANY(${repointedRows.user_organizations})`
+        );
+    }
+    if (repointedRows.group_memberships.length > 0) {
+      await tx
+        .update(groupMemberships)
+        .set({ userId: mergeRow.sourceUserId })
+        .where(
+          sql`${groupMemberships.id} = ANY(${repointedRows.group_memberships})`
+        );
+    }
+    if (repointedRows.event_committee_assignments.length > 0) {
+      await tx
+        .update(eventCommitteeAssignments)
+        .set({ userId: mergeRow.sourceUserId })
+        .where(
+          sql`${eventCommitteeAssignments.id} = ANY(${repointedRows.event_committee_assignments})`
+        );
+    }
+
+    // Composite-PK join tables: at merge time these rows had their userId
+    // repointed to target, so we filter by `userId = target.id AND attr_id IN (...)`.
+    // Composite-PK reverse-repoints filter by `userId = target.id AND
+    // attr_id = ANY(...)`. Caveat: if target independently re-acquired one
+    // of the original repointed attribute ids in the merge-to-unmerge
+    // interval (e.g., admin manually re-added a discipline that was moved
+    // from source), this update will move that legitimately-new row back
+    // to source. The surrogate-PK tables don't have this risk because
+    // their filter uses immutable row ids. Single-operator admin workflow
+    // makes the window small; if multi-operator grows, consider stamping
+    // userMerges.revertedDeadlineAt and refusing unmerges past N days.
+    if (repointedRows.user_disciplines.length > 0) {
+      await tx
+        .update(userDisciplines)
+        .set({ userId: mergeRow.sourceUserId })
+        .where(
+          and(
+            eq(userDisciplines.userId, mergeRow.targetUserId),
+            sql`${userDisciplines.disciplineId} = ANY(${repointedRows.user_disciplines})`
+          )
+        );
+    }
+    if (repointedRows.user_skills.length > 0) {
+      await tx
+        .update(userSkills)
+        .set({ userId: mergeRow.sourceUserId })
+        .where(
+          and(
+            eq(userSkills.userId, mergeRow.targetUserId),
+            sql`${userSkills.skillId} = ANY(${repointedRows.user_skills})`
+          )
+        );
+    }
+    if (repointedRows.user_languages.length > 0) {
+      await tx
+        .update(userLanguages)
+        .set({ userId: mergeRow.sourceUserId })
+        .where(
+          and(
+            eq(userLanguages.userId, mergeRow.targetUserId),
+            sql`${userLanguages.languageId} = ANY(${repointedRows.user_languages})`
+          )
+        );
+    }
+    if (repointedRows.user_engagement_types.length > 0) {
+      await tx
+        .update(userEngagementTypes)
+        .set({ userId: mergeRow.sourceUserId })
+        .where(
+          and(
+            eq(userEngagementTypes.userId, mergeRow.targetUserId),
+            sql`${userEngagementTypes.engagementTypeId} = ANY(${repointedRows.user_engagement_types})`
+          )
+        );
+    }
+
+    // 2. Re-insert conflict-deleted rows back onto source. As of the
+    //    conflicts-persistence fix, executeMerge writes the full
+    //    { toRepoint, conflicts } manifest into user_merges.repointed_rows,
+    //    so this branch IS live whenever the original merge had at least one
+    //    join-table conflict (e.g., both source and target belonged to the
+    //    same group). Each c.snapshot is the original SELECT result from
+    //    buildMergeSnapshot, jsonb-serialized at merge time and now re-cast
+    //    for the INSERT. timestamptz columns round-trip via ISO 8601 strings
+    //    (Postgres coerces them on insert). If a future column type doesn't
+    //    round-trip cleanly through jsonb, this is where to add a custom
+    //    deserializer.
+    for (const c of conflicts) {
+      switch (c.table) {
+        case "user_organizations":
+          await tx.insert(userOrganizations).values(c.snapshot as never);
+          break;
+        case "group_memberships":
+          await tx.insert(groupMemberships).values(c.snapshot as never);
+          break;
+        case "event_committee_assignments":
+          await tx.insert(eventCommitteeAssignments).values(c.snapshot as never);
+          break;
+        case "user_disciplines":
+          await tx.insert(userDisciplines).values(c.snapshot as never);
+          break;
+        case "user_skills":
+          await tx.insert(userSkills).values(c.snapshot as never);
+          break;
+        case "user_languages":
+          await tx.insert(userLanguages).values(c.snapshot as never);
+          break;
+        case "user_engagement_types":
+          await tx.insert(userEngagementTypes).values(c.snapshot as never);
+          break;
+      }
+    }
+
+    // 3. Restore promoted fields on target's profile.
+    if (Object.keys(promotedFields).length > 0) {
+      const restoreUpdates: Record<string, unknown> = { updatedAt: new Date() };
+      for (const [k, v] of Object.entries(promotedFields)) {
+        restoreUpdates[k] = v;
+      }
+      await tx
+        .update(profiles)
+        .set(restoreUpdates)
+        .where(eq(profiles.userId, mergeRow.targetUserId));
+    }
+
+    // 4. Clear merged_into on the source user.
+    await tx
+      .update(users)
+      .set({ mergedIntoUserId: null, updatedAt: new Date() })
+      .where(eq(users.id, mergeRow.sourceUserId));
+
+    // 5. Mark the manifest row as reverted.
+    await tx
+      .update(userMerges)
+      .set({
+        revertedAt: new Date(),
+        revertedByUserId: req.revertedByUserId,
+      })
+      .where(eq(userMerges.id, req.mergeId));
+  });
+
+  return { mergeId: req.mergeId };
 }
