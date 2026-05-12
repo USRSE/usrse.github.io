@@ -1,5 +1,7 @@
-import { Hono } from "hono";
+import { zValidator } from "@hono/zod-validator";
 import { count, desc, eq } from "drizzle-orm";
+import { Hono } from "hono";
+import { z } from "zod";
 import { createDb } from "../../../db";
 import {
   auditLog,
@@ -144,4 +146,224 @@ async function loadSimilarApproved(
     .from(t)
     .where(eq(t.status, "approved"));
   return findSimilarApproved(row.name, approved, row.id);
+}
+
+const patchBodySchema = z
+  .object({
+    name: z.string().min(1).max(120).optional(),
+    slug: z.string().min(1).max(120).optional(),
+  })
+  .strict();
+
+/**
+ * PATCH /api/admin/vocab/:kind/:id
+ *
+ * Edit name and/or slug pre-approval. Slug auto-derives from a
+ * changed name unless an explicit slug override is in the body.
+ * Allowed only when status='pending'.
+ */
+adminVocabByKindIdRoute.patch(
+  "/",
+  zValidator("json", patchBodySchema, (result, c) => {
+    if (!result.success) {
+      return c.json(
+        { ok: false, error: "invalid_input", issues: result.error.issues },
+        400
+      );
+    }
+  }),
+  async (c) => {
+    const kind = c.req.param("kind");
+    const id = c.req.param("id");
+    if (!isVocabKind(kind))
+      return c.json({ ok: false, error: "invalid_kind" }, 400);
+    if (!id || !/^[0-9a-f-]{36}$/i.test(id))
+      return c.json({ ok: false, error: "invalid_input" }, 400);
+    if (!c.env.DATABASE_URL)
+      return c.json({ ok: false, error: "internal" }, 500);
+    const db = createDb(c.env.DATABASE_URL);
+    const body = c.req.valid("json");
+    const t = vocabTableFor(kind as VocabKind).vocab;
+
+    const existing = await db
+      .select({
+        id: t.id,
+        name: t.name,
+        slug: t.slug,
+        status: t.status,
+      })
+      .from(t)
+      .where(eq(t.id, id))
+      .limit(1)
+      .then((r) => r[0]);
+    if (!existing) return c.json({ ok: false, error: "not_found" }, 404);
+    if (existing.status !== "pending") {
+      return c.json(
+        {
+          ok: false,
+          error: "invalid_source_status",
+          message: "Only pending terms can be edited.",
+        },
+        409
+      );
+    }
+
+    c.get("auditCapture")?.({ vocab: existing });
+
+    const next: Partial<{ name: string; slug: string }> = {};
+    if (body.name !== undefined && body.name !== existing.name) {
+      next.name = body.name;
+    }
+    if (body.slug !== undefined) {
+      next.slug = body.slug;
+    } else if (next.name !== undefined) {
+      next.slug = buildSlug(next.name);
+    }
+
+    if (Object.keys(next).length === 0) {
+      return c.json({ ok: true, noChange: true });
+    }
+
+    try {
+      await db.update(t).set(next).where(eq(t.id, id));
+    } catch (err) {
+      // Catch Postgres unique-violation surfaced by Drizzle.
+      const message = err instanceof Error ? err.message : String(err);
+      if (message.includes("unique") || message.includes("duplicate")) {
+        const which = message.includes("slug") ? "slug_conflict" : "name_conflict";
+        return c.json(
+          { ok: false, error: which, message: "Another term already has that value." },
+          409
+        );
+      }
+      throw err;
+    }
+
+    c.set("auditAction", "vocab.edit");
+    c.set("auditTarget", { type: kind, id });
+    c.set("auditPayload", {
+      before: { name: existing.name, slug: existing.slug },
+      after: next,
+    });
+    return c.json({ ok: true });
+  }
+);
+
+/**
+ * POST /api/admin/vocab/:kind/:id/approve
+ *
+ * Sets status='approved' from pending or rejected. Errors with 409
+ * when called on an already-approved row (not idempotent — the
+ * explicit error gives the admin a clear signal if they double-clicked).
+ */
+adminVocabByKindIdRoute.post("/approve", async (c) => {
+  const kind = c.req.param("kind");
+  const id = c.req.param("id");
+  if (!isVocabKind(kind))
+    return c.json({ ok: false, error: "invalid_kind" }, 400);
+  if (!id || !/^[0-9a-f-]{36}$/i.test(id))
+    return c.json({ ok: false, error: "invalid_input" }, 400);
+  if (!c.env.DATABASE_URL) return c.json({ ok: false, error: "internal" }, 500);
+  const db = createDb(c.env.DATABASE_URL);
+  const t = vocabTableFor(kind as VocabKind).vocab;
+
+  const existing = await db
+    .select({ id: t.id, name: t.name, slug: t.slug, status: t.status })
+    .from(t)
+    .where(eq(t.id, id))
+    .limit(1)
+    .then((r) => r[0]);
+  if (!existing) return c.json({ ok: false, error: "not_found" }, 404);
+  if (existing.status === "approved") {
+    return c.json(
+      { ok: false, error: "already_approved", message: "Term is already approved." },
+      409
+    );
+  }
+
+  c.get("auditCapture")?.({ vocab: existing });
+  await db.update(t).set({ status: "approved" }).where(eq(t.id, id));
+
+  c.set("auditAction", "vocab.approve");
+  c.set("auditTarget", { type: kind, id });
+  c.set("auditPayload", {
+    name: existing.name,
+    slug: existing.slug,
+    fromStatus: existing.status,
+  });
+  return c.json({ ok: true });
+});
+
+/**
+ * POST /api/admin/vocab/:kind/:id/reject
+ *
+ * Sets status='rejected'. Refuses with 409 has_usages if any
+ * user_<kind> row points at this term — admin must merge first.
+ * Only allowed from pending.
+ */
+adminVocabByKindIdRoute.post("/reject", async (c) => {
+  const kind = c.req.param("kind");
+  const id = c.req.param("id");
+  if (!isVocabKind(kind))
+    return c.json({ ok: false, error: "invalid_kind" }, 400);
+  if (!id || !/^[0-9a-f-]{36}$/i.test(id))
+    return c.json({ ok: false, error: "invalid_input" }, 400);
+  if (!c.env.DATABASE_URL) return c.json({ ok: false, error: "internal" }, 500);
+  const db = createDb(c.env.DATABASE_URL);
+  const t = vocabTableFor(kind as VocabKind).vocab;
+
+  const existing = await db
+    .select({ id: t.id, name: t.name, slug: t.slug, status: t.status })
+    .from(t)
+    .where(eq(t.id, id))
+    .limit(1)
+    .then((r) => r[0]);
+  if (!existing) return c.json({ ok: false, error: "not_found" }, 404);
+  if (existing.status !== "pending") {
+    return c.json(
+      {
+        ok: false,
+        error: "invalid_source_status",
+        message: "Only pending terms can be rejected.",
+      },
+      409
+    );
+  }
+
+  const usageCount = await countUsages(db, kind as VocabKind, id);
+  if (usageCount > 0) {
+    return c.json(
+      {
+        ok: false,
+        error: "has_usages",
+        usageCount,
+        message:
+          "This term is in use. Merge it into a canonical term instead of rejecting.",
+      },
+      409
+    );
+  }
+
+  c.get("auditCapture")?.({ vocab: existing });
+  await db.update(t).set({ status: "rejected" }).where(eq(t.id, id));
+
+  c.set("auditAction", "vocab.reject");
+  c.set("auditTarget", { type: kind, id });
+  c.set("auditPayload", { name: existing.name, slug: existing.slug });
+  return c.json({ ok: true });
+});
+
+/**
+ * Local slug builder. The same shape lives inside lib/member-id.ts
+ * as a private helper. Extracting it to a shared module would be a
+ * separate, broader refactor — kept inline here so the vocab work
+ * doesn't drag in unrelated changes.
+ */
+function buildSlug(name: string): string {
+  return name
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
