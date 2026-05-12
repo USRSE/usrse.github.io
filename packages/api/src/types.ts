@@ -18,18 +18,17 @@ export type Bindings = {
   /** Public base URL for profile-photo bucket reads (r2.dev today). */
   PROFILE_PHOTOS_PUBLIC_URL: string;
   /**
-   * R2 bucket holding hosted organization logo files. Optional
-   * because the binding is commented out in wrangler.jsonc until the
-   * bucket is provisioned in the Cloudflare dashboard — code reading
-   * this must guard on `env.ORGANIZATION_LOGOS` being defined and
-   * fall back to the InitialsHex stamp when it isn't.
+   * R2 bucket holding hosted organization logo files. Stayed optional
+   * even though the binding is now provisioned — keeps the code
+   * defensive against preview/test environments that haven't been
+   * configured yet. Runtime gate is isLogoHostingConfigured() in
+   * lib/storage-org-logo.ts.
    */
   ORGANIZATION_LOGOS?: R2Bucket;
   /**
-   * Public base URL for organization-logo bucket reads. Empty until
-   * the bucket is provisioned and the URL is filled in via wrangler.
-   * Code that surfaces logos must treat empty-string as "not yet
-   * configured" and fall back to InitialsHex.
+   * Public base URL for organization-logo bucket reads (r2.dev URL,
+   * surfaced through wrangler.jsonc). Empty-string still means "not
+   * configured" so the gate logic stays uniform across environments.
    */
   ORGANIZATION_LOGOS_PUBLIC_URL: string;
 };

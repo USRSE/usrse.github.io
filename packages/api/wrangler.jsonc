@@ -17,24 +17,15 @@
     {
       "binding": "PROFILE_PHOTOS",
       "bucket_name": "usrse-profile-photos"
+    },
+    {
+      "binding": "ORGANIZATION_LOGOS",
+      "bucket_name": "usrse-organization-logos"
     }
-    // ORGANIZATION_LOGOS binding is uncommented once the bucket is
-    // provisioned in the Cloudflare dashboard. Wrangler refuses to
-    // deploy when a binding points at a bucket that doesn't exist
-    // (deploy 25594274231 failed this way), so the binding lives
-    // here as a comment until then. AppEnv.Bindings keeps the type
-    // so feature code can be written safely in the meantime.
-    // {
-    //   "binding": "ORGANIZATION_LOGOS",
-    //   "bucket_name": "usrse-organization-logos"
-    // }
   ],
   "vars": {
     "PROFILE_PHOTOS_PUBLIC_URL": "https://pub-12a8fe7ab15d4128be3f4867cc11b99f.r2.dev",
-    // Set after the bucket is provisioned. Until then, the worker
-    // shouldn't surface logos to clients — gate writes/reads on a
-    // non-empty value.
-    "ORGANIZATION_LOGOS_PUBLIC_URL": ""
+    "ORGANIZATION_LOGOS_PUBLIC_URL": "https://pub-4bc181f2e72740c08c7f842a04b43f3b.r2.dev"
   }
   // Environment variables (DATABASE_URL) are injected via:
   //   - .dev.vars   for local `wrangler dev`
