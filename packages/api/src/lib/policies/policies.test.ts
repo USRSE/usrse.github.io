@@ -62,7 +62,7 @@ describe("canEnterAdminApp", () => {
 });
 
 describe("canApproveVocab", () => {
-  it("denies members", () => {
+  it("denies plain members", () => {
     expect(canApproveVocab(actor())).toBe(false);
   });
   it("allows staff", () => {
