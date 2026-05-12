@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useApi } from "@us-rse/auth-shell";
 import { useShellActor } from "../../layout/AdminShell";
 import { EditorialInput } from "../../components/EditorialInput";
@@ -59,12 +59,15 @@ export function MemberDetailPage() {
   const { id } = useParams<{ id: string }>();
   const actor = useShellActor();
   const apiFetch = useApi();
+  const navigate = useNavigate();
   const [data, setData] = useState<DetailResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>("identity");
   const [draft, setDraft] = useState<Record<string, string>>({});
   const [saveError, setSaveError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
+  const [mergeSearch, setMergeSearch] = useState("");
+  const [mergeResults, setMergeResults] = useState<Array<{ id: string; displayName: string | null; email: string; memberId: string }>>([]);
 
   const fetchUser = useCallback(async () => {
     if (!id) return;
@@ -90,6 +93,30 @@ export function MemberDetailPage() {
   }, [apiFetch, id]);
 
   useEffect(() => { void fetchUser(); }, [fetchUser]);
+
+  // Debounced lookup for the "merge into another member" picker.
+  useEffect(() => {
+    const term = mergeSearch.trim();
+    if (term.length < 2) {
+      setMergeResults([]);
+      return;
+    }
+    const handle = setTimeout(async () => {
+      try {
+        const sp = new URLSearchParams({ q: term, limit: "10", status: "active" });
+        const res = await apiFetch(`/admin/users?${sp}`);
+        if (!res.ok) return;
+        const body = (await res.json()) as {
+          rows: Array<{ id: string; displayName: string | null; email: string; memberId: string }>;
+        };
+        // Exclude the user we are merging FROM.
+        setMergeResults(body.rows.filter((r) => r.id !== id));
+      } catch {
+        /* swallow — picker is a convenience, not load-bearing */
+      }
+    }, 200);
+    return () => clearTimeout(handle);
+  }, [apiFetch, id, mergeSearch]);
 
   async function saveIdentity() {
     if (!data) return;
@@ -391,6 +418,51 @@ export function MemberDetailPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+          )}
+
+          {actor.systemTier >= 2 && !data.user.mergedIntoUserId && (
+            <div>
+              <p className="admin-classification mb-3">Merge into another member</p>
+              <p className="text-[13px] mb-3" style={{ color: "var(--admin-ink-medium)" }}>
+                Find the canonical record this member should be folded into. You'll pick which side is canonical and which fields to promote in the next step.
+              </p>
+              <input
+                type="text"
+                placeholder="Search by name, email, or member ID…"
+                value={mergeSearch}
+                onChange={(e) => setMergeSearch(e.target.value)}
+                className="w-full max-w-lg font-mono text-[13px] py-1.5 outline-none bg-transparent"
+                style={{ borderBottom: "1px solid var(--admin-rule)", color: "var(--admin-ink)" }}
+              />
+              {mergeResults.length > 0 && (
+                <ul className="mt-4 max-w-2xl" style={{ borderTop: "1px solid var(--admin-rule-subtle)" }}>
+                  {mergeResults.map((r) => (
+                    <li key={r.id} style={{ borderBottom: "1px solid var(--admin-rule-subtle)" }}>
+                      <button
+                        type="button"
+                        onClick={() => navigate(`/members/duplicates/merge?a=${data.user.id}&b=${r.id}`)}
+                        className="w-full text-left py-3 grid grid-cols-[1fr_minmax(0,1fr)_8rem] gap-4 items-baseline transition-colors hover:bg-[var(--admin-paper-edge)]"
+                      >
+                        <span style={{ color: "var(--admin-ink)" }}>
+                          {r.displayName ?? <em style={{ color: "var(--admin-marginalia)" }}>no name</em>}
+                        </span>
+                        <span className="font-mono text-[12px] truncate" style={{ color: "var(--admin-ink-medium)" }}>
+                          {r.email}
+                        </span>
+                        <span className="font-mono text-[11px] admin-marginalia tabular-nums truncate">
+                          {r.memberId}
+                        </span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {mergeSearch.trim().length >= 2 && mergeResults.length === 0 && (
+                <p className="mt-3 text-[13px] italic" style={{ color: "var(--admin-marginalia)" }}>
+                  No active members match that search.
+                </p>
+              )}
             </div>
           )}
         </div>

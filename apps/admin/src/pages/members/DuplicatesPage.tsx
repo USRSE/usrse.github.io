@@ -110,7 +110,7 @@ export function DuplicatesPage() {
                   className="admin-classification"
                   style={{ color: "var(--admin-ribbon)" }}
                 >
-                  Review →
+                  Open merge wizard →
                 </Link>
               </div>
             </li>
