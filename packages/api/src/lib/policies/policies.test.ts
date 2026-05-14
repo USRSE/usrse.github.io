@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   canApproveVocab,
+  canCreateGroup,
   canEditEvent,
   canEditGroup,
   canEditMembers,
@@ -170,5 +171,17 @@ describe("canPromoteToRole", () => {
   });
   it("plain members cannot grant any role", () => {
     expect(canPromoteToRole(actor(), { newRole: "member" })).toBe(false);
+  });
+});
+
+describe("canCreateGroup", () => {
+  it("denies plain members", () => {
+    expect(canCreateGroup(actor())).toBe(false);
+  });
+  it("denies staff", () => {
+    expect(canCreateGroup(actor({ systemTier: 1 }))).toBe(false);
+  });
+  it("allows super_admin", () => {
+    expect(canCreateGroup(actor({ systemTier: 2 }))).toBe(true);
   });
 });
