@@ -9,6 +9,7 @@ import { canCreateGroup } from "../../../lib/policies";
 import { requirePolicy } from "../../../middleware/policy";
 import { buildSlug } from "../../../lib/slug";
 import type { AppEnv } from "../../../types";
+import { adminGroupsByIdRoute } from "./byId";
 
 export const adminGroupsRoute = new Hono<AppEnv>();
 
@@ -184,6 +185,8 @@ adminGroupsRoute.post(
     }
   }
 );
+
+adminGroupsRoute.route("/:id", adminGroupsByIdRoute);
 
 function emptyCounts() {
   return { total: 0, active: 0, draft: 0, archived: 0 };
