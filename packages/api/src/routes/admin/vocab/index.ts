@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { and, asc, count, desc, eq, ilike, sql } from "drizzle-orm";
+import { and, asc, count, desc, eq, ilike, inArray } from "drizzle-orm";
 import type { SQL } from "drizzle-orm";
 import { createDb } from "../../../db";
 import {
@@ -300,6 +300,11 @@ async function loadUsageCounts(
   kind: VocabKind,
   ids: string[]
 ): Promise<Map<string, number>> {
+  // Drizzle's sql`${col} = ANY(${ids}::uuid[])` template renders the JS
+  // array as a tuple of positional parameters ($1, $2, ...$n) — Postgres
+  // can't cast a tuple to uuid[], so the query fails parse the moment
+  // ids has 2+ entries. Same trap commit dc48dc5 already fixed on
+  // /admin/users/duplicates; use inArray() which encodes correctly.
   const out = new Map<string, number>();
   if (ids.length === 0) return out;
   switch (kind) {
@@ -310,7 +315,7 @@ async function loadUsageCounts(
           n: count(userDisciplines.userId),
         })
         .from(userDisciplines)
-        .where(sql`${userDisciplines.disciplineId} = ANY(${ids}::uuid[])`)
+        .where(inArray(userDisciplines.disciplineId, ids))
         .groupBy(userDisciplines.disciplineId);
       for (const r of rows) out.set(r.id, Number(r.n));
       break;
@@ -322,7 +327,7 @@ async function loadUsageCounts(
           n: count(userSkills.userId),
         })
         .from(userSkills)
-        .where(sql`${userSkills.skillId} = ANY(${ids}::uuid[])`)
+        .where(inArray(userSkills.skillId, ids))
         .groupBy(userSkills.skillId);
       for (const r of rows) out.set(r.id, Number(r.n));
       break;
@@ -334,7 +339,7 @@ async function loadUsageCounts(
           n: count(userLanguages.userId),
         })
         .from(userLanguages)
-        .where(sql`${userLanguages.languageId} = ANY(${ids}::uuid[])`)
+        .where(inArray(userLanguages.languageId, ids))
         .groupBy(userLanguages.languageId);
       for (const r of rows) out.set(r.id, Number(r.n));
       break;
@@ -347,6 +352,8 @@ async function loadSuggesters(
   db: ReturnType<typeof createDb>,
   userIds: string[]
 ): Promise<Map<string, { id: string; displayName: string | null; email: string }>> {
+  // See loadUsageCounts: the sql`... = ANY(...)` template is unsafe with
+  // JS arrays of 2+ entries. inArray() handles the encoding.
   const rows = await db
     .select({
       id: users.id,
@@ -355,7 +362,7 @@ async function loadSuggesters(
     })
     .from(users)
     .leftJoin(profiles, eq(profiles.userId, users.id))
-    .where(sql`${users.id} = ANY(${userIds}::uuid[])`);
+    .where(inArray(users.id, userIds));
   const out = new Map<
     string,
     { id: string; displayName: string | null; email: string }
