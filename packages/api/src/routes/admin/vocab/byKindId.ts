@@ -14,6 +14,7 @@ import {
 import { executeVocabMerge } from "../../../lib/admin/vocabMerge";
 import { findSimilarApproved } from "../../../lib/admin/vocabSimilarity";
 import { isVocabKind, vocabTableFor, type VocabKind } from "../../../lib/admin/vocabTables";
+import { buildSlug } from "../../../lib/slug";
 import type { AppEnv } from "../../../types";
 
 export const adminVocabByKindIdRoute = new Hono<AppEnv>();
@@ -412,17 +413,3 @@ adminVocabByKindIdRoute.post(
   }
 );
 
-/**
- * Local slug builder. The same shape lives inside lib/member-id.ts
- * as a private helper. Extracting it to a shared module would be a
- * separate, broader refactor — kept inline here so the vocab work
- * doesn't drag in unrelated changes.
- */
-function buildSlug(name: string): string {
-  return name
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}

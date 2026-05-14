@@ -1,3 +1,5 @@
+import { buildSlug } from "./slug";
+
 const CROCKFORD_ALPHABET = "0123456789ABCDEFGHJKMNPQRSTVWXYZ";
 const MEMBER_ID_LENGTH = 8;
 
@@ -33,16 +35,7 @@ export function buildProfileSlug(
   displayName: string,
   memberId: string
 ): string {
-  const namePart = slugify(displayName);
+  const namePart = buildSlug(displayName);
   const idPart = memberId.toLowerCase();
   return namePart ? `${namePart}-${idPart}` : idPart;
-}
-
-function slugify(s: string): string {
-  return s
-    .toLowerCase()
-    .normalize("NFD") // split accented chars into base + combining mark
-    .replace(/[̀-ͯ]/g, "") // strip combining marks
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
 }

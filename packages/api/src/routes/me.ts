@@ -18,6 +18,7 @@ import {
 } from "../db/schema";
 import { loadMemberDossier } from "../lib/dossier";
 import { buildProfileSlug } from "../lib/member-id";
+import { buildSlug } from "../lib/slug";
 import { requireAuth } from "../middleware/auth";
 import {
   PhotoUploadError,
@@ -550,20 +551,6 @@ interface VocabResolved {
 }
 
 /**
- * Slugify a free-text name into the kebab-case form used by the
- * vocab tables. Strips anything outside [a-z0-9], collapses runs
- * of separators, and caps at 80 chars to fit the unique index.
- */
-function slugify(name: string): string {
-  return name
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "")
-    .slice(0, 80);
-}
-
-/**
  * Resolve an "existing or proposed" vocab pick into a concrete row.
  *
  * - When `id` is supplied, validate it exists and is approved.
@@ -608,7 +595,7 @@ async function resolveVocabPick(
 
   const name = input.name!.trim();
   if (!name) return { ok: false, status: 400, message: "Name is empty." };
-  const slug = slugify(name);
+  const slug = buildSlug(name);
   if (!slug) {
     return {
       ok: false,
@@ -965,7 +952,7 @@ async function resolveOrganizationPick(
 
   const name = input.name!.trim();
   if (!name) return { ok: false, status: 400, message: "Name is empty." };
-  const slug = slugify(name);
+  const slug = buildSlug(name);
   if (!slug) {
     return {
       ok: false,
