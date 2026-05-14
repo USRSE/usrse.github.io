@@ -1,6 +1,6 @@
 import { zValidator } from "@hono/zod-validator";
 import { Hono } from "hono";
-import { desc, eq } from "drizzle-orm";
+import { and, desc, eq } from "drizzle-orm";
 import { z } from "zod";
 import { createDb } from "../../../db";
 import { auditLog, groups, groupMemberships, profiles, users } from "../../../db/schema";
@@ -283,5 +283,125 @@ adminGroupsByIdRoute.post("/reopen", async (c) => {
   c.set("auditAction", "groups.reopen");
   c.set("auditTarget", { type: "groups", id });
   c.set("auditPayload", { name: existing.name });
+  return c.json({ ok: true });
+});
+
+const assignChairBodySchema = z.object({
+  userId: z.uuid(),
+  role: z.enum(["chair", "co_chair"]),
+});
+
+/**
+ * POST /api/admin/groups/:id/chairs
+ *
+ * Body: { userId, role: "chair" | "co_chair" }
+ *
+ * If a membership row exists, upgrade its role. Otherwise insert a
+ * new membership with the given role. Either way, the assigned user
+ * becomes a chair (their actor-context recomputes chairedGroupIds on
+ * the next request — and canEditGroup grants edit access to this
+ * group from that moment on).
+ */
+adminGroupsByIdRoute.post(
+  "/chairs",
+  zValidator("json", assignChairBodySchema, (result, c) => {
+    if (!result.success) {
+      return c.json(
+        { ok: false, error: "invalid_input", issues: result.error.issues },
+        400
+      );
+    }
+  }),
+  async (c) => {
+    const id = c.req.param("id");
+    if (!id || !/^[0-9a-f-]{36}$/i.test(id))
+      return c.json({ ok: false, error: "invalid_input" }, 400);
+    if (!c.env.DATABASE_URL) return c.json({ ok: false, error: "internal" }, 500);
+    const db = createDb(c.env.DATABASE_URL);
+    const body = c.req.valid("json");
+
+    const userRow = await db
+      .select({ id: users.id })
+      .from(users)
+      .where(eq(users.id, body.userId))
+      .limit(1)
+      .then((r) => r[0]);
+    if (!userRow) return c.json({ ok: false, error: "user_not_found" }, 404);
+
+    const groupRow = await db
+      .select({ id: groups.id })
+      .from(groups)
+      .where(eq(groups.id, id))
+      .limit(1)
+      .then((r) => r[0]);
+    if (!groupRow) return c.json({ ok: false, error: "not_found" }, 404);
+
+    const existing = await db
+      .select({ id: groupMemberships.id, role: groupMemberships.role })
+      .from(groupMemberships)
+      .where(and(eq(groupMemberships.groupId, id), eq(groupMemberships.userId, body.userId)))
+      .limit(1)
+      .then((r) => r[0]);
+
+    if (existing) {
+      if (existing.role === body.role) {
+        return c.json({ ok: true, noChange: true });
+      }
+      await db
+        .update(groupMemberships)
+        .set({ role: body.role })
+        .where(eq(groupMemberships.id, existing.id));
+    } else {
+      await db.insert(groupMemberships).values({
+        userId: body.userId,
+        groupId: id,
+        role: body.role,
+      });
+    }
+
+    c.set("auditAction", "groups.chair_assign");
+    c.set("auditTarget", { type: "groups", id });
+    c.set("auditPayload", { userId: body.userId, role: body.role });
+    return c.json({ ok: true });
+  }
+);
+
+/**
+ * DELETE /api/admin/groups/:id/chairs/:userId
+ *
+ * Demotes a chair to a regular member. Does NOT remove the membership
+ * entirely. Returns 404 not_chair if the user isn't currently a
+ * chair / co_chair of this group.
+ */
+adminGroupsByIdRoute.delete("/chairs/:userId", async (c) => {
+  const id = c.req.param("id");
+  const userId = c.req.param("userId");
+  if (!id || !/^[0-9a-f-]{36}$/i.test(id))
+    return c.json({ ok: false, error: "invalid_input" }, 400);
+  if (!userId || !/^[0-9a-f-]{36}$/i.test(userId))
+    return c.json({ ok: false, error: "invalid_input" }, 400);
+  if (!c.env.DATABASE_URL) return c.json({ ok: false, error: "internal" }, 500);
+  const db = createDb(c.env.DATABASE_URL);
+
+  const existing = await db
+    .select({ id: groupMemberships.id, role: groupMemberships.role })
+    .from(groupMemberships)
+    .where(and(eq(groupMemberships.groupId, id), eq(groupMemberships.userId, userId)))
+    .limit(1)
+    .then((r) => r[0]);
+  if (!existing) return c.json({ ok: false, error: "not_chair" }, 404);
+  if (existing.role !== "chair" && existing.role !== "co_chair") {
+    return c.json({ ok: false, error: "not_chair" }, 404);
+  }
+
+  const previousRole = existing.role;
+  await db
+    .update(groupMemberships)
+    .set({ role: "member" })
+    .where(eq(groupMemberships.id, existing.id));
+
+  c.set("auditAction", "groups.chair_remove");
+  c.set("auditTarget", { type: "groups", id });
+  c.set("auditPayload", { userId, previousRole });
   return c.json({ ok: true });
 });
