@@ -60,82 +60,106 @@ adminVocabRoute.get("/queue", async (c) => {
     | "all";
   const kinds = kindFilter && isVocabKind(kindFilter) ? [kindFilter] : KINDS;
 
-  // Load rows matching the status filter + their suggester profile data,
-  // per-kind. Similar-term hints + sort-by-match are only meaningful for
-  // pending rows, so we conditionally skip that work when status is set
-  // to something else.
-  const rowsByKind = await Promise.all(
-    kinds.map((kind) => loadVocabRowsWithSuggester(db, kind, statusFilter))
-  );
+  try {
+    // Load rows matching the status filter + their suggester profile data,
+    // per-kind. Similar-term hints + sort-by-match are only meaningful for
+    // pending rows, so we conditionally skip that work when status is set
+    // to something else.
+    const rowsByKind = await Promise.all(
+      kinds.map((kind) => loadVocabRowsWithSuggester(db, kind, statusFilter))
+    );
 
-  // Load approved-pool ONLY when we'll actually score against it (pending
-  // rows benefit from the similar-match hint; other statuses don't).
-  const approvedByKind =
-    statusFilter === "pending"
-      ? await Promise.all(kinds.map((kind) => loadApprovedNames(db, kind)))
-      : kinds.map(() => [] as Array<{ id: string; name: string }>);
+    // Load approved-pool ONLY when we'll actually score against it (pending
+    // rows benefit from the similar-match hint; other statuses don't).
+    const approvedByKind =
+      statusFilter === "pending"
+        ? await Promise.all(kinds.map((kind) => loadApprovedNames(db, kind)))
+        : kinds.map(() => [] as Array<{ id: string; name: string }>);
 
-  // Usage counts for every row we're about to return.
-  const usageByKind = await Promise.all(
-    kinds.map((kind, i) =>
-      loadUsageCounts(db, kind, rowsByKind[i].map((r) => r.id))
-    )
-  );
+    // Usage counts for every row we're about to return.
+    const usageByKind = await Promise.all(
+      kinds.map((kind, i) =>
+        loadUsageCounts(db, kind, rowsByKind[i].map((r) => r.id))
+      )
+    );
 
-  // Assemble.
-  const rows: QueueRow[] = [];
-  for (let i = 0; i < kinds.length; i++) {
-    const kind = kinds[i];
-    const rowsForKind = rowsByKind[i];
-    const approved = approvedByKind[i];
-    const usage = usageByKind[i];
-    for (const r of rowsForKind) {
-      const matches =
-        r.status === "pending"
-          ? findSimilarApproved(r.name, approved)
-          : [];
-      rows.push({
-        kind,
-        id: r.id,
-        name: r.name,
-        slug: r.slug,
-        status: r.status,
-        createdAt:
-          r.createdAt instanceof Date
-            ? r.createdAt.toISOString()
-            : (r.createdAt as unknown as string),
-        suggestedBy: r.suggester,
-        usageCount: usage.get(r.id) ?? 0,
-        similarApproved: matches[0]
-          ? { id: matches[0].id, name: matches[0].name, score: matches[0].score }
-          : null,
-      });
+    // Assemble.
+    const rows: QueueRow[] = [];
+    for (let i = 0; i < kinds.length; i++) {
+      const kind = kinds[i];
+      const rowsForKind = rowsByKind[i];
+      const approved = approvedByKind[i];
+      const usage = usageByKind[i];
+      for (const r of rowsForKind) {
+        const matches =
+          r.status === "pending"
+            ? findSimilarApproved(r.name, approved)
+            : [];
+        rows.push({
+          kind,
+          id: r.id,
+          name: r.name,
+          slug: r.slug,
+          status: r.status,
+          createdAt:
+            r.createdAt instanceof Date
+              ? r.createdAt.toISOString()
+              : (r.createdAt as unknown as string),
+          suggestedBy: r.suggester,
+          usageCount: usage.get(r.id) ?? 0,
+          similarApproved: matches[0]
+            ? { id: matches[0].id, name: matches[0].name, score: matches[0].score }
+            : null,
+        });
+      }
     }
+
+    // Sort across the union.
+    rows.sort((a, b) => {
+      if (sortMode === "most-used") return b.usageCount - a.usageCount;
+      if (sortMode === "strongest-match") {
+        return (b.similarApproved?.score ?? 0) - (a.similarApproved?.score ?? 0);
+      }
+      return b.createdAt.localeCompare(a.createdAt);
+    });
+
+    return c.json({
+      ok: true,
+      rows,
+      counts: {
+        total: rows.length,
+        pending: rows.filter((r) => r.status === "pending").length,
+        approved: rows.filter((r) => r.status === "approved").length,
+        rejected: rows.filter((r) => r.status === "rejected").length,
+        withUsages: rows.filter((r) => r.usageCount > 0).length,
+        withStrongMatch: rows.filter(
+          (r) => (r.similarApproved?.score ?? 0) >= 80
+        ).length,
+      },
+    });
+  } catch (err) {
+    // Surface the underlying failure to the dev console + response body so
+    // /vocab/queue 500s stop being opaque. Mirrors the pattern used by
+    // /admin/users/duplicates — GIT_SHA="dev" means local wrangler dev.
+    const isDev = (c.env.GIT_SHA ?? "dev") === "dev";
+    const message = err instanceof Error ? err.message : String(err);
+    const stack = err instanceof Error ? err.stack : undefined;
+    console.error(
+      "[/admin/vocab/queue]",
+      JSON.stringify({ statusFilter, kindFilter, sortMode }),
+      message,
+      stack
+    );
+    return c.json(
+      {
+        ok: false,
+        error: "queue_failed",
+        message: isDev ? message : "internal",
+        ...(isDev && stack ? { stack } : {}),
+      },
+      500
+    );
   }
-
-  // Sort across the union.
-  rows.sort((a, b) => {
-    if (sortMode === "most-used") return b.usageCount - a.usageCount;
-    if (sortMode === "strongest-match") {
-      return (b.similarApproved?.score ?? 0) - (a.similarApproved?.score ?? 0);
-    }
-    return b.createdAt.localeCompare(a.createdAt);
-  });
-
-  return c.json({
-    ok: true,
-    rows,
-    counts: {
-      total: rows.length,
-      pending: rows.filter((r) => r.status === "pending").length,
-      approved: rows.filter((r) => r.status === "approved").length,
-      rejected: rows.filter((r) => r.status === "rejected").length,
-      withUsages: rows.filter((r) => r.usageCount > 0).length,
-      withStrongMatch: rows.filter(
-        (r) => (r.similarApproved?.score ?? 0) >= 80
-      ).length,
-    },
-  });
 });
 
 /**
