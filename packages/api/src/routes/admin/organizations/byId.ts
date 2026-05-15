@@ -282,44 +282,70 @@ adminOrganizationsByIdRoute.patch(
       return c.json({ ok: true, noop: true });
     }
 
-    const existing = await db
-      .select()
-      .from(organizations)
-      .where(eq(organizations.id, id))
-      .limit(1)
-      .then((r) => r[0]);
-    if (!existing) return c.json({ ok: false, error: "not_found" }, 404);
-
-    c.get("auditCapture")?.({ organization: existing });
-
     try {
-      await db
-        .update(organizations)
-        .set({ ...input, updatedAt: new Date() })
-        .where(eq(organizations.id, id));
-    } catch (e) {
-      const msg = e instanceof Error ? e.message : String(e);
-      // The `name` and `slug` columns are unique — a collision should
-      // not 500 the request, it should tell the admin which field
-      // clashed so they can pick a different value.
-      if (/duplicate key value/i.test(msg) || /unique constraint/i.test(msg)) {
-        return c.json(
-          {
-            ok: false,
-            error: "conflict",
-            message:
-              "Another organization already uses that name or slug. Pick a different value.",
-          },
-          409
-        );
+      const existing = await db
+        .select()
+        .from(organizations)
+        .where(eq(organizations.id, id))
+        .limit(1)
+        .then((r) => r[0]);
+      if (!existing) return c.json({ ok: false, error: "not_found" }, 404);
+
+      c.get("auditCapture")?.({ organization: existing });
+
+      try {
+        await db
+          .update(organizations)
+          .set({ ...input, updatedAt: new Date() })
+          .where(eq(organizations.id, id));
+      } catch (e) {
+        const msg = e instanceof Error ? e.message : String(e);
+        // The `name` and `slug` columns are unique — a collision should
+        // not 500 the request, it should tell the admin which field
+        // clashed so they can pick a different value.
+        if (/duplicate key value/i.test(msg) || /unique constraint/i.test(msg)) {
+          return c.json(
+            {
+              ok: false,
+              error: "conflict",
+              message:
+                "Another organization already uses that name or slug. Pick a different value.",
+            },
+            409
+          );
+        }
+        throw e;
       }
-      throw e;
+
+      c.set("auditAction", "organizations.update");
+      c.set("auditTarget", { type: "organizations", id });
+
+      return c.json({ ok: true });
+    } catch (err) {
+      // Surface the underlying failure in the response body — this
+      // endpoint is gated behind canEditOrganizations (staff+) so an
+      // internal SQL error message isn't a security boundary; what IS
+      // a problem is an opaque 500 that makes the admin guess. console.error
+      // logs the keys patched so wrangler tail can identify which input
+      // shape tripped the error.
+      const message = err instanceof Error ? err.message : String(err);
+      const stack = err instanceof Error ? err.stack : undefined;
+      console.error(
+        "[PATCH /admin/organizations/:id]",
+        JSON.stringify({ id, inputKeys: Object.keys(input) }),
+        message,
+        stack
+      );
+      return c.json(
+        {
+          ok: false,
+          error: "patch_failed",
+          message,
+          ...(stack ? { stack } : {}),
+        },
+        500
+      );
     }
-
-    c.set("auditAction", "organizations.update");
-    c.set("auditTarget", { type: "organizations", id });
-
-    return c.json({ ok: true });
   }
 );
 
