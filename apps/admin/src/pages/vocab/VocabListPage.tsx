@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
 import { useApi } from "@us-rse/auth-shell";
+import { StatusDot } from "../../components/StatusDot";
 
 type VocabKind = "disciplines" | "skills" | "languages";
 type StatusFilter = "pending" | "approved" | "rejected" | "all";
@@ -139,7 +140,9 @@ export function VocabListPage() {
             >
               {r.usageCount}
             </span>
-            <span className="admin-marginalia">{r.status}</span>
+            <span>
+              <StatusDot status={r.status} />
+            </span>
             <span className="truncate text-[12px]" style={{ color: "var(--admin-ink-medium)" }}>
               {r.suggestedBy?.displayName ?? r.suggestedBy?.email ?? "—"}
             </span>
