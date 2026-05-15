@@ -18,6 +18,8 @@ import { OrganizationMergeWizardPage } from "./pages/organizations/OrganizationM
 import { VocabDetailPage } from "./pages/vocab/VocabDetailPage";
 import { VocabListPage } from "./pages/vocab/VocabListPage";
 import { VocabQueuePage } from "./pages/vocab/VocabQueuePage";
+import { GroupDetailPage } from "./pages/groups/GroupDetailPage";
+import { GroupsListPage } from "./pages/groups/GroupsListPage";
 
 export function App() {
   const { user: workosUser, isLoading: authLoading } = useAuth();
@@ -64,7 +66,8 @@ export function App() {
         <Route path="vocab/:kind/:id" element={<VocabDetailPage />} />
         <Route path="vocab/:kind" element={<VocabListPage />} />
         <Route path="vocab" element={<VocabQueuePage />} />
-        <Route path="groups" element={<ComingSoon number="04" label="Groups" blurb="Working, affinity, and regional groups. Chair assignments and group page content lifecycle." />} />
+        <Route path="groups/:id" element={<GroupDetailPage />} />
+        <Route path="groups" element={<GroupsListPage />} />
         <Route path="events" element={<ComingSoon number="05" label="Events" blurb="Event creation and approval, committee assignment, session scheduling, attendance, and sponsor wiring." />} />
         <Route path="recognition" element={<ComingSoon number="06" label="Recognition" blurb="Awards lifecycle, mentorship pairings, and community contribution logging — the source of dossier badges." />} />
         <Route path="settings" element={<ComingSoon number="07" label="Settings" blurb="Super-admin operations, integration toggles, and global flags." />} />

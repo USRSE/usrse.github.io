@@ -48,3 +48,13 @@ test("unauthenticated visit to /vocab/skills triggers sign-in flow", async ({ pa
   await page.goto("/vocab/skills");
   await expect(page.getByText(/connecting to workos|sign in/i)).toBeVisible();
 });
+
+test("unauthenticated visit to /groups triggers sign-in flow", async ({ page }) => {
+  await page.goto("/groups");
+  await expect(page.getByText(/connecting to workos|sign in/i)).toBeVisible();
+});
+
+test("unauthenticated visit to /groups/<uuid> triggers sign-in flow", async ({ page }) => {
+  await page.goto("/groups/00000000-0000-4000-8000-000000000000");
+  await expect(page.getByText(/connecting to workos|sign in/i)).toBeVisible();
+});
