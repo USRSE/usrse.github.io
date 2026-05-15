@@ -9,7 +9,7 @@ repeated: false
 category: Software Testing
 time:
     - - start: 2026-05-20T18:00:00Z
-        end: 2026-05-20T19:00:00Z
+        end: 2026-05-20T18:00:00Z
 ---
 
 The Testing working group is happy to announce a new talk on Software
