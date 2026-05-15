@@ -14,6 +14,7 @@ import {
 import { executeVocabMerge } from "../../../lib/admin/vocabMerge";
 import { findSimilarApproved } from "../../../lib/admin/vocabSimilarity";
 import { isVocabKind, vocabTableFor, type VocabKind } from "../../../lib/admin/vocabTables";
+import { joinErrorChain } from "../../../lib/errorChain";
 import { buildSlug } from "../../../lib/slug";
 import type { AppEnv } from "../../../types";
 
@@ -229,10 +230,14 @@ adminVocabByKindIdRoute.patch(
     try {
       await db.update(t).set(next).where(eq(t.id, id));
     } catch (err) {
-      // Catch Postgres unique-violation surfaced by Drizzle.
-      const message = err instanceof Error ? err.message : String(err);
-      if (message.includes("unique") || message.includes("duplicate")) {
-        const which = message.includes("slug") ? "slug_conflict" : "name_conflict";
+      // Catch Postgres unique-violation surfaced by Drizzle. The
+      // duplicate-key signal lives in err.cause.message (Drizzle's
+      // outer .message is just the "Failed query: ..." preamble), so
+      // walk the chain — checking only err.message would miss it and
+      // surface as a generic 500.
+      const chain = joinErrorChain(err);
+      if (chain.includes("unique") || chain.includes("duplicate")) {
+        const which = chain.includes("slug") ? "slug_conflict" : "name_conflict";
         return c.json(
           { ok: false, error: which, message: "Another term already has that value." },
           409

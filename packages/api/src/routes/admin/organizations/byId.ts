@@ -30,6 +30,7 @@ import {
   validateOrgMerge,
   type PromotableOrgField,
 } from "../../../lib/admin/orgMerge";
+import { collectErrorMessages, joinErrorChain } from "../../../lib/errorChain";
 import type { AppEnv } from "../../../types";
 
 const SLUG_PATTERN = /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
@@ -299,17 +300,19 @@ adminOrganizationsByIdRoute.patch(
           .set({ ...input, updatedAt: new Date() })
           .where(eq(organizations.id, id));
       } catch (e) {
-        const msg = e instanceof Error ? e.message : String(e);
         // The `name` and `slug` columns are unique — a collision should
         // not 500 the request, it should tell the admin which field
-        // clashed so they can pick a different value.
-        if (/duplicate key value/i.test(msg) || /unique constraint/i.test(msg)) {
+        // clashed so they can pick a different value. Drizzle wraps the
+        // Postgres error so the duplicate-key signal lives in
+        // err.cause.message, not err.message — walk the whole chain.
+        const chain = joinErrorChain(e);
+        if (/duplicate key value/i.test(chain) || /unique constraint/i.test(chain)) {
+          const which = /name/i.test(chain) ? "name" : /slug/i.test(chain) ? "slug" : "value";
           return c.json(
             {
               ok: false,
               error: "conflict",
-              message:
-                "Another organization already uses that name or slug. Pick a different value.",
+              message: `Another organization already uses that ${which}. Pick a different value — or if a duplicate row exists, merge it via the duplicates queue first.`,
             },
             409
           );
@@ -326,33 +329,19 @@ adminOrganizationsByIdRoute.patch(
       // endpoint is gated behind canEditOrganizations (staff+) so an
       // internal SQL error message isn't a security boundary; what IS
       // a problem is an opaque 500 that makes the admin guess.
-      //
-      // Drizzle wraps Postgres errors as DrizzleQueryError where the
-      // outer .message is just "Failed query: <SQL>\nparams: ..." —
-      // the actual Postgres error ("column does not exist", "value too
-      // long", etc.) is in .cause. Walk the chain so the response
-      // includes the real reason.
-      const messages: string[] = [];
-      let cur: unknown = err;
-      let stack: string | undefined;
-      while (cur instanceof Error) {
-        messages.push(cur.message);
-        if (!stack && cur.stack) stack = cur.stack;
-        cur = (cur as { cause?: unknown }).cause;
-      }
-      if (cur !== undefined && cur !== null) messages.push(String(cur));
-      const message = messages.join(" | ");
+      const messages = collectErrorMessages(err);
+      const stack = err instanceof Error ? err.stack : undefined;
       console.error(
         "[PATCH /admin/organizations/:id]",
         JSON.stringify({ id, inputKeys: Object.keys(input) }),
-        message,
+        messages.join(" | "),
         stack
       );
       return c.json(
         {
           ok: false,
           error: "patch_failed",
-          message,
+          message: messages.join(" | "),
           messages,
           ...(stack ? { stack } : {}),
         },
