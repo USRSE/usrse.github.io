@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { CommandPalette } from "@/components/members/CommandPalette";
@@ -16,7 +16,8 @@ import { StaffPage } from "@/pages/about/StaffPage";
 import { FinancialStatusPage } from "@/pages/about/FinancialStatusPage";
 import { WorkingGroupsPage } from "@/pages/community/WorkingGroupsPage";
 import { AffinityGroupsPage } from "@/pages/community/AffinityGroupsPage";
-import { CommunityCallsPage } from "@/pages/community/CommunityCallsPage";
+import { RegionalGroupsPage } from "@/pages/community/RegionalGroupsPage";
+import { GroupPage } from "@/pages/community/GroupPage";
 import { CommunityAwardsPage } from "@/pages/community/CommunityAwardsPage";
 import { CommunityFundsPage } from "@/pages/community/CommunityFundsPage";
 import { UpcomingEventsPage } from "@/pages/events/UpcomingEventsPage";
@@ -73,7 +74,10 @@ export function App() {
             <Route path="/about/financial-status" element={<FinancialStatusPage />} />
             <Route path="/community/working-groups" element={<WorkingGroupsPage />} />
             <Route path="/community/affinity-groups" element={<AffinityGroupsPage />} />
-            <Route path="/community/calls" element={<CommunityCallsPage />} />
+            <Route path="/community/regional-groups" element={<RegionalGroupsPage />} />
+            <Route path="/community/groups/:id" element={<GroupPage />} />
+            {/* TODO: replace target with /community/groups/<community-calls-id> after ingest run */}
+            <Route path="/community/calls" element={<Navigate to="/community/working-groups" replace />} />
             <Route path="/community/awards" element={<CommunityAwardsPage />} />
             <Route path="/community/funds" element={<CommunityFundsPage />} />
             <Route path="/events" element={<UpcomingEventsPage />} />

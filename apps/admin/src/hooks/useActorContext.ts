@@ -43,6 +43,21 @@ const INITIAL: State = { status: "idle", actor: null, error: null };
  * Loads /api/admin/me. Mirrors the public-app useCurrentMember pattern.
  * Polls every 60s while signed in so role changes propagate without a
  * full page reload (per the spec's token-doesn't-refresh tradeoff).
+ *
+ * Background polls MUST be silent. The initial mount can flip status
+ * to "loading" because no actor is on screen yet, but a subsequent
+ * poll that does the same thing causes App.tsx to render its
+ * <FullScreenStatus message="Loading actor context…" /> scrim and
+ * unmount the current admin route — which destroys any in-flight form
+ * state (drafts, scroll position, dropdown selections). On a 60s
+ * cadence that's catastrophic for the admin's actual workflow.
+ *
+ * The fix: poll-mode fetches only mutate state when the response
+ * carries new information. Successful refreshes replace the actor
+ * object silently; a 403 still surfaces (the user lost access — that
+ * IS a meaningful change worth showing); transient errors are logged
+ * and discarded so the admin doesn't see "Couldn't load admin context"
+ * on a momentary network blip.
  */
 export function useActorContext(): State & { refetch: () => void } {
   const { user: workosUser, isLoading: authLoading } = useAuth();
@@ -50,9 +65,12 @@ export function useActorContext(): State & { refetch: () => void } {
   const [state, setState] = useState<State>(INITIAL);
   const tokenRef = useRef(0);
 
-  const fetchActor = useCallback(async () => {
+  const fetchActor = useCallback(async (options?: { silent?: boolean }) => {
+    const silent = options?.silent === true;
     const token = ++tokenRef.current;
-    setState({ status: "loading", actor: null, error: null });
+    if (!silent) {
+      setState({ status: "loading", actor: null, error: null });
+    }
     try {
       const res = await apiFetch("/admin/me");
       if (tokenRef.current !== token) return;
@@ -62,6 +80,8 @@ export function useActorContext(): State & { refetch: () => void } {
         return;
       }
       if (res.status === 403) {
+        // Forbidden is a meaningful change even on a silent poll —
+        // the admin lost access and needs to know.
         setState({ status: "forbidden", actor: null, error: null });
         return;
       }
@@ -78,6 +98,10 @@ export function useActorContext(): State & { refetch: () => void } {
           setState({ status: "user_pending", actor: null, error: null });
           return;
         }
+        if (silent) {
+          console.warn("/admin/me returned 404 during silent refresh");
+          return;
+        }
         setState({
           status: "error",
           actor: null,
@@ -87,6 +111,10 @@ export function useActorContext(): State & { refetch: () => void } {
         });
         return;
       }
+      if (silent) {
+        console.warn(`/admin/me returned ${res.status} during silent refresh`);
+        return;
+      }
       setState({
         status: "error",
         actor: null,
@@ -94,6 +122,13 @@ export function useActorContext(): State & { refetch: () => void } {
       });
     } catch (e) {
       if (tokenRef.current !== token) return;
+      if (silent) {
+        console.warn(
+          "/admin/me errored during silent refresh:",
+          e instanceof Error ? e.message : String(e)
+        );
+        return;
+      }
       setState({
         status: "error",
         actor: null,
@@ -110,12 +145,15 @@ export function useActorContext(): State & { refetch: () => void } {
       return;
     }
     void fetchActor();
-    const interval = window.setInterval(() => void fetchActor(), 60_000);
+    const interval = window.setInterval(
+      () => void fetchActor({ silent: true }),
+      60_000
+    );
     return () => {
       tokenRef.current++;
       window.clearInterval(interval);
     };
   }, [authLoading, workosUser, fetchActor]);
 
-  return { ...state, refetch: fetchActor };
+  return { ...state, refetch: () => void fetchActor() };
 }

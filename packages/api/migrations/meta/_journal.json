@@ -134,6 +134,13 @@
       "when": 1778940000000,
       "tag": "0018_organization_merges",
       "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1778788921927,
+      "tag": "0019_groups_publishable",
+      "breakpoints": true
     }
   ]
 }

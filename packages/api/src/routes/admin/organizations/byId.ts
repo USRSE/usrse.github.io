@@ -30,6 +30,7 @@ import {
   validateOrgMerge,
   type PromotableOrgField,
 } from "../../../lib/admin/orgMerge";
+import { collectErrorMessages, joinErrorChain } from "../../../lib/errorChain";
 import type { AppEnv } from "../../../types";
 
 const SLUG_PATTERN = /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
@@ -282,44 +283,71 @@ adminOrganizationsByIdRoute.patch(
       return c.json({ ok: true, noop: true });
     }
 
-    const existing = await db
-      .select()
-      .from(organizations)
-      .where(eq(organizations.id, id))
-      .limit(1)
-      .then((r) => r[0]);
-    if (!existing) return c.json({ ok: false, error: "not_found" }, 404);
-
-    c.get("auditCapture")?.({ organization: existing });
-
     try {
-      await db
-        .update(organizations)
-        .set({ ...input, updatedAt: new Date() })
-        .where(eq(organizations.id, id));
-    } catch (e) {
-      const msg = e instanceof Error ? e.message : String(e);
-      // The `name` and `slug` columns are unique — a collision should
-      // not 500 the request, it should tell the admin which field
-      // clashed so they can pick a different value.
-      if (/duplicate key value/i.test(msg) || /unique constraint/i.test(msg)) {
-        return c.json(
-          {
-            ok: false,
-            error: "conflict",
-            message:
-              "Another organization already uses that name or slug. Pick a different value.",
-          },
-          409
-        );
+      const existing = await db
+        .select()
+        .from(organizations)
+        .where(eq(organizations.id, id))
+        .limit(1)
+        .then((r) => r[0]);
+      if (!existing) return c.json({ ok: false, error: "not_found" }, 404);
+
+      c.get("auditCapture")?.({ organization: existing });
+
+      try {
+        await db
+          .update(organizations)
+          .set({ ...input, updatedAt: new Date() })
+          .where(eq(organizations.id, id));
+      } catch (e) {
+        // The `name` and `slug` columns are unique — a collision should
+        // not 500 the request, it should tell the admin which field
+        // clashed so they can pick a different value. Drizzle wraps the
+        // Postgres error so the duplicate-key signal lives in
+        // err.cause.message, not err.message — walk the whole chain.
+        const chain = joinErrorChain(e);
+        if (/duplicate key value/i.test(chain) || /unique constraint/i.test(chain)) {
+          const which = /name/i.test(chain) ? "name" : /slug/i.test(chain) ? "slug" : "value";
+          return c.json(
+            {
+              ok: false,
+              error: "conflict",
+              message: `Another organization already uses that ${which}. Pick a different value — or if a duplicate row exists, merge it via the duplicates queue first.`,
+            },
+            409
+          );
+        }
+        throw e;
       }
-      throw e;
+
+      c.set("auditAction", "organizations.update");
+      c.set("auditTarget", { type: "organizations", id });
+
+      return c.json({ ok: true });
+    } catch (err) {
+      // Surface the underlying failure in the response body — this
+      // endpoint is gated behind canEditOrganizations (staff+) so an
+      // internal SQL error message isn't a security boundary; what IS
+      // a problem is an opaque 500 that makes the admin guess.
+      const messages = collectErrorMessages(err);
+      const stack = err instanceof Error ? err.stack : undefined;
+      console.error(
+        "[PATCH /admin/organizations/:id]",
+        JSON.stringify({ id, inputKeys: Object.keys(input) }),
+        messages.join(" | "),
+        stack
+      );
+      return c.json(
+        {
+          ok: false,
+          error: "patch_failed",
+          message: messages.join(" | "),
+          messages,
+          ...(stack ? { stack } : {}),
+        },
+        500
+      );
     }
-
-    c.set("auditAction", "organizations.update");
-    c.set("auditTarget", { type: "organizations", id });
-
-    return c.json({ ok: true });
   }
 );
 

@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { useApi } from "@us-rse/auth-shell";
 import { OrgStatusTag } from "../../components/OrgStatusTag";
+import { StatusDot } from "../../components/StatusDot";
 import { useShellActor } from "../../layout/AdminShell";
 
 interface OrgRow {
@@ -207,11 +208,18 @@ export function OrganizationsListPage() {
               {r.memberCount}
             </span>
             <span>
-              <OrgStatusTag
-                deletedAt={r.deletedAt}
-                mergedIntoId={r.mergedIntoId}
-                vocabStatus={r.status}
-              />
+              {/* Lifecycle states (deleted / merged) earn the loud
+                  word — they're exceptional and benefit from being
+                  unmistakable. Otherwise the row gets a vocab-status
+                  dot: green/yellow/red for approved/pending/rejected. */}
+              {r.deletedAt || r.mergedIntoId ? (
+                <OrgStatusTag
+                  deletedAt={r.deletedAt}
+                  mergedIntoId={r.mergedIntoId}
+                />
+              ) : (
+                <StatusDot status={r.status} />
+              )}
             </span>
             <span className="admin-marginalia text-right whitespace-nowrap tabular-nums">
               {new Date(r.createdAt).toLocaleDateString()}

@@ -102,33 +102,60 @@ export function OrganizationDetailPage() {
     }>
   >([]);
 
-  const fetchOrg = useCallback(async () => {
-    if (!id) return;
-    setError(null);
-    try {
-      const res = await apiFetch(`/admin/organizations/${id}`);
-      if (!res.ok) {
-        setError(`/admin/organizations/${id} responded ${res.status}`);
-        return;
+  /**
+   * Refetch the org. Mode controls whether the form draft gets re-seeded
+   * from the server response.
+   *
+   *   - "reset-draft":    initial load + after saveIdentity. Used when
+   *                       the server's value is authoritative for the
+   *                       form, either because nothing was on screen yet
+   *                       or because we just pushed the draft to the
+   *                       server (so a re-seed reflects any server-side
+   *                       normalization like slug derivation).
+   *   - "preserve-draft": after every other action — status flip, soft-
+   *                       delete / restore, logo upload, unmerge. These
+   *                       change OTHER server fields, so the user's
+   *                       in-flight edits to name/slug/shortName/url
+   *                       MUST NOT be clobbered.
+   *
+   * The original implementation re-seeded unconditionally, which meant
+   * any non-save action silently discarded the user's pending edits.
+   */
+  const fetchOrg = useCallback(
+    async (mode: "reset-draft" | "preserve-draft" = "preserve-draft") => {
+      if (!id) return;
+      setError(null);
+      try {
+        const res = await apiFetch(`/admin/organizations/${id}`);
+        if (!res.ok) {
+          setError(`/admin/organizations/${id} responded ${res.status}`);
+          return;
+        }
+        const body = (await res.json()) as DetailResponse;
+        setData(body);
+        if (mode === "reset-draft") {
+          setDraft({
+            name: body.organization.name,
+            slug: body.organization.slug,
+            shortName: body.organization.shortName ?? "",
+            url: body.organization.url ?? "",
+          });
+        }
+      } catch (e) {
+        setError(e instanceof Error ? e.message : String(e));
       }
-      const body = (await res.json()) as DetailResponse;
-      setData(body);
-      setDraft({
-        name: body.organization.name,
-        slug: body.organization.slug,
-        shortName: body.organization.shortName ?? "",
-        url: body.organization.url ?? "",
-      });
-    } catch (e) {
-      setError(e instanceof Error ? e.message : String(e));
-    }
-  }, [apiFetch, id]);
+    },
+    [apiFetch, id]
+  );
 
   useEffect(() => {
-    void fetchOrg();
+    void fetchOrg("reset-draft");
   }, [fetchOrg]);
 
-  async function patch(body: Record<string, unknown>) {
+  async function patch(
+    body: Record<string, unknown>,
+    mode: "reset-draft" | "preserve-draft" = "preserve-draft"
+  ) {
     if (!data) return;
     setSaving(true);
     setSaveError(null);
@@ -145,7 +172,7 @@ export function OrganizationDetailPage() {
         setSaveError(err?.message ?? `PATCH responded ${res.status}`);
         return;
       }
-      await fetchOrg();
+      await fetchOrg(mode);
     } catch (e) {
       setSaveError(e instanceof Error ? e.message : String(e));
     } finally {
@@ -154,15 +181,24 @@ export function OrganizationDetailPage() {
   }
 
   async function saveIdentity() {
-    await patch({
-      name: draft.name.trim() || undefined,
-      slug: draft.slug.trim() || undefined,
-      shortName: draft.shortName.trim() === "" ? null : draft.shortName.trim(),
-      url: draft.url.trim() === "" ? null : draft.url.trim(),
-    });
+    // Save IS the moment server-state catches up to draft — refetch can
+    // safely re-seed the form so server-side normalization (slug derivation
+    // etc.) appears in the inputs.
+    await patch(
+      {
+        name: draft.name.trim() || undefined,
+        slug: draft.slug.trim() || undefined,
+        shortName: draft.shortName.trim() === "" ? null : draft.shortName.trim(),
+        url: draft.url.trim() === "" ? null : draft.url.trim(),
+      },
+      "reset-draft"
+    );
   }
 
   async function setVocabStatus(next: "pending" | "approved") {
+    // Status flip changes the row's status field only — anything the
+    // user typed into the identity inputs stays untouched (defaults to
+    // "preserve-draft").
     await patch({ status: next });
   }
 

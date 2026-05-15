@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { useApi } from "@us-rse/auth-shell";
+import { StatusDot } from "../../components/StatusDot";
 
 type VocabKind = "disciplines" | "skills" | "languages";
 type SortMode = "newest" | "most-used" | "strongest-match";
@@ -168,21 +169,9 @@ export function VocabQueuePage() {
             style={{ borderBottom: "1px solid var(--admin-rule-subtle)" }}
           >
             <span className="admin-marginalia tabular-nums">{String(i + 1).padStart(3, "0")}</span>
-            <span className="admin-marginalia truncate">
+            <span className="admin-marginalia truncate inline-flex items-center gap-2">
+              <StatusDot status={r.status} />
               {r.kind}
-              {r.status !== "pending" && (
-                <span
-                  className="ml-2"
-                  style={{
-                    color:
-                      r.status === "approved"
-                        ? "var(--color-success-700)"
-                        : "var(--color-danger-700)",
-                  }}
-                >
-                  · {r.status}
-                </span>
-              )}
             </span>
             <span className="truncate" style={{ color: "var(--admin-ink)" }}>{r.name}</span>
             <span
