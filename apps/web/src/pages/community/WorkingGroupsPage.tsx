@@ -1,67 +1,7 @@
 import { Link } from "react-router-dom";
 import { CommunityLayout } from "@/components/community/CommunityLayout";
 import { useInView } from "@/hooks/useInView";
-
-interface WorkingGroup {
-  name: string;
-  description: string;
-  /** Only populated when the group has its own dedicated page on the site. */
-  route?: string;
-}
-
-const workingGroups: WorkingGroup[] = [
-  {
-    name: "Code Review",
-    description:
-      "Building a community interested in code review and providing resources for code review practices in research software.",
-  },
-  {
-    name: "Community Calls",
-    description:
-      "Monthly virtual meetings featuring invited speakers and breakout discussion sessions open to all members.",
-    route: "/community/calls",
-  },
-  {
-    name: "Diversity, Equity & Inclusion",
-    description:
-      "Fostering an inclusive environment with equitable treatment for all and integrating DEI practices across the organization.",
-  },
-  {
-    name: "Education & Training",
-    description:
-      "Developing RSE education resources, curating skill lists, and running a seminar series on research software topics.",
-  },
-  {
-    name: "Group Management",
-    description:
-      "Providing support and facilitating conversation between working group chairs on logistics, governance, and best practices.",
-  },
-  {
-    name: "Mentorship Program",
-    description:
-      "Inter-institutional mentorship pairing for professional growth, connecting early-career and experienced RSEs.",
-  },
-  {
-    name: "RSE Empowerment in National Labs",
-    description:
-      "Addressing unique challenges RSEs face in national laboratories through advocacy, knowledge sharing, and community building.",
-  },
-  {
-    name: "Testing",
-    description:
-      "Exploring testing limitations, sharing knowledge across domains, and improving research software reliability.",
-  },
-  {
-    name: "User Experience",
-    description:
-      "Promoting adoption of UX methods in research software engineering to improve usability and accessibility.",
-  },
-  {
-    name: "Website",
-    description:
-      "Managing the content, design, and technical infrastructure of the US-RSE website.",
-  },
-];
+import { useGroups } from "@/hooks/useGroups";
 
 interface Fact {
   value: string;
@@ -151,7 +91,39 @@ export function WorkingGroupsPage() {
   const { ref: groupsRef, isInView: groupsInView } = useInView(0.05);
   const { ref: pathwaysRef, isInView: pathwaysInView } = useInView(0.1);
   const { ref: bridgeRef, isInView: bridgeInView } = useInView(0.1);
+  const { rows, loading, error } = useGroups("working_group");
 
+  if (loading) {
+    return (
+      <CommunityLayout
+        title="Working Groups"
+        subtitle="Community-led teams tackling the challenges Research Software Engineers face every day."
+      >
+        <p className="text-gray-500">Loading…</p>
+      </CommunityLayout>
+    );
+  }
+  if (error) {
+    return (
+      <CommunityLayout
+        title="Working Groups"
+        subtitle="Community-led teams tackling the challenges Research Software Engineers face every day."
+      >
+        <p className="text-red-700">
+          Group list temporarily unavailable.{" "}
+          <button
+            onClick={() => window.location.reload()}
+            className="underline"
+          >
+            Retry
+          </button>
+        </p>
+      </CommunityLayout>
+    );
+  }
+  if (!rows) return null;
+
+  const workingGroups = rows;
   const midpoint = Math.ceil(workingGroups.length / 2);
   const leftColumn = workingGroups.slice(0, midpoint);
   const rightColumn = workingGroups.slice(midpoint);
@@ -234,7 +206,7 @@ export function WorkingGroupsPage() {
                 const isLast = i === column.length - 1;
                 return (
                   <div
-                    key={wg.name}
+                    key={wg.id}
                     className={`py-6 ${!isLast ? "border-b border-neutral-100" : ""} ${
                       groupsInView ? "animate-slide-up" : "opacity-0"
                     }`}
@@ -249,26 +221,24 @@ export function WorkingGroupsPage() {
                       </h3>
                     </div>
                     <p className="text-sm text-neutral-600 leading-relaxed pl-8">
-                      {wg.description}
+                      {wg.description ?? ""}
                     </p>
-                    {wg.route && (
-                      <Link
-                        to={wg.route}
-                        className="group inline-flex items-center gap-1.5 mt-2 pl-8 font-mono text-[11px] uppercase tracking-wider text-teal-700 hover:text-teal-900 transition-colors"
+                    <Link
+                      to={`/community/groups/${wg.id}`}
+                      className="group inline-flex items-center gap-1.5 mt-2 pl-8 font-mono text-[11px] uppercase tracking-wider text-teal-700 hover:text-teal-900 transition-colors"
+                    >
+                      View page
+                      <svg
+                        className="w-3 h-3 transition-transform group-hover:translate-x-0.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        aria-hidden="true"
                       >
-                        View page
-                        <svg
-                          className="w-3 h-3 transition-transform group-hover:translate-x-0.5"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                          aria-hidden="true"
-                        >
-                          <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                        </svg>
-                      </Link>
-                    )}
+                        <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </Link>
                   </div>
                 );
               })}

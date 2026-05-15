@@ -1,44 +1,7 @@
 import { Link } from "react-router-dom";
 import { CommunityLayout } from "@/components/community/CommunityLayout";
 import { useInView } from "@/hooks/useInView";
-
-interface AffinityGroup {
-  num: string;
-  name: string;
-  type: string;
-  description: string;
-}
-
-const affinityGroups: AffinityGroup[] = [
-  {
-    num: "01",
-    name: "RSE Group Leaders' Network (RSE-GLN)",
-    type: "Leadership",
-    description:
-      "A space for leaders of RSE teams to share management strategies, organizational challenges, and successes. Includes the Aspiring RSE-GLN for those building toward leadership roles.",
-  },
-  {
-    num: "02",
-    name: "Neuro-RSE",
-    type: "Domain",
-    description:
-      "Connecting research software engineers working in neuroscience — sharing tools, workflows, and domain-specific challenges.",
-  },
-  {
-    num: "03",
-    name: "R-RSE",
-    type: "Language",
-    description:
-      "Increasing R user representation within US-RSE and fostering collaboration among R-focused research software engineers.",
-  },
-  {
-    num: "04",
-    name: "Institutional RSE Networking",
-    type: "Organizational",
-    description:
-      "Connecting RSEs who are building or sustaining RSE communities within their own organizations — sharing playbooks and institutional strategies.",
-  },
-];
+import { useGroups } from "@/hooks/useGroups";
 
 interface RegionalGroup {
   num: string;
@@ -153,6 +116,37 @@ export function AffinityGroupsPage() {
   const { ref: regionalRef, isInView: regionalInView } = useInView(0.05);
   const { ref: startRef, isInView: startInView } = useInView(0.1);
   const { ref: bridgeRef, isInView: bridgeInView } = useInView(0.1);
+  const { rows: affinityGroups, loading, error } = useGroups("affinity_group");
+
+  if (loading) {
+    return (
+      <CommunityLayout
+        title="Affinity Groups"
+        subtitle="Spaces for members who share identities, interests, or geography to connect and support each other."
+      >
+        <p className="text-gray-500">Loading…</p>
+      </CommunityLayout>
+    );
+  }
+  if (error) {
+    return (
+      <CommunityLayout
+        title="Affinity Groups"
+        subtitle="Spaces for members who share identities, interests, or geography to connect and support each other."
+      >
+        <p className="text-red-700">
+          Group list temporarily unavailable.{" "}
+          <button
+            onClick={() => window.location.reload()}
+            className="underline"
+          >
+            Retry
+          </button>
+        </p>
+      </CommunityLayout>
+    );
+  }
+  if (!affinityGroups) return null;
 
   return (
     <CommunityLayout
@@ -231,10 +225,12 @@ export function AffinityGroupsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-neutral-200">
           {affinityGroups.map((g, i) => {
             const a = i % 2 === 0 ? pillarAccent.teal : pillarAccent.purple;
+            const num = String(i + 1).padStart(2, "0");
             return (
-              <article
-                key={g.num}
-                className={`bg-white pt-9 pb-10 px-6 md:px-8 border-t-2 ${a.border} ${
+              <Link
+                key={g.id}
+                to={`/community/groups/${g.id}`}
+                className={`bg-white pt-9 pb-10 px-6 md:px-8 border-t-2 ${a.border} hover:bg-neutral-50/60 transition-colors ${
                   affinityInView ? "animate-slide-up" : "opacity-0"
                 }`}
                 style={{ animationDelay: `${i * 90}ms` }}
@@ -243,21 +239,21 @@ export function AffinityGroupsPage() {
                   <p
                     className={`font-mono text-[11px] uppercase tracking-[0.2em] ${a.tag}`}
                   >
-                    {g.type}
+                    Affinity group
                   </p>
                   <span
                     className={`font-display text-sm font-bold tabular-nums ${a.num}`}
                   >
-                    {g.num}
+                    {num}
                   </span>
                 </div>
                 <h3 className="font-display text-xl lg:text-2xl font-bold text-neutral-900 tracking-tight leading-[1.2] mb-4 text-balance">
                   {g.name}
                 </h3>
                 <p className="text-sm text-neutral-600 leading-relaxed">
-                  {g.description}
+                  {g.description ?? ""}
                 </p>
-              </article>
+              </Link>
             );
           })}
         </div>
