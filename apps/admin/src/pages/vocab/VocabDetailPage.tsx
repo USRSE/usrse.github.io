@@ -41,26 +41,39 @@ export function VocabDetailPage() {
   const [draftSlug, setDraftSlug] = useState("");
   const [mergeTarget, setMergeTarget] = useState<string>("");
 
-  const load = useCallback(async () => {
-    if (!kind || !id) return;
-    setError(null);
-    try {
-      const res = await apiFetch(`/admin/vocab/${kind}/${id}`);
-      if (!res.ok) {
-        setError(`/admin/vocab/${kind}/${id} responded ${res.status}`);
-        return;
+  /**
+   * Refetch the vocab row. Mode controls whether the form draft gets
+   * re-seeded from the server response — see the matching docstring on
+   * OrganizationDetailPage.fetchOrg for the rationale. Approve / reject /
+   * merge change OTHER server fields, so they must NOT overwrite the
+   * user's in-flight name/slug edits. saveIdentity IS the moment server
+   * state catches up to draft, so a re-seed there is safe and useful.
+   */
+  const load = useCallback(
+    async (mode: "reset-draft" | "preserve-draft" = "preserve-draft") => {
+      if (!kind || !id) return;
+      setError(null);
+      try {
+        const res = await apiFetch(`/admin/vocab/${kind}/${id}`);
+        if (!res.ok) {
+          setError(`/admin/vocab/${kind}/${id} responded ${res.status}`);
+          return;
+        }
+        const body = (await res.json()) as DetailResponse;
+        setData(body);
+        if (mode === "reset-draft") {
+          setDraftName(body.row.name);
+          setDraftSlug(body.row.slug);
+          setMergeTarget(body.similarApproved[0]?.id ?? "");
+        }
+      } catch (e) {
+        setError(e instanceof Error ? e.message : String(e));
       }
-      const body = (await res.json()) as DetailResponse;
-      setData(body);
-      setDraftName(body.row.name);
-      setDraftSlug(body.row.slug);
-      setMergeTarget(body.similarApproved[0]?.id ?? "");
-    } catch (e) {
-      setError(e instanceof Error ? e.message : String(e));
-    }
-  }, [apiFetch, kind, id]);
+    },
+    [apiFetch, kind, id]
+  );
 
-  useEffect(() => { void load(); }, [load]);
+  useEffect(() => { void load("reset-draft"); }, [load]);
 
   async function saveIdentity() {
     if (!data) return;
@@ -84,7 +97,9 @@ export function VocabDetailPage() {
         setActionError(err?.message ?? `PATCH responded ${res.status}`);
         return;
       }
-      await load();
+      // Save pushed the draft to the server; re-seed the inputs from the
+      // server's normalized values (slug derivation etc.).
+      await load("reset-draft");
     } finally {
       setActing(false);
     }
