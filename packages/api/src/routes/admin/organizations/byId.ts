@@ -325,11 +325,23 @@ adminOrganizationsByIdRoute.patch(
       // Surface the underlying failure in the response body — this
       // endpoint is gated behind canEditOrganizations (staff+) so an
       // internal SQL error message isn't a security boundary; what IS
-      // a problem is an opaque 500 that makes the admin guess. console.error
-      // logs the keys patched so wrangler tail can identify which input
-      // shape tripped the error.
-      const message = err instanceof Error ? err.message : String(err);
-      const stack = err instanceof Error ? err.stack : undefined;
+      // a problem is an opaque 500 that makes the admin guess.
+      //
+      // Drizzle wraps Postgres errors as DrizzleQueryError where the
+      // outer .message is just "Failed query: <SQL>\nparams: ..." —
+      // the actual Postgres error ("column does not exist", "value too
+      // long", etc.) is in .cause. Walk the chain so the response
+      // includes the real reason.
+      const messages: string[] = [];
+      let cur: unknown = err;
+      let stack: string | undefined;
+      while (cur instanceof Error) {
+        messages.push(cur.message);
+        if (!stack && cur.stack) stack = cur.stack;
+        cur = (cur as { cause?: unknown }).cause;
+      }
+      if (cur !== undefined && cur !== null) messages.push(String(cur));
+      const message = messages.join(" | ");
       console.error(
         "[PATCH /admin/organizations/:id]",
         JSON.stringify({ id, inputKeys: Object.keys(input) }),
@@ -341,6 +353,7 @@ adminOrganizationsByIdRoute.patch(
           ok: false,
           error: "patch_failed",
           message,
+          messages,
           ...(stack ? { stack } : {}),
         },
         500
