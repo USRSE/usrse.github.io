@@ -13,7 +13,7 @@ time:
 ---
 
 The Testing working group is happy to announce a new talk on Software
-Testing on Wednesday May 20, 1-2 PM EST.
+Testing on Wednesday May 20, 1-2 PM EDT.
 
 Title: **Software testing in the Open Force Field Initiative** 
 
