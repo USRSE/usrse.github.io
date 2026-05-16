@@ -93,15 +93,22 @@ export function StaffPage() {
         }`}
       >
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-14">
-          {/* Photo */}
+          {/* Photo — links to Sandra's public profile (same image source
+              as the BoardPage former-board entry; both point at the R2-
+              hosted profile photo so a future change in admin propagates
+              once the page data is refreshed). */}
           <div className="lg:w-72 shrink-0">
-            <div className="relative overflow-hidden rounded-2xl aspect-[3/4] bg-neutral-100 group">
+            <Link
+              to="/members/sandra-gesing-y496vr20"
+              className="relative overflow-hidden rounded-2xl aspect-[3/4] bg-neutral-100 group block"
+              aria-label="Sandra Gesing — view profile"
+            >
               <img
-                src="/images/board-of-directors/sandra-gesing.jpeg"
+                src="https://pub-12a8fe7ab15d4128be3f4867cc11b99f.r2.dev/profiles/5b56c6ca-3caf-4340-b27d-e6c903f3c2d5/1778904173372-qt6ddw.jpg"
                 alt="Sandra Gesing"
                 className="absolute inset-0 w-full h-full object-cover object-top grayscale-[20%] group-hover:grayscale-0 group-hover:scale-[1.03] transition-all duration-500"
               />
-            </div>
+            </Link>
           </div>
 
           {/* Name block */}
@@ -109,9 +116,15 @@ export function StaffPage() {
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-teal-700 mb-4">
               Executive Director
             </p>
-            <h2 className="font-display text-4xl lg:text-6xl font-bold text-neutral-900 tracking-tight leading-none mb-5">
-              Sandra Gesing
-            </h2>
+            <Link
+              to="/members/sandra-gesing-y496vr20"
+              className="inline-block group"
+              aria-label="Sandra Gesing — view profile"
+            >
+              <h2 className="font-display text-4xl lg:text-6xl font-bold text-neutral-900 tracking-tight leading-none mb-5 group-hover:text-purple-700 transition-colors">
+                Sandra Gesing
+              </h2>
+            </Link>
             <p className="text-neutral-600 leading-relaxed max-w-xl mb-8">
               Sandra brings more than 17 years of experience across research
               software engineering, academic research, and industry leadership

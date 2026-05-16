@@ -7,18 +7,27 @@ interface BoardMember {
   org: string;
   term: string;
   photo: string;
+  /** Optional public-profile slug. When set, the photo card becomes a
+   *  Link to `/members/{slug}`. Current board photos are hosted in the
+   *  profile-photos R2 bucket and authored from each member's profile;
+   *  former-board photos remain static for now. */
+  slug?: string;
 }
 
+// Current-board photos are sourced from the profile-photos R2 bucket —
+// the same store backing /members/{slug} dossiers. Updating a member's
+// photo in admin automatically refreshes their profile page; this page
+// hardcodes the URL at the time of migration and is updated alongside.
 const currentBoard: BoardMember[] = [
-  { name: "Keith Beattie", org: "Lawrence Berkeley National Laboratory", term: "2024–2026", photo: "/images/board-of-directors/keith-beattie.jpeg" },
-  { name: "Jeffrey C. Carver", org: "University of Alabama", term: "2019–2027", photo: "/images/board-of-directors/jeff-carver.jpeg" },
-  { name: "Cordero Core", org: "University of Washington", term: "2025–2026", photo: "/images/board-of-directors/cordero-core.jpeg" },
-  { name: "Ian Cosden", org: "Princeton University", term: "2019–2027", photo: "/images/board-of-directors/ian-cosden.jpeg" },
-  { name: "Julia Damerow", org: "Arizona State University", term: "2021–2026", photo: "/images/board-of-directors/julia-damerow.jpeg" },
-  { name: "Alex Koufos", org: "Stanford University", term: "2024–2027", photo: "/images/board-of-directors/alex-koufos.jpeg" },
-  { name: "Miranda Mundt", org: "Sandia National Laboratories", term: "2023–2026", photo: "/images/board-of-directors/miranda-mundt.jpeg" },
-  { name: "Abbey Roelofs", org: "University of Michigan", term: "2024–2027", photo: "/images/board-of-directors/abbey-roelofs.jpeg" },
-  { name: "Pengyin Shan", org: "University of Illinois Urbana-Champaign", term: "2026–2027", photo: "/images/board-of-directors/pengyin-shan.png" },
+  { name: "Keith Beattie", org: "Lawrence Berkeley National Laboratory", term: "2024–2026", slug: "keith-beattie-pej0h8fh", photo: "https://pub-12a8fe7ab15d4128be3f4867cc11b99f.r2.dev/profiles/1332e320-e637-4ba5-8d4d-47a4a83c4e54/1778904171616-8vpgu9.jpg" },
+  { name: "Jeffrey C. Carver", org: "University of Alabama", term: "2019–2027", slug: "jeffrey-c-carver-00w5xrc8", photo: "https://pub-12a8fe7ab15d4128be3f4867cc11b99f.r2.dev/profiles/10135eb0-d866-4845-9878-a70bfc132a68/1778904172151-zxrfa2.jpg" },
+  { name: "Cordero Core", org: "University of Washington", term: "2025–2026", slug: "cordero-core-fcmt2v08", photo: "https://pub-12a8fe7ab15d4128be3f4867cc11b99f.r2.dev/profiles/aba5daa5-5d93-4673-8b4c-d5ddbe0a0de7/1778904172284-py4lxo.jpg" },
+  { name: "Ian Cosden", org: "Princeton University", term: "2019–2027", slug: "ian-cosden-r3f0w3k9", photo: "https://pub-12a8fe7ab15d4128be3f4867cc11b99f.r2.dev/profiles/c00419dc-b196-48f7-9b03-6b8decf71381/1778904172520-rb2wi1.jpg" },
+  { name: "Julia Damerow", org: "Arizona State University", term: "2021–2026", slug: "julia-damerow-r9nqn1nd", photo: "https://pub-12a8fe7ab15d4128be3f4867cc11b99f.r2.dev/profiles/ef7a3c90-879d-49c1-8994-e0e0f66649b4/1778904172652-wotq44.jpg" },
+  { name: "Alex Koufos", org: "Stanford University", term: "2024–2027", slug: "alex-koufos-edc92atf", photo: "https://pub-12a8fe7ab15d4128be3f4867cc11b99f.r2.dev/profiles/f153d816-9908-4e97-89ab-eaf26a2d10c3/1778904172804-to79ey.jpg" },
+  { name: "Miranda Mundt", org: "Sandia National Laboratories", term: "2023–2026", slug: "miranda-mundt-y2z8165z", photo: "https://pub-12a8fe7ab15d4128be3f4867cc11b99f.r2.dev/profiles/b8708764-24e7-4d73-a333-a0097c9d3c24/1778904172936-h8gv7h.jpg" },
+  { name: "Abbey Roelofs", org: "University of Michigan", term: "2024–2027", slug: "abbey-roelofs-4zevzbzb", photo: "https://pub-12a8fe7ab15d4128be3f4867cc11b99f.r2.dev/profiles/7fc87391-8c53-4c1b-8e3c-820df9e26398/1778904173088-bo8491.jpg" },
+  { name: "Pengyin Shan", org: "University of Illinois Urbana-Champaign", term: "2026–2027", slug: "pengyin-shan-ass52449", photo: "https://pub-12a8fe7ab15d4128be3f4867cc11b99f.r2.dev/profiles/500a9e77-8d1d-4bdf-b8c2-35581ff5837d/1778904173222-4rlvnf.png" },
 ];
 
 const formerBoard: BoardMember[] = [
@@ -31,7 +40,10 @@ const formerBoard: BoardMember[] = [
   { name: "Lance Parsons", org: "Princeton University", term: "2019–2022", photo: "/images/board-of-directors/lance-parsons.jpg" },
   { name: "Nicole Brewer", org: "Arizona State University", term: "2023–2025", photo: "/images/board-of-directors/nicole-brewer.jpeg" },
   { name: "Rinku Gupta", org: "Argonne National Laboratory", term: "2022–2025", photo: "/images/board-of-directors/rinku-gupta.jpeg" },
-  { name: "Sandra Gesing", org: "University of Illinois Chicago", term: "2019–2024", photo: "/images/board-of-directors/sandra-gesing.jpeg" },
+  // Sandra appears in formerBoard AND as the active ED on StaffPage.
+  // Her photo was migrated to R2 alongside the current-board photos;
+  // both surfaces share the same R2 URL + link to her public profile.
+  { name: "Sandra Gesing", org: "University of Illinois Chicago", term: "2019–2024", slug: "sandra-gesing-y496vr20", photo: "https://pub-12a8fe7ab15d4128be3f4867cc11b99f.r2.dev/profiles/5b56c6ca-3caf-4340-b27d-e6c903f3c2d5/1778904173372-qt6ddw.jpg" },
 ];
 
 interface Fact {
@@ -160,31 +172,13 @@ export function BoardPage() {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-5 gap-y-12">
           {currentBoard.map((member, i) => (
-            <div
+            <BoardCard
               key={member.name}
-              className={`group ${i % 3 === 1 ? "sm:mt-10" : ""} ${
-                boardVisible ? "animate-slide-up" : "opacity-0"
-              }`}
-              style={{ animationDelay: `${i * 70}ms` }}
-            >
-              <div className="relative overflow-hidden rounded-2xl mb-4 aspect-[3/4] bg-neutral-100">
-                <img
-                  src={member.photo}
-                  alt={member.name}
-                  className="absolute inset-0 w-full h-full object-cover object-top grayscale-[20%] group-hover:grayscale-0 group-hover:scale-[1.03] transition-all duration-500"
-                  loading="lazy"
-                />
-              </div>
-              <h3 className="font-heading text-[15px] font-bold text-neutral-900 leading-tight">
-                {member.name}
-              </h3>
-              <p className="text-[12px] text-neutral-500 mt-1 leading-snug">
-                {member.org}
-              </p>
-              <p className="font-mono text-[11px] text-purple-600 mt-1.5 tabular-nums">
-                {member.term}
-              </p>
-            </div>
+              member={member}
+              index={i}
+              variant="current"
+              animate={boardVisible}
+            />
           ))}
         </div>
       </section>
@@ -210,31 +204,13 @@ export function BoardPage() {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-8">
           {formerBoard.map((member, i) => (
-            <div
+            <BoardCard
               key={member.name}
-              className={`group ${
-                formerVisible ? "animate-fade-in" : "opacity-0"
-              }`}
-              style={{ animationDelay: `${Math.min(i * 40, 400)}ms` }}
-            >
-              <div className="relative overflow-hidden rounded-xl mb-3 aspect-square bg-neutral-100">
-                <img
-                  src={member.photo}
-                  alt={member.name}
-                  className="absolute inset-0 w-full h-full object-cover object-top grayscale-[45%] group-hover:grayscale-0 transition-all duration-500"
-                  loading="lazy"
-                />
-              </div>
-              <p className="text-[13px] font-semibold text-neutral-800 leading-tight">
-                {member.name}
-              </p>
-              <p className="text-[11px] text-neutral-500 mt-0.5 leading-snug">
-                {member.org}
-              </p>
-              <p className="font-mono text-[10px] text-neutral-400 mt-1 tabular-nums">
-                {member.term}
-              </p>
-            </div>
+              member={member}
+              index={i}
+              variant="former"
+              animate={formerVisible}
+            />
           ))}
         </div>
       </section>
@@ -349,5 +325,99 @@ export function BoardPage() {
         </div>
       </section>
     </AboutLayout>
+  );
+}
+
+/**
+ * One member tile, used in both the current-board grid (3-col, taller
+ * 3/4 portrait) and the former-board grid (up-to-5-col, square).
+ * Renders as a <Link> to /members/{slug} when the member has a public
+ * profile, otherwise a plain <div>. The link wraps the WHOLE tile so
+ * the click target is the full card (photo + name + org + term),
+ * matching the way the BoD page already reads as a "directory of
+ * faces."
+ */
+function BoardCard({
+  member,
+  index,
+  variant,
+  animate,
+}: {
+  member: BoardMember;
+  index: number;
+  variant: "current" | "former";
+  animate: boolean;
+}) {
+  const isCurrent = variant === "current";
+  const wrapperClass = isCurrent
+    ? `group block ${index % 3 === 1 ? "sm:mt-10" : ""} ${
+        animate ? "animate-slide-up" : "opacity-0"
+      }`
+    : `group block ${animate ? "animate-fade-in" : "opacity-0"}`;
+  const wrapperStyle = isCurrent
+    ? { animationDelay: `${index * 70}ms` }
+    : { animationDelay: `${Math.min(index * 40, 400)}ms` };
+
+  const photoBox = isCurrent ? (
+    <div className="relative overflow-hidden rounded-2xl mb-4 aspect-[3/4] bg-neutral-100">
+      <img
+        src={member.photo}
+        alt={member.name}
+        className="absolute inset-0 w-full h-full object-cover object-top grayscale-[20%] group-hover:grayscale-0 group-hover:scale-[1.03] transition-all duration-500"
+        loading="lazy"
+      />
+    </div>
+  ) : (
+    <div className="relative overflow-hidden rounded-xl mb-3 aspect-square bg-neutral-100">
+      <img
+        src={member.photo}
+        alt={member.name}
+        className="absolute inset-0 w-full h-full object-cover object-top grayscale-[45%] group-hover:grayscale-0 transition-all duration-500"
+        loading="lazy"
+      />
+    </div>
+  );
+
+  const meta = isCurrent ? (
+    <>
+      <h3 className="font-heading text-[15px] font-bold text-neutral-900 leading-tight group-hover:text-purple-700 transition-colors">
+        {member.name}
+      </h3>
+      <p className="text-[12px] text-neutral-500 mt-1 leading-snug">{member.org}</p>
+      <p className="font-mono text-[11px] text-purple-600 mt-1.5 tabular-nums">
+        {member.term}
+      </p>
+    </>
+  ) : (
+    <>
+      <p className="text-[13px] font-semibold text-neutral-800 leading-tight group-hover:text-purple-700 transition-colors">
+        {member.name}
+      </p>
+      <p className="text-[11px] text-neutral-500 mt-0.5 leading-snug">{member.org}</p>
+      <p className="font-mono text-[10px] text-neutral-400 mt-1 tabular-nums">
+        {member.term}
+      </p>
+    </>
+  );
+
+  // Slug present → public profile exists → entire tile is a Link.
+  if (member.slug) {
+    return (
+      <Link
+        to={`/members/${member.slug}`}
+        className={wrapperClass}
+        style={wrapperStyle}
+        aria-label={`${member.name} — view profile`}
+      >
+        {photoBox}
+        {meta}
+      </Link>
+    );
+  }
+  return (
+    <div className={wrapperClass} style={wrapperStyle}>
+      {photoBox}
+      {meta}
+    </div>
   );
 }
