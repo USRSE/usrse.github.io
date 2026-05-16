@@ -168,13 +168,17 @@ These apply identically to anonymous, member, and admin callers. Admins use `/ad
 }
 ```
 
-**Visibility predicate by caller:**
+**Visibility predicate by caller** — uses the existing `users.isPublic` + `users.isDiscoverable` booleans (no new column):
 
 | Caller | Roster includes | Counted in `hiddenCount` |
 |---|---|---|
-| Anonymous | `users.visibility = 'public'` | `members_only` + `private` |
-| Signed-in member | `users.visibility IN ('public', 'members_only')` | `private` |
-| Signed-in admin | same as member | `private` |
+| Anonymous | `isPublic = true` | `isPublic = false` (both discoverable + hidden) |
+| Signed-in member | `isPublic = true` OR (`isPublic = false` AND `isDiscoverable = true`) | `isPublic = false` AND `isDiscoverable = false` |
+| Signed-in admin | same as member | same as member |
+
+When a "listed (private)" user appears in a signed-in caller's roster, only the stub fields are serialized (`memberSlug`, `displayName`, `isPrimary`) — `avatarUrl` and `role` are nulled out. This matches the stub behavior of the `/members` directory.
+
+**Org profile is more public than `/members`.** The `/members` directory is `requireAuth`-gated entirely; org profiles are not. The deliberate divergence: an org is a public-facing entity and "this person works here" is publicly relevant for orgs whose members are public. Members who don't want this exposure set `isPublic = false`.
 
 Additional roster exclusions (counted in `hiddenCount`):
 - Users with no completed profile (no `profiles` row)
@@ -282,25 +286,38 @@ All visual primitives already exist in the codebase: `OrgLogo`, `InitialsHex`, `
 
 ## 5. Privacy & member rollup
 
-The visibility predicate is shared with the `/members` page (single source of truth — both pages query against `users.visibility`). The rule per caller:
+The roster honors the existing `users.isPublic` + `users.isDiscoverable` two-boolean visibility model (see `db/schema/users.ts:118-127`). Three effective states:
 
-| Caller | `users.visibility` values in roster |
-|---|---|
-| Anonymous | `'public'` only |
-| Signed-in member | `'public'`, `'members_only'` |
-| Signed-in admin | `'public'`, `'members_only'` (admin uses `/admin` for the unfiltered case) |
+| State | `isPublic` | `isDiscoverable` |
+|---|---|---|
+| Public | `true` | (any) |
+| Listed (private) — stub only | `false` | `true` |
+| Hidden | `false` | `false` |
+
+**Predicate by caller:**
+
+| Caller | Roster includes | Counted in `hiddenCount` |
+|---|---|---|
+| Anonymous | `isPublic = true` | every user with `isPublic = false` |
+| Signed-in member | `isPublic = true` OR (`isPublic = false` AND `isDiscoverable = true`) | `isPublic = false` AND `isDiscoverable = false` |
+| Signed-in admin | same as member (admin uses `/admin` for unfiltered) | same as member |
+
+For listed-private users in the signed-in roster, only `memberSlug`, `displayName`, `isPrimary` are serialized — `avatarUrl` and `role` are nulled. Matches `/members` stub behavior.
 
 **Counts:**
-- `totalCount` = every `user_organizations` row with `endedAt IS NULL` for this org. Past affiliations are excluded.
-- `visibleCount` = subset of `totalCount` whose `users.visibility` matches the caller's class AND whose user has a completed `profiles` row AND who is not soft-deleted/merged.
+- `totalCount` = every `user_organizations` row for this org with `endedAt IS NULL`. Past affiliations excluded.
+- `visibleCount` = subset matching the caller's predicate AND not soft-deleted/merged AND has a `profiles` row.
 - `hiddenCount` = `totalCount - visibleCount`.
 
+**Deliberate divergence from `/members`.** The `/members` directory is `requireAuth`-gated entirely; the org profile is not. Rationale: an org is a public-facing entity, and "this person works here" is publicly relevant for orgs whose individual members are themselves public (`isPublic = true`). Members who don't want this exposure set `isPublic = false`.
+
 **Anti-leak guarantees:**
-1. Users with `visibility = 'private'` are never serialized in `members.rows` — no name, slug, avatar, or role appears under any caller class.
-2. `userId` in `members.rows` is included for React keys only; consumers route via `memberSlug`. The roster never exposes raw UUIDs of members the caller can't see.
-3. `hiddenCount` is intentionally exposed — it reveals the magnitude of the hidden set but no member-specific information. This is consistent with `/members`.
-4. Merged orgs 404, not redirect — preventing leaks of "this org used to exist" via membership data.
-5. Users with no `profiles` row are counted in `hiddenCount`, never in `rows`. Prevents placeholder cards.
+1. Hidden users (`isPublic = false` AND `isDiscoverable = false`) are never serialized in `members.rows` under any caller class.
+2. Listed-private users (`isDiscoverable = true`) never appear in the anonymous roster.
+3. `userId` in `members.rows` is for React keys only; routing uses `memberSlug`.
+4. `hiddenCount` is intentionally exposed (magnitude only, no per-user info).
+5. Merged orgs 404 rather than redirect — prevents membership-derived leaks of deprecated orgs.
+6. Users without a `profiles` row are counted in `hiddenCount`, never in `rows` (no placeholder cards).
 
 ## 6. Backfill strategy
 
