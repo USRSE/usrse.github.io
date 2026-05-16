@@ -547,5 +547,16 @@
         "orcid": "0009-0009-6309-380X",
         "affiliation": "University of Illinois Urbana-Champaign",
         "blog": "https://github.com/pengyin-shan"
+    },
+    "ElpyDE": {
+        "name": "Roland Ferger",
+        "bio": "Neuroscientist | Boy Scout",
+        "orcid": "0000-0003-4994-3846",
+        "affiliation": "Albert Einstein College of Medicine",
+        "blog": "https://github.com/ElpyDE"
+    },
+    "Shubhamjha-sj": {
+        "name": "Shubhamjha-sj",
+        "blog": "https://github.com/Shubhamjha-sj"
     }
 }
