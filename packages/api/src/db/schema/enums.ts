@@ -47,6 +47,16 @@ export const sponsorTier = pgEnum("sponsor_tier", [
   "in_kind",
 ]);
 
+export const orgType = pgEnum("org_type", [
+  "university",
+  "national_lab",
+  "agency",
+  "company",
+  "nonprofit",
+  "external_resource",
+  "other",
+]);
+
 export const eventType = pgEnum("event_type", [
   "conference",
   "workshop",
