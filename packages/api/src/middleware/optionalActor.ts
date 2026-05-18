@@ -1,7 +1,9 @@
 import { createMiddleware } from "hono/factory";
+import { jwtVerify } from "jose";
 import { and, eq, isNull } from "drizzle-orm";
 import { createDb } from "../db";
 import { users } from "../db/schema";
+import { getJwks } from "./auth";
 import type { ActorContext } from "../lib/policies";
 import type { AppEnv } from "../types";
 
@@ -16,13 +18,58 @@ import type { AppEnv } from "../types";
  * of the optional-auth flow. Admin-only routes still gate with
  * requireActorContext.
  *
- * Assumes workosUserId is set upstream by requireAuth middleware.
- * Silently no-ops if the user is not found or if any DB error occurs
- * (since this path is hit by anonymous traffic on every request).
+ * Extracts and verifies the WorkOS JWT from the Authorization header.
+ * All failures (missing token, malformed header, invalid signature,
+ * expired token, missing sub claim, DB lookup failure) are silently
+ * swallowed — if any step fails, the request continues as anonymous.
+ * This is safe because the middleware is hit by anonymous traffic on
+ * every request.
  */
 export const optionalActor = createMiddleware<AppEnv>(async (c, next) => {
-  const workosId = c.get("workosUserId");
+  let workosId: string | undefined;
 
+  try {
+    // Extract the Authorization header and parse the token.
+    const header = c.req.header("Authorization");
+    if (!header || !header.startsWith("Bearer ")) {
+      // No token; continue as anonymous.
+      await next();
+      return;
+    }
+
+    const token = header.slice("Bearer ".length).trim();
+    if (!token) {
+      // Empty bearer token; continue as anonymous.
+      await next();
+      return;
+    }
+
+    // If WORKOS_CLIENT_ID is missing, silently no-op (do NOT 500).
+    if (!c.env.WORKOS_CLIENT_ID) {
+      await next();
+      return;
+    }
+
+    // Verify the JWT signature and extract claims.
+    const { payload } = await jwtVerify(token, getJwks(c.env.WORKOS_CLIENT_ID));
+    if (!payload.sub) {
+      // Token has no sub claim; continue as anonymous.
+      await next();
+      return;
+    }
+
+    workosId = payload.sub as string;
+    c.set("workosUserId", workosId);
+    c.set("workosClaims", payload);
+  } catch {
+    // Token extraction or verification failed; continue as anonymous.
+    // This includes invalid signatures, expired tokens, malformed headers,
+    // and any other JWT errors.
+    await next();
+    return;
+  }
+
+  // Only proceed with DB lookup if we have a valid workosId.
   if (!workosId || !c.env.DATABASE_URL) {
     await next();
     return;
