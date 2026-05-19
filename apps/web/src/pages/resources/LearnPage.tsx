@@ -127,9 +127,9 @@ interface Bridge {
 const bridges: Bridge[] = [
   {
     eyebrow: "Where the field lives",
-    title: "Directory",
+    title: "Organizations",
     teaser: "Institutional RSE groups and peer organizations across the US.",
-    path: "/resources/directory",
+    path: "/orgs",
   },
   {
     eyebrow: "Hands-on practice",
@@ -181,8 +181,8 @@ export function LearnPage() {
       title="Learn"
       subtitle="Seminars, tutorials, and learning resources for research software engineers."
       nextPage={{
-        path: "/resources/directory",
-        label: "Directory",
+        path: "/orgs",
+        label: "Organizations",
         teaser: "Where the RSE world lives",
       }}
     >

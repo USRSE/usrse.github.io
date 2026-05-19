@@ -1,0 +1,58 @@
+[
+  {
+    "primary": "Better Scientific Software (BSSw)",
+    "type": "External Org",
+    "url": "https://bssw.io",
+    "domain": "bssw.io",
+    "desc": "A central hub for software productivity, quality, and sustainability"
+  },
+  {
+    "primary": "Ask Cyberinfrastructure",
+    "type": "External Org",
+    "url": "https://ask.cyberinfrastructure.org",
+    "domain": "ask.cyberinfrastructure.org",
+    "desc": "Community Q&A forum for research computing"
+  },
+  {
+    "primary": "IDEAS Productivity",
+    "type": "External Org",
+    "url": "https://ideas-productivity.org",
+    "domain": "ideas-productivity.org",
+    "desc": "Extreme-scale application software productivity"
+  },
+  {
+    "primary": "Software Engineering for Science",
+    "type": "External Org",
+    "url": "https://se4science.org",
+    "domain": "se4science.org",
+    "desc": "SE principles in scientific research"
+  },
+  {
+    "primary": "SWEBOK",
+    "type": "External Org",
+    "url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "domain": "computer.org",
+    "desc": "Software engineering standards and body of knowledge"
+  },
+  {
+    "primary": "Software Sustainability Institute (SSI)",
+    "type": "External Org",
+    "url": "https://software.ac.uk",
+    "domain": "software.ac.uk",
+    "desc": "Better, more sustainable research software"
+  },
+  {
+    "primary": "URSSI",
+    "type": "External Org",
+    "url": "https://urssi.us",
+    "domain": "urssi.us",
+    "desc": "US research software sustainability planning"
+  },
+  {
+    "primary": "Research Software Alliance (ReSA)",
+    "type": "External Org",
+    "url": "https://researchsoft.org",
+    "domain": "researchsoft.org",
+    "desc": "Global network for research software policy and practice"
+  }
+]

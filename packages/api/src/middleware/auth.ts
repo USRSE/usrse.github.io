@@ -6,7 +6,7 @@ import type { AppEnv } from "../types";
 type JWKS = ReturnType<typeof createRemoteJWKSet>;
 const jwksCache = new Map<string, JWKS>();
 
-function getJwks(clientId: string): JWKS {
+export function getJwks(clientId: string): JWKS {
   let jwks = jwksCache.get(clientId);
   if (!jwks) {
     jwks = createRemoteJWKSet(

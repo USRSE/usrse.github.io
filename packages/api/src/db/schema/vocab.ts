@@ -10,7 +10,7 @@ import {
   uniqueIndex,
   uuid,
 } from "drizzle-orm/pg-core";
-import { vocabStatus } from "./enums";
+import { vocabStatus, orgType } from "./enums";
 import { users } from "./users";
 
 export const pronouns = pgTable("pronouns", {
@@ -202,6 +202,15 @@ export const organizations = pgTable(
     logoMarkStorageKey: text("logo_mark_storage_key"),
     logoUsageConsent: text("logo_usage_consent"),
     logoCredit: text("logo_credit"),
+    type: orgType("type").notNull().default("other"),
+    country: text("country"),
+    description: text("description"),
+    createdBy: uuid("created_by").references((): any => users.id, {
+      onDelete: "set null",
+    }),
+    updatedBy: uuid("updated_by").references((): any => users.id, {
+      onDelete: "set null",
+    }),
     status: vocabStatus("status").notNull().default("pending"),
     suggestedBy: uuid("suggested_by").references((): any => users.id, {
       onDelete: "set null",
@@ -231,6 +240,11 @@ export const organizations = pgTable(
     index("organizations_active_idx")
       .on(t.id)
       .where(sql`deleted_at IS NULL AND merged_into_id IS NULL`),
+    index("organizations_directory_idx")
+      .on(t.type, t.name)
+      .where(
+        sql`deleted_at IS NULL AND merged_into_id IS NULL AND status = 'approved'`
+      ),
   ]
 );
 
