@@ -15,8 +15,29 @@ import {
   buildAndScoreOrgPairs,
   type CandidateOrg,
 } from "../../../lib/admin/orgDuplicateDetection";
+import { joinErrorChain } from "../../../lib/errorChain";
+import { buildSlug } from "../../../lib/slug";
 import type { AppEnv } from "../../../types";
 import { adminOrganizationsByIdRoute } from "./byId";
+
+type OrgType =
+  | "university"
+  | "national_lab"
+  | "agency"
+  | "company"
+  | "nonprofit"
+  | "external_resource"
+  | "other";
+
+const ORG_TYPES: OrgType[] = [
+  "university",
+  "national_lab",
+  "agency",
+  "company",
+  "nonprofit",
+  "external_resource",
+  "other",
+];
 
 export const adminOrganizationsRoute = new Hono<AppEnv>();
 
@@ -322,5 +343,113 @@ adminOrganizationsRoute.post(
     return c.json({ ok: true });
   }
 );
+
+/**
+ * POST /api/admin/organizations
+ *
+ * Admin-initiated org creation. Accepts name, optional shortName / url,
+ * type (defaults to "other"), optional country, optional description.
+ * Generates the slug from name; rejects if it collides with an existing
+ * non-deleted org. Sets created_by + updated_by from the actor so the
+ * row is immediately attributable.
+ */
+adminOrganizationsRoute.post("/", async (c) => {
+  if (!c.env.DATABASE_URL) return c.json({ ok: false, error: "internal" }, 500);
+  const db = createDb(c.env.DATABASE_URL);
+  const actor = c.get("actor")!;
+
+  let body: unknown;
+  try {
+    body = await c.req.json();
+  } catch {
+    return c.json({ ok: false, error: "invalid_input", message: "Expected JSON body" }, 400);
+  }
+
+  const {
+    name,
+    shortName,
+    url,
+    type = "other",
+    country,
+    description,
+  } = body as Record<string, unknown>;
+
+  if (typeof name !== "string" || name.trim().length === 0) {
+    return c.json({ ok: false, error: "invalid_input", message: "name is required" }, 400);
+  }
+  if (typeof type !== "string" || !ORG_TYPES.includes(type as OrgType)) {
+    return c.json({ ok: false, error: "invalid_type" }, 400);
+  }
+  if (description != null && (typeof description !== "string" || description.length > 280)) {
+    return c.json({ ok: false, error: "description_too_long" }, 400);
+  }
+
+  const slug = buildSlug(name.trim());
+  if (!slug) {
+    return c.json({ ok: false, error: "invalid_input", message: "name has no slug-safe characters" }, 400);
+  }
+
+  // Reject if an active org already occupies this slug.
+  const existing = await db
+    .select({ id: organizations.id })
+    .from(organizations)
+    .where(and(eq(organizations.slug, slug), isNull(organizations.deletedAt), isNull(organizations.mergedIntoId)))
+    .limit(1)
+    .then((r) => r[0]);
+  if (existing) {
+    return c.json(
+      {
+        ok: false,
+        error: "conflict",
+        message: `An active organization with slug "${slug}" already exists.`,
+      },
+      409
+    );
+  }
+
+  try {
+    const [inserted] = await db
+      .insert(organizations)
+      .values({
+        name: name.trim(),
+        shortName: typeof shortName === "string" ? shortName : null,
+        url: typeof url === "string" ? url : null,
+        type: type as OrgType,
+        country: typeof country === "string" ? country : null,
+        description: typeof description === "string" ? description : null,
+        slug,
+        status: "pending",
+        suggestedBy: actor.user.id,
+        createdBy: actor.user.id,
+        updatedBy: actor.user.id,
+      })
+      .returning({
+        id: organizations.id,
+        name: organizations.name,
+        slug: organizations.slug,
+        status: organizations.status,
+      });
+
+    c.set("auditAction", "organizations.create");
+    c.set("auditTarget", { type: "organizations", id: inserted.id });
+    c.set("auditPayload", { name: inserted.name, slug: inserted.slug, type });
+
+    return c.json({ ok: true, organization: inserted }, 201);
+  } catch (e) {
+    const chain = joinErrorChain(e);
+    if (/duplicate key value/i.test(chain) || /unique constraint/i.test(chain)) {
+      const which = /name/i.test(chain) ? "name" : /slug/i.test(chain) ? "slug" : "value";
+      return c.json(
+        {
+          ok: false,
+          error: "conflict",
+          message: `Another organization already uses that ${which}.`,
+        },
+        409
+      );
+    }
+    throw e;
+  }
+});
 
 adminOrganizationsRoute.route("/:id", adminOrganizationsByIdRoute);

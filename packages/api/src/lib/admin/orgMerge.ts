@@ -53,6 +53,7 @@ export interface OrgMergeRequest {
   sourceOrganizationId: string;
   targetOrganizationId: string;
   mergedByUserId: string;
+  updatedByUserId: string;
   promotedFields: PromotableOrgField[];
   reason?: string;
 }
@@ -287,11 +288,12 @@ export async function executeOrgMerge(
   const mergeId = crypto.randomUUID();
 
   await db.transaction(async (tx) => {
-    // 1. Promote fields from source onto target. Build a single SET
-    //    object so we hit the row once. Virtual logo fields expand
-    //    into two columns each.
-    if (req.promotedFields.length > 0) {
-      const updates: Record<string, unknown> = { updatedAt: new Date() };
+    // 1. Promote fields from source onto target and stamp updatedBy.
+    //    Always update the target so updated_by is written even when
+    //    no fields are promoted. Virtual logo fields expand into two
+    //    columns each.
+    {
+      const updates: Record<string, unknown> = { updatedBy: req.updatedByUserId, updatedAt: new Date() };
       for (const f of req.promotedFields) {
         if (f === "logoMain" || f === "logoDark" || f === "logoMark") {
           const { url, key } = VIRTUAL_LOGO_FIELDS[f];
@@ -363,6 +365,7 @@ export async function executeOrgMerge(
       .update(organizations)
       .set({
         mergedIntoId: snapshot.target.id,
+        updatedBy: req.updatedByUserId,
         updatedAt: new Date(),
       })
       .where(eq(organizations.id, snapshot.source.id));
