@@ -31,6 +31,7 @@ import { NewsUpdatesPage } from "@/pages/news/NewsUpdatesPage";
 import { LearnPage } from "@/pages/resources/LearnPage";
 import { DirectoryPage } from "@/pages/resources/DirectoryPage";
 import { OrgsDirectoryPage } from "@/pages/orgs/OrgsDirectoryPage";
+import { OrgProfilePage } from "@/pages/orgs/OrgProfilePage";
 import { SignInPage } from "@/pages/auth/SignInPage";
 import { SignUpPage } from "@/pages/auth/SignUpPage";
 import { CallbackPage } from "@/pages/auth/CallbackPage";
@@ -92,6 +93,7 @@ export function App() {
             <Route path="/resources" element={<LearnPage />} />
             <Route path="/resources/directory" element={<DirectoryPage />} />
             <Route path="/orgs" element={<OrgsDirectoryPage />} />
+            <Route path="/orgs/:id" element={<OrgProfilePage />} />
             <Route path="/sign-in" element={<SignInPage />} />
             <Route path="/sign-up" element={<SignUpPage />} />
             <Route path="/auth/callback" element={<CallbackPage />} />
