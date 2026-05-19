@@ -31,6 +31,7 @@ import {
   type PromotableOrgField,
 } from "../../../lib/admin/orgMerge";
 import { collectErrorMessages, joinErrorChain } from "../../../lib/errorChain";
+import { ORG_TYPES, type OrgType } from "../../../lib/orgType";
 import type { AppEnv } from "../../../types";
 
 const SLUG_PATTERN = /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
@@ -58,6 +59,9 @@ const orgPatchSchema = z
     /** Attribution string surfaced next to the logo when required by
      *  the org's policy ("Logo © Org, used with permission."). */
     logoCredit: z.string().max(280).nullable().optional(),
+    type: z.enum(ORG_TYPES as unknown as [OrgType, ...OrgType[]]).optional(),
+    country: z.string().max(120).nullable().optional(),
+    description: z.string().max(280).nullable().optional(),
   })
   .strict();
 
@@ -277,6 +281,7 @@ adminOrganizationsByIdRoute.patch(
     if (!c.env.DATABASE_URL)
       return c.json({ ok: false, error: "internal" }, 500);
     const db = createDb(c.env.DATABASE_URL);
+    const actor = c.get("actor")!;
     const input = c.req.valid("json") as OrgPatchInput;
 
     if (Object.keys(input).length === 0) {
@@ -297,7 +302,7 @@ adminOrganizationsByIdRoute.patch(
       try {
         await db
           .update(organizations)
-          .set({ ...input, updatedAt: new Date() })
+          .set({ ...input, updatedBy: actor.user.id, updatedAt: new Date() })
           .where(eq(organizations.id, id));
       } catch (e) {
         // The `name` and `slug` columns are unique — a collision should
@@ -366,6 +371,7 @@ adminOrganizationsByIdRoute.post("/soft-delete", async (c) => {
   }
   if (!c.env.DATABASE_URL) return c.json({ ok: false, error: "internal" }, 500);
   const db = createDb(c.env.DATABASE_URL);
+  const actor = c.get("actor")!;
 
   const existing = await db
     .select()
@@ -380,7 +386,7 @@ adminOrganizationsByIdRoute.post("/soft-delete", async (c) => {
   if (existing.deletedAt === null) {
     await db
       .update(organizations)
-      .set({ deletedAt: new Date(), updatedAt: new Date() })
+      .set({ deletedAt: new Date(), updatedBy: actor.user.id, updatedAt: new Date() })
       .where(eq(organizations.id, id));
   }
   c.set("auditAction", "organizations.soft_delete");
@@ -398,6 +404,7 @@ adminOrganizationsByIdRoute.post("/restore", async (c) => {
   }
   if (!c.env.DATABASE_URL) return c.json({ ok: false, error: "internal" }, 500);
   const db = createDb(c.env.DATABASE_URL);
+  const actor = c.get("actor")!;
 
   const existing = await db
     .select()
@@ -412,7 +419,7 @@ adminOrganizationsByIdRoute.post("/restore", async (c) => {
   if (existing.deletedAt !== null) {
     await db
       .update(organizations)
-      .set({ deletedAt: null, updatedAt: new Date() })
+      .set({ deletedAt: null, updatedBy: actor.user.id, updatedAt: new Date() })
       .where(eq(organizations.id, id));
   }
   c.set("auditAction", "organizations.restore");
@@ -459,7 +466,8 @@ async function persistLogoChange(
   db: ReturnType<typeof createDb>,
   orgId: string,
   variant: LogoVariant,
-  next: { url: string | null; storageKey: string | null }
+  next: { url: string | null; storageKey: string | null },
+  updatedById: string
 ): Promise<void> {
   const cols = VARIANT_COLUMNS[variant];
   await db
@@ -467,6 +475,7 @@ async function persistLogoChange(
     .set({
       [cols.url]: next.url,
       [cols.key]: next.storageKey,
+      updatedBy: updatedById,
       updatedAt: new Date(),
     })
     .where(eq(organizations.id, orgId));
@@ -484,6 +493,7 @@ adminOrganizationsByIdRoute.post("/logo", async (c) => {
   if (!id || !/^[0-9a-f-]{36}$/i.test(id)) {
     return c.json({ ok: false, error: "invalid_input" }, 400);
   }
+  const actor = c.get("actor")!;
   const variant = parseVariant(c.req.query("variant"));
   if (!variant) {
     return c.json(
@@ -561,7 +571,7 @@ adminOrganizationsByIdRoute.post("/logo", async (c) => {
   await persistLogoChange(db, id, variant, {
     url: stored.url,
     storageKey: stored.storageKey,
-  });
+  }, actor.user.id);
 
   c.set("auditAction", "organizations.logo_upload");
   c.set("auditTarget", { type: "organizations", id });
@@ -603,6 +613,7 @@ adminOrganizationsByIdRoute.post(
     if (!id || !/^[0-9a-f-]{36}$/i.test(id)) {
       return c.json({ ok: false, error: "invalid_input" }, 400);
     }
+    const actor = c.get("actor")!;
     const variant = parseVariant(c.req.query("variant"));
     if (!variant) {
       return c.json(
@@ -657,7 +668,7 @@ adminOrganizationsByIdRoute.post(
     await persistLogoChange(db, id, variant, {
       url: stored.url,
       storageKey: stored.storageKey,
-    });
+    }, actor.user.id);
 
     c.set("auditAction", "organizations.logo_upload_from_url");
     c.set("auditTarget", { type: "organizations", id });
@@ -679,6 +690,7 @@ adminOrganizationsByIdRoute.delete("/logo", async (c) => {
   if (!id || !/^[0-9a-f-]{36}$/i.test(id)) {
     return c.json({ ok: false, error: "invalid_input" }, 400);
   }
+  const actor = c.get("actor")!;
   const variant = parseVariant(c.req.query("variant"));
   if (!variant) {
     return c.json(
@@ -707,7 +719,7 @@ adminOrganizationsByIdRoute.delete("/logo", async (c) => {
     }
   }
 
-  await persistLogoChange(db, id, variant, { url: null, storageKey: null });
+  await persistLogoChange(db, id, variant, { url: null, storageKey: null }, actor.user.id);
 
   c.set("auditAction", "organizations.logo_delete");
   c.set("auditTarget", { type: "organizations", id });
@@ -762,6 +774,7 @@ adminOrganizationsByIdRoute.post(
       sourceOrganizationId: id,
       targetOrganizationId: body.targetOrganizationId,
       mergedByUserId: actor.user.id,
+      updatedByUserId: actor.user.id,
       promotedFields: body.promotedFields,
       reason: body.reason,
     };

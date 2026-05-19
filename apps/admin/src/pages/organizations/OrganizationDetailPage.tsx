@@ -2,8 +2,19 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useApi } from "@us-rse/auth-shell";
 import { EditorialInput } from "../../components/EditorialInput";
+import { EditorialTextarea } from "../../components/EditorialTextarea";
 import { OrgStatusTag } from "../../components/OrgStatusTag";
 import { useShellActor } from "../../layout/AdminShell";
+
+const ORG_TYPE_OPTIONS: Array<{ value: string; label: string }> = [
+  { value: "university", label: "University" },
+  { value: "national_lab", label: "National Lab" },
+  { value: "agency", label: "Agency" },
+  { value: "company", label: "Company" },
+  { value: "nonprofit", label: "Nonprofit" },
+  { value: "external_resource", label: "External Resource" },
+  { value: "other", label: "Other" },
+];
 
 type LogoVariant = "main" | "dark" | "mark";
 
@@ -23,6 +34,9 @@ interface DetailResponse {
     logoMarkStorageKey: string | null;
     logoUsageConsent: string | null;
     logoCredit: string | null;
+    type: string | null;
+    country: string | null;
+    description: string | null;
     status: "pending" | "approved";
     mergedIntoId: string | null;
     deletedAt: string | null;
@@ -74,6 +88,9 @@ interface Draft {
   slug: string;
   shortName: string;
   url: string;
+  type: string;
+  country: string | null;
+  description: string | null;
 }
 
 export function OrganizationDetailPage() {
@@ -89,6 +106,9 @@ export function OrganizationDetailPage() {
     slug: "",
     shortName: "",
     url: "",
+    type: "other",
+    country: null,
+    description: null,
   });
   const [saveError, setSaveError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
@@ -139,6 +159,9 @@ export function OrganizationDetailPage() {
             slug: body.organization.slug,
             shortName: body.organization.shortName ?? "",
             url: body.organization.url ?? "",
+            type: body.organization.type ?? "other",
+            country: body.organization.country ?? null,
+            description: body.organization.description ?? null,
           });
         }
       } catch (e) {
@@ -190,6 +213,9 @@ export function OrganizationDetailPage() {
         slug: draft.slug.trim() || undefined,
         shortName: draft.shortName.trim() === "" ? null : draft.shortName.trim(),
         url: draft.url.trim() === "" ? null : draft.url.trim(),
+        type: draft.type,
+        country: draft.country === "" || draft.country === null ? null : draft.country,
+        description: draft.description === "" || draft.description === null ? null : draft.description,
       },
       "reset-draft"
     );
@@ -458,6 +484,60 @@ export function OrganizationDetailPage() {
             }
             hint="Canonical homepage. Leave blank if unknown."
           />
+
+          <div>
+            <span className="admin-classification block mb-2">Type</span>
+            <select
+              value={draft.type}
+              onChange={(e) =>
+                setDraft((d) => ({ ...d, type: e.target.value }))
+              }
+              className="bg-transparent border-0 outline-none py-1.5"
+              style={{
+                borderBottom: "1px solid var(--admin-rule)",
+                color: "var(--admin-ink)",
+                fontSize: "15px",
+              }}
+              disabled={saving}
+            >
+              {ORG_TYPE_OPTIONS.map((opt) => (
+                <option key={opt.value} value={opt.value}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <EditorialInput
+            label="Country"
+            value={draft.country ?? ""}
+            onChange={(e) =>
+              setDraft((d) => ({
+                ...d,
+                country: e.target.value || null,
+              }))
+            }
+            placeholder="e.g. United States"
+          />
+
+          <div>
+            <EditorialTextarea
+              label="Description (280 char max)"
+              value={draft.description ?? ""}
+              onChange={(e) => {
+                if (e.target.value.length <= 280) {
+                  setDraft((d) => ({
+                    ...d,
+                    description: e.target.value || null,
+                  }));
+                }
+              }}
+              rows={3}
+            />
+            <div className="text-xs text-stone-500 mt-1">
+              {(draft.description ?? "").length}/280
+            </div>
+          </div>
 
           <div>
             <p className="admin-classification block mb-2">Vocab status</p>

@@ -130,6 +130,7 @@ const navItems: NavItem[] = [
         heading: "Connect",
         links: [
           { label: "Member Directory", href: "/members", route: true, desc: "Search the roster" },
+          { label: "Organizations", href: "/orgs", route: true, desc: "Where RSE work happens" },
           { label: "Affinity Groups", href: "/community/affinity-groups", route: true, desc: "Identity & regional communities" },
           { label: "Community Calls", href: "/community/calls", route: true, desc: "Monthly virtual meetings" },
           { label: "Community Awards", href: "/community/awards", route: true, desc: "Recognizing contributions" },
@@ -183,7 +184,6 @@ const navItems: NavItem[] = [
     type: "dropdown",
     children: [
       { label: "Learn", href: "/resources", route: true },
-      { label: "Directory", href: "/resources/directory", route: true },
     ],
   },
 ];

@@ -19,7 +19,7 @@ export function ProfileJourneyFooter({
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-10">
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
           <Link
-            to="/resources/directory"
+            to="/members"
             className="group flex items-center gap-3 px-5 py-4 rounded-xl hover:bg-white hover:shadow-sm transition-all"
           >
             <svg

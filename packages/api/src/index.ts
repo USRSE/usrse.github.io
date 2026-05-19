@@ -6,6 +6,7 @@ import { membersRoute } from "./routes/members";
 import { vocabRoute } from "./routes/vocab";
 import { webhooksRoute } from "./routes/webhooks";
 import { publicGroupsRoute } from "./routes/groups";
+import { organizationsRoute } from "./routes/organizations";
 import { adminApi } from "./routes/admin";
 import type { AppEnv } from "./types";
 
@@ -50,6 +51,7 @@ app.route("/me", meRoute);
 app.route("/members", membersRoute);
 app.route("/vocab", vocabRoute);
 app.route("/groups", publicGroupsRoute);
+app.route("/organizations", organizationsRoute);
 app.route("/admin", adminApi);
 
 export default app;
