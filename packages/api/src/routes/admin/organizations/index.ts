@@ -17,27 +17,9 @@ import {
 } from "../../../lib/admin/orgDuplicateDetection";
 import { joinErrorChain } from "../../../lib/errorChain";
 import { buildSlug } from "../../../lib/slug";
+import { ORG_TYPES, type OrgType } from "../../../lib/orgType";
 import type { AppEnv } from "../../../types";
 import { adminOrganizationsByIdRoute } from "./byId";
-
-type OrgType =
-  | "university"
-  | "national_lab"
-  | "agency"
-  | "company"
-  | "nonprofit"
-  | "external_resource"
-  | "other";
-
-const ORG_TYPES: OrgType[] = [
-  "university",
-  "national_lab",
-  "agency",
-  "company",
-  "nonprofit",
-  "external_resource",
-  "other",
-];
 
 export const adminOrganizationsRoute = new Hono<AppEnv>();
 
@@ -383,6 +365,22 @@ adminOrganizationsRoute.post("/", async (c) => {
   if (description != null && (typeof description !== "string" || description.length > 280)) {
     return c.json({ ok: false, error: "description_too_long" }, 400);
   }
+  if (shortName != null && (typeof shortName !== "string" || shortName.length > 60)) {
+    return c.json({ ok: false, error: "short_name_too_long" }, 400);
+  }
+  if (country != null && (typeof country !== "string" || country.length > 120)) {
+    return c.json({ ok: false, error: "country_too_long" }, 400);
+  }
+  if (url != null) {
+    if (typeof url !== "string" || url.length > 500) {
+      return c.json({ ok: false, error: "invalid_url" }, 400);
+    }
+    try {
+      new URL(url);
+    } catch {
+      return c.json({ ok: false, error: "invalid_url", message: "URL is not parseable" }, 400);
+    }
+  }
 
   const slug = buildSlug(name.trim());
   if (!slug) {
@@ -412,10 +410,10 @@ adminOrganizationsRoute.post("/", async (c) => {
       .insert(organizations)
       .values({
         name: name.trim(),
-        shortName: typeof shortName === "string" ? shortName : null,
-        url: typeof url === "string" ? url : null,
+        shortName: typeof shortName === "string" ? (shortName.trim() || null) : null,
+        url: typeof url === "string" ? url.trim() : null,
         type: type as OrgType,
-        country: typeof country === "string" ? country : null,
+        country: typeof country === "string" ? (country.trim() || null) : null,
         description: typeof description === "string" ? description : null,
         slug,
         status: "pending",

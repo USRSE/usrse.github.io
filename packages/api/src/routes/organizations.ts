@@ -31,27 +31,9 @@ import {
   type CallerClass,
   type RosterMember,
 } from "../lib/orgVisibility";
+import { ORG_TYPES, type OrgType } from "../lib/orgType";
 
 export const organizationsRoute = new Hono<AppEnv>();
-
-type OrgType =
-  | "university"
-  | "national_lab"
-  | "agency"
-  | "company"
-  | "nonprofit"
-  | "external_resource"
-  | "other";
-
-const ORG_TYPES: OrgType[] = [
-  "university",
-  "national_lab",
-  "agency",
-  "company",
-  "nonprofit",
-  "external_resource",
-  "other",
-];
 
 interface ListFilters {
   q?: string;

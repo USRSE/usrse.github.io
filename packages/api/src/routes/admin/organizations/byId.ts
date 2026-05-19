@@ -31,6 +31,7 @@ import {
   type PromotableOrgField,
 } from "../../../lib/admin/orgMerge";
 import { collectErrorMessages, joinErrorChain } from "../../../lib/errorChain";
+import { ORG_TYPES, type OrgType } from "../../../lib/orgType";
 import type { AppEnv } from "../../../types";
 
 const SLUG_PATTERN = /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
@@ -58,7 +59,7 @@ const orgPatchSchema = z
     /** Attribution string surfaced next to the logo when required by
      *  the org's policy ("Logo © Org, used with permission."). */
     logoCredit: z.string().max(280).nullable().optional(),
-    type: z.enum(["university", "national_lab", "agency", "company", "nonprofit", "external_resource", "other"]).optional(),
+    type: z.enum(ORG_TYPES as unknown as [OrgType, ...OrgType[]]).optional(),
     country: z.string().max(120).nullable().optional(),
     description: z.string().max(280).nullable().optional(),
   })
