@@ -16,7 +16,8 @@
     "db:studio": "drizzle-kit studio",
     "db:seed": "tsx scripts/seed.ts",
     "db:apply": "tsx scripts/apply-migration.ts",
-    "import:orcid": "tsx scripts/import-orcid.ts"
+    "import:orcid": "tsx scripts/import-orcid.ts",
+    "reconcile:groups": "tsx scripts/reconcile-groups.ts"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.7.6",
