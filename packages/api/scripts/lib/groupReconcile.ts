@@ -54,29 +54,45 @@ export interface ExistingGroup {
   description: string | null;
 }
 
+export interface GroupMatch {
+  group: ExistingGroup;
+  typeMismatch: boolean;
+}
+
 /**
  * Match a CSV channel to an existing DB group. Priority:
- *   1. Exact (normalized) slack_channel match
- *   2. Normalized type-suffix of channel matches normalized group slug
- *
- * Type mismatch (e.g. channel is rg-* but DB group is working_group) → return null.
+ *   1. Exact (normalized) slack_channel match — checked across ALL types,
+ *      since slack_channel is globally unique. A cross-type match returns
+ *      `typeMismatch: true` so the runner can flag it for admin review
+ *      without silently retyping the row.
+ *   2. Type-scoped slug match (no cross-type slug match — slugs can repeat).
  */
 export function matchExistingGroup(
   channel: { name: string; type: CsvType },
   groupsByType: Record<GroupType, ExistingGroup[]>
-): ExistingGroup | null {
+): GroupMatch | null {
   const expectedType = channelTypeToGroupType(channel.type);
-  const candidates = groupsByType[expectedType];
-  if (!candidates) return null;
-
   const normalizedChannel = normalizeForMatch(channel.name);
   const normalizedSuffix = normalizeForMatch(stripTypePrefix(channel.name));
 
-  return (
-    candidates.find(
-      (g) => g.slackChannel && normalizeForMatch(g.slackChannel) === normalizedChannel
-    ) ??
-    candidates.find((g) => normalizeForMatch(g.slug) === normalizedSuffix) ??
-    null
+  // Pass 1: slack_channel match across all types.
+  const allGroups = ([] as ExistingGroup[]).concat(
+    groupsByType.working_group,
+    groupsByType.affinity_group,
+    groupsByType.regional_group
   );
+  const bySlack = allGroups.find(
+    (g) => g.slackChannel && normalizeForMatch(g.slackChannel) === normalizedChannel
+  );
+  if (bySlack) {
+    return { group: bySlack, typeMismatch: bySlack.type !== expectedType };
+  }
+
+  // Pass 2: type-scoped slug match.
+  const candidates = groupsByType[expectedType];
+  if (!candidates) return null;
+  const bySlug = candidates.find((g) => normalizeForMatch(g.slug) === normalizedSuffix);
+  if (bySlug) return { group: bySlug, typeMismatch: false };
+
+  return null;
 }

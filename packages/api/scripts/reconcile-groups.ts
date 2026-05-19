@@ -183,42 +183,58 @@ async function main() {
   console.log(`Existing DB groups: ${existing.length}`);
   console.log("");
 
+  // Pre-build a set of all existing slugs so we can skip inserts that would
+  // collide. Slug collisions are typically legacy rows whose type doesn't
+  // match the CSV channel (the legacy "dmv-rse" affinity row vs the new
+  // CSV "rg-dmv-rse" regional channel). We log + skip rather than crash.
+  const existingSlugs = new Set(existing.map((g) => g.slug));
+
   const csvOut: string[] = ["channel,group_slug,action,detail"];
   let updated = 0;
   let inserted = 0;
   let unchanged = 0;
+  let typeMismatches = 0;
+  let skipped = 0;
 
   for (const ch of channels) {
     const match = matchExistingGroup(ch, groupsByType);
 
     if (match) {
+      const g = match.group;
       const updates: Record<string, unknown> = {};
 
       // Normalize slack_channel to the CSV canonical form when it has drifted.
-      if (match.slackChannel !== ch.name) {
+      if (g.slackChannel !== ch.name) {
         updates.slackChannel = ch.name;
       }
 
       // Backfill description only when the DB is null/empty and CSV has content.
       if (
-        (!match.description || match.description.trim() === "") &&
+        (!g.description || g.description.trim() === "") &&
         ch.purpose.trim() !== ""
       ) {
         updates.description = ch.purpose.trim();
       }
 
+      const tagParts: string[] = [];
+      if (match.typeMismatch) {
+        typeMismatches++;
+        tagParts.push(`type_mismatch=${g.type}->${channelTypeToGroupType(ch.type)}`);
+      }
+
       if (Object.keys(updates).length === 0) {
         unchanged++;
-        csvOut.push(`${ch.name},${match.slug},unchanged,`);
+        const detail = tagParts.length ? `"${tagParts.join("+")}"` : "";
+        csvOut.push(`${ch.name},${g.slug},${match.typeMismatch ? "type_mismatch" : "unchanged"},${detail}`);
       } else {
         updated++;
-        const detail = Object.keys(updates).join("+");
-        csvOut.push(`${ch.name},${match.slug},update,"${detail}"`);
+        const detail = `"${[...Object.keys(updates), ...tagParts].join("+")}"`;
+        csvOut.push(`${ch.name},${g.slug},${match.typeMismatch ? "update_type_mismatch" : "update"},${detail}`);
         if (flags.commit) {
           await db
             .update(groups)
             .set({ ...updates, updatedAt: new Date() })
-            .where(eq(groups.id, match.id));
+            .where(eq(groups.id, g.id));
         }
       }
     } else {
@@ -235,8 +251,17 @@ async function main() {
           : "Regional Group";
       const name = `${displaySuffix} ${label}`;
 
+      if (existingSlugs.has(baseSlug)) {
+        // Slug collides with a legacy row whose type+slack_channel both
+        // differ. Skip rather than crash; admin can rename or merge.
+        skipped++;
+        csvOut.push(`${ch.name},${baseSlug},skip_slug_collision,"existing slug ${baseSlug} blocks insert"`);
+        continue;
+      }
+
       inserted++;
       csvOut.push(`${ch.name},${baseSlug},insert,"type=${groupType}"`);
+      existingSlugs.add(baseSlug);  // protect against duplicate slugs within the same run
 
       if (flags.commit) {
         await db.insert(groups).values({
@@ -258,9 +283,11 @@ async function main() {
   fs.writeFileSync(reportPath, csvOut.join("\n") + "\n");
 
   console.log(`Summary:`);
-  console.log(`  Updated:   ${updated}`);
-  console.log(`  Inserted:  ${inserted}`);
-  console.log(`  Unchanged: ${unchanged}`);
+  console.log(`  Updated:        ${updated}`);
+  console.log(`  Inserted:       ${inserted}`);
+  console.log(`  Unchanged:      ${unchanged}`);
+  console.log(`  Type mismatch:  ${typeMismatches}  (matched a slack_channel on a row whose type differs)`);
+  console.log(`  Skipped:        ${skipped}  (slug already taken by a legacy row)`);
   console.log(`\nReport written to: ${reportPath}`);
 
   if (!flags.commit) {

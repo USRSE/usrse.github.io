@@ -96,17 +96,20 @@ describe("matchExistingGroup", () => {
 
   it("matches by exact normalized slack_channel", () => {
     const m = matchExistingGroup({ name: "wg-code-review", type: "wg" }, groupsByType);
-    expect(m?.id).toBe("g1");
+    expect(m?.group.id).toBe("g1");
+    expect(m?.typeMismatch).toBe(false);
   });
 
   it("matches rg-bay-area-ca against drifted DB value rg-bayareaca via normalization", () => {
     const m = matchExistingGroup({ name: "rg-bay-area-ca", type: "rg" }, groupsByType);
-    expect(m?.id).toBe("g4");
+    expect(m?.group.id).toBe("g4");
+    expect(m?.typeMismatch).toBe(false);
   });
 
   it("matches by slug when slack_channel is null", () => {
     const m = matchExistingGroup({ name: "ag-neuro-rse", type: "ag" }, groupsByType);
-    expect(m?.id).toBe("g3");
+    expect(m?.group.id).toBe("g3");
+    expect(m?.typeMismatch).toBe(false);
   });
 
   it("returns null when no candidate exists", () => {
@@ -114,15 +117,37 @@ describe("matchExistingGroup", () => {
     expect(m).toBeNull();
   });
 
-  it("does not match across types (wg-* must not match affinity_group)", () => {
+  it("flags cross-type slack_channel match as typeMismatch", () => {
+    // A legacy affinity_group row has slack_channel 'rg-dmv-rse' but a
+    // CSV rg-* channel arrives — should match via slack_channel and flag.
+    const withLegacy = {
+      ...groupsByType,
+      affinity_group: [
+        ...groupsByType.affinity_group,
+        {
+          id: "g5",
+          slug: "dmv-rse",
+          type: "affinity_group" as const,
+          slackChannel: "rg-dmv-rse",
+          description: null,
+        },
+      ],
+    };
+    const m = matchExistingGroup({ name: "rg-dmv-rse", type: "rg" }, withLegacy);
+    expect(m?.group.id).toBe("g5");
+    expect(m?.typeMismatch).toBe(true);
+  });
+
+  it("slug match is type-scoped (wg-* must not match affinity_group via slug)", () => {
+    // g3 is an affinity_group with slug 'neuro-rse'. A wg-neuro-rse channel
+    // should not match it via slug (only via slack_channel if it were equal,
+    // which it isn't here).
     const m = matchExistingGroup({ name: "wg-neuro-rse", type: "wg" }, groupsByType);
     expect(m).toBeNull();
   });
 
   it("prefers slack_channel match over slug match", () => {
-    // g2 has slack_channel "wg-ux" — a channel named "wg-ux" should hit it via
-    // slack_channel before trying slug.
     const m = matchExistingGroup({ name: "wg-ux", type: "wg" }, groupsByType);
-    expect(m?.id).toBe("g2");
+    expect(m?.group.id).toBe("g2");
   });
 });
