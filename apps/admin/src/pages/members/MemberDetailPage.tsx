@@ -30,6 +30,7 @@ interface DetailResponse {
     linkedinUrl: string | null;
     orcid: string | null;
     websiteUrl: string | null;
+    slackUsername: string | null;
   } | null;
   affiliations: Array<{
     id: string;
@@ -86,6 +87,7 @@ export function MemberDetailPage() {
         linkedinUrl: body.profile?.linkedinUrl ?? "",
         orcid: body.profile?.orcid ?? "",
         websiteUrl: body.profile?.websiteUrl ?? "",
+        slackUsername: body.profile?.slackUsername ?? "",
       });
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
@@ -124,7 +126,7 @@ export function MemberDetailPage() {
     setSaveError(null);
     try {
       const body: Record<string, string | null> = {};
-      for (const k of ["displayName", "headline", "bio", "jobTitle", "githubUrl", "linkedinUrl", "orcid", "websiteUrl"] as const) {
+      for (const k of ["displayName", "headline", "bio", "jobTitle", "githubUrl", "linkedinUrl", "orcid", "websiteUrl", "slackUsername"] as const) {
         body[k] = draft[k]?.trim() === "" ? null : draft[k];
       }
       const res = await apiFetch(`/admin/users/${data.user.id}`, {
@@ -297,6 +299,12 @@ export function MemberDetailPage() {
             label="Website URL"
             value={draft.websiteUrl ?? ""}
             onChange={(e) => setDraft((d) => ({ ...d, websiteUrl: e.target.value }))}
+          />
+          <EditorialInput
+            label="Slack username"
+            value={draft.slackUsername ?? ""}
+            onChange={(e) => setDraft((d) => ({ ...d, slackUsername: e.target.value }))}
+            hint="e.g. jdoe"
           />
 
           {canEditRole && (

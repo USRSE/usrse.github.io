@@ -19,7 +19,8 @@
     "import:orcid": "tsx scripts/import-orcid.ts",
     "backfill:org-types": "tsx scripts/backfill-org-types.ts",
     "backfill:org-locations": "tsx scripts/backfill-org-locations.ts",
-    "reconcile:groups": "tsx scripts/reconcile-groups.ts"
+    "reconcile:groups": "tsx scripts/reconcile-groups.ts",
+    "link:slack-users": "tsx scripts/link-slack-users.ts"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.7.6",

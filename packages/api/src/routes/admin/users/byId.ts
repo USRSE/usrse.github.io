@@ -43,6 +43,7 @@ const userPatchSchema = z
     region: z.string().max(100).nullable().optional(),
     city: z.string().max(100).nullable().optional(),
     publicLocation: z.string().max(140).nullable().optional(),
+    slackUsername: z.string().max(80).nullable().optional(),
     role: z.enum(["member", "staff", "super_admin"]).optional(),
   })
   .strict();
