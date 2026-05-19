@@ -34,3 +34,7 @@ Thumbs.db
 
 # Project-specific
 /.data/
+
+# Backfill / reconcile script report CSVs (generated locally, not source)
+packages/api/org-*.csv
+packages/api/scripts/*.csv
