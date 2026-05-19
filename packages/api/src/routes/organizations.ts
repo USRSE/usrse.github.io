@@ -2,20 +2,35 @@ import { Hono } from "hono";
 import {
   and,
   asc,
+  desc,
   eq,
+  gte,
   ilike,
   isNull,
+  lte,
   or,
   sql,
 } from "drizzle-orm";
 import type { SQL } from "drizzle-orm";
 import { createDb } from "../db";
 import {
+  events,
+  eventSponsorships,
   organizations,
   orgMemberships,
+  profiles,
   userOrganizations,
+  users,
 } from "../db/schema";
 import type { AppEnv } from "../types";
+import { optionalActor } from "../middleware/optionalActor";
+import type { ActorContext } from "../lib/policies";
+import {
+  shouldIncludeInRoster,
+  stripPrivateFields,
+  type CallerClass,
+  type RosterMember,
+} from "../lib/orgVisibility";
 
 export const organizationsRoute = new Hono<AppEnv>();
 
@@ -230,4 +245,153 @@ organizationsRoute.get("/", async (c) => {
   });
 });
 
-// Profile endpoint added in Task 5.
+export function classifyCaller(actor: ActorContext | undefined): CallerClass {
+  if (!actor) return "anonymous";
+  // systemTier: 2 = super_admin, 1 = staff, 0 = member.
+  return actor.systemTier >= 1 ? "admin" : "member";
+}
+
+/**
+ * GET /organizations/:id
+ *
+ * Public org profile. Reads optional actor via optionalActor middleware
+ * applied below; never 401s. 404s for non-approved, deleted, or merged
+ * orgs regardless of caller class.
+ */
+organizationsRoute.get("/:id", optionalActor, async (c) => {
+  if (!c.env.DATABASE_URL) return c.json({ ok: false, error: "internal" }, 500);
+  const db = createDb(c.env.DATABASE_URL);
+
+  const id = c.req.param("id");
+  if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id)) {
+    return c.json({ ok: false, error: "not_found" }, 404);
+  }
+
+  const [org] = await db
+    .select()
+    .from(organizations)
+    .where(
+      and(
+        eq(organizations.id, id),
+        eq(organizations.status, "approved"),
+        isNull(organizations.deletedAt),
+        isNull(organizations.mergedIntoId)
+      )
+    )
+    .limit(1);
+  if (!org) return c.json({ ok: false, error: "not_found" }, 404);
+
+  const actor = c.get("actor");
+  const caller = classifyCaller(actor);
+
+  const [activeMembership] = await db
+    .select({ tier: orgMemberships.tier })
+    .from(orgMemberships)
+    .where(
+      and(
+        eq(orgMemberships.organizationId, id),
+        lte(orgMemberships.startedAt, sql`now()`),
+        or(
+          isNull(orgMemberships.endedAt),
+          gte(orgMemberships.endedAt, sql`now()`)
+        )!
+      )
+    )
+    .limit(1);
+
+  const sponsoredEvents = await db
+    .select({
+      eventId: events.id,
+      eventName: events.name,
+      tier: eventSponsorships.tier,
+      eventDate: events.startDate,
+    })
+    .from(eventSponsorships)
+    .innerJoin(events, eq(events.id, eventSponsorships.eventId))
+    .where(eq(eventSponsorships.organizationId, id))
+    .orderBy(desc(events.startDate));
+
+  // Roster — load every current membership, then filter in JS so the
+  // visibility predicate stays expressible without table-specific SQL.
+  // Volume per org is small (median ~10, P99 ~50).
+  const rosterRaw = await db
+    .select({
+      userId: users.id,
+      // profiles.slug serves as the member's public slug identifier
+      memberSlug: profiles.slug,
+      displayName: profiles.displayName,
+      // profiles.photoUrl is the avatar; aliased as avatarUrl for RosterMember
+      avatarUrl: profiles.photoUrl,
+      role: userOrganizations.role,
+      isPrimary: userOrganizations.isPrimary,
+      // Visibility flags live on profiles, not users
+      isPublic: profiles.isPublic,
+      isDiscoverable: profiles.isDiscoverable,
+      // Soft-delete / merge sentinel columns (used to exclude inactive users)
+      deletedAt: users.deletedAt,
+      mergedIntoUserId: users.mergedIntoUserId,
+    })
+    .from(userOrganizations)
+    .innerJoin(users, eq(users.id, userOrganizations.userId))
+    .innerJoin(profiles, eq(profiles.userId, userOrganizations.userId))
+    .where(
+      and(
+        eq(userOrganizations.organizationId, id),
+        isNull(userOrganizations.endedAt)
+      )
+    );
+
+  // Filter out soft-deleted and merged users (profile join already
+  // ensures hasProfile implicitly — innerJoin means only rows with a
+  // profile are returned).
+  const eligible = rosterRaw.filter(
+    (r) => r.deletedAt == null && r.mergedIntoUserId == null
+  );
+  const totalCount = eligible.length;
+
+  // Cast to RosterMember — shape is compatible after the field mapping above.
+  const included: RosterMember[] = (eligible as RosterMember[]).filter((r) =>
+    shouldIncludeInRoster(caller, r)
+  );
+  const visibleCount = included.length;
+  const hiddenCount = totalCount - visibleCount;
+
+  included.sort((a, b) => {
+    if (a.isPrimary !== b.isPrimary) return a.isPrimary ? -1 : 1;
+    const aHasRole = a.role != null;
+    const bHasRole = b.role != null;
+    if (aHasRole !== bHasRole) return aHasRole ? -1 : 1;
+    return a.displayName.localeCompare(b.displayName);
+  });
+
+  return c.json({
+    ok: true,
+    organization: {
+      id: org.id,
+      name: org.name,
+      shortName: org.shortName,
+      url: org.url,
+      type: org.type,
+      country: org.country,
+      description: org.description,
+      logoUrl: org.logoUrl,
+      logoDarkUrl: org.logoDarkUrl,
+      logoMarkUrl: org.logoMarkUrl,
+      logoCredit: org.logoCredit,
+      isOrgMember: !!activeMembership,
+      membershipTier: activeMembership?.tier ?? null,
+      sponsoredEvents: sponsoredEvents.map((s) => ({
+        ...s,
+        // events.startDate is a Drizzle date column — always returned as a
+        // string (YYYY-MM-DD). Spread it through unchanged.
+        eventDate: s.eventDate,
+      })),
+    },
+    members: {
+      totalCount,
+      visibleCount,
+      hiddenCount,
+      rows: included.map((m) => stripPrivateFields(m)),
+    },
+  });
+});

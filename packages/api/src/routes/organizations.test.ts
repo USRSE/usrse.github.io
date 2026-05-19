@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { buildListFilters, computeFacets } from "./organizations";
+import { buildListFilters, classifyCaller, computeFacets } from "./organizations";
 
 describe("buildListFilters", () => {
   it("always applies the base predicate", () => {
@@ -35,6 +35,21 @@ describe("buildListFilters", () => {
     expect(joined).toMatch(/name.*ilike.*%MIT%/i);
     expect(joined).toMatch(/short_name.*ilike/i);
     expect(joined).toMatch(/url.*ilike/i);
+  });
+});
+
+describe("classifyCaller", () => {
+  it("returns 'anonymous' when actor is undefined", () => {
+    expect(classifyCaller(undefined)).toBe("anonymous");
+  });
+  it("returns 'admin' for systemTier 2 (super_admin)", () => {
+    expect(classifyCaller({ systemTier: 2 } as any)).toBe("admin");
+  });
+  it("returns 'admin' for systemTier 1 (staff)", () => {
+    expect(classifyCaller({ systemTier: 1 } as any)).toBe("admin");
+  });
+  it("returns 'member' for systemTier 0", () => {
+    expect(classifyCaller({ systemTier: 0 } as any)).toBe("member");
   });
 });
 
