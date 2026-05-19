@@ -134,6 +134,7 @@ export const profiles = pgTable(
     updatedAt: timestamp("updated_at", { withTimezone: true })
       .notNull()
       .defaultNow(),
+    slackUsername: text("slack_username"),
     deletedAt: timestamp("deleted_at", { withTimezone: true }),
   },
   (t) => [
@@ -141,6 +142,9 @@ export const profiles = pgTable(
     index("profiles_show_on_map_idx")
       .on(t.showOnMap)
       .where(sql`show_on_map = true`),
+    uniqueIndex("profiles_slack_username_idx")
+      .on(sql`lower(slack_username)`)
+      .where(sql`slack_username IS NOT NULL`),
   ]
 );
 
