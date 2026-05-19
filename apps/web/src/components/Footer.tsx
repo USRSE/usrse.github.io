@@ -15,7 +15,7 @@ const footerLinks = {
   ],
   Resources: [
     { label: "Learn", href: "/resources" },
-    { label: "Directory", href: "/resources/directory" },
+    { label: "Organizations", href: "/orgs" },
     { label: "Volunteer", href: "/jobs/volunteer" },
     { label: "GitHub", href: "https://github.com/USRSE" },
     { label: "Sponsors", href: "/about/sponsors" },

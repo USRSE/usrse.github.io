@@ -101,7 +101,7 @@ export function ProfileHero({
               <>
                 <li>
                   <Link
-                    to="/resources/directory"
+                    to="/members"
                     className="text-white/50 hover:text-white/80 transition-colors"
                   >
                     Members

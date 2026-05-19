@@ -184,7 +184,6 @@ const navItems: NavItem[] = [
     type: "dropdown",
     children: [
       { label: "Learn", href: "/resources", route: true },
-      { label: "Directory", href: "/resources/directory", route: true },
     ],
   },
 ];
