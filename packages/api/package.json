@@ -17,7 +17,8 @@
     "db:seed": "tsx scripts/seed.ts",
     "db:apply": "tsx scripts/apply-migration.ts",
     "import:orcid": "tsx scripts/import-orcid.ts",
-    "backfill:org-types": "tsx scripts/backfill-org-types.ts"
+    "backfill:org-types": "tsx scripts/backfill-org-types.ts",
+    "backfill:org-locations": "tsx scripts/backfill-org-locations.ts"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.7.6",
