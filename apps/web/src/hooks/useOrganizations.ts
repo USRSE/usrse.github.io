@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import { useAuth } from "@workos-inc/authkit-react";
 
 const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL ??
@@ -167,8 +168,18 @@ interface UseOrganizationState {
  * organization's full profile including members and sponsored events.
  * Returns `notFound: true` for 404 so the page can render a
  * dedicated empty state.
+ *
+ * Includes the WorkOS access token in the Authorization header when
+ * the user is signed in. The API endpoint uses optionalActor middleware;
+ * without the token, signed-in users are classified as anonymous and
+ * only see public members in the roster. With the token, they see
+ * listed-private stubs in addition to public members.
  */
 export function useOrganization(id: string | undefined): UseOrganizationState {
+  const { getAccessToken, user: workosUser } = useAuth();
+  const getAccessTokenRef = useRef(getAccessToken);
+  getAccessTokenRef.current = getAccessToken;
+
   const [state, setState] = useState<UseOrganizationState>({
     data: null,
     isLoading: true,
@@ -185,7 +196,14 @@ export function useOrganization(id: string | undefined): UseOrganizationState {
     setState({ data: null, isLoading: true, error: null, notFound: false });
     void (async () => {
       try {
-        const res = await fetch(`${API_BASE_URL}/organizations/${id}`);
+        const token = await getAccessTokenRef.current().catch(() => null);
+        const headers: HeadersInit = {};
+        if (token) {
+          headers["Authorization"] = `Bearer ${token}`;
+        }
+        const res = await fetch(`${API_BASE_URL}/organizations/${id}`, {
+          headers: Object.keys(headers).length > 0 ? headers : undefined,
+        });
         if (cancelled) return;
         if (res.status === 404) {
           setState({ data: null, isLoading: false, error: null, notFound: true });
@@ -215,7 +233,7 @@ export function useOrganization(id: string | undefined): UseOrganizationState {
     return () => {
       cancelled = true;
     };
-  }, [id]);
+  }, [id, workosUser]);
 
   return state;
 }
