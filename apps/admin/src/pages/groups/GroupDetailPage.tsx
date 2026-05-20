@@ -59,6 +59,7 @@ export function GroupDetailPage() {
   const [actionError, setActionError] = useState<string | null>(null);
 
   // Identity draft state
+  const [draftName, setDraftName] = useState("");
   const [draftDescription, setDraftDescription] = useState("");
   const [draftSlackChannel, setDraftSlackChannel] = useState("");
   // Content draft state
@@ -81,6 +82,7 @@ export function GroupDetailPage() {
       }
       const body = (await res.json()) as GroupDetail;
       setData(body);
+      setDraftName(body.group.name);
       setDraftDescription(body.group.description ?? "");
       setDraftSlackChannel(body.group.slackChannel ?? "");
       setDraftCharter(body.group.charter ?? "");
@@ -123,6 +125,10 @@ export function GroupDetailPage() {
     setActionError(null);
     try {
       const body: Record<string, unknown> = {};
+      const trimmedName = draftName.trim();
+      if (trimmedName && trimmedName !== data.group.name) {
+        body.name = trimmedName;
+      }
       if (draftDescription !== (data.group.description ?? "")) {
         body.description = draftDescription.trim() || null;
       }
@@ -350,9 +356,14 @@ export function GroupDetailPage() {
         <section className="max-w-2xl space-y-6">
           <EditorialInput
             label="Name"
-            value={g.name}
-            readOnly
-            hint="Name is locked after create. Contact a super_admin to rename."
+            value={isStaff ? draftName : g.name}
+            onChange={isStaff ? (e) => setDraftName(e.target.value) : undefined}
+            readOnly={!isStaff}
+            hint={
+              isStaff
+                ? "Renaming changes the display name everywhere; the slug and permalink stay the same."
+                : "Name is locked after create. Contact a super_admin to rename."
+            }
           />
           <EditorialInput
             label="Slug"
