@@ -141,6 +141,27 @@
       "when": 1778788921927,
       "tag": "0019_groups_publishable",
       "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1779043200000,
+      "tag": "0020_organizations_public_profile",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1779129600000,
+      "tag": "0021_profile_slack_username",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1779216000000,
+      "tag": "0022_artifact_subsystem",
+      "breakpoints": true
     }
   ]
 }
