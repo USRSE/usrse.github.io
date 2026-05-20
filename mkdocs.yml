@@ -110,3 +110,14 @@ nav:
       - DB schema amendments (2026-05-02): superpowers/specs/2026-05-02-db-schema-amendments.md
       - DB schema amendments 2 (2026-05-02): superpowers/specs/2026-05-02-db-schema-amendments-2.md
       - DB schema amendments 3 (2026-05-02): superpowers/specs/2026-05-02-db-schema-amendments-3.md
+      - Admin app foundation (2026-05-09): superpowers/specs/2026-05-09-admin-app-foundation-design.md
+      - Admin identity (2026-05-11): superpowers/specs/2026-05-11-admin-identity-design.md
+      - Vocab curation queue (2026-05-12): superpowers/specs/2026-05-12-vocab-curation-queue-design.md
+      - Admin groups subsystem (2026-05-14): superpowers/specs/2026-05-14-admin-groups-design.md
+      - Public org directory (2026-05-16): superpowers/specs/2026-05-16-org-directory-design.md
+  - Plans:
+      - Admin app foundation (2026-05-09): superpowers/plans/2026-05-09-admin-app-foundation.md
+      - Admin identity (2026-05-11): superpowers/plans/2026-05-11-admin-identity-implementation.md
+      - Vocab curation queue (2026-05-12): superpowers/plans/2026-05-12-vocab-curation-queue-implementation.md
+      - Admin groups subsystem (2026-05-14): superpowers/plans/2026-05-14-admin-groups-implementation.md
+      - Public org directory (2026-05-16): superpowers/plans/2026-05-16-org-directory-implementation.md

@@ -28,6 +28,7 @@ The platform is a Cloudflare-hosted SPA on Pages, an authenticated API on Worker
 
 - **[Site visual audit (2026-04-29)](./strategy/2026-04-29-site-visual-audit.md)** — the design assessment that drove the redesign.
 - **DB schema specs** in `superpowers/specs/` — the shape of the data model as it landed and was amended.
+- **Subsystem specs + plans** in `superpowers/specs/` and `superpowers/plans/` — design docs and implementation plans for the admin app, identity, vocab curation queue, groups, and the public org directory.
 
 ## Editing docs
 
