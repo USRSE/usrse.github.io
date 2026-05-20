@@ -141,7 +141,17 @@
     Whether you identify as an RSE, write code for research, are curious about the field, or just want to meet others working in similar spaces, this is a great place to start.
     Come hang out, meet the community, and help shape the future of RSE in Chicago.
   links: |
-    The event is being organized via Meetup.com, so please RSVP there if you plan to attend: [Chicago RSE Meetup](https://www.meetup.com/us-rse-chicago-regional-community/events/313402749/?eventOrigin=group_upcoming_events)
+    The event is being organized via Meetup.com, so please RSVP there if you plan to attend: [Chicago RSE Meetup](https://www.meetup.com/us-rse-chicago-regional-community/events/313402749/?eventOrigin=group_upcoming_# - expires: 2027-01-01
+
+type: event
+   title: Neuro-RSE Affinity Group Zoom Hangout
+   when: Wednesday, June 3rd, at 1-2pm PT / 4-5pm ET
+   where: Zoom
+   preamble: |
+     We're going to plan our next Neuro AG Zoom call for June 3rd! The theme for this meeting is Show-and-Tell! You are invited to take a few minutes (~3-5 mins) to share something with the group. Topics might include software (your own or another you want to put eyes on), code practices, a neuroscience problem you've faced, neuro RSE community or career-related. We will share more info as the date approaches! 😁
+   links: |
+     Check out the Slack channel #ag-neuro-rse to keep up-to-date on all things neuro data and software!
+
 
 #-------------------
 # Opportunities
