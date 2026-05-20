@@ -148,3 +148,53 @@ export const contributionKind = pgEnum("contribution_kind", [
   "podcast",
   "other",
 ]);
+
+export const artifactStatus = pgEnum("artifact_status", [
+  "draft",
+  "in_review",
+  "changes_requested",
+  "rejected",
+  "published",
+  "cancelled",
+  "completed",
+  "expired",
+  "closed",
+  "archived",
+]);
+
+export const artifactScope = pgEnum("artifact_scope", [
+  "public",
+  "community",
+  "group",
+  "staff_only",
+]);
+
+export const artifactReviewDecision = pgEnum("artifact_review_decision", [
+  "approve",
+  "reject",
+  "request_changes",
+]);
+
+export const broadcastChannelEnum = pgEnum("broadcast_channel", [
+  "site_banner",
+  "workspace_chat",
+  "newsletter",
+  "twitter_x",
+  "bluesky",
+  "mastodon",
+  "linkedin",
+]);
+
+export const broadcastChannelStatus = pgEnum("broadcast_channel_status", [
+  "requested",
+  "approved",
+  "declined",
+  "posted",
+]);
+
+export const artifactEntityType = pgEnum("artifact_entity_type", [
+  "event",
+  "announcement",
+  "form",
+  "group",
+]);
