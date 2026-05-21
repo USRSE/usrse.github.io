@@ -11,3 +11,6 @@ export * from "./leadership";
 export * from "./works";
 export * from "./audit";
 export * from "./recognition";
+export * from "./announcements";
+export * from "./forms";
+export * from "./artifacts";
