@@ -1,4 +1,4 @@
-import { relations } from "drizzle-orm";
+import { relations, sql } from "drizzle-orm";
 import {
   date,
   index,
@@ -57,7 +57,7 @@ export const events = pgTable(
   (t) => [
     index("events_start_date_idx").on(t.startDate),
     index("events_type_idx").on(t.type),
-    index("events_status_idx").on(t.status, t.createdAt),
+    index("events_status_idx").on(t.status, t.createdAt).where(sql`deleted_at IS NULL`),
   ]
 );
 
