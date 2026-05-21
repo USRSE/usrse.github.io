@@ -175,7 +175,7 @@ export const artifactReviewDecision = pgEnum("artifact_review_decision", [
   "request_changes",
 ]);
 
-export const broadcastChannelEnum = pgEnum("broadcast_channel", [
+export const broadcastChannel = pgEnum("broadcast_channel", [
   "site_banner",
   "workspace_chat",
   "newsletter",
