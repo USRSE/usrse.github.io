@@ -270,3 +270,25 @@ describe("canEditArtifact", () => {
     ).toBe(false);
   });
 });
+
+import { canReviewArtifact } from "./canReviewArtifact";
+
+describe("canReviewArtifact", () => {
+  test("staff can review any artifact they didn't author", () => {
+    expect(
+      canReviewArtifact(staffActor("staff-1"), { authorId: "author-1" })
+    ).toBe(true);
+  });
+
+  test("staff cannot review their own artifact (self-promotion guard)", () => {
+    expect(
+      canReviewArtifact(staffActor("staff-1"), { authorId: "staff-1" })
+    ).toBe(false);
+  });
+
+  test("member cannot review (insufficient tier)", () => {
+    expect(
+      canReviewArtifact(memberActor("m-1"), { authorId: "author-1" })
+    ).toBe(false);
+  });
+});
