@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, test } from "vitest";
 import {
   canApproveVocab,
   canCreateGroup,
@@ -183,5 +183,90 @@ describe("canCreateGroup", () => {
   });
   it("allows super_admin", () => {
     expect(canCreateGroup(actor({ systemTier: 2 }))).toBe(true);
+  });
+});
+
+import { canEditArtifact } from "./canEditArtifact";
+
+const memberActor = (id = "u-member") => ({
+  user: { id, memberId: "m", email: "e", role: "member" as const },
+  systemTier: 0 as const,
+  leadershipPositions: [],
+  chairedGroupIds: new Set<string>(),
+  chairedEventIds: new Set<string>(),
+});
+
+const staffActor = (id = "u-staff") => ({
+  ...memberActor(id),
+  user: { ...memberActor(id).user, role: "staff" as const },
+  systemTier: 1 as const,
+});
+
+describe("canEditArtifact", () => {
+  test("staff can edit any artifact in any state", () => {
+    expect(
+      canEditArtifact(staffActor(), {
+        entityType: "event",
+        entityId: "e",
+        status: "in_review",
+        authorId: "someone-else",
+      })
+    ).toBe(true);
+    expect(
+      canEditArtifact(staffActor(), {
+        entityType: "event",
+        entityId: "e",
+        status: "published",
+        authorId: "someone-else",
+      })
+    ).toBe(true);
+  });
+
+  test("author can edit their own draft", () => {
+    const a = memberActor("author-1");
+    expect(
+      canEditArtifact(a, {
+        entityType: "event",
+        entityId: "e",
+        status: "draft",
+        authorId: "author-1",
+      })
+    ).toBe(true);
+  });
+
+  test("author can edit their own changes_requested", () => {
+    const a = memberActor("author-1");
+    expect(
+      canEditArtifact(a, {
+        entityType: "event",
+        entityId: "e",
+        status: "changes_requested",
+        authorId: "author-1",
+      })
+    ).toBe(true);
+  });
+
+  test("author cannot edit their own in_review (locked while reviewers look)", () => {
+    const a = memberActor("author-1");
+    expect(
+      canEditArtifact(a, {
+        entityType: "event",
+        entityId: "e",
+        status: "in_review",
+        authorId: "author-1",
+      })
+    ).toBe(false);
+  });
+
+  test("non-author non-staff member cannot edit someone else's artifact", () => {
+    const a = memberActor("u-1");
+    expect(
+      canEditArtifact(a, {
+        entityType: "event",
+        entityId: "e",
+        status: "draft",
+        authorId: "author-2",
+      })
+    ).toBe(false);
   });
 });
