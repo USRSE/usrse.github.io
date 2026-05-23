@@ -8,6 +8,7 @@ import { webhooksRoute } from "./routes/webhooks";
 import { publicGroupsRoute } from "./routes/groups";
 import { organizationsRoute } from "./routes/organizations";
 import { adminApi } from "./routes/admin";
+import { announcementsRoute } from "./routes/announcements";
 import type { AppEnv } from "./types";
 
 const app = new Hono<AppEnv>();
@@ -52,6 +53,7 @@ app.route("/members", membersRoute);
 app.route("/vocab", vocabRoute);
 app.route("/groups", publicGroupsRoute);
 app.route("/organizations", organizationsRoute);
+app.route("/announcements", announcementsRoute);
 app.route("/admin", adminApi);
 
 export default app;
