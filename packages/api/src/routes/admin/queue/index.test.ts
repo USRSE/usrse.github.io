@@ -1,5 +1,4 @@
 import { describe, expect, test, beforeAll, afterAll } from "vitest";
-// @ts-ignore — test/helpers lands in Task 20; file exists here for review, typecheck is suppressed until then
 import { testApp, makeStaffActor, makeMemberActor, seedArtifacts } from "../../../test/helpers";
 
 let cleanup: () => Promise<void>;

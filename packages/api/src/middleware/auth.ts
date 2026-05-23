@@ -27,6 +27,19 @@ export function getJwks(clientId: string): JWKS {
  * shape is stable in production.
  */
 export const requireAuth = createMiddleware<AppEnv>(async (c, next) => {
+  // Test escape hatch: when TEST_BYPASS_AUTH=1, accept any Authorization
+  // header of the form `test:<role>:<userId>` and stash the userId in
+  // workosUserId so requireActorContext can pick it up.
+  if (c.env.TEST_BYPASS_AUTH === "1") {
+    const header = c.req.header("Authorization") ?? "";
+    const match = header.match(/^test:(staff|member|super_admin):(.+)$/);
+    if (match) {
+      c.set("workosUserId", match[2]);
+      await next();
+      return;
+    }
+  }
+
   const header = c.req.header("Authorization");
   if (!header || !header.startsWith("Bearer ")) {
     throw new HTTPException(401, {
