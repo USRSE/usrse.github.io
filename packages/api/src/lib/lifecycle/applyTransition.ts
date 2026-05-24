@@ -60,7 +60,16 @@ export type ApplyTransitionResult =
     };
 
 /**
- * Atomic transition: validates, persists, and audits in one call.
+ * Apply a lifecycle transition: validates, persists, and audits in one call.
+ *
+ * NOTE on atomicity: this function is *sequential*, not *transactional*. The
+ * codebase uses Neon's HTTP driver (`drizzle-orm/neon-http`), which does not
+ * support `db.transaction()`. A crash between `insertReview` and
+ * `updateArtifactStatus` could leave a review row counted toward a future
+ * publish without flipping the artifact. At v1 admin write volumes this is
+ * acceptable; the audit_log provides forensic reconstruction. If concurrent
+ * write volumes grow, switch `createDb` to the WebSocket Pool driver and
+ * wrap the body of this function in `db.transaction(async tx => { ... })`.
  *
  * Map of action → review-decision-side-effect:
  *   submit_for_review → no review row; sets in_review (bumps revision if from changes_requested)

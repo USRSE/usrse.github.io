@@ -1,4 +1,4 @@
-import { and, eq } from "drizzle-orm";
+import { and, eq, sql } from "drizzle-orm";
 import type { Database } from "../../db";
 import {
   announcements,
@@ -142,18 +142,12 @@ export function drizzleLifecycleDb(
       switch (entityType) {
         case "event": {
           if (bumpRevision) {
-            const current = await db
-              .select({ revision: events.revision })
-              .from(events)
-              .where(eq(events.id, entityId))
-              .limit(1)
-              .then((r) => r[0]);
             await db
               .update(events)
               .set({
                 status,
                 updatedAt: now,
-                revision: (current?.revision ?? 1) + 1,
+                revision: sql`${events.revision} + 1`,
               })
               .where(eq(events.id, entityId));
           } else {
@@ -166,18 +160,12 @@ export function drizzleLifecycleDb(
         }
         case "announcement": {
           if (bumpRevision) {
-            const current = await db
-              .select({ revision: announcements.revision })
-              .from(announcements)
-              .where(eq(announcements.id, entityId))
-              .limit(1)
-              .then((r) => r[0]);
             await db
               .update(announcements)
               .set({
                 status,
                 updatedAt: now,
-                revision: (current?.revision ?? 1) + 1,
+                revision: sql`${announcements.revision} + 1`,
               })
               .where(eq(announcements.id, entityId));
           } else {
@@ -190,18 +178,12 @@ export function drizzleLifecycleDb(
         }
         case "form": {
           if (bumpRevision) {
-            const current = await db
-              .select({ revision: forms.revision })
-              .from(forms)
-              .where(eq(forms.id, entityId))
-              .limit(1)
-              .then((r) => r[0]);
             await db
               .update(forms)
               .set({
                 status,
                 updatedAt: now,
-                revision: (current?.revision ?? 1) + 1,
+                revision: sql`${forms.revision} + 1`,
               })
               .where(eq(forms.id, entityId));
           } else {

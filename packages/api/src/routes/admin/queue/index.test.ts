@@ -1,9 +1,13 @@
 import { describe, expect, test, beforeAll, afterAll } from "vitest";
 import { testApp, makeStaffActor, makeMemberActor, seedArtifacts } from "../../../test/helpers";
 
-let cleanup: () => Promise<void>;
+const HAS_DB = !!process.env.DATABASE_URL;
+const describeIfDb = HAS_DB ? describe : describe.skip;
+
+let cleanup: (() => Promise<void>) | undefined;
 
 beforeAll(async () => {
+  if (!HAS_DB) return;
   cleanup = await seedArtifacts({
     events: [
       { id: "00000000-0000-0000-0000-0000000000a1", status: "in_review", revision: 1, authorId: "00000000-0000-0000-0000-0000000000b1", name: "Test Event", scope: "community", startDate: "2026-06-01" },
@@ -22,7 +26,7 @@ afterAll(async () => {
   if (cleanup) await cleanup();
 });
 
-describe("GET /admin/queue", () => {
+describeIfDb("GET /admin/queue", () => {
   test("requires staff actor", async () => {
     const res = await testApp.request("/admin/queue", {
       headers: { Authorization: makeMemberActor("00000000-0000-0000-0000-0000000000b2") },
