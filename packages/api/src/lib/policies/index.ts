@@ -10,3 +10,5 @@ export { canEditMembers } from "./canEditMembers";
 export { canEditOrganizations } from "./canEditOrganizations";
 export { canMergeOrganizations } from "./canMergeOrganizations";
 export { canPromoteToRole } from "./canPromoteToRole";
+export { canEditArtifact } from "./canEditArtifact";
+export { canReviewArtifact } from "./canReviewArtifact";

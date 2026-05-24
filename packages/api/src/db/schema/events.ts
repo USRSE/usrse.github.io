@@ -1,14 +1,22 @@
-import { relations } from "drizzle-orm";
+import { relations, sql } from "drizzle-orm";
 import {
   date,
   index,
+  integer,
   pgTable,
   text,
   timestamp,
   uniqueIndex,
   uuid,
 } from "drizzle-orm/pg-core";
-import { eventAttendanceRole, eventType } from "./enums";
+import {
+  artifactScope,
+  artifactStatus,
+  eventAttendanceRole,
+  eventType,
+} from "./enums";
+import { groups } from "./groups";
+import { organizations } from "./vocab";
 import { users } from "./users";
 
 export const events = pgTable(
@@ -23,6 +31,21 @@ export const events = pgTable(
     location: text("location"),
     url: text("url"),
     description: text("description"),
+    // Artifact-subsystem columns (added in migration 0022)
+    status: artifactStatus("status").notNull().default("draft"),
+    revision: integer("revision").notNull().default(1),
+    authorId: uuid("author_id").references(() => users.id, {
+      onDelete: "set null",
+    }),
+    scope: artifactScope("scope").notNull().default("community"),
+    hostGroupId: uuid("host_group_id").references(() => groups.id, {
+      onDelete: "set null",
+    }),
+    hostOrgId: uuid("host_org_id").references(() => organizations.id, {
+      onDelete: "set null",
+    }),
+    externalUrl: text("external_url"),
+    thumbnailKey: text("thumbnail_key"),
     createdAt: timestamp("created_at", { withTimezone: true })
       .notNull()
       .defaultNow(),
@@ -34,6 +57,7 @@ export const events = pgTable(
   (t) => [
     index("events_start_date_idx").on(t.startDate),
     index("events_type_idx").on(t.type),
+    index("events_status_idx").on(t.status, t.createdAt).where(sql`deleted_at IS NULL`),
   ]
 );
 

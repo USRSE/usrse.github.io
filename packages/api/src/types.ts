@@ -31,6 +31,12 @@ export type Bindings = {
    * configured" so the gate logic stays uniform across environments.
    */
   ORGANIZATION_LOGOS_PUBLIC_URL: string;
+  /**
+   * Set to "1" in integration tests to enable the auth/actorContext
+   * middleware bypass that recognizes `test:<role>:<userId>` headers.
+   * Never set in production.
+   */
+  TEST_BYPASS_AUTH?: string;
 };
 
 export type Variables = {
