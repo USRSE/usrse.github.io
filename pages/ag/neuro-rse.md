@@ -79,7 +79,7 @@ Active members attend our regular meetings at least once a quarter (once every 3
 
 - [comp-neuro mailing list](https://www.cnsorg.org/comp-neuro-mailing-list)
 - [cvnet mailing list](https://info.cvnet.org) (skews academic)
-- [visionlist mailing list](http://visionscience.com/mailman/listinfo/visionlist_visionscience.com) (skews academic)
+- [visionlist mailing list](https://web.archive.org/web/20260310085452/https://visionscience.com/mailman/listinfo/visionlist_visionscience.com) (skews academic)
 - [connectionists mailing list](https://mailman.srv.cs.cmu.edu/mailman/listinfo/connectionists) (skews academic)
 
 ## Google groups / mailing lists / forums

@@ -29,7 +29,7 @@ in 1951 and divorced in 1952. She later earned a master's in math from NYU in 19
 She then joined IBM, where she worked for 16 years in senior technical
 and management positions related to systems architecture and implementation of
 operating systems and language processors. As AnitaB.org
-[describes](https://anitab.org/profile/remembering-edith-windsor-tech-pioneer-equality-advocate/),
+[describes](https://web.archive.org/web/20240723232902/https://anitab.org/profile/remembering-edith-windsor-tech-pioneer-equality-advocate),
 she started as a mainframe programmer and later rose to "the company's highest
 technical rank, Senior Systems Programmer, on the strength of her top-notch
 debugging skills. 'They couldn't fix the code because they couldn't read it,'
@@ -40,7 +40,7 @@ began dating Thea Spyer, who asked Edith to marry her in 1967, and they began
 living together six months later.
 
 In her professional life, as AnitaB.org [continues to
-describe](https://anitab.org/profile/remembering-edith-windsor-tech-pioneer-equality-advocate/),
+describe](https://web.archive.org/web/20240723232902/https://anitab.org/profile/remembering-edith-windsor-tech-pioneer-equality-advocate),
 "Edith left IBM in 1975, becoming the founding president of PC Classics, a
 consulting firm specializing in major software development projects. During
 this time, Edith also helped countless LGBTQ groups become tech literate. 'I
@@ -58,7 +58,7 @@ same sex marriage to become legal, after which the US government refunded the
 estate tax.
 
 Again
-[quoting](https://anitab.org/profile/remembering-edith-windsor-tech-pioneer-equality-advocate/)
+[quoting](https://web.archive.org/web/20240723232902/https://anitab.org/profile/remembering-edith-windsor-tech-pioneer-equality-advocate)
 AnitaB.org, "Edith was recognized by the National Computing Conference as an
 operating systems pioneer. In 2013, she was the Grand Marshal of the New York
 City LGBT Pride March and a runner-up for Time's Person of the Year." She died
