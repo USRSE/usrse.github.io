@@ -10,7 +10,10 @@ import { organizationsRoute } from "./routes/organizations";
 import { adminApi } from "./routes/admin";
 import { announcementsRoute } from "./routes/announcements";
 import { eventsRoute } from "./routes/events";
+import { eventsSubmitRoute } from "./routes/eventsSubmit";
 import { optionalActor } from "./middleware/optionalActor";
+import { requireAuth } from "./middleware/auth";
+import { requireActorContext } from "./middleware/actorContext";
 import type { AppEnv } from "./types";
 
 const app = new Hono<AppEnv>();
@@ -56,6 +59,13 @@ app.route("/vocab", vocabRoute);
 app.route("/groups", publicGroupsRoute);
 app.route("/organizations", organizationsRoute);
 app.route("/announcements", announcementsRoute);
+// `/events/submit` is auth-gated; mount BEFORE the optionalActor middleware
+// so route resolution picks the specific path first and the optional-actor
+// middleware doesn't get a chance to silently no-op the auth check.
+app.use("/events/submit", requireAuth);
+app.use("/events/submit", requireActorContext);
+app.route("/events/submit", eventsSubmitRoute);
+
 app.use("/events", optionalActor);
 app.use("/events/*", optionalActor);
 app.route("/events", eventsRoute);
