@@ -9,6 +9,8 @@ import { publicGroupsRoute } from "./routes/groups";
 import { organizationsRoute } from "./routes/organizations";
 import { adminApi } from "./routes/admin";
 import { announcementsRoute } from "./routes/announcements";
+import { eventsRoute } from "./routes/events";
+import { optionalActor } from "./middleware/optionalActor";
 import type { AppEnv } from "./types";
 
 const app = new Hono<AppEnv>();
@@ -54,6 +56,9 @@ app.route("/vocab", vocabRoute);
 app.route("/groups", publicGroupsRoute);
 app.route("/organizations", organizationsRoute);
 app.route("/announcements", announcementsRoute);
+app.use("/events", optionalActor);
+app.use("/events/*", optionalActor);
+app.route("/events", eventsRoute);
 app.route("/admin", adminApi);
 
 export default app;

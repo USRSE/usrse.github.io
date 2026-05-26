@@ -28,6 +28,35 @@ import type { AppEnv } from "../types";
 export const optionalActor = createMiddleware<AppEnv>(async (c, next) => {
   let workosId: string | undefined;
 
+  // Test escape hatch: when TEST_BYPASS_AUTH=1 and the Authorization
+  // header is in `test:<role>:<userId>` form, synthesize an ActorContext
+  // directly. Mirrors the bypass in requireActorContext so tests can
+  // exercise the signed-in branch of optional-auth routes.
+  if (c.env.TEST_BYPASS_AUTH === "1") {
+    const header = c.req.header("Authorization") ?? "";
+    const match = header.match(/^test:(staff|member|super_admin):(.+)$/);
+    if (match) {
+      const role = match[1] as "staff" | "member" | "super_admin";
+      const userId = match[2];
+      const tier = role === "member" ? 0 : role === "staff" ? 1 : 2;
+      const actor: ActorContext = {
+        user: {
+          id: userId,
+          memberId: userId,
+          email: `${userId}@test.local`,
+          role,
+        },
+        systemTier: tier as 0 | 1 | 2,
+        leadershipPositions: [],
+        chairedGroupIds: new Set(),
+        chairedEventIds: new Set(),
+      };
+      c.set("actor", actor);
+      await next();
+      return;
+    }
+  }
+
   try {
     // Extract the Authorization header and parse the token.
     const header = c.req.header("Authorization");
