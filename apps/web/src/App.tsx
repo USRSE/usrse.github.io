@@ -23,6 +23,7 @@ import { CommunityFundsPage } from "@/pages/community/CommunityFundsPage";
 import { UpcomingEventsPage } from "@/pages/events/UpcomingEventsPage";
 import { CalendarPage } from "@/pages/events/CalendarPage";
 import { ConferencePage } from "@/pages/events/ConferencePage";
+import { SubmitEventPage } from "@/pages/events/SubmitEventPage";
 import { BrowseJobsPage } from "@/pages/jobs/BrowseJobsPage";
 import { SubmitJobPage } from "@/pages/jobs/SubmitJobPage";
 import { VolunteerPage } from "@/pages/jobs/VolunteerPage";
@@ -84,6 +85,7 @@ export function App() {
             <Route path="/events" element={<UpcomingEventsPage />} />
             <Route path="/events/calendar" element={<CalendarPage />} />
             <Route path="/events/usrse26" element={<ConferencePage />} />
+            <Route path="/events/submit" element={<SubmitEventPage />} />
             <Route path="/jobs" element={<BrowseJobsPage />} />
             <Route path="/jobs/submit" element={<SubmitJobPage />} />
             <Route path="/jobs/volunteer" element={<VolunteerPage />} />
