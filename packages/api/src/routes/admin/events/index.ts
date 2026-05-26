@@ -7,6 +7,7 @@ import { events } from "../../../db/schema";
 import type { AppEnv } from "../../../types";
 import { adminEventByIdRoute } from "./byId";
 import { adminEventTransitionsRoute } from "./transitions";
+import { adminEventCommentsRoute } from "./comments";
 
 export const adminEventsRoute = new Hono<AppEnv>();
 
@@ -174,4 +175,5 @@ adminEventsRoute.get("/", async (c) => {
 });
 
 adminEventsRoute.route("/:id/transitions", adminEventTransitionsRoute);
+adminEventsRoute.route("/:id/comments", adminEventCommentsRoute);
 adminEventsRoute.route("/:id", adminEventByIdRoute);
