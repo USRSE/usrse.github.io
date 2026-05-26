@@ -124,6 +124,14 @@ standard:
     founding_member: true
     tier: "Standard"
     contact: Nicholas Ross <nickross@uchicago.edu>
+  - name: Flatiron Institute
+    url: https://www.simonsfoundation.org/flatiron/
+    figure: logo-flatiron.png
+    acronym: 
+    date_joined: 2026-05-19
+    founding_member: true
+    tier: "Standard"
+    contact: Dylon Simon <dsimon@flatironinstitute.org>
 
 premier:
   - name: "University of Illinois Urbana-Champaign"
