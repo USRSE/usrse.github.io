@@ -38,8 +38,14 @@ export function useNavSections(actor: ActorContext): NavSection[] {
   }
   if (isStaff) {
     out.push({
-      id: "recognition",
+      id: "announcements",
       number: "06",
+      label: "Announcements",
+      to: "/announcements",
+    });
+    out.push({
+      id: "recognition",
+      number: "07",
       label: "Recognition",
       to: "/recognition",
     });
@@ -47,11 +53,11 @@ export function useNavSections(actor: ActorContext): NavSection[] {
   if (isSuper) {
     out.push({
       id: "settings",
-      number: "07",
+      number: "08",
       label: "Settings",
       to: "/settings",
     });
-    out.push({ id: "audit", number: "08", label: "Audit", to: "/audit" });
+    out.push({ id: "audit", number: "09", label: "Audit", to: "/audit" });
   }
   return out;
 }
