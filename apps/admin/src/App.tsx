@@ -25,6 +25,7 @@ import { NewEventPage } from "./pages/events/NewEventPage";
 import { EventDetailPage } from "./pages/events/EventDetailPage";
 import { AnnouncementsListPage } from "./pages/announcements/AnnouncementsListPage";
 import { NewAnnouncementPage } from "./pages/announcements/NewAnnouncementPage";
+import { AnnouncementDetailPage } from "./pages/announcements/AnnouncementDetailPage";
 
 export function App() {
   const { user: workosUser, isLoading: authLoading } = useAuth();
@@ -78,6 +79,7 @@ export function App() {
         <Route path="events/:id" element={<EventDetailPage />} />
         <Route path="announcements" element={<AnnouncementsListPage />} />
         <Route path="announcements/new" element={<NewAnnouncementPage />} />
+        <Route path="announcements/:id" element={<AnnouncementDetailPage />} />
         <Route path="recognition" element={<ComingSoon number="07" label="Recognition" blurb="Awards lifecycle, mentorship pairings, and community contribution logging — the source of dossier badges." />} />
         <Route path="settings" element={<ComingSoon number="08" label="Settings" blurb="Super-admin operations, integration toggles, and global flags." />} />
         <Route path="audit" element={<AuditPage />} />
