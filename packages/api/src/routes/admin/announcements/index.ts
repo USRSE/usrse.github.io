@@ -7,6 +7,7 @@ import { announcements } from "../../../db/schema";
 import type { AppEnv } from "../../../types";
 import { adminAnnouncementByIdRoute } from "./byId";
 import { adminAnnouncementTransitionsRoute } from "./transitions";
+import { adminAnnouncementCommentsRoute } from "./comments";
 
 export const adminAnnouncementsRoute = new Hono<AppEnv>();
 
@@ -137,4 +138,5 @@ adminAnnouncementsRoute.get("/", async (c) => {
 });
 
 adminAnnouncementsRoute.route("/:id/transitions", adminAnnouncementTransitionsRoute);
+adminAnnouncementsRoute.route("/:id/comments", adminAnnouncementCommentsRoute);
 adminAnnouncementsRoute.route("/:id", adminAnnouncementByIdRoute);
