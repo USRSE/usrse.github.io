@@ -5,6 +5,7 @@ import { and, desc, eq, ilike, isNull } from "drizzle-orm";
 import { createDb } from "../../../db";
 import { announcements } from "../../../db/schema";
 import type { AppEnv } from "../../../types";
+import { adminAnnouncementByIdRoute } from "./byId";
 
 export const adminAnnouncementsRoute = new Hono<AppEnv>();
 
@@ -133,3 +134,5 @@ adminAnnouncementsRoute.get("/", async (c) => {
 
   return c.json({ ok: true, rows });
 });
+
+adminAnnouncementsRoute.route("/:id", adminAnnouncementByIdRoute);
