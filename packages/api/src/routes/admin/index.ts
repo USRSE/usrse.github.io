@@ -11,6 +11,7 @@ import { adminVocabRoute } from "./vocab";
 import { adminGroupsRoute } from "./groups";
 import { adminQueueRoute } from "./queue";
 import { adminEventsRoute } from "./events";
+import { adminAnnouncementsRoute } from "./announcements";
 
 /**
  * Hono sub-app for /api/admin/*. Order matters:
@@ -35,3 +36,4 @@ adminApi.route("/groups", adminGroupsRoute);
 adminApi.route("/organizations", adminOrganizationsRoute);
 adminApi.route("/queue", adminQueueRoute);
 adminApi.route("/events", adminEventsRoute);
+adminApi.route("/announcements", adminAnnouncementsRoute);
