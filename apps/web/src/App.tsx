@@ -37,6 +37,7 @@ import { SignInPage } from "@/pages/auth/SignInPage";
 import { SignUpPage } from "@/pages/auth/SignUpPage";
 import { CallbackPage } from "@/pages/auth/CallbackPage";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { SiteBanner } from "@/components/SiteBanner";
 
 // Profile pages share ProfileView and a heavy section graph (motion,
 // per-section components). Code-splitting them keeps that bundle out
@@ -61,6 +62,7 @@ export function App() {
     <BrowserRouter>
       <ScrollToTop />
       <div className="min-h-screen">
+        <SiteBanner />
         <Nav />
         <main>
           <Routes>
