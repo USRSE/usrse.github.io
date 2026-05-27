@@ -6,6 +6,7 @@ import { createDb } from "../../../db";
 import { announcements } from "../../../db/schema";
 import type { AppEnv } from "../../../types";
 import { adminAnnouncementByIdRoute } from "./byId";
+import { adminAnnouncementTransitionsRoute } from "./transitions";
 
 export const adminAnnouncementsRoute = new Hono<AppEnv>();
 
@@ -135,4 +136,5 @@ adminAnnouncementsRoute.get("/", async (c) => {
   return c.json({ ok: true, rows });
 });
 
+adminAnnouncementsRoute.route("/:id/transitions", adminAnnouncementTransitionsRoute);
 adminAnnouncementsRoute.route("/:id", adminAnnouncementByIdRoute);
