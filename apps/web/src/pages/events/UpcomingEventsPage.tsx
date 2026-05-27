@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { EventsLayout } from "@/components/events/EventsLayout";
 import { useInView } from "@/hooks/useInView";
+import { useEvents, type PublicEvent } from "@/hooks/useEvents";
 
 interface Fact {
   value: string;
@@ -63,6 +64,62 @@ const eventAccent = {
   },
 };
 
+const MONTH_ABBR = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+
+interface FormattedEventDate {
+  month: string;
+  day: string;
+  year: string;
+  full: string;
+}
+
+function formatEventDate(startDate: string, endDate: string | null): FormattedEventDate {
+  const start = new Date(startDate);
+  const end = endDate ? new Date(endDate) : null;
+  const month = MONTH_ABBR[start.getUTCMonth()] ?? "";
+  const startDay = String(start.getUTCDate());
+  const year = String(start.getUTCFullYear());
+
+  let day = startDay;
+  let full = `${month} ${startDay}, ${year}`;
+  if (end) {
+    const endDay = String(end.getUTCDate());
+    const sameMonth =
+      end.getUTCMonth() === start.getUTCMonth() &&
+      end.getUTCFullYear() === start.getUTCFullYear();
+    if (sameMonth) {
+      day = `${startDay}–${endDay}`;
+      full = `${month} ${startDay}–${endDay}, ${year}`;
+    } else {
+      const endMonth = MONTH_ABBR[end.getUTCMonth()] ?? "";
+      day = `${startDay}–${endMonth} ${endDay}`;
+      full = `${month} ${startDay} – ${endMonth} ${endDay}, ${year}`;
+    }
+  }
+  return { month, day, year, full };
+}
+
+function isUpcoming(e: PublicEvent): boolean {
+  const ref = e.endDate ?? e.startDate;
+  const t = new Date(ref).getTime();
+  if (Number.isNaN(t)) return false;
+  // Inclusive: events ending today still count as upcoming
+  return t >= Date.now() - 24 * 60 * 60 * 1000;
+}
+
 interface Bridge {
   eyebrow: string;
   title: string;
@@ -101,9 +158,21 @@ export function UpcomingEventsPage() {
   const { ref: stanceRef, isInView: stanceInView } = useInView(0.2);
   const { ref: factsRef, isInView: factsInView } = useInView(0.3);
   const { ref: featuredRef, isInView: featuredInView } = useInView(0.15);
+  const { ref: dynamicRef, isInView: dynamicInView } = useInView(0.05);
   const { ref: recurringRef, isInView: recurringInView } = useInView(0.05);
   const { ref: ctaRef, isInView: ctaInView } = useInView(0.2);
   const { ref: bridgeRef, isInView: bridgeInView } = useInView(0.1);
+
+  const { events, error: eventsError } = useEvents();
+  // Hide the dedicated featured-event entry (USRSE'26) so it doesn't
+  // duplicate the hand-curated featured section above.
+  const dynamicEvents = (events ?? [])
+    .filter(isUpcoming)
+    .filter((e) => e.slug !== "usrse26")
+    .sort(
+      (a, b) =>
+        new Date(a.startDate).getTime() - new Date(b.startDate).getTime(),
+    );
 
   return (
     <EventsLayout
@@ -250,6 +319,151 @@ export function UpcomingEventsPage() {
               </svg>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* ── Dynamic upcoming events — from API ───────────────────── */}
+      <section ref={dynamicRef} className="mb-20">
+        <div className="flex items-baseline gap-3 mb-4">
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-purple-600">
+            From the community
+          </p>
+          <span className="flex-1 h-px bg-neutral-200" aria-hidden="true" />
+          <span className="font-mono text-[11px] text-neutral-400 tabular-nums">
+            {events === null && !eventsError
+              ? "loading…"
+              : `${dynamicEvents.length.toString().padStart(2, "0")} upcoming`}
+          </span>
+        </div>
+        <h2 className="font-display text-3xl lg:text-4xl font-bold text-neutral-900 tracking-tight mb-4">
+          What&rsquo;s on the calendar.
+        </h2>
+        <p className="text-neutral-500 leading-relaxed max-w-2xl mb-12">
+          Workshops, meetups, sponsored sessions, and community-submitted
+          gatherings &mdash; the latest updates from across the network.
+        </p>
+
+        {eventsError ? (
+          <p className="font-mono text-sm text-neutral-500 py-6 px-6 border border-neutral-200 bg-neutral-50 rounded-lg">
+            We couldn&rsquo;t load the latest events right now. Please try
+            again shortly.
+          </p>
+        ) : events === null ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-neutral-200">
+            {[0, 1].map((i) => (
+              <div
+                key={i}
+                className="bg-white py-10 px-6 md:px-7 border-t-2 border-neutral-200 animate-pulse"
+              >
+                <div className="h-3 w-24 bg-neutral-100 rounded mb-4" />
+                <div className="h-6 w-2/3 bg-neutral-100 rounded mb-3" />
+                <div className="h-4 w-1/2 bg-neutral-100 rounded" />
+              </div>
+            ))}
+          </div>
+        ) : dynamicEvents.length === 0 ? (
+          <p className="font-mono text-sm text-neutral-500 py-6 px-6 border border-neutral-200 bg-neutral-50 rounded-lg">
+            No additional upcoming events have been posted yet &mdash; check
+            back soon or submit one of your own.
+          </p>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-neutral-200">
+            {dynamicEvents.map((e, i) => {
+              const d = formatEventDate(e.startDate, e.endDate);
+              const accent = i % 2 === 0 ? "purple" : "teal";
+              const borderClass =
+                accent === "purple" ? "border-purple-500" : "border-teal-500";
+              const eyebrowClass =
+                accent === "purple" ? "text-purple-600" : "text-teal-700";
+              return (
+                <article
+                  key={e.id}
+                  className={`bg-white pt-8 pb-9 px-6 md:px-7 border-t-2 ${borderClass} flex flex-col sm:flex-row gap-6 ${
+                    dynamicInView ? "animate-slide-up" : "opacity-0"
+                  }`}
+                  style={{ animationDelay: `${i * 80}ms` }}
+                >
+                  {/* Date column — echoes the featured event treatment */}
+                  <div className="shrink-0 sm:w-24">
+                    <p className="font-display text-3xl font-black text-neutral-900 leading-none tracking-tight">
+                      {d.month}
+                    </p>
+                    <p className="font-display text-2xl font-bold text-neutral-300 leading-none mt-1 tabular-nums">
+                      {d.day}
+                    </p>
+                    <p className="font-mono text-[10px] text-neutral-400 mt-2 tabular-nums">
+                      {d.year}
+                    </p>
+                  </div>
+
+                  {/* Details */}
+                  <div className="flex-1 min-w-0">
+                    <p
+                      className={`font-mono text-[10px] uppercase tracking-[0.2em] ${eyebrowClass} mb-2`}
+                    >
+                      {e.type.replace(/_/g, " ")}
+                    </p>
+                    <h3 className="font-display text-lg lg:text-xl font-bold text-neutral-900 tracking-tight leading-[1.2] mb-3 text-balance">
+                      {e.name}
+                    </h3>
+                    {e.description ? (
+                      <p className="text-sm text-neutral-600 leading-relaxed mb-4 line-clamp-3">
+                        {e.description}
+                      </p>
+                    ) : null}
+                    <div className="flex flex-wrap gap-x-5 gap-y-1.5 text-xs text-neutral-500 font-mono">
+                      <span className="tabular-nums">{d.full}</span>
+                      {e.location ? <span>{e.location}</span> : null}
+                    </div>
+                    {e.externalUrl ? (
+                      <a
+                        href={e.externalUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-neutral-900 hover:text-purple-700 transition-colors"
+                      >
+                        Event details
+                        <svg
+                          className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2.5}
+                          aria-hidden="true"
+                        >
+                          <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                      </a>
+                    ) : null}
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Submit an event CTA — anonymous click is redirected to sign-in
+            by SubmitEventPage itself, so we always render the link. */}
+        <div className="mt-10 flex flex-wrap items-center gap-4">
+          <Link
+            to="/events/submit"
+            className="group inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 text-white text-sm font-bold rounded-xl hover:bg-purple-700 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all"
+          >
+            Submit an event
+            <svg
+              className="w-4 h-4 transition-transform group-hover:translate-x-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2.5}
+              aria-hidden="true"
+            >
+              <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </Link>
+          <p className="font-mono text-[11px] uppercase tracking-wider text-neutral-400">
+            Hosting something? Send it to the community.
+          </p>
         </div>
       </section>
 
