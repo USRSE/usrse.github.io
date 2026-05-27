@@ -26,6 +26,13 @@ import type { AppEnv } from "../types";
  * every request.
  */
 export const optionalActor = createMiddleware<AppEnv>(async (c, next) => {
+  // Short-circuit: if a previous middleware already established an actor
+  // (e.g., requireActorContext on a stacked auth route), don't overwrite it.
+  if (c.get("actor")) {
+    await next();
+    return;
+  }
+
   let workosId: string | undefined;
 
   // Test escape hatch: when TEST_BYPASS_AUTH=1 and the Authorization
