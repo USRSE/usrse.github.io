@@ -1,26 +1,29 @@
-# US-RSE May 2026 Newsletter
-Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden
-(Editor)
-2026-05-20
+---
+layout: post
+title: "US-RSE May 2026 Newsletter"
+subtitle: "🙌 There Are Dozens of Us, DOZENS! 🙌"
+category: newsletter
+tags: [newsletter, May]
+date: 2026-05-20 00:00:00 -0400
+author: "Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden (Editor)"
+image: "/assets/img/newsletter-202605/us-rse_4k_members.png"
+img_alttext: "Colourful poster with the words \"Celebrating 4,000+ Member Milestone\" and a progression of trees growing from a seedling to a full tree, with the number 4011 prominently displayed."
+next_meeting_date: Friday, June 12, 2026, 12:00PM EST
+sections:
+  preamble: true # done
+  headline: true # done
+  conference: true # done
+  execupdate: false # done
+  scupdate: false # yay!
+  orgmember: true # done
+  communityfunds: false # no changes, check back in june
+  news: true # add community call summary
+  events: true
+  reads: true
+  involved: true
+  jobs: true
 
-- [<span class="toc-section-number">1</span> 🤩 Wait a Minute, I’m an
-  RSE, I Know How to Do That!
-  🤩](#star_struck-wait-a-minute-im-an-rse-i-know-how-to-do-that-star_struck)
-- [<span class="toc-section-number">2</span> 📣 Mark Your Calendars for
-  USRSE’26! 📣](#mega-mark-your-calendars-for-usrse26-mega)
-- [<span class="toc-section-number">3</span> 🤝 Organizational Founding
-  Membership
-  🤝](#handshake-organizational-founding-membership-handshake)
-- [<span class="toc-section-number">4</span> 🗞️ Community News
-  🗞️](#newspaper_roll-community-news-newspaper_roll)
-- [<span class="toc-section-number">5</span> 👀 Interesting Events and
-  Opportunities 👀](#eyes-interesting-events-and-opportunities-eyes)
-- [<span class="toc-section-number">6</span> 📚 Featured Reads, Videos,
-  and Podcasts 📚](#books-featured-reads-videos-and-podcasts-books)
-- [<span class="toc-section-number">7</span> 🏃 Get Involved!
-  🏃](#running-get-involved-running)
-- [<span class="toc-section-number">8</span> 🧑‍💼 Recent Job Postings
-  🧑‍💼](#office_worker-recent-job-postings-office_worker)
+---
 
 <a name="top"></a>
 
@@ -44,6 +47,25 @@ from your 4000-member-strong community of research software engineers!
 </p>
 
 In this issue:
+
+- [<span class="toc-section-number">1</span> 🤩 Wait a Minute, I’m an
+  RSE, I Know How to Do That!
+  🤩](#star_struck-wait-a-minute-im-an-rse-i-know-how-to-do-that-star_struck)
+- [<span class="toc-section-number">2</span> 📣 Mark Your Calendars for
+  USRSE’26! 📣](#mega-mark-your-calendars-for-usrse26-mega)
+- [<span class="toc-section-number">3</span> 🤝 Organizational Founding
+  Membership
+  🤝](#handshake-organizational-founding-membership-handshake)
+- [<span class="toc-section-number">4</span> 🗞️ Community News
+  🗞️](#newspaper_roll-community-news-newspaper_roll)
+- [<span class="toc-section-number">5</span> 👀 Interesting Events and
+  Opportunities 👀](#eyes-interesting-events-and-opportunities-eyes)
+- [<span class="toc-section-number">6</span> 📚 Featured Reads, Videos,
+  and Podcasts 📚](#books-featured-reads-videos-and-podcasts-books)
+- [<span class="toc-section-number">7</span> 🏃 Get Involved!
+  🏃](#running-get-involved-running)
+- [<span class="toc-section-number">8</span> 🧑‍💼 Recent Job Postings
+  🧑‍💼](#office_worker-recent-job-postings-office_worker)
 
 ------------------------------------------------------------------------
 

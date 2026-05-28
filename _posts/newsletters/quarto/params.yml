@@ -1,6 +1,6 @@
 layout: post
 title: "US-RSE May 2026 Newsletter"
-subtitle: "## 🙌 There Are Dozens of Us, DOZENS! 🙌"
+subtitle: "🙌 There Are Dozens of Us, DOZENS! 🙌"
 category: newsletter
 tags: [newsletter, May]
 date: 2026-05-20 00:00:00 -0400
@@ -17,7 +17,7 @@ sections:
   orgmember: true # done
   communityfunds: false # no changes, check back in june
   news: true # add community call summary
-  events: true # recheck on friday
+  events: true
   reads: true
   involved: true
   jobs: true

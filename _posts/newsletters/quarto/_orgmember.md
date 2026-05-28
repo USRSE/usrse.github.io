@@ -24,6 +24,7 @@ Please reach out to Sandra Gesing at [sandra@us-rse.org](mailto:sandra@us-rse.or
 {% for org in site.data.org-members.standard %}
 
 - [{{ org.name }}]({{ org.url }})
+- [Flatiron Institute](https://www.simonsfoundation.org/flatiron/)
 
 {% endfor %}
 

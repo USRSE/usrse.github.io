@@ -3,8 +3,8 @@ nocite: "[@*]"
 references:
 - accessed: 2026-04-08
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-09T23:30:32.242Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   author:
   - family: Besser
     given: Stephanie
@@ -22,8 +22,8 @@ references:
     provide funding for good.
   accessed: 2026-04-08
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-09T23:30:32.243Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   author:
   - family: Bort
     given: Julie
@@ -35,6 +35,65 @@ references:
     source's funding problem, permanently
   type: webpage
   url: "https://techcrunch.com/2026/02/26/a-vc-and-some-big-name-programmers-are-trying-to-solve-open-sources-funding-problem-permanently/"
+- abstract: "English Edition:\\&nbsp;In this ByteSized episode \\&amp;
+    online class we're talking about GitHub Pages and how it can help
+    you to create a web-site for your research project (reasonably)
+    quickly. With me are Sarah Gibson and Jeremy Cohen.\\&nbsp;I'd
+    li\\..."
+  accessed: 2026-05-21
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-05-21T03:25:52.411Z
+  id: ByteSizedCreateYour2026
+  issued: 2026-05-19
+  language: en-US
+  title: "\\[EN\\] ByteSized: Create your web-site with GitHub Pages - J
+    Cohen, S Gibson - Code for Thought"
+  title-short: \[EN\] ByteSized
+  type: motion_picture
+  url: "https://www.buzzsprout.com/1326658/episodes/19133793-en-bytesized-create-your-web-site-with-github-pages-j-cohen-s-gibson"
+- abstract: Research software is a class of software developed to
+    support research. Today a wealth of such software is created daily
+    in universities, government, and commercial research enterprises
+    worldwide. The sustainability of this software faces particular
+    challenges due, at least in part, to the type of people who develop
+    it. These Research Software Engineers (RSEs) face challenges in
+    developing and sustaining software that differ from those faced by
+    the developers of traditional software. As a result, professional
+    associations have begun to provide support, advocacy, and resources
+    for RSEs. These benefits are critical to sustaining RSEs, especially
+    in environments where their contributions are often undervalued and
+    not rewarded. This paper focuses on how professional associations,
+    such as the United States Research Software Engineer Association
+    (US-RSE), can provide this support.
+  accessed: 2026-05-21
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-05-21T03:25:52.413Z
+  author:
+  - family: Carver
+    given: Jeffrey C.
+  - family: Cosden
+    given: Ian A.
+  - family: Hill
+    given: Chris
+  - family: Gesing
+    given: Sandra
+  - family: Katz
+    given: Daniel S.
+  container-title: 2021 IEEE/ACM International Workshop on Body of
+    Knowledge for Software Sustainability (BoKSS)
+  doi: 10.1109/BoKSS52540.2021.00016
+  id: carverSustainingResearchSoftware2021
+  issued: 2021-06
+  keyword: career paths,Conferences,Faces,Government,Knowledge
+    engineering,people,research software,Software,software
+    sustainability,Sustainable development
+  page: 23-24
+  title: Sustaining Research Software via Research Software Engineers
+    and Professional Associations
+  type: article-journal
+  url: "https://ieeexplore.ieee.org/document/9470770"
 - abstract: "Presentations by Olivia Newton (University of Montana) and
     Andrew Schmeder (LBNL) on March 3 in the Consortium for the
     Advancement of Scientific Software (CASS; https://cass.community/)
@@ -43,8 +102,8 @@ references:
     and what performance they can expect from AI t"
   accessed: 2026-04-08
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-09T23:30:32.242Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   id: casscommunityAITeamworkTooling2026
   issued: 2026-03-04
   title: AI teamwork and tooling for research software engineers
@@ -57,8 +116,8 @@ references:
     Bandiera_abtest: a\
     Cg_type: News\
     Subject_term: Machine learning, Careers\
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-09T01:03:26.826Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   author:
   - family: Chen
     given: Edward
@@ -92,8 +151,8 @@ references:
     more equitable and effective AI adoption.
   accessed: 2026-04-08
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-09T01:03:26.826Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   author:
   - family: Chugunova
     given: Marina
@@ -128,8 +187,8 @@ references:
     hype and sort through the mess"
   accessed: 2026-04-08
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-09T23:30:32.242Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   author:
   - family: Claburn
     given: Thomas
@@ -142,8 +201,8 @@ references:
     opt out"
   accessed: 2026-04-08
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-09T23:30:32.242Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   author:
   - family: Claburn
     given: Thomas
@@ -153,6 +212,67 @@ references:
   title-short: GitHub
   type: webpage
   url: "https://www.theregister.com/2026/03/26/github_ai_training_policy_changes/"
+- abstract: "English Edition: In a follow up about \\\"unusual\\\" computers
+    I want to focus on field programmable gate arrays - FPGAs. With my
+    guest and former colleague at UCL, Michael McLeod, we talk about
+    what they are, where they are used and what's so special \\..."
+  accessed: 2026-05-21
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-05-21T03:25:52.412Z
+  id: ComputingNotYou2026
+  issued: 2026-05-05
+  language: en-US
+  title: "\\[EN\\] Computing, but not as you know it: Field Programmable
+    Gate Arrays (FPGA) - with Michael McLeod - Code for Thought"
+  title-short: \[EN\] Computing, but not as you know it
+  type: motion_picture
+  url: "https://www.buzzsprout.com/1326658/episodes/19019174-en-computing-but-not-as-you-know-it-field-programmable-gate-arrays-fpga-with-michael-mcleod"
+- abstract: To effect change, the Software Sustainability Institute
+    works with researchers, developers, funders, and infrastructure
+    providers to identify and address key issues with research software.
+  accessed: 2026-05-21
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-05-21T03:25:52.413Z
+  author:
+  - family: Crouch
+    given: Stephen
+  - family: Hong
+    given: Neil Chue
+  - family: Hettrick
+    given: Simon
+  - family: Jackson
+    given: Mike
+  - family: Pawlik
+    given: Aleksandra
+  - family: Sufi
+    given: Shoaib
+  - family: Carr
+    given: Les
+  - family: De Roure
+    given: David
+  - family: Goble
+    given: Carole
+  - family: Parsons
+    given: Mark
+  container-title: Computing in Science & Engineering
+  doi: 10.1109/MCSE.2013.133
+  id: crouchSoftwareSustainabilityInstitute2013
+  issn: 1558-366X
+  issue: 6
+  issued: 2013-11
+  keyword: domain engineering,Domain
+    engineering,maintainability,Programming,reliability,scientific
+    computing,Scientific computing,Software development,software
+    engineering,Software engineering,Software reliability,Training
+  page: 74-80
+  title: "The Software Sustainability Institute: Changing Research
+    Software Attitudes and Practices"
+  title-short: The Software Sustainability Institute
+  type: article-journal
+  url: "https://ieeexplore.ieee.org/document/6731384"
+  volume: 15
 - abstract: Scientists, research institutions, funders, libraries and
     publishers must all improve software practices.
   accessed: 2025-11-07
@@ -224,8 +344,8 @@ references:
     research software, and four themes impacting this technical debt.
   accessed: 2026-04-08
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-09T01:03:26.827Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   author:
   - family: Ernst
     given: Neil A.
@@ -329,6 +449,58 @@ references:
   type: article-journal
   url: "http://arxiv.org/abs/2108.09836"
   volume: 119
+- abstract: United States Research Software Engineer Association
+  accessed: 2026-05-21
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-05-21T03:25:52.412Z
+  author:
+  - family: Sochat
+    given: Vanessa
+  - family: Katz
+    given: Daniel S.
+  - family: Cosden
+    given: Ian A.
+  - family: Maimone
+    given: Christina
+  - family: Ferenbaugh
+    given: Charles
+  - family: Gesing
+    given: Sandra
+  - family: Carver
+    given: Jeffrey C.
+  - family: Hill
+    given: Chris
+  - family: Brewer
+    given: Nicole
+  - family: Vaillancourt
+    given: Peter
+  - family: Carroll
+    given: Mark
+  - family: Elmer
+    given: Peter
+  id: "KindofBriefShared00:00:00+0000"
+  issued: "00:00:00 +0000"
+  language: en-US
+  publisher: US-RSE
+  title: A kind-of brief shared early history of US-RSE
+  type: webpage
+  url: "https://us-rse.org/2022-02-06-a-brief-history-of-usrse/"
+- abstract: "English Edition:\\&nbsp;there is a (relatively) new kid on
+    the block - of open source package managers. It's called Pixi: and
+    in this episode I talk to Raniere de Silva (GESIS) and Wolf
+    Vollprecht (Prefix - the company behind Pixi), what the tool br\\..."
+  accessed: 2026-05-21
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-05-21T03:25:52.412Z
+  id: ManagingPackagesPixi2026
+  issued: 2026-05-12
+  language: en-US
+  title: \[EN\] Managing Packages with Pixi - Raniere de Silva and Wolf
+    Vollprecht - Code for Thought
+  type: motion_picture
+  url: "https://www.buzzsprout.com/1326658/episodes/19064274-en-managing-packages-with-pixi-raniere-de-silva-and-wolf-vollprecht"
 - abstract: There has been a resurgence of interest in optical computing
     over the past decade, both in academia and in industry, with much of
     the excitement centered around special-purpose optical computers for
@@ -369,6 +541,44 @@ references:
   type: article-journal
   url: "http://arxiv.org/abs/2308.00088"
   volume: 5
+- abstract: Writing code that is resistant to being hacked is a
+    challenging task. This book takes you through the entire process in
+    easy-to-learn units, from the principles that underlie secure code,
+    to the design, coding, testing, and evaluation of the code.You can
+    use this book from start to finish as a complete curriculum on
+    software security so it can form the basis of an introductory
+    course.You can also use the book as a tutorial to learn about
+    specific topics, like buffer overflows, injections attacks, or web
+    security. Or, to learn how to use tools that will help you make your
+    code more secure.However you go through this book, it will be a
+    great learning aid and, in later times, a reference book that you
+    can pick up whenever you need to a refresher or to learn a new
+    topic.
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-05-21T03:25:52.412Z
+  author:
+  - family: Miller
+    given: Barton P.
+  - family: Heymann
+    given: Elisa R.
+  id: millerIntroductionSoftwareSecurity
+  isbn: 9798195700508
+  language: en-US
+  number-of-pages: 390
+  publisher: Independently published
+  title: Introduction to Software Security
+  type: book
+- annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-05-21T03:25:52.412Z
+  author:
+  - family: Mineault
+    given: Patrick
+  id: mineaultGoodResearchCode
+  language: en-US
+  title: Good Research Code handbook
+  type: article-journal
 - abstract: Lost for more than half a century, the rare Chinese
     typewriter whose name means "clear and fast" was discovered in a New
     York basement and entrusted to Stanford Libraries.
@@ -385,8 +595,8 @@ references:
 - abstract: A practice for finding peace in your dependency tree.
   accessed: 2026-04-13
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-13T15:22:56.592Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   author:
   - family: Nesbitt
     given: Andrew
@@ -395,12 +605,24 @@ references:
   title: Guided Meditation for Developers
   type: webpage
   url: "https://nesbitt.io/2026/03/15/guided-meditation-for-developers.html"
+- accessed: 2026-05-21
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-05-21T03:25:52.413Z
+  author:
+  - family: Hettrick
+    given: Simon
+  id: NotsobriefHistoryResearch
+  title: A not-so-brief history of Research Software Engineers \|
+    Software Sustainability Institute
+  type: webpage
+  url: "https://www.software.ac.uk/blog/not-so-brief-history-research-software-engineers-0"
 - abstract: Accelerates Codex growth to power the next generation of
     Python developer tools
   accessed: 2026-04-08
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-09T23:30:32.241Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   author:
   - family: OpenAI
   id: openaiOpenAIAcquireAstral2026
@@ -546,8 +768,8 @@ references:
     subject of this ByteSized episode with my guests Prof\\..."
   accessed: 2026-04-13
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-13T15:25:58.924Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   id: schmidtByteSizedFunFloating2026
   issued: 2026-03-31
   language: en-US
@@ -562,8 +784,8 @@ references:
     subject of this ByteSized episode with my guests Prof\\..."
   accessed: 2026-04-13
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-13T15:25:58.925Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   id: schmidtByteSizedFunFloating2026a
   issued: 2026-03-31
   language: en-US
@@ -598,8 +820,8 @@ references:
     were\\..."
   accessed: 2026-04-13
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-13T15:25:58.927Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   id: schmidtNextBrainExploringHuman2026
   issued: 2026-03-17
   language: en-US
@@ -633,8 +855,8 @@ references:
     s\\..."
   accessed: 2026-04-13
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-13T15:25:58.926Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   id: schmidtTeamPortraitResearch2026
   issued: 2026-03-24
   language: en-US
@@ -677,8 +899,8 @@ references:
     and 250K wasted API calls daily
   accessed: 2026-04-08
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-09T23:30:32.242Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   author:
   - family: Stetskov
     given: Denis
@@ -692,8 +914,8 @@ references:
 - abstract: The Apple Calculator leaked 32GB of RAM.
   accessed: 2026-04-15
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-15T11:36:50.658Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.499Z
   author:
   - family: Stetskov
     given: Denis
@@ -709,8 +931,8 @@ references:
     project I maintain, in GoLang, in 5 Days
   accessed: 2026-04-15
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-15T11:36:50.659Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.499Z
   author:
   - family: Substack
   id: substackArtificialIntelligenceCan
@@ -728,8 +950,8 @@ references:
     of CASS: the Consortiumfor the Advancement of Scientific Software."
   accessed: 2026-04-08
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-04-09T23:30:32.242Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
   author:
   - family: Teranishi
     given: Keita

@@ -143,15 +143,39 @@
   links: |
     The event is being organized via Meetup.com, so please RSVP there if you plan to attend: [Chicago RSE Meetup](https://www.meetup.com/us-rse-chicago-regional-community/events/313402749/?eventOrigin=group_upcoming_# - expires: 2027-01-01
 
-type: event
-   title: Neuro-RSE Affinity Group Zoom Hangout
-   when: Wednesday, June 3rd, at 1-2pm PT / 4-5pm ET
-   where: Zoom
-   preamble: |
+- expires: 2026-06-03
+  type: event
+  title: Neuro-RSE Affinity Group Zoom Hangout
+  when: Wednesday, June 3rd, at 1-2pm PT / 4-5pm ET
+  where: Zoom
+  preamble: |
      We're going to plan our next Neuro AG Zoom call for June 3rd! The theme for this meeting is Show-and-Tell! You are invited to take a few minutes (~3-5 mins) to share something with the group. Topics might include software (your own or another you want to put eyes on), code practices, a neuroscience problem you've faced, neuro RSE community or career-related. We will share more info as the date approaches! 😁
-   links: |
+  links: |
      Check out the Slack channel #ag-neuro-rse to keep up-to-date on all things neuro data and software!
 
+- expires: 2026-06-09
+  type: event
+  title: "NLS³C Community of Practice Webinar: Like-Minded Organizations"
+  when: Tuesday, June 9, 2026, 12:00 PM - 1:00 PM MST
+  where: Virtual
+  preamble: |
+    Join the next webinar from the National Laboratories Sustainable Scientific Software Conference (NLS³C) Community of Practice for an introduction to several organizations supporting the research software ecosystem, including Better Scientific Software (BSSw), the Consortium for the Advancement of Scientific Software (CASS), INTERSECT, the Research Software Alliance (ReSA), and the US Research Software Engineer Association (US-RSE).
+    Speakers include Rinku Gupta (Argonne National Laboratory), Elaine Raybourn (University of Central Florida), Ian Cosden (Princeton University), Daniel S. Katz (University of Illinois Urbana-Champaign), and Keith Beattie (Lawrence Berkeley National Laboratory). Attendees will learn what each organization offers and how to get involved.
+    The NLS³C Community of Practice fosters collaboration among individuals working with software repositories across the U.S. National Labs complex, promoting best practices, knowledge sharing, and sustainable software development through webinars and community engagement.
+  links: |
+    Registration: Click [here](https://events.gcc.teams.microsoft.com/event/0d53463d-402a-4954-8780-8ff612d44d61@7ccb5a20-a303-498c-b0c1-29007381b574) to register!
+
+- expires: 2026-06-19
+  type: event
+  title: Durham HPC Days 2026
+  when: Monday, June 15 – Friday, June 19, 2026
+  where: Durham University Department of Computer Science and Online
+  preamble: |
+    Durham HPC Days is an annual event bringing together researchers, developers, research software engineers, and industry practitioners working in high-performance computing (HPC), scientific computing, and data analysis.
+
+    The 2026 program will feature keynote talks, technical sessions, tutorials, workshops, and community discussions focused on emerging technologies, large-scale scientific computing, and the future of advanced research infrastructure. The event aims to foster collaboration across disciplines and support both experienced practitioners and newcomers to the HPC community.
+  links: |
+    More information: [Click here](https://hpc-days.github.io/Durham-HPC-Days-2026/)
 
 #-------------------
 # Opportunities
@@ -163,6 +187,15 @@ type: event
     in information systems and technology, two Minitracks at the conference appear particularly relevant to research software engineers (RSEs):
     1. AI's impact on Software Engineering
     2. Sustainable Software: Usable, Maintainable, and Reproducible
+
+    **The CFP is now open!** Key dates include:
+
+    - June 15: Paper submission deadline
+    - August 17: Notification of acceptance/rejection
+    - September 4: [Conditionally Accepted] Submission deadline for revised manuscript
+    - September 10: [Conditionally Accepted] Notification of acceptance/rejection
+    - September 22: Deadline for final manuscript submissions
+    - October 1: Author registration deadline
   links:  |
     Learn more at the HICSS [website](https://hicss.hawaii.edu/tracks-and-minitracks/software-technology/), and if you have any other questions, feel free to reach out to Sandra on Slack or [via email](mailto:sandra@us-rse.org)
 
@@ -302,10 +335,76 @@ type: event
   title: "🚀 Applications are now open for the 2026 Princeton Research Software Engineering Summer Fellowship Program! 🚀"
   preamble: |
     Are you an undergraduate or graduate student interested in the intersection between software engineering and research? Want to apply your software development skills to real research challenges? If so, spend 10 weeks this summer working with a professional Research Software Engineer on cutting‑edge Princeton projects, all while building meaningful software, sharpening your technical skills, and joining the broader RSE community.
-
     This paid fellowship is fully remote, includes optional travel for a Princeton site visit and attendance at the USRSE’26 conference, and welcomes applicants from all U.S.-accredited institutions. 
-
     Thank you to the Alfred P. Sloan Foundation for generously supporting this program and helping us grow the next generation of research software engineering talent.
   links: |
     Learn more and apply by March 31, 2026 at: [Princeton RSE Summer Fellowship](https://researchcomputing.princeton.edu/services/research-software-engineering/2026-research-software-engineering-summer-fellows-program)
 
+- expires: 2026-07-30
+  type: opportunity
+  title: ACM PEARC26 Conference Registration Open
+  preamble: |
+    Registration is now open for ACM PEARC26! Join the research computing and data community in Minneapolis, Minnesota, July 26–30, 2026, for this year's conference theme: "Resilient Roots, Empowered Communities."" PEARC is a valuable opportunity to connect with colleagues, share ideas, and learn about emerging work across the research computing ecosystem. This year’s conference also features an RSE track for the first time, making it especially relevant for the research software engineering community.
+  links: |
+    More information and registration: [Click here](https://pearc.acm.org/pearc26/)
+
+- expires: 2026-09-25
+  type: opportunity
+  title: Gateways 2026 Call for Participation and Registration Open
+  preamble: |
+    The Gateways 2026 Conference Call for Participation and registration are now live! For a decade, the Gateways conference has served as a central meeting place for creators and users of science gateways. This year’s conference highlights the growing integration of Artificial Intelligence alongside continued advances in community development, education, and interoperability.
+    Join the community in Washington, DC, September 23–25, 2026, to share solutions, tackle challenges, and build connections that will power the next generation of research.
+
+    Key dates and deadlines:
+    - Tutorials — May 22, 2026
+    - Papers — June 8, 2026
+    - Talk-only, BYOP, and Posters — July 20, 2026
+    
+    Can't attend the full conference? Free Virtual Tutorials sessions will be held September 1–3 and September 8–11, 2026.
+  links: |
+    Conference details: [Click here](https://sciencegateways.org/gateways2026)
+    Registration: [Click here](https://na.eventscloud.com/ereg/newreg.php?eventid=874568&)
+
+- type: opportunity
+  title: External Review Requested for QS-DMSS v0.3.0
+  preamble: |
+    QS-DMSS v0.3.0 is seeking first-pass external feedback on its reproducible package and evidence workflow. The project is currently beta software focused on reproducible package/evidence workflows rather than peer-reviewed scientific validation.
+
+    Contributors are invited to install the package from PyPI, run the demo workflow, inspect the generated evidence bundle, or provide feedback on the review process. The project is especially seeking public comments related to installation and reproducibility, evidence and benchmark validation, and scientific/JOSS framing.
+
+    No endorsement is requested — even simple feedback such as “this worked on my machine” is considered valuable.
+  links: |
+    Discussion and coordination: [Click here](https://github.com/AI-Bio-Synergy-Holdings-LLC/QS-DMSS/discussions/44)
+
+    Reviewer opt-in form: [Click here](https://github.com/AI-Bio-Synergy-Holdings-LLC/QS-DMSS/issues/new?template=reviewer_opt_in.yml)
+
+- expires: 2026-07-08
+  type: opportunity
+  title: SHAREing Flexible Funds Open for HPC and RTP Innovation Projects
+  preamble: |
+    SHAREing Flexible Funds are open again for projects supporting innovation in the HPC and Research Technical Professional (RTP) landscape.
+
+    Participants can either propose solutions to existing open tasks or suggest entirely new tasks through SHAREing’s rolling call process. New ideas are discussed during open Working Package meetings and, if approved, added to the SHAREing task map with eligibility for funding consideration.
+
+    Indicative funding levels include:
+    - Up to £5,000 for workshops and hackathons
+    - Up to £15,000 for research code assessment case studies
+    - Up to £25,000 for learning materials and methodology development
+
+    Proposal deadline: July 8, 2026.
+  links: |
+    More information and funding details: [Click here](https://www.cake.ac.uk/funds/)
+
+- expires: 2026-08-30
+  type: opportunity
+  title: IJPP Special Issue on High-Productivity Programming Systems for HPC Applications
+  preamble: |
+    The International Journal of Parallel Programming (IJPP) is accepting submissions for a special issue on “High-Productivity Programming Systems for HPC Applications.” The issue focuses on programming languages, models, and software systems that improve productivity while addressing the performance, power, scalability, and reliability challenges of modern and future high-performance computing systems.
+
+    Topics of interest include exascale programming systems, parallel programming models, performance tuning, power management, fault tolerance, self-aware software systems, and approaches for exploiting massive parallelism in HPC applications.
+
+    Researchers and practitioners in HPC, scientific computing, and research software engineering are encouraged to submit.
+    
+    Submission deadline (extended): August 30, 2026.
+  links: |
+    Journal and submission information: [Click here](https://link.springer.com/journal/10766/updates/27768048)

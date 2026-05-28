@@ -26,18 +26,37 @@ Ian Cosden, one of our newsletter editors and Director of *Research Software Eng
 
 </p>
 
-Goth et al. ([2025](https://f1000research.com/articles/13-1429)) offer one recent attempt to concretize the foundational competencies and responsibilities of an RSE, including software development, building and distributing software assets, understanding the research lifecycle, and supporting reproducible, sustainable research. [Vanessa Sochat's EasyBuild talk](https://www.youtube.com/watch?v=FB2yV8TNnSw), on the other hand, emphasizes just how broad this space can be: among roughly 400 people surveyed who identified themselves to be working on "research software" in some capacity, there were more than *190 unique job titles*. That degree of diversity can be both a strength and a challenge. It shows how widely research software work appears across institutions, but it also explains why the role can be so difficult to define, hire for, promote, and reward. In a 2022 [career Q&A in *Nature*](https://www.nature.com/articles/d41586-022-01516-2), Paul Richmond predicted that RSEs could become equals in the academic environment if they receive proper recognition for their contributions. James Schloss, in his [YouTube talk](https://www.youtube.com/watch?v=t2BjZ5hSjHo) highlights some of the barriers still standing in the way: the publication economy, academic resistance to software engineering best practices, and the difficulty of competing with industry salaries for people with similar technical expertise. In fact, one of my very first suggestions for newsletter topics was to discuss the definition of the title "Research Software Engineer" itself, and I was told very firmly to avoid the topic as much as possible — not because it was inflammatory, but because it remains a particularly sensitive topic. While many are strongly attached to the name for its truthiness, just as many others are more concerned with defining the tasks, responsibilities, and competencies of the role, regardless of what it is called, because funding sources will pay a great deal of attention to those details.
+Goth et al. ([2025](https://f1000research.com/articles/13-1429)) offer one recent attempt to concretize the foundational competencies and responsibilities of an RSE, including software development, building and distributing software assets, understanding the research lifecycle, and supporting reproducible, sustainable research. [Vanessa Sochat's EasyBuild talk](https://www.youtube.com/watch?v=FB2yV8TNnSw), on the other hand, emphasizes just how broad this space can be: among roughly 400 people surveyed who identified themselves to be working on "research software" in some capacity, there were more than *190 unique job titles*. That degree of diversity can be both a strength and a challenge. It shows how widely research software work appears across institutions, but it also explains why the role can be so difficult to define, hire for, promote, and reward. Another one of our US-RSE members, Dan Katz, proposes a 3-dimensional schematic
+to isolate the Super RSE role who commands "a superset of the responsibilities of the traditional RSE role, combining both service and the RSE’s own research."
 
-> It can sometimes feel like being an RSE is a bit like being a unicorn. You know you exist, but you are not sure if anyone else does. You know you have a critical role to play in the research ecosystem, but you are not sure if your institution recognizes it. You know you have a lot of skills and expertise to offer, but you are not sure if anyone will pay for them. You know you can help your colleagues, but you are not sure if they will ask for your help.
+<p align="center">
+<img src="https://danielskatzblog.wordpress.com/wp-content/uploads/2019/07/screen-shot-2019-07-12-at-7.09.31-am.png" style="width: 750px; height: auto;"/> 
+</p>
 
-- ChatGPT, the great text-predict engine, in response to the prompt "What is it like to be a research software engineer?"
+By identifying this RSE unicorn, Katz highlights the fact that as we define
+the breadth of the scope of the RSE, we also need to think about its 
+potentially necessary boundaries.
+
+In a 2022 [career Q&A in *Nature*](https://www.nature.com/articles/d41586-022-01516-2), Paul Richmond predicted that RSEs could become equals in the academic environment if they receive proper recognition for their contributions. James Schloss, in his [YouTube talk](https://www.youtube.com/watch?v=t2BjZ5hSjHo) highlights some of the barriers still standing in the way: the publication economy, academic resistance to software engineering best practices, and the difficulty of competing with industry salaries for people with similar technical expertise. In fact, one of my very first suggestions for newsletter topics was to discuss the definition of the title "Research Software Engineer" itself, and I was told very firmly to avoid the topic as much as possible — not because it was inflammatory, but because it remains a particularly sensitive topic. While many are strongly attached to the name for its truthiness, just as many others are more concerned with defining the tasks, responsibilities, and competencies of the role, regardless of what it is called, because funding sources will pay a great deal of attention to those details.
 
 But friends, there is hope. 🌱
 
 Just as a small group of concerned scientists and software practitioners began with an idea, a conversation, and a Google Group, we can continue making the role visible at our own institutions. This can be through formal titles, clearer career paths, better credit, stronger communities of practice, or simply naming the work when we see it as we help research software engineering become easier to recognize and harder to ignore. This week, celebrate yourself by encouraging your colleagues, coworkers, PIs, and students to **make this role visible**. Look around. We are once again watching technology change the fabric of research itself. Rigorous science, and the software that powers it, cannot afford to be left behind. Now more than ever, research needs talented, driven, curious technology specialists who can ask new questions, solve impossible bugs, push compute clusters to their limits, and preserve the code — and the science — that so many people depend on.
 
+Our Executive Director had this to say about the importance of this community:
+
+"Reaching more than 4,000 members is not just a milestone in numbers - it reflects a growing 
+community of people who care deeply about advancing research through software, collaboration, and 
+support for one another. As Executive Director, I am incredibly grateful to be part of this community 
+and inspired every day by the generosity, expertise, and passion our members bring to US-RSE. Thank 
+you for helping build a place where research software engineers can truly belong."
+
+> [Sandra](https://us-rse.org/about/staff/)
+
 This month, we thank the scrappy and passionate group of researchers who helped crystallize the idea of the Research Software Engineer, [one quiet afternoon in Oxford, UK, in 2012](https://www.pure.ed.ac.uk/ws/portalfiles/portal/65195747/DR2012_12_1_.pdf). And the next time you notice a colleague struggling with a technical problem, be the RSE on their shoulder. Gently remind them:
 
 *Hey, I know how to do that.*
+
+> You are braver than you believe, stronger than you seem, and smarter than you think. A. A. Milne, *Winnie the Pooh*
 
 ------------------------------------------------------------------------
