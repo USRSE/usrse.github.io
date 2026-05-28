@@ -179,6 +179,27 @@
 
 #-------------------
 # Opportunities
+- expires: 2026-07-31
+  type: opportunity
+  title: ACL Caregiver Artificial Intelligence Prize Challenge
+  preamble: |
+    The Administration for Community Living (ACL) has launched the Caregiver Artificial Intelligence Prize Challenge to support the development of AI-enabled tools that improve care quality, reduce caregiver burden, and strengthen caregiving infrastructure for older adults and people with disabilities.
+
+    The challenge includes two tracks:
+    - AI Tools for Caregivers
+    - AI Tools for Extending the Caregiver Workforce
+
+    Teams will compete across multiple phases focused on design, implementation, and scaling. The competition seeks practical and effective uses of AI to support both family caregivers and the direct care workforce.
+
+    Key dates:
+    - Informational webinar — May 28, 2026
+    - Phase 1 applications due — July 31, 2026
+    - Phase 1 winners announced — September 2026
+  links: |
+    More information: [Click here](https://acl.gov/)
+    
+    Questions and mailing list requests: CaregiverAI@acl.hhs.gov
+
 - expires: 2026-06-15
   type: opportunity
   title: "HICSS 2027 Call for Participation: Minitracks relevant to RSEs🤩"
