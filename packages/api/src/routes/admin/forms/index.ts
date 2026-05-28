@@ -6,6 +6,7 @@ import { createDb } from "../../../db";
 import { forms } from "../../../db/schema";
 import type { AppEnv } from "../../../types";
 import { parseFormSchema } from "../../../lib/forms/schemaParser";
+import { adminFormByIdRoute } from "./byId";
 
 export const adminFormsRoute = new Hono<AppEnv>();
 
@@ -171,3 +172,5 @@ adminFormsRoute.get("/", async (c) => {
 
   return c.json({ ok: true, rows });
 });
+
+adminFormsRoute.route("/:id", adminFormByIdRoute);
