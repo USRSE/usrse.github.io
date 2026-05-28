@@ -8,6 +8,7 @@ import type { AppEnv } from "../../../types";
 import { parseFormSchema } from "../../../lib/forms/schemaParser";
 import { adminFormByIdRoute } from "./byId";
 import { adminFormCommentsRoute } from "./comments";
+import { adminFormSubmissionsRoute } from "./submissions";
 import { adminFormTransitionsRoute } from "./transitions";
 
 export const adminFormsRoute = new Hono<AppEnv>();
@@ -177,4 +178,5 @@ adminFormsRoute.get("/", async (c) => {
 
 adminFormsRoute.route("/:id/transitions", adminFormTransitionsRoute);
 adminFormsRoute.route("/:id/comments", adminFormCommentsRoute);
+adminFormsRoute.route("/:id/submissions", adminFormSubmissionsRoute);
 adminFormsRoute.route("/:id", adminFormByIdRoute);
