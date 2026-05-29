@@ -1,28 +1,32 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, beforeAll } from "vitest";
 import { testApp } from "../test/helpers";
 import { neon } from "@neondatabase/serverless";
 
 const HAS_DB = !!process.env.DATABASE_URL;
 const describeIfDb = HAS_DB ? describe : describe.skip;
 
-const sql = HAS_DB ? neon(process.env.DATABASE_URL!) : null!;
-
-async function insertAnnouncement(args: {
-  slug: string;
-  title: string;
-  body: string;
-  status: string;
-  scope: string;
-}): Promise<string> {
-  const rows = await sql/* sql */`
-    INSERT INTO announcements (slug, title, body, status, scope)
-    VALUES (${args.slug}, ${args.title}, ${args.body}, ${args.status}::artifact_status, ${args.scope}::artifact_scope)
-    RETURNING id
-  `;
-  return rows[0].id as string;
-}
-
 describeIfDb("GET /announcements/:slug", () => {
+  let sql: ReturnType<typeof neon>;
+
+  beforeAll(() => {
+    sql = neon(process.env.DATABASE_URL!);
+  });
+
+  async function insertAnnouncement(args: {
+    slug: string;
+    title: string;
+    body: string;
+    status: string;
+    scope: string;
+  }): Promise<string> {
+    const rows = await sql/* sql */`
+      INSERT INTO announcements (slug, title, body, status, scope)
+      VALUES (${args.slug}, ${args.title}, ${args.body}, ${args.status}::artifact_status, ${args.scope}::artifact_scope)
+      RETURNING id
+    `;
+    return rows[0].id as string;
+  }
+
   it("returns a published, public announcement to an anonymous viewer", async () => {
     const slug = `pub-${Date.now()}`;
     await insertAnnouncement({
