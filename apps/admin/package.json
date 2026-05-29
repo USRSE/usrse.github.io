@@ -12,6 +12,8 @@
     "e2e": "playwright test"
   },
   "dependencies": {
+    "@coltorapps/builder": "^0.2.4",
+    "@coltorapps/builder-react": "^0.2.4",
     "@tailwindcss/vite": "^4.2.4",
     "@us-rse/auth-shell": "*",
     "@us-rse/design-system": "*",
