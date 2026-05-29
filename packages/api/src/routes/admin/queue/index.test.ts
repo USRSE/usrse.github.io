@@ -14,7 +14,7 @@ beforeAll(async () => {
       { id: "00000000-0000-0000-0000-0000000000a2", status: "published", revision: 1, authorId: "00000000-0000-0000-0000-0000000000b1", name: "Already Published", scope: "public", startDate: "2026-07-01" },
     ],
     announcements: [
-      { id: "00000000-0000-0000-0000-0000000000a3", status: "in_review", revision: 1, authorId: "00000000-0000-0000-0000-0000000000b1", title: "Heads up", body: "..." },
+      { id: "00000000-0000-0000-0000-0000000000a3", status: "in_review", revision: 1, authorId: "00000000-0000-0000-0000-0000000000b1", slug: "heads-up-test", title: "Heads up", body: "..." },
     ],
     forms: [
       { id: "00000000-0000-0000-0000-0000000000a4", status: "draft", revision: 1, authorId: "00000000-0000-0000-0000-0000000000b1", slug: "test-form", title: "Test Form", schema: {} },

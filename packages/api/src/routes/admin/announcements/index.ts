@@ -4,6 +4,7 @@ import { zValidator } from "@hono/zod-validator";
 import { and, desc, eq, ilike, isNull } from "drizzle-orm";
 import { createDb } from "../../../db";
 import { announcements } from "../../../db/schema";
+import { buildSlug } from "../../../lib/slug";
 import type { AppEnv } from "../../../types";
 import { adminAnnouncementByIdRoute } from "./byId";
 import { adminAnnouncementTransitionsRoute } from "./transitions";
@@ -60,11 +61,10 @@ adminAnnouncementsRoute.post(
 
     // Generate a URL-safe slug from the title; a short random suffix prevents
     // collisions when two announcements share a similar title.
-    const baseSlug = body.title
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/^-|-$/g, "")
-      .slice(0, 80);
+    const baseSlug = buildSlug(body.title);
+    if (!baseSlug) {
+      return c.json({ ok: false, error: "invalid_input" }, 400);
+    }
     const suffix = Math.random().toString(36).slice(2, 6);
     const slug = `${baseSlug}-${suffix}`;
 

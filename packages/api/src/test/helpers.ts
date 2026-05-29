@@ -59,6 +59,7 @@ interface SeedInput {
     status: string;
     revision: number;
     authorId: string;
+    slug: string;
     title: string;
     body: string;
     expiresAt?: string;
@@ -95,9 +96,9 @@ export async function seedArtifacts(
   }
   for (const a of input.announcements ?? []) {
     await sql`
-      INSERT INTO announcements (id, status, revision, title, body, expires_at)
+      INSERT INTO announcements (id, slug, status, revision, title, body, expires_at)
       VALUES (
-        ${a.id}::uuid, ${a.status}::artifact_status, ${a.revision},
+        ${a.id}::uuid, ${a.slug}, ${a.status}::artifact_status, ${a.revision},
         ${a.title}, ${a.body}, ${a.expiresAt ?? null}
       )
     `;
