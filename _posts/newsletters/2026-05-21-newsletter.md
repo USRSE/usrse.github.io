@@ -121,8 +121,8 @@ formalizing a role that many people were already doing but few
 institutions knew how to recognize. Since then, definitions have been
 proposed, refined, and debated.
 
-Ian Cosden, one of our newsletter editors and Director of *Research
-Software Engineering for Computational & Data Science* at Princeton,
+Ian Cosden, Chair of the US-RSE Steering Committee and Senior 
+Director of Research Software Engineering at Princeton,
 defines the role partly by what it is not. An RSE, he argues, is not
 simply a researcher, not simply a facilitator, and not simply a pure
 software engineer. The role lives in the productive space between those
