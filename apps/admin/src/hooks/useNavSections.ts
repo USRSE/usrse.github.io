@@ -44,8 +44,14 @@ export function useNavSections(actor: ActorContext): NavSection[] {
       to: "/announcements",
     });
     out.push({
-      id: "recognition",
+      id: "forms",
       number: "07",
+      label: "Forms",
+      to: "/forms",
+    });
+    out.push({
+      id: "recognition",
+      number: "08",
       label: "Recognition",
       to: "/recognition",
     });
@@ -53,11 +59,11 @@ export function useNavSections(actor: ActorContext): NavSection[] {
   if (isSuper) {
     out.push({
       id: "settings",
-      number: "08",
+      number: "09",
       label: "Settings",
       to: "/settings",
     });
-    out.push({ id: "audit", number: "09", label: "Audit", to: "/audit" });
+    out.push({ id: "audit", number: "10", label: "Audit", to: "/audit" });
   }
   return out;
 }

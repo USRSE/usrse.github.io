@@ -11,6 +11,7 @@ import { adminApi } from "./routes/admin";
 import { announcementsRoute } from "./routes/announcements";
 import { eventsRoute } from "./routes/events";
 import { eventsSubmitRoute } from "./routes/eventsSubmit";
+import { formsRoute } from "./routes/forms";
 import { optionalActor } from "./middleware/optionalActor";
 import { requireAuth } from "./middleware/auth";
 import { requireActorContext } from "./middleware/actorContext";
@@ -69,6 +70,11 @@ app.route("/events/submit", eventsSubmitRoute);
 app.use("/events", optionalActor);
 app.use("/events/*", optionalActor);
 app.route("/events", eventsRoute);
+
+app.use("/forms/*", optionalActor);
+app.use("/forms", optionalActor);
+app.route("/forms", formsRoute);
+
 app.route("/admin", adminApi);
 
 export default app;
