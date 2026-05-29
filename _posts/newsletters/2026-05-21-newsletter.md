@@ -319,7 +319,6 @@ interested in becoming an organizational founding member!
 {% for org in site.data.org-members.standard %}
 
 - [{{ org.name }}]({{ org.url }})
-- [Flatiron Institute](https://www.simonsfoundation.org/flatiron/)
 
 {% endfor %}
 
