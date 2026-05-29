@@ -28,6 +28,7 @@ import { NewAnnouncementPage } from "./pages/announcements/NewAnnouncementPage";
 import { AnnouncementDetailPage } from "./pages/announcements/AnnouncementDetailPage";
 import { FormsListPage } from "./pages/forms/FormsListPage";
 import { NewFormPage } from "./pages/forms/NewFormPage";
+import { FormDetailPage } from "./pages/forms/FormDetailPage";
 
 export function App() {
   const { user: workosUser, isLoading: authLoading } = useAuth();
@@ -84,6 +85,7 @@ export function App() {
         <Route path="announcements/:id" element={<AnnouncementDetailPage />} />
         <Route path="forms" element={<FormsListPage />} />
         <Route path="forms/new" element={<NewFormPage />} />
+        <Route path="forms/:id" element={<FormDetailPage />} />
         <Route path="recognition" element={<ComingSoon number="08" label="Recognition" blurb="Awards lifecycle, mentorship pairings, and community contribution logging — the source of dossier badges." />} />
         <Route path="settings" element={<ComingSoon number="09" label="Settings" blurb="Super-admin operations, integration toggles, and global flags." />} />
         <Route path="audit" element={<AuditPage />} />
