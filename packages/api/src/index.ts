@@ -59,6 +59,7 @@ app.route("/members", membersRoute);
 app.route("/vocab", vocabRoute);
 app.route("/groups", publicGroupsRoute);
 app.route("/organizations", organizationsRoute);
+app.use("/announcements/*", optionalActor);
 app.route("/announcements", announcementsRoute);
 // `/events/submit` is auth-gated; mount BEFORE the optionalActor middleware
 // so route resolution picks the specific path first and the optional-actor
