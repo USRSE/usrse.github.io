@@ -90,20 +90,23 @@ Already present from Plan 1 (no change needed):
 
 ### 2.1 Dispatcher entry point
 
-`packages/api/src/lib/broadcast/dispatcher.ts` exposes two functions that pair with the tx boundary in 2.2:
+The codebase uses Neon's HTTP driver, which does not support `db.transaction()`; `applyTransition` is documented as sequential, not transactional, with `audit_log` providing forensic reconstruction. The dispatcher follows the same convention: it sequences DB-only effects before outbound network calls, but does not — and cannot — hold a real transaction.
+
+`packages/api/src/lib/broadcast/dispatcher.ts` exposes two functions whose split matches that of `applyTransition`:
 
 ```ts
-// Runs inside the lifecycle's existing publish tx. DB-only effects:
-// flips approved site_banner channels to posted. Idempotent.
-export async function dispatchInTx(
-  tx: DbTx,
+// Phase 1: DB-only effects, run sequentially with the publish status flip.
+// Flips approved site_banner channels to posted. Idempotent.
+export async function dispatchDbEffects(
+  db: Db,
   entity: { type: 'event' | 'announcement'; id: string },
   actorId: string,
 ): Promise<{ siteBannerPosted: number }>;
 
-// Runs after the publish tx commits. Network calls only:
-// posts workspace_chat channels and records last_error on failure.
-export async function dispatchAfterCommit(
+// Phase 2: outbound network calls, run after phase 1.
+// Posts workspace_chat channels; on failure records last_error and leaves
+// status='approved' for sub-queue retry. Idempotent.
+export async function dispatchOutbound(
   db: Db,
   entity: { type: 'event' | 'announcement'; id: string },
   env: Env,
@@ -115,14 +118,15 @@ export async function dispatchAfterCommit(
 
 ### 2.2 Trigger placement
 
-`applyTransition` already opens a Postgres transaction to flip `status` and write the lifecycle audit entry. The dispatcher participates in that transaction for DB-only work and runs network calls only after it commits. The handler splits its work as follows:
+`applyTransition` runs sequentially: it writes the review row, optionally flips the artifact `status`, and writes the lifecycle audit entry as three separate statements. The dispatcher is called from `applyTransition` immediately after a status flip to `published` succeeds and before the publish audit row is written, in two phases:
 
-1. **Inside the publish tx (still owned by `applyTransition`):** select all `broadcast_channels` rows for the artifact with `status = 'approved'`. For each `site_banner` row, flip `status='posted'`, `posted_at=now()`, `posted_by=actorId`. No network call — `GET /announcements/active-banner` already reads this state.
-2. **Commit the tx.** Artifact and banner are live.
-3. **After commit, no tx held:** for each `workspace_chat` row, call the chat adapter (see 2.3). On success, run a small follow-up update to set `status='posted'`. On failure, run a small follow-up update setting `last_error`, `last_attempted_at=now()`, `attempt_count = attempt_count + 1`, leaving `status='approved'` so the sub-queue can pick it up.
-4. Manual channels (`twitter_x`, `bluesky`, `mastodon`, `linkedin`) are not touched — they remain `approved AND posted_at IS NULL` and surface in the sub-queue.
+1. **Phase 1 — `dispatchDbEffects`:** select all `broadcast_channels` rows for the artifact with `status = 'approved'`. For each `site_banner` row, flip `status='posted'`, `posted_at=now()`, `posted_by=actorId`. No network call — `GET /announcements/active-banner` already reads this state.
+2. **Phase 2 — `dispatchOutbound`:** for each `workspace_chat` row, call the chat adapter (see 2.3). On success, run a small follow-up update to set `status='posted'`. On failure, run a small follow-up update setting `last_error`, `last_attempted_at=now()`, `attempt_count = attempt_count + 1`, leaving `status='approved'` so the sub-queue can pick it up.
+3. Manual channels (`twitter_x`, `bluesky`, `mastodon`, `linkedin`) are not touched in either phase — they remain `approved AND posted_at IS NULL` and surface in the sub-queue.
 
-The publish never rolls back on outbound failure. The artifact is the system of record; channel delivery is observability.
+There is no actual transaction, but the ordering matters: the artifact must be `published` before the dispatcher runs (so the active-banner predicate is consistent), and outbound calls must run after DB effects (so a webhook failure cannot prevent the banner from going live). A crash between phase 1 and phase 2 leaves an in-flight `workspace_chat` row stuck at `approved` — visible in the sub-queue under "Include errored native channels" and retryable. This is the same forensic-recoverability tradeoff `applyTransition` already accepts.
+
+The publish never "rolls back" on outbound failure (no tx to roll back). The artifact is the system of record; channel delivery is observability.
 
 ### 2.3 Chat adapter
 
@@ -142,7 +146,7 @@ v1 body shape: Slack `blocks` JSON to `env.WORKSPACE_CHAT_WEBHOOK`. Slack incomi
 
 ### 2.4 Late-addition fallback
 
-When a reviewer approves a channel on an artifact already in `published` state (e.g., adds `workspace_chat` after publish), the channel-approval handler runs `dispatchInTx` inside its own short tx (handles late `site_banner` flips) and then `dispatchAfterCommit` (handles late `workspace_chat` posts). Both are idempotent — already-`posted` channels are skipped, requested-but-not-approved are skipped, and only the newly-approved channel takes the post path.
+When a reviewer approves a channel on an artifact already in `published` state (e.g., adds `workspace_chat` after publish), the channel-approval handler runs `dispatchDbEffects` then `dispatchOutbound` against the same artifact. Both are idempotent — already-`posted` channels are skipped, requested-but-not-approved are skipped, and only the newly-approved channel takes the post path.
 
 ---
 
