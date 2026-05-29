@@ -5,10 +5,10 @@ import { testApp, makeMemberActor, makeStaffActor } from "../../../test/helpers"
 const HAS_DB = !!process.env.DATABASE_URL;
 const describeIfDb = HAS_DB ? describe : describe.skip;
 
-const AUTHOR = "00000000-0000-0000-0000-00000000ad01";
-const REV1 = "00000000-0000-0000-0000-00000000ad02";
-const REV2 = "00000000-0000-0000-0000-00000000ad03";
-const FORM = "00000000-0000-0000-0000-00000000ad04";
+const AUTHOR = "00000000-0000-0000-0000-00000000f021";
+const REV1 = "00000000-0000-0000-0000-00000000f022";
+const REV2 = "00000000-0000-0000-0000-00000000f023";
+const FORM = "00000000-0000-0000-0000-00000000f024";
 
 const validSchema = {
   fields: [
@@ -112,7 +112,7 @@ describeIfDb("POST /admin/forms/:id/transitions", () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: makeMemberActor("00000000-0000-0000-0000-00000000ad99"),
+        Authorization: makeMemberActor("00000000-0000-0000-0000-00000000f029"),
       },
       body: JSON.stringify({ action: "approve" }),
     });

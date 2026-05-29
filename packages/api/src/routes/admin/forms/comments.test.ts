@@ -5,9 +5,9 @@ import { testApp, makeMemberActor, makeStaffActor } from "../../../test/helpers"
 const HAS_DB = !!process.env.DATABASE_URL;
 const describeIfDb = HAS_DB ? describe : describe.skip;
 
-const AUTHOR = "00000000-0000-0000-0000-00000000ae01";
-const STAFF = "00000000-0000-0000-0000-00000000ae02";
-const FORM = "00000000-0000-0000-0000-00000000ae03";
+const AUTHOR = "00000000-0000-0000-0000-00000000f031";
+const STAFF = "00000000-0000-0000-0000-00000000f032";
+const FORM = "00000000-0000-0000-0000-00000000f033";
 
 const validSchema = {
   fields: [
@@ -84,7 +84,7 @@ describeIfDb("/admin/forms/:id/comments", () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: makeMemberActor("00000000-0000-0000-0000-00000000ae99"),
+        Authorization: makeMemberActor("00000000-0000-0000-0000-00000000f039"),
       },
       body: JSON.stringify({ body: "should be blocked" }),
     });

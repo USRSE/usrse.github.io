@@ -5,8 +5,8 @@ import { testApp, makeStaffActor } from "../../../test/helpers";
 const HAS_DB = !!process.env.DATABASE_URL;
 const describeIfDb = HAS_DB ? describe : describe.skip;
 
-const TEST_AUTHOR = "00000000-0000-0000-0000-00000000ab01";
-const TEST_STAFF = "00000000-0000-0000-0000-00000000ab02";
+const TEST_AUTHOR = "00000000-0000-0000-0000-00000000f001";
+const TEST_STAFF = "00000000-0000-0000-0000-00000000f002";
 
 const validSchema = {
   fields: [

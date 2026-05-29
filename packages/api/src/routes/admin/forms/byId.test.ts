@@ -5,9 +5,9 @@ import { testApp, makeMemberActor, makeStaffActor } from "../../../test/helpers"
 const HAS_DB = !!process.env.DATABASE_URL;
 const describeIfDb = HAS_DB ? describe : describe.skip;
 
-const AUTHOR = "00000000-0000-0000-0000-00000000ac01";
-const STAFF = "00000000-0000-0000-0000-00000000ac02";
-const FORM = "00000000-0000-0000-0000-00000000ac03";
+const AUTHOR = "00000000-0000-0000-0000-00000000f011";
+const STAFF = "00000000-0000-0000-0000-00000000f012";
+const FORM = "00000000-0000-0000-0000-00000000f013";
 
 const validSchema = {
   fields: [
@@ -85,7 +85,7 @@ describeIfDb("/admin/forms/:id", () => {
   test("GET 403 for non-author non-staff", async () => {
     const res = await testApp.request(`/admin/forms/${FORM}`, {
       headers: {
-        Authorization: makeMemberActor("00000000-0000-0000-0000-00000000ac99"),
+        Authorization: makeMemberActor("00000000-0000-0000-0000-00000000f019"),
       },
     });
     expect(res.status).toBe(403);
@@ -112,7 +112,7 @@ describeIfDb("/admin/forms/:id", () => {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
-        Authorization: makeMemberActor("00000000-0000-0000-0000-00000000ac99"),
+        Authorization: makeMemberActor("00000000-0000-0000-0000-00000000f019"),
       },
       body: JSON.stringify({ title: "Nope" }),
     });
