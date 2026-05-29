@@ -25,6 +25,7 @@ import { CalendarPage } from "@/pages/events/CalendarPage";
 import { ConferencePage } from "@/pages/events/ConferencePage";
 import { SubmitEventPage } from "@/pages/events/SubmitEventPage";
 import { EventDetailPage as PublicEventDetail } from "@/pages/events/EventDetailPage";
+import { FormPage } from "@/pages/forms/FormPage";
 import { BrowseJobsPage } from "@/pages/jobs/BrowseJobsPage";
 import { SubmitJobPage } from "@/pages/jobs/SubmitJobPage";
 import { VolunteerPage } from "@/pages/jobs/VolunteerPage";
@@ -90,6 +91,7 @@ export function App() {
             <Route path="/events/usrse26" element={<ConferencePage />} />
             <Route path="/events/submit" element={<SubmitEventPage />} />
             <Route path="/events/:slug" element={<PublicEventDetail />} />
+            <Route path="/forms/:slug" element={<FormPage />} />
             <Route path="/jobs" element={<BrowseJobsPage />} />
             <Route path="/jobs/submit" element={<SubmitJobPage />} />
             <Route path="/jobs/volunteer" element={<VolunteerPage />} />
