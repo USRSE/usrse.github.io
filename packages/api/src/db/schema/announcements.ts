@@ -5,6 +5,7 @@ import {
   pgTable,
   text,
   timestamp,
+  uniqueIndex,
   uuid,
 } from "drizzle-orm/pg-core";
 import { artifactScope, artifactStatus } from "./enums";
@@ -16,6 +17,7 @@ export const announcements = pgTable(
   "announcements",
   {
     id: uuid("id").primaryKey().defaultRandom(),
+    slug: text("slug").notNull(),
     status: artifactStatus("status").notNull().default("draft"),
     revision: integer("revision").notNull().default(1),
     authorId: uuid("author_id").references(() => users.id, {
@@ -45,6 +47,7 @@ export const announcements = pgTable(
     index("announcements_status_idx")
       .on(t.status, t.createdAt)
       .where(sql`deleted_at IS NULL`),
+    uniqueIndex("announcements_slug_unique").on(t.slug),
   ]
 );
 

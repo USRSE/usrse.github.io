@@ -103,6 +103,9 @@ export const broadcastChannels = pgTable(
     declineReason: text("decline_reason"),
     preparedText: text("prepared_text"),
     preparedImageKey: text("prepared_image_key"),
+    lastError: text("last_error"),
+    lastAttemptedAt: timestamp("last_attempted_at", { withTimezone: true }),
+    attemptCount: integer("attempt_count").notNull().default(0),
     createdAt: timestamp("created_at", { withTimezone: true })
       .notNull()
       .defaultNow(),

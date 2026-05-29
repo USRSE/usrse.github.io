@@ -58,9 +58,20 @@ adminAnnouncementsRoute.post(
       hostGroupId = [...actor.chairedGroupIds][0];
     }
 
+    // Generate a URL-safe slug from the title; a short random suffix prevents
+    // collisions when two announcements share a similar title.
+    const baseSlug = body.title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "")
+      .slice(0, 80);
+    const suffix = Math.random().toString(36).slice(2, 6);
+    const slug = `${baseSlug}-${suffix}`;
+
     const [row] = await db
       .insert(announcements)
       .values({
+        slug,
         title: body.title,
         body: body.body,
         linkUrl: body.linkUrl ?? null,
