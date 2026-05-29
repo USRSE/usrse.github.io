@@ -322,6 +322,8 @@ interested in becoming an organizational founding member!
 
 {% endfor %}
 
+- [Flatiron Institute](https://www.simonsfoundation.org/flatiron/)
+
 ### Basic Members
 {% for org in site.data.org-members.basic %}
 
