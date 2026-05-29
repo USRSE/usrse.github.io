@@ -197,18 +197,9 @@ curious technology specialists who can ask new questions, solve
 impossible bugs, push compute clusters to their limits, and preserve the
 code — and the science — that so many people depend on.
 
-Our Executive Director had this to say about the importance of this
-community:
+Our Executive Director had this to say about the significance of this exceptional milestone:
 
-“Reaching more than 4,000 members is not just a milestone in numbers -
-it reflects a growing community of people who care deeply about
-advancing research through software, collaboration, and support for one
-another. As Executive Director, I am incredibly grateful to be part of
-this community and inspired every day by the generosity, expertise, and
-passion our members bring to US-RSE. Thank you for helping build a place
-where research software engineers can truly belong.”
-
-> [Sandra](https://us-rse.org/about/staff/)
+> “Reaching more than 4,000 members is not just a milestone in numbers - it reflects a growing community of people who care deeply about advancing research through software, collaboration, and support for one another. As Executive Director, I am incredibly grateful to be part of this community and inspired every day by the generosity, expertise, and passion our members bring to US-RSE. Thank you for helping build a place where research software engineers can truly belong.” [Sandra](https://us-rse.org/about/staff/).
 
 This month, we thank the scrappy and passionate group of researchers who
 helped crystallize the idea of the Research Software Engineer, [one
