@@ -34,7 +34,7 @@ export function AnnouncementsListPage() {
         </h2>
         <Link
           to="/admin/announcements/new"
-          className="inline-flex items-center px-6 py-3 rounded-md bg-purple-500 text-white font-semibold text-sm shadow-sm hover:bg-purple-600"
+          className="inline-flex items-center px-6 py-3 rounded-md bg-purple-500 text-white font-semibold text-sm no-underline shadow-sm hover:bg-purple-600"
         >
           + New announcement
         </Link>
