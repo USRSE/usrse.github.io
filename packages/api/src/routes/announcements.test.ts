@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeAll } from "vitest";
+import { describe, it, expect, beforeAll, afterAll } from "vitest";
 import { testApp } from "../test/helpers";
 import { neon } from "@neondatabase/serverless";
 
@@ -7,9 +7,16 @@ const describeIfDb = HAS_DB ? describe : describe.skip;
 
 describeIfDb("GET /announcements/:slug", () => {
   let sql: ReturnType<typeof neon>;
+  const insertedSlugs: string[] = [];
 
   beforeAll(() => {
     sql = neon(process.env.DATABASE_URL!);
+  });
+
+  afterAll(async () => {
+    if (insertedSlugs.length > 0) {
+      await sql/* sql */`DELETE FROM announcements WHERE slug = ANY(${insertedSlugs}::text[])`;
+    }
   });
 
   async function insertAnnouncement(args: {
@@ -24,6 +31,7 @@ describeIfDb("GET /announcements/:slug", () => {
       VALUES (${args.slug}, ${args.title}, ${args.body}, ${args.status}::artifact_status, ${args.scope}::artifact_scope)
       RETURNING id
     `;
+    insertedSlugs.push(args.slug);
     return rows[0].id as string;
   }
 
