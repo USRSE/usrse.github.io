@@ -436,7 +436,7 @@ the `#newsletters` channel!
 {% assign professional = refs | where: "type", "article-journal" %}
 
 {% if professional.size > 0 %}
-### 📑 Recent Publications
+### 📑 Publications
 {% for ref in professional %}
 {% include citation-publication.html ref=ref %}
 {% endfor %}
