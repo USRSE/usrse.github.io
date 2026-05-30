@@ -15,7 +15,7 @@
 {% endfor %}
 {% endif %}
 
-{% assign podcasts = refs | where: "type", "song" %}
+{% assign podcasts = refs | where: "type", "motion_picture" %}
 
 {% if podcasts.size > 0 %}
 ### 🎧 Podcast Episodes

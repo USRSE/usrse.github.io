@@ -1,26 +1,29 @@
-# US-RSE May 2026 Newsletter
-Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden
-(Editor)
-2026-05-20
+---
+layout: post
+title: "US-RSE May 2026 Newsletter"
+subtitle: "🙌 There Are Dozens of Us, DOZENS! 🙌"
+category: newsletter
+tags: [newsletter, May]
+date: 2026-05-20 00:00:00 -0400
+author: "Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden (Editor)"
+image: "/assets/img/newsletter-202605/us-rse_4k_members.png"
+img_alttext: "Colourful poster with the words \"Celebrating 4,000+ Member Milestone\" and a progression of trees growing from a seedling to a full tree, with the number 4011 prominently displayed."
+next_meeting_date: Friday, June 12, 2026, 12:00PM EST
+sections:
+  preamble: true # done
+  headline: true # done
+  conference: true # done
+  execupdate: false # done
+  scupdate: false # yay!
+  orgmember: true # done
+  communityfunds: false # no changes, check back in june
+  news: true # add community call summary
+  events: true
+  reads: true
+  involved: true
+  jobs: true
 
-- [<span class="toc-section-number">1</span> 🤩 Wait a Minute, I’m an
-  RSE, I Know How to Do That!
-  🤩](#star_struck-wait-a-minute-im-an-rse-i-know-how-to-do-that-star_struck)
-- [<span class="toc-section-number">2</span> 📣 Mark Your Calendars for
-  USRSE’26! 📣](#mega-mark-your-calendars-for-usrse26-mega)
-- [<span class="toc-section-number">3</span> 🤝 Organizational Founding
-  Membership
-  🤝](#handshake-organizational-founding-membership-handshake)
-- [<span class="toc-section-number">4</span> 🗞️ Community News
-  🗞️](#newspaper_roll-community-news-newspaper_roll)
-- [<span class="toc-section-number">5</span> 👀 Interesting Events and
-  Opportunities 👀](#eyes-interesting-events-and-opportunities-eyes)
-- [<span class="toc-section-number">6</span> 📚 Featured Reads, Videos,
-  and Podcasts 📚](#books-featured-reads-videos-and-podcasts-books)
-- [<span class="toc-section-number">7</span> 🏃 Get Involved!
-  🏃](#running-get-involved-running)
-- [<span class="toc-section-number">8</span> 🧑‍💼 Recent Job Postings
-  🧑‍💼](#office_worker-recent-job-postings-office_worker)
+---
 
 <a name="top"></a>
 
@@ -44,6 +47,25 @@ from your 4000-member-strong community of research software engineers!
 </p>
 
 In this issue:
+
+- [<span class="toc-section-number">1</span> 🤩 Wait a Minute, I’m an
+  RSE, I Know How to Do That!
+  🤩](#star_struck-wait-a-minute-im-an-rse-i-know-how-to-do-that-star_struck)
+- [<span class="toc-section-number">2</span> 📣 Mark Your Calendars for
+  USRSE’26! 📣](#mega-mark-your-calendars-for-usrse26-mega)
+- [<span class="toc-section-number">3</span> 🤝 Organizational Founding
+  Membership
+  🤝](#handshake-organizational-founding-membership-handshake)
+- [<span class="toc-section-number">4</span> 🗞️ Community News
+  🗞️](#newspaper_roll-community-news-newspaper_roll)
+- [<span class="toc-section-number">5</span> 👀 Interesting Events and
+  Opportunities 👀](#eyes-interesting-events-and-opportunities-eyes)
+- [<span class="toc-section-number">6</span> 📚 Featured Reads, Videos,
+  and Podcasts 📚](#books-featured-reads-videos-and-podcasts-books)
+- [<span class="toc-section-number">7</span> 🏃 Get Involved!
+  🏃](#running-get-involved-running)
+- [<span class="toc-section-number">8</span> 🧑‍💼 Recent Job Postings
+  🧑‍💼](#office_worker-recent-job-postings-office_worker)
 
 ------------------------------------------------------------------------
 
@@ -99,8 +121,8 @@ formalizing a role that many people were already doing but few
 institutions knew how to recognize. Since then, definitions have been
 proposed, refined, and debated.
 
-Ian Cosden, one of our newsletter editors and Director of *Research
-Software Engineering for Computational & Data Science* at Princeton,
+Ian Cosden, Chair of the US-RSE Steering Committee and Senior 
+Director of Research Software Engineering at Princeton,
 defines the role partly by what it is not. An RSE, he argues, is not
 simply a researcher, not simply a facilitator, and not simply a pure
 software engineer. The role lives in the productive space between those
@@ -175,18 +197,9 @@ curious technology specialists who can ask new questions, solve
 impossible bugs, push compute clusters to their limits, and preserve the
 code — and the science — that so many people depend on.
 
-Our Executive Director had this to say about the importance of this
-community:
+Our Executive Director had this to say about the significance of this exceptional milestone:
 
-“Reaching more than 4,000 members is not just a milestone in numbers -
-it reflects a growing community of people who care deeply about
-advancing research through software, collaboration, and support for one
-another. As Executive Director, I am incredibly grateful to be part of
-this community and inspired every day by the generosity, expertise, and
-passion our members bring to US-RSE. Thank you for helping build a place
-where research software engineers can truly belong.”
-
-> [Sandra](https://us-rse.org/about/staff/)
+> “Reaching more than 4,000 members is not just a milestone in numbers - it reflects a growing community of people who care deeply about advancing research through software, collaboration, and support for one another. As Executive Director, I am incredibly grateful to be part of this community and inspired every day by the generosity, expertise, and passion our members bring to US-RSE. Thank you for helping build a place where research software engineers can truly belong.” [Sandra](https://us-rse.org/about/staff/).
 
 This month, we thank the scrappy and passionate group of researchers who
 helped crystallize the idea of the Research Software Engineer, [one
@@ -297,9 +310,10 @@ interested in becoming an organizational founding member!
 {% for org in site.data.org-members.standard %}
 
 - [{{ org.name }}]({{ org.url }})
-- [Flatiron Institute](https://www.simonsfoundation.org/flatiron/)
 
 {% endfor %}
+
+- [Flatiron Institute](https://www.simonsfoundation.org/flatiron/)
 
 ### Basic Members
 {% for org in site.data.org-members.basic %}
@@ -422,7 +436,7 @@ the `#newsletters` channel!
 {% assign professional = refs | where: "type", "article-journal" %}
 
 {% if professional.size > 0 %}
-### 📑 Recent Publications
+### 📑 Publications
 {% for ref in professional %}
 {% include citation-publication.html ref=ref %}
 {% endfor %}

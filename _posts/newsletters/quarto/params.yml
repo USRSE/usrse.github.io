@@ -1,23 +1,23 @@
 layout: post
-title: "US-RSE April 2026 Newsletter"
-subtitle: "🤳 Just Hit Me Up On Slack 🤳"
+title: "US-RSE May 2026 Newsletter"
+subtitle: "🙌 There Are Dozens of Us, DOZENS! 🙌"
 category: newsletter
-tags: [newsletter, April]
-date: 2026-04-13 00:00:00 -0400
+tags: [newsletter, May]
+date: 2026-05-20 00:00:00 -0400
 author: "Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden (Editor)"
-image: "/assets/img/newsletter-202604/austin-distel-gUIJ0YszPig-unsplash.jpg"
-img_alttext: "Slack message with team communicating and collaborating in app on desktop and mobile."
-next_meeting_date: Thursday, May 14, 2026, 12:00PM EST
+image: "/assets/img/newsletter-202605/us-rse_4k_members.png"
+img_alttext: "Colourful poster with the words \"Celebrating 4,000+ Member Milestone\" and a progression of trees growing from a seedling to a full tree, with the number 4011 prominently displayed."
+next_meeting_date: Friday, June 12, 2026, 12:00PM EST
 sections:
   preamble: true # done
   headline: true # done
   conference: true # done
-  execupdate: true # done
-  scupdate: true # yay!
-  orgmember: true # no changes, check back in june
-  communityfunds: false
+  execupdate: false # done
+  scupdate: false # yay!
+  orgmember: true # done
+  communityfunds: false # no changes, check back in june
   news: true # add community call summary
-  events: true # recheck on friday
+  events: true
   reads: true
   involved: true
   jobs: true
