@@ -64,7 +64,6 @@ Active members attend our regular meetings at least once a quarter (once every 3
 - [RSE job board](https://society-rse.org/careers/vacancies/) (international)
 - [SfN job board](https://neurojobs.sfn.org/jobs/) (skews academic)
 - [US-RSE job board](https://us-rse.org/jobs/)
-- [world wide neuro job board](https://www.world-wide.org/jobs/) (skews academic)
 
 ## Other places to find jobs
 
