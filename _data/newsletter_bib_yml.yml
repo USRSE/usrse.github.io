@@ -433,6 +433,9 @@ references:
   annote: |
     Read_Status: To Read\
     Read_Status_Date: 2026-06-16T01:04:20.125Z
+  author:
+  - family: Labs
+    given: Squeez
   id: CrankGPTLocalHumanpowered
   language: en-US
   title: CrankGPT --- [Local Human-powered AI]{.nocase}
@@ -531,6 +534,22 @@ references:
   type: article-journal
   url: "https://www.nature.com/articles/d41586-025-03196-0"
   volume: 646
+- abstract: "English Edition: Will spec-driven development replace agile
+    processes? My guest Graham Lee\\&nbsp; (https://chironcodex.com/ )
+    and I discuss if there is still a place for agile software
+    engineering in a world of AI assisted coding.Links:https://mart\\..."
+  accessed: 2026-06-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T16:05:28.241Z
+  id: DoesSpecDrivenDevelopment2026
+  issued: 2026-06-02
+  language: en-US
+  title: \[EN\] Does Spec-Driven Development replace agile? With Graham
+    Lee - Code for Thought
+  title-short: \[EN\] Does Spec-Driven Development replace agile?
+  type: motion_picture
+  url: "https://codeforthought.buzzsprout.com/1326658/episodes/19163979-en-does-spec-driven-development-replace-agile-with-graham-lee"
 - abstract: Research software and its creators have long played a
     critical role in the advancement of research worldwide. This role is
     changing in the age of "generative AI" (GenAI), but both the
@@ -1246,6 +1265,10 @@ references:
   annote: |
     Read_Status: To Read\
     Read_Status_Date: 2026-06-16T01:04:20.125Z
+  author:
+  - dropping-particle: of
+    family: Reading
+    given: The University
   id: RealScorelineReveals
   title: The Real Scoreline reveals nations facing climate penalties -
     University of Reading
@@ -1610,14 +1633,15 @@ references:
   accessed: 2026-06-16
   annote: |
     Read_Status: To Read\
-    Read_Status_Date: 2026-06-16T01:04:20.126Z
+    Read_Status_Date: 2026-06-16T16:18:22.799Z
   author:
   - family: Udell
-    given: \~ Jon
+    given: Jon
   id: udellHowMakeBest2026
   issued: 2026-06-02
   language: en-US
-  publisher: Jon Udell
+  publisher: How to make best use of git; GitHub for AI-assisted
+    software development
   title: How to make best use of git and GitHub for
     [AI-assisted]{.nocase} software development
   type: webpage
@@ -1637,5 +1661,36 @@ references:
     models
   type: webpage
   url: "https://open-research-europe.ec.europa.eu/articles/5-199/v1"
+- abstract: "English Edition:\\&nbsp;I want to come back to agile
+    development practices with my guest Dave Thomas, or Pragmatic Dave
+    as he is also known in the trade. Dave is one of the authors of the
+    manifesto for agile development - and we talk about what has \\..."
+  accessed: 2026-06-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T16:05:28.241Z
+  id: WhatHappenedAgile2026
+  issued: 2026-06-16
+  language: en-US
+  title: \[EN\] What happened to agile development? - A review with Dave
+    Thomas - Code for Thought
+  title-short: \[EN\] What happened to agile development?
+  type: motion_picture
+  url: "https://www.buzzsprout.com/1326658/episodes/19292687-en-what-happened-to-agile-development-a-review-with-dave-thomas"
+- abstract: "English Edition: floppy disks, hard drives, CDs, DVDs, SSD
+    drives - no matter what you choose to store your data on -
+    ultimately they all decay. With my guests Callum McKean, Leontien
+    Talboom and Adrian Page-Mitchell, we're going to talk about wha\\..."
+  accessed: 2026-06-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T16:05:28.241Z
+  id: WhenBitsRot2026
+  issued: 2026-06-09
+  language: en-US
+  title: \[EN\] When Bits Rot - with C McKean, L Talboom, A
+    Page-Mitchell - Code for Thought
+  type: motion_picture
+  url: "https://codeforthought.buzzsprout.com/1326658/episodes/19221837-en-when-bits-rot-with-c-mckean-l-talboom-a-page-mitchell"
 ---
 

@@ -537,13 +537,3 @@
     In addition, the PESO project is going to start an occasional UX newsletter that will include some resources on conducting UX research and ensuring usability/positive UX. If you have UX resources that should be highlighted as the newsletter launches, please reach out to the `wg-ux` channel!
   links: |
     PESO Project website: [Click here](https://pesoproject.org/)
-
-- expires: 2026-08-01
-  type: opportunity
-  title: Call for Papers - High-Productivity Programming Systems for HPC Applications (IJPP)
-  preamble: |
-    In the ever-evolving world of computing, the line between software and hardware has become increasingly larger. As we push the boundaries of what is possible with technology, the need for high-productivity programming solutions that can harness the power of modern hardware has never been more critical.
-    This Special Issue (SI) aims to bring points of discussion into the High-performance Computing (HPC) and scientific community about key issues on finding a compromise between high levels of abstraction (programming productivity) and meeting the challenges of performance, power consumption, and fault tolerance. This SI addresses the recent experiences in programming languages/models design for exa-scale computing systems, which can contribute to the problem of programming complex HPC systems in a productive, efficient, and reliable way. This SI provides a great opportunity for the HPC community to present new approaches for exploiting the massive parallelism that is provided by the abundance of different kinds of parallelism in today's and future HPC systems. Besides the conventional use for coarse or fine-grain parallelism in applications, our scope is to explore new approaches that enable future software systems to become more self-aware, reasoning about its internal state, and making decisions to prioritize changes in the execution of applications when necessary, putting the focus on areas such as performance tuning and power management.
-  links: |
-    Submission Deadline (extended): August 30, 2026. See [here](https://link.springer.com/journal/10766/updates/27768048) for more information on the journal and submission process.
-

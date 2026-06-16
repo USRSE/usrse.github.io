@@ -86,7 +86,7 @@ It is the moment we look at the scientific engine and say, "I know we _could_ ju
 this part of the paper, but I just can't accept that this is the best way to do it. I simply can't. There
 _must_ be a better way."
 
-This is the "arrestive," part of the "arrestive curiosity" — the part that literally keeps you up at night,
+This is the "arrestive," part of "arrestive curiosity" — the part that keeps you up at night,
 ceases you in your tracks every time you think about it, and continues to consume all of your mental
 energy until you have either found a solution or come to terms with the fact that there is no solution.
 
@@ -94,7 +94,7 @@ And if you ask me, that tendency to be obsessed with finding the best way to do 
 RSE a _great_ RSE. So, the next time you find yourself in the throes of shiny toy syndrome, try to 
 channel that energy into arrestive curiosity using the flowchart I outlined above, and see where it takes you. 
 You might just find that the perfect tool was right in front of you all along, or you might end up building 
-something that changes the game for, your team, and perhaps even the science itself.
+something that changes the game for you, your team, and perhaps even the science itself.
 
 [1^]: In fact, at this UseR Boston meetup, we ourselves had a hard time rectifying our excitement
 vs. hesitation around all things AI in the R world. We could barely come to a consensus on
@@ -104,4 +104,5 @@ Spoiler alert: I'm yelling at the cloud.
 [2^]: Shout out to everyone currently being held hostage by their CTO's contract with Microsoft and having to wake
 up every morning to the sound of a Teams notification. We see you, and we feel your pain.
 [3^]: Yes, I just came up with it. No, I will not be answering questions.
+
 ------------------------------------------------------------------------

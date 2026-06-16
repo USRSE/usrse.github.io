@@ -6,8 +6,8 @@ category: newsletter
 tags: [newsletter, June]
 date: 2026-06-15 00:00:00 -0400
 author: "Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden (Editor)"
-image: "/assets/img/newsletter-202606/us-rse_4k_members.png" #TODO
-img_alttext: "Colourful poster with the words \"Celebrating 4,000+ Member Milestone\" and a progression of trees growing from a seedling to a full tree, with the number 4011 prominently displayed." #TODO
+image: "/assets/img/newsletter-202606/tasha-kostyuk-TtMKq3lJm-U-unsplash.jpg" #Done
+img_alttext: "A railway traffic controller with his back to the camera, looking at several screens with train camera feed and data." #Done
 next_meeting_date: Thursday, July 9, 2026, 12:00PM EST #Done
 sections:
   preamble: true #Done
@@ -39,7 +39,7 @@ technology, celebrate the LGBTQ+ community, and share all the latest and
 greatest news from US-RSE.
 
 <p align="center">
-  <img src="{{ site.baseurl }}/assets/img/newsletter-202606/us-rse_4k_members.png" alt="Colourful poster with the words “Celebrating 4,000+ Member Milestone” and a progression of trees growing from a seedling to a full tree, with the number 4011 prominently displayed." style="width: 750px; height: auto;">
+  <img src="{{ site.baseurl }}/assets/img/newsletter-202606/tasha-kostyuk-TtMKq3lJm-U-unsplash.jpg" alt="A railway traffic controller with his back to the camera, looking at several screens with train camera feed and data." style="width: 750px; height: auto;">
 </p>
 
 In this issue:
@@ -188,11 +188,11 @@ It is the moment we look at the scientific engine and say, “I know we
 can’t accept that this is the best way to do it. I simply can’t. There
 *must* be a better way.”
 
-This is the “arrestive,” part of the “arrestive curiosity” — the part
-that literally keeps you up at night, ceases you in your tracks every
-time you think about it, and continues to consume all of your mental
-energy until you have either found a solution or come to terms with the
-fact that there is no solution.
+This is the “arrestive,” part of “arrestive curiosity” — the part that
+keeps you up at night, ceases you in your tracks every time you think
+about it, and continues to consume all of your mental energy until you
+have either found a solution or come to terms with the fact that there
+is no solution.
 
 And if you ask me, that tendency to be obsessed with finding the best
 way to do science is what makes a good RSE a *great* RSE. So, the next
@@ -200,7 +200,7 @@ time you find yourself in the throes of shiny toy syndrome, try to
 channel that energy into arrestive curiosity using the flowchart I
 outlined above, and see where it takes you. You might just find that the
 perfect tool was right in front of you all along, or you might end up
-building something that changes the game for, your team, and perhaps
+building something that changes the game for you, your team, and perhaps
 even the science itself.
 
 vs. hesitation around all things AI in the R world. We could barely come
@@ -212,7 +212,9 @@ yells at cloud” impression. Spoiler alert: I’m yelling at the cloud.
 CTO’s contract with Microsoft and having to wake up every morning to the
 sound of a Teams notification. We see you, and we feel your pain.
 \[3^\]: Yes, I just came up with it. No, I will not be answering
-questions. ————————————————————————
+questions.
+
+------------------------------------------------------------------------
 
 ## 📣 Mark Your Calendars for USRSE’26! 📣
 
