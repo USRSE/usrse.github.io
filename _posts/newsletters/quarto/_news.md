@@ -2,6 +2,61 @@
 
 <a name="news"></a>
 
+### The Whole Person: Pride and Belonging in US-RSE
+
+Pride Month is both a celebration and a moment for reflection for the communities 
+we are part of. As the chairs of the DEI Working Group, we welcome everyone 
+to celebrate Pride Month with the US‑RSE community this June and beyond. 
+We also want to take a moment to reflect on what Pride means to me and how it shapes
+how we think about belonging in our professional communities.
+
+US‑RSE is a community built around shared skills, interests, and goals centered
+on advancing research through software engineering. While that core set of 
+interests brings us together, we are also a collection of individuals who work 
+across different research domains and parts of the software engineering lifecycle. 
+Each person brings unique strengths and perspectives.
+
+A mix of viewpoints  helps teams generate stronger ideas and advance research. That 
+kind of collaboration works best when people feel a sense of belonging.
+
+At the same time, we don’t show up to these communities as just 
+“RSEs.” Each of us brings life experiences, preferences, and unique quirks. You 
+can’t interact with just the “software engineer” side of someone. You interact with 
+the whole person, which means accepting them as they are.
+
+That’s where belonging comes from. It’s not just about being part of a 
+group with shared interests. It’s about being accepted as you are.
+
+Creating that kind of belonging can be challenging in practice, especially 
+when building trust with people who have experienced bias, exclusion, or worse.
+
+That’s why small actions matter. Sharing pronouns, using gender‑neutral 
+language, and taking the time to learn about the people around us can make 
+a real difference. They signal that people are seen, respected, and 
+welcome as part of the community.
+
+For me, Pride is a reminder that this kind of belonging does not happen 
+by accident. It is something we create together through everyday choices.
+
+Pride means different things to different people. To reflect that range 
+of experiences, we invite members of the US‑RSE community to share what Pride 
+means to them and how they think about belonging in their work.
+
+What does Pride mean to you? We’d love to hear your perspective. Feel free to 
+join the conversation on Slack or share on social media using the hashtag `#RSEPride`.
+
+> #### Community Contributions
+> 
+> Research software often involves intensely multidisciplinary collaboration, 
+> and, depending on the size of a team, may require the ability to liaise 
+> between domains, technical-side, business-side, etc. and advocate whether 
+> it's for data integrity processes or for underweighted voices. In my mind 
+> this relational communication and openness is very prosocial and 
+> qualitatively close to what Pride is all about; I think it's why I feel at 
+> home in research software and the surrounding communities.
+> – Michael P. Pascale
+
+
 <!--Someone you want to shoutout? DO IT HERE!-->
 
 ### **Community Shoutouts**
