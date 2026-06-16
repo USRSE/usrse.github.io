@@ -451,7 +451,7 @@ the `#newsletters` channel!
 {% endfor %}
 {% endif %}
 
-{% assign podcasts = refs | where: "type", "motion_picture" %}
+{% assign podcasts = refs | where: "type", "song" %}
 
 {% if podcasts.size > 0 %}
 ### 🎧 Podcast Episodes

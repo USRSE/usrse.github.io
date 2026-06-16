@@ -217,13 +217,16 @@ references:
   annote: |
     Read_Status: Read\
     Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: ByteSizedCreateYour2026
   issued: 2026-05-19
   language: en-US
   title: "\\[EN\\] ByteSized: Create your web-site with GitHub Pages - J
     Cohen, S Gibson - Code for Thought"
   title-short: \[EN\] ByteSized
-  type: motion_picture
+  type: song
   url: "https://www.buzzsprout.com/1326658/episodes/19133793-en-bytesized-create-your-web-site-with-github-pages-j-cohen-s-gibson"
 - abstract: Research software is a class of software developed to
     support research. Today a wealth of such software is created daily
@@ -393,13 +396,16 @@ references:
   annote: |
     Read_Status: Read\
     Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: ComputingNotYou2026
   issued: 2026-05-05
   language: en-US
   title: "\\[EN\\] Computing, but not as you know it: Field Programmable
     Gate Arrays (FPGA) - with Michael McLeod - Code for Thought"
   title-short: \[EN\] Computing, but not as you know it
-  type: motion_picture
+  type: song
   url: "https://www.buzzsprout.com/1326658/episodes/19019174-en-computing-but-not-as-you-know-it-field-programmable-gate-arrays-fpga-with-michael-mcleod"
 - accessed: 2026-05-21
   annote: |
@@ -541,13 +547,16 @@ references:
   annote: |
     Read_Status: To Read\
     Read_Status_Date: 2026-06-16T16:05:28.241Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: DoesSpecDrivenDevelopment2026
   issued: 2026-06-02
   language: en-US
   title: \[EN\] Does Spec-Driven Development replace agile? With Graham
     Lee - Code for Thought
   title-short: \[EN\] Does Spec-Driven Development replace agile?
-  type: motion_picture
+  type: song
   url: "https://codeforthought.buzzsprout.com/1326658/episodes/19163979-en-does-spec-driven-development-replace-agile-with-graham-lee"
 - abstract: Research software and its creators have long played a
     critical role in the advancement of research worldwide. This role is
@@ -1006,12 +1015,15 @@ references:
   annote: |
     Read_Status: Read\
     Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: ManagingPackagesPixi2026
   issued: 2026-05-12
   language: en-US
   title: \[EN\] Managing Packages with Pixi - Raniere de Silva and Wolf
     Vollprecht - Code for Thought
-  type: motion_picture
+  type: song
   url: "https://www.buzzsprout.com/1326658/episodes/19064274-en-managing-packages-with-pixi-raniere-de-silva-and-wolf-vollprecht"
 - accessed: 2026-05-28
   annote: |
@@ -1357,13 +1369,16 @@ references:
   annote: |
     Read_Status: Read\
     Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: schmidtByteSizedFunFloating2026
   issued: 2026-03-31
   language: en-US
   title: "\\[EN\\] ByteSized: Fun with floating points - U Ruede, A Herten
     and E di Napoli - Code for Thought"
   title-short: \[EN\] ByteSized
-  type: motion_picture
+  type: song
   url: "https://www.buzzsprout.com/1326658/episodes/18841644-en-bytesized-fun-with-floating-points-u-ruede-a-herten-and-e-di-napoli"
 - abstract: "English Edition: how are real numbers e.g. 0.1 represented
     on computers? What can go wrong with using their representation in
@@ -1373,13 +1388,16 @@ references:
   annote: |
     Read_Status: Read\
     Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: schmidtByteSizedFunFloating2026a
   issued: 2026-03-31
   language: en-US
   title: "\\[EN\\] ByteSized: Fun with floating points - U Ruede, A Herten
     and E di Napoli - Code for Thought"
   title-short: \[EN\] ByteSized
-  type: motion_picture
+  type: song
   url: "https://www.buzzsprout.com/1326658/episodes/18841644-en-bytesized-fun-with-floating-points-u-ruede-a-herten-and-e-di-napoli"
 - abstract: "English Edition (ByteSized): In this first episode of the
     new ByteSized dRTP season, sponsored by the STEP-UP programme from
@@ -1408,13 +1426,16 @@ references:
   annote: |
     Read_Status: Read\
     Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: schmidtNextBrainExploringHuman2026
   issued: 2026-03-17
   language: en-US
   title: "\\[EN\\] NextBrain: Exploring the human brain - Eugenio
     Iglesias, James Hughes - Code for Thought"
   title-short: \[EN\] NextBrain
-  type: motion_picture
+  type: song
   url: "https://www.buzzsprout.com/1326658/episodes/18717155-en-nextbrain-exploring-the-human-brain-eugenio-iglesias-james-hughes"
 - abstract: "English Edition:\\&nbsp;Meet Thomas White from DESY (German
     Electron Synchrotron) who is the creator and maintainer of the tool
@@ -1443,13 +1464,16 @@ references:
   annote: |
     Read_Status: Read\
     Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: schmidtTeamPortraitResearch2026
   issued: 2026-03-24
   language: en-US
   title: "\\[EN\\] Team Portrait: Research Software Engineering in
     Newcastle - Code for Thought"
   title-short: \[EN\] Team Portrait
-  type: motion_picture
+  type: song
   url: "https://codeforthought.buzzsprout.com/1326658/episodes/18761138-en-team-portrait-research-software-engineering-in-newcastle"
 - accessed: 2025-11-07
   annote: |
@@ -1667,13 +1691,16 @@ references:
   annote: |
     Read_Status: To Read\
     Read_Status_Date: 2026-06-16T16:05:28.241Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: WhatHappenedAgile2026
   issued: 2026-06-16
   language: en-US
   title: \[EN\] What happened to agile development? - A review with Dave
     Thomas - Code for Thought
   title-short: \[EN\] What happened to agile development?
-  type: motion_picture
+  type: song
   url: "https://www.buzzsprout.com/1326658/episodes/19292687-en-what-happened-to-agile-development-a-review-with-dave-thomas"
 - abstract: "English Edition: floppy disks, hard drives, CDs, DVDs, SSD
     drives - no matter what you choose to store your data on -
@@ -1683,12 +1710,15 @@ references:
   annote: |
     Read_Status: To Read\
     Read_Status_Date: 2026-06-16T16:05:28.241Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: WhenBitsRot2026
   issued: 2026-06-09
   language: en-US
   title: \[EN\] When Bits Rot - with C McKean, L Talboom, A
     Page-Mitchell - Code for Thought
-  type: motion_picture
+  type: song
   url: "https://codeforthought.buzzsprout.com/1326658/episodes/19221837-en-when-bits-rot-with-c-mckean-l-talboom-a-page-mitchell"
 ---
 
