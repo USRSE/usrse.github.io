@@ -4,7 +4,7 @@
 {%- if ref.author -%}
   {%- for a in ref.author -%}
     {%- if forloop.index <= 3 -%}
-      {{ a.family }}, {{ a.given | slice: 0 }}.{% if forloop.index < 3 and forloop.index < ref.author.size %}, {% endif %}
+      {{ a.given }} {{ a.family }}.{% if forloop.index < 3 and forloop.index < ref.author.size %}, {% endif %}
     {%- elsif forloop.index == 4 -%}
       et al.
       {%- break -%}
