@@ -25,9 +25,8 @@ can’t interact with just the “software engineer” side of someone. You inte
 the whole person, which means accepting them as they are.
 
 That’s where belonging comes from. It’s not just about being part of a 
-group with shared interests. It’s about being accepted as you are.
-
-Creating that kind of belonging can be challenging in practice, especially 
+group with shared interests. It’s about being accepted as you are.Creating that 
+kind of belonging can be challenging in practice, especially 
 when building trust with people who have experienced bias, exclusion, or worse.
 
 That’s why small actions matter. Sharing pronouns, using gender‑neutral 
