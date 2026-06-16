@@ -10,7 +10,7 @@ yaml_file="$4"  # newsletter parameters
 quarto render "$qmd_file" --metadata-file "$yaml_file"
 
 # convert Interesting Reads bib to yaml
-pandoc _data/newsletter_bib.bib -s -f biblatex -t markdown > _data/newsletter_bib_yml.yml         
+pandoc _data/newsletter_bib.bib -s -f biblatex -t gfm > _data/newsletter_bib_yml.yml         
 
 # copy yaml frontmatter into rendered quarto output
 tmp=$(mktemp)

@@ -13,4 +13,4 @@
 {%- endif -%}
 {%- endcapture %}
 
-- **{{ authors }}**{% if ref.issued %} ({{ ref.issued | date: "%Y" }}){% endif %}.  _{{ ref.title }}_, {% if ref.container-title %}*{{ ref.container-title }}*{% endif %}{% if ref.volume %} {{ ref.volume }}{% endif %}{% if ref.issue %}({{ ref.issue }}){% endif %}. {% if ref.url %}[Listen here🔊.]( {{ ref.url }} ){% endif %}
+- **{{ authors }}**{% if ref.issued %} ({{ ref.issued | date: "%Y" }}){% endif %}. _{{ ref.title }}_, {% if ref.container-title %}*{{ ref.container-title }}*{% endif %}{% if ref.volume %} {{ ref.volume }}{% endif %}{% if ref.issue %}({{ ref.issue }}){% endif %}. {% if ref.url %}[Listen here🔊.]( {{ ref.url }} ){% endif %}
