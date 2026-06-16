@@ -3,8 +3,8 @@ nocite: "[@*]"
 references:
 - accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T23:31:57.963Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Armstrong
     given: Matthew
@@ -33,8 +33,8 @@ references:
   volume: 183
 - accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T23:31:57.963Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Armstrong
     given: Matthew
@@ -92,8 +92,8 @@ references:
     guidance, and sustained coordination."
   accessed: 2026-05-28
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-28T20:09:36.904Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
   author:
   - family: Barker
     given: Michelle
@@ -216,8 +216,8 @@ references:
     li\\..."
   accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.411Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   id: ByteSizedCreateYour2026
   issued: 2026-05-19
   language: en-US
@@ -242,8 +242,8 @@ references:
     (US-RSE), can provide this support.
   accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.413Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Carver
     given: Jeffrey C.
@@ -392,8 +392,8 @@ references:
     what they are, where they are used and what's so special \\..."
   accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.412Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   id: ComputingNotYou2026
   issued: 2026-05-05
   language: en-US
@@ -404,8 +404,8 @@ references:
   url: "https://www.buzzsprout.com/1326658/episodes/19019174-en-computing-but-not-as-you-know-it-field-programmable-gate-arrays-fpga-with-michael-mcleod"
 - accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T23:31:57.963Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Cosden
     given: Ian A.
@@ -428,13 +428,23 @@ references:
   type: article-journal
   url: "https://linkinghub.elsevier.com/retrieve/pii/S0167739X26002086"
   volume: 183
+- abstract: A human-powered, fully local, fully private AI solution.
+  accessed: 2026-06-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T01:04:20.125Z
+  id: CrankGPTLocalHumanpowered
+  language: en-US
+  title: CrankGPT --- [Local Human-powered AI]{.nocase}
+  type: webpage
+  url: "https://crankgpt.com/"
 - abstract: To effect change, the Software Sustainability Institute
     works with researchers, developers, funders, and infrastructure
     providers to identify and address key issues with research software.
   accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.413Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Crouch
     given: Stephen
@@ -537,8 +547,8 @@ references:
     remains steady and likely to increase.
   accessed: 2026-05-28
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-28T20:09:36.904Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
   author:
   - family: Druskat
     given: Stephan
@@ -681,8 +691,8 @@ references:
     software category."
   accessed: 2026-05-28
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-28T20:09:36.905Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
   author:
   - family: Hasselbring
     given: Wilhelm
@@ -742,8 +752,8 @@ references:
   volume: 119
 - accessed: 2026-05-28
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-28T20:09:36.905Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
   author:
   - family: Kamali
     given: "Author: Soudeh"
@@ -820,8 +830,8 @@ references:
     work that most requires human skill and judgment."
   accessed: 2026-05-28
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-28T20:09:36.904Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
   author:
   - family: Katz
     given: Daniel S.
@@ -889,10 +899,10 @@ references:
   type: report
   url: "https://zenodo.org/records/20321134"
 - abstract: United States Research Software Engineer Association
-  accessed: 2022-05-21
+  accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.412Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Sochat
     given: Vanessa
@@ -925,14 +935,59 @@ references:
   title: A kind-of brief shared early history of US-RSE
   type: webpage
   url: "https://us-rse.org/2022-02-06-a-brief-history-of-usrse/"
+- abstract: "Scientific claims increasingly rely upon the interplay of
+    code, data, and computational environments. Yet the record of how
+    they are used together is often incomplete, scattered, or lost. This
+    undermines rigor, reproducibility, reusability, and efficiency.
+    Previous approaches have improved the governance of digital objects
+    but do not specify how research objects ought to be structured and
+    managed so they can be re-executed and extended. The community is
+    missing a shared vocabulary for this operational layer. Building on
+    recurrent practices and convergent patterns across disciplines, we
+    formalize seven principles: Self-containment, Tracking,
+    Actionability, Modularity, Portability, Ephemerality, and
+    Distributability (STAMPED). Together they give researchers
+    guidelines for building and assessing research objects that others
+    can trust, rerun, and build upon. We frame each principle as a
+    spectrum so that adoption is incremental and starts from existing
+    practice. We support each principle with normative requirements, an
+    interactive checklist, and a map of enabling tools. As conventions
+    mature, tooling improves, and AI agents become increasingly involved
+    in research workflows, the goals of rigor, reproducibility,
+    reusability, and efficiency are becoming more attainable. STAMPED
+    gives researchers, collaborators, reviewers, and agents a common
+    language, concrete goals, and an aligned direction for making
+    computational research more durable.
+    https://github.com/stamped-principles/stamped-paper/"
+  accessed: 2026-06-15
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T01:04:20.126Z
+  author:
+  - family: Macdonald
+    given: Austin
+  - family: Baker
+    given: Cody
+  - family: To
+    given: Isaac
+  - family: Halchenko
+    given: Yaroslav O
+  id: macdonaldSTAMPEDPrinciplesReproducible2026
+  issued: 2026-05-26
+  keyword: open science,provenance,reproducibility,research objects
+  number: f3h82_v1
+  status: pre-published
+  title: STAMPED principles for reproducible research objects
+  type: webpage
+  url: "https://osf.io/preprints/metaarxiv/f3h82_v1/"
 - abstract: "English Edition:\\&nbsp;there is a (relatively) new kid on
     the block - of open source package managers. It's called Pixi: and
     in this episode I talk to Raniere de Silva (GESIS) and Wolf
     Vollprecht (Prefix - the company behind Pixi), what the tool br\\..."
   accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.412Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   id: ManagingPackagesPixi2026
   issued: 2026-05-12
   language: en-US
@@ -942,8 +997,8 @@ references:
   url: "https://www.buzzsprout.com/1326658/episodes/19064274-en-managing-packages-with-pixi-raniere-de-silva-and-wolf-vollprecht"
 - accessed: 2026-05-28
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-28T20:09:36.905Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
   author:
   - family: Wilson
     given: Greg
@@ -953,8 +1008,8 @@ references:
   url: "https://third-bit.com/mrsp/"
 - accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T23:31:57.962Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Martina
     given: Tobia
@@ -1031,8 +1086,8 @@ references:
     can pick up whenever you need to a refresher or to learn a new
     topic.
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.412Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Miller
     given: Barton P.
@@ -1046,8 +1101,8 @@ references:
   title: Introduction to Software Security
   type: book
 - annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.412Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Mineault
     given: Patrick
@@ -1083,8 +1138,8 @@ references:
   url: "https://nesbitt.io/2026/03/15/guided-meditation-for-developers.html"
 - accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.413Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Hettrick
     given: Simon
@@ -1130,8 +1185,8 @@ references:
   volume: 7
 - accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T23:31:57.962Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
   author:
   - family: Posada
     given: Edwin F.
@@ -1187,6 +1242,15 @@ references:
   title: Introduction to Neuromorphic Computing
   type: book
   url: "https://www.cambridge.org/core/books/introduction-to-neuromorphic-computing/853942021D89F82AED182F9021E7E0F5"
+- accessed: 2026-06-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T01:04:20.125Z
+  id: RealScorelineReveals
+  title: The Real Scoreline reveals nations facing climate penalties -
+    University of Reading
+  type: webpage
+  url: "https://www.reading.ac.uk/news/2026/University-News/The-Real-Scoreline-reveals-nations-facing-climate-penalties"
 - abstract: Slide set of the accepted rapid access micro talks at USRSE
     25.
   accessed: 2026-04-09
@@ -1540,6 +1604,24 @@ references:
   title-short: S4PST
   type: report
   url: "https://www.osti.gov/biblio/3016977"
+- abstract: "I'm working on a new tool whose tagline is the title of
+    this post: Make best use of git and GitHub for AI-assisted software
+    development. Called Bram (\"Bram runs agents mindfully\")..."
+  accessed: 2026-06-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T01:04:20.126Z
+  author:
+  - family: Udell
+    given: \~ Jon
+  id: udellHowMakeBest2026
+  issued: 2026-06-02
+  language: en-US
+  publisher: Jon Udell
+  title: How to make best use of git and GitHub for
+    [AI-assisted]{.nocase} software development
+  type: webpage
+  url: "https://blog.jonudell.net/2026/06/02/how-to-make-best-use-of-git-and-github-for-ai-assisted-software-development/"
 - abstract: Read the latest article version by Daniel S. Katz, Eric A.
     Jensen, Michelle Barker at Open Research Europe
   accessed: 2025-11-07

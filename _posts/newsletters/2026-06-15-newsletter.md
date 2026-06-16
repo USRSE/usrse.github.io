@@ -1,7 +1,48 @@
-# US-RSE June 2026 Newsletter
-Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden
-(Editor)
-2026-06-15
+---
+layout: post
+title: "US-RSE June 2026 Newsletter"
+subtitle: "🤔 Arrestive Curiosity & RSEs: How to Turn the Shiny Toy Syndrome Bug into a Feature 🤔"
+category: newsletter
+tags: [newsletter, June]
+date: 2026-06-15 00:00:00 -0400
+author: "Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden (Editor)"
+image: "/assets/img/newsletter-202606/us-rse_4k_members.png" #TODO
+img_alttext: "Colourful poster with the words \"Celebrating 4,000+ Member Milestone\" and a progression of trees growing from a seedling to a full tree, with the number 4011 prominently displayed." #TODO
+next_meeting_date: Thursday, July 9, 2026, 12:00PM EST #Done
+sections:
+  preamble: true #Done
+  headline: true #Done
+  conference: true #Done
+  execupdate: false #TODO
+  scupdate: false #TODO
+  orgmember: true #TODO
+  communityfunds: false #TODO
+  news: true #TODO
+  events: true #TODO
+  reads: true #TODO
+  involved: true
+  jobs: true
+
+---
+
+<a name="top"></a>
+
+First of all, Happy Pride Month 🌈, and Happy Juneteenth 🎉! We hope you
+are all having a wonderful summer celebrating the diversity and
+resilience of our communities.
+
+It’s been another busy month for US-RSE, as conference planning
+continues to ramp up, membership continues to grow, and the organization
+continues to expand its offerings and impact to the research software
+community. In this issue, we’ll discuss shiny toy syndrome in
+technology, celebrate the LGBTQ+ community, and share all the latest and
+greatest news from US-RSE.
+
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/img/newsletter-202606/us-rse_4k_members.png" alt="Colourful poster with the words “Celebrating 4,000+ Member Milestone” and a progression of trees growing from a seedling to a full tree, with the number 4011 prominently displayed." style="width: 750px; height: auto;">
+</p>
+
+In this issue:
 
 - [<span class="toc-section-number">1</span> 🤔 Arrestive Curiosity &
   RSEs: How to Turn the Shiny Toy Syndrome Bug into a Feature
@@ -23,25 +64,6 @@ Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden
   🏃](#running-get-involved-running)
 - [<span class="toc-section-number">9</span> 🧑‍💼 Recent Job Postings
   🧑‍💼](#office_worker-recent-job-postings-office_worker)
-
-<a name="top"></a>
-
-First of all, Happy Pride Month 🌈, and Happy Juneteenth 🎉! We hope you
-are all having a wonderful summer celebrating the diversity and
-resilience of our communities.
-
-It’s been another busy month for US-RSE, as conference planning
-continues to ramp up, membership continues to grow, and the organization
-continues to expand its offerings and impact to the research software
-community. In this issue, we’ll discuss shiny toy syndrome in
-technology, celebrate the LGBTQ+ community, and share all the latest and
-greatest news from US-RSE.
-
-<p align="center">
-  <img src="{{ site.baseurl }}/assets/img/newsletter-202606/us-rse_4k_members.png" alt="Colourful poster with the words “Celebrating 4,000+ Member Milestone” and a progression of trees growing from a seedling to a full tree, with the number 4011 prominently displayed." style="width: 750px; height: auto;">
-</p>
-
-In this issue:
 
 ------------------------------------------------------------------------
 

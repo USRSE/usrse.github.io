@@ -1,24 +1,24 @@
 layout: post
-title: "US-RSE May 2026 Newsletter"
-subtitle: "🙌 There Are Dozens of Us, DOZENS! 🙌"
+title: "US-RSE June 2026 Newsletter"
+subtitle: "🤔 Arrestive Curiosity & RSEs: How to Turn the Shiny Toy Syndrome Bug into a Feature 🤔"
 category: newsletter
-tags: [newsletter, May]
-date: 2026-05-20 00:00:00 -0400
+tags: [newsletter, June]
+date: 2026-06-15 00:00:00 -0400
 author: "Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden (Editor)"
-image: "/assets/img/newsletter-202605/us-rse_4k_members.png"
-img_alttext: "Colourful poster with the words \"Celebrating 4,000+ Member Milestone\" and a progression of trees growing from a seedling to a full tree, with the number 4011 prominently displayed."
-next_meeting_date: Friday, June 12, 2026, 12:00PM EST
+image: "/assets/img/newsletter-202606/us-rse_4k_members.png" #TODO
+img_alttext: "Colourful poster with the words \"Celebrating 4,000+ Member Milestone\" and a progression of trees growing from a seedling to a full tree, with the number 4011 prominently displayed." #TODO
+next_meeting_date: Thursday, July 9, 2026, 12:00PM EST #Done
 sections:
-  preamble: true # done
-  headline: true # done
-  conference: true # done
-  execupdate: false # done
-  scupdate: false # yay!
-  orgmember: true # done
-  communityfunds: false # no changes, check back in june
-  news: true # add community call summary
-  events: true
-  reads: true
+  preamble: true #Done
+  headline: true #Done
+  conference: true #Done
+  execupdate: false #TODO
+  scupdate: false #TODO
+  orgmember: true #TODO
+  communityfunds: false #TODO
+  news: true #TODO
+  events: true #TODO
+  reads: true #TODO
   involved: true
   jobs: true
 

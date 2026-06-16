@@ -1,62 +1,107 @@
-## 🤩 Wait a Minute, I'm an RSE, I Know How to Do That! 🤩
+## 🤔 Arrestive Curiosity & RSEs: How to Turn the Shiny Toy Syndrome Bug into a Feature 🤔
 
 <a name="headline"></a>
 
-*I know how to do that!*
+This month, I had the pleasure of meeting some fellow R users at the Boston R User Group meetup,
+where I can say I finally felt safe opening a conversation with a hot take like, "R is the best," knowing
+it would likely not spark a flame war. I'm sure many of you having read that sentence
+are already compiling the several counterarguments in your head, mashing away your response
+in a text editor, choosing all your best and worst use cases as examples and calling on the
+greats of your respective community to back you up. But this discussion is actually not about flame wars;
+in fact, as I'm sure you've experienced, we as technologists often care less about what tool
+is objectively best, and more about what tool is best for us, our project, and our team.
 
-It is one of the most rewarding thoughts you can have as a research software engineer: that moment when you notice a colleague, PI, collaborator, or student struggling with a software problem and realize you can help.
+And while this can sound like a freeing stance on tooling in general, it leaves us with
+an acute conundrum: how do we know when to _switch_ tools? When do we know that the tool we're
+using is no longer best for us, and that we should switch to something else? As computing becomes
+more accessible and capable, more individuals are building tools that avow to _finally_ and
+_decisively_ solve the problem of [insert other tools' shortcomings here]. Indeed, whether it
+was Markdown's attempt to become the de facto standard for writing on the web
+Anaconda claim to be the last word in environment management for data science, or the
+eternal paradox of Apple's latest OS somehow always having "the best feature, ever," 
+technology is rife with shiny toys that promise to solve all our problems. On the one hand, it can be
+incredibly overwhelming trying to keep up with the latest and greatest, and on the other,
+you could easily risk missing out on a tool that could be a game changer for you and your team if
+you don't branch out and experiment from time to time[1^].
 
-Not because they are unmotivated. Not because they are bad scientists. But because things are not working, not moving quickly enough, or not being recognized for what they are: software problems that can be solved with the right tools, techniques, and expertise. Maybe the scientist is looking toward industry and thinking, "I wish we could move as quickly as Google, Facebook, or Microsoft." Or, more recently, "I wish we could figure out how to really use all this LLM stuff." Ever persistent, the scientist keeps chasing their research questions. They want to discover the next big thing in their field. They want to make an impact. But because their workflow was essentially written in 2012, and because they do not have the time, support, or expertise to modernize it, they are stuck moving at the pace of 2012.
+This decision fatigue can end up being a significant job hazard for people who work with technology.
+What if your organization is one of the unfortunate few that decided to go all-in on Skype[2^],
+or what if you can't ship a new product or publish a paper because your team has not ported
+over its legacy libraries to Python 3 yet? As RSEs, part of our responsibility is to help
+scientific teams navigate this ever-changing landscape of tools and technologies, and it can
+be very tricky to draw the line between productive experimentation and [shiny toy syndrome](https://nesslabs.com/shiny-toy-syndrome).
+How does one justify several afternoons' worth of tinkering, only to come to the conclusion
+that the new tool actually _doesn't_ do what it says on the box - or at least, not to your satisfaction —
+and continue to be trusted with the responsibility of guiding your team's technological vision?
 
-And as RSEs, we get it! Code can be fragile — and scary. If a new student or postdoc touches it, they might break it. If the code breaks, so might every paper, grant, and project built on top of it. When was the last time it was updated? Months ago? Years ago? So the scientist does not touch it. They treat it like a Rube Goldberg machine: they know it works, but they no longer remember how. At this point, they are too afraid to find out.
+But as I thought about this more, I realized that this activity of tinkering and experimenting 
+with new tools is actually a critical part of our job as RSEs, and that we can turn this "bug" 
+of shiny toy syndrome into a "feature" of arrestive curiosity. Arrestive curiosity is the 
+tendency to be so curious about new tools and technologies that you cannot move forward with your 
+own work until you've proven a new tool is either better or worse for you than the one 
+you're currently using[3^]. If you've ever been up late at night trying to get a VSCode extension to
+run without error, trying to figure out why a new library can't just install on your system,
+or drawing out your ultimate note-taking entourage of apps for never losing a thought, I see you!
+This kind of curiosity can be a disastrous time sink — but it can also be a powerful way to
+stay on top of the latest and greatest, and to make sure you're using the best tools for you and your team. 
 
-As RSEs, we see this...and get excited.
+So, how do we cultivate arrestive curiosity without falling into the trap of 
+time-wasting? Having wrestled with this for several years, I think I can provide a few
+considerations that have helped me strike this balance:
 
-Because we know how to help. 🥹
+1. _Stop being distracted by the perfect tool until you know what perfect is supposed to look like._ 
+Before seriously investigating a new tool, write down exactly
+what problem or need you think it is trying to solve for you. In the simple process of
+articulating this, you may find that your existing workflow just needs some refinement,
+or a simple adjustment or reframing of the problem. 95% of the time, my tinkering does not
+pass this step.
 
-I first came across the term "RSE" in the wonderfully cute and informative 2019 YouTube video, [The Story of the Research Engineer](https://www.youtube.com/watch?v=trAfA9VWLTQ), and I instantly fell in love with the idea. Here was a name for the squeaky wheel that gets the grease: the person who helps scientists get unstuck, move faster, and work more sustainably. But then as now, the field was young. There was not much consensus about what an RSE was, where they belonged, or how institutions should support them.
+2. _Get comfortable with the discomfort of your current tools._ If you've successfully passed
+the first step, then you know for a fact that your current workflow needs are not being met,
+and a new tool — or repurposing an old one — is likely the solution. But before you dive into the new tool, 
+now is the time to measure the discomfort of your current workflow. How much time are you losing to this 
+problem? How much mental energy are you spending on it? How much is it costing your team in 
+productivity and morale? If the cost of your current workflow is not high enough, then it may 
+not be worth the time and effort to switch to a new tool. If you can tolerate the discomfort, then the tool search ends here.
 
-The term itself emerged in the UK [in 2012](https://www.software.ac.uk/blog/not-so-brief-history-research-software-engineers-0), after a group of researchers and software practitioners began formalizing a role that many people were already doing but few institutions knew how to recognize. Since then, definitions have been proposed, refined, and debated.
+3. _Refine to absurdum._ If you are still convinced that something is missing, then it is time to start
+looking for what is missing. Surely someone has felt this acute pain, right? The internet is a vast place,
+and there are several billion of us using it at any given time. It's more than likely that someone,
+somewhere, has been in the exact position you're in, with an install that is too slow, a link that
+doesn't work, or a workflow that is too clunky and just missing that, _secret something_. Go out into dark
+corners of the second, third, and fourth pages of Google search, ask around on Reddit and Facebook groups, or
+find forums and communities that are relevant to the problem space. Surely **someone** has faced this problem, too?
 
-Ian Cosden, one of our newsletter editors and Director of *Research Software Engineering for Computational & Data Science* at Princeton, defines the role partly by what it is not. An RSE, he argues, is not simply a researcher, not simply a facilitator, and not simply a pure software engineer. The role lives in the productive space between those identities.
+4. If the solution is identified, use it. If not, build it. By this point, if you have found a
+niche problem that 1) arrests your productivity, 2) causes measurable discomfort, and 3) has not been
+solved by anyone else, then this is a problem worth solving. In fact, as an RSE, this is the _perfect_
+problem to have, because it is within this narrow gap between your vision and the status quo that 
+you can actually make valuable impact to your team. If you can't or don't want to build the solution yourself,
+one of two things must be true: either the problem is not worth solving, or you are _not yet_ the right person to solve it.
 
-<p align="center">
+In my experience, the really interesting Research Software Engineering is what happens when as an
+engineer I have become _obsessed_ with a particular technological blocker to the success of my or my colleagues' scientific endeavors. 
 
-<img src="https://cosden.github.io/assets/images/posts/2019/RSE-diagram.png" alt="RSE role schematic. A triangle with traditional research IT support at the top vertex, professional software engineering at the bottom left, and researcher/scientist at the bottom right. An oblong bubble with the word RSE sits along the bottom side of the triangle" style="width: 750px; height: auto;"/>
+It is the moment we look at the scientific engine and say, "I know we _could_ just use [X Tool] to write
+this part of the paper, but I just can't accept that this is the best way to do it. I simply can't. There
+_must_ be a better way."
 
-</p>
+This is the "arrestive," part of the "arrestive curiosity" — the part that literally keeps you up at night,
+ceases you in your tracks every time you think about it, and continues to consume all of your mental
+energy until you have either found a solution or come to terms with the fact that there is no solution.
 
-Goth et al. ([2025](https://f1000research.com/articles/13-1429)) offer one recent attempt to concretize the foundational competencies and responsibilities of an RSE, including software development, building and distributing software assets, understanding the research lifecycle, and supporting reproducible, sustainable research. [Vanessa Sochat's EasyBuild talk](https://www.youtube.com/watch?v=FB2yV8TNnSw), on the other hand, emphasizes just how broad this space can be: among roughly 400 people surveyed who identified themselves to be working on "research software" in some capacity, there were more than *190 unique job titles*. That degree of diversity can be both a strength and a challenge. It shows how widely research software work appears across institutions, but it also explains why the role can be so difficult to define, hire for, promote, and reward. Another one of our US-RSE members, Dan Katz, proposes a 3-dimensional schematic
-to isolate the Super RSE role who commands "a superset of the responsibilities of the traditional RSE role, combining both service and the RSE’s own research."
+And if you ask me, that tendency to be obsessed with finding the best way to do science is what makes a good 
+RSE a _great_ RSE. So, the next time you find yourself in the throes of shiny toy syndrome, try to 
+channel that energy into arrestive curiosity using the flowchart I outlined above, and see where it takes you. 
+You might just find that the perfect tool was right in front of you all along, or you might end up building 
+something that changes the game for, your team, and perhaps even the science itself.
 
-<p align="center">
-<img src="https://danielskatzblog.wordpress.com/wp-content/uploads/2019/07/screen-shot-2019-07-12-at-7.09.31-am.png" style="width: 750px; height: auto;"/> 
-</p>
-
-By identifying this RSE unicorn, Katz highlights the fact that as we define
-the breadth of the scope of the RSE, we also need to think about its 
-potentially necessary boundaries.
-
-In a 2022 [career Q&A in *Nature*](https://www.nature.com/articles/d41586-022-01516-2), Paul Richmond predicted that RSEs could become equals in the academic environment if they receive proper recognition for their contributions. James Schloss, in his [YouTube talk](https://www.youtube.com/watch?v=t2BjZ5hSjHo) highlights some of the barriers still standing in the way: the publication economy, academic resistance to software engineering best practices, and the difficulty of competing with industry salaries for people with similar technical expertise. In fact, one of my very first suggestions for newsletter topics was to discuss the definition of the title "Research Software Engineer" itself, and I was told very firmly to avoid the topic as much as possible — not because it was inflammatory, but because it remains a particularly sensitive topic. While many are strongly attached to the name for its truthiness, just as many others are more concerned with defining the tasks, responsibilities, and competencies of the role, regardless of what it is called, because funding sources will pay a great deal of attention to those details.
-
-But friends, there is hope. 🌱
-
-Just as a small group of concerned scientists and software practitioners began with an idea, a conversation, and a Google Group, we can continue making the role visible at our own institutions. This can be through formal titles, clearer career paths, better credit, stronger communities of practice, or simply naming the work when we see it as we help research software engineering become easier to recognize and harder to ignore. This week, celebrate yourself by encouraging your colleagues, coworkers, PIs, and students to **make this role visible**. Look around. We are once again watching technology change the fabric of research itself. Rigorous science, and the software that powers it, cannot afford to be left behind. Now more than ever, research needs talented, driven, curious technology specialists who can ask new questions, solve impossible bugs, push compute clusters to their limits, and preserve the code — and the science — that so many people depend on.
-
-Our Executive Director had this to say about the importance of this community:
-
-"Reaching more than 4,000 members is not just a milestone in numbers - it reflects a growing 
-community of people who care deeply about advancing research through software, collaboration, and 
-support for one another. As Executive Director, I am incredibly grateful to be part of this community 
-and inspired every day by the generosity, expertise, and passion our members bring to US-RSE. Thank 
-you for helping build a place where research software engineers can truly belong."
-
-> [Sandra](https://us-rse.org/about/staff/)
-
-This month, we thank the scrappy and passionate group of researchers who helped crystallize the idea of the Research Software Engineer, [one quiet afternoon in Oxford, UK, in 2012](https://www.pure.ed.ac.uk/ws/portalfiles/portal/65195747/DR2012_12_1_.pdf). And the next time you notice a colleague struggling with a technical problem, be the RSE on their shoulder. Gently remind them:
-
-*Hey, I know how to do that.*
-
-> You are braver than you believe, stronger than you seem, and smarter than you think. A. A. Milne, *Winnie the Pooh*
-
+[1^]: In fact, at this UseR Boston meetup, we ourselves had a hard time rectifying our excitement
+vs. hesitation around all things AI in the R world. We could barely come to a consensus on
+whether we could be convinced to switch over to the new native pipe `|>` or stick with the beloved 
+`magrittr` pipe `%>%` that we've been using for years, all the while doing our best "old man yells at cloud" impression.
+Spoiler alert: I'm yelling at the cloud.
+[2^]: Shout out to everyone currently being held hostage by their CTO's contract with Microsoft and having to wake
+up every morning to the sound of a Teams notification. We see you, and we feel your pain.
+[3^]: Yes, I just came up with it. No, I will not be answering questions.
 ------------------------------------------------------------------------

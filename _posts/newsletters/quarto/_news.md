@@ -22,19 +22,24 @@ consecutive year a Chameleon user has taken home this honor!
 
 Read the announcement [here](https://blog.chameleoncloud.org/posts/sc25-best-reproducibility-advancement-award/).
 
-### RSE's with a New York State of Mind... 🗽
-
-The NYC Regional Group recently met up for their inaugural 
-in-person hangout! Special thanks to Roger Ferger for spearheading the event!
-
-<p align="center">
-    <img src="{{ site.baseurl }}/assets/img/newsletter-202605/20260511_182844.jpg" alt="NYC Regional Group Meetup of 6 RSEs sitting at a table at Everything's Jack in New York" style="width: 750px; height: auto;"/>
-</p>
-
-As an added bonus, the group also now has a dedicated page on the US-RSE website! Check it out [here](https://us-rse.org/ag/rg-nyc/) to learn more about the group and how to get involved.
-
 > Did you know that we have a community Code of Conduct? Anyone is able to view it in the
 `#code_of_conduct` Slack channel, under `Files`!
+
+
+### In Memoriam
+
+We mourn the loss of a dear friend and colleague, Cleve Moler, who passed away on May 20, 2026, at the age of 86 at his home 
+surrounded by his family. Cleve was chief mathematician and cofounder of MathWorks and the author of the first version of MATLAB. 
+Please join us in remembering their contributions to science and engineering by reading Mathworks official announcement [here](https://www.mathworks.com/company/aboutus/founders/clevemoler.html).
+
+## Community Spotlight
+
+🌱 Our community is full of people doing fascinating research and software work,  and we want to put a face to it. Starting this month, we'll be featuring a group of different members in a regular spotlight: what they work on, a tool they can't live without, and how they found their way into RSE work.
+
+We'd love to feature YOU. It takes about 5 minutes to fill out, and nothing gets posted without your okay: [https://forms.gle/dXqVsHKiHnot2u449](https://forms.gle/dXqVsHKiHnot2u449)
+
+Email [Pengyin Shan](mailto:pengyins@illinois.edu) for any questions!
+
 
 ### **Community Calls**
 

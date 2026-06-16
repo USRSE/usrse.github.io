@@ -177,8 +177,96 @@
   links: |
     More information: [Click here](https://hpc-days.github.io/Durham-HPC-Days-2026/)
 
+- expires: 2026-06-24
+  type: event
+  title: Build Portable CPU/GPU Code in Julia with Minimal Effort
+  when: Jun 24, 2026, 11:00 AM EDT
+  where: Online
+  preamble: |
+    Join Oak Ridge National Laboratory scientists William F Godoy and Philip W Fackler for a live webinar exploring how JACC.jl enables vendor-neutral parallel computing in Julia across CPUs and GPUs.
+    High-performance computing development often requires engineers and researchers to manage multiple programming models and vendor-specific GPU frameworks. JACC.jl simplifies this process by enabling portable Julia code that runs across CPUs and GPUs from different vendors, all from a single source code base.
+    In this webinar, Oak Ridge National Laboratory experts will introduce JACC.jl and demonstrate how Julia users can build vendor-neutral parallel applications while maintaining performance and developer productivity.
+  links: |
+    Register now to discover how Julia and JACC.jl are enabling the next generation of portable high-performance computing workflows: [Click here to register](https://juliahub.com/events/build-portable-cpu-gpu-code-in-julia-with-minimal-effort)
+
+- expires: 2026-07-14
+  type: event
+  title: Levels of Software Testing Webinar
+  when: Tuesday, July 14, 12:00 PM - 1:00 PM MST
+  where: Online
+  preamble: |
+    Join us for the next webinar of the National Laboratories Sustainable Scientific Software Conference's Community of Practice, as community member Jason M. Gates gives us an introduction to different types and levels of software testing, where manual testing is appropriate, and how all this ties into your project documentation.    
+  links: |
+    Click [here](https://events.gcc.teams.microsoft.com/event/0200afeb-a59c-40f3-9be9-be60e28b067c@7ccb5a20-a303-498c-b0c1-29007381b574) to register!
+
+- expires: 2026-07-24
+  type: event
+  title: PyOhio 2026
+  when: July 24-25, 2026
+  where: Online
+  preamble: |
+    PyOhio 2026 is the 19th annual Python Community Conference in Cleveland, Ohio. It will be held at Cleveland State University Student Center on July 25-26, 2026. 
+  links: |
+    Details are available on the conference website: [https://www.pyohio.org/2026/](https://www.pyohio.org/2026/)
+
+
+- expires: 2026-09-22
+  type: event
+  title: LLNL HPC Webinars
+  when: Tuesday, July 14, 12:00 PM - 1:00 PM MST
+  where: Online
+  preamble: |
+    LLNL’s High Performance Computing Innovation Center is once again putting on a series of **Free, Virtual Open Source Software Tutorials**!
+
+    This July through September, you can hear it straight from the developers of these projects.
+    We’re kicking things off with Spack July 7-8, but hope to see you at all 13 tutorials!
+
+  links: |
+    Dates:
+      - July 7-8: Spack, HPC package manager
+      - July 14: BLT, build link and test HPC apps
+      - July 21: Flux, HPC scheduler and resource manager
+      - July 28: YGM, manage irregular communication
+      - Aug 4: Caliper & Thicket: measure and analyze performance data
+      - Aug 1: Axom, modeling and simulation infrastructure
+      - Aug 18: Jacamar CI: Secure Gitlab runners for HPC centers
+      - Aug 25: Ascent, in-situ visualization
+      - Sep 1: Benchpark, reproducible continuous benchmarking framework
+      - Sep 15: RAJA & Umpire, performance portability and accelerator memory management
+      - Sep 22: MFEM, scalable, higher order finite element meshing library
+
+    Sign up here: [https://hpcic.llnl.gov/tutorials/2026-hpc-tutorials](https://hpcic.llnl.gov/tutorials/2026-hpc-tutorials)
+
 #-------------------
 # Opportunities
+- expires: 2026-08-30
+  type: opportunity
+  title: Research Opportunity
+  preamble: |
+    Community member Ellie O'Brien recruiting participants for a study about how scientists program with agentic code tools. Scientists from any career stage, any level of programming experience, and research topic are welcome. Here are details:
+    Eligibility: scientists (grad students, postdocs, faculty, researchers) who regularly use an agentic coding tool for research-related programming.
+    The study involves a single Zoom session (~45–75 min) where you share your screen and work on a programming project from your own research. The experimenter will observe and ask occasional questions as you work, then follow up with a short interview about your experience with these tools.
+  links: |
+    Participants receive $50 for their time. Please fill out [this short survey](https://umich.qualtrics.com/jfe/form/SV_86BHNNPRzArnOBw) if you're interested in participating and feel free to send any questions via DM to Ellie on Slack!
+
+- expires: 2026-08-30
+  type: opportunity
+  title: Connect with Spanish Speaking RSEs!
+  preamble: |
+    🤓 Keen to connect en español with engineers & researchers in Europe and across the pond?
+    🦉 Curious to see how far your Duolingo skills can take you in a tech talk?
+    ❓ Tired of announcements full of questions?
+
+    Then come join us at the monthly Charlas RSE en español! 👏
+
+    An initiative started by Carlos (@cptanalatriste, from the Alan Turing Institute) and Sofía (@sfmig, from the Sainsbury Wellcome Centre) from a conversation at the DEI workshop during RSECon24. Our aims are:
+    - to showcase the RSE role across the Spanish-speaking world
+    - to connect with the cool research and tech carried out by hispanophones all over the world
+    - to selfishly speak our mother tongue before we forget it!
+  links: |
+    Check out the [GitHub](https://charlas-rse-espanol.github.io/#about) for more information!
+
+
 - expires: 2026-07-31
   type: opportunity
   title: ACL Caregiver Artificial Intelligence Prize Challenge
@@ -377,8 +465,8 @@
     Join the community in Washington, DC, September 23–25, 2026, to share solutions, tackle challenges, and build connections that will power the next generation of research.
 
     Key dates and deadlines:
-    - Tutorials — May 22, 2026
-    - Papers — June 8, 2026
+    - ~~Tutorials — May 22, 2026~~
+    - ~~Papers — June 8, 2026~~
     - Talk-only, BYOP, and Posters — July 20, 2026
     
     Can't attend the full conference? Free Virtual Tutorials sessions will be held September 1–3 and September 8–11, 2026.
@@ -429,3 +517,33 @@
     Submission deadline (extended): August 30, 2026.
   links: |
     Journal and submission information: [Click here](https://link.springer.com/journal/10766/updates/27768048)
+
+- expires: 2026-10-01
+  type: opportunity
+  title: AI Carpentry GenAI + Teaching Discussion
+  preamble: |
+    The Software Carpentries are launching a new series of AI Carpentry community sessions: GenAI + Teaching Discussions, with the goal of fostering a Community of Practice around the teaching of programming/data analysis skills in the presence of genAI.
+    These sessions will be a space for educators to connect and share their current experiences, reflections, and questions around the teaching of computational research skills.
+    The first calls will take place on Thursday 18 June, at [12:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=GenAI+%2B+Teaching+Community+Discussion&iso=20260618T12&p1=%3A&ah=1) and [19:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=GenAI+%2B+Teaching+Community+Discussion&iso=20260618T19&p1=%3A&ah=1) (follow links to see these converted to your local time). Register to participate in the conversation.
+    Sessions will begin with an invited presentation from Elle O’Brien, co-author of Scientific Software in the Age of Vibe Coding and A survey of generative AI adoption and perceived productivity among scientists who program, and Director of the AI & Data Science Graduate Data Science Certificate at the University of Michigan.
+  links: |
+    Visit the AI Carpentry website to learn more about the calls: [Click here](https://aicarpentry.org/community/discussions/)
+
+- expires: 2026-08-01
+  type: opportunity
+  title: Connect with the PESO Project!
+  preamble: |
+    The PESO Project seeks to establish robust and sustainable scientific software capabilities aligned with the interests of the Department of Energy Office (DOE) of Advanced Scientific Computing Research (ASCR) via partnerships with software teams and communities within DOE, other US agencies, commercial scientific software developers, and the broader open source software community.
+    In addition, the PESO project is going to start an occasional UX newsletter that will include some resources on conducting UX research and ensuring usability/positive UX. If you have UX resources that should be highlighted as the newsletter launches, please reach out to the `wg-ux` channel!
+  links: |
+    PESO Project website: [Click here](https://pesoproject.org/)
+
+- expires: 2026-08-01
+  type: opportunity
+  title: Call for Papers - High-Productivity Programming Systems for HPC Applications (IJPP)
+  preamble: |
+    In the ever-evolving world of computing, the line between software and hardware has become increasingly larger. As we push the boundaries of what is possible with technology, the need for high-productivity programming solutions that can harness the power of modern hardware has never been more critical.
+    This Special Issue (SI) aims to bring points of discussion into the High-performance Computing (HPC) and scientific community about key issues on finding a compromise between high levels of abstraction (programming productivity) and meeting the challenges of performance, power consumption, and fault tolerance. This SI addresses the recent experiences in programming languages/models design for exa-scale computing systems, which can contribute to the problem of programming complex HPC systems in a productive, efficient, and reliable way. This SI provides a great opportunity for the HPC community to present new approaches for exploiting the massive parallelism that is provided by the abundance of different kinds of parallelism in today's and future HPC systems. Besides the conventional use for coarse or fine-grain parallelism in applications, our scope is to explore new approaches that enable future software systems to become more self-aware, reasoning about its internal state, and making decisions to prioritize changes in the execution of applications when necessary, putting the focus on areas such as performance tuning and power management.
+  links: |
+    Submission Deadline (extended): August 30, 2026. See [here](https://link.springer.com/journal/10766/updates/27768048) for more information on the journal and submission process.
+
