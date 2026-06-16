@@ -363,7 +363,7 @@ language, and taking the time to learn about the people around us can
 make a real difference. They signal that people are seen, respected, and
 welcome as part of the community.
 
-For me, Pride is a reminder that this kind of belonging does not happen
+For us, Pride is a reminder that this kind of belonging does not happen
 by accident. It is something we create together through everyday
 choices.
 
@@ -375,8 +375,8 @@ What does Pride mean to you? We’d love to hear your perspective. Feel
 free to join the conversation on Slack or share on social media using
 the hashtag `#RSEPride`.
 
-> #### Community Contributions
->
+##### Community Contributions
+
 > Research software often involves intensely multidisciplinary
 > collaboration, and, depending on the size of a team, may require the
 > ability to liaise between domains, technical-side, business-side, etc.
@@ -385,6 +385,19 @@ the hashtag `#RSEPride`.
 > openness is very prosocial and qualitatively close to what Pride is
 > all about; I think it’s why I feel at home in research software and
 > the surrounding communities. – Michael P. Pascale
+
+> I actually did not grow up playing with computers. I always was tech
+> savvy, but never imagined myself opening a terminal or writing code.
+> So when I found myself engaging with technology in research, I was
+> very intimidated, often suffixing all of my conversations with, “but I
+> don’t know anything about this stuff.” That feeling of imposter
+> syndrome went away when I joined the RSE community, and I owe my
+> career success to the culture of support and encouragement that I
+> found here. Celebrating Pride Month with the LGBTQ+ community every
+> year is a reminder of how unconditional acceptance and support enables
+> people to self-actualize and thrive. I stand with my LGBTQ+ allies in
+> celebrating them and advocating for their space in our world! -
+> Tinashe M. Tapera
 
 <!--Someone you want to shoutout? DO IT HERE!-->
 
