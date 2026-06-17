@@ -54,6 +54,11 @@ channel on the US-RSE slack or contact us on the
     - Date: February 18, 2026
     - [Slides](https://drive.google.com/file/d/1UppknGOqMfeYCxCdcoQo8HdTo5GHbLNB/view?usp=sharing)
     - [Video](https://www.youtube.com/watch?v=j6D_d7dUETg)
+- "Software testing in the Open Force Field Initiative"
+    - Author: Matt Thompson
+    - Date: May 20, 2026
+    - [Slides](https://drive.google.com/file/d/1W4v3RhpBg1Gsfk4c2URc5MjHY9C2YhST/view?usp=sharing)
+    - [Video](https://www.youtube.com/watch?v=SMoSaRa3RP0)
   
 ------
 
