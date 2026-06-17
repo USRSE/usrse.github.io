@@ -1475,6 +1475,26 @@ references:
   title-short: \[EN\] Team Portrait
   type: song
   url: "https://codeforthought.buzzsprout.com/1326658/episodes/18761138-en-team-portrait-research-software-engineering-in-newcastle"
+- abstract: Fable came out and then disappeared a couple of days later.
+    In that short time, I managed to run a lot of repository reviews
+    with it, and was really happy with the results. I’ve found and fixed
+    around 400 bugs and 400+ other issues (performance, simplifications,
+    modernizations) across dozens of my projects, making several hundred
+    PRs with a nearly 100% merge rate on decided PRs.
+  accessed: 2026-06-17
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-17T16:59:48.292Z
+  author:
+  - family: Schreiner
+    given: Henry
+  id: schreinerClaudeCodeReviews2026
+  issued: 2026-06-16
+  language: en-US
+  publisher: ISciNumPy.dev
+  title: Claude Code Reviews with Fable
+  type: webpage
+  url: "https://iscinumpy.dev/post/claude-code-reviews/"
 - accessed: 2025-11-07
   annote: |
     Read_Status: Read\
