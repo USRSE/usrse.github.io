@@ -65,5 +65,4 @@ Professionals. Currently, Singh serves as an Executive Committee Member for
 Association for Computing Machinery-Women and the programming chair for the
 National Center for Women & Information Technology Academic Alliance. To know
 more about Dr. Singh, please visit her website at
- <https://sis.utk.edu/vandana/> or follow her on Twitter -
- <https://twitter.com/Vand_anaSingh> 
+ <https://sis.utk.edu/vandana/>
