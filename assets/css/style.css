@@ -12248,3 +12248,15 @@ html body #back-to-top {
 .glider-next {
   right: -1rem;
 }
+
+.donate-hero {
+  background-color: #741755;
+}
+
+.impact-card {
+  border-left: 4px solid #741755;
+}
+
+.impact-card strong {
+  color: #590040;
+}

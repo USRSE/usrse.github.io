@@ -1,10 +1,11 @@
-# US-RSE March 2026 Newsletter
+# US-RSE May 2026 Newsletter
 Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden
 (Editor)
-2026-03-12
+2026-05-20
 
-- [<span class="toc-section-number">1</span> 🔔 Celebrating Women in
-  RSE! 🔔](#bell-celebrating-women-in-rse-bell)
+- [<span class="toc-section-number">1</span> 🤩 Wait a Minute, I’m an
+  RSE, I Know How to Do That!
+  🤩](#star_struck-wait-a-minute-im-an-rse-i-know-how-to-do-that-star_struck)
 - [<span class="toc-section-number">2</span> 📣 Mark Your Calendars for
   USRSE’26! 📣](#mega-mark-your-calendars-for-usrse26-mega)
 - [<span class="toc-section-number">3</span> 🤝 Organizational Founding
@@ -23,69 +24,181 @@ Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden
 
 <a name="top"></a>
 
-Welcome to the March 2026 issue of the US Research Software Engineer
-(US-RSE) newsletter! Right off of the heels of Black History Month, this
-March we are taking the opportunity to celebrate all of the women in
-Research Software Engineering, because March is Women’s History Month!
-We hope you find this issue informative and inspiring as we continue to
-advance the field of research software engineering together.
+Well, actually, there are thousands — **four thousand and counting**, to
+be exact! That’s right, as of April 2026, US-RSE has grown to over 4,000
+registered members! That means if you tried to count every member one by
+one, it would take you [over an hour](https://numbermatics.com/n/4000/)
+to count them all. 4000 is also a Harshad number, which means it’s
+divisible by the sum of its digits (4 + 0 + 0 + 0 = 4). So, in a way,
+our membership is mathematically harmonious! Also, did you know that the
+recent Artemis mission flew approximately [4000 miles above the moon’s
+surface](https://science.nasa.gov/solar-system/skywatching/night-sky-network/night-sky-network-celebrates-artemis-ii/)?
+Okay, you get the point — that’s a lot of RSEs, and we’re thrilled to
+have each and every one of you as part of our community.
+
+So grab a beverage, sit back, and dive in to the latest news and updates
+from your 4000-member-strong community of research software engineers!
 
 <p align="center">
-  <img src="{{ site.baseurl }}/assets/img/newsletter-202603/Hedy-Lamarr-2-Carlson-Caspers-300x187.jpg" alt="Hedy Lamarr in front of her frequency-hopping, spread-spectrum communications patent." style="width: 750px; height: auto;">
+  <img src="{{ site.baseurl }}/assets/img/newsletter-202605/us-rse_4k_members.png" alt="Colourful poster with the words “Celebrating 4,000+ Member Milestone” and a progression of trees growing from a seedling to a full tree, with the number 4011 prominently displayed." style="width: 750px; height: auto;">
 </p>
 
 In this issue:
 
 ------------------------------------------------------------------------
 
-## 🔔 Celebrating Women in RSE! 🔔
+## 🤩 Wait a Minute, I’m an RSE, I Know How to Do That! 🤩
 
 <a name="headline"></a>
 
-March is Women’s History Month — or as we like to say in RSE circles:
-who run the code? Girls. 💻✨
+*I know how to do that!*
 
-This month, we’re celebrating the women who build, debug, refactor,
-merge, deploy, and somehow still remember to update the README. Despite
-often being overlooked, women have always been involved in the evolution
-of computing. For example, Wi-Fi, the technology you’re probably using
-to read this article right now, wouldn’t exist if it weren’t for the
-invention of, “An Extraordinary New Communication System,” called
-*frequency hopping*, patented in 1942. The technology was primarily used
-in warfare, allowing torpedoes to reach their targets undetected in WWII
-and beyond. The inventor? None other than *actress-turned self-taught
-engineer* [Hedy
-Lamarr](https://www.netgear.com/hub/network/meet-the-mother-of-wifi/),
-earning her a posthumous induction into the National Inventors Hall of
-Fame, and the endearing title, “The Mother of Wi-FI.”
+It is one of the most rewarding thoughts you can have as a research
+software engineer: that moment when you notice a colleague, PI,
+collaborator, or student struggling with a software problem and realize
+you can help.
 
-Fast forward to today, and women continue to contribute significantly to
-research and engineering. You may remember that in 2019 the first ever
-image of a black hole was captured by the Event Horizon Telescope (EHT).
-The lead researcher and algorithm developer on the team was 29-(at the
-time)-year-old [Katie Bouman of
-MIT](https://www.bbc.com/news/science-environment-47891902), whose work
-has helped to confirm some of Einstein’s most radical theories about the
-fabric of the universe itself.
+Not because they are unmotivated. Not because they are bad scientists.
+But because things are not working, not moving quickly enough, or not
+being recognized for what they are: software problems that can be solved
+with the right tools, techniques, and expertise. Maybe the scientist is
+looking toward industry and thinking, “I wish we could move as quickly
+as Google, Facebook, or Microsoft.” Or, more recently, “I wish we could
+figure out how to really use all this LLM stuff.” Ever persistent, the
+scientist keeps chasing their research questions. They want to discover
+the next big thing in their field. They want to make an impact. But
+because their workflow was essentially written in 2012, and because they
+do not have the time, support, or expertise to modernize it, they are
+stuck moving at the pace of 2012.
 
-It’s abundantly clear that women have been shaping computational science
-and research all throughout history, even when history chooses to
-relegate them footnotes.
+And as RSEs, we get it! Code can be fragile — and scary. If a new
+student or postdoc touches it, they might break it. If the code breaks,
+so might every paper, grant, and project built on top of it. When was
+the last time it was updated? Months ago? Years ago? So the scientist
+does not touch it. They treat it like a Rube Goldberg machine: they know
+it works, but they no longer remember how. At this point, they are too
+afraid to find out.
 
-**Research software engineering is no exception.** Women in our
-community are designing infrastructure, leading teams, strengthening
-open science, and mentoring the next generation of RSEs. So, this March,
-take an opportunity to shine a spotlight on women in computing in your
-life. Make the active choice to amplify voices and celebrate the talent
-that keeps our science running. Because great research software doesn’t
-just happen — it’s built by people. And a lot of the time, it’s built by
-women.
+As RSEs, we see this…and get excited.
 
-> Looking for a fun historical movie to celebrate women in computational
-> science? The famous “Hidden Figures” mathematicians of NASA were a
-> group of women responsible for calculating trajectories that got
-> humans to the Moon whose [theatrical
-> movie](https://en.wikipedia.org/wiki/Hidden_Figures) is a MUST-SEE!
+Because we know how to help. 🥹
+
+I first came across the term “RSE” in the wonderfully cute and
+informative 2019 YouTube video, [The Story of the Research
+Engineer](https://www.youtube.com/watch?v=trAfA9VWLTQ), and I instantly
+fell in love with the idea. Here was a name for the squeaky wheel that
+gets the grease: the person who helps scientists get unstuck, move
+faster, and work more sustainably. But then as now, the field was young.
+There was not much consensus about what an RSE was, where they belonged,
+or how institutions should support them.
+
+The term itself emerged in the UK [in
+2012](https://www.software.ac.uk/blog/not-so-brief-history-research-software-engineers-0),
+after a group of researchers and software practitioners began
+formalizing a role that many people were already doing but few
+institutions knew how to recognize. Since then, definitions have been
+proposed, refined, and debated.
+
+Ian Cosden, one of our newsletter editors and Director of *Research
+Software Engineering for Computational & Data Science* at Princeton,
+defines the role partly by what it is not. An RSE, he argues, is not
+simply a researcher, not simply a facilitator, and not simply a pure
+software engineer. The role lives in the productive space between those
+identities.
+
+<p align="center">
+
+<img src="https://cosden.github.io/assets/images/posts/2019/RSE-diagram.png" alt="RSE role schematic. A triangle with traditional research IT support at the top vertex, professional software engineering at the bottom left, and researcher/scientist at the bottom right. An oblong bubble with the word RSE sits along the bottom side of the triangle" style="width: 750px; height: auto;"/>
+
+</p>
+
+Goth et al. ([2025](https://f1000research.com/articles/13-1429)) offer
+one recent attempt to concretize the foundational competencies and
+responsibilities of an RSE, including software development, building and
+distributing software assets, understanding the research lifecycle, and
+supporting reproducible, sustainable research. [Vanessa Sochat’s
+EasyBuild talk](https://www.youtube.com/watch?v=FB2yV8TNnSw), on the
+other hand, emphasizes just how broad this space can be: among roughly
+400 people surveyed who identified themselves to be working on “research
+software” in some capacity, there were more than *190 unique job
+titles*. That degree of diversity can be both a strength and a
+challenge. It shows how widely research software work appears across
+institutions, but it also explains why the role can be so difficult to
+define, hire for, promote, and reward. Another one of our US-RSE
+members, Dan Katz, proposes a 3-dimensional schematic to isolate the
+Super RSE role who commands “a superset of the responsibilities of the
+traditional RSE role, combining both service and the RSE’s own
+research.”
+
+<p align="center">
+
+<img src="https://danielskatzblog.wordpress.com/wp-content/uploads/2019/07/screen-shot-2019-07-12-at-7.09.31-am.png" style="width: 750px; height: auto;"/>
+</p>
+
+By identifying this RSE unicorn, Katz highlights the fact that as we
+define the breadth of the scope of the RSE, we also need to think about
+its potentially necessary boundaries.
+
+In a 2022 [career Q&A in
+*Nature*](https://www.nature.com/articles/d41586-022-01516-2), Paul
+Richmond predicted that RSEs could become equals in the academic
+environment if they receive proper recognition for their contributions.
+James Schloss, in his [YouTube
+talk](https://www.youtube.com/watch?v=t2BjZ5hSjHo) highlights some of
+the barriers still standing in the way: the publication economy,
+academic resistance to software engineering best practices, and the
+difficulty of competing with industry salaries for people with similar
+technical expertise. In fact, one of my very first suggestions for
+newsletter topics was to discuss the definition of the title “Research
+Software Engineer” itself, and I was told very firmly to avoid the topic
+as much as possible — not because it was inflammatory, but because it
+remains a particularly sensitive topic. While many are strongly attached
+to the name for its truthiness, just as many others are more concerned
+with defining the tasks, responsibilities, and competencies of the role,
+regardless of what it is called, because funding sources will pay a
+great deal of attention to those details.
+
+But friends, there is hope. 🌱
+
+Just as a small group of concerned scientists and software practitioners
+began with an idea, a conversation, and a Google Group, we can continue
+making the role visible at our own institutions. This can be through
+formal titles, clearer career paths, better credit, stronger communities
+of practice, or simply naming the work when we see it as we help
+research software engineering become easier to recognize and harder to
+ignore. This week, celebrate yourself by encouraging your colleagues,
+coworkers, PIs, and students to **make this role visible**. Look around.
+We are once again watching technology change the fabric of research
+itself. Rigorous science, and the software that powers it, cannot afford
+to be left behind. Now more than ever, research needs talented, driven,
+curious technology specialists who can ask new questions, solve
+impossible bugs, push compute clusters to their limits, and preserve the
+code — and the science — that so many people depend on.
+
+Our Executive Director had this to say about the importance of this
+community:
+
+“Reaching more than 4,000 members is not just a milestone in numbers -
+it reflects a growing community of people who care deeply about
+advancing research through software, collaboration, and support for one
+another. As Executive Director, I am incredibly grateful to be part of
+this community and inspired every day by the generosity, expertise, and
+passion our members bring to US-RSE. Thank you for helping build a place
+where research software engineers can truly belong.”
+
+> [Sandra](https://us-rse.org/about/staff/)
+
+This month, we thank the scrappy and passionate group of researchers who
+helped crystallize the idea of the Research Software Engineer, [one
+quiet afternoon in Oxford, UK, in
+2012](https://www.pure.ed.ac.uk/ws/portalfiles/portal/65195747/DR2012_12_1_.pdf).
+And the next time you notice a colleague struggling with a technical
+problem, be the RSE on their shoulder. Gently remind them:
+
+*Hey, I know how to do that.*
+
+> You are braver than you believe, stronger than you seem, and smarter
+> than you think. A. A. Milne, *Winnie the Pooh*
 
 ------------------------------------------------------------------------
 
@@ -93,23 +206,32 @@ women.
 
 <a name="conference2026"></a>
 
-Save the date for USRSE’26: Advancing Science in the Age of AI
+Save the date for USRSE’26: **Advancing Science in the Age of AI**
+
+<p align="center">
+
+<img src="{{ site.baseurl }}/assets/img/newsletter-202605/usrse26-logo_6.svg" alt="USRSE'26 Conference Logo" style="width: 750px; height: auto;"/>
+</p>
 
 We’re thrilled to announce that USRSE’26 will be held at the San Jose
 Marriott from October 19-21, 2026 in San Jose, California, with the
-theme “Advancing Science in the Age of AI”.
+theme **“Advancing Science in the Age of AI”.**
 
-General chairs have been appointed to lead each of the core committees
-for USRSE’26. These chairs have begun assembling sub‑teams from the pool
-of volunteers who expressed interest in supporting the respective areas.
-If you were not selected for a chair position, please stay tuned, as
-chairs reach out for volunteers for these committee positions.
+Chairs have been appointed to lead each of the core committees for
+USRSE’26. These chairs have begun assembling sub‑teams from the pool of
+volunteers who expressed interest in supporting the respective areas. If
+you were not selected for a chair position, please stay tuned, as chairs
+reach out for volunteers for these committee positions.
 
 **What’s next?**
 
-- **Call for Proposals:** The Call for Proposals will be announced later
-  this month. Additional upcoming milestones will be announced on the
-  official USRSE’26 site over the next few months.
+- **Call for Proposals:** Submit your work via papers, short talks,
+  BoFs, workshops, or posters. [View
+  More](https://us-rse.org/usrse26/participate/)
+- **Call for Reviewers:** Play a key role in creating a dynamic and
+  varied technical program that will appeal to conference attendees from
+  all RSE backgrounds. [Apply to
+  Review](https://forms.gle/hDGsK52sJFqUA2MA7)
 - **Committee Formation:** Sub‑teams will be formed shortly; be on the
   lookout for an email from a perspective committee chair with details.
 - **Stay Informed:** Regular updates will be posted at
@@ -175,6 +297,7 @@ interested in becoming an organizational founding member!
 {% for org in site.data.org-members.standard %}
 
 - [{{ org.name }}]({{ org.url }})
+- [Flatiron Institute](https://www.simonsfoundation.org/flatiron/)
 
 {% endfor %}
 
@@ -193,44 +316,41 @@ interested in becoming an organizational founding member!
 
 <!--Someone you want to shoutout? DO IT HERE!-->
 
-#### Women’s History Month in US-RSE
+### **Community Shoutouts**
 
-Here at US-RSE, we continue our commitment to Diversity, Equity, and
-Inclusion. Our community is strengthened by the wide range of
-experiences, backgrounds, and perspectives that each of our members
-brings. This March, we are proud to recognize and celebrate the women in
-Research Software Engineering whose leadership, creativity, and
-perseverance support and elevate our work.
+🥳 Congratulations to members of the RSE community recognized with
+[Stanford Data Science
+(CORES)](https://datascience.stanford.edu/cores/awards) awards!
 
-If you are a woman RSE, we are celebrating you. Your skill and
-dedication advance research, support teams, and open doors for others
-who may be building their own paths in technical fields. Your presence
-and contributions encourage colleagues and future RSEs, sometimes
-through direct mentorship and sometimes simply by being visible in
-spaces where representation has not always been guaranteed.
+- Malcolm Barrett & Alex Koufos : OpenSource@Stanford Community Prize
+- Ellianna Abrahams: Open Science Innovator Prize
 
-Women in science, engineering, and computing have faced and overcome
-significant obstacles throughout history. Despite these challenges,
-women have driven discovery, shaped computing, and changed the course of
-research and technology. Today, women continue to innovate and lead
-across academia, national labs, industry, and open source communities,
-bringing insight and expertise that strengthen the broader research
-landscape.
+These awards recognize individuals who have made significant
+contributions to open science and data science, and we’re thrilled to
+see members of our community being honored for their impactful work!
 
-We wish all the women in the RSE community a meaningful and joyful
-Women’s History Month. May this month bring recognition, celebration,
-and renewed energy. Thank you for your work, your resilience, and the
-creativity you bring to the community.
+Additionally, The RAPTOR team from Argonne National Laboratory and
+collaborating institutions recently won the SC25 Best Reproducibility
+Advancement Award, using Chameleon Cloud to make their artifact fully
+reproducible. This marks the second consecutive year a Chameleon user
+has taken home this honor!
 
-– US-RSE DEI Working Group
+Read the announcement
+[here](https://blog.chameleoncloud.org/posts/sc25-best-reproducibility-advancement-award/).
 
-#### Working Group News
+### RSE’s with a New York State of Mind… 🗽
 
-The Education and Training Working Group’s next Seminar Series Tutorial
-is coming up Tuesday March 24, 2-4pm ET (11am-1pm PT)! In Continuous
-Integration and Continuous Delivery (CI/CD) with GitHub Actions, Andres
-Rios-Tascon from Princeton University will walk you through using
-GitHub’s CI/CD tools.
+The NYC Regional Group recently met up for their inaugural in-person
+hangout! Special thanks to Roger Ferger for spearheading the event!
+
+<p align="center">
+
+<img src="{{ site.baseurl }}/assets/img/newsletter-202605/20260511_182844.jpg" alt="NYC Regional Group Meetup of 6 RSEs sitting at a table at Everything's Jack in New York" style="width: 750px; height: auto;"/>
+</p>
+
+As an added bonus, the group also now has a dedicated page on the US-RSE
+website! Check it out [here](https://us-rse.org/ag/rg-nyc/) to learn
+more about the group and how to get involved.
 
 > Did you know that we have a community Code of Conduct? Anyone is able
 > to view it in the `#code_of_conduct` Slack channel, under `Files`!
@@ -238,14 +358,6 @@ GitHub’s CI/CD tools.
 ### **Community Calls**
 
 <!--Community call news goes here-->
-
-On March 12th, the US-RSE community got together to discuss **Legacy
-Code: Horrors and Successes**!
-
-We heard stories from Keith, James, Brad, and more about some of the
-projects they’ve inherited and how they dealt with codebases with
-developers in absentia, cryptic comments and functions, and the
-different edge cases that can come up when handling them.
 
 <!-- Add a link to the recording of the call if available 
 **TBD last call**
@@ -257,8 +369,8 @@ different edge cases that can come up when handling them.
 </div>
 -->
 
-Our next meeting is scheduled for Friday, April 10, 2026, 1:00 PM EST.
-We hope to see you there!
+Our next meeting is scheduled for Friday, June 12, 2026, 12:00PM EST. We
+hope to see you there!
 
 ------------------------------------------------------------------------
 
@@ -316,7 +428,7 @@ the `#newsletters` channel!
 {% endfor %}
 {% endif %}
 
-{% assign podcasts = refs | where: "type", "song" %}
+{% assign podcasts = refs | where: "type", "motion_picture" %}
 
 {% if podcasts.size > 0 %}
 ### 🎧 Podcast Episodes
@@ -328,7 +440,7 @@ the `#newsletters` channel!
 {% assign other = refs | where: "type", "webpage" %}
 
 {% if other.size > 0 %}
-### 📇 Blog Posts & Other Reads
+### 📇 Blog Posts, Videos, & Other Reads
 {% for ref in other %}
 {% include citation.html ref=ref %}
 {% endfor %}

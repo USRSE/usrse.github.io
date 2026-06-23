@@ -56,14 +56,14 @@
   name: Research Software Engineering Core
   url: https://med.nyu.edu/research/scientific-cores-shared-resources/research-software-engineering-core
 - institution: Lawrence Berkeley National Laboratory
-  name: Sustainable Software Engineering
-  url: https://crd.lbl.gov/divisions/scidata/sustainable-software-engineering/
+  name: Scientific Software Engineering
+  url: https://scidata.lbl.gov/research-areas/groups/scientific-software-engineering/
 - institution: University of Michigan
   name: LSA Technology Services Research Software Engineering
   url: https://lsa.umich.edu/technology-services/services/research-tools/research-programming-apps.html
 - institution: Lawrence Berkeley National Laboratory
-  name: Usable Data Systems
-  url: https://crd.lbl.gov/divisions/scidata/uds/
+  name: Scientific Data Management & Usable Data Systems
+  url: https://scidata.lbl.gov/research-areas/groups/scientific-data-management-usable-data-systems/
 - institution: Saint Louis University
   name: Open Source with SLU
   url: https://oss-slu.github.io/

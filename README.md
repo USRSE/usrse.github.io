@@ -3,7 +3,7 @@
 https://us-rse.org
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-99-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-102-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## What is this?
@@ -46,6 +46,74 @@ Please [fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSfYK64R1c0rj
 
 Further content editing tips are in the [details file](docs/details.md)
 
+### Ignoring Bots
+
+If its been a while since you've last worked on the site,
+you'll notice that several commits were made by bots, with
+the author name `github-actions`. These are
+automated commits that are part of our continuous integration (CI)
+suite, and they help keep the site up-to-date and running smoothly
+by automatically updating data like the Job Board. You can safely 
+ignore these commits when reviewing the site's history, but when
+contributing, you may wonder how to deal with them. Worse still,
+if you forked the repository, you may encounter a bot in your
+fork doing the same. When you open your fork on GitHub, these
+commits might put you "Ahead" of the `upstream/main` branch, when
+in reality you just had a different bot committing the same changes
+in response to the same triggers.
+
+This cannot be automatically merged, and if you submit a PR with
+your fork's commits, including the bot commits, it could cause confusion
+as additional commits are added, or worse — it could cause a merge conflict
+and a minor headache for you for the next 20 minutes.
+
+To prevent this, it's recommended to strictly and forcefully pull the latest 
+changes from `upstream/main` into your fork before you start working.
+
+First, in GitHub, make sure to click "Sync Fork" to get any
+updates. It will be at this stage that you'll notice that,
+even though you just asked GitHub to send you the latest work from USRSE,
+your fork is _n_ commits ahead of the `upstream/main` branch. These are the
+bot commits.
+
+On your local machine and in your local repository, grab the latest changes from `origin` remote (your fork):
+
+```
+git fetch origin main
+git pull origin main
+```
+
+Then, fetch the latest changes from `upstream` remote (the USRSE repository):
+
+```
+git fetch upstream main
+```
+
+Then, `diff` your local main against the upstream main:
+
+```
+git diff main upstream/main
+```
+
+You should see that there are no changes, which means that your 
+local main is up-to-date with the upstream main. The bot in your fork added
+commits, but the changes were identical to the upstream bot's. If this
+is true, you can safely `reset` your local main to match the upstream main, which will remove the bot commits from your local history:
+
+```
+git reset --hard upstream/main
+```
+
+Then, push the changes to your fork, which will update your fork's main branch to match the upstream main branch:
+
+```
+git push origin main --force
+```
+
+The use of `--force` here is necessary, because you are essentially
+telling your fork to discard certain commits, which `git` never wants
+to do by accident. In this case, it's totally safe! Your fork on
+GitHub should now be "even" with the USRSE fork!
 
 ## Pull Request (PR) Process
 
@@ -250,6 +318,9 @@ tool to generate a contributors graphic below.
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><img src="?s=100" width="100px;" alt="J.C."/><br /><sub><b>J.C.</b></sub><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=jsubida" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/pengyin-shan"><img src="https://avatars.githubusercontent.com/u/92752107?v=4?s=100" width="100px;" alt="Pengyin Shan"/><br /><sub><b>Pengyin Shan</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=pengyin-shan" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ElpyDE"><img src="https://avatars.githubusercontent.com/u/13076019?v=4?s=100" width="100px;" alt="Roland Ferger"/><br /><sub><b>Roland Ferger</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=ElpyDE" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Shubhamjha-sj"><img src="https://avatars.githubusercontent.com/u/35863362?v=4?s=100" width="100px;" alt="Shubhamjha-sj"/><br /><sub><b>Shubhamjha-sj</b></sub></a><br /><a href="https://github.com/USRSE/usrse.github.io/commits?author=Shubhamjha-sj" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>

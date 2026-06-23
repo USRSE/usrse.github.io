@@ -114,13 +114,14 @@ women.
 
 <a name="conference2026"></a>
 
-Save the date for USRSE’26: Advancing Science in the Age of AI
+Save the date for **USRSE’26: Advancing Science in the Age of AI**
 
 We’re thrilled to announce that USRSE’26 will be held at the San Jose
 Marriott from October 19-21, 2026 in San Jose, California, with the
-theme “Advancing Science in the Age of AI”.
+theme “Advancing Science in the Age of AI: Explore how RSEs and collaborators
+increase research impact during these rapidly changing times.”.
 
-General chairs have been appointed to lead each of the core committees
+Chairs have been appointed to lead each of the core committees
 for USRSE’26. These chairs have begun assembling sub‑teams from the pool
 of volunteers who expressed interest in supporting the respective areas.
 If you were not selected for a chair position, please stay tuned, as
@@ -128,11 +129,11 @@ chairs reach out for volunteers for these committee positions.
 
 **What’s next?**
 
-- **Call for Proposals:** The Call for Proposals will be announced later
-  this month. Additional upcoming milestones will be announced on the
-  official USRSE’26 site over the next few months.
-- **Committee Formation:** Sub‑teams will be formed shortly; be on the
-  lookout for an email from a perspective committee chair with details.
+- **Call for Proposals:** The Call for Proposals are open! Check out our
+  [participate page on the USRSE'26 website](https://us-rse.org/usrse26/participate).
+- **Review Submissions:** We need volunteers to help review all the submissions
+  we expect to receive. If you're interested in helping, please fill out the
+  [form here](https://forms.gle/ufjrVUhuckGrgRJ98).
 - **Stay Informed:** Regular updates will be posted at
   [us-rse.org/usrse26](https://us-rse.org/usrse26). Please bookmark the
   page and check back frequently for the latest information.

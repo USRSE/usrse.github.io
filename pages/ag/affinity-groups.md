@@ -73,6 +73,10 @@ The North Carolina Regional Group connects US-RSE members in North Carolina and 
 
 The St. Louis Metro Regional Group connects US-RSE members in the St. Louis Metro region and organizes local events.
 
+<h3><a href="{{ site.baseurl }}/ag/rg-nyc/">New York City Regional Group</a></h3>
+
+The New York City Regional Group connects US-RSE members in/around NYC and organizes local events.
+
 <h3><a href="{{ site.baseurl }}/ag-institutional-rse-networking/">Institutional RSE Networking</a></h3>
 
 The Institutional RSE Networking Affinity Group connects Research Software Engineers (RSEs) who support or aspire to develop RSE communities within their organizations.

@@ -1,22 +1,22 @@
 layout: post
-title: "US-RSE March 2026 Newsletter"
-subtitle: "💋 Who Run the Code…? GIRLS! 💋"
+title: "US-RSE May 2026 Newsletter"
+subtitle: "🙌 There Are Dozens of Us, DOZENS! 🙌"
 category: newsletter
-tags: [newsletter, March]
-date: 2026-03-12 00:00:00 -0400
+tags: [newsletter, May]
+date: 2026-05-20 00:00:00 -0400
 author: "Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden (Editor)"
-image: "/assets/img/newsletter-202603/Hedy-Lamarr-2-Carlson-Caspers-300x187.jpg"
-img_alttext: "Hedy Lamarr in front of her frequency-hopping, spread-spectrum communications patent."
-next_meeting_date: Friday, April 10, 2026, 1:00 PM EST
+image: "/assets/img/newsletter-202605/us-rse_4k_members.png"
+img_alttext: "Colourful poster with the words \"Celebrating 4,000+ Member Milestone\" and a progression of trees growing from a seedling to a full tree, with the number 4011 prominently displayed."
+next_meeting_date: Friday, June 12, 2026, 12:00PM EST
 sections:
-  preamble: true
-  headline: true
-  conference: true
-  execupdate: false
-  scupdate: false
-  orgmember: true
-  communityfunds: false
-  news: true
+  preamble: true # done
+  headline: true # done
+  conference: true # done
+  execupdate: false # done
+  scupdate: false # yay!
+  orgmember: true # done
+  communityfunds: false # no changes, check back in june
+  news: true # add community call summary
   events: true
   reads: true
   involved: true

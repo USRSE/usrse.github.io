@@ -64,7 +64,6 @@ Active members attend our regular meetings at least once a quarter (once every 3
 - [RSE job board](https://society-rse.org/careers/vacancies/) (international)
 - [SfN job board](https://neurojobs.sfn.org/jobs/) (skews academic)
 - [US-RSE job board](https://us-rse.org/jobs/)
-- [world wide neuro job board](https://www.world-wide.org/jobs/) (skews academic)
 
 ## Other places to find jobs
 
@@ -79,7 +78,7 @@ Active members attend our regular meetings at least once a quarter (once every 3
 
 - [comp-neuro mailing list](https://www.cnsorg.org/comp-neuro-mailing-list)
 - [cvnet mailing list](https://info.cvnet.org) (skews academic)
-- [visionlist mailing list](http://visionscience.com/mailman/listinfo/visionlist_visionscience.com) (skews academic)
+- [visionlist mailing list](https://web.archive.org/web/20260310085452/https://visionscience.com/mailman/listinfo/visionlist_visionscience.com) (skews academic)
 - [connectionists mailing list](https://mailman.srv.cs.cmu.edu/mailman/listinfo/connectionists) (skews academic)
 
 ## Google groups / mailing lists / forums

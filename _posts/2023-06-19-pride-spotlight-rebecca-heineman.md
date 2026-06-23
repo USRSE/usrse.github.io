@@ -61,4 +61,4 @@ Connect:
 
 - LinkedIn: <https://www.linkedin.com/in/burgerbecky/>
 - Twitter: <https://twitter.com/burgerbecky>
-- Website: <https://www.burgerbecky.com/>
+- Website: <https://web.archive.org/web/20251219143428/https://www.burgerbecky.com/>

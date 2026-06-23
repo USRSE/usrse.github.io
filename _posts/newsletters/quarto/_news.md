@@ -4,21 +4,34 @@
 
 <!--Someone you want to shoutout? DO IT HERE!-->
 
-#### Women's History Month in US-RSE
+### **Community Shoutouts**
 
-Here at US-RSE, we continue our commitment to Diversity, Equity, and Inclusion. Our community is strengthened by the wide range of experiences, backgrounds, and perspectives that each of our members brings. This March, we are proud to recognize and celebrate the women in Research Software Engineering whose leadership, creativity, and perseverance support and elevate our work.
+🥳 Congratulations to members of the RSE community recognized with [Stanford Data Science (CORES)](https://datascience.stanford.edu/cores/awards) awards!
 
-If you are a woman RSE, we are celebrating you. Your skill and dedication advance research, support teams, and open doors for others who may be building their own paths in technical fields. Your presence and contributions encourage colleagues and future RSEs, sometimes through direct mentorship and sometimes simply by being visible in spaces where representation has not always been guaranteed.
+- Malcolm Barrett & Alex Koufos : OpenSource@Stanford Community Prize
+- Ellianna Abrahams: Open Science Innovator Prize
 
-Women in science, engineering, and computing have faced and overcome significant obstacles throughout history. Despite these challenges, women have driven discovery, shaped computing, and changed the course of research and technology. Today, women continue to innovate and lead across academia, national labs, industry, and open source communities, bringing insight and expertise that strengthen the broader research landscape.
+These awards recognize individuals who have made significant contributions to open science and 
+data science, and we're thrilled to see members of our community being honored for their impactful 
+work!
 
-We wish all the women in the RSE community a meaningful and joyful Women’s History Month. May this month bring recognition, celebration, and renewed energy. Thank you for your work, your resilience, and the creativity you bring to the community.
+Additionally, The RAPTOR team from Argonne National Laboratory and collaborating 
+institutions recently won the SC25 Best Reproducibility Advancement Award, using 
+Chameleon Cloud to make their artifact fully reproducible. This marks the second 
+consecutive year a Chameleon user has taken home this honor!
 
--- US-RSE DEI Working Group
+Read the announcement [here](https://blog.chameleoncloud.org/posts/sc25-best-reproducibility-advancement-award/).
 
-#### Working Group News
+### RSE's with a New York State of Mind... 🗽
 
-The Education and Training Working Group’s next Seminar Series Tutorial is coming up Tuesday March 24, 2-4pm ET (11am-1pm PT)! In Continuous Integration and Continuous Delivery (CI/CD) with GitHub Actions, Andres Rios-Tascon from Princeton University will walk you through using GitHub’s CI/CD tools.
+The NYC Regional Group recently met up for their inaugural 
+in-person hangout! Special thanks to Roger Ferger for spearheading the event!
+
+<p align="center">
+    <img src="{{ site.baseurl }}/assets/img/newsletter-202605/20260511_182844.jpg" alt="NYC Regional Group Meetup of 6 RSEs sitting at a table at Everything's Jack in New York" style="width: 750px; height: auto;"/>
+</p>
+
+As an added bonus, the group also now has a dedicated page on the US-RSE website! Check it out [here](https://us-rse.org/ag/rg-nyc/) to learn more about the group and how to get involved.
 
 > Did you know that we have a community Code of Conduct? Anyone is able to view it in the
 `#code_of_conduct` Slack channel, under `Files`!
@@ -26,11 +39,6 @@ The Education and Training Working Group’s next Seminar Series Tutorial is com
 ### **Community Calls**
 
 <!--Community call news goes here-->
-
-On March 12th, the US-RSE community got together to discuss **Legacy Code: Horrors and Successes**!
-
-We heard stories from Keith, James, Brad, and more about some of the projects they've inherited and how they dealt with codebases with developers in absentia, cryptic comments and functions, and the different edge cases that can come up when handling them.
-
 <!-- Add a link to the recording of the call if available 
 **TBD last call**
 <div style="position: relative; width: 100%; max-width: 640px; margin: 0 auto; overflow: hidden; background: #000; aspect-ratio: 16 / 9;">

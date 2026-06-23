@@ -18,7 +18,7 @@ The Outreach working group has two questions for you:
 - Are you going to [PEARC23](https://pearc.acm.org/pearc23/), taking place this year in Portland, OR?
 
 If you answered _Yes_ to either question, we invite you to join your fellow
-RSEs at [Cartside Food Carts](https://www.cartsidepdx.com/), 1825 N Williams. 
+RSEs at Cartside Food Carts, 1825 N Williams. 
 
 We will be meeting at 6 PM Pacific time following the
 [Software Engineering for Research Software workshop](https://se4science.org/workshops/se4rs23/index.htm).

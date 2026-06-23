@@ -22,24 +22,12 @@ To get involved, visit the
 [`#wg-mentorship-program`](https://usrse.slack.com/messages/wg-mentorship-program) channel
 on the US-RSE slack.
 
-**Co-Chairs**: Daniel Shown, Reed Milewicz
+**Co-Chairs**: Pengyin Shan, TBD
 
-# Work Products
+> If you are interested in being a mentor or mentee, fill in <a href="https://docs.google.com/forms/d/1ke_Kc9DB7aUkLd7cHO4-37Z-BdrMKeJcblFWyKBb48A/viewform" target="_blank">this form</a> and ping Pengyin Shan in the US-RSE Slack. We will be using them to organize the first round of matching and kickoff planning.
 
-TBD.
+# Kickoff Meeting
 
-------
+We are organizing a new kickoff meeting for the mentorship program based on the interest survey responses. The kickoff will focus on program goals, mentor and mentee expectations, matching, and next steps for the first round of participation.
 
-<!-- 
-## TOPIC 1
-
-Put data about intended efforts or work products here.
-
-------
-
-## TOPIC 2
-
-Put data about intended efforts or work products here.
-
-------
--->
+**Register for the kickoff meeting on 3 - 3:45 PM ET at May 4, 2026: [Kickoff Meeting Zoom](https://illinois.zoom.us/j/82386268562)**

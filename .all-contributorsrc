@@ -1070,6 +1070,39 @@
             "avatar_url": [
                 null
             ]
+        },
+        {
+            "login": "pengyin-shan",
+            "name": "Pengyin Shan",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/pengyin-shan",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/92752107?v=4"
+            ]
+        },
+        {
+            "login": "ElpyDE",
+            "name": "Roland Ferger",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/ElpyDE",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/13076019?v=4"
+            ]
+        },
+        {
+            "login": "Shubhamjha-sj",
+            "name": "Shubhamjha-sj",
+            "contributions": [
+                "code"
+            ],
+            "profile": "https://github.com/Shubhamjha-sj",
+            "avatar_url": [
+                "https://avatars.githubusercontent.com/u/35863362?v=4"
+            ]
         }
     ],
     "contributorsPerLine": 7
