@@ -10,7 +10,9 @@ set_last_modified: true
 # Overview
 
 The RSE Group Leaders’ Network (RSE-GLN) is a group of individuals leading RSE teams
-who meet to support their peers with the challenges of leading RSE groups.  
+who meet to support their peers with the challenges of leading RSE groups. 
+
+**Co-Chairs**: Adam Rubens, Daniel Madren
 
 # Membership
 
