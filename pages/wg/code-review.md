@@ -50,7 +50,7 @@ on the US-RSE slack.
 
 ## Automated Code Review Tools
 
-- [Repo-Review](https://learn.scientific-python.org/development/guides/repo-review/)
+- [Repo-Review](https://learn.scientific-python.org/development/pages/guides/repo-review/)
 - [Codefair](https://github.com/fairdataihub/codefair-app)
 
 ## Code Review Anxiety
