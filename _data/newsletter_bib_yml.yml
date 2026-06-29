@@ -388,6 +388,19 @@ references:
   title-short: GitHub
   type: webpage
   url: "https://www.theregister.com/2026/03/26/github_ai_training_policy_changes/"
+- abstract: "A 1:49 walkthrough of the Clusterra console: from an empty
+    AWS account to a running Slurm cluster, a submitted job, and a live
+    JupyterLab notebook — all in your own AWS, same day."
+  accessed: 2026-06-29
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-29T15:29:59.361Z
+  id: clusterraBioChemreadySlurmCluster2026
+  issued: 2026-04-25
+  title: <span class="nocase">BioChem-ready</span> Slurm Cluster in
+    minutes — Clusterra Walkthrough
+  type: motion_picture
+  url: "https://www.youtube.com/watch?v=a1-GGm3tAbI"
 - abstract: "English Edition: In a follow up about \"unusual\" computers I
     want to focus on field programmable gate arrays - FPGAs. With my
     guest and former colleague at UCL, Michael McLeod, we talk about
@@ -558,6 +571,25 @@ references:
   title-short: \[EN\] Does Spec-Driven Development replace agile?
   type: song
   url: "https://codeforthought.buzzsprout.com/1326658/episodes/19163979-en-does-spec-driven-development-replace-agile-with-graham-lee"
+- abstract: New analysis shows that around one-third of America’s
+    Fortune 100 companies do not have a vulnerability disclosure policy,
+    bug bounty, or a dedicated email address for reporting security
+    flaws.
+  accessed: 2026-06-29
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-29T15:31:33.542Z
+  author:
+  - family: Whittaker
+    given: Zach
+  id: DozensAmericasLargest2026
+  issued: 2026-06-19
+  language: en-US
+  publisher: ~this week in security~
+  title: Dozens of America’s largest companies have no simple way to
+    report security flaws
+  type: webpage
+  url: "https://this.weekinsecurity.com/dozens-of-americas-largest-companies-have-no-simple-way-to-report-security-flaws/"
 - abstract: Research software and its creators have long played a
     critical role in the advancement of research worldwide. This role is
     changing in the age of “generative AI” (GenAI), but both the

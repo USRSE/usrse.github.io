@@ -236,6 +236,41 @@
       - Sep 22: MFEM, scalable, higher order finite element meshing library
 
     Sign up here: [https://hpcic.llnl.gov/tutorials/2026-hpc-tutorials](https://hpcic.llnl.gov/tutorials/2026-hpc-tutorials)
+  
+- expires: 2026-10-09
+  type: event
+  title: Data, Analysis & Software in Heliophysics (DASH) 2026
+  when: Monday, October 5 – Friday, October 9, 2026
+  where: Dublin, Ireland
+  preamble: |
+    The Data, Analysis & Software in Heliophysics (DASH) 2026 workshop brings together software developers, data practitioners, research software engineers, and scientists to discuss software, analysis methods, data systems, algorithms, and standards used throughout heliophysics.
+
+    The workshop aims to foster collaboration across the international heliophysics software community and welcomes participants at all experience levels. The program includes invited and contributed talks, poster sessions, community discussions, and collaborative working opportunities. Abstract submissions are now open.
+  links: |
+    Abstract submission and registration: [Click here](https://indico.dias.ie/event/2/)
+
+    Learn more about DASH: [Click here](https://dash.heliophysics.net/)
+
+- expires: 2026-11-16
+  type: event
+  title: RSE-HPC Workshop at SC26
+  when: Monday, November 16, 2026, 9:00 AM – 12:30 PM CST (UTC−6)
+  where: Chicago, Illinois, USA and Online
+  preamble: |
+    Held as part of SC26, the RSE-HPC Workshop brings together research software engineers and allies from around the world to discuss career development, community building, organizational support, and the future of research software engineering in high-performance computing.
+
+    The interactive program will include invited talks, panels, lightning talks, and community discussions. Abstract submissions are invited for lightning talks on topics such as RSE careers, building and sustaining RSE groups, mentoring and training, research infrastructure, funding models, and adapting to emerging technologies including AI and quantum computing.
+
+    Abstract submission deadline: August 7, 2026.
+
+    Other important dates:
+    - ~~Submissions open: Monday, June 22, 2026~~
+    - Submissions due: Friday, August 7, 2026
+    - Notifications sent: Friday, September 4, 2026
+    - Program finalized: Friday, September 25, 2026
+    - Workshop date: Monday, November 16, 2026
+  links: |
+    Workshop website, abstract submission, and registration: [Click here](https://us-rse.org/rse-hpc-2026/)
 
 #-------------------
 # Opportunities
@@ -537,3 +572,29 @@
     In addition, the PESO project is going to start an occasional UX newsletter that will include some resources on conducting UX research and ensuring usability/positive UX. If you have UX resources that should be highlighted as the newsletter launches, please reach out to the `wg-ux` channel!
   links: |
     PESO Project website: [Click here](https://pesoproject.org/)
+
+- expires: 2026-08-01
+  type: opportunity
+  title: Become a Reproducibility Ambassador for Chameleon
+  preamble: |
+    Calling all PhD students!
+
+    Have your eye on a conference taking place this year, but need some sponsorship to get there?
+    Have you conducted research or packaged experiments on Chameleon and Trovi?
+    Want an experience that will provide valuable insights on how you can make your research more reproducible and effective?
+
+    We have a great opportunity for you!
+
+    We’re excited to announce that we still have limited spots available for our Reproducibility Ambassador (RepAmb) program.
+
+    Submit an interest form or email Marc Richardson (mtrichardson@uchicago.edu) and Rani Irawan (raniayu@uchicago.edu) with the Subject: “RepAmb: Application Inquiry”. If you are selected, you’ll receive a travel grant through reimbursement (travel + registration fees) to attend a conference of your choosing.
+
+    Reproducibility Ambassadors will
+
+    1) package two experiments of their choice from their selected conference (published in recent years),
+    2) upload two short videos (2-3 mins) showcasing each artifact on YouTube,
+    3) attend the selected conference and organize a small event on reproducibility (birds of a feather, coffee chat, poster session, etc., depending on the conference organization).
+
+    Ambassadors are encouraged to engage generally with the community on common reproducibility challenges throughout the conference.
+  links: |
+    Fill out our short Google Form to apply and receive more information: [Click here](https://docs.google.com/forms/d/e/1FAIpQLSdB0AzPYr76rPq8TYPTk351ZQHKZSC1nC8omltuvc278Yhwtw/viewform?usp=sharing&ouid=116867803620356413705)

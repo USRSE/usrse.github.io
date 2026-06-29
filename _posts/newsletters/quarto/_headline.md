@@ -22,10 +22,10 @@ eternal paradox of Apple's latest OS somehow always having "the best feature, ev
 technology is rife with shiny toys that promise to solve all our problems. On the one hand, it can be
 incredibly overwhelming trying to keep up with the latest and greatest, and on the other,
 you could easily risk missing out on a tool that could be a game changer for you and your team if
-you don't branch out and experiment from time to time[1^].
+you don't branch out and experiment from time to time.
 
 This decision fatigue can end up being a significant job hazard for people who work with technology.
-What if your organization is one of the unfortunate few that decided to go all-in on Skype[2^],
+What if your organization is one of the unfortunate few that decided to go all-in on Skype,
 or what if you can't ship a new product or publish a paper because your team has not ported
 over its legacy libraries to Python 3 yet? As RSEs, part of our responsibility is to help
 scientific teams navigate this ever-changing landscape of tools and technologies, and it can
@@ -39,7 +39,7 @@ with new tools is actually a critical part of our job as RSEs, and that we can t
 of shiny toy syndrome into a "feature" of arrestive curiosity. Arrestive curiosity is the 
 tendency to be so curious about new tools and technologies that you cannot move forward with your 
 own work until you've proven a new tool is either better or worse for you than the one 
-you're currently using[3^]. If you've ever been up late at night trying to get a VSCode extension to
+you're currently using (Yes, I just came up with that term). If you've ever been up late at night trying to get a VSCode extension to
 run without error, trying to figure out why a new library can't just install on your system,
 or drawing out your ultimate note-taking entourage of apps for never losing a thought, I see you!
 This kind of curiosity can be a disastrous time sink — but it can also be a powerful way to
@@ -95,14 +95,5 @@ RSE a _great_ RSE. So, the next time you find yourself in the throes of shiny to
 channel that energy into arrestive curiosity using the flowchart I outlined above, and see where it takes you. 
 You might just find that the perfect tool was right in front of you all along, or you might end up building 
 something that changes the game for you, your team, and perhaps even the science itself.
-
-[1^]: In fact, at this UseR Boston meetup, we ourselves had a hard time rectifying our excitement
-vs. hesitation around all things AI in the R world. We could barely come to a consensus on
-whether we could be convinced to switch over to the new native pipe `|>` or stick with the beloved 
-`magrittr` pipe `%>%` that we've been using for years, all the while doing our best "old man yells at cloud" impression.
-Spoiler alert: I'm yelling at the cloud.
-[2^]: Shout out to everyone currently being held hostage by their CTO's contract with Microsoft and having to wake
-up every morning to the sound of a Teams notification. We see you, and we feel your pain.
-[3^]: Yes, I just came up with it. No, I will not be answering questions.
 
 ------------------------------------------------------------------------
