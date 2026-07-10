@@ -1,10 +1,10 @@
 ---
-nocite: "[@*]"
+nocite: \[@\*\]
 references:
 - accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T23:31:57.963Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Armstrong
     given: Matthew
@@ -33,8 +33,8 @@ references:
   volume: 183
 - accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T23:31:57.963Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Armstrong
     given: Matthew
@@ -92,8 +92,8 @@ references:
     guidance, and sustained coordination."
   accessed: 2026-05-28
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-28T20:09:36.904Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
   author:
   - family: Barker
     given: Michelle
@@ -137,7 +137,7 @@ references:
     given: Vani
   - family: Marwaha
     given: Rohan
-  - family: O'Brien
+  - family: O’Brien
     given: Elle
   - family: Price-Whelan
     given: Adrian
@@ -187,7 +187,7 @@ references:
   - family: Katz
     given: Daniel
   id: besserHowGenerativeAI
-  title: How generative AI is shaping research \... \| Open Research
+  title: How generative AI is shaping research ... \| Open Research
     Europe
   type: webpage
   url: "https://open-research-europe.ec.europa.eu/articles/6-56/v1"
@@ -206,25 +206,27 @@ references:
   language: en-US
   publisher: TechCrunch
   title: A VC and some big-name programmers are trying to solve open
-    source's funding problem, permanently
+    source’s funding problem, permanently
   type: webpage
   url: "https://techcrunch.com/2026/02/26/a-vc-and-some-big-name-programmers-are-trying-to-solve-open-sources-funding-problem-permanently/"
 - abstract: "English Edition:\\&nbsp;In this ByteSized episode \\&amp;
-    online class we're talking about GitHub Pages and how it can help
+    online class we’re talking about GitHub Pages and how it can help
     you to create a web-site for your research project (reasonably)
-    quickly. With me are Sarah Gibson and Jeremy Cohen.\\&nbsp;I'd
-    li\\..."
+    quickly. With me are Sarah Gibson and Jeremy Cohen.\\&nbsp;I’d li..."
   accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.411Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: ByteSizedCreateYour2026
   issued: 2026-05-19
   language: en-US
   title: "\\[EN\\] ByteSized: Create your web-site with GitHub Pages - J
     Cohen, S Gibson - Code for Thought"
   title-short: \[EN\] ByteSized
-  type: motion_picture
+  type: song
   url: "https://www.buzzsprout.com/1326658/episodes/19133793-en-bytesized-create-your-web-site-with-github-pages-j-cohen-s-gibson"
 - abstract: Research software is a class of software developed to
     support research. Today a wealth of such software is created daily
@@ -242,8 +244,8 @@ references:
     (US-RSE), can provide this support.
   accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.413Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Carver
     given: Jeffrey C.
@@ -313,7 +315,7 @@ references:
     potential to accelerate innovation. We surveyed researchers in two
     leading German research organizations to examine AI adoption,
     barriers, and perceived impact on research. Researchers are widely
-    using AI tools -- often for primary and creative tasks -- and many
+    using AI tools – often for primary and creative tasks – and many
     expect the technology to be transformative for research. Effective
     use appears linked to both hands-on experience and engagement with
     learning resources. A persistent gender gap in AI use is closely
@@ -351,8 +353,8 @@ references:
   issued: 2026-03-01
   keyword: AI,Innovation,Research,Survey evidence,Technology adoption
   page: 105381
-  title: Who uses AI in research, and for what? [Large-scale]{.nocase}
-    survey evidence from Germany
+  title: Who uses AI in research, and for what?
+    <span class="nocase">Large-scale</span> survey evidence from Germany
   title-short: Who uses AI in research, and for what?
   type: article-journal
   url: "https://www.sciencedirect.com/science/article/pii/S0048733325002100"
@@ -368,10 +370,10 @@ references:
     given: Thomas
   id: claburnAIStillDoesnt
   language: en-US
-  title: AI still doesn't work very well in business, reckoning soon
+  title: AI still doesn’t work very well in business, reckoning soon
   type: webpage
   url: "https://www.theregister.com/2026/03/17/ai_businesses_faking_it_reckoning_coming_codestrap/"
-- abstract: ": As of April 24 you'll be feeding the Octocat unless you
+- abstract: ": As of April 24 you’ll be feeding the Octocat unless you
     opt out"
   accessed: 2026-04-08
   annote: |
@@ -386,26 +388,42 @@ references:
   title-short: GitHub
   type: webpage
   url: "https://www.theregister.com/2026/03/26/github_ai_training_policy_changes/"
-- abstract: "English Edition: In a follow up about \\\"unusual\\\" computers
-    I want to focus on field programmable gate arrays - FPGAs. With my
-    guest and former colleague at UCL, Michael McLeod, we talk about
-    what they are, where they are used and what's so special \\..."
-  accessed: 2026-05-21
+- abstract: "A 1:49 walkthrough of the Clusterra console: from an empty
+    AWS account to a running Slurm cluster, a submitted job, and a live
+    JupyterLab notebook — all in your own AWS, same day."
+  accessed: 2026-06-29
   annote: |
     Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.412Z
+    Read_Status_Date: 2026-06-29T15:29:59.361Z
+  id: clusterraBioChemreadySlurmCluster2026
+  issued: 2026-04-25
+  title: <span class="nocase">BioChem-ready</span> Slurm Cluster in
+    minutes — Clusterra Walkthrough
+  type: motion_picture
+  url: "https://www.youtube.com/watch?v=a1-GGm3tAbI"
+- abstract: "English Edition: In a follow up about \"unusual\" computers I
+    want to focus on field programmable gate arrays - FPGAs. With my
+    guest and former colleague at UCL, Michael McLeod, we talk about
+    what they are, where they are used and what’s so special ..."
+  accessed: 2026-05-21
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: ComputingNotYou2026
   issued: 2026-05-05
   language: en-US
   title: "\\[EN\\] Computing, but not as you know it: Field Programmable
     Gate Arrays (FPGA) - with Michael McLeod - Code for Thought"
   title-short: \[EN\] Computing, but not as you know it
-  type: motion_picture
+  type: song
   url: "https://www.buzzsprout.com/1326658/episodes/19019174-en-computing-but-not-as-you-know-it-field-programmable-gate-arrays-fpga-with-michael-mcleod"
 - accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T23:31:57.963Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Cosden
     given: Ian A.
@@ -428,13 +446,26 @@ references:
   type: article-journal
   url: "https://linkinghub.elsevier.com/retrieve/pii/S0167739X26002086"
   volume: 183
+- abstract: A human-powered, fully local, fully private AI solution.
+  accessed: 2026-06-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T01:04:20.125Z
+  author:
+  - family: Labs
+    given: Squeez
+  id: CrankGPTLocalHumanpowered
+  language: en-US
+  title: CrankGPT — <span class="nocase">Local Human-powered AI</span>
+  type: webpage
+  url: "https://crankgpt.com/"
 - abstract: To effect change, the Software Sustainability Institute
     works with researchers, developers, funders, and infrastructure
     providers to identify and address key issues with research software.
   accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.413Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Crouch
     given: Stephen
@@ -521,9 +552,47 @@ references:
   type: article-journal
   url: "https://www.nature.com/articles/d41586-025-03196-0"
   volume: 646
+- abstract: "English Edition: Will spec-driven development replace agile
+    processes? My guest Graham Lee\\&nbsp; (https://chironcodex.com/ )
+    and I discuss if there is still a place for agile software
+    engineering in a world of AI assisted coding.Links:https://mart..."
+  accessed: 2026-06-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T16:05:28.241Z
+  author:
+  - family: Schmidt
+    given: Peter
+  id: DoesSpecDrivenDevelopment2026
+  issued: 2026-06-02
+  language: en-US
+  title: \[EN\] Does Spec-Driven Development replace agile? With Graham
+    Lee - Code for Thought
+  title-short: \[EN\] Does Spec-Driven Development replace agile?
+  type: song
+  url: "https://codeforthought.buzzsprout.com/1326658/episodes/19163979-en-does-spec-driven-development-replace-agile-with-graham-lee"
+- abstract: New analysis shows that around one-third of America’s
+    Fortune 100 companies do not have a vulnerability disclosure policy,
+    bug bounty, or a dedicated email address for reporting security
+    flaws.
+  accessed: 2026-06-29
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-29T15:31:33.542Z
+  author:
+  - family: Whittaker
+    given: Zach
+  id: DozensAmericasLargest2026
+  issued: 2026-06-19
+  language: en-US
+  publisher: ~this week in security~
+  title: Dozens of America’s largest companies have no simple way to
+    report security flaws
+  type: webpage
+  url: "https://this.weekinsecurity.com/dozens-of-americas-largest-companies-have-no-simple-way-to-report-security-flaws/"
 - abstract: Research software and its creators have long played a
     critical role in the advancement of research worldwide. This role is
-    changing in the age of "generative AI" (GenAI), but both the
+    changing in the age of “generative AI” (GenAI), but both the
     software and the people remain of key importance. Understanding
     these changes is essential in enabling Research Software Engineers
     (RSEs) to continue contributing the same high value to the research
@@ -537,8 +606,8 @@ references:
     remains steady and likely to increase.
   accessed: 2026-05-28
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-28T20:09:36.904Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
   author:
   - family: Druskat
     given: Stephan
@@ -681,8 +750,8 @@ references:
     software category."
   accessed: 2026-05-28
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-28T20:09:36.905Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
   author:
   - family: Hasselbring
     given: Wilhelm
@@ -742,8 +811,8 @@ references:
   volume: 119
 - accessed: 2026-05-28
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-28T20:09:36.905Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
   author:
   - family: Kamali
     given: "Author: Soudeh"
@@ -761,8 +830,8 @@ references:
   type: article-journal
   url: "https://opensky.ucar.edu/islandora/object/technotes%3A45415"
 - abstract: "Important: This document began as a draft vision statement
-    prepared in advance of the \"Research Software Engineering in the Age
-    of Generative AI\" workshop, March 2026. It was intended to lead to
+    prepared in advance of the “Research Software Engineering in the Age
+    of Generative AI” workshop, March 2026. It was intended to lead to
     discussion in the document before and discussion in-person at the
     workshop, including disagreement, and refinement. The current
     version of the document is a snapshot of that draft vision statement
@@ -785,8 +854,8 @@ references:
     widespread or leads to systemic change. At the same time, in the
     last few years, the rise of AI-assisted tools, i.e., those that can
     generate code and documentation by using large language and
-    multimodal trained models, and act in semi-autonomous \"agentic
-    modes,\" has caused significant disruption in software creation and
+    multimodal trained models, and act in semi-autonomous “agentic
+    modes,” has caused significant disruption in software creation and
     society at large. These tools raise legitimate questions about
     training data provenance, licensing, quality, security, attribution,
     environmental cost, and accountability that are hard to ignore. Yet
@@ -808,7 +877,7 @@ references:
     developing a shared vision of the future of research software is
     urgent: AI tools act as an amplifier of existing practices at every
     level: individual coding habits, institutional incentives, and the
-    commercial priorities of the companies building these tools --
+    commercial priorities of the companies building these tools –
     accelerating whatever patterns they encounter, both good and bad.
     Applied without thought, AI-assisted tools can proliferate bugs,
     embed and reinforce biases, and generate plausible-looking results
@@ -820,8 +889,8 @@ references:
     work that most requires human skill and judgment."
   accessed: 2026-05-28
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-28T20:09:36.904Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
   author:
   - family: Katz
     given: Daniel S.
@@ -857,7 +926,7 @@ references:
     given: Christina
   - family: Mandava
     given: Vani
-  - family: O'Brien
+  - family: O’Brien
     given: Elle
   - family: Price-Whelan
     given: Adrian
@@ -889,10 +958,10 @@ references:
   type: report
   url: "https://zenodo.org/records/20321134"
 - abstract: United States Research Software Engineer Association
-  accessed: 2022-05-21
+  accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.412Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Sochat
     given: Vanessa
@@ -925,25 +994,73 @@ references:
   title: A kind-of brief shared early history of US-RSE
   type: webpage
   url: "https://us-rse.org/2022-02-06-a-brief-history-of-usrse/"
-- abstract: "English Edition:\\&nbsp;there is a (relatively) new kid on
-    the block - of open source package managers. It's called Pixi: and
-    in this episode I talk to Raniere de Silva (GESIS) and Wolf
-    Vollprecht (Prefix - the company behind Pixi), what the tool br\\..."
-  accessed: 2026-05-21
+- abstract: "Scientific claims increasingly rely upon the interplay of
+    code, data, and computational environments. Yet the record of how
+    they are used together is often incomplete, scattered, or lost. This
+    undermines rigor, reproducibility, reusability, and efficiency.
+    Previous approaches have improved the governance of digital objects
+    but do not specify how research objects ought to be structured and
+    managed so they can be re-executed and extended. The community is
+    missing a shared vocabulary for this operational layer. Building on
+    recurrent practices and convergent patterns across disciplines, we
+    formalize seven principles: Self-containment, Tracking,
+    Actionability, Modularity, Portability, Ephemerality, and
+    Distributability (STAMPED). Together they give researchers
+    guidelines for building and assessing research objects that others
+    can trust, rerun, and build upon. We frame each principle as a
+    spectrum so that adoption is incremental and starts from existing
+    practice. We support each principle with normative requirements, an
+    interactive checklist, and a map of enabling tools. As conventions
+    mature, tooling improves, and AI agents become increasingly involved
+    in research workflows, the goals of rigor, reproducibility,
+    reusability, and efficiency are becoming more attainable. STAMPED
+    gives researchers, collaborators, reviewers, and agents a common
+    language, concrete goals, and an aligned direction for making
+    computational research more durable.
+    https://github.com/stamped-principles/stamped-paper/"
+  accessed: 2026-06-15
   annote: |
     Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.412Z
+    Read_Status_Date: 2026-06-16T01:04:20.126Z
+  author:
+  - family: Macdonald
+    given: Austin
+  - family: Baker
+    given: Cody
+  - family: To
+    given: Isaac
+  - family: Halchenko
+    given: Yaroslav O
+  id: macdonaldSTAMPEDPrinciplesReproducible2026
+  issued: 2026-05-26
+  keyword: open science,provenance,reproducibility,research objects
+  number: f3h82_v1
+  status: pre-published
+  title: STAMPED principles for reproducible research objects
+  type: webpage
+  url: "https://osf.io/preprints/metaarxiv/f3h82_v1/"
+- abstract: "English Edition:\\&nbsp;there is a (relatively) new kid on
+    the block - of open source package managers. It’s called Pixi: and
+    in this episode I talk to Raniere de Silva (GESIS) and Wolf
+    Vollprecht (Prefix - the company behind Pixi), what the tool br..."
+  accessed: 2026-05-21
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: ManagingPackagesPixi2026
   issued: 2026-05-12
   language: en-US
   title: \[EN\] Managing Packages with Pixi - Raniere de Silva and Wolf
     Vollprecht - Code for Thought
-  type: motion_picture
+  type: song
   url: "https://www.buzzsprout.com/1326658/episodes/19064274-en-managing-packages-with-pixi-raniere-de-silva-and-wolf-vollprecht"
 - accessed: 2026-05-28
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-28T20:09:36.905Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
   author:
   - family: Wilson
     given: Greg
@@ -953,8 +1070,8 @@ references:
   url: "https://third-bit.com/mrsp/"
 - accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T23:31:57.962Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Martina
     given: Tobia
@@ -988,8 +1105,8 @@ references:
     speed or energy-efficiency benefits over electronics for computing,
     enumerating 11 features of optics that can be harnessed when
     designing an optical computer. One often-mentioned motivation for
-    optical computing -- that the speed of light \$c\$ is fast -- is not
-    a key differentiating physical property of optics for computing;
+    optical computing – that the speed of light \$c\$ is fast – is not a
+    key differentiating physical property of optics for computing;
     understanding where an advantage could come from is more subtle. We
     discuss how gaining an advantage over state-of-the-art electronic
     processors will likely only be achievable by careful design that
@@ -1031,8 +1148,8 @@ references:
     can pick up whenever you need to a refresher or to learn a new
     topic.
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.412Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Miller
     given: Barton P.
@@ -1046,8 +1163,8 @@ references:
   title: Introduction to Software Security
   type: book
 - annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.412Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Mineault
     given: Patrick
@@ -1056,7 +1173,7 @@ references:
   title: Good Research Code handbook
   type: article-journal
 - abstract: Lost for more than half a century, the rare Chinese
-    typewriter whose name means "clear and fast" was discovered in a New
+    typewriter whose name means “clear and fast” was discovered in a New
     York basement and entrusted to Stanford Libraries.
   accessed: 2025-11-07
   annote: |
@@ -1064,7 +1181,7 @@ references:
     Read_Status_Date: 2026-03-16T02:12:49.785Z
   id: MingKwaiPrototypeOrigin
   language: en-US
-  title: MingKwai prototype, the 'origin of Chinese computing,' finds a
+  title: MingKwai prototype, the ‘origin of Chinese computing,’ finds a
     home at Stanford
   type: webpage
   url: "https://news.stanford.edu/stories/2025/05/mingkwai-chinese-typewriter-prototype-stanford-libraries"
@@ -1083,8 +1200,8 @@ references:
   url: "https://nesbitt.io/2026/03/15/guided-meditation-for-developers.html"
 - accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T03:25:52.413Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
   author:
   - family: Hettrick
     given: Simon
@@ -1107,8 +1224,8 @@ references:
   title: OpenAI to acquire Astral
   type: webpage
   url: "https://openai.com/index/openai-to-acquire-astral/"
-- abstract: Calls to recognize research software engineers are not new
-    --- but such professionals are needed now more than ever.
+- abstract: Calls to recognize research software engineers are not new —
+    but such professionals are needed now more than ever.
   accessed: 2025-11-07
   annote: |
     Read_Status: Read\
@@ -1130,8 +1247,8 @@ references:
   volume: 7
 - accessed: 2026-05-21
   annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-05-21T23:31:57.962Z
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
   author:
   - family: Posada
     given: Edwin F.
@@ -1187,6 +1304,19 @@ references:
   title: Introduction to Neuromorphic Computing
   type: book
   url: "https://www.cambridge.org/core/books/introduction-to-neuromorphic-computing/853942021D89F82AED182F9021E7E0F5"
+- accessed: 2026-06-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T01:04:20.125Z
+  author:
+  - dropping-particle: of
+    family: Reading
+    given: The University
+  id: RealScorelineReveals
+  title: The Real Scoreline reveals nations facing climate penalties -
+    University of Reading
+  type: webpage
+  url: "https://www.reading.ac.uk/news/2026/University-News/The-Real-Scoreline-reveals-nations-facing-climate-penalties"
 - abstract: Slide set of the accepted rapid access micro talks at USRSE
     25.
   accessed: 2026-04-09
@@ -1237,11 +1367,11 @@ references:
   type: manuscript
   url: "https://zenodo.org/records/17297728"
 - abstract: Beginning in the 1970s, statistician-cum-logician Per
-    Martin-L\\\"of wrote a series of papers developing what became
-    Martin-L\\\"of type theory, realizing a system where the distinction
+    Martin-L\\of wrote a series of papers developing what became
+    Martin-L\\of type theory, realizing a system where the distinction
     between mathematics and programming disappears. Inspired by this
     vision, this paper introduces dependent type theory (of which
-    Martin-L\\\"of type theory is an example) to a statistical audience.
+    Martin-L\\of type theory is an example) to a statistical audience.
     Examples from statistics and probability theory demonstrate how
     dependent type theory and an algebraic perspective can unify the
     theoretical and computational concerns of statistics, ensuring
@@ -1266,39 +1396,45 @@ references:
 - abstract: "English Edition: how are real numbers e.g. 0.1 represented
     on computers? What can go wrong with using their representation in
     calculations? And does it matter? These and other questions are the
-    subject of this ByteSized episode with my guests Prof\\..."
+    subject of this ByteSized episode with my guests Prof..."
   accessed: 2026-04-13
   annote: |
     Read_Status: Read\
     Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: schmidtByteSizedFunFloating2026
   issued: 2026-03-31
   language: en-US
   title: "\\[EN\\] ByteSized: Fun with floating points - U Ruede, A Herten
     and E di Napoli - Code for Thought"
   title-short: \[EN\] ByteSized
-  type: motion_picture
+  type: song
   url: "https://www.buzzsprout.com/1326658/episodes/18841644-en-bytesized-fun-with-floating-points-u-ruede-a-herten-and-e-di-napoli"
 - abstract: "English Edition: how are real numbers e.g. 0.1 represented
     on computers? What can go wrong with using their representation in
     calculations? And does it matter? These and other questions are the
-    subject of this ByteSized episode with my guests Prof\\..."
+    subject of this ByteSized episode with my guests Prof..."
   accessed: 2026-04-13
   annote: |
     Read_Status: Read\
     Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: schmidtByteSizedFunFloating2026a
   issued: 2026-03-31
   language: en-US
   title: "\\[EN\\] ByteSized: Fun with floating points - U Ruede, A Herten
     and E di Napoli - Code for Thought"
   title-short: \[EN\] ByteSized
-  type: motion_picture
+  type: song
   url: "https://www.buzzsprout.com/1326658/episodes/18841644-en-bytesized-fun-with-floating-points-u-ruede-a-herten-and-e-di-napoli"
 - abstract: "English Edition (ByteSized): In this first episode of the
     new ByteSized dRTP season, sponsored by the STEP-UP programme from
-    the EPSRC (UK) you'll meet Richard Acton. Richard created a tool to
-    help you keep track of all the steps you should take t\\..."
+    the EPSRC (UK) you’ll meet Richard Acton. Richard created a tool to
+    help you keep track of all the steps you should take t..."
   accessed: 2026-03-16
   annote: |
     Read_Status: Read\
@@ -1317,24 +1453,26 @@ references:
 - abstract: "English Edition:\\&nbsp;NextBrain is a next generation atlas
     of the human brain. Juan Eugenio Iglesias Gonzales from
     Massachusetts General in Boston, US, has been leading this project.
-    My colleague James Hughes (University College London) and I
-    were\\..."
+    My colleague James Hughes (University College London) and I were..."
   accessed: 2026-04-13
   annote: |
     Read_Status: Read\
     Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: schmidtNextBrainExploringHuman2026
   issued: 2026-03-17
   language: en-US
   title: "\\[EN\\] NextBrain: Exploring the human brain - Eugenio
     Iglesias, James Hughes - Code for Thought"
   title-short: \[EN\] NextBrain
-  type: motion_picture
+  type: song
   url: "https://www.buzzsprout.com/1326658/episodes/18717155-en-nextbrain-exploring-the-human-brain-eugenio-iglesias-james-hughes"
 - abstract: "English Edition:\\&nbsp;Meet Thomas White from DESY (German
     Electron Synchrotron) who is the creator and maintainer of the tool
     CrystFEL. The tool to help understand and analyse the structure of
-    materials such as crystals and proteins. Thomas and I \\..."
+    materials such as crystals and proteins. Thomas and I ..."
   accessed: 2026-03-16
   annote: |
     Read_Status: Read\
@@ -1349,23 +1487,46 @@ references:
     CrystFEL - Thomas White - Code for Thought
   type: song
   url: "https://www.buzzsprout.com/1326658/episodes/18674558-en-revealing-the-structure-of-crystals-and-proteins-with-crystfel-thomas-white"
-- abstract: "English Edition:\\&nbsp;for this episode we're going \\\"up
-    North\\\", to visit the Research Software Engineering team of the
+- abstract: "English Edition:\\&nbsp;for this episode we’re going \"up
+    North\", to visit the Research Software Engineering team of the
     University of Newcastle. The team has been hosting the UK RSE
     Conference in 2022 and 2024 and here is a chance to meet at least
-    s\\..."
+    s..."
   accessed: 2026-04-13
   annote: |
     Read_Status: Read\
     Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Schmidt
+    given: Peter
   id: schmidtTeamPortraitResearch2026
   issued: 2026-03-24
   language: en-US
   title: "\\[EN\\] Team Portrait: Research Software Engineering in
     Newcastle - Code for Thought"
   title-short: \[EN\] Team Portrait
-  type: motion_picture
+  type: song
   url: "https://codeforthought.buzzsprout.com/1326658/episodes/18761138-en-team-portrait-research-software-engineering-in-newcastle"
+- abstract: Fable came out and then disappeared a couple of days later.
+    In that short time, I managed to run a lot of repository reviews
+    with it, and was really happy with the results. I’ve found and fixed
+    around 400 bugs and 400+ other issues (performance, simplifications,
+    modernizations) across dozens of my projects, making several hundred
+    PRs with a nearly 100% merge rate on decided PRs.
+  accessed: 2026-06-17
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-17T16:59:48.292Z
+  author:
+  - family: Schreiner
+    given: Henry
+  id: schreinerClaudeCodeReviews2026
+  issued: 2026-06-16
+  language: en-US
+  publisher: ISciNumPy.dev
+  title: Claude Code Reviews with Fable
+  type: webpage
+  url: "https://iscinumpy.dev/post/claude-code-reviews/"
 - accessed: 2025-11-07
   annote: |
     Read_Status: Read\
@@ -1374,7 +1535,7 @@ references:
   issued: 2025-10-10
   language: en-US
   title: "The Silent Scientist: When Software Research Fails to Reach
-    Its Audience -- Communications of the ACM"
+    Its Audience – Communications of the ACM"
   title-short: The Silent Scientist
   type: webpage
   url: "https://cacm.acm.org/opinion/the-silent-scientist-when-software-research-fails-to-reach-its-audience/"
@@ -1408,8 +1569,8 @@ references:
   id: stetskovClaudeCodesSource2025
   issued: 2025-09-19
   language: en-US
-  title: "Claude Code's Source: 3,167-Line Function, Regex Sentiment"
-  title-short: Claude Code's Source
+  title: "Claude Code’s Source: 3,167-Line Function, Regex Sentiment"
+  title-short: Claude Code’s Source
   type: webpage
   url: "https://techtrenches.dev/p/the-snake-that-ate-itself-what-claude"
 - abstract: The Apple Calculator leaked 32GB of RAM.
@@ -1441,8 +1602,8 @@ references:
   title: Artificial Intelligence can Erase Technical Debt
   type: webpage
   url: "https://substack.com/home/post/p-193978032"
-- abstract: "We present the \\\"Stewardship and Advancement of Programming
-    Systems and Tools\\\" (S4PST) project report for the calendar years
+- abstract: "We present the \"Stewardship and Advancement of Programming
+    Systems and Tools\" (S4PST) project report for the calendar years
     2024 and 2025. S4PST is dedicated to the stewardship and advancement
     of Programming Systems and Tools (PST) mainly targeting
     high-performance computing (HPC) for the scientific community. The
@@ -1532,7 +1693,7 @@ references:
   id: teranishiS4PSTStewardshipAdvancement2026
   issued: 2026-01-12
   language: en-US
-  number: ORNL/SPR--2026/4406
+  number: ORNL/SPR–2026/4406
   publisher: Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United
     States)
   title: "S4PST: Stewardship and Advancement for Programming Systems and
@@ -1540,6 +1701,25 @@ references:
   title-short: S4PST
   type: report
   url: "https://www.osti.gov/biblio/3016977"
+- abstract: "I’m working on a new tool whose tagline is the title of
+    this post: Make best use of git and GitHub for AI-assisted software
+    development. Called Bram (“Bram runs agents mindfully”)…"
+  accessed: 2026-06-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T16:18:22.799Z
+  author:
+  - family: Udell
+    given: Jon
+  id: udellHowMakeBest2026
+  issued: 2026-06-02
+  language: en-US
+  publisher: How to make best use of git; GitHub for AI-assisted
+    software development
+  title: How to make best use of git and GitHub for
+    <span class="nocase">AI-assisted</span> software development
+  type: webpage
+  url: "https://blog.jonudell.net/2026/06/02/how-to-make-best-use-of-git-and-github-for-ai-assisted-software-development/"
 - abstract: Read the latest article version by Daniel S. Katz, Eric A.
     Jensen, Michelle Barker at Open Research Europe
   accessed: 2025-11-07
@@ -1555,5 +1735,42 @@ references:
     models
   type: webpage
   url: "https://open-research-europe.ec.europa.eu/articles/5-199/v1"
+- abstract: "English Edition:\\&nbsp;I want to come back to agile
+    development practices with my guest Dave Thomas, or Pragmatic Dave
+    as he is also known in the trade. Dave is one of the authors of the
+    manifesto for agile development - and we talk about what has ..."
+  accessed: 2026-06-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T16:05:28.241Z
+  author:
+  - family: Schmidt
+    given: Peter
+  id: WhatHappenedAgile2026
+  issued: 2026-06-16
+  language: en-US
+  title: \[EN\] What happened to agile development? - A review with Dave
+    Thomas - Code for Thought
+  title-short: \[EN\] What happened to agile development?
+  type: song
+  url: "https://www.buzzsprout.com/1326658/episodes/19292687-en-what-happened-to-agile-development-a-review-with-dave-thomas"
+- abstract: "English Edition: floppy disks, hard drives, CDs, DVDs, SSD
+    drives - no matter what you choose to store your data on -
+    ultimately they all decay. With my guests Callum McKean, Leontien
+    Talboom and Adrian Page-Mitchell, we’re going to talk about wha..."
+  accessed: 2026-06-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T16:05:28.241Z
+  author:
+  - family: Schmidt
+    given: Peter
+  id: WhenBitsRot2026
+  issued: 2026-06-09
+  language: en-US
+  title: \[EN\] When Bits Rot - with C McKean, L Talboom, A
+    Page-Mitchell - Code for Thought
+  type: song
+  url: "https://codeforthought.buzzsprout.com/1326658/episodes/19221837-en-when-bits-rot-with-c-mckean-l-talboom-a-page-mitchell"
 ---
 
