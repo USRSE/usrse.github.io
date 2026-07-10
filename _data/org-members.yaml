@@ -132,6 +132,14 @@ standard:
     founding_member: true
     tier: "Standard"
     contact: Dylon Simon <dsimon@flatironinstitute.org>
+  - name: "UW-Madison’s Data Science Institute"
+    url: https://dsi.wisc.edu/
+    figure: logo-uw-madison-dsi.png
+    acronym: UW-Madison DSI
+    date_joined: 2026-07-02
+    founding_member: true
+    tier: "Standard"
+    contact: Kyle Cramner <kscranmer@wisc.edu>
 
 premier:
   - name: "University of Illinois Urbana-Champaign"
