@@ -140,6 +140,14 @@ standard:
     founding_member: true
     tier: "Standard"
     contact: Kyle Cramner <kscranmer@wisc.edu>
+  - name: "University of Michigan LSA Technology Services"
+    url: https://lsa.umich.edu/technology-services/services/research-tools/research-programming-apps.html
+    figure: logo-uofm-lsa-ts.png
+    acronym: U-M LSA TS
+    date_joined: 2026-07-22
+    founding_member: true
+    tier: "Standard"
+    contact: Joe Bauer <joebauer@umich.edu>
 
 premier:
   - name: "University of Illinois Urbana-Champaign"
