@@ -1,0 +1,9 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Offset in-page anchor jumps so targets aren't hidden behind the fixed navbar
+html {
+    scroll-padding-top: 3.25rem;
+}
