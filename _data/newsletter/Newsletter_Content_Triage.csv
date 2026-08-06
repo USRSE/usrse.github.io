@@ -1,0 +1,314 @@
+Submission,"What Section(s) of the Newsletter Would this Content Fit Into?",Content,Staging,"Submitted By",Message,"Submission Date","Event Date","Content Expiration Date",Link,Location
+"I think these two papers might be of interest to share in the newsletter
+• E. A. Jensen, D. S. Katz, ""Awareness of FAIR and FAIR4RS among in...","Interesting Reads-Videos-Podcasts",,Published,d.katz@ieee.org,https://usrse.slack.com/archives/C030B3KA4B0/p1745247524009699,"4/21/25, 11:23 AM",,,,
+"April 27th, 2026 at 8:29 PM UTC","Community News, Interesting Reads-Videos-Podcasts","We're excited to announce the publication of our NSF NCAR Community Software Facility Discovery Workshop Report.
+
+This report is a comprehensive write-up from the
+The CSF Discovery Workshop: Scientific software better practices, tools, and culture, which was hosted at NSF NCAR in August 2025
+
+This workshop gathered insights on:
+- Large-scale co-development successes and lessons learned
+- Better practices for collaborative development
+- How to balance competing demands
+- Strategies for setting projects up for long-term success
+- Tools that support co-development
+- Opportunities for professional development for RSEs
+- Approaches to leading through cultural change
+
+Thank you to everyone who participated and provided inputs. We hope this can be a great resource to the RSE community.
+
+https://opensky.ucar.edu/islandora/object/technotes%3A45415",Published,mickelso@ucar.edu,,"4/27/26, 4:29 PM",,,,
+"June 5th, 2026 at 2:59 PM UTC","Community News, Interesting Events-Opportunities",":seedling: Our community is full of people doing fascinating research and software work,  and we want to put a face to it. Starting this month, we'll be featuring a group of different members in a regular spotlight: what they work on, a tool they can't live without, and how they found their way into RSE work. :yellow_heart::usrse_main_logo:
+
+We'd love to feature *YOU.* It takes about 5 minutes to fill out, and nothing gets posted without your okay:
+:point_right: https://forms.gle/dXqVsHKiHnot2u449
+
+Email Pengyin Shan <pengyins@illinois.edu> for any questions!",Published,pengyins@illinois.edu,,"6/5/26, 10:59 AM",,,,
+"June 4th, 2026 at 6:52 PM UTC","Interesting Events-Opportunities, Interesting Reads-Videos-Podcasts","We hope you will join us for the June LINCC Tech Talk session that will take place on Thursday, June 11, at 10am Pacific/1pm Eastern on Zoom (https://ls.st/lincc-talks). We will hear about EzTaoX by Weixiang Yu.
+
+*EzTaoX: Scalable and Flexible Multiband Modeling of AGN Light Curves in the Rubin Era*
+Active galactic nuclei (AGNs) exhibit stochastic variability correlated across a wide range of wavelengths on timescales ranging from days to years. Modeling and understanding AGN variability are critical for probing accretion flows in AGNs, studying supermassive black hole growth, and identifying AGNs in large photometric surveys. The Vera C. Rubin Observatory Legacy Survey of Space and Time (LSST) will monitor tens of millions of AGNs over a 10-year baseline, with an average cadence of three days across six bands. However, existing tools for AGN light-curve modeling are not well suited to the scale, cadence, and multiband nature of Rubin data. In this talk, I will present EzTaoX, a community software package for scalable and flexible Gaussian process (GP) modeling of multiband AGN light curves. I will highlight the technical advances of EzTaoX relative to existing tools and demonstrate several key science applications. Finally, I will discuss recent updates to EzTaoX enabled through the LINCC Frameworks Incubator Program.
+
+LINCC Tech Talks are held on the second Thursday of every month. Events are also advertised at our web page and also provided in calendar form; and the #lincc-tech-talks LSST-DA Slack channel is always available for discussions before, during, and after the talks.",Deferred,olynn@andrew.cmu.edu,,"6/4/26, 2:53 PM",,,,
+"May 28th, 2026 at 2:07 PM UTC","Community News, Interesting Reads-Videos-Podcasts","A blog post on the changing work and continuing value of RSEs in the age of GenAI has been published: S. Druskat, M. Barker, I. Cosden, C. Geng, R. Haines, D. S. Katz, J. Shingleton, B. van Werkhoven, ""Research Software Engineers in the Age of GenAI: Same Value, Changing Practice,"" https://doi.org/10.5281/zenodo.20320178 &  https://www.researchsoft.org/blog/2026-05-28/",Published,d.katz@ieee.org,,"5/28/26, 10:07 AM",,,,
+"May 28th, 2026 at 2:03 PM UTC","Community News","The report from the Research Software Engineering in the Age of Generative AI: Building a Community Vision workshop is now available on Zenodo,  alongside the reflection: Research Software in an Age of AI-Assisted Development: Reflections from Edinburgh",Published,d.katz@ieee.org,,"5/28/26, 10:03 AM",,,,
+"May 21st, 2026 at 8:05 PM UTC","Interesting Events-Opportunities",https://acl.gov/caregiver-ai-competition,Published,jc.subida@northwestern.edu,,"5/21/26, 4:05 PM",,,,
+"May 20th, 2026 at 10:56 AM UTC","Interesting Reads-Videos-Podcasts","I have overhauled my workshop on managing research software projects and posted it at https://third-bit.com/mrsp/. All the material is CC licensed, there are explicit callouts about managing AI, and I would be very grateful for feedback - thank you in advance.",Published,gvwilson@third-bit.com,,"5/20/26, 6:56 AM",,,,
+"April 23rd, 2026 at 11:45 PM UTC",Introduction-Headline,":tada: We’re proud to celebrate *4,011* US-RSE members today. Thank you to everyone who continues to grow, strengthen, and inspire our research software engineering community!
+
+Check our truly amazing journey: https://us-rse.org/join/
+
+(use the image in https://www.linkedin.com/posts/us-rse_rse-rseng-research-activity-7453206497439825920[…]m=member_desktop&rcm=ACoAAAan3poBQGen6B1TxRvoJA41oRmj-uD42Zc)",Published,pengyins@illinois.edu,,"4/23/26, 7:45 PM",,,,
+"June 8th, 2026 at 9:13 AM UTC","Community News",https://charlas-rse-espanol.github.io/,Published,s.minano@ucl.ac.uk,,"6/8/26, 5:13 AM",,,,
+"April 23rd, 2026 at 4:21 PM UTC","Interesting Events-Opportunities","The IDEAS Productivity project is hosting an upcoming webinar in their HPC Best Practices Series, entitled ""Research Software Sharing, Publication, & Distribution Checklists"" on May 20, from 1:00 - 2:00pm (Eastern Time).
+
+These checklists aim to provide advice and suggestions for good practices applied to different kinds of research software output beyond conventional software management plans. They are designed to integrate into existing workflows and have a tiered structure to help projects reach important minimum standards and go beyond, pushing forward the leading edge in reproducible computing.
+
+There is no cost to attend, but registration is required. For more information, please see the event webpage.",Deferred,bernholdtde@ornl.gov,,"4/23/26, 12:21 PM",,,,
+"April 23rd, 2026 at 12:07 PM UTC","Interesting Reads-Videos-Podcasts","Wilhelm Hasselbring, Daniel S. Katz, and Rob van Nieuwpoort just published an article in Computing in Science & Engineering (CiSE) about Technology Research Software. We suggest that this type of research software is a new category that has emerged, which covers research software developed in technology research. We believe that until now, this category of technology research software has often been overlooked and neglected within the research software engineering community.
+
+W. Hasselbring, D. S. Katz and R. van Nieuwpoort. (2026)
+“Technology Research Software: An Often Overlooked Category of Research Software.”
+Computing in Science & Engineering, 28(1). pp. 94-99.
+
+Article: https://doi.org/10.1109/MCSE.2026.3662117
+
+Open access preprint: https://doi.org/10.48550/arXiv.2604.17506",Published,d.katz@ieee.org,,"4/23/26, 8:07 AM",,,,
+"April 9th, 2026 at 2:40 PM UTC","Community News","The US-RSE Mentorship Working Group is relaunching, and we invite anyone interested in mentorship to get involved. Please fill out our questionnaire at https://forms.gle/31QWyg2aC36dYHYh8, and book your calendar on *May 4, 3:00–3:50 p.m. ET for the kickoff event.* Together, we hope to support professional growth, connection, and mentorship across the US-RSE community!",Deferred,pengyins@illinois.edu,,"4/9/26, 10:40 AM",,,,
+"April 6th, 2026 at 5:16 PM UTC","Interesting Reads-Videos-Podcasts","Because I cannot say it better myself, I shall just quote the first two paragraphs of the final section of the post.
+> The company that sells AI coding tools cannot build a quality product with its own AI coding tools. The percentages were always the pitch, not the product. 80. 90. 95. 100. Nobody asked what 100% actually produces until the source code answered for them.
+> AI amplifies whatever is already there. Good discipline becomes great output. No discipline becomes technical debt at machine speed. Anthropic chose a direction. Go faster. Have Claude check Claude. And when it breaks, go faster still.",Published,mtwest2718@protonmail.com,,"4/6/26, 1:16 PM",,,,
+"March 13th, 2026 at 8:54 PM UTC",Introduction-Headline,"Here at US-RSE, we continue our commitment to Diversity, Equity, and Inclusion. Our community is strengthened by the wide range of experiences, backgrounds, and perspectives that each of our members brings. This March, we are proud to recognize and celebrate the women in Research Software Engineering whose leadership, creativity, and perseverance support and elevate our work.
+
+If you are a woman RSE, we are celebrating you. Your skill and dedication advance research, support teams, and open doors for others who may be building their own paths in technical fields. Your presence and contributions encourage colleagues and future RSEs, sometimes through direct mentorship and sometimes simply by being visible in spaces where representation has not always been guaranteed.
+
+Women in science, engineering, and computing have faced and overcome significant obstacles throughout history. Despite these challenges, women have driven discovery, shaped computing, and changed the course of research and technology. Today, women continue to innovate and lead across academia, national labs, industry, and open source communities, bringing insight and expertise that strengthen the broader research landscape.
+
+We wish all the women in the RSE community a meaningful and joyful Women’s History Month. May this month bring recognition, celebration, and renewed energy. Thank you for your work, your resilience, and the creativity you bring to the community.
+
+-- US-RSE DEI Working Group",Published,lparsons@princeton.edu,,"3/13/26, 4:54 PM",,,,
+"March 2nd, 2026 at 6:25 PM UTC","Interesting Reads-Videos-Podcasts","A new report was released by the Computing Research Association Computing Community Catalyst as an output of a convening last April (which I contributed to): https://cra.org/ccc/wp-content/uploads/sites/2/2026/02/Grand-Challenges-for-the-Convergence-of-Computational-and-Citizen-Science-Research.pdf
+
+More context in the CRA social posts: https://www.linkedin.com/posts/computing-research-association_together-technologies-l[…]mber_desktop_web&rcm=ACoAACf-8YAB_TQMAI0CBxJlJ6uWsDaDM9MqoO4 and https://bsky.app/profile/cra-hq.bsky.social/post/3mfkjhgjw3i2z",Published,jonathan@luxaritas.com,,"3/2/26, 1:25 PM",,,,
+"June 5th, 2026 at 3:34 PM UTC","Interesting Events-Opportunities","PyOhio 2026 is the 19th annual Python Community Conference in Cleveland, Ohio. It will be held at Cleveland State University Student Center on July 25-26, 2026. Details on registration and talks are on the website: https://www.pyohio.org/2026/",Published,anurags85@gmail.com,,"6/5/26, 11:34 AM",,,,
+"June 17th, 2026 at 5:49 PM UTC",Other,"Pride Month is both a celebration and a moment for reflection for the communities we are part of. As the chairs of the DEI Working Group, we welcome everyone to celebrate Pride Month with the US‑RSE community this June and beyond. We also want to take a moment to reflect on what Pride means to me and how it shapes how we think about belonging in our professional communities.
+
+US‑RSE is a community built around shared skills, interests, and goals centered on advancing research through software engineering. While that core set of interests brings us together, we are also a collection of individuals who work across different research domains and parts of the software engineering lifecycle. Each person brings unique strengths and perspectives.
+
+A mix of viewpoints  helps teams generate stronger ideas and advance research. That kind of collaboration works best when people feel a sense of belonging.
+
+At the same time, we don’t show up to these communities as just “RSEs.” Each of us brings life experiences, preferences, and unique quirks. You can’t interact with just the “software engineer” side of someone. You interact with the whole person, which means accepting them as they are.
+
+That’s where belonging comes from. It’s not just about being part of a group with shared interests. It’s about being accepted as you are.
+
+Creating that kind of belonging can be challenging in practice, especially when building trust with people who have experienced bias, exclusion, or worse.
+
+That’s why small actions matter. Sharing pronouns, using gender‑neutral language, and taking the time to learn about the people around us can make a real difference. They signal that people are seen, respected, and welcome as part of the community.
+
+For me, Pride is a reminder that this kind of belonging does not happen by accident. It is something we create together through everyday choices.
+
+Pride means different things to different people. To reflect that range of experiences, we invite members of the US‑RSE community to share what Pride means to them and how they think about belonging in their work.
+
+What does Pride mean to you? We’d love to hear your perspective. Feel free to join the conversation on Slack or share on social media using the hashtag `#RSEPride`.
+
+*Community Contributions*
+Research software often involves intensely multidisciplinary collaboration, and, depending on the size of a team, may require the ability to liaison between domains, technical-side, business-side, etc. and _advocate_ whether it's for data integrity processes or for underweighted voices. In my mind this relational communication and openness is very prosocial and qualitatively close to what Pride is all about; I think it's why I feel at home in research software and the surrounding communities.
+– _Michael P. Pascale_",Published,lparsons@princeton.edu,,"6/17/26, 1:49 PM",,,,
+"I'm happy to be able to say that this paper is now published, based on work that was mostly done at a Dagstuhl workshop, and then presented ...",,,Published,d.katz@ieee.org,https://usrse.slack.com/archives/C8ZB01CGH/p1765821363574679?thread_ts=1765821363.574679&cid=C8ZB01CGH,"1/10/26, 7:49 PM",,,,
+":mega: Heads up! The deadline for Talk-only, BYOP, and Posters is this Monday, July 20th
+<https://sciencegateways.org/submission-process|sci...","Interesting Events-Opportunities",,Deferred,afields@tacc.utexas.edu,https://usrse.slack.com/archives/C010P17AZ8A/p1784053897587639,"7/29/26, 1:31 AM",,,,
+https://usrse.slack.com/archives/C0664AMJBKQ/p1784724142033509,"Interesting Events-Opportunities","some of you may be interested in this HPC Best Practices webinar on user facing tutorials: https://ideas-productivity.org/events/hpcbp-099-tutorials It's on Aug 12 at 1pm Eastern",Deferred,,,"8/5/26, 5:57 PM",,,,
+"HPC Best Practices Webinar: *Rapid Development of a High-Performance Applications Using Python*","Interesting Events-Opportunities","The HPC Best Practices webinar for September:
+
+*Rapid Development of a High-Performance Applications Using Python*
+will be presented by *Joanna Piper Morgan (Nuclear Criticality Safety Division, Lawrence Livermore National Lab)*
+on *September 02 1:00pm - 2:00pm EDT*
+
+*Registration*
+
+Scientific research codes running problems that demand HPC have a human resources problem: the physicist/engineer who develops numerical methods, and the software engineer who develops HPC code for CPUs and GPUs, are the same person. This often means implementing novel numerical methods for HPC applications can take years to implement and test at scale. In this talk we describe how we used Python, Numba, and our own in house event scheduling software to separate the numerical methods developer from the software engineering. We will detail our JIT compilation structure for CPUs and GPUs (both NVIDIA and AMD), technical roadblocks, and lessons learned from this software engineering scheme in the development of the MC/DC Monte Carlo neutronics code. We will also briefly mention how this workflow (conceived and designed before the broad acceptance of LLM) fits into a research environment increasingly supported by AI tools.
+
+*Details:* ideas-productivity.org/events/hpcbp-100-python",Approved,bernholdtde@ornl.gov,,"8/4/26, 1:25 PM",2026-09-02,2026-09-02,"{""originalUrl"":""https:\/\/ideas-productivity.org\/events\/hpcbp-100-python"",""attachment"":{},""displayAsUrl"":false,""displayName"":""LINK""}",Online
+"I read leidendeclaration.ai after seeing it a few times - I like a lot of of the thinking and ideas","Interesting Reads-Videos-Podcasts",,Approved,d.katz@ieee.org,https://usrse.slack.com/archives/C8ZB01CGH/p1784745165952529,"7/29/26, 1:36 AM",,,,
+"Nextflow is hosting their own ""conference"" and it's free virtually!","Interesting Events-Opportunities","Virtual Nextflow Summit is the premier global gathering of the Nextflow community—accessible from anywhere. Join researchers, developers, and industry leaders from across pharma and biotech as they share cutting-edge research, innovative solutions, and real-world applications.
+
+Whether you're building pipelines, analyzing data, or leading teams, connect with the community, learn from the best, and walk away with fresh ideas, new skills, and the momentum to advance your work.",Approved,tianche5@asu.edu,https://usrse.slack.com/archives/C010P17AZ8A/p1784653441146159,"7/29/26, 1:33 AM",2026-10-13,2026-10-14,"{""originalUrl"":""https:\/\/summit.nextflow.io\/2026\/virtual\/overview"",""attachment"":{},""displayAsUrl"":false,""displayName"":""link""}",
+"NLS³C CoP Webinar: Better Documentation Practices for Research Software","Interesting Events-Opportunities","Join us for the next webinar of the National Laboratories Sustainable Scientific Software Conference's Community of Practice, as Miranda Mundt introduces us to Better Documentation Practices for Research Software.
+
+We've all been there: handed a piece of code that promises to do something remarkable, only to find not a single line explaining how. Hours disappear into reverse-engineering what a few sentences could have told us. In research, where software increasingly underpins our most important discoveries, documentation is what separates work that others can build on from work that dies with its author. And in an era where generative AI can draft a docstring or a README in seconds, the challenge has quietly shifted: the bottleneck is no longer writing the words, but knowing whether they're actually true, clear, and useful to the person on the other side. Join us for this session on writing documentation well, and discover how a modest investment in clarity today pays dividends across the life of your research.
+
+> *Topic:* Better Documentation Practices for Research Software
+> *Presenter:* Miranda Mundt (Sandia National Laboratories)
+> *Time:* Wednesday, August 19, 11:00 AM - 12:00 PM MST
+> *Registration:*  Click here
+The NLS³C CoP fosters collaboration among individuals interacting with software repositories across the U.S. National Labs complex. Our mission is to enhance the development culture by promoting best practices, knowledge sharing, and standards that improve quality and sustainability. We empower developers, project managers, and decision-makers through valuable resources, including monthly webinars. By cultivating a network of early adopters, we aim to drive culture change and transform the software landscape within the National Labs. Check out our wiki (limited to those under the DOE) to see what we have to offer and how you can contribute.
+
+Please forward this announcement along to anyone who might be interested. We look forward to seeing you.
+
+Jason M. Gates (Sandia National Laboratories)",Approved,jmgate@sandia.gov,https://usrse.slack.com/archives/C010P17AZ8A/p1784565610916479,"7/29/26, 1:32 AM",2026-08-19,2026-08-19,"{""originalUrl"":""https:\/\/events.gcc.teams.microsoft.com\/event\/dfd563ee-e0f8-40f7-a553-11838feb4812@7ccb5a20-a303-498c-b0c1-29007381b574"",""attachment"":{},""displayAsUrl"":false,""displayName"":""See here!""}",
+"Metadata for All with Wikidata","Interesting Events-Opportunities","We have an upcoming FORCE11 webinar that may be of interest to folks in the DEI space:
+
+*Metadata for All with Wikidata*
+
+The session will explore how open metadata and Wikidata can support discoverability, accessibility, and representation in research and scholarship, including discussions around neurodiversity, transgender musicians, and linking scholarly outputs in open knowledge systems.",Approved,lparsons@princeton.edu,https://usrse.slack.com/archives/C010P17AZ8A/p1784208177140309,"7/29/26, 1:32 AM",2026-08-26,2026-08-26,"{""originalUrl"":""https:\/\/force11.org\/post\/webinar-metadata-for-all-with-wikidata\/"",""attachment"":{},""displayAsUrl"":false,""displayName"":""LINK""}",
+"APeX Summit 2026","Interesting Events-Opportunities","The APeX Summit (Academy, Parsl, Globus Compute) is the eighth annual community meeting, bringing together researchers, developers, and cyberinfrastructure experts worldwide to discuss experiences using and developing Academy, Parsl, and Globus Compute. The summit will be held as a hybrid meeting on September 14–15, 2026, with the in-person component in Chicago. Full program details are *coming soon*.",Approved,d.katz@ieee.org,https://usrse.slack.com/archives/C010P17AZ8A/p1783960282240599,"7/29/26, 1:30 AM",2026-09-14,2026-09-16,"{""originalUrl"":""https:\/\/parsl-project.org\/parslfest\/apex2026.html"",""attachment"":{},""displayAsUrl"":false,""displayName"":""Check it out!""}","Online, In-person"
+"June 23rd, 2026 at 8:06 PM UTC","Interesting Events-Opportunities","To be held as part of SC26, Chicago, IL, USA and online
+Monday, November 16, 2026, 9:00 am - 12:30 pm CST (UTC-6)
+
+*=== Overview ===*
+
+Research software engineers (RSEs) are critical to the impact of HPC, data science, and the larger scientific community. They have existed for decades, though often not under that name. The past several years, however, have seen the development of the RSE concept, common job titles, and career paths; the creation of professional networks to connect RSEs; and the emergence of RSE groups at universities, national laboratories, and industry.
+
+This workshop will bring together RSEs and allies involved in HPC, from all over the world, to grow the RSE community by establishing and strengthening professional networks of current RSEs and RSE leaders. We'll hear about successes and challenges that RSEs and RSE groups have experienced, and discuss ways to increase awareness of RSE opportunities and improve support for RSEs.
+
+The workshop will be highly interactive, featuring panels, an invited talk, and short submitted talks.
+
+*=== Submissions ===*
+
+We encourage prospective participants to submit abstracts of proposed lightning talks (limit of 1 page, no format prescribed) on topics related to RSE issues. Possible topics include, but are not limited to:
+• Career paths: how do RSEs want to be hired, promoted and evaluated?
+• Building RSE organizations: how to find RSEs in your country/region and how to motivate them to join the network and engage?
+• Supporting RSE organizations: what can be done to help RSEs (and those supporting RSEs) at international, national, regional, and local levels?
+• Supporting RSEs in specific environments: academia, national lab, industry, …
+• Making the business case for RSEs and RSE groups: evidence, case studies, tactics?
+• How do we want funders to support RSE roles and activities?
+• Setting up, funding, sustaining, and managing RSE groups
+• Building in RSE requirements as part of wider research infrastructure
+• Providing research software engineering mentoring and training for both RSEs and researchers
+• Adapting as RSEs to new technology such as AI, quantum, neuromorphic, etc.
+The authors of accepted abstracts will be invited to present lightning talks or participate in panel discussions at the workshop. Note that SC26 is planning an in-person event and presenting in-person is strongly encouraged. A supporting digital experience will accommodate those who cannot attend in-person due to travel restrictions or health concerns.
+
+We particularly encourage submissions from first-time conference presenters, and from members of groups that have historically been underrepresented in the HPC community. The deadline for submissions is Friday, August 7, 2026, at 11:59 PM AoE (UTC-12).
+
+For more information see the workshop website:  https://us-rse.org/rse-hpc-2026/.",Published,cferenba@lanl.gov,,"6/23/26, 4:06 PM",,,,
+"Abstracts are now being accepted for DASH/IHDEA 2026, with submissions due by 29 July 2026 11.59pm (Europe/Dublin timezone). Meeting registr...","Interesting Events-Opportunities",,Deferred,rebecca.ringuette.nasa@gmail.com,https://usrse.slack.com/archives/C010P17AZ8A/p1783714980916299,"7/29/26, 1:30 AM",,,,
+"The Inaugural International Research Software Conference (IRSC26) ","Interesting Events-Opportunities","The program is now available for the inaugural International Research Software Conference (IRSC26), convened by the Research Software Alliance (ReSA). The conference takes place 7-8 September 2026 in Sheffield, UK, with remote participation available. IRSC26 is co-located with RSECon26 (9-11 September 2026).",Approved,d.katz@ieee.org,https://usrse.slack.com/archives/C010P17AZ8A/p1783687283269209,"7/29/26, 1:26 AM",2026-09-09,2026-09-11,"{""originalUrl"":""https:\/\/www.researchsoft.org\/irsc\/program\/"",""attachment"":{},""displayAsUrl"":false,""displayName"":""Program Link""}",
+"GenAI in Workshops by The Carpentries","Interesting Events-Opportunities","In response to the growing number of reports we are receiving from our Instructor community about the use of generative AI chatbots by learners at workshops, The Carpentries has launched a bonus module to Instructor Training, GenAI in Workshops, in which instructors will explore what widespread genAI use means for the way they teach.
+In sessions led by expert Carpentries Instructor Trainers, participants will discuss the potential impacts of genAI chatbot use on opportunities for guided practice in a workshop, how expertise affects an individual’s ability to make successful use of genAI tools, how considerations of cognitive load should change in this new context, and how to maintain a positive learning environment in their workshops. The events are highly interactive and designed to build Instructors’ confidence to be proactive in their response to genAI use in their workshops and other teaching settings.
+Their Pricing page has more information on costs, and you can get in touch with them by email to register.",Approved,sarah.stevens@wisc.edu,https://usrse.slack.com/archives/C01833QUB7D/p1782130522303689,"7/29/26, 1:25 AM",,2026-11-05,"{""originalUrl"":""https:\/\/carpentries.org\/blog\/2026\/06\/genai-in-workshops-a-bonus-module-to-instructor-training\/"",""attachment"":{},""displayAsUrl"":false,""displayName"":""Presented by The Carpentries""}",Online
+"The recording is online for those that missed the call yesterday! Remember the deadline for pu...","Community News",,Approved,tinashemtapera@gmail.com,https://usrse.slack.com/archives/CLBDQMJH5/p1783708844454699?thread_ts=1783538116.717289&cid=CLBDQMJH5,"7/29/26, 1:24 AM",,,,
+"Research Software Engineers in HPC (RSE-HPC-2026) workshop @ SC26","Interesting Events-Opportunities","We are excited to announce the Research Software Engineers in HPC (RSE-HPC-2026) workshop, to be held as part of SC26, in Chicago, IL, USA and online, on Monday, November 16, 2026.
+
+We encourage prospective participants to submit abstracts of proposed lightning talks on topics related to RSE issues. The authors of accepted abstracts will be invited to present lightning talks or participate in panel discussions at the workshop. We particularly encourage submissions from first-time conference presenters, and from members of groups that have historically been underrepresented in the HPC community. The deadline for submissions is Friday, August 7, 2026, at 11:59 PM AoE (UTC-12).
+
+• For more information, see the workshop website.",Approved,cferenba@lanl.gov,,"7/23/26, 2:49 PM",2026-08-07,2026-08-07,"{""originalUrl"":""https:\/\/us-rse.org\/rse-hpc-2026\/"",""attachment"":{},""displayAsUrl"":false,""displayName"":""For more information, see the workshop website!""}",
+"*Improving Science Data Processing Through Modern Science Data Systems at AGU 26*","Interesting Events-Opportunities","If you are working on software systems or tools that help transform raw data into scientific discoveries, we encourage you to submit an abstract to our AGU session, *""Improving Science Data Processing Through Modern Science Data Systems.""* This session provides a space to share system designs, open-source tools, and lessons learned. We welcome contributions from across the community—including scientists, developers, engineers, and data stewards.
+
+Please follow this link to submit an abstract: https://agu.confex.com/agu/agu26/in/papers/index.cgi?sessionid=281956. The deadline to submit is *Wednesday, August 5th*",Approved,tinashemtapera@gmail.com,,"7/23/26, 2:24 PM",2026-08-05,2026-08-05,"{""originalUrl"":""https:\/\/agu.confex.com\/agu\/agu26\/in\/papers\/index.cgi?sessionid=281956"",""attachment"":{},""displayAsUrl"":false,""displayName"":""AGU""}",In-person
+"January 19th, 2026 at 5:14 AM UTC","Interesting Reads-Videos-Podcasts","Healthcare pricing remains a significant challenge for providers navigating rising costs, opaque pricing structures, and misaligned incentives. Traditional static pricing models often fail to reflect true patient-specific costs or the value delivered by care, resulting in unpredictable margins and diminished patient satisfaction.
+
+Our recent research presents a *data-driven framework* for optimizing healthcare pricing using advanced machine learning techniques. We examine three distinct strategies — *static pricing*, *dynamic pricing*, and *value-based pricing* — and benchmark them through predictive models built with XGBoost, Random Forest, and Neural Networks.
+
+Key findings show that:
+
+• *Dynamic pricing*, informed by predictive analytics, yields higher margin stability than traditional static models.
+• *Value-based pricing* provides the greatest potential for aligning financial incentives with patient outcomes, rewarding high-quality, efficient care. 
+By integrating clinical outcomes, operational efficiency, and patient-specific risk profiles into pricing workflows, this approach offers a *practical roadmap* for healthcare organizations to improve profitability while enhancing transparency and customer value. This research advances the conversation on how analytics can transform pricing from a reactive cost exercise into a strategic, value-focused tool.
+
+Link :
+https://www.researchgate.net/publication/395089456_Optimizing_healthcare_pricing_strate[…]data-driven_approach_to_enhance_margins_and_customer_value",Published,divanshu.mittal@trojans.dsu.edu,,"1/19/26, 12:14 AM",,,,
+"December 8th, 2025 at 4:08 PM UTC","Community and Travel Funds","Building on the success of last year’s first Data Carpentry workshop to ever be offered in Israel, generous funding from the US-RSE Community and Travel Funds enabled the success of a Data Carpentry Metagenomics workshop in October 2025, at Tel Aviv University in Israel. The two-day, hands-on workshop was made possible by a partnership among the US-RSE, the Carpentries, the Israel Research Core Facilities, the George Washington University Libraries, Tel Aviv University, Weizmann Institute of Science (WIS) and ELIXIR.
+
+A key goal of the workshop was to empower local instructors to take on more of the teaching responsibilities. In addition to last year’s instructors Dan Kerchner, a Senior Software Developer and Bioinformatics PhD student from George Washington University in Washington, DC and Dr. Dan Ben-Avraham, head of Israel’s ELIXIR node and head of the WIS Mantoux Institute for Bioinformatics, major sections covering Bash shell and a metagenomics analysis pipeline were taught this year by WIS bioinformaticians Dr. Dayana Yahalomi and Dr. Amir Szitenberg, with support from Dr. Avital Sarusi-Portuguez.
+
+The diverse group of 24 learners from 11 institutions included MS and PhD students, postdoctoral and staff researchers in the life sciences, as well as international students and postdocs from India, Brazil, and the U.S. conducting research at institutions across Israel. Hands-on learning included project data organization for metagenomics, cloud computing, Bash shell, R coding, and applying these skills to process real-world whole-genome sequencing data through a series of command-line analysis tools to determine relative proportions of different taxa of bacteria from samples taken from Cuatro Ciénegas, a unique ecological environment in Mexico. Research computing best practices were emphasized throughout. Participants reported increased skill levels, better understanding of how coding contributes to research reproducibility, higher confidence in applying their new software engineering skills to their research, and a desire for more learning opportunities of this type. We look forward to building on the success of the US-RSE-sponsored workshop and the enthusiasm for more workshops of this type in Israel to further develop RSE skills, connections, and community.
+
+(Photos to include in the newsletter may be accessed at https://drive.google.com/drive/folders/1tv68B2n8cGuvtJAn0BttJ5UcYFQyhu8-?usp=sharing )",Published,kerchner@gwu.edu,,"12/8/25, 11:08 AM",,,,
+"April 21st, 2025 at 11:23 PM UTC","Interesting Reads-Videos-Podcasts","• E. A. Jensen, D. S. Katz, ""Awareness of FAIR and FAIR4RS among international research software funders,"" _Scientific Data_, v.12, 627, 2025. https://doi.org/10.1038/s41597-025-04820-4
+• B. U. Westner, D. R. McCloy, E. Larson, A. Gramfort, D. S. Katz, A. M. Smith, A. Delorme, V. Litvak, S. Makeig, R. Oostenveld, J.-M. Schoffelen, T. Tierney, ""Cycling on the Freeway: The Perilous State of Open-Source Neuroscience Software,"" _Imaging Neuroscience_, 2025. https://doi.org/10.1162/imag_a_00554",Published,d.katz@ieee.org,,"4/21/25, 7:23 PM",,,,
+"May 16th, 2025 at 12:39 PM UTC","Interesting Reads-Videos-Podcasts","There's a new report ""Identifying Gaps in Research Software Policy” (https://doi.org/10.5281/zenodo.15411757) out from the ReSA & RDA PRO4RS Working Group (https://www.rd-alliance.org/groups/rda-resa-policies-in-research-organisations-for-research-software-pro4rs/members/all-members/).
+
+It defines a common framework for research software policy & identifies areas where policies are lacking. The report concludes that there is no single solution that covers all necessary policy aspects. Research organizations can incorporate research software in broader policies and/or create a policy focused on research software.",Published,d.katz@ieee.org,,"5/16/25, 8:39 AM",,,,
+"June 29th, 2025 at 6:10 PM UTC","Introduction-Headline, Interesting Reads-Videos-Podcasts",https://medium.com/@akshaymittal_90606/from-cloud-chaos-to-developer-delight-a-practical-guide-to-building-your-first-internal-ff3d12834ad0,Published,akshaycanodia@gmail.com,,"6/29/25, 2:10 PM",,,,
+"June 29th, 2025 at 6:08 PM UTC","Interesting Reads-Videos-Podcasts",https://medium.com/@akshaymittal_90606/from-cloud-chaos-to-developer-delight-a-practical-guide-to-building-your-first-internal-ff3d12834ad0,Published,akshaycanodia@gmail.com,,"6/29/25, 2:08 PM",,,,
+"June 20th, 2025 at 8:24 PM UTC","Interesting Events-Opportunities","The O*NET Data Collection Program, sponsored by the U.S. Department of Labor, is seeking your input as a potential expert for *Computer and Information Research Scientists and Computer Programmers*. We believe that this is an important project and encourage our members to participate. As the nation’s most comprehensive source of occupational data, O*NET is a *free resource* and provides *instant access* to detailed descriptions on more than 900 occupations that drive the U.S. economy. Visitors include counselors, human resource professionals, researchers, developers, and students, to name a few. Visit O*NET Data Collection to learn more.
+*Occupation:* Computer and Information Research Scientists
+
+*Description:* Conduct research into fundamental computer and information science as theorists, designers, or inventors. Develop solutions to problems in the field of computer hardware and software.
+*Occupation:* Computer Programmers
+*Description:* Create, modify, and test the code and scripts that allow computer applications to run. Work from specifications drawn up by software and web developers or other individuals. May develop and write computer programs to store, locate, and retrieve specific documents, data, and information.
+
+A random sample of experts responding to this request will be invited to complete a set of questionnaires. Experts who are selected and agree to participate will receive a *$40 VISA gift code* and a certificate of appreciation from the U.S. Department of Labor.
+If you are interested in learning more and potentially volunteering, please visit the Computer and Information Research Scientists ONET Volunteer Information Page or the Computer Programmers ONET Volunteer Information Page. Please respond by *7/11/2025*.",Published,sandra.gesing@nd.edu,,"6/20/25, 4:24 PM",,,,
+"May 19th, 2025 at 5:14 PM UTC","Interesting Events-Opportunities","SciOS organizes the first cycle of Open Innovation Sprints, a program designed to produce actionable, community-driven outputs designed to tackle shared ecosystem-level challenges in open source and open science. These sprints are collaborative, fast-paced initiatives bringing together researchers, engineers, designers, community organizers, and users over a six to nine month period. By the end of each sprint, participants release open source solutions, supporting documentation, and sustainability plans, all ready for immediate contributions from the wider community.
+The first sprint kicked off in March and is dedicated to *expanding our collective ability to measure the impact of research software*. This sprint is heavily inspired by the CZI 2023 Software Impact Hackathon.",Published,sandra.gesing@nd.edu,,"5/19/25, 1:14 PM",,,,
+"May 19th, 2025 at 3:57 PM UTC","Organization Founding Membership, Community News, Interesting Events-Opportunities",https://www.meetup.com/acm-austin/,Published,akshaycanodia@gmail.com,,"5/19/25, 11:57 AM",,,,
+"May 19th, 2025 at 3:56 PM UTC","Interesting Reads-Videos-Podcasts",https://medium.com/p/ff3d12834ad0,Published,akshaycanodia@gmail.com,,"5/19/25, 11:56 AM",,,,
+"May 15th, 2025 at 7:00 PM UTC","Interesting Reads-Videos-Podcasts","R. Littauer, G. Wilson, J. Ainali, E. A. AlOmar, S. Arabas, Y. Bellini Saibene, K. Bubendorfer, K. Champion, C. Dillon, J. Helske, P. Huybrechts, D. S. Katz, C. Liao, D. Lippert, F. Liu, P. Marshall, D. R. McCloy, I. McInerney, M. W. Mkaouer, P. Ojha, C. Treude, E. P. White, ""10 quick tips for making your software outlive your job,"" arXiv, 2025. https://doi.org/10.48550/arXiv.2505.06484",Published,d.katz@ieee.org,,"5/15/25, 3:00 PM",,,,
+"July 16th, 2025 at 2:18 PM UTC","Interesting Events-Opportunities, Other","> Are you a scientist who programs?
+> 
+> A survey study led by a University of Michigan team is being conducted about scientists programming practices, experiences, and tool usage. The survey should take no more than 10-15 minutes to complete. Participants may opt-into a raffle of five $100 cash awards.
+> 
+> Scientists in any research area, career track, and stage (including student research assistants) are invited. Please follow this link to the survey to participate. 
+> This study has been reviewed by the University of Michigan IRB. Questions can be directed to code-for-science@umich.edu.
+> 
+>  Thank you for your time.
+",Published,elleobri@umich.edu,,"7/16/25, 10:18 AM",,,,
+"May 15th, 2025 at 6:59 PM UTC","Interesting Reads-Videos-Podcasts","Y. Perez-Riverol, W. Bittremieux, W. Noble, L. Martens, A. Bilbao, M. Lazear, B. Grüning, D. S. Katz, M. MacCoss, C. Dai, J. Eng, R. Bouwmeester, M. Shortreed, E. Audain, T. Sachsenberg, J. Van Goey, G. Wallmann, B. Wen, L. Käll, W. Fondrie, ""Open-source and FAIR Research Software for Proteomics,"" Journal of Proteome Research, v.24(5), pp. 2222-2234, 2025. https://doi.org/10.1021/acs.jproteome.4c01079",Published,d.katz@ieee.org,,"5/15/25, 2:59 PM",,,,
+"How to build great web apps? How to think about design? It's what I wanted to find out from Brad Frost,
+author of 'Atomic Design', in this e...","Interesting Reads-Videos-Podcasts",,Published,code4thought@proton.me,https://usrse.slack.com/archives/C8ZB01CGH/p1746518452808609,"5/6/25, 9:28 AM",,,,
+":mega: :spack: Calling all Spack users :spack: :mega:
+
+We are running a Spack User Survey for 2025! We’d love to get your feedback so that w...","Interesting Events-Opportunities",,Published,tgamblin@llnl.gov,https://usrse.slack.com/archives/C8ZB01CGH/p1745525136517129,"4/26/25, 2:51 PM",,,,
+"April 26th, 2025 at 1:14 AM UTC","Interesting Events-Opportunities","Registration Link 
+
+💭 If you’re wondering what are the most up-to-dated knowledge-centric #AI use cases in health care & life sciences (#HCLS), this event is NOT TO BE MISSED:
+
+The Knowledge Graph Conference (#KGC2025) is lining up the most engaged subject matter experts from Stanford University, Rensselaer Polytechnic Institute, EPAM Systems, AbbVie, Accenture, Schrödinger, Thoughtworks, Scripps Research, The University of Texas at Austin, Graphwise, Bristol Myers Squibb, XponentL Data and ONTOFORCE to us this year on May 6, 2025‼️ 
+
+Also for the first time, we co-created a satellite venue in San Diego of Southern California 🤗 ",Published,runquan@premiumdiscoverygroup.com,,"4/25/25, 9:14 PM",,,,
+"April 25th, 2025 at 7:07 PM UTC","Interesting Events-Opportunities","A career panel event co-hosted by rOpenSci and Openscapes
+https://ropensci.org/events/datasci-careers-feds/",Published,scottericr@gmail.com,,"4/25/25, 3:07 PM",,,,
+"regarding organizational membership: we have additionally Project Eureka (already also on the website), Open OnDemand as Basic member (<http...","Organization Founding Membership","Make sure to add and take a look at the logo",Published,sandra.gesing@nd.edu,https://usrse.slack.com/archives/C08JW3TGY72/p1745326072773389,"4/22/25, 9:20 AM",,,,
+"July 14th, 2025 at 7:42 PM UTC","Introduction-Headline, Interesting Events-Opportunities, Other","The US-RSE DEI Working Group is seeking input from the community! We’re exploring new ways to foster diversity, equity, and inclusion within our organization and would love to hear your ideas. What would make US-RSE a more inclusive and welcoming space for you and others?
+If you have suggestions, big or small, please share them in the #dei-disccussion Slack channel or reach out directly to the DEI Working Group (wg-dei@us-rse.org). Your feedback will help guide our future initiatives and ensure they reflect the needs of our diverse community.
+Let’s work together to make US-RSE a place where everyone feels they belong.",Published,lparsons@princeton.edu,,"7/14/25, 3:42 PM",,,,
+"July 23rd, 2025 at 7:34 PM UTC","Interesting Events-Opportunities","To be held as part of SC25, St. Louis, MO, USA and online, Sunday, November 16, 2025, 8:30 am - 5:00 pm CST (UTC-6)
+*=== Overview ===*
+Research software engineers (RSEs) are critical to the impact of HPC, data science, and the larger scientific community. They have existed for decades, though often not under that name. The past several years, however, have seen the development of the RSE concept, common job titles, and career paths; the creation of professional networks to connect RSEs; and the emergence of RSE groups at universities, national laboratories, and industry. This workshop will bring together RSEs and allies involved in HPC, from all over the world, to grow the RSE community by establishing and strengthening professional networks of current RSEs and RSE leaders. We’ll hear about successes and challenges that RSEs and RSE groups have experienced, and discuss ways to increase awareness of RSE opportunities and improve support for RSEs.
+The workshop will be highly interactive, featuring breakout discussions and panels, as well as invited addresses and submitted talks.
+*=== Submissions ===*
+We encourage prospective participants to submit abstracts of proposed lightning talks (limit of 1 page, no format prescribed) on topics related to RSE issues. Possible topics include, but are not limited to:
+• Career paths: how should RSEs be hired, promoted and evaluated?
+• Building RSE organizations: how to find RSEs in your country/region and how to motivate them to join the network and engage?
+• Supporting RSE organizations: what can be done to help RSEs (and those supporting RSEs) at international, national, regional, and local levels?
+• Making the business case for RSEs and RSE groups: evidence, case studies, tactics
+• How do we want funders to support RSE roles and activities?
+• Building in RSE requirements as part of wider research infrastructure
+• Providing mentoring and training for RSEs
+• How will RSEs contribute to new technologies such as AI/ML, quantum computing, neuromorphic computing?
+The authors of accepted abstracts will be invited to present lightning talks or participate in panel discussions at the workshop. Note that SC25 is planning an in-person event and presenting in-person is encouraged. A supporting digital experience will accommodate those who cannot attend in-person due to travel restrictions or health concerns.
+We particularly encourage submissions from first-time conference presenters, and from members of groups that have historically been underrepresented in the HPC community. *The deadline for submissions is Friday, August 8, 2025, at 11:59 PM AoE (UTC-12).*
+Learn more here!",Published,cferenba@lanl.gov,,"7/23/25, 3:34 PM",,,,
+"December 2nd, 2025 at 2:00 AM UTC","Organization Founding Membership","It would be great to announce that we extend the Organizational Founding membership opportunity to June 30, 2026. I announced it on the website with:
+We are thrilled to share that we’re extending the Founding Member deadline. Some organizations are actively working through their internal review processes, and we are glad to provide time to organizations to join as Founding Members through June 30, 2026.",Published,sandra.gesing@nd.edu,,"12/1/25, 9:00 PM",,,,
+"November 4th, 2025 at 9:21 PM UTC","Interesting Reads-Videos-Podcasts","On 8 September 2025, the OECD hosted a landmark hybrid event titled Access to Research Software: Opportunities and Challenges in Paris. This workshop marked the launch of a new initiative under the Committee for Scientific and Technological Policy (CSTP) and builds on a strong legacy of OECD work on open science. This includes the 2006 Recommendation on Access to Research Data from Public Funding as well as its *2021 update,* which was extended to include research software. ...  See https://www.researchsoft.org/blog/2025-10/ for more information about this event and work.",Published,d.katz@ieee.org,,"11/4/25, 4:21 PM",,,,
+"November 25th, 2025 at 3:43 PM UTC","Interesting Reads-Videos-Podcasts, Other","By Pengyin Shan: At iPRES 2025 in Wellington, I shared how many library and archive developers are already doing RSE work even if it’s not called “RSEng”, supported by the US-RSE travel funds. I reflect on why US-RSE should welcome these preservation-minded professionals and how our connection with the National Library of New Zealand is building a bridge across communities.
+
+Editable version: https://1drv.ms/w/c/5b0156106a4d226c/EXX_AMmociVPgQKrLBzB83gBQpJfWd9lyNJaPyS8Vym4VA
+PDF version: Pengyin Shan - iPRES2025 Blog Post",Published,pengyins@illinois.edu,,"11/25/25, 10:43 AM",,,,
+"November 25th, 2025 at 1:15 PM UTC","Interesting Events-Opportunities","The PEARC26 Conference will host a Special RSE Track: _Research Software Engineering: People, Practices, and Impact._ Call for Participation here: https://pearc.acm.org/pearc26/cfp-track-4-research-software-engineering/. Volunteer to be reviewer for the the track and entire technical program here: https://pearc.acm.org/pearc26/call-for-reviewers/",Published,icosden@princeton.edu,,"11/25/25, 8:15 AM",,,,
+"November 17th, 2025 at 2:03 AM UTC","Interesting Events-Opportunities","On behalf of the Guet Editors, I would like to announce and invite you to contribute to an upcoming *special issue* of *IEEE Computing in Science & Engineering (CiSE)*, entitled *“Controversies on the Usage of AI/ML for Science*.*”* The submission deadline is *January 21, 2026*. The purpose of this special issue is to bring together leading researchers (established and emerging alike) to share diverse, evidence-based perspectives on the opportunities and controversies surrounding the use of artificial intelligence and machine learning (AI/ML) in scientific research. The goal is to foster a thoughtful, evidence-based dialogue on the use of AI/ML in science and engineering, grounded in real research experiences and data. We invite contributors to present their perspectives on these potentially controversial topics and, importantly, to propose how we might resolve the controversies or mitigate the underlying challenges they stem from. By bringing together a wide range of viewpoints, we hope to illuminate best practices, clarify misconceptions, and chart paths forward for integrating AI/ML into scientific research responsibly.
+
+Please email Guest Editor *Irina Tezaur* at ikalash@sandia.gov if interested, or if you have any questions.",Deferred,carver@cs.ua.edu,,"11/16/25, 9:03 PM",,,,
+"November 10th, 2025 at 7:17 PM UTC","Community and Travel Funds","Building on the success of last year's first Data Carpentry workshop to ever be offered in Israel, funding from the US-RSE Community and Travel Fund supported a Data Carpentry Metagenomics workshop from October 22-23, 2025, at Tel Aviv University in Israel. The two-day, hands-on workshop was made possible by a partnership among the US-RSE, the Carpentries, the Israel Research Core Facilities, the George Washington University Libraries, Tel Aviv University, Weizmann Institute of Science, and ELIXIR.
+
+One of the goals of this year's workshop was to empower local instructors to take on more of the teaching responsibilities. In addition to last year's instructors Dan Kerchner, a Senior Software Developer and Bioinformatics PhD student from George Washington University in Washington, DC and Dr. Dan Ben-Avraham, head of Israel's ELIXIR node and head of the Mantoux Institute for Bioinformatics, major sections covering Bash shell and a metagenomics analysis pipeline were also taught this year by Weizmann Institute of Science bioinformaticians Dr. Dayana Yahalomi and Dr. Amir Szitenberg, with additional support from Dr. Avital Sarusi-Portuguez.
+
+The diverse group of 24 learners from 11 institutions included MS and PhD students, postdoctoral students and staff researchers in the life sciences, as well as international PhD students and postdocs from India, Brazil, and the U.S. studying and conducting research at institutions in Israel. Hands-on learning included project data organization for metagenomics, cloud computing, Bash shell, R coding, and applying these skills to process real-world whole-genome sequencing data through a series of command-line analysis tools to determine relative proportions of different taxa of bacteria from samples taken from Cuatro Cienegas, a unique ecological environment in Mexico. Research computing best practices were emphasized throughout. Participants reported increased skill levels, better understanding of how coding contributes to research reproducibility, higher confidence in applying their new software engineering skills to their research, and a desire for more learning opportunities of this type. We look forward to building on the success of the US-RSE-sponsored workshop and the enthusiasm for more workshops of this type in Israel to further develop RSE skills, connections, and community.",Published,carver@cs.ua.edu,,"11/10/25, 2:17 PM",,,,
+"November 4th, 2025 at 9:45 PM UTC","Interesting Events-Opportunities","We're again holding the RSE-HPC workshop at SC25 this year, on Sunday, 16 November 2025 from 9:00 am - 5:30 pm in room 267:
+https://sc25.conference-program.com/session/?sess=sess234",Published,d.katz@ieee.org,,"11/4/25, 4:45 PM",,,,
+"November 4th, 2025 at 9:43 PM UTC","Interesting Events-Opportunities","Attending SC25 and interested in Research Software Engineering and AI? Come to the ""Research Software Engineering in the Age of AI"" panel Thursday, 20 Nov 2025, 1:30 pm - 3:00 pm, rooms 240-241-242
+
+https://sc25.conference-program.com/presentation/?id=pan109&sess=sess351",Published,d.katz@ieee.org,,"11/4/25, 4:43 PM",,,,
+"November 4th, 2025 at 9:04 PM UTC","Interesting Events-Opportunities","US-RSE is excited to host a booth at AGU25 this year, joining one of the world’s largest gatherings of Earth and space scientists. This is a terrific opportunity to raise awareness of the critical role RSEs play in accelerating discovery, highlight our growing community, and connect with researchers who rely on high-quality software and research computing every day.
+*We’re looking for volunteers!*
+Help us bring the RSE voice to AGU by staffing our booth, sharing your experiences, and answering questions from attendees.
+Whether you can contribute an hour or several hours, your presence makes a difference. It’s also a great chance to meet colleagues, expand your professional network, and represent the RSE community at a major scientific venue.
+If you’d like to volunteer, please sign up here.
+We plan for an RSE gathering on one of the evenings. We will provide more information nearer to the event.
+We look forward to seeing you at AGU25—and to showcasing the amazing impact of RSEs on science and innovation!",Published,sandra.gesing@nd.edu,,"11/4/25, 4:04 PM",,,,
+"NCAR event","Interesting Events-Opportunities","The U.S. National Science Foundation National Center for Atmospheric Research (NSF NCAR) is hosting a *Co-Development Discovery Workshop* from August 20-21, 2025 in Boulder, CO, and online.
+
+The goals of this workshop are to:
+ Learn from best practices at other organizations and develop ideas to inform the process and framework of software co-development (between scientists and software engineers) at NSF NCAR. Identify ways to improve efficiency in communications, collaboration, and decision making in the co-development space.
+ Hear how other organizations provide support, professional development, and develop culture and communities of practice within their software engineering teams.
+
+Anticipated agenda topics include: decision making, communications and team dynamics, better platform agility, automation, GPU optimization, adapting to new hardware, software career support and processes, and more.
+
+To attend, please register by *August 8, 2025*. Stay tuned for additional details on the event venue and agenda. For any questions, please contact Kate Kuzemka, kkuzemka@ucar.edu.",Published,tinashemtapera@gmail.com,,"7/24/25, 2:39 PM",,,,
+"September 25th, 2025 at 11:20 PM UTC",Other,"Maybe add this as update from the Executive Director that people can sign up for office hours with me
+https://docs.google.com/spreadsheets/d/1tkMF9arOQy-Ac94t_JEdsHWDvsB99Yj315R8QYIyGYs/edit?gid=0#gid=0",Published,sandra.gesing@nd.edu,,"9/25/25, 7:20 PM",,,,
+"August 29th, 2025 at 1:36 PM UTC","Interesting Reads-Videos-Podcasts",https://doi.org/10.12688/openreseurope.20210.1,Published,d.katz@ieee.org,,"8/29/25, 9:36 AM",,,,
+"August 29th, 2025 at 1:35 PM UTC","Interesting Reads-Videos-Podcasts",https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=11119471&punumber=5992,Published,d.katz@ieee.org,,"8/29/25, 9:35 AM",,,,
+"August 29th, 2025 at 1:34 PM UTC","Interesting Reads-Videos-Podcasts",https://scholarlykitchen.sspnet.org/2025/08/28/guest-post-code-plagiarism-and-ai-create-new-challenges-for-publishing-integrity/,Published,d.katz@ieee.org,,"8/29/25, 9:34 AM",,,,
+"August 27th, 2025 at 2:39 PM UTC",Other,"Sandra Gesing will be representing US-RSE at several events in September, and she would love to connect with you if you are attending any of them!
+She will be on the panel “Human Resources and Motivation” at the OECD Event *Access to research software: Opportunities and challenges* on September 8 in Paris, France. From September 9-12 she will be at the *RSECon* in Warwick, UK. She co-organizes a co-located event on September 12 around AI and the RSE workspace - more details coming soon!
+Back in her hometown in Chicago, she will participate and present at the *eScience Conference* from September 15-18.
+
+Looking ahead to October, she will host office hours at our *USRSE’25* conference. You can sign up *here* to reserve a 15-minute slot. If the timing doesn’t work out, don’t worry - she will also be around during the conference sessions and social events. Please feel free to say hello anytime!",Published,sandra.gesing@nd.edu,,"8/27/25, 10:39 AM",,,,
+"July 27th, 2025 at 11:31 PM UTC",Other,"Sandra has worked with the Academic Data Science Alliance on the proposal “State of AI at the Workplace” and we received the funding! There will be Birds of the Feather (BoFs) and USRSE’25 and RSECon’25 in the UK. We plan for more also at SC25 and more interactive events. The survey “Generative AI at the Workplace” is also part of it.
+
+_The goals of this project as well as the survey are to capture broad “state of the field” information and to help define topic areas for a set of convenings with the RSE community over the coming year. These convenings are intended to dig into the details of AI use in the RSE workplace: to understand what’s already happening, identify key challenges and opportunities, and explore how RSEs themselves can actively shape the future of AI-augmented research software engineering._
+_Please take a moment to fill out the survey here_",Published,sandra.gesing@nd.edu,,"7/27/25, 7:31 PM",,,,
+"User-Facing Tutorials as Code: Reproducible and Reliable Tutorials with CI/CD","Interesting Events-Opportunities","User-facing tutorials typically combine code, narrative text, execution results, and visualizations. However, the target audience for these tutorials can vary significantly. Some tutorials serve as documentation for libraries, accessed by users during asynchronous learning, while others are designed for one-off workshops deployed on specific scientific platforms. This talk presents best practices for maintaining reliable and reproducible executable tutorials, developed as part of a Scientific Python Ecosystem Coordination (SPEC) document. These guidelines distinguish between different types of tutorials and workshop materials, offering targeted recommendations for each category",Approved,tinashemtapera@gmail.com,,"8/5/26, 6:07 PM",2026-08-12,2026-08-12,"{""originalUrl"":""https:\/\/ideas-productivity.org\/events\/hpcbp-099-tutorials"",""attachment"":{},""displayAsUrl"":false,""displayName"":""LINK""}",Online

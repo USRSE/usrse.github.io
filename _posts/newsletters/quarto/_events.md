@@ -4,7 +4,7 @@
 
 ```{=html}
 {% assign today = "now" | date: "%Y-%m-%d" %}
-{% for opp in site.data.newsletter-events-opportunities %}
+{% for opp in site.data.newsletter.events-opportunities %}
 {% assign expires = opp.expires | date: "%Y-%m-%d" %}
 {% if opp.type == "opportunity" and expires >= today %}
 {% include opportunity-box.html
@@ -19,7 +19,7 @@
 ```
 
 ```{=html}
-{% for event in site.data.newsletter-events-opportunities %}
+{% for event in site.data.newsletter.events-opportunities %}
 {% assign expires_formatted = event.expires | date: "%Y-%m-%d" %}
 {% if expires_formatted >= today %}
 {% if event.type == "event" %}  
