@@ -8,3 +8,6 @@ Gemfile.lock
 .DS_Store
 vendor/
 _vendor/
+
+.uvr
+.vscode
