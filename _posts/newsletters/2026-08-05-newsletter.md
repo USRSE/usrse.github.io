@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "US-RSE Summer 2026 Newsletter"
-subtitle: "Summer is in full swing, which means US-RSE is right around the corner..."
+subtitle: "☀️Summer is in full swing, which means US-RSE is right around the corner...☀️"
 category: newsletter
 tags: [newsletter, August]
 date: 2026-08-05 00:00:00 -0400
 author: "Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden (Editor)"
-image: "/assets/img/newsletter-202606/tasha-kostyuk-TtMKq3lJm-U-unsplash.jpg" #Done
-img_alttext: "A railway traffic controller with his back to the camera, looking at several screens with train camera feed and data." #Done
+image: "/assets/img/newsletter-202608/product-school-nOvIa_x_tfo-unsplash.jpg" #Done
+img_alttext: "A conference hall full of people" #Done
 next_meeting_date: Thursday, July 9, 2026, 12:00PM EST #Done
 sections:
   preamble: true #Done
@@ -37,7 +37,7 @@ So grab a beverage and settle in as we recap all kinds of updates from the summe
 In this issue...
 
 <p align="center">
-  <img src="{{ site.baseurl }}/assets/img/newsletter-202606/tasha-kostyuk-TtMKq3lJm-U-unsplash.jpg" alt="A railway traffic controller with his back to the camera, looking at several screens with train camera feed and data." style="width: 750px; height: auto;">
+  <img src="{{ site.baseurl }}/assets/img/newsletter-202608/product-school-nOvIa_x_tfo-unsplash.jpg" alt="A conference hall full of people" style="width: 750px; height: auto;">
 </p>
 
 - [<span class="toc-section-number">1</span> 🤔 Arrestive Curiosity &
