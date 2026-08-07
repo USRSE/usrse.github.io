@@ -1,0 +1,206 @@
+- expires: '2026-09-02'
+  type: opportunity
+  title: 'HPC Best Practices Webinar: *Rapid Development of a High-Performance Applications
+    Using Python*'
+  when: '2026-09-02'
+  where: Online
+  preamble: |-
+    The HPC Best Practices webinar for September:
+
+    *Rapid Development of a High-Performance Applications Using Python*
+    will be presented by *Joanna Piper Morgan (Nuclear Criticality Safety Division, Lawrence Livermore National Lab)*
+    on *September 02 1:00pm - 2:00pm EDT*
+
+    *Registration*
+
+    Scientific research codes running problems that demand HPC have a human resources problem: the physicist/engineer who develops numerical methods, and the software engineer who develops HPC code for CPUs and GPUs, are the same person. This often means implementing novel numerical methods for HPC applications can take years to implement and test at scale. In this talk we describe how we used Python, Numba, and our own in house event scheduling software to separate the numerical methods developer from the software engineering. We will detail our JIT compilation structure for CPUs and GPUs (both NVIDIA and AMD), technical roadblocks, and lessons learned from this software engineering scheme in the development of the MC/DC Monte Carlo neutronics code. We will also briefly mention how this workflow (conceived and designed before the broad acceptance of LLM) fits into a research environment increasingly supported by AI tools.
+
+    *Details:* ideas-productivity.org/events/hpcbp-100-python
+  links: '[LINK](https://ideas-productivity.org/events/hpcbp-100-python)'
+  index: 1
+- expires: '2026-10-14'
+  type: opportunity
+  title: Nextflow is hosting their own "conference" and it's free virtually!
+  when: '2026-10-13'
+  where: Online
+  preamble: |-
+    Virtual Nextflow Summit is the premier global gathering of the Nextflow community—accessible from anywhere. Join researchers, developers, and industry leaders from across pharma and biotech as they share cutting-edge research, innovative solutions, and real-world applications.
+
+    Whether you're building pipelines, analyzing data, or leading teams, connect with the community, learn from the best, and walk away with fresh ideas, new skills, and the momentum to advance your work.
+  links: '[link](https://summit.nextflow.io/2026/virtual/overview)'
+  index: 2
+- expires: '2026-08-19'
+  type: event
+  title: 'NLS³C CoP Webinar: Better Documentation Practices for Research Software'
+  when: '2026-08-19'
+  where: Online
+  preamble: |-
+    Join us for the next webinar of the National Laboratories Sustainable Scientific Software Conference's Community of Practice, as Miranda Mundt introduces us to Better Documentation Practices for Research Software.
+
+    We've all been there: handed a piece of code that promises to do something remarkable, only to find not a single line explaining how. Hours disappear into reverse-engineering what a few sentences could have told us. In research, where software increasingly underpins our most important discoveries, documentation is what separates work that others can build on from work that dies with its author. And in an era where generative AI can draft a docstring or a README in seconds, the challenge has quietly shifted: the bottleneck is no longer writing the words, but knowing whether they're actually true, clear, and useful to the person on the other side. Join us for this session on writing documentation well, and discover how a modest investment in clarity today pays dividends across the life of your research.
+
+    > *Topic:* Better Documentation Practices for Research Software
+    > *Presenter:* Miranda Mundt (Sandia National Laboratories)
+    > *Time:* Wednesday, August 19, 11:00 AM - 12:00 PM MST
+    > *Registration:*  Click here
+    The NLS³C CoP fosters collaboration among individuals interacting with software repositories across the U.S. National Labs complex. Our mission is to enhance the development culture by promoting best practices, knowledge sharing, and standards that improve quality and sustainability. We empower developers, project managers, and decision-makers through valuable resources, including monthly webinars. By cultivating a network of early adopters, we aim to drive culture change and transform the software landscape within the National Labs. Check out our wiki (limited to those under the DOE) to see what we have to offer and how you can contribute.
+
+    Please forward this announcement along to anyone who might be interested. We look forward to seeing you.
+
+    Jason M. Gates (Sandia National Laboratories)
+  links: '[See here!](https://events.gcc.teams.microsoft.com/event/dfd563ee-e0f8-40f7-a553-11838feb4812@7ccb5a20-a303-498c-b0c1-29007381b574)'
+  index: 3
+- expires: '2026-08-26'
+  type: event
+  title: Metadata for All with Wikidata
+  when: '2026-08-26'
+  where: Online
+  preamble: |-
+    We have an upcoming FORCE11 webinar that may be of interest to folks in the DEI space:
+
+    *Metadata for All with Wikidata*
+
+    The session will explore how open metadata and Wikidata can support discoverability, accessibility, and representation in research and scholarship, including discussions around neurodiversity, transgender musicians, and linking scholarly outputs in open knowledge systems.
+  links: '[LINK](https://force11.org/post/webinar-metadata-for-all-with-wikidata/)'
+  index: 4
+- expires: '2026-09-16'
+  type: event
+  title: APeX Summit 2026
+  when: '2026-09-14'
+  where: Online, In-person
+  preamble: The APeX Summit (Academy, Parsl, Globus Compute) is the eighth annual
+    community meeting, bringing together researchers, developers, and cyberinfrastructure
+    experts worldwide to discuss experiences using and developing Academy, Parsl,
+    and Globus Compute. The summit will be held as a hybrid meeting on September 14–15,
+    2026, with the in-person component in Chicago. Full program details are *coming
+    soon*.
+  links: '[Check it out!](https://parsl-project.org/parslfest/apex2026.html)'
+  index: 5
+- expires: '2026-09-11'
+  type: event
+  title: The Inaugural International Research Software Conference (IRSC26)
+  when: '2026-09-09'
+  where: In Person
+  preamble: The program is now available for the inaugural International Research
+    Software Conference (IRSC26), convened by the Research Software Alliance (ReSA).
+    The conference takes place 7-8 September 2026 in Sheffield, UK, with remote participation
+    available. IRSC26 is co-located with RSECon26 (9-11 September 2026).
+  links: '[Program Link](https://www.researchsoft.org/irsc/program/)'
+  index: 6
+- expires: '2026-11-05'
+  type: event
+  title: GenAI in Workshops by The Carpentries
+  when: '2026-08-01'
+  where: Online
+  preamble: |-
+    In response to the growing number of reports we are receiving from our Instructor community about the use of generative AI chatbots by learners at workshops, The Carpentries has launched a bonus module to Instructor Training, GenAI in Workshops, in which instructors will explore what widespread genAI use means for the way they teach.
+    In sessions led by expert Carpentries Instructor Trainers, participants will discuss the potential impacts of genAI chatbot use on opportunities for guided practice in a workshop, how expertise affects an individual’s ability to make successful use of genAI tools, how considerations of cognitive load should change in this new context, and how to maintain a positive learning environment in their workshops. The events are highly interactive and designed to build Instructors’ confidence to be proactive in their response to genAI use in their workshops and other teaching settings.
+    Their Pricing page has more information on costs, and you can get in touch with them by email to register.
+  links: '[Presented by The Carpentries](https://carpentries.org/blog/2026/06/genai-in-workshops-a-bonus-module-to-instructor-training/)'
+  index: 7
+- expires: '2026-08-07'
+  type: opportunity
+  title: Research Software Engineers in HPC (RSE-HPC-2026) workshop @ SC26
+  when: '2026-08-07'
+  where: Online
+  preamble: |-
+    We are excited to announce the Research Software Engineers in HPC (RSE-HPC-2026) workshop, to be held as part of SC26, in Chicago, IL, USA and online, on Monday, November 16, 2026.
+
+    We encourage prospective participants to submit abstracts of proposed lightning talks on topics related to RSE issues. The authors of accepted abstracts will be invited to present lightning talks or participate in panel discussions at the workshop. We particularly encourage submissions from first-time conference presenters, and from members of groups that have historically been underrepresented in the HPC community. The deadline for submissions is Friday, August 7, 2026, at 11:59 PM AoE (UTC-12).
+
+    • For more information, see the workshop website.
+  links: '[For more information, see the workshop website!](https://us-rse.org/rse-hpc-2026/)'
+  index: 8
+- expires: '2026-08-12'
+  type: event
+  title: 'User-Facing Tutorials as Code: Reproducible and Reliable Tutorials with
+    CI/CD'
+  when: '2026-08-12'
+  where: Online
+  preamble: User-facing tutorials typically combine code, narrative text, execution
+    results, and visualizations. However, the target audience for these tutorials
+    can vary significantly. Some tutorials serve as documentation for libraries, accessed
+    by users during asynchronous learning, while others are designed for one-off workshops
+    deployed on specific scientific platforms. This talk presents best practices for
+    maintaining reliable and reproducible executable tutorials, developed as part
+    of a Scientific Python Ecosystem Coordination (SPEC) document. These guidelines
+    distinguish between different types of tutorials and workshop materials, offering
+    targeted recommendations for each category
+  links: '[LINK](https://ideas-productivity.org/events/hpcbp-099-tutorials)'
+  index: 9
+- expires: '2026-10-09'
+  type: event
+  title: 2026 DASH / IHDEA Meeting
+  when: October 5-9, 2026
+  where: Dublin, Ireland, and virtual
+  preamble: "Save the date! \U0001F4C5\n\nThe 2026 DASH / IHDEA Meeting will take
+    place 5-9 October 2026, hosted by the Dublin Institute for Advanced Studies (DIAS)
+    in Dublin, Ireland, with virtual participation supported. \U0001F973\n\nThe DASH
+    (Data Analysis and Software in Heliophysics) and IHDEA (International Heliophysics
+    Data Environment Alliance) meetings bring together scientists and software developers
+    working on data analysis, algorithms, community software, data systems, and standards
+    across heliophysics - from the Sun to geospace and beyond. We invite the full
+    solar and heliophysics data, software, and science community to join us. More
+    details coming soon, including a call for session proposals.\n"
+  links: |
+    For more information, visit: [dash.heliophysics.net](https://dash.heliophysics.net/) and [ihdea.net](https://ihdea.net/).
+  index: 10
+- expires: '2026-12-31'
+  type: opportunity
+  title: "Supercomputing and the Future of AI: Watch the Full Virtual Exchange Series
+    On-Demand! \U0001F916"
+  when: .na.character
+  where: .na.character
+  preamble: |
+    Our exciting webinar series for K–12 classrooms, presented in partnership with Reach the World, has officially wrapped! Over the past ten weeks, more than 840 students joined us to explore the fascinating world of supercomputing, quantum computing, and artificial intelligence.
+
+    Now, all episodes are available to watch on-demand along with companion journal articles that bring the topics to life for students, educators, and curious minds of all ages. Together with Reach the World, US-RSE created this virtual exchange to offer a behind-the-scenes look at how research software engineers and data scientists use cutting-edge computing to tackle real-world challenges.
+  links: |
+    Learn more at [ReachTheWorld.org](https://reachtheworld.org/supercomputing-and-future-ai-0), and please reach out to [Sandra Gesing](mailto:sandra@us-rse.org) with any questions
+  index: 11
+- expires: '2026-12-30'
+  type: opportunity
+  title: Contribute to the future of DEI in US-RSE
+  when: .na.character
+  where: .na.character
+  preamble: |
+    The US-RSE DEI Working Group is seeking input from the community! We’re exploring new ways to foster diversity, equity, and inclusion within our organization and would love to hear your ideas. What would make US-RSE a more inclusive and welcoming space for you and others?
+
+    Let’s work together to make US-RSE a place where everyone feels they belong.
+  links: |
+    If you have suggestions, big or small, please share them in the #dei-discussion Slack channel or reach out directly to the [DEI Working Group](mailto:wg-dei@us-rse.org). Your feedback will help guide our future initiatives and ensure they reflect the needs of our diverse community.
+  index: 12
+- expires: '2026-09-25'
+  type: opportunity
+  title: Gateways 2026 Call for Participation and Registration Open
+  when: .na.character
+  where: .na.character
+  preamble: |
+    The Gateways 2026 Conference Call for Participation and registration are now live! For a decade, the Gateways conference has served as a central meeting place for creators and users of science gateways. This year’s conference highlights the growing integration of Artificial Intelligence alongside continued advances in community development, education, and interoperability.
+    Join the community in Washington, DC, September 23–25, 2026, to share solutions, tackle challenges, and build connections that will power the next generation of research.
+
+    Key dates and deadlines:
+    - Tutorials — May 22, 2026
+    - Papers — June 8, 2026
+    - Talk-only, BYOP, and Posters — July 20, 2026
+
+    Can't attend the full conference? Free Virtual Tutorials sessions will be held September 1–3 and September 8–11, 2026.
+  links: |
+    Conference details: [Click here](https://sciencegateways.org/gateways2026)
+    Registration: [Click here](https://na.eventscloud.com/ereg/newreg.php?eventid=874568&)
+  index: 13
+- expires: '2026-08-30'
+  type: opportunity
+  title: IJPP Special Issue on High-Productivity Programming Systems for HPC Applications
+  when: .na.character
+  where: .na.character
+  preamble: |
+    The International Journal of Parallel Programming (IJPP) is accepting submissions for a special issue on “High-Productivity Programming Systems for HPC Applications.” The issue focuses on programming languages, models, and software systems that improve productivity while addressing the performance, power, scalability, and reliability challenges of modern and future high-performance computing systems.
+
+    Topics of interest include exascale programming systems, parallel programming models, performance tuning, power management, fault tolerance, self-aware software systems, and approaches for exploiting massive parallelism in HPC applications.
+
+    Researchers and practitioners in HPC, scientific computing, and research software engineering are encouraged to submit.
+
+    Submission deadline (extended): August 30, 2026.
+  links: 'Journal and submission information: [Click here](https://link.springer.com/journal/10766/updates/27768048)'
+  index: 14

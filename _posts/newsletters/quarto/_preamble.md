@@ -1,10 +1,14 @@
-Well, actually, there are thousands — **four thousand and counting**, to be exact! That's
-right, as of April 2026, US-RSE has grown to over 4,000 registered members! That means if you
-tried to count every member one by one, it would take you [over an hour](https://numbermatics.com/n/4000/) to 
-count them all. 4000 is also a Harshad number, which means it's divisible by the sum of its digits (4 + 0 + 0 + 0 
-= 4). So, in a way, our membership is mathematically harmonious! Also, did you know
-that the recent Artemis mission flew approximately [4000 miles above the moon's surface](https://science.nasa.gov/solar-system/skywatching/night-sky-network/night-sky-network-celebrates-artemis-ii/)?
-Okay, you get the point — that's a lot of RSEs, and we're thrilled to have each and every one of you as part of our community.
+Hi all, it's been a minute!
 
-So grab a beverage, sit back, and dive in to the latest news and updates from your
-4000-member-strong community of research software engineers!
+Welcome to the Summer 2026 edition of the US-RSE newsletter! In this issue, we are packing in several updates and highlights
+from the community, and gearing up for USRSE26! Read on for all the latest updates, including upcoming events, recent accomplishments, 
+and opportunities to get involved in the RSE community.
+
+Most importantly, get excited — the conference is just around the corner!
+
+So grab a beverage and settle in as we recap all kinds of updates from the summer!
+In this issue...
+
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/img/newsletter-202606/tasha-kostyuk-TtMKq3lJm-U-unsplash.jpg" alt="A railway traffic controller with his back to the camera, looking at several screens with train camera feed and data." style="width: 750px; height: auto;">
+</p>

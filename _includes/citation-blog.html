@@ -1,0 +1,52 @@
+{% assign ref = include.ref %}
+
+{% assign people = ref.author %}
+{% if people == nil or people.size == 0 %}
+  {% assign people = ref.editor %}
+{% endif %}
+
+{% capture creators -%}
+{%- if people and people.size > 0 -%}
+  {%- for a in people -%}
+    {%- if forloop.index <= 3 -%}
+      {%- if a.literal -%}
+        {{ a.literal }}
+      {%- elsif a.family and a.given -%}
+        {{ a.family }}, {{ a.given | slice: 0 }}.
+      {%- elsif a.family -%}
+        {{ a.family }}
+      {%- elsif a.name -%}
+        {{ a.name }}
+      {%- endif -%}
+      {%- if forloop.index < people.size and forloop.index < 3 -%}, {% endif -%}
+    {%- elsif forloop.index == 4 -%}
+      et al.
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- elsif ref.publisher -%}
+  {{ ref.publisher }}
+{%- elsif ref.organization -%}
+  {{ ref.organization }}
+{%- endif -%}
+{%- endcapture %}
+
+{% assign creators = creators | strip %}
+
+{% assign year = nil %}
+{% if ref.issued and ref.issued.date-parts and ref.issued.date-parts[0] %}
+  {% assign year = ref.issued.date-parts[0][0] %}
+{% endif %}
+
+{% assign title = ref.title %}
+{% assign container = ref.container-title %}
+{% if container and container.first %}
+  {% assign container = container.first %}
+{% endif %}
+
+{% assign link = ref.url | default: ref.URL %}
+{% if ref.doi and link == nil %}
+  {% assign link = "https://doi.org/" | append: ref.doi %}
+{% endif %}
+
+- {% if creators != "" %}**{{ creators }}**{% endif %}{% if year %}{% if creators != "" %} {% endif %}({{ year }}){% endif %}. *{{ title }}*{% if container %}. *{{ container }}*{% endif %}{% if link %}. [Check it out.]({{ link }}){% endif %}

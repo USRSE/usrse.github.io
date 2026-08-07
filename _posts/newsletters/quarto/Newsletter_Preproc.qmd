@@ -1,0 +1,175 @@
+---
+title: "Newsletter Helpers"
+format:
+  html:
+    embed-resources: true
+---
+
+```{r}
+library(dplyr)
+library(readr)
+library(here)
+library(janitor)
+library(lubridate)
+library(stringr)
+library(tidyr)
+library(yaml)
+library(purrr)
+library(jsonlite)
+library(tibble)
+library(fs)
+library(DT2)
+```
+
+This notebook contains helper snippets for the US-RSE newsletter. It
+is intended to parse data into YAML before it is used in the newsletter
+template.
+
+The directory should be self-contained, so that it doesn't interfere
+with any other US-RSE Website content. No software is installed,
+and no changes are being made to the US-RSE Website. The notebook is 
+intended to be run in a local environment, not as part of CI/CD.
+
+## Old Data
+
+Let's read in the old data to rbind it:
+
+```{r}
+old_data <- read_yaml(here("_data/newsletter-events-opportunities.yml")) |>
+    map_dfr(as_tibble) |>
+    mutate(
+        expires = as_date(expires, format = "%Y-%m-%d")
+    )
+```
+
+## Slack Data
+
+Next, we'll grab the Slack data from the Newsletter Content Triage
+[List](https://usrse.slack.com/lists/T8ZT4PJSW/F08MLHYKALR). 
+We could use the Slack API, but I think it's actually easier
+to export the list content as CSV and `git` track it in the 
+`_data` directory.
+
+Importantly, the most recent file is the one we want to keep;
+Slack doesn't automatically overwrite the CSV, so we have to manually delete old files.
+
+```{r}
+old_slack_files <- list.files(here("_data/newsletter"), pattern = "Newsletter_Content_Triage", full.names = TRUE) |>
+    file.info() |>
+    rownames_to_column("file") |>
+    as_tibble() |>
+    arrange(desc(mtime))
+
+if(nrow(old_slack_files) > 1){
+    slack_file <- old_slack_files |>
+        slice(1)
+
+    walk(old_slack_files$file[-1], fs::file_delete)
+    fs::file_move(slack_file$file, here("_data/newsletter/Newsletter_Content_Triage.csv"))
+} else {
+    message("No old files to delete.")
+}
+```
+
+```{r}
+
+slack <- read_csv(here("_data/newsletter/Newsletter_Content_Triage.csv")) |>
+    clean_names()
+
+section_col <- str_subset(names(slack), "what_section")
+
+slack <- slack |>
+    separate_rows(all_of(section_col), sep = ",\\s*") |>
+    mutate(
+        submission_date = as_date(submission_date, format = "%m/%d/%y, %I:%M %p"),
+        staging = as.factor(staging)
+        )    |>
+    rename(section = all_of(section_col))
+```
+
+Now get the new events:
+
+```{r}
+
+fromJson_vec <- Vectorize(function(x){
+
+    tryCatch({
+        dat <- fromJSON(x)
+
+        display <- dat$displayName
+        url <- dat$originalUrl
+
+        str_c("[", display, "](", url, ")")
+    }, error = function(e){
+        x
+    })
+}, USE.NAMES = FALSE)
+
+slack |>
+    filter(str_detect(section, "Event")) |>
+    filter(staging == "Approved" | staging == "Published") |>
+    mutate(
+        content_expiration_date = case_when(
+            is.na(content_expiration_date) ~ as_date("2026-08-01"),
+            TRUE ~ content_expiration_date
+        ),
+        event_date = case_when(
+            is.na(event_date) ~ as_date("2026-08-01"),
+            TRUE ~ event_date
+        ),
+        type = case_when(
+            str_detect(str_to_lower(content), "submit|application|submission|deadline") ~ "opportunity",
+            TRUE ~ "event"
+        ),
+        location = case_when(
+            !is.na(location) ~ location,
+            str_detect(str_to_lower(content), "online|zoom|webinar|virtual") ~ "Online",
+            TRUE ~ "In Person"
+        ),
+        link = fromJson_vec(link)
+    ) -> events_opportunities
+```
+
+## Binding
+
+Now we just put em together: 
+
+```{r}
+events_opportunities |>
+    mutate(event_date = as.character(event_date)) |>
+    select(
+        expires = content_expiration_date,
+        type = type,
+        title = submission,
+        when = event_date,
+        where = location,
+        preamble = content,
+        links = link
+    ) |>
+    replace_na(list(when = as_date("2026-01-01"), where = "TBD", links = "TBD")) |>
+    bind_rows(old_data) -> all_events_opportunities
+```
+
+Number of rows to publish next: 
+
+```{r}
+all_events_opportunities |>
+    filter(expires >= Sys.Date()) |>
+    dt2(compact = TRUE, striped = TRUE, hover = TRUE, font_scale = 0.85,
+    options = list(pageLength = 10))
+```
+
+We can write this back to yaml now:
+
+```{r}
+all_events_opportunities |>
+    filter(expires >= Sys.Date()) |>
+    mutate(when = as.character(when)) |>
+    mutate(expires = as.character(expires)) |>
+    mutate(index= row_number()) |>
+    group_by(index) |>
+    group_split() |>
+    write_yaml(here("_data/newsletter/events-opportunities.yml"))
+```
+
+

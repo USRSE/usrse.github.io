@@ -1,0 +1,104 @@
+{% assign ref = include.ref %}
+
+{% assign people = ref.author %}
+{% if people == nil or people.size == 0 %}
+  {% assign people = ref.editor %}
+{% endif %}
+
+{% capture creators -%}
+{%- if people and people.size > 0 -%}
+  {%- for a in people -%}
+    {%- if forloop.index <= 3 -%}
+      {%- if a.literal -%}
+        {{ a.literal }}
+      {%- elsif a.family and a.given -%}
+        {{ a.family }}, {{ a.given | slice: 0 }}.
+      {%- elsif a.family -%}
+        {{ a.family }}
+      {%- elsif a.name -%}
+        {{ a.name }}
+      {%- endif -%}
+      {%- if forloop.index < people.size and forloop.index < 3 -%}, {% endif -%}
+    {%- elsif forloop.index == 4 -%}
+      et al.
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- elsif ref.publisher -%}
+  {{ ref.publisher }}
+{%- elsif ref.institution -%}
+  {{ ref.institution }}
+{%- elsif ref.organization -%}
+  {{ ref.organization }}
+{%- endif -%}
+{%- endcapture %}
+
+{% assign creators = creators | strip %}
+
+{% assign year = nil %}
+{% assign date_parts = ref.issued["date-parts"] %}
+{% if date_parts and date_parts[0] %}
+  {% assign year = date_parts[0][0] %}
+{% endif %}
+
+{% assign title = ref.title %}
+
+{% assign container = ref["container-title"] %}
+{% if container and container.first %}
+  {% assign container = container.first %}
+{% endif %}
+
+{% assign collection = ref["collection-title"] %}
+{% if collection and collection.first %}
+  {% assign collection = collection.first %}
+{% endif %}
+
+{% assign publisher = ref.publisher | default: ref.institution | default: ref.organization %}
+{% assign place = ref["publisher-place"] %}
+{% assign genre = ref.genre %}
+{% assign number = ref.number %}
+{% assign volume = ref.volume %}
+{% assign issue = ref.issue %}
+{% assign page = ref.page %}
+{% assign edition = ref.edition %}
+
+{% assign link = ref.url | default: ref.URL %}
+{% if ref.doi %}
+  {% assign doi_clean = ref.doi
+    | remove: "https://doi.org/"
+    | remove: "http://doi.org/"
+    | remove: "doi:" %}
+  {% assign link = "https://doi.org/" | append: doi_clean %}
+{% endif %}
+
+{% capture venue -%}
+{%- if container -%}
+  *{{ container }}*{% if volume %} {{ volume }}{% endif %}{% if issue %}({{ issue }}){% endif %}{% if page %}, {{ page }}{% endif %}
+{%- elsif collection -%}
+  *{{ collection }}*{% if volume %} {{ volume }}{% endif %}{% if issue %}({{ issue }}){% endif %}{% if page %}, {{ page }}{% endif %}
+{%- endif -%}
+{%- endcapture %}
+
+{% assign venue = venue | strip %}
+
+{% capture details -%}
+{%- if genre -%}
+  {{ genre }}
+{%- endif -%}
+{%- if number -%}
+  {%- if genre -%}, {% endif -%}{{ number }}
+{%- endif -%}
+{%- if edition -%}
+  {%- if genre or number -%}. {% endif -%}{{ edition }} ed.
+{%- endif -%}
+{%- if publisher -%}
+  {%- if genre or number or edition -%}. {% endif -%}{{ publisher }}
+{%- endif -%}
+{%- if place -%}
+  {%- if publisher -%}, {% elsif genre or number or edition -%}. {% endif -%}{{ place }}
+{%- endif -%}
+{%- endcapture %}
+
+{% assign details = details | strip %}
+
+- {% if creators != "" %}**{{ creators }}**{% endif %}{% if year %}{% if creators != "" %} {% endif %}({{ year }}){% endif %}. *{{ title }}*{% if venue != "" %}. {{ venue }}{% endif %}{% if details != "" %}. {{ details }}{% endif %}{% if link %}. [Read it.]({{ link }}){% endif %}
