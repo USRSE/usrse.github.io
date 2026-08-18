@@ -1,0 +1,54 @@
+{% assign ref = include.ref %}
+
+{% assign people = ref.author %}
+{% if people == nil or people.size == 0 %}
+  {% assign people = ref.editor %}
+{% endif %}
+
+{% capture creators -%}
+{%- if people and people.size > 0 -%}
+  {%- for a in people -%}
+    {%- if forloop.index <= 3 -%}
+      {%- if a.literal -%}
+        {{ a.literal }}
+      {%- elsif a.family and a.given -%}
+        {{ a.family }}, {{ a.given | slice: 0 }}.
+      {%- elsif a.family -%}
+        {{ a.family }}
+      {%- elsif a.name -%}
+        {{ a.name }}
+      {%- endif -%}
+      {%- if forloop.index < people.size and forloop.index < 3 -%}, {% endif -%}
+    {%- elsif forloop.index == 4 -%}
+      et al.
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- elsif ref.publisher -%}
+  {{ ref.publisher }}
+{%- elsif ref.organization -%}
+  {{ ref.organization }}
+{%- endif -%}
+{%- endcapture %}
+
+{% assign creators = creators | strip %}
+
+{% assign year = nil %}
+{% if ref.issued and ref.issued.date-parts and ref.issued.date-parts[0] %}
+  {% assign year = ref.issued.date-parts[0][0] %}
+{% endif %}
+
+{% assign action_label = "Open resource" %}
+{% if ref.URL %}
+  {% assign url_lc = ref.URL | downcase %}
+{% elsif ref.url %}
+  {% assign url_lc = ref.url | downcase %}
+{% endif %}
+
+{% if url_lc contains "youtube.com" or url_lc contains "youtu.be" or url_lc contains "vimeo.com" %}
+  {% assign action_label = "Watch here" %}
+{% elsif url_lc contains "buzzsprout.com" or url_lc contains "podcast" or url_lc contains "spotify.com" %}
+  {% assign action_label = "Listen here" %}
+{% endif %}
+
+- {% if creators != "" %}**{{ creators }}**{% endif %}{% if year %}{% if creators != "" %} {% endif %}({{ year }}){% endif %}. *{{ ref.title }}*{% if ref.container-title %}. *{{ ref.container-title }}*{% endif %}{% if ref.url or ref.URL %}. [{{ action_label }}.]({{ ref.url | default: ref.URL }}){% endif %}

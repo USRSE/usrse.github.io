@@ -1,135 +1,115 @@
-# US-RSE June 2026 Newsletter
-Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden
-(Editor)
-2026-06-15
+---
+layout: post
+title: "US-RSE Summer 2026 Newsletter"
+subtitle: "☀️Summer is in full swing, which means US-RSE is right around the corner...☀️"
+category: newsletter
+tags: [newsletter, August]
+date: 2026-08-05 00:00:00 -0400
+author: "Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden (Editor)"
+image: "/assets/img/newsletter-202608/product-school-nOvIa_x_tfo-unsplash.jpg" #Done
+img_alttext: "A conference hall full of people" #Done
+next_meeting_date: Thursday, July 9, 2026, 12:00PM EST #Done
+sections:
+  preamble: true #Done
+  headline: true #Done
+  conference: true #Done
+  execupdate: false #TODO
+  scupdate: false #TODO
+  orgmember: false #TODO
+  communityfunds: false #TODO
+  news: true #TODO
+  events: true #TODO
+  reads: true #TODO
+  involved: true
+  jobs: true
+
+---
+
+Hi all, it's been a minute!
+
+Welcome to the Summer 2026 edition of the US-RSE newsletter! In this issue, we are packing in several updates and highlights
+from the community, and gearing up for USRSE26! Read on for all the latest updates, including upcoming events, recent accomplishments, 
+and opportunities to get involved in the RSE community.
+
+Most importantly, get excited — the conference is just around the corner!
+
+So grab a beverage and settle in as we recap all kinds of updates from the summer!
+In this issue...
+
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/img/newsletter-202608/product-school-nOvIa_x_tfo-unsplash.jpg" alt="A conference hall full of people" style="width: 750px; height: auto;">
+</p>
 
 - [<span class="toc-section-number">1</span> 🤔 Arrestive Curiosity &
-  RSEs: How to Turn the Shiny Toy Syndrome Bug into a Feature
-  🤔](#thinking-arrestive-curiosity--rses-how-to-turn-the-shiny-toy-syndrome-bug-into-a-feature-thinking)
+  RSEs: Turning Shiny Toy Syndrome into a Feature
+  🤔](#thinking-arrestive-curiosity--rses-turning-shiny-toy-syndrome-into-a-feature-thinking)
 - [<span class="toc-section-number">2</span> 📣 Mark Your Calendars for
   USRSE’26! 📣](#mega-mark-your-calendars-for-usrse26-mega)
-- [<span class="toc-section-number">3</span> 🤝 Organizational Founding
-  Membership
-  🤝](#handshake-organizational-founding-membership-handshake)
-- [<span class="toc-section-number">4</span> 🗞️ Community News
+- [<span class="toc-section-number">3</span> 🗞️ Community News
   🗞️](#newspaper_roll-community-news-newspaper_roll)
-- [<span class="toc-section-number">5</span> Community
+- [<span class="toc-section-number">4</span> Community
   Spotlight](#community-spotlight)
-- [<span class="toc-section-number">6</span> 👀 Interesting Events and
+- [<span class="toc-section-number">5</span> 👀 Interesting Events and
   Opportunities 👀](#eyes-interesting-events-and-opportunities-eyes)
-- [<span class="toc-section-number">7</span> 📚 Featured Reads, Videos,
+- [<span class="toc-section-number">6</span> 📚 Featured Reads, Videos,
   and Podcasts 📚](#books-featured-reads-videos-and-podcasts-books)
-- [<span class="toc-section-number">8</span> 🏃 Get Involved!
+- [<span class="toc-section-number">7</span> 🏃 Get Involved!
   🏃](#running-get-involved-running)
-- [<span class="toc-section-number">9</span> 🧑‍💼 Recent Job Postings
+- [<span class="toc-section-number">8</span> 🧑‍💼 Recent Job Postings
   🧑‍💼](#office_worker-recent-job-postings-office_worker)
 
 <a name="top"></a>
 
-First of all, Happy Pride Month 🌈, and Happy Juneteenth 🎉! We hope you
-are all having a wonderful summer celebrating the diversity and
-resilience of our communities.
-
-It’s been another busy month for US-RSE, as conference planning
-continues to ramp up, membership continues to grow, and the organization
-continues to expand its offerings and impact to the research software
-community. In this issue, we’ll discuss shiny toy syndrome in
-technology, celebrate the LGBTQ+ community, and share all the latest and
-greatest news from US-RSE.
-
-<p align="center">
-  <img src="{{ site.baseurl }}/assets/img/newsletter-202606/tasha-kostyuk-TtMKq3lJm-U-unsplash.jpg" alt="A railway traffic controller with his back to the camera, looking at several screens with train camera feed and data." style="width: 750px; height: auto;">
-</p>
-
-In this issue:
-
 ------------------------------------------------------------------------
 
-## 🤔 Arrestive Curiosity & RSEs: How to Turn the Shiny Toy Syndrome Bug into a Feature 🤔
+## 🤔 Arrestive Curiosity & RSEs: Turning Shiny Toy Syndrome into a Feature 🤔
 
 <a name="headline"></a>
 
-This month, I had the pleasure of meeting some fellow R users at the
-Boston R User Group meetup, where I can say I finally felt safe opening
-a conversation with a hot take like, “R is the best,” knowing it would
-likely not spark a flame war. I’m sure many of you having read that
-sentence are already compiling the several counterarguments in your
-head, mashing away your response in a text editor, choosing all your
-best and worst use cases as examples and calling on the greats of your
-respective community to back you up. But this discussion is actually not
-about flame wars; in fact, as I’m sure you’ve experienced, we as
-technologists often care less about what tool is objectively best, and
-more about what tool is best for us, our project, and our team.
+This summer I met some fellow R users at the Boston R User Group meetup,
+where I finally felt safe saying, “R is the best at \[X\],” without
+starting a flame war. Of course, most of us know these debates are
+rarely about which tool is objectively best. Rather, they’re about which
+tool is best for a person, a project, or a team.
 
-And while this can sound like a freeing stance on tooling in general, it
-leaves us with an acute conundrum: how do we know when to *switch*
-tools? When do we know that the tool we’re using is no longer best for
-us, and that we should switch to something else? As computing becomes
-more accessible and capable, more individuals are building tools that
-avow to *finally* and *decisively* solve the problem of \[insert other
-tools’ shortcomings here\]. Indeed, whether it was Markdown’s attempt to
-become the de facto standard for writing on the web Anaconda claim to be
-the last word in environment management for data science, or the eternal
-paradox of Apple’s latest OS somehow always having “the best feature,
-ever,” technology is rife with shiny toys that promise to solve all our
-problems. On the one hand, it can be incredibly overwhelming trying to
-keep up with the latest and greatest, and on the other, you could easily
-risk missing out on a tool that could be a game changer for you and your
-team if you don’t branch out and experiment from time to time.
+Which sounds liberating, until it raises a harder question: when should
+you switch tools?
 
-This decision fatigue can end up being a significant job hazard for
-people who work with technology. What if your organization is one of the
-unfortunate few that decided to go all-in on Skype, or what if you can’t
-ship a new product or publish a paper because your team has not ported
-over its legacy libraries to Python 3 yet? As RSEs, part of our
-responsibility is to help scientific teams navigate this ever-changing
-landscape of tools and technologies, and it can be very tricky to draw
-the line between productive experimentation and [shiny toy
-syndrome](https://nesslabs.com/shiny-toy-syndrome). How does one justify
-several afternoons’ worth of tinkering, only to come to the conclusion
-that the new tool actually *doesn’t* do what it says on the box - or at
-least, not to your satisfaction — and continue to be trusted with the
-responsibility of guiding your team’s technological vision?
+Technology is full of shiny promises, current LLM trends
+notwithstanding. New tools are constantly clamouring for our attention,
+claiming they will solve the frustrations of the old ones, and it is
+hard to know when experimentation with the new is wise and when it is
+just distraction.
 
-But as I thought about this more, I realized that this activity of
-tinkering and experimenting with new tools is actually a critical part
-of our job as RSEs, and that we can turn this “bug” of shiny toy
-syndrome into a “feature” of arrestive curiosity. Arrestive curiosity is
-the tendency to be so curious about new tools and technologies that you
-cannot move forward with your own work until you’ve proven a new tool is
-either better or worse for you than the one you’re currently using (Yes,
-I just came up with that term). If you’ve ever been up late at night
-trying to get a VSCode extension to run without error, trying to figure
-out why a new library can’t just install on your system, or drawing out
-your ultimate note-taking entourage of apps for never losing a thought,
-I see you! This kind of curiosity can be a disastrous time sink — but it
-can also be a powerful way to stay on top of the latest and greatest,
-and to make sure you’re using the best tools for you and your team.
+Ignore new tools completely, and you may miss something genuinely
+useful. Chase every new one, and you lose days to tinkering.
 
-So, how do we cultivate arrestive curiosity without falling into the
-trap of time-wasting? Having wrestled with this for several years, I
-think I can provide a few considerations that have helped me strike this
-balance:
+For RSEs, this tension might just be part of the territory. Many of us
+are helping scientific teams navigate changing cutting edge *questions*,
+which means we are constantly judging whether experimentation with
+cutting edge *tools* is worth the cost. That can make “shiny toy
+syndrome” feel like a liability, at first.
 
-1.  *Stop being distracted by the perfect tool until you know what
-    perfect is supposed to look like.* Before seriously investigating a
-    new tool, write down exactly what problem or need you think it is
-    trying to solve for you. In the simple process of articulating this,
-    you may find that your existing workflow just needs some refinement,
-    or a simple adjustment or reframing of the problem. 95% of the time,
-    my tinkering does not pass this step.
+But I think there is a more useful way to frame it: as **arrestive
+curiosity**.
 
-2.  *Get comfortable with the discomfort of your current tools.* If
-    you’ve successfully passed the first step, then you know for a fact
-    that your current workflow needs are not being met, and a new tool —
-    or repurposing an old one — is likely the solution. But before you
-    dive into the new tool, now is the time to measure the discomfort of
-    your current workflow. How much time are you losing to this problem?
-    How much mental energy are you spending on it? How much is it
-    costing your team in productivity and morale? If the cost of your
-    current workflow is not high enough, then it may not be worth the
-    time and effort to switch to a new tool. If you can tolerate the
-    discomfort, then the tool search ends here.
+By that I mean the kind of curiosity that stops you in your tracks until
+you can decide whether a new tool is actually better than the one you
+already have. It can absolutely become a time sink — but it can also be
+a professional strength, if you give it some structure.
+
+Here are four questions I constantly reference in order to keep my
+curiosity productive:
+
+1.  *What problem am I actually trying to solve?*  
+    Before investigating a new tool, write down the need as clearly as
+    possible. Often the exercise reveals that the current workflow only
+    needs a small adjustment, not a new platform.
+
+2.  *How costly is the current pain?*  
+    If the problem is real, measure it. How much time, energy, or team
+    morale is it costing? If the discomfort is tolerable, a switch may
+    not be worth it.
 
 3.  *Refine to absurdum.* If you are still convinced that something is
     missing, then it is time to start looking for what is missing.
@@ -193,25 +173,25 @@ Save the date for USRSE’26: **Advancing Science in the Age of AI**
 <img src="{{ site.baseurl }}/assets/img/newsletter-202605/usrse26-logo_6.svg" alt="USRSE'26 Conference Logo" style="width: 750px; height: auto;"/>
 </p>
 
-We’re thrilled to announce that USRSE’26 will be held at the San Jose
-Marriott from October 19-21, 2026 in San Jose, California, with the
-theme **“Advancing Science in the Age of AI”.**
+USRSE’26, to be held at the San Jose Marriott from October 19-21, 2026
+in San Jose, California, with the theme **“Advancing Science in the Age
+of AI”,** is ALMOST HERE!
 
 Chairs have been appointed to lead each of the core committees for
 USRSE’26. These chairs have begun assembling sub‑teams from the pool of
 volunteers who expressed interest in supporting the respective areas. If
 you were not selected for a chair position, please stay tuned, as chairs
-reach out for volunteers for these committee positions.
+may reach out for volunteers for these committee positions.
 
 **What’s next?**
 
-- **Call for Proposals:** Submit your work via papers, short talks,
+- ~~**Call for Proposals:** Submit your work via papers, short talks,
   BoFs, workshops, or posters. [View
-  More](https://us-rse.org/usrse26/participate/)
-- **Call for Reviewers:** Play a key role in creating a dynamic and
+  More](https://us-rse.org/usrse26/participate/)~~
+- ~~**Call for Reviewers:** Play a key role in creating a dynamic and
   varied technical program that will appeal to conference attendees from
   all RSE backgrounds. [Apply to
-  Review](https://forms.gle/hDGsK52sJFqUA2MA7)
+  Review](https://forms.gle/hDGsK52sJFqUA2MA7)~~
 - **Committee Formation:** Sub‑teams will be formed shortly; be on the
   lookout for an email from a perspective committee chair with details.
 - **Stay Informed:** Regular updates will be posted at
@@ -235,57 +215,11 @@ usrse26-conference@us-rse.org.
 
 #### 📅 Save the Date 📅
 
-More details about the conference program, registration, and travel
-information will be coming your way in the months ahead. Stay tuned at
+Travel information, including hotel details and travel tips, are
+available. Stay informed at
 [us-rse.org/usrse26](https://us-rse.org/usrse26)!
 
-We’re looking forward to seeing you all in **San Jose**!
-
-------------------------------------------------------------------------
-
-## 🤝 Organizational Founding Membership 🤝
-
-<a name="orgmember"></a>
-
-<!-- List organizational founding members -->
-
-US-RSE envisions a future where Research Software Engineers are
-universally respected for advancing science, technology, and society
-through the transformative power of research software engineering. We’re
-excited to share that the momentum around our Organizational Founding
-Membership continues to grow! See the list below for the current members
-(six more are onboarding at the moment).
-
-Organizations that join **on or before June 30, 2026**, will be
-recognized in perpetuity as founding members. Founding organizations
-will also lock in current membership fees through December 31, 2028.
-Organizational support helps sustain and expand vital community
-offerings, including the annual conference, monthly calls and
-newsletter, job board, working groups, and new resources.
-
-Please reach out to Sandra Gesing at <sandra@us-rse.org> if you are
-interested in becoming an organizational founding member!
-
-### Premier Members
-{% for org in site.data.org-members.premier %}
-
-- [{{ org.name }}]({{ org.url }})
-
-{% endfor %}
-
-### Standard Members
-{% for org in site.data.org-members.standard %}
-
-- [{{ org.name }}]({{ org.url }})
-
-{% endfor %}
-
-### Basic Members
-{% for org in site.data.org-members.basic %}
-
-- [{{ org.name }}]({{ org.url }})
-
-{% endfor %}
+We’re looking forward to seeing you all in **San Jose** very, very soon!
 
 ------------------------------------------------------------------------
 
@@ -440,7 +374,7 @@ We hope to see you there!
 <a name="events"></a>
 
 {% assign today = "now" | date: "%Y-%m-%d" %}
-{% for opp in site.data.newsletter-events-opportunities %}
+{% for opp in site.data.newsletter.events-opportunities %}
 {% assign expires = opp.expires | date: "%Y-%m-%d" %}
 {% if opp.type == "opportunity" and expires >= today %}
 {% include opportunity-box.html
@@ -453,7 +387,7 @@ We hope to see you there!
 {% endif %}
 {% endfor %}
 
-{% for event in site.data.newsletter-events-opportunities %}
+{% for event in site.data.newsletter.events-opportunities %}
 {% assign expires_formatted = event.expires | date: "%Y-%m-%d" %}
 {% if expires_formatted >= today %}
 {% if event.type == "event" %}  
@@ -477,33 +411,36 @@ the `#newsletters` channel!
 
 <a name="reads"></a>
 
-{% assign refs = site.data.newsletter_bib_yml.references 
+### 📑 Recent Publications
+
+{% assign article_refs = site.data.newsletter.articles.references
   | where_exp: "r", "r.annote contains 'Read_Status: To Read'" %}
 
-{% assign professional = refs | where: "type", "article-journal" %}
-
-{% if professional.size > 0 %}
-### 📑 Recent Publications
-{% for ref in professional %}
-{% include citation-publication.html ref=ref %}
+{% if article_refs.size > 0 %}
+{% for ref in article_refs %}
+{% include citation-article.html ref=ref %}
 {% endfor %}
 {% endif %}
 
-{% assign podcasts = refs | where: "type", "song" %}
+### 📇 Blog Posts & Other Reads
 
-{% if podcasts.size > 0 %}
-### 🎧 Podcast Episodes
-{% for ref in podcasts %}
-{% include citation-podcast.html ref=ref %}
+{% assign blog_refs = site.data.newsletter.blogs.references
+  | where_exp: "r", "r.annote contains 'Read_Status: To Read'" %}
+
+{% if blog_refs.size > 0 %}
+{% for ref in blog_refs %}
+{% include citation-blog.html ref=ref %}
 {% endfor %}
 {% endif %}
 
-{% assign other = refs | where: "type", "webpage" %}
+### 🎧 Podcast Episodes, Videos, and More
 
-{% if other.size > 0 %}
-### 📇 Blog Posts, Videos, & Other Reads
-{% for ref in other %}
-{% include citation.html ref=ref %}
+{% assign media_refs = site.data.newsletter.media.references
+  | where_exp: "r", "r.annote contains 'Read_Status: To Read'" %}
+
+{% if media_refs.size > 0 %}
+{% for ref in media_refs %}
+{% include citation-media.html ref=ref %}
 {% endfor %}
 {% endif %}
 

@@ -1,0 +1,362 @@
+---
+nocite: \[@\*\]
+references:
+- accessed: 2026-04-08
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Besser
+    given: Stephanie
+  - family: Jensen
+    given: Eric
+  - family: Katz
+    given: Daniel
+  id: besserHowGenerativeAI
+  title: How generative AI is shaping research ... \| Open Research
+    Europe
+  type: webpage
+  url: "https://open-research-europe.ec.europa.eu/articles/6-56/v1"
+- abstract: A group of well-known open source programmers and a VC have
+    launched the Open Source Endowment. They hope this new method will
+    provide funding for good.
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Bort
+    given: Julie
+  id: bortVCBignameProgrammers2026
+  issued: 2026-02-26
+  language: en-US
+  publisher: TechCrunch
+  title: A VC and some big-name programmers are trying to solve open
+    source’s funding problem, permanently
+  type: webpage
+  url: "https://techcrunch.com/2026/02/26/a-vc-and-some-big-name-programmers-are-trying-to-solve-open-sources-funding-problem-permanently/"
+- abstract: "interview: Codestrap founders say we need to dial down the
+    hype and sort through the mess"
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Claburn
+    given: Thomas
+  id: claburnAIStillDoesnt
+  language: en-US
+  title: AI still doesn’t work very well in business, reckoning soon
+  type: webpage
+  url: "https://www.theregister.com/2026/03/17/ai_businesses_faking_it_reckoning_coming_codestrap/"
+- abstract: ": As of April 24 you’ll be feeding the Octocat unless you
+    opt out"
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Claburn
+    given: Thomas
+  id: claburnGitHubWeGoing
+  language: en-US
+  title: "GitHub: We going to train on your data after all"
+  title-short: GitHub
+  type: webpage
+  url: "https://www.theregister.com/2026/03/26/github_ai_training_policy_changes/"
+- abstract: A human-powered, fully local, fully private AI solution.
+  accessed: 2026-06-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T01:04:20.125Z
+  author:
+  - family: Labs
+    given: Squeez
+  id: CrankGPTLocalHumanpowered
+  language: en-US
+  title: CrankGPT — <span class="nocase">Local Human-powered AI</span>
+  type: webpage
+  url: "https://crankgpt.com/"
+- abstract: New analysis shows that around one-third of America’s
+    Fortune 100 companies do not have a vulnerability disclosure policy,
+    bug bounty, or a dedicated email address for reporting security
+    flaws.
+  accessed: 2026-06-29
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-29T15:31:33.542Z
+  author:
+  - family: Whittaker
+    given: Zach
+  id: DozensAmericasLargest2026
+  issued: 2026-06-19
+  language: en-US
+  publisher: ~this week in security~
+  title: Dozens of America’s largest companies have no simple way to
+    report security flaws
+  type: webpage
+  url: "https://this.weekinsecurity.com/dozens-of-americas-largest-companies-have-no-simple-way-to-report-security-flaws/"
+- abstract: Helpful questions and guide for finding the right resources
+    for your large-scale data or advanced computing project.
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.785Z
+  author:
+  - family: Gesing
+    given: Sandra
+  - family: Stone
+    given: Sarah
+  - family: Washington
+    given: Talitha
+  id: gesingFindingComputingData2025
+  issued: 2025-11-03
+  language: en-US
+  publisher: Academic Data Science Alliance
+  title: Finding Computing and Data Infrastructure to Get Started in
+    Data-Intensive Research
+  type: webpage
+  url: "https://academicdatascience.org/resources/community-blog/get-started-in-data-intensive-research/"
+- abstract: United States Research Software Engineer Association
+  accessed: 2026-05-21
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Sochat
+    given: Vanessa
+  - family: Katz
+    given: Daniel S.
+  - family: Cosden
+    given: Ian A.
+  - family: Maimone
+    given: Christina
+  - family: Ferenbaugh
+    given: Charles
+  - family: Gesing
+    given: Sandra
+  - family: Carver
+    given: Jeffrey C.
+  - family: Hill
+    given: Chris
+  - family: Brewer
+    given: Nicole
+  - family: Vaillancourt
+    given: Peter
+  - family: Carroll
+    given: Mark
+  - family: Elmer
+    given: Peter
+  id: "KindofBriefShared00:00:00+0000"
+  issued: "00:00:00 +0000"
+  language: en-US
+  publisher: US-RSE
+  title: A kind-of brief shared early history of US-RSE
+  type: webpage
+  url: "https://us-rse.org/2022-02-06-a-brief-history-of-usrse/"
+- abstract: This declaration calls for action to address the challenges
+    posed by the use of artificial intelligence within mathematics
+    research.
+  accessed: 2026-08-06
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-08-06T02:57:47.352Z
+  author:
+  - literal: International Mathematical Union
+  id: LeidenDeclarationArtificial2026
+  issued: 2026-08-05
+  language: en-US
+  publisher: Leiden Declaration on Artificial Intelligence; Mathematics
+  title: Leiden Declaration on Artificial Intelligence and Mathematics
+  type: webpage
+  url: "https://leidendeclaration.ai/"
+- accessed: 2026-05-28
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
+  author:
+  - family: Wilson
+    given: Greg
+  id: ManagingResearchSoftware
+  title: Managing Research Software Projects
+  type: webpage
+  url: "https://third-bit.com/mrsp/"
+- abstract: Lost for more than half a century, the rare Chinese
+    typewriter whose name means “clear and fast” was discovered in a New
+    York basement and entrusted to Stanford Libraries.
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.785Z
+  id: MingKwaiPrototypeOrigin
+  language: en-US
+  title: MingKwai prototype, the ‘origin of Chinese computing,’ finds a
+    home at Stanford
+  type: webpage
+  url: "https://news.stanford.edu/stories/2025/05/mingkwai-chinese-typewriter-prototype-stanford-libraries"
+- abstract: A practice for finding peace in your dependency tree.
+  accessed: 2026-04-13
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Nesbitt
+    given: Andrew
+  id: nesbittGuidedMeditationDevelopers2026
+  issued: 2026-03-15
+  title: Guided Meditation for Developers
+  type: webpage
+  url: "https://nesbitt.io/2026/03/15/guided-meditation-for-developers.html"
+- accessed: 2026-05-21
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Hettrick
+    given: Simon
+  id: NotsobriefHistoryResearch
+  title: A not-so-brief history of Research Software Engineers \|
+    Software Sustainability Institute
+  type: webpage
+  url: "https://www.software.ac.uk/blog/not-so-brief-history-research-software-engineers-0"
+- abstract: Accelerates Codex growth to power the next generation of
+    Python developer tools
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: OpenAI
+  id: openaiOpenAIAcquireAstral2026
+  issued: 2026-04-08
+  language: en-US
+  title: OpenAI to acquire Astral
+  type: webpage
+  url: "https://openai.com/index/openai-to-acquire-astral/"
+- accessed: 2026-06-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T01:04:20.125Z
+  author:
+  - dropping-particle: of
+    family: Reading
+    given: The University
+  id: RealScorelineReveals
+  title: The Real Scoreline reveals nations facing climate penalties -
+    University of Reading
+  type: webpage
+  url: "https://www.reading.ac.uk/news/2026/University-News/The-Real-Scoreline-reveals-nations-facing-climate-penalties"
+- abstract: Fable came out and then disappeared a couple of days later.
+    In that short time, I managed to run a lot of repository reviews
+    with it, and was really happy with the results. I’ve found and fixed
+    around 400 bugs and 400+ other issues (performance, simplifications,
+    modernizations) across dozens of my projects, making several hundred
+    PRs with a nearly 100% merge rate on decided PRs.
+  accessed: 2026-06-17
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-17T16:59:48.292Z
+  author:
+  - family: Schreiner
+    given: Henry
+  id: schreinerClaudeCodeReviews2026
+  issued: 2026-06-16
+  language: en-US
+  publisher: ISciNumPy.dev
+  title: Claude Code Reviews with Fable
+  type: webpage
+  url: "https://iscinumpy.dev/post/claude-code-reviews/"
+- accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.785Z
+  id: SilentScientistWhen2025
+  issued: 2025-10-10
+  language: en-US
+  title: "The Silent Scientist: When Software Research Fails to Reach
+    Its Audience – Communications of the ACM"
+  title-short: The Silent Scientist
+  type: webpage
+  url: "https://cacm.acm.org/opinion/the-silent-scientist-when-software-research-fails-to-reach-its-audience/"
+- abstract: Anthropic claimed 100% of Claude Code is AI-written. A
+    source leak exposed a 3,167-line function, regex sentiment analysis,
+    and 250K wasted API calls daily
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Stetskov
+    given: Denis
+  id: stetskovClaudeCodesSource2025
+  issued: 2025-09-19
+  language: en-US
+  title: "Claude Code’s Source: 3,167-Line Function, Regex Sentiment"
+  title-short: Claude Code’s Source
+  type: webpage
+  url: "https://techtrenches.dev/p/the-snake-that-ate-itself-what-claude"
+- abstract: The Apple Calculator leaked 32GB of RAM.
+  accessed: 2026-04-15
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.499Z
+  author:
+  - family: Stetskov
+    given: Denis
+  id: stetskovGreatSoftwareQuality2026
+  issued: 2026-04-01
+  language: en-US
+  title: "The Great Software Quality Collapse: How We Normalized
+    Catastrophe"
+  title-short: The Great Software Quality Collapse
+  type: webpage
+  url: "https://techtrenches.dev/p/the-great-software-quality-collapse"
+- abstract: Claude Code and I rewrote a nine year old, complex Python
+    project I maintain, in GoLang, in 5 Days
+  accessed: 2026-04-15
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.499Z
+  author:
+  - family: Substack
+  id: substackArtificialIntelligenceCan
+  language: en-US
+  title: Artificial Intelligence can Erase Technical Debt
+  type: webpage
+  url: "https://substack.com/home/post/p-193978032"
+- abstract: "I’m working on a new tool whose tagline is the title of
+    this post: Make best use of git and GitHub for AI-assisted software
+    development. Called Bram (“Bram runs agents mindfully”)…"
+  accessed: 2026-06-16
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T16:18:22.799Z
+  author:
+  - family: Udell
+    given: Jon
+  id: udellHowMakeBest2026
+  issued: 2026-06-02
+  language: en-US
+  publisher: How to make best use of git; GitHub for AI-assisted
+    software development
+  title: How to make best use of git and GitHub for
+    <span class="nocase">AI-assisted</span> software development
+  type: webpage
+  url: "https://blog.jonudell.net/2026/06/02/how-to-make-best-use-of-git-and-github-for-ai-assisted-software-development/"
+- abstract: Read the latest article version by Daniel S. Katz, Eric A.
+    Jensen, Michelle Barker at Open Research Europe
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  doi: 10.12688/openreseurope.20210.1
+  id: UnderstandingAdvancingResearch2025
+  issued: 2025-07-25
+  language: en-US
+  publisher: Open Research Europe \| Open Access Publishing Platform
+  title: Understanding and advancing research software grant funding
+    models
+  type: webpage
+  url: "https://open-research-europe.ec.europa.eu/articles/5-199/v1"
+---
+

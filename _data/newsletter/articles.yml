@@ -1,0 +1,1137 @@
+---
+nocite: \[@\*\]
+references:
+- accessed: 2026-05-21
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Armstrong
+    given: Matthew
+  - family: Carver
+    given: Jeffrey C.
+  - family: Milewicz
+    given: Reed
+  - family: Meinel
+    given: Michael
+  - family: Felderer
+    given: Michael
+  container-title: Future Generation Computer Systems
+  container-title-short: Future Gener. Comput. Syst.
+  doi: 10.1016/j.future.2026.108571
+  id: armstrongCharacterizingSecurityCulture2026
+  issn: 0167739X
+  issued: 2026-10
+  language: en-US
+  page: 108571
+  title: "Characterizing the security culture of the research software
+    engineering community: An empirical study"
+  title-short: Characterizing the security culture of the research
+    software engineering community
+  type: article-journal
+  url: "https://linkinghub.elsevier.com/retrieve/pii/S0167739X26002050"
+  volume: 183
+- accessed: 2026-05-21
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Armstrong
+    given: Matthew
+  - family: Carver
+    given: Jeffrey C.
+  - family: Milewicz
+    given: Reed
+  container-title: Future Generation Computer Systems
+  container-title-short: Future Gener. Comput. Syst.
+  doi: 10.1016/j.future.2026.108572
+  id: armstrongPreparingResearchSoftware2026
+  issn: 0167739X
+  issued: 2026-10
+  language: en-US
+  page: 108572
+  title: "Preparing research software engineers to become security
+    champions: Development and evaluation of a security awareness
+    workshop"
+  title-short: Preparing research software engineers to become security
+    champions
+  type: article-journal
+  url: "https://linkinghub.elsevier.com/retrieve/pii/S0167739X26002062"
+  volume: 183
+- abstract: "The Research Software Engineering in the Age of Generative
+    AI: Building a Community Vision workshop, held in March in
+    Edinburgh, UK, brought together participants to explore how
+    Generative AI may reshape the research software ecosystem, and to
+    help inform a broader community vision for the future of the field. 
+    Before the workshop, attendees contributed to a draft vision
+    statement that workshop organisers used to identify areas of
+    agreement and difference. A version of this, published as Research
+    Software in an Age of AI-Assisted Development: Reflections from
+    Edinburgh, is intended to provide principles that will guide the
+    community during this time of rapid change. In the workshop, the
+    participants also discussed emerging practices, identified
+    opportunities and risks, and proposed a range of high-impact pilot
+    activities to support the safe, reproducible, and effective use of
+    AI in research software and workflows. The areas focused on
+    included: Suggesting policies and narratives for research-performing
+    institutions Developing a framework to discover, document and
+    address costs, benefits, and risks Understanding future incentives
+    around publishing, preserving and crediting software Verifying and
+    validating research software Defining pathways for the evolution of
+    the research software engineers (RSE) role Identifying and
+    developing necessary training Developing a playbook for RSE managers
+    and open-source software project leaders Making GenAI accessible to
+    all Collaborating together across people, community, and
+    disciplines, not just with AI Across these areas, participants
+    identified 46 different activities, ranging from writing sprints and
+    community-of-practice activities that could begin soon, to
+    longer-term research studies to investigate how verification
+    practices, collaboration patterns, and training needs are changing
+    as AI tools become embedded in research workflows. These projects
+    shared a common focus on community-maintained practices, actionable
+    guidance, and sustained coordination."
+  accessed: 2026-05-28
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
+  author:
+  - family: Barker
+    given: Michelle
+  - family: Katz
+    given: Daniel S.
+  - family: Hartley
+    given: Kim
+  - family: Ahern
+    given: Samantha
+  - family: Chue Hong
+    given: Neil
+  - family: Cosden
+    given: Ian
+  - family: Daniels
+    given: Ryan
+  - family: Druskat
+    given: Stephan
+  - family: Dubey
+    given: Anshu
+  - family: Elmatad
+    given: Yael
+  - family: Geng
+    given: Cunliang
+  - family: Gesing
+    given: Sandra
+  - family: Haines
+    given: Robert
+  - family: Hetherington
+    given: James
+  - family: Hodges
+    given: Toby
+  - family: Howison
+    given: James
+  - family: Kopec-Harding
+    given: Kamilla
+  - family: Littauer
+    given: Richard
+  - family: Maimone
+    given: Christina
+  - family: Mandava
+    given: Vani
+  - family: Marwaha
+    given: Rohan
+  - family: O’Brien
+    given: Elle
+  - family: Price-Whelan
+    given: Adrian
+  - family: Ram
+    given: Karthik
+  - family: Shingleton
+    given: Joseph
+  - family: Smith
+    given: Sue
+  - family: TeBlunthuis
+    given: Nathan
+  - family: Van der Walt
+    given: Anelda
+  - family: Van Tuyl
+    given: Steve
+  - family: Werkhoven
+    given: Ben
+    non-dropping-particle: van
+  - family: Whitaker
+    given: Kirstie
+  - family: Wilson
+    given: Greg
+  - family: Wu
+    given: Sherry
+  - family: Yehudi
+    given: Yo
+  doi: 10.5281/zenodo.20320884
+  id: barkerResearchSoftwareEngineering2026
+  issued: 2026-05-28
+  keyword: community,generative AI,research software,research software
+    engineering
+  publisher: Zenodo
+  title: "Research Software Engineering in the Age of Generative AI:
+    Building a Community Vision"
+  title-short: Research Software Engineering in the Age of Generative AI
+  type: report
+  url: "https://zenodo.org/records/20320884"
+- abstract: Research software is a class of software developed to
+    support research. Today a wealth of such software is created daily
+    in universities, government, and commercial research enterprises
+    worldwide. The sustainability of this software faces particular
+    challenges due, at least in part, to the type of people who develop
+    it. These Research Software Engineers (RSEs) face challenges in
+    developing and sustaining software that differ from those faced by
+    the developers of traditional software. As a result, professional
+    associations have begun to provide support, advocacy, and resources
+    for RSEs. These benefits are critical to sustaining RSEs, especially
+    in environments where their contributions are often undervalued and
+    not rewarded. This paper focuses on how professional associations,
+    such as the United States Research Software Engineer Association
+    (US-RSE), can provide this support.
+  accessed: 2026-05-21
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Carver
+    given: Jeffrey C.
+  - family: Cosden
+    given: Ian A.
+  - family: Hill
+    given: Chris
+  - family: Gesing
+    given: Sandra
+  - family: Katz
+    given: Daniel S.
+  container-title: 2021 IEEE/ACM International Workshop on Body of
+    Knowledge for Software Sustainability (BoKSS)
+  container-title-short: 2021 IEEEACM Int. Workshop Body Knowl. Softw.
+    Sustain. BoKSS
+  doi: 10.1109/BoKSS52540.2021.00016
+  id: carverSustainingResearchSoftware2021
+  issued: 2021-06
+  keyword: career paths,Conferences,Faces,Government,Knowledge
+    engineering,people,research software,Software,software
+    sustainability,Sustainable development
+  page: 23-24
+  title: Sustaining Research Software via Research Software Engineers
+    and Professional Associations
+  type: article-journal
+  url: "https://ieeexplore.ieee.org/document/9470770"
+- abstract: Data-analysis and modelling positions are already becoming
+    obsolete, but hands-on experimentalists can breathe easy for now.
+  accessed: 2026-04-08
+  annote: |
+    Bandiera_abtest: a\
+    Cg_type: News\
+    Subject_term: Machine learning, Careers\
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Chen
+    given: Edward
+  container-title: Nature
+  doi: 10.1038/d41586-026-00444-9
+  id: chenAIThreateningScience2026
+  issn: 1476-4687
+  issue: 8104
+  issued: 2026-02-20
+  keyword: Careers,Machine learning
+  language: en-US
+  page: 19-20
+  publisher: Nature Publishing Group
+  title: AI is threatening science jobs. Which ones are most at risk?
+  type: article-journal
+  url: "https://www.nature.com/articles/d41586-026-00444-9"
+  volume: 651
+- abstract: The integration of AI into scientific work holds significant
+    potential to accelerate innovation. We surveyed researchers in two
+    leading German research organizations to examine AI adoption,
+    barriers, and perceived impact on research. Researchers are widely
+    using AI tools – often for primary and creative tasks – and many
+    expect the technology to be transformative for research. Effective
+    use appears linked to both hands-on experience and engagement with
+    learning resources. A persistent gender gap in AI use is closely
+    associated with differences in familiarity, suggesting a potential
+    focus for organizational efforts. Legal uncertainty and privacy
+    concerns also emerge as major barriers, with researchers calling for
+    clear, high-level regulatory guidance. Overall, our findings suggest
+    directions where institutional actions might be explored to promote
+    more equitable and effective AI adoption.
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Chugunova
+    given: Marina
+  - family: Harhoff
+    given: Dietmar
+  - family: Hölzle
+    given: Katharina
+  - family: Kaschub
+    given: Verena
+  - family: Malagimani
+    given: Sonal
+  - family: Morgalla
+    given: Ulrike
+  - family: Rose
+    given: Robert
+  container-title: Research Policy
+  container-title-short: Res. Policy
+  doi: 10.1016/j.respol.2025.105381
+  id: chugunovaWhoUsesAI2026
+  issn: 0048-7333
+  issue: 2
+  issued: 2026-03-01
+  keyword: AI,Innovation,Research,Survey evidence,Technology adoption
+  page: 105381
+  title: Who uses AI in research, and for what?
+    <span class="nocase">Large-scale</span> survey evidence from Germany
+  title-short: Who uses AI in research, and for what?
+  type: article-journal
+  url: "https://www.sciencedirect.com/science/article/pii/S0048733325002100"
+  volume: 55
+- accessed: 2026-05-21
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Cosden
+    given: Ian A.
+  - family: Holtz
+    given: Elizabeth
+  - family: Bretheim
+    given: Joel U.
+  container-title: Future Generation Computer Systems
+  container-title-short: Future Gener. Comput. Syst.
+  doi: 10.1016/j.future.2026.108574
+  id: cosdenDesigningImplementingComprehensive2026
+  issn: 0167739X
+  issued: 2026-10
+  language: en-US
+  page: 108574
+  title: "Designing and implementing a comprehensive research software
+    engineer career ladder: A case study from Princeton University"
+  title-short: Designing and implementing a comprehensive research
+    software engineer career ladder
+  type: article-journal
+  url: "https://linkinghub.elsevier.com/retrieve/pii/S0167739X26002086"
+  volume: 183
+- abstract: To effect change, the Software Sustainability Institute
+    works with researchers, developers, funders, and infrastructure
+    providers to identify and address key issues with research software.
+  accessed: 2026-05-21
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Crouch
+    given: Stephen
+  - family: Hong
+    given: Neil Chue
+  - family: Hettrick
+    given: Simon
+  - family: Jackson
+    given: Mike
+  - family: Pawlik
+    given: Aleksandra
+  - family: Sufi
+    given: Shoaib
+  - family: Carr
+    given: Les
+  - family: De Roure
+    given: David
+  - family: Goble
+    given: Carole
+  - family: Parsons
+    given: Mark
+  container-title: Computing in Science & Engineering
+  container-title-short: Comput. Sci. Eng.
+  doi: 10.1109/MCSE.2013.133
+  id: crouchSoftwareSustainabilityInstitute2013
+  issn: 1558-366X
+  issue: 6
+  issued: 2013-11
+  keyword: domain engineering,Domain
+    engineering,maintainability,Programming,reliability,scientific
+    computing,Scientific computing,Software development,software
+    engineering,Software engineering,Software reliability,Training
+  page: 74-80
+  title: "The Software Sustainability Institute: Changing Research
+    Software Attitudes and Practices"
+  title-short: The Software Sustainability Institute
+  type: article-journal
+  url: "https://ieeexplore.ieee.org/document/6731384"
+  volume: 15
+- abstract: Scientists, research institutions, funders, libraries and
+    publishers must all improve software practices.
+  accessed: 2025-11-07
+  annote: |
+    Bandiera_abtest: a\
+    Cg_type: Comment\
+    Subject_term: Computer science, Software, Scientific community,
+    Research management\
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.784Z
+  author:
+  - family: Di Cosmo
+    given: Roberto
+  - family: Granger
+    given: Sabrina
+  - family: Hinsen
+    given: Konrad
+  - family: Jullien
+    given: Nicolas
+  - family: Le Berre
+    given: Daniel
+  - family: Louvet
+    given: Violaine
+  - family: Maumet
+    given: Camille
+  - family: Maurice
+    given: Clémentine
+  - family: Monat
+    given: Raphaël
+  - family: Rougier
+    given: Nicolas P.
+  container-title: Nature
+  doi: 10.1038/d41586-025-03196-0
+  id: dicosmoStopTreatingCode2025
+  issn: 1476-4687
+  issue: 8084
+  issued: 2025-10
+  keyword: Computer science,Research management,Scientific
+    community,Software
+  language: en-US
+  page: 284-286
+  publisher: Nature Publishing Group
+  title: "Stop treating code like an afterthought: Record, share and
+    value it"
+  title-short: Stop treating code like an afterthought
+  type: article-journal
+  url: "https://www.nature.com/articles/d41586-025-03196-0"
+  volume: 646
+- abstract: Research software and its creators have long played a
+    critical role in the advancement of research worldwide. This role is
+    changing in the age of “generative AI” (GenAI), but both the
+    software and the people remain of key importance. Understanding
+    these changes is essential in enabling Research Software Engineers
+    (RSEs) to continue contributing the same high value to the research
+    process and its outputs.  Before GenAI, the RSE movement had learned
+    to clearly articulate the value proposition of embedding expert
+    software engineering in research to its stakeholders. This blog post
+    highlights how RSEs use GenAI to increase their capacity in both
+    software engineering and research, and visualize this evolution.
+    While GenAI is changing - perhaps considerably - how RSEs work in
+    practice, their value and the value of their work for research
+    remains steady and likely to increase.
+  accessed: 2026-05-28
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
+  author:
+  - family: Druskat
+    given: Stephan
+  - family: Barker
+    given: Michelle
+  - family: Cosden
+    given: Ian
+  - family: Geng
+    given: Cunliang
+  - family: Haines
+    given: Robert
+  - family: Katz
+    given: Daniel S.
+  - family: Shingleton
+    given: Joseph
+  - family: Werkhoven
+    given: Ben
+    non-dropping-particle: van
+  doi: 10.5281/zenodo.20320179
+  id: druskatResearchSoftwareEngineers2026
+  issued: 2026-05-28
+  keyword: GenAI,Research,Research software,Research software engineers
+  language: en-US
+  publisher: Zenodo
+  title: "Research Software Engineers in the Age of GenAI: Same Value,
+    Changing Practice"
+  title-short: Research Software Engineers in the Age of GenAI
+  type: report
+  url: "https://zenodo.org/records/20320179"
+- abstract: Research software (also called scientific software) is
+    essential for advancing scientific endeavours. Research software
+    encapsulates complex algorithms and domain-specific knowledge and is
+    a fundamental component of all science. A pervasive challenge in
+    developing research software is technical debt, which can adversely
+    affect reliability, maintainability, and scientific validity.
+    Research software often relies on the initiative of the scientific
+    community for maintenance, requiring diverse expertise in both
+    scientific and software engineering domains. The extent and nature
+    of technical debt in research software are little studied, in
+    particular, what forms it takes, and what the science teams
+    developing this software think about their technical debt. In this
+    paper we describe our multi-method study examining technical debt in
+    research software. We begin by examining instances of self-reported
+    technical debt in research code, examining 28k code comments across
+    nine research software projects. Then, building on our findings, we
+    interview research software engineers and scientists about how this
+    technical debt manifests itself in their experience, and what costs
+    it has for research software and research outputs more generally. We
+    identify nine types of self-admitted technical debt unique to
+    research software, and four themes impacting this technical debt.
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Ernst
+    given: Neil A.
+  - family: Awon
+    given: Ahmed Musa
+  - family: Hingmire
+    given: Swapnil
+  - family: Li
+    given: Ze Shi
+  doi: 10.48550/arXiv.2603.20415
+  id: ernstNatureTechnicalDebt2026
+  issued: 2026-03-20
+  keyword: Computer Science - Software Engineering
+  status: pre-published
+  title: The Nature of Technical Debt in Research Software
+  type: webpage
+  url: "http://arxiv.org/abs/2603.20415"
+- abstract: CCC is hosting a two-day visioning workshop to explore how
+    humans and machines may team up to solve some of the most pressing
+    scientific problems through citizen science, crowdsourcing, and
+    community-engaged science.
+  accessed: 2026-03-13
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-04-13T15:23:11.431Z
+  author:
+  - family: Forston
+    given: Lucy
+  - family: Shanley
+    given: Lea
+  - family: Berger-Wolf
+    given: Tanya
+  - family: Crowston
+    given: Kevin
+  - family: Jackson
+    given: Corey
+  - family: Savage
+    given: Saiph
+  - family: Griffin
+    given: Haley
+  id: forstonGrandChallengesConvergence2026
+  issued: 2026
+  language: en-US
+  status: pre-published
+  title: Grand Challenges for the Convergence of Computational and
+    Citizen Science Research - CCC
+  type: webpage
+  url: "https://cra.org/ccc/events/grand-challenges-for-the-convergence-of-computational-and-citizen-science-research/"
+- abstract: "Research software has been categorized for various goals.
+    One fundamental dimension of such categorizations is the role that
+    the software plays in the research process. Recently, a new role
+    category has emerged: technology research software, which covers
+    research software developed in technology research. Until now, this
+    category of technology research software has often been overlooked
+    and neglected within the research software engineering community. In
+    this article, we explain technology research software and its
+    primary subroles. Technology readiness levels are an established
+    method of estimating the maturity of technologies, including
+    software systems. For technology research software, these readiness
+    levels define secondary subroles. To illustrate the concept of
+    technology research software and to make it more tangible, we
+    present examples of research software that, depending on its
+    specific use within or outside of research, take on the role of
+    technology research software as well as that of another research
+    software category."
+  accessed: 2026-05-28
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
+  author:
+  - family: Hasselbring
+    given: Wilhelm
+  - family: Katz
+    given: Daniel S.
+  - family: Nieuwpoort
+    given: Rob
+    non-dropping-particle: van
+  container-title: Computing in Science & Engineering
+  container-title-short: Comput. Sci. Eng.
+  doi: 10.1109/MCSE.2026.3662117
+  id: hasselbringTechnologyResearchSoftware2026
+  issn: 1558-366X
+  issue: 1
+  issued: 2026-01
+  keyword: Research and development,Software development
+    management,Technology planning
+  page: 94-99
+  title: "Technology Research Software: An Often Overlooked Category of
+    Research Software"
+  title-short: Technology Research Software
+  type: article-journal
+  url: "https://ieeexplore.ieee.org/document/11482008"
+  volume: 28
+- abstract: Digital computers store information in the form of bits that
+    can take on one of two values 0 and 1, while quantum computers are
+    based on qubits that are described by a complex wavefunction, whose
+    squared magnitude gives the probability of measuring either 0 or 1.
+    Here, we make the case for a probabilistic computer based on p-bits,
+    which take on values 0 and 1 with controlled probabilities and can
+    be implemented with specialized compact energy-efficient hardware.
+    We propose a generic architecture for such p-computers and emulate
+    systems with thousands of p-bits to show that they can significantly
+    accelerate randomized algorithms used in a wide variety of
+    applications including but not limited to Bayesian networks,
+    optimization, Ising models, and quantum Monte Carlo.
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  author:
+  - family: Kaiser
+    given: Jan
+  - family: Datta
+    given: Supriyo
+  container-title: Applied Physics Letters
+  container-title-short: Appl. Phys. Lett.
+  doi: 10.1063/5.0067927
+  id: kaiserProbabilisticComputingPbits2021
+  issn: 0003-6951, 1077-3118
+  issue: 15
+  issued: 2021-10-11
+  keyword: Computer Science - Emerging Technologies,Condensed Matter -
+    Disordered Systems and Neural Networks,Quantum Physics
+  page: 150503
+  title: Probabilistic computing with p-bits
+  type: article-journal
+  url: "http://arxiv.org/abs/2108.09836"
+  volume: 119
+- accessed: 2026-05-28
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
+  author:
+  - family: Kamali
+    given: "Author: Soudeh"
+  - family: Colegrove
+    given: "Author: Dominique"
+  - family: Voelz
+    given: "Author: Sheri"
+  - family: Fitzgerald
+    given: "Author: Katelyn"
+  id: kamaliCommunitySoftwareFacility
+  language: en-US
+  title: "Community Software Facility Discovery Workshop Report:
+    Scientific software best practices, tools, and culture"
+  title-short: Community Software Facility Discovery Workshop Report
+  type: article-journal
+  url: "https://opensky.ucar.edu/islandora/object/technotes%3A45415"
+- abstract: "Important: This document began as a draft vision statement
+    prepared in advance of the “Research Software Engineering in the Age
+    of Generative AI” workshop, March 2026. It was intended to lead to
+    discussion in the document before and discussion in-person at the
+    workshop, including disagreement, and refinement. The current
+    version of the document is a snapshot of that draft vision statement
+    and some of the discussion. It captures a sense of the identified
+    principles, benefits, challenges, and open questions, rather than
+    having a single point of view that represents all of the workshop
+    attendees and contributors. Not all authors necessarily agree with
+    all the points in the document. A note on terminology: We use
+    AI-assisted software development throughout this document to refer
+    to tools and practices often described as Generative AI, GenAI,
+    LLM-enabled development, or AI-assisted coding. We chose this term
+    because it focuses on the activity we care about here, namely the
+    production, verification, documentation, and maintenance of research
+    software, rather than on a particular technology label or marketing
+    category. Research software, the source code, scripts, computational
+    workflows, and infrastructure that power modern research, have never
+    been more central to human discovery. And the scholarly community
+    (funders, publishers, societies, etc.) increasingly recognizes this,
+    though there is still a long way to go before such recognition is
+    widespread or leads to systemic change. At the same time, in the
+    last few years, the rise of AI-assisted tools, i.e., those that can
+    generate code and documentation by using large language and
+    multimodal trained models, and act in semi-autonomous “agentic
+    modes,” has caused significant disruption in software creation and
+    society at large. These tools raise legitimate questions about
+    training data provenance, licensing, quality, security, attribution,
+    environmental cost, and accountability that are hard to ignore. Yet
+    the conversation around AI-assisted tools too often seems to
+    oscillate between hype and dystopian predictions. Neither of these
+    extremes serve research well. This document also starts from the
+    assumption that these tools are and will continue to be used,
+    regardless of the concerns raised above, and aims to guide further
+    usage within this context. This document outlines some ideas about
+    how research software can and should be produced in the era of
+    AI-assisted research tools by Research Software Engineers,
+    computational researchers, and domain experts writing their own
+    code. It focuses on the software production function: building and
+    maintaining software that meaningfully advances research, but also
+    includes the people involved. Workshop participants discussed both,
+    including the role of RSEs and how it will change, such as
+    leveraging the ADSA/USE-RSE-led Position Statement on Generative AI
+    in the RSE Workplace and related work in this space. We believe that
+    developing a shared vision of the future of research software is
+    urgent: AI tools act as an amplifier of existing practices at every
+    level: individual coding habits, institutional incentives, and the
+    commercial priorities of the companies building these tools –
+    accelerating whatever patterns they encounter, both good and bad.
+    Applied without thought, AI-assisted tools can proliferate bugs,
+    embed and reinforce biases, and generate plausible-looking results
+    faster than our existing systems of peer review and verification can
+    check and absorb them. Applied with care and discipline, it has the
+    potential to expand access to computational methods from those with
+    software development skills to those without them, at least for
+    those who can afford it, and allow all researchers to focus on the
+    work that most requires human skill and judgment."
+  accessed: 2026-05-28
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
+  author:
+  - family: Katz
+    given: Daniel S.
+  - family: Ahern
+    given: Samantha
+  - family: Barker
+    given: Michelle
+  - family: Cosden
+    given: Ian
+  - family: Druskat
+    given: Stephen
+  - family: Dubey
+    given: Anshu
+  - family: Elmatad
+    given: Yael
+  - family: Geng
+    given: Cunliang
+  - family: Gesing
+    given: Sandra
+  - family: Goble
+    given: Carole
+  - family: Haines
+    given: Robert
+  - family: Hartley
+    given: Kim
+  - family: Hetherington
+    given: James
+  - family: Hodges
+    given: Toby
+  - family: Littauer
+    given: Richard
+  - family: Maimone
+    given: Christina
+  - family: Mandava
+    given: Vani
+  - family: O’Brien
+    given: Elle
+  - family: Price-Whelan
+    given: Adrian
+  - family: Ram
+    given: Karthik
+  - family: Shingleton
+    given: Joseph
+  - family: Smith
+    given: Sue
+  - family: TeBlunthius
+    given: Nathan
+  - family: Van der Walt
+    given: Anelda
+  - family: Werkhove
+    given: Ben
+    non-dropping-particle: van
+  - family: Whitaker
+    given: Kirstie
+  - family: Wu
+    given: Sherry
+  doi: 10.5281/zenodo.20321134
+  id: katzResearchSoftwareAge2026
+  issued: 2026-05-27
+  keyword: generative AI,research software,research software engineering
+  publisher: Zenodo
+  title: "Research Software in an Age of AI-Assisted Development:
+    Reflections from Edinburgh"
+  title-short: Research Software in an Age of AI-Assisted Development
+  type: report
+  url: "https://zenodo.org/records/20321134"
+- abstract: "Scientific claims increasingly rely upon the interplay of
+    code, data, and computational environments. Yet the record of how
+    they are used together is often incomplete, scattered, or lost. This
+    undermines rigor, reproducibility, reusability, and efficiency.
+    Previous approaches have improved the governance of digital objects
+    but do not specify how research objects ought to be structured and
+    managed so they can be re-executed and extended. The community is
+    missing a shared vocabulary for this operational layer. Building on
+    recurrent practices and convergent patterns across disciplines, we
+    formalize seven principles: Self-containment, Tracking,
+    Actionability, Modularity, Portability, Ephemerality, and
+    Distributability (STAMPED). Together they give researchers
+    guidelines for building and assessing research objects that others
+    can trust, rerun, and build upon. We frame each principle as a
+    spectrum so that adoption is incremental and starts from existing
+    practice. We support each principle with normative requirements, an
+    interactive checklist, and a map of enabling tools. As conventions
+    mature, tooling improves, and AI agents become increasingly involved
+    in research workflows, the goals of rigor, reproducibility,
+    reusability, and efficiency are becoming more attainable. STAMPED
+    gives researchers, collaborators, reviewers, and agents a common
+    language, concrete goals, and an aligned direction for making
+    computational research more durable.
+    https://github.com/stamped-principles/stamped-paper/"
+  accessed: 2026-06-15
+  annote: |
+    Read_Status: To Read\
+    Read_Status_Date: 2026-06-16T01:04:20.126Z
+  author:
+  - family: Macdonald
+    given: Austin
+  - family: Baker
+    given: Cody
+  - family: To
+    given: Isaac
+  - family: Halchenko
+    given: Yaroslav O
+  id: macdonaldSTAMPEDPrinciplesReproducible2026
+  issued: 2026-05-26
+  keyword: open science,provenance,reproducibility,research objects
+  number: f3h82_v1
+  status: pre-published
+  title: STAMPED principles for reproducible research objects
+  type: webpage
+  url: "https://osf.io/preprints/metaarxiv/f3h82_v1/"
+- accessed: 2026-05-21
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Martina
+    given: Tobia
+  - family: Saad
+    given: Motaz
+  - family: Rucco
+    given: Chiara
+  - family: Longo
+    given: Antonella
+  container-title: Future Generation Computer Systems
+  container-title-short: Future Gener. Comput. Syst.
+  doi: 10.1016/j.future.2026.108587
+  id: martinaEmpiricalEvaluationLLMs2026
+  issn: 0167739X
+  issued: 2026-10
+  language: en-US
+  page: 108587
+  title: Empirical evaluation of LLMs capabilities for data pipeline
+    generation on Databricks platform
+  type: article-journal
+  url: "https://linkinghub.elsevier.com/retrieve/pii/S0167739X26002219"
+  volume: 183
+- abstract: There has been a resurgence of interest in optical computing
+    over the past decade, both in academia and in industry, with much of
+    the excitement centered around special-purpose optical computers for
+    neural-network processing. Optical computing has been a topic of
+    periodic study for over 50 years, including for neural networks
+    three decades ago, and a wide variety of optical-computing schemes
+    and architectures have been proposed. In this paper we provide a
+    systematic explanation of why and how optics might be able to give
+    speed or energy-efficiency benefits over electronics for computing,
+    enumerating 11 features of optics that can be harnessed when
+    designing an optical computer. One often-mentioned motivation for
+    optical computing – that the speed of light \$c\$ is fast – is not a
+    key differentiating physical property of optics for computing;
+    understanding where an advantage could come from is more subtle. We
+    discuss how gaining an advantage over state-of-the-art electronic
+    processors will likely only be achievable by careful design that
+    harnesses more than one of the 11 features, while avoiding a number
+    of pitfalls that we describe.
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  author:
+  - family: McMahon
+    given: Peter L.
+  container-title: Nature Reviews Physics
+  container-title-short: Nat. Rev. Phys.
+  doi: 10.1038/s42254-023-00645-5
+  id: mcmahonPhysicsOpticalComputing2023
+  issn: 2522-5820
+  issue: 12
+  issued: 2023-10-09
+  keyword: Computer Science - Emerging Technologies,Computer Science -
+    Neural and Evolutionary Computing,Physics - Applied
+    Physics,Physics - Optics,Quantum Physics
+  page: 717-734
+  title: The physics of optical computing
+  type: article-journal
+  url: "http://arxiv.org/abs/2308.00088"
+  volume: 5
+- abstract: Writing code that is resistant to being hacked is a
+    challenging task. This book takes you through the entire process in
+    easy-to-learn units, from the principles that underlie secure code,
+    to the design, coding, testing, and evaluation of the code.You can
+    use this book from start to finish as a complete curriculum on
+    software security so it can form the basis of an introductory
+    course.You can also use the book as a tutorial to learn about
+    specific topics, like buffer overflows, injections attacks, or web
+    security. Or, to learn how to use tools that will help you make your
+    code more secure.However you go through this book, it will be a
+    great learning aid and, in later times, a reference book that you
+    can pick up whenever you need to a refresher or to learn a new
+    topic.
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Miller
+    given: Barton P.
+  - family: Heymann
+    given: Elisa R.
+  id: millerIntroductionSoftwareSecurity
+  isbn: 9798195700508
+  language: en-US
+  number-of-pages: 390
+  publisher: Independently published
+  title: Introduction to Software Security
+  type: book
+- annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  author:
+  - family: Mineault
+    given: Patrick
+  id: mineaultGoodResearchCode
+  language: en-US
+  title: Good Research Code handbook
+  type: article-journal
+- abstract: Calls to recognize research software engineers are not new —
+    but such professionals are needed now more than ever.
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  container-title: Nature Reviews Physics
+  container-title-short: Nat. Rev. Phys.
+  doi: 10.1038/s42254-025-00852-2
+  id: PhysicsNeedsResearch2025
+  issn: 2522-5820
+  issue: 7
+  issued: 2025-07
+  keyword: Computational science
+  language: en-US
+  page: 349-349
+  publisher: Nature Publishing Group
+  title: Physics needs research software engineers
+  type: article-journal
+  url: "https://www.nature.com/articles/s42254-025-00852-2"
+  volume: 7
+- accessed: 2026-05-21
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-06-15T23:59:08.721Z
+  author:
+  - family: Posada
+    given: Edwin F.
+  - family: Holmen
+    given: John K.
+  - family: Rentschler
+    given: Asa
+  container-title: Future Generation Computer Systems
+  container-title-short: Future Gener. Comput. Syst.
+  doi: 10.1016/j.future.2026.108513
+  id: posadaOakRidgeComputing2026
+  issn: 0167739X
+  issued: 2026-09
+  language: en-US
+  page: 108513
+  title: "Oak Ridge Computing Academy: An HPC cluster deployment and
+    management pilot"
+  title-short: Oak Ridge Computing Academy
+  type: article-journal
+  url: "https://linkinghub.elsevier.com/retrieve/pii/S0167739X26001470"
+  volume: 182
+- abstract: Artificial intelligence is transforming industries and
+    society, but its high energy demands challenge global sustainability
+    goals. Biological intelligence, in contrast, offers both good
+    performance and exceptional energy efficiency. Neuromorphic
+    computing, a growing field inspired by the structure and function of
+    the brain, aims to create energy-efficient algorithms and hardware
+    by integrating insights from biology, physics, computer science, and
+    electrical engineering. This concise and accessible book delves into
+    the principles, mechanisms, and properties of neuromorphic systems.
+    It opens with a primer on biological intelligence, describing
+    learning mechanisms in both simple and complex organisms, then turns
+    to the application of these principles and mechanisms in the
+    development of artificial synapses and neurons, circuits, and
+    architectures. The text also delves into neuromorphic algorithm
+    design, and the unique challenges faced by algorithmic researchers
+    working in this area. The book concludes with a selection of
+    practice problems, with solutions available to instructors online.
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  author:
+  - family: Ramanathan
+    given: Shriram
+  - family: Sengupta
+    given: Abhronil
+  id: ramanathanIntroductionNeuromorphicComputing2025
+  isbn: 978-1-009-56434-2
+  issued: 2025
+  publisher: Cambridge University Press
+  publisher-place: Cambridge
+  title: Introduction to Neuromorphic Computing
+  type: book
+  url: "https://www.cambridge.org/core/books/introduction-to-neuromorphic-computing/853942021D89F82AED182F9021E7E0F5"
+- abstract: Beginning in the 1970s, statistician-cum-logician Per
+    Martin-L\\of wrote a series of papers developing what became
+    Martin-L\\of type theory, realizing a system where the distinction
+    between mathematics and programming disappears. Inspired by this
+    vision, this paper introduces dependent type theory (of which
+    Martin-L\\of type theory is an example) to a statistical audience.
+    Examples from statistics and probability theory demonstrate how
+    dependent type theory and an algebraic perspective can unify the
+    theoretical and computational concerns of statistics, ensuring
+    rigorous, machine-checked proofs and executable software.
+  accessed: 2025-11-07
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.785Z
+  author:
+  - family: Saul
+    given: Bradley
+  doi: 10.48550/arXiv.2510.09853
+  id: saulGreatExpectationsUnifying2025
+  issued: 2025-10-10
+  keyword: Statistics - Computation
+  status: pre-published
+  title: "Great expectations: Unifying Statistical Theory and
+    Programming"
+  title-short: Great expectations
+  type: webpage
+  url: "http://arxiv.org/abs/2510.09853"
+- abstract: Scientific advancement depends on a strong foundation of
+    data credibility. However, scientific findings in biomedical
+    research are not always reproducible. Meet the organizations that
+    are promoting best practices and helping researchers perform the
+    highest-quality science.
+  accessed: 2025-11-07
+  annote: |
+    Bandiera_abtest: a\
+    Cg_type: Advertisement Feature\
+    Read_Status: Read\
+    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  id: SixFactorsAffecting
+  language: en-US
+  title: Six factors affecting reproducibility in life science research
+    and how to handle them
+  type: article-journal
+  url: "https://www.nature.com/articles/d42473-019-00004-y"
+- abstract: "We present the \"Stewardship and Advancement of Programming
+    Systems and Tools\" (S4PST) project report for the calendar years
+    2024 and 2025. S4PST is dedicated to the stewardship and advancement
+    of Programming Systems and Tools (PST) mainly targeting
+    high-performance computing (HPC) for the scientific community. The
+    project is part of the funded software stewardship organizations
+    (SSOs) selected by ASCR as part of the NGSST program, and a member
+    of CASS: the Consortiumfor the Advancement of Scientific Software."
+  accessed: 2026-04-08
+  annote: |
+    Read_Status: Read\
+    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  author:
+  - family: Teranishi
+    given: Keita
+  - family: Godoy
+    given: William
+  - family: Valero Lara
+    given: Pedro
+  - family: Schanen
+    given: Michel
+  - family: Applencourt
+    given: Thomas
+  - family: Hueckelheim
+    given: Jan
+  - family: Raffenetti
+    given: Ken
+  - family: Thakur
+    given: Rajeev
+  - family: Videau
+    given: Brice
+  - family: Zhou
+    given: Hui
+  - family: Rouson
+    given: Damian
+  - family: Bonachea
+    given: Dan
+  - family: Hargrove
+    given: Paul
+  - family: Richardson
+    given: Brad
+  - family: Rasmussen
+    given: Katherine
+  - family: Blashcke
+    given: Johannes
+  - family: Laguna
+    given: Ignacio
+  - family: Doerfert
+    given: Johannes
+  - family: Georgakoudis
+    given: Giorgis
+  - family: Parasyris
+    given: Konstantinos
+  - family: Penades
+    given: Kevin
+  - family: Cormick
+    given: Patrick
+  - family: Edelman
+    given: Alan
+  - family: Alomairy
+    given: Rabab
+  - family: Samaroo
+    given: Julian
+  - family: Arndt
+    given: Daniel
+  - family: Denny
+    given: Joel
+  - family: Lebrun-Grandie
+    given: Damien
+  - family: Lee
+    given: Seyong
+  - family: Naughton III
+    given: Thomas
+  - family: Pophale
+    given: Swaroop
+  - family: Parete-Koon
+    given: Suzanne
+  - family: Trott
+    given: Christian
+  - family: Rajamanickam
+    given: Siva
+  - family: Kelley
+    given: Brian
+  - family: Aiken
+    given: Alex
+  - family: Chandrasekaran
+    given: Sunita
+  doi: 10.2172/3016977
+  id: teranishiS4PSTStewardshipAdvancement2026
+  issued: 2026-01-12
+  language: en-US
+  number: ORNL/SPR–2026/4406
+  publisher: Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United
+    States)
+  title: "S4PST: Stewardship and Advancement for Programming Systems and
+    Tools 2024-2025 Project Report"
+  title-short: S4PST
+  type: report
+  url: "https://www.osti.gov/biblio/3016977"
+---
+

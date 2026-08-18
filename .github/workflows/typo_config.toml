@@ -4,7 +4,8 @@ extend-exclude = [
     ".github/workflows/typo_config.toml",
     "assets/js/*.min.*",
     "pages/feeds/*.xml",
-    "_posts/2024-11-08-sc-candidates.md"
+    "_posts/2024-11-08-sc-candidates.md",
+    "_posts/newsletters/quarto/"
 ]
 ignore-hidden = true
 [default]

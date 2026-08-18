@@ -5,21 +5,11 @@ format:
     toc: true
     toc-depth: 2
     number-sections: true
+    include-before-body: 
+      - _preamble.md
 ---
 
 <a name="top"></a>
-
-:::{.content-visible when-meta="sections.preamble"}
-{{< include _preamble.md >}}
-:::
-
-```{=html}
-<p align="center">
-  <img src="{{ site.baseurl }}{{< meta image >}}" alt="{{< meta img_alttext >}}" style="width: 750px; height: auto;">
-</p>
-```
-
-In this issue:
 
 --------
 

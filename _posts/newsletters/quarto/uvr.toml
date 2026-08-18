@@ -1,0 +1,14 @@
+[project]
+name = "quarto"
+
+[dependencies]
+DT2 = "*"
+dplyr = "*"
+fs = "*"
+here = "*"
+httpgd = "*"
+janitor = "*"
+jgd = "*"
+readr = "*"
+remotes = "*"
+yaml = "*"
