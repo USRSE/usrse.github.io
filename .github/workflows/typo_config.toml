@@ -4,7 +4,8 @@ extend-exclude = [
     ".github/workflows/typo_config.toml",
     "assets/js/*.min.*",
     "pages/feeds/*.xml",
-    "_posts/2024-11-08-sc-candidates.md"
+    "_posts/2024-11-08-sc-candidates.md".
+    "_posts/newsletters/quarto/"
 ]
 ignore-hidden = true
 [default]
@@ -20,13 +21,5 @@ extend-ignore-re = [
     "Villegas",
     "Wil",
     "Lok",
-    "BITCON",
-    "annote",
-    "Annote",
-    # Embedded <script> libraries
-    '(?is)<script.*?</script>',
-    # Embedded <style> blocks
-    '(?is)<style.*?</style>',
-    # Pandoc/Quarto syntax-highlight token classes, e.g. class="ot", class="fu"
-    'class="[a-z]{2}"'
+    "BITCON"
 ]
