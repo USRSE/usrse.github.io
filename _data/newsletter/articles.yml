@@ -174,7 +174,7 @@ references:
     Building a Community Vision"
   title-short: Research Software Engineering in the Age of Generative AI
   type: report
-  url: "https://zenodo.org/records/20320884"
+  url: "https://doi.org/10.5281/zenodo.20320884"
 - abstract: Research software is a class of software developed to
     support research. Today a wealth of such software is created daily
     in universities, government, and commercial research enterprises
@@ -459,7 +459,7 @@ references:
     Changing Practice"
   title-short: Research Software Engineers in the Age of GenAI
   type: report
-  url: "https://zenodo.org/records/20320179"
+  url: "https://doi.org/10.5281/zenodo.20320179"
 - abstract: Research software (also called scientific software) is
     essential for advancing scientific endeavours. Research software
     encapsulates complex algorithms and domain-specific knowledge and is
@@ -760,7 +760,7 @@ references:
     Reflections from Edinburgh"
   title-short: Research Software in an Age of AI-Assisted Development
   type: report
-  url: "https://zenodo.org/records/20321134"
+  url: "https://doi.org/10.5281/zenodo.20321134"
 - abstract: "Scientific claims increasingly rely upon the interplay of
     code, data, and computational environments. Yet the record of how
     they are used together is often incomplete, scattered, or lost. This
