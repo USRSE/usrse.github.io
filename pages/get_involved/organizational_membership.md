@@ -55,9 +55,9 @@ Examples include:
   - The [Education and Training speaker series](/wg/education_training/)
 - A heavily visited and successful [job board](/jobs/)
 - Creation of resources such as the
-  - [Career Guidebook](https://zenodo.org/records/8329337) in collaboration with
+  - [Career Guidebook](https://doi.org/10.5281/zenodo.8329337) in collaboration with
     the Academic Data Science Alliance (over 100 pages)
-  - [Career Guide Brochure](https://zenodo.org/records/10073233) for RSEs in
+  - [Career Guide Brochure](https://doi.org/10.5281/zenodo.10073233) for RSEs in
     collaboration with IEEE Computer Society (25 pages)
 
 
