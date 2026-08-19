@@ -38,6 +38,6 @@ the US-RSE slack or contact the co-chairs at
 
 # Work Products
 
-Working paper: [Illustrating Impacts of User Experience Work in Research Software Engineering](https://zenodo.org/records/17944188)
+Working paper: [Illustrating Impacts of User Experience Work in Research Software Engineering](https://doi.org/10.5281/zenodo.17944188)
 
 
