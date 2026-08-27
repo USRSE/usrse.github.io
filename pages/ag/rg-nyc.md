@@ -31,6 +31,8 @@ We organize informal meetings with a focus on local in-person events within the 
 
 * 2025-10-08 &ndash; We met briefly during USRSE'25 after the idea for a NYC Regional Group was born
 * 2026-05-11 &ndash; First in-the-city meeting at Everything's Jake NYC Bar & Lounge in Manhattan
+* 2026-06-25 &ndash; Meeting at Lucky in the East Village
+* 2026-08-25 &ndash; Meeting at Hidden Lane Bar in Manhattan
 
 # Group coordinators
 
