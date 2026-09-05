@@ -21,6 +21,7 @@ To stay informed, please:
 * [Join US-RSE]({{site.baseurl}}/join/).
 * Subscribe to event announcements by joining one of:
   * The [US-RSE Slack `#rg-north-carolina` channel](https://usrse.slack.com/messages/rg-north-carolina)
+  * Our [LinkedIn group](https://www.linkedin.com/groups/17844009/)
   * Our [Google group](https://groups.google.com/a/us-rse.org/g/rg-north-carolina/about) (mailing list)
 
 If you are interested in giving a talk or have other ideas for a future meetup, please contact one of the coordinators (see the [Questions?](#questions) section below).
