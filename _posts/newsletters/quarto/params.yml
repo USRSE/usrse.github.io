@@ -1,23 +1,23 @@
 layout: post
-title: "US-RSE Summer 2026 Newsletter"
-subtitle: "Summer is in full swing, which means US-RSE is right around the corner..."
+title: "US-RSE September 2026 Newsletter"
+subtitle: "🧳 San Jose or Bust: We're Going to US-RSE 2026! 🧳"
 category: newsletter
-tags: [newsletter, August]
-date: 2026-08-05 00:00:00 -0400
+tags: [newsletter, September]
+date: 2026-09-19 00:00:00 -0400
 author: "Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden (Editor)"
-image: "/assets/img/newsletter-202606/tasha-kostyuk-TtMKq3lJm-U-unsplash.jpg" #Done
-img_alttext: "A railway traffic controller with his back to the camera, looking at several screens with train camera feed and data." #Done
-next_meeting_date: Thursday, July 9, 2026, 12:00PM EST #Done
+image: "/assets/img/newsletter-202609/jon-matthews-7wH0xr4PGk4-unsplash.jpg" #DONE
+img_alttext: "Scenic photo of the San Pedro Square Market in San Jose" #DONE
+next_meeting_date: October 9, 2026 2—3 PM EST #DONE
 sections:
   preamble: true #Done
   headline: true #Done
-  conference: true #Done
-  execupdate: false #TODO
-  scupdate: false #TODO
-  orgmember: false #TODO
-  communityfunds: false #TODO
-  news: true #TODO
-  events: true #TODO
+  conference: false #Done
+  execupdate: false #None
+  scupdate: false #None
+  orgmember: false #None
+  communityfunds: false #None
+  news: true #DONE
+  events: true #DONE
   reads: true #TODO
   involved: true
   jobs: true

@@ -6,9 +6,7 @@ references:
     you to create a web-site for your research project (reasonably)
     quickly. With me are Sarah Gibson and Jeremy Cohen.\\&nbsp;I’d li..."
   accessed: 2026-05-21
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.722Z"
   author:
   - family: Schmidt
     given: Peter
@@ -27,9 +25,7 @@ references:
     research software engineers, how they work in teams with AI tools,
     and what performance they can expect from AI t"
   accessed: 2026-04-08
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   id: casscommunityAITeamworkTooling2026
   issued: 2026-03-04
   title: AI teamwork and tooling for research software engineers
@@ -39,9 +35,7 @@ references:
     AWS account to a running Slurm cluster, a submitted job, and a live
     JupyterLab notebook — all in your own AWS, same day."
   accessed: 2026-06-29
-  annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-06-29T15:29:59.361Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-09-18T20:23:55.620Z"
   id: clusterraBioChemreadySlurmCluster2026
   issued: 2026-04-25
   title: <span class="nocase">BioChem-ready</span> Slurm Cluster in
@@ -53,9 +47,7 @@ references:
     guest and former colleague at UCL, Michael McLeod, we talk about
     what they are, where they are used and what’s so special ..."
   accessed: 2026-05-21
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.722Z"
   author:
   - family: Schmidt
     given: Peter
@@ -70,11 +62,9 @@ references:
 - abstract: "English Edition: Will spec-driven development replace agile
     processes? My guest Graham Lee\\&nbsp; (https://chironcodex.com/ )
     and I discuss if there is still a place for agile software
-    engineering in a world of AI assisted coding..."
+    engineering in a world of AI assisted coding.Links:https://mart..."
   accessed: 2026-06-16
-  annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-06-16T16:05:28.241Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-09-18T20:23:55.620Z"
   author:
   - family: Schmidt
     given: Peter
@@ -91,9 +81,7 @@ references:
     in this episode I talk to Raniere de Silva (GESIS) and Wolf
     Vollprecht (Prefix - the company behind Pixi), what the tool br..."
   accessed: 2026-05-21
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.722Z"
   author:
   - family: Schmidt
     given: Peter
@@ -104,12 +92,21 @@ references:
     Vollprecht - Code for Thought
   type: song
   url: "https://www.buzzsprout.com/1326658/episodes/19064274-en-managing-packages-with-pixi-raniere-de-silva-and-wolf-vollprecht"
+- abstract: Podcast Episode · Code for Thought · September 14 · 36m
+  accessed: 2026-09-18
+  annote: "Read_Status: To ReadRead_Status_Date:
+    2026-09-18T20:14:16.090Z"
+  author:
+  - literal: Peter Schmidt
+  id: peterschmidtAgentsFellowsOscar
+  language: en-US
+  title: \[EN\] From Agents to Fellows - with Oscar Seip and Shoaib Sufi
+  type: song
+  url: "https://podcasts.apple.com/us/podcast/en-from-agents-to-fellows-with-oscar-seip-and-shoaib-sufi/id1548426989?i=1000789644963"
 - abstract: Slide set of the accepted rapid access micro talks at USRSE
     25.
   accessed: 2026-04-09
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-04-09T23:30:44.373Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-04-09T23:30:44.373Z"
   author:
   - family: Ruchti
     given: Carol
@@ -152,15 +149,13 @@ references:
   issued: 2025-10-08
   title: USRSE 25 rapid access micro talks
   type: manuscript
-  url: "https://doi.org/10.5281/zenodo.17297728"
+  url: "https://zenodo.org/records/17297728"
 - abstract: "English Edition: how are real numbers e.g. 0.1 represented
     on computers? What can go wrong with using their representation in
     calculations? And does it matter? These and other questions are the
     subject of this ByteSized episode with my guests Prof..."
   accessed: 2026-04-13
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   author:
   - family: Schmidt
     given: Peter
@@ -177,9 +172,7 @@ references:
     calculations? And does it matter? These and other questions are the
     subject of this ByteSized episode with my guests Prof..."
   accessed: 2026-04-13
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   author:
   - family: Schmidt
     given: Peter
@@ -196,9 +189,7 @@ references:
     the EPSRC (UK) you’ll meet Richard Acton. Richard created a tool to
     help you keep track of all the steps you should take t..."
   accessed: 2026-03-16
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-04-13T15:23:08.156Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-04-13T15:23:08.156Z"
   author:
   - family: Schmidt
     given: Peter
@@ -215,9 +206,7 @@ references:
     Massachusetts General in Boston, US, has been leading this project.
     My colleague James Hughes (University College London) and I were..."
   accessed: 2026-04-13
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   author:
   - family: Schmidt
     given: Peter
@@ -234,9 +223,7 @@ references:
     CrystFEL. The tool to help understand and analyse the structure of
     materials such as crystals and proteins. Thomas and I ..."
   accessed: 2026-03-16
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-04-13T15:23:08.155Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-04-13T15:23:08.155Z"
   author:
   - family: Schmidt
     given: Peter
@@ -253,9 +240,7 @@ references:
     Conference in 2022 and 2024 and here is a chance to meet at least
     s..."
   accessed: 2026-04-13
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   author:
   - family: Schmidt
     given: Peter
@@ -272,9 +257,7 @@ references:
     as he is also known in the trade. Dave is one of the authors of the
     manifesto for agile development - and we talk about what has ..."
   accessed: 2026-06-16
-  annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-06-16T16:05:28.241Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-09-18T20:23:55.620Z"
   author:
   - family: Schmidt
     given: Peter
@@ -291,9 +274,7 @@ references:
     ultimately they all decay. With my guests Callum McKean, Leontien
     Talboom and Adrian Page-Mitchell, we’re going to talk about wha..."
   accessed: 2026-06-16
-  annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-06-16T16:05:28.241Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-09-18T20:23:55.620Z"
   author:
   - family: Schmidt
     given: Peter
