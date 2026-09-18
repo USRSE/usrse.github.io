@@ -4,7 +4,7 @@ title: "US-RSE September 2026 Newsletter"
 subtitle: "🧳 San Jose or Bust: We're Going to US-RSE 2026! 🧳"
 category: newsletter
 tags: [newsletter, September]
-date: 2026-09-19 00:00:00 -0400
+date: 2026-09-18 00:00:00 -0400
 author: "Tinashe M. Tapera (Author & Editor), Sandra Gesing (Editor), Ian Cosden (Editor)"
 image: "/assets/img/newsletter-202609/jon-matthews-7wH0xr4PGk4-unsplash.jpg" #DONE
 img_alttext: "Scenic photo of the San Pedro Square Market in San Jose" #DONE
