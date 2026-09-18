@@ -1,10 +1,55 @@
 ---
 nocite: \[@\*\]
 references:
+- abstract: This declaration calls for action to address the challenges
+    posed by the use of artificial intelligence within mathematics
+    research.
+  accessed: 2026-09-18
+  annote: "Read_Status: To ReadRead_Status_Date:
+    2026-09-18T20:14:16.090Z"
+  author:
+  - family: Alper
+    given: Jarod
+  - family: Barany
+    given: Michael
+  - family: Chavarri Villarello
+    given: Alain
+  - family: Dahmen
+    given: Sander
+  - family: Dean
+    given: Walter
+  - family: Ganapathy
+    given: Karthik
+  - family: Harris
+    given: Michael
+  - family: Holmes
+    given: David
+  - family: Jamnik
+    given: Mateja
+  - family: Kelk
+    given: Steven
+  - family: Kra
+    given: Bryna
+  - family: Martin
+    given: Ursula
+  - family: Naskręcki
+    given: Bartosz
+  - family: Ochigame
+    given: Rodrigo
+  - family: Portegies
+    given: Jim
+  - family: Schmitt
+    given: Johannes
+  doi: 10.5281/zenodo.20302944
+  id: alperLeidenDeclarationArtificial2026
+  issued: 2026-06-02
+  language: en-US
+  publisher: Zenodo
+  title: Leiden Declaration on Artificial Intelligence and Mathematics
+  type: article-journal
+  url: "https://zenodo.org/records/20302944"
 - accessed: 2026-05-21
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.722Z"
   author:
   - family: Armstrong
     given: Matthew
@@ -32,9 +77,7 @@ references:
   url: "https://linkinghub.elsevier.com/retrieve/pii/S0167739X26002050"
   volume: 183
 - accessed: 2026-05-21
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.722Z"
   author:
   - family: Armstrong
     given: Matthew
@@ -91,9 +134,7 @@ references:
     shared a common focus on community-maintained practices, actionable
     guidance, and sustained coordination."
   accessed: 2026-05-28
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.721Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.721Z"
   author:
   - family: Barker
     given: Michelle
@@ -174,7 +215,7 @@ references:
     Building a Community Vision"
   title-short: Research Software Engineering in the Age of Generative AI
   type: report
-  url: "https://doi.org/10.5281/zenodo.20320884"
+  url: "https://zenodo.org/records/20320884"
 - abstract: Research software is a class of software developed to
     support research. Today a wealth of such software is created daily
     in universities, government, and commercial research enterprises
@@ -190,9 +231,7 @@ references:
     such as the United States Research Software Engineer Association
     (US-RSE), can provide this support.
   accessed: 2026-05-21
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.722Z"
   author:
   - family: Carver
     given: Jeffrey C.
@@ -222,12 +261,7 @@ references:
 - abstract: Data-analysis and modelling positions are already becoming
     obsolete, but hands-on experimentalists can breathe easy for now.
   accessed: 2026-04-08
-  annote: |
-    Bandiera_abtest: a\
-    Cg_type: News\
-    Subject_term: Machine learning, Careers\
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   author:
   - family: Chen
     given: Edward
@@ -260,9 +294,7 @@ references:
     directions where institutional actions might be explored to promote
     more equitable and effective AI adoption.
   accessed: 2026-04-08
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   author:
   - family: Chugunova
     given: Marina
@@ -294,9 +326,7 @@ references:
   url: "https://www.sciencedirect.com/science/article/pii/S0048733325002100"
   volume: 55
 - accessed: 2026-05-21
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.722Z"
   author:
   - family: Cosden
     given: Ian A.
@@ -323,9 +353,7 @@ references:
     works with researchers, developers, funders, and infrastructure
     providers to identify and address key issues with research software.
   accessed: 2026-05-21
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.722Z"
   author:
   - family: Crouch
     given: Stephen
@@ -368,13 +396,7 @@ references:
 - abstract: Scientists, research institutions, funders, libraries and
     publishers must all improve software practices.
   accessed: 2025-11-07
-  annote: |
-    Bandiera_abtest: a\
-    Cg_type: Comment\
-    Subject_term: Computer science, Software, Scientific community,
-    Research management\
-    Read_Status: Read\
-    Read_Status_Date: 2026-03-16T02:12:49.784Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-03-16T02:12:49.784Z"
   author:
   - family: Di Cosmo
     given: Roberto
@@ -428,9 +450,7 @@ references:
     practice, their value and the value of their work for research
     remains steady and likely to increase.
   accessed: 2026-05-28
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.721Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.721Z"
   author:
   - family: Druskat
     given: Stephan
@@ -459,7 +479,7 @@ references:
     Changing Practice"
   title-short: Research Software Engineers in the Age of GenAI
   type: report
-  url: "https://doi.org/10.5281/zenodo.20320179"
+  url: "https://zenodo.org/records/20320179"
 - abstract: Research software (also called scientific software) is
     essential for advancing scientific endeavours. Research software
     encapsulates complex algorithms and domain-specific knowledge and is
@@ -482,9 +502,7 @@ references:
     identify nine types of self-admitted technical debt unique to
     research software, and four themes impacting this technical debt.
   accessed: 2026-04-08
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   author:
   - family: Ernst
     given: Neil A.
@@ -507,9 +525,7 @@ references:
     scientific problems through citizen science, crowdsourcing, and
     community-engaged science.
   accessed: 2026-03-13
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-04-13T15:23:11.431Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-04-13T15:23:11.431Z"
   author:
   - family: Forston
     given: Lucy
@@ -551,9 +567,7 @@ references:
     technology research software as well as that of another research
     software category."
   accessed: 2026-05-28
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.721Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.721Z"
   author:
   - family: Hasselbring
     given: Wilhelm
@@ -591,9 +605,7 @@ references:
     applications including but not limited to Bayesian networks,
     optimization, Ising models, and quantum Monte Carlo.
   accessed: 2025-11-07
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-03-16T02:12:49.786Z"
   author:
   - family: Kaiser
     given: Jan
@@ -614,9 +626,7 @@ references:
   url: "http://arxiv.org/abs/2108.09836"
   volume: 119
 - accessed: 2026-05-28
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.721Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.721Z"
   author:
   - family: Kamali
     given: "Author: Soudeh"
@@ -692,9 +702,7 @@ references:
     those who can afford it, and allow all researchers to focus on the
     work that most requires human skill and judgment."
   accessed: 2026-05-28
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.721Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.721Z"
   author:
   - family: Katz
     given: Daniel S.
@@ -760,7 +768,7 @@ references:
     Reflections from Edinburgh"
   title-short: Research Software in an Age of AI-Assisted Development
   type: report
-  url: "https://doi.org/10.5281/zenodo.20321134"
+  url: "https://zenodo.org/records/20321134"
 - abstract: "Scientific claims increasingly rely upon the interplay of
     code, data, and computational environments. Yet the record of how
     they are used together is often incomplete, scattered, or lost. This
@@ -786,9 +794,7 @@ references:
     computational research more durable.
     https://github.com/stamped-principles/stamped-paper/"
   accessed: 2026-06-15
-  annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-06-16T01:04:20.126Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-09-18T20:23:55.620Z"
   author:
   - family: Macdonald
     given: Austin
@@ -807,9 +813,7 @@ references:
   type: webpage
   url: "https://osf.io/preprints/metaarxiv/f3h82_v1/"
 - accessed: 2026-05-21
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.722Z"
   author:
   - family: Martina
     given: Tobia
@@ -851,9 +855,7 @@ references:
     harnesses more than one of the 11 features, while avoiding a number
     of pitfalls that we describe.
   accessed: 2025-11-07
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-03-16T02:12:49.786Z"
   author:
   - family: McMahon
     given: Peter L.
@@ -885,9 +887,7 @@ references:
     great learning aid and, in later times, a reference book that you
     can pick up whenever you need to a refresher or to learn a new
     topic.
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.722Z"
   author:
   - family: Miller
     given: Barton P.
@@ -900,9 +900,7 @@ references:
   publisher: Independently published
   title: Introduction to Software Security
   type: book
-- annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.722Z
+- annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.722Z"
   author:
   - family: Mineault
     given: Patrick
@@ -913,9 +911,7 @@ references:
 - abstract: Calls to recognize research software engineers are not new —
     but such professionals are needed now more than ever.
   accessed: 2025-11-07
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-03-16T02:12:49.786Z"
   container-title: Nature Reviews Physics
   container-title-short: Nat. Rev. Phys.
   doi: 10.1038/s42254-025-00852-2
@@ -932,9 +928,7 @@ references:
   url: "https://www.nature.com/articles/s42254-025-00852-2"
   volume: 7
 - accessed: 2026-05-21
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.721Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.721Z"
   author:
   - family: Posada
     given: Edwin F.
@@ -974,9 +968,7 @@ references:
     working in this area. The book concludes with a selection of
     practice problems, with solutions available to instructors online.
   accessed: 2025-11-07
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-03-16T02:12:49.786Z"
   author:
   - family: Ramanathan
     given: Shriram
@@ -1001,9 +993,7 @@ references:
     theoretical and computational concerns of statistics, ensuring
     rigorous, machine-checked proofs and executable software.
   accessed: 2025-11-07
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-03-16T02:12:49.785Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-03-16T02:12:49.785Z"
   author:
   - family: Saul
     given: Bradley
@@ -1023,17 +1013,41 @@ references:
     are promoting best practices and helping researchers perform the
     highest-quality science.
   accessed: 2025-11-07
-  annote: |
-    Bandiera_abtest: a\
-    Cg_type: Advertisement Feature\
-    Read_Status: Read\
-    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-03-16T02:12:49.786Z"
   id: SixFactorsAffecting
   language: en-US
   title: Six factors affecting reproducibility in life science research
     and how to handle them
   type: article-journal
   url: "https://www.nature.com/articles/d42473-019-00004-y"
+- abstract: "Generative AI now makes it dramatically easier to produce
+    something that looks like research: analysis code, figures,
+    literature reviews, even whole papers. The mechanisms research
+    relies on to establish trust were built for a slower, human-paced
+    enterprise, and they are struggling with the volume. Software got
+    here first: this community has a two-year head start on questions
+    the rest of research is only beginning to ask, and RSE work is
+    already changing shape, away from writing code for researchers and
+    toward specification, verification, and the judgment that makes
+    AI-assisted work trustworthy. I’ll share observations from my
+    perspectives as a funder, a journal editor, and a long-time member
+    of this community and offer some thoughts on where research software
+    engineering goes next."
+  accessed: 2026-09-18
+  annote: "Read_Status: To ReadRead_Status_Date:
+    2026-09-18T20:24:14.052Z"
+  author:
+  - family: Smith
+    given: Arfon
+  doi: 10.5281/zenodo.22672891
+  event: Research Software Engineering Conference 2026 (RSECon26)
+  id: smithWhereDoesRigor2026
+  issued: 2026-09-09
+  title: Where does the rigor go? Research software and the future of
+    trustworthy science.
+  title-short: Where does the rigor go?
+  type: article-journal
+  url: "https://zenodo.org/records/22672891"
 - abstract: "We present the \"Stewardship and Advancement of Programming
     Systems and Tools\" (S4PST) project report for the calendar years
     2024 and 2025. S4PST is dedicated to the stewardship and advancement
@@ -1043,9 +1057,7 @@ references:
     (SSOs) selected by ASCR as part of the NGSST program, and a member
     of CASS: the Consortiumfor the Advancement of Scientific Software."
   accessed: 2026-04-08
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   author:
   - family: Teranishi
     given: Keita
