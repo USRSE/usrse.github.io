@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "US-RSE Pride Month Spotlight - Sally Ride"
-tags: [dei, pride-month]
+tags: [dei, pride]
 author: Lance Parsons 
 ---
 

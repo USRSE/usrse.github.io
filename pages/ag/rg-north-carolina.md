@@ -21,6 +21,7 @@ To stay informed, please:
 * [Join US-RSE]({{site.baseurl}}/join/).
 * Subscribe to event announcements by joining one of:
   * The [US-RSE Slack `#rg-north-carolina` channel](https://usrse.slack.com/messages/rg-north-carolina)
+  * Our [LinkedIn group](https://www.linkedin.com/groups/17844009/)
   * Our [Google group](https://groups.google.com/a/us-rse.org/g/rg-north-carolina/about) (mailing list)
 
 If you are interested in giving a talk or have other ideas for a future meetup, please contact one of the coordinators (see the [Questions?](#questions) section below).
@@ -32,10 +33,11 @@ organize more structured events in the future.
 
 ## Upcoming meetups
 
-- April 21, 2026 at 5pm ET: [April Meetup]({{site.baseurl}}/events/2026/2026-04-rg-nc-meetup/) at [Namu](https://www.yelp.com/biz/namu-durham), 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
+- September 16, 2026 at 5pm ET: [September Meetup]({{site.baseurl}}/events/2026/2026-09-rg-nc-meetup/) at [Namu](https://www.yelp.com/biz/namu-durham), 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
 
 ## Archive of past meetups
 
+- April 21, 2026 at 5pm ET: [April Meetup]({{site.baseurl}}/events/2026/2026-04-rg-nc-meetup/) at [Namu](https://www.yelp.com/biz/namu-durham), 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.
 - March 24, 2026 at 5pm ET: [March Meetup]({{site.baseurl}}/events/2026/2026-03-rg-nc-meetup/) at [Boxyard RTP](https://boxyard.rtp.org/vendors/), 900 Park Offices Drive, Durham, NC 27709.
 - January 21, 2026 at 5pm ET: [January Meetup]({{site.baseurl}}/events/2026/2026-01-rg-nc-meetup/), virtual.
 - October 21, 2025 at 5pm ET: [October Meetup]({{site.baseurl}}/events/2025/2025-10-rg-nc-meetup/) at [Namu](https://www.yelp.com/biz/namu-durham), 5420 Durham-Chapel Hill Blvd, Durham, NC 27707.

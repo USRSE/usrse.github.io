@@ -174,7 +174,7 @@ references:
     Building a Community Vision"
   title-short: Research Software Engineering in the Age of Generative AI
   type: report
-  url: "https://zenodo.org/records/20320884"
+  url: "https://doi.org/10.5281/zenodo.20320884"
 - accessed: 2026-04-08
   annote: |
     Read_Status: Read\
@@ -567,7 +567,7 @@ references:
     Changing Practice"
   title-short: Research Software Engineers in the Age of GenAI
   type: report
-  url: "https://zenodo.org/records/20320179"
+  url: "https://doi.org/10.5281/zenodo.20320179"
 - abstract: Research software (also called scientific software) is
     essential for advancing scientific endeavours. Research software
     encapsulates complex algorithms and domain-specific knowledge and is
@@ -887,7 +887,7 @@ references:
     Reflections from Edinburgh"
   title-short: Research Software in an Age of AI-Assisted Development
   type: report
-  url: "https://zenodo.org/records/20321134"
+  url: "https://doi.org/10.5281/zenodo.20321134"
 - abstract: United States Research Software Engineer Association
   accessed: 2022-05-21
   annote: |
@@ -1235,7 +1235,7 @@ references:
   issued: 2025-10-08
   title: USRSE 25 rapid access micro talks
   type: manuscript
-  url: "https://zenodo.org/records/17297728"
+  url: "https://doi.org/10.5281/zenodo.17297728"
 - abstract: Beginning in the 1970s, statistician-cum-logician Per
     Martin-L\\\"of wrote a series of papers developing what became
     Martin-L\\\"of type theory, realizing a system where the distinction
