@@ -9,6 +9,17 @@
     Their Pricing page has more information on costs, and you can get in touch with them by email to register.
   links: '[Presented by The Carpentries](https://carpentries.org/blog/2026/06/genai-in-workshops-a-bonus-module-to-instructor-training/)'
   index: 1
+- expires: '2026-10-14'
+  type: opportunity
+  title: Nextflow is hosting their own "conference" and it's free virtually!
+  when: '2026-10-13'
+  where: Online
+  preamble: |-
+    Virtual Nextflow Summit is the premier global gathering of the Nextflow community—accessible from anywhere. Join researchers, developers, and industry leaders from across pharma and biotech as they share cutting-edge research, innovative solutions, and real-world applications.
+
+    Whether you're building pipelines, analyzing data, or leading teams, connect with the community, learn from the best, and walk away with fresh ideas, new skills, and the momentum to advance your work.
+  links: '[Check it out!](https://summit.nextflow.io/2026/virtual/overview)'
+  index: 2
 - expires: '2026-09-30'
   type: event
   title: 'Call for Experts for Standing Committee on Use of AI in Science: Integrity,
@@ -21,11 +32,10 @@
     The National Academies is seeking suggestions for experts with relevant knowledge and experience to inform the composition and work of the standing committee.
     _*The National Academies value a wide range of perspectives to strengthen the quality of our work. We carefully consider alternative viewpoints when formulating advice, convening experts with differing experience and perspectives, providing oversight, and conducting all other activities, and strive to foster an environment where all can participate fully. We welcome your suggestions for a broad range of experts to work with us.*_
   links: '[View details](https://survey.alchemer.com/s3/8988038/Call-for-Experts-for-Standing-Committee-on-Use-of-AI-in-Science-Integrity-Trust-and-Innovation)'
-  index: 2
+  index: 3
 - expires: '2027-06-14'
   type: opportunity
-  title: The Planetary Data Workshop will be held at Cornell University in Ithaca,
-    NY from June 14-17, 2027. The purpose of this workshop is to incre...
+  title: The Planetary Data Workshop
   when: '2027-06-14'
   where: In-person
   preamble: The Planetary Data Workshop will be held at Cornell University in Ithaca,
@@ -36,17 +46,6 @@
     a number of travel grants available for students and early career. The application
     form for those is available now. planetarydataworkshop.org
   links: '[View details](https://planetarydataworkshop.org/)'
-  index: 3
-- expires: '2026-10-14'
-  type: opportunity
-  title: Nextflow is hosting their own "conference" and it's free virtually!
-  when: '2026-10-13'
-  where: Online
-  preamble: |-
-    Virtual Nextflow Summit is the premier global gathering of the Nextflow community—accessible from anywhere. Join researchers, developers, and industry leaders from across pharma and biotech as they share cutting-edge research, innovative solutions, and real-world applications.
-
-    Whether you're building pipelines, analyzing data, or leading teams, connect with the community, learn from the best, and walk away with fresh ideas, new skills, and the momentum to advance your work.
-  links: '[Check it out!](https://summit.nextflow.io/2026/virtual/overview)'
   index: 4
 - expires: '2026-09-26'
   type: event
@@ -54,8 +53,7 @@
   when: '2026-09-23'
   where: Online, In-person
   preamble: |-
-    :loudspeaker: Good morning, everyone! We’ve got a lot of updates regarding Gateways 2026!
-    :speaking_head_in_silhouette: We’re thrilled to welcome Rob Cheung is founder and CEO of Zo Computer, where he’s focused on making cloud computing accessible and usable by everyone, not just experts in the software industry. Zo Computers are cloud-native computing environments that scale horizontally and vertically. Users communicate to these computing environments in natural language, offering an unprecedented amount of information processing capacity behind a radically accessible user interface. He will be delivering a keynote on how the process of science is changing in an era where everyone has instant access to elastic compute and AI.zo.computer
+    We’re thrilled to welcome Rob Cheung is founder and CEO of Zo Computer, where he’s focused on making cloud computing accessible and usable by everyone, not just experts in the software industry. Zo Computers are cloud-native computing environments that scale horizontally and vertically. Users communicate to these computing environments in natural language, offering an unprecedented amount of information processing capacity behind a radically accessible user interface. He will be delivering a keynote on how the process of science is changing in an era where everyone has instant access to elastic compute and AI.zo.computer
 
     :hotel: We are proud to announce that the Holiday Inn will be one of our partners for Gateways 2026. Located only half a mile from the JHU Bloomberg Center, attendees can enjoy the sights and sounds of downtown DC while only being minutes away by walk or Uber from the venue. The Holiday Inn has provided us with a discounted rate on a first-come, first-served basis for 50 rooms. Use the link below, or the link on the interactive map to place your reservation.
     Holiday Inn Washington Capitol - National Mall
