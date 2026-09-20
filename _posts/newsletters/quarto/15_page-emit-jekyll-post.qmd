@@ -1,0 +1,68 @@
+---
+title: "Hand the edition to the website"
+format: html
+execute:
+  eval: false
+manual:
+  page: 15
+---
+
+The final step adds the parent site's front matter and writes one dated post.
+It does not deploy the website. Publication remains a separate repository
+operation.
+
+::: {.manual-prereq title="Confirm the approved candidate"}
+
+```{bash}
+#| eval: false
+test -s intermediate.md
+test -s params.yml
+test -d ..
+```
+
+:::
+
+::: {.manual-procedure title="Create the dated post"}
+
+```{bash}
+#| eval: false
+article=$(mktemp)
+release_date=$(awk '/^date:/ {print $2; exit}' params.yml)
+
+{
+  echo "---"
+  cat params.yml
+  echo "---"
+  sed '1,4d' intermediate.md
+} > "$article"
+
+mv "$article" "../${release_date}-newsletter.md"
+```
+
+The generated post is now in the parent Jekyll posts directory. Keep the source
+files in this workspace as the place to make future corrections.
+
+:::
+
+::: {.manual-procedure title="Inspect the handoff"}
+
+```{bash}
+#| eval: false
+release_date=$(awk '/^date:/ {print $2; exit}' params.yml)
+sed -n '1,24p' "../${release_date}-newsletter.md"
+git diff --check
+```
+
+:::
+
+::: {.manual-check title="The website received the intended artifact"}
+
+```{bash}
+#| eval: false
+release_date=$(awk '/^date:/ {print $2; exit}' params.yml)
+test -s "../${release_date}-newsletter.md"
+rg -n '^title:|^date:|^author:' "../${release_date}-newsletter.md"
+```
+
+:::
+

@@ -1,0 +1,21 @@
+---
+title: "Inputs and shared website data"
+format: html
+---
+
+The newsletter workspace is nested inside the website repository. Its `_data`
+path points to the website's shared data, so input ownership is visible but not
+local to this directory.
+
+The recurring inputs are:
+
+- the newest `Newsletter_Content_Triage.csv` export;
+- historical event and opportunity records;
+- BibTeX files for articles, blogs, and media;
+- edition metadata in `params.yml`;
+- the Markdown section files and their images.
+
+When a new export arrives, keep the original until the replacement has been
+checked. The helper notebook can consolidate the working copy after that
+review.
+

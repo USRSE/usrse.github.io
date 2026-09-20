@@ -5,5 +5,5 @@ edition, we'll keep you up to date on all the latest developments, and we'll hel
 Let's jump right in...
 
 <p align="center">
-  <img src="{{ site.baseurl }}/assets/img/newsletter-202609/joseph-sintum-H5lKRVgJrGE-unsplash.jpg" alt="Scenic photo of the San Pedro Square Market in San Jose." style="width: 750px; height: auto;">
+  <img class="newsletter-image" src="{{ site.baseurl }}/assets/img/newsletter-202609/joseph-sintum-H5lKRVgJrGE-unsplash.jpg" alt="Scenic photo of the San Pedro Square Market in San Jose.">
 </p>

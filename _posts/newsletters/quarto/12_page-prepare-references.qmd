@@ -1,0 +1,47 @@
+---
+title: "Prepare the reading lists"
+format: html
+execute:
+  eval: false
+manual:
+  page: 12
+---
+
+The reading sections use the website's YAML data shape. The BibTeX files are
+the editable source; the YAML files are the handoff to the rendered newsletter.
+
+::: {.manual-prereq title="Confirm the bibliographies"}
+
+```{bash}
+#| eval: false
+command -v pandoc
+test -s _data/newsletter/articles.bib
+test -s _data/newsletter/blogs.bib
+test -s _data/newsletter/media.bib
+```
+
+:::
+
+::: {.manual-procedure title="Convert the reading lists"}
+
+```{bash}
+#| eval: false
+pandoc _data/newsletter/articles.bib -s -f biblatex -t gfm > _data/newsletter/articles.yml
+pandoc _data/newsletter/blogs.bib -s -f biblatex -t gfm > _data/newsletter/blogs.yml
+pandoc _data/newsletter/media.bib -s -f biblatex -t gfm > _data/newsletter/media.yml
+```
+
+:::
+
+::: {.manual-check title="The reference handoff is readable"}
+
+```{bash}
+#| eval: false
+test -s _data/newsletter/articles.yml
+test -s _data/newsletter/blogs.yml
+test -s _data/newsletter/media.yml
+head -n 2 _data/newsletter/articles.yml
+```
+
+:::
+

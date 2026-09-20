@@ -1,0 +1,57 @@
+---
+title: "Turn triage notes into working event data"
+format: html
+execute:
+  eval: false
+manual:
+  page: 11
+---
+
+The helper notebook turns the current export and the older event records into
+the YAML consumed by the website. It also leaves an HTML view of the helper
+work so that the row count and current records can be inspected.
+
+::: {.manual-prereq title="Confirm the input snapshot"}
+
+```{bash}
+#| eval: false
+test -s _data/newsletter/Newsletter_Content_Triage.csv
+test -f _data/newsletter-events-opportunities.yml
+test -f Newsletter_Preproc.qmd
+```
+
+Review the export before running this step. The helper may consolidate older
+exports into the canonical filename.
+
+:::
+
+::: {.manual-procedure title="Run the triage helper"}
+
+```{bash}
+#| eval: false
+quarto render Newsletter_Preproc.qmd --no-cache --to html --output Newsletter_Preproc.html
+```
+
+The R code cleans names, separates section assignments, classifies events and
+opportunities, fills required display fields, and writes the current staged
+records.
+
+:::
+
+::: {.manual-procedure title="Read the resulting table"}
+
+Open `Newsletter_Preproc.html` and inspect the displayed records. Pay
+particular attention to expiration dates, event dates, location, and links.
+
+:::
+
+::: {.manual-check title="The staged event data exists"}
+
+```{bash}
+#| eval: false
+test -s _data/newsletter/events-opportunities.yml
+rg -n "^(expires|type|title|when|where|preamble|links):" \
+  _data/newsletter/events-opportunities.yml | head -40
+```
+
+:::

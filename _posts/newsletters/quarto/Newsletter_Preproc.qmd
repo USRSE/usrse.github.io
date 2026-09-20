@@ -22,13 +22,13 @@ library(DT2)
 ```
 
 This notebook contains helper snippets for the US-RSE newsletter. It
-is intended to parse data into YAML before it is used in the newsletter
+parses working inputs into YAML before they are used in the newsletter
 template.
 
-The directory should be self-contained, so that it doesn't interfere
-with any other US-RSE Website content. No software is installed,
-and no changes are being made to the US-RSE Website. The notebook is 
-intended to be run in a local environment, not as part of CI/CD.
+The edition is prepared locally. Running the notebook can update the shared
+newsletter data under `_data`, but it does not deploy the website or install
+software. Review those staged changes before handing an edition to the parent
+site; this notebook is intended to be run locally, not as part of CI/CD.
 
 ## Old Data
 
@@ -40,6 +40,23 @@ old_data <- read_yaml(here("_data/newsletter-events-opportunities.yml")) |>
     mutate(
         expires = as_date(expires, format = "%Y-%m-%d")
     )
+
+# Keep the destination URL intact, but do not expose a long URL as the
+# visible link label. Kramdown will not reliably wrap every long URL in the
+# final Jekyll page, especially when it arrives through markdownify.
+normalize_link_labels <- function(x, max_label_length = 80) {
+    str_replace_all(
+        x,
+        str_c(
+            "\\[(https?://[^\\]]{", max_label_length + 1,
+            ",})\\]\\(([^)]+)\\)"
+        ),
+        "[View details](\\2)"
+    )
+}
+
+old_data <- old_data |>
+    mutate(links = normalize_link_labels(links))
 ```
 
 ## Slack Data
@@ -99,6 +116,11 @@ fromJson_vec <- Vectorize(function(x){
         display <- dat$displayName
         url <- dat$originalUrl
 
+        if (is.null(display) || is.na(display) || !nzchar(display) ||
+            str_detect(display, "^https?://")) {
+            display <- "View details"
+        }
+
         str_c("[", display, "](", url, ")")
     }, error = function(e){
         x
@@ -126,7 +148,7 @@ slack |>
             str_detect(str_to_lower(content), "online|zoom|webinar|virtual") ~ "Online",
             TRUE ~ "In Person"
         ),
-        link = fromJson_vec(link)
+        link = normalize_link_labels(fromJson_vec(link))
     ) -> events_opportunities
 ```
 
@@ -148,6 +170,9 @@ events_opportunities |>
     ) |>
     replace_na(list(when = as_date("2026-01-01"), where = "TBD", links = "TBD")) |>
     bind_rows(old_data) -> all_events_opportunities
+
+all_events_opportunities <- all_events_opportunities |>
+    mutate(links = normalize_link_labels(links))
 ```
 
 Number of rows to publish next: 
@@ -171,5 +196,3 @@ all_events_opportunities |>
     group_split() |>
     write_yaml(here("_data/newsletter/events-opportunities.yml"))
 ```
-
-

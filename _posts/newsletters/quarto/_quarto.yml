@@ -1,6 +1,28 @@
 project:
-  title: "Newsletter Helpers"
-  render: 
-    - Newsletter_Helpers.qmd
+  type: default
+  title: "US-RSE Newsletter Edition Manual"
+  output-dir: _manual
+  render:
+    - index.qmd
+    - 00_cover.qmd
+    - 01_misc-environment.qmd
+    - 02_misc-inputs.qmd
+    - 10_page-capture-inputs.qmd
+    - 11_page-normalize-triage.qmd
+    - 12_page-prepare-references.qmd
+    - 13_page-compose-edition.qmd
+    - 14_page-review-edition.qmd
+    - 15_page-emit-jekyll-post.qmd
 
+format:
+  html:
+    toc: true
+    code-fold: false
+    html-math-method: plain
+
+execute:
+  eval: false
+
+filters:
+  - _extensions/quarto-manual/manual.lua
 
