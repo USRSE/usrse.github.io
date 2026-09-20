@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "US-RSE September 2026 Newsletter"
-subtitle: "🧳 San Jose or Bust: We're Going to US-RSE 2026! 🧳"
+subtitle: "🧳 San Jose or Bust: We're Going to USRSE26! 🧳"
 category: newsletter
 tags: [newsletter, September]
 date: 2026-09-18 00:00:00 -0400
@@ -22,7 +22,6 @@ sections:
   reads: true #TODO
   involved: true
   jobs: true
-
 ---
 
 It's that time again, y'all! The US-RSE newsletter is back with the latest news, 
@@ -36,8 +35,8 @@ Let's jump right in...
 </p>
 
 - [<span class="toc-section-number">1</span> 🧳 San Jose or Bust: We’re
-  Going to US-RSE 2026!
-  🧳](#luggage-san-jose-or-bust-were-going-to-us-rse-2026-luggage)
+  Going to USRSE26!
+  🧳](#luggage-san-jose-or-bust-were-going-to-usrse26-luggage)
 - [<span class="toc-section-number">2</span> 🗞️ Community News
   🗞️](#newspaper_roll-community-news-newspaper_roll)
 - [<span class="toc-section-number">3</span> Community
@@ -55,15 +54,15 @@ Let's jump right in...
 
 ------------------------------------------------------------------------
 
-## 🧳 San Jose or Bust: We’re Going to US-RSE 2026! 🧳
+## 🧳 San Jose or Bust: We’re Going to USRSE26! 🧳
 
 <a name="headline"></a>
 
-The time has come! USRSE’26 is finally upon us, and in just a few short
+The time has come! USRSE26 is finally upon us, and in just a few short
 weeks, the community will descend upon downtown San Jose, California for
-a week of learning, connection, growth, and fun! From poster sessions to
-keynotes, this year’s conference is gearing up to be yet another
-exciting and edu-taining week for research software nerds of all
+several days of learning, connection, growth, and fun! From poster
+sessions to keynotes, this year’s conference is gearing up to be yet
+another exciting and edu-taining week for research software nerds of all
 backgrounds and flavors.
 
 **Our keynote speaker this year is [Fernando
@@ -76,15 +75,15 @@ Among his many accolades, Pérez is a mainstay in the open-source
 software community, having contributed to and led a dizzying array of
 projects, including IPython, Jupyter, and the Berkeley Institute for
 Data Science (BIDS). Expect nothing less than an engaging and
-thought-provoking keynote from this research software luminary. Advanced
-thanks goes out to Pérez and to the USRSE26 sponsors, listed
+thought-provoking keynote from this research software luminary. Many
+thanks go to Pérez and to the USRSE26 sponsors, listed
 [here](https://us-rse.org/usrse26/sponsors/), for making this year’s
 event possible.
 
-If this is your first time attending a US-RSE conference, here are some
-attendance tips:
+If this is your first time attending USRSE26, here are some attendance
+tips:
 
-- Your go-to resource for all things USRSE’26 is available at the
+- Your go-to resource for all things USRSE26 is available at the
   [conference website](https://us-rse.org/usrse26/attend/).
 - The conference will be held at the San Jose Marriott, located in
   downtown San Jose, California.
@@ -110,15 +109,14 @@ attendance tips:
 
 Don’t feel left out – there are still ways you can get involved.
 Remember, the greatness of a community is most accurately measured by
-the compassionate action of its members ([Corretta Scott
+the compassionate action of its members ([Coretta Scott
 King](https://www.goodreads.com/author/quotes/74494.Coretta_Scott_King)).
 At the time of writing, the planning committee is still looking for
-volunteers to help with the conference. If you are interested in helping
-out, please reach out to the conference organizers on Slack in the
-`#usrse26` channel, or contact the Planning Committee directly on [the
-website](https://us-rse.org/usrse26/about/organization/). At the time of
-writing, the Planning Committee is still looking for volunteers to
-[chair sessions](https://forms.gle/sTmHEDcFjGCqMkKy8)…
+volunteers to help with USRSE26, including [chairing
+sessions](https://forms.gle/sTmHEDcFjGCqMkKy8). If you are interested in
+helping out, please reach out to the conference organizers on Slack in
+the `#usrse26` channel, or contact the Planning Committee directly on
+[the website](https://us-rse.org/usrse26/about/organization/).
 
 In addition, you can do your part to hype up the event by sharing your
 conference experience on social media. Use the hashtag `#usrse26` to
@@ -166,16 +164,16 @@ may recognize a familiar face or two…
 <img class="newsletter-image" src="{{ site.baseurl }}/assets/img/newsletter-202609/RSEcon26_Thurs_Delegates_003.JPG" alt="Image of RSECon 2026 attendees">
 </p>
 
-> Did you know that we have a community Code of Conduct? Anyone is able
-> to view it in the `#code_of_conduct` Slack channel, under `Files`!
+> Did you know that we have a community Code of Conduct? Anyone can view
+> it in the `#code_of_conduct` Slack channel, under `Files`!
 
 ## Community Spotlight
 
 🌱 Our community is full of people doing fascinating research and
 software work, and we want to put a face to it. Starting this month,
-we’ll be featuring a group of different members in a regular spotlight:
-what they work on, a tool they can’t live without, and how they found
-their way into RSE work.
+we’ll be featuring a group of members in a regular spotlight: what they
+work on, a tool they can’t live without, and how they found their way
+into RSE work.
 
 We’d love to feature YOU. It takes about 5 minutes to fill out, and
 nothing gets posted without your okay: [complete the community spotlight

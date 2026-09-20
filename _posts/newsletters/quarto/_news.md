@@ -19,12 +19,12 @@ Check out this photo of our friends across the pond at RSECon 2026! You may reco
   <img class="newsletter-image" src="{{ site.baseurl }}/assets/img/newsletter-202609/RSEcon26_Thurs_Delegates_003.JPG" alt="Image of RSECon 2026 attendees">
 </p>
 
-> Did you know that we have a community Code of Conduct? Anyone is able to view it in the
+> Did you know that we have a community Code of Conduct? Anyone can view it in the
 `#code_of_conduct` Slack channel, under `Files`!
 
 ## Community Spotlight
 
-🌱 Our community is full of people doing fascinating research and software work,  and we want to put a face to it. Starting this month, we'll be featuring a group of different members in a regular spotlight: what they work on, a tool they can't live without, and how they found their way into RSE work.
+🌱 Our community is full of people doing fascinating research and software work, and we want to put a face to it. Starting this month, we'll be featuring a group of members in a regular spotlight: what they work on, a tool they can't live without, and how they found their way into RSE work.
 
 We'd love to feature YOU. It takes about 5 minutes to fill out, and nothing gets posted without your okay: [complete the community spotlight form](https://forms.gle/dXqVsHKiHnot2u449)
 
