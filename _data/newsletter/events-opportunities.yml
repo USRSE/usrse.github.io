@@ -11,7 +11,7 @@
   index: 1
 - expires: '2026-10-14'
   type: opportunity
-  title: Nextflow is hosting their own "conference" and it's free virtually!
+  title: Nextflow is hosting its own conference, and it’s free to attend virtually
   when: '2026-10-13'
   where: Online
   preamble: |-
@@ -41,10 +41,10 @@
   preamble: The Planetary Data Workshop will be held at Cornell University in Ithaca,
     NY from June 14-17, 2027. The purpose of this workshop is to increase communication
     and knowledge sharing across elements of the planetary science data and software
-    ecosystem. Abstracts submission and registration will be open soon. Please fill
+    ecosystem. Abstract submission and registration will be open soon. Please fill
     out the indication of interest to be alerted when that happens. There are also
-    a number of travel grants available for students and early career. The application
-    form for those is available now. planetarydataworkshop.org
+    a number of travel grants available for students and early-career researchers.
+    The application form is available now. planetarydataworkshop.org
   links: '[View details](https://planetarydataworkshop.org/)'
   index: 4
 - expires: '2026-09-26'
@@ -53,7 +53,7 @@
   when: '2026-09-23'
   where: Online, In-person
   preamble: |-
-    We’re thrilled to welcome Rob Cheung is founder and CEO of Zo Computer, where he’s focused on making cloud computing accessible and usable by everyone, not just experts in the software industry. Zo Computers are cloud-native computing environments that scale horizontally and vertically. Users communicate to these computing environments in natural language, offering an unprecedented amount of information processing capacity behind a radically accessible user interface. He will be delivering a keynote on how the process of science is changing in an era where everyone has instant access to elastic compute and AI.zo.computer
+    We’re thrilled to welcome Rob Cheung, founder and CEO of Zo Computer, where he’s focused on making cloud computing accessible and usable by everyone, not just experts in the software industry. Zo Computers are cloud-native computing environments that scale horizontally and vertically. Users communicate to these computing environments in natural language, offering an unprecedented amount of information processing capacity behind a radically accessible user interface. He will be delivering a keynote on how the process of science is changing in an era where everyone has instant access to elastic compute and AI: zo.computer
 
     :hotel: We are proud to announce that the Holiday Inn will be one of our partners for Gateways 2026. Located only half a mile from the JHU Bloomberg Center, attendees can enjoy the sights and sounds of downtown DC while only being minutes away by walk or Uber from the venue. The Holiday Inn has provided us with a discounted rate on a first-come, first-served basis for 50 rooms. Use the link below, or the link on the interactive map to place your reservation.
     Holiday Inn Washington Capitol - National Mall
@@ -79,7 +79,7 @@
     will be presented by *Julien Bigot (CEA), Xavier Delaruelle (CEA), and Axel Huebl (Lawrence Berkeley National Laboratory)*
     on *October 28 1:00pm - 2:00pm EDT*
 
-    *Registration:* zoomgov.com/meeting/register/…
+    *Registration:* Register here!
 
     The High Performance Software Foundation (HPSF), a project within the Linux Foundation, champions, promotes, and advances core portable software for HPC. It achieves this by increasing adoption, lowering barriers to contribution, and supporting open-source HPC projects. Announced at SC23 and officially launched in May 2024, the foundation has rapidly grown into a global endeavor with a robust membership. Today, many critical software projects across the HPC stack, ranging in size and scope, have joined the HPSF.
     This presentation will introduce the foundation and its operational model. We will detail the support the HPSF offers to hosted projects, including tools and cross-cutting initiatives for event organization, CI/CD, continuous benchmarking, outreach, training, packaging, and distribution.
@@ -99,11 +99,9 @@
     *TLDR:*
 
     - :speaking_head_in_silhouette: _*What?*_ ¡Tech talks en español!
-    - :clock4: _*When?*_ Monday 21th September 2026, 4pm UK time
+    - :clock4: _*When?*_ Monday 21st September 2026, 4pm UK time
     - :round_pushpin: _*How?*_ Online and in-person at [Mae Jemison Meeting Room, The Alan Turing Institute, British Library, 96 Euston Rd., London NW1 2DB](maps.app.goo.gl/…)
     - :dancer: A social visit to the pub is now traditional!
-
-    Click to download the .ics file and save the date in your calendar! :spiral_calendar_pad: It includes Zoom details.
 
     To attend _en carne y hueso_, please email the organisers (charlas.rse.espanol@gmail.com) as we have limited spots.
 
