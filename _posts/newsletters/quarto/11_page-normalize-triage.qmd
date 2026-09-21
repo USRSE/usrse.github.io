@@ -33,7 +33,8 @@ quarto render Newsletter_Preproc.qmd --no-cache --to html --output Newsletter_Pr
 ```
 
 The R code cleans names, separates section assignments, classifies events and
-opportunities, fills required display fields, and writes the current staged
+opportunities, converts Slack emoji shortcodes to Unicode or readable custom
+emoji fallbacks, fills required display fields, and writes the current staged
 records.
 
 :::
@@ -41,7 +42,8 @@ records.
 ::: {.manual-procedure title="Read the resulting table"}
 
 Open `Newsletter_Preproc.html` and inspect the displayed records. Pay
-particular attention to expiration dates, event dates, location, and links.
+particular attention to expiration dates, event dates, location, links, and
+any remaining colon-delimited emoji names.
 
 :::
 
@@ -52,6 +54,8 @@ particular attention to expiration dates, event dates, location, and links.
 test -s _data/newsletter/events-opportunities.yml
 rg -n "^(expires|type|title|when|where|preamble|links):" \
   _data/newsletter/events-opportunities.yml | head -40
+! rg -n --pcre2 ':[A-Za-z0-9_+\-]+:' \
+  _data/newsletter/events-opportunities.yml
 ```
 
 :::

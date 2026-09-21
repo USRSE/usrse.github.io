@@ -28,6 +28,13 @@ else
   echo "OK: no long URL is exposed as visible link text."
 fi
 
+if rg -n --pcre2 ':[A-Za-z0-9_+\-]+:' "$events_yaml"; then
+  echo "ERROR: Slack emoji shortcode remains in staged event data." >&2
+  status=1
+else
+  echo "OK: no Slack emoji shortcode remains in staged event data."
+fi
+
 echo
 echo "Potential fixed-width or preformatted elements:"
 if rg -n --pcre2 '<(?:iframe|video|pre|table)\b|style=.*(?:width|min-width)\s*:' \

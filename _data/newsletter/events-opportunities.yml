@@ -49,23 +49,33 @@
   index: 4
 - expires: '2026-09-26'
   type: event
-  title: 'Gateways 2026 Keynote Speaker: Rob Cheung :speaking_head_in_silhouette:'
+  title: "Gateways 2026 Keynote Speaker: Rob Cheung \U0001F5E3️"
   when: '2026-09-23'
   where: Online, In-person
-  preamble: |-
-    We’re thrilled to welcome Rob Cheung, founder and CEO of Zo Computer, where he’s focused on making cloud computing accessible and usable by everyone, not just experts in the software industry. Zo Computers are cloud-native computing environments that scale horizontally and vertically. Users communicate to these computing environments in natural language, offering an unprecedented amount of information processing capacity behind a radically accessible user interface. He will be delivering a keynote on how the process of science is changing in an era where everyone has instant access to elastic compute and AI: zo.computer
-
-    :hotel: We are proud to announce that the Holiday Inn will be one of our partners for Gateways 2026. Located only half a mile from the JHU Bloomberg Center, attendees can enjoy the sights and sounds of downtown DC while only being minutes away by walk or Uber from the venue. The Holiday Inn has provided us with a discounted rate on a first-come, first-served basis for 50 rooms. Use the link below, or the link on the interactive map to place your reservation.
-    Holiday Inn Washington Capitol - National Mall
-
-    :slack: Join us on Slack! There’s so much to see and do in our nation’s capital: coordinate walks and rides to the monuments, find out where the best happy hour is, or maybe take on some chess players in the park!
-
-    :world_map: Our interactive map continues to grow and evolve! Check out the updates to find key conference locations, metro transit options, and things to do!
-
-    :round_pushpin: Join us in Washington, DC from September 23-25 to share solutions, tackle challenges, and build the connections that will power the next generation of research. Register today!
-    na.eventscloud.com/ereg/newreg.php?eventid=874568
-
-    :eyes: Stay tuned for more info more ways we are celebrating 10 years of bringing together the Science Gateways, Research, and Cyber-infrastructure Community!
+  preamble: "We’re thrilled to welcome Rob Cheung, founder and CEO of Zo Computer,
+    where he’s focused on making cloud computing accessible and usable by everyone,
+    not just experts in the software industry. Zo Computers are cloud-native computing
+    environments that scale horizontally and vertically. Users communicate to these
+    computing environments in natural language, offering an unprecedented amount of
+    information processing capacity behind a radically accessible user interface.
+    He will be delivering a keynote on how the process of science is changing in an
+    era where everyone has instant access to elastic compute and AI: zo.computer\n\n\U0001F3E8
+    We are proud to announce that the Holiday Inn will be one of our partners for
+    Gateways 2026. Located only half a mile from the JHU Bloomberg Center, attendees
+    can enjoy the sights and sounds of downtown DC while only being minutes away by
+    walk or Uber from the venue. The Holiday Inn has provided us with a discounted
+    rate on a first-come, first-served basis for 50 rooms. Use the link below, or
+    the link on the interactive map to place your reservation.\nHoliday Inn Washington
+    Capitol - National Mall\n\n\U0001F4AC Join us on Slack! There’s so much to see
+    and do in our nation’s capital: coordinate walks and rides to the monuments, find
+    out where the best happy hour is, or maybe take on some chess players in the park!\n\n\U0001F5FA️
+    Our interactive map continues to grow and evolve! Check out the updates to find
+    key conference locations, metro transit options, and things to do!\n\n\U0001F4CD
+    Join us in Washington, DC from September 23-25 to share solutions, tackle challenges,
+    and build the connections that will power the next generation of research. Register
+    today!\nna.eventscloud.com/ereg/newreg.php?eventid=874568\n\n\U0001F440 Stay tuned
+    for more info more ways we are celebrating 10 years of bringing together the Science
+    Gateways, Research, and Cyber-infrastructure Community!"
   links: '[View details](https://www.ihg.com/holidayinn/hotels/us/en/find-hotels/select-roomrate?fromRedirect=true&qSrt=sBR&qIta=99801505&icdv=99801505&qSlH=WASSM&qCiD=23&qCiMy=082026&qCoD=26&qCoMy=082026&qGrpCd=SG9&setPMCookies=true&qSHBrC=HI&qDest=550%20C%20Street%20S.W.,%20Washington,%20DC,%20US&showApp=true&adjustMonth=false&srb_u=1&qRmFltr=)'
   index: 5
 - expires: '2026-10-29'
@@ -91,23 +101,18 @@
   title: Charlas RSE en español!
   when: '2026-09-21'
   where: Online, In-person
-  preamble: |-
-    ¡Join our Spanish-speaking RSEs *this September* for the edition of the Charlas RSE en español!
-
-    We will hear from *Claudette López*, who will tell us what decades of Antarctic data — from handwritten logbooks to magnetic tapes — can teach us about reproducibility today. You can find more details (en español) in the abstract+bio below :point_down:
-
-    *TLDR:*
-
-    - :speaking_head_in_silhouette: _*What?*_ ¡Tech talks en español!
-    - :clock4: _*When?*_ Monday 21st September 2026, 4pm UK time
-    - :round_pushpin: _*How?*_ Online and in-person at [Mae Jemison Meeting Room, The Alan Turing Institute, British Library, 96 Euston Rd., London NW1 2DB](maps.app.goo.gl/…)
-    - :dancer: A social visit to the pub is now traditional!
-
-    To attend _en carne y hueso_, please email the organisers (charlas.rse.espanol@gmail.com) as we have limited spots.
-
-    Or if you cannot join this time but would like to stay informed, feel free to subscribe to our Google groups mailing list.
-
-    ¡Nos vemos!
+  preamble: "¡Join our Spanish-speaking RSEs *this September* for the edition of the
+    Charlas RSE en español!\n\nWe will hear from *Claudette López*, who will tell
+    us what decades of Antarctic data — from handwritten logbooks to magnetic tapes
+    — can teach us about reproducibility today. You can find more details (en español)
+    in the abstract+bio below \U0001F447\n\n*TLDR:*\n\n- \U0001F5E3️ _*What?*_ ¡Tech
+    talks en español!\n- \U0001F553 _*When?*_ Monday 21st September 2026, 4pm UK time\n-
+    \U0001F4CD _*How?*_ Online and in-person at [Mae Jemison Meeting Room, The Alan
+    Turing Institute, British Library, 96 Euston Rd., London NW1 2DB](maps.app.goo.gl/…)\n-
+    \U0001F483 A social visit to the pub is now traditional!\n\nTo attend _en carne
+    y hueso_, please email the organisers (charlas.rse.espanol@gmail.com) as we have
+    limited spots.\n\nOr if you cannot join this time but would like to stay informed,
+    feel free to subscribe to our Google groups mailing list.\n\n¡Nos vemos!"
   links: '[Click here to learn more and register!](http://charlas-rse-espanol.github.io)'
   index: 7
 - expires: '2026-10-01'
