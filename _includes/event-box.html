@@ -2,6 +2,6 @@
     <h4 class="alert-heading">📢 {{ include.title }}</h4>
     <p><strong>📅 When:</strong> {{ include.when }}</p>
     <p><strong>📍 Where:</strong> {{ include.where }}</p>
-    <p>{{ include.preamble | markdownify }}</p>
-    <p>{{ include.links | markdownify | replace: '<a ', '<a target="_blank" rel="noopener" ' }}</p>
+    <div class="newsletter-event-preamble">{{ include.preamble | markdownify }}</div>
+    <div class="newsletter-event-links">{{ include.links | markdownify | replace: '<a ', '<a target="_blank" rel="noopener" ' }}</div>
  </div>

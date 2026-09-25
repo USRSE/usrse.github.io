@@ -22,24 +22,97 @@ library(DT2)
 ```
 
 This notebook contains helper snippets for the US-RSE newsletter. It
-is intended to parse data into YAML before it is used in the newsletter
+parses working inputs into YAML before they are used in the newsletter
 template.
 
-The directory should be self-contained, so that it doesn't interfere
-with any other US-RSE Website content. No software is installed,
-and no changes are being made to the US-RSE Website. The notebook is 
-intended to be run in a local environment, not as part of CI/CD.
+The edition is prepared locally. Running the notebook can update the shared
+newsletter data under `_data`, but it does not deploy the website or install
+software. Review those staged changes before handing an edition to the parent
+site; this notebook is intended to be run locally, not as part of CI/CD.
 
 ## Old Data
 
 Let's read in the old data to rbind it:
 
 ```{r}
+# Slack exports use colon-delimited emoji names. Quarto can render literal
+# Unicode emoji, but the final site parses the Liquid-generated content with
+# Kramdown, which does not interpret Slack's :name: syntax. Convert the
+# standard names used by this newsletter before the data reaches YAML.
+slack_emoji_map <- c(
+    happy = "🙂",
+    smile = "😄",
+    smiley = "😃",
+    mega = "📣",
+    seedling = "🌱",
+    yellow_heart = "💛",
+    point_right = "👉",
+    tada = "🎉",
+    shirt = "👕",
+    unicorn_face = "🦄",
+    trumpet = "🎺",
+    bangbang = "‼️",
+    speaking_head_in_silhouette = "🗣️",
+    hotel = "🏨",
+    slack = "💬",
+    world_map = "🗺️",
+    round_pushpin = "📍",
+    eyes = "👀",
+    point_down = "👇",
+    clock4 = "🕓",
+    dancer = "💃"
+)
+
+# These are Slack custom emoji rather than Unicode emoji. Use readable
+# fallbacks so their names do not leak into the publication as raw tokens.
+slack_custom_emoji_map <- c(
+    usrse_main_logo = "US-RSE",
+    spack = "Spack"
+)
+
+slack_emoji_to_unicode <- function(x) {
+    replace_one <- function(token) {
+        name <- str_remove_all(token, "^:|:$")
+
+        if (name %in% names(slack_emoji_map)) {
+            unname(slack_emoji_map[[name]])
+        } else if (name %in% names(slack_custom_emoji_map)) {
+            unname(slack_custom_emoji_map[[name]])
+        } else {
+            token
+        }
+    }
+
+    str_replace_all(
+        x,
+        ":[A-Za-z0-9_+\\-]+:",
+        function(tokens) vapply(tokens, replace_one, character(1))
+    )
+}
+
 old_data <- read_yaml(here("_data/newsletter-events-opportunities.yml")) |>
     map_dfr(as_tibble) |>
     mutate(
-        expires = as_date(expires, format = "%Y-%m-%d")
+        expires = as_date(expires, format = "%Y-%m-%d"),
+        across(where(is.character), slack_emoji_to_unicode)
     )
+
+# Keep the destination URL intact, but do not expose a long URL as the
+# visible link label. Kramdown will not reliably wrap every long URL in the
+# final Jekyll page, especially when it arrives through markdownify.
+normalize_link_labels <- function(x, max_label_length = 80) {
+    str_replace_all(
+        x,
+        str_c(
+            "\\[(https?://[^\\]]{", max_label_length + 1,
+            ",})\\]\\(([^)]+)\\)"
+        ),
+        "[View details](\\2)"
+    )
+}
+
+old_data <- old_data |>
+    mutate(links = normalize_link_labels(links))
 ```
 
 ## Slack Data
@@ -74,7 +147,8 @@ if(nrow(old_slack_files) > 1){
 ```{r}
 
 slack <- read_csv(here("_data/newsletter/Newsletter_Content_Triage.csv")) |>
-    clean_names()
+    clean_names() |>
+    mutate(across(where(is.character), slack_emoji_to_unicode))
 
 section_col <- str_subset(names(slack), "what_section")
 
@@ -96,8 +170,20 @@ fromJson_vec <- Vectorize(function(x){
     tryCatch({
         dat <- fromJSON(x)
 
-        display <- dat$displayName
+        display <- slack_emoji_to_unicode(dat$displayName)
         url <- dat$originalUrl
+
+        if (length(url) == 0 || is.na(url[[1]]) || !nzchar(url[[1]])) {
+            return(x)
+        }
+
+        url <- as.character(url[[1]])
+        display <- if (length(display) == 0) "" else as.character(display[[1]])
+
+        if (is.na(display) || !nzchar(display) ||
+            str_detect(display, "^https?://")) {
+            display <- "View details"
+        }
 
         str_c("[", display, "](", url, ")")
     }, error = function(e){
@@ -126,7 +212,7 @@ slack |>
             str_detect(str_to_lower(content), "online|zoom|webinar|virtual") ~ "Online",
             TRUE ~ "In Person"
         ),
-        link = fromJson_vec(link)
+        link = normalize_link_labels(fromJson_vec(link))
     ) -> events_opportunities
 ```
 
@@ -148,6 +234,12 @@ events_opportunities |>
     ) |>
     replace_na(list(when = as_date("2026-01-01"), where = "TBD", links = "TBD")) |>
     bind_rows(old_data) -> all_events_opportunities
+
+all_events_opportunities <- all_events_opportunities |>
+    mutate(
+        across(where(is.character), slack_emoji_to_unicode),
+        links = normalize_link_labels(links)
+    )
 ```
 
 Number of rows to publish next: 
@@ -171,5 +263,3 @@ all_events_opportunities |>
     group_split() |>
     write_yaml(here("_data/newsletter/events-opportunities.yml"))
 ```
-
-

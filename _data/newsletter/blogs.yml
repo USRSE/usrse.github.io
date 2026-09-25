@@ -2,9 +2,7 @@
 nocite: \[@\*\]
 references:
 - accessed: 2026-04-08
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   author:
   - family: Besser
     given: Stephanie
@@ -21,9 +19,7 @@ references:
     launched the Open Source Endowment. They hope this new method will
     provide funding for good.
   accessed: 2026-04-08
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   author:
   - family: Bort
     given: Julie
@@ -35,12 +31,25 @@ references:
     source’s funding problem, permanently
   type: webpage
   url: "https://techcrunch.com/2026/02/26/a-vc-and-some-big-name-programmers-are-trying-to-solve-open-sources-funding-problem-permanently/"
+- abstract: The U.S. National Science Foundation was established in 1950
+    to keep American discovery at the frontier. That mission has not
+    changed. The science and technology ecosystem around it has...
+  accessed: 2026-09-18
+  annote: "Read_Status: To ReadRead_Status_Date:
+    2026-09-18T20:14:16.090Z"
+  author:
+  - literal: Brian Stone
+  id: brianstoneNSFLeadershipNew2026
+  issued: 2026-09-10
+  language: en-US
+  title: NSF leadership in a new golden age of science \| NSF - U.S.
+    National Science Foundation
+  type: webpage
+  url: "https://www.nsf.gov/news/nsf-leadership-new-golden-age-science"
 - abstract: "interview: Codestrap founders say we need to dial down the
     hype and sort through the mess"
   accessed: 2026-04-08
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   author:
   - family: Claburn
     given: Thomas
@@ -52,9 +61,7 @@ references:
 - abstract: ": As of April 24 you’ll be feeding the Octocat unless you
     opt out"
   accessed: 2026-04-08
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   author:
   - family: Claburn
     given: Thomas
@@ -64,11 +71,26 @@ references:
   title-short: GitHub
   type: webpage
   url: "https://www.theregister.com/2026/03/26/github_ai_training_policy_changes/"
+- abstract: AI is transforming the way we program, with emerging tools
+    becoming useful companions to even the most effective programmers.
+    This workshop aimed to develop a research agenda that articulates a
+    roadmap for the evolving role of AI in developing complex software
+    systems. This workshop was co-sponsored by IEEE CS.
+  accessed: 2026-09-18
+  annote: "Read_Status: To ReadRead_Status_Date:
+    2026-09-18T20:14:16.090Z"
+  author:
+  - literal: Computing Community Consortium
+  id: computingcommunityconsortiumCodeEngineeringTrustworthy
+  language: en-US
+  title: "Beyond Code: Engineering Trustworthy Software Systems with AI
+    at Scale - CCC"
+  title-short: Beyond Code
+  type: webpage
+  url: "https://cra.org/ccc/events/beyond-code-engineering-trustworthy-software-systems-with-ai-at-scale/"
 - abstract: A human-powered, fully local, fully private AI solution.
   accessed: 2026-06-16
-  annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-06-16T01:04:20.125Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-09-18T20:23:55.620Z"
   author:
   - family: Labs
     given: Squeez
@@ -82,9 +104,7 @@ references:
     bug bounty, or a dedicated email address for reporting security
     flaws.
   accessed: 2026-06-29
-  annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-06-29T15:31:33.542Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-09-18T20:23:55.620Z"
   author:
   - family: Whittaker
     given: Zach
@@ -99,9 +119,7 @@ references:
 - abstract: Helpful questions and guide for finding the right resources
     for your large-scale data or advanced computing project.
   accessed: 2025-11-07
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-03-16T02:12:49.785Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-03-16T02:12:49.785Z"
   author:
   - family: Gesing
     given: Sandra
@@ -119,9 +137,7 @@ references:
   url: "https://academicdatascience.org/resources/community-blog/get-started-in-data-intensive-research/"
 - abstract: United States Research Software Engineer Association
   accessed: 2026-05-21
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.722Z"
   author:
   - family: Sochat
     given: Vanessa
@@ -158,9 +174,7 @@ references:
     posed by the use of artificial intelligence within mathematics
     research.
   accessed: 2026-08-06
-  annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-08-06T02:57:47.352Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-09-18T20:23:55.620Z"
   author:
   - literal: International Mathematical Union
   id: LeidenDeclarationArtificial2026
@@ -171,9 +185,7 @@ references:
   type: webpage
   url: "https://leidendeclaration.ai/"
 - accessed: 2026-05-28
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.721Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.721Z"
   author:
   - family: Wilson
     given: Greg
@@ -185,20 +197,31 @@ references:
     typewriter whose name means “clear and fast” was discovered in a New
     York basement and entrusted to Stanford Libraries.
   accessed: 2025-11-07
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-03-16T02:12:49.785Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-03-16T02:12:49.785Z"
   id: MingKwaiPrototypeOrigin
   language: en-US
   title: MingKwai prototype, the ‘origin of Chinese computing,’ finds a
     home at Stanford
   type: webpage
   url: "https://news.stanford.edu/stories/2025/05/mingkwai-chinese-typewriter-prototype-stanford-libraries"
+- abstract: "Call for Experts for Standing Committee on Use of AI in
+    Science: Integrity, Trust, and Innovation."
+  accessed: 2026-09-18
+  annote: "Read_Status: To ReadRead_Status_Date:
+    2026-09-18T20:14:16.090Z"
+  author:
+  - literal: National Academies
+  id: nationalacademiesCallExpertsStanding
+  language: en-US
+  title: "Call for Experts for Standing Committee on Use of AI in
+    Science: Integrity, Trust, and Innovation"
+  title-short: Call for Experts for Standing Committee on Use of AI in
+    Science
+  type: webpage
+  url: "https://survey.alchemer.com/s3/8988038/Call-for-Experts-for-Standing-Committee-on-Use-of-AI-in-Science-Integrity-Trust-and-Innovation"
 - abstract: A practice for finding peace in your dependency tree.
   accessed: 2026-04-13
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   author:
   - family: Nesbitt
     given: Andrew
@@ -208,9 +231,7 @@ references:
   type: webpage
   url: "https://nesbitt.io/2026/03/15/guided-meditation-for-developers.html"
 - accessed: 2026-05-21
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-06-15T23:59:08.722Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-06-15T23:59:08.722Z"
   author:
   - family: Hettrick
     given: Simon
@@ -222,9 +243,7 @@ references:
 - abstract: Accelerates Codex growth to power the next generation of
     Python developer tools
   accessed: 2026-04-08
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   author:
   - family: OpenAI
   id: openaiOpenAIAcquireAstral2026
@@ -234,9 +253,7 @@ references:
   type: webpage
   url: "https://openai.com/index/openai-to-acquire-astral/"
 - accessed: 2026-06-16
-  annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-06-16T01:04:20.125Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-09-18T20:23:55.620Z"
   author:
   - dropping-particle: of
     family: Reading
@@ -253,9 +270,7 @@ references:
     modernizations) across dozens of my projects, making several hundred
     PRs with a nearly 100% merge rate on decided PRs.
   accessed: 2026-06-17
-  annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-06-17T16:59:48.292Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-09-18T20:23:55.620Z"
   author:
   - family: Schreiner
     given: Henry
@@ -267,9 +282,7 @@ references:
   type: webpage
   url: "https://iscinumpy.dev/post/claude-code-reviews/"
 - accessed: 2025-11-07
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-03-16T02:12:49.785Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-03-16T02:12:49.785Z"
   id: SilentScientistWhen2025
   issued: 2025-10-10
   language: en-US
@@ -282,9 +295,7 @@ references:
     source leak exposed a 3,167-line function, regex sentiment analysis,
     and 250K wasted API calls daily
   accessed: 2026-04-08
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.500Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.500Z"
   author:
   - family: Stetskov
     given: Denis
@@ -297,9 +308,7 @@ references:
   url: "https://techtrenches.dev/p/the-snake-that-ate-itself-what-claude"
 - abstract: The Apple Calculator leaked 32GB of RAM.
   accessed: 2026-04-15
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.499Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.499Z"
   author:
   - family: Stetskov
     given: Denis
@@ -314,9 +323,7 @@ references:
 - abstract: Claude Code and I rewrote a nine year old, complex Python
     project I maintain, in GoLang, in 5 Days
   accessed: 2026-04-15
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-05-21T02:36:15.499Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-05-21T02:36:15.499Z"
   author:
   - family: Substack
   id: substackArtificialIntelligenceCan
@@ -328,9 +335,7 @@ references:
     this post: Make best use of git and GitHub for AI-assisted software
     development. Called Bram (“Bram runs agents mindfully”)…"
   accessed: 2026-06-16
-  annote: |
-    Read_Status: To Read\
-    Read_Status_Date: 2026-06-16T16:18:22.799Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-09-18T20:23:55.620Z"
   author:
   - family: Udell
     given: Jon
@@ -346,9 +351,7 @@ references:
 - abstract: Read the latest article version by Daniel S. Katz, Eric A.
     Jensen, Michelle Barker at Open Research Europe
   accessed: 2025-11-07
-  annote: |
-    Read_Status: Read\
-    Read_Status_Date: 2026-03-16T02:12:49.786Z
+  annote: "Read_Status: ReadRead_Status_Date: 2026-03-16T02:12:49.786Z"
   doi: 10.12688/openreseurope.20210.1
   id: UnderstandingAdvancingResearch2025
   issued: 2025-07-25
