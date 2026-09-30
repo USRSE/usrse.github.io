@@ -1,0 +1,33 @@
+---
+title: "Preparing the US-RSE Newsletter"
+subtitle: "A weekly path from community notes to a publishable edition"
+author: "US-RSE Newsletter Team"
+date: last-modified
+---
+
+Each edition begins with material that arrives in different shapes: a triage
+export, older event records, reading lists, images, and the pieces of writing
+that give the issue its voice.
+
+This project keeps those materials close to the person assembling the edition.
+The pages below provide the order of work, while the section files remain the
+place where the edition is written.
+
+## The route through an edition
+
+1. Bring the week's inputs into view.
+2. Normalize the structured material.
+3. Prepare references for the website.
+4. Compose the edition from its selected sections.
+5. Read the rendered result as a human publication.
+6. Emit the approved post for the parent Jekyll site.
+
+The rendered page is a working view of the process. The publication itself is
+still the dated post produced for the website.
+
+## What this project changes
+
+The newsletter's prose remains ordinary Markdown. The computation remains
+ordinary R and shell code. The useful change is that the starting state, the
+intermediate artifacts, and the final checks have a place beside the work.
+

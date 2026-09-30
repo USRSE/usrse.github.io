@@ -5,7 +5,7 @@
 Save the date for USRSE’26: **Advancing Science in the Age of AI**
 
 <p align="center">
-    <img src="{{ site.baseurl }}/assets/img/newsletter-202605/usrse26-logo_6.svg" alt="USRSE'26 Conference Logo" style="width: 750px; height: auto;"/>
+    <img src="{{ site.baseurl }}/assets/img/newsletter-202605/usrse26-logo_6.svg" alt="USRSE26 Conference Logo" style="width: 750px; height: auto;"/>
 </p>
 
 USRSE’26, to be held at the San Jose

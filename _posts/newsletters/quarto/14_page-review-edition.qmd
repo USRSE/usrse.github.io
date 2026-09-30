@@ -1,0 +1,74 @@
+---
+title: "Read the edition before it leaves the workspace"
+format: html
+execute:
+  eval: false
+manual:
+  page: 14
+---
+
+This is the point at which editorial judgment belongs. The checks below catch
+structural problems; they do not decide whether an item deserves space in the
+newsletter.
+
+::: {.manual-prereq title="Confirm there is a candidate to review"}
+
+```{bash}
+#| eval: false
+test -s intermediate.md
+test -s params.yml
+```
+
+:::
+
+::: {.manual-procedure title="Review the publication view"}
+
+Read `intermediate.md` from beginning to end. Check the title, date, section
+order, images, alt text, links, dates, and the tone of the issue. Resolve any
+missing or stale material in the source files, then repeat composition.
+
+:::
+
+::: {.manual-procedure title="Run the layout audit"}
+
+```{bash}
+#| eval: false
+./diagnose_newsletter_layout.sh intermediate.md \\
+  _data/newsletter/events-opportunities.yml
+```
+
+The audit catches long URLs being used as visible link text and reports raw
+fixed-width elements for narrow-viewport review. It is a source-handoff check;
+the final Jekyll page still needs browser inspection when the site environment
+is available.
+
+:::
+
+::: {.manual-procedure title="Inspect the proposed changes"}
+
+```{bash}
+#| eval: false
+git diff --check
+git status --short -- params.yml template.qmd Newsletter_Preproc.qmd \
+  _headline.md _conference.md _execupdate.md _scupdate.md _orgmember.md \
+  _communityfunds.md _news.md _events.md _reads.md _involved.md _jobs.md
+```
+
+:::
+
+::: {.manual-check title="The edition is approved for handoff"}
+
+```{bash}
+#| eval: false
+test -s intermediate.md
+test -s params.yml
+! rg -n 'TODO|TBD|PLACEHOLDER|Newsletter_Helpers' intermediate.md params.yml
+! rg -n --pcre2 '\[(?:https?://)[^\]]{80,}\]\(https?://' intermediate.md \\
+  _data/newsletter/events-opportunities.yml
+git diff --check
+```
+
+The human reviewer should also confirm that the edition is ready to emit before
+continuing.
+
+:::

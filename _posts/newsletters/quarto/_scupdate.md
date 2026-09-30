@@ -6,7 +6,7 @@
 
 It's been a while since you've heard from us in the newsletter, but the Steering Committee 
 has been hard at work! Together with our Executive Director, we've have done considerable
-work to support planning of the USRSE'26 conference, including confirming the selection
+work to support planning of the USRSE26 conference, including confirming the selection
 of a venue and reviewing preliminary cost estimations. We've also already started looking ahead to
 USRSE'27 and beyond. We're developing a conference hosting application process to identify
 potential future conference locations and chairs farther in advance—more on that in

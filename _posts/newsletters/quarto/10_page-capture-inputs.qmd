@@ -1,0 +1,71 @@
+---
+title: "Bring the edition's inputs together"
+format: html
+execute:
+  eval: false
+manual:
+  page: 10
+---
+
+Start from the directory that contains the edition metadata and template. Do
+not begin by editing the assembled post: the section files and their inputs are
+the working source.
+
+::: {.manual-prereq title="Confirm the starting point"}
+
+```{bash}
+#| eval: false
+test -f params.yml
+test -f template.qmd
+test -f Newsletter_Preproc.qmd
+test -e _data/newsletter/Newsletter_Content_Triage.csv
+test -f _data/newsletter/articles.bib
+test -f _data/newsletter/blogs.bib
+test -f _data/newsletter/media.bib
+```
+
+The current directory should be the newsletter workspace, and the shared `_data`
+path should resolve to the website repository's data directory.
+
+:::
+
+## Choose the working snapshot
+
+::: {.manual-procedure title="Inspect the triage export"}
+
+Look at the available exports before allowing the helper to consolidate them.
+The newest file is normally the working one, but its contents still require
+human review.
+
+```{bash}
+#| eval: false
+ls -lt _data/newsletter/Newsletter_Content_Triage*.csv
+sed -n '1,12p' _data/newsletter/Newsletter_Content_Triage.csv
+```
+
+:::
+
+::: {.manual-procedure title="Confirm the edition metadata"}
+
+Set the date, title, image, alt text, and section choices in `params.yml`.
+Section files supply the writing; this file decides which pieces belong in the
+edition.
+
+```{bash}
+#| eval: false
+sed -n '1,80p' params.yml
+```
+
+:::
+
+::: {.manual-check title="Inputs are ready to be transformed"}
+
+```{bash}
+#| eval: false
+test -s params.yml
+test -s _data/newsletter/Newsletter_Content_Triage.csv
+test -s _data/newsletter/articles.bib
+```
+
+:::
+

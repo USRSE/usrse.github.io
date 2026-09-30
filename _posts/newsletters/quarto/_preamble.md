@@ -1,14 +1,9 @@
-Hi all, it's been a minute!
+It's that time again, y'all! The US-RSE newsletter is back with the latest news, 
+updates, and happenings from the research software engineering community. In this 
+edition, we'll keep you up to date on all the latest developments, and we'll help you prepare for the upcoming conference in San Jose, California!
 
-Welcome to the Summer 2026 edition of the US-RSE newsletter! In this issue, we are packing in several updates and highlights
-from the community, and gearing up for USRSE26! Read on for all the latest updates, including upcoming events, recent accomplishments, 
-and opportunities to get involved in the RSE community.
-
-Most importantly, get excited — the conference is just around the corner!
-
-So grab a beverage and settle in as we recap all kinds of updates from the summer!
-In this issue...
+Let's jump right in...
 
 <p align="center">
-  <img src="{{ site.baseurl }}/assets/img/newsletter-202606/tasha-kostyuk-TtMKq3lJm-U-unsplash.jpg" alt="A railway traffic controller with his back to the camera, looking at several screens with train camera feed and data." style="width: 750px; height: auto;">
+  <img class="newsletter-image" src="{{ site.baseurl }}/assets/img/newsletter-202609/joseph-sintum-H5lKRVgJrGE-unsplash.jpg" alt="Scenic photo of the San Pedro Square Market in San Jose.">
 </p>

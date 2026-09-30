@@ -1,0 +1,19 @@
+---
+title: "US-RSE Newsletter Edition"
+format: html
+---
+
+This workspace prepares one newsletter edition for publication on the US-RSE
+website.
+
+Before beginning, have the current edition date, the week's editorial notes,
+the latest triage export, and any images or links that belong in the issue.
+
+By the end, the selected section files will have been composed into a dated
+Jekyll post, with the intermediate data and review points still visible in the
+project.
+
+Keep the writing in the section files. Use the workflow pages when the shape of
+the work matters: what was brought in, what changed, and what should be true
+before the next step.
+
