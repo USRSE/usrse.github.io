@@ -108,3 +108,30 @@ Generally, the images have been named with the following format
 `logo-acronym-institution`, but this isn't strict.
 There is a [form](https://forms.gle/xXREVtJB2z6Ux1rA7) for people to use to
 provide the details above.
+
+### How do I change the site's styling (CSS)?
+
+Most of the site's look comes from [Bulma](https://bulma.io), a CSS framework
+(similar to Bootstrap) that provides ready-made classes such as `navbar`,
+`hero-body`, `button is-info` and `column`. Our layouts and pages use these class
+names directly.
+
+The site does **not** compile Bulma from source. Instead,
+`assets/css/style.css` is a pre-compiled copy of Bulma's CSS that was committed
+to the repository in 2021, with site-specific customizations edited into it by
+hand since then. There is no Sass build step for this file.
+
+To add or change styles:
+
+- Add new rules at the **end** of `assets/css/style.css`.
+- Do **not** create `assets/css/style.scss` (or `.sass`). Jekyll would compile it
+  to the same output path as `style.css`, and only one of the two files would be
+  served, with no build error. A CI check fails pull requests that do this.
+- The stylesheets are loaded in `_includes/head.html` in this order:
+  `style.css`, then `reboot.css`, then `bootstrap.css`. A rule in `style.css` can
+  be overridden by a rule with equal specificity in the later files.
+- Preview your change locally (see [local_previews.md](local_previews.md)) and
+  check a few different pages, because `style.css` applies to the whole site.
+
+Plans to make this easier to maintain are tracked in
+[issue #2063](https://github.com/USRSE/usrse.github.io/issues/2063).
