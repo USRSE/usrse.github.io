@@ -1,3 +1,14 @@
+/*
+ * NOTE: This file is a vendored, pre-compiled snapshot of the Bulma CSS framework
+ * (see .github/LICENSE-BULMA) plus hand-written site customizations. There is no
+ * Sass build step for it.
+ *
+ * - Add custom rules at the END of this file.
+ * - Do NOT add assets/css/style.scss (or .sass): it compiles to this same path and
+ *   Jekyll will silently serve only one of the two files.
+ *
+ * See docs/details.md ("How do I change the site's styling (CSS)?").
+ */
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 @keyframes spinAround {

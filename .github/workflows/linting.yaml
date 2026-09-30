@@ -8,6 +8,25 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  css-collision:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v7
+
+    - name: Check for Sass/CSS output collisions
+      run: |
+        status=0
+        # Jekyll skips _-prefixed dirs/files (partials), so only non-underscore Sass files produce output
+        for f in $(git ls-files '*.scss' '*.sass' | grep -Ev '(^|/)_'); do
+          css="${f%.*}.css"
+          if [ -e "$css" ]; then
+            echo "::error file=$f::$f compiles to $css, which already exists as a static file. Jekyll will silently serve only one of them. See docs/details.md."
+            status=1
+          fi
+        done
+        exit $status
+
   urlcheck:
     runs-on: ubuntu-latest
 
