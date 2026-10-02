@@ -1,0 +1,29 @@
+# URL patterns skipped by every URL check, one per line. Lines starting with #
+# and blank lines are ignored. A URL is skipped if it contains any pattern.
+#
+# Used by:
+#   .github/workflows/linting.yaml            (PR check, site files)
+#   scripts/check_added_urls.py               (PR check, URLs added to job files)
+#   .github/workflows/clean-expired-jobs.yaml (nightly job board check)
+#
+# Add a pattern only for links that work in a browser but fail the checker,
+# with a comment saying why. Fix or remove links that are really dead.
+
+# Meeting and registration links expire after the event, but past event
+# pages keep them as a record.
+zoom.us
+
+# Server sends an incomplete TLS certificate chain: browsers recover, but
+# Python's requests fails certificate verification.
+https://ai.eecs.umich.edu/people/conway/conway.html
+
+# Archived snapshots don't disappear, and archive.org rate-limits CI servers
+https://web.archive.org/
+
+# Require a login (Slack) or block automated requests with a paywall or bot
+# challenge, though the pages load in a browser
+https://usrse.slack.com/
+ieeexplore.ieee.org
+cambridge.org
+usatoday.com
+usnews.com

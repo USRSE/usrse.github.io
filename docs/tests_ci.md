@@ -92,12 +92,49 @@ script.
 
 ### GitHub CI
 
-#### URLs-checker and Spelling
+#### URLs-checker
 
 The [URLs-checker](https://github.com/urlstechie/urlchecker-action) is a GitHub action
 in the [linting workflow](.github/workflows/linting.yaml). Relative URLs internal to the site are not checked.  
 
-If there are URLs that should be systematically ignored by the checker, they can be added to .github/workflows/linting.yaml 
+To keep links that break elsewhere on the site from failing unrelated pull requests, the
+checker only looks at files the pull request adds or modifies. The job data files
+(listed in [.github/urlchecker/job-files.txt](.github/urlchecker/job-files.txt))
+are handled differently: [scripts/check_added_urls.py](scripts/check_added_urls.py) checks
+only the URLs on lines the pull request adds. Links in existing job postings go stale as
+positions close, and those are handled by the nightly
+[Clean Expired Jobs](#clean-expired-jobs) workflow instead. To test the URLs your branch adds to
+a job file locally:
+
+```bash
+pip install urlchecker
+python scripts/check_added_urls.py main _data/jobs.yml
+```
+
+All URL checks share the lists in [.github/urlchecker/](.github/urlchecker/), which the
+[urlchecker-config action](.github/actions/urlchecker-config/action.yml) reads for each workflow:
+
+- `exclude-patterns.txt`: URLs to skip. Add a pattern only for links that work in a browser but
+  fail the checker (for example, sites that block automated requests), with a comment saying why.
+- `exclude-files.txt`: files the site checks skip.
+- `job-files.txt`: the job board data files.
+
+#### URL Health Check
+
+Links on pages nobody is editing still break over time. The
+[URL health workflow](.github/workflows/url-health.yaml) checks every URL on the site (except the
+job board) each Monday, and keeps a single open issue labeled `broken-links` listing the broken URLs
+by file. Checks from CI servers fail intermittently, so failed URLs are checked a second time,
+slowly, before they are reported. Each run updates the issue, comments when new URLs break, and closes the issue once
+nothing is broken. To fix an entry, update or remove the link (an archived copy from
+https://web.archive.org often works), or add an exclude pattern if the link works in a browser.
+
+The workflow can also be run by hand from the Actions tab. On pull requests that change the URL
+checks or their shared lists, it runs the scripts' tests
+([tests/test_url_checks.py](tests/test_url_checks.py)) and a full report-only check, with the report
+on the run's summary page, so the effect on the whole site is visible before merging.
+
+#### Spelling
 
 In addition, @vsoch found
 a Rust tool called [crate-ci/typos](https://github.com/marketplace/actions/typos-action)
