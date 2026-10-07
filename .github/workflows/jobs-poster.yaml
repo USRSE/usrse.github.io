@@ -18,7 +18,7 @@ jobs:
 
       - id: updater
         name: Job Updater
-        uses: rseng/jobs-updater@0.0.13
+        uses: rseng/jobs-updater@e38506c1bd06587fc1b1af1024371998557dbff9
         with:
           filename: "_data/jobs.yml"
 
@@ -46,6 +46,11 @@ jobs:
           mastodon_deploy: true
           mastodon_access_token: ${{ secrets.MASTODON_ACCESS_TOKEN }}
           mastodon_api_base_url: ${{ secrets.MASTODON_API_BASE_URL }}
+
+          # Also deploy to BlueSky (all secrets required in repository secrets)
+          bluesky_deploy: true
+          bluesky_password: ${{ secrets.BLUESKY_PASSWORD }}
+          bluesky_email: ${{ secrets.BLUESKY_EMAIL }}
 
       - run: echo ${{ steps.updater.outputs.fields }}
         name: Show Fields Used
