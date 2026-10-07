@@ -1,0 +1,9 @@
+# Job board data files. Old job links go stale as postings close, so these get
+# their own handling instead of the site checks:
+#   - .github/workflows/clean-expired-jobs.yaml checks and cleans them nightly
+#   - .github/workflows/linting.yaml checks only the URLs a PR adds to them
+#   - .github/workflows/url-health.yaml skips them
+_data/jobs.yml
+_data/related-jobs.yml
+_data/internships.yml
+_data/freelance.yml
