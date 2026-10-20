@@ -37,7 +37,7 @@ US-RSE Steering Committee
 {%- elsif nowunix >= nom_close and nowunix < can_ann -%}
 Nominations have closed! We will be announcing the candidates shortly.
 {%- elsif nowunix >= can_ann and nowunix < vote_open -%}
-Meet the [2025 Steering Committee candidates](#candidate-information)!
+Meet the [2026 Steering Committee candidates](#candidate-information)!
 {%- elsif nowunix >= vote_open and nowunix < vote_close -%}
 Voting for the US-RSE Steering Committee are now open!
 {%- else -%}
@@ -50,7 +50,7 @@ Elections for the US-RSE Steering Committee happen near the end of each year
 
 <!-- Timetime or congratulations section -->
 {% if nowunix >= season_start and nowunix < season_end %}
-## 2025 Election Timeline
+## 2026 Election Timeline
 
 * Nominations open:
   **{{ page.nominations_open | date: "%B %-d, %Y" }}** <!-- Should be link to form once open -->
@@ -73,12 +73,13 @@ Elections for the US-RSE Steering Committee happen near the end of each year
 
 {% else %}
 
-## Congratulations to the {{ year }} - {{ year | plus: 2 }} Steering Committee Cohort!
+## Congratulations to the 2026-2028 Steering Committee Cohort!
 
-- Cordero Core
-- Julia Damerow
-- Kenton McHenry
-- Miranda Mundt
+- Jeff Carver
+- Ian Cosden
+- Alex Koufos
+- Abbey Roelofs
+- Pengyin Shan
 {% endif %}
 
 If you're interested in becoming part of the Steering Committee, we suggest you
@@ -89,7 +90,7 @@ have a look at
 ## Positions and Eligibility
 
 {% if nowunix >= season_start and nowunix < results %}
-Five Steering Committee seats are open in this election, each for a 2-year term
+Four Steering Committee seats are open in this election, each for a 2-year term
 (January 1, {{ year | plus: 1 }} through December 31, {{ year | plus: 3 }}).
 {% endif %}
 
@@ -247,6 +248,6 @@ election.
 ## Questions?
 
 Contact Election Chairs on Slack or email:
-- [Cordero Core](mailto:cdcore@uw.edu)
-- [Miranda Mundt](mailto:mmundt@sandia.gov)
+- [Jeff Carver](mailto:carver@cs.ua.edu)
+- [Abbey Roelofs](mailto:aheinlei@umich.edu)
 
