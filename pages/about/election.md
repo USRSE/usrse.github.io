@@ -5,16 +5,16 @@ permalink: /about/election/
 menubar: about
 menubar_toc: true
 set_last_modified: true
-nominations_open: 2025-10-12 23:59:59 -1000
-nominations_close: 2025-11-03 23:59:59 -1000
-membership_deadline: 2025-11-14 23:59:59 -1000
-candidate_announcements: 2025-11-10 17:00:00 -0800
+nominations_open: 2025-10-23 23:59:59 -1000
+nominations_close: 2025-11-06 23:59:59 -1000
+membership_deadline: 2025-10-23 23:59:59 -1000
+candidate_announcements: 2025-11-13 17:00:00 -0800
 annual_general_meeting: 2025-12-04 13:00:00 -0500
 voting_open: 2025-12-04 13:00:00 -0500
-voting_close: 2025-12-12 23:59:59 -1000
-election_results: 2025-12-19 00:00:00 +0000
-election_season_start: 2025-10-07
-election_season_end: 2026-02-01
+voting_close: 2025-12-13 23:59:59 -1000
+election_results: 2025-12-18 00:00:00 +0000
+election_season_start: 2025-10-23
+election_season_end: 2026-12-19
 ---
 
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
