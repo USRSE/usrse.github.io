@@ -100,7 +100,10 @@ Steering Committee (SC) candidates must have a meaningful connection to,
 history with, and vested interest in the community of Research Software
 Engineers (RSEs) in the United States (US). To ensure that the SC can
 effectively advocate for and address the needs of the RSE community in the
-US, candidates must have a demonstrated history of engagement within US-RSE.
+US, candidates must have a demonstrated history of leadership and engagement within US-RSE.
+US-RSE leadership can be demonstrated by having served as either a working group chair or
+the chair of a US-RSE conference committee. Engagement is defined 
+as regular participation in US-RSE activities. 
 
 Candidates must both live in the US and be affiliated with or retired from
 a US entity or self-employed. Exceptions to the residency and affiliation
@@ -108,6 +111,8 @@ requirement will be considered on a case-by-case basis.
 
 The exception process will be led by the two Election Chairs who will create
 a subcommittee that includes several other members of the US-RSE community.
+
+Final determinations on eligibility will be made by the Election Chairs. 
 
 ### Responsibilities
 
@@ -187,8 +192,9 @@ The information will not be made public.
 * Your name and a publicly-shareable email
 * Physical location of both you and your organization (within or outside of U.S.)
 * A link to a resume, CV, LinkedIn profile, or professional website
+* Leadership experience within US-RSE
 * Why do you want to be on the US-RSE Steering Committee? (<=1000 characters)
-* How do you contribute to the US-RSE Association or RSE community more broadly? (<= 1500 characters)
+* How do you participate in the US-RSE Association? (<= 1500 characters)
 
 All candidate information will be shared on the US-RSE website.
 Additionally, candidates will have a chance to share information about
