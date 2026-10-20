@@ -1,0 +1,56 @@
+---
+title: "Compose the edition"
+format: html
+execute:
+  eval: false
+manual:
+  page: 13
+---
+
+The template provides the order and the section files provide the voice.
+Changing the edition should normally mean changing `params.yml` or one of the
+section files, not editing the assembled Markdown.
+
+::: {.manual-prereq title="Confirm the prepared material"}
+
+```{bash}
+#| eval: false
+test -s params.yml
+test -s template.qmd
+test -s _data/newsletter/events-opportunities.yml
+test -s _data/newsletter/articles.yml
+test -s _data/newsletter/blogs.yml
+test -s _data/newsletter/media.yml
+```
+
+:::
+
+::: {.manual-procedure title="Render a candidate edition"}
+
+```{bash}
+#| eval: false
+quarto render template.qmd --no-cache --metadata-file params.yml --output intermediate.md
+```
+
+The result is a candidate publication without the Jekyll front matter that will
+be added at the final handoff.
+
+:::
+
+::: {.manual-procedure title="Read the selected sections"}
+
+Open `intermediate.md` and read it as an edition. Check the transitions between
+sections, the balance of links and prose, and whether the selected material is
+complete for this week's issue.
+
+:::
+
+::: {.manual-check title="The candidate edition is assembled"}
+
+```{bash}
+#| eval: false
+test -s intermediate.md
+! rg -n '\{\{< include|content-visible' intermediate.md
+```
+
+:::

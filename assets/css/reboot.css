@@ -266,6 +266,25 @@ img {
   height: auto;
   max-width: 100%; }
 
+/* Newsletter content can receive URLs from external data sources. Keep the
+   destination intact while allowing an unexpectedly long label to wrap
+   inside the page column. */
+.content a {
+  overflow-wrap: anywhere; }
+
+.newsletter-image {
+  display: block;
+  height: auto;
+  max-width: 100%; }
+
+.newsletter-event-preamble,
+.newsletter-event-links {
+  max-width: 100%; }
+
+.newsletter-event-preamble p:first-child,
+.newsletter-event-links p:first-child {
+  margin-top: 0; }
+
 @media only screen and (min-width: 641px) {
   blockquote {
     font-size: 1.5em;

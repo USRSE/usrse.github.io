@@ -1,4 +1,5 @@
 /.quarto/
+/_manual/
 **/*.quarto_ipynb
 /.uvr/library/
 /.uvr/activate*

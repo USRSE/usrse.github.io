@@ -1,0 +1,22 @@
+---
+title: "The local environment"
+format: html
+---
+
+The edition is prepared locally. The project does not install software or
+publish to the website as a side effect of rendering these instructions.
+
+Use the project-local R environment when running the helper notebook. The
+version pin and lock file belong to this directory; the website's shared data
+directory remains an explicit input boundary.
+
+```{bash}
+#| eval: false
+source .uvr/activate
+R --version
+quarto check
+```
+
+If the local R library is incomplete, stop here and repair the environment
+before changing newsletter data.
+
