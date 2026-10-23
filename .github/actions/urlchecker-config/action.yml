@@ -1,0 +1,29 @@
+name: URL checker config
+description: Read the shared URL checker lists in .github/urlchecker/ as comma-separated strings
+
+outputs:
+  exclude_patterns:
+    description: URL patterns to skip (exclude-patterns.txt)
+    value: ${{ steps.read.outputs.exclude_patterns }}
+  exclude_files:
+    description: Files the site checks skip (exclude-files.txt)
+    value: ${{ steps.read.outputs.exclude_files }}
+  job_files:
+    description: Job board data files (job-files.txt)
+    value: ${{ steps.read.outputs.job_files }}
+
+runs:
+  using: composite
+  steps:
+    - id: read
+      shell: bash
+      run: |
+        # Drop comments and blank lines, join the rest with commas
+        read_list() {
+          grep -Ev '^\s*(#|$)' "$GITHUB_WORKSPACE/.github/urlchecker/$1" | paste -sd, -
+        }
+        for name in exclude_patterns exclude_files job_files; do
+          value=$(read_list "${name//_/-}.txt")
+          echo "$name: $value"
+          echo "$name=$value" >> "$GITHUB_OUTPUT"
+        done

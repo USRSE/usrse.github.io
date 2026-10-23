@@ -1,0 +1,117 @@
+name: URL Health Check
+
+# Checks every URL on the site (except the job board, which
+# clean-expired-jobs.yaml handles) and keeps one open issue labeled
+# "broken-links" listing what's broken. The PR check in linting.yaml only looks
+# at files a PR changes, so this is where links that break later show up.
+on:
+  schedule:
+    # Mondays 6am UTC
+    - cron: 0 6 * * 1
+  workflow_dispatch:
+  # Report-only run (no issue changes) when the URL checks themselves change,
+  # so reviewers can see the effect on the whole site
+  pull_request:
+    paths:
+      - .github/urlchecker/**
+      - .github/actions/urlchecker-config/**
+      - .github/workflows/url-health.yaml
+      - .github/workflows/linting.yaml
+      - scripts/broken_links_report.py
+      - scripts/check_added_urls.py
+      - tests/test_url_checks.py
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  url-health:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v7
+
+    - name: Setup Python
+      uses: actions/setup-python@v7
+      with:
+        python-version: '3.10'
+
+    - name: Install urlchecker
+      run: pip install urlchecker==0.0.34
+
+    - name: Test URL check scripts
+      if: github.event_name == 'pull_request'
+      run: |
+        cd tests
+        python -m unittest test_url_checks
+
+    - name: Read URL checker config
+      id: config
+      uses: ./.github/actions/urlchecker-config
+
+    - name: URLs-checker
+      uses: urlstechie/urlchecker-action@0.0.34
+      with:
+        file_types: .md,.py,.yml
+        print_all: false
+        verbose: true
+        retry_count: 3
+        timeout: 10
+        exclude_patterns: ${{ steps.config.outputs.exclude_patterns }}
+        # Job data files are checked by clean-expired-jobs.yaml instead
+        exclude_files: ${{ steps.config.outputs.exclude_files }},${{ steps.config.outputs.job_files }}
+        save: broken-urls.csv
+        # Report failures below instead of failing the run
+        force_pass: true
+
+    - name: Write report
+      id: report
+      env:
+        GH_TOKEN: ${{ github.token }}
+        GH_REPO: ${{ github.repository }}
+      run: |
+        # Previous report, to tell which URLs are newly broken
+        issue=$(gh issue list --label broken-links --state open --json number --jq '.[0].number // empty' || true)
+        if [ -n "$issue" ]; then
+          gh issue view "$issue" --json body --jq .body > previous.md
+        else
+          touch previous.md
+        fi
+        # Failed URLs are checked again before reporting, since checks from CI
+        # servers fail intermittently
+        count=$(python scripts/broken_links_report.py broken-urls.csv report.md \
+          --recheck --previous previous.md --new new.md)
+        echo "Broken URLs: $count"
+        echo "count=$count" >> "$GITHUB_OUTPUT"
+        echo "issue=$issue" >> "$GITHUB_OUTPUT"
+        cat report.md >> "$GITHUB_STEP_SUMMARY"
+
+    - name: Update tracking issue
+      if: github.event_name != 'pull_request'
+      env:
+        GH_TOKEN: ${{ github.token }}
+        GH_REPO: ${{ github.repository }}
+        COUNT: ${{ steps.report.outputs.count }}
+        ISSUE: ${{ steps.report.outputs.issue }}
+      run: |
+        gh label create broken-links --color d73a4a \
+          --description "Broken URLs found by the URL health check" 2>/dev/null || true
+        if [ "$COUNT" -gt 0 ]; then
+          if [ -z "$ISSUE" ]; then
+            gh issue create --title "Broken URLs on the website" --label broken-links --body-file report.md
+          else
+            gh issue edit "$ISSUE" --body-file report.md
+            # Editing the body doesn't notify anyone, so comment when new URLs break
+            if [ -s new.md ]; then
+              { echo "Newly broken URLs:"; echo; cat new.md; } > comment.md
+              gh issue comment "$ISSUE" --body-file comment.md
+            fi
+          fi
+        elif [ -n "$ISSUE" ]; then
+          gh issue close "$ISSUE" --comment "The latest URL check found no broken URLs."
+        fi

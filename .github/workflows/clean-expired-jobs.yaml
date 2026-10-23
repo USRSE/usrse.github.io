@@ -28,6 +28,9 @@ jobs:
     - name: Remove Expired Jobs
       run: |
         python scripts/clean_jobs.py
+    - name: Read URL checker config
+      id: config
+      uses: ./.github/actions/urlchecker-config
     - name: Run URLs-checker
       uses: urlstechie/urlchecker-action@0.0.34
       with:
@@ -41,10 +44,9 @@ jobs:
         retry_count: 3
         # Google Forms is having enormous timeouts
         timeout: 10
-        # Exclude these patterns from the checker
-        exclude_patterns: supercomputing.org,https://pace.gatech.edu,https://www.linkedin.com,jobs.colorado.edu,zoom.us,danielskatz.org,usrse.github.io.wiki.git,ornl.gov,jobs.bnl.gov,https://www.rd-alliance.org/,https://uwhires.admin.washington.edu/,https://careers.umich.edu/,https://twitter.com/us_rse,https://twitter.com/us_rse/status/1447622175133945860,https://twitter.com/iancosden/status/1122937311644323841
-        # Only include these files
-        include_files: _data/jobs.yml,_data/related-jobs.yml,_data/internships.yml,_data/freelance.yml
+        # Shared lists, edit them in .github/urlchecker/
+        exclude_patterns: ${{ steps.config.outputs.exclude_patterns }}
+        include_files: ${{ steps.config.outputs.job_files }}
 
     - name: Push Fixes
       env:
