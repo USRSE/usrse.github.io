@@ -98,12 +98,7 @@ Four Steering Committee seats are open in this election, each for a 2-year term
 
 Steering Committee (SC) candidates must have a meaningful connection to,
 history with, and vested interest in the community of Research Software
-Engineers (RSEs) in the United States (US). To ensure that the SC can
-effectively advocate for and address the needs of the RSE community in the
-US, candidates must have a demonstrated history of leadership and engagement within US-RSE.
-US-RSE leadership can be demonstrated by having served as either a working group chair or
-the chair of a US-RSE conference committee. Engagement is defined 
-as regular participation in US-RSE activities. 
+Engineers (RSEs) in the United States (US). To ensure that the SC can effectively advocate for and address the needs of the RSE community in the US, candidates must have a demonstrated history of leadership and engagement within US-RSE. Leadership can be demonstrated by having served in a leadership position (for example, chair of a committee, working group, regional group, or affinity group) in US-RSE or another related organization, and engagement is defined as regular participation in US-RSE activities. 
 
 Candidates must both live in the US and be affiliated with or retired from
 a US entity or self-employed. Exceptions to the residency and affiliation
@@ -166,7 +161,7 @@ All US-RSE members in good standing are eligible to be nominated as candidates.
 ### Nomination Form
 
 The nomination form can be found
-[HERE](https://docs.google.com/forms/d/e/1FAIpQLSdCcBFdYLmZqG8US8oBttvMUtB9owQ5YOzUIcaKfJCCW5gn9w/viewform).
+[HERE](https://forms.gle/sgo5MhLavArsq4ir5).
 Please complete this form for self-nomination OR if you are nominating someone else.
 If nominating someone else, please complete the form early so that we can
 contact the nominated person and obtain their nomination materials before the
@@ -230,7 +225,7 @@ Candidates are listed in alphabetical order.
 More information about the candidates can be [found here](/2025-11-11-sc-candidates).
 
   {% endif %}
-{% endif %}
+  {% endif %}
 
 
 ## Voting
