@@ -1,11 +1,18 @@
 /*
- * NOTE: This file is a vendored, pre-compiled snapshot of the Bulma CSS framework
- * (see .github/LICENSE-BULMA) plus hand-written site customizations. There is no
- * Sass build step for it.
+ * VENDORED FILE - do not add site styles here; use assets/css/custom.css.
  *
- * - Add custom rules at the END of this file.
- * - Do NOT add assets/css/style.scss (or .sass): it compiles to this same path and
- *   Jekyll will silently serve only one of the two files.
+ * Pre-compiled snapshot (April 2021) of the Bulma 0.9.x CSS framework plus the
+ * bulma-clean-theme extras (see .github/LICENSE-BULMA). There is no Sass build
+ * step for it.
+ *
+ * It still contains a few site customizations edited in place, each marked with a
+ * "US-RSE: was ..." comment giving the original value:
+ *   - brand colors: a, a:hover, .subtitle, .navbar.is-primary, .hero.is-primary
+ *   - .tags:not(:last-child) margin, .card-header justify-content
+ *   - navbar (hamburger) breakpoint moved from 1024px to 1200px
+ *
+ * Do NOT add assets/css/bulma.scss (or .sass): it compiles to this same path and
+ * Jekyll will silently serve only one of the two files.
  *
  * See docs/details.md ("How do I change the site's styling (CSS)?").
  */
@@ -19,10 +26,6 @@
     to {
         transform: rotate(359deg);
     }
-}
-
-::selection {
-    background: #590040 !important;
 }
 
 .delete,.modal-close,.button,.file,.breadcrumb,.pagination-previous,.pagination-next,.pagination-link,.pagination-ellipsis,.tabs,.is-unselectable {
@@ -266,7 +269,7 @@ body {
 }
 
 a {
-    color: #741755 ;
+    color: #741755; /* US-RSE: was #3273dc */
     cursor: pointer;
     text-decoration: none;
 }
@@ -276,7 +279,7 @@ a strong {
 }
 
 a:hover {
-    color: #741755 ;
+    color: #741755; /* US-RSE: was #363636 */
 }
 
 code {
@@ -1819,10 +1822,6 @@ a.box:active {
     padding: 1.25em 1.5em;
 }
 
-blockquote {
-    font-size: 1.0em !important;
-}
-
 .content ol {
     list-style-position: outside;
     margin-left: 2em;
@@ -2639,7 +2638,7 @@ blockquote {
 }
 
 .tags:not(:last-child) {
-    margin-bottom: .1rem;
+    margin-bottom: .1rem; /* US-RSE: was 1rem */
 }
 
 .tags.are-medium .tag:not(.is-normal):not(.is-large) {
@@ -2926,14 +2925,14 @@ a.tag:hover {
 }
 
 .subtitle {
-    color: #741755;
+    color: #741755; /* US-RSE: was #4a4a4a */
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.25;
 }
 
 .subtitle strong {
-    color: #741755;
+    color: #741755; /* US-RSE: was #363636 */
     font-weight: 600;
 }
 
@@ -4337,7 +4336,7 @@ a.tag:hover {
     align-items: stretch;
     box-shadow: 0 .125em .25em rgba(10,10,10,0.1);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* US-RSE: added */
 }
 
 .card-header-title {
@@ -5197,7 +5196,7 @@ a.dropdown-item.is-active,button.dropdown-item.is-active {
 }
 
 .navbar.is-primary {
-    background-color: #741755;
+    background-color: #741755; /* US-RSE: was #790c63 */
     color: #fff;
 }
 
@@ -5206,7 +5205,7 @@ a.dropdown-item.is-active,button.dropdown-item.is-active {
 }
 
 .navbar.is-primary .navbar-brand>a.navbar-item:focus,.navbar.is-primary .navbar-brand>a.navbar-item:hover,.navbar.is-primary .navbar-brand>a.navbar-item.is-active,.navbar.is-primary .navbar-brand .navbar-link:focus,.navbar.is-primary .navbar-brand .navbar-link:hover,.navbar.is-primary .navbar-brand .navbar-link.is-active {
-    background-color: #741755;
+    background-color: #741755; /* US-RSE: was #890e73 */
     color: #fff;
 }
 
@@ -5218,13 +5217,13 @@ a.dropdown-item.is-active,button.dropdown-item.is-active {
     color: #fff;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) { /* US-RSE: was 1024px */
     .navbar.is-primary .navbar-start>.navbar-item,.navbar.is-primary .navbar-start .navbar-link,.navbar.is-primary .navbar-end>.navbar-item,.navbar.is-primary .navbar-end .navbar-link {
         color: #fff;
     }
 
     .navbar.is-primary .navbar-start>a.navbar-item:focus,.navbar.is-primary .navbar-start>a.navbar-item:hover,.navbar.is-primary .navbar-start>a.navbar-item.is-active,.navbar.is-primary .navbar-start .navbar-link:focus,.navbar.is-primary .navbar-start .navbar-link:hover,.navbar.is-primary .navbar-start .navbar-link.is-active,.navbar.is-primary .navbar-end>a.navbar-item:focus,.navbar.is-primary .navbar-end>a.navbar-item:hover,.navbar.is-primary .navbar-end>a.navbar-item.is-active,.navbar.is-primary .navbar-end .navbar-link:focus,.navbar.is-primary .navbar-end .navbar-link:hover,.navbar.is-primary .navbar-end .navbar-link.is-active {
-        background-color: #741755;
+        background-color: #741755; /* US-RSE: was #890e73 */
         color: #fff;
     }
 
@@ -5233,7 +5232,7 @@ a.dropdown-item.is-active,button.dropdown-item.is-active {
     }
 
     .navbar.is-primary .navbar-item.has-dropdown:focus .navbar-link,.navbar.is-primary .navbar-item.has-dropdown:hover .navbar-link,.navbar.is-primary .navbar-item.has-dropdown.is-active .navbar-link {
-        background-color: #741755;
+        background-color: #741755; /* US-RSE: was #890e73 */
         color: #fff;
     }
 
@@ -5683,7 +5682,7 @@ a.navbar-item:focus,a.navbar-item:focus-within,a.navbar-item:hover,a.navbar-item
     margin: .5rem 0;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) { /* US-RSE: was 1023px */
     .navbar>.container {
         display: block;
     }
@@ -5694,7 +5693,7 @@ a.navbar-item:focus,a.navbar-item:focus-within,a.navbar-item:hover,a.navbar-item
     }
 
     .navbar-link::after {
-        display: none !important;
+        display: none !important; /* US-RSE: !important added */
     }
 
     .navbar-menu {
@@ -5741,19 +5740,7 @@ a.navbar-item:focus,a.navbar-item:focus-within,a.navbar-item:hover,a.navbar-item
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
-    .navbar-start {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .navbar-start > .navbar-item {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) { /* US-RSE: was 1024px */
     .navbar,.navbar-menu,.navbar-start,.navbar-end {
         align-items: stretch;
         display: flex;
@@ -10635,18 +10622,6 @@ a.has-text-danger-dark:hover,a.has-text-danger-dark:focus {
     color: #0a0a0a;
 }
 
-#hero-image {
-    width: 100%;
-    max-width: 250px;
-}
-
-
-@media screen and (max-width: 1408px) {
-    .hero-text.subtitle {
-        display: none !important;
-    }
-}
-
 .hero.is-white a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),.hero.is-white strong {
     color: inherit;
 }
@@ -10712,9 +10687,6 @@ a.has-text-danger-dark:hover,a.has-text-danger-dark:focus {
 @media screen and (max-width: 768px) {
     .hero.is-white.is-bold .navbar-menu {
         background-image: linear-gradient(141deg, #e8e3e4 0%, #fff 71%, #fff 100%);
-    }
-    .hero-text {
-        display: none !important;
     }
 }
 
@@ -10947,15 +10919,15 @@ a.has-text-danger-dark:hover,a.has-text-danger-dark:focus {
 }
 
 .hero.is-primary .title {
-    color: #741755;
+    color: #741755; /* US-RSE: was #fff */
 }
 
 .hero.is-primary .subtitle {
-    color: #741755;
+    color: #741755; /* US-RSE: was rgba(255,255,255,0.9) */
 }
 
 .hero.is-primary .subtitle a:not(.button),.hero.is-primary .subtitle strong {
-    color: #741755;
+    color: #741755; /* US-RSE: was #fff */
 }
 
 @media screen and (max-width: 1023px) {
@@ -10967,16 +10939,6 @@ a.has-text-danger-dark:hover,a.has-text-danger-dark:focus {
 .hero.is-primary .navbar-item,.hero.is-primary .navbar-link {
     color: rgba(255,255,255,0.7);
 }
-
-a.navbar-item {
-	color: #0a0a0a;
-}
-
-a.navbar-item:visited {
-	color: #0a0a0a;
-}
-
-
 
 .hero.is-primary a.navbar-item:hover,.hero.is-primary a.navbar-item.is-active,.hero.is-primary .navbar-link:hover,.hero.is-primary .navbar-link.is-active {
     background-color: #157c96;
@@ -11011,7 +10973,7 @@ a.navbar-item:visited {
 }
 
 .hero.is-primary.is-bold {
-    background: white;
+    background: white; /* US-RSE: was background-image: linear-gradient(141deg, #800968 0%, #a01a8e 71%, #770564 100%) */
 }
 
 @media screen and (max-width: 768px) {
@@ -12177,102 +12139,4 @@ div.highlight {
 
 .gh-sponsor {
     color: #ea4aaa;
-}
-
-article > a {
-	text-decoration: none;
-	color: #741755;
-}
-
-article > a:hover {
-	text-decoration: none;
-	color: #741755 ;
-}
-
-article > a:visited {
-	color: #741755;
-}
-
-article > a:visited:hover {
-	color: #741755;
-}
-
-html body #back-to-top {
-    position: fixed !important;
-    bottom: 20px !important;
-    right: 20px !important;
-    display: inline-block !important;
-    width: auto !important;
-    height: auto !important;
-    background-color: #741755 !important;
-    color: white !important;
-    text-decoration: none !important;
-    padding: 10px 15px !important;
-    border-radius: 50px !important;
-    font-size: 18px !important;
-    line-height: 1 !important;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3) !important;
-    opacity: 0.7 !important;
-    z-index: 1000 !important;
-    transition: opacity 0.3s !important;
-  }
-  html body #back-to-top:hover {
-    opacity: 1 !important;
-  }
-
-.carousel-wrapper {
-  max-width: 960px;
-  width: 100%;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  overflow: hidden;
-}
-
-.glider img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-}
-
-.glider-contain {
-  position: relative;
-}
-
-.glider-prev,
-.glider-next {
-  background: #eee;
-  border: none;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-}
-
-.glider-prev {
-  left: -1rem;
-}
-
-.glider-next {
-  right: -1rem;
-}
-
-.donate-hero {
-  background-color: #741755;
-}
-
-.impact-card {
-  border-left: 4px solid #741755;
-}
-
-.impact-card strong {
-  color: #590040;
-}
-
-/* Offset in-page anchor jumps so targets aren't hidden behind the fixed navbar */
-html {
-  scroll-padding-top: 3.25rem;
 }
