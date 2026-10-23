@@ -5,15 +5,15 @@ permalink: /about/election/
 menubar: about
 menubar_toc: true
 set_last_modified: true
-nominations_open: 2025-10-23 23:59:59 -1000
-nominations_close: 2025-11-06 23:59:59 -1000
-membership_deadline: 2025-10-23 23:59:59 -1000
-candidate_announcements: 2025-11-13 17:00:00 -0800
-annual_general_meeting: 2025-12-04 13:00:00 -0500
-voting_open: 2025-12-04 13:00:00 -0500
-voting_close: 2025-12-13 23:59:59 -1000
-election_results: 2025-12-18 00:00:00 +0000
-election_season_start: 2025-10-23
+nominations_open: 2026-10-23 23:59:59 -1000
+nominations_close: 2026-11-06 23:59:59 -1000
+membership_deadline: 2026-10-23 23:59:59 -1000
+candidate_announcements: 2026-11-13 17:00:00 -0800
+annual_general_meeting: 2026-12-04 13:00:00 -0500
+voting_open: 2026-12-04 13:00:00 -0500
+voting_close: 2026-12-13 23:59:59 -1000
+election_results: 2026-12-18 00:00:00 +0000
+election_season_start: 2026-10-23
 election_season_end: 2026-12-19
 ---
 
@@ -165,7 +165,7 @@ The nomination form can be found
 Please complete this form for self-nomination OR if you are nominating someone else.
 If nominating someone else, please complete the form early so that we can
 contact the nominated person and obtain their nomination materials before the
-nominations due date of November 03, 2025.
+nominations due date of November 6, 2026.
 
 On the nomination form, expect to provide the following information.
 
@@ -193,7 +193,7 @@ The information will not be made public.
 
 All candidate information will be shared on the US-RSE website.
 Additionally, candidates will have a chance to share information about
-themselves at the Annual General Meeting on December 4, 2025.
+themselves at the Annual General Meeting on December 4, 2026.
 
 An [#election channel is available on Slack](https://usrse.slack.com/archives/C01BC66Q16E)
 for any discussion with or about candidates.
@@ -213,16 +213,9 @@ Nominations are now closed and our candidates for next cycle can be found below.
 
 Candidates are listed in alphabetical order.
 
-- Abbey Roelofs
-- Abrar Hossain
-- Alex Koufos
-- Ian Cosden
-- Jeff Carver
-- Keith Beattie
-- Pengyin Shan
-- Primus Chimdia Kabuo
+(Coming soon)
 
-More information about the candidates can be [found here](/2025-11-11-sc-candidates).
+<!-- More information about the candidates can be [found here](/2026-11-11-sc-candidates). -->
 
   {% endif %}
   {% endif %}
