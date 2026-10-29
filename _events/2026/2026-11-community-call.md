@@ -7,8 +7,8 @@ duration: 60
 repeated: false
 category: community-call
 time:
-    - - start: 2026-11-12T16:00:00Z
-        end: 2026-11-12T17:00:00Z
+    - - start: 2026-11-12T17:00:00Z
+        end: 2026-11-12T18:00:00Z
 ---
 
 Our November Community Call will be all about Hacking Your Brain: How to Quickly Learn a New Topic on Thursday, November 12, at 12pm ET/11am CT/10am MT/9am PT.
