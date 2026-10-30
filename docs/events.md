@@ -31,7 +31,7 @@ time:
         end: 2019-07-29T22:00:00Z
 ---
 
-Join us at [PEARC19](https://www.pearc19.pearc.org/) for a Birds of a Feather (BOF) session "Building a Community of Research Software Engineers."  Our session is scheduled for 5:15 PM on Monday, July 29.
+Join us at [PEARC19](https://web.archive.org/web/20191215164559/https://www.pearc19.pearc.org/) for a Birds of a Feather (BOF) session "Building a Community of Research Software Engineers."  Our session is scheduled for 5:15 PM on Monday, July 29.
 ```
 
 * `title`: Keep it brief to display at the top of the event card

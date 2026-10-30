@@ -1,0 +1,25 @@
+# Files the site URL checks skip, one per line. A file is skipped if its path
+# matches any entry (a regular expression). Used by .github/workflows/linting.yaml and
+# .github/workflows/url-health.yaml.
+
+# Contributor list (updated by a bot) links to personal sites that come and go
+README.md
+
+# Developer docs with example job postings and localhost preview URLs
+docs/tests_ci.md
+docs/local_previews.md
+
+# Placeholder image URL in the theme settings
+_config.yml
+
+# Tests use sample URLs, including deliberately broken ones
+tests/test_
+
+# CI config and issue templates contain example URLs. Don't shorten these to
+# ".github/": entries are regular expressions matched against absolute paths,
+# and in GitHub Actions every file is under /github/workspace/.
+.github/workflows
+.github/ISSUE_TEMPLATE
+
+# Archived newsletters were sent by email and are kept as a record
+_posts/newsletters/
