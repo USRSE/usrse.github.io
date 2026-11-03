@@ -6,7 +6,6 @@ basic:
     date_joined: 2025-04-10
     founding_member: true
     tier: "Basic"
-    contact: "Alan Chalker <alanc@osc.edu>"
   - name: "Renaissance Computing Institute"
     url: https://renci.org/
     figure: logo-renci.png
@@ -14,7 +13,6 @@ basic:
     date_joined: 2025-12-10
     founding_member: true
     tier: "Basic"
-    contact: "Stephanie Suber <subers@renci.org>"
 
 standard:
   - name: "Center for Research Computing - University of Notre Dame"
@@ -67,7 +65,6 @@ standard:
     date_joined: 2025-03-10
     founding_member: true
     tier: "Standard"
-    contact: "Micaela Parker <micaela@academicdatascience.org>"
   - name: "Research Software Alliance"
     url: https://www.researchsoft.org/
     figure: logo-resa.png
@@ -75,7 +72,6 @@ standard:
     date_joined: 2025-03-13
     founding_member: true
     tier: "Standard"
-    contact: "Michelle Barker <barkermd@outlook.com>"
   - name: "Omnibond (Project EUREKA!)"
     url: https://omnibond.com/
     figure: logo-omnibond.png
@@ -83,7 +79,6 @@ standard:
     date_joined: 2025-03-29
     founding_member: true
     tier: "Standard"
-    contact: "Boyd Wilson <boyd@omnibond.com>"
   - name: Dartmouth
     url: https://home.dartmouth.edu/
     figure: logo-dartmouth.png
@@ -91,7 +86,6 @@ standard:
     date_joined: 2025-10-15
     founding_member: true
     tier: "Standard"
-    contact: Will Cowen <William.M.Cowen@dartmouth.edu>
   - name: University of Florida Research Computing
     url: https://www.rc.ufl.edu/
     figure: logo-rc-ufl.png
@@ -99,7 +93,6 @@ standard:
     date_joined: 2025-11-16
     founding_member: true
     tier: "Standard"
-    contact: Ying Zhang <yingz@ufl.edu>
   - name: University of Colorado Anchutz
     url: https://www.cuanschutz.edu/
     figure: logo-cu-anschutz.png
@@ -107,7 +100,6 @@ standard:
     date_joined: 2025-11-26
     founding_member: true
     tier: "Standard"
-    contact: Dave Bunten <DAVE.BUNTEN@cuanschutz.edu>
   - name: Open Molecular Software Foundation
     url: https://omsf.io/
     figure: logo-omsf.svg
@@ -115,7 +107,6 @@ standard:
     date_joined: 2025-10-29
     founding_member: true
     tier: "Standard"
-    contact: David Swenson <david.swenson@omsf.io>
   - name: University of Chicago's Data Science Institute
     url: https://datascience.uchicago.edu/
     figure: logo-uchicago-dsi.png
@@ -123,7 +114,6 @@ standard:
     date_joined: 2026-02-24
     founding_member: true
     tier: "Standard"
-    contact: Nicholas Ross <nickross@uchicago.edu>
   - name: Flatiron Institute
     url: https://www.simonsfoundation.org/flatiron/
     figure: logo-flatiron.png
@@ -131,7 +121,6 @@ standard:
     date_joined: 2026-05-19
     founding_member: true
     tier: "Standard"
-    contact: Dylon Simon <dsimon@flatironinstitute.org>
   - name: "UW-Madison’s Data Science Institute"
     url: https://dsi.wisc.edu/
     figure: logo-uw-madison-dsi.png
@@ -139,7 +128,6 @@ standard:
     date_joined: 2026-07-02
     founding_member: true
     tier: "Standard"
-    contact: Kyle Cramner <kscranmer@wisc.edu>
   - name: "University of Michigan LSA Technology Services"
     url: https://lsa.umich.edu/technology-services/services/research-tools/research-programming-apps.html
     figure: logo-uofm-lsa-ts.png
@@ -147,7 +135,6 @@ standard:
     date_joined: 2026-07-22
     founding_member: true
     tier: "Standard"
-    contact: Joe Bauer <joebauer@umich.edu>
   - name: Georgia Tech
     url: https://www.gatech.edu/
     figure: logo-gatech.png
@@ -185,7 +172,6 @@ premier:
     date_joined: 2025-04-18
     founding_member: true
     tier: "Premier"
-    contact: "Ian Cosden <icosden@princeton.edu>"
   - name: "Sandia National Laboratories"
     url: https://www.sandia.gov/
     figure: logo-sandia.svg
@@ -193,7 +179,6 @@ premier:
     date_joined: 2025-04-24
     founding_member: true
     tier: "Premier"
-    contact: "Miranda Mundt <mmundt@sandia.gov>"
   - name: "NumFOCUS"
     url: https://numfocus.org/
     figure: logo-numfocus.png
@@ -201,10 +186,8 @@ premier:
     date_joined: 2025-05-01
     founding_member: true
     tier: "Premier"
-    contact: "Jim Weiss <jim@numfocus.org>"
   - name: "Coalition for Academic Scientific Computation"
     acronym: "CASC"
-    contact: "Kathryn Kelley <kelley@casc.org> "
     tier: "Premier"
     date_joined: 2025-05-28
     url: https://casc.org/
@@ -214,7 +197,6 @@ premier:
     date_joined: 2025-10-17
     figure: logo-carpentries.png
     url: https://carpentries.org/
-    contact: "Kari Jordan <kariljordan@carpentries.org>"
   - name: "Stanford"
     tier: "Premier"
     date_joined: 2026-06-30
