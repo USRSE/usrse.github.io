@@ -152,14 +152,14 @@ standard:
     url: https://www.gatech.edu/
     figure: logo-gatech.png
     acronym: GATech
-    date_joined: 2026-06-30
+    date_joined: 2026-07-30
     founding_member: true
     tier: "Standard"
   - name: "University of Miami Frost Institute for Data Science and Computing"
     url: https://idsc.miami.edu/
     figure: logo-uofmiami-frost.jpg
     acronym: IDSC
-    date_joined: 2026-06-30
+    date_joined: 2026-07-30
     founding_member: true
     tier: "Standard"
 
