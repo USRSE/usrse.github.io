@@ -148,6 +148,20 @@ standard:
     founding_member: true
     tier: "Standard"
     contact: Joe Bauer <joebauer@umich.edu>
+  - name: Georgia Tech
+    url: https://www.gatech.edu/
+    figure: logo-gatech.png
+    acronym: GATech
+    date_joined: 2026-06-30
+    founding_member: true
+    tier: "Standard"
+  - name: "University of Miami Frost Institute for Data Science and Computing"
+    url: https://idsc.miami.edu/
+    figure: logo-uofmiami-frost.jpg
+    acronym: IDSC
+    date_joined: 2026-06-30
+    founding_member: true
+    tier: "Standard"
 
 premier:
   - name: "University of Illinois Urbana-Champaign"
@@ -201,3 +215,9 @@ premier:
     figure: logo-carpentries.png
     url: https://carpentries.org/
     contact: "Kari Jordan <kariljordan@carpentries.org>"
+  - name: "Stanford"
+    tier: "Premier"
+    date_joined: 2026-06-30
+    founding_member: true
+    figure: logo-stanford.png
+    url: https://stanford.edu/
