@@ -32,6 +32,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v7
+      with:
+        # Full history so we can diff against the base branch
+        fetch-depth: 0
 
     - name: Check Spelling
       uses: crate-ci/typos@master # we should really incorporate all new changes
@@ -39,10 +42,37 @@ jobs:
         files: ./_posts ./_events ./pages ./README.md
         config: ./.github/workflows/typo_config.toml
 
-    - name: URLs-checker
+    - name: Read URL checker config
+      id: config
+      uses: ./.github/actions/urlchecker-config
 
+    # Only check URLs in files this PR adds or modifies, so links that break
+    # elsewhere on the site don't fail unrelated PRs (url-health.yaml reports
+    # those). Job data files are split out: only the URLs a PR adds to them are
+    # checked (see below).
+    - name: Find changed files
+      id: changed
+      env:
+        JOB_FILES: ${{ steps.config.outputs.job_files }}
+      run: |
+        echo "$JOB_FILES" | tr , '\n' > "$RUNNER_TEMP/job-files"
+        changed=$(git diff --name-only --diff-filter=ACMR "origin/${{ github.base_ref }}...HEAD" \
+          | grep -E '\.(md|py|yml)$' || true)
+        site=$(echo "$changed" | grep -Fvx -f "$RUNNER_TEMP/job-files" | grep -v '^$' | paste -sd, -)
+        jobs=$(echo "$changed" | grep -Fx -f "$RUNNER_TEMP/job-files" | paste -sd' ' -)
+        echo "Site files: ${site:-none}"
+        echo "Job files: ${jobs:-none}"
+        echo "site=$site" >> "$GITHUB_OUTPUT"
+        echo "jobs=$jobs" >> "$GITHUB_OUTPUT"
+
+    - name: URLs-checker
+      # An empty include_files would check the whole repo, so skip instead
+      if: steps.changed.outputs.site != ''
       uses: urlstechie/urlchecker-action@0.0.34
       with:
+        # Only check files changed in this PR
+        include_files: ${{ steps.changed.outputs.site }}
+
         # A comma-separated list of file types to cover in the URL checks
         file_types: .md,.py,.yml
 
@@ -58,37 +88,20 @@ jobs:
         # Google Forms is having enormous timeouts
         timeout: 10
 
-        # Exclude these patterns from the checker
-        exclude_patterns: "supercomputing.org,\
-          https://pace.gatech.edu,\
-          https://www.linkedin.com,\
-          jobs.colorado.edu,zoom.us,\
-          danielskatz.org,\
-          usrse.github.io.wiki.git,\
-          ornl.gov,\
-          jobs.bnl.gov,\
-          https://www.rd-alliance.org/,\
-          https://uwhires.admin.washington.edu/,\
-          https://careers.umich.edu/,\
-          https://twitter.com/us_rse,\
-          https://twitter.com/us_rse/status/1447622175133945860,\
-          https://twitter.com/iancosden/status/1122937311644323841,\
-          https://bitcon.blacksintechnology.net/,\
-          https://travel.usnews.com/features/top-pride-parades-and-celebrations-in-the-us,\
-          https://family.20thcenturystudios.com/movies/hidden-figures,\
-          https://www.usatoday.com/story/money/2023/06/07/silicon-valley-tech-black-history-roy-clay/70262081007/,\
-          https://aaan.uic.edu/student-engagement/uic-black-tech-scholars-program/,\
-          https://ai.eecs.umich.edu/people/conway/conway.html"
+        # Shared lists, edit them in .github/urlchecker/
+        exclude_patterns: ${{ steps.config.outputs.exclude_patterns }}
+        exclude_files: ${{ steps.config.outputs.exclude_files }}
 
-        # Exclude these files from the checker
-        exclude_files: "README.md,\
-          docs/events.md,\
-          docs/tests_ci.md,\
-          docs/local_previews.md,\
-          SocialNetworks.yml,\
-          map.yml,\
-          _config.yml,\
-          tests/test_,\
-          .github/workflows,\
-          .github/ISSUE_TEMPLATE,\
-          _posts/newsletters/"
+    # Existing job links go stale as postings close; the nightly
+    # clean-expired-jobs workflow handles those. Here we only check new URLs.
+    - name: Set up Python
+      if: steps.changed.outputs.jobs != ''
+      uses: actions/setup-python@v7
+      with:
+        python-version: '3.10'
+
+    - name: Check URLs added to job data files
+      if: steps.changed.outputs.jobs != ''
+      run: |
+        pip install urlchecker==0.0.34
+        python scripts/check_added_urls.py "origin/${{ github.base_ref }}" ${{ steps.changed.outputs.jobs }}

@@ -155,11 +155,10 @@ When you create a PR, automated tests run; see [docs/tests_ci.md](docs/tests_ci.
 
 What the PR submitter is responsible for:
 
-* URL Checker: This does NOT check internal relative links on the site, only absolute/full URLs.  If the URL checker fails, click on the Details link, and then expand the URLs-checker section of the report that comes up to try to find the failed URL.
-  * Failed URL in a file that is part of your PR: you must fix it.
-  * Failed URLs in the job listings: OK to ignore
-  * Failed URL check where you know the URL is actually OK: OK to ignore.
-  * Failed URL on another page outside of your PR: fix it if you can.  If you can't fix it (not sure what to replace it with, etc.), please note the problem in the PR discussion.  The person who merges the PR may choose to ignore the issue.  
+* URL Checker: This checks absolute/full URLs in the files your PR adds or changes. It does NOT check internal relative links on the site.  For the job listings, only the URLs your PR adds are checked.  If the URL checker fails, click on the Details link, and then expand the URLs-checker section of the report that comes up to try to find the failed URL.
+  * Failed URL in a file that is part of your PR: you must fix it.  This includes links that were already broken in a file you edited.  If you can't fix it (not sure what to replace it with, etc.), please note the problem in the PR discussion.  The person who merges the PR may choose to ignore the issue.
+  * Failed URL check where you know the URL is actually OK: OK to ignore.  If the site always fails the check (for example, it blocks automated requests), add a pattern with a comment to [`.github/urlchecker/exclude-patterns.txt`](.github/urlchecker/exclude-patterns.txt).
+  * Broken links elsewhere on the site are found by a weekly check and listed in the open issue labeled `broken-links`.  Fixes are welcome in a separate PR.
 * Spellchecker: Click on the Details link, then expand the Check Spelling section of the report that comes up to identify the issue.
   * Spelling issue in a file that is part of the PR: you must fix it.  If it's a legitimate word, you may need to add an exception to [`.github/workflows/typo_config.toml`](.github/workflows/typo_config.toml)
   * Spelling issue in a file that is not part of the PR: this generally shouldn't happen, as previous PRs have also had the spellchecker run.   
