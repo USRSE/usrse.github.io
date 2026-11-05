@@ -46,7 +46,7 @@ Examples include:
 
 - Our annual conference
   - The first three USRSE conferences were resounding success with 250 - 286 participants. 
-  - [USRSE'26](https://us-rse.org/usrse26/)) will take place in October 2026 in the Bay Area.
+  - [USRSE'26](https://us-rse.org/usrse26/) will take place in October 2026 in the Bay Area.
 - [Monthly community calls](/events/#community-call)
 - [A monthly newsletter](/newsletters/)
 - 15 [working groups](/working-groups/) and [affinity groups](/about/affinity-groups/)
