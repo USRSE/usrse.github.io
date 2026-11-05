@@ -5,16 +5,16 @@ permalink: /about/election/
 menubar: about
 menubar_toc: true
 set_last_modified: true
-nominations_open: 2025-10-12 23:59:59 -1000
-nominations_close: 2025-11-03 23:59:59 -1000
-membership_deadline: 2025-11-14 23:59:59 -1000
-candidate_announcements: 2025-11-10 17:00:00 -0800
-annual_general_meeting: 2025-12-04 13:00:00 -0500
-voting_open: 2025-12-04 13:00:00 -0500
-voting_close: 2025-12-12 23:59:59 -1000
-election_results: 2025-12-19 00:00:00 +0000
-election_season_start: 2025-10-07
-election_season_end: 2026-02-01
+nominations_open: 2026-10-23 23:59:59 -1000
+nominations_close: 2026-11-06 23:59:59 -1000
+membership_deadline: 2026-10-23 23:59:59 -1000
+candidate_announcements: 2026-11-13 17:00:00 -0800
+annual_general_meeting: 2026-12-04 13:00:00 -0500
+voting_open: 2026-12-04 13:00:00 -0500
+voting_close: 2026-12-13 23:59:59 -1000
+election_results: 2026-12-18 00:00:00 +0000
+election_season_start: 2026-10-23
+election_season_end: 2026-12-19
 ---
 
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
@@ -37,7 +37,7 @@ US-RSE Steering Committee
 {%- elsif nowunix >= nom_close and nowunix < can_ann -%}
 Nominations have closed! We will be announcing the candidates shortly.
 {%- elsif nowunix >= can_ann and nowunix < vote_open -%}
-Meet the [2025 Steering Committee candidates](#candidate-information)!
+Meet the [2026 Steering Committee candidates](#candidate-information)!
 {%- elsif nowunix >= vote_open and nowunix < vote_close -%}
 Voting for the US-RSE Steering Committee are now open!
 {%- else -%}
@@ -50,7 +50,7 @@ Elections for the US-RSE Steering Committee happen near the end of each year
 
 <!-- Timetime or congratulations section -->
 {% if nowunix >= season_start and nowunix < season_end %}
-## 2025 Election Timeline
+## 2026 Election Timeline
 
 * Nominations open:
   **{{ page.nominations_open | date: "%B %-d, %Y" }}** <!-- Should be link to form once open -->
@@ -73,12 +73,13 @@ Elections for the US-RSE Steering Committee happen near the end of each year
 
 {% else %}
 
-## Congratulations to the {{ year }} - {{ year | plus: 2 }} Steering Committee Cohort!
+## Congratulations to the 2026-2028 Steering Committee Cohort!
 
-- Cordero Core
-- Julia Damerow
-- Kenton McHenry
-- Miranda Mundt
+- Jeff Carver
+- Ian Cosden
+- Alex Koufos
+- Abbey Roelofs
+- Pengyin Shan
 {% endif %}
 
 If you're interested in becoming part of the Steering Committee, we suggest you
@@ -89,7 +90,7 @@ have a look at
 ## Positions and Eligibility
 
 {% if nowunix >= season_start and nowunix < results %}
-Five Steering Committee seats are open in this election, each for a 2-year term
+Four Steering Committee seats are open in this election, each for a 2-year term
 (January 1, {{ year | plus: 1 }} through December 31, {{ year | plus: 3 }}).
 {% endif %}
 
@@ -97,9 +98,7 @@ Five Steering Committee seats are open in this election, each for a 2-year term
 
 Steering Committee (SC) candidates must have a meaningful connection to,
 history with, and vested interest in the community of Research Software
-Engineers (RSEs) in the United States (US). To ensure that the SC can
-effectively advocate for and address the needs of the RSE community in the
-US, candidates must have a demonstrated history of engagement within US-RSE.
+Engineers (RSEs) in the United States (US). To ensure that the SC can effectively advocate for and address the needs of the RSE community in the US, candidates must have a demonstrated history of leadership and engagement within US-RSE. Leadership can be demonstrated by having served in a leadership position (for example, chair of a committee, working group, regional group, or affinity group) in US-RSE or another related organization, and engagement is defined as regular participation in US-RSE activities. 
 
 Candidates must both live in the US and be affiliated with or retired from
 a US entity or self-employed. Exceptions to the residency and affiliation
@@ -107,6 +106,8 @@ requirement will be considered on a case-by-case basis.
 
 The exception process will be led by the two Election Chairs who will create
 a subcommittee that includes several other members of the US-RSE community.
+
+Final determinations on eligibility will be made by the Election Chairs. 
 
 ### Responsibilities
 
@@ -160,11 +161,11 @@ All US-RSE members in good standing are eligible to be nominated as candidates.
 ### Nomination Form
 
 The nomination form can be found
-[HERE](https://docs.google.com/forms/d/e/1FAIpQLSdCcBFdYLmZqG8US8oBttvMUtB9owQ5YOzUIcaKfJCCW5gn9w/viewform).
+[HERE](https://forms.gle/sgo5MhLavArsq4ir5).
 Please complete this form for self-nomination OR if you are nominating someone else.
 If nominating someone else, please complete the form early so that we can
 contact the nominated person and obtain their nomination materials before the
-nominations due date of November 03, 2025.
+nominations due date of November 6, 2026.
 
 On the nomination form, expect to provide the following information.
 
@@ -186,12 +187,13 @@ The information will not be made public.
 * Your name and a publicly-shareable email
 * Physical location of both you and your organization (within or outside of U.S.)
 * A link to a resume, CV, LinkedIn profile, or professional website
+* Leadership experience within US-RSE
 * Why do you want to be on the US-RSE Steering Committee? (<=1000 characters)
-* How do you contribute to the US-RSE Association or RSE community more broadly? (<= 1500 characters)
+* How do you participate in the US-RSE Association? (<= 1500 characters)
 
 All candidate information will be shared on the US-RSE website.
 Additionally, candidates will have a chance to share information about
-themselves at the Annual General Meeting on December 4, 2025.
+themselves at the Annual General Meeting on December 4, 2026.
 
 An [#election channel is available on Slack](https://usrse.slack.com/archives/C01BC66Q16E)
 for any discussion with or about candidates.
@@ -211,19 +213,12 @@ Nominations are now closed and our candidates for next cycle can be found below.
 
 Candidates are listed in alphabetical order.
 
-- Abbey Roelofs
-- Abrar Hossain
-- Alex Koufos
-- Ian Cosden
-- Jeff Carver
-- Keith Beattie
-- Pengyin Shan
-- Primus Chimdia Kabuo
+(Coming soon)
 
-More information about the candidates can be [found here](/2025-11-11-sc-candidates).
+<!-- More information about the candidates can be [found here](/2026-11-11-sc-candidates). -->
 
   {% endif %}
-{% endif %}
+  {% endif %}
 
 
 ## Voting
@@ -247,6 +242,6 @@ election.
 ## Questions?
 
 Contact Election Chairs on Slack or email:
-- [Cordero Core](mailto:cdcore@uw.edu)
-- [Miranda Mundt](mailto:mmundt@sandia.gov)
+- [Jeff Carver](mailto:carver@cs.ua.edu)
+- [Abbey Roelofs](mailto:aheinlei@umich.edu)
 
