@@ -1,0 +1,164 @@
+/*
+ * US-RSE site customizations.
+ *
+ * Hand-written CSS for the site. Loaded right after the vendored bulma.css (and
+ * before Font Awesome, reboot.css and bootstrap.css) in _includes/head.html, so
+ * rules here override Bulma rules of equal specificity.
+ *
+ * - Add new site styles to this file, not to bulma.css.
+ * - Do NOT add assets/css/custom.scss (or .sass): it compiles to this same path
+ *   and Jekyll will silently serve only one of the two files.
+ *
+ * See docs/details.md ("How do I change the site's styling (CSS)?").
+ */
+
+/* Branding: text selection and blockquotes */
+::selection {
+    background: #590040 !important;
+}
+
+blockquote {
+    font-size: 1.0em !important;
+}
+
+/* Links in article bodies */
+article > a {
+	text-decoration: none;
+	color: #741755;
+}
+
+article > a:hover {
+	text-decoration: none;
+	color: #741755 ;
+}
+
+article > a:visited {
+	color: #741755;
+}
+
+article > a:visited:hover {
+	color: #741755;
+}
+
+/* Navbar: wrap menu items between the 1024px and 1200px breakpoints */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .navbar-start {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navbar-start > .navbar-item {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+/* Navbar: dark item text */
+a.navbar-item {
+	color: #0a0a0a;
+}
+
+a.navbar-item:visited {
+	color: #0a0a0a;
+}
+
+/* Hero (_includes/hero.html) */
+#hero-image {
+    width: 100%;
+    max-width: 250px;
+}
+
+@media screen and (max-width: 1408px) {
+    .hero-text.subtitle {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-text {
+        display: none !important;
+    }
+}
+
+/* Back-to-top button (_layouts/default.html) */
+html body #back-to-top {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    display: inline-block !important;
+    width: auto !important;
+    height: auto !important;
+    background-color: #741755 !important;
+    color: white !important;
+    text-decoration: none !important;
+    padding: 10px 15px !important;
+    border-radius: 50px !important;
+    font-size: 18px !important;
+    line-height: 1 !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3) !important;
+    opacity: 0.7 !important;
+    z-index: 1000 !important;
+    transition: opacity 0.3s !important;
+  }
+  html body #back-to-top:hover {
+    opacity: 1 !important;
+  }
+
+/* Carousel (glider.js) */
+.carousel-wrapper {
+  max-width: 960px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
+.glider img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.glider-contain {
+  position: relative;
+}
+
+.glider-prev,
+.glider-next {
+  background: #eee;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.glider-prev {
+  left: -1rem;
+}
+
+.glider-next {
+  right: -1rem;
+}
+
+/* Donate page (pages/get_involved/support.md) */
+.donate-hero {
+  background-color: #741755;
+}
+
+.impact-card {
+  border-left: 4px solid #741755;
+}
+
+.impact-card strong {
+  color: #590040;
+}
+
+/* Offset in-page anchor jumps so targets aren't hidden behind the fixed navbar */
+html {
+  scroll-padding-top: 3.25rem;
+}
