@@ -41,7 +41,7 @@ Meet the [2026 Steering Committee candidates](#candidate-information)!
 {%- elsif nowunix >= vote_open and nowunix < vote_close -%}
 Voting for the US-RSE Steering Committee are now open!
 {%- else -%}
-Elections for the US-RSE Steering Committee happen near the end of each year
+Elections for the US-RSE Steering Committee happen near the end of each year.
 {%- endif -%}
 </strong>
 
@@ -73,13 +73,12 @@ Elections for the US-RSE Steering Committee happen near the end of each year
 
 {% else %}
 
-## Congratulations to the 2026-2028 Steering Committee Cohort!
+## Congratulations to the 2027-2029 Steering Committee Cohort!
 
-- Jeff Carver
-- Ian Cosden
-- Alex Koufos
-- Abbey Roelofs
-- Pengyin Shan
+- Cordero Core
+- Drew Paine
+- Julia Damerow
+- Miranda Mundt
 {% endif %}
 
 If you're interested in becoming part of the Steering Committee, we suggest you
@@ -206,16 +205,24 @@ Nominations are now closed. We will be announcing the candidates soon!
   {% elsif nowunix >= can_ann %}
 ### Nomination Form
 
-Nominations are now closed and our candidates for next cycle can be found below.
+Nominations are now closed, and our candidates for next cycle can be found below.
 
 
 ### Candidate Information
 
 Candidates are listed in alphabetical order.
 
-(Coming soon)
+- Cordero Core
+- Drew Paine
+- Julia Damerow
+- Miranda Mundt
 
-<!-- More information about the candidates can be [found here](/2026-11-11-sc-candidates). -->
+More information about the candidates can be [found here](/2026-11-13-sc-candidates).
+
+Because the number of candidates this year is not more than the number of open seats (4),
+there is no call for an election, in accordance with our [Voting guidelines](#voting). 
+These candidates will automatically assume or continue seats on the Steering Committee 
+beginning on January 1, 2027.
 
   {% endif %}
   {% endif %}
