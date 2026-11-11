@@ -21,9 +21,9 @@ software project, and host code-review-related activities for the US-RSE communi
 
 To get involved, visit the
 [`#wg-code-review`](https://usrse.slack.com/messages/wg-code-review) channel
-on the US-RSE slack.
+on the US-RSE slack. You can also fill out [this Google Form ](https://docs.google.com/forms/d/e/1FAIpQLSf7xZzdFMzCc2dwKrLUSCNRSFKzAjlzFxY1rtZlL2iXPUajjQ/viewform?usp=header) to be added to our Google Group, which is used to share invitations to our monthly meetings.
 
-**Co-Chairs**: Jeffrey Carver, Alex Koufos, Abbey Roelofs
+**Co-Chairs**: Jeffrey Carver and Alex Koufos
 
 <hr class="my-5">
 
