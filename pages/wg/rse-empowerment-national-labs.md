@@ -26,9 +26,11 @@ If you would like to participate in the conversation, please join us on the
 channel on the US-RSE Slack or contact us via the <a
 href="mailto:wg-national-labs-empowerment@us-rse.org">National Lab Empowerment Working Group
 email list</a>. You may request join the list serve directly via our 
-[Google Group page](https://groups.google.com/a/us-rse.org/g/wg-national-labs-empowerment/).
+[Google Group page](https://groups.google.com/a/us-rse.org/g/wg-national-labs-empowerment/about) or 
+send an email to <a href="mailto:wg-national-labs-empowerment+subscribe@us-rse.org">wg-national-labs-empowerment+subscribe@us-rse.org</a>. 
+Please include a brief description about why you want to join to mitigate bot requests.
 
-**Co-Chairs**: Patrick Diehl (LANL), Jonathan Guyer (NIST), Daniel Howard (NSF NCAR), and Gregory Lemieux (LBNL), 
+**Co-Chairs**: Patrick Diehl (LANL), Jonathan Guyer (NIST), Daniel Howard (NSF NCAR), and Juliette Raubolt (Sandia), 
 
 # Work Products
 
