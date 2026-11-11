@@ -50,7 +50,7 @@ The project I care most about right now is the one I wish had existed when I sta
 ## Drew Paine
 
 [Email](mailto:pained@lbl.gov)<br>
-Profile: [Personal website](www.drewpaine.net), [LinkedIn](https://www.linkedin.com/in/drewpaine/)
+Profile: [Personal website](https://www.drewpaine.net), [LinkedIn](https://www.linkedin.com/in/drewpaine/)
 
 **Why do you want to be on the US-RSE Steering Committee?**<br>
 My career spans software engineering and human centered design with the major through line being supporting teams and community. I would like to be on the Steering Committee for a few reasons. First, is to continue fostering pathways for more "non-traditional" RSE type roles. User Experience is one example that has grown with my and others support. I suspect there are more. Second, would be to help grow the conference based on my experiences on the organizing committee the past two years, as well as in other academic/engineering spaces. This is one of our most important community activities and I want to help the Steering Committee streamline the process further. Third, as a US National Labs employee I want to sustain representation for this constituency which has a wide array of stakeholders contributing to the US-RSE community, often with slightly different concerns than RSEs in other environments.
