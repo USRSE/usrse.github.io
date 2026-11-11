@@ -25,7 +25,8 @@ More information about the candidates can be found below.
 <br>
 ## Cordero Core
 
-[Email](mailto:cdcore@uw.edu), Profile: [LinkedIn](https://www.linkedin.com/in/corderocore), [Personal website](https://corderocore.com), [Medium](https://medium.com/@cdcore)
+[Email](mailto:cdcore@uw.edu)<br>
+Profile: [LinkedIn](https://www.linkedin.com/in/corderocore), [Personal website](https://corderocore.com), [Medium](https://medium.com/@cdcore)
 
 **Why do you want to be on the US-RSE Steering Committee?**<br>
 For most of my career I did research software engineering without knowing it had a name. As a chemist I built molecular dynamics analysis tools, then imaging software for an FDA medical device at Pathware, then 3D modeling tools at The Aerospace Corporation. I was writing the software the research depended on, usually without anyone down the hall who did the same thing. Now I do it full time at UW's Scientific Software Engineering Center, helping researchers in any field turn their code into open, tested software.
@@ -48,7 +49,8 @@ The project I care most about right now is the one I wish had existed when I sta
 <br>
 ## Drew Paine
 
-[Email](mailto:pained@lbl.gov), Profile: [Personal website](www.drewpaine.net), [LinkedIn](https://www.linkedin.com/in/drewpaine/)
+[Email](mailto:pained@lbl.gov)<br>
+Profile: [Personal website](www.drewpaine.net), [LinkedIn](https://www.linkedin.com/in/drewpaine/)
 
 **Why do you want to be on the US-RSE Steering Committee?**<br>
 My career spans software engineering and human centered design with the major through line being supporting teams and community. I would like to be on the Steering Committee for a few reasons. First, is to continue fostering pathways for more "non-traditional" RSE type roles. User Experience is one example that has grown with my and others support. I suspect there are more. Second, would be to help grow the conference based on my experiences on the organizing committee the past two years, as well as in other academic/engineering spaces. This is one of our most important community activities and I want to help the Steering Committee streamline the process further. Third, as a US National Labs employee I want to sustain representation for this constituency which has a wide array of stakeholders contributing to the US-RSE community, often with slightly different concerns than RSEs in other environments.
@@ -60,7 +62,8 @@ I participate in the community consistently via virtual and face to face activit
 <br>
 ## Julia Damerow
 
-[Email](mailto:jdamerow@asu.edu), Profile: [LinkedIn](https://www.linkedin.com/in/julia-damerow)
+[Email](mailto:jdamerow@asu.edu)<br>
+Profile: [LinkedIn](https://www.linkedin.com/in/julia-damerow)
 
 **Why do you want to be on the US-RSE Steering Committee?**<br>
 I’ve been very passionate about research software development since I started working in this space. My passion translates into activities that bring people together and build networks. I co-founded DHTech (a community for people developing software in digital humanities) and established a community of practice for RSEs at Arizona State University. 
@@ -81,7 +84,8 @@ At Arizona State University, I worked with HR to develop formal RSE job titles a
 <br>
 ## Miranda Mundt
 
-[Email](mailto:mmundt@sandia.gov), Profile: [Personal website](https://mrmundt.github.io)
+[Email](mailto:mmundt@sandia.gov)<br>
+Profile: [Personal website](https://mrmundt.github.io)
 
 **Why do you want to be on the US-RSE Steering Committee?**<br>
 This past term, US-RSE has kept setting precedents, and I have gotten to help guide some of the biggest ones. As the association has grown, we’ve started reworking our governance documents so they match who we are now, not who we were when they were written. We've also had to look at new avenues for fiscal sustainability, rethink how we manage membership, and new cybersecurity considerations, making sure US-RSE can support its community for the long haul and not just the next year.
