@@ -80,7 +80,7 @@ about opportunities, strategies, and starting points for finding funding.
 
 #### Upcoming Presentations
 
-The funders talk series is now on hiatus until 2025.
+The funders talk series will be restarting in 2027.
 
 #### Past Presentations
 
