@@ -36,10 +36,12 @@ and Candidate Information" section to apply for or nominate someone for the
 US-RSE Steering Committee
 {%- elsif nowunix >= nom_close and nowunix < can_ann -%}
 Nominations have closed! We will be announcing the candidates shortly.
-{%- elsif nowunix >= can_ann and nowunix < vote_open -%}
+<!-- {%- elsif nowunix >= can_ann and nowunix < vote_open -%} -->
+<!-- The above was the code that was used when we had an election but was changed for 2026 when no election was required. -->
+{%- elsif nowunix >= can_ann and nowunix < vote_close> -%}
 Meet the [2026 Steering Committee candidates](#candidate-information)!
-{%- elsif nowunix >= vote_open and nowunix < vote_close -%}
-Voting for the US-RSE Steering Committee are now open!
+<!-- {%- elsif nowunix >= vote_open and nowunix < vote_close -%} -->
+<!-- Voting for the US-RSE Steering Committee are now open! -->
 {%- else -%}
 Elections for the US-RSE Steering Committee happen near the end of each year.
 {%- endif -%}
@@ -63,11 +65,11 @@ Elections for the US-RSE Steering Committee happen near the end of each year.
 <!--* [Candidates Announced](/2023-11-10-sc-candidates/): **November 8, 2024**-->
 * Annual US-RSE General Meeting, including candidate statements:
   **{{ page.annual_general_meeting | date: "%B %-d, %Y at %H:%M (Eastern)" }}**
-* Voting Open:
-  **{{ page.voting_open | date: "%B %-d, %Y at %H:%M (Eastern)" }} -
-    {{ page.voting_close | date: "%B %-d, %Y at %H:%M (Hawaii)" }}**
-* Planned Election Results Announcement Date:
-  **{{ page.election_results | date: "%B %-d, %Y" }}**
+* Voting Open: Because the number of candidates is not greater than the number of open seats, no vote is scheduled for for this year. 
+  <!-- **{{ page.voting_open | date: "%B %-d, %Y at %H:%M (Eastern)" }} -
+    {{ page.voting_close | date: "%B %-d, %Y at %H:%M (Hawaii)" }}** -->
+<!-- * Planned Election Results Announcement Date:
+  **{{ page.election_results | date: "%B %-d, %Y" }}** -->
 * Elected Steering Committee members take office:
   **January 1, {{ year | plus: 1 }}**
 
