@@ -8,7 +8,7 @@ set_last_modified: true
 nominations_open: 2026-10-23 23:59:59 -1000
 nominations_close: 2026-11-06 23:59:59 -1000
 membership_deadline: 2026-10-23 23:59:59 -1000
-candidate_announcements: 2026-11-13 17:00:00 -0800
+candidate_announcements: 2026-11-13 12:00:00 -0500
 annual_general_meeting: 2026-12-04 13:00:00 -0500
 voting_open: 2026-12-04 13:00:00 -0500
 voting_close: 2026-12-13 23:59:59 -1000
