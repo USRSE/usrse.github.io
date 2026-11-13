@@ -8,7 +8,7 @@ set_last_modified: true
 nominations_open: 2026-10-23 23:59:59 -1000
 nominations_close: 2026-11-06 23:59:59 -1000
 membership_deadline: 2026-10-23 23:59:59 -1000
-candidate_announcements: 2026-11-13 17:00:00 -0800
+candidate_announcements: 2026-11-13 12:00:00 -0500
 annual_general_meeting: 2026-12-04 13:00:00 -0500
 voting_open: 2026-12-04 13:00:00 -0500
 voting_close: 2026-12-13 23:59:59 -1000
@@ -36,12 +36,14 @@ and Candidate Information" section to apply for or nominate someone for the
 US-RSE Steering Committee
 {%- elsif nowunix >= nom_close and nowunix < can_ann -%}
 Nominations have closed! We will be announcing the candidates shortly.
-{%- elsif nowunix >= can_ann and nowunix < vote_open -%}
+<!-- {%- elsif nowunix >= can_ann and nowunix < vote_open -%} -->
+<!-- The above was the code that was used when we had an election but was changed for 2026 when no election was required. -->
+{%- elsif nowunix >= can_ann and nowunix < vote_close> -%}
 Meet the [2026 Steering Committee candidates](#candidate-information)!
-{%- elsif nowunix >= vote_open and nowunix < vote_close -%}
-Voting for the US-RSE Steering Committee are now open!
+<!-- {%- elsif nowunix >= vote_open and nowunix < vote_close -%} -->
+<!-- Voting for the US-RSE Steering Committee are now open! -->
 {%- else -%}
-Elections for the US-RSE Steering Committee happen near the end of each year
+Elections for the US-RSE Steering Committee happen near the end of each year.
 {%- endif -%}
 </strong>
 
@@ -63,23 +65,22 @@ Elections for the US-RSE Steering Committee happen near the end of each year
 <!--* [Candidates Announced](/2023-11-10-sc-candidates/): **November 8, 2024**-->
 * Annual US-RSE General Meeting, including candidate statements:
   **{{ page.annual_general_meeting | date: "%B %-d, %Y at %H:%M (Eastern)" }}**
-* Voting Open:
-  **{{ page.voting_open | date: "%B %-d, %Y at %H:%M (Eastern)" }} -
-    {{ page.voting_close | date: "%B %-d, %Y at %H:%M (Hawaii)" }}**
-* Planned Election Results Announcement Date:
-  **{{ page.election_results | date: "%B %-d, %Y" }}**
+* Voting Open: Because the number of candidates is not greater than the number of open seats, no vote is scheduled for for this year. 
+  <!-- **{{ page.voting_open | date: "%B %-d, %Y at %H:%M (Eastern)" }} -
+    {{ page.voting_close | date: "%B %-d, %Y at %H:%M (Hawaii)" }}** -->
+<!-- * Planned Election Results Announcement Date:
+  **{{ page.election_results | date: "%B %-d, %Y" }}** -->
 * Elected Steering Committee members take office:
   **January 1, {{ year | plus: 1 }}**
 
 {% else %}
 
-## Congratulations to the 2026-2028 Steering Committee Cohort!
+## Congratulations to the 2027-2029 Steering Committee Cohort!
 
-- Jeff Carver
-- Ian Cosden
-- Alex Koufos
-- Abbey Roelofs
-- Pengyin Shan
+- Cordero Core
+- Drew Paine
+- Julia Damerow
+- Miranda Mundt
 {% endif %}
 
 If you're interested in becoming part of the Steering Committee, we suggest you
@@ -206,16 +207,24 @@ Nominations are now closed. We will be announcing the candidates soon!
   {% elsif nowunix >= can_ann %}
 ### Nomination Form
 
-Nominations are now closed and our candidates for next cycle can be found below.
+Nominations are now closed, and our candidates for next cycle can be found below.
 
 
 ### Candidate Information
 
 Candidates are listed in alphabetical order.
 
-(Coming soon)
+- Cordero Core
+- Drew Paine
+- Julia Damerow
+- Miranda Mundt
 
-<!-- More information about the candidates can be [found here](/2026-11-11-sc-candidates). -->
+More information about the candidates can be [found here](/2026-11-13-sc-candidates).
+
+Because the number of candidates this year is not more than the number of open seats (4),
+there is no call for an election, in accordance with our [Voting guidelines](#voting). 
+These candidates will automatically assume or continue seats on the Steering Committee 
+beginning on January 1, 2027.
 
   {% endif %}
   {% endif %}
