@@ -17,6 +17,9 @@ zoom.us
 # Python's requests fails certificate verification.
 https://ai.eecs.umich.edu/people/conway/conway.html
 
+# Works in a browser but fails the checker (<reason, e.g. blocks bots / TLS chain>)
+https://mailman.srv.cs.cmu.edu/mailman/listinfo/connectionists
+
 # Archived snapshots don't disappear, and archive.org rate-limits CI servers
 https://web.archive.org/
 
