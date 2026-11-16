@@ -16,26 +16,27 @@ Neuro-RSE is open to anyone who considers themselves a research software enginee
 
 Membership is open to all [US-RSE members](https://us-rse.org/join/). As with other US-RSE activities, Neuro-RSE is US-focused, but other countries are welcome.
 
-To join, contact one of the coordinators on the US-RSE slack (see the [Questions?](#questions) section below).
+To join, contact one of the coordinators on the US-RSE Slack (see the [Questions?](#questions) section below).
+
+We have a Slack channel, `#ag-neuro-rse` in the US-RSE Slack space.
 
 # Activities
 
-Neuro-RSE meets virtually monthly, with alternating times (one more East Coast-friendly, one more West Coast-friendly). Additional in-person meetings at RSE or Neuroscience events may also be organized.
+Neuro-RSE meets virtually every 2-3 months. Additional in-person meetings at RSE or Neuroscience events may also be organized.
 
-During our meetings, we have brief lightning talks, to share our work with each other, as well as discussions on relevant topics. These topics are determined by group members and may include: how are RSEs managed and incentivized in neuroscience, how to convince scientists of the value of our work (and the time required), what does day-to-day work look like, how to incentivize building / using common resources instead of reinventing the wheel, how to formally run teams and open source collaborations.
-
-We have a Slack channel in the US-RSE space for discussions.
+During our meetings, we have brief lightning talks to share our work and discuss relevant topics. Discussion topics are determined by group members, and may include: how RSEs are managed and incentivized in neuroscience, how to communicate the value of our work to scientists, what day-to-day work looks like, how to incentivize building and using common resources, and how to run teams and open-source collaborations.
 
 # Questions?
 
-Reach out to the Neuro-RSE coordinators Jordan Fox or Steph Prince on the [US-RSE slack](https://us-rse.org/join/) with questions.
+Reach out to the Neuro-RSE coordinators Jordan Fox or Shaun Jagshi on the [US-RSE Slack](https://us-rse.org/join/) with questions. We have a channel: `#ag-neuro-rse`.
 
 # Group coordinators
 
-- [Jordan Fox](https://jmrfox.github.io/), computational scientist, postdoc in neuroscience at [Albert Einstein College of Medicine](https://einsteinmed.edu/departments/neuroscience)
-- [Steph Prince](https://github.com/stephprince), data engineer
+- [Jordan Fox](https://jmrfox.github.io/), Staff RSE in the [Center for Theoretical Neuroscience](https://ctn.zuckermaninstitute.columbia.edu/), [Zuckerman Institute](https://zuckermaninstitute.columbia.edu/), Columbia University.
+- [Shaun Jagshi](https://shaunjagshi.vercel.app/), Undergraduate Researcher in Neuroscience and Computational Biology at UT Austin
 
 ## Former group coordinators
+- [Steph Prince](https://github.com/stephprince), data engineer
 - [Billy Broderick](wfbroderick.com/), Associate Research Scientist, Software in [NeuroRSE group](https://neurorse.flatironinstitute.org/), [Flatiron Institute's Center For Computational Neuroscience](https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/) 
 - [David Nicholson](https://nicholdav.info/), lead developer of the [VocalPy software community](http://www.vocalpy.org/)
 
@@ -45,7 +46,7 @@ Active members attend our regular meetings at least once a quarter (once every 3
 
 - [Lezlie España](https://www.linkedin.com/in/lezlieespana), Programmer Analyst in Brain Injury Research at the Medical College of Wisconsin
 - [Alessandro Felder](https://github.com/alessandrofelder), Senior Research Software Engineer at the [Sainsbury Wellcome Centre's Neuroinformatics Unit](https://neuroinformatics.dev/), technical lead of the [BrainGlobe Initiative](https://brainglobe.info/)
-- [Yaroslav O. Halchenko](https://github.com/yarikoptic), Research Associate Professor at the [Dartmouth College](https://dartmouth.edu), leading the [Center for Open Neuroscience](https://centerforopenneuroscience.org) at the [Department of Psychological and Brain Sciences](https://pbs.dartmouth.edu) leading projects such as [NeuroDebian](https://neuro.debian.net/), [DataLad](https://datalad.org), [DANDI](https://dandiarchive.org) and others
+- [Yaroslav O. Halchenko](https://github.com/yarikoptic), Research Associate Professor at the [Dartmouth College](https://home.dartmouth.edu), leading the [Center for Open Neuroscience](https://centerforopenneuroscience.org) at the [Department of Psychological and Brain Sciences](https://pbs.dartmouth.edu) leading projects such as [NeuroDebian](https://neuro.debian.net/), [DataLad](https://datalad.org), [DANDI](https://dandiarchive.org) and others
 - [Ryan Ly](https://www.linkedin.com/in/ryanly), scientific data engineer at Lawrence Berkeley National Lab
 - [Daniel McCloy](https://dan.mccloy.info), Research Scientist at Institute for Learning & Brain Sciences, University of Washington
 - [Tab Memmott](https://www.linkedin.com/in/tab-memmott/) (he/him), Lead Research Software Engineer with the [Consortium for Accessible Multimodal Brain-Body Interfaces](https://www.cambi.tech/)
@@ -81,7 +82,7 @@ Active members attend our regular meetings at least once a quarter (once every 3
 - [visionlist mailing list](https://web.archive.org/web/20260310085452/https://visionscience.com/mailman/listinfo/visionlist_visionscience.com) (skews academic)
 - [connectionists mailing list](https://mailman.srv.cs.cmu.edu/mailman/listinfo/connectionists) (skews academic)
 
-## Google groups / mailing lists / forums
+## Google groups, mailing lists, & forums
 
 - [systems-neuroscience google group](https://groups.google.com/g/systems-neuroscience) (skews academic) 
 - [cosyne-discussions google group](https://groups.google.com/g/cosyne-discussions) 
@@ -105,7 +106,7 @@ Active members attend our regular meetings at least once a quarter (once every 3
 - Cold Spring Harbor Laboratory [summer schools](https://meetings.cshl.edu/courseshome.aspx), especially [Computational Neuroscience: Vision](https://meetings.cshl.edu/courses.aspx?course=C-VISI&year=24) (every other year)
 - [NeuroDataReHack](https://nwb.org/events/hck24-2025-janelia-ndrh/)
 - [Neurohackademy](https://neurohackademy.org/) (neuroimaging-focused)
-- [Neuromatch Academy](https://academy.neuromatch.io/) (online)
+- [Neuromatch Courses](https://neuromatch.io/courses/) (online)
 - [NWB Events (Workshops, Hackathons, Tutorials)](https://nwb.org/events/)
 - [ODIN Symposium](https://odin.mit.edu/)
 - [OHBM Brainhack](https://ohbm.github.io/hackathon2025/)
