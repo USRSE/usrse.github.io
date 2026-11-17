@@ -13,6 +13,13 @@ basic:
     date_joined: 2025-12-10
     founding_member: true
     tier: "Basic"
+  - name: "University of Utah, Scientific Computing and Imaging Institute"
+    url: https://sci.utah.edu/
+    figure: logo-utah.png
+    acronym: "SCI"
+    date_joined: 2026-07-30
+    founding_member: true
+    tier: "Basic"
 
 standard:
   - name: "Center for Research Computing - University of Notre Dame"
