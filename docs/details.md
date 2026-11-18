@@ -116,22 +116,31 @@ Most of the site's look comes from [Bulma](https://bulma.io), a CSS framework
 `hero-body`, `button is-info` and `column`. Our layouts and pages use these class
 names directly.
 
-The site does **not** compile Bulma from source. Instead,
-`assets/css/style.css` is a pre-compiled copy of Bulma's CSS that was committed
-to the repository in 2021, with site-specific customizations edited into it by
-hand since then. There is no Sass build step for this file.
+The site does **not** compile Bulma from source. The CSS is split into two files:
+
+- `assets/css/bulma.css` is a pre-compiled copy of Bulma's CSS (plus the
+  bulma-clean-theme extras) that was committed to the repository in 2021. Treat it
+  as vendored: don't edit it. A few older customizations are still edited into it
+  in place (brand colors and the navbar breakpoint); each one is marked with a
+  `US-RSE: was ...` comment.
+- `assets/css/custom.css` holds the site's own hand-written CSS.
+
+There is no Sass build step for either file.
 
 To add or change styles:
 
-- Add new rules at the **end** of `assets/css/style.css`.
-- Do **not** create `assets/css/style.scss` (or `.sass`). Jekyll would compile it
-  to the same output path as `style.css`, and only one of the two files would be
-  served, with no build error. A CI check fails pull requests that do this.
+- Add new rules to `assets/css/custom.css`, under a comment saying what they are
+  for.
+- Do **not** create `assets/css/bulma.scss` or `assets/css/custom.scss` (or
+  `.sass`). Jekyll would compile it to the same output path as the `.css` file,
+  and only one of the two files would be served, with no build error. A CI check
+  fails pull requests that do this.
 - The stylesheets are loaded in `_includes/head.html` in this order:
-  `style.css`, then `reboot.css`, then `bootstrap.css`. A rule in `style.css` can
-  be overridden by a rule with equal specificity in the later files.
+  `bulma.css`, `custom.css`, Font Awesome, `reboot.css`, then `bootstrap.css`.
+  A rule in `custom.css` overrides a Bulma rule with equal specificity, but can
+  itself be overridden by a rule with equal specificity in the later files.
 - Preview your change locally (see [local_previews.md](local_previews.md)) and
-  check a few different pages, because `style.css` applies to the whole site.
+  check a few different pages, because these stylesheets apply to the whole site.
 
 Plans to make this easier to maintain are tracked in
 [issue #2063](https://github.com/USRSE/usrse.github.io/issues/2063).
