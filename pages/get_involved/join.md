@@ -29,5 +29,6 @@ If you think that you might fit in US-RSE then you probably do and we look forwa
     <a class="btn btn-warning" href="https://forms.gle/CRsH7sKAk3UvZJfB9" target="_blank" style="margin:40px;">Join the US-RSE Association as an individual member<em> for free</em>!</a>
 </div>
 
+We also understand that situations change. If you'd like to update the email address associated with your membership or leave US-RSE, please fill out the [Membership Change Request form](https://forms.gle/2dcgLMKLjRe6vJwW9).
 
 {% include member-graph.html %}
