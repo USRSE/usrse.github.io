@@ -361,5 +361,22 @@ references:
     models
   type: webpage
   url: "https://open-research-europe.ec.europa.eu/articles/5-199/v1"
+- abstract: Executable notebook using the published RustScenic 0.5.1
+    wheel on 2,700 PBMC cells. It records input and output hashes,
+    dependency versions, model settings and thread limits. GRN-derived
+    candidate gene sets are unsigned and not motif-filtered SCENIC
+    regulons; the example does not establish biological accuracy or
+    reference-tool parity. Maintainer-proposed resource; this metadata
+    was prepared with AI assistance.
+  accessed: 2026-10-28
+  author:
+  - family: Kahraman
+    given: Ekin
+  id: kahramanPBMC3kRustScenicRNAStarter
+  language: en-US
+  title: "PBMC3k: An executable RustScenic RNA starter"
+  title-short: PBMC3k
+  type: webpage
+  url: "https://github.com/Ekin-Kahraman/rustscenic/blob/379cf12d814d676494209ae960b878bc92e7f995/examples/pbmc3k_quickstart.ipynb"
 ---
 
